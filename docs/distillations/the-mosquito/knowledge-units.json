@@ -1,0 +1,424 @@
+[
+  {
+    "id": "unit-01-toxic-twins-52-billion",
+    "unit_number": 1,
+    "title": "The Apex Predator: The Mosquito Vector & The 52 Billion Toll",
+    "book_part": "Part I: Biology and Evolutionary Origins",
+    "chapters": "Introduction & Chapter 1",
+    "primary_entities": [
+      "Anopheles",
+      "Aedes aegypti",
+      "Culex",
+      "Plasmodium falciparum",
+      "Yellow Fever Virus",
+      "Dengue",
+      "Zika"
+    ],
+    "historical_era": "Prehistory to Present; 200,000-year human timeline.",
+    "core_thesis": "The mosquito is the ultimate apex predator in human history, responsible for killing roughly 52 billion of the 108 billion humans who have ever existed—nearly 50% of all human mortality—operating not through poison or claws, but as a flying hypodermic syringe transmitting lethal pathogens.",
+    "key_arguments": [
+      "Only the female mosquito bites: she requires human blood proteins (isoleucine, iron) to develop her eggs; males feed exclusively on plant nectar.",
+      "The mosquito's proboscis is a masterpiece of micro-engineering: six specialized stylets saw through skin, inject anticoagulants and anesthetics, and siphon blood without triggering immediate pain.",
+      "The pathogens (Plasmodium protozoa, flaviviruses, filarial worms) hijacked this feeding apparatus to achieve trans-species transmission, multiplying inside the mosquito's gut and migrating to her salivary glands.",
+      "Malaria (*Plasmodium falciparum*, *vivax*, *malariae*, *ovale*) and Yellow Fever have acted as the primary demographic brake on human population growth and urbanization across millennia."
+    ],
+    "operational_takeaways": "Biological vectors reshape civilizations more profoundly than generals or emperors; human history cannot be understood without its microbial drivers.",
+    "verbatim_quote": "“The mosquito has dispatched an estimated 52 billion people from a total of 108 billion throughout our relatively brief 200,000-year existence... She is our deadliest predator, the apex hunter of human beings.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-02-survival-of-the-fittest-genetics",
+    "unit_number": 2,
+    "title": "Evolutionary Armor: Sickle Cell, Duffy Antigen, and Human Mutations",
+    "book_part": "Part I: Biology and Evolutionary Origins",
+    "chapters": "Chapter 2",
+    "primary_entities": [
+      "Sickle Cell Trait (HbS)",
+      "Duffy Antigen Negativity",
+      "Thalassemia",
+      "G6PD Deficiency",
+      "Plasmodium vivax"
+    ],
+    "historical_era": "10,000 BCE to Present; The agricultural revolution and genetic counter-adaptation.",
+    "core_thesis": "Malaria has exerted the single greatest selective pressure on the human genome, forcing humanity to accept debilitating genetic disorders as the evolutionary price of survival against *Plasmodium* infection.",
+    "key_arguments": [
+      "The agricultural revolution (clearing forests, standing water) caused mosquito populations to explode, intensifying malarial transmission in tropical river valleys.",
+      "The sickle cell mutation alters hemoglobin: a single copy (heterozygous) deforms red blood cells when infected, starving the parasite and providing 90% protection against lethal *falciparum* malaria, while two copies cause fatal sickle cell anemia.",
+      "Duffy antigen negativity evolved in Sub-Saharan Africa: red blood cells lack the Duffy protein receptor that *Plasmodium vivax* uses to invade cells, conferring near 100% immunity to vivax malaria across 95% of Central and West African populations.",
+      "Thalassemia in the Mediterranean and G6PD deficiency worldwide evolved as localized biochemical defenses that disrupt parasite survival inside red blood cells."
+    ],
+    "operational_takeaways": "Human racial distribution and genetic diversity are geographical fingerprints of ancestral warfare against mosquito-borne pathogens.",
+    "verbatim_quote": "“Malaria has left an indelible mark on our DNA... Sickle cell trait, Duffy negativity, and thalassemia are nature's genetic shields against a microscopic assassin, bought at the tragic cost of chronic human suffering.”",
+    "epistemic_status": "SCIENTIFIC FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-03-general-anopheles-athens-alexander",
+    "unit_number": 3,
+    "title": "General Anopheles: The Peloponnesian War & The Fall of Alexander",
+    "book_part": "Part II: The Ancient World",
+    "chapters": "Chapter 3",
+    "primary_entities": [
+      "Alexander the Great",
+      "Pericles",
+      "Hippocrates",
+      "The Spartan Army",
+      "Babylon"
+    ],
+    "historical_era": "Classical Antiquity (430 BCE – 323 BCE); Ancient Greece and Mesopotamia.",
+    "core_thesis": "Mosquito-borne diseases determined the collapse of Athenian supremacy during the Peloponnesian War and cut short Alexander the Great's world-conquering empire at the zenith of his power.",
+    "key_arguments": [
+      "Hippocrates in *Airs, Waters, and Places* first clinically described intermittent malarial fevers (tertian and quartan), erroneously attributing them to swamp miasmas rather than insects.",
+      "During the Peloponnesian War, the Spartan siege of Athens and the overcrowded refugee camps behind the Long Walls created catastrophic conditions for vector-borne epidemics, killing Pericles and devastating Athenian manpower.",
+      "In June 323 BCE, Alexander the Great, having conquered the known world from Egypt to India, was planning the naval conquest of Arabia from Babylon; he navigated the shallow marshes of the Euphrates, was bitten by *Anopheles*, developed violent fever, paralysis, and delirium, and died at age 32.",
+      "Alexander's sudden death fractured his empire into warring Diadochi states, aborting a unified global Eurasian empire."
+    ],
+    "operational_takeaways": "Unvaccinated armies traversing wetland ecosystems without vector control face rapid operational paralysis and decapitation of leadership.",
+    "verbatim_quote": "“Alexander the Great conquered every human enemy from the Danube to the Indus, but he could not conquer the mosquito. In the marshes of Babylon, a single bite brought down the master of the ancient world.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-04-mosquito-legions-roman-empire",
+    "unit_number": 4,
+    "title": "The Roman Fever: The Pontine Marshes and the Defense of the Eternal City",
+    "book_part": "Part II: The Ancient World",
+    "chapters": "Chapter 4",
+    "primary_entities": [
+      "Pontine Marshes",
+      "Attila the Hun",
+      "Alaric the Visigoth",
+      "Pope Leo I",
+      "The Roman Campagna"
+    ],
+    "historical_era": "Roman Republic & Empire (500 BCE – 476 CE).",
+    "core_thesis": "The Pontine Marshes surrounding Rome acted as both a lethal demographic curse on Roman citizens and an impenetrable biological moat that annihilated invading barbarian armies.",
+    "key_arguments": [
+      "The Pontine Marshes bred astronomical swarms of *Anopheles atroparvus* and *labranchiae*, transmitting debilitating tertian malaria (*malaria* = 'bad air') across the Roman Campagna.",
+      "The constant seasonal epidemic drained Roman agricultural vitality and depleted citizen military recruitment, forcing Rome to rely on barbarian mercenaries.",
+      "However, when foreign invaders besieged Rome, the marshes struck them with catastrophic fury: in 410 CE Alaric the Visigoth sacked Rome but died months later of malaria in southern Italy.",
+      "In 452 CE, Attila the Hun invaded northern Italy and marched on Rome; Pope Leo I met him, but Attila's retreat was driven not by papal eloquence, but by the rapid collapse of the Hunnic army from malarial fever in the Po Valley swamps.",
+      "In 1167 CE, Holy Roman Emperor Frederick Barbarossa besieged Rome with a magnificent imperial army; within days, malaria destroyed 2,000 German knights, forcing him to flee disguised as a servant."
+    ],
+    "operational_takeaways": "Geography and endemic pathogens provide asymmetric defense against invading armies lacking localized genetic or acquired immunity.",
+    "verbatim_quote": "“For two thousand years, Rome was protected by a moat of fever. The Pontine Marshes annihilated more invading armies than all the legions of Caesar combined.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-05-the-crusades-crisis-of-faiths",
+    "unit_number": 5,
+    "title": "Unrepentant Mosquitoes: The Crusades and the Levant Fever Trap",
+    "book_part": "Part III: The Medieval World",
+    "chapters": "Chapter 5",
+    "primary_entities": [
+      "Saladin",
+      "Richard the Lionheart",
+      "Frederick I Barbarossa",
+      "The Knights Templar",
+      "Antioch & Acre"
+    ],
+    "historical_era": "The Crusades (1095–1291 CE); The Levant and Eastern Mediterranean.",
+    "core_thesis": "The Crusades were defeated far more by mosquito-borne fevers and dysentery in the wetlands of the Levant and Nile Delta than by Saracen swords.",
+    "key_arguments": [
+      "European Crusaders, clad in heavy wool and iron chainmail, marched into the subtropical marshes of Cilicia and Antioch, where *Anopheles* mosquitoes inflicted 75% non-combat casualties before battles even commenced.",
+      "During the Third Crusade (1189–1192), Richard the Lionheart and Philip II of France were stricken with severe malarial fevers at the siege of Acre, losing their fingernails and hair and forcing negotiations with Saladin.",
+      "During the Fifth Crusade (1221), the Crusaders advanced into the marshlands of the Nile Delta; Sultan al-Kamil opened the sluice gates, flooding the camp and unleashing swarms of mosquitoes and water-borne pathogens that forced total surrender.",
+      "During the Seventh Crusade (1250), King Louis IX of France ('Saint Louis') saw his entire army incapacitated by malaria and dysentery at Mansurah, leading to his capture and humiliating ransom."
+    ],
+    "operational_takeaways": "Expeditionary warfare in unfamiliar bioclimatic zones without epidemiological logistics guarantees military ruin.",
+    "verbatim_quote": "“The Crusaders went to the Holy Land seeking martyrdom in battle, but they found it in the marshes. General Anopheles fought under neither the Cross nor the Crescent, but she broke the Crusades with absolute impartiality.”",
+    "epistemic_status": "HISTORICAL ARGUMENT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-06-mongol-hordes-tropical-barriers",
+    "unit_number": 6,
+    "title": "The Mongol Halt: Genghis Khan and the Subtropical Barrier",
+    "book_part": "Part III: The Medieval World",
+    "chapters": "Chapter 6",
+    "primary_entities": [
+      "Genghis Khan",
+      "Kublai Khan",
+      "Mamluks of Egypt",
+      "Battle of Ain Jalut (1260)",
+      "Bactria & Burma"
+    ],
+    "historical_era": "The Mongol Conquests (1206–1294 CE); Steppes of Eurasia, Middle East, and Southeast Asia.",
+    "core_thesis": "The seemingly invincible Mongol cavalry, adapted to cold, dry steppe ecosystems, hit an impenetrable biological barrier when entering the mosquito-infested river basins of India, Egypt, and Southeast Asia.",
+    "key_arguments": [
+      "The Mongol horse archers subjugated China, Central Asia, Russia, and Persia with unprecedented speed and tactical coordination.",
+      "When Genghis Khan pursued Jalal al-Din into the Indus River valley in 1221, tropical heat, relentless monsoons, and swarms of disease-carrying mosquitoes incapacitated his troops and killed his horses, forcing him to turn back from conquering India.",
+      "In 1260 at Ain Jalut in the Jezreel Valley, the Mongols suffered their first decisive defeat against the Egyptian Mamluks; the Mongol force was weakened by seasonal fevers in the Syrian marshes.",
+      "Kublai Khan's invasions of Burma, Vietnam, and Java in the 1280s were turned into disasters by tropical jungle fevers (*falciparum* malaria and dengue), which destroyed the northern cavalry without pitched battles."
+    ],
+    "operational_takeaways": "Equestrian steppe warfare does not scale into humid, vector-rich tropical rainforests and deltas.",
+    "verbatim_quote": "“The Mongols rode across thousands of miles of plains and mountains, invincible before every army on earth. But where the steppes ended and the tropical marshes began, their horses died, their bows unglued in the humidity, and the mosquito halted the Mongol empire.”",
+    "epistemic_status": "HISTORICAL ARGUMENT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-07-the-columbian-exchange-biological-conquest",
+    "unit_number": 7,
+    "title": "The Columbian Exchange: The Caribbean Annihilation and Biological Annexation",
+    "book_part": "Part IV: The Atlantic World & Colonial Expansion",
+    "chapters": "Chapter 7",
+    "primary_entities": [
+      "Christopher Columbus",
+      "The Taino People",
+      "Hispaniola",
+      "Aedes aegypti",
+      "Plasmodium falciparum"
+    ],
+    "historical_era": "1492–1600; The Americas and the Caribbean Basin.",
+    "core_thesis": "The European conquest of the Americas was primarily a biological conquest: the introduction of Old World pathogens and their mosquito vectors eradicated up to 90% of the indigenous American population, who possessed zero evolutionary immunity.",
+    "key_arguments": [
+      "Prior to 1492, the Americas were completely free of *Plasmodium falciparum* and the yellow fever virus (*Flavivirus*), as well as their specific vectors (*Aedes aegypti*).",
+      "European ships carried infected crews and freshwater casks that served as breeding habitats for mosquitoes across the Atlantic voyage.",
+      "The native Taino, Arawak, and Carib populations, having lived in evolutionary isolation for 15,000 years, possessed neither acquired immunity nor genetic defenses like sickle cell trait or Duffy negativity.",
+      "Combined with smallpox, measles, and influenza, mosquito-borne malaria and yellow fever decimated Hispaniola's population from hundreds of thousands to mere hundreds within decades, leaving vast depopulated territories ripe for European colonization."
+    ],
+    "operational_takeaways": "The collision of isolated disease pools produces demographic collapse of the naive population at catastrophic scale.",
+    "verbatim_quote": "“The Spanish conquistadors did not conquer the New World through military genius; they conquered through biological warfare. Columbus unleashed a pandemic of mosquito-borne death that wiped clean the slate of the Americas.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-08-accidental-conquerors-slavery-and-seasoning",
+    "unit_number": 8,
+    "title": "The Slave Trade Crucible: Yellow Fever, Malaria, and 'Seasoning'",
+    "book_part": "Part IV: The Atlantic World & Colonial Expansion",
+    "chapters": "Chapters 8 & 9",
+    "primary_entities": [
+      "The Trans-Atlantic Slave Trade",
+      "The Middle Passage",
+      "Sugar & Rice Plantations",
+      "Aedes aegypti",
+      "The Seasoning"
+    ],
+    "historical_era": "1500–1800; Caribbean, Brazil, and the American South.",
+    "core_thesis": "The differential survival rates of African laborers versus European indentured servants in tropical, mosquito-infested plantation environments was the economic and epidemiological engine that entrenched race-based chattel slavery.",
+    "key_arguments": [
+      "European attempts to use white indentured servants and native Americans on sugar and rice plantations failed catastrophically due to mortality rates exceeding 50% in the first year from malaria and yellow fever.",
+      "West Africans possessed inherited genetic defenses: high prevalence of sickle cell trait (protecting against *falciparum* mortality), Duffy negativity (immunity to *vivax*), and childhood exposure providing acquired immunity to yellow fever.",
+      "Colonial planters observed that African laborers survived the deadly 'seasoning' (the first summer in the tropics) at vastly higher rates than white workers.",
+      "This brutal epidemiological reality made African slavery economically irresistible to European imperialists, who calculated labor costs strictly through the lens of disease resistance, cementing the trans-Atlantic slave trade for three centuries."
+    ],
+    "operational_takeaways": "Differential pathogen susceptibility can drive monstrous socioeconomic institutions like race-based chattel slavery.",
+    "verbatim_quote": "“Yellow fever and malaria were the economic midwives of the African slave trade. Because Africans survived the mosquito's bite while Europeans and Native Americans died by the thousands, planters institutionalized racial slavery on purely epidemiological grounds.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-09-the-darien-scheme-creation-of-britain",
+    "unit_number": 9,
+    "title": "The Darien Disaster: How the Mosquito Created the United Kingdom",
+    "book_part": "Part IV: The Atlantic World & Colonial Expansion",
+    "chapters": "Chapter 10",
+    "primary_entities": [
+      "William Paterson",
+      "The Darien Scheme",
+      "Kingdom of Scotland",
+      "Act of Union 1707",
+      "Panama Isthmus"
+    ],
+    "historical_era": "1698–1707; Gulf of Darien, Panama, and Edinburgh, Scotland.",
+    "core_thesis": "The total destruction of Scotland's colonial empire in Panama by malaria and yellow fever bankrupted the Scottish nation, directly forcing the 1707 Act of Union that created Great Britain.",
+    "key_arguments": [
+      "In 1698, Scotland invested roughly 25% to 50% of all liquid Scottish capital in the Darien Scheme—an ambitious expedition led by William Paterson to establish a trading colony on the Isthmus of Panama connecting the Atlantic and Pacific.",
+      "Over 2,500 Scottish settlers and soldiers sailed to Darien (New Caledonia); within nine months, relentless swarms of *Anopheles* and *Aedes* mosquitoes unleashed catastrophic epidemics of yellow fever and malaria.",
+      "Settlers died at a rate of 10 to 12 people per day; open pit graves overflowed; of the original 2,500 colonists, fewer than 300 survived to return home.",
+      "The financial collapse left Scotland bankrupt and facing economic ruin; England agreed to pay off the entire Darien debt (the 'Equivalent' of £398,000) on the strict condition that Scotland surrender its sovereignty and merge parliaments under the Act of Union in 1707."
+    ],
+    "operational_takeaways": "A single failed expedition against mosquito ecology can dissolve a sovereign kingdom's political independence.",
+    "verbatim_quote": "“The mosquito bankrupt Scotland and gave birth to Great Britain. Had the Scots survived the swamps of Darien, there would be no United Kingdom today.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-10-the-seven-years-war-and-caribbean-crucible",
+    "unit_number": 10,
+    "title": "The Crucible of Disease: Colonial Wars and the Siege of Havana",
+    "book_part": "Part V: Global Imperial Warfare",
+    "chapters": "Chapter 11",
+    "primary_entities": [
+      "The Seven Years' War (French and Indian War)",
+      "Siege of Havana (1762)",
+      "Lord Albemarle",
+      "The Caribbee Islands"
+    ],
+    "historical_era": "1754–1763; North America and the West Indies.",
+    "core_thesis": "The outcome of the Seven Years' War and the redistribution of global colonial empires was dictated by tropical disease tolls that dwarfed combat casualties by ten to one.",
+    "key_arguments": [
+      "In the North American theater, mosquito-borne fevers in the Ohio Valley and upstate New York marshes routinely decimated British and French expeditionary columns.",
+      "The climax of the imperial conflict occurred at the Siege of Havana in 1762: Britain deployed an armada of 200 ships and 14,000 soldiers to seize Spain's Caribbean fortress.",
+      "While Spanish cannon fire killed only 560 British soldiers, yellow fever and malaria incapacitated over 10,000 men; Lord Albemarle lost 5,000 soldiers to disease within weeks.",
+      "The catastrophic fever toll forced Britain to return Havana and Manila to Spain at the 1763 Treaty of Paris in exchange for Florida, reshaping North American borders."
+    ],
+    "operational_takeaways": "Siege warfare in the humid tropics is a race against the seasonal emergence of mosquito-borne epidemics.",
+    "verbatim_quote": "“At Havana in 1762, the British army lost 560 men to Spanish bullets and over 5,000 to the mosquito. She dictated the terms of the Treaty of Paris and the redrawing of the world map.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-11-unalienable-bites-the-american-revolution",
+    "unit_number": 11,
+    "title": "Unalienable Bites: General Cornwallis and the Surrender at Yorktown",
+    "book_part": "Part V: Global Imperial Warfare",
+    "chapters": "Chapter 12",
+    "primary_entities": [
+      "George Washington",
+      "General Charles Cornwallis",
+      "Nathanael Greene",
+      "Yorktown, Virginia",
+      "Cinchona Bark (Quinine)"
+    ],
+    "historical_era": "American Revolutionary War (1775–1781); The Southern Campaign.",
+    "core_thesis": "The American Revolution was won in the South because local Continental troops possessed acquired childhood immunity to malaria, whereas British and Hessian troops were incapacitated by *falciparum* fevers, forcing Cornwallis into the Yorktown trap.",
+    "key_arguments": [
+      "When the Northern war reached a stalemate, the British launched their 'Southern Strategy' in 1778, invading Georgia and the Carolinas.",
+      "General Nathanael Greene intentionally led Cornwallis's army on a grueling chase through the malarial Carolina lowcountry swamps during the sweltering summer months.",
+      "Southern American partisans (like Francis Marion, the 'Swamp Fox') were 'seasoned' veterans who suffered mild relapses, whereas raw British regulars and German Hessians lacked immunity and quickly collapsed from raging fevers.",
+      "By the summer of 1781, Cornwallis's army was reduced to an invalid ward: over 50% of his men were unfit for duty, and British quinine supplies (cinchona bark) were exhausted.",
+      "Cornwallis retreated to Yorktown on the Chesapeake Bay to seek naval evacuation; trapped by the French fleet and Washington's army, Cornwallis surrendered on October 19, 1781, with more than half his soldiers hospitalized with malaria."
+    ],
+    "operational_takeaways": "A commanding general who utilizes endemic disease ecology as an active tactical weapon can defeat a technologically superior expeditionary force.",
+    "verbatim_quote": "“General Cornwallis surrendered at Yorktown not merely to George Washington and Rochambeau, but to General Anopheles. Over half the British garrison was incapacitated by malaria when the white flag was raised.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-12-haitian-revolution-and-yellow-fever",
+    "unit_number": 12,
+    "title": "Mercenary Mosquitoes: The Haitian Revolution & The Louisiana Purchase",
+    "book_part": "Part V: Global Imperial Warfare",
+    "chapters": "Chapter 13",
+    "primary_entities": [
+      "Toussaint Louverture",
+      "Napoleon Bonaparte",
+      "General Charles Leclerc",
+      "Yellow Fever",
+      "Thomas Jefferson"
+    ],
+    "historical_era": "1791–1804; Saint-Domingue (Haiti) and Paris.",
+    "core_thesis": "The successful birth of Haiti as the world's first independent Black republic and Napoleon's sale of the Louisiana Territory were achieved by yellow fever obliterating the finest army in Napoleonic France.",
+    "key_arguments": [
+      "In 1801, Napoleon dispatched 50,000 elite veterans under his brother-in-law General Charles Leclerc to crush the Haitian slave revolution led by Toussaint Louverture and re-establish slavery.",
+      "Toussaint understood the biological arithmetic: 'Wait for the rainy season; the whites will not be able to hold out long against our climate.'",
+      "When summer arrived in 1802, *Aedes aegypti* mosquitoes infected the French army with yellow fever; soldiers died by the hundreds of the 'black vomit' (vomito negro).",
+      "Out of 50,000 French soldiers and sailors, over 40,000 died of yellow fever, including General Leclerc himself; barely 3,000 broken survivors returned to France.",
+      "Shattered by the loss of his army and recognizing that his dream of a French American empire was destroyed by disease, Napoleon sold Louisiana (828,000 square miles) to Thomas Jefferson for $15 million in 1803, doubling the size of the United States overnight."
+    ],
+    "operational_takeaways": "The mosquito destroyed Napoleon's Western Hemispheric ambitions and created both the Republic of Haiti and the continental United States.",
+    "verbatim_quote": "“Yellow fever was the true general of the Haitian Revolution. Napoleon's grand army was devoured by the mosquito, and in his despair, he sold Louisiana to the United States for three cents an acre.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-13-the-american-civil-war-and-malaria",
+    "unit_number": 13,
+    "title": "Sinister Angels of Our Nature: Malaria in the American Civil War",
+    "book_part": "Part VI: Modern Warfare and the Scientific Revolution",
+    "chapters": "Chapters 14 & 15",
+    "primary_entities": [
+      "The Union Army",
+      "The Confederate Army",
+      "General Ulysses S. Grant",
+      "Quinine Shortages",
+      "Chicamauga & Vicksburg"
+    ],
+    "historical_era": "1861–1865; The American South.",
+    "core_thesis": "The Civil War was the deadliest conflict in American history primarily because of disease: of the 750,000 deaths, two-thirds died of disease rather than bullets, with malaria and dysentery operating as permanent shadow armies.",
+    "key_arguments": [
+      "There were more than 1.3 million cases of malaria treated in the Union army alone, with over a quarter of all Union troops contracting the fever each year.",
+      "The Union possessed a decisive chemical advantage: the Northern naval blockade cut off the Confederacy from imported European quinine, while Union soldiers received daily prophylactic rations of quinine dissolved in whiskey.",
+      "Confederate forces were severely crippled by lack of quinine, turning to ineffective folk remedies (dogwood bark, willow bark) and suffering immense disability at Vicksburg, Shiloh, and Chickamauga.",
+      "Grant's successful siege of Vicksburg in 1863 was fought in mosquito-infested bayous where Union sanitation and quinine distribution kept troops functional while the besieged Confederates starved and burned with fever."
+    ],
+    "operational_takeaways": "Pharmaceutical supply chain control (specifically antimalarials) is as vital to military victory as munitions and artillery.",
+    "verbatim_quote": "“In the Civil War, for every soldier killed by battle wounds, two died of disease. The real fight was not between Blue and Gray, but between both armies and the mosquito.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-14-unmasking-the-vector-panama-canal",
+    "unit_number": 14,
+    "title": "Unmasking the Vector: Ronald Ross, Walter Reed, and the Panama Canal",
+    "book_part": "Part VI: Modern Warfare and the Scientific Revolution",
+    "chapters": "Chapter 16",
+    "primary_entities": [
+      "Ronald Ross",
+      "Giovanni Battista Grassi",
+      "Walter Reed",
+      "William Crawford Gorgas",
+      "Ferdinand de Lesseps"
+    ],
+    "historical_era": "1880–1914; India, Cuba, and the Panama Canal Zone.",
+    "core_thesis": "The scientific identification of the mosquito as the disease vector by Ross and Reed unlocked the medical conquest of yellow fever and malaria, making the construction of the Panama Canal possible after French failure.",
+    "key_arguments": [
+      "For millennia, humanity believed fevers were caused by 'miasma' (noxious swamp air); in 1880, Alphonse Laveran discovered the *Plasmodium* parasite in human blood.",
+      "On August 20, 1897 ('Mosquito Day'), British army surgeon Ronald Ross in Secunderabad, India, proved that *Anopheles* mosquitoes transmit malaria by dissecting mosquitoes that had fed on infected patients.",
+      "In Cuba in 1900, the U.S. Army Yellow Fever Commission led by Major Walter Reed proved Carlos Finlay's hypothesis that *Aedes aegypti* transmits yellow fever through controlled human experiments (resulting in the death of Dr. Jesse Lazear).",
+      "Armed with this knowledge, Dr. William Crawford Gorgas launched a monumental vector eradication campaign in Panama (fumigation, oiling water, screening buildings); Ferdinand de Lesseps's French effort had failed with 22,000 deaths, but Gorgas eliminated yellow fever, allowing the Americans to complete the Panama Canal in 1914."
+    ],
+    "operational_takeaways": "Targeted ecological vector eradication is vastly more effective than attempting to treat infected patients post-transmission.",
+    "verbatim_quote": "“‘This day relenting God / Hath placed within my hand / A wondrous thing...’ wrote Ronald Ross on the day he discovered malaria in the mosquito. Within fifteen years, Walter Reed and William Gorgas used that discovery to conquer the Panama Canal.”",
+    "epistemic_status": "SCIENTIFIC FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-15-the-chemical-war-ddt-and-silent-spring",
+    "unit_number": 15,
+    "title": "The Chemical War: DDT, Paul Müller, and Rachel Carson's Warning",
+    "book_part": "Part VII: The Modern Age & The Genetic Horizon",
+    "chapters": "Chapters 17 & 18",
+    "primary_entities": [
+      "Paul Müller",
+      "DDT (Dichloro-diphenyl-trichloroethane)",
+      "Rachel Carson (*Silent Spring*)",
+      "WHO Global Eradication Campaign",
+      "Superbugs"
+    ],
+    "historical_era": "1939–1972; World War II, Postwar eradication campaigns, and the Environmental Movement.",
+    "core_thesis": "The mid-20th-century chemical war against the mosquito with DDT achieved unprecedented public health victories, but triggered environmental ecological collapse and rapid genetic resistance in mosquitoes.",
+    "key_arguments": [
+      "Swiss chemist Paul Müller discovered DDT's insecticidal power in 1939 (earning the 1948 Nobel Prize); DDT saved millions of Allied soldiers from malaria and typhus in WWII.",
+      "In 1955, the World Health Organization launched the Global Malaria Eradication Campaign, spraying thousands of tons of DDT across continents; malaria was eliminated in Southern Europe and the United States.",
+      "However, mosquitoes rapidly evolved biological resistance through metabolic detoxification and nerve sensitivity mutations, producing chemical-resistant 'superbugs'.",
+      "In 1962, Rachel Carson published *Silent Spring*, exposing DDT's biomagnification in food chains, avian eggshell thinning, and persistence in ecosystems, leading to the 1972 U.S. ban on DDT.",
+      "The withdrawal of residual spraying and the emergence of drug-resistant *Plasmodium* strains caused a massive global resurgence of malaria in the 1970s and 1980s."
+    ],
+    "operational_takeaways": "Total chemical eradication campaigns create massive selective pressure that rapidly drives evolutionary resistance while inflicting collateral ecological damage.",
+    "verbatim_quote": "“DDT was hailed as the silver bullet that would wipe the mosquito from the face of the earth. But nature cannot be conquered so easily; the mosquito evolved resistance, and Carson showed us that our chemical weapons were poisoning the planet.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-16-the-genetic-future-crispr-and-extinction",
+    "unit_number": 16,
+    "title": "The Genetic Frontier: Gene Drives, CRISPR, and the Ethics of Extinction",
+    "book_part": "Part VII: The Modern Age & The Genetic Horizon",
+    "chapters": "Chapter 19 & Conclusion",
+    "primary_entities": [
+      "CRISPR-Cas9",
+      "Gene Drives",
+      "Wolbachia",
+      "Oxitec Genetically Modified Mosquitoes",
+      "Ecological Consequences"
+    ],
+    "historical_era": "21st Century; The threshold of synthetic biology.",
+    "core_thesis": "Humanity stands at the threshold of acquiring the ultimate weapon: using CRISPR synthetic gene drives to force the complete biological extinction of disease-transmitting mosquito species, posing unprecedented ecological and ethical dilemmas.",
+    "key_arguments": [
+      "Despite modern medicine, mosquitoes still kill over 800,000 people annually, mostly infants and pregnant women in Sub-Saharan Africa, and infect over 200 million.",
+      "Modern biotechnology has created radical alternatives: *Wolbachia* bacteria infections that block dengue replication, sterile male releases by Oxitec, and CRISPR-Cas9 **gene drives**.",
+      "A gene drive bypasses standard Mendelian inheritance, ensuring an engineered mutation (such as female sterility) is passed to 100% of offspring, capable of driving an entire species to extinction in the wild within 15 to 20 generations.",
+      "The dilemma: Out of 3,500 mosquito species, only roughly 100 bite and harm humans; yet wiping out even target species could disrupt pollination, aquatic food webs, and food supplies for migratory birds and bats.",
+      "Winegard concludes: We have fought an unending 200,000-year war against our deadliest predator; for the first time in history, we possess the power to annihilate her—if we dare to pull the genetic trigger."
+    ],
+    "operational_takeaways": "Synthetic gene editing represents the irreversible transition from defensive containment to offensive genetic annihilation of biological vectors.",
+    "verbatim_quote": "“For two hundred thousand years, the mosquito has hunted us. Today, humanity holds the power of genetic extinction in its hands. Whether we should use it to eliminate our deadliest enemy is the ultimate bioethical question of the twenty-first century.”",
+    "epistemic_status": "SCIENTIFIC & ETHICAL FACT",
+    "materiality": "CRITICAL"
+  }
+]

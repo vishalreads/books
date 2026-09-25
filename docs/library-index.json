@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 25,
-  "total_hours_saved": 482.5,
+  "total_books": 26,
+  "total_hours_saved": 497.5,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1066,6 +1066,52 @@
       ],
       "html_path": "distillations/the-metaphysical-club/index.html",
       "markdown_path": "distillations/the-metaphysical-club/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "the-mosquito",
+      "title": "The Mosquito",
+      "subtitle": "A Human History of Our Deadliest Predator: How a Winged Microscopic Assassin Decided the Rise and Fall of Empires, Shaped the Human Genome, and Dictated World History",
+      "author": "Timothy C. Winegard",
+      "year": 2019,
+      "publisher": "Dutton / Penguin Random House / Intellectualist Ecological History Series",
+      "epistemic_tier": "Tier 1: Master Environmental & Epidemiological History",
+      "tier_short": "Tier 1",
+      "category": "Systems Thinking & Complex Systems",
+      "original_volume": "19 Chapters across 7 Parts Synthesized into 16 Invariant Units",
+      "reading_time_saved": "15.0 hrs saved",
+      "hours_val": 15.0,
+      "core_axiom": "The mosquito has dispatched an estimated 52 billion people from a total of 108 billion throughout our relatively brief 200,000-year existence. She is our deadliest predator, the apex hunter of human beings.",
+      "tags": [
+        "Timothy C Winegard",
+        "The Mosquito",
+        "Malaria",
+        "Yellow Fever",
+        "Epidemiology",
+        "Genetics",
+        "Sickle Cell",
+        "Evolutionary Biology",
+        "Military History",
+        "CRISPR",
+        "Gene Drives"
+      ],
+      "key_models": [
+        "The 52 Billion Mortality Axiom (Mosquito as Apex Human Predator)",
+        "The Asymmetric Biological Shield (Differential Immunity & Seasoning)",
+        "Malarial Genomic Selection (Sickle Cell Trait, Duffy Negativity, Thalassemia)",
+        "Vector Warfare Deciders (Alexander, Rome, Yorktown, Haiti, Civil War)",
+        "The Epidemiological Economics of Racial Slavery",
+        "The Synthetic Extinction Frontier (CRISPR Gene Drives & Ecological Bioethics)"
+      ],
+      "landmark_studies": [
+        "The Pontine Marshes & Alaric/Attila Roman Invasion Failures",
+        "The 1698 Scottish Darien Scheme Catastrophe & Act of Union 1707",
+        "The 1781 Yorktown Surrender & Cornwallis's Malarial Garrison",
+        "The 1802 Haitian Annihilation of Leclerc's Napoleonic Army",
+        "Ronald Ross 1897 Mosquito Day & Gorgas Panama Canal Eradication"
+      ],
+      "html_path": "distillations/the-mosquito/index.html",
+      "markdown_path": "distillations/the-mosquito/master-notes.md",
       "featured": true
     }
   ]
