@@ -16,6 +16,7 @@ desktop.ini
 scratch/
 scratch_*
 *.tmp
+docs/distillations/**/extracted/
 caption_*
 raw_caption_*
 youtube_transcript_*
