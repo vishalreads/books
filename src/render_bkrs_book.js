@@ -59,30 +59,44 @@ function renderBookMaster(bookSlug) {
 
   // Build Sidebar Navigation List
   let navItemsHtml = '';
-  model.chapters.forEach(ch => {
-    const unitCount = ch.units ? ch.units.length : (ch.scenes ? ch.scenes.length : 0);
-    let chTag = '';
-    if (isHistorical) {
-      if (ch.chapter_key.includes('epigraph')) chTag = 'Epi';
-      else if (ch.chapter_key.includes('prologue')) chTag = 'Pro';
-      else if (ch.chapter_number === 56 || ch.chapter_key.includes('appendix')) chTag = 'App';
-      else chTag = 'Ch ' + ch.chapter_number;
-    } else {
-      chTag = ch.chapter_number === 0 ? 'Intro' : (ch.chapter_number === 21 && isNonfiction ? 'Post' : 'Ch ' + ch.chapter_number);
-    }
+  if (isHistorical) {
+    const { BHAGAT_SINGH_PARTS } = require('./bkrs/bhagat_singh_narrative');
+    BHAGAT_SINGH_PARTS.forEach((part, idx) => {
+      let chTag = '';
+      if (part.partKey === 'prologue') chTag = 'Pro';
+      else if (part.partKey === 'appendix') chTag = 'App';
+      else chTag = `P${idx}`;
 
-    const anchorId = isHistorical ? `section-${ch.chapter_key}` : `chapter-${ch.chapter_number}`;
+      const anchorId = `section-${part.partKey}`;
+      const unitCount = part.units.length;
 
-    navItemsHtml += `
-      <div class="nav-chapter-item">
-        <a href="#${anchorId}" class="nav-chapter-link" onclick="handleNavClick(event, '${anchorId}')">
-          <span class="nav-ch-num">${chTag}</span>
-          <span class="nav-ch-title">${escapeHtml(ch.chapter_title)}</span>
-          <span class="nav-ch-count">${unitCount}</span>
-        </a>
-      </div>
-    `;
-  });
+      navItemsHtml += `
+        <div class="nav-chapter-item">
+          <a href="#${anchorId}" class="nav-chapter-link" onclick="handleNavClick(event, '${anchorId}')">
+            <span class="nav-ch-num">${chTag}</span>
+            <span class="nav-ch-title">${escapeHtml(part.partTag)} • ${escapeHtml(part.title)}</span>
+            <span class="nav-ch-count">${unitCount}</span>
+          </a>
+        </div>
+      `;
+    });
+  } else {
+    model.chapters.forEach(ch => {
+      const unitCount = ch.units ? ch.units.length : (ch.scenes ? ch.scenes.length : 0);
+      const chTag = ch.chapter_number === 0 ? 'Intro' : (ch.chapter_number === 21 && isNonfiction ? 'Post' : 'Ch ' + ch.chapter_number);
+      const anchorId = `chapter-${ch.chapter_number}`;
+
+      navItemsHtml += `
+        <div class="nav-chapter-item">
+          <a href="#${anchorId}" class="nav-chapter-link" onclick="handleNavClick(event, '${anchorId}')">
+            <span class="nav-ch-num">${chTag}</span>
+            <span class="nav-ch-title">${escapeHtml(ch.chapter_title)}</span>
+            <span class="nav-ch-count">${unitCount}</span>
+          </a>
+        </div>
+      `;
+    });
+  }
 
   // Build View B & View C Contextual Navigation Lists
   let viewBNavHtml = '';

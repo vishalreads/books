@@ -6,6 +6,8 @@
  * directly from canonical knowledge-units.json with zero external prose authoring.
  */
 
+const { BHAGAT_SINGH_PARTS, BHAGAT_SINGH_PROSE } = require('./bhagat_singh_narrative');
+
 function escapeHtml(str) {
   if (!str) return '';
   return String(str)
@@ -225,16 +227,22 @@ function renderHistoricalViews(model) {
     </style>
   `;
 
-  chapters.forEach(ch => {
+  const unitMap = new Map();
+  units.forEach(u => unitMap.set(u.unit_id, u));
+
+  BHAGAT_SINGH_PARTS.forEach(part => {
     journeyHtml += `
-      <section class="chapter-block-historical" id="section-${ch.chapter_key}">
+      <section class="chapter-block-historical" id="section-${part.partKey}">
         <header class="chapter-header-historical">
-          <span class="chapter-kicker-historical">${escapeHtml(ch.part || 'Chronological Sequence')}</span>
-          <h2 class="chapter-title-historical">${escapeHtml(ch.chapter_title)}</h2>
+          <span class="chapter-kicker-historical">${escapeHtml(part.partTag)}</span>
+          <h2 class="chapter-title-historical">${escapeHtml(part.title)}</h2>
         </header>
     `;
 
-    ch.units.forEach(unit => {
+    part.units.forEach(unitId => {
+      const unit = unitMap.get(unitId);
+      if (!unit) return;
+
       const epClass = getEpistemicBadgeClass(unit.epistemic_status);
       const epLabel = (unit.epistemic_status || 'SOURCE FACT').replace(/_/g, ' ');
       const matClass = `badge-${unit.materiality || 'important'}`;
@@ -243,8 +251,11 @@ function renderHistoricalViews(model) {
       const payload = unit.genre_specific_payload || {};
       const isDocument = unit.unit_type === 'DOCUMENT_UNIT';
 
+      const proseList = BHAGAT_SINGH_PROSE[unit.unit_id] || [unit.summary_statement];
+
       journeyHtml += `
         <article class="narrative-segment-historical" id="${unit.unit_id}">
+          ${loc.chapter_key ? `<span id="section-${loc.chapter_key}" style="display:none;"></span>` : ''}
           <header class="narrative-segment-header">
             <h3 class="narrative-heading-historical">${escapeHtml(unit.title)}</h3>
             <div class="narrative-meta-historical">
@@ -254,7 +265,7 @@ function renderHistoricalViews(model) {
 
           <!-- Primary Narrative Stream -->
           <div class="narrative-prose-historical">
-            <p>${escapeHtml(unit.summary_statement)}</p>
+            ${proseList.map(p => `<p>${escapeHtml(p)}</p>`).join('\n')}
           </div>
 
           <!-- Document Exhibit Presentation (if Document Unit / Archival Plate) -->
