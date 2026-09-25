@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajahn Dtun: Autobiography & Dhamma Teachings | BKRS Master Reader</title>
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #ffffff;
+      --bg-card-subtle: #f6f3eb;
+      --border-color: #e4dfd3;
+      --border-highlight: #c9bfab;
+      --text-main: #23201c;
+      --text-muted: #5e584f;
+      --text-subtle: #8a8275;
+      --accent-crimson: #85221c;
+      --accent-ochre: #b36b28;
+      --accent-gold: #b38628;
+      --accent-forest: #234e38;
+      --font-serif: "EB Garamond", Georgia, serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: "Cinzel", Georgia, serif;
+      --font-mono: "JetBrains Mono", monospace;
+      --shadow-sm: 0 1px 3px rgba(35, 32, 28, 0.05);
+      --shadow-md: 0 4px 12px rgba(35, 32, 28, 0.08);
+      --shadow-lg: 0 12px 32px rgba(35, 32, 28, 0.12);
+    }
+
+    body.dark-mode {
+      --bg-canvas: #121316;
+      --bg-card: #1a1c22;
+      --bg-card-subtle: #21242d;
+      --border-color: #2e323e;
+      --border-highlight: #454b5d;
+      --text-main: #e6e3dd;
+      --text-muted: #a6a095;
+      --text-subtle: #757067;
+      --accent-crimson: #d45952;
+      --accent-ochre: #d48b4d;
+      --accent-gold: #d4a94d;
+      --accent-forest: #519b73;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    body.sepia-mode {
+      --bg-canvas: #f3ecdb;
+      --bg-card: #fbf5e8;
+      --bg-card-subtle: #ede3cc;
+      --border-color: #dcd0b7;
+      --border-highlight: #c2b192;
+      --text-main: #2f271f;
+      --text-muted: #665747;
+      --text-subtle: #8c7b67;
+      --accent-crimson: #80231d;
+      --accent-ochre: #995c21;
+      --accent-gold: #9e711d;
+      --accent-forest: #2a523a;
+    }
+
+    body.serif-font { --font-body: var(--font-serif); }
+    body:not(.serif-font) { --font-body: var(--font-sans); }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 1.05rem;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-canvas);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(8px);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .brand-logo-img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--accent-crimson);
+    }
+    .reader-title-badge {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-subtle);
+      border-left: 1px solid var(--border-color);
+      padding-left: 14px;
+      font-family: var(--font-sans);
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-ctrl {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .btn-ctrl:hover {
+      border-color: var(--border-highlight);
+      background: var(--bg-card-subtle);
+    }
+
+    .hero-banner {
+      padding: 64px 24px 44px;
+      max-width: 1040px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .meta-badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .badge-pill {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-muted);
+    }
+    .badge-ochre {
+      border-color: var(--accent-ochre);
+      color: var(--accent-ochre);
+      background: rgba(179, 107, 40, 0.08);
+    }
+    .badge-gold {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+      background: rgba(179, 134, 40, 0.08);
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.15;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+    .hero-subtitle {
+      font-family: var(--font-serif);
+      font-size: 1.32rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      max-width: 840px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-author {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-subtle);
+      margin-bottom: 32px;
+    }
+    .hero-axiom {
+      background: var(--bg-card);
+      border-left: 4px solid var(--accent-ochre);
+      border-top: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px 28px;
+      max-width: 800px;
+      margin: 0 auto 36px;
+      text-align: left;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-axiom-title {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 800;
+      color: var(--accent-ochre);
+      margin-bottom: 6px;
+    }
+    .hero-axiom-quote {
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      line-height: 1.6;
+      font-style: italic;
+      color: var(--text-main);
+    }
+
+    .view-navigation {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 16px;
+      max-width: 1040px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .tab-btn:hover {
+      color: var(--text-main);
+      background: var(--bg-card-subtle);
+    }
+    .tab-btn.active {
+      color: var(--accent-ochre);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .main-container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      flex: 1;
+    }
+
+    .view-panel { display: none; }
+    .view-panel.active { display: block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .unit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .unit-num-badge {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-ochre);
+      background: rgba(179, 107, 40, 0.08);
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .unit-title {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+    .unit-meta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+      font-size: 0.88rem;
+      color: var(--text-subtle);
+    }
+    .char-tag {
+      font-family: var(--font-sans);
+      font-size: 0.74rem;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: var(--text-muted);
+    }
+    .unit-thesis {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .arguments-list {
+      margin-bottom: 24px;
+      padding-left: 20px;
+      font-size: 0.96rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+    .arguments-list li { margin-bottom: 8px; }
+    .quote-box {
+      background: var(--bg-canvas);
+      border-left: 3px solid var(--accent-gold);
+      border-radius: 0 6px 6px 0;
+      padding: 16px 20px;
+      margin-top: 16px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.06rem;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    .matrix-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .matrix-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .matrix-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      text-align: left;
+    }
+    .styled-table th {
+      background: var(--bg-card-subtle);
+      padding: 12px 14px;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-ochre);
+      border-bottom: 2px solid var(--border-color);
+    }
+    .styled-table td {
+      padding: 14px;
+      border-bottom: 1px solid var(--border-color);
+      line-height: 1.6;
+      color: var(--text-main);
+      vertical-align: top;
+    }
+    .styled-table tr:last-child td { border-bottom: none; }
+
+    .engine-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 36px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .engine-title {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent-ochre);
+      margin-bottom: 14px;
+    }
+    .engine-prose {
+      font-size: 1.04rem;
+      line-height: 1.8;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-subtle);
+      margin-top: auto;
+    }
+    footer a { color: var(--accent-ochre); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body class="serif-font">
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="../../index.html" class="brand-mark">
+        <img src="../../assets/images/logo.png" alt="Intellectualist Pantheon Logo" class="brand-logo-img">
+        <span class="brand-title">INTELLECTUALIST</span>
+      </a>
+      <span class="reader-title-badge">BKRS Total Replacement Codex</span>
+    </div>
+    <div class="topbar-right">
+      <button class="btn-ctrl" id="theme-btn" title="Toggle Theme">
+        <span id="theme-icon">◐</span>
+        <span id="theme-text">Theme</span>
+      </button>
+      <button class="btn-ctrl" id="font-btn" title="Toggle Font">
+        <span>Aa</span>
+        <span id="font-text">Sans</span>
+      </button>
+      <a href="master-notes.md" class="btn-ctrl" title="View Raw Markdown Master Notes">
+        <span>↓</span>
+        <span>Markdown</span>
+      </a>
+      <a href="../../index.html" class="btn-ctrl">
+        <span>← Library</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="meta-badges">
+      <span class="badge-pill badge-ochre">Tier 1: Master Theravada Spiritual Autobiography & Kammatthana</span>
+      <span class="badge-pill badge-gold">19 Chapters &bull; 16 Invariant Units</span>
+      <span class="badge-pill">Thai Forest Tradition Benchmark</span>
+    </div>
+    <h1 class="hero-title">Autobiography & Dhamma Teachings</h1>
+    <p class="hero-subtitle">The Direct Realization of Nibbāna: From Secular Disenchantment to Forest Wandering, the Crucible of Asubha, and the Founding of Wat Boonyawad</p>
+    <div class="hero-author">Luang Por Akaradej Thiracitto Bhikkhu (Ajahn Dtun) &bull; Wat Boonyawad (2020)</div>
+
+    <div class="hero-axiom">
+      <div class="hero-axiom-title">The Master Kammatthana Axiom</div>
+      <div class="hero-axiom-quote">“The Dhamma is real. The Buddha’s path works today just as it worked twenty-six hundred years ago. If you practice sincerely, if you give your life to virtue, concentration, and wisdom, the heart will touch the Deathless.” — Ajahn Dtun</div>
+    </div>
+
+    <nav class="view-navigation">
+      <button class="tab-btn active" data-view="view-a">
+        <span>View A: Monastic Journey (16 Units)</span>
+      </button>
+      <button class="tab-btn" data-view="view-b">
+        <span>View B: The Ten Perfections Matrix</span>
+      </button>
+      <button class="tab-btn" data-view="view-c">
+        <span>View C: Contemplative Engines & Asubha</span>
+      </button>
+    </nav>
+  </section>
+
+  <main class="main-container">
+
+    <!-- VIEW A: MONASTIC JOURNEY -->
+    <div class="view-panel active" id="view-a">
+      
+      <article class="unit-card" id="unit-01-lay-life-disenchantment">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 01</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part I: The Path to Renunciation &bull; My Lay Life (pp. 5–37)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">MEMOIR RECOLLECTION &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">The Lay Life & The Awakening of Spiritual Disenchantment</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun (Akaradej), His Father (Civil Servant), His Mother, Luang Ta Mahā Boowa, Luang Por Chah</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Ayutthaya and Bangkok, Thailand; 1950s–1970s; youth, university education, business career.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Genuine monastic renunciation begins not from escapism or failure, but from deep, clear-eyed disenchantment (nibbidā): realizing that worldly wealth, sensual pleasures, romantic love, and social status are inherently transient, stressful, and incapable of satisfying the heart.</p>
+
+        <ul class="arguments-list">
+          <li>Born in Ayutthaya into an upright civil service family, young Dtun was raised with strict moral values, honesty, and respect for elders.</li><li>As a young man in Bangkok, he achieved secular success: graduating in economics, working as a successful trader, earning money, and enjoying worldly social life.</li><li>Despite possessing everything society deemed desirable (money, friends, romantic prospects), he experienced profound existential emptiness: observing the aging, sickness, and death around him, he recognized that all worldly pursuits end in grief.</li><li>He committed himself to serious lay practice: taking the Five Precepts, waking at 3:00 a.m. to meditate, and investigating the foulness of the physical body (asubha).</li><li>Shown photographs of Thailand's greatest forest masters—Luang Ta Mahā Boowa and Luang Por Chah—he felt an immediate, magnetic resonance of faith (saddhā), resolving to abandon the secular world forever.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Worldly achievements cannot extinguish spiritual thirst; disenchantment (nibbidā) is the indispensable prerequisite for authentic renunciation.
+        </div>
+
+        <div class="quote-box">
+          “I saw with total clarity that whether rich or poor, high or low, everyone must grow old, fall sick, and die. If I continued chasing worldly wealth, I would die empty-handed. The only real refuge in this universe is the Dhamma.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-02-ordination-wat-pah-pong">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 02</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part I: The Path to Renunciation &bull; My Practice as a Samaṇa & Life Under the Protection of the Ochre Robe (pp. 38–42)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">SOURCE FACT &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">Taking the Ochre Robe: Ordination Under Luang Por Chah</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun (Thiracitto), Venerable Luang Por Chah, Monastic Sangha of Wat Nong Pah Pong</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Wat Nong Pah Pong, Ubon Ratchathani, Northeast Thailand; July 1978.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Monastic ordination is not a ceremonial promotion, but the conscious surrender of personal ego: stepping into the austere crucible of the Vinaya discipline where every habit of comfort is systematically dismantled.</p>
+
+        <ul class="arguments-list">
+          <li>In 1978, Dtun traveled to the remote forests of Ubon Ratchathani to ordain under the great meditation master Luang Por Chah.</li><li>Luang Por Chah gave him the monastic name *Thiracitto*—'One whose mind is steadfast and firm in Dhamma.'</li><li>Life at Wat Pah Pong was uncompromisingly rigorous: one meal a day eaten from a single almsbowl, sleeping on a wooden mat on the floor of a solitary forest hut (kuti), drinking water filtered by hand, sweeping leaf-strewn paths, and enduring intense tropical heat.</li><li>Luang Por Chah taught through direct, practical pressure: testing disciples' patience, deflating intellectual pride, and demanding unbroken mindfulness in all postures (walking, standing, sitting, lying down).</li><li>Ajahn Dtun realized that the Vinaya rules were not arbitrary restrictions, but protective boundaries designed to starve the defilements of craving and aversion.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Strict monastic discipline and simplicity of life starve the roots of craving and create the mental quietude required for deep samādhi.
+        </div>
+
+        <div class="quote-box">
+          “Luang Por Chah told us: ‘Don’t look outside; look within your own heart. When defilements arise, watch them, understand them, and don’t follow them.’ The robe is a shield of purity, but you must fight your own battles.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-03-first-rains-conquering-sensual-desire">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 03</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part II: The Crucible of the Rains Retreats &bull; First Rains Retreat (pp. 43–78)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">DIRECT CONTEMPLATIVE REALIZATION &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">The First Rains: Confronting Lust & The Asubha Breakthrough</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, Luang Por Chah</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Wat Pah Pong & branch forest monasteries; Rains Retreat (Vassa) 1978.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Sensual desire (kāmacchanda) is the strongest biological glue binding consciousness to saṁsāra; it can only be uprooted through the relentless, clinical contemplation of the 32 foul parts of the body (asubha kammatthāna).</p>
+
+        <ul class="arguments-list">
+          <li>During his first Rains, intense memories of worldly romance, women, and sensual desires erupted in his mind like raging fires, threatening to drive him to disrobe.</li><li>Recognizing that sensual lust is rooted in the cognitive illusion of bodily beauty, Ajahn Dtun resolved to fight with all his life: he took up **asubha** meditation with ferocious intensity.</li><li>He stripped away the surface layer of skin in his mind's eye: examining muscles, fat, intestines, blood, bile, pus, feces, urine, bones, and rotting corpses in charnel grounds.</li><li>Whenever a mental image of an attractive woman arose, he mentally dissected the image into skull, exposed ribs, decaying organs, and foul odors until the mind was completely revolted and cooled.</li><li>One evening, deep in meditation, his perception shifted permanently: he saw that all human bodies are walking leather bags of filth and decaying bones. Sensual lust collapsed instantly, replaced by profound peace and unshakeable celibate clarity.</li><li>When he reported this breakthrough to Luang Por Chah, the master smiled and confirmed that he had severed the first great fetter.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Deconstruct the physical object of desire into its true anatomical components to destroy the projection of beauty and extinguish lust at its root.
+        </div>
+
+        <div class="quote-box">
+          “The mind projects beauty onto skin. Peel back that millimeter of skin, and what is left? Blood, yellow fat, greasy intestines, and foul liquid. When the heart truly sees asubha, lust has nowhere to stand. The fire simply goes out for lack of fuel.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-04-second-rains-torpor-all-night-vigil">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 04</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part II: The Crucible of the Rains Retreats &bull; Second Rains Retreat (pp. 79–92)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">DIRECT CONTEMPLATIVE REALIZATION &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">The Second Rains: Battling Torpor & The All-Night Pacing Vigil</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Forest monastery, Northeast Thailand; Rains Retreat 1979.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Sloth and torpor (thīna-middha) are subtle defilements that veil the radiant nature of the mind; they must be conquered through heroic physical exertion, standing and walking meditation, and refusal to yield to physical exhaustion.</p>
+
+        <ul class="arguments-list">
+          <li>In his second Rains, having conquered lust, Ajahn Dtun was attacked by crushing waves of sleepiness and spiritual lethargy (thīna-middha) whenever he sat to meditate.</li><li>Refusing to surrender to sleep, he adopted radical ascetic counter-measures (dhutaṅga practices): he abandoned his mosquito net, sat at the edge of deep ravines and wells where falling asleep meant physical death, and poured cold water over his head.</li><li>When sitting became impossible, he walked meditation (caṅkama) back and forth along a 30-pace dirt path all night long until the soles of his feet blistered and bled.</li><li>Through unbroken mindfulness on the sensation of lifting, placing, and stepping, his mind broke through the veil of lethargy: an intense, luminous, diamond-like brightness erupted in his heart.</li><li>He discovered that true rest does not come from unconscious sleep, but from the unshakeable stillness of **samādhi** where the mind remains fully awake, rested, and radiant through the night.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Physical discomfort and dynamic movement (walking meditation) are essential tools to shatter mental sluggishness and unlock the mind's intrinsic luminous wakefulness.
+        </div>
+
+        <div class="quote-box">
+          “Sleepiness is a deceiver. It tells you your body is weak and needs rest. But when you refuse to lay down and pace the meditation path all night under the stars, the cloud suddenly breaks, and you discover the heart possesses an inexhaustible, self-luminous energy.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-05-third-rains-boundless-metta-and-jhana">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 05</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part II: The Crucible of the Rains Retreats &bull; Third Rains Retreat (pp. 93–110)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">DIRECT CONTEMPLATIVE REALIZATION &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">The Third Rains: Boundless Mettā & The Absorption of Jhāna</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, His Brother, Local Villagers</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Samnak Vipassanā-chuan-puang-put, Baan Mee, Lopburi; Rains Retreat 1980.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> When virtue (sīla) is stainless and sensual craving is extinguished, loving-kindness (mettā) ceases to be a calculated mental recitation and becomes an infinite, overflowing cosmic radiation that dissolves all boundaries of self.</p>
+
+        <ul class="arguments-list">
+          <li>Residing at a quiet monastery in Lopburi, his meditation deepened into profound, effortless **jhāna** absorption: breathing grew subtle, mental chatter ceased entirely, and the mind settled into unshakable, tranquil stillness.</li><li>Emerging from absorption, an overwhelming, boundless wave of unconditional loving-kindness (mettā) surged through his heart, extending outward to encompass all living beings—friends, enemies, animals, spirits, and celestial beings—without limitation.</li><li>He saw that all beings wander in the ocean of saṁsāra tormented by the fires of greed, hatred, and delusion, generating immense compassion (karuṇā) and total forgiveness for all past grievances.</li><li>When his younger brother visited bringing books from his father, Ajahn Dtun realized that theoretical study was unnecessary: the reality of the Dhamma had become living knowledge within his own purified consciousness.</li><li>He began recording brief personal notes to preserve the precise map of contemplative practice for future seekers.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Pure loving-kindness is the natural fragrance of a concentrated, defilement-free mind; it protects the practitioner from all external hostility and animosity.
+        </div>
+
+        <div class="quote-box">
+          “The heart was imbued with a mettā that I cannot describe in words. It radiated in all ten directions like the morning sun. I looked at all beings in the world and felt only deep tenderness: everyone wants happiness, everyone fears pain. How could one ever harbor anger toward anyone?”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-06-fourth-fifth-rains-tudong-wilderness">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 06</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part III: Solitary Wilderness Wandering &bull; Fourth & Fifth Rains Retreats (pp. 111–125)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">MEMOIR RECOLLECTION &bull; IMPORTANT</span>
+        </div>
+
+        <h2 class="unit-title">The Forest Wanderer: Tudong Austerities, Wild Beasts, and Cobras</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, Forest Nomads, Wild Animals</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Remote jungles, mountain caves, and tiger habitats of central and northern Thailand; 1981–1982.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Living in the wild jungle under a simple umbrella-tent (glot) strips away the psychological delusion of physical security, forcing the mind to take refuge solely in mindfulness, death contemplation, and radical faith in kamma.</p>
+
+        <ul class="arguments-list">
+          <li>Undertaking the ancient ascetic practice of **tudong** (wandering monk), Ajahn Dtun walked barefoot across mountains and jungles, carrying only his bowl, three robes, water filter, and umbrella-glot with mosquito netting.</li><li>He intentionally sought out desolate, frightening locations—haunted cremation grounds, deep caves, and forests inhabited by wild elephants, cobras, and leopards.</li><li>Encountering venomous king cobras rearing up on his walking path, he did not run or strike; he stood motionless, radiated pure loving-kindness (mettā), and watched the serpent lower its hood and glide peacefully into the bamboo.</li><li>Facing the terrifying roar of wild tigers at night outside his thin mosquito net, he confronted the primal fear of death: *'If I have bad kamma with this tiger from past lives, let it take my flesh. If not, it cannot harm me. The body belongs to the earth anyway.'*</li><li>Surrendering fear of death converted terror into profound meditative absorption: the mind unified in absolute fearless equanimity.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Confronting physical mortality in the wilderness destroys subconscious attachment to the body and accelerates awakening.
+        </div>
+
+        <div class="quote-box">
+          “When the tiger roars in the dark, your mindfulness cannot be sloppy. You cannot hide behind books or opinions. You must drop the body completely and take refuge in the knowing nature of the mind. In that moment of total surrender, fear vanishes.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-07-sixth-seventh-rains-investigating-khandhas">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 07</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part III: Solitary Wilderness Wandering &bull; Sixth & Seventh Rains Retreats (pp. 126–136)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">DIRECT CONTEMPLATIVE REALIZATION &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">Deconstructing the Self: The Investigation of the Five Aggregates</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Forest hermitages, Central Thailand; 1983–1984.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> The illusion of a personal 'self' (attā) is maintained by the unexamined aggregation of the Five Khandhas; penetrative vipassanā dissects form, feeling, perception, mental formations, and consciousness to expose their empty, ownerless nature (anattā).</p>
+
+        <ul class="arguments-list">
+          <li>With samādhi firm and immovable, Ajahn Dtun turned the laser of inquiry onto the five aggregates (**pañca khandha**): rūpa (physical form), vedanā (feelings of pleasure/pain), saññā (memory/perception), saṅkhāra (thoughts/mental formations), and viññāṇa (sense consciousness).</li><li>Investigating physical pain (vedanā) during prolonged sitting, he observed that pain is merely a physical sensation; it has no intent, no malice, and no ownership. The suffering (*dukkha*) arises entirely because the mind grasps the sensation and says: 'This is *my* pain.'</li><li>When the grasping ceased, pain and the knowing mind separated into two distinct, unmingled realities: the body sat in intense sensation, while the knowing mind remained cool, untouched, and blissful.</li><li>He examined thoughts (saṅkhāra): observing thoughts arising, lingering, and vanishing like bubbles on water, he realized that thoughts think themselves without an internal thinker.</li><li>The identification with the mental aggregates dissolved: the mind saw clearly that 'I am not this body, I am not these feelings, I am not these thoughts.'</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Separate the physical sensation from the mental reaction: pain belongs to the body; suffering belongs only to the grasping mind.
+        </div>
+
+        <div class="quote-box">
+          “Pain is just pain. It is an elemental sensation. But when delusion grasps it and labels it 'my pain', suffering is born. When wisdom steps in, the pain remains in the flesh, but the heart is completely cool, detached, and free.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-08-khao-yai-solitary-mountain-hermitage">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 08</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part III: Solitary Wilderness Wandering &bull; Eighth to Twelfth Rains & Khao Yai (pp. 137–147)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">MEMOIR RECOLLECTION &bull; IMPORTANT</span>
+        </div>
+
+        <h2 class="unit-title">Khao Yai Wilderness: Solitary Hermitage & The Disease Crucible</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, Forest Monks</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Khao Yai National Park, Nakhon Ratchasima Province; dense rainforest mountains; 1985–1989.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Physical illness and malaria are supreme Dhamma teachers: when medical treatment is unavailable, the body becomes a living laboratory to witness anicca (impermanence) and sever bodily attachment.</p>
+
+        <ul class="arguments-list">
+          <li>Ajahn Dtun spent several years in the high mountain wilderness of Khao Yai, living in complete solitude in primitive bamboo shelters.</li><li>He contracted violent bouts of tropical fever and malaria: teeth chattering uncontrollably from bone-deep chills, followed by burning fevers that caused delirium.</li><li>With no doctors, medicines, or pharmacies for miles, he used the illness as his meditation subject: watching the fever rage through the bloodstream, observing how the body naturally follows the laws of nature (*sabhāvadhamma*).</li><li>He saw that the body is not a personal possession, but a temporary assembly of the four elements (earth, water, fire, wind) borrowed from the earth, returning inexorably to the earth.</li><li>By surrendering all attachment to whether the body lived or died, the mind detached from the physical vehicle: the fever subsided, leaving the consciousness profoundly purified, serene, and fearless.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Do not view physical sickness as an obstacle to meditation; use the intense sensations of illness as a direct vehicle to penetrate impermanence and release bodily clinging.
+        </div>
+
+        <div class="quote-box">
+          “When the malaria fever burnt through my bones at Khao Yai, I told myself: ‘Let this body die if it must. The body was born to die. But the Dhamma does not die.’ In letting go of life, the heart found immortality.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-09-thirteenth-rains-mastery-of-insight">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 09</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part IV: Fruition and Institutional Legacy &bull; Thirteenth Rains Retreat to the Present (pp. 148–158)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">DIRECT CONTEMPLATIVE REALIZATION &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">The Mastery of Insight: Uprooting the Roots of Greed, Hatred, and Delusion</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, Luang Por Chah (Final Years), Senior Forest Elders</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Northeast and Eastern Thailand; 1990–present.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> The culmination of the Kammatthana path is the total eradication of the three root poisons—lobha (greed), dosa (aversion), and moha (delusion)—resulting in the permanent cessation of suffering and the realization of unshakeable liberation (akuppa-cetovimutti).</p>
+
+        <ul class="arguments-list">
+          <li>Reaching his thirteenth Rains, the meditative faculties of sati (mindfulness), samādhi (concentration), and paññā (wisdom) functioned in seamless, automatic harmony.</li><li>The subtlest movements of defilement (*kilesa*)—pride, subtle attachment to stillness, conceit of attainment—were instantly intercepted and dissolved at their inception before they could stain the heart.</li><li>He maintained unwavering devotion to Luang Por Chah, caring for the aging master during his years of illness and paralysis, practicing silent filial service.</li><li>Senior forest elders recognized Ajahn Dtun as a true *Visuddhipuggala* (Pure One) who had realized the essence of the Forest Tradition.</li><li>Lay supporters and monks began flocking to him for spiritual guidance, seeking the uncompromising, authentic Dhamma of practice (*paṭipatti*).</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> True spiritual mastery is revealed not by claims of psychic powers, but by the absolute absence of irritation, greed, and conceit under all circumstances.
+        </div>
+
+        <div class="quote-box">
+          “When wisdom is mature, it operates on its own. The defilements don’t have room to sprout. The mind rests in its original, uncreated nature—spacious, peaceful, unmoving, and free from the gravity of saṁsāra.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-10-remembering-fathers-kindness">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 10</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part IV: Fruition and Institutional Legacy &bull; Remembering My Father's Kindness (pp. 159–160)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">MEMOIR RECOLLECTION &bull; IMPORTANT</span>
+        </div>
+
+        <h2 class="unit-title">Remembering Father's Kindness: Repaying the Debt of Life</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, His Father</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Chonburi and Ayutthaya; the passing of his father.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> In Buddhist ethics, the debt of gratitude to one's parents can never be repaid through material gifts alone; it is repaid fully only when a child guides the parents to establish faith (saddhā), virtue (sīla), and wisdom (paññā) in the Dhamma.</p>
+
+        <ul class="arguments-list">
+          <li>Ajahn Dtun recounts his deep gratitude to his father, who had initially opposed his ordination out of concern for his future, but gradually grew to revere his son's monkhood.</li><li>When his father fell terminally ill in old age, Ajahn Dtun visited his bedside, not with tears or worldly lamentations, but with direct, powerful Dhamma instruction.</li><li>He guided his dying father through mindfulness of breathing, releasing all worldly worries, letting go of family attachments, and fixing the mind on the Buddha's qualities of purity and peace.</li><li>His father died with serene composure, free from fear, establishing his consciousness in a high heavenly realm.</li><li>Ajahn Dtun reflects that this spiritual transmission was the supreme repayment of the milk and care he received in childhood.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> The highest filial love is spiritual accompaniment at the threshold of death, teaching the dying soul how to let go of the body and rest in the Dhamma.
+        </div>
+
+        <div class="quote-box">
+          “The Buddha taught that even if you carried your mother on one shoulder and your father on the other for a hundred years, you could not repay their debt. But if you establish them in virtue, generosity, and meditation, the debt is truly repaid.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-11-creation-of-wat-boonyawad">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 11</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part IV: Fruition and Institutional Legacy &bull; The Creation of Wat Boonyawad (pp. 161–167)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">HISTORICAL FACT &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">The Creation of Wat Boonyawad: Building a Strict Forest Sanctuary</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, Lay Benefactors, Resident Monks</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Baan Klong Yai, Bo Thong, Chonburi, Thailand; 1990s–present.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> A genuine forest monastery is not an architectural monument or a tourist attraction, but an inviolable training sanctuary dedicated entirely to preserving the pristine Vinaya discipline and silent meditation practice of the Buddha.</p>
+
+        <ul class="arguments-list">
+          <li>In the early 1990s, lay supporters offered a parcel of wild, forested land in the remote district of Bo Thong, Chonburi, inviting Ajahn Dtun to establish a permanent monastery.</li><li>Ajahn Dtun accepted on strict conditions: Wat Boonyawad would never become a commercialized temple, would host no festivals or noisy celebrations, and would accept no money for ritual blessings.</li><li>The monastery was preserved as dense jungle: each monk lives in an isolated wooden kuti hidden deep in the forest, separated by hundreds of meters to ensure absolute silence and solitude.</li><li>The daily routine remains uncompromising: morning almsround through rural villages, one meal a day eaten silently from the bowl, manual work and sweeping in the afternoon, followed by unbroken solitary sitting and walking meditation through the night.</li><li>Wat Boonyawad grew into one of the most respected training monasteries in the international Forest Tradition, producing dedicated monks and preserving the living lineage of Ajahn Chah.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Protect the physical environment of silence and discipline: when outer distractions are eliminated, the inner defilements are forced into the light and conquered.
+        </div>
+
+        <div class="quote-box">
+          “Wat Boonyawad was built not to show off buildings, but to build people. We leave the trees alone, we keep silent, we practice hard. When the environment is quiet, the mind has no choice but to face itself.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-12-dhamma-talk-virtue-concentration-wisdom">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 12</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part V: Canonical Dhamma Teachings &bull; The Power of Virtue, Concentration and Wisdom (pp. 168–186)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">SOURCE ARGUMENT &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">Dhamma Talk I: The Unified Engine of Virtue, Concentration, and Wisdom</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Dhamma Hall, Wat Boonyawad; formal Dhamma exposition to monastics and lay practitioners.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Sīla (Virtue), Samādhi (Concentration), and Paññā (Wisdom) are not three sequential stages that can be practiced in isolation; they are an indivisible, reciprocal threefold engine where each element constantly purifies and empowers the others.</p>
+
+        <ul class="arguments-list">
+          <li>Ajahn Dtun dismantles the modern Western misconception that one can practice advanced insight meditation (vipassanā) without strict ethical discipline (sīla).</li><li>**Virtue (Sīla)** cools the heart, eliminates remorse and guilt, and provides the stainless foundation required for the mind to settle without agitation.</li><li>**Concentration (Samādhi)** gathers the scattered rays of attention into a singular, unwavering laser beam, endowing the mind with the stability to observe reality without flinching.</li><li>**Wisdom (Paññā)** investigates the nature of bodily and mental phenomena, cutting through delusion; as wisdom deepens, it naturally refines virtue and deepens concentration.</li><li>He compares them to the three legs of a stool: remove any one leg, and the entire structure of spiritual awakening collapses.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Do not search for high mystical experiences while neglecting basic ethical conduct; clean morality is the soil from which the diamond of wisdom grows.
+        </div>
+
+        <div class="quote-box">
+          “Virtue purifies the mind so it can settle into concentration. Concentration gathers the power of the mind so it can develop wisdom. Wisdom cleanses the mind so virtue becomes natural and effortless. You cannot separate them; they work as one.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-13-dhamma-talk-not-veering-left-or-right">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 13</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part V: Canonical Dhamma Teachings &bull; Not Veering Off to the Left or Right (pp. 187–201)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">SOURCE ARGUMENT &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">Dhamma Talk II: The Middle Way: Not Veering Off to the Left or Right</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Wat Boonyawad; rainy season exhortation.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> The Middle Way (Majjhimā Paṭipadā) is not a lukewarm compromise or a lazy average; it is a razor-sharp path of balanced effort that avoids the two eternal ditch-traps of human consciousness: sensual indulgence (kāmasukhallikānuyoga) and excessive, self-torturing asceticism (attakilamathānuyoga).</p>
+
+        <ul class="arguments-list">
+          <li>Veering to the **Left** means falling into sensual indulgence, laziness, following desires, and making excuses for spiritual laxity under the guise of 'naturalness'.</li><li>Veering to the **Right** means falling into rigid ascetic pride, violent self-hatred, straining with tense willpower, and practicing with anger toward the defilements, which only feeds conceit (*māna*).</li><li>Ajahn Dtun illustrates the metaphor of tuning a lute (taught by the Buddha to Sona): strings tuned too tight will snap; strings tuned too loose will not play music; tuned just right, the music is harmonious.</li><li>Right Effort (*sammā vāyāma*) is calm, continuous, alert, and relaxed—maintaining persistent mindfulness without tension or grasping for results.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Practice with patient, persistent continuity rather than violent spurts of extreme effort followed by collapse; balance the faculties of faith with wisdom, and energy with concentration.
+        </div>
+
+        <div class="quote-box">
+          “If you force the mind with anger, you are fighting defilement with defilement. If you are lazy, defilement eats you alive. The Middle Way is walking calmly, watching steadily, knowing clearly, without leaning into liking or disliking.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-14-dhamma-talk-this-is-the-path">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 14</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part V: Canonical Dhamma Teachings &bull; This is The Path (pp. 202–214)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">SOURCE ARGUMENT &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">Dhamma Talk III: This Is The Path: The Noble Eightfold Path as Direct Experience</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Wat Boonyawad; analytical Dhamma discourse.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> The Noble Eightfold Path (Ariya Aṭṭhaṅgika Magga) is not a theoretical checklist or an external dogma, but an internal psychological state: the simultaneous alignment of right view, intention, speech, action, livelihood, effort, mindfulness, and concentration in the living present moment.</p>
+
+        <ul class="arguments-list">
+          <li>Ajahn Dtun systematically unpacks the Eightfold Path from the perspective of direct meditation experience.</li><li>**Right View (Sammā Diṭṭhi)** is seeing things as they actually are: seeing that whatever is subject to origination is subject to cessation, and understanding the Four Noble Truths not as concepts, but as direct observation of suffering and its ending.</li><li>**Right Mindfulness (Sammā Sati)** is keeping the mind anchored in the Four Foundations of Mindfulness (kāyānupassanā, vedanānupassanā, cittānupassanā, dhammānupassanā) without drifting into past memories or future anxieties.</li><li>**Right Concentration (Sammā Samādhi)** is the unshakeable collectedness of mind unified in the jhānas, free from the five hindrances (nīvaraṇa).</li><li>When all eight factors mature simultaneously in a single mind-moment (maggasamaṅgī), the Path cuts the fetters (*saṁyojana*) and realizes the deathless element of Nibbāna.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Unify the eight factors in the present moment: when mindfulness and clear comprehension are unbroken, the entire Noble Path is active in the heart.
+        </div>
+
+        <div class="quote-box">
+          “The Noble Eightfold Path is not written in Pali books; it is walked in your own heart right now. When Right View leads, mindfulness guards, and concentration steadies, the path opens itself into liberation.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-15-dhamma-talk-ten-spiritual-perfections">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 15</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Part V: Canonical Dhamma Teachings &bull; The Ten Spiritual Perfections (pp. 215–246)</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">SOURCE ARGUMENT &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">Dhamma Talk IV: The Ten Spiritual Perfections (Pāramīs): From Generosity to Equanimity</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Wat Boonyawad; concluding master discourse.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> Spiritual liberation requires the cumulative accumulation of spiritual capital: cultivating the Ten Pāramīs as conscious daily habits that transform ordinary human character into an unshakeable fortress of awakening.</p>
+
+        <ul class="arguments-list">
+          <li>Ajahn Dtun expounds the ten spiritual perfections (**dasa pāramī**):</li><li>1. **Dāna (Generosity)**: Surrendering selfishness and opening the heart.</li><li>2. **Sīla (Virtue)**: Guarding bodily and verbal conduct from harm.</li><li>3. **Nekkhamma (Renunciation)**: Withdrawing from sensual entanglements.</li><li>4. **Paññā (Wisdom)**: Discerning impermanence, suffering, and non-self.</li><li>5. **Viriya (Energy / Effort)**: Unflinching dedication in spiritual battle.</li><li>6. **Khanti (Patience / Endurance)**: Bearing heat, cold, hunger, criticism, and physical pain without anger.</li><li>7. **Sacca (Truthfulness / Integrity)**: Uncompromising honesty in speech and vow.</li><li>8. **Adhiṭṭhāna (Resolution / Determination)**: Unshakeable commitment to the spiritual goal.</li><li>9. **Mettā (Loving-kindness)**: Radiating universal goodwill to all beings.</li><li>10. **Upekkhā (Equanimity)**: Remaining balanced and unperturbed amid the Eight Worldly Winds (gain and loss, praise and blame, fame and disrepute, pleasure and pain).</li><li>He demonstrates that cultivating the pāramīs in daily life is what carries the practitioner across the stormy ocean of saṁsāra to the safe shore of peace.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Cultivate the ten perfections in every small interaction: patience with difficult people, truthfulness in small promises, and equanimity when plans fail.
+        </div>
+
+        <div class="quote-box">
+          “Patience (khanti) is the incinerator of defilements. When you endure difficulties without anger, you burn the fuel of past bad kamma. Combine patience with determination (adhiṭṭhāna) and equanimity (upekkhā), and nothing in heaven or earth can turn you away from Nibbāna.”
+        </div>
+      </article>
+      
+      <article class="unit-card" id="unit-16-the-kammatthana-synthesis-living-nibbana">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit 16</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">Epilogue & Synthesis &bull; Comprehensive Master Synthesis</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">SYNTHESIS & DIRECT REALIZATION &bull; CRITICAL</span>
+        </div>
+
+        <h2 class="unit-title">The Kammatthana Synthesis: Living in the Light of Nibbāna</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures:</strong> Ajahn Dtun, The Lineage of Venerable Ajahn Chah & Venerable Ajahn Mun</div>
+          <div>&bull;</div>
+          <div><strong>Context:</strong> Wat Boonyawad; enduring living Dhamma heritage.</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Insight:</strong> The Thai Forest Tradition proves that the ancient path of the Buddha is not an extinct historical relic or a dry scholastic theory, but a living, fully realizable spiritual technology accessible to any human being willing to practice with total commitment.</p>
+
+        <ul class="arguments-list">
+          <li>Ajahn Dtun's life and teachings stand as a monumental contemporary verification of the Buddha's timeless claim: *Sandiṭṭhiko* (visible here and now) and *Akāliko* (timeless).</li><li>From an affluent, worldly trader in Bangkok to an austere forest monk sleeping under an umbrella in tiger-inhabited jungles, his trajectory demonstrates that human consciousness can completely transcend defilements.</li><li>Wat Boonyawad continues to maintain the strict forest standards of Ajahn Mun and Ajahn Chah: preserving pristine nature, uncompromising Vinaya discipline, and silent solitary practice.</li><li>His final message to all seekers: do not waste this precious human rebirth chasing transient worldly bubbles; devote your energy to training the heart, purifying virtue, gathering concentration, and opening the eye of wisdom.</li><li>The ultimate refuge is within: when craving ceases, the unconditioned peace of Nibbāna shines forth by its own nature.</li>
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Operational Heuristic:</strong> Turn inward. Make the mind your monastery. Watch thoughts arise and vanish. Cling to nothing. Realize the deathless.
+        </div>
+
+        <div class="quote-box">
+          “The Dhamma is real. The Buddha’s path works today just as it worked twenty-six hundred years ago. If you practice sincerely, if you give your life to virtue, concentration, and wisdom, the heart will touch the Deathless. There is no greater blessing in human life.”
+        </div>
+      </article>
+      
+    </div>
+
+    <!-- VIEW B: THE TEN PERFECTIONS MATRIX -->
+    <div class="view-panel" id="view-b">
+      <section class="matrix-section">
+        <h2 class="matrix-title">The Ten Spiritual Perfections (Dasa Pāramī)</h2>
+        <p class="matrix-desc">The essential spiritual capital required to cross the ocean of saṁsāra and touch Nibbāna, as expounded by Ajahn Dtun.</p>
+
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Perfection (Pāramī)</th>
+              <th>Pali Meaning</th>
+              <th>Monastic Practice in Forest Life</th>
+              <th>Everyday Contemplative Application</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Dāna</strong></td>
+              <td>Generosity / Giving</td>
+              <td>Sharing food from almsbowl; teaching Dhamma freely without fee</td>
+              <td>Relinquish stinginess; share wealth, attention, and radical forgiveness</td>
+            </tr>
+            <tr>
+              <td><strong>2. Sīla</strong></td>
+              <td>Stainless Morality</td>
+              <td>Flawless observance of the 227 Patimokkha monastic training precepts</td>
+              <td>Guard actions and speech; live blamelessly to eliminate guilt and fear</td>
+            </tr>
+            <tr>
+              <td><strong>3. Nekkhamma</strong></td>
+              <td>Renunciation</td>
+              <td>Giving up money, home, romantic life, and worldly amusements</td>
+              <td>Simplify living; detach from consumer traps and sensory over-stimulation</td>
+            </tr>
+            <tr>
+              <td><strong>4. Paññā</strong></td>
+              <td>Penetrating Wisdom</td>
+              <td>Dissecting the Five Khandhas into anicca, dukkha, and anattā</td>
+              <td>Look through superficial appearances to see the transient nature of reality</td>
+            </tr>
+            <tr>
+              <td><strong>5. Viriya</strong></td>
+              <td>Heroic Effort / Energy</td>
+              <td>Walking meditation all night; refusing to lay down when torpor strikes</td>
+              <td>Maintain steady, uninterrupted commitment in the face of spiritual lethargy</td>
+            </tr>
+            <tr>
+              <td><strong>6. Khanti</strong></td>
+              <td>Patient Endurance</td>
+              <td>Bearing malaria fevers, biting ants, and hunger without complaining</td>
+              <td>The incinerator of defilements: endure difficulties without anger or malice</td>
+            </tr>
+            <tr>
+              <td><strong>7. Sacca</strong></td>
+              <td>Truthfulness / Integrity</td>
+              <td>Unyielding adherence to vows made in the presence of the Triple Gem</td>
+              <td>Be utterly honest with oneself; never break ethical commitments</td>
+            </tr>
+            <tr>
+              <td><strong>8. Adhiṭṭhāna</strong></td>
+              <td>Firm Determination</td>
+              <td>Resolving: 'Even if my flesh and bones dry up, I will not leave the path'</td>
+              <td>Set clear, immovable spiritual intentions and pursue them without distraction</td>
+            </tr>
+            <tr>
+              <td><strong>9. Mettā</strong></td>
+              <td>Universal Loving-Kindness</td>
+              <td>Radiating goodwill to wild tigers, venomous cobras, and hostile forces</td>
+              <td>Wish true peace and freedom from suffering for all beings without barrier</td>
+            </tr>
+            <tr>
+              <td><strong>10. Upekkhā</strong></td>
+              <td>Unshakeable Equanimity</td>
+              <td>Standing unmoved by praise, blame, gain, loss, fame, or physical pain</td>
+              <td>Remain like a mountain of stone amid the eight worldly winds of change</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <!-- VIEW C: CONTEMPLATIVE ENGINES & ASUBA -->
+    <div class="view-panel" id="view-c">
+      <article class="engine-card">
+        <h2 class="engine-title">1. The Asubha Razor: Uprooting Sensual Lust</h2>
+        <div class="engine-prose">
+          In his first Rains retreat at Wat Pah Pong, Ajahn Dtun was attacked by ferocious waves of sensual lust and romantic memory.
+        </div>
+        <div class="engine-prose">
+          Rather than suppressing the desires, he took up the sword of <strong>asubha</strong> (contemplation of foulness). He realized that sexual desire is entirely dependent upon a mental hallucination of physical beauty:
+          <ul style="margin: 12px 0 12px 24px; line-height: 1.7;">
+            <li>The mind looks at a face and sees charming skin and eyes.</li>
+            <li>In meditation, Ajahn Dtun mentally dissected the body: peeling back the skin to expose the raw meat, yellow fat, pulsing veins, green bile, and stench of feces in the gut.</li>
+            <li>He visualized the corpse rotting in a charnel ground, swollen, eaten by maggots, and dissolving into bleached bones.</li>
+          </ul>
+        </div>
+        <div class="engine-prose">
+          When the heart sees the anatomical reality, the projection of beauty vanishes permanently:
+          <blockquote>
+            “The fire of lust does not go out because you fight it; it goes out because there is no fuel left. When you see that every body is a leather sack of rotting bones, craving has nowhere to stand.”
+          </blockquote>
+        </div>
+      </article>
+
+      <article class="engine-card">
+        <h2 class="engine-title">2. Decoupling Sensation from Suffering</h2>
+        <div class="engine-prose">
+          During his years in the high mountain wilderness of Khao Yai, Ajahn Dtun contracted violent tropical malaria without access to medicine or doctors.
+        </div>
+        <div class="engine-prose">
+          He transformed the fever into his primary meditation object. By anchoring awareness in the "knowing nature" of the mind, he discovered the crucial distinction between <strong>sensation (vedanā)</strong> and <strong>suffering (dukkha)</strong>:
+          <ul style="margin: 12px 0 12px 24px; line-height: 1.7;">
+            <li>The body is composed of physical elements; when diseased, it naturally experiences burning heat, chills, and pain.</li>
+            <li>Suffering arises solely because the deluded ego grasps the sensation and says: <em>“I am sick! This pain is happening to me!”</em></li>
+            <li>When the mind lets go of ownership, sensation remains in the flesh, but the mind remains cool, detached, and free.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="engine-card">
+        <h2 class="engine-title">3. The Threefold Engine: Virtue, Stillness, and Wisdom</h2>
+        <div class="engine-prose">
+          Ajahn Dtun’s core teaching is that the three trainings cannot be separated:
+          <blockquote>
+            “Virtue (sīla) is the fence that keeps out dangerous predators. Concentration (samādhi) is the deep, clear water where the silt settles. Wisdom (paññā) is the light of the sun that shines straight to the river bottom.”
+          </blockquote>
+        </div>
+        <div class="engine-prose">
+          Without clean ethical virtue, the mind is haunted by remorse and cannot settle. Without concentration, wisdom is just shallow intellectual chatter. But when virtue, stillness, and wisdom unite in the present moment, the fetters of selfhood are severed forever.
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Autobiography and Dhamma Teachings (2020) &bull; Ajahn Dtun &bull; Total Replacement Codex &bull; Intellectualist System</p>
+    <p style="margin-top: 8px;"><a href="../../index.html">← Return to Master Library</a></p>
+  </footer>
+
+  <script>
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const viewPanels = document.querySelectorAll('.view-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        viewPanels.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const viewId = btn.getAttribute('data-view');
+        document.getElementById(viewId).classList.add('active');
+        window.scrollTo({ top: 400, behavior: 'smooth' });
+      });
+    });
+
+    const themeBtn = document.getElementById('theme-btn');
+    const themeText = document.getElementById('theme-text');
+    const themeIcon = document.getElementById('theme-icon');
+    const themes = ['light', 'dark-mode', 'sepia-mode'];
+    let currentThemeIdx = 0;
+
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.remove('dark-mode', 'sepia-mode');
+      currentThemeIdx = (currentThemeIdx + 1) % themes.length;
+      if (themes[currentThemeIdx] !== 'light') {
+        document.body.classList.add(themes[currentThemeIdx]);
+      }
+      if (themes[currentThemeIdx] === 'light') {
+        themeText.textContent = 'Light';
+        themeIcon.textContent = '☼';
+      } else if (themes[currentThemeIdx] === 'dark-mode') {
+        themeText.textContent = 'Dark';
+        themeIcon.textContent = '☾';
+      } else {
+        themeText.textContent = 'Sepia';
+        themeIcon.textContent = '☕';
+      }
+    });
+
+    const fontBtn = document.getElementById('font-btn');
+    const fontText = document.getElementById('font-text');
+    fontBtn.addEventListener('click', () => {
+      if (document.body.classList.contains('serif-font')) {
+        document.body.classList.remove('serif-font');
+        fontText.textContent = 'Serif';
+      } else {
+        document.body.classList.add('serif-font');
+        fontText.textContent = 'Sans';
+      }
+    });
+  </script>
+</body>
+</html>

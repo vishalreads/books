@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 28,
-  "total_hours_saved": 525.0,
+  "total_books": 29,
+  "total_hours_saved": 535.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1203,6 +1203,53 @@
       ],
       "html_path": "distillations/lolita/index.html",
       "markdown_path": "distillations/lolita/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "ajahn-dtun-autobiography",
+      "title": "The Autobiography and Dhamma Teachings of Ajahn Dtun",
+      "subtitle": "The Direct Realization of Nibbāna: From Secular Disenchantment to Forest Wandering, the Crucible of Asubha, and the Founding of Wat Boonyawad",
+      "author": "Luang Por Akaradej Thiracitto Bhikkhu (Ajahn Dtun)",
+      "year": 2020,
+      "publisher": "Wat Boonyawad / Chandakaranusorn Dhamma Museum Series",
+      "epistemic_tier": "Tier 1: Master Theravada Spiritual Autobiography & Kammatthana",
+      "tier_short": "Tier 1",
+      "category": "Classical Mystical Philosophy & Yogic Metaphysics",
+      "original_volume": "19 Chapters & Discourses Synthesized into 16 Invariant Units",
+      "reading_time_saved": "10.0 hrs saved",
+      "hours_val": 10.0,
+      "core_axiom": "The Dhamma is real. The Buddha’s path works today just as it worked twenty-six hundred years ago. If you practice sincerely, if you give your life to virtue, concentration, and wisdom, the heart will touch the Deathless.",
+      "tags": [
+        "Ajahn Dtun",
+        "Ajahn Chah",
+        "Thai Forest Tradition",
+        "Theravada Buddhism",
+        "Kammatthana",
+        "Meditation",
+        "Asubha",
+        "Samadhi",
+        "Jhana",
+        "Nibbana",
+        "Wat Boonyawad",
+        "Spiritual Autobiography"
+      ],
+      "key_models": [
+        "The Indivisible Triad of Awakening (Sīla, Samādhi, Paññā as One Engine)",
+        "The Asubha Razor (Anatomical Deconstruction as Antidote to Sensual Lust)",
+        "The Decoupling of Sensation and Suffering (Vedanā vs. Dukkha)",
+        "The Middle Way as Dynamic Balance (Avoiding Left Indulgence & Right Force)",
+        "The Ten Spiritual Perfections (Dasa Pāramī as Cumulative Spiritual Capital)",
+        "The Living Realization of Nibbāna (Akāliko - Timeless Truth)"
+      ],
+      "landmark_studies": [
+        "Wat Nong Pah Pong Monastic Ordination under Luang Por Chah (1978)",
+        "The First Rains Retreat Charnel-Ground Asubha Breakthrough",
+        "The All-Night Caṅkama Walking Meditation Victory over Torpor",
+        "Tudong Wilderness Solitude & Tiger/Cobra Metta Neutralization",
+        "The Founding of Wat Boonyawad as Inviolable Forest Hermitage"
+      ],
+      "html_path": "distillations/ajahn-dtun-autobiography/index.html",
+      "markdown_path": "distillations/ajahn-dtun-autobiography/master-notes.md",
       "featured": true
     }
   ]
