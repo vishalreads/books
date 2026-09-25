@@ -1,7 +1,7 @@
 /**
  * BKRS Canonical Book Renderer
  * Renders production BKRS Reading Interfaces directly from knowledge-units.json
- * Supports multi-genre rendering (Literary Fiction & Analytical Nonfiction)
+ * Supports multi-genre rendering (Literary Fiction, Analytical Nonfiction, and Historical Biography)
  */
 
 const fs = require('fs');
@@ -9,6 +9,7 @@ const path = require('path');
 const { adaptKnowledgeUnits } = require('./bkrs/bkrs_adapter');
 const { renderFictionViews } = require('./bkrs/render_fiction');
 const { renderNonfictionViews } = require('./bkrs/render_nonfiction');
+const { renderHistoricalViews } = require('./bkrs/render_historical');
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -30,24 +31,52 @@ function renderBookMaster(bookSlug) {
 
   const model = adaptKnowledgeUnits(kuPath);
   const meta = model.metadata;
+  const isHistorical = model.is_historical;
   const isNonfiction = model.is_nonfiction;
 
   // Render Views according to genre
-  const views = isNonfiction ? renderNonfictionViews(model) : renderFictionViews(model);
+  let views;
+  let viewALabel;
+  let viewBLabel;
+  let viewCLabel;
 
-  // Tab Labels based on Genre
-  const viewALabel = isNonfiction ? "The Argument Journey" : "The Source Journey";
-  const viewBLabel = isNonfiction ? "The Conceptual Blueprint" : "The Knowledge Map";
-  const viewCLabel = isNonfiction ? "The Operational Engine" : "The Experience";
+  if (isHistorical) {
+    views = renderHistoricalViews(model);
+    viewALabel = "The Source Journey";
+    viewBLabel = "The Relational Map";
+    viewCLabel = "The Dialectical Engine";
+  } else if (isNonfiction) {
+    views = renderNonfictionViews(model);
+    viewALabel = "The Argument Journey";
+    viewBLabel = "The Conceptual Blueprint";
+    viewCLabel = "The Operational Engine";
+  } else {
+    views = renderFictionViews(model);
+    viewALabel = "The Source Journey";
+    viewBLabel = "The Knowledge Map";
+    viewCLabel = "The Experience";
+  }
 
-  // Build Sidebar Chapter List
+  // Build Sidebar Navigation List
   let navItemsHtml = '';
   model.chapters.forEach(ch => {
     const unitCount = ch.units ? ch.units.length : (ch.scenes ? ch.scenes.length : 0);
+    let chTag = '';
+    if (isHistorical) {
+      if (ch.chapter_key.includes('epigraph')) chTag = 'Epi';
+      else if (ch.chapter_key.includes('prologue')) chTag = 'Pro';
+      else if (ch.chapter_number === 56 || ch.chapter_key.includes('appendix')) chTag = 'App';
+      else chTag = 'Ch ' + ch.chapter_number;
+    } else {
+      chTag = ch.chapter_number === 0 ? 'Intro' : (ch.chapter_number === 21 && isNonfiction ? 'Post' : 'Ch ' + ch.chapter_number);
+    }
+
+    const anchorId = isHistorical ? `section-${ch.chapter_key}` : `chapter-${ch.chapter_number}`;
+
     navItemsHtml += `
       <div class="nav-chapter-item">
-        <a href="#chapter-${ch.chapter_number}" class="nav-chapter-link" onclick="handleNavClick(event, 'chapter-${ch.chapter_number}')">
-          <span class="nav-ch-num">${ch.chapter_number === 0 ? 'Intro' : (ch.chapter_number === 21 && isNonfiction ? 'Post' : 'Ch ' + ch.chapter_number)}</span>
+        <a href="#${anchorId}" class="nav-chapter-link" onclick="handleNavClick(event, '${anchorId}')">
+          <span class="nav-ch-num">${chTag}</span>
           <span class="nav-ch-title">${escapeHtml(ch.chapter_title)}</span>
           <span class="nav-ch-count">${unitCount}</span>
         </a>
@@ -90,13 +119,13 @@ function renderBookMaster(bookSlug) {
 
     <!-- 3-VIEW SWITCHER -->
     <div class="view-switcher-pill" role="tablist">
-      <button class="view-tab-btn active" role="tab" aria-selected="true" data-view="view-journey" onclick="switchView('view-journey')">
+      <button class="view-tab-btn active" id="btn-view-journey" role="tab" aria-selected="true" data-view="view-journey" onclick="switchView('view-journey')">
         <span class="view-icon">📖</span> ${viewALabel}
       </button>
-      <button class="view-tab-btn" role="tab" aria-selected="false" data-view="view-map" onclick="switchView('view-map')">
+      <button class="view-tab-btn" id="btn-view-map" role="tab" aria-selected="false" data-view="view-map" onclick="switchView('view-map')">
         <span class="view-icon">🗺️</span> ${viewBLabel}
       </button>
-      <button class="view-tab-btn" role="tab" aria-selected="false" data-view="view-experience" onclick="switchView('view-experience')">
+      <button class="view-tab-btn" id="btn-view-experience" role="tab" aria-selected="false" data-view="view-experience" onclick="switchView('view-experience')">
         <span class="view-icon">⚡</span> ${viewCLabel}
       </button>
     </div>
@@ -135,7 +164,7 @@ function renderBookMaster(bookSlug) {
       </div>
       <div class="sidebar-footer">
         <span class="badge badge-source-fact">BKRS v${meta.system_version}</span>
-        <span style="font-size:0.75rem; color:var(--text-subtle);">${isNonfiction ? 'Nonfiction Engine' : 'Fiction Engine'}</span>
+        <span style="font-size:0.75rem; color:var(--text-subtle);">${isHistorical ? 'Historical Engine' : (isNonfiction ? 'Nonfiction Engine' : 'Fiction Engine')}</span>
       </div>
     </aside>
 
@@ -150,7 +179,7 @@ function renderBookMaster(bookSlug) {
           <div class="book-display-meta">
             <span><strong>Author:</strong> ${escapeHtml(meta.author)}</span>
             <span><strong>Year:</strong> ${meta.year || 'N/A'}</span>
-            <span><strong>Genre:</strong> ${escapeHtml(meta.genre || 'analytical_nonfiction')}</span>
+            <span><strong>Genre:</strong> ${escapeHtml(meta.genre || 'historical_biography')}</span>
             <span><strong>Units:</strong> ${model.total_units} Canonical Units</span>
           </div>
         </header>
@@ -213,14 +242,8 @@ function renderBookMaster(bookSlug) {
 
   <script>
     function toggleFlashcard(btn) {
-      const answer = btn.nextElementSibling;
-      if (!answer) return;
-      if (answer.style.display === 'block') {
-        answer.style.display = 'none';
-        btn.textContent = 'Show Answer ▼';
-      } else {
-        answer.style.display = 'block';
-        btn.textContent = 'Hide Answer ▲';
+      if (window.toggleFlashcard) {
+        window.toggleFlashcard(btn);
       }
     }
   </script>
@@ -231,9 +254,8 @@ function renderBookMaster(bookSlug) {
   console.log(`Rendered BKRS Book Master: ${outputPath} (${(Buffer.byteLength(fullHtml, 'utf-8') / 1024).toFixed(1)} KB)`);
 }
 
-// CLI Support
 if (require.main === module) {
-  const slug = process.argv[2] || 'the-psychology-of-money';
+  const slug = process.argv[2] || 'bhagat-singh-a-life-in-revolution';
   renderBookMaster(slug);
 }
 

@@ -377,6 +377,76 @@ body.focus-mode .reading-canvas {
   border-color: var(--mat-textural-border);
 }
 
+/* Historical Epistemic Badges */
+.badge-corroborated-fact {
+  background: var(--badge-corroborated-bg);
+  color: var(--badge-corroborated-text);
+  border-color: var(--badge-corroborated-border);
+}
+
+.badge-contemporary-record {
+  background: var(--badge-contemporary-bg);
+  color: var(--badge-contemporary-text);
+  border-color: var(--badge-contemporary-border);
+}
+
+.badge-primary-writing {
+  background: var(--badge-primary-bg);
+  color: var(--badge-primary-text);
+  border-color: var(--badge-primary-border);
+}
+
+.badge-biographer-thesis {
+  background: var(--badge-thesis-bg);
+  color: var(--badge-thesis-text);
+  border-color: var(--badge-thesis-border);
+}
+
+.badge-coerced-testimony {
+  background: var(--badge-coerced-bg);
+  color: var(--badge-coerced-text);
+  border-color: var(--badge-coerced-border);
+}
+
+.badge-biographer-conjecture {
+  background: transparent;
+  color: var(--badge-thesis-text);
+  border: 1px dashed var(--badge-thesis-border);
+}
+
+/* Causal Edge Badges */
+.badge-causal-documented {
+  background: rgba(139, 0, 0, 0.1);
+  color: var(--accent-crimson);
+  border: 1px solid rgba(139, 0, 0, 0.25);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.badge-causal-corroborated {
+  background: rgba(30, 61, 89, 0.1);
+  color: var(--accent-slate);
+  border: 1px solid rgba(30, 61, 89, 0.25);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.badge-causal-hypothesis {
+  background: rgba(184, 134, 11, 0.1);
+  color: var(--accent-gold);
+  border: 1px dashed rgba(184, 134, 11, 0.5);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.badge-causal-inference {
+  background: rgba(80, 80, 80, 0.1);
+  color: var(--text-muted);
+  border: 1px dotted var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
 .unit-chronology-tag {
   font-family: var(--font-sans);
   font-size: 0.75rem;
@@ -798,5 +868,107 @@ body.focus-mode .reading-canvas {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==========================================================================
+   Historical & Archival Components (BKRS v1.0)
+   ========================================================================== */
+.document-plate-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-top: 3px solid var(--accent-crimson);
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.plate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.plate-tag {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-crimson);
+  background: rgba(139, 0, 0, 0.08);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.plate-verbatim-box {
+  background: var(--bg-subtle);
+  border-left: 3px solid var(--accent-crimson);
+  padding: 14px 18px;
+  margin: 14px 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.unit-context-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  background: var(--bg-subtle);
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 0.84rem;
+}
+
+.context-tier-title {
+  font-weight: 700;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  margin-bottom: 2px;
+}
+
+.unit-causal-strip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--accent-slate);
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  font-size: 0.86rem;
+}
+
+.unit-dispute-container {
+  background: rgba(184, 134, 11, 0.06);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  border-left: 4px solid var(--accent-gold);
+  padding: 14px 18px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 0.88rem;
+}
+
+.dispute-title {
+  font-weight: 700;
+  color: var(--accent-gold);
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dispute-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .dispute-grid {
+    grid-template-columns: 1fr;
   }
 }

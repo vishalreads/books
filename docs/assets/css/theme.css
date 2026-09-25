@@ -33,6 +33,23 @@
   --badge-lens-text: #85221c;
   --badge-lens-border: #f0c5c5;
 
+  /* Historical Epistemic Badges (Cream) */
+  --badge-corroborated-bg: #e8edf3;
+  --badge-corroborated-text: #1e3d59;
+  --badge-corroborated-border: #b8c9dc;
+  --badge-contemporary-bg: #e6f4ea;
+  --badge-contemporary-text: #137333;
+  --badge-contemporary-border: #a8dab5;
+  --badge-primary-bg: #fce8e6;
+  --badge-primary-text: #8b0000;
+  --badge-primary-border: #f5c2c7;
+  --badge-thesis-bg: #fef7e0;
+  --badge-thesis-text: #b8860b;
+  --badge-thesis-border: #f9e295;
+  --badge-coerced-bg: #f3e8fd;
+  --badge-coerced-text: #5a3e85;
+  --badge-coerced-border: #d4b5f9;
+
   /* Materiality Taxonomy Badges */
   --mat-critical-bg: #fbeae9;
   --mat-critical-text: #8c1d18;
@@ -81,6 +98,23 @@ body.theme-midnight {
   --badge-lens-text: #ffa1a1;
   --badge-lens-border: #6d2f2f;
 
+  /* Historical Epistemic Badges (Midnight) */
+  --badge-corroborated-bg: #162a45;
+  --badge-corroborated-text: #79c0ff;
+  --badge-corroborated-border: #264a78;
+  --badge-contemporary-bg: #152d1c;
+  --badge-contemporary-text: #7ee787;
+  --badge-contemporary-border: #23532e;
+  --badge-primary-bg: #381b1b;
+  --badge-primary-text: #ff8585;
+  --badge-primary-border: #6b2d2d;
+  --badge-thesis-bg: #382c16;
+  --badge-thesis-text: #ffd369;
+  --badge-thesis-border: #6b5327;
+  --badge-coerced-bg: #2d1945;
+  --badge-coerced-text: #d2a8ff;
+  --badge-coerced-border: #522f7a;
+
   --mat-critical-bg: #381b1b;
   --mat-critical-text: #ff8585;
   --mat-critical-border: #6b2d2d;
@@ -126,6 +160,23 @@ body.theme-sepia {
   --badge-lens-bg: #f4dada;
   --badge-lens-text: #8c2d19;
   --badge-lens-border: #e0b0b0;
+
+  /* Historical Epistemic Badges (Sepia) */
+  --badge-corroborated-bg: #e2dbce;
+  --badge-corroborated-text: #2a3c4f;
+  --badge-corroborated-border: #c8bead;
+  --badge-contemporary-bg: #dceddd;
+  --badge-contemporary-text: #1b5e20;
+  --badge-contemporary-border: #b7d6b9;
+  --badge-primary-bg: #ebd9d8;
+  --badge-primary-text: #7c1a16;
+  --badge-primary-border: #d8b2b0;
+  --badge-thesis-bg: #f3ecd6;
+  --badge-thesis-text: #8c6808;
+  --badge-thesis-border: #ded2b2;
+  --badge-coerced-bg: #e8dff0;
+  --badge-coerced-text: #4a2d6b;
+  --badge-coerced-border: #cbb9db;
 
   --mat-critical-bg: #f7deda;
   --mat-critical-text: #8c2d19;
