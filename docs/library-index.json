@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 16,
-  "total_hours_saved": 391.0,
+  "total_books": 17,
+  "total_hours_saved": 399.5,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -673,6 +673,47 @@
       ],
       "html_path": "distillations/the-myth-of-sisyphus/index.html",
       "markdown_path": "distillations/the-myth-of-sisyphus/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "homage-to-catalonia",
+      "title": "Homage to Catalonia",
+      "subtitle": "A Forensic Eyewitness Reconstruction of the Spanish Civil War, Totalitarian Deception, and Revolutionary Betrayal",
+      "author": "George Orwell",
+      "year": 1938,
+      "publisher": "Secker & Warburg / Intellectualist Historical Memoir Series",
+      "epistemic_tier": "Tier 1: Master Eyewitness Historical Memoir & Political Investigation",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "14 Chapters (457K Chars Unabridged Eyewitness Record)",
+      "reading_time_saved": "8.5 hrs saved",
+      "hours_val": 8.5,
+      "core_axiom": "I saw history being written not in terms of what happened, but of what ought to have happened according to various 'party lines'.",
+      "tags": [
+        "George Orwell",
+        "Spanish Civil War",
+        "Catalonia",
+        "Totalitarianism",
+        "POUM",
+        "Propaganda",
+        "Trench Warfare"
+      ],
+      "key_models": [
+        "The War vs. Revolution Dilemma (Grassroots Morale vs. Conventional Geopolitics)",
+        "Totalitarian Disinformation Architecture (Origin of the Ministry of Truth)",
+        "Democratic Militia Cohesion (Social Equality Replacing Mechanical Coercion)",
+        "Thermidorian Counter-Revolutionary Rollback Dynamics",
+        "Civilizational Denial & The Sleep of Democracies"
+      ],
+      "landmark_studies": [
+        "Aragon Front Historical Dispatches & ILP Archives",
+        "May 1937 Barcelona Telefónica Incident Official Records",
+        "L'Humanité, Pravda & Daily Worker 1937 Press Disinformation Comparison",
+        "Bob Smillie Valencia Prison Death Investigative Inquest",
+        "Andrés Nin NKVD Abduction & Assassination Forensic Files"
+      ],
+      "html_path": "distillations/homage-to-catalonia/index.html",
+      "markdown_path": "distillations/homage-to-catalonia/master-notes.md",
       "featured": false
     }
   ]
