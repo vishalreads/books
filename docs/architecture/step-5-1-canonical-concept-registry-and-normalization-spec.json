@@ -1,0 +1,492 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BKRS Step 5.1 Canonical Concept Registry and Normalization Specification",
+  "version": "1.0.0",
+  "timestamp": "2026-09-25T13:00:00Z",
+  "status": "FROZEN_SPECIFICATION",
+  "meta": {
+    "standard": "BKRS Constitution v1.0 (§13-§19, §33-§35)",
+    "phase": "Milestone 5.1 — Canonical Concept Registry & Normalization Adapter",
+    "immutability_rule": "Strictly read-only; zero mutation of Book Masters"
+  },
+  "schemas": {
+    "CanonicalConcept": {
+      "type": "object",
+      "required": [
+        "canonical_concept_id",
+        "canonical_label",
+        "definition",
+        "domain",
+        "scope",
+        "aliases",
+        "related_concept_ids",
+        "equivalence_basis",
+        "non_equivalence_basis",
+        "temporal_scope",
+        "contextual_scope",
+        "genre_applicability",
+        "concept_status",
+        "evidence_required_for_equivalence",
+        "human_review_status",
+        "provenance"
+      ],
+      "properties": {
+        "canonical_concept_id": { "type": "string", "pattern": "^CC-[A-Z0-9_-]+$" },
+        "canonical_label": { "type": "string" },
+        "definition": { "type": "string" },
+        "domain": { "type": "string", "enum": ["PHILOSOPHY", "POLITICAL_ECONOMY", "PSYCHOLOGY", "SOCIOLOGY", "HISTORIOGRAPHY", "LITERARY_AESTHETICS", "EPISTEMOLOGY", "ETHICS", "GENERAL"] },
+        "scope": { "type": "string", "enum": ["UNIVERSAL_ABSTRACT", "INSTITUTIONAL_MACRO", "BEHAVIORAL_MESO", "INDIVIDUAL_MICRO", "EXPERIENTIAL_INTERIOR"] },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "related_concept_ids": { "type": "array", "items": { "type": "string" } },
+        "equivalence_basis": { "type": "string" },
+        "non_equivalence_basis": { "type": "string" },
+        "temporal_scope": { "type": "string" },
+        "contextual_scope": { "type": "string" },
+        "genre_applicability": { "type": "array", "items": { "type": "string", "enum": ["literary_fiction", "analytical_nonfiction", "historical_biography", "philosophy", "all"] } },
+        "concept_status": { "type": "string", "enum": ["PROVISIONAL", "CERTIFIED", "DEPRECATED"] },
+        "evidence_required_for_equivalence": { "type": "string" },
+        "human_review_status": { "type": "string", "enum": ["PENDING", "CERTIFIED", "REJECTED"] },
+        "provenance": { "type": "string" }
+      }
+    },
+    "BookSpecificConcept": {
+      "type": "object",
+      "required": [
+        "book_specific_concept_id",
+        "book_id",
+        "source_unit_ids",
+        "source_label",
+        "source_definition",
+        "source_scope",
+        "source_domain",
+        "source_context",
+        "source_epistemic_status",
+        "source_voice",
+        "source_provenance",
+        "mapping_status",
+        "mapped_canonical_concept_id",
+        "mapping_basis",
+        "mapping_limitations"
+      ],
+      "properties": {
+        "book_specific_concept_id": { "type": "string", "pattern": "^BSC-[A-Z0-9_-]+$" },
+        "book_id": { "type": "string" },
+        "source_unit_ids": { "type": "array", "items": { "type": "string" } },
+        "source_label": { "type": "string" },
+        "source_definition": { "type": "string" },
+        "source_scope": { "type": "string" },
+        "source_domain": { "type": "string" },
+        "source_context": { "type": "string" },
+        "source_epistemic_status": { "type": "string" },
+        "source_voice": { "type": "string", "enum": ["AUTHOR", "NARRATOR", "FICTIONAL_CHARACTER", "HISTORICAL_SUBJECT", "BIOGRAPHER", "EDITOR", "PRIMARY_DOCUMENT_AUTHOR", "CONTEMPORARY_WITNESS", "OTHER_HISTORICAL_ACTOR", "UNKNOWN_AMBIGUOUS"] },
+        "source_provenance": {
+          "type": "object",
+          "required": ["chapter", "locator", "exact_quotation"],
+          "properties": {
+            "chapter": { "type": "string" },
+            "locator": { "type": "string" },
+            "exact_quotation": { "type": "string" }
+          }
+        },
+        "mapping_status": {
+          "type": "string",
+          "enum": [
+            "EXACT_EQUIVALENCE",
+            "FUNCTIONAL_EQUIVALENCE",
+            "PARTIAL_OVERLAP",
+            "RELATED_NON_EQUIVALENT",
+            "ANALOGICAL_RELATION",
+            "SAME_LABEL_DIFFERENT_CONCEPT",
+            "DIFFERENT_LABEL_SAME_CONCEPT",
+            "UNMAPPED",
+            "AMBIGUOUS_REQUIRES_REVIEW"
+          ]
+        },
+        "mapped_canonical_concept_id": { "type": ["string", "null"] },
+        "mapping_basis": { "type": "string" },
+        "mapping_limitations": { "type": "string" }
+      }
+    },
+    "ConceptRelation": {
+      "type": "object",
+      "required": [
+        "concept_relation_id",
+        "source_canonical_concept_id",
+        "target_canonical_concept_id",
+        "relation_type",
+        "definition_of_relation",
+        "domain_boundary",
+        "validation_status"
+      ],
+      "properties": {
+        "concept_relation_id": { "type": "string", "pattern": "^CR-[A-Z0-9_-]+$" },
+        "source_canonical_concept_id": { "type": "string" },
+        "target_canonical_concept_id": { "type": "string" },
+        "relation_type": {
+          "type": "string",
+          "enum": [
+            "PARENT_OF",
+            "CHILD_OF",
+            "ANALOGUE_OF",
+            "OPPOSITE_OF",
+            "ORTHOGONAL_TO",
+            "SPECIALIZATION_OF",
+            "OVERLAPS_WITH"
+          ]
+        },
+        "definition_of_relation": { "type": "string" },
+        "domain_boundary": { "type": "string" },
+        "validation_status": { "type": "string", "enum": ["PROVISIONAL", "CERTIFIED"] }
+      }
+    },
+    "NormalizedCrossBookUnit": {
+      "type": "object",
+      "required": [
+        "normalized_unit_id",
+        "book_id",
+        "source_unit_id",
+        "source_unit_type",
+        "genre",
+        "source_location",
+        "structural_position",
+        "source_sequence",
+        "statement",
+        "source_claims",
+        "entities",
+        "concepts",
+        "relationships",
+        "epistemic_status",
+        "source_voice",
+        "assertion_modality",
+        "source_explicitness",
+        "confidence",
+        "materiality",
+        "temporal",
+        "provenance",
+        "genre_specific_payload_reference",
+        "normalization"
+      ],
+      "properties": {
+        "normalized_unit_id": { "type": "string", "pattern": "^NXU-[A-Z0-9_-]+$" },
+        "book_id": { "type": "string" },
+        "source_unit_id": { "type": "string" },
+        "source_unit_type": { "type": "string" },
+        "genre": { "type": "string", "enum": ["literary_fiction", "analytical_nonfiction", "historical_biography"] },
+        "source_location": {
+          "type": "object",
+          "required": ["chapter", "locator", "document_file"],
+          "properties": {
+            "chapter": { "type": ["string", "number"] },
+            "chapter_title": { "type": "string" },
+            "locator": { "type": "string" },
+            "document_file": { "type": "string" },
+            "element_ids": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "structural_position": {
+          "type": "object",
+          "required": ["narrative_order", "book_percentage"],
+          "properties": {
+            "narrative_order": { "type": "number" },
+            "chronological_order": { "type": ["number", "null"] },
+            "logical_level": { "type": ["number", "null"] },
+            "book_percentage": { "type": ["number", "null"] }
+          }
+        },
+        "source_sequence": { "type": "number" },
+        "statement": { "type": "string" },
+        "source_claims": { "type": "array", "items": { "$ref": "#/schemas/NormalizedClaim" } },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "entity_type", "resolved_id"],
+            "properties": {
+              "name": { "type": "string" },
+              "entity_type": { "type": "string" },
+              "resolved_id": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "concepts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["book_specific_concept_id", "mapped_canonical_concept_id", "mapping_status"],
+            "properties": {
+              "book_specific_concept_id": { "type": "string" },
+              "mapped_canonical_concept_id": { "type": ["string", "null"] },
+              "mapping_status": { "type": "string" }
+            }
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["target_source_unit_id", "relationship_type", "relationship_category"],
+            "properties": {
+              "target_source_unit_id": { "type": "string" },
+              "relationship_type": { "type": "string" },
+              "relationship_category": { "type": "string", "enum": ["CAUSAL", "RELATIONAL", "THEMATIC", "CONCEPTUAL", "TEMPORAL", "EVIDENTIARY", "CONTESTED"] },
+              "details": { "type": "string" }
+            }
+          }
+        },
+        "epistemic_status": { "type": "string" },
+        "source_voice": { "type": "string", "enum": ["AUTHOR", "NARRATOR", "FICTIONAL_CHARACTER", "HISTORICAL_SUBJECT", "BIOGRAPHER", "EDITOR", "PRIMARY_DOCUMENT_AUTHOR", "CONTEMPORARY_WITNESS", "OTHER_HISTORICAL_ACTOR", "UNKNOWN_AMBIGUOUS"] },
+        "assertion_modality": { "type": "string", "enum": ["EXPLICIT_SOURCE_ASSERTION", "FICTIONAL_CHARACTER_CONVICTION", "BIOGRAPHER_INTERPRETIVE_THESIS", "CONTEMPORARY_RECORD_WITNESS", "BKRS_NORMALIZED_PROJECTION"] },
+        "source_explicitness": { "type": "string", "enum": ["SOURCE_EXPLICIT", "BKRS_NORMALIZED_PROJECTION"] },
+        "confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+        "materiality": { "type": "string", "enum": ["CRITICAL", "IMPORTANT", "TEXTURAL", "REDUNDANT"] },
+        "temporal": {
+          "type": "object",
+          "required": ["event_time", "record_time", "source_time"],
+          "properties": {
+            "event_time": { "type": ["object", "string", "null"] },
+            "record_time": { "type": ["object", "string", "null"] },
+            "source_time": { "type": ["object", "string", "null"] }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": ["source_evidence", "source_trace", "original_unit_reference"],
+          "properties": {
+            "source_evidence": { "type": "array", "items": { "type": "string" } },
+            "source_trace": { "type": "string" },
+            "original_unit_reference": { "type": "string" }
+          }
+        },
+        "genre_specific_payload_reference": {
+          "type": "object",
+          "required": ["genre", "payload_pointer"],
+          "properties": {
+            "genre": { "type": "string" },
+            "payload_pointer": { "type": "string" }
+          }
+        },
+        "normalization": {
+          "type": "object",
+          "required": ["concept_mappings", "entity_mappings", "claim_mappings", "normalization_notes"],
+          "properties": {
+            "concept_mappings": { "type": "array", "items": { "type": "string" } },
+            "entity_mappings": { "type": "array", "items": { "type": "string" } },
+            "claim_mappings": { "type": "array", "items": { "type": "string" } },
+            "normalization_notes": { "type": "string" }
+          }
+        }
+      }
+    },
+    "NormalizedClaim": {
+      "type": "object",
+      "required": [
+        "claim_id",
+        "source_unit_id",
+        "book_id",
+        "claimant",
+        "proposition",
+        "qualification",
+        "scope",
+        "evidence",
+        "epistemic_status",
+        "assertion_modality",
+        "source_explicitness",
+        "provenance",
+        "materiality"
+      ],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^NC-[A-Z0-9_-]+$" },
+        "source_unit_id": { "type": "string" },
+        "book_id": { "type": "string" },
+        "claimant": { "type": "string" },
+        "proposition": { "type": "string" },
+        "qualification": { "type": ["string", "null"] },
+        "scope": { "type": "string" },
+        "evidence": { "type": "array", "items": { "type": "string" } },
+        "epistemic_status": { "type": "string" },
+        "assertion_modality": { "type": "string" },
+        "source_explicitness": { "type": "string", "enum": ["SOURCE_CLAIM", "PARAPHRASED_SOURCE_CLAIM", "BKRS_NORMALIZED_CLAIM"] },
+        "provenance": { "type": "string" },
+        "materiality": { "type": "string", "enum": ["CRITICAL", "IMPORTANT", "TEXTURAL"] }
+      }
+    }
+  },
+  "mapping_states": [
+    {
+      "state": "EXACT_EQUIVALENCE",
+      "definition": "Identical concept with identical operational scope, definition, and domain applicability.",
+      "minimum_evidence_required": "Verbatim or formal propositional identity; matching domain boundaries and non-divergent boundary conditions.",
+      "prohibition": "Embedding or semantic similarity alone must NEVER assign this state."
+    },
+    {
+      "state": "FUNCTIONAL_EQUIVALENCE",
+      "definition": "Concepts operating with identical systemic, behavioral, or causal roles despite minor stylistic phrasing differences.",
+      "minimum_evidence_required": "Demonstrable mapping of all primary functional inputs, mechanisms, and outcomes.",
+      "prohibition": "Must not span across radically incompatible philosophical frameworks."
+    },
+    {
+      "state": "PARTIAL_OVERLAP",
+      "definition": "Concepts sharing a core operational mechanism but diverging substantially in scope, normative goal, or peripheral boundary conditions.",
+      "minimum_evidence_required": "Explicit identification of the intersection set and the divergence set with textual citations.",
+      "prohibition": "Must not be summarized as simple agreement."
+    },
+    {
+      "state": "RELATED_NON_EQUIVALENT",
+      "definition": "Concepts addressing the same broad human or societal domain that do not share core definitions or mechanisms.",
+      "minimum_evidence_required": "Demonstrable shared thematic anchor accompanied by proof of distinct operational mechanisms.",
+      "prohibition": "Cannot be used to transfer empirical evidence or conclusions."
+    },
+    {
+      "state": "ANALOGICAL_RELATION",
+      "definition": "Structural isomorphism between principles operating in completely distinct operational domains.",
+      "minimum_evidence_required": "Explicit domain boundary declaration (e.g., Domain A: Capital Markets vs Domain B: Revolutionary Ideological Training) and isomorphism mapping.",
+      "prohibition": "Must never imply causation or shared empirical substance."
+    },
+    {
+      "state": "SAME_LABEL_DIFFERENT_CONCEPT",
+      "definition": "Lexical identity masking fundamentally different conceptual definitions.",
+      "minimum_evidence_required": "Textual citations demonstrating identical term usage with conflicting definitional criteria.",
+      "prohibition": "Must strictly override automated keyword or vector clustering."
+    },
+    {
+      "state": "DIFFERENT_LABEL_SAME_CONCEPT",
+      "definition": "Different lexical terms denoting the exact same operational or philosophical principle.",
+      "minimum_evidence_required": "Rigorous definitional concordance proving identical scope, mechanism, and outcomes.",
+      "prohibition": "Requires human review certification before entering production."
+    },
+    {
+      "state": "UNMAPPED",
+      "definition": "Book-specific concept that has not yet been mapped to a canonical concept in the registry.",
+      "minimum_evidence_required": "Valid BookSpecificConcept object present in adapter output.",
+      "prohibition": "Cannot participate in cross-book synthesis units."
+    },
+    {
+      "state": "AMBIGUOUS_REQUIRES_REVIEW",
+      "definition": "Candidate mapping where evidence is conflicting, incomplete, or borderline.",
+      "minimum_evidence_required": "Audit log entry documenting the specific ambiguity.",
+      "prohibition": "Blocked from production synthesis until human review certification."
+    }
+  ],
+  "normalization_field_matrix": [
+    { "source_field": "book_id", "normalized_field": "book_id", "transformation": "Direct pass-through", "loss_allowed": false },
+    { "source_field": "unit_id / scene_id", "normalized_field": "source_unit_id", "transformation": "Direct pass-through preserving exact string identifier", "loss_allowed": false },
+    { "source_field": "unit_type", "normalized_field": "source_unit_type", "transformation": "Direct pass-through ('SCENE' for fiction, 'ARGUMENT_UNIT' for nonfiction, etc.)", "loss_allowed": false },
+    { "source_field": "genre", "normalized_field": "genre", "transformation": "Direct pass-through", "loss_allowed": false },
+    { "source_field": "source_location", "normalized_field": "source_location", "transformation": "Normalized to standard object {chapter, chapter_title, locator, document_file, element_ids}", "loss_allowed": false },
+    { "source_field": "structural_position", "normalized_field": "structural_position", "transformation": "Normalized to standard object {narrative_order, chronological_order, logical_level, book_percentage}", "loss_allowed": false },
+    { "source_field": "summary_statement / what_happens", "normalized_field": "statement", "transformation": "Direct string mapping preserving complete sentence", "loss_allowed": false },
+    { "source_field": "epistemic_status", "normalized_field": "epistemic_status", "transformation": "Direct pass-through of frozen epistemic tag; zero alteration", "loss_allowed": false },
+    { "source_field": "confidence", "normalized_field": "confidence", "transformation": "Mapped to standard HIGH/MEDIUM/LOW", "loss_allowed": false },
+    { "source_field": "materiality", "normalized_field": "materiality", "transformation": "Direct pass-through (CRITICAL, IMPORTANT, TEXTURAL, REDUNDANT)", "loss_allowed": false },
+    { "source_field": "materiality_reason", "normalized_field": "normalization.normalization_notes", "transformation": "Preserved in normalization metadata", "loss_allowed": false },
+    { "source_field": "temporal_anchor / time / dual_timeline", "normalized_field": "temporal", "transformation": "Projected into {event_time, record_time, source_time}", "loss_allowed": false },
+    { "source_field": "source_evidence", "normalized_field": "provenance.source_evidence", "transformation": "Direct array pass-through of verbatim extracts", "loss_allowed": false },
+    { "source_field": "source_provenance", "normalized_field": "provenance.source_trace", "transformation": "Stringified locator and citation summary", "loss_allowed": false },
+    { "source_field": "entities / participants", "normalized_field": "entities", "transformation": "Normalized into entity objects with type and resolution handle", "loss_allowed": false },
+    { "source_field": "relationships / causal_relationships", "normalized_field": "relationships", "transformation": "Categorized into CAUSAL, RELATIONAL, THEMATIC, CONCEPTUAL, TEMPORAL, EVIDENTIARY, CONTESTED", "loss_allowed": false },
+    { "source_field": "genre_payload / genre_specific_payload / scene interiority", "normalized_field": "genre_specific_payload_reference", "transformation": "Preserved as encapsulated immutable reference pointer", "loss_allowed": false }
+  ],
+  "adversarial_concept_test_cases": [
+    {
+      "test_id": "CT-01",
+      "concept_word": "freedom",
+      "sources": {
+        "norwegian_wood": { "unit": "NW-SC-08", "voice": "NARRATOR", "meaning": "Interior detachment from social conformity and grief" },
+        "psychology_of_money": { "unit": "PM-07", "voice": "AUTHOR", "meaning": "Individual control over one's daily calendar achieved via financial wealth" },
+        "bhagat_singh": { "unit": "KU-BS-CH27-01", "voice": "HISTORICAL_SUBJECT", "meaning": "Collective anti-colonial emancipation and socialist abolition of human exploitation" }
+      },
+      "correct_mapping_state": "SAME_LABEL_DIFFERENT_CONCEPT",
+      "prohibited_result": "Mapping all three to a unified CC-FREEDOM without domain disambiguation"
+    },
+    {
+      "test_id": "CT-02",
+      "concept_word": "risk",
+      "sources": {
+        "psychology_of_money": { "unit": "PM-02", "voice": "AUTHOR", "meaning": "Statistical uncertainty and unseen exposure in capital market investments" },
+        "bhagat_singh": { "unit": "KU-BS-CH25-01", "voice": "HISTORICAL_SUBJECT", "meaning": "Peril of imperial police execution, arrest, and torture in revolutionary conspiracy" }
+      },
+      "correct_mapping_state": "RELATED_NON_EQUIVALENT",
+      "prohibited_result": "Treating financial portfolio volatility as equivalent to execution risk"
+    },
+    {
+      "test_id": "CT-03",
+      "concept_word": "death",
+      "sources": {
+        "norwegian_wood": { "unit": "NW-SC-02", "voice": "NARRATOR", "meaning": "Existential trauma, private grief, and an interior presence residing within life" },
+        "bhagat_singh": { "unit": "KU-BS-CH47-01", "voice": "HISTORICAL_SUBJECT", "meaning": "Political martyrdom deliberately weaponized to awaken national mass consciousness" }
+      },
+      "correct_mapping_state": "DISTINCT_FRAME",
+      "prohibited_result": "Merging fictional melancholic suicide with anti-colonial political execution"
+    },
+    {
+      "test_id": "CT-04",
+      "concept_word": "wealth",
+      "sources": {
+        "psychology_of_money": { "unit": "PM-03", "voice": "AUTHOR", "meaning": "Accumulated financial options and unspent capital reserves providing personal safety" },
+        "bhagat_singh": { "unit": "KU-BS-CH42-01", "voice": "HISTORICAL_SUBJECT", "meaning": "Bourgeois capitalist surplus value derived from the systemic exploitation of workers" }
+      },
+      "correct_mapping_state": "DIALECTICAL_TENSION",
+      "prohibited_result": "Assuming both authors share a neutral economic definition of capital accumulation"
+    },
+    {
+      "test_id": "CT-05",
+      "concept_word": "sacrifice",
+      "sources": {
+        "psychology_of_money": { "unit": "PM-15", "voice": "AUTHOR", "meaning": "Paying the psychological emotional price of market volatility rather than seeking a free lunch" },
+        "bhagat_singh": { "unit": "KU-BS-CH49-01", "voice": "HISTORICAL_SUBJECT", "meaning": "Surrendering physical life on the British gallows to ignite mass revolutionary revolt" }
+      },
+      "correct_mapping_state": "ANALOGICAL_RELATION",
+      "prohibited_result": "Equating financial volatility tolerance with physical execution on the gallows"
+    },
+    {
+      "test_id": "CT-06",
+      "concept_word": "individual choice",
+      "sources": {
+        "norwegian_wood": { "unit": "NW-SC-13", "voice": "FICTIONAL_CHARACTER", "meaning": "Nagasawa's aristocratic self-determination unconstrained by social morality" },
+        "psychology_of_money": { "unit": "PM-01", "voice": "AUTHOR", "meaning": "Financial decisions anchored in idiosyncratic personal life experience" }
+      },
+      "correct_mapping_state": "RELATED_NON_EQUIVALENT",
+      "prohibited_result": "Citing Nagasawa's character belief as an authorial counterargument to Housel"
+    },
+    {
+      "test_id": "CT-07",
+      "concept_word": "meaning",
+      "sources": {
+        "norwegian_wood": { "unit": "NW-SC-36", "voice": "NARRATOR", "meaning": "Ambiguous, unresolved survival amidst the loss of youth and love" },
+        "bhagat_singh": { "unit": "KU-BS-CH46-01", "voice": "HISTORICAL_SUBJECT", "meaning": "Rationalist commitment to universal human emancipation in a godless material universe" }
+      },
+      "correct_mapping_state": "DISTINCT_FRAME",
+      "prohibited_result": "Collapsing existential literary ambiguity into philosophical Marxist materialism"
+    },
+    {
+      "test_id": "CT-08",
+      "concept_word": "uncertainty",
+      "sources": {
+        "psychology_of_money": { "unit": "PM-13", "voice": "AUTHOR", "meaning": "Room for error and financial planning around unknown future risks" },
+        "norwegian_wood": { "unit": "NW-SC-18", "voice": "NARRATOR", "meaning": "Emotional vertigo caused by the psychological opacity of others" }
+      },
+      "correct_mapping_state": "ANALOGICAL_RELATION",
+      "prohibited_result": "Treating emotional interiority as an empirical variable in risk management"
+    }
+  ],
+  "validation_rules": [
+    { "id": "VAL-NORM-01", "rule": "All 138 canonical units (36 NW + 24 PM + 78 BS) must be projected into NormalizedCrossBookUnit with 0 omissions." },
+    { "id": "VAL-NORM-02", "rule": "Zero duplicate source_unit_id references across the normalized layer." },
+    { "id": "VAL-NORM-03", "rule": "Orphan Check: Any normalized unit failing to resolve to an immutable Book Master unit halts the pipeline." },
+    { "id": "VAL-NORM-04", "rule": "Mutation Check: Canonical Book Master file SHA-256 hashes must remain identical before and after adapter execution." },
+    { "id": "VAL-NORM-05", "rule": "Zero epistemic status mutation: The normalized epistemic_status must strictly match the Book Master string." },
+    { "id": "VAL-NORM-06", "rule": "Zero voice mutation: Fictional characters, narrators, authors, biographers, and historical subjects must remain segregated." },
+    { "id": "VAL-NORM-07", "rule": "Zero materiality mutation: Critical, Important, and Textural ratings must be preserved exactly." },
+    { "id": "VAL-NORM-08", "rule": "Zero temporal substitution: Event time must never be substituted for record time." },
+    { "id": "VAL-NORM-09", "rule": "Zero provenance loss: Source file path, element IDs, and verbatim quotes must survive projection." },
+    { "id": "VAL-NORM-10", "rule": "Zero causal upgrading: Causal edges must carry explicit categories and cannot be converted to cross-book claims." },
+    { "id": "VAL-NORM-11", "rule": "Zero competing-account collapse: Disputed historical issues must retain segregated witness accounts." },
+    { "id": "VAL-NORM-12", "rule": "Zero genre collapse: Encapsulated genre payloads must remain accessible via reference pointers." }
+  ],
+  "governance_invariants": {
+    "book_master_supremacy": "Book Masters are immutable and authoritative. Normalization is a secondary, read-only derivation.",
+    "precedence_rule": "If any normalization projection conflicts with an underlying Book Master, the Book Master wins unconditionally.",
+    "orphan_policy": "Orphan normalized units are strictly forbidden and cause immediate validation failure.",
+    "concept_freeze_policy": "No automated concept mappings may be committed to production without passing the 8 adversarial test criteria."
+  }
+}
