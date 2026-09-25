@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 11,
-  "total_hours_saved": 281.0,
+  "total_books": 12,
+  "total_hours_saved": 346,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -15,6 +15,49 @@
     "Security, Cryptography, Privacy & Tradecraft"
   ],
   "books": [
+    {
+      "id": "bhagat-singh-unified-chronicle",
+      "title": "The Bhagat Singh Mega-Codex: The Definitive Unified Chronicle",
+      "subtitle": "A Continuous Chronological Multi-Source Synthesis of Life, Ideology, Courtroom Battles, and Martyrdom (1907–1931)",
+      "author": "Bhagat Singh, Satvinder S. Juss, A.G. Noorani, Chaman Lal, Malwinderjit Singh Waraich, Sohan Singh Josh",
+      "year": 2026,
+      "publisher": "Intellectualist Subject Master Series (Penguin, Oxford, LeftWord, Monthly Review, Unistar, CPI)",
+      "epistemic_tier": "Tier 1: Master Historiographical & Primary Multi-Source Synthesis",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "11+ Volumes Synthesized (8,000+ words of forensic continuous prose, 37 sections, 15 movements)",
+      "reading_time_saved": "65.0 hrs saved",
+      "hours_val": 65,
+      "core_axiom": "Revolution does not necessarily involve sanguinary strife; by Revolution we mean that the present order of things, based on manifest injustice, must change.",
+      "tags": [
+        "Bhagat Singh",
+        "Subject Master Codex",
+        "Multi-Source Synthesis",
+        "HSRA",
+        "Why I Am An Atheist",
+        "Courtroom as Ideological Stage",
+        "Lahore Conspiracy Case"
+      ],
+      "key_models": [
+        "The Courtroom as an Ideological Pulpit (Sessions Court Statement)",
+        "Dialectical Materialism vs. Religious Vanity (Why I Am An Atheist)",
+        "Democratic Centralism & Rebranding of the HSRA (Ferozeshah Kotla 1928)",
+        "The Distinction Between Individual Terror and Mass Working-Class Revolution",
+        "Ordinance III Emergency Decrees and Despotic Judicial Subversion",
+        "Clandestine Urban Escape Tradecraft (Calcutta Mail Disguise)"
+      ],
+      "landmark_studies": [
+        "British National Archives (Kew) Secret Surveillance Files (Juss, 2022)",
+        "Lahore Conspiracy Case Special Tribunal Records & Ordinance III (Noorani, 2001)",
+        "Assembly Bomb Case Sessions Court Records (Delhi Sessions Judge Poole, 1929)",
+        "Bhagat Singh Jail Notebook 404-page Manuscript (LeftWord Centenary Edition)",
+        "Police Recoveries & Approver Transcripts: Kashmir House & Agra Labs (Waraich, 2007)",
+        "Sohan Singh Josh Kirti Marxist Dialogues & Underground Eyewitness Accounts (1976)"
+      ],
+      "html_path": "distillations/bhagat-singh-unified-chronicle/index.html",
+      "markdown_path": "distillations/bhagat-singh-unified-chronicle/master-notes.md",
+      "featured": true
+    },
     {
       "id": "german-mastery-codex",
       "title": "Der Weg zum Meister (The German Mastery Codex)",
