@@ -1,0 +1,459 @@
+.calibre {
+    display: block;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    font-size: 1.66667em;
+    line-height: 150%
+    }
+.calibre2 {
+    font-style: italic
+    }
+.calibre3 {
+    line-height: 150%
+    }
+.calibre4 {
+    font-size: 1em;
+    line-height: 150%
+    }
+.calibre5 {
+    display: block
+    }
+.calibre6 {
+    display: block
+    }
+.calibre7 {
+    font-size: 0.83333em;
+    line-height: 150%
+    }
+.calibre8 {
+    font-size: 2em;
+    line-height: 150%
+    }
+.calibre9 {
+    font-weight: bold
+    }
+.calibre10 {
+    text-decoration: underline
+    }
+.calibre11 {
+    font-family: serif;
+    font-size: 0.625em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.2
+    }
+.calibre12 {
+    line-height: 150%;
+    text-decoration: none
+    }
+.calibre13 {
+    display: block;
+    font-size: 1.29167em;
+    font-weight: normal;
+    line-height: 150%;
+    page-break-after: avoid;
+    text-align: justify;
+    margin: 12pt 0 0.0001pt
+    }
+.calibre14 {
+    display: block;
+    font-size: 1.29167em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 150%;
+    page-break-after: avoid;
+    text-align: center;
+    margin: 14pt 0 12pt
+    }
+.calibre15 {
+    height: 565px;
+    width: 283px
+    }
+.calibre16 {
+    display: block;
+    padding: 1pt 0;
+    border: currentColor double 1.5pt
+    }
+.calibre17 {
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 150%;
+    page-break-after: avoid;
+    text-align: center;
+    margin: 14pt 0 12pt;
+    padding: 0;
+    border: currentColor none medium
+    }
+.calibre18 {
+    display: block;
+    font-size: 1.29167em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 150%;
+    page-break-after: avoid;
+    text-align: center;
+    margin: 14pt 0 12pt
+    }
+.calibre19 {
+    display: block;
+    font-size: 1.29167em;
+    font-weight: normal;
+    line-height: 150%;
+    page-break-after: avoid;
+    text-align: left;
+    margin: 12pt 0 0.0001pt
+    }
+.calibre20 {
+    height: 173px;
+    width: 346px
+    }
+.calibre21 {
+    height: 551px;
+    width: 346px
+    }
+.calibre22 {
+    height: 201px;
+    width: 346px
+    }
+.calibre23 {
+    display: block;
+    font-size: 1.29167em;
+    font-weight: normal;
+    line-height: 150%;
+    page-break-after: avoid;
+    text-align: justify;
+    text-indent: 0.4in;
+    margin: 12pt 0 0.0001pt
+    }
+.calibre24 {
+    font-size: 0.77419em;
+    line-height: 150%
+    }
+.calibre25 {
+    height: 346px;
+    width: 346px
+    }
+.calibre26 {
+    height: 230px;
+    width: 346px
+    }
+.calibre27 {
+    display: block;
+    font-size: 1.29167em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.2;
+    page-break-after: avoid;
+    text-align: center;
+    margin: 14pt 0 12pt
+    }
+.calibre28 {
+    height: 230px;
+    line-height: 1.2;
+    width: 346px
+    }
+.calibre29 {
+    height: 259px;
+    width: 346px
+    }
+.calibre30 {
+    height: 409px;
+    width: 346px
+    }
+.calibre31 {
+    height: 459px;
+    width: 283px
+    }
+.calibre32 {
+    height: 538px;
+    width: 320px
+    }
+.calibre33 {
+    height: 220px;
+    width: 346px
+    }
+.calibre34 {
+    height: 194px;
+    width: 345px
+    }
+.calibre35 {
+    height: 230px;
+    width: 345px
+    }
+.calibre36 {
+    font-size: 1.66667em;
+    line-height: 1.2
+    }
+.calibre37 {
+    font-style: italic;
+    line-height: 1.2
+    }
+.calibre38 {
+    line-height: 1.2
+    }
+.calibre39 {
+    font-size: 0.625em;
+    line-height: 115%
+    }
+.calibre40 {
+    height: 231px;
+    width: 346px
+    }
+.calibre41 {
+    height: 229px;
+    width: 346px
+    }
+.calibre42 {
+    font-size: 0.77419em;
+    font-weight: normal;
+    line-height: 150%
+    }
+.calibre43 {
+    height: 209px;
+    width: 346px
+    }
+.calibre44 {
+    height: 225px;
+    width: 296px
+    }
+.calibre45 {
+    height: 214px;
+    width: 346px
+    }
+.calibre46 {
+    display: block;
+    font-size: 1.29167em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 150%;
+    page-break-after: avoid;
+    text-align: justify;
+    text-indent: 0.4in;
+    margin: 14pt 0 12pt
+    }
+.calibre47 {
+    font-size: 0.77419em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%
+    }
+.calibre48 {
+    height: 274px;
+    width: 186px
+    }
+.calibre49 {
+    display: block;
+    font-size: 1.29167em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.2;
+    page-break-after: avoid;
+    text-align: center;
+    margin: 14pt 0 12pt
+    }
+.calibre50 {
+    height: 264px;
+    width: 176px
+    }
+.calibre51 {
+    height: 178px;
+    width: 346px
+    }
+.calibre52 {
+    height: 283px;
+    width: 212px
+    }
+.calibre53 {
+    height: 239px;
+    width: 207px
+    }
+.calibre54 {
+    font-family: serif;
+    font-size: 0.75em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.2
+    }
+.calibre55 {
+    font-size: 0.83333em;
+    line-height: 150%;
+    text-decoration: none
+    }
+.msohyperlink {
+    color: #0563C1;
+    text-decoration: underline
+    }
+.msolistparagraphcxspfirst {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-indent: -0.25in;
+    margin: 0 0 0.0001pt 0.5in
+    }
+.msolistparagraphcxspfirst1 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    text-indent: -0.25in;
+    margin: 0 0 0.0001pt 0.5in
+    }
+.msolistparagraphcxspfirst2 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    text-indent: -0.25in;
+    margin: 0 0 0.0001pt 0.65in
+    }
+.msolistparagraphcxspfirst3 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    text-indent: -0.25in;
+    margin: 0 0 0.0001pt 0.9in
+    }
+.msolistparagraphcxsplast {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-indent: -0.25in;
+    margin: 0 0 8pt 0.5in
+    }
+.msolistparagraphcxsplast1 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    text-indent: -0.25in;
+    margin: 0 0 8pt 0.5in
+    }
+.msolistparagraphcxsplast2 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    text-indent: -0.25in;
+    margin: 0 0 8pt 0.65in
+    }
+.msolistparagraphcxsplast3 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    text-indent: -0.25in;
+    margin: 0 0 8pt 0.9in
+    }
+.msonormal {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 0 8pt
+    }
+.msonormal1 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    margin: 0 0 8pt
+    }
+.msonormal2 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    margin: 0 0 8pt
+    }
+.msonormal3 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-indent: -0.5in;
+    margin: 0 0 8pt 0.5in
+    }
+.msonormal4 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: center;
+    text-indent: -0.5in;
+    margin: 0 0 8pt 0.5in
+    }
+.msonormal5 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-indent: 0.4in;
+    margin: 0 0 8pt
+    }
+.msonormal6 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: justify;
+    text-indent: 0.4in;
+    margin: 0 0 8pt
+    }
+.msonormal7 {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 8pt
+    }
+.msonormal8 {
+    display: block;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: center;
+    text-indent: 0.4in;
+    margin: 0 0 8pt
+    }
+.wordsection {
+    display: block;
+    page: WordSection1
+    }
+.wordsection1 {
+    display: block;
+    page: WordSection2
+    }
+.wordsection2 {
+    display: block;
+    page: WordSection3
+    }
+.wordsection3 {
+    display: block;
+    page: WordSection4
+    }
+.wordsection4 {
+    display: block;
+    page: WordSection5
+    }
+.wordsection5 {
+    display: block;
+    page: WordSection6
+    }
+.wordsection6 {
+    display: block;
+    page: WordSection7
+    }
+.wordsection7 {
+    display: block;
+    page: WordSection8
+    }
+.pcalibre:visited {
+    color: #954F72;
+    text-decoration: underline
+    }
+.pcalibre1:link {
+    color: #0563C1;
+    text-decoration: underline
+    }

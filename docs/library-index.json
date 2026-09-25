@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 30,
-  "total_hours_saved": 575.0,
+  "total_books": 31,
+  "total_hours_saved": 625.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1304,6 +1304,60 @@
       ],
       "html_path": "distillations/war-and-peace/index.html",
       "markdown_path": "distillations/war-and-peace/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "manifestation-unified-codex",
+      "title": "The Master Codex of Manifestation: A Unified Cross-Source Synthesis",
+      "subtitle": "Subconscious Mechanics, Cognitive Science, and Behavioral Alignment Across 7 Canonical Works",
+      "author": "Dr. Joseph Murphy, Rhonda Byrne, Esther & Jerry Hicks, Roxie Nafousi, Arden G., Z Z Rae, Jeffery Dawson",
+      "year": 2026,
+      "publisher": "Intellectualist Subject Master Series (Martino, Atria, Hay House, Penguin)",
+      "epistemic_tier": "Tier 1: Master Cross-Source Manifestation Synthesis & Epistemic Audit",
+      "tier_short": "Tier 1",
+      "category": "Behavioral Psychology & Habit Architecture",
+      "original_volume": "7 Canonical Works Synthesized (18 Invariant Units, 11 Movements)",
+      "reading_time_saved": "50.0 hrs saved",
+      "hours_val": 50.0,
+      "core_axiom": "Manifestation is not magical physics; it is the systematic alignment of subconscious identity, cognitive attention (Reticular Activating System), emotional regulation, and courageous, high-leverage physical action.",
+      "tags": [
+        "Manifestation",
+        "Subconscious Mind",
+        "Joseph Murphy",
+        "Rhonda Byrne",
+        "The Secret",
+        "Esther Hicks",
+        "Ask and It is Given",
+        "Roxie Nafousi",
+        "Detachment",
+        "Arden G.",
+        "Mind Control",
+        "Jeffery Dawson",
+        "Law of Attraction",
+        "Reticular Activating System",
+        "Emotional Guidance Scale",
+        "SATS",
+        "Self-Worth"
+      ],
+      "key_models": [
+        "The Dual-Layer Cybernetic Mind (Objective Reasoner vs. Subjective Executor)",
+        "The Law of Reversed Effort (Coué's Baudouin Principle & Non-Coercion)",
+        "The 22-Rung Emotional Guidance Scale & Autonomous Allowance",
+        "The Paradox of Detachment (Why Desperate Chasing Repels)",
+        "The Comfort-Zone Expansion Vector (Proactive Behavioral Alignment)",
+        "The Hypnagogic SATS Engine (Theta Brainwave Sleep-State Imprinting)"
+      ],
+      "landmark_studies": [
+        "Dr. Joseph Murphy's Subconscious Healing & Baudouin Sleep Method (1963)",
+        "Rhonda Byrne's Three-Step Formula (Ask, Believe, Receive) Deconstruction (2006)",
+        "Esther & Jerry Hicks's 22-Rung Emotional Guidance Scale & Vortex Theory (2004)",
+        "Roxie Nafousi's 7 Steps: Self-Worth, Universe Tests, and Aligned Action (2022)",
+        "Arden G.'s Detachment Protocols & Non-Resistance Attachment Theory (2026)",
+        "Jeffery Dawson's Mind Control Analysis: Persuasion & Anti-Guru Defense (2014)",
+        "The Grand Dispute Matrix: Resolving Action, Quantum Physics, and Specificity"
+      ],
+      "html_path": "distillations/manifestation-unified-codex/index.html",
+      "markdown_path": "distillations/manifestation-unified-codex/master-notes.md",
       "featured": true
     }
   ]
