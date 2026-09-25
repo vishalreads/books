@@ -1,0 +1,484 @@
+[
+  {
+    "id": "unit-01-patriarchs-ponds-tram",
+    "unit_number": 1,
+    "title": "Patriarch's Ponds & The Inevitable Tram: The Anatomy of Determinism",
+    "book_part": "Part I",
+    "chapters": "Chapters 1 & 3",
+    "setting": "Patriarch's Ponds, Moscow, sunset in May; hot spring evening, desolate park, apricot soda stall.",
+    "characters": [
+      "Mikhail Alexandrovich Berlioz",
+      "Ivan Nikolayevich Ponyrev (Ivan Bezdomny)",
+      "Woland (The Professor/Foreigner)"
+    ],
+    "core_action": "Berlioz, editor of a thick literary journal and chairman of MASSOLIT, instructs the young proletarian poet Bezdomny on writing an anti-religious poem proving Jesus never existed. Woland suddenly appears, engages them in debate on proofs of God's existence (refuting Kant's sixth proof), foretells Berlioz's impending decapitation by a female Komsomol tram driver because 'Annushka has already bought and spilled the sunflower oil', and vanishes as Berlioz slips on the oil and is beheaded by the tram.",
+    "sensory_texture": "The smell of melting asphalt, warm apricot soda producing yellow foam, the blinding bronze glint of the setting sun on Patriarch's Ponds, the eerie unnatural chill radiating from the foreigner's gray beret and checkered suit, the metallic screech of tram wheel flanges on rails, the horrifying thud of a severed head bounding onto the cobblestones.",
+    "psychological_transition": "From complacent Soviet bureaucratic materialism and pedagogical smugness to sudden existential vertigo, followed by panic, horror, and intellectual disintegration.",
+    "dialogue_significance": "Woland dismantles modern anthropocentric arrogance: 'Yes, man is mortal, but that would be only half the trouble. The worst of it is that he's suddenly mortal, that's the trick!' And the fateful decree: 'Because Annushka has already bought the sunflower oil, and not only bought it, but spilled it too.'",
+    "motifs": [
+      "Apricot soda",
+      "Sunset over water",
+      "Severed head",
+      "Sunflower oil",
+      "Kant's sixth proof",
+      "Soviet atheistic bureaucracy"
+    ],
+    "consequences": "Berlioz's immediate decapitation sets off the entire demonic cascade across Moscow; Ivan Bezdomny suffers cognitive collapse and embarks on a mad chase.",
+    "verbatim_source_passage": "“Yes, man is mortal, but that would be only half the trouble. The worst of it is that he is suddenly mortal, that is the trick! And he cannot even say what he will be doing this very evening... because Annushka has already bought sunflower oil, and not only bought it, but spilled it too. So that the meeting will not take place.” At this point, as may well be understood, there was silence under the lindens.",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-02-pontius-pilate-trial",
+    "unit_number": 2,
+    "title": "The Procurator of Judea: The Interrogation of Yeshua Ha-Notsri",
+    "book_part": "Part I",
+    "chapters": "Chapter 2",
+    "setting": "Palace of Herod the Great, Yershalaim; white marble colonnade, suffocating scent of attar of roses, scorching morning sun.",
+    "characters": [
+      "Pontius Pilate (Fifth Procurator of Judea)",
+      "Yeshua Ha-Notsri (The Wandering Philosopher)",
+      "Mark Muribellum (The Centurion)",
+      "Joseph Kaifa (High Priest of the Sanhedrin)"
+    ],
+    "core_action": "Pontius Pilate, tormented by a hemicrania (migraine) so excruciating he contemplates suicide, interrogates the battered Galilean prisoner Yeshua Ha-Notsri. Yeshua diagnoses Pilate's migraine, cures him with spoken psychological insight, and proclaims his core philosophical doctrine: 'There are no evil men in the world; all men are good.' Pilate, recognizing Yeshua's innocence, longs to spare him and keep him as a personal companion. However, when Kaifa brings the accusation of lese-majesty (speaking against Caesar's divine authority), Pilate is gripped by political cowardice, confirms the Sanhedrin's death sentence, releases the murderer Bar-Rabban instead, and washes his hands in bitter self-loathing.",
+    "sensory_texture": "The nauseating, cloying stench of rose oil mingling with the dry dust of Yershalaim; the agonizing pressure inside Pilate's left temple; the bruised face and coarse linen tunic of Yeshua; the golden eagles gleaming under a burning brass sky.",
+    "psychological_transition": "Pilate shifts from cynical, migraine-wracked Roman imperial cruelty to intense philosophical curiosity and intimate spiritual connection, which is violently crushed by bureaucratic fear of Tiberius Caesar, degenerating into permanent tormenting guilt.",
+    "dialogue_significance": "Yeshua's foundational epistemic claim: 'Truth above all is that your head aches, and aches so hard that you are faint-heartedly thinking of death... But your suffering will end now, your head will pass.' Pilate's fatal retreat: 'Do you suppose that the Roman Procurator could release a man who said what you said? O gods, gods! Or do you think I am ready to take your place?'",
+    "motifs": [
+      "Hemicrania (migraine)",
+      "Attar of roses",
+      "White cloak with blood-red lining",
+      "Caesar's statue",
+      "The Great Sanhedrin",
+      "Cowardice as the supreme vice"
+    ],
+    "consequences": "Pilate seals Yeshua's execution on Mount Bald, initiating a two-millennium spiritual sentence of sleepless agony awaiting reconciliation.",
+    "verbatim_source_passage": "“In the white cloak with blood-red lining, with the shuffling cavalryman’s gait, early in the morning of the fourteenth day of the spring month of Nisan, there came out to the covered colonnade between the two wings of the palace of Herod the Great the Procurator of Judea, Pontius Pilate... And cowardice, Yeshua Ha-Notsri said, was unquestionably one of the most terrible vices. No, philosopher, I disagree: it is the most terrible vice!”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-03-pursuit-and-griboyedov",
+    "unit_number": 3,
+    "title": "The Wild Pursuit & The Madhouse of MASSOLIT: Soviet Literary Satire",
+    "book_part": "Part I",
+    "chapters": "Chapters 4, 5 & 6",
+    "setting": "Streets of Moscow, the Moscow River, and Griboyedov House (headquarters of MASSOLIT).",
+    "characters": [
+      "Ivan Bezdomny",
+      "Koroviev/Bassoon",
+      "Behemoth (The Giant Black Cat)",
+      "MASSOLIT writers and diners",
+      "Doctor Stravinsky"
+    ],
+    "core_action": "Witnessing Berlioz's death, Ivan attempts to apprehend Woland and his grotesque retinue. The gang easily eludes him; Behemoth boards a tram with a five-kopeck piece. Ivan breaks into a stranger's apartment, steals a small icon and a candle, swims in the Moscow River where his clothes are stolen, and arrives at Griboyedov House in long underwear and bare feet. Inside Griboyedov, MASSOLIT members are gorging on luxurious subsidized banquets. Ivan's raving about the devil, Pontius Pilate, and Berlioz's decapitation creates an uproar; he is subdued, bound with towels, and hauled off in a psychiatric ambulance to Professor Stravinsky's suburban clinic.",
+    "sensory_texture": "The smell of sterlet soup and shashlik in the garden restaurant of Griboyedov; the clatter of silver cutlery; the ridiculous spectacle of Ivan in striped underwear clutching an icon pinned with a safety pin; the sterile smell of ether and quiet rubber wheels of the mental hospital.",
+    "psychological_transition": "From militant proletarian anger and self-righteous pursuit to public humiliation, complete social alienation, and classification as a dangerous lunatic.",
+    "dialogue_significance": "Bulgakov savagely lampoons the state-controlled writers' union, showing writers whose artistic lives are driven entirely by dacha allotments, subsidized food, and ideological conformity rather than literature.",
+    "motifs": [
+      "Black cat on a tram",
+      "Icon and candle",
+      "Long underwear",
+      "Perch au naturel",
+      "MASSOLIT passes",
+      "Psychiatric straightjacket"
+    ],
+    "consequences": "Ivan is institutionalized in Stravinsky's asylum, removing him from Soviet literary life and preparing him to receive the Master.",
+    "verbatim_source_passage": "“Neither the conductor nor the passengers were struck by the chief thing: not that a cat had climbed into the tram, which was bad enough, but that he was going to pay his fare! The cat turned out to be not only a fare-paying passenger, but also a disciplined one... Griboyedov was famous for its restaurant. It was universally acknowledged as the best restaurant in Moscow, not excluding the Metropole.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-04-flat-no-50-uncanny-occurrences",
+    "unit_number": 4,
+    "title": "Apartment No. 50 & The Dispersal of the Scoundrels: Demonic Subversion",
+    "book_part": "Part I",
+    "chapters": "Chapters 7, 9 & 10",
+    "setting": "Apartment No. 50, 302-bis Sadovaya Street, Moscow.",
+    "characters": [
+      "Styopa Likhodeyev (Director of Variety Theatre)",
+      "Woland",
+      "Azazello",
+      "Behemoth",
+      "Koroviev",
+      "Nikanor Ivanovich Bosoy"
+    ],
+    "core_action": "Styopa Likhodeyev wakes with a crippling hangover to discover Woland lounging in his apartment. Woland presents a signed contract for seven performances at the Variety Theatre. Azazello and Behemoth emerge; Behemoth downs vodka and bites into a pickled mushroom. Woland announces that Styopa is superfluous, and Azazello magically teleports Styopa across two thousand kilometers to the Black Sea port of Yalta. When housing chairman Nikanor Ivanovich Bosoy arrives to lease Berlioz's vacated room, Koroviev bribes him with 400 rubles, which Koroviev then magically transmogrifies into foreign currency (US dollars) and tips off the secret police, having Bosoy arrested.",
+    "sensory_texture": "The greasy hangover taste of pickled cabbage; ice-cold vodka poured into crystal glasses; the terrifying fangs and walleye of Azazello; the sudden blinding glare of the Yalta sea pier.",
+    "psychological_transition": "Soviet bureaucratic authority—accustomed to terrorizing citizens through denunciations and housing allotments—finds itself instantaneously disempowered and humiliated by supernatural forces operating beyond bureaucratic levers.",
+    "dialogue_significance": "Woland coolly diagnoses Soviet administrative incompetence: 'In general, they've been doing whatever they please lately. They don't do a thing, they can't do anything because they know nothing about what they're supposed to do. A fine lot of executives!'",
+    "motifs": [
+      "Teleportation to Yalta",
+      "Pickled mushroom and vodka",
+      "Foreign currency entrapment",
+      "Communal flat politics",
+      "Fangs of Azazello"
+    ],
+    "consequences": "The leadership of the Variety Theatre and housing committee is systematically dismantled, paving the way for Woland's public performance.",
+    "verbatim_source_passage": "“‘Open your eyes, you scoundrel, or I’ll throw you out the window!’ cried Azazello in a terrible, rasping voice. Styopa opened his eyes and gasped: a blue sea was splashing right at his feet, and behind him was a sunny town on the slopes of a mountain. ‘Yalta!’ whispered Styopa weakly and lost consciousness.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-05-stravinsky-clinic-two-ivans",
+    "unit_number": 5,
+    "title": "The Split Consciousness: Stravinsky's Clinic & The Disillusionment of Poetry",
+    "book_part": "Part I",
+    "chapters": "Chapters 8 & 11",
+    "setting": "Professor Stravinsky's psychiatric hospital on the outskirts of Moscow; pristine white walls, silent rubber linoleum, soundproof river-facing rooms.",
+    "characters": [
+      "Ivan Bezdomny",
+      "Professor Alexander Nikolayevich Stravinsky",
+      "Doctor Fyodor Vasilyevich"
+    ],
+    "core_action": "Stravinsky conducts a masterclass in forensic psychiatric interrogation. With gentle, hypnotic rationality, Stravinsky demonstrates to Ivan that his attempts to chase devils with candles and report Pontius Pilate to the police are logically self-defeating and will only lead to permanent incarceration. Alone in Room 117 during a violent thunderstorm, Ivan experiences an internal schism between 'the old Ivan' (the crude, ignorant agitprop hack) and 'the new Ivan' (the reflective, humiliated soul). He realizes with shattering clarity that his own poems are monstrous, talentless rubbish, and resolves never to write another line of poetry.",
+    "sensory_texture": "Soft electric light through frosted glass; the distant smell of pine woods after rain; the cool touch of hypodermic needles inducing peaceful chemical torpor; the heavy rumble of spring thunder shaking the glass pane.",
+    "psychological_transition": "From violent defensive paranoia and ideological obedience to ego dissolution, painful artistic honesty, and genuine spiritual awakening.",
+    "dialogue_significance": "Ivan asks himself the ultimate question about his art: 'Are my poems bad?'—'Monstrously bad!' whispered Ivan boldly and candidly to himself. 'Don't write any more!' begged the other Ivan. 'I swear I won't!' promised the poet.",
+    "motifs": [
+      "Psychiatric rationalism",
+      "The two Ivans (schism)",
+      "Thunderstorm",
+      "The rejection of Soviet propaganda verse"
+    ],
+    "consequences": "Ivan renounces his false literary identity as Bezdomny ('Homeless') and prepares his soul for the arrival of the Master.",
+    "verbatim_source_passage": "“‘Why, then, are you here?’ ‘Because I got excited, and also because I went to Griboyedov’s in my underclothes.’ ‘Wait, wait,’ Stravinsky interrupted him. ‘Did you really expect to catch him by running after him in your underwear with a candle in your hand?’... Ivan blushed and whispered, ‘No, of course not...’ ‘Then stay here and rest.’”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-06-black-magic-variety-theatre",
+    "unit_number": 6,
+    "title": "Black Magic and Its Exposure: The Moral X-Ray of Soviet Society",
+    "book_part": "Part I",
+    "chapters": "Chapter 12",
+    "setting": "The Moscow Variety Theatre; packed auditorium of 2,000 Muscovites, stage, gilded boxes.",
+    "characters": [
+      "Woland",
+      "Fagotto/Koroviev",
+      "Behemoth",
+      "Georges Bengalsky (The Master of Ceremonies)",
+      "Arkady Apollonovich Sempleyarov",
+      "The Moscow Audience"
+    ],
+    "core_action": "Woland sits in an armchair on stage to observe Muscovites in mass. Koroviev and Behemoth perform miraculous tricks: playing cards turn into ten-ruble chervontsy banknotes that flutter down into the auditorium, causing frenzied fistfights among spectators. When the condescending MC Bengalsky repeatedly demands that the troupe 'explain the trick' to demystify it for Soviet scientific materialism, the audience demands his head be torn off; Behemoth brutally rips Bengalsky's head from his neck, blood spurting, until the audience pleads for mercy and the cat pops the head back on. Koroviev then opens a high-fashion Parisian boutique on stage, inviting women to exchange their shabby Soviet clothes for haute-couture dresses and French perfumes. When Sempleyarov demands an exposure, Koroviev publicly exposes Sempleyarov's secret adultery with a young starlet. Later, on the street, the magical clothes vanish, leaving dozens of women running naked through Moscow in their underwear.",
+    "sensory_texture": "The rustle of falling crisp banknotes; the screams of women grabbing silk dresses; the nauseating tearing sound of tendons as Bengalsky's head is twisted off; the smell of Chanel perfume evaporating into thin air; the roar of laughter from the gallery.",
+    "psychological_transition": "The audience's veneer of Soviet 'new socialist man' morality collapses instantly into primal greed, vanity, pettiness, and voyeurism.",
+    "dialogue_significance": "Woland delivers his sociological verdict on humanity: 'Well, they are ordinary people... they love money, but that has always been so... They are thoughtless, of course... and yet, sometimes mercy knocks at their hearts... ordinary people... in general, they remind me of their predecessors, only the housing shortage has corrupted them.'",
+    "motifs": [
+      "Money falling from ceiling",
+      "Decapitation and reattachment",
+      "Vanishing Parisian clothes",
+      "Exposure of hypocrisy",
+      "The housing shortage"
+    ],
+    "consequences": "Mass hysteria engulfs Moscow; financial and judicial systems are thrown into paralysis; Soviet authority scrambles to suppress rumors of black magic.",
+    "verbatim_source_passage": "“‘Well, now,’ Woland responded pensively, ‘they are human beings like any others. They love money, but that has always been so... Men are men everywhere. They love money, but that has always been true... They are frivolous, of course... and yet, mercy sometimes knocks at their hearts... ordinary people... in general, they remind me of their predecessors, only the housing shortage has corrupted them.’ And he gave an order: ‘Put the head back on.’”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-07-the-master-enters",
+    "unit_number": 7,
+    "title": "The Hero Enters: The Story of the Novel and the Yellow Flowers",
+    "book_part": "Part I",
+    "chapters": "Chapter 13",
+    "setting": "Room 118 of Stravinsky's clinic; midnight balcony, moonlight, smell of lilacs.",
+    "characters": [
+      "Ivan Bezdomny",
+      "The Master (Unnamed Novellist, 38 years old)"
+    ],
+    "core_action": "A man with a stolen master key steps from the balcony into Ivan's room. He calls himself 'the Master'—a historian who won 100,000 rubles on a lottery ticket, rented a cozy basement apartment near the Arbat, bought books, and wrote a masterpiece novel about Pontius Pilate and Yeshua Ha-Notsri. He recounts how on Tverskaya Street he met Margarita, who was carrying disgusting, alarming yellow mimosa flowers, and how love struck them both 'like a murderer leaping out of an alley'. When he completed his novel, Soviet editors rejected it with terror; critic Latunsky and others launched a vicious press campaign against 'Pilatism'. Driven to paranoia and terror of arrest, the Master burned his manuscript in the stove. Margarita saved a charred fragment. That night, the Master was arrested/interrogated (implied Lubyanka), released months later into homelessness, and voluntarily committed himself to Stravinsky's asylum, having abandoned all hope and his name.",
+    "sensory_texture": "The visual shock of bright yellow flowers against a black spring coat; the crackle and ash of burning paper leaves in a tiled stove; the muffled clinking of the Master's keys; the silver moonlight casting long shadows across the hospital floor.",
+    "psychological_transition": "From deep despair and protective anonymity to bitter, tender recollection of love and artistic martyrdom.",
+    "dialogue_significance": "The Master defines his identity: 'I am a master,' he said, his face hardening, and drew from his pocket a greasy black cap with the letter 'M' embroidered in yellow silk. His description of love: 'Love leaped out before us like a murderer jumping out of an alley, and struck both of us at once! That is how lightning strikes, that is how a Finnish knife strikes!'",
+    "motifs": [
+      "Yellow mimosa flowers",
+      "Basement near Arbat",
+      "Black cap with letter 'M'",
+      "Burning manuscript in stove",
+      "Critic Latunsky and Pilatism"
+    ],
+    "consequences": "Ivan discovers that the novel he heard Woland tell at Patriarch's Ponds is the Master's destroyed book; Ivan becomes the Master's spiritual disciple.",
+    "verbatim_source_passage": "“She was carrying alarming yellow flowers in her hands. Devil knows what they are called, but for some reason they are the first to appear in Moscow. And these flowers stood out clearly against her black spring coat. She was carrying yellow flowers! An evil color... Love leaped out before us like a murderer jumping out of an alley, and struck both of us at once! That is how lightning strikes, that is how a Finnish knife strikes!”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-08-siege-of-the-variety",
+    "unit_number": 8,
+    "title": "The Siege of Midnight & The Terror of the Bureaucracy",
+    "book_part": "Part I",
+    "chapters": "Chapters 14, 15, 17 & 18",
+    "setting": "Financial Director Rimsky's office at the Variety Theatre; Investigation rooms; Apartment No. 50.",
+    "characters": [
+      "Grigory Danilovich Rimsky",
+      "Ivan Savelyevich Varenukha",
+      "Hella (The Vampire)",
+      "Andrei Fokich Sokov (The Barman)",
+      "Secret Police Investigators"
+    ],
+    "core_action": "At midnight in the Variety Theatre, Rimsky is trapped in his office. Varenukha, assaulted by Azazello and Behemoth and transformed into a vampire, appears outside the window accompanied by the naked, bruised female vampire Hella. They attempt to lure Rimsky into opening the locked door, but the crowing of a cock breaks the demonic spell just in time; Rimsky flees to Leningrad with his hair turned snow-white. Meanwhile, the barman Sokov visits Apartment No. 50 to complain about theater banknotes turning into bottle labels; Woland informs him he will die of liver cancer in nine months, mocking his 'second-grade freshness' sturgeon. Across Moscow, bureaucratic offices descend into surreal chaos: an empty suit of clothes sits at a desk signing documents while humming an opera.",
+    "sensory_texture": "The icy tap-tap of corpse fingernails on the glass; the rotten breath of the vampire; the crowing of the rooster cutting through the night; the green face and white hair of terrified bureaucrats; the smell of stale tea and decaying paperwork.",
+    "psychological_transition": "Soviet bureaucratic denial collapses into raw existential dread and physical flight.",
+    "dialogue_significance": "Woland's critique of Soviet compromise and deceit: 'Second-grade freshness—that’s nonsense! There is only one freshness—the first, and it is also the last. And if the sturgeon is of the second freshness, that means it is simply rotten!'",
+    "motifs": [
+      "The crowing cock",
+      "Vampire Varenukha and Hella",
+      "Second-grade freshness",
+      "The empty suit signing documents",
+      "Snow-white hair of fear"
+    ],
+    "consequences": "Total administrative breakdown in Moscow, forcing state security to launch a full-scale armed investigation into Flat No. 50.",
+    "verbatim_source_passage": "“‘Second-grade freshness—that is sheer nonsense! There is only one freshness—the first, and it is also the last. And if the sturgeon is of the second freshness, that simply means it is rotten!’ ‘I beg your pardon,’ the barman began, not knowing how to get away from this piercing gaze. ‘I didn’t come about that...’ ‘About what then?’ asked the magician.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-09-the-execution-on-mount-bald",
+    "unit_number": 9,
+    "title": "The Execution on Mount Bald: The Agony and Curse of Matthew Levi",
+    "book_part": "Part I",
+    "chapters": "Chapter 16",
+    "setting": "Mount Bald (Golgotha), outside Yershalaim; oppressive blistering heat, baking limestone rocks, approaching monstrous black thunderstorm.",
+    "characters": [
+      "Yeshua Ha-Notsri",
+      "Dismas",
+      "Hestas",
+      "Matthew Levi (Former Tax Collector)",
+      "Roman Executioners",
+      "Afranius (Head of Pilate's Secret Service)"
+    ],
+    "core_action": "The three condemned men hang on their posts under the merciless midday sun, swarmed by horseflies, their bodies blistered and swollen. Matthew Levi, hiding among the rocks, is consumed by suicidal grief and rage: he brought a bread knife to stab Yeshua and save him from prolonged torture, but arrived too late. Desperate, Levi curses God from the depths of his being, accusing God of blindness and cruelty. As the sky turns pitch-black with an apocalyptic storm, Afranius arrives with an order from Pilate: the executioners give the condemned sponges dipped in drugged water and pierce their hearts with lances to end their agony. As torrential rain and lightning unleash a deluge, Levi cuts down Yeshua's corpse and carries it away to hide it.",
+    "sensory_texture": "The deafening buzzing of iridescent flies around cracked lips; the nauseating smell of burning dust and horse sweat; the terrifying, sudden descent of pitch darkness in the middle of the afternoon; thunderclaps that crack the bedrock of Judea; torrential sheets of ice-cold mud and water.",
+    "psychological_transition": "Levi transitions from devout discipleship to metaphysical rebellion and blasphemous hatred against God, followed by fierce, solitary devotional guardianship of his teacher's remains.",
+    "dialogue_significance": "Matthew Levi's ontological defiance: 'I curse you, God! You are deaf and cruel! You do not hear! You gave this sun to burn the innocent, and you hide your eyes from the torturers!'",
+    "motifs": [
+      "Mount Bald",
+      "The bread knife",
+      "Curse against the Almighty",
+      "The coup de grâce by spear",
+      "Apocalyptic thunderstorm over Yershalaim"
+    ],
+    "consequences": "Yeshua is dead, but his memory and teachings remain fiercely documented by Matthew Levi, becoming the spiritual axis of the universe.",
+    "verbatim_source_passage": "“The sun stood high over the hill, and its rays scorched Matthew’s back, neck, and head... Levi raised his fists to the sky and cried out in fury: ‘I curse you, God! You are deaf! If you were not deaf, you would have heard me and struck him down before this!’... The curtain of darkness fell over Yershalaim. A monstrous storm descended from the Mediterranean.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-10-margaritas-grief-and-azazellos-cream",
+    "unit_number": 10,
+    "title": "Margarita's Grief & Azazello's Cream: The Metamorphosis of Love",
+    "book_part": "Part II",
+    "chapters": "Chapters 19 & 20",
+    "setting": "A mansion near the Arbat, Alexander Garden by the Kremlin wall, and Margarita's bedroom.",
+    "characters": [
+      "Margarita Nikolayevna",
+      "Azazello",
+      "Natasha (Her Maid)"
+    ],
+    "core_action": "Margarita lives in luxury as the wife of a prominent Soviet engineer, but her life is hollow and dead without the Master. Holding the charred remains of his manuscript and his yellow-embroidered cap, she resolves that she would sell her soul to the devil to learn if he is alive. In the Alexander Garden, the red-haired demon Azazello approaches her, recites lines from the Master's private Pilate novel to prove his identity, and gives her a small box of gold cream. That evening at half past ten, Margarita undresses and rubs the cream into her body. Instantly, her aging skin becomes glowing, youthful, and satiny, her wrinkles vanish, and she feels gravity dissolve. Flying on a broomstick, naked and jubilant, she takes to the Moscow night air, followed by her maid Natasha riding on a transformed neighbor-turned-pig (Nikolai Ivanovich).",
+    "sensory_texture": "The cool, herbal fragrance of marsh greenery and ozone from the magical cream; the sensation of muscles becoming weightless; the wind rushing against naked skin; the moon reflecting in the bedroom mirror.",
+    "psychological_transition": "From suffocating depression, domestic grief, and suicidal despair to intoxicating liberation, wild feminine agency, and supernatural ecstasy.",
+    "dialogue_significance": "Margarita's fateful pledge: 'I know what I’m getting into. But I’m doing it for him, because I have no hope left in the world. I’d go to the devil himself for him!'",
+    "motifs": [
+      "Yellow mimosa and charred manuscript",
+      "Alexander Garden",
+      "Azazello's gold cream",
+      "The broomstick flight",
+      "Invisible and free"
+    ],
+    "consequences": "Margarita steps beyond mortal law into the supernatural realm, assuming the mantle of Queen of the Full Moon.",
+    "verbatim_source_passage": "“‘Invisible and free! Invisible and free!’ she shouted, flying out the window into the damp, spring air. The thirty-year-old Margarita looked into the mirror and saw a woman of twenty, with naturally curling black hair, shining eyes, and skin that looked like satin... She laughed with happiness.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-11-the-flight-and-revenge-on-latunsky",
+    "unit_number": 11,
+    "title": "The Witch's Flight & The Wrecking of Latunsky: Retributive Justice",
+    "book_part": "Part II",
+    "chapters": "Chapter 21",
+    "setting": "Skies over Moscow; the elite Dramlit apartment building (Apartment No. 84); forests and rivers of Russia.",
+    "characters": [
+      "Margarita",
+      "Critic Latunsky's four-year-old neighbor",
+      "Water nymphs and wood demons"
+    ],
+    "core_action": "Flying invisible over Moscow, Margarita spots the luxurious apartment building housing the Soviet literary elite (Dramlit). Locating Apartment 84, belonging to critic Latunsky—the man who destroyed the Master—she smashes through the windows. Using a heavy hammer, she destroys his grand piano, smashes chandeliers, slashes armchairs, tears up his manuscripts, and turns on all the faucets to flood the apartment. Hearing a small boy crying in terror in a neighboring flat, her vengeful fury instantly turns into tender motherly compassion; she comforts the child and flies away into the wild Russian night, bathing naked in a luminous river surrounded by rusalkas and satyrs.",
+    "sensory_texture": "The roar of shattered window glass; the percussive discord of hammer blows striking piano wires; the gush of water cascading down stairwells; the cool, velvet embrace of river water under starlight; the pine scent of ancient forests.",
+    "psychological_transition": "From destructive, righteous vengeance to profound maternal tenderness, and finally to serene communion with untamed nature.",
+    "dialogue_significance": "Margarita calms the terrified child: 'Don't be afraid, little boy... Some bad boys broke the windows, but nobody will hurt you. Go to sleep now.' Showing that her soul remains fundamentally good even when wielding demonic power.",
+    "motifs": [
+      "Dramlit building",
+      "Grand piano destruction",
+      "The crying child",
+      "The bath of witches",
+      "Rusalkas"
+    ],
+    "consequences": "Margarita purges her rage, avenges the Master's artistic persecution, and arrives at Satan's palace spiritually prepared for her royal role.",
+    "verbatim_source_passage": "“She flew straight to the grand piano and with all her might brought the hammer down on the keys. The piano let out a desperate shriek... With frantic speed she tore through the apartment, smashing mirrors, cutting upholstery, turning on faucets... But when she heard a child weeping in the next flat, she stopped instantly. ‘Don’t cry, darling,’ she whispered softly.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-12-satan-spring-ball",
+    "unit_number": 12,
+    "title": "The Grand Spring Ball of the Full Moon: The Vanity of Evil and the Agony of Frieda",
+    "book_part": "Part II",
+    "chapters": "Chapters 22 & 23",
+    "setting": "Apartment No. 50 expanded into infinite dimensions; grand ballroom of black marble, fountains of champagne, pillars of fire, tropical forests.",
+    "characters": [
+      "Woland",
+      "Margarita (Queen of the Ball)",
+      "Koroviev",
+      "Behemoth",
+      "Azazello",
+      "Hella",
+      "Historical villains, poisoners, murderers",
+      "Frieda"
+    ],
+    "core_action": "Margarita meets Woland in Apartment No. 50, where Behemoth plays chess with live pieces. As Queen Margot (by virtue of her royal French bloodline), she presides over the Spring Ball of the Full Moon. Clad only in heavy diamond shoes and a heavy gold medal, her knee kissed by thousands of resurrected historical monsters (emperors, poisoners, traitors, murderers from the ashes of eternity), she stands for hours enduring agonizing physical pain with gracious dignity. Among the damned, she encounters Frieda, a young woman who smothered her unwanted baby with a handkerchief in a forest, and whose eternal punishment is to have that same handkerchief placed on her nightstand every morning. Margarita is pierced with unbearable pity for Frieda. At the climax of the ball, Woland executes Baron Meigel (an undercover Soviet police spy), drinks his blood from a golden chalice made of Berlioz's skull, and gives the chalice to Margarita to drink.",
+    "sensory_texture": "The blinding glare of thousands of chandeliers; the scent of burning ambergris and roses; the agonizing weight of the gold medal bruising her collarbone; the icy touch of thousands of dead lips against her knee; the warm, metallic, coppery taste of blood from the skull goblet.",
+    "psychological_transition": "Margarita endures supreme physical and psychic agony without flinching, maintaining absolute regal poise and prioritizing compassion over self-preservation.",
+    "dialogue_significance": "Koroviev explains why evil needs a queen: 'Blood will tell... A ball must have a queen, and she must be named Margarita and be a native of the place.' Woland's toast over the skull: 'To each according to his faith! You believed you would be annihilated into nothingness—so be it; you shall become ashes. And I shall drink from this vessel of your skull.'",
+    "motifs": [
+      "Chess with live pieces",
+      "The Queen's knee",
+      "Frieda and the handkerchief",
+      "The skull of Berlioz",
+      "The blood of the spy"
+    ],
+    "consequences": "Margarita earns Woland's unbounded respect by enduring the ordeal without begging for any favor.",
+    "verbatim_source_passage": "“‘Never ask for anything! Never and nothing, and especially not from those who are stronger than you. They will make the offer themselves, and give everything themselves.’... Frieda looked at Margarita with dry, wild eyes. Every morning for thirty years, the executioners placed the handkerchief on her nightstand... Margarita’s heart was torn with pity.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-13-manuscripts-dont-burn",
+    "unit_number": 13,
+    "title": "Manuscripts Don't Burn: The Evocation and Reclamation of the Master",
+    "book_part": "Part II",
+    "chapters": "Chapter 24",
+    "setting": "Woland's chamber, Apartment No. 50; midnight feast of candles, vodka, caviar, and sulfur.",
+    "characters": [
+      "Woland",
+      "Margarita",
+      "The Master",
+      "Koroviev",
+      "Behemoth",
+      "Azazello"
+    ],
+    "core_action": "When Woland invites Margarita to ask for her reward, she does not ask for herself or the Master; she asks that Frieda no longer be brought the handkerchief. Woland informs her that mercy is not his department, but allows her to grant the pardon herself. Deeply moved by her selfless nobility, Woland insists on granting her own desire. She cries out: 'I want my beloved, the Master, returned to me this minute!' In an instant, the Master appears in his hospital robe, bewildered and broken. When Woland asks about his novel, the Master despairs: 'I burned it in the stove.' Woland utters the immortal decree: 'That cannot be: manuscripts don't burn.' Behemoth slaps a thick, pristine, unburned manuscript onto the table. Woland restores their basement apartment on the Arbat and sends them home together in peace.",
+    "sensory_texture": "The smell of roasting meat and cold sulfur; the crisp, heavy rustle of unburnt manuscript pages; the weeping of Margarita holding the Master's trembling hands; the sudden miraculous appearance of documents, money, and keys.",
+    "psychological_transition": "From mortal helplessness and total loss to miraculous reclamation of artistic genius, true love, and restored dignity.",
+    "dialogue_significance": "Woland's supreme aesthetic and metaphysical axiom: 'This cannot be, manuscripts don’t burn.' (Рукописи не горят.) And his rule of power: 'Never ask for anything from those who are stronger than you... They will offer it themselves.'",
+    "motifs": [
+      "The pardon of Frieda",
+      "Manuscripts don't burn",
+      "The unburnt novel",
+      "The Master's hospital smock",
+      "Restoration of the basement"
+    ],
+    "consequences": "Art and love triumph over censorship and destruction; the Master and Margarita are reunited under Satanic protection.",
+    "verbatim_source_passage": "“‘I burned it in the stove,’ the Master replied. ‘Forgive me, but I don’t believe you,’ Woland said. ‘This cannot be. Manuscripts don’t burn.’ He turned to Behemoth and said: ‘Come on, Behemoth, let us have the novel.’ The cat immediately leaped off the bed, and everyone saw that he had been sitting on a thick stack of manuscript pages.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-14-pilates-agony-and-judas-murder",
+    "unit_number": 14,
+    "title": "The Assassination of Judas & Pilate's Agony of Cowardice",
+    "book_part": "Part II",
+    "chapters": "Chapters 25 & 26",
+    "setting": "Herod's palace, Yershalaim, night; the olive groves of Gethsemane.",
+    "characters": [
+      "Pontius Pilate",
+      "Afranius",
+      "Judas of Kiriath",
+      "Niza",
+      "Matthew Levi"
+    ],
+    "core_action": "Pilate confers with his spymaster Afranius. In veiled, coded speech ('I have received information that Judas is in danger of being assassinated tonight...'), Pilate orders the covert assassination of Judas. Judas, lured into the dark olive groves of Gethsemane by the beautiful woman Niza, is ambushed by Afranius's assassins and stabbed to death; his thirty pieces of silver, soaked in blood, are thrown over the gate of the High Priest Kaifa. Afranius reports the mission accomplished to Pilate. Later, Matthew Levi is brought before Pilate. Levi refuses Pilate's gold and patronage, swearing he will kill Judas; Pilate reveals that he himself already killed Judas. Pilate reads Levi's parchment containing Yeshua's last words, discovering that Yeshua named cowardice as the greatest vice. Pilate, looking upon his loyal hound Banga, knows he is damned to eternal sleepless remorse.",
+    "sensory_texture": "The silver moonlight illuminating olive leaves; the sudden cold sting of a blade between the shoulder blades; the clink of heavy silver shekels covered in dark sticky blood hitting marble flags; the mournful howling of Pilate's dog Banga.",
+    "psychological_transition": "Pilate attempts to assuage his guilt through state-sanctioned revenge, only to find that murder cannot erase cowardice or heal the wound of having condemned innocence.",
+    "dialogue_significance": "Pilate's dialogue with Matthew Levi: 'You need not kill him. I killed him myself tonight.' And Pilate reading the parchment: 'Cowardice is unquestionably one of the most terrible vices... No, philosopher, I disagree: it is the most terrible vice!'",
+    "motifs": [
+      "Coded imperial orders",
+      "Gethsemane ambush",
+      "Blood-stained thirty shekels",
+      "Banga the great dog",
+      "Cowardice as supreme vice"
+    ],
+    "consequences": "Judas's betrayal is avenged, but Pilate's eternal damnation is sealed in his own conscience.",
+    "verbatim_source_passage": "“‘No, philosopher, I disagree: cowardice is the most terrible vice!’... And then a terrible thing happened: the Procurator wept. Only Banga, the great dog with pointed ears, the only creature that loved him, put his muzzle on his master’s knee, gazing into his eyes with devotion and sorrow.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-15-conflagration-and-the-emissary-of-light",
+    "unit_number": 15,
+    "title": "The Conflagration of Moscow & The Emissary of Light",
+    "book_part": "Part II",
+    "chapters": "Chapters 27, 28 & 29",
+    "setting": "Apartment No. 50; Torgsin luxury hard-currency store; Griboyedov House; terrace of a grand Moscow building at sunset.",
+    "characters": [
+      "Woland",
+      "Matthew Levi (Emissary of Yeshua)",
+      "Behemoth",
+      "Koroviev",
+      "Azazello"
+    ],
+    "core_action": "Secret police raid Flat No. 50 with guns and nets; Behemoth conducts a comical shootout from the chandelier while drinking kerosene from a primus stove, then sets the flat on fire. Koroviev and Behemoth rampage through Moscow, burning down the decadent Torgsin luxury store and the corrupt Griboyedov writers' union restaurant in towering flames. Later, Woland and Azazello stand on the terrace of a stone mansion overlooking Moscow at sunset. Suddenly, Matthew Levi appears as the messenger of Yeshua Ha-Notsri. Levi announces: 'He has read the Master's novel and asks you to take him with you into peace.' Woland asks why Yeshua doesn't take the Master into the light; Levi answers: 'He has not earned light, he has earned peace.' Woland instructs Azazello to execute the arrangement.",
+    "sensory_texture": "The acrid smell of burning primus kerosene; the explosive roaring flames devouring the gilded halls of MASSOLIT; the dramatic silhouette of Woland's black cloak against the blood-red sunset sky; the blinding divine light radiating from Matthew Levi's ragged tunic.",
+    "psychological_transition": "From chaotic satirical conflagration of corrupt Soviet institutions to solemn cosmic alignment between the powers of Light and Darkness.",
+    "dialogue_significance": "Woland rebukes Matthew Levi's self-righteous dualism: 'What would your good do if evil did not exist, and what would the earth look like if shadows disappeared from it? Shadows are cast by objects and people.' And the crucial judgment on the Master: 'He has not earned light, he has earned peace.'",
+    "motifs": [
+      "Primus stove shootout",
+      "The burning of MASSOLIT",
+      "The terrace at sunset",
+      "Metaphysics of shadows",
+      "Light vs. Peace"
+    ],
+    "consequences": "The physical structures of Soviet corruption are reduced to ash; the destiny of the Master and Margarita is sealed across eternity.",
+    "verbatim_source_passage": "“‘What would your good be doing if there were no evil, and what would the earth look like if shadows disappeared from it? After all, shadows are cast by objects and people...’ ‘He has read the Master’s work,’ said Matthew Levi, ‘and asks you to take the Master with you and reward him with peace.’ ‘And why don’t you take him into the light?’ asked Woland. ‘He has not earned light, he has earned peace,’ Levi answered sadly.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-16-absolution-and-eternal-refuge",
+    "unit_number": 16,
+    "title": "On Sparrow Hills, Absolution, and The Eternal Refuge: The Transmutation of Souls",
+    "book_part": "Part II",
+    "chapters": "Chapters 30, 31, 32 & Epilogue",
+    "setting": "The Arbat basement; Sparrow Hills; the boundless cosmic void of night sky; the stone mountain of Pilate; the quiet cottage of eternity.",
+    "characters": [
+      "Woland",
+      "The Master",
+      "Margarita",
+      "Azazello",
+      "Koroviev",
+      "Behemoth",
+      "Pontius Pilate",
+      "Yeshua Ha-Notsri",
+      "Ivan Nikolayevich Ponyrev"
+    ],
+    "core_action": "Azazello visits the Master and Margarita in their basement, offering them ancient Falernian wine—the very wine Pilate drank. They drink and collapse dead; Azazello sets the basement on fire, then resurrects their glorified astral bodies. On black flying steeds, Woland and his retinue gallop across the sky above Sparrow Hills. As midnight strikes, the retinue sheds its grotesque disguises: Koroviev becomes a dark knight in purple; Behemoth becomes a slender demon page; Azazello becomes an ancient demon of the waterless desert; Woland reveals his primordial cosmic majesty. They reach a rocky plateau where Pontius Pilate has sat in a stone chair for two thousand years with his faithful dog Banga, tormented by moonlight and yearning to walk with Yeshua. Woland tells the Master: 'Finish your novel with one sentence!' The Master shouts across the abyss: 'You are free! He is waiting for you!' The stone path opens; Pilate and Banga run up the beam of moonlight into the light with Yeshua. Woland then shows the Master and Margarita their eternal refuge: a tranquil stone cottage with blossoming cherry trees, Venetian windows, open books, and the music of Schubert. In the Epilogue, Ivan Ponyrev, now a professor of philosophy, lives peacefully, visited once a year on the spring full moon by a dream of Pilate and Yeshua walking together in forgiveness.",
+    "sensory_texture": "The rich, crimson sweetness of ancient Falernian wine; the rhythmic thunder of winged demon horses galloping across clouds; the icy desolate silence of the lunar plateau; the golden warmth of the path of light; the gentle murmur of a mountain brook by the eternal cottage; the melancholy scent of blossoming linden trees in Moscow.",
+    "psychological_transition": "From mortal grief and earthly terror to cosmic release, absolute forgiveness, and serene eternal peace.",
+    "dialogue_significance": "The Master's concluding cry that releases Pilate: 'You are free! He is waiting for you!' And Woland's promise to the Master: 'Listen to the silence... That is where your house is, that is your eternal home... You will fall asleep with your greasy cap on your head, you will fall asleep with a smile on your lips.'",
+    "motifs": [
+      "Falernian wine",
+      "Metamorphosis of the demons",
+      "Pilate's lunar release",
+      "You are free!",
+      "The eternal refuge with Schubert",
+      "Ivan Ponyrev's full-moon dream"
+    ],
+    "consequences": "The two-thousand-year knot of guilt is severed; Pilate and Yeshua are reconciled; the Master and Margarita receive the peace denied them in life; Ivan is redeemed from ideological madness into quiet philosophical humanity.",
+    "verbatim_source_passage": "“‘You are free! You are free! He is waiting for you!’ the Master shouted into the abyss... The Procurator looked down, saw the wide path of moonlight, and rushed along it, followed by his faithful dog... ‘Listen to the silence,’ Margarita said to the Master, her voice soft as the rustling wind. ‘Listen and enjoy what you were not given in life—peace. Look, there ahead is your eternal home...’ And they walked toward the quiet house, where cherry trees were blooming and candles were burning.”",
+    "epistemic_status": "SOURCE FACT",
+    "materiality": "CRITICAL"
+  }
+]

@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 23,
-  "total_hours_saved": 448.5,
+  "total_books": 24,
+  "total_hours_saved": 466.5,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -975,6 +975,52 @@
       "html_path": "distillations/scientific-autobiography-planck/index.html",
       "markdown_path": "distillations/scientific-autobiography-planck/master-notes.md",
       "featured": false
+    },
+    {
+      "id": "master-and-margarita",
+      "title": "The Master and Margarita",
+      "subtitle": "The Metaphysical Satire of Stalinist Moscow, the Trial of Yeshua Ha-Notsri, and the Imperishable Nature of Art",
+      "author": "Mikhail Bulgakov (Translated by Mirra Ginsburg)",
+      "year": 1967,
+      "publisher": "Grove Press / Intellectualist Master Fiction Series",
+      "epistemic_tier": "Tier 1: Master Literary Fiction & Theological Satire",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "32 Complete Chapters Synthesized into 16 Invariant Movements",
+      "reading_time_saved": "18.0 hrs saved",
+      "hours_val": 18.0,
+      "core_axiom": "Manuscripts don't burn. Cowardice is the most terrible vice.",
+      "tags": [
+        "Mikhail Bulgakov",
+        "Woland",
+        "The Master",
+        "Margarita",
+        "Pontius Pilate",
+        "Yeshua Ha-Notsri",
+        "Behemoth",
+        "Koroviev",
+        "Azazello",
+        "Manuscripts Don't Burn",
+        "Cowardice",
+        "Russian Literature"
+      ],
+      "key_models": [
+        "The Tripartite Narrative Plane (Moscow Satire vs. Yershalaim Gospel vs. Cosmic Void)",
+        "The Demonic Tribunal of Justice (Woland as Cosmic Magistrate)",
+        "The Metaphysics of Shadows (Light Cannot Exist Without Darkness)",
+        "The Ontological Axiom of Art ('Manuscripts Don't Burn')",
+        "The Anatomy of Cowardice as the Supreme Vice (Pilate & Soviet MASSOLIT)",
+        "The Distinction Between Light and Peace (The Master's Reward)"
+      ],
+      "landmark_studies": [
+        "Stalinist Censorship & Bulgakov 1930 Manuscript Burning",
+        "Gospel Reconstruction & Demythologized Historical Jesus",
+        "Goethe's Faustian Epigraph ('Part of that power which eternally wills evil and eternally works good')",
+        "Soviet Housing Bureaucracy & Psychiatric Repression in 1930s Moscow"
+      ],
+      "html_path": "distillations/master-and-margarita/index.html",
+      "markdown_path": "distillations/master-and-margarita/master-notes.md",
+      "featured": true
     }
   ]
 }
