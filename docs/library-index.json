@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 20,
-  "total_hours_saved": 424.0,
+  "total_books": 21,
+  "total_hours_saved": 436.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -843,6 +843,51 @@
       ],
       "html_path": "distillations/open-agassi/index.html",
       "markdown_path": "distillations/open-agassi/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "gandhi-experiments-with-truth",
+      "title": "The Story of My Experiments with Truth",
+      "subtitle": "A Forensic Spiritual, Philosophical, and Strategic Reconstruction of Satyagraha, Ahimsa, and Radical Self-Mastery",
+      "author": "M. K. Gandhi",
+      "year": 1927,
+      "publisher": "Navajivan Publishing House / Intellectualist Spiritual Classics Series",
+      "epistemic_tier": "Tier 1: Master Spiritual Autobiography & Non-Violent Strategy",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "5 Foundational Parts • 170+ Chapters Synthesized into 15 Units",
+      "reading_time_saved": "12.0 hrs saved",
+      "hours_val": 12.0,
+      "core_axiom": "To see the universal and all-pervading Spirit of Truth face to face one must be able to love the meanest of creation as oneself... I must reduce myself to zero.",
+      "tags": [
+        "Mahatma Gandhi",
+        "Satyagraha",
+        "Ahimsa",
+        "Truth as God",
+        "Brahmacharya",
+        "Pietermaritzburg",
+        "South Africa",
+        "Unto This Last",
+        "Champaran",
+        "Non-Cooperation"
+      ],
+      "key_models": [
+        "The Satyagraha Truth-Force Framework (Soul-Force vs. Passive Resistance)",
+        "The Ahimsa Forgiveness Dynamic (The Tear of the Father)",
+        "Nishkama Karma (Action Without Attachment to Fruits)",
+        "The Ruskinian Communal Inversion (Phoenix Settlement & Tolstoy Farm)",
+        "The Inviolability of Moral Means (The Bardoli Halting Law)",
+        "The Dust Axiom (Universal Humility & Reduction to Zero)"
+      ],
+      "landmark_studies": [
+        "The Bhagavad Gita Sthitaprajna Canon & Shankara Commentary",
+        "John Ruskin's Unto This Last Political Economy",
+        "Pietermaritzburg 1893 Railway & Natal Legislative Records",
+        "Johannesburg Empire Theatre 1906 Satyagraha Pledges",
+        "Champaran 1917 Agrarian Inquiry Depositions"
+      ],
+      "html_path": "distillations/gandhi-experiments-with-truth/index.html",
+      "markdown_path": "distillations/gandhi-experiments-with-truth/master-notes.md",
       "featured": false
     }
   ]
