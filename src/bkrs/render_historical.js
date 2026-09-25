@@ -42,17 +42,196 @@ function renderHistoricalViews(model) {
   const facets = model.facets || {};
 
   // =========================================================================
-  // VIEW A: THE SOURCE JOURNEY
+  // VIEW A: THE SOURCE JOURNEY (Continuous Detailed Historical Chronicle)
   // =========================================================================
-  let journeyHtml = '';
+  let journeyHtml = `
+    <style>
+      .chapter-block-historical {
+        margin-bottom: 56px;
+        padding-bottom: 24px;
+      }
+      .chapter-header-historical {
+        margin: 40px 0 24px 0;
+        border-bottom: 2px solid var(--accent-crimson);
+        padding-bottom: 10px;
+      }
+      .chapter-kicker-historical {
+        font-family: var(--font-sans);
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--accent-crimson);
+        display: block;
+        margin-bottom: 4px;
+      }
+      .chapter-title-historical {
+        font-family: var(--font-serif);
+        font-size: 2.1rem;
+        line-height: 1.25;
+        color: var(--text-main);
+        margin: 4px 0 6px 0;
+        letter-spacing: -0.015em;
+      }
+      .narrative-segment-historical {
+        margin-bottom: 32px;
+        position: relative;
+      }
+      .narrative-heading-historical {
+        font-family: var(--font-serif);
+        font-size: 1.35rem;
+        line-height: 1.35;
+        color: var(--accent-crimson);
+        margin-top: 1.8rem;
+        margin-bottom: 0.4rem;
+      }
+      .narrative-meta-historical {
+        font-family: var(--font-sans);
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-bottom: 0.9rem;
+      }
+      .narrative-prose-historical {
+        font-family: var(--font-serif);
+        font-size: 1.08rem;
+        line-height: 1.82;
+        color: var(--text-main);
+      }
+      .narrative-prose-historical p {
+        margin-bottom: 1.25em;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      .historical-blockquote {
+        border-left: 3px solid var(--accent-crimson);
+        margin: 16px 0 20px 14px;
+        padding: 8px 0 8px 18px;
+        font-family: var(--font-serif);
+        font-style: italic;
+        color: var(--text-main);
+        background: transparent;
+      }
+      .historical-blockquote p {
+        margin-bottom: 8px;
+        line-height: 1.65;
+      }
+      .historical-blockquote p:last-child {
+        margin-bottom: 0;
+      }
+      .archival-plate-exhibit {
+        background: var(--bg-card);
+        border: 1px solid var(--border-light);
+        border-left: 4px solid var(--accent-slate);
+        padding: 20px 24px;
+        border-radius: 4px;
+        margin: 20px 0 24px 0;
+      }
+      .plate-kicker {
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent-slate);
+        font-weight: 700;
+        margin-bottom: 4px;
+        display: block;
+      }
+      .plate-title {
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        color: var(--text-main);
+        margin: 4px 0 10px 0;
+      }
+      .plate-significance {
+        font-size: 0.92rem;
+        line-height: 1.6;
+        color: var(--text-main);
+        margin-bottom: 12px;
+      }
+      .plate-framing {
+        font-size: 0.84rem;
+        color: var(--text-muted);
+        font-style: italic;
+        margin-bottom: 12px;
+      }
+      .narrative-trace-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 14px;
+        margin-bottom: 28px;
+        padding-top: 10px;
+        border-top: 1px dashed var(--border-light);
+        font-family: var(--font-sans);
+        font-size: 0.78rem;
+        color: var(--text-subtle);
+        flex-wrap: wrap;
+      }
+      .trace-pill-btn {
+        background: var(--bg-subtle);
+        border: 1px solid var(--border-light);
+        color: var(--accent-slate);
+        padding: 3px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+      .trace-pill-btn:hover {
+        background: var(--accent-slate);
+        color: #ffffff;
+      }
+      .analytical-drawer {
+        width: 100%;
+        margin-top: 8px;
+      }
+      .analytical-summary-btn {
+        cursor: pointer;
+        font-size: 0.76rem;
+        font-weight: 600;
+        color: var(--text-muted);
+        outline: none;
+        user-select: none;
+      }
+      .analytical-summary-btn:hover {
+        color: var(--accent-crimson);
+      }
+      .analytical-body {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border-subtle);
+        border-radius: 4px;
+        padding: 14px 18px;
+        margin-top: 8px;
+        font-size: 0.84rem;
+        line-height: 1.6;
+        color: var(--text-main);
+      }
+      .analytical-row {
+        margin-bottom: 8px;
+      }
+      .analytical-row:last-child {
+        margin-bottom: 0;
+      }
+      .analytical-label {
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        letter-spacing: 0.05em;
+        display: inline-block;
+        margin-right: 6px;
+      }
+    </style>
+  `;
 
   chapters.forEach(ch => {
     journeyHtml += `
-      <section class="chapter-block" id="section-${ch.chapter_key}">
-        <div style="margin: 40px 0 20px 0; border-bottom: 2px solid var(--accent-crimson); padding-bottom: 8px;">
-          <span class="meta-label">${escapeHtml(ch.part || 'Source Sequence')}</span>
-          <h2 style="font-size: 1.85rem; color: var(--accent-crimson); margin-top: 4px;">${escapeHtml(ch.chapter_title)}</h2>
-        </div>
+      <section class="chapter-block-historical" id="section-${ch.chapter_key}">
+        <header class="chapter-header-historical">
+          <span class="chapter-kicker-historical">${escapeHtml(ch.part || 'Chronological Sequence')}</span>
+          <h2 class="chapter-title-historical">${escapeHtml(ch.chapter_title)}</h2>
+        </header>
     `;
 
     ch.units.forEach(unit => {
@@ -65,121 +244,143 @@ function renderHistoricalViews(model) {
       const isDocument = unit.unit_type === 'DOCUMENT_UNIT';
 
       journeyHtml += `
-        <article class="content-unit ${isDocument ? 'document-plate-card' : ''}" id="${unit.unit_id}">
-          <div class="unit-top-meta">
-            <div class="unit-badges">
-              <span class="badge ${epClass}">${escapeHtml(epLabel)}</span>
-              <span class="badge ${matClass}">LEVEL: ${escapeHtml(matLabel)}</span>
-              ${isDocument ? `<span class="plate-tag">${escapeHtml(payload.medium_format || 'Archival Document')}</span>` : ''}
+        <article class="narrative-segment-historical" id="${unit.unit_id}">
+          <header class="narrative-segment-header">
+            <h3 class="narrative-heading-historical">${escapeHtml(unit.title)}</h3>
+            <div class="narrative-meta-historical">
+              ${unit.temporal_anchor ? escapeHtml(unit.temporal_anchor.date_raw) : ''} ${loc.document ? ' • <code>' + escapeHtml(loc.document) + '</code>' : ''}
             </div>
-            <div class="unit-chronology-tag">
-              ${unit.temporal_anchor ? escapeHtml(unit.temporal_anchor.date_raw) : ''} • ${loc.document ? '<code>' + escapeHtml(loc.document) + '</code>' : ''}
-            </div>
-          </div>
+          </header>
 
-          <h3 class="unit-title" style="margin-bottom: 12px;">${escapeHtml(unit.title)}</h3>
-
-          <!-- Primary Summary / Narrative Statement -->
-          <div class="unit-narrative-body reading-prose">
+          <!-- Primary Narrative Stream -->
+          <div class="narrative-prose-historical">
             <p>${escapeHtml(unit.summary_statement)}</p>
           </div>
 
-          <!-- Document Unit Specifics: Significance & Key Excerpts -->
-          ${isDocument && payload.legal_or_ideological_significance ? `
-            <div class="unit-secondary-box" style="margin-bottom: 16px;">
-              <span class="unit-secondary-label" style="display:block; margin-bottom: 4px;">Historical & Legal Significance:</span>
-              <p style="font-size: 0.92rem; line-height: 1.6; margin: 0;">${escapeHtml(payload.legal_or_ideological_significance)}</p>
+          <!-- Document Exhibit Presentation (if Document Unit / Archival Plate) -->
+          ${isDocument ? `
+            <div class="archival-plate-exhibit">
+              <span class="plate-kicker">Archival Primary Exhibit • ${escapeHtml(payload.medium_format || 'Archival Document')}</span>
+              <h4 class="plate-title">${escapeHtml(payload.document_title || unit.title)}</h4>
+              ${payload.legal_or_ideological_significance ? `
+                <div class="plate-significance">
+                  <strong>Historical &amp; Legal Significance:</strong> ${escapeHtml(payload.legal_or_ideological_significance)}
+                </div>
+              ` : ''}
               ${payload.author_vs_editor_vs_biographer_framing ? `
-                <div style="font-size: 0.86rem; color: var(--text-muted); margin-top: 8px; font-style: italic;">
+                <div class="plate-framing">
                   <strong>Authorial Framing:</strong> ${escapeHtml(payload.author_vs_editor_vs_biographer_framing)}
                 </div>
               ` : ''}
+              ${(payload.key_verbatim_excerpts && payload.key_verbatim_excerpts.length > 0) ? `
+                <div class="plate-verbatim-box">
+                  ${payload.key_verbatim_excerpts.map(q => `<p style="margin-bottom: 4px;">“${escapeHtml(q)}”</p>`).join('')}
+                </div>
+              ` : ''}
             </div>
           ` : ''}
 
-          <!-- Direct Verbatim Quotes / Excerpts -->
-          ${(payload.key_verbatim_excerpts && payload.key_verbatim_excerpts.length > 0) || (unit.source_evidence && unit.source_evidence.length > 0) ? `
-            <div class="plate-verbatim-box">
+          <!-- Direct Verbatim Quotes for Non-Document Units -->
+          ${!isDocument && ((payload.key_verbatim_excerpts && payload.key_verbatim_excerpts.length > 0) || (unit.source_evidence && unit.source_evidence.length > 0)) ? `
+            <blockquote class="historical-blockquote">
               ${(payload.key_verbatim_excerpts || unit.source_evidence).map(quote => `
-                <p style="margin-bottom: 6px;">"${escapeHtml(quote)}"</p>
+                <p>“${escapeHtml(quote)}”</p>
               `).join('')}
-            </div>
+            </blockquote>
           ` : ''}
 
-          <!-- Contextual Framing (Micro, Meso, Macro) -->
-          ${unit.context && (unit.context.micro_context || unit.context.meso_context || unit.context.macro_context) ? `
-            <div class="unit-context-strip">
-              ${unit.context.micro_context ? `
-                <div>
-                  <div class="context-tier-title">Micro Context</div>
-                  <div style="color: var(--text-main);">${escapeHtml(unit.context.micro_context)}</div>
+          <!-- Restrained Analytical Drawer & Trace Footer -->
+          <footer class="narrative-trace-footer">
+            <span class="trace-loc">${loc.chapter_title ? escapeHtml(loc.chapter_title) + ' • ' : ''}<code>${escapeHtml(unit.unit_id)}</code></span>
+            <button class="trace-pill-btn" onclick="openSourceTrace('${escapeHtml(unit.unit_id)}')" title="Inspect source provenance, dual timeline, and materiality">
+              Source Trace ↗
+            </button>
+            <details class="analytical-drawer">
+              <summary class="analytical-summary-btn">▸ Archival Evidence, Epistemics &amp; Causal Traces</summary>
+              <div class="analytical-body">
+                <div class="analytical-row">
+                  <span class="analytical-label">Epistemic Status:</span>
+                  <span class="badge ${epClass}">${escapeHtml(epLabel)}</span>
                 </div>
-              ` : ''}
-              ${unit.context.meso_context ? `
-                <div>
-                  <div class="context-tier-title">Meso Context</div>
-                  <div style="color: var(--text-main);">${escapeHtml(unit.context.meso_context)}</div>
+                <div class="analytical-row">
+                  <span class="analytical-label">Materiality:</span>
+                  <span class="badge ${matClass}">LEVEL: ${escapeHtml(matLabel)}</span> &mdash; ${escapeHtml(unit.materiality_reason || '')}
                 </div>
-              ` : ''}
-              ${unit.context.macro_context ? `
-                <div>
-                  <div class="context-tier-title">Macro Context</div>
-                  <div style="color: var(--text-main);">${escapeHtml(unit.context.macro_context)}</div>
-                </div>
-              ` : ''}
-            </div>
-          ` : ''}
 
-          <!-- Causal Links within Unit -->
-          ${unit.causal_relationships && unit.causal_relationships.length > 0 ? `
-            <div class="unit-causal-strip">
-              <span class="context-tier-title" style="display:block; margin-bottom: 6px;">Documented Causal Connections:</span>
-              ${unit.causal_relationships.map(cr => `
-                <div style="margin-bottom: 6px;">
-                  <span class="badge ${getCausalBadgeClass(cr.causal_status)}">${escapeHtml(cr.causal_status)}</span>
-                  <a href="#${escapeHtml(cr.target_unit_id)}" style="font-weight: 600; color: var(--accent-crimson); text-decoration: none; margin-left: 6px;">→ ${escapeHtml(cr.target_unit_id)}</a>
-                  <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">${escapeHtml(cr.supporting_evidence || '')}</div>
-                </div>
-              `).join('')}
-            </div>
-          ` : ''}
+                <!-- Contextual Framing (Micro, Meso, Macro) -->
+                ${unit.context && (unit.context.micro_context || unit.context.meso_context || unit.context.macro_context) ? `
+                  <div class="analytical-row">
+                    <span class="analytical-label">Historical Context:</span>
+                    <div class="unit-context-strip" style="margin-top: 6px;">
+                      ${unit.context.micro_context ? `
+                        <div>
+                          <div class="context-tier-title">Micro Context</div>
+                          <div style="color: var(--text-main);">${escapeHtml(unit.context.micro_context)}</div>
+                        </div>
+                      ` : ''}
+                      ${unit.context.meso_context ? `
+                        <div>
+                          <div class="context-tier-title">Meso Context</div>
+                          <div style="color: var(--text-main);">${escapeHtml(unit.context.meso_context)}</div>
+                        </div>
+                      ` : ''}
+                      ${unit.context.macro_context ? `
+                        <div>
+                          <div class="context-tier-title">Macro Context</div>
+                          <div style="color: var(--text-main);">${escapeHtml(unit.context.macro_context)}</div>
+                        </div>
+                      ` : ''}
+                    </div>
+                  </div>
+                ` : ''}
 
-          <!-- Competing Accounts / Disputes within Unit -->
-          ${unit.competing_accounts && unit.competing_accounts.length > 0 ? `
-            <div class="unit-dispute-container">
-              <div class="dispute-title">⚖ Historiographical Dispute / Conflicting Evidence</div>
-              ${unit.competing_accounts.map(ca => `
-                <div style="margin-bottom: 10px;">
-                  <div style="font-weight: 600; color: var(--text-main);">${escapeHtml(ca.contested_issue || ca.issue || 'Contested Historical Issue')}</div>
-                  ${ca.accounts && Array.isArray(ca.accounts) ? `
-                    <div class="dispute-grid">
-                      ${ca.accounts.map(acc => `
-                        <div style="background: var(--bg-card); padding: 10px 12px; border-radius: 4px; border: 1px solid var(--border-light);">
-                          <div style="font-weight: 600; font-size: 0.82rem; color: var(--accent-crimson); margin-bottom: 4px;">${escapeHtml(acc.source_text || acc.claim_id)}</div>
-                          <div style="font-size: 0.84rem; line-height: 1.4;">${escapeHtml(acc.assertion)}</div>
-                          <div style="font-size: 0.78rem; color: var(--text-subtle); margin-top: 4px;">Source: ${escapeHtml(acc.witness_or_document || '')}</div>
+                <!-- Causal Links within Unit -->
+                ${unit.causal_relationships && unit.causal_relationships.length > 0 ? `
+                  <div class="analytical-row">
+                    <span class="analytical-label">Causal Trajectories:</span>
+                    <div class="unit-causal-strip" style="margin-top: 6px;">
+                      ${unit.causal_relationships.map(cr => `
+                        <div style="margin-bottom: 6px;">
+                          <span class="badge ${getCausalBadgeClass(cr.causal_status)}">${escapeHtml(cr.causal_status)}</span>
+                          <a href="#${escapeHtml(cr.target_unit_id)}" style="font-weight: 600; color: var(--accent-crimson); text-decoration: none; margin-left: 6px;">→ ${escapeHtml(cr.target_unit_id)}</a>
+                          <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">${escapeHtml(cr.supporting_evidence || '')}</div>
                         </div>
                       `).join('')}
                     </div>
-                  ` : ''}
-                  ${ca.system_synthesis ? `
-                    <div style="margin-top: 8px; font-size: 0.84rem; font-style: italic; color: var(--text-main);">
-                      <strong>Epistemic Demarcation:</strong> ${escapeHtml(ca.system_synthesis)}
-                    </div>
-                  ` : ''}
-                </div>
-              `).join('')}
-            </div>
-          ` : ''}
+                  </div>
+                ` : ''}
 
-          <!-- Unit Footer with Source Trace Button -->
-          <footer class="unit-footer" style="margin-top: 20px;">
-            <div style="color: var(--text-subtle);">
-              ${loc.chapter_title ? escapeHtml(loc.chapter_title) + ' • ' : ''}<code>${escapeHtml(unit.unit_id)}</code>
-            </div>
-            <button class="source-trace-trigger" onclick="openSourceTrace('${escapeHtml(unit.unit_id)}')" title="Inspect source provenance, dual timeline, and materiality">
-              Source Trace ↗
-            </button>
+                <!-- Competing Accounts / Historiographical Disputes -->
+                ${unit.competing_accounts && unit.competing_accounts.length > 0 ? `
+                  <div class="analytical-row">
+                    <span class="analytical-label">Historiographical Disputes:</span>
+                    <div class="unit-dispute-container" style="margin-top: 6px;">
+                      ${unit.competing_accounts.map(ca => `
+                        <div style="margin-bottom: 10px;">
+                          <div style="font-weight: 600; color: var(--text-main);">${escapeHtml(ca.contested_issue || ca.issue || 'Contested Historical Issue')}</div>
+                          ${ca.accounts && Array.isArray(ca.accounts) ? `
+                            <div class="dispute-grid">
+                              ${ca.accounts.map(acc => `
+                                <div style="background: var(--bg-card); padding: 10px 12px; border-radius: 4px; border: 1px solid var(--border-light);">
+                                  <div style="font-weight: 600; font-size: 0.82rem; color: var(--accent-crimson); margin-bottom: 4px;">${escapeHtml(acc.source_text || acc.claim_id)}</div>
+                                  <div style="font-size: 0.84rem; line-height: 1.4;">${escapeHtml(acc.assertion)}</div>
+                                  <div style="font-size: 0.78rem; color: var(--text-subtle); margin-top: 4px;">Source: ${escapeHtml(acc.witness_or_document || '')}</div>
+                                </div>
+                              `).join('')}
+                            </div>
+                          ` : ''}
+                          ${ca.system_synthesis ? `
+                            <div style="margin-top: 8px; font-size: 0.84rem; font-style: italic; color: var(--text-main);">
+                              <strong>Epistemic Demarcation:</strong> ${escapeHtml(ca.system_synthesis)}
+                            </div>
+                          ` : ''}
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+                ` : ''}
+              </div>
+            </details>
           </footer>
 
           <!-- Embedded Static Trace Data -->
