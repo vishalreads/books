@@ -1,34 +1,35 @@
 # The Master Codex of Manifestation: A Unified Cross-Source Synthesis
-**Corpus Scope:** 18 Canonical Works Synthesized (Dr. Joseph Murphy, Neville Goddard [3 Works], Florence Scovel Shinn, Dr. Joe Dispenza [2 Works], Eckhart Tolle, Shakti Gawain, Dr. James R. Doty, MD [Stanford], Gabrielle Bernstein, Rhonda Byrne [2 Works], Esther & Jerry Hicks, Roxie Nafousi, Arden G., Z Z Rae, Jeffery Dawson)  
+**Corpus Scope:** 19 Canonical Works Synthesized (Dr. Joseph Murphy, Neville Goddard [3 Works], Vadim Zeland [Reality Transurfing I–V], Florence Scovel Shinn, Dr. Joe Dispenza [2 Works], Eckhart Tolle, Shakti Gawain, Dr. James R. Doty, MD [Stanford], Gabrielle Bernstein, Rhonda Byrne [2 Works], Esther & Jerry Hicks, Roxie Nafousi, Arden G., Z Z Rae, Jeffery Dawson)  
 **System Standard:** BKRS v1.0 Total Replacement Codex  
-**Corpus Architecture:** 16 Movements | 30 Invariant Knowledge Units | Comprehensive Epistemic Audit  
+**Corpus Architecture:** 17 Movements | 33 Invariant Knowledge Units | Comprehensive Epistemic Audit  
 **Objective:** Transform disparate manifestation literature into a scientifically grounded, source-faithful, and genuinely followable master codex.  
 
 ---
 
 ## Executive Summary: The Complete Epistemic Architecture
 
-For over a century, manifestation literature has oscillated between profound psychological insight and absurd, predatory pseudoscience. When stripped of New Age mysticism and commercialization, manifestation is not a magical method for altering the gravitational or quantum properties of the universe through wishful thinking. Rather, it is **the systematic convergence of subconscious identity, cognitive salience (the Reticular Activating System & Salience Network), neurobiological heart-brain coherence, vagal parasympathetic regulation, and high-probability behavioral action.**
+For over a century, manifestation literature has oscillated between profound psychological insight and absurd, predatory pseudoscience. When stripped of New Age mysticism and commercialization, manifestation is not a magical method for altering the gravitational or quantum properties of the universe through wishful thinking. Rather, it is **the systematic convergence of subconscious identity, cognitive salience (the Reticular Activating System & Salience Network), neurobiological heart-brain coherence, vagal parasympathetic regulation, systems awareness (neutralizing socio-cognitive pendulums), and high-probability behavioral action.**
 
-This Unified Master Codex synthesizes the core contributions of all 18 canonical works:
+This Unified Master Codex synthesizes the core contributions of all 19 canonical works:
 1. **Dr. Joseph Murphy (*The Power of Your Subconscious Mind*):** The mechanics of the subjective subconscious mind, autosuggestion, the Law of Reversed Effort, and hypnagogic sleep-state imprinting (Baudouin technique).
 2. **Neville Goddard (*Feeling Is the Secret*, *The Power of Awareness*, & *Infinite Potential*):** The Law of Assumption, "I AM" consciousness, first-person sensory imagery, the SATS hypnagogic loop, the Law of the Reversible Process, and the Pruning Shears of Revision.
-3. **Florence Scovel Shinn (*The Game of Life and How to Play It*):** The Law of the Spoken Word, casting the burden, non-resistance, karmic boomerangs, and the Divine Design.
-4. **Dr. Joe Dispenza (*Breaking the Habit of Being Yourself* & *Becoming Supernatural*):** The neurobiology of transformation: breaking emotional addictions to past trauma, crossing the river of change, heart-brain coherence, epigenetics, and collapsing the quantum wave function.
-5. **Eckhart Tolle (*The Power of Now*):** The philosophy of presence: disidentifying from the egoic mind, transcending psychological time, surrender, and creating from the timeless Unmanifested Now.
-6. **Shakti Gawain (*Creative Visualization*):** The classic holistic visualization toolkit: the Four Basic Steps, the Pink Bubble technique, mental sanctuary, and clearing energy blocks.
-7. **Dr. James R. Doty, MD (*Mind Magic: The Neuroscience of Manifestation and How It Changes Everything*, 2024):** The Stanford clinical neurosurgical framework: down-regulating the Default Mode Network (DMN), recruiting the Salience Network, and the biological power of prosocial compassion over selfish scarcity.
-8. **Gabrielle Bernstein (*The Universe Has Your Back: Transform Fear to Faith*):** Transforming panic into radical trust, the practice of the Holy Instant, overcoming manic control, and reframing obstacles as divine detours.
-9. **Rhonda Byrne (*The Secret* & *The Power of Feelings*):** The global popularization of the Law of Attraction, the 51% Emotional Tipping Point, feeling as the fuel of thought, and gratitude mechanics.
-10. **Esther & Jerry Hicks (*Ask and It Is Given*):** The 22-rung Emotional Guidance Scale, the mechanics of non-resistance, the "Art of Allowing", and navigating cognitive contrast.
-11. **Roxie Nafousi (*Manifest: 7 Steps to Living Your Best Life*):** The modern cognitive-behavioral translation: grounding manifestation in self-worth, comfort-zone expansion, passing "universe tests", and turning envy into inspiration.
-12. **Arden G. (*Detachment & Manifestation: Stop Chasing, Start Attracting*):** The paradox of surrender, attachment theory, eliminating needy desperation, and nervous system regulation.
-13. **Z Z Rae (*How to Manifest a Soulmate*):** Relational self-concept, clearing past relationship trauma, and interpersonal boundary mechanics.
-14. **Jeffery Dawson (*Mind Control: Manipulation, Deception and Persuasion*):** The psychological mirror: linguistic framing, covert suggestion, detecting manipulative gurus, and intellectual self-defense.
+3. **Vadim Zeland (*Reality Transurfing: Steps I–V*):** The cybernetics of reality selection: the Space of Variations, neutralizing destructive Pendulums (egregors), eliminating Excess Potential by dropping importance, and replacing Inner Strain with Outer Intention.
+4. **Florence Scovel Shinn (*The Game of Life and How to Play It*):** The Law of the Spoken Word, casting the burden, non-resistance, karmic boomerangs, and the Divine Design.
+5. **Dr. Joe Dispenza (*Breaking the Habit of Being Yourself* & *Becoming Supernatural*):** The neurobiology of transformation: breaking emotional addictions to past trauma, crossing the river of change, heart-brain coherence, epigenetics, and collapsing the quantum wave function.
+6. **Eckhart Tolle (*The Power of Now*):** The philosophy of presence: disidentifying from the egoic mind, transcending psychological time, surrender, and creating from the timeless Unmanifested Now.
+7. **Shakti Gawain (*Creative Visualization*):** The classic holistic visualization toolkit: the Four Basic Steps, the Pink Bubble technique, mental sanctuary, and clearing energy blocks.
+8. **Dr. James R. Doty, MD (*Mind Magic: The Neuroscience of Manifestation and How It Changes Everything*, 2024):** The Stanford clinical neurosurgical framework: down-regulating the Default Mode Network (DMN), recruiting the Salience Network, and the biological power of prosocial compassion over selfish scarcity.
+9. **Gabrielle Bernstein (*The Universe Has Your Back: Transform Fear to Faith*):** Transforming panic into radical trust, the practice of the Holy Instant, overcoming manic control, and reframing obstacles as divine detours.
+10. **Rhonda Byrne (*The Secret* & *The Power of Feelings*):** The global popularization of the Law of Attraction, the 51% Emotional Tipping Point, feeling as the fuel of thought, and gratitude mechanics.
+11. **Esther & Jerry Hicks (*Ask and It Is Given*):** The 22-rung Emotional Guidance Scale, the mechanics of non-resistance, the "Art of Allowing", and navigating cognitive contrast.
+12. **Roxie Nafousi (*Manifest: 7 Steps to Living Your Best Life*):** The modern cognitive-behavioral translation: grounding manifestation in self-worth, comfort-zone expansion, passing "universe tests", and turning envy into inspiration.
+13. **Arden G. (*Detachment & Manifestation: Stop Chasing, Start Attracting*):** The paradox of surrender, attachment theory, eliminating needy desperation, and nervous system regulation.
+14. **Z Z Rae (*How to Manifest a Soulmate*):** Relational self-concept, clearing past relationship trauma, and interpersonal boundary mechanics.
+15. **Jeffery Dawson (*Mind Control: Manipulation, Deception and Persuasion*):** The psychological mirror: linguistic framing, covert suggestion, detecting manipulative gurus, and intellectual self-defense.
 
 ---
 
-## The Beginner's Rosetta Stone: 20 Essential Terms Decoded in Plain English
+## The Beginner's Rosetta Stone: 23 Essential Terms Decoded in Plain English
 
 If you are reading this literature for the first time, you will encounter a wall of esoteric New Age jargon and dense neurological terms. Use this table as your master translation guide:
 
@@ -54,10 +55,13 @@ If you are reading this literature for the first time, you will encounter a wall
 | **Prosocial Compassion vs. Selfish Scarcity**<br>*`Evolutionary Biology & Somatics`* | “Aligning your soul frequency with cosmic love.” (Bernstein / Byrne) | **When you want something just to flex or show off, your brain triggers fear and threat. When your goal genuinely helps others, your brain releases oxytocin and dopamine, widening your intelligence.** | A pack of wolves. An isolated wolf hoarding food stays anxious and hyper-vigilant (cortisol). A wolf sharing with the pack rests calmly because the entire pack has its back. | Dr. James R. Doty, MD |
 | **The Pruning Shears of Revision**<br>*`Cognitive Reconsolidation`* | “Changing the past in the spiritual 4th dimension.” (Infinite Potential) | **Mentally rewriting a stressful argument or rejection before you go to sleep, replacing it with the outcome you wished had happened so your brain doesn't store the trauma.** | Editing a rough draft in a Word document before hitting Save. If a bad paragraph happened at 2 PM, you delete it and type the clean sentence before closing your laptop for the night. | Neville Goddard |
 | **The 51% Tipping Point Rule**<br>*`Behavioral Momentum`* | “Tipping the cosmic scales into the frequency of love.” (The Power of Feelings) | **You do not need to be a cheerful saint 100% of the day. Choosing appreciation over complaints just 51% of the time creates an irreversible upward momentum loop.** | A sports team winning 51 out of 100 games. You don't need a clean sweep blowout; winning by a single point tipping past 50% guarantees a championship season over time. | Rhonda Byrne |
+| **Pendulums (Energy Egregors)**<br>*`Systems Dynamics & Attention`* | “Energy vampires feeding on human emotional vibration.” (Reality Transurfing) | **Large social institutions, trends, or internet outrage mobs that hijack your attention and suck your emotional energy, regardless of whether you love them or hate them.** | A screaming toddler throwing a tantrum in a grocery store. If you scream back or argue, he screams louder; if you look away with complete indifference, he stops because he has no audience. | Vadim Zeland |
+| **Excess Potential & Balancing Forces**<br>*`Homeostatic Psychology`* | “Distorting the energy balance of the universe.” (Reality Transurfing) | **When you obsess over something so desperately that you make it life-or-death, your anxiety triggers performance choking and ruins the opportunity.** | Carrying a glass of water filled to the absolute brim across a crowded room. If you obsess over not spilling a drop, your hands shake violently and you spill it. If you relax, you walk smoothly. | Vadim Zeland |
+| **Outer Intention vs. Inner Intention**<br>*`Phenomenology & Agency`* | “Choosing your sector in the space of variations.” (Reality Transurfing) | **Inner intention is grinding yourself to exhaustion trying to force reality to change. Outer intention is choosing the right direction calmly and letting opportunities open naturally.** | Inner intention is swimming furiously against a raging river until your muscles cramp. Outer intention is turning your boat and riding the swift, smooth current downstream. | Vadim Zeland |
 
 ---
 
-## 30 Unified Invariant Knowledge Units
+## 33 Unified Invariant Knowledge Units
 
 ### [Unit 01] The Subconscious Operating System: Objective vs. Subjective Consciousness
 - **Structural Movement:** Movement I: Cognitive Architecture & The Subconscious Foundation
@@ -820,6 +824,81 @@ COGNITIVE REFRAMING & ATTACHMENT REGULATION. Derived from New Thought and *A Cou
 
 ---
 
+### [Unit 31] Pendulums & Energy Egregors: Neutralizing Socio-Cognitive Energy Traps
+- **Structural Movement:** Movement XVII: Transurfing & The Space of Variations (Vadim Zeland)
+- **Corpus Sources:** Zeland (Reality Transurfing, Step I: Ch. 2)
+- **Primary Authors:** Vadim Zeland
+- **Epistemic Classification:** `SYSTEMS DYNAMICS` | Materiality: **CRITICAL**
+
+#### Core Invariant Concept
+Human societies are dominated by 'Pendulums'—autonomous energy-informational structures (political movements, corporations, social media trends, ideologies) that capture individuals' attention and feed on their emotional resonance, regardless of whether that emotion is passionate loyalty or bitter indignation.
+
+#### Epistemic Audit & Scientific Translation
+SYSTEMS DYNAMICS & SOCIO-COGNITIVE THEORY. Strips Zeland's literal esoteric 'energy vampire' language; maps directly to modern mimetic theory (René Girard), algorithmic rage baiting, attentional capture, and social contagion.
+
+#### Systematic Tenets & Cross-Source Principles
+1. A pendulum traps you whenever you react with emotional friction: fighting a pendulum, complaining about it, or hating it feeds it exactly the same attentional currency as worshipping it (Zeland).
+1. Defeating a Pendulum: The only two methods are (1) Extinguishing it through radical indifference (refusing to engage or assign significance), or (2) Collapsing it through absurd, unexpected playfulness (humor or agreeing pleasantly with hostility) (Zeland).
+1. True sovereignty requires renting your attention to society while keeping your internal identity entirely independent.
+
+#### Operational Heuristic & Behavioral Maxim
+> *Never fight toxic systems or outrage bait; extinguish pendulums with cool indifference or collapse them with absurd humor.*
+
+#### Verbatim Archival Anchor
+“To extinguish a pendulum, you have to ignore it, completely... To collapse a pendulum, you respond with an unexpected, absurd reaction.” — Vadim Zeland (Reality Transurfing)
+
+---
+
+### [Unit 32] Excess Potential & Balancing Forces: The Homeostatic Law of Dropping Importance
+- **Structural Movement:** Movement XVII: Transurfing & The Space of Variations (Vadim Zeland)
+- **Corpus Sources:** Zeland (Reality Transurfing, Step I: Ch. 3–4)
+- **Primary Authors:** Vadim Zeland
+- **Epistemic Classification:** `HOMEOSTATIC PSYCHOLOGY` | Materiality: **CRITICAL**
+
+#### Core Invariant Concept
+Assigning excessive internal importance ('I am pathetic if I fail') or external importance ('This person/opportunity is a divine miracle') creates an 'excess energetic potential'. Nature abhors vacuums and asymmetries, immediately deploying psychological and situational 'Balancing Forces' that destroy the desired goal to restore equilibrium.
+
+#### Epistemic Audit & Scientific Translation
+HOMEOSTATIC PSYCHOLOGY & STRESS PHYSIOLOGY. Matches Yerkes-Dodson law of optimal arousal; extreme emotional over-investment causes motor tension, cognitive impairment, and perceptual narrowing ('choking').
+
+#### Systematic Tenets & Cross-Source Principles
+1. Internal Importance creates guilt, unworthiness, or arrogance; External Importance creates idolatry, panic, and manic desperation (Zeland).
+1. Balancing Forces: The moment you treat an outcome as life-or-death, the universe balances the tension by ensuring the very circumstance you fear manifests (Zeland).
+1. Dropping Importance: Accept the possibility of defeat ahead of time, take pragmatic action without drama, and view your goal as casually as walking to the mailbox to collect the morning newspaper.
+
+#### Operational Heuristic & Behavioral Maxim
+> *Drop importance to zero: want outcomes with the casual calm of walking to the mailbox; if you treat a goal as life-or-death, you invite ruin.*
+
+#### Verbatim Archival Anchor
+“Desire is the striving to possess an outcome while attaching massive importance to it... Eliminate importance, and balancing forces will have nothing to act against.” — Vadim Zeland
+
+---
+
+### [Unit 33] Outer Intention vs. Inner Intention: Navigating the Space of Variations
+- **Structural Movement:** Movement XVII: Transurfing & The Space of Variations (Vadim Zeland)
+- **Corpus Sources:** Zeland (Reality Transurfing, Step I: Ch. 1, Step IV: Ch. 1)
+- **Primary Authors:** Vadim Zeland
+- **Epistemic Classification:** `PHENOMENOLOGY & CYBERNETICS` | Materiality: **CRITICAL**
+
+#### Core Invariant Concept
+Reality is an infinite information matrix containing all potential outcomes ('The Space of Variations'). Inner Intention is the exhausting struggle of the ego to manipulate the physical world by force; Outer Intention is the serene decision to allow the target sector of reality to unfold on its own through harmonious unity of mind and heart.
+
+#### Epistemic Audit & Scientific Translation
+PHENOMENOLOGY & COGNITIVE AGENCY. Bridges Eastern Wu Wei (effortless action) with modern cybernetics and probabilistic Bayesian state selection.
+
+#### Systematic Tenets & Cross-Source Principles
+1. Inner Intention says 'I will force this door open with sheer muscle'; Outer Intention says 'I choose the corridor where the door is already wide open' (Zeland).
+1. Unity of Soul and Mind: When the intellectual mind wants wealth but the deep emotional self feels unworthy, outer intention is paralyzed; manifestation occurs only when logic and somatic feeling agree.
+1. The Fraile Principle: Respect the inner uniqueness of others; never attempt to force someone to submit to your will. 'Allow yourself to be yourself, and allow others to be others.'
+
+#### Operational Heuristic & Behavioral Maxim
+> *Cease straining against locked doors; shift from inner force to outer intention by aligning emotional peace with pragmatic behavioral selection.*
+
+#### Verbatim Archival Anchor
+“Inner intention is the determination to act; outer intention is the determination to have. Inner intention is effort; outer intention is choice.” — Vadim Zeland (Reality Transurfing)
+
+---
+
 ## The Grand Dispute Matrix: Where the Authors Contradict
 
 ### Dispute 1: Action vs. Pure Vibrational Alignment
@@ -836,17 +915,22 @@ COGNITIVE REFRAMING & ATTACHMENT REGULATION. Derived from New Thought and *A Cou
 - **The Byrne Error:** *The Secret* asserts that the human brain operates like a radio transmission tower broadcasting electromagnetic frequencies that gravitationally attract physical circumstances.
 - **The Neurobiological Truth (Doty & Dispenza):** The human brain emits micro-voltage EEG waves that dissipate within millimeters of the skull. The real mechanism is the **Reticular Activating System (RAS)**, **Salience Network**, and **heart-brain coherence**: when a goal is emotionally prioritized, neural filters clear away noise, enabling you to spot opportunities and resources that were already physically present but previously ignored.
 
-### Dispute 4: Selfish Materialism vs. Prosocial Compassion
+### Dispute 4: Inner Willpower vs. Outer Intention
+- **The Pop-Self-Help Dogma (Byrne / Typical Hustle Culture):** Demands unrelenting mental striving, grit, and forceful willpower to bend reality to your desires.
+- **The Transurfing Stance (Vadim Zeland):** Forceful striving creates "Excess Potential," triggering Balancing Forces that ruin your chances. True mastery is **Outer Intention**: dropping importance, cultivating non-attachment, and stepping into the natural flow of reality.
+- **Unified Synthesis:** Inner intention handles daily task execution; Outer intention governs strategic emotional detachment. Do the work diligently, but drop the desperate drama.
+
+### Dispute 5: Selfish Materialism vs. Prosocial Compassion
 - **The Pop-Culture Jargon (Byrne / Commercial Gurus):** Manifestation is framed as a personal weapon to obtain luxury watches, mansions, and romantic conquests to satisfy egoic vanity.
 - **The Stanford Neurosurgical Finding (Dr. James R. Doty):** Scans demonstrate that selfish vanity intentions activate amygdala threat circuits, elevating cortisol and restricting visual bandwidth. Prosocial, compassionate intentions stimulate the vagus nerve and release oxytocin and dopamine, unlocking prefrontal creativity and attracting human cooperation.
-- **Unified Synthesis:** You can pursue financial and material security, but ground it in service and generosity; disconnected greed produces biological stress and eventual self-sabotage.
+- **Unified Synthesis:** Material security is valid, but it must be detached from egoic unworthiness; aligning goals with service to others optimizes neural wiring and commands human cooperation.
 
-### Dispute 5: Specificity vs. General Surrender
+### Dispute 6: Specificity vs. General Surrender
 - **The Hyper-Specific Camp (Murphy, Byrne, Rae, Shinn):** Demand exact numbers, detailed partner specifications, and precise visual details.
-- **The General Alignment Camp (Hicks, Bernstein, Arden G., Tolle):** Argue that hyper-specificity triggers anxiety and resistance ("How will this happen? What if it doesn't?"). Recommends surrendering details and focusing purely on the underlying emotional state of freedom and relief.
+- **The General Alignment Camp (Hicks, Bernstein, Arden G., Tolle, Zeland):** Argue that hyper-specificity triggers anxiety and resistance ("How will this happen? What if it doesn't?"). Recommends surrendering details and focusing purely on the underlying emotional state of freedom and relief.
 - **Unified Synthesis:** Use specificity to define the **target direction**, but use general surrender to release **attachment to the timeline and mechanism**.
 
-### Dispute 6: The Victim-Blaming Fallacy
+### Dispute 7: The Victim-Blaming Fallacy
 - **The Pop-Manifestation Hazard:** Extreme proponents of the Law of Attraction claim that individuals in poverty, victims of war, or people diagnosed with terminal illnesses "attracted" their suffering through low-vibrational thoughts.
 - **The Unified Codex Verdict:** This is a monstrous philosophical error rooted in survivor bias and the Just-World Fallacy. Biological illness, geopolitical conflict, and socioeconomic structural oppression operate on external physical and historical laws. Manifestation applies strictly to an individual's **subjective mindset, behavioral choices, and perceptual agency**, never as a moral explanation for collective external catastrophes.
 
@@ -859,21 +943,22 @@ COGNITIVE REFRAMING & ATTACHMENT REGULATION. Derived from New Thought and *A Cou
 2. **Somatic Breath Reset (3 Mins):** Three minutes of physiological sighs or box breathing to silence the Default Mode Network (DMN) (Doty).
 3. **Heart-Brain Coherence Meditation (5 Mins - Dispenza):** Focus attention on the center of the chest. Breathe deeply into the heart and generate an elevated somatic emotion: gratitude, awe, or compassion.
 4. **Sensory Gratitude Drill (3 Mins - Gawain/Hicks):** Viscerally feel bodily appreciation for 3 specific, mundane realities.
-5. **RAS & Salience Vision Calibration (10 Mins - Nafousi/Doty):** Review primary quarterly objective. Clarify the single most uncomfortable high-leverage action required today.
+5. **RAS, Salience & Outer Intention Calibration (10 Mins - Nafousi/Doty/Zeland):** Review primary quarterly objective. Clarify the single most uncomfortable high-leverage action required today. Consciously **drop importance**: declare that success or delay both leave your internal dignity intact.
 
 ### Phase 2: Daytime Execution & Aligned Action (Working Hours)
 1. **The Comfort-Zone Step:** Execute the single most intimidating, high-leverage task early in the day (the pitch, the cold email, the boundary conversation).
-2. **The Detachment Anchor (Arden G. / Bernstein):** When timeline anxiety surfaces, repeat: *“What is meant for me will not pass me. Obstacles are detours in the right direction. I control my input; I release the outcome.”*
-3. **The Tolle Presence Reset:** When feeling overwhelmed, pause for 60 seconds, feel the inner energy of your hands and feet, and witness the thinking mind without judgment.
-4. **The 51% Tipping Point Guard (Byrne):** Ensure slightly more than half of your daily reactions are grounded in appreciation rather than complaints.
-5. **The Envy Transmutation Trigger:** The moment you feel envy or comparison on social media, immediately bless that person: *“I celebrate your success, and I recognize it as empirical proof that this level of abundance is achievable in human reality.”*
+2. **The Pendulum Neutralizer (Zeland):** When colleagues, news, or social media try to drag you into drama, extinguish the pendulum through calm indifference or humor.
+3. **The Detachment & Detour Anchor (Arden G. / Bernstein):** When timeline anxiety surfaces, repeat: *“What is meant for me will not pass me. Obstacles are detours in the right direction. I control my input; I release the outcome.”*
+4. **The Tolle Presence Reset:** When feeling overwhelmed, pause for 60 seconds, feel the inner energy of your hands and feet, and witness the thinking mind without judgment.
+5. **The 51% Tipping Point Guard (Byrne):** Ensure slightly more than half of your daily reactions are grounded in appreciation rather than complaints.
+6. **Envy Transmutation Trigger:** The moment you feel envy or comparison on social media, immediately bless that person: *“I celebrate your success, and I recognize it as empirical proof that this level of abundance is achievable in human reality.”*
 
-### Phase 3: Evening SATS & Revision Routine (Last 20 Minutes Pre-Sleep - Neville Goddard / Murphy)
+### Phase 3: Evening SATS & Revision Routine (Last 20 Minutes Pre-Sleep - Neville Goddard / Murphy / Zeland)
 1. **Subconscious De-Escalation:** Cease television, stimulating media, and work discussions 30 minutes before sleep.
 2. **The Pruning Shears of Revision (5 Mins - Goddard):** Review any difficult or negative encounter that occurred today; mentally rewrite the scene in your imagination until it ends with harmony, respect, and peace.
 3. **Enter the Drowsy State (Baudouin Technique):** Lie comfortably in bed, relax all muscles from scalp to toes, and allow the body to enter the heavy, sleepy hypnagogic state.
 4. **The Short-Loop Imaginal Scene (Neville Goddard):** Run a single 5-to-10 second first-person scene that naturally implies your desire is already an accomplished fact.
-5. **Somatic Feeling Consolidation:** Do not strive; gently loop the scene until the feeling of naturalness and relief settles into the chest. Drift into sleep holding that emotional atmosphere.
+5. **Somatic Feeling Consolidation:** Do not strive; gently loop the scene until the feeling of naturalness, zero importance, and relief settles into the chest. Drift into sleep holding that emotional atmosphere.
 
 ### Phase 4: The Empirical Falsification Journal (Weekly Tracking)
 Maintain a strict weekly log with four columns:
