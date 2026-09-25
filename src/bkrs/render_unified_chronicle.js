@@ -139,6 +139,8 @@ function renderHtml() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(meta.title)}</title>
   <meta name="description" content="${escapeHtml(meta.subtitle)}">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -830,6 +832,7 @@ function renderHtml() {
   <header class="top-header">
     <div class="brand-section">
       <a href="../../index.html" class="brand-logo">
+        <img src="../../assets/images/logo.png" alt="Intellectualist Pantheon" style="width: 28px; height: 28px; object-fit: contain;">
         <span>INTELLECTUALIST</span>
       </a>
       <span class="brand-tag">SUBJECT MASTER CODEX</span>

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Intellectualist • Master Library</title>
   <meta name="description" content="A library of reconstructed books for deep understanding. Explore original source journeys, structural knowledge maps, and archival evidence.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
@@ -103,8 +105,27 @@
 
     .brand-mark {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
       text-decoration: none;
+    }
+
+    .brand-logo-img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(133, 34, 28, 0.18));
+      transition: transform 0.2s ease;
+    }
+
+    .brand-mark:hover .brand-logo-img {
+      transform: scale(1.05);
+    }
+
+    .brand-text-group {
+      display: flex;
+      flex-direction: column;
     }
 
     .brand-title {
@@ -970,8 +991,11 @@
     <div class="container">
       <nav class="nav-inner">
         <a href="index.html" class="brand-mark">
-          <span class="brand-title">INTELLECTUALIST</span>
-          <span class="brand-subtitle">The Master Library</span>
+          <img src="assets/images/logo.png" alt="Intellectualist Pantheon" class="brand-logo-img">
+          <div class="brand-text-group">
+            <span class="brand-title">INTELLECTUALIST</span>
+            <span class="brand-subtitle">The Master Library</span>
+          </div>
         </a>
         <ul class="nav-links">
           <li class="nav-item"><a href="#collection">Library</a></li>
