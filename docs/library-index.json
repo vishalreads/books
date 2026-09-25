@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 27,
-  "total_hours_saved": 511.0,
+  "total_books": 28,
+  "total_hours_saved": 525.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1158,6 +1158,51 @@
       ],
       "html_path": "distillations/the-urge-history-of-addiction/index.html",
       "markdown_path": "distillations/the-urge-history-of-addiction/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "lolita",
+      "title": "Lolita",
+      "subtitle": "The Tragedy of Solipsism, the Seduction of Style, and the Irreparable Loss of a Child's Voice",
+      "author": "Vladimir Nabokov",
+      "year": 1955,
+      "publisher": "The Olympia Press / G. P. Putnam's Sons / Intellectualist Master Fiction Series",
+      "epistemic_tier": "Tier 1: Master Literary Fiction & Aesthetics",
+      "tier_short": "Tier 1",
+      "category": "Trauma Dynamics, IPV & Narrative Psychology",
+      "original_volume": "69 Chapters across 2 Parts + Afterword Synthesized into 16 Invariant Units",
+      "reading_time_saved": "14.0 hrs saved",
+      "hours_val": 14.0,
+      "core_axiom": "For me a work of fiction exists only insofar as it affords me what I shall bluntly call aesthetic bliss. The hopelessly poignant thing was the absence of her voice from that concord.",
+      "tags": [
+        "Vladimir Nabokov",
+        "Lolita",
+        "Humbert Humbert",
+        "Dolores Haze",
+        "Clare Quilty",
+        "Unreliable Narrator",
+        "Aesthetic Bliss",
+        "Solipsism",
+        "Poshlost",
+        "Literary Fiction"
+      ],
+      "key_models": [
+        "The Aesthetic Trap of Style (Narrator as Seducer & Murderer)",
+        "The Anatomy of Solipsism (The Mental Cage of Projection)",
+        "The Two Lolitas (Phantom Nymphet vs. Traumatized Orphan)",
+        "Poshlost & 1950s American Consumer Kitsch",
+        "The Echo of the Meadow (The Tragic Concord of Absent Childhood)",
+        "Nabokov's Manifesto of Aesthetic Bliss (Curiosity, Tenderness, Kindness, Ecstasy)"
+      ],
+      "landmark_studies": [
+        "The 1923 Riviera Childhood Bereavement & Annabel Leigh",
+        "The 342 Lawn Street Screened Porch & Fatal Automobile Irony",
+        "The Enchanted Hunters Room 342 & 48-State Roadside Captivity",
+        "The Cryptic Anagrammatic Motel Registers of Clare Quilty",
+        "The Coalmont Epiphany: Unselfish Love Beyond Sensual Desire"
+      ],
+      "html_path": "distillations/lolita/index.html",
+      "markdown_path": "distillations/lolita/master-notes.md",
       "featured": true
     }
   ]
