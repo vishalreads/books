@@ -1,6 +1,7 @@
 {
-  "manifestVersion": "1.0.0",
-  "generatedAt": "2026-09-25T04:44:26.560Z",
+  "manifestVersion": "1.1.0",
+  "auditStatus": "AUDITED_AND_VERIFIED (Milestone 3 - Step 1.5)",
+  "generatedAt": "2026-09-25T04:50:53.850Z",
   "source": {
     "title": "Bhagat Singh: A Life in Revolution",
     "author": "Satvinder S. Juss",
@@ -24,15 +25,15 @@
     ],
     "brokenNoteRefsCount": 0,
     "classificationCounts": {
-      "PRIMARY_TEXT": 21,
-      "AUTHOR_NARRATIVE": 517,
-      "PRIMARY_DOCUMENT": 69,
-      "EDITORIAL_MATERIAL": 359,
+      "PRIMARY_TEXT": 38,
+      "AUTHOR_NARRATIVE": 525,
+      "PRIMARY_DOCUMENT": 47,
+      "EDITORIAL_MATERIAL": 355,
       "FOOTNOTE": 0,
       "ENDNOTE": 780,
       "BIBLIOGRAPHY": 182,
       "ARCHIVAL_REFERENCE": 21,
-      "QUOTED_TESTIMONY": 5,
+      "QUOTED_TESTIMONY": 6,
       "UNCERTAIN/UNCLASSIFIED": 0
     }
   },
@@ -1367,7 +1368,11 @@
             }
           ],
           "images": [],
-          "text": "The desire to live is natural. It is in me also. I do not want to conceal it. But it is conditional. I do not want to live as a prisoner or under restrictions . . . Yet, one thing pricks me even today. My heart nurtured some ambitions for doing something for humanity and for my country. I have not been able to fulfil even one-thousandth part of these ambitions. If I live I might perhaps get a chance to fulfil them. If ever it came to my mind that I should not die, it came from this end only. 1"
+          "text": "The desire to live is natural. It is in me also. I do not want to conceal it. But it is conditional. I do not want to live as a prisoner or under restrictions . . . Yet, one thing pricks me even today. My heart nurtured some ambitions for doing something for humanity and for my country. I have not been able to fulfil even one-thousandth part of these ambitions. If I live I might perhaps get a chance to fulfil them. If ever it came to my mind that I should not die, it came from this end only. 1",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 83,
@@ -1377,12 +1382,16 @@
           "className": "EB21ExtraFeatureRight",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000110",
-          "classification": "PRIMARY_TEXT",
+          "classification": "EDITORIAL_MATERIAL",
           "wordCount": 24,
           "charCount": 140,
           "noteRefs": [],
           "images": [],
-          "text": "An excerpt from Bhagat Singh’s last letter to the convicts of the Lahore Conspiracy Case, dated 22 March 1931, the day before his execution."
+          "text": "An excerpt from Bhagat Singh’s last letter to the convicts of the Lahore Conspiracy Case, dated 22 March 1931, the day before his execution.",
+          "quotationDetails": {
+            "speaker": "Satvinder Juss / Publisher",
+            "quotationType": "EDITOR_ANNOTATION"
+          }
         },
         {
           "unitSequence": 84,
@@ -1397,7 +1406,11 @@
           "charCount": 30,
           "noteRefs": [],
           "images": [],
-          "text": "I am, after all, a human being"
+          "text": "I am, after all, a human being",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 85,
@@ -1412,7 +1425,11 @@
           "charCount": 17,
           "noteRefs": [],
           "images": [],
-          "text": "and nothing more."
+          "text": "and nothing more.",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 86,
@@ -1427,7 +1444,11 @@
           "charCount": 26,
           "noteRefs": [],
           "images": [],
-          "text": "And no one can claim to be"
+          "text": "And no one can claim to be",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 87,
@@ -1442,7 +1463,11 @@
           "charCount": 15,
           "noteRefs": [],
           "images": [],
-          "text": "more than that."
+          "text": "more than that.",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 88,
@@ -1457,7 +1482,11 @@
           "charCount": 43,
           "noteRefs": [],
           "images": [],
-          "text": "(Bhagat Singh, ‘Why I Am an Atheist’, 1931)"
+          "text": "(Bhagat Singh, ‘Why I Am an Atheist’, 1931)",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         }
       ]
     },
@@ -1496,12 +1525,16 @@
           "className": "EB21ExtraFeatureCenter1",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000121",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 9,
           "charCount": 41,
           "noteRefs": [],
           "images": [],
-          "text": "Kisi ko ghar se nikalte hi mil gai manzil"
+          "text": "Kisi ko ghar se nikalte hi mil gai manzil",
+          "quotationDetails": {
+            "speaker": "Ahmed Faraz",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 91,
@@ -1511,12 +1544,16 @@
           "className": "EB21ExtraFeatureCenter",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000121",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 8,
           "charCount": 41,
           "noteRefs": [],
           "images": [],
-          "text": "Koi hamari tarah umr bhar safar mein raha"
+          "text": "Koi hamari tarah umr bhar safar mein raha",
+          "quotationDetails": {
+            "speaker": "Ahmed Faraz",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 92,
@@ -1526,12 +1563,16 @@
           "className": "EB21ExtraFeatureCenter1",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000124",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 7,
           "charCount": 43,
           "noteRefs": [],
           "images": [],
-          "text": "Some found their destiny at their doorstep."
+          "text": "Some found their destiny at their doorstep.",
+          "quotationDetails": {
+            "speaker": "Ahmed Faraz (trans.)",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 93,
@@ -1541,12 +1582,16 @@
           "className": "EB21ExtraFeatureCenter",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000124",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 13,
           "charCount": 66,
           "noteRefs": [],
           "images": [],
-          "text": "Others like me were fated to be in the wilderness all their lives."
+          "text": "Others like me were fated to be in the wilderness all their lives.",
+          "quotationDetails": {
+            "speaker": "Ahmed Faraz (trans.)",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 94,
@@ -1561,7 +1606,11 @@
           "charCount": 12,
           "noteRefs": [],
           "images": [],
-          "text": "—Ahmed Faraz"
+          "text": "—Ahmed Faraz",
+          "quotationDetails": {
+            "speaker": "Ahmed Faraz",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 95,
@@ -2009,7 +2058,11 @@
           "charCount": 37,
           "noteRefs": [],
           "images": [],
-          "text": "CJ: Mr Pritt, I am leaving the court."
+          "text": "CJ: Mr Pritt, I am leaving the court.",
+          "quotationDetails": {
+            "speaker": "D.N. Pritt KC and Chief Justice",
+            "quotationType": "QUOTED_TESTIMONY"
+          }
         },
         {
           "unitSequence": 123,
@@ -2024,7 +2077,11 @@
           "charCount": 34,
           "noteRefs": [],
           "images": [],
-          "text": "DNP: I am very pleased to hear it."
+          "text": "DNP: I am very pleased to hear it.",
+          "quotationDetails": {
+            "speaker": "D.N. Pritt KC and Chief Justice",
+            "quotationType": "QUOTED_TESTIMONY"
+          }
         },
         {
           "unitSequence": 124,
@@ -2039,7 +2096,11 @@
           "charCount": 72,
           "noteRefs": [],
           "images": [],
-          "text": "CJ: It is customary, Mr Pritt, for counsel to rise as a mark of respect."
+          "text": "CJ: It is customary, Mr Pritt, for counsel to rise as a mark of respect.",
+          "quotationDetails": {
+            "speaker": "D.N. Pritt KC and Chief Justice",
+            "quotationType": "QUOTED_TESTIMONY"
+          }
         },
         {
           "unitSequence": 125,
@@ -2054,7 +2115,11 @@
           "charCount": 39,
           "noteRefs": [],
           "images": [],
-          "text": "DNP: That is why I am remaining seated."
+          "text": "DNP: That is why I am remaining seated.",
+          "quotationDetails": {
+            "speaker": "D.N. Pritt KC and Chief Justice",
+            "quotationType": "QUOTED_TESTIMONY"
+          }
         },
         {
           "unitSequence": 126,
@@ -2213,12 +2278,16 @@
           "className": "EB21ExtraFeatureCenter",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000174",
-          "classification": "EDITORIAL_MATERIAL",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 7,
           "charCount": 44,
           "noteRefs": [],
           "images": [],
-          "text": "Ishrat-e-qatra hai dariya mein fana ho jaana"
+          "text": "Ishrat-e-qatra hai dariya mein fana ho jaana",
+          "quotationDetails": {
+            "speaker": "Mirza Ghalib",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 136,
@@ -2228,12 +2297,16 @@
           "className": "EB21ExtraFeatureCenter",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000174",
-          "classification": "EDITORIAL_MATERIAL",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 9,
           "charCount": 40,
           "noteRefs": [],
           "images": [],
-          "text": "Dard ka had se guzarna hai dava ho jaana"
+          "text": "Dard ka had se guzarna hai dava ho jaana",
+          "quotationDetails": {
+            "speaker": "Mirza Ghalib",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 137,
@@ -2243,12 +2316,16 @@
           "className": "EB21ExtraFeatureCenter1",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000177",
-          "classification": "EDITORIAL_MATERIAL",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 9,
           "charCount": 40,
           "noteRefs": [],
           "images": [],
-          "text": "The drop’s joy is to perish in the ocean"
+          "text": "The drop’s joy is to perish in the ocean",
+          "quotationDetails": {
+            "speaker": "Mirza Ghalib",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 138,
@@ -2258,12 +2335,16 @@
           "className": "EB21ExtraFeatureCenter",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000177",
-          "classification": "EDITORIAL_MATERIAL",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 8,
           "charCount": 36,
           "noteRefs": [],
           "images": [],
-          "text": "as pain’s joy is to become a potion."
+          "text": "as pain’s joy is to become a potion.",
+          "quotationDetails": {
+            "speaker": "Mirza Ghalib",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         },
         {
           "unitSequence": 139,
@@ -2273,12 +2354,16 @@
           "className": "EB21ExtraFeatureCenter1",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000180",
-          "classification": "EDITORIAL_MATERIAL",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 3,
           "charCount": 14,
           "noteRefs": [],
           "images": [],
-          "text": "— Mirza Ghalib"
+          "text": "— Mirza Ghalib",
+          "quotationDetails": {
+            "speaker": "Mirza Ghalib",
+            "quotationType": "PRIMARY_TEXT_POETRY"
+          }
         }
       ]
     },
@@ -3208,12 +3293,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000229",
-          "classification": "PRIMARY_TEXT",
+          "classification": "PRIMARY_DOCUMENT",
           "wordCount": 90,
           "charCount": 519,
           "noteRefs": [],
           "images": [],
-          "text": "It took four years of research to prepare for the role. I visited newspaper offices and read old books, magazine, papers, anything that I could lay my hands on regarding the freedom fighters. In Madras (now Chennai), I would go to Hindu Library after completing the shooting of my films that were being shot there and read books. I met Bhagat Singh’s lawyer one day and many krantikaris (i.e. revolutionaries) who imparted a lot of knowledge about the martyr. It was a gainful insight and helped me during the shooting."
+          "text": "It took four years of research to prepare for the role. I visited newspaper offices and read old books, magazine, papers, anything that I could lay my hands on regarding the freedom fighters. In Madras (now Chennai), I would go to Hindu Library after completing the shooting of my films that were being shot there and read books. I met Bhagat Singh’s lawyer one day and many krantikaris (i.e. revolutionaries) who imparted a lot of knowledge about the martyr. It was a gainful insight and helped me during the shooting.",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 180,
@@ -3250,7 +3339,11 @@
             }
           ],
           "images": [],
-          "text": "When she came on the dais, there was a standing ovation of a full 15 minutes. Madam Gandhi (Indira Gandhi) the then Prime Minister touched her feet to seek her blessings and we gave the entire prize money that came with the award to Vidyavatiji. We got tremendous love and affection from his mother. 13"
+          "text": "When she came on the dais, there was a standing ovation of a full 15 minutes. Madam Gandhi (Indira Gandhi) the then Prime Minister touched her feet to seek her blessings and we gave the entire prize money that came with the award to Vidyavatiji. We got tremendous love and affection from his mother. 13",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 182,
@@ -4110,7 +4203,11 @@
           "charCount": 319,
           "noteRefs": [],
           "images": [],
-          "text": "An incessant desire to study filled my heart. ‘Study more and more’, said I to myself so that I might be able to face the arguments of my opponents. ‘Study’ to support your point of view with convincing arguments. And I began to study in a serious manner. My previous beliefs and convictions underwent a radical change."
+          "text": "An incessant desire to study filled my heart. ‘Study more and more’, said I to myself so that I might be able to face the arguments of my opponents. ‘Study’ to support your point of view with convincing arguments. And I began to study in a serious manner. My previous beliefs and convictions underwent a radical change.",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 216,
@@ -4882,7 +4979,11 @@
             }
           ],
           "images": [],
-          "text": "The real duty of the newspapers is to educate, to cleanse the minds of people, to save them from narrow sectarian divisiveness, and to eradicate communal feelings to promote the idea of common nationalism. Instead their main objective seems to be spreading ignorance, preaching and propagating sectarianism and chauvinism, communalism, people’s minds leading to the destruction of our composite culture and shared heritage. 6"
+          "text": "The real duty of the newspapers is to educate, to cleanse the minds of people, to save them from narrow sectarian divisiveness, and to eradicate communal feelings to promote the idea of common nationalism. Instead their main objective seems to be spreading ignorance, preaching and propagating sectarianism and chauvinism, communalism, people’s minds leading to the destruction of our composite culture and shared heritage. 6",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 252,
@@ -5134,12 +5235,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000335",
-          "classification": "PRIMARY_TEXT",
+          "classification": "PRIMARY_DOCUMENT",
           "wordCount": 54,
           "charCount": 371,
           "noteRefs": [],
           "images": [],
-          "text": "Gandhi-inspired Indian nationalists find Bhagat Singh’s resort to violence problematic, the Hindu and Sikh nationalists find his atheism troubling, the parliamentary Left finds his ideas and actions as more close to the perspective of the Naxalites and the Naxalites find Bhagat Singh’s critique of individual terrorism in his later life an uncomfortable historical fact."
+          "text": "Gandhi-inspired Indian nationalists find Bhagat Singh’s resort to violence problematic, the Hindu and Sikh nationalists find his atheism troubling, the parliamentary Left finds his ideas and actions as more close to the perspective of the Naxalites and the Naxalites find Bhagat Singh’s critique of individual terrorism in his later life an uncomfortable historical fact.",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 263,
@@ -7072,7 +7177,11 @@
             }
           ],
           "images": [],
-          "text": "By Samaj (Society) I do not mean Arya Samaj or any other narrow Samaj but a society of common people. This is because these religious societies mean nothing to me due to their myopia. Moreover, I want to keep away from all the religions because they are narrow, self centred and based on injustice and want others also to do the same. What I believe to be of greatest benefit to man and society is the following principle: the human relations should not be based on any distinction of caste, colour, religion or money. 8"
+          "text": "By Samaj (Society) I do not mean Arya Samaj or any other narrow Samaj but a society of common people. This is because these religious societies mean nothing to me due to their myopia. Moreover, I want to keep away from all the religions because they are narrow, self centred and based on injustice and want others also to do the same. What I believe to be of greatest benefit to man and society is the following principle: the human relations should not be based on any distinction of caste, colour, religion or money. 8",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 346,
@@ -7109,7 +7218,11 @@
             }
           ],
           "images": [],
-          "text": "I consider alien rule an evil, and at the same time I hate any democratic Indian rule where the weak are denied rights, [if] it is the creation of the rich and the landed, or if there is no equal participation of farmers and workers, or if government laws are based on inequality and unequal treatment . . . 9"
+          "text": "I consider alien rule an evil, and at the same time I hate any democratic Indian rule where the weak are denied rights, [if] it is the creation of the rich and the landed, or if there is no equal participation of farmers and workers, or if government laws are based on inequality and unequal treatment . . . 9",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 348,
@@ -7987,7 +8100,11 @@
             }
           ],
           "images": [],
-          "text": "In May 1927, I was arrested in Lahore. This arrest came as a big surprise for me. I had not the slightest idea that I was wanted by the police. I was passing through a garden and all of a sudden the police surrounded me . . . I was taken into police custody. The next day I was taken to the Railway Police lockup where I spent a whole month. After many days’ conversation with police personnel, I guessed that they had some information about my connection with the Kakori Party . . . They told me that I was in Lucknow during the Kakori Party Trial so that I might devise a scheme to rescue the culprits. They also said that after the plan had been approved, we procured some bombs and by way of test, one of those bombs was thrown into a crowd on the occasion of Dussehra in 1926. They offered to release me on condition that I gave a statement on the activities on of the Revolutionary Party. In this way I would be set free and even rewarded . . . I could not help laughing at their proposals. It was all humbug. People who have ideas like ours do not throw bombs at their own innocent people . . . I was completely innocent. 9"
+          "text": "In May 1927, I was arrested in Lahore. This arrest came as a big surprise for me. I had not the slightest idea that I was wanted by the police. I was passing through a garden and all of a sudden the police surrounded me . . . I was taken into police custody. The next day I was taken to the Railway Police lockup where I spent a whole month. After many days’ conversation with police personnel, I guessed that they had some information about my connection with the Kakori Party . . . They told me that I was in Lucknow during the Kakori Party Trial so that I might devise a scheme to rescue the culprits. They also said that after the plan had been approved, we procured some bombs and by way of test, one of those bombs was thrown into a crowd on the occasion of Dussehra in 1926. They offered to release me on condition that I gave a statement on the activities on of the Revolutionary Party. In this way I would be set free and even rewarded . . . I could not help laughing at their proposals. It was all humbug. People who have ideas like ours do not throw bombs at their own innocent people . . . I was completely innocent. 9",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 383,
@@ -7997,7 +8114,7 @@
           "className": "EB21ExtraFeatureIndented",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000486",
-          "classification": "QUOTED_TESTIMONY",
+          "classification": "PRIMARY_DOCUMENT",
           "wordCount": 57,
           "charCount": 314,
           "noteRefs": [
@@ -8009,7 +8126,11 @@
             }
           ],
           "images": [],
-          "text": "They further informed me, in my interest, that if I could give any Statement throwing some light on the activities of the revolutionary party, I was not to be imprisoned but on the contrary set free and rewarded, even without being produced as an approver in court. I laughed at the proposal. It was all humbug. 10"
+          "text": "They further informed me, in my interest, that if I could give any Statement throwing some light on the activities of the revolutionary party, I was not to be imprisoned but on the contrary set free and rewarded, even without being produced as an approver in court. I laughed at the proposal. It was all humbug. 10",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 384,
@@ -8105,7 +8226,11 @@
             }
           ],
           "images": [],
-          "text": "What else should I write about myself; that I’ve been a target of suspicion needlessly? My mail is being checked. Letters are opened. I wonder why they have begun to regard me with so much suspicion. Anyway, Brother, finally, the truth will surface and prevail. 1"
+          "text": "What else should I write about myself; that I’ve been a target of suspicion needlessly? My mail is being checked. Letters are opened. I wonder why they have begun to regard me with so much suspicion. Anyway, Brother, finally, the truth will surface and prevail. 1",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 389,
@@ -10147,7 +10272,11 @@
             }
           ],
           "images": [],
-          "text": "Our practical protest was against the institution which since its birth has eminently helped to display not only its worthlessness but its far-reaching power for mischief. The more we have pondered the more deeply we have been convinced that it exists only to demonstrate to the world India’s humiliation and helplessness and it symbolises the overriding domination of an irresponsible and autocratic rule. Time and again the national demand has been pressed by the people’s representatives only to find the waste-paper basket as its final destination. 7"
+          "text": "Our practical protest was against the institution which since its birth has eminently helped to display not only its worthlessness but its far-reaching power for mischief. The more we have pondered the more deeply we have been convinced that it exists only to demonstrate to the world India’s humiliation and helplessness and it symbolises the overriding domination of an irresponsible and autocratic rule. Time and again the national demand has been pressed by the people’s representatives only to find the waste-paper basket as its final destination. 7",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 473,
@@ -10194,7 +10323,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000606",
-          "classification": "PRIMARY_TEXT",
+          "classification": "PRIMARY_DOCUMENT",
           "wordCount": 51,
           "charCount": 294,
           "noteRefs": [
@@ -10206,7 +10335,11 @@
             }
           ],
           "images": [],
-          "text": "The elimination of force at all costs is utopian and the new movement which has arisen in the country, and of which we have given the warning, is inspired by the ideals which guided Guru Gobind Singh and Shivaji, Kamal Pasha &amp; Riza Khan, Washington &amp; Garibaldi, Lafayette &amp; Lenin. 9"
+          "text": "The elimination of force at all costs is utopian and the new movement which has arisen in the country, and of which we have given the warning, is inspired by the ideals which guided Guru Gobind Singh and Shivaji, Kamal Pasha &amp; Riza Khan, Washington &amp; Garibaldi, Lafayette &amp; Lenin. 9",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 476,
@@ -10258,7 +10391,11 @@
             }
           ],
           "images": [],
-          "text": "Unless this thing is done and the exploitation of man by man and nations by nations, which goes masquerading as Imperialism, is brought to an end, the sufferings and carnage with which humanity is threatened today cannot be prevented and all talks of ending war and ushering in an era of universal peace is undisguised hypocrisy. By Revolution we mean the ultimate establishment of an order of society which may not be threatened by such a break-down, and in which the sovereignty of the proletariat should be recognised, and as the result of which a world-federation should redeem humanity from the bondage of capitalism and the misery of imperial wars. 10"
+          "text": "Unless this thing is done and the exploitation of man by man and nations by nations, which goes masquerading as Imperialism, is brought to an end, the sufferings and carnage with which humanity is threatened today cannot be prevented and all talks of ending war and ushering in an era of universal peace is undisguised hypocrisy. By Revolution we mean the ultimate establishment of an order of society which may not be threatened by such a break-down, and in which the sovereignty of the proletariat should be recognised, and as the result of which a world-federation should redeem humanity from the bondage of capitalism and the misery of imperial wars. 10",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 479,
@@ -11696,7 +11833,11 @@
           "charCount": 433,
           "noteRefs": [],
           "images": [],
-          "text": "The governor general of India may, in cases of emergency , make and promulgate ordinances for the peace and good government of British India or any part thereof, and any ordinance so made shall, for the space of not more than six months from its promulgation, have the like for the space of not more than six months from its promulgation , have the like force of law as an Act passed by the Indian legislature . . . (emphases added)."
+          "text": "The governor general of India may, in cases of emergency , make and promulgate ordinances for the peace and good government of British India or any part thereof, and any ordinance so made shall, for the space of not more than six months from its promulgation, have the like for the space of not more than six months from its promulgation , have the like force of law as an Act passed by the Indian legislature . . . (emphases added).",
+          "quotationDetails": {
+            "speaker": "Historical Actor / Source",
+            "quotationType": "PRIMARY_DOCUMENT"
+          }
         },
         {
           "unitSequence": 550,
@@ -12645,12 +12786,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000753",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 62,
           "charCount": 324,
           "noteRefs": [],
           "images": [],
-          "text": "Apparently I have acted as a terrorist. But I am not a terrorist . I am a revolutionary who has got such definite ideas of a lengthy programme (. . .) Let me announce with all the strength at my command, that I am not a terrorist and never was , (except) perhaps at the beginning of my revolutionary career (emphases added)."
+          "text": "Apparently I have acted as a terrorist. But I am not a terrorist . I am a revolutionary who has got such definite ideas of a lengthy programme (. . .) Let me announce with all the strength at my command, that I am not a terrorist and never was , (except) perhaps at the beginning of my revolutionary career (emphases added).",
+          "quotationDetails": {
+            "speaker": "Historian / Scholar (cited in secondary quotation)",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 594,
@@ -12913,7 +13058,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000763",
-          "classification": "PRIMARY_TEXT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 136,
           "charCount": 757,
           "noteRefs": [
@@ -12925,7 +13070,11 @@
             }
           ],
           "images": [],
-          "text": "He joined the revolutionary movement at the age of sixteen in 1923 and had less than seven years to achieve his goals of the revolution. During this time, he not only carried out political revolutionary acts . . . but also wrote prolifically. He travelled a lot all over India and spent a lot of time reading the best books from all over the world, be it history, economics, or literature. Bhagat Singh wrote in four languages – Urdu, Hindi, Punjabi, and English. He had a good command over Sanskrit, as he had studied it in School, all the more encouraged by his grandfather, Arjun Singh. He understood Bengali very well, and could recite verses by poets such as Nazrul Islam and Tagore fluently in Bengali. At one time, he was learning Persian as well. 23"
+          "text": "He joined the revolutionary movement at the age of sixteen in 1923 and had less than seven years to achieve his goals of the revolution. During this time, he not only carried out political revolutionary acts . . . but also wrote prolifically. He travelled a lot all over India and spent a lot of time reading the best books from all over the world, be it history, economics, or literature. Bhagat Singh wrote in four languages – Urdu, Hindi, Punjabi, and English. He had a good command over Sanskrit, as he had studied it in School, all the more encouraged by his grandfather, Arjun Singh. He understood Bengali very well, and could recite verses by poets such as Nazrul Islam and Tagore fluently in Bengali. At one time, he was learning Persian as well. 23",
+          "quotationDetails": {
+            "speaker": "Historian / Scholar (cited in secondary quotation)",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 603,
@@ -13199,7 +13348,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000776",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 80,
           "charCount": 506,
           "noteRefs": [
@@ -13211,7 +13360,11 @@
             }
           ],
           "images": [],
-          "text": "My previous faith and convictions underwent a remarkable modification. The romance of violent methods alone, which was so prominent amongst our predecessors, was replaced by serious ideas. No more mysticism, no more blind faith. Realism became our cult. Use of force justifiable when resorted to as matter of terrible necessity, and non-violence as policy indispensable for all mass movements. So much about methods. The most important thing was the clear conception of ideal for which we were to fight. 15"
+          "text": "My previous faith and convictions underwent a remarkable modification. The romance of violent methods alone, which was so prominent amongst our predecessors, was replaced by serious ideas. No more mysticism, no more blind faith. Realism became our cult. Use of force justifiable when resorted to as matter of terrible necessity, and non-violence as policy indispensable for all mass movements. So much about methods. The most important thing was the clear conception of ideal for which we were to fight. 15",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 613,
@@ -13236,7 +13389,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000779",
-          "classification": "PRIMARY_TEXT",
+          "classification": "QUOTED_TESTIMONY",
           "wordCount": 70,
           "charCount": 387,
           "noteRefs": [
@@ -13248,7 +13401,11 @@
             }
           ],
           "images": [],
-          "text": "When called upon to mount the scaffold, Bhagat Singh was reading a book by Lenin or on Lenin. He continued his reading and said, ‘ Wait a while. A revolutionary is talking to another revolutionary .’ There was something in his voice which made the executioners pause. Bhagat Singh continued to read. After a few moments, he flung the book towards [the] ceiling and said, ‘ Let’s go .’ 16"
+          "text": "When called upon to mount the scaffold, Bhagat Singh was reading a book by Lenin or on Lenin. He continued his reading and said, ‘ Wait a while. A revolutionary is talking to another revolutionary .’ There was something in his voice which made the executioners pause. Bhagat Singh continued to read. After a few moments, he flung the book towards [the] ceiling and said, ‘ Let’s go .’ 16",
+          "quotationDetails": {
+            "speaker": "Eyewitness / Chronicler",
+            "quotationType": "QUOTED_TESTIMONY"
+          }
         },
         {
           "unitSequence": 615,
@@ -13422,7 +13579,11 @@
             }
           ],
           "images": [],
-          "text": "Bhagat Singh lived in a decade and in a country where he knew mobilization was possible; Gandhi had demonstrated that much. This precedent, buttressed by assumptions about the inexorability of class war; the example of worker strikes in 1928 Bombay, Calcutta and Madras; and evidence of the state’s anxiety to curtail labour mobilisation converge to impress a historical moment which cannot be denied. 8"
+          "text": "Bhagat Singh lived in a decade and in a country where he knew mobilization was possible; Gandhi had demonstrated that much. This precedent, buttressed by assumptions about the inexorability of class war; the example of worker strikes in 1928 Bombay, Calcutta and Madras; and evidence of the state’s anxiety to curtail labour mobilisation converge to impress a historical moment which cannot be denied. 8",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 621,
@@ -13503,7 +13664,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000793",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 74,
           "charCount": 428,
           "noteRefs": [
@@ -13515,7 +13676,11 @@
             }
           ],
           "images": [],
-          "text": "[i]mperialist designs shall no more actuate our dreamland people to wage wars. There shall be no more war trophies. The revolutionary armies shall march to other lands not to rule or loot the people, but to pull parasitic rulers down from their thrones and stop their blood seeking exploitation and thus to liberate the toiling masses. But, there shall not be the primitive national or racial hatred to goad our men to fight. 13"
+          "text": "[i]mperialist designs shall no more actuate our dreamland people to wage wars. There shall be no more war trophies. The revolutionary armies shall march to other lands not to rule or loot the people, but to pull parasitic rulers down from their thrones and stop their blood seeking exploitation and thus to liberate the toiling masses. But, there shall not be the primitive national or racial hatred to goad our men to fight. 13",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 625,
@@ -13596,7 +13761,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000798",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 69,
           "charCount": 354,
           "noteRefs": [
@@ -13608,7 +13773,11 @@
             }
           ],
           "images": [],
-          "text": "compromise is an essential weapon which has to be wielded every now and then as the struggle develops. But the thing that we must keep always before us is the idea of the movement. We must always maintain a clear notion as to the aim for the achievement of which we are fighting. That helps us to verify the success and failures of our movements . . . 18"
+          "text": "compromise is an essential weapon which has to be wielded every now and then as the struggle develops. But the thing that we must keep always before us is the idea of the movement. We must always maintain a clear notion as to the aim for the achievement of which we are fighting. That helps us to verify the success and failures of our movements . . . 18",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 629,
@@ -13680,7 +13849,11 @@
             }
           ],
           "images": [],
-          "text": "revolution means the complete overthrow of the existing social order and its replacement with the socialist order. For that purpose our immediate aim is the achievement of power. As a matter of fact, the state, the government machinery is just a weapon in the hands of the ruling class to further and safeguard its interest. We want to snatch and handle it to utilise it for the consummation of our ideal, i.e. the social reconstruction on new, i.e. Marxist, basis. 22"
+          "text": "revolution means the complete overthrow of the existing social order and its replacement with the socialist order. For that purpose our immediate aim is the achievement of power. As a matter of fact, the state, the government machinery is just a weapon in the hands of the ruling class to further and safeguard its interest. We want to snatch and handle it to utilise it for the consummation of our ideal, i.e. the social reconstruction on new, i.e. Marxist, basis. 22",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh & B.K. Dutt",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 632,
@@ -14260,7 +14433,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000829",
-          "classification": "PRIMARY_TEXT",
+          "classification": "PRIMARY_DOCUMENT",
           "wordCount": 51,
           "charCount": 300,
           "noteRefs": [
@@ -14272,7 +14445,11 @@
             }
           ],
           "images": [],
-          "text": "Bhagat Singh’s father was keen to acquire the papers, or at least to see them. Lajjawati refused to give them to him, purportedly on Bhagat Singh’s own instructions. We must consider ourselves fortunate that some member of his family, probably Kulbir Singh, managed to retrieve Jail Notebook . . . 11"
+          "text": "Bhagat Singh’s father was keen to acquire the papers, or at least to see them. Lajjawati refused to give them to him, purportedly on Bhagat Singh’s own instructions. We must consider ourselves fortunate that some member of his family, probably Kulbir Singh, managed to retrieve Jail Notebook . . . 11",
+          "quotationDetails": {
+            "speaker": "Lajjawati / Historical Witness",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 653,
@@ -14375,7 +14552,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000837",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 95,
           "charCount": 540,
           "noteRefs": [
@@ -14387,7 +14564,11 @@
             }
           ],
           "images": [],
-          "text": "We want a socialist revolution, the indispensable preliminary to which is the political revolution. That is what we want. The political revolution does not mean the transfer of state (or more crudely, the power) from the hands of the British to the Indians, but to Indians who are at one with us as to the final goal, or to be more precise, the power to be transferred to the revolutionary part through popular support. After that, to proceed in right earnest is to organise the reconstruction of the whole society on the socialist basis. 1"
+          "text": "We want a socialist revolution, the indispensable preliminary to which is the political revolution. That is what we want. The political revolution does not mean the transfer of state (or more crudely, the power) from the hands of the British to the Indians, but to Indians who are at one with us as to the final goal, or to be more precise, the power to be transferred to the revolutionary part through popular support. After that, to proceed in right earnest is to organise the reconstruction of the whole society on the socialist basis. 1",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 658,
@@ -14427,12 +14608,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000841",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 63,
           "charCount": 369,
           "noteRefs": [],
           "images": [],
-          "text": "[t]hey ask you quite candidly: what are they going to gain by your revolution for which you demand their sacrifices, what difference does it make to them whether Lord Reading is the head of the Indian government of Sir Purshotamdas Thakordas? What difference for a peasant if Sir Tej Bahadur Sapru replaces Lord Irwin! It is useless to appeal to his national sentiment."
+          "text": "[t]hey ask you quite candidly: what are they going to gain by your revolution for which you demand their sacrifices, what difference does it make to them whether Lord Reading is the head of the Indian government of Sir Purshotamdas Thakordas? What difference for a peasant if Sir Tej Bahadur Sapru replaces Lord Irwin! It is useless to appeal to his national sentiment.",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 661,
@@ -14485,7 +14670,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000845",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 54,
           "charCount": 317,
           "noteRefs": [
@@ -14497,7 +14682,11 @@
             }
           ],
           "images": [],
-          "text": "Because MahatmaJi is great, therefore none should criticise him. Because he has risen above, therefore everything he says – may be in the field of Politics or Religion, Economics, or Ethics – is right. Whether you are convinced or not you must say: ‘Yes, that’s true’. This mentality does not lead towards progress. 4"
+          "text": "Because MahatmaJi is great, therefore none should criticise him. Because he has risen above, therefore everything he says – may be in the field of Politics or Religion, Economics, or Ethics – is right. Whether you are convinced or not you must say: ‘Yes, that’s true’. This mentality does not lead towards progress. 4",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 664,
@@ -14529,7 +14718,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000848",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 87,
           "charCount": 489,
           "noteRefs": [
@@ -14541,7 +14730,11 @@
             }
           ],
           "images": [],
-          "text": "After his first experience with the Ahmedabad labourers in 1920 Mahatma Gandhi declared: ‘We must not tamper with the labourers. It is dangerous to make political use of the factory proletariat’ ( The Times , May 1921). Since then, they never dared to approach them. . . . The Bardoli resolution of 1922 clearly defines the horror the leaders felt when they saw the gigantic peasant class rising to shake off not only the domination of an alien nation but also the yoke of the landlords. 6"
+          "text": "After his first experience with the Ahmedabad labourers in 1920 Mahatma Gandhi declared: ‘We must not tamper with the labourers. It is dangerous to make political use of the factory proletariat’ ( The Times , May 1921). Since then, they never dared to approach them. . . . The Bardoli resolution of 1922 clearly defines the horror the leaders felt when they saw the gigantic peasant class rising to shake off not only the domination of an alien nation but also the yoke of the landlords. 6",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh quoting Gandhi",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 666,
@@ -14566,7 +14759,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000851",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 83,
           "charCount": 440,
           "noteRefs": [
@@ -14578,7 +14771,11 @@
             }
           ],
           "images": [],
-          "text": "Apart from Pt. Jawahar Lal can you point to any leader, who made any effort to organise the peasants or the labourers? No, they will not run the risk. There they lack. That is why I say they never meant a complete revolution. Through economic and administrative pressure they hoped to get a few more reforms [from the British], a few more concessions for the Indian capitalists. That is why I say that this movement is doomed to die . . . 7"
+          "text": "Apart from Pt. Jawahar Lal can you point to any leader, who made any effort to organise the peasants or the labourers? No, they will not run the risk. There they lack. That is why I say they never meant a complete revolution. Through economic and administrative pressure they hoped to get a few more reforms [from the British], a few more concessions for the Indian capitalists. That is why I say that this movement is doomed to die . . . 7",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 668,
@@ -14724,7 +14921,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000861",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 48,
           "charCount": 276,
           "noteRefs": [
@@ -14736,7 +14933,11 @@
             }
           ],
           "images": [],
-          "text": "The colonial world is a world cut into two. The dividing line, the frontiers are shown by barracks and police stations. In the colonies it is the policeman and the soldier who are the official, instituted go-betweens, the spokesmen of the settler and his rule of oppression. 1"
+          "text": "The colonial world is a world cut into two. The dividing line, the frontiers are shown by barracks and police stations. In the colonies it is the policeman and the soldier who are the official, instituted go-betweens, the spokesmen of the settler and his rule of oppression. 1",
+          "quotationDetails": {
+            "speaker": "Frantz Fanon",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 675,
@@ -14761,7 +14962,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000864",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 54,
           "charCount": 304,
           "noteRefs": [
@@ -14773,7 +14974,11 @@
             }
           ],
           "images": [],
-          "text": "In the colonial countries . . . [t]he policeman and the soldier, by their immediate presence and their frequent and direct action maintain contact with the native and advise him by means of rifle-butts and not to budge. It is obvious here that the agents of government speak the language of pure force. 2"
+          "text": "In the colonial countries . . . [t]he policeman and the soldier, by their immediate presence and their frequent and direct action maintain contact with the native and advise him by means of rifle-butts and not to budge. It is obvious here that the agents of government speak the language of pure force. 2",
+          "quotationDetails": {
+            "speaker": "Frantz Fanon",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 677,
@@ -14805,7 +15010,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000867",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 56,
           "charCount": 313,
           "noteRefs": [
@@ -14817,7 +15022,11 @@
             }
           ],
           "images": [],
-          "text": "The violence which has ruled over the colonial world, which has ceaselessly drummed the rhythm for the destruction of native social forms . . . that same violence will be claimed and taken over by the native at the moment when deciding to embody history in his own person, he surges into the forbidden quarters. 4"
+          "text": "The violence which has ruled over the colonial world, which has ceaselessly drummed the rhythm for the destruction of native social forms . . . that same violence will be claimed and taken over by the native at the moment when deciding to embody history in his own person, he surges into the forbidden quarters. 4",
+          "quotationDetails": {
+            "speaker": "Frantz Fanon",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 679,
@@ -15338,7 +15547,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000899",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 61,
           "charCount": 368,
           "noteRefs": [
@@ -15350,7 +15559,11 @@
             }
           ],
           "images": [],
-          "text": "In the piece about Madan Lal Dhingra (March 1928), Singh writes: ‘When pain arose from seeing the chains of slavery grow more powerful day by day, many youths were unable to calm their nation-love-maddened hearts (“ deshprem mein pagal hue d i ”) with mere speech and proposal-work and some broken-hearted people (“ dil-jale log ”) began the revolutionary movement.’ 9"
+          "text": "In the piece about Madan Lal Dhingra (March 1928), Singh writes: ‘When pain arose from seeing the chains of slavery grow more powerful day by day, many youths were unable to calm their nation-love-maddened hearts (“ deshprem mein pagal hue d i ”) with mere speech and proposal-work and some broken-hearted people (“ dil-jale log ”) began the revolutionary movement.’ 9",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 704,
@@ -15573,7 +15786,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000912",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 119,
           "charCount": 610,
           "noteRefs": [
@@ -15585,7 +15798,11 @@
             }
           ],
           "images": [],
-          "text": "When I was brought here from Delhi for the purpose of identification, some intelligence officers talked to me . . . in the presence of my father. They said that since I did not try to save my life by divulging secrets, it proved the presence of an acute agony in my life. They argued that death of this kind will be something like suicide. But I had replied that a man with beliefs and ideals like mine, could never think of dying uselessly. We want to get the maximum value for our lives. We want to serve humanity as much as possible. Particularly a man like me, whose life is nowhere sad or worried . . . 10"
+          "text": "When I was brought here from Delhi for the purpose of identification, some intelligence officers talked to me . . . in the presence of my father. They said that since I did not try to save my life by divulging secrets, it proved the presence of an acute agony in my life. They argued that death of this kind will be something like suicide. But I had replied that a man with beliefs and ideals like mine, could never think of dying uselessly. We want to get the maximum value for our lives. We want to serve humanity as much as possible. Particularly a man like me, whose life is nowhere sad or worried . . . 10",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 714,
@@ -15774,12 +15991,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000922",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 59,
           "charCount": 305,
           "noteRefs": [],
           "images": [],
-          "text": "I want to tell you that in jail, and in jail alone, can a person get an occasion to study empirically the great social subjects of crime and sin. I have read some literature on this and only in jail is the proper place for self-study on all these topics. The best parts of self-study is to suffer oneself."
+          "text": "I want to tell you that in jail, and in jail alone, can a person get an occasion to study empirically the great social subjects of crime and sin. I have read some literature on this and only in jail is the proper place for self-study on all these topics. The best parts of self-study is to suffer oneself.",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 721,
@@ -15816,7 +16037,11 @@
           "charCount": 622,
           "noteRefs": [],
           "images": [],
-          "text": "immense role in the education of Bhagat Singh, of equal if not greater significance is the literary and aesthetic space that allowed him to cast himself as part of an international brotherhood formed around the gallows. This is brought home most powerfully by references to the Russian novella, The Seven Who Were Hanged (1908) in the reminiscences of two of Bhagat Singh’s co-prisoners in Lahore Central Jail, Shiv Verma and Jatinder Nath Sanyal. Referring to Bhagat Singh’s interest in Dickens, Upton Sinclair, Hall Caine, Victor Hugo, Oscar Wilde, Gorky, Stepniak and in particular Leonid Andreyev, Shiv Verma recounts:"
+          "text": "immense role in the education of Bhagat Singh, of equal if not greater significance is the literary and aesthetic space that allowed him to cast himself as part of an international brotherhood formed around the gallows. This is brought home most powerfully by references to the Russian novella, The Seven Who Were Hanged (1908) in the reminiscences of two of Bhagat Singh’s co-prisoners in Lahore Central Jail, Shiv Verma and Jatinder Nath Sanyal. Referring to Bhagat Singh’s interest in Dickens, Upton Sinclair, Hall Caine, Victor Hugo, Oscar Wilde, Gorky, Stepniak and in particular Leonid Andreyev, Shiv Verma recounts:",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 723,
@@ -15826,7 +16051,7 @@
           "className": "EB21ExtraFeatureIndented",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000925",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 91,
           "charCount": 512,
           "noteRefs": [
@@ -15838,7 +16063,11 @@
             }
           ],
           "images": [],
-          "text": "‘He frequently got emotionally involved with some particular characters in the novels, to the extent that he wept and laughed with them. A familiar instance was a character in Leonard Andrew’s [ sic ] novel The Seven Who Were Hanged . This character kept on saying, “I shall not be hanged.” While he was being actually led to the gallows, he was still saying, “I shall not be hanged.” Upon reading this, Bhagat Singh would first laugh heartily, and then be silent and tears would start dropping from his eyes.’ 2"
+          "text": "‘He frequently got emotionally involved with some particular characters in the novels, to the extent that he wept and laughed with them. A familiar instance was a character in Leonard Andrew’s [ sic ] novel The Seven Who Were Hanged . This character kept on saying, “I shall not be hanged.” While he was being actually led to the gallows, he was still saying, “I shall not be hanged.” Upon reading this, Bhagat Singh would first laugh heartily, and then be silent and tears would start dropping from his eyes.’ 2",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 724,
@@ -15913,7 +16142,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000931",
-          "classification": "PRIMARY_TEXT",
+          "classification": "QUOTED_TESTIMONY",
           "wordCount": 89,
           "charCount": 488,
           "noteRefs": [
@@ -15925,7 +16154,11 @@
             }
           ],
           "images": [],
-          "text": "Baba Randhir Singh . . . was a God-fearing religious man. It pained him to learn that Bhagat Singh was a non-believer. He somehow managed to see Bhagat Singh in the condemned cell and tried to convince him about the existence of God, but failed. Baba lost his temper and said tauntingly: ‘You are giddy with fame and have developed an ego which is standing like a black curtain between you and God.’ It was in reply to that remark that Bhagat Singh wrote this article. 6 (emphasis added)."
+          "text": "Baba Randhir Singh . . . was a God-fearing religious man. It pained him to learn that Bhagat Singh was a non-believer. He somehow managed to see Bhagat Singh in the condemned cell and tried to convince him about the existence of God, but failed. Baba lost his temper and said tauntingly: ‘You are giddy with fame and have developed an ego which is standing like a black curtain between you and God.’ It was in reply to that remark that Bhagat Singh wrote this article. 6 (emphasis added).",
+          "quotationDetails": {
+            "speaker": "Baba Randhir Singh / Reminiscence",
+            "quotationType": "QUOTED_TESTIMONY"
+          }
         },
         {
           "unitSequence": 728,
@@ -15978,7 +16211,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000935",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 61,
           "charCount": 325,
           "noteRefs": [
@@ -15990,7 +16223,11 @@
             }
           ],
           "images": [],
-          "text": "A short life of struggle with no such magnificent end, shall in itself be the reward, if I have the courage to take it in that light. That is all. With no selfish motive or desire to be rewarded here or hereafter, quite disinterestedly, have I devoted my life to the cause of independence, because I could not do otherwise. 9"
+          "text": "A short life of struggle with no such magnificent end, shall in itself be the reward, if I have the courage to take it in that light. That is all. With no selfish motive or desire to be rewarded here or hereafter, quite disinterestedly, have I devoted my life to the cause of independence, because I could not do otherwise. 9",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 731,
@@ -16106,7 +16343,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000943",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 85,
           "charCount": 502,
           "noteRefs": [
@@ -16118,7 +16355,11 @@
             }
           ],
           "images": [],
-          "text": "I had only one idea before me throughout the trial, i.e. to show complete indifference towards the trial in spite of the serious nature of the charges against us. I have always been of the opinion that all political workers should be indifferent and should never bother about the legal fight in the law courts and should boldly bear the heaviest possible sentences inflicted upon them. They may defend themselves but always from purely political consideration and never from a personal point of view. 3"
+          "text": "I had only one idea before me throughout the trial, i.e. to show complete indifference towards the trial in spite of the serious nature of the charges against us. I have always been of the opinion that all political workers should be indifferent and should never bother about the legal fight in the law courts and should boldly bear the heaviest possible sentences inflicted upon them. They may defend themselves but always from purely political consideration and never from a personal point of view. 3",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 736,
@@ -16143,12 +16384,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000946",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 60,
           "charCount": 275,
           "noteRefs": [],
           "images": [],
-          "text": "My life is not so precious, at least to me, as you probably think to be. It is not at all worth buying at the cost of my principles. There are other comrades of mine whose case is as serious as that of mine. We had adopted a common policy and we shall stand to the last . . ."
+          "text": "My life is not so precious, at least to me, as you probably think to be. It is not at all worth buying at the cost of my principles. There are other comrades of mine whose case is as serious as that of mine. We had adopted a common policy and we shall stand to the last . . .",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 738,
@@ -16207,7 +16452,11 @@
             }
           ],
           "images": [],
-          "text": "In the statement accompanying the text of the Lahore Conspiracy Case Ordinance, the Viceroy had stated that the accused in this case were trying to bring both the law and justice into contempt. The situation afforded to us an opportunity to show to the public whether we are trying to bring the law into contempt or whether others were doing so. 5"
+          "text": "In the statement accompanying the text of the Lahore Conspiracy Case Ordinance, the Viceroy had stated that the accused in this case were trying to bring both the law and justice into contempt. The situation afforded to us an opportunity to show to the public whether we are trying to bring the law into contempt or whether others were doing so. 5",
+          "quotationDetails": {
+            "speaker": "Lord Irwin / Viceroy Statement",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 741,
@@ -16254,12 +16503,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000954",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 67,
           "charCount": 335,
           "noteRefs": [],
           "images": [],
-          "text": "The desire to live is natural. It is in me also. I do not want to conceal it. But it is conditional. I don’t want to live as a prisoner or under restrictions. My name has become a symbol of Indian Revolution. The ideal and sacrifices of the revolutionary party have elevated me to a height which I will never be able to rise if I live."
+          "text": "The desire to live is natural. It is in me also. I do not want to conceal it. But it is conditional. I don’t want to live as a prisoner or under restrictions. My name has become a symbol of Indian Revolution. The ideal and sacrifices of the revolutionary party have elevated me to a height which I will never be able to rise if I live.",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 744,
@@ -16284,7 +16537,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000957",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 64,
           "charCount": 329,
           "noteRefs": [
@@ -16296,7 +16549,11 @@
             }
           ],
           "images": [],
-          "text": "Yet, one thing pricks me even today. My heart nurtured some ambitions for doing something for humanity and for my country. I have not been able to fulfil even one-thousandth part of these ambitions. If I live I might perhaps get a chance to fulfil them. If ever it came to my mind that I should die, it came from this end only. 7"
+          "text": "Yet, one thing pricks me even today. My heart nurtured some ambitions for doing something for humanity and for my country. I have not been able to fulfil even one-thousandth part of these ambitions. If I live I might perhaps get a chance to fulfil them. If ever it came to my mind that I should die, it came from this end only. 7",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 746,
@@ -16358,7 +16615,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0000962",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 70,
           "charCount": 418,
           "noteRefs": [
@@ -16370,7 +16627,11 @@
             }
           ],
           "images": [],
-          "text": "Let us declare that the state of war does exist and shall exist so long as the Indian toiling masses and their natural resources are being exploited by a handful of parasites. They may be purely British capitalists or mixed British and Indian, or even purely Indian. They may be carrying on their insidious exploitation through mixed or even purely Indian bureaucratic apparatus. All these things make no difference. 9"
+          "text": "Let us declare that the state of war does exist and shall exist so long as the Indian toiling masses and their natural resources are being exploited by a handful of parasites. They may be purely British capitalists or mixed British and Indian, or even purely Indian. They may be carrying on their insidious exploitation through mixed or even purely Indian bureaucratic apparatus. All these things make no difference. 9",
+          "quotationDetails": {
+            "speaker": "Bhagat Singh, Sukhdev & Rajguru",
+            "quotationType": "PRIMARY_SUBJECT_WRITING"
+          }
         },
         {
           "unitSequence": 750,
@@ -16585,7 +16846,11 @@
           "charCount": 338,
           "noteRefs": [],
           "images": [],
-          "text": "‘Irwin identified two important issues in terms of dealing with political prisoners and the activities of the revolutionary terrorist movement. One issue was amnesty for political prisoners, as had been offered in 1919, and the second was whether to fully prosecute each crime using the mechanisms available through the Indian Penal Code."
+          "text": "‘Irwin identified two important issues in terms of dealing with political prisoners and the activities of the revolutionary terrorist movement. One issue was amnesty for political prisoners, as had been offered in 1919, and the second was whether to fully prosecute each crime using the mechanisms available through the Indian Penal Code.",
+          "quotationDetails": {
+            "speaker": "Lord Irwin / Archival Record",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 762,
@@ -17347,7 +17612,11 @@
             }
           ],
           "images": [],
-          "text": "I told him I had considered the case with most anxious care, but could find no grounds on which I could justify to my conscience commuting the sentence. As to the date, I had considered the possibility of postponement till after the Congress, but had deliberately rejected it on various grounds . . . He appeared to appreciate the force of these arguments, and said no more. 9"
+          "text": "I told him I had considered the case with most anxious care, but could find no grounds on which I could justify to my conscience commuting the sentence. As to the date, I had considered the possibility of postponement till after the Congress, but had deliberately rejected it on various grounds . . . He appeared to appreciate the force of these arguments, and said no more. 9",
+          "quotationDetails": {
+            "speaker": "Lord Irwin (Viceroy of India)",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 789,
@@ -17437,12 +17706,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0001021",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 60,
           "charCount": 377,
           "noteRefs": [],
           "images": [],
-          "text": "From the ovation he received everywhere it was quite apparent that his popularity had reached the high watermark. It had surpassed even the record of 1921, when after the departure of Jinnah in 1920 from the Congress Party, he had reorganized the Party’s Constitution around the principle of “Swaraj” or complete political independence from the British, and become its leader’."
+          "text": "From the ovation he received everywhere it was quite apparent that his popularity had reached the high watermark. It had surpassed even the record of 1921, when after the departure of Jinnah in 1920 from the Congress Party, he had reorganized the Party’s Constitution around the principle of “Swaraj” or complete political independence from the British, and become its leader’.",
+          "quotationDetails": {
+            "speaker": "Historical Commentator / Author source",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 794,
@@ -17467,7 +17740,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0001024",
-          "classification": "PRIMARY_DOCUMENT",
+          "classification": "PRIMARY_TEXT",
           "wordCount": 90,
           "charCount": 509,
           "noteRefs": [
@@ -17479,7 +17752,11 @@
             }
           ],
           "images": [],
-          "text": "The spiritual man has always wielded the largest influence in India and he is called a ‘Sant’ or ‘Mahatma’ or ‘Sadhu’. For various reasons, Gandhiji came to be looked upon by the mass of the people as a Mahatma before he became the undisputed political leader of India. At the Nagpur Congress in December 1920, Mr. M.A. Jinnah, who was till then a Nationalist leader, addressed him as ‘Mr. Gandhi’, and he was shouted down by thousands of people who insisted that he should address him as ‘Mahatma Gandhi’. 14"
+          "text": "The spiritual man has always wielded the largest influence in India and he is called a ‘Sant’ or ‘Mahatma’ or ‘Sadhu’. For various reasons, Gandhiji came to be looked upon by the mass of the people as a Mahatma before he became the undisputed political leader of India. At the Nagpur Congress in December 1920, Mr. M.A. Jinnah, who was till then a Nationalist leader, addressed him as ‘Mr. Gandhi’, and he was shouted down by thousands of people who insisted that he should address him as ‘Mahatma Gandhi’. 14",
+          "quotationDetails": {
+            "speaker": "Subhas Chandra Bose",
+            "quotationType": "PRIMARY_TEXT_OTHER_ACTOR"
+          }
         },
         {
           "unitSequence": 796,
@@ -17547,7 +17824,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0001029",
-          "classification": "PRIMARY_TEXT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 57,
           "charCount": 304,
           "noteRefs": [
@@ -17559,7 +17836,11 @@
             }
           ],
           "images": [],
-          "text": "When the British sentenced Bhagat Singh to death, Gandhi made no effort to save his life. He never wrote any letter to the British Viceroy to commute his sentence, nor did he issue any public appeal for this purpose, and he never went to meet Bhagat Singh in jail when the latter was on hunger strike. 17"
+          "text": "When the British sentenced Bhagat Singh to death, Gandhi made no effort to save his life. He never wrote any letter to the British Viceroy to commute his sentence, nor did he issue any public appeal for this purpose, and he never went to meet Bhagat Singh in jail when the latter was on hunger strike. 17",
+          "quotationDetails": {
+            "speaker": "Historical Commentator / Author source",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 800,
@@ -17770,7 +18051,7 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0001040",
-          "classification": "PRIMARY_TEXT",
+          "classification": "PRIMARY_DOCUMENT",
           "wordCount": 72,
           "charCount": 398,
           "noteRefs": [
@@ -17782,7 +18063,11 @@
             }
           ],
           "images": [],
-          "text": "Irwin says that during their discussion of the Bhagat Singh issue Gandhi had asked him if he would mind if he (Gandhi) publicly claimed that he put a lot of pressure on the Viceroy on this issue. Irwin had replied that he wouldn’t mind that. So “the best efforts” made by Gandhi “to save the lives of Bhagat Singh” and his comrades, were planned with full knowledge of the British administration. 7"
+          "text": "Irwin says that during their discussion of the Bhagat Singh issue Gandhi had asked him if he would mind if he (Gandhi) publicly claimed that he put a lot of pressure on the Viceroy on this issue. Irwin had replied that he wouldn’t mind that. So “the best efforts” made by Gandhi “to save the lives of Bhagat Singh” and his comrades, were planned with full knowledge of the British administration. 7",
+          "quotationDetails": {
+            "speaker": "Lord Irwin / Historical Record",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 808,
@@ -17863,12 +18148,16 @@
           "className": "EB19ExtraFeatureFullOut",
           "inBlockquote": true,
           "parentBlockquoteId": "bhasin0001045",
-          "classification": "PRIMARY_TEXT",
+          "classification": "AUTHOR_NARRATIVE",
           "wordCount": 60,
           "charCount": 396,
           "noteRefs": [],
           "images": [],
-          "text": "This decision of Gandhi was not simply the result of the moralist/pacificist Gandhi not endorsing violence because by allowing hanging he was endorsing another kind of violence; it was the result of an extremely sharp tactician and strategist Gandhi realising that if Bhagat Singh survived, that would sound the death knell of his (Gandhi’s) political leadership of India’s independence movement."
+          "text": "This decision of Gandhi was not simply the result of the moralist/pacificist Gandhi not endorsing violence because by allowing hanging he was endorsing another kind of violence; it was the result of an extremely sharp tactician and strategist Gandhi realising that if Bhagat Singh survived, that would sound the death knell of his (Gandhi’s) political leadership of India’s independence movement.",
+          "quotationDetails": {
+            "speaker": "Historian / Commentator",
+            "quotationType": "SECONDARY_SCHOLARLY_QUOTATION"
+          }
         },
         {
           "unitSequence": 812,
@@ -18881,7 +19170,11 @@
           "charCount": 409,
           "noteRefs": [],
           "images": [],
-          "text": "The Leaders of the Bar and young students are requested to take active role in diffusing the disturbances and violence in the country: We are to convince the people and the illiterate ignorant mass, who are being misled by some so-called leaders [that] the matter with regard to Citizenship Amendment Act is under consideration of our Supreme Court, therefore everyone should await the decision of apex court."
+          "text": "The Leaders of the Bar and young students are requested to take active role in diffusing the disturbances and violence in the country: We are to convince the people and the illiterate ignorant mass, who are being misled by some so-called leaders [that] the matter with regard to Citizenship Amendment Act is under consideration of our Supreme Court, therefore everyone should await the decision of apex court.",
+          "quotationDetails": {
+            "speaker": "Bar Council of India / Legal Protesters",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 855,
@@ -18911,7 +19204,11 @@
           "charCount": 354,
           "noteRefs": [],
           "images": [],
-          "text": "The protests against CAA and NRC are the attempt of the Indian citizens to save their Constitution from being trampled upon by an authoritarian regime on the strength of their brute majority in the Legislature. Being the real torch bearers of the constitution, it is the duty of every self-esteemed lawyer to lead the struggle to defend the constitution."
+          "text": "The protests against CAA and NRC are the attempt of the Indian citizens to save their Constitution from being trampled upon by an authoritarian regime on the strength of their brute majority in the Legislature. Being the real torch bearers of the constitution, it is the duty of every self-esteemed lawyer to lead the struggle to defend the constitution.",
+          "quotationDetails": {
+            "speaker": "Bar Council of India / Legal Protesters",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 857,
@@ -18948,7 +19245,11 @@
             }
           ],
           "images": [],
-          "text": "it is amiss that the BCI, a body which is supposed to stand up for the Bar, did not deem it fit to express solidarity with advocates such as Mr. Mohd. Shoaib who has been detained in Lucknow or the hundreds of advocates fighting across the country to uphold the rights of citizens as recognised by the constitution. 15"
+          "text": "it is amiss that the BCI, a body which is supposed to stand up for the Bar, did not deem it fit to express solidarity with advocates such as Mr. Mohd. Shoaib who has been detained in Lucknow or the hundreds of advocates fighting across the country to uphold the rights of citizens as recognised by the constitution. 15",
+          "quotationDetails": {
+            "speaker": "Bar Council of India / Legal Protesters",
+            "quotationType": "CONTEMPORARY_RECORD"
+          }
         },
         {
           "unitSequence": 859,

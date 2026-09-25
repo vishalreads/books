@@ -5,6 +5,23 @@ const opsDir = path.join(__dirname, '..', 'docs', 'distillations', 'bhagat-singh
 const xhtmlDir = path.join(opsDir, 'xhtml');
 const opfContent = fs.readFileSync(path.join(opsDir, 'package.opf'), 'utf8');
 
+// Load categorized blockquotes map from audit
+const bqsList = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'src', 'categorized_64_blockquotes.json'), 'utf8'));
+const bqMap = {};
+bqsList.forEach(b => {
+  if (b.id) bqMap[b.id] = b;
+});
+
+// Fix specific entries in bqMap
+// Fanon quotes in ch. 43
+if (bqMap['bhasin0000861']) { bqMap['bhasin0000861'].speaker = 'Frantz Fanon'; bqMap['bhasin0000861'].category = 'SECONDARY_SCHOLARLY_QUOTATION'; }
+if (bqMap['bhasin0000864']) { bqMap['bhasin0000864'].speaker = 'Frantz Fanon'; bqMap['bhasin0000864'].category = 'SECONDARY_SCHOLARLY_QUOTATION'; }
+if (bqMap['bhasin0000867']) { bqMap['bhasin0000867'].speaker = 'Frantz Fanon'; bqMap['bhasin0000867'].category = 'SECONDARY_SCHOLARLY_QUOTATION'; }
+// Ahmed Faraz in prologue
+if (bqMap['bhasin0000121']) { bqMap['bhasin0000121'].speaker = 'Ahmed Faraz'; bqMap['bhasin0000121'].category = 'PRIMARY_TEXT_POETRY'; }
+if (bqMap['bhasin0000124']) { bqMap['bhasin0000124'].speaker = 'Ahmed Faraz (trans.)'; bqMap['bhasin0000124'].category = 'PRIMARY_TEXT_POETRY'; }
+if (bqMap['bhasin0000127']) { bqMap['bhasin0000127'].speaker = 'Ahmed Faraz'; bqMap['bhasin0000127'].category = 'PRIMARY_TEXT_POETRY'; }
+
 // Parse manifest items & spine
 const manifestItems = {};
 const itemMatches = opfContent.match(/<item\s+[^>]+>/g) || [];
@@ -212,19 +229,31 @@ spineIdrefs.forEach((idref, spineIdx) => {
       });
     }
 
-    // Classification refinement
+    // Determine Classification using Audited Heuristics
     let classification = 'UNCERTAIN/UNCLASSIFIED';
+    let quotationDetails = null;
 
     if (['cover.xhtml', 'brandPage.xhtml', 'title.xhtml', 'toc.xhtml', 'praise.xhtml', 'dedication.xhtml', 'acknowledgements.xhtml', 'endpage.xhtml', 'copyright.xhtml'].includes(fileName)) {
       classification = 'EDITORIAL_MATERIAL';
     } else if (fileName.startsWith('part')) {
-      classification = 'EDITORIAL_MATERIAL';
+      if (parentBq) {
+        classification = 'PRIMARY_TEXT'; // Mirza Ghalib epigraph
+        quotationDetails = { speaker: 'Mirza Ghalib', quotationType: 'PRIMARY_TEXT_POETRY' };
+      } else {
+        classification = 'EDITORIAL_MATERIAL';
+      }
     } else if (fileName === 'notes.xhtml') {
       classification = tag.startsWith('h') ? 'EDITORIAL_MATERIAL' : 'ENDNOTE';
     } else if (fileName === 'bibliography.xhtml') {
       classification = (tag.startsWith('h') || className.includes('EB01BodyTextLineSpace')) ? 'EDITORIAL_MATERIAL' : 'BIBLIOGRAPHY';
     } else if (fileName === 'page11.xhtml') {
-      classification = 'PRIMARY_TEXT'; // Epigraph quoting Bhagat Singh directly
+      if (parentBq && parentBq.id === 'bhasin0000110') {
+        classification = 'EDITORIAL_MATERIAL';
+        quotationDetails = { speaker: 'Satvinder Juss / Publisher', quotationType: 'EDITOR_ANNOTATION' };
+      } else {
+        classification = 'PRIMARY_TEXT'; // Bhagat Singh epigraph
+        quotationDetails = { speaker: 'Bhagat Singh', quotationType: 'PRIMARY_SUBJECT_WRITING' };
+      }
     } else if (fileName === 'appendix.xhtml') {
       classification = tag.startsWith('h') ? 'EDITORIAL_MATERIAL' : 'ARCHIVAL_REFERENCE';
     } else {
@@ -232,19 +261,35 @@ spineIdrefs.forEach((idref, spineIdx) => {
       if (tag.startsWith('h')) {
         classification = 'EDITORIAL_MATERIAL';
       } else if (tag === 'table') {
-        classification = 'PRIMARY_DOCUMENT';
+        classification = 'PRIMARY_DOCUMENT'; // Bhagat Singh's prison reading list
       } else if (parentBq || className.includes('ExtraFeature') || className.includes('Extract')) {
-        // Detailed classification of quotations
-        if (/CJ:|Mr Pritt|DNP:|approver|cross-examin|deposition|statement under Section 164|Phanindra Nath Ghosh|Jai Gopal|Hans Raj Vohra|Kailashpati/i.test(textContent)) {
-          classification = 'QUOTED_TESTIMONY';
-        } else if (/FIR|First Information Report|Post-Mortem|Ordinance|Tribunal Order|Section 121|Penal Code|Gazette|Warrant|Special Tribunal|Bar Council/i.test(textContent)) {
-          classification = 'PRIMARY_DOCUMENT';
-        } else if (/Bhagat Singh|Sukhdev|Rajguru|B.K. Dutt|proclamation|leaflet|notice|Why I Am an Atheist|manifesto|Inquilab Zindabad|To Young Political Workers/i.test(textContent)) {
-          classification = 'PRIMARY_TEXT';
-        } else if (/Fanon|Mirza Ghalib|Ahmed Faraz|Lenin|Marx|Trotsky|Russell/i.test(textContent)) {
-          classification = 'PRIMARY_TEXT'; // External primary source/poetry quoted
+        const auditedBq = parentBq ? bqMap[parentBq.id] : null;
+        if (auditedBq) {
+          quotationDetails = { speaker: auditedBq.speaker, quotationType: auditedBq.category };
+          if (auditedBq.category === 'PRIMARY_SUBJECT_WRITING' || auditedBq.category === 'PRIMARY_TEXT_POETRY' || auditedBq.category === 'PRIMARY_TEXT_OTHER_ACTOR') {
+            classification = 'PRIMARY_TEXT';
+          } else if (auditedBq.category === 'QUOTED_TESTIMONY' || auditedBq.category === 'QUOTED_TESTIMONY_TRIAL_EXCHANGE') {
+            classification = 'QUOTED_TESTIMONY';
+          } else if (auditedBq.category === 'SECONDARY_SCHOLARLY_QUOTATION') {
+            classification = 'AUTHOR_NARRATIVE'; // Secondary scholarly quotations support author narrative
+          } else if (auditedBq.category === 'CONTEMPORARY_RECORD' || auditedBq.category === 'CONTEMPORARY_RECORD_GOVERNMENT' || auditedBq.category === 'CONTEMPORARY_RECORD_LEGAL') {
+            classification = 'PRIMARY_DOCUMENT';
+          } else if (auditedBq.category === 'EDITOR_ANNOTATION') {
+            classification = 'EDITORIAL_MATERIAL';
+          } else {
+            classification = 'PRIMARY_DOCUMENT';
+          }
         } else {
-          classification = 'PRIMARY_DOCUMENT';
+          // Default block quote fallback
+          if (/CJ:|Mr Pritt|DNP:|approver|cross-examin|deposition|statement under Section 164|Phanindra Nath Ghosh|Jai Gopal|Hans Raj Vohra/i.test(textContent)) {
+            classification = 'QUOTED_TESTIMONY';
+          } else if (/FIR|Post-Mortem|Ordinance|Tribunal Order|Section 121|Penal Code|Gazette|Warrant/i.test(textContent)) {
+            classification = 'PRIMARY_DOCUMENT';
+          } else if (/Bhagat Singh|Sukhdev|Rajguru|B.K. Dutt|Why I Am an Atheist|manifesto/i.test(textContent)) {
+            classification = 'PRIMARY_TEXT';
+          } else {
+            classification = 'PRIMARY_DOCUMENT';
+          }
         }
       } else {
         // Regular paragraph
@@ -260,7 +305,7 @@ spineIdrefs.forEach((idref, spineIdx) => {
     docUnitIndex++;
     globalUnitSequence++;
 
-    docUnits.push({
+    const unitObj = {
       unitSequence: globalUnitSequence,
       docUnitIndex,
       elementId,
@@ -274,7 +319,13 @@ spineIdrefs.forEach((idref, spineIdx) => {
       noteRefs: unitNoteRefs,
       images: unitImages,
       text: textContent
-    });
+    };
+
+    if (quotationDetails) {
+      unitObj.quotationDetails = quotationDetails;
+    }
+
+    docUnits.push(unitObj);
   }
 
   // Standalone images in appendix (A1.jpg to A21.jpg)
@@ -326,12 +377,12 @@ console.log(`\nExtracted ${documents.length} spine documents.`);
 const grandTotalUnits = documents.reduce((acc, d) => acc + d.units.length, 0);
 console.log(`Grand Total Canonical Units: ${grandTotalUnits}`);
 console.log(`Grand Total Note Refs: ${allNoteRefs.length}`);
-console.log('Classification Counts:', classificationCounts);
+console.log('Final Classification Counts:', classificationCounts);
 
-// Write canonical manifest
-const manifestPath = path.join(__dirname, '..', 'docs', 'distillations', 'bhagat-singh-a-life-in-revolution', 'ingestion-manifest.json');
+// Save canonical manifest
 const manifestPayload = {
-  manifestVersion: '1.0.0',
+  manifestVersion: '1.1.0',
+  auditStatus: 'AUDITED_AND_VERIFIED (Milestone 3 - Step 1.5)',
   generatedAt: new Date().toISOString(),
   source: {
     title: 'Bhagat Singh: A Life in Revolution',
@@ -358,5 +409,7 @@ const manifestPayload = {
   documents
 };
 
+const manifestPath = path.join(__dirname, '..', 'docs', 'distillations', 'bhagat-singh-a-life-in-revolution', 'ingestion-manifest.json');
 fs.writeFileSync(manifestPath, JSON.stringify(manifestPayload, null, 2), 'utf8');
-console.log(`Saved rich canonical manifest to: ${manifestPath} (${(fs.statSync(manifestPath).size / 1024 / 1024).toFixed(2)} MB)`);
+console.log(`Updated audited manifest to: ${manifestPath} (${(fs.statSync(manifestPath).size / 1024 / 1024).toFixed(2)} MB)`);
+

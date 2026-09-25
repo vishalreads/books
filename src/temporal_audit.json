@@ -1,0 +1,572 @@
+[
+  {
+    "fileName": "prologue.xhtml",
+    "chapterNumber": null,
+    "chapterTitle": "Prologue: A Life in Revolution",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter001.xhtml",
+    "chapterNumber": "1",
+    "chapterTitle": "1840, Fateh Singh",
+    "nominalYear": "1840",
+    "eventTime": "Year 1840",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter002.xhtml",
+    "chapterNumber": "2",
+    "chapterTitle": "1876, Swaraj",
+    "nominalYear": "1876",
+    "eventTime": "Year 1876",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter003.xhtml",
+    "chapterNumber": "3",
+    "chapterTitle": "1887, Chenab Colony",
+    "nominalYear": "1887",
+    "eventTime": "Year 1887",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter004.xhtml",
+    "chapterNumber": "4",
+    "chapterTitle": "1906, Land Colonisation Bill",
+    "nominalYear": "1906",
+    "eventTime": "Year 1906",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter005.xhtml",
+    "chapterNumber": "5",
+    "chapterTitle": "Rebel Blood",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter006.xhtml",
+    "chapterNumber": "6",
+    "chapterTitle": "1907, Canal Colonies Disturbance",
+    "nominalYear": "1907",
+    "eventTime": "Year 1907",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter007.xhtml",
+    "chapterNumber": "7",
+    "chapterTitle": "1917, Lahore",
+    "nominalYear": "1917",
+    "eventTime": "Year 1917",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter008.xhtml",
+    "chapterNumber": "8",
+    "chapterTitle": "1929, Jinnah and Bhagat Singh",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter009.xhtml",
+    "chapterNumber": "9",
+    "chapterTitle": "1924, Matwala",
+    "nominalYear": "1924",
+    "eventTime": "Year 1924",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter010.xhtml",
+    "chapterNumber": "10",
+    "chapterTitle": "Punjabiyat",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter011.xhtml",
+    "chapterNumber": "11",
+    "chapterTitle": "2019, Shadman Chowk",
+    "nominalYear": "2019",
+    "eventTime": "2018-2019 (Contemporary Shadman Chowk renaming litigation in Lahore High Court)",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter012.xhtml",
+    "chapterNumber": "12",
+    "chapterTitle": "Colonialism’s Racial Cast",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter013.xhtml",
+    "chapterNumber": "13",
+    "chapterTitle": "1919, The Lahore File",
+    "nominalYear": "1919",
+    "eventTime": "Year 1919",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter014.xhtml",
+    "chapterNumber": "14",
+    "chapterTitle": "1919, Rowlatt Act",
+    "nominalYear": "1919",
+    "eventTime": "Year 1919",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter015.xhtml",
+    "chapterNumber": "15",
+    "chapterTitle": "Colonialism’s Civilising Mission",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter016.xhtml",
+    "chapterNumber": "16",
+    "chapterTitle": "1920, ‘Lal Bal Pal’",
+    "nominalYear": "1920",
+    "eventTime": "Year 1920",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter017.xhtml",
+    "chapterNumber": "17",
+    "chapterTitle": "1922, Chauri Chaura",
+    "nominalYear": "1922",
+    "eventTime": "Year 1922",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter018.xhtml",
+    "chapterNumber": "18",
+    "chapterTitle": "1924, ‘Sarfaroshi Ki Tamanna’",
+    "nominalYear": "1924",
+    "eventTime": "Year 1924",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter019.xhtml",
+    "chapterNumber": "19",
+    "chapterTitle": "1923, National College",
+    "nominalYear": "1923",
+    "eventTime": "Year 1923",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter020.xhtml",
+    "chapterNumber": "20",
+    "chapterTitle": "1926, Dussehra Bomb Blast",
+    "nominalYear": "1926",
+    "eventTime": "Year 1926",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter021.xhtml",
+    "chapterNumber": "21",
+    "chapterTitle": "1929, Love Is Never Bestial",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter022.xhtml",
+    "chapterNumber": "22",
+    "chapterTitle": "1928, J.P. Saunders’ Murder",
+    "nominalYear": "1928",
+    "eventTime": "17 December 1928 (Saunders assassination)",
+    "precision": "DAY",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter023.xhtml",
+    "chapterNumber": "23",
+    "chapterTitle": "1929, Delhi Assembly Bombs",
+    "nominalYear": "1929",
+    "eventTime": "8 April 1929 (Delhi Assembly bomb blast)",
+    "precision": "DAY",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter024.xhtml",
+    "chapterNumber": "24",
+    "chapterTitle": "1928, Ferozeshah Kotla",
+    "nominalYear": "1928",
+    "eventTime": "Year 1928",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter025.xhtml",
+    "chapterNumber": "25",
+    "chapterTitle": "1929, The HSRA",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter026.xhtml",
+    "chapterNumber": "26",
+    "chapterTitle": "1930, ‘Peace, Order and Good Government’",
+    "nominalYear": "1930",
+    "eventTime": "Year 1930",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter027.xhtml",
+    "chapterNumber": "27",
+    "chapterTitle": "6 June 1929 Statement",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter028.xhtml",
+    "chapterNumber": "28",
+    "chapterTitle": "6 June 1929 and the Rejection of ‘Utopian Non-violence’",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter029.xhtml",
+    "chapterNumber": "29",
+    "chapterTitle": "12 June 1929, We Could Have Easily Escaped",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter030.xhtml",
+    "chapterNumber": "30",
+    "chapterTitle": "1929, The Enigma",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter031.xhtml",
+    "chapterNumber": "31",
+    "chapterTitle": "5 May 1930, Inalienable Rights",
+    "nominalYear": "1930",
+    "eventTime": "Year 1930",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter032.xhtml",
+    "chapterNumber": "32",
+    "chapterTitle": "1 May 1930, Lahore Ordinance",
+    "nominalYear": "1930",
+    "eventTime": "Year 1930",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter033.xhtml",
+    "chapterNumber": "33",
+    "chapterTitle": "1930, The Special Tribunal",
+    "nominalYear": "1930",
+    "eventTime": "Year 1930",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter034.xhtml",
+    "chapterNumber": "34",
+    "chapterTitle": "A ‘Striking Power’",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter035.xhtml",
+    "chapterNumber": "35",
+    "chapterTitle": "The ‘Approvers’",
+    "nominalYear": null,
+    "eventTime": "13 September 1929 (Death of Jatindra Nath Das on day 63 of hunger strike)",
+    "precision": "DAY",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter036.xhtml",
+    "chapterNumber": "36",
+    "chapterTitle": "Police Beatings",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter037.xhtml",
+    "chapterNumber": "37",
+    "chapterTitle": "1931, I Was Never a Terrorist",
+    "nominalYear": "1931",
+    "eventTime": "Year 1931",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter038.xhtml",
+    "chapterNumber": "38",
+    "chapterTitle": "1929, Jail Readings",
+    "nominalYear": "1929",
+    "eventTime": "Year 1929",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter039.xhtml",
+    "chapterNumber": "39",
+    "chapterTitle": "1928, The Awakening",
+    "nominalYear": "1928",
+    "eventTime": "Year 1928",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter040.xhtml",
+    "chapterNumber": "40",
+    "chapterTitle": "The Legacy",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter041.xhtml",
+    "chapterNumber": "41",
+    "chapterTitle": "Interpreting Bhagat Singh",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter042.xhtml",
+    "chapterNumber": "42",
+    "chapterTitle": "1931, ‘Mahatma Ji Is Great’",
+    "nominalYear": "1931",
+    "eventTime": "Year 1931",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter043.xhtml",
+    "chapterNumber": "43",
+    "chapterTitle": "1928, Lala Lajpat Rai",
+    "nominalYear": "1928",
+    "eventTime": "Year 1928",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter044.xhtml",
+    "chapterNumber": "44",
+    "chapterTitle": "Kartar Singh Sarabha",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter045.xhtml",
+    "chapterNumber": "45",
+    "chapterTitle": "1930, Sufferings and Sacrifices",
+    "nominalYear": "1930",
+    "eventTime": "Year 1930",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter046.xhtml",
+    "chapterNumber": "46",
+    "chapterTitle": "1931, ‘Why I Am an Atheist’",
+    "nominalYear": "1931",
+    "eventTime": "Year 1931",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter047.xhtml",
+    "chapterNumber": "47",
+    "chapterTitle": "1931, ‘I Will Climb the Gallows Gladly’",
+    "nominalYear": "1931",
+    "eventTime": "23 March 1931 (Execution of Bhagat Singh, Rajguru, Sukhdev at 7:00 PM)",
+    "precision": "DAY",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter048.xhtml",
+    "chapterNumber": "48",
+    "chapterTitle": "An Apology?",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter049.xhtml",
+    "chapterNumber": "49",
+    "chapterTitle": "A ‘Historical Adjustment’",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter050.xhtml",
+    "chapterNumber": "50",
+    "chapterTitle": "The Gandhi–Irwin Pact 1931",
+    "nominalYear": "1931",
+    "eventTime": "Year 1931",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter051.xhtml",
+    "chapterNumber": "51",
+    "chapterTitle": "‘If the Boys Are to be Hanged’",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter052.xhtml",
+    "chapterNumber": "52",
+    "chapterTitle": "A ‘Clean Fighter’",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter053.xhtml",
+    "chapterNumber": "53",
+    "chapterTitle": "‘Prayaschitta’",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter054.xhtml",
+    "chapterNumber": "54",
+    "chapterTitle": "The Rule of Law",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "chapter055.xhtml",
+    "chapterNumber": "55",
+    "chapterTitle": "Indic Hybridity",
+    "nominalYear": null,
+    "eventTime": "December 2019 - 2020 (CAA/NRC protests and Rule of Law analysis)",
+    "precision": "YEAR",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  },
+  {
+    "fileName": "appendix.xhtml",
+    "chapterNumber": null,
+    "chapterTitle": "Appendix",
+    "nominalYear": null,
+    "eventTime": "Not nominal in title",
+    "precision": "APPROXIMATE",
+    "recordPublicationTime": "2022 (Juss monograph publication)",
+    "sourceReferenceTimeRange": "1840 - 2022"
+  }
+]

@@ -71,14 +71,14 @@ In compliance with the benchmark protocol, every structural element has been cla
 
 | Category | Count | Definition & Source Role |
 |---|:---:|---|
-| **`AUTHOR_NARRATIVE`** | 517 | Satvinder S. Juss's narrative prose, biographical analysis, historical scene setting, and legal evaluation. |
-| **`PRIMARY_TEXT`** | 21 | Bhagat Singh's own writings, letters, petitions, trial statements, pamphlets (*Why I Am an Atheist*), and revolutionary poetry. |
-| **`PRIMARY_DOCUMENT`** | 69 | Colonial legal instruments, Ordinance III of 1930, Viceroy Irwin's minutes, police FIRs, post-mortem reports, prison reading list table, and archival facsimile plates. |
-| **`QUOTED_TESTIMONY`** | 5 | Direct courtroom trial exchanges (e.g. D.N. Pritt vs. Tribunal judges), approver statements (Phanindra Nath Ghosh, Jai Gopal, Hans Raj Vohra), and witness depositions under Section 164 CrPC. |
+| **`AUTHOR_NARRATIVE`** | 525 | Satvinder S. Juss's narrative prose, biographical analysis, historical scene setting, and legal evaluation (including quoted secondary scholars). |
+| **`PRIMARY_TEXT`** | 38 | Bhagat Singh's own writings, letters, petitions, trial statements, pamphlets (*Why I Am an Atheist*), other actor statements (Jinnah), and poetry (Ghalib, Faraz). |
+| **`PRIMARY_DOCUMENT`** | 47 | Colonial legal instruments, Ordinance III of 1930, Viceroy Irwin's minutes/telegrams, police FIRs, post-mortem reports, prison reading list table, and 21 archival facsimile plates. |
+| **`QUOTED_TESTIMONY`** | 6 | Direct courtroom trial exchanges (e.g. D.N. Pritt vs. Tribunal judges), approver statements, and witness depositions under Section 164 CrPC. |
 | **`ARCHIVAL_REFERENCE`** | 21 | Scholarly descriptions and citations of specific archival files (IOR, NAI, Punjab Archives Lahore) accompanying appendix plates. |
 | **`ENDNOTE`** | 780 | Scholarly citations, archival references, and explanatory footnotes compiled in `notes.xhtml`. |
 | **`BIBLIOGRAPHY`** | 182 | Formal bibliographic entries in `bibliography.xhtml`. |
-| **`EDITORIAL_MATERIAL`** | 359 | Part dividers, chapter numbers, chapter titles, front matter (praise, title, dedication), publisher metadata, and back matter. |
+| **`EDITORIAL_MATERIAL`** | 355 | Part dividers, chapter numbers, chapter titles, front matter (praise, title, dedication), publisher metadata, and back matter. |
 | **`FOOTNOTE`** | 0 | 0 (The work utilizes endnotes collected in `notes.xhtml` rather than per-page footnotes). |
 | **`UNCERTAIN/UNCLASSIFIED`** | 0 | Zero unclassified elements; 100% of units are deterministically typed. |
 | **TOTAL** | **1,954** | **Total canonical structural units in ingestion manifest** |
