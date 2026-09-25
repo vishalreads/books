@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 29,
-  "total_hours_saved": 535.0,
+  "total_books": 30,
+  "total_hours_saved": 575.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1250,6 +1250,60 @@
       ],
       "html_path": "distillations/ajahn-dtun-autobiography/index.html",
       "markdown_path": "distillations/ajahn-dtun-autobiography/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "war-and-peace",
+      "title": "War and Peace",
+      "subtitle": "The Definitive Epic of Russian Society, the Napoleonic Cataclysm, and the Philosophy of History",
+      "author": "Leo Tolstoy",
+      "year": 1869,
+      "publisher": "Simon & Schuster (Inner Sanctum Edition, Transl. Louise & Aylmer Maude)",
+      "epistemic_tier": "Tier 1: Master Historical Epic & Historiographical Philosophy Benchmark",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "15 Books + 2 Epilogues Synthesized into 20 Invariant Units (~1,400 Pages)",
+      "reading_time_saved": "40.0 hrs saved",
+      "hours_val": 40.0,
+      "core_axiom": "Above him was nothing but the sky—the lofty sky, not clear, yet still immeasurably lofty, with gray clouds floating quietly across it. All is vanity, all is falsehood, except that infinite sky.",
+      "tags": [
+        "Leo Tolstoy",
+        "War and Peace",
+        "Prince Andrew Bolkonsky",
+        "Pierre Bezukhov",
+        "Natasha Rostova",
+        "Kutuzov",
+        "Napoleon",
+        "Platon Karataev",
+        "Battle of Austerlitz",
+        "Battle of Borodino",
+        "Burning of Moscow",
+        "Philosophy of History",
+        "Free Will vs Necessity",
+        "Calculus of History"
+      ],
+      "key_models": [
+        "The Fallacy of the Great Man (Historiographical Calculus & Infinitesimals dx)",
+        "The Kutuzov Doctrine (Moral Spirit & Organic Patience vs. Tactical Geometry)",
+        "The Austerlitz Epiphany (The Infinite Sky vs. Earthly Vanity)",
+        "The Dialectic of Freedom and Necessity (Internal Illusion vs. External Law)",
+        "The Roundness of Karataev (Egoless Christian Love as Antidote to Existential Despair)",
+        "The Decembrist Precursor (Nikolenka's Vow and Generational Succession)"
+      ],
+      "landmark_studies": [
+        "Anna Pavlovna Schérer's Soirée & Pierre's Apology for Revolution (1805)",
+        "Captain Tushin's Heroic Battery at Schöngraben (1805)",
+        "The Pratzen Heights Countercharge & Andrew Under the Austerlitz Sky (1805)",
+        "The Bogucharovo Ferryboat Discourse & The Transformed Oak Tree (1807–1809)",
+        "Natasha's Waltz at the New Year's Eve Imperial Ball (1810)",
+        "The Raevsky Redoubt Slaughter & Andrew's Forgiveness of Anatole (Borodino, 1812)",
+        "The Peasant Council of Fili & Evacuation of Moscow (1812)",
+        "Pierre's Interrogation by Marshal Davout & Meeting Platon Karataev (1812)",
+        "The Awakening into Death at Yaroslavl (1812)",
+        "Nikolenka's Dream and Tolstoy's Second Epilogue on Necessity (1820)"
+      ],
+      "html_path": "distillations/war-and-peace/index.html",
+      "markdown_path": "distillations/war-and-peace/master-notes.md",
       "featured": true
     }
   ]
