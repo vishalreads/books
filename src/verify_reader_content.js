@@ -76,9 +76,9 @@ function verifyReaderContent(bookSlug) {
 
   // Verify Views A, B, and C presence
   const hasViewA = html.includes('id="view-journey"');
-  const hasViewB = html.includes('id="view-knowledge"');
+  const hasViewB = html.includes('id="view-map"') || html.includes('id="view-knowledge"');
   const hasViewC = html.includes('id="view-experience"');
-  const hasSearchIndex = html.includes('id="bkrs-search-index"');
+  const hasSearchIndex = html.includes('id="bkrs-search-data"') || html.includes('id="bkrs-search-index"');
   const hasControlsScript = html.includes('reader-controls.js');
 
   console.log("Preservation Audit Results:");

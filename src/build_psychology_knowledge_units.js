@@ -1,0 +1,805 @@
+/**
+ * BKRS Canonical Knowledge Units Generator for The Psychology of Money by Morgan Housel
+ * Conforms to BKRS v1.0 / Cross-Genre Architecture Nonfiction Schema
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const targetPath = path.join(__dirname, '..', 'docs', 'distillations', 'the-psychology-of-money', 'knowledge-units.json');
+
+const bookData = {
+  book_id: "the-psychology-of-money",
+  title: "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness",
+  author: "Morgan Housel",
+  original_publication_year: 2020,
+  publisher: "Harriman House",
+  genre: "nonfiction",
+  subgenre: "behavioral_finance_applied_economics",
+  epistemic_classification: "Tier 2 (Behavioral Finance, Heuristic Economics & Applied Economic Psychology)",
+  system_version: "2.5-nonfiction",
+  total_units: 30,
+  reconstruction_metadata: {
+    reconstructed_by: "Intellectualist BKRS v1.0",
+    standard: "Contentual Substitution & Complete Causal Preservation",
+    epistemic_demarcation_applied: true,
+    materiality_taxonomy_applied: true,
+    total_chapters: 22,
+    empirical_studies_documented: 6,
+    quantitative_models_documented: 8
+  },
+  content_units: [
+    {
+      unit_id: "UNIT-POM-INTRO-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 0,
+      chapter_title: "Introduction: The Greatest Show On Earth",
+      pages: "pp. 1-8",
+      summary_statement: "Financial outcomes are dictated by behavioral temperament and ego management rather than quantitative intelligence or algorithmic aptitude.",
+      materiality: "critical",
+      materiality_reason: "Establishes the foundational axiom of the entire book: finance is a soft psychological skill, not a hard mathematical science.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH05-01", relationship_type: "supports", nature: "Behavioral primacy directly explains why staying wealthy requires defensive paranoia." },
+        { target_unit_id: "UNIT-POM-CH11-01", relationship_type: "supports", nature: "Establishes why emotional reasonableness outperforms theoretical spreadsheet rationality." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-INTRO-01",
+        thesis_claim: "Doing well with money has a little to do with how smart you are and a lot to do with how you behave.",
+        core_definitions: {
+          "financial_intelligence": "Technical mastery of formulas, financial accounting, and market metrics.",
+          "financial_behavior": "Emotional impulse control, patience, resilience against panic, and freedom from social envy."
+        },
+        logical_chain: [
+          "In hard sciences (physics, surgery, structural engineering), technical competence reliably dictates outcomes; an amateur cannot outperform a master.",
+          "In finance, untrained retail participants routinely outperform elite professionals because financial results are driven by psychological endurance over decades rather than esoteric knowledge.",
+          "Therefore, financial failure is primarily an emotional, behavioral, and ethical breakdown, not an informational or computational deficit."
+        ],
+        primary_evidence: [
+          {
+            type: "case_study_pairing",
+            subject_a: "Ronald James Read: Janitor and gas station attendant who lived modestly in Vermont and quietly died with an $8 million fortune invested in dividend blue-chips.",
+            subject_b: "Richard Fuscone: Harvard MBA, Vice Chairman of Merrill Lynch Latin America, named to Crain's 40 Under 40, who leveraged millions into an 18,000 sq ft mansion and went bankrupt in 2008."
+          }
+        ],
+        qualifications: [
+          "Financial behavior requires basic solvency; extreme destitute poverty cannot be solved by temperament alone."
+        ],
+        counterarguments_addressed: [
+          "Objection: Modern markets are dominated by high-frequency quant funds and PhD mathematicians.",
+          "Rebuttal: Even the most advanced quantitative entities (e.g. Long-Term Capital Management in 1998) suffer catastrophic ruin when human leverage panic triggers liquidity freezes."
+        ],
+        actionable_heuristic: "Measure financial progress by internal emotional discipline and resilience rather than external intellectual sophistication."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-INTRO-02",
+      unit_type: "case_study",
+      genre: "nonfiction",
+      chapter: 0,
+      chapter_title: "Introduction: The Greatest Show On Earth",
+      pages: "pp. 8-12",
+      summary_statement: "Housel's observations as a high-end Los Angeles valet reveal that sudden ostentatious consumption masks extreme fragility and immediate financial ruin.",
+      materiality: "important",
+      materiality_reason: "Provides the author's primary formative crucible that revealed the psychological disconnect between outward wealth and emotional calibration.",
+      epistemic_status: "source_fact",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH08-01", relationship_type: "foreshadows", nature: "Provides empirical raw material for the Man in the Car Paradox." },
+        { target_unit_id: "UNIT-POM-CH09-01", relationship_type: "supports", nature: "Exposes the distinction between spending money to show wealth vs unspent wealth." }
+      ],
+      genre_payload: {
+        argument_id: "CASE-INTRO-02",
+        thesis_claim: "Conspicuous spending is the quickest way to destroy wealth while creating the illusion of possessing it.",
+        historical_cases: [
+          {
+            entity: "Tech executive at luxury LA hotel",
+            event: "Handed gold coins worth thousands of dollars to valets and commanded them to throw the coins into the Pacific Ocean just to witness the splash.",
+            outcome: "Within two years, the same executive had defaulted on all mortgage debt, lost his mansion, and entered personal bankruptcy."
+          }
+        ],
+        actionable_heuristic: "Never mistake someone's spending capacity for their balance sheet strength."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH01-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 1,
+      chapter_title: "Chapter 1: No One's Crazy",
+      pages: "pp. 13-26",
+      summary_statement: "Every individual's financial worldview is anchored in the idiosyncratic macroeconomic conditions they experienced during their young adulthood.",
+      materiality: "critical",
+      materiality_reason: "Essential causal foundation explaining why rational actors disagree violently on risk, asset allocation, and market behavior.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH16-01", relationship_type: "supports", nature: "Explains why people play completely different financial games." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-01-01",
+        thesis_claim: "No one makes financial decisions in a vacuum; what looks like financial lunacy to one person makes complete rational sense to someone with different formative experiences.",
+        core_definitions: {
+          "formative_macro_imprinting": "The permanent neural shaping of financial risk appetite created by economic conditions during ages 16-25."
+        },
+        logical_chain: [
+          "Human beings learn about the world through firsthand emotional experience rather than reading textbook statistical probabilities.",
+          "A generation raised during double-digit inflation develops an instinctual terror of cash and fixed-income assets.",
+          "A generation raised during prolonged deflation or depression develops an instinctual aversion to equities and volatile assets.",
+          "Therefore, disagreements about financial prudence are conflicts between divergent historical microclimates, not conflicts between intelligence and stupidity."
+        ],
+        empirical_studies: [
+          {
+            researchers: "Ulrike Malmendier & Stefan Nagel",
+            institution: "National Bureau of Economic Research (NBER)",
+            year: 2011,
+            methodology: "Analyzed 50 years of data from the Federal Reserve's Survey of Consumer Finances tracking demographic cohorts across market cycles.",
+            findings: "People's willingness to invest in stocks was deeply determined by the returns the stock market generated during their formative teenage and early 20s years. Those coming of age in the 1970s avoided bonds; those coming of age in the 1930s avoided stocks for life.",
+            causal_conclusion: "Macroeconomic exposure during formative years creates permanent cognitive biases that cannot be educated away through financial literacy courses."
+          }
+        ],
+        quantitative_models: [
+          {
+            metric: "Microclimate Disparity",
+            formula: "Personal Experience ≈ 0.00000001% of Global Reality, but dictates ≈ 80% of Individual Decision Making."
+          }
+        ],
+        actionable_heuristic: "When evaluating someone else's seemingly irrational investment behavior, ask: 'What historical conditions did they experience that makes this behavior seem protective?'"
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH02-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 2,
+      chapter_title: "Chapter 2: Luck & Risk",
+      pages: "pp. 27-39",
+      summary_statement: "Luck and risk are identical sibling realities: every life outcome is shaped by external forces outside individual agency and effort.",
+      materiality: "critical",
+      materiality_reason: "Prevents false attribution of skill to pure variance and establishes epistemic humility in analyzing market success.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH06-01", relationship_type: "supports", nature: "Underpins power-law distribution where tail outcomes dominate." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-02-01",
+        thesis_claim: "Nothing is as good or as bad as it looks; outcomes are governed by systemic variance that society incorrectly attributes entirely to personal merit or failure.",
+        core_definitions: {
+          "luck": "Favorable outcome generated by uncontrollable tail variables outside personal effort.",
+          "risk": "Destructive outcome generated by uncontrollable tail variables outside personal culpability."
+        },
+        historical_cases: [
+          {
+            entity: "Lakeside School Trio (1968)",
+            event: "Bill Gates, Paul Allen, and Kent Evans attended Lakeside School in Seattle—one of the only high schools on Earth with a computer terminal connected to a mainframe.",
+            variance_odds: "Roughly 1 in 1,000,000 high-school-aged adolescents had access to a computer terminal in 1968.",
+            bifurcated_destiny: "Gates and Allen experienced extraordinary positive luck and co-founded Microsoft. Kent Evans—equally brilliant and ambitious—died in a mountaineering accident before graduating high school (a 1 in a million negative risk event)."
+          }
+        ],
+        actionable_heuristic: "Be extremely cautious when admiring extreme success or judging catastrophic failure; focus on broad patterns rather than individual outlier role models."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH02-02",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 2,
+      chapter_title: "Chapter 2: Luck & Risk",
+      pages: "pp. 39-44",
+      summary_statement: "Studying broad statistical patterns and multi-decade generalities yields actionable insight; studying hyper-specific billionaire outliers teaches survivorship bias.",
+      materiality: "important",
+      materiality_reason: "Clarifies methodology for studying financial strategy without falling prey to unrepeatable idiosyncratic anomalies.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH02-01", relationship_type: "qualifies", nature: "Translates luck/risk insight into an operational study rule." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-02-02",
+        thesis_claim: "The line between bold vision and reckless foolishness is often razor-thin and awarded purely in hindsight by whether luck materialized.",
+        historical_cases: [
+          {
+            entity: "Cornelius Vanderbilt",
+            event: "Frequently ignored federal shipping laws and stated 'What do I care about law? Hain't I got the power?' When he succeeded, biographers called him a relentless visionary; had his bets failed, he would have been recorded as an illegal felon."
+          }
+        ],
+        actionable_heuristic: "Focus on strategies with high probabilities of good outcomes across many iterations rather than imitating extreme outlier tactics."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH03-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 3,
+      chapter_title: "Chapter 3: Never Enough",
+      pages: "pp. 45-56",
+      summary_statement: "There is never a rational reason to risk what you already have and need for what you do not have and do not need.",
+      materiality: "critical",
+      materiality_reason: "Provides the ethical and mathematical foundation for stopping financial ruin caused by unbounded ambition.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH05-01", relationship_type: "supports", nature: "Crucial for staying wealthy by eliminating lethal leverage." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-03-01",
+        thesis_claim: "The hardest financial skill is getting the goalpost to stop moving once essential needs and independence are secured.",
+        core_definitions: {
+          "enough": "The internal psychological ceiling where additional marginal wealth adds zero happiness while exposing existing security to catastrophic risk.",
+          "moving_goalpost_syndrome": "The psychological treadmill where rising wealth triggers proportional increases in aspirational comparison."
+        },
+        historical_cases: [
+          {
+            entity: "Rajat Gupta",
+            event: "Born an orphan in Kolkata, rose to CEO of McKinsey & Company, sat on boards of Goldman Sachs and Procter & Gamble, amassed a $100M personal fortune. Yearning to join the billionaire class, he illegally tipped hedge fund billionaire Raj Rajaratnam about Warren Buffett's 2008 Goldman bailout.",
+            outcome: "Convicted of insider trading, sentenced to federal prison, stripped of reputation, professional honors, and peer respect."
+          },
+          {
+            entity: "Kurt Vonnegut & Joseph Heller Dialogue",
+            event: "At a lavish party on Shelter Island hosted by a hedge fund manager, Vonnegut noted the host made more money in a day than Heller earned from Catch-22 in its lifetime.",
+            rejoinder: "Heller replied: 'Yes, but I have something he will never have: enough.'"
+          }
+        ],
+        operational_rules: [
+          "1. The hardest financial skill is stopping the goalpost from moving.",
+          "2. Social comparison is a ceiling-less ceiling.",
+          "3. 'Enough' is not too little; it is realizing that insatiability inevitably leads to ruin.",
+          "4. There are things that are incommensurable and never worth risking: freedom, family, reputation, integrity."
+        ],
+        actionable_heuristic: "Establish explicit balance-sheet ceilings; whenever an investment requires risking core security for marginal luxury, reject the proposition instantly."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH04-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 4,
+      chapter_title: "Chapter 4: Confounding Compounding",
+      pages: "pp. 57-69",
+      summary_statement: "The human mind cannot intuitively model exponential compounding; Warren Buffett's wealth is an artifact of continuous time duration rather than superhuman annual return alpha.",
+      materiality: "critical",
+      materiality_reason: "Reveals the primary engine of long-term capital accumulation and reframes time horizon as the supreme financial lever.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH05-01", relationship_type: "supports", nature: "Staying in the game uninterrupted enables compounding to perform its non-linear magic." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-04-01",
+        thesis_claim: "Exponential growth is fundamentally counterintuitive; small incremental compounding sustained uninterrupted across decades generates mathematically astronomical results.",
+        quantitative_models: [
+          {
+            model_name: "Buffett Compounding Anatomy",
+            data: "Over 99% of Warren Buffett's net worth was accumulated after his 50th birthday ($84.2 billion out of $84.5 billion at publication time).",
+            counterfactual: "If Buffett had invested from age 30 to 60 with a normal 22% annual return and then retired, his net worth would have been $11.9 million—a 99.9% reduction from his actual wealth."
+          },
+          {
+            model_name: "Simons vs. Buffett Comparison",
+            data: "Jim Simons (Renaissance Technologies) compounded capital at 66% annually (gross) since 1988, yet his net worth is less than one-third of Buffett's because Simons compounded for roughly 30 years compared to Buffett's 75+ years."
+          }
+        ],
+        analogies: [
+          {
+            name: "Milankovitch Cycles (Ice Ages)",
+            mechanism: "Glacial ice ages are not caused by violently frigid winters, but by slightly cooler summers that fail to melt the previous winter's snowpack. Compounded across thousands of summers, residual snow turns into continent-crushing ice sheets."
+          }
+        ],
+        actionable_heuristic: "Stop seeking outsized 30% annual return spikes; pursue good-enough, consistent 8-10% returns that you can sustain for 40+ years without interruption."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH05-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 5,
+      chapter_title: "Chapter 5: Getting Wealthy vs. Staying Wealthy",
+      pages: "pp. 70-81",
+      summary_statement: "Getting wealthy requires aggressive risk-taking and optimism; staying wealthy requires paranoid vigilance, frugality, and structural room for error.",
+      materiality: "critical",
+      materiality_reason: "Defines the fundamental operational asymmetry between capital creation and capital preservation.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH13-01", relationship_type: "supports", nature: "Room for error is the exact engineering mechanism required for staying wealthy." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-05-01",
+        thesis_claim: "Survival is the only financial cornerstone: staying wealthy requires holding an unbreakable balance sheet capable of withstanding any macroeconomic catastrophe.",
+        historical_cases: [
+          {
+            entity: "Jesse Livermore",
+            event: "Short-sold the 1929 Wall Street crash, netting $100 million in cash in a single week while tycoons committed suicide. Overwhelmed by hubris, he loaded on massive leverage in the subsequent market rebounds.",
+            outcome: "Lost his entire fortune by 1934 and committed suicide in a Manhattan hotel cloakroom in 1940."
+          },
+          {
+            entity: "Rick Guerin",
+            event: "The third partner of Warren Buffett and Charlie Munger in the 1960s and 70s. Used heavy margin debt to juice returns; when the 1973-1974 market plummeted 70%, Guerin received margin calls and was forced to sell his Berkshire Hathaway stock to Buffett at $40/share.",
+            lesson: "Munger noted: 'Warren and I always knew we'd become billionaires. We were never in a hurry. Rick was just as smart, but he was in a hurry.'"
+          }
+        ],
+        operational_principles: [
+          "1. More than big returns, I want to be financially unbreakable.",
+          "2. Planning is good, but the most important part of every plan is planning on your plan not going according to plan.",
+          "3. A barbelled personality: optimistic about long-term growth, but paranoid about short-term survival."
+        ],
+        actionable_heuristic: "Never employ leverage that can trigger an involuntary liquidation during an unprecedented market drawdown."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH06-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 6,
+      chapter_title: "Chapter 6: Tails, You Win",
+      pages: "pp. 82-94",
+      summary_statement: "Power-law distributions dictate economic outcomes: a minuscule fraction of outlier events generates virtually all net financial returns.",
+      materiality: "critical",
+      materiality_reason: "Deconstructs the distribution of financial returns and validates why being wrong 50% of the time is fully compatible with immense wealth.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH12-01", relationship_type: "supports", nature: "Outlier tail events govern historical direction." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-06-01",
+        thesis_claim: "Long-tail events drive the entire universe of economics, art, business, and investing; you can fail on the vast majority of bets and still achieve extraordinary success.",
+        historical_cases: [
+          {
+            entity: "Heinz Berggruen",
+            event: "Amassed one of the most valuable private modern art collections in history (Picassos, Cézannes, Braques, Klees).",
+            secret: "He bought art in bulk quantities; 99% of purchases had negligible value, but a tiny 1% tail of monumental masterpieces drove 99% of total portfolio value."
+          }
+        ],
+        quantitative_models: [
+          {
+            model_name: "Venture Capital Power Law (2004-2014)",
+            dataset: "21,000 venture-backed investments",
+            distribution: "65% lost money; 2.5% generated 10x-20x returns; exactly 0.5% (approx 100 companies) made 50x+, generating nearly all industry profit."
+          },
+          {
+            model_name: "Russell 3000 Index Return Distribution (1980-2014)",
+            dataset: "3,000 major U.S. equities over 34 years",
+            distribution: "40% of all companies suffered catastrophic losses (down -70%+ and never recovered); 7% of companies generated extraordinary returns that pulled the index up 73-fold."
+          }
+        ],
+        actionable_heuristic: "Do not panic when individual stock holdings or projects fail; expect majority mediocrity and structure your portfolio so that positive tails have room to dominate."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH07-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 7,
+      chapter_title: "Chapter 7: Freedom",
+      pages: "pp. 95-107",
+      summary_statement: "The supreme emotional dividend of money is the autonomous control of one's daily time and schedule.",
+      materiality: "critical",
+      materiality_reason: "Defines the true human purpose of wealth beyond material consumption.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH09-01", relationship_type: "supports", nature: "Unspent wealth buys options and time autonomy." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-07-01",
+        thesis_claim: "Controlling your time is the highest dividend money pays; subjective well-being is determined far more by daily autonomy than by gross income or luxury items.",
+        empirical_studies: [
+          {
+            researchers: "Angus Campbell",
+            institution: "University of Michigan",
+            year: 1981,
+            methodology: "Comprehensive demographic survey of thousands of American adults assessing objective life conditions versus subjective happiness.",
+            findings: "Having a strong sense of controlling one's life is a more dependable predictor of positive feelings of well-being than any of the objective conditions of life (salary, home size, prestige of career).",
+            causal_conclusion: "Autonomy over daily choices is the universal baseline of human happiness; losing control over schedule generates persistent anxiety regardless of income."
+          }
+        ],
+        actionable_heuristic: "Use accumulated savings to purchase independence—the ability to walk away from bad bosses, wait for ideal career fits, and control your calendar."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH08-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 8,
+      chapter_title: "Chapter 8: Man in the Car Paradox",
+      pages: "pp. 108-112",
+      summary_statement: "When people observe luxury possessions, they admire the possession while ignoring or looking past the person displaying it.",
+      materiality: "important",
+      materiality_reason: "Exposes the psychological futility of status-signaling consumption.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH09-01", relationship_type: "supports", nature: "Clarifies why spending money on status objects fails to produce genuine social admiration." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-08-01",
+        thesis_claim: "People purchase luxury goods believing it will signal to peers that they should be admired; but observers only imagine themselves in the object, ignoring the driver.",
+        psychological_mechanism: "The driver assumes: 'They are looking at me and thinking I am successful.' The observer actually thinks: 'If I were driving that car, people would think I am successful.'",
+        conceptual_formula: "True Respect = Humility + Kindness + Empathy (≠ Horsepower + Jewelry)",
+        actionable_heuristic: "If your goal is to earn respect and admiration from peers, spend effort developing kindness and competence rather than purchasing depreciating status assets."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH09-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 9,
+      chapter_title: "Chapter 9: Wealth is What You Don't See",
+      pages: "pp. 113-119",
+      summary_statement: "Being rich is current income spent on visible consumption; wealth is unspent financial options, hidden in accounts, granting future resilience.",
+      materiality: "critical",
+      materiality_reason: "Linguistic and mechanical distinction essential for avoiding lifestyle inflation.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH10-01", relationship_type: "supports", nature: "Directly justifies why savings must be accumulated for their own sake." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-09-01",
+        thesis_claim: "Wealth is the cars not purchased, the diamonds not bought, the first-class upgrades declined; it is unconsumed financial flexibility.",
+        core_definitions: {
+          "rich": "High current cash flow deployed into visible, consumable goods.",
+          "wealth": "Unspent financial options and claims on future goods, held invisibly in assets."
+        },
+        historical_cases: [
+          {
+            entity: "Rihanna's Financial Lawsuit",
+            event: "Pop star Rihanna nearly went bankrupt in 2009 after rapid luxury spending and sued her financial advisor. Her advisor famously responded: 'Did was it really necessary to tell her that if you spend money on things, you will end up with the things and not the money?'"
+          }
+        ],
+        actionable_heuristic: "The only mathematical way to build wealth is to not spend the money you do have; resist defining your net worth by what you visibly display."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH10-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 10,
+      chapter_title: "Chapter 10: Save Money",
+      pages: "pp. 120-128",
+      summary_statement: "Savings rate is the sole financial metric completely within individual control; wealth is generated by curbing ego rather than increasing investment alpha.",
+      materiality: "critical",
+      materiality_reason: "Provides the primary operational lever for individual financial independence.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH07-01", relationship_type: "supports", nature: "Savings create the liquid cushion that generates daily autonomy." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-10-01",
+        thesis_claim: "Building wealth has more to do with your savings rate than your investment returns; and your savings rate is dictated by your ego.",
+        quantitative_models: [
+          {
+            model_name: "The Ego Savings Equation",
+            formula: "Savings Rate = Income - Ego"
+          }
+        ],
+        operational_principles: [
+          "1. You do not need a specific goal or purchase target to save money.",
+          "2. Saving without a goal gives you optionality—the freedom to wait for bargain assets or seize unplanned opportunities.",
+          "3. Flexibility and runway are the highest-yielding assets in a world of accelerating disruption."
+        ],
+        actionable_heuristic: "Automate saving without earmarking it for specific purchases; treat your savings reserve as a hedge against unpredictable reality."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH11-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 11,
+      chapter_title: "Chapter 11: Reasonable > Rational",
+      pages: "pp. 129-138",
+      summary_statement: "Investors should aim to be psychologically reasonable and comfortable in real life rather than spreadsheet-rational in theory.",
+      materiality: "critical",
+      materiality_reason: "Demolishes sterile theoretical finance and validates psychological endurance strategies.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH15-01", relationship_type: "supports", nature: "Accepting the psychological price of investing enables staying invested." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-11-01",
+        thesis_claim: "Spreadsheet rationality breaks down under real-world panic; an investment plan that is mathematically sub-optimal but helps you sleep peacefully at night is vastly superior because you will actually stick with it.",
+        historical_cases: [
+          {
+            entity: "Julius Wagner-Jauregg (1927 Nobel Prize)",
+            event: "Infected syphilis patients with malaria to induce violent fevers; the high fevers killed the heat-sensitive syphilis spirochetes. While a fever feels biologically miserable and 'irrational', it is nature's evolved survival defense."
+          }
+        ],
+        actionable_heuristic: "Select portfolio allocations that maximize your ability to remain calm and sleep at night during market crashes, even if they sacrifice 1-2% of theoretical annualized returns."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH12-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 12,
+      chapter_title: "Chapter 12: Surprise!",
+      pages: "pp. 139-152",
+      summary_statement: "History is the study of unprecedented change, ironically weaponized by financial analysts as a predictive roadmap of the future.",
+      materiality: "critical",
+      materiality_reason: "Exposes the fundamental flaw of quantitative financial forecasting based on backtested historical datasets.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH13-01", relationship_type: "supports", nature: "Because unprecedented events drive history, large margins of safety are mandatory." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-12-01",
+        thesis_claim: "The future will not look like the past; relying on historical backtests creates a dangerous illusion of certainty while ignoring tail risks that have no historical precedent.",
+        operational_principles: [
+          "Scott Sagan's Law: 'Things that have never happened before happen all the time.'",
+          "The Great Depression, Pearl Harbor, 9/11, the 2008 Lehman collapse, and COVID-19 had zero statistical precedent in historical models."
+        ],
+        counterarguments_addressed: [
+          "Objection: History provides quantitative distributions and historical standard deviations.",
+          "Rebuttal: The economy changes structural mechanics continuously; treating past economic relationships as immutable physics laws guarantees catastrophic surprise."
+        ],
+        actionable_heuristic: "Use history to understand how humans emotionally respond to greed and panic, not to forecast specific economic milestones."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH13-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 13,
+      chapter_title: "Chapter 13: Room for Error",
+      pages: "pp. 153-165",
+      summary_statement: "Margin of safety is the only operational strategy that permits survival in a world governed by odds and unprecedented shocks.",
+      materiality: "critical",
+      materiality_reason: "Provides the core engineering safeguard against ruin.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH05-01", relationship_type: "supports", nature: "Room for error is the tactical mechanism of the defensive staying-wealthy loop." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-13-01",
+        thesis_claim: "The most vital element of any financial plan is designing for your plan to fail to perform according to plan.",
+        core_definitions: {
+          "margin_of_safety": "The structural buffer between what you expect to happen and what can happen while still preserving your survival."
+        },
+        historical_cases: [
+          {
+            entity: "Long-Term Capital Management (LTCM, 1998)",
+            event: "Hedge fund founded by elite Wall Street bond traders and two Nobel laureates (Myron Scholes and Robert Merton). Ran mathematical arbitrage models with leverage exceeding 250:1.",
+            outcome: "When Russia defaulted on domestic sovereign debt in 1998 (an unprecedented event outside their model), LTCM lost $4.6 billion in six weeks and required an emergency Federal Reserve bailout."
+          }
+        ],
+        quantitative_models: [
+          {
+            model_name: "Russian Roulette Asymmetry",
+            explanation: "A 95% probability of winning a billion dollars is mathematically worthless if the remaining 5% probability entails personal liquidation, incarceration, or death."
+          }
+        ],
+        actionable_heuristic: "Stress-test your financial life: if you require 8% annual returns to retire comfortably, structure your savings rate so that you survive even if returns are only 4%."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH14-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 14,
+      chapter_title: "Chapter 14: You'll Change",
+      pages: "pp. 166-176",
+      summary_statement: "Long-term financial planning is warped by the End of History Illusion: humans underestimate how much their future desires and values will diverge from their current self.",
+      materiality: "critical",
+      materiality_reason: "Exposes the psychological flaw in rigid multi-decade financial commitments.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH10-01", relationship_type: "supports", nature: "Reinforces why optionality and flexible savings are superior to rigid plans." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-14-01",
+        thesis_claim: "People are poor forecasters of their future selves; multi-decade planning must accommodate inevitable shifts in personal desires, family priorities, and career satisfaction.",
+        empirical_studies: [
+          {
+            researchers: "Jordi Quoidbach, Daniel Gilbert, Timothy Wilson",
+            institution: "Science (2013)",
+            year: 2013,
+            methodology: "Surveyed over 19,000 adults aged 18 to 68 on personality traits, values, and preferences, comparing retrospective change against prospective expected change.",
+            findings: "Participants across all ages recognized how much they had evolved over the prior decade, but consistently predicted they would change very little over the next decade. Dubbed 'The End of History Illusion'.",
+            causal_conclusion: "Humans mistakenly treat the present as the final destination of their personal evolution, creating severe vulnerability to sunk cost errors in 30-year plans."
+          }
+        ],
+        operational_principles: [
+          "1. Avoid extreme financial commitments (e.g. brutal FIRE deprivation or 80-hour career slavery).",
+          "2. Moderate savings combined with moderate lifestyle spending minimizes the risk of future regret.",
+          "3. Ruthlessly discard sunk costs when your life priorities inevitably transform."
+        ],
+        actionable_heuristic: "Plan for flexibility rather than perfection; balance current living enjoyment with future capital buffers."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH15-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 15,
+      chapter_title: "Chapter 15: Nothing's Free",
+      pages: "pp. 177-188",
+      summary_statement: "Market volatility is not a fine for making an error; it is the price of admission required to earn long-term compounding equity returns.",
+      materiality: "critical",
+      materiality_reason: "Provides the vital psychological reframing needed to prevent panic selling during bear markets.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH04-01", relationship_type: "supports", nature: "Explains the emotional payment required to capture Buffett-style duration compounding." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-15-01",
+        thesis_claim: "Successful investing demands an admission fee; that fee is denominated in emotional agony, fear, uncertainty, and drawdowns rather than cash.",
+        analogies: [
+          {
+            name: "The Disneyland Admission Fee Metaphor",
+            mechanism: "When visiting Disneyland, you do not attempt to sneak past security to avoid paying the $150 ticket. You pay the fee gladly because you recognize that the entertainment requires an admission price. Yet in investing, market drawdowns (-20% to -50%) are treated as punishments (fines) rather than admission fees."
+          }
+        ],
+        actionable_heuristic: "When your portfolio plunges 30% during a recession, reframe the drop: 'This is not a fine for doing something wrong; this is the entry fee I pay to capture superior equity compounding over 30 years.'"
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH16-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 16,
+      chapter_title: "Chapter 16: You & Me",
+      pages: "pp. 189-200",
+      summary_statement: "Financial contagion and market bubbles occur when long-term investors blindly adopt pricing cues from short-term momentum traders playing an entirely different game.",
+      materiality: "critical",
+      materiality_reason: "Deconstructs the mechanics of asset bubbles and protects investors from misaligned behavioral contagion.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH01-01", relationship_type: "supports", nature: "Reinforces why different participants have incompatible rational behaviors." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-16-01",
+        thesis_claim: "Never take financial advice or pricing signals from market participants playing a different financial game with different time horizons.",
+        historical_cases: [
+          {
+            entity: "Dot-Com Bubble Day Trading (1999-2000)",
+            mechanism: "Day traders flipping Cisco or Yahoo stock in 15-minute increments did not care about price-to-earnings multiples; for a 15-minute game, buying a stock at 100x earnings was completely rational if momentum continued. But long-term 30-year retirement investors who saw rising prices and bought into the hype were wiped out because they mistook short-term momentum for long-term valuation."
+          }
+        ],
+        actionable_heuristic: "Explicitly articulate your financial game: 'I am a 30-year index investor seeking wealth preservation.' Ignore the short-term profits and actions of day traders and options speculators."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH17-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 17,
+      chapter_title: "Chapter 17: The Seduction of Pessimism",
+      pages: "pp. 201-213",
+      summary_statement: "Pessimism sounds intellectually sophisticated and urgent; optimism sounds like a naive sales pitch because destruction happens overnight while progress compounds invisibly.",
+      materiality: "critical",
+      materiality_reason: "Explains the psychological asymmetry that causes investors to abandon sound plans in response to apocalyptic forecasts.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH04-01", relationship_type: "supports", nature: "Pessimism lures people away from the quiet miracle of long-term compounding." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-17-01",
+        thesis_claim: "Pessimism holds an intellectual monopoly because growth and innovation unfold incrementally over decades (barely making headlines), whereas disasters occur instantaneously.",
+        asymmetry_of_pacing: "Progress happens too slowly to notice; setbacks happen too quickly to ignore. A factory is built in 3 years; a market crash or explosion destroys it in 3 seconds.",
+        actionable_heuristic: "Recognize that genuine optimism is not expecting smooth uninterrupted progress; it is realizing that the probabilistic odds of human innovation and adaptation outweigh recurring temporary shocks."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH18-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 18,
+      chapter_title: "Chapter 18: When You'll Believe Anything",
+      pages: "pp. 214-225",
+      summary_statement: "Desperate financial yearning creates cognitive blindness: the more you desperately need a narrative to be true, the more vulnerable you become to overestimating its probability.",
+      materiality: "critical",
+      materiality_reason: "Exposes the psychological vulnerabilities behind financial frauds, get-rich-quick scams, and forecasting delusions.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH12-01", relationship_type: "supports", nature: "Shows why people crave predictive models despite their historical inaccuracy." }
+      ],
+      genre_payload: {
+        argument_id: "ARG-18-01",
+        thesis_claim: "Humans manufacture elaborate forecasting narratives to soothe deep anxiety about an inherently unpredictable future.",
+        cognitive_biases: [
+          "1. The Illusion of Control: Constructing complex quantitative models to feel safe in an uncertain world.",
+          "2. What You See Is All There Is (WYSIATI - Daniel Kahneman): Constructing a complete and coherent story of the world based on the microscopic slice of information currently available."
+        ],
+        actionable_heuristic: "Identify areas where you want a forecast to be true because of your financial vulnerability, and discount your confidence in that forecast by at least 50%."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH19-01",
+      unit_type: "framework",
+      genre: "nonfiction",
+      chapter: 19,
+      chapter_title: "Chapter 19: All Together Now",
+      pages: "pp. 226-234",
+      summary_statement: "A unified synthesis of behavioral finance principles: humility, time duration, independence, emotional peace, and room for error.",
+      materiality: "critical",
+      materiality_reason: "Integrates all previous chapter insights into a consolidated operational manifesto.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH20-01", relationship_type: "supports", nature: "Provides the philosophical blueprint applied to Housel's personal balance sheet." }
+      ],
+      genre_payload: {
+        argument_id: "FRAMEWORK-19-01",
+        thesis_claim: "True financial success is achieved not by maximizing returns, but by constructing a resilient behavioral posture that enables continuous participation.",
+        operational_rules: [
+          "1. Go out of your way to find humility when things are going right and forgiveness when they go wrong.",
+          "2. Less ego, more wealth. Wealth is saving options, not displaying consumption.",
+          "3. Manage your money in a way that helps you sleep at night.",
+          "4. Extend your investing time horizon; time is the greatest equalizer in finance.",
+          "5. Become comfortable with a lot of things going wrong; tails drive everything.",
+          "6. Use wealth to purchase personal freedom and control over your time."
+        ],
+        actionable_heuristic: "Audit your financial strategy against the 'Sleep Test'—if a market drop would force you into panicked action, de-risk immediately."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-CH20-01",
+      unit_type: "case_study",
+      genre: "nonfiction",
+      chapter: 20,
+      chapter_title: "Chapter 20: Confessions",
+      pages: "pp. 235-242",
+      summary_statement: "Morgan Housel's personal balance sheet: prioritizing debt freedom, an oversized cash cushion, and low-cost index funds over theoretical spreadsheet optimization.",
+      materiality: "critical",
+      materiality_reason: "Provides the author's personal real-world operational implementation of the book's philosophy.",
+      epistemic_status: "authorial_position",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH11-01", relationship_type: "supports", nature: "Demonstrates reasonable behavior in practice versus mathematical optimization." }
+      ],
+      genre_payload: {
+        argument_id: "CASE-20-01",
+        thesis_claim: "A personal financial plan should optimize for tranquility and freedom rather than maximum financial return.",
+        balance_sheet_allocation: [
+          "1. Mortgage-Free Primary Residence: Paid off home completely without debt. While mathematically sub-optimal (cheap debt invested in equities would theoretically yield more), it provides unmatched psychological serenity.",
+          "2. Oversized Cash Reserve (20%+ of liquid assets): Serves as an unbreachable barrier ensuring he will never be forced to sell equities during a market downturn.",
+          "3. 100% of Remaining Liquid Wealth in Vanguard Low-Cost Index Funds: Captures global economic growth without manager risk, tracking fees, or timing stress.",
+          "4. Fixed Goalposts: Resists lifestyle inflation by keeping personal consumption habits constant even as earnings increase."
+        ],
+        actionable_heuristic: "Construct your portfolio around what produces psychological peace of mind for your specific family, regardless of spreadsheet purity."
+      }
+    },
+    {
+      unit_id: "UNIT-POM-POST-01",
+      unit_type: "argument",
+      genre: "nonfiction",
+      chapter: 21,
+      chapter_title: "Postscript: Why the American Consumer Thinks the Way They Do",
+      pages: "pp. 243-256",
+      summary_statement: "Post-WWII consumerism shifted from egalitarian economic expansion (1945-1970) to extreme inequality masked by cheap consumer debt (1980-2008), leading directly to the Great Financial Crisis.",
+      materiality: "important",
+      materiality_reason: "Provides historical context explaining the modern consumer's pathological urge to overspend and overleverage.",
+      epistemic_status: "source_argument",
+      confidence: "high",
+      relationships: [
+        { target_unit_id: "UNIT-POM-CH01-01", relationship_type: "supports", nature: "Provides the macro-historical background shaping modern economic attitudes." }
+      ],
+      genre_payload: {
+        argument_id: "HIST-POST-01",
+        thesis_claim: "The modern debt crisis was born when widening income inequality collided with unchanged consumer expectations, forcing the middle class to substitute debt for stagnant real wages.",
+        historical_trajectory: [
+          "Phase 1 (1945-1970s): Post-war egalitarian growth where wages doubled across all classes, and the gap between rich and poor was historically narrow. The rich and middle class drove similar cars and lived in comparable suburban homes.",
+          "Phase 2 (1980s-2000s): Income inequality exploded; top 1% earnings skyrocketed while median wages stagnated. Conspicuous lifestyles of the wealthy became broadcast via mass media.",
+          "Phase 3 (The Debt Trap): The middle class maintained the aspirational standard of living through exploding consumer credit, second mortgages, and subprime home equity extraction.",
+          "Phase 4 (The 2008 Reckoning): The fragile debt pyramid collapsed when mortgage reset dates arrived, triggering the global financial crisis."
+        ],
+        actionable_heuristic: "Recognize that modern consumer expectations were artificially inflated by decades of cheap debt; ground your personal living standard in real income rather than cultural mimicry."
+      }
+    }
+  ]
+};
+
+fs.writeFileSync(targetPath, JSON.stringify(bookData, null, 2), 'utf-8');
+console.log(`Successfully generated canonical knowledge-units.json for ${bookData.title} with ${bookData.content_units.length} content units.`);

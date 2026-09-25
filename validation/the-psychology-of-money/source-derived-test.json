@@ -1,0 +1,211 @@
+{
+  "test_suite_id": "BKRS-VAL-POM-01",
+  "book_id": "the-psychology-of-money",
+  "book_title": "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness",
+  "author": "Morgan Housel",
+  "genre": "analytical_nonfiction",
+  "total_questions": 25,
+  "specification": "CROSS_GENRE_ARCHITECTURE.md Nonfiction Validation Protocol v1.0",
+  "questions": [
+    {
+      "id": "Q01",
+      "dimension": "core_claims_and_definitions",
+      "prompt": "What is the foundational thesis of The Psychology of Money regarding how financial success is achieved, and how does Housel define the difference between finance and hard sciences like physics or surgery?",
+      "target_unit": "UNIT-POM-INTRO-01",
+      "critical_keywords": ["soft skill", "behave", "how you behave", "smart", "surgery", "physics", "Ronald Read", "Richard Fuscone"],
+      "minimum_rubric": "Must state that financial success is a soft skill driven by behavior rather than intelligence or technical mastery, and note that unlike surgery or engineering where skill dictates outcome, finance allows an untrained amateur to outperform credentialed experts."
+    },
+    {
+      "id": "Q02",
+      "dimension": "empirical_evidence_and_studies",
+      "prompt": "Cite the researchers, year, publication, and core finding of the landmark empirical study regarding how personal macroeconomic history shapes investment decisions.",
+      "target_unit": "UNIT-POM-CH01-01",
+      "critical_keywords": ["Malmendier", "Nagel", "2011", "NBER", "Survey of Consumer Finances", "Great Depression", "inflation", "1970s"],
+      "minimum_rubric": "Must cite Ulrike Malmendier and Stefan Nagel (2011, NBER), their analysis of 50 years of Fed Survey of Consumer Finances, and finding that people who grew up during high inflation (1970s) avoided bonds while Depression-era cohorts avoided stocks for life."
+    },
+    {
+      "id": "Q03",
+      "dimension": "causal_reasoning",
+      "prompt": "Explain the causal mechanism that allowed Ronald James Read to amass an $8 million estate while Harvard MBA Richard Fuscone went bankrupt.",
+      "target_unit": "UNIT-POM-INTRO-01",
+      "critical_keywords": ["Ronald Read", "janitor", "dividend", "Richard Fuscone", "leverage", "18,000", "2008", "patience", "greed"],
+      "minimum_rubric": "Must contrast Read's decades of modest savings in dividend stocks and compounding against Fuscone's excessive debt and leverage on an 18,000 sq ft mansion that collapsed during the 2008 liquidity freeze."
+    },
+    {
+      "id": "Q04",
+      "dimension": "quantitative_models",
+      "prompt": "What quantitative data does Housel provide to demonstrate that Warren Buffett's wealth is primarily an artifact of time rather than return alpha?",
+      "target_unit": "UNIT-POM-CH04-01",
+      "critical_keywords": ["99%", "50", "84.2", "84.5", "11.9 million", "retired at 60"],
+      "minimum_rubric": "Must document that over 99% of Buffett's wealth was accumulated after age 50 ($84.2B out of $84.5B) and that had he retired at 60 with normal savings, his net worth would have been approximately $11.9 million (a 99.9% reduction)."
+    },
+    {
+      "id": "Q05",
+      "dimension": "historical_cases",
+      "prompt": "Describe the Lakeside School trio of 1968 and explain how their diverging destinies illustrate the sibling relationship between luck and risk.",
+      "target_unit": "UNIT-POM-CH02-01",
+      "critical_keywords": ["Lakeside", "Bill Gates", "Paul Allen", "Kent Evans", "one in a million", "mountaineering accident", "luck", "risk"],
+      "minimum_rubric": "Must name Bill Gates, Paul Allen, and Kent Evans; note the 1-in-a-million access to a teletype computer in 1968; Gates experienced extreme positive luck while Evans died in a 1-in-a-million mountaineering accident before graduation."
+    },
+    {
+      "id": "Q06",
+      "dimension": "core_claims_and_definitions",
+      "prompt": "What is the structural and mechanical distinction between being 'rich' and being 'wealthy' according to Chapter 9?",
+      "target_unit": "UNIT-POM-CH09-01",
+      "critical_keywords": ["rich", "wealthy", "income", "cars", "unspent", "options", "invisible"],
+      "minimum_rubric": "Must distinguish rich (current income spent on visible display/consumption) from wealthy (unspent income and financial options kept in assets, granting future independence and invisible resilience)."
+    },
+    {
+      "id": "Q07",
+      "dimension": "causal_reasoning",
+      "prompt": "Recount the dialogue between Kurt Vonnegut and Joseph Heller at the Shelter Island billionaire's party and explain its conceptual significance.",
+      "target_unit": "UNIT-POM-CH03-01",
+      "critical_keywords": ["Vonnegut", "Joseph Heller", "Catch-22", "Shelter Island", "hedge fund", "enough"],
+      "minimum_rubric": "Must recount Vonnegut pointing out the hedge fund host made more in a day than Catch-22 earned in its lifetime, Heller replying 'I have something he will never have: enough,' establishing the ceiling on social comparison."
+    },
+    {
+      "id": "Q08",
+      "dimension": "historical_cases",
+      "prompt": "Detail the case of Rajat Gupta: his achievements, the specific crime he committed, and what psychological trap drove him to ruin.",
+      "target_unit": "UNIT-POM-CH03-01",
+      "critical_keywords": ["Rajat Gupta", "McKinsey", "Goldman Sachs", "100 million", "Raj Rajaratnam", "insider trading", "Berkshire", "moving goalpost"],
+      "minimum_rubric": "Must document Gupta rising from Kolkata orphan to head McKinsey and Goldman board, amassing $100M, but risking it all to illegally tip Raj Rajaratnam about Buffett's Goldman investment due to moving goalposts and billionaire envy."
+    },
+    {
+      "id": "Q09",
+      "dimension": "empirical_evidence_and_studies",
+      "prompt": "Cite Angus Campbell's 1981 University of Michigan study and explain what factor was identified as the single highest predictor of subjective happiness.",
+      "target_unit": "UNIT-POM-CH07-01",
+      "critical_keywords": ["Angus Campbell", "1981", "Michigan", "control", "autonomy", "time", "well-being"],
+      "minimum_rubric": "Must cite Angus Campbell (1981, University of Michigan) and his finding that having a sense of controlling one's life and time is a more dependable predictor of well-being than salary, prestige, or material wealth."
+    },
+    {
+      "id": "Q10",
+      "dimension": "psychological_mechanisms",
+      "prompt": "Explain the 'Man in the Car Paradox' and why spending money on status goods fails to elicit the admiration the buyer desires.",
+      "target_unit": "UNIT-POM-CH08-01",
+      "critical_keywords": ["Man in the Car Paradox", "Ferrari", "valet", "admiration", "observer", "humility", "kindness"],
+      "minimum_rubric": "Must explain that people buy luxury cars to signal status to others, but observers admire the car and imagine themselves in it while completely ignoring the driver; true respect comes from humility and kindness, not horsepower."
+    },
+    {
+      "id": "Q11",
+      "dimension": "quantitative_models",
+      "prompt": "What did the J.P. Morgan Asset Management study (2014) reveal about the distribution of stock returns in the Russell 3000 index between 1980 and 2014?",
+      "target_unit": "UNIT-POM-CH06-01",
+      "critical_keywords": ["Russell 3000", "J.P. Morgan", "1980", "2014", "40%", "7%", "catastrophic", "tails"],
+      "minimum_rubric": "Must state that 40% of all companies suffered catastrophic losses (down -70%+ and never recovered), while a tiny 7% of elite performers generated virtually all net index gains, proving tail distribution rules equities."
+    },
+    {
+      "id": "Q12",
+      "dimension": "quantitative_models",
+      "prompt": "Describe the return distribution of 21,000 venture-backed financings between 2004 and 2014 cited in Chapter 6.",
+      "target_unit": "UNIT-POM-CH06-01",
+      "critical_keywords": ["21,000", "venture capital", "65%", "0.5%", "50x", "power law"],
+      "minimum_rubric": "Must note that 65% of VC investments lost money, 2.5% made 10x-20x, and exactly 0.5% (approx 100 companies) produced 50x+ returns that funded the entire industry's profits."
+    },
+    {
+      "id": "Q13",
+      "dimension": "causal_reasoning",
+      "prompt": "Why did Jesse Livermore fail to stay wealthy despite making $100 million in cash shorting the 1929 stock market crash?",
+      "target_unit": "UNIT-POM-CH05-01",
+      "critical_keywords": ["Jesse Livermore", "1929", "100 million", "short", "leverage", "1934", "suicide", "1940"],
+      "minimum_rubric": "Must explain that Livermore's aggressive offensive mindset and overconfidence led him to pile on immense leverage during market rebounds, wiping him out by 1934 and leading to suicide in 1940."
+    },
+    {
+      "id": "Q14",
+      "dimension": "qualifications_and_edge_cases",
+      "prompt": "Who was Rick Guerin, and why was he forced to liquidate his Berkshire Hathaway shares to Warren Buffett in the 1970s?",
+      "target_unit": "UNIT-POM-CH05-01",
+      "critical_keywords": ["Rick Guerin", "margin", "1973-1974", "Charlie Munger", "40", "hurry", "Berkshire"],
+      "minimum_rubric": "Must identify Rick Guerin as Buffett and Munger's third partner who used margin leverage; during the 1973-1974 crash he received margin calls and sold his Berkshire stock to Buffett at $40/share because he was in a hurry."
+    },
+    {
+      "id": "Q15",
+      "dimension": "analogies_and_models",
+      "prompt": "How does Housel use Milankovitch cycles in planetary geology to explain financial compounding in Chapter 4?",
+      "target_unit": "UNIT-POM-CH04-01",
+      "critical_keywords": ["Milankovitch", "ice ages", "summers", "snow", "compounding", "geology"],
+      "minimum_rubric": "Must explain that ice ages are not caused by blisteringly cold winters, but by slightly cooler summers that fail to melt residual winter snow, which compounds over thousands of years into continent-covering ice sheets."
+    },
+    {
+      "id": "Q16",
+      "dimension": "empirical_evidence_and_studies",
+      "prompt": "Detail the findings of the 2013 Science paper by Quoidbach, Gilbert, and Wilson on the 'End of History Illusion'.",
+      "target_unit": "UNIT-POM-CH14-01",
+      "critical_keywords": ["Quoidbach", "Gilbert", "Wilson", "2013", "Science", "19,000", "End of History Illusion", "decade"],
+      "minimum_rubric": "Must cite Quoidbach, Gilbert, and Wilson (2013, Science), 19,000 participants aged 18-68, finding that people acknowledge substantial past changes over the prior decade but underestimate future personality and priority changes over the next decade."
+    },
+    {
+      "id": "Q17",
+      "dimension": "psychological_mechanisms",
+      "prompt": "Explain the Disneyland metaphor for stock market volatility in Chapter 15, contrasting an admission fee with a fine.",
+      "target_unit": "UNIT-POM-CH15-01",
+      "critical_keywords": ["Disneyland", "admission fee", "fine", "ticket", "volatility", "drawdown"],
+      "minimum_rubric": "Must explain that visitors pay Disneyland admission tickets willingly for entertainment, but investors view market drawdowns as fines/punishments rather than the admission price required to earn superior equity returns."
+    },
+    {
+      "id": "Q18",
+      "dimension": "counterargument_resistance",
+      "prompt": "Why does Housel advocate for being 'reasonable' over being 'rational', and how does he use Julius Wagner-Jauregg's malaria fever therapy to prove it?",
+      "target_unit": "UNIT-POM-CH11-01",
+      "critical_keywords": ["reasonable", "rational", "Wagner-Jauregg", "fever", "malaria", "syphilis", "sleep at night"],
+      "minimum_rubric": "Must cite Wagner-Jauregg infecting syphilis patients with malaria fevers to kill bacteria; fevers feel irrational and miserable but are evolved defenses. In investing, holding cash or sub-optimal allocations is reasonable if it helps you sleep and prevents panic."
+    },
+    {
+      "id": "Q19",
+      "dimension": "historical_cases",
+      "prompt": "What caused the catastrophic collapse of Long-Term Capital Management (LTCM) in 1998 despite having two Nobel laureates on staff?",
+      "target_unit": "UNIT-POM-CH13-01",
+      "critical_keywords": ["LTCM", "Long-Term Capital Management", "1998", "Nobel", "Merton", "Scholes", "Russia", "leverage", "margin of safety"],
+      "minimum_rubric": "Must explain that LTCM used extreme leverage (250:1) on mathematical arbitrage models; when Russia defaulted on sovereign debt in 1998 (unprecedented event), their lack of margin of safety caused $4.6B in losses and total collapse."
+    },
+    {
+      "id": "Q20",
+      "dimension": "causal_reasoning",
+      "prompt": "How did short-term day traders during the 1999 Dot-Com bubble financially destroy long-term retirement investors?",
+      "target_unit": "UNIT-POM-CH16-01",
+      "critical_keywords": ["Dot-Com", "1999", "day traders", "Cisco", "different games", "time horizon", "momentum"],
+      "minimum_rubric": "Must explain that day traders buying Cisco at 100x earnings were rational for a 15-minute momentum game, but long-term 30-year indexers took price signals from them and bought at bubble peaks, suffering wipeouts from playing the wrong game."
+    },
+    {
+      "id": "Q21",
+      "dimension": "psychological_mechanisms",
+      "prompt": "Explain the asymmetric pacing between economic destruction and economic progress that makes pessimism so seductive.",
+      "target_unit": "UNIT-POM-CH17-01",
+      "critical_keywords": ["pessimism", "optimism", "asymmetry", "overnight", "slowly", "progress", "destruction"],
+      "minimum_rubric": "Must explain that economic progress, technology, and compounding take decades to unfold incrementally without headlines, whereas crashes, wars, and bankruptcies happen overnight, giving pessimism an intellectual monopoly."
+    },
+    {
+      "id": "Q22",
+      "dimension": "core_claims_and_definitions",
+      "prompt": "What are the two cognitive blindspots that cause people to believe comforting financial falsehoods according to Chapter 18?",
+      "target_unit": "UNIT-POM-CH18-01",
+      "critical_keywords": ["Illusion of Control", "WYSIATI", "Kahneman", "What You See Is All There Is", "narrative"],
+      "minimum_rubric": "Must identify (1) The Illusion of Control (creating complex models to soothe anxiety about uncertainty) and (2) WYSIATI (What You See Is All There Is - Daniel Kahneman's concept of building a complete worldview on incomplete data)."
+    },
+    {
+      "id": "Q23",
+      "dimension": "authorial_position",
+      "prompt": "Describe Morgan Housel's personal balance sheet allocations in Chapter 20 and explain why he chooses a mathematically sub-optimal mortgage strategy.",
+      "target_unit": "UNIT-POM-CH20-01",
+      "critical_keywords": ["mortgage", "paid off", "20%", "cash", "Vanguard", "index funds", "sub-optimal", "peace of mind"],
+      "minimum_rubric": "Must detail Housel owning his home without a mortgage (sub-optimal on spreadsheets, but gives unmatched psychological peace), keeping a high cash buffer (20%+), and putting remaining liquid wealth into Vanguard index funds."
+    },
+    {
+      "id": "Q24",
+      "dimension": "historical_cases",
+      "prompt": "Trace the post-WWII history of the American consumer in the Postscript, explaining how income inequality produced the 2008 subprime crisis.",
+      "target_unit": "UNIT-POM-POST-01",
+      "critical_keywords": ["Postscript", "1945", "post-war", "inequality", "debt", "subprime", "2008", "middle class"],
+      "minimum_rubric": "Must trace from post-WWII egalitarian boom (rich and poor lived similarly) to post-1980 exploding inequality where middle class used cheap debt and home equity extraction to keep up with aspirational lifestyles, crashing in 2008."
+    },
+    {
+      "id": "Q25",
+      "dimension": "qualifications_and_edge_cases",
+      "prompt": "Identify three critical boundary conditions where Housel's behavioral heuristics require skeptical qualification or encounter structural limits.",
+      "target_unit": "UNIT-POM-INTRO-01",
+      "critical_keywords": ["survivorship bias", "cash drag", "inflation", "poverty", "income deficit", "ego"],
+      "minimum_rubric": "Must articulate: (1) Survivorship bias in 20th-century US equity compounding, (2) Excessive cash holding eroding purchasing power to inflation, and (3) Structural poverty where low savings is a cash-flow deficit, not an ego defect."
+    }
+  ]
+}
