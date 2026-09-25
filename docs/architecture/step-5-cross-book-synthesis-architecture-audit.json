@@ -1,0 +1,317 @@
+{
+  "$schema": "https://intellectualist.org/schemas/bkrs-synthesis-audit-v1.json",
+  "audit_version": "1.0.0",
+  "timestamp": "2026-09-25T12:52:00Z",
+  "phase": "Step 5.0 — Cross-Book Synthesis Architecture Audit",
+  "certified_benchmarks": [
+    {
+      "book_id": "norwegian-wood",
+      "title": "Norwegian Wood",
+      "author": "Haruki Murakami",
+      "genre": "literary_fiction",
+      "canonical_units": 36,
+      "unit_type": "SCENE",
+      "status": "CERTIFIED"
+    },
+    {
+      "book_id": "the-psychology-of-money",
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "genre": "analytical_nonfiction",
+      "canonical_units": 24,
+      "unit_type": "ARGUMENT_UNIT",
+      "status": "CERTIFIED"
+    },
+    {
+      "book_id": "bhagat-singh-a-life-in-revolution",
+      "title": "Bhagat Singh: A Life in Revolution",
+      "author": "Satvinder S. Juss",
+      "genre": "historical_biography",
+      "canonical_units": 78,
+      "unit_type": "HISTORICAL_EPISODE / DOCUMENT_UNIT / LIFE_EPISODE",
+      "status": "CERTIFIED"
+    }
+  ],
+  "audit_scorecard": {
+    "cross_book_readiness": "READY_FOR_ARCHITECTURE_SPECIFICATION",
+    "schema_compatibility": "COMPATIBLE_VIA_NORMALIZATION_PROJECTION",
+    "normalization_layer_required": true,
+    "relationship_taxonomy_status": "FORMALIZED_10_TYPES",
+    "attribution_model_status": "MANDATORY_6_COORDINATE_PROVENANCE",
+    "epistemic_model_status": "HIERARCHICAL_DEMARCATION_CERTIFIED",
+    "causal_safeguards_status": "STRICT_CONTAINMENT_ENFORCED",
+    "adversarial_test_cases_count": 10,
+    "implementation_recommendation": "PROCEED_WITH_STAGED_IMPLEMENTATION"
+  },
+  "schema_compatibility_analysis": {
+    "common_fields": [
+      "book_id",
+      "title",
+      "author",
+      "genre",
+      "original_publication_year",
+      "system_version",
+      "unit_id",
+      "summary_statement",
+      "materiality",
+      "materiality_reason",
+      "epistemic_status",
+      "source_location",
+      "relationships"
+    ],
+    "genre_specific_fields": {
+      "literary_fiction": [
+        "what_happens",
+        "narrative_position",
+        "participants",
+        "emotional_transition",
+        "character_states_before",
+        "character_states_after",
+        "motifs",
+        "atmosphere",
+        "mundane_texture"
+      ],
+      "analytical_nonfiction": [
+        "thesis_claim",
+        "core_concept",
+        "actionable_heuristic",
+        "logical_chain",
+        "primary_evidence",
+        "historical_cases",
+        "quantitative_models",
+        "counterarguments",
+        "boundary_conditions"
+      ],
+      "historical_biography": [
+        "dual_timeline",
+        "causal_relationships",
+        "evidence",
+        "source_evidence",
+        "competing_accounts",
+        "source_provenance",
+        "entities"
+      ]
+    },
+    "safe_comparison_fields": [
+      "canonical_concept_anchors",
+      "formal_propositions",
+      "resolved_entities",
+      "epistemic_classifications",
+      "source_evidence_citations",
+      "materiality_ratings"
+    ],
+    "prohibited_direct_merge_fields": [
+      "narrative_action_with_empirical_fact",
+      "character_belief_with_author_argument",
+      "biographer_conjecture_with_primary_writing",
+      "intra_book_causal_chains",
+      "internal_scene_texture"
+    ]
+  },
+  "relationship_taxonomy": [
+    {
+      "type": "CONCEPTUAL_PARALLEL",
+      "definition": "Structural or functional similarity between principles operating in distinct operational domains",
+      "required_epistemic_support": "Any valid status; must note domain difference",
+      "provenance_threshold": "Two source units minimum with explicit textual extracts"
+    },
+    {
+      "type": "THEMATIC_PARALLEL",
+      "definition": "Shared existential, human, or aesthetic themes explored through different genres or narrative registers",
+      "required_epistemic_support": "Narrative or essayistic exploration",
+      "provenance_threshold": "Two source units minimum"
+    },
+    {
+      "type": "EXPLICIT_AGREEMENT",
+      "definition": "Two or more sources asserting the exact same proposition, claim, or historical fact",
+      "required_epistemic_support": "[SOURCE_ARGUMENT] or [CORROBORATED_HISTORICAL_FACT]",
+      "provenance_threshold": "Verbatim proposition match; primary/secondary documentation"
+    },
+    {
+      "type": "EXPLICIT_DISAGREEMENT",
+      "definition": "Two or more sources asserting directly contradictory propositions on the same substantive question",
+      "required_epistemic_support": "[SOURCE_ARGUMENT], [BIOGRAPHER_THESIS], or [HISTORIAN_CAUSAL_HYPOTHESIS]",
+      "provenance_threshold": "Demonstrable propositional contradiction on identical scope"
+    },
+    {
+      "type": "EVIDENTIARY_CORROBORATION",
+      "definition": "Empirical case or historical record in Source A providing external documentation for an analytical thesis in Source B",
+      "required_epistemic_support": "[CONTEMPORARY_RECORD] or [CORROBORATED_HISTORICAL_FACT] supporting [SOURCE_ARGUMENT]",
+      "provenance_threshold": "Archival or empirical documentation linked to analytical thesis"
+    },
+    {
+      "type": "FICTIONAL_EXPLORATION",
+      "definition": "A fictional narrative scene depicting the subjective experiential reality of a psychological principle stated analytically",
+      "required_epistemic_support": "[SOURCE_FACT] (Fiction) exploring [SOURCE_ARGUMENT] (Nonfiction)",
+      "provenance_threshold": "Scene excerpt mapped to thesis statement; must be labeled experiential"
+    },
+    {
+      "type": "HISTORICAL_INSTANCE",
+      "definition": "A documented historical event functioning as a concrete empirical instance of an abstract principle",
+      "required_epistemic_support": "[CORROBORATED_HISTORICAL_FACT] instance of [SOURCE_ARGUMENT]",
+      "provenance_threshold": "Documented event coordinates mapped to theoretical principle"
+    },
+    {
+      "type": "DIALECTICAL_TENSION",
+      "definition": "Irreconcilable divergence in foundational values, premises, or objectives across sources",
+      "required_epistemic_support": "Opposing authorial or ideological frameworks",
+      "provenance_threshold": "Contrasting unit excerpts; preservation of tension without forced reconciliation"
+    },
+    {
+      "type": "DISTINCT_FRAME",
+      "definition": "Apparent surface similarity arising from fundamentally incompatible conceptual frameworks or definitions",
+      "required_epistemic_support": "Any status; requires explicit definitional analysis",
+      "provenance_threshold": "Semantic disambiguation demonstrating non-comparability"
+    },
+    {
+      "type": "NO_ESTABLISHED_RELATIONSHIP",
+      "definition": "Evaluated candidate relationship explicitly rejected due to lack of substantive textual or conceptual connection",
+      "required_epistemic_support": "N/A",
+      "provenance_threshold": "Audit ledger entry documenting negative finding"
+    }
+  ],
+  "attribution_and_provenance_schema": {
+    "required_coordinates": [
+      "source_book_id",
+      "unit_id",
+      "unit_title",
+      "author_or_creator",
+      "attribution_entity",
+      "source_material_type",
+      "epistemic_status",
+      "source_location_coordinates",
+      "assertion_modality"
+    ],
+    "assertion_modalities": [
+      "EXPLICIT_SOURCE_ASSERTION",
+      "FICTIONAL_CHARACTER_CONVICTION",
+      "BIOGRAPHER_INTERPRETIVE_THESIS",
+      "BKRS_CROSS_BOOK_SYNTHETIC_INFERENCE"
+    ]
+  },
+  "causal_safeguard_policy": {
+    "hard_rule": "NO_CAUSAL_IMPORTATION",
+    "intra_book_causation_transferrable": false,
+    "cross_book_causal_inference_policy": "STRICTLY_PROHIBITED_WITHOUT_MULTI_SOURCE_HISTORICAL_LAYER",
+    "synthetic_hypothesis_tag": "[BKRS_CROSS_BOOK_HYPOTHESIS]",
+    "confidence_cap": "LOW"
+  },
+  "synthesis_unit_schema": {
+    "type": "object",
+    "required": [
+      "synthesis_unit_id",
+      "canonical_concept_id",
+      "synthesis_type",
+      "title",
+      "synthesized_proposition",
+      "source_units",
+      "relationship_type",
+      "epistemic_status",
+      "confidence",
+      "materiality",
+      "boundary_conditions",
+      "provenance_audit_trail"
+    ]
+  },
+  "adversarial_test_cases": [
+    {
+      "case_id": "TC-SYNTH-01",
+      "name": "Genuine Conceptual Parallel: Compounding Behavioral Discipline",
+      "sources": ["the-psychology-of-money", "bhagat-singh-a-life-in-revolution"],
+      "units": ["PM-04", "KU-BS-CH41-01"],
+      "classification": "CONCEPTUAL_PARALLEL",
+      "correct_synthesis": "Housel's analytical thesis that small compounding habits generate massive tail returns is conceptually parallel to Bhagat Singh's documented method of reading hundreds of volumes across multiple languages to build revolutionary ideological mastery.",
+      "failure_mode": "Declaring that Bhagat Singh was applying Housel's financial compounding theory or that compounding guarantees political victory."
+    },
+    {
+      "case_id": "TC-SYNTH-02",
+      "name": "Apparent but False Parallel: Reason and Rationality",
+      "sources": ["the-psychology-of-money", "bhagat-singh-a-life-in-revolution"],
+      "units": ["PM-11", "KU-BS-CH46-01"],
+      "classification": "DISTINCT_FRAME",
+      "correct_synthesis": "Housel advocates 'Reasonable > Rational', urging investors to accept emotional irrationality to maintain psychological calm; Bhagat Singh in 'Why I Am an Atheist' demands unyielding rationalism and scientific materialism, fiercely condemning faith and emotional compromise.",
+      "failure_mode": "Collapsing both into 'the importance of reason in decision-making'."
+    },
+    {
+      "case_id": "TC-SYNTH-03",
+      "name": "Absence of Explicit Agreement Across Corpus",
+      "sources": ["norwegian-wood", "the-psychology-of-money", "bhagat-singh-a-life-in-revolution"],
+      "units": ["ALL"],
+      "classification": "NO_ESTABLISHED_RELATIONSHIP",
+      "correct_synthesis": "There is zero explicit cross-book agreement across the three benchmark volumes, as neither Murakami, Housel, nor Juss cite or reference the other authors or works.",
+      "failure_mode": "Inventing a synthetic consensus where none exists in the source texts."
+    },
+    {
+      "case_id": "TC-SYNTH-04",
+      "name": "Apparent Agreement as Divergent Framing: The Meaning of Freedom",
+      "sources": ["the-psychology-of-money", "bhagat-singh-a-life-in-revolution"],
+      "units": ["PM-07", "KU-BS-CH27-01"],
+      "classification": "DIFFERENT_DEFINITION",
+      "correct_synthesis": "Both works center 'freedom', but Housel defines it as bourgeois individual autonomy and schedule control via capital accumulation, whereas Bhagat Singh defines it as anti-imperial collective emancipation and the socialist abolition of exploitation.",
+      "failure_mode": "Claiming both books agree that freedom is the ultimate human good without noting contradictory definitions."
+    },
+    {
+      "case_id": "TC-SYNTH-05",
+      "name": "Dialectical Clash: Survival & Capital Preservation vs Sacrificial Martyrdom",
+      "sources": ["the-psychology-of-money", "bhagat-singh-a-life-in-revolution"],
+      "units": ["PM-05", "KU-BS-CH23-01", "KU-BS-CH49-01"],
+      "classification": "DIALECTICAL_TENSION",
+      "correct_synthesis": "Irreconcilable value systems: Housel's core imperative is staying alive and risk minimization for long-term survival, whereas Bhagat Singh consciously courted execution and rejected legal appeals, arguing that dying on the gallows was necessary to galvanize the masses.",
+      "failure_mode": "Attempting to reconcile martyrdom with wealth preservation heuristics."
+    },
+    {
+      "case_id": "TC-SYNTH-06",
+      "name": "Genre Boundary Violation: Fictional Suicide vs Political Martyrdom",
+      "sources": ["norwegian-wood", "bhagat-singh-a-life-in-revolution"],
+      "units": ["NW-SC-02", "NW-SC-18", "KU-BS-CH31-01"],
+      "classification": "GENRE_BOUNDARY_MISMATCH",
+      "correct_synthesis": "The fictional suicides of Kizuki and Naoko explore private emotional desolation and existential paralysis in literary art; Jatin Das's historical 63-day hunger strike death was a documented political weapon against colonial prison brutality. They cannot be merged or compared as sociological data.",
+      "failure_mode": "Treating fictional suicide as empirical historical data or equating individual depression with anti-colonial hunger strikes."
+    },
+    {
+      "case_id": "TC-SYNTH-07",
+      "name": "Character Conviction vs Authorial Thesis: Elitism vs Luck",
+      "sources": ["norwegian-wood", "the-psychology-of-money"],
+      "units": ["NW-SC-13", "PM-02"],
+      "classification": "FICTIONAL_CHARACTER_BELIEF_VS_AUTHOR_ARGUMENT",
+      "correct_synthesis": "In Norwegian Wood, the character Nagasawa arrogantly asserts that success is purely a function of willpower and innate superiority; in Psychology of Money, Housel explicitly argues that luck and structural accident dominate individual outcomes.",
+      "failure_mode": "Attributing Nagasawa's character belief to Haruki Murakami, or treating a character's dialogue as a counterargument to Housel's thesis."
+    },
+    {
+      "case_id": "TC-SYNTH-08",
+      "name": "Historian Conjectures vs Primary Corpus: Kanpur Romance",
+      "sources": ["bhagat-singh-a-life-in-revolution", "norwegian-wood"],
+      "units": ["KU-BS-CH21-01", "NW-SC-05"],
+      "classification": "HISTORIAN_CONJECTURE_VS_PRIMARY_WRITING",
+      "correct_synthesis": "Juss's Kanpur romance hypothesis is quarantined as [BIOGRAPHER_CONJECTURE], while Bhagat Singh's letter to Sukhdev is [PRIMARY_SUBJECT_WRITING] defending elevated human love. Comparing this to Murakami's literary exploration of youth romance must strictly reference Juss's interpretation as secondary conjecture.",
+      "failure_mode": "Asserting as historical fact that Bhagat Singh experienced youthful romantic distress identical to Toru Watanabe."
+    },
+    {
+      "case_id": "TC-SYNTH-09",
+      "name": "Evidentiary Mismatch: Financial Anecdotes vs Forensic Court Exhibits",
+      "sources": ["the-psychology-of-money", "bhagat-singh-a-life-in-revolution"],
+      "units": ["PM-01", "KU-BS-CH22-01", "KU-BS-APP-13"],
+      "classification": "EVIDENTIARY_MISMATCH",
+      "correct_synthesis": "Housel utilizes popular journalistic anecdotes (e.g. Ronald Read, Richard Fuscone) as illustrative parables; Juss documents judicial FIRs, post-mortem autopsy measurements, and High Court petitions. Synthesized representations must distinguish illustrative anecdotes from archival records.",
+      "failure_mode": "Assigning identical evidentiary weight to an investing parable and a forensic autopsy exhibit."
+    },
+    {
+      "case_id": "TC-SYNTH-10",
+      "name": "Unsupported Causal Importation: Tail Events and Political Assassination",
+      "sources": ["the-psychology-of-money", "bhagat-singh-a-life-in-revolution"],
+      "units": ["PM-06", "KU-BS-CH22-01"],
+      "classification": "UNSUPPORTED_CAUSAL_IMPORTATION",
+      "correct_synthesis": "While the Saunders shooting was an extraordinary low-probability event that altered Indian colonial politics, the synthesis engine must NOT infer that Bhagat Singh acted upon 'tail-event probability theory' or that Housel's economic tail model caused the political outcome.",
+      "failure_mode": "Importing Housel's causal model into the historical mechanics of the HSRA."
+    }
+  ],
+  "implementation_gate_decision": {
+    "decision": "APPROVED_TO_DESIGN_SYNTHESIS_FRAMEWORK",
+    "production_synthesis_status": "PAUSED",
+    "conditions": [
+      "Book Masters remain immutable",
+      "Adversarial validation test suite authored prior to synthesis engine execution",
+      "Multi-source historical consensus layer required before scaling multi-book Bhagat Singh corpus"
+    ]
+  }
+}
