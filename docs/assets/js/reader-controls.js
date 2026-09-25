@@ -120,11 +120,22 @@
 
   function handleNavClick(event, targetId) {
     if (event) event.preventDefault();
-    // Switch to View A if in another view
-    switchView('view-journey');
     const el = document.getElementById(targetId);
     if (el) {
+      // Find parent view panel if element is inside a specific view
+      const parentView = el.closest('.view-panel') || el.closest('[id^="view-"]');
+      if (parentView && parentView.id) {
+        switchView(parentView.id);
+      } else {
+        // If element is a chapter or unit not wrapped in another panel, default to View A
+        switchView('view-journey');
+      }
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      // If target element is not found directly, default to View A
+      switchView('view-journey');
+      const fallback = document.getElementById(targetId);
+      if (fallback) fallback.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     // Mobile: auto close sidebar
     if (window.innerWidth <= 960) {
@@ -164,7 +175,7 @@
     });
 
     // Update tab button states
-    const allTabBtns = document.querySelectorAll('.view-tab-btn, [role="tab"]');
+    const allTabBtns = document.querySelectorAll('.view-tab-btn, .view-btn, [role="tab"]');
     allTabBtns.forEach(btn => {
       const bView = btn.getAttribute('data-view') || btn.id.replace('btn-', '');
       const btnNormalized = normalizeViewId(bView);
@@ -172,6 +183,23 @@
       btn.classList.toggle('active', isMatch);
       btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
     });
+
+    // Update context-aware sidebar TOC view groups if present
+    const groupJourney = document.getElementById('sidebar-group-journey');
+    const groupMap = document.getElementById('sidebar-group-map');
+    const groupExp = document.getElementById('sidebar-group-experience');
+    const tocLabel = document.getElementById('sidebar-toc-label');
+
+    if (groupJourney && groupMap && groupExp) {
+      groupJourney.style.display = (normalized === 'view-journey') ? 'block' : 'none';
+      groupMap.style.display = (normalized === 'view-map') ? 'block' : 'none';
+      groupExp.style.display = (normalized === 'view-experience') ? 'block' : 'none';
+    }
+    if (tocLabel) {
+      if (normalized === 'view-journey') tocLabel.textContent = 'TABLE OF CONTENTS • VIEW A';
+      else if (normalized === 'view-map') tocLabel.textContent = 'TABLE OF CONTENTS • VIEW B';
+      else if (normalized === 'view-experience') tocLabel.textContent = 'TABLE OF CONTENTS • VIEW C';
+    }
 
     history.replaceState(null, '', '#' + normalized.replace('view-', ''));
   }
@@ -451,6 +479,7 @@
     if (e.key === 'Escape') {
       closeSearch();
       closeSourceTrace();
+      closeEpistemicModal();
     }
     // Sidebar: Ctrl + \
     if (e.ctrlKey && e.key === '\\') {
@@ -459,11 +488,46 @@
     }
   });
 
+  // 8B. EPISTEMIC MODAL CONTROLLER
+  function openEpistemicModal() {
+    const modal = document.getElementById('epistemic-modal') || document.getElementById('epistemicModal');
+    if (modal) {
+      modal.style.display = 'flex';
+      modal.classList.add('open');
+    }
+  }
+
+  function closeEpistemicModal() {
+    const modal = document.getElementById('epistemic-modal') || document.getElementById('epistemicModal');
+    if (modal) {
+      modal.style.display = 'none';
+      modal.classList.remove('open');
+    }
+  }
+
+  function handleEpistemicBackdropClick(event) {
+    if (event.target.id === 'epistemic-modal' || event.target.id === 'epistemicModal') {
+      closeEpistemicModal();
+    }
+  }
+
   // 9. DOM READY ATTACHMENT
   document.addEventListener('DOMContentLoaded', function () {
     initTheme();
     initTypography();
     initSearch();
+
+    // Epistemic guide buttons
+    const guideBtns = [document.getElementById('epistemic-guide-btn'), document.getElementById('evidenceGuideBtn')].filter(Boolean);
+    guideBtns.forEach(btn => btn.addEventListener('click', openEpistemicModal));
+
+    const guideCloses = document.querySelectorAll('.epistemic-close-btn, #epistemicModalClose');
+    guideCloses.forEach(btn => btn.addEventListener('click', closeEpistemicModal));
+
+    const epistemicModal = document.getElementById('epistemic-modal') || document.getElementById('epistemicModal');
+    if (epistemicModal) {
+      epistemicModal.addEventListener('click', handleEpistemicBackdropClick);
+    }
 
     // Theme buttons
     const themeBtns = [document.getElementById('theme-btn'), document.getElementById('themeToggleBtn')].filter(Boolean);
@@ -517,7 +581,7 @@
     drawerCloses.forEach(btn => btn.addEventListener('click', closeSourceTrace));
 
     // View tab buttons
-    const tabBtns = document.querySelectorAll('.view-tab-btn, [role="tab"]');
+    const tabBtns = document.querySelectorAll('.view-tab-btn, .view-btn, [role="tab"]');
     tabBtns.forEach(btn => {
       btn.addEventListener('click', function () {
         const v = this.getAttribute('data-view') || this.id.replace('btn-', '');
@@ -551,5 +615,8 @@
   window.handleSearchQuery = renderSearchResults;
   window.openSourceTrace = openSourceTrace;
   window.closeSourceTrace = closeSourceTrace;
+  window.openEpistemicModal = openEpistemicModal;
+  window.closeEpistemicModal = closeEpistemicModal;
+  window.handleEpistemicBackdropClick = handleEpistemicBackdropClick;
   window.toggleFlashcard = toggleFlashcard;
 })();

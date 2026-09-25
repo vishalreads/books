@@ -1,0 +1,263 @@
+{
+  "audit_version": "1.0.0",
+  "audit_date": "2026-09-25",
+  "auditor": "Antigravity (BKRS Independent Forensic Audit)",
+  "audit_type": "LIVE_PRODUCT_UX_INFORMATION_ARCHITECTURE_AUDIT",
+  "target_environment": "GitHub Pages Live Deployment (vishalreads.github.io/books/)",
+  "live_urls_tested": [
+    {
+      "url": "https://vishalreads.github.io/books/",
+      "http_status": 200,
+      "content_length_bytes": 52573,
+      "type": "PORTAL_HOMEPAGE"
+    },
+    {
+      "url": "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+      "http_status": 200,
+      "content_length_bytes": 247619,
+      "type": "LITERARY_FICTION_READER"
+    },
+    {
+      "url": "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+      "http_status": 200,
+      "content_length_bytes": 206873,
+      "type": "ANALYTICAL_NONFICTION_READER"
+    },
+    {
+      "url": "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html",
+      "http_status": 200,
+      "content_length_bytes": 1223677,
+      "type": "HISTORICAL_BIOGRAPHY_READER"
+    }
+  ],
+  "first_time_user_questions": [
+    {
+      "id": "Q01",
+      "question": "What is this website?",
+      "rating": "PARTIALLY_CLEAR",
+      "observation": "Header calls it 'The Master Library - Exhaustive, Replacement-Grade Codices of Seminal Human Knowledge'. Clear that it is a book repository, but unclear what an 'Intellectualist Codex' is versus standard book summaries."
+    },
+    {
+      "id": "Q02",
+      "question": "What does 'Book Reconstruction' mean?",
+      "rating": "MISSING",
+      "observation": "The term 'Book Reconstruction' never appears on the homepage. The reader mentions 'BKRS Canonical Book Master' without definition or methodological context."
+    },
+    {
+      "id": "Q03",
+      "question": "Is this a summary, notes, study guide, or something else?",
+      "rating": "PARTIALLY_CLEAR",
+      "observation": "Banner claims 'eliminate the need to read the source texts' with 'zero publisher padding', which sounds like aggressive marketing. The units read like deep structured chapters, but the distinction from study notes is not explained."
+    },
+    {
+      "id": "Q04",
+      "question": "What does the system promise to preserve?",
+      "rating": "PARTIALLY_CLEAR",
+      "observation": "Portal promises 'causal mechanics, empirical trials, diagnostic typologies, verbatim operational scripts'. This makes sense for nonfiction, but completely mischaracterizes literary fiction (scenes, emotions, motifs)."
+    },
+    {
+      "id": "Q05",
+      "question": "Why should I trust it?",
+      "rating": "UNCLEAR",
+      "observation": "Homepage offers unbacked claims ('266.5 hrs saved', '42 trials vaulted') and arbitrary 'Tier 1/2/3' labels. Verification scores and benchmark certifications are completely hidden from the reading interface."
+    },
+    {
+      "id": "Q06",
+      "question": "How do I choose a book?",
+      "rating": "UNCLEAR",
+      "observation": "Bhagat Singh is 100% missing from the portal directory. Uncertified legacy markdown summaries are mixed with certified BKRS Book Masters without distinction."
+    },
+    {
+      "id": "Q07",
+      "question": "What are the three views?",
+      "rating": "PARTIALLY_CLEAR",
+      "observation": "Buttons for Source Journey, Knowledge Map, and Experience/Engine are visible in the reader topbar, but there is no onboarding explanation of what they represent or why they exist."
+    },
+    {
+      "id": "Q08",
+      "question": "Which view should I start with?",
+      "rating": "PARTIALLY_CLEAR",
+      "observation": "View A is loaded by default, but there is no introductory guidance advising the user to read View A sequentially before exploring Views B and C."
+    },
+    {
+      "id": "Q09",
+      "question": "How do I know whether something is a fact, interpretation, character belief, author argument, or inference?",
+      "rating": "PARTIALLY_CLEAR",
+      "observation": "Colored badges exist in the HTML (SOURCE FACT, [BIOGRAPHER_THESIS], [PRIMARY_SUBJECT_WRITING]), but there is no legend, tooltip, or explanation defining what these mean."
+    },
+    {
+      "id": "Q10",
+      "question": "How do I trace a statement back to the source?",
+      "rating": "UNCLEAR",
+      "observation": "A 'Source Trace ↗' button exists, but clicking it reveals unstyled DOM content due to CSS class mismatches between HTML and reader-shell.css."
+    },
+    {
+      "id": "Q11",
+      "question": "Can I use this instead of reading the entire book?",
+      "rating": "PARTIALLY_CLEAR",
+      "observation": "The depth of content is high enough to replace reading, but the UI provides no reading guidance, estimated read times, or instructions on how to digest 78 units."
+    },
+    {
+      "id": "Q12",
+      "question": "What limitations remain?",
+      "rating": "MISSING",
+      "observation": "There is zero discussion of what the reconstruction cannot replace (original authorial voice, full archival transcripts, prose cadence)."
+    }
+  ],
+  "dimension_scorecard": {
+    "A_PRODUCT_CLARITY": "FAIL",
+    "B_INFORMATION_ARCHITECTURE": "FAIL",
+    "C_READING_EXPERIENCE": "PASS_WITH_ISSUES",
+    "D_TRUST_EPISTEMIC_UX": "PASS_WITH_ISSUES",
+    "E_SOURCE_TRACEABILITY_UX": "FAIL",
+    "F_SEARCH_RETRIEVAL": "PASS_WITH_ISSUES",
+    "G_CROSS_GENRE_UX": "PASS_WITH_ISSUES",
+    "H_MOBILE_UX": "FAIL",
+    "I_ACCESSIBILITY_LEGIBILITY": "PASS_WITH_ISSUES",
+    "J_PERFORMANCE_ROBUSTNESS": "PASS"
+  },
+  "issue_summary": {
+    "P0_blockers": 3,
+    "P1_material": 4,
+    "P2_friction": 4,
+    "P3_cosmetic": 2
+  },
+  "issues": [
+    {
+      "id": "P0-IA-01",
+      "severity": "P0",
+      "title": "Bhagat Singh Book Master Completely Omitted from Library Portal",
+      "description": "docs/index.html does not register 'bhagat-singh-a-life-in-revolution' in its inline libraryData database. A user visiting https://vishalreads.github.io/books/ cannot discover, search for, or navigate to the Bhagat Singh reconstruction.",
+      "affected_urls": ["https://vishalreads.github.io/books/"],
+      "remediation": "Register bhagat-singh-a-life-in-revolution in docs/index.html and library-index.json with complete metadata, tags, and link."
+    },
+    {
+      "id": "P0-CSS-01",
+      "severity": "P0",
+      "title": "CSS Class Name Mismatches Break Source Trace Drawer and Layout",
+      "description": "HTML generated by src/render_bkrs_book.js uses class names (source-trace-drawer, source-trace-overlay, reader-workspace, control-btn, view-tab-btn) that do not match the class selectors defined in docs/assets/css/reader-shell.css (trace-drawer, trace-modal-backdrop, reader-layout, ctrl-btn, view-btn). Consequently, the Source Trace slide-over drawer is unstyled and broken.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+        "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Harmonize class names between src/render_bkrs_book.js and docs/assets/css/reader-shell.css so that drawer, buttons, and layout containers share exact selectors."
+    },
+    {
+      "id": "P0-SYN-01",
+      "severity": "P0",
+      "title": "Step 5.4 Cross-Book Synthesis Completely Inaccessible via UI",
+      "description": "The entire cross-book synthesis corpus (10 active synthesis units, concept registry, contradictions, consensus ledger, relationships) exists only as raw JSON files in docs/cross-book/. There is zero user-facing navigation or web interface to explore synthesis.",
+      "affected_urls": ["https://vishalreads.github.io/books/"],
+      "remediation": "Implement Step 5.6 Synthesis Explorer reader interface and link it prominently from the Grand Library portal."
+    },
+    {
+      "id": "P1-PORTAL-01",
+      "severity": "P1",
+      "title": "Portal Conflates Legacy Uncertified Notes with Certified BKRS Book Masters",
+      "description": "The homepage catalog lists 10 books, of which 8 are legacy markdown notes from earlier milestones, using sensationalist copy ('266.5 hrs saved', 'drop any pdf to automatically generate'). Only 2 certified Book Masters are present, with no certification indicators.",
+      "affected_urls": ["https://vishalreads.github.io/books/"],
+      "remediation": "Create a distinct 'Certified BKRS Benchmarks' section on the portal with verification badges, separating them from legacy catalog entries."
+    },
+    {
+      "id": "P1-EPI-01",
+      "severity": "P1",
+      "title": "Epistemic Taxonomy Lacks User-Facing Legend and Explanatory Tooltips",
+      "description": "High-rigor classifications (SOURCE FACT, [PRIMARY_SUBJECT_WRITING], [BIOGRAPHER_THESIS], [COERCED_TESTIMONY]) appear as colored badges with zero explanations. A first-time reader cannot decipher the epistemic rules.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+        "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Add an Epistemic Legend modal/popover in the reader header and interactive hover tooltips on every epistemic badge."
+    },
+    {
+      "id": "P1-MOB-01",
+      "severity": "P1",
+      "title": "Reader Topbar Overflows Horizontally on Mobile Screens",
+      "description": "At viewport widths <= 480px, the 54px reader topbar contains the sidebar toggle, back link, title block, 3 view buttons, and 5 control buttons, causing extreme horizontal overflow and overlapping controls.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+        "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Implement a responsive mobile header that moves secondary controls into an overflow drawer and converts the 3-view switcher into a segmented control or bottom navigation bar."
+    },
+    {
+      "id": "P1-NAV-01",
+      "severity": "P1",
+      "title": "Sidebar Navigation Disconnect Across Views B and C",
+      "description": "The sidebar Table of Contents only indexes View A chapters. When reading in View B (Knowledge Map) or View C (Deep View), clicking a sidebar link forcibly switches the entire interface back to View A without warning.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+        "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Make sidebar contents dynamic to reflect the active view (e.g. Stage trajectories in View B, flashcards/writings in View C), or provide clear section navigation."
+    },
+    {
+      "id": "P2-SEARCH-01",
+      "severity": "P2",
+      "title": "Search Dialog Card Missing CSS Styles",
+      "description": "The search modal container (.search-modal-box) has no CSS rules in reader-shell.css (which defines .search-dialog), leading to basic unstyled modal rendering.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+        "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Add styling rules for .search-modal-box in reader-shell.css."
+    },
+    {
+      "id": "P2-VIEW-01",
+      "severity": "P2",
+      "title": "Absence of First-Time User Orientation / Reader Guide",
+      "description": "When entering a Book Master, there is no welcome banner, reading guide, or explanation of how to use the 3-view model to replace deep reading.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+        "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Add a dismissible 'How to Read this Reconstruction' guide banner at the top of View A."
+    },
+    {
+      "id": "P2-FIC-01",
+      "severity": "P2",
+      "title": "Literary Fiction Interrupted by Intrusive Inline Metadata",
+      "description": "In Norwegian Wood View A, each scene is immediately followed by a blocky secondary box (Why This Matters, Mundane Texture, Emotional Shift, Dialogue Subtext), which shatters continuous narrative immersion.",
+      "affected_urls": ["https://vishalreads.github.io/books/distillations/norwegian-wood/index.html"],
+      "remediation": "Provide a toggle between 'Immersive Narrative Mode' (prose only) and 'Analytical Mode' (prose + metadata boxes)."
+    },
+    {
+      "id": "P2-PER-01",
+      "severity": "P2",
+      "title": "Large Monolithic HTML Payload for Bhagat Singh (1.22 MB)",
+      "description": "Bhagat Singh compiles 78 units, complete trace scripts, and static search JSON into a single 1.22 MB HTML file, which may cause minor DOM parsing delay on budget mobile devices.",
+      "affected_urls": ["https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"],
+      "remediation": "Consider lazy-loading trace JSON or static search data in future performance passes."
+    },
+    {
+      "id": "P3-TYPO-01",
+      "severity": "P3",
+      "title": "Sub-optimal Flashcard Button Touch Targets",
+      "description": "Reveal answer buttons on flashcards have vertical padding of 4px, which is below the 44px recommended mobile touch target standard.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/distillations/norwegian-wood/index.html",
+        "https://vishalreads.github.io/books/distillations/the-psychology-of-money/index.html",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Increase padding to 8px 14px on touch devices."
+    },
+    {
+      "id": "P3-BRAND-01",
+      "severity": "P3",
+      "title": "Archaic Terminology on Portal and Masthead",
+      "description": "Words like 'Codex', 'Grand Library Portal', and 'Dialectical Engine' convey esoteric pretension rather than institutional scholarly clarity.",
+      "affected_urls": [
+        "https://vishalreads.github.io/books/",
+        "https://vishalreads.github.io/books/distillations/bhagat-singh-a-life-in-revolution/index.html"
+      ],
+      "remediation": "Update public copy to use modern scholarly terms like 'Book Knowledge Reconstruction System', 'Canonical Reconstructions', and 'Dialectical Analysis'."
+    }
+  ],
+  "final_verdict": "PRODUCT AUDIT: REQUIRES UX REMEDIATION"
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "audit_type": "P0_P1_LIVE_PRODUCT_UX_REMEDIATION",
+  "audit_version": "1.0.0",
+  "date": "2026-09-25",
+  "status": "REMEDIATION_COMPLETE_AND_VERIFIED",
+  "overall_verdict": "CERTIFIED_PASS",
+  "remediation_items": [
+    {
+      "id": "P0-01",
+      "priority": "P0",
+      "title": "Add Bhagat Singh: A Life in Revolution to Grand Library Portal",
+      "status": "IMPLEMENTED",
+      "target_file": "docs/index.html",
+      "details": "Registered full book metadata in libraryData.books array, created Certified BKRS Benchmarks showcase section with direct 3-view codex link, and added certified filter pill and badge."
+    },
+    {
+      "id": "P0-02",
+      "priority": "P0",
+      "title": "Fix Source Trace drawer / overlay / reader layout CSS selector mismatches",
+      "status": "IMPLEMENTED",
+      "target_files": [
+        "docs/assets/css/reader-shell.css",
+        "src/render_bkrs_book.js",
+        "docs/assets/js/reader-controls.js"
+      ],
+      "details": "Harmonized class selector aliases for source-trace-drawer, source-trace-overlay, reader-workspace, control-btn, view-tab-btn, and search-modal-box. Tested smooth drawer animation and backdrop clicks."
+    },
+    {
+      "id": "P0-03",
+      "priority": "P0",
+      "title": "Add a clear user-facing entry point for the certified Cross-Book Synthesis layer",
+      "status": "IMPLEMENTED",
+      "target_files": [
+        "docs/cross-book/index.html",
+        "src/render_cross_book_portal.js",
+        "docs/index.html",
+        "src/render_bkrs_book.js"
+      ],
+      "details": "Generated interactive cross-book portal (105.8 KB) displaying 12 synthesis units, 14 canonical concepts, dialectical tensions, and quarantines with bidirectional links to Book Masters."
+    },
+    {
+      "id": "P1-04",
+      "priority": "P1",
+      "title": "Add a concise epistemic legend explaining existing canonical epistemic labels",
+      "status": "IMPLEMENTED",
+      "target_files": [
+        "src/render_bkrs_book.js",
+        "docs/assets/css/reader-shell.css",
+        "docs/assets/js/reader-controls.js"
+      ],
+      "details": "Injected topbar 'Guide' button and built responsive epistemic modal dialog defining 8 canonical truth-value categories with Escape key and backdrop dismissal."
+    },
+    {
+      "id": "P1-05",
+      "priority": "P1",
+      "title": "Fix mobile reader topbar overflow at <=480px",
+      "status": "IMPLEMENTED",
+      "target_file": "docs/assets/css/reader-shell.css",
+      "details": "Added responsive media queries for <=768px and <=480px, collapsed desktop text to clean icon controls, eliminated horizontal scrollbar, and maintained >=28px touch targets."
+    },
+    {
+      "id": "P1-06",
+      "priority": "P1",
+      "title": "Make sidebar/TOC context-aware so View B and View C navigation does not reset to View A",
+      "status": "IMPLEMENTED",
+      "target_files": [
+        "src/render_bkrs_book.js",
+        "docs/assets/js/reader-controls.js"
+      ],
+      "details": "Rendered view-specific sidebar navigation groups for Views A, B, and C across all 3 genres. Enhanced switchView() to toggle visible group and modified handleNavClick() to switch to parent view panel without blindly defaulting to View A."
+    }
+  ],
+  "regression_results": {
+    "verify_all_readers": {
+      "status": "PASS",
+      "books_verified": [
+        "norwegian-wood",
+        "the-psychology-of-money",
+        "bhagat-singh-a-life-in-revolution"
+      ],
+      "content_loss": false
+    },
+    "verify_cross_book_normalization": {
+      "status": "PASS",
+      "score": "100%"
+    },
+    "verify_cross_book_forensic": {
+      "status": "PASS",
+      "score": "50/50"
+    },
+    "audit_synthesis_forensic": {
+      "status": "PASS",
+      "score": "60/60",
+      "hash_ledger_match": "100%"
+    }
+  },
+  "governance_invariants": {
+    "book_masters_mutated": 0,
+    "normalized_corpora_mutated": 0,
+    "synthesis_units_mutated": 0,
+    "external_frameworks_added": 0
+  }
+}

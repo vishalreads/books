@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream" data-font="serif">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Book Knowledge Synthesis • The Intellectualist</title>
+  
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
+  <link rel="stylesheet" href="../assets/css/reader-shell.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    .portal-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 30px 24px 100px 24px;
+    }
+
+    .portal-masthead {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-top: 5px solid var(--accent-crimson);
+      border-radius: 6px;
+      padding: 36px 40px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .portal-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 20px;
+    }
+
+    .portal-title {
+      font-size: 2.6rem;
+      line-height: 1.15;
+      color: var(--accent-crimson);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .portal-tagline {
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--text-muted);
+      line-height: 1.5;
+      max-width: 900px;
+      margin-bottom: 18px;
+    }
+
+    .stats-deck {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .stat-tile {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 16px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stat-val {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-crimson);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .stat-name {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-subtle);
+      font-weight: 700;
+    }
+
+    .source-corpora-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .source-corpus-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 22px 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 3px solid var(--accent-slate);
+    }
+
+    .corpus-genre-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent-slate);
+      margin-bottom: 6px;
+    }
+
+    .corpus-title {
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .corpus-meta {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.45;
+    }
+
+    .btn-corpus-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent-crimson);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.84rem;
+      transition: color 0.15s ease;
+    }
+
+    .btn-corpus-link:hover {
+      text-decoration: underline;
+    }
+
+    .nav-tabs-deck {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--border-light);
+      padding-bottom: 12px;
+    }
+
+    .tab-nav-btn {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+
+    .tab-nav-btn:hover {
+      background: var(--bg-elevated);
+      color: var(--text-main);
+    }
+
+    .tab-nav-btn.active {
+      background: var(--accent-crimson);
+      color: #ffffff;
+      border-color: var(--accent-crimson);
+    }
+
+    .synthesis-unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 26px 30px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .su-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .su-id-badge {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--accent-crimson);
+      background: rgba(139, 0, 0, 0.08);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .su-claim {
+      font-size: 1.15rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .su-source-trace-box {
+      background: var(--bg-subtle);
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .su-source-row {
+      font-size: 0.86rem;
+      line-height: 1.45;
+    }
+
+    .su-source-link {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--accent-crimson);
+      text-decoration: none;
+    }
+
+    .su-source-link:hover {
+      text-decoration: underline;
+    }
+
+    .su-evidence-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .su-evidence-grid {
+        grid-template-columns: 1fr;
+      }
+      .portal-masthead {
+        padding: 24px 20px;
+      }
+      .portal-title {
+        font-size: 2rem;
+      }
+    }
+
+    .su-evidence-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      padding: 12px 14px;
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+
+    .su-evidence-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body class="bkrs-app">
+
+  <!-- TOP APP BAR -->
+  <header class="reader-topbar">
+    <div class="topbar-left">
+      <a href="../index.html" class="topbar-back-link">
+        ← <span class="back-link-text">Master </span>Library
+      </a>
+      <div class="topbar-divider"></div>
+      <div class="topbar-title-block">
+        <div class="topbar-book-title">Cross-Book Knowledge Synthesis</div>
+        <div class="topbar-book-author">BKRS Multi-Corpus Knowledge Graph (Step 5 Benchmark)</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <button class="control-btn" id="theme-btn" onclick="cycleTheme()" title="Switch Theme (T)">
+        🎨 <span class="btn-text">Theme</span>
+      </button>
+      <button class="control-btn" id="font-btn" onclick="cycleFont()" title="Toggle Serif / Sans">
+        Aa
+      </button>
+    </div>
+  </header>
+
+  <div class="portal-container">
+    
+    <!-- MASTHEAD -->
+    <header class="portal-masthead">
+      <div class="portal-meta-bar">
+        <span class="meta-label">CANONICAL CROSS-BOOK LAYER • BKRS v1.0</span>
+        <span class="badge badge-corroborated-fact">Forensically Certified (60/60 Tests Pass)</span>
+      </div>
+      <h1 class="portal-title">Cross-Book Knowledge Synthesis</h1>
+      <p class="portal-tagline">
+        Systematic, provenance-grounded synthesis connecting Literary Fiction, Analytical Nonfiction, and Historical Biography without homogenizing genres, inventing consensus, or overriding source authority.
+      </p>
+      <div class="golden-test-banner" style="background: var(--bg-subtle); border-left: 4px solid var(--accent-crimson); padding: 12px 16px; font-size: 0.88rem;">
+        <strong>Constitutional Governance Rule:</strong> Book Masters are unconditionally authoritative. If a synthesis proposition conflicts with a Book Master, the Book Master prevails unconditionally. Unresolved tensions and domain distinctions are strictly preserved.
+      </div>
+    </header>
+
+    <!-- CENSUS STATS DECK -->
+    <section class="stats-deck">
+      <div class="stat-tile">
+        <div class="stat-val">3</div>
+        <div class="stat-name">Certified Book Masters</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-val">12</div>
+        <div class="stat-name">Synthesis Units Total</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-val">12</div>
+        <div class="stat-name">Active Benchmark Units</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-val">14</div>
+        <div class="stat-name">Canonical Concepts</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-val">15</div>
+        <div class="stat-name">Relational Graph Edges</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-val">8</div>
+        <div class="stat-name">Contradictions Audited</div>
+      </div>
+    </section>
+
+    <!-- BENCHMARK CORPORA CARDS -->
+    <section style="margin-bottom: 30px;">
+      <span class="meta-label" style="display: block; margin-bottom: 12px;">CERTIFIED CONSTITUENT CORPORA</span>
+      <div class="source-corpora-grid">
+        <div class="source-corpus-card">
+          <div>
+            <div class="corpus-genre-tag">Literary Fiction Benchmark</div>
+            <h3 class="corpus-title">Norwegian Wood</h3>
+            <div class="corpus-meta">
+              <strong>Haruki Murakami</strong> (1987) • Trans. Jay Rubin<br>
+              36 Canonical Scene Units • Existential Grief & Trauma
+            </div>
+          </div>
+          <a href="../distillations/norwegian-wood/index.html" class="btn-corpus-link">Open Fiction Codex →</a>
+        </div>
+        <div class="source-corpus-card">
+          <div>
+            <div class="corpus-genre-tag">Analytical Nonfiction Benchmark</div>
+            <h3 class="corpus-title">The Psychology of Money</h3>
+            <div class="corpus-meta">
+              <strong>Morgan Housel</strong> (2020)<br>
+              24 Canonical Argument Units • Behavioral Finance & Tail Events
+            </div>
+          </div>
+          <a href="../distillations/the-psychology-of-money/index.html" class="btn-corpus-link">Open Nonfiction Codex →</a>
+        </div>
+        <div class="source-corpus-card">
+          <div>
+            <div class="corpus-genre-tag">Historical Biography Benchmark</div>
+            <h3 class="corpus-title">Bhagat Singh: A Life in Revolution</h3>
+            <div class="corpus-meta">
+              <strong>Satvinder S. Juss</strong> (2020)<br>
+              78 Canonical Units • Archival Forensics & Revolutionary Praxis
+            </div>
+          </div>
+          <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html" class="btn-corpus-link">Open Historical Codex →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION NAVIGATION TABS -->
+    <div class="nav-tabs-deck">
+      <button class="tab-nav-btn active" onclick="switchSection('sec-units', this)">1. Active Synthesis Units (12)</button>
+      <button class="tab-nav-btn" onclick="switchSection('sec-concepts', this)">2. Canonical Concepts (14)</button>
+      <button class="tab-nav-btn" onclick="switchSection('sec-tensions', this)">3. Dialectical Tensions & Disputes (8)</button>
+      <button class="tab-nav-btn" onclick="switchSection('sec-quarantine', this)">4. Forensic Boundaries & Quarantines (0)</button>
+    </div>
+
+    <!-- TAB 1: ACTIVE SYNTHESIS UNITS -->
+    <section id="sec-units" class="portal-tab-content">
+      <div style="margin-bottom: 20px;">
+        <h2 style="font-size: 1.5rem; color: var(--accent-crimson); margin-bottom: 4px;">Active Cross-Book Synthesis Units</h2>
+        <p style="font-size: 0.92rem; color: var(--text-muted);">
+          Each synthesis unit represents a forensically verified conceptual relationship across at least two certified benchmarks, with complete bidirectional provenance and evidentiary accountability.
+        </p>
+      </div>
+
+      
+          <article class="synthesis-unit-card" id="SU-FIN-POL-001">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-FIN-POL-001</span>
+                <span class="badge badge-corroborated-fact">CONCEPTUAL PARALLEL</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DISTINCT FRAME</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: MEDIUM
+              </div>
+            </div>
+
+            <h3 class="su-claim">Continuous, small-scale structural inputs produce non-linear macro consequences across both capital accumulation and intellectual revolutionary preparation.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-CH04-01" class="su-source-link">UNIT-POM-CH04-01</a> 
+                      (Chapter 4 pp. 45-56) • 
+                      <em>Role: THEORETICAL_PROPOSITION</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Warren Buffett’s skill is investing, but his secret is time."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH41-01" class="su-source-link">KU-BS-CH41-01</a> 
+                      (Chapter 41 part0047.html) • 
+                      <em>Role: HISTORICAL_ANALOGUE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: BIOGRAPHER</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Bhagat Singh read hundreds of volumes across multiple languages while imprisoned in Lahore Central Jail."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Housel demonstrates that $81.5B of Buffett’s wealth came after age 65 due to 70+ years of compounding.</p><p style="margin-bottom: 4px;">• Juss documents that Bhagat Singh methodically cultivated his ideological command through reading hundreds of texts during imprisonment.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                <p style="margin-bottom: 4px;">• Financial compounding seeks risk-minimizing capital preservation; revolutionary self-cultivation prepared the subject for gallows sacrifice.</p>
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Structural isomorphism between mathematical compounding in investment and disciplined volume-reading in prison.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-EPI-RAT-002">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-EPI-RAT-002</span>
+                <span class="badge badge-corroborated-fact">DISTINCT FRAME</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DIFFERENT DEFINITION</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">Apparent focus on reason between behavioral finance and revolutionary socialism reflects incompatible epistemic paradigms: emotional compromise vs militant dialectical critique.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-CH11-01" class="su-source-link">UNIT-POM-CH11-01</a> 
+                      (Chapter 11 pp. 119-128) • 
+                      <em>Role: PRAGMATIC_RULE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Do not aim to be coldly rational when making financial decisions. Aim to just be pretty reasonable."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH46-01" class="su-source-link">KU-BS-CH46-01</a> 
+                      (Chapter 46 part0052.html) • 
+                      <em>Role: PHILOSOPHICAL_DEFENSE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: HISTORICAL_SUBJECT</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Any man who stands for progress has to criticize, disbelieve and challenge every item of the old faith."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Housel emphasizes human psychological weakness requiring sub-optimal spreadsheet behavior to ensure emotional compliance.</p><p style="margin-bottom: 4px;">• Bhagat Singh demands ruthless, unsparing critical examination of all dogmas and beliefs regardless of comfort.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Direct disambiguation of identical lexical token &quot;rationality&quot; operating in distinct domains.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-NEG-CONS-003">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-NEG-CONS-003</span>
+                <span class="badge badge-corroborated-fact">NO ESTABLISHED RELATIONSHIP</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: NO ESTABLISHED RELATIONSHIP</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">Audited candidate corpus-wide worldview reveals zero universal shared philosophical consensus across literary fiction, personal finance, and anti-colonial revolution.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Norwegian Wood (Haruki Murakami)</strong>: 
+                      <a href="../distillations/norwegian-wood/index.html#SCENE-NW-01-01" class="su-source-link">SCENE-NW-01-01</a> 
+                      (Chapter 1 scene 1) • 
+                      <em>Role: LITERARY_ANCHOR</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: NARRATOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Toru Watanabe touches down in Hamburg at age 37."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-INTRO-01" class="su-source-link">UNIT-POM-INTRO-01</a> 
+                      (Introduction pp. 1-8) • 
+                      <em>Role: FINANCIAL_AXIOM</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Doing well with money has a little to do with how smart you are and a lot to do with how you behave."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-PROLOGUE-01" class="su-source-link">KU-BS-PROLOGUE-01</a> 
+                      (Prologue part0004.html) • 
+                      <em>Role: BIOGRAPHICAL_THESIS</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: BIOGRAPHER</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Bhagat Singh was India’s most charismatic revolutionary who defied the British Raj."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Works operate in completely independent literary, behavioral, and geopolitical spheres.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Negative space validation enforcing False Consensus Rule FC-10 (Absence of Disagreement != Agreement).
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-POL-LIB-004">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-POL-LIB-004</span>
+                <span class="badge badge-corroborated-fact">DIFFERENT DEFINITION</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DIFFERENT DEFINITION</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">The concept of &quot;freedom&quot; in personal finance denotes bourgeois calendar autonomy; in revolutionary history it denotes collective political sovereignty and abolition of class exploitation.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-CH07-01" class="su-source-link">UNIT-POM-CH07-01</a> 
+                      (Chapter 7 pp. 79-88) • 
+                      <em>Role: INDIVIDUAL_AUTONOMY</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "The highest form of wealth is the ability to wake up every morning and say, &quot;I can do whatever I want today.&quot;"
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH27-01" class="su-source-link">KU-BS-CH27-01</a> 
+                      (Chapter 27 part0033.html) • 
+                      <em>Role: COLLECTIVE_SOVEREIGNTY</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: HISTORICAL_SUBJECT</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "The revolution will ring the death knell of capitalism and imperialist exploitation."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Housel explicitly defines freedom as discretionary control over personal daily calendar.</p><p style="margin-bottom: 4px;">• Bhagat Singh’s HSRA manifesto defines freedom as systemic abolition of imperial rule and wage slavery.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Polysemy disambiguation preventing false conceptual equivalence.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-ETH-SURV-005">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-ETH-SURV-005</span>
+                <span class="badge badge-corroborated-fact">CONCEPTUAL LIMITATION</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: UNRESOLVED TENSION</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">Housel’s axiom that survival is the supreme imperative fails under existential anti-colonial struggle, where biological survival was voluntarily traded for ideological immortality.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-CH05-01" class="su-source-link">UNIT-POM-CH05-01</a> 
+                      (Chapter 5 pp. 57-68) • 
+                      <em>Role: SURVIVAL_IMPERATIVE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "More than I want big returns, I want to be financially unbreakable."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH49-01" class="su-source-link">KU-BS-CH49-01</a> 
+                      (Chapter 49 part0055.html) • 
+                      <em>Role: VOLUNTARY_MORTALITY</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: BIOGRAPHER</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Bhagat Singh refused to sign an appeal for mercy, choosing execution to inspire Indian youth."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Housel argues that ruin must be avoided at all costs.</p><p style="margin-bottom: 4px;">• Bhagat Singh intentionally courted execution to become a catalyst for mass resistance.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                <p style="margin-bottom: 4px;">• Survival in finance enables compounding; sacrifice in politics enables mass mobilization.</p>
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Demonstrating boundary condition of economic survival heuristics when mapped to revolutionary ethics.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-GEN-DEATH-006">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-GEN-DEATH-006</span>
+                <span class="badge badge-corroborated-fact">THEMATIC PARALLEL</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DISTINCT FRAME</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">Literary fiction and historical biography explore premature death through distinct ontological modes: private adolescent grief vs public political hunger strike martyrdom.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Norwegian Wood (Haruki Murakami)</strong>: 
+                      <a href="../distillations/norwegian-wood/index.html#SCENE-NW-02-02" class="su-source-link">SCENE-NW-02-02</a> 
+                      (Chapter 2 scene 2) • 
+                      <em>Role: FICTIONAL_TRAUMA</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: NARRATOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Kizuki died on a night in May when he was 17; he attached a rubber hose to his car exhaust."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH31-01" class="su-source-link">KU-BS-CH31-01</a> 
+                      (Chapter 31 part0037.html) • 
+                      <em>Role: ARCHIVAL_MARTYRDOM</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: BIOGRAPHER</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Jatin Das died on 13 September 1929 after a 63-day hunger strike in Lahore Central Jail."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Kizuki’s suicide is an internal literary trauma structuring narrator psychology.</p><p style="margin-bottom: 4px;">• Jatin Das’s death was an archival historical event triggering mass national protests across India.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Enforcing cross-genre boundary safety preventing category collapse between fiction and archival history.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-VOI-ELIT-007">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-VOI-ELIT-007</span>
+                <span class="badge badge-corroborated-fact">DISTINCT FRAME</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DISTINCT FRAME</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">Nagasawa’s fictional character elitism cannot be attributed to Murakami as an authorial contradiction of Housel’s analytical thesis on luck and risk.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Norwegian Wood (Haruki Murakami)</strong>: 
+                      <a href="../distillations/norwegian-wood/index.html#SCENE-NW-04-03" class="su-source-link">SCENE-NW-04-03</a> 
+                      (Chapter 4 scene 3) • 
+                      <em>Role: FICTIONAL_CHARACTER_VOICE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: NARRATOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Nagasawa boasts of his ability to master discipline and dominate others through superior willpower."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-CH02-01" class="su-source-link">UNIT-POM-CH02-01</a> 
+                      (Chapter 2 pp. 27-36) • 
+                      <em>Role: ANALYTICAL_AUTHOR_VOICE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Luck and risk are siblings. They are the reality that every outcome in life is guided by forces other than individual effort."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• In Norwegian Wood, Nagasawa is a character whose extreme philosophy is observed skeptically by narrator Toru.</p><p style="margin-bottom: 4px;">• In The Psychology of Money, Housel argues formally as an essayist on humility and systemic randomness.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Voice and genre boundary protection (FC-05) preventing character belief from being treated as authorial assertion.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-EVI-ROM-008">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-EVI-ROM-008</span>
+                <span class="badge badge-corroborated-fact">DISTINCT FRAME</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DISTINCT FRAME</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">Juss’s secondary conjecture regarding Bhagat Singh’s Kanpur romance must not be conflated with Toru Watanabe’s literary romantic interiority.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH21-01" class="su-source-link">KU-BS-CH21-01</a> 
+                      (Chapter 21 part0027.html) • 
+                      <em>Role: BIOGRAPHER_CONJECTURE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: HISTORICAL_SUBJECT</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Bhagat Singh wrote to Sukhdev: &quot;Love in itself is not bad... it elevates human character.&quot;"
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Norwegian Wood (Haruki Murakami)</strong>: 
+                      <a href="../distillations/norwegian-wood/index.html#SCENE-NW-02-05" class="su-source-link">SCENE-NW-02-05</a> 
+                      (Chapter 2 scene 5) • 
+                      <em>Role: LITERARY_DEVOTION</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: NARRATOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Toru walks with Naoko through Tokyo streets, tied by memory of Kizuki."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Bhagat Singh’s letter to Sukhdev is a philosophical defense of human emotional integrity, which Juss conjecturally interprets as a personal romance.</p><p style="margin-bottom: 4px;">• Toru Watanabe’s experiences are fictional aesthetic renderings of grief and attachment.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Preserves epistemic distinction between primary subject text, secondary biographer inference, and literary fiction.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-EVI-ANEC-009">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-EVI-ANEC-009</span>
+                <span class="badge badge-corroborated-fact">DISTINCT FRAME</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DISTINCT FRAME</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: HIGH
+              </div>
+            </div>
+
+            <h3 class="su-claim">Popular journalistic parables designed for behavioral instruction carry fundamentally distinct evidentiary status from judicial forensic police and autopsy records.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-INTRO-01" class="su-source-link">UNIT-POM-INTRO-01</a> 
+                      (Introduction pp. 1-8) • 
+                      <em>Role: PEDAGOGICAL_ANECDOTE</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Ronald James Read was an American philanthropist, investor, janitor, and gas station attendant."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH22-01" class="su-source-link">KU-BS-CH22-01</a> 
+                      (Chapter 22 part0028.html) • 
+                      <em>Role: FORENSIC_COURT_RECORD</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: BIOGRAPHER</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "FIR No. 121, Police Station Anarkali; Post-Mortem Report by Dr. C.H. Rai recording 8 bullet entry/exit wounds."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Housel uses Read’s life as an illustrative moral parable for saving habits.</p><p style="margin-bottom: 4px;">• Juss cites FIR 121 and post-mortem exhibits certified under criminal cross-examination.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Evidentiary stratification preventing journalistic anecdotes from claiming parity with forensic archival records.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-CAU-TAIL-010">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-CAU-TAIL-010</span>
+                <span class="badge badge-corroborated-fact">ANALYTICAL APPLICATION</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: PARTIAL OVERLAP</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: LOW
+              </div>
+            </div>
+
+            <h3 class="su-claim">[BKRS_CAUSAL_INFERENCE] Applying tail-event theory provides an explanatory lens for why a single violent operation (Saunders shooting) generated disproportionate macro-political mobilization.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-CH06-01" class="su-source-link">UNIT-POM-CH06-01</a> 
+                      (Chapter 6 pp. 69-78) • 
+                      <em>Role: ANALYTICAL_MODEL</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "You can be wrong half the time and still make a fortune because a small number of events drive most outcomes."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH22-01" class="su-source-link">KU-BS-CH22-01</a> 
+                      (Chapter 22 part0028.html) • 
+                      <em>Role: HISTORICAL_EVENT</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: BIOGRAPHER</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Saunders assassination on 17 December 1928 transformed the HSRA into a focal point of anti-colonial consciousness."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                <p style="margin-bottom: 4px;">• Housel demonstrates that distribution tails account for the majority of non-linear shifts.</p><p style="margin-bottom: 4px;">• HSRA carried out numerous small operations, but the Saunders killing produced overwhelmingly larger political impact.</p>
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                <p style="margin-bottom: 4px;">• Political direct action was motivated by righteous vengeance for Lala Lajpat Rai’s fatal police beating, not statistical tail optimization.</p><p style="margin-bottom: 4px;">• British state repression via Ordinance III was an institutional authoritarian reaction, not a market distribution dynamic.</p>
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Null hypothesis: HSRA actions were governed by nationalist moral outrage and Lenin-inspired vanguardism rather than probability distribution dynamics. Causal link is an analytical conjecture, NOT historical influence.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-QUA-CONFLICT-011">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-QUA-CONFLICT-011</span>
+                <span class="badge badge-corroborated-fact">DISTINCT FRAME</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: DISTINCT FRAME</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: LOW
+              </div>
+            </div>
+
+            <h3 class="su-claim">QUARANTINED CANDIDATE: Murakami’s Toru Watanabe was an active militant leader inspired by 1920s Indian revolutionary organizations.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Norwegian Wood (Haruki Murakami)</strong>: 
+                      <a href="../distillations/norwegian-wood/index.html#SCENE-NW-03-01" class="su-source-link">SCENE-NW-03-01</a> 
+                      (Chapter 3 scene 1) • 
+                      <em>Role: FICTIONAL_SETTING</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: NARRATOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Toru enters university during student strikes and ideological debates in late 1960s Tokyo."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH09-01" class="su-source-link">KU-BS-CH09-01</a> 
+                      (Chapter 9 part0015.html) • 
+                      <em>Role: HISTORICAL_SETTING</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: HISTORICAL_SUBJECT</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Bhagat Singh establishes the Naujawan Bharat Sabha in Lahore to mobilize youth against colonial subjugation."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                <p style="margin-bottom: 4px;">• Direct conflict with Book Master: Toru explicitly detests political ideology and hypocrisy of student factions in Norwegian Wood scene 8-10.</p>
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Rejected and quarantined due to direct contradiction with Book Master content.
+              </div>
+            
+          </article>
+        
+          <article class="synthesis-unit-card" id="SU-REJ-CAUSAL-012">
+            <div class="su-top-bar">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="su-id-badge">SU-REJ-CAUSAL-012</span>
+                <span class="badge badge-corroborated-fact">CAUSALLY RELATED</span>
+                <span class="badge badge-source-fact">BKRS DERIVED SYNTHETIC INFERENCE</span>
+                <span class="badge badge-biographer-thesis">FRAME: NOT CONTRADICTORY</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-subtle); font-family: var(--font-mono);">
+                CONFIDENCE: LOW
+              </div>
+            </div>
+
+            <h3 class="su-claim">REJECTED CANDIDATE: Morgan Housel’s financial writing directly influenced Bhagat Singh’s tactical revolutionary planning in 1928.</h3>
+
+            <!-- Source Traces -->
+            <div class="su-source-trace-box">
+              <div style="font-weight: 700; font-size: 0.76rem; text-transform: uppercase; color: var(--accent-slate);">
+                Constituent Source Units & Grounding Evidence:
+              </div>
+              
+                  <div class="su-source-row">
+                    <div>
+                      <strong>The Psychology of Money (Morgan Housel)</strong>: 
+                      <a href="../distillations/the-psychology-of-money/index.html#UNIT-POM-CH04-01" class="su-source-link">UNIT-POM-CH04-01</a> 
+                      (Chapter 4 pp. 45-56) • 
+                      <em>Role: PUBLISHED_WORK_2020</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: AUTHOR</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Compounding requires decades of persistence."
+                    </div>
+                  </div>
+                
+                  <div class="su-source-row">
+                    <div>
+                      <strong>Bhagat Singh: A Life in Revolution (Satvinder S. Juss)</strong>: 
+                      <a href="../distillations/bhagat-singh-a-life-in-revolution/index.html#KU-BS-CH22-01" class="su-source-link">KU-BS-CH22-01</a> 
+                      (Chapter 22 part0028.html) • 
+                      <em>Role: HISTORICAL_EVENT_1928</em> • 
+                      <span class="badge badge-source-fact" style="font-size:0.68rem;">Voice: BIOGRAPHER</span>
+                    </div>
+                    <div style="font-style: italic; color: var(--text-muted); margin-top: 2px;">
+                      "Saunders assassination on 17 December 1928."
+                    </div>
+                  </div>
+                
+            </div>
+
+            <!-- Evidence Breakdown -->
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-forest);">
+                <div class="su-evidence-title" style="color: var(--accent-forest);">Supporting Evidence</div>
+                
+              </div>
+              <div class="su-evidence-box" style="border-left: 3px solid var(--accent-crimson);">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Tension / Boundary Conditions</div>
+                <p style="margin-bottom: 4px;">• Gross anachronistic causal violation: Housel published in 2020, Bhagat Singh died in 1931.</p>
+              </div>
+            </div>
+
+            <!-- Rationale -->
+            
+              <div style="margin-top: 14px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+                <strong>Epistemic Rationale:</strong> Rejected due to reverse chronological causation violation and total lack of documentary evidence.
+              </div>
+            
+          </article>
+        
+    </section>
+
+    <!-- TAB 2: CANONICAL CONCEPTS -->
+    <section id="sec-concepts" class="portal-tab-content" style="display: none;">
+      <div style="margin-bottom: 20px;">
+        <h2 style="font-size: 1.5rem; color: var(--accent-crimson); margin-bottom: 4px;">Canonical Concept Registry</h2>
+        <p style="font-size: 0.92rem; color: var(--text-muted);">
+          Master cross-book concept dictionary resolving polysemy and enforcing strict mapping rules (e.g. distinguishing when books use the same word to mean fundamentally different things).
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-COMPOUNDING-DISCIPLINE</span>
+              <span class="badge badge-corroborated-fact">BEHAVIORAL_MESO</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Compounding Effects of Sustained Habitual Input</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The non-linear, geometric accumulation of long-term output resulting from continuous, iterative input over prolonged time horizons.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-COMPOUNDING</code>): 
+                  <em>"Compounding"</em> — Financial returns accumulating exponentially across long time horizons (Buffett effect). 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-PRISON-CULTIVATION</code>): 
+                  <em>"Revolutionary Study Routine"</em> — Systematic multi-volume ideological study inside colonial prison cells. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-RATIONALITY-FRAMEWORKS</span>
+              <span class="badge badge-corroborated-fact">UNIVERSAL_ABSTRACT</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Rationality vs Psychological Reasonableness</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The demarcation between cold computational/mathematical optimization and human emotional or dialectical alignment.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-REASONABLENESS</code>): 
+                  <em>"Reasonable &gt; Rational"</em> — Prioritizing emotional peace of mind and sleeping well over strict spreadsheet optimization. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">SAME_LABEL_DIFFERENT_CONCEPT</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-DIALECTICAL-REASON</code>): 
+                  <em>"Critical Reason and Realism"</em> — Unrelenting materialist rationality dismantling religious superstition and customary authority. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">SAME_LABEL_DIFFERENT_CONCEPT</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-FREEDOM-DISAMBIGUATION</span>
+              <span class="badge badge-corroborated-fact">UNIVERSAL_ABSTRACT</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Autonomous Agency and Liberty</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The degree of self-determination possessed by an entity relative to external institutional or economic constraints.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-CALENDAR-AUTONOMY</code>): 
+                  <em>"Controlling Your Time"</em> — The ability to do what you want, when you want, with whom you want, for as long as you want. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">SAME_LABEL_DIFFERENT_CONCEPT</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-ANTI-COLONIAL-LIBERATION</code>): 
+                  <em>"Azaadi / Complete Independence"</em> — The total overthrow of British imperialism and abolition of capitalist exploitation of human by human. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">SAME_LABEL_DIFFERENT_CONCEPT</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-SURVIVAL-VS-MARTYRDOM</span>
+              <span class="badge badge-corroborated-fact">BEHAVIORAL_MESO</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Life Preservation vs Ideological Martyrdom</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The normative hierarchy between physical survival and transcendent political/existential commitment.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-SURVIVAL-MINDSET</code>): 
+                  <em>"Staying Wealthy / Survival"</em> — Avoiding financial ruin at all costs so that compounding never breaks. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">RELATED_NON_EQUIVALENT</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-CONSCIOUS-SACRIFICE</code>): 
+                  <em>"Supreme Sacrifice"</em> — Embracing death on the gallows as an irreplaceable political weapon to mobilize India. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">RELATED_NON_EQUIVALENT</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-MORTALITY-CROSS-GENRE</span>
+              <span class="badge badge-corroborated-fact">EXPERIENTIAL_INTERIOR</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Existential Trauma of Mortality and Loss</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The psychological and collective repercussions of premature death across personal and political spheres.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>norwegian-wood</strong> (<code>NW-C-UNEXPLAINED-SUICIDE</code>): 
+                  <em>"Private Grief / Suicide"</em> — Inexplicable psychological rupture severing intimate youth relationships. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-POLITICAL-HUNGER-STRIKE</code>): 
+                  <em>"Penal Resistance Unto Death"</em> — 63-day hunger strike against brutal British jail discrimination culminating in death. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-MERIT-VS-LUCK</span>
+              <span class="badge badge-corroborated-fact">BEHAVIORAL_MESO</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Meritocratic Agency vs Systemic Luck/Risk</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The balance of attribution between personal competence/willpower and non-deterministic systemic randomness.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>norwegian-wood</strong> (<code>NW-C-NAGASAWA-ELITISM</code>): 
+                  <em>"Willful Elitism"</em> — A fictional character belief that elite discipline and indifference to social norms entitle one to dominate. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">SAME_LABEL_DIFFERENT_CONCEPT</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-LUCK-RISK-PRIMACY</code>): 
+                  <em>"Primacy of Luck and Risk"</em> — Authorial proposition that individual outcomes are heavily governed by forces outside personal control. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">SAME_LABEL_DIFFERENT_CONCEPT</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-OUTLIER-CATALYTIC-EVENTS</span>
+              <span class="badge badge-corroborated-fact">UNIVERSAL_ABSTRACT</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">High-Impact Tail Events and Direct Action Catalysts</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">Rare, extreme outlier occurrences that account for the overwhelming majority of subsequent system dynamics.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-TAIL-EVENTS</code>): 
+                  <em>"Tails, You Win"</em> — A tiny fraction of events drive the majority of investment returns and economic outcomes. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-CATALYTIC-ACTION</code>): 
+                  <em>"Propaganda by the Deed"</em> — A single dramatic assassination (Saunders) transforming an underground group into national icons. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-RESOURCE-MOBILIZATION</span>
+              <span class="badge badge-corroborated-fact">INSTITUTIONAL_MACRO</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Emergency Reserves and Underground Resource Mobilization</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The accumulation and strategic allocation of liquid reserves to survive unexpected shocks and enable covert operations.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-SAVINGS-BUFFER</code>): 
+                  <em>"Save Money for Unexpected Shocks"</em> — Accumulating cash reserves without a specific purchase goal to retain flexibility. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">PARTIAL_OVERLAP</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-KAKORI-DEFENSE-FUND</code>): 
+                  <em>"Political Defense Fund"</em> — Public and clandestine subscription campaigns to finance legal defense for arrested comrades. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">PARTIAL_OVERLAP</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-EARLY-EXPERIENCE-IMPRINTING</span>
+              <span class="badge badge-corroborated-fact">INDIVIDUAL_MICRO</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Experiential Conditioning of Adult Worldview</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">Early formative emotional and socioeconomic experiences permanently structuring adult psychological responses.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>norwegian-wood</strong> (<code>NW-C-SENSORY-TRIGGER</code>): 
+                  <em>"Somatic Sensory Anchor"</em> — Hearing an orchestral melody triggering immediate, overwhelming psychosomatic recall of youth grief. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-EXPERIENCE-BIAS</code>): 
+                  <em>"No One's Crazy"</em> — Personal experiences with money make up maybe 0.00000001% of what has happened, but 80% of how you think the world works. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">ANALOGICAL_RELATION</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-EXTENDED-TIME-HORIZON</span>
+              <span class="badge badge-corroborated-fact">UNIVERSAL_ABSTRACT</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Intergenerational Strategic Time Horizon</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The deliberate elongation of planning cycles far beyond short-term milestones to achieve structural transformation.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-LONG-HORIZON</code>): 
+                  <em>"Long Time Horizon"</em> — Staying invested across decades to allow economic compounding to materialize. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">FUNCTIONAL_EQUIVALENCE</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-EPOCHAL-HORIZON</code>): 
+                  <em>"Continuous Revolutionary Process"</em> — Revolution is not a momentary armed insurrection but an epochal historical process spanning generations. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">FUNCTIONAL_EQUIVALENCE</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-EVIDENTIARY-STANDARDS</span>
+              <span class="badge badge-corroborated-fact">INSTITUTIONAL_MACRO</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Forensic Judicial Verification vs Pedagogical Parable</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">The methodological divide between legal-evidentiary proof standards and narrative anecdotal illustration.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-POPULAR-ANECDOTE</code>): 
+                  <em>"Illustrative Anecdote"</em> — Narrative comparison of two contrasting individuals to communicate behavioral concepts. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">RELATED_NON_EQUIVALENT</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-FORENSIC-RECORD</code>): 
+                  <em>"Forensic Judicial Exhibit"</em> — Archival FIR, ballistic records, post-mortem findings submitted under criminal cross-examination. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">RELATED_NON_EQUIVALENT</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-AMBIGUOUS-CONCEPT-PROBE</span>
+              <span class="badge badge-corroborated-fact">UNIVERSAL_ABSTRACT</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Abstract Unanchored Existential Fulfillment</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">Diffuse, non-operationalized notions of subjective human meaning without clear institutional boundary conditions.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>norwegian-wood</strong> (<code>NW-C-EXISTENTIAL-VOID</code>): 
+                  <em>"Sense of Loss and Recovery"</em> — Navigating life after intimate grief. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">AMBIGUOUS_REQUIRES_REVIEW</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-ENOUGH</code>): 
+                  <em>"Knowing When You Have Enough"</em> — Freedom from endless materialistic comparison. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">AMBIGUOUS_REQUIRES_REVIEW</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>bhagat-singh-a-life-in-revolution</strong> (<code>BS-C-LIFE-PURPOSE</code>): 
+                  <em>"Devotion to Revolutionary Ideal"</em> — Subordinating individual existence to emancipation of humanity. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">AMBIGUOUS_REQUIRES_REVIEW</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-SYNONYMOUS-PRUDENCE</span>
+              <span class="badge badge-corroborated-fact">BEHAVIORAL_MESO</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Defensive Financial Margin of Safety</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">Maintaining excess operational buffers to absorb unforeseen variance without catastrophe.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-ROOM-FOR-ERROR</code>): 
+                  <em>"Room for Error"</em> — The wisdom of acknowledging that uncertainty and chance are an inescapable part of life. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">DIFFERENT_LABEL_SAME_CONCEPT</span>
+                </div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>the-psychology-of-money</strong> (<code>PM-C-MARGIN-OF-SAFETY</code>): 
+                  <em>"Margin of Safety"</em> — A buffer that enables survival under unforeseen negative outcomes. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">EXACT_EQUIVALENCE</span>
+                </div>
+              
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 6px; padding: 22px 26px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge">CC-UNMAPPED-CORPUS-OUTLIER</span>
+              <span class="badge badge-corroborated-fact">EXPERIENTIAL_INTERIOR</span>
+            </div>
+            <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 6px;">Uncorrelated Subject-Specific Terminology</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">A concept native to a specific source that shares zero conceptual, structural, or lexical overlap with any other work in the corpus.</p>
+            
+            <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: 4px; font-size: 0.86rem; line-height: 1.45;">
+              <div style="font-weight: 700; color: var(--accent-slate); margin-bottom: 4px;">Book-Specific Manifestations:</div>
+              
+                <div style="margin-bottom: 6px;">
+                  <strong>norwegian-wood</strong> (<code>NW-C-STORM-TROOPER-DORM</code>): 
+                  <em>"Storm Trooper Morning Calisthenics"</em> — Eccentric roommate ritual symbolizing rigid conformist discipline in a student dormitory. 
+                  <span class="badge badge-source-arg" style="font-size:0.68rem;">UNMAPPED</span>
+                </div>
+              
+            </div>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- TAB 3: DIALECTICAL TENSIONS & CONTRADICTIONS -->
+    <section id="sec-tensions" class="portal-tab-content" style="display: none;">
+      <div style="margin-bottom: 20px;">
+        <h2 style="font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 4px;">Audited Dialectical Tensions & Disputes</h2>
+        <p style="font-size: 0.92rem; color: var(--text-muted);">
+          BKRS never suppresses contradictions to manufacture false agreement. When books propose conflicting normative imperatives, they are preserved in this tension ledger.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-01</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Fails Gates 3, 4, 5, 6, 7, 8, and 10. The disagreement is an irreconcilable ethical tension between bourgeois self-preservation and revolutionary martyrdom, not a factual contradiction.
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-02</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Dissolved at Gate 2. The authors use the identical word &quot;freedom&quot; to denote completely distinct concepts (lexical polysemy).
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-03</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Dissolved at Gate 1 &amp; 2. The works operate within completely orthogonal epistemic frameworks.
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-04</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Fails Gates 3 and 6. While normative conclusions clash directly, Housel speaks strictly to micro-individual adaptation within an existing market system, whereas Bhagat Singh speaks to macro-revolutionary restructuring.
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-05</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Dissolved at Gate 7 and 8. A fictional character’s spoken worldview cannot form a factual or authorial contradiction with a nonfiction author’s thesis.
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-06</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Shares core logic regarding the disproportionate weight of outlier events, but differs in operational scope.
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-07</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Zero proposition or conceptual overlap.
+            </div>
+          </div>
+        
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-left: 4px solid var(--accent-gold); border-radius: 4px; padding: 20px 24px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+              <span class="su-id-badge" style="color: var(--accent-gold); background: rgba(184, 134, 11, 0.1);">CONT-GATE-08</span>
+              <span class="badge badge-biographer-thesis">UNRESOLVED_TENSION</span>
+            </div>
+            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 6px;">Unresolved Dialectical Tension</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;"></p>
+            
+            <div class="su-evidence-grid">
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-slate);">Position A (Book A)</div>
+                <p></p>
+              </div>
+              <div class="su-evidence-box">
+                <div class="su-evidence-title" style="color: var(--accent-crimson);">Position B (Book B)</div>
+                <p></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; font-size: 0.86rem; color: var(--text-subtle); font-style: italic;">
+              <strong>System Epistemic Determination:</strong> Evaluated empirical test confirming ballistic corroboration; no factual contradiction exists.
+            </div>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- TAB 4: FORENSIC BOUNDARIES & QUARANTINES -->
+    <section id="sec-quarantine" class="portal-tab-content" style="display: none;">
+      <div style="margin-bottom: 20px;">
+        <h2 style="font-size: 1.5rem; color: var(--accent-crimson); margin-bottom: 4px;">Forensic Boundaries, Quarantines & Rejected Propositions</h2>
+        <p style="font-size: 0.92rem; color: var(--text-muted);">
+          To guarantee zero hallucination, BKRS rigorously quarantines subjective speculation and rejects anachronistic or non-evidentiary claims.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        
+      </div>
+    </section>
+
+  </div>
+
+  <script src="../assets/js/reader-controls.js"></script>
+
+  <script>
+    function switchSection(secId, btn) {
+      document.querySelectorAll('.portal-tab-content').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.tab-nav-btn').forEach(b => b.classList.remove('active'));
+      const target = document.getElementById(secId);
+      if (target) target.style.display = 'block';
+      if (btn) btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
