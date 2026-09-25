@@ -101,12 +101,12 @@
       align-items: center;
       gap: 12px;
       text-decoration: none;
-      color: var(--text-main);
+      color: inherit;
     }
     .brand-logo {
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
     }
     .brand-meta {
       display: flex;
@@ -114,60 +114,58 @@
     }
     .brand-title {
       font-family: var(--font-display);
-      font-size: 0.88rem;
       font-weight: 700;
-      letter-spacing: 0.14em;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
+      color: var(--accent-gold);
     }
     .brand-sub {
       font-family: var(--font-sans);
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       color: var(--text-subtle);
-      letter-spacing: 0.04em;
     }
 
     .top-controls {
       display: flex;
       align-items: center;
-      gap: 14px;
-    }
-    .theme-toggle-group, .font-toggle-group {
-      display: flex;
-      background: var(--bg-card-subtle);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 2px;
+      gap: 12px;
     }
     .ctrl-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      font-family: var(--font-sans);
-      font-size: 0.76rem;
-      padding: 4px 10px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: all 0.15s ease;
-    }
-    .ctrl-btn.active, .ctrl-btn:hover {
       background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 5px 12px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .ctrl-btn:hover {
+      border-color: var(--accent-gold);
       color: var(--text-main);
-      box-shadow: var(--shadow-sm);
+    }
+    .ctrl-btn.active {
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+      color: #ffffff;
     }
 
     .hero-header {
-      padding: 64px 24px 44px;
+      padding: 64px 24px 32px;
       text-align: center;
       max-width: 960px;
       margin: 0 auto;
     }
     .hero-kicker {
       font-family: var(--font-sans);
-      font-size: 0.74rem;
-      letter-spacing: 0.22em;
+      font-size: 0.75rem;
+      font-weight: 700;
       text-transform: uppercase;
-      font-weight: 800;
+      letter-spacing: 0.15em;
       color: var(--accent-gold);
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       display: inline-block;
     }
     .hero-title {
@@ -240,77 +238,216 @@
     .view-navigation {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       margin-bottom: 40px;
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 16px;
-      max-width: 1100px;
+      max-width: 1160px;
       margin-left: auto;
       margin-right: auto;
+      flex-wrap: wrap;
     }
     .tab-btn {
       background: transparent;
-      border: none;
-      font-family: var(--font-sans);
-      font-size: 0.92rem;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 6px;
+      border: 1px solid var(--border-color);
       color: var(--text-muted);
+      padding: 10px 18px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 6px;
       cursor: pointer;
+      transition: all 0.2s;
       display: flex;
       align-items: center;
       gap: 8px;
-      transition: all 0.2s ease;
+    }
+    .tab-btn span {
+      font-size: 0.7rem;
+      color: var(--accent-gold);
+      font-weight: 800;
     }
     .tab-btn:hover {
+      border-color: var(--accent-gold);
       color: var(--text-main);
-      background: var(--bg-card-subtle);
     }
     .tab-btn.active {
-      color: var(--accent-gold);
       background: var(--bg-card);
-      border: 1px solid var(--border-color);
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
       box-shadow: var(--shadow-sm);
     }
 
     .main-container {
       max-width: var(--measure);
       margin: 0 auto;
-      padding: 0 24px 96px;
+      padding: 0 24px 80px;
     }
 
-    .filter-bar {
-      margin-bottom: 32px;
-      display: flex;
-      gap: 14px;
+    .search-box-wrapper {
+      margin-bottom: 30px;
     }
     .search-input {
-      flex: 1;
-      padding: 12px 18px;
-      border-radius: 6px;
-      border: 1px solid var(--border-color);
+      width: 100%;
       background: var(--bg-card);
-      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 14px 18px;
       font-family: var(--font-sans);
-      font-size: 0.94rem;
-      outline: none;
-      transition: border-color 0.2s ease;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s;
     }
-    .search-input:focus { border-color: var(--accent-gold); }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+    }
 
+    /* ROSETTA STONE STYLES */
+    .rosetta-intro-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .rosetta-intro-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+    .rosetta-intro-p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .rosetta-filter-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .rosetta-chip {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .rosetta-chip:hover, .rosetta-chip.active {
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+      color: #ffffff;
+    }
+
+    .rosetta-term-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 26px 28px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .rosetta-term-card:hover {
+      border-color: var(--border-color-focus);
+    }
+    .rosetta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .rosetta-term-title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .rosetta-category-badge {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      background: #b3862818;
+      color: var(--accent-gold);
+      border: 1px solid var(--accent-gold);
+    }
+    .rosetta-jargon-box {
+      background: var(--bg-card-subtle);
+      border-left: 3px solid var(--accent-crimson);
+      padding: 10px 16px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 16px;
+    }
+    .rosetta-definition {
+      font-size: 1.12rem;
+      line-height: 1.65;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+    .rosetta-analogy-box {
+      background: var(--bg-card-subtle);
+      border-left: 3px solid var(--accent-forest);
+      padding: 12px 18px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+    .rosetta-analogy-title {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-forest);
+      margin-bottom: 4px;
+    }
+    .rosetta-rule-box {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 12px;
+    }
+    .rosetta-authors {
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      color: var(--text-subtle);
+      margin-top: 8px;
+    }
+
+    /* UNIT CARD STYLES */
     .unit-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: 8px;
-      padding: 36px 36px 32px;
-      margin-bottom: 36px;
+      padding: 32px 36px;
+      margin-bottom: 32px;
       box-shadow: var(--shadow-sm);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .unit-card:hover { box-shadow: var(--shadow-md); }
     .unit-card-header {
-      margin-bottom: 18px;
+      margin-bottom: 20px;
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 16px;
     }
@@ -318,86 +455,76 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 8px;
-      font-family: var(--font-sans);
-      font-size: 0.74rem;
-      color: var(--text-subtle);
-      font-weight: 600;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .unit-number-tag {
-      color: var(--accent-gold);
-      letter-spacing: 0.08em;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
       text-transform: uppercase;
+      letter-spacing: 0.1em;
       font-weight: 700;
+      color: var(--accent-gold);
     }
     .unit-badge-epistemic {
-      padding: 2px 8px;
-      border-radius: 4px;
+      font-family: var(--font-sans);
       font-size: 0.68rem;
-      letter-spacing: 0.04em;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 4px;
       background: var(--bg-card-subtle);
       border: 1px solid var(--border-color);
       color: var(--text-muted);
     }
     .unit-title {
       font-family: var(--font-display);
-      font-size: 1.42rem;
+      font-size: 1.55rem;
       line-height: 1.3;
+      margin-bottom: 8px;
       color: var(--text-main);
-      margin-bottom: 6px;
     }
     .unit-scope-bar {
       font-family: var(--font-sans);
-      font-size: 0.78rem;
-      color: var(--text-muted);
+      font-size: 0.8rem;
+      color: var(--text-subtle);
       display: flex;
+      gap: 8px;
       flex-wrap: wrap;
-      gap: 12px;
     }
-
     .unit-core-concept {
-      background: var(--bg-card-subtle);
-      border-radius: 6px;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-      font-size: 1.05rem;
-      font-style: italic;
-      color: var(--text-main);
-      border-left: 3px solid var(--accent-gold);
-    }
-
-    .unit-audit-box {
-      font-family: var(--font-sans);
-      font-size: 0.82rem;
-      color: var(--accent-forest);
-      background: #225e4310;
-      border: 1px solid #225e4330;
-      border-radius: 4px;
-      padding: 8px 14px;
+      font-size: 1.15rem;
+      line-height: 1.7;
       margin-bottom: 20px;
       font-weight: 500;
+      color: var(--text-main);
     }
-
+    .unit-audit-box {
+      background: var(--bg-card-subtle);
+      border-left: 3px solid var(--accent-gold);
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      border-radius: 0 4px 4px 0;
+      line-height: 1.6;
+    }
     .unit-section-title {
       font-family: var(--font-sans);
       font-size: 0.76rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
       font-weight: 800;
-      color: var(--accent-bronze);
-      margin: 22px 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
     }
-
     .unit-tenets-list {
       list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
       margin-bottom: 24px;
     }
     .unit-tenet-item {
       position: relative;
       padding-left: 24px;
+      margin-bottom: 12px;
       font-size: 1.04rem;
       line-height: 1.68;
       color: var(--text-main);
@@ -411,7 +538,6 @@
       line-height: 1;
       top: 4px;
     }
-
     .unit-heuristic-box {
       border: 1px dashed var(--border-color);
       border-radius: 6px;
@@ -430,7 +556,6 @@
       font-size: 0.72rem;
       letter-spacing: 0.08em;
     }
-
     .unit-quote-box {
       background: var(--bg-card-subtle);
       border-radius: 6px;
@@ -443,8 +568,10 @@
       border-left: 2px solid var(--accent-gold);
     }
 
-    #view-b, #view-c { display: none; }
+    #view-stone { display: block; }
+    #view-a, #view-b, #view-c { display: none; }
 
+    /* MATRIX STYLES */
     .matrix-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -469,25 +596,27 @@
       background: var(--bg-card-subtle);
       padding: 16px;
       border-radius: 6px;
-      border: 1px solid var(--border-color);
-    }
-    .matrix-side-label {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: var(--accent-bronze);
-      margin-bottom: 6px;
-    }
-    .matrix-verdict {
-      background: #225e4312;
-      border: 1px solid #225e4335;
-      border-radius: 6px;
-      padding: 14px 18px;
       font-size: 0.95rem;
       line-height: 1.6;
     }
+    .matrix-side strong {
+      display: block;
+      margin-bottom: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+    }
+    .matrix-synthesis {
+      background: #b3862810;
+      border-left: 3px solid var(--accent-gold);
+      padding: 16px 20px;
+      border-radius: 0 6px 6px 0;
+      font-size: 1.02rem;
+      line-height: 1.65;
+    }
 
+    /* PROTOCOL STYLES */
     .protocol-step {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -576,35 +705,513 @@
     <div class="hero-badges">
       <span class="cert-pill highlight">★ 14 Works Synthesized</span>
       <span class="cert-pill">25 Invariant Units</span>
+      <span class="cert-pill">16 Decoded Key Terms</span>
       <span class="cert-pill">14 Movements</span>
-      <span class="cert-pill">Discrete Author Attribution Badges</span>
       <span class="cert-pill">Epistemic Pseudoscience Audit</span>
     </div>
 
     <div class="hero-axiom">
-      <div class="hero-axiom-title">The Master Manifestation Axiom</div>
+      <div class="hero-axiom-title">System Invariant Foundation</div>
       <div class="hero-axiom-quote">
-        “Manifestation is not magical physics; it is the systematic alignment of subconscious identity, cognitive attention (Reticular Activating System), neurobiological heart-brain coherence, emotional regulation, and courageous, high-leverage physical action.”
+        “Manifestation is not magical physics or light-bending wishcraft. It is the systematic convergence of subconscious identity, cognitive salience filtering (the Reticular Activating System), neurobiological heart-brain coherence, and courageous, high-integrity behavioral execution.”
       </div>
     </div>
   </header>
 
   <nav class="view-navigation">
-    <button class="tab-btn active" id="tab-a" onclick="switchView('a')">
-      <span>01.</span> Unified Synthesis Journey (25 Units)
+    <button class="tab-btn active" id="tab-stone" onclick="switchView('stone')">
+      <span>01.</span> Beginner's Rosetta Stone (Plain-English Decoder)
+    </button>
+    <button class="tab-btn" id="tab-a" onclick="switchView('a')">
+      <span>02.</span> Unified Synthesis Journey (25 Units)
     </button>
     <button class="tab-btn" id="tab-b" onclick="switchView('b')">
-      <span>02.</span> Cross-Source Dispute Matrix & Contradiction Index
+      <span>03.</span> Cross-Source Dispute Matrix & Contradiction Index
     </button>
     <button class="tab-btn" id="tab-c" onclick="switchView('c')">
-      <span>03.</span> The 24-Hour Master Operational Protocol
+      <span>04.</span> The 24-Hour Master Operational Protocol
     </button>
   </nav>
 
   <main class="main-container">
 
+    <!-- VIEW STONE: BEGINNER ROSETTA STONE -->
+    <section id="view-stone">
+      <div class="rosetta-intro-card">
+        <h2 class="rosetta-intro-title">The Beginner's Plain-English Decoder</h2>
+        <p class="rosetta-intro-p">
+          If this is your first time reading manifestation or neuroscience literature, don't be intimidated by the jargon. Every complex phrase in the 14 books maps to an intuitive psychological mechanism or an everyday physical habit. Use this interactive decoder to search or filter any term.
+        </p>
+      </div>
+
+      <div class="search-box-wrapper">
+        <input type="text" id="rosetta-search" class="search-input" placeholder="Search any term (e.g. SATS, RAS, Coherence, Hebbian, Allowing, Pain-Body)..." oninput="filterRosetta()">
+      </div>
+
+      <div class="rosetta-filter-chips">
+        <button class="rosetta-chip active" onclick="filterRosettaCategory('all')">All Terms (16)</button>
+        <button class="rosetta-chip" onclick="filterRosettaCategory('neuro')">Neuroscience & Mind</button>
+        <button class="rosetta-chip" onclick="filterRosettaCategory('mystic')">Mystical Decoded</button>
+        <button class="rosetta-chip" onclick="filterRosettaCategory('action')">Behavioral Action</button>
+        <button class="rosetta-chip" onclick="filterRosettaCategory('defense')">Critical Defense</button>
+      </div>
+
+      <div id="rosetta-wrapper">
+        
+          <article class="rosetta-term-card" data-category="neuro" data-term="reticular activating system (ras)" data-text="a bundle of nerves in your brainstem that acts as a spam filter, screening out 99.9% of sensory noise and only letting through what you have emotionally marked as critically important. “the universe aligns synchronicities when you vibrate at the right frequency.” (the secret) the search filter on an online store. when you search for 'red sneakers', the store doesn't magically manufacture shoes on the spot—it simply hides all the blue shirts so the red sneakers you previously ignored immediately catch your eye.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">Reticular Activating System (RAS)</h3>
+              <span class="rosetta-category-badge">Neuroscience & Attention</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “The universe aligns synchronicities when you vibrate at the right frequency.” (The Secret)
+            </div>
+
+            <div class="rosetta-definition">
+              A bundle of nerves in your brainstem that acts as a spam filter, screening out 99.9% of sensory noise and only letting through what you have emotionally marked as critically important.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              The search filter on an online store. When you search for 'red sneakers', the store doesn't magically manufacture shoes on the spot—it simply hides all the blue shirts so the red sneakers you previously ignored immediately catch your eye.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Write down your single highest-priority goal every morning so your brain's radar spots relevant people, emails, and opportunities during the day.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Dr. Joe Dispenza • Roxie Nafousi
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="mystic" data-term="state akin to sleep (sats)" data-text="the drowsy, relaxed mental state (theta brainwave rhythm) experienced in the 5–10 minutes right before you fall asleep at night or immediately upon waking. “entering the fourth dimension where imagination becomes physical fact.” (neville goddard) your conscious mind is like a strict security guard at the gate of your brain. during sats, the guard gets sleepy and nods off, allowing you to walk right into your subconscious memory bank and install new beliefs without argument.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">State Akin to Sleep (SATS)</h3>
+              <span class="rosetta-category-badge">Cognitive State & Hypnagogia</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Entering the fourth dimension where imagination becomes physical fact.” (Neville Goddard)
+            </div>
+
+            <div class="rosetta-definition">
+              The drowsy, relaxed mental state (theta brainwave rhythm) experienced in the 5–10 minutes right before you fall asleep at night or immediately upon waking.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              Your conscious mind is like a strict security guard at the gate of your brain. During SATS, the guard gets sleepy and nods off, allowing you to walk right into your subconscious memory bank and install new beliefs without argument.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Never fall asleep scrolling bad news or worrying about bills; loop a 5-second mental clip of your desired outcome being already true until you drift off.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Neville Goddard • Dr. Joseph Murphy (Baudouin Technique)
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="action" data-term="the law of reversed effort" data-text="when your conscious will ('i must force this to happen!') clashes with your subconscious imagination ('i am terrified i will fail'), your imagination always wins and the fear gets amplified. “force negates itself; trying too hard repels your manifestation.” (arden g.) a chinese finger trap. the harder and more frantically you yank your fingers outward, the tighter the woven mesh traps you. to get free, you must relax, push inward, and soften the tension.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The Law of Reversed Effort</h3>
+              <span class="rosetta-category-badge">Behavioral Psychology</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Force negates itself; trying too hard repels your manifestation.” (Arden G.)
+            </div>
+
+            <div class="rosetta-definition">
+              When your conscious will ('I must force this to happen!') clashes with your subconscious imagination ('I am terrified I will fail'), your imagination always wins and the fear gets amplified.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              A Chinese finger trap. The harder and more frantically you yank your fingers outward, the tighter the woven mesh traps you. To get free, you must relax, push inward, and soften the tension.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Stop straining to 'force' positive thinking. Instead, relax your body completely and focus solely on the quiet relief of the end result.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Dr. Joseph Murphy • Émile Coué • Arden G.
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="neuro" data-term="heart-brain coherence & hrv" data-text="synchronizing your breathing and heart rhythm (heart rate variability) with calm brainwaves, signaling to your body that you are safe rather than in emergency fight-or-flight survival. “broadcasting an elevated electromagnetic signal into the quantum field.” (becoming supernatural) an orchestra tuning their instruments before a performance. when musicians play out of rhythm, it's painful racket (stress & cortisol). when they lock into the same smooth tempo, it becomes powerful, harmonious music.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">Heart-Brain Coherence & HRV</h3>
+              <span class="rosetta-category-badge">Psychoneuroimmunology & Somatics</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Broadcasting an elevated electromagnetic signal into the quantum field.” (Becoming Supernatural)
+            </div>
+
+            <div class="rosetta-definition">
+              Synchronizing your breathing and heart rhythm (Heart Rate Variability) with calm brainwaves, signaling to your body that you are safe rather than in emergency fight-or-flight survival.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              An orchestra tuning their instruments before a performance. When musicians play out of rhythm, it's painful racket (stress & cortisol). When they lock into the same smooth tempo, it becomes powerful, harmonious music.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Place your hand on your chest, breathe slowly in and out through your heart for 3 minutes, and recall a memory of profound gratitude.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Dr. Joe Dispenza • HeartMath Institute
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="neuro" data-term="hebbian neuroplasticity ('fire & wire')" data-text="neurons that fire together wire together. whenever you repeat a thought, emotion, or action, your brain builds and insulates a physical highway so doing it again requires zero conscious effort. “quantum rewiring of your cellular vibration.” (dispenza) walking across a wild, overgrown grassy field every morning. on day one, the tall grass trips you up. by day 30, your repeated footsteps have carved a smooth dirt trail that you can walk with your eyes closed.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">Hebbian Neuroplasticity ('Fire & Wire')</h3>
+              <span class="rosetta-category-badge">Neuroscience</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Quantum rewiring of your cellular vibration.” (Dispenza)
+            </div>
+
+            <div class="rosetta-definition">
+              Neurons that fire together wire together. Whenever you repeat a thought, emotion, or action, your brain builds and insulates a physical highway so doing it again requires zero conscious effort.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              Walking across a wild, overgrown grassy field every morning. On day one, the tall grass trips you up. By day 30, your repeated footsteps have carved a smooth dirt trail that you can walk with your eyes closed.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Catching yourself in an old negative thought pattern isn't a failure—it is the literal moment you starve the old neural highway of electricity.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Donald Hebb • Dr. Joe Dispenza
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="action" data-term="the law of assumption & 'living in the end'" data-text="adopting the internal identity, confidence, and calmness of the person who already possesses the result, preventing you from acting like a needy beggar in real-world negotiations. “assume the feeling of the wish fulfilled until it hardens into fact.” (feeling is the secret) ordering a package on amazon. you don't spend three days pacing by the front door chewing your fingernails wondering if amazon exists; you receive the confirmation, assume the box is arriving, and calmly go about your life.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The Law of Assumption & 'Living in the End'</h3>
+              <span class="rosetta-category-badge">Mindset & Subconscious Identity</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Assume the feeling of the wish fulfilled until it hardens into fact.” (Feeling Is the Secret)
+            </div>
+
+            <div class="rosetta-definition">
+              Adopting the internal identity, confidence, and calmness of the person who already possesses the result, preventing you from acting like a needy beggar in real-world negotiations.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              Ordering a package on Amazon. You don't spend three days pacing by the front door chewing your fingernails wondering if Amazon exists; you receive the confirmation, assume the box is arriving, and calmly go about your life.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Ask yourself: 'If this goal were already guaranteed, how would I walk, breathe, and speak to people today?' Then act from that calm assurance.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Neville Goddard
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="action" data-term="detachment / the art of allowing" data-text="putting 100% of your effort into the daily work while letting go of the obsessive need to control the exact timeline, person, or mechanism that delivers the result. “surrendering your desires to the universe to allow them into your physical reality.” (ask and it is given) dating. if someone on a first date is frantic, clingy, and demands an immediate lifetime marriage commitment, they scare everyone away. confidence means being your best self without demanding an instant guarantee.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">Detachment / The Art of Allowing</h3>
+              <span class="rosetta-category-badge">Emotional Regulation</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Surrendering your desires to the universe to allow them into your physical reality.” (Ask and It Is Given)
+            </div>
+
+            <div class="rosetta-definition">
+              Putting 100% of your effort into the daily work while letting go of the obsessive need to control the exact timeline, person, or mechanism that delivers the result.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              Dating. If someone on a first date is frantic, clingy, and demands an immediate lifetime marriage commitment, they scare everyone away. Confidence means being your best self without demanding an instant guarantee.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Commit ruthlessly to your daily inputs (the pitch, the workout, the study session), but surrender attachment to whether the answer arrives on Tuesday or next month.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Arden G. • Esther & Jerry Hicks • Florence Scovel Shinn
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="action" data-term="concept of self / 'i am' consciousness" data-text="your subconscious internal thermostat—the baseline level of wealth, love, and respect you privately believe you deserve and feel comfortable tolerating. “you never attract what you want; you attract what you are.” (the power of awareness) an air conditioner set to 68 degrees. if a sudden blast of heat enters the room (e.g., an unexpected financial windfall), the ac blasts cold air until the room is back at 68 (spending it all) unless you manually reprogram the dial.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">Concept of Self / 'I AM' Consciousness</h3>
+              <span class="rosetta-category-badge">Self-Worth & Identity</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “You never attract what you want; you attract what you ARE.” (The Power of Awareness)
+            </div>
+
+            <div class="rosetta-definition">
+              Your subconscious internal thermostat—the baseline level of wealth, love, and respect you privately believe you deserve and feel comfortable tolerating.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              An air conditioner set to 68 degrees. If a sudden blast of heat enters the room (e.g., an unexpected financial windfall), the AC blasts cold air until the room is back at 68 (spending it all) unless you manually reprogram the dial.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Elevate your self-worth before chasing the external prize; otherwise, you will unconsciously sabotage what you acquire.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Neville Goddard • Dr. Joseph Murphy • Roxie Nafousi
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="action" data-term="the emotional guidance scale (22 rungs)" data-text="a psychological map showing that you cannot jump instantly from deep depression to joy. stepping into anger or frustration is actually healthy progress because it has more energy and agency than helpless despair. “vibrational frequencies ranging from joy/freedom at rung 1 down to fear/grief at rung 22.” (hicks) shifting gears in a manual car. you cannot shift straight from reverse gear into fifth gear on the highway without destroying the transmission; you must shift through neutral, first, second, and third.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The Emotional Guidance Scale (22 Rungs)</h3>
+              <span class="rosetta-category-badge">Emotional Reframing</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Vibrational frequencies ranging from Joy/Freedom at Rung 1 down to Fear/Grief at Rung 22.” (Hicks)
+            </div>
+
+            <div class="rosetta-definition">
+              A psychological map showing that you cannot jump instantly from deep depression to joy. Stepping into anger or frustration is actually healthy progress because it has more energy and agency than helpless despair.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              Shifting gears in a manual car. You cannot shift straight from reverse gear into fifth gear on the highway without destroying the transmission; you must shift through neutral, first, second, and third.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>If you feel depressed or helpless, don't force fake positivity. Channel anger or constructive frustration into cleaning your desk or taking a brisk walk.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Esther & Jerry Hicks
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="neuro" data-term="the pain-body" data-text="the accumulated backlog of old emotional trauma and unresolved childhood grievances that temporarily takes over your thoughts, provoking fights or drama just to re-experience familiarity. “a semi-autonomous energetic life-form feeding on emotional misery.” (the power of now) an argumentative roommate inside your head who feeds on drama. the key is not to fight or argue with him, but to simply watch him quietly until he runs out of breath and sits down.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The Pain-Body</h3>
+              <span class="rosetta-category-badge">Ego Transcendence & Mindfulness</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “A semi-autonomous energetic life-form feeding on emotional misery.” (The Power of Now)
+            </div>
+
+            <div class="rosetta-definition">
+              The accumulated backlog of old emotional trauma and unresolved childhood grievances that temporarily takes over your thoughts, provoking fights or drama just to re-experience familiarity.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              An argumentative roommate inside your head who feeds on drama. The key is not to fight or argue with him, but to simply watch him quietly until he runs out of breath and sits down.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>When you feel an irrational urge to start an argument or wallow in old resentment, pause and say: 'The pain-body is trying to feed. I am the conscious watcher, not the drama.'</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Eckhart Tolle
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="mystic" data-term="the divine design & casting the burden" data-text="trusting that your unique strengths and values have a natural, harmonious place in the world, and stopping the exhausting struggle to force outcomes that violate your integrity. “the divine pattern for your life which cannot be defeated by human will.” (the game of life) floating down a gentle river in a kayak instead of furiously paddling upstream against rapids until your shoulders dislocate.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The Divine Design & Casting the Burden</h3>
+              <span class="rosetta-category-badge">Intuitive Metaphysics</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “The divine pattern for your life which cannot be defeated by human will.” (The Game of Life)
+            </div>
+
+            <div class="rosetta-definition">
+              Trusting that your unique strengths and values have a natural, harmonious place in the world, and stopping the exhausting struggle to force outcomes that violate your integrity.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              Floating down a gentle river in a kayak instead of furiously paddling upstream against rapids until your shoulders dislocate.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>When facing an insurmountable bureaucratic or personal deadlock, say: 'I cast this burden onto my deeper intelligence, and I accept the harmonious solution under grace.'</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Florence Scovel Shinn
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="action" data-term="the 'universe test'" data-text="a predictable psychological obstacle or temptation (like a toxic ex-partner texting or an easy shortcut) that tests whether you have genuinely changed your standards or will slide back into old patterns. “the cosmos testing your energetic vibration before granting your manifestation.” (manifest) a pop quiz on day 10 of a healthy diet when a colleague brings a box of warm chocolate donuts to the office. it's not a mystical trap; it's a test of whether your new identity has a spine.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The 'Universe Test'</h3>
+              <span class="rosetta-category-badge">Behavioral Resilience</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “The cosmos testing your energetic vibration before granting your manifestation.” (Manifest)
+            </div>
+
+            <div class="rosetta-definition">
+              A predictable psychological obstacle or temptation (like a toxic ex-partner texting or an easy shortcut) that tests whether you have genuinely changed your standards or will slide back into old patterns.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              A pop quiz on day 10 of a healthy diet when a colleague brings a box of warm chocolate donuts to the office. It's not a mystical trap; it's a test of whether your new identity has a spine.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>When an old toxic situation reappears just as your life is improving, treat it as a test: uphold your boundary, smile, and say no without drama.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Roxie Nafousi
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="defense" data-term="the just-world fallacy (the victim-blaming error)" data-text="a toxic cognitive bias where people falsely believe the universe always rewards good people and punishes bad people, leading them to cruelly blame victims of war, cancer, or natural disasters for their 'bad thoughts.' “there are no accidents; people attract their own poverty, disease, and abuse.” (the secret / pop law of attraction) claiming someone whose house was destroyed by a hurricane lost their home because they 'didn't smile enough,' instead of recognizing the physical category 5 hurricane. it is pseudoscientific delusion.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The Just-World Fallacy (The Victim-Blaming Error)</h3>
+              <span class="rosetta-category-badge">Critical Defense & Ethics</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “There are no accidents; people attract their own poverty, disease, and abuse.” (The Secret / Pop Law of Attraction)
+            </div>
+
+            <div class="rosetta-definition">
+              A toxic cognitive bias where people falsely believe the universe always rewards good people and punishes bad people, leading them to cruelly blame victims of war, cancer, or natural disasters for their 'bad thoughts.'
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              Claiming someone whose house was destroyed by a hurricane lost their home because they 'didn't smile enough,' instead of recognizing the physical category 5 hurricane. It is pseudoscientific delusion.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Use manifestation exclusively to govern your own psychology and daily choices; never use it to judge, blame, or invalidate the real-world suffering of others.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Forensic Refutation by Intellectualist Codex
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="defense" data-term="pacing and leading" data-text="a psychological persuasion tactic where an influencer matches your body language, tone, and private complaints (pacing) to win your trust, then steers your wallet toward their expensive masterclass (leading). “charismatic vibrational resonance.” (commercial gurus) a street tour guide matching your slow walking pace for three minutes so you feel at ease, then casually turning a corner and leading you straight into his cousin's overpriced rug shop.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">Pacing and Leading</h3>
+              <span class="rosetta-category-badge">Persuasion & Guru Defense</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Charismatic vibrational resonance.” (Commercial Gurus)
+            </div>
+
+            <div class="rosetta-definition">
+              A psychological persuasion tactic where an influencer matches your body language, tone, and private complaints (pacing) to win your trust, then steers your wallet toward their expensive masterclass (leading).
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              A street tour guide matching your slow walking pace for three minutes so you feel at ease, then casually turning a corner and leading you straight into his cousin's overpriced rug shop.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Whenever a manifestation coach makes you feel deeply understood before asking for a $2,000 credit card swipe, step back and ask: 'What concrete skill am I actually buying?'</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Jeffery Dawson (Mind Control)
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="neuro" data-term="the unmanifested / psychological time" data-text="the quiet, spacious awareness behind your racing thoughts, accessible only when you stop reliving yesterday's guilt or dreading tomorrow's meetings and ground your senses in the present room. “the formless realm of being from which all physical matter arises.” (the power of now) the vast blue sky behind heavy storm clouds. the stormy clouds (worries, bills, arguments) rage and drift, but the sky itself is never scratched, burned, or destroyed.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">The Unmanifested / Psychological Time</h3>
+              <span class="rosetta-category-badge">Existential Philosophy</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “The formless realm of Being from which all physical matter arises.” (The Power of Now)
+            </div>
+
+            <div class="rosetta-definition">
+              The quiet, spacious awareness behind your racing thoughts, accessible only when you stop reliving yesterday's guilt or dreading tomorrow's meetings and ground your senses in the present room.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              The vast blue sky behind heavy storm clouds. The stormy clouds (worries, bills, arguments) rage and drift, but the sky itself is never scratched, burned, or destroyed.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Take 60 seconds right now: feel the weight of your feet on the floor and the air moving into your nostrils. Your worries exist only in thought; the room is peaceful.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Eckhart Tolle
+            </div>
+          </article>
+          
+          <article class="rosetta-term-card" data-category="action" data-term="aligned action vs. 'secret couch fallacy'" data-text="visualization and mindset conditioning exist to calm your nervous system so you can take terrifying, high-leverage physical actions in the real world—not to sit on the couch waiting for money to fall from the sky. “vibrational alignment is 99% of creation; physical effort is secondary.” (the secret / hicks) an olympic archer visualizing the arrow piercing the center of the bullseye 100 times before drawing the bow. the mental rehearsal ensures steady nerves, but she still has to pull the string and release the arrow.">
+            <header class="rosetta-header">
+              <h3 class="rosetta-term-title">Aligned Action vs. 'Secret Couch Fallacy'</h3>
+              <span class="rosetta-category-badge">Behavioral Execution</span>
+            </header>
+
+            <div class="rosetta-jargon-box">
+              <strong>What the Books Claim:</strong> “Vibrational alignment is 99% of creation; physical effort is secondary.” (The Secret / Hicks)
+            </div>
+
+            <div class="rosetta-definition">
+              Visualization and mindset conditioning exist to calm your nervous system so you can take terrifying, high-leverage physical actions in the real world—not to sit on the couch waiting for money to fall from the sky.
+            </div>
+
+            <div class="rosetta-analogy-box">
+              <div class="rosetta-analogy-title">The Everyday Analogy</div>
+              An Olympic archer visualizing the arrow piercing the center of the bullseye 100 times before drawing the bow. The mental rehearsal ensures steady nerves, but she still has to pull the string and release the arrow.
+            </div>
+
+            <div class="rosetta-rule-box">
+              <strong>Action Rule:</strong> <span>Never conclude a morning visualization session without identifying the single most uncomfortable real-world action you will execute today.</span>
+            </div>
+
+            <div class="rosetta-authors">
+              <strong>Source Footprint:</strong> Dr. Joe Dispenza • Roxie Nafousi • Dr. Joseph Murphy
+            </div>
+          </article>
+          
+      </div>
+    </section>
+
+    <!-- VIEW A: 25 INVARIANT UNITS -->
     <section id="view-a">
-      <div class="filter-bar">
+      <div class="search-box-wrapper">
         <input type="text" id="unit-search" class="search-input" placeholder="Search concepts or authors (e.g. Dispenza, Neville, SATS, Tolle, Shinn, Heart Coherence)..." oninput="filterUnits()">
       </div>
 
@@ -639,7 +1246,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Guard the gates of conscious thought; never allow fear, cynical humor, or hostile third-party suggestions to take root in the subjective psyche.
+            <div>Guard the gates of conscious thought; never allow fear, cynical humor, or hostile third-party suggestions to take root in the subjective psyche.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -676,7 +1283,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Eliminate mental strain; when seeking an outcome, imagine the relief and satisfaction of the completed result rather than the arduous mechanics of achieving it.
+            <div>Eliminate mental strain; when seeking an outcome, imagine the relief and satisfaction of the completed result rather than the arduous mechanics of achieving it.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -713,7 +1320,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            To manifest a new reality, you must become greater than your environment, greater than your body's emotional addictions, and greater than chronological time.
+            <div>To manifest a new reality, you must become greater than your environment, greater than your body's emotional addictions, and greater than chronological time.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -750,7 +1357,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Never combine a new vision with an old survival emotion (frustration, anxiety, impatience); align the elevated thought with the elevated somatic feeling of gratitude.
+            <div>Never combine a new vision with an old survival emotion (frustration, anxiety, impatience); align the elevated thought with the elevated somatic feeling of gratitude.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -787,7 +1394,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Never go to sleep feeling discouraged, anxious, or incomplete; assume the feeling of the wish fulfilled and fall asleep in the atmosphere of victory.
+            <div>Never go to sleep feeling discouraged, anxious, or incomplete; assume the feeling of the wish fulfilled and fall asleep in the atmosphere of victory.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -824,7 +1431,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Disregard external appearances and the evidence of the physical senses; sustain the assumption that you already are what you desire to be.
+            <div>Disregard external appearances and the evidence of the physical senses; sustain the assumption that you already are what you desire to be.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -861,7 +1468,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Speak only words of blessing, prosperity, and peace; cast your heaviest anxieties out of your conscious mind through a definitive spoken decree.
+            <div>Speak only words of blessing, prosperity, and peace; cast your heaviest anxieties out of your conscious mind through a definitive spoken decree.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -898,7 +1505,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Do not use the present moment as a mere stepping stone to a fictitious future; bring your entire awareness into the Now, and let aligned action flow from stillness.
+            <div>Do not use the present moment as a mere stepping stone to a fictitious future; bring your entire awareness into the Now, and let aligned action flow from stillness.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -935,7 +1542,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Practice 10 minutes of relaxed mental visualization daily, concluding by releasing the image with the affirmation: 'This, or something even better, now manifests for me in totally satisfying and harmonious ways, for the highest good of all concerned.'
+            <div>Practice 10 minutes of relaxed mental visualization daily, concluding by releasing the image with the affirmation: 'This, or something even better, now manifests for me in totally satisfying and harmonious ways, for the highest good of all concerned.'</div>
           </div>
 
           <div class="unit-quote-box">
@@ -972,7 +1579,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Treat the three-step formula not as a magical wish-granting incantation, but as an optimization protocol for attentional salience and decision congruence.
+            <div>Treat the three-step formula not as a magical wish-granting incantation, but as an optimization protocol for attentional salience and decision congruence.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1009,7 +1616,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Do not repress negative emotion with fake smiles; identify where you sit on the 22-rung spectrum and reach for the best-feeling thought that is genuinely believable in that moment.
+            <div>Do not repress negative emotion with fake smiles; identify where you sit on the 22-rung spectrum and reach for the best-feeling thought that is genuinely believable in that moment.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1046,7 +1653,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Cease obsessing over the mechanics of 'how' and 'when'; train attention to dwell in the somatic feeling of relief and completion.
+            <div>Cease obsessing over the mechanics of 'how' and 'when'; train attention to dwell in the somatic feeling of relief and completion.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1083,7 +1690,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Identify your core subconscious limiting belief (e.g., 'I am not enough') and systematically construct daily behavioral evidence that contradicts it.
+            <div>Identify your core subconscious limiting belief (e.g., 'I am not enough') and systematically construct daily behavioral evidence that contradicts it.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1120,7 +1727,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Adopt the internal mantra: 'What is meant for me will not pass me.' Stop checking the soil every ten minutes to see if the seed has sprouted.
+            <div>Adopt the internal mantra: 'What is meant for me will not pass me.' Stop checking the soil every ten minutes to see if the seed has sprouted.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1157,7 +1764,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Ask yourself daily: 'What would the person I am manifesting becoming do in this situation?' and immediately execute that action, regardless of discomfort.
+            <div>Ask yourself daily: 'What would the person I am manifesting becoming do in this situation?' and immediately execute that action, regardless of discomfort.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1194,7 +1801,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            View setbacks and low-value temptations not as cosmic punishments, but as final exams designed to confirm whether you have genuinely outgrown your past.
+            <div>View setbacks and low-value temptations not as cosmic punishments, but as final exams designed to confirm whether you have genuinely outgrown your past.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1231,7 +1838,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Practice daily somatic gratitude: do not just list items mentally; feel the warmth in your chest and belly for three specific things for at least 60 seconds.
+            <div>Practice daily somatic gratitude: do not just list items mentally; feel the warmth in your chest and belly for three specific things for at least 60 seconds.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1268,7 +1875,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            The moment envy stings your heart on social media, bless that person silently: 'I rejoice in your success, and I claim the same possibility for myself.'
+            <div>The moment envy stings your heart on social media, bless that person silently: 'I rejoice in your success, and I claim the same possibility for myself.'</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1305,7 +1912,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            As you drift off to sleep, systematically loop your short scene of fulfillment until sleep overtakes you; let your last waking thought be the feeling of the wish fulfilled.
+            <div>As you drift off to sleep, systematically loop your short scene of fulfillment until sleep overtakes you; let your last waking thought be the feeling of the wish fulfilled.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1342,7 +1949,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Repeat silently several times daily: 'I like money. I love it. I use it wisely, constructively, and judiciously. Money is constantly circulating in my life.'
+            <div>Repeat silently several times daily: 'I like money. I love it. I use it wisely, constructively, and judiciously. Money is constantly circulating in my life.'</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1379,7 +1986,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Become the person you are looking for; your soulmate is the biological and psychological mirror of your own internal self-respect.
+            <div>Become the person you are looking for; your soulmate is the biological and psychological mirror of your own internal self-respect.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1416,7 +2023,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Use mental affirmations and peaceful emotional states to optimize your nervous system and immune vitality, while always utilizing modern medical science.
+            <div>Use mental affirmations and peaceful emotional states to optimize your nervous system and immune vitality, while always utilizing modern medical science.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1453,7 +2060,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Audit who controls your subconscious inputs: if someone promises you effortless wealth while asking you to surrender critical logic, they are manipulating you, not teaching manifestation.
+            <div>Audit who controls your subconscious inputs: if someone promises you effortless wealth while asking you to surrender critical logic, they are manipulating you, not teaching manifestation.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1490,7 +2097,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Reject magical shortcuts; view manifestation as the convergence of high subconscious self-worth, radical focus, and relentless, high-integrity behavioral execution.
+            <div>Reject magical shortcuts; view manifestation as the convergence of high subconscious self-worth, radical focus, and relentless, high-integrity behavioral execution.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1527,7 +2134,7 @@
 
           <div class="unit-heuristic-box">
             <div class="unit-heuristic-title">Operational Heuristic & Behavioral Maxim</div>
-            Execute the 24-hour protocol with relentless consistency for 30 consecutive days; evaluate results based on objective behavioral output and emotional resilience.
+            <div>Execute the 24-hour protocol with relentless consistency for 30 consecutive days; evaluate results based on objective behavioral output and emotional resilience.</div>
           </div>
 
           <div class="unit-quote-box">
@@ -1538,127 +2145,111 @@
       </div>
     </section>
 
+    <!-- VIEW B: DISPUTE MATRIX -->
     <section id="view-b">
       <div class="matrix-card">
         <h3 class="matrix-title">Dispute 1: Action vs. Pure Vibrational Alignment</h3>
         <div class="matrix-sides">
           <div class="matrix-side">
-            <div class="matrix-side-label">The Pop Manifestation Thesis (Byrne, Hicks)</div>
-            <p>Physical action is secondary or unnecessary. "99% of your creation is completed before you see any evidence." Forcing action creates resistance; reality rearranges itself effortlessly if vibration matches.</p>
+            <strong>The Byrne & Hicks Stance</strong>
+            Physical action is secondary. Hicks asserts that 99% of your creation is completed before any physical evidence appears; forcing action without alignment causes friction and failure.
           </div>
           <div class="matrix-side">
-            <div class="matrix-side-label">The Behavioral & Neurobiological Reality (Dispenza, Nafousi, Murphy, Dawson)</div>
-            <p>Action is the physical currency of reality. Nafousi dismantles the "Secret Couch Fallacy": sitting at home visualizing checks without proactive, uncomfortable behavioral execution is delusional.</p>
+            <strong>The Dispenza, Murphy & Nafousi Stance</strong>
+            Action is the physical currency of reality. Visualizing without uncomfortable action is merely the "Secret Couch Fallacy"; action creates the physical conduit for opportunities.
           </div>
         </div>
-        <div class="matrix-verdict">
-          <strong>Unified Synthesis Verdict:</strong> Visualization does not replace action; it <em>conditions the nervous system</em> to execute difficult, high-leverage actions without cognitive paralysis. Alignment without action is daydreaming; action without alignment is burnout.
-        </div>
-      </div>
-
-      <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 2: Future Desires vs. The Present Moment</h3>
-        <div class="matrix-sides">
-          <div class="matrix-side">
-            <div class="matrix-side-label">The Assumption School (Neville Goddard, Rhonda Byrne)</div>
-            <p>Demand mentally projecting awareness into a future fulfilled reality ("Living in the end") to collapse time and imprint the subconscious.</p>
-          </div>
-          <div class="matrix-side">
-            <div class="matrix-side-label">The Philosophy of Presence (Eckhart Tolle)</div>
-            <p>Warns that chronic mental future-projection is an egoic delusion that breeds psychological time and anxiety. Creation only ever happens in the timeless Now.</p>
-          </div>
-        </div>
-        <div class="matrix-verdict">
-          <strong>Unified Synthesis Verdict:</strong> Anchor your <em>being</em> in the present moment without resistance, while using <em>assumption</em> to calibrate intentional direction. You do not escape the present; you bring the fullness of the vision into the present Now.
+        <div class="matrix-synthesis">
+          <strong>Unified Resolution:</strong> Alignment without action is delusional fantasy; action without alignment produces burnout. Visualization conditions the nervous system so high-leverage, uncomfortable physical execution can occur without paralysis.
         </div>
       </div>
 
       <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 3: Quantum Mysticism vs. Cognitive Neuroscience & Epigenetics</h3>
+        <h3 class="matrix-title">Dispute 2: Future Desires vs. Radical Presence</h3>
         <div class="matrix-sides">
           <div class="matrix-side">
-            <div class="matrix-side-label">The Metaphysical Claim (The Secret)</div>
-            <p>Thoughts emit literal electromagnetic radio waves that travel through quantum ether to gravitationally attract money, lovers, and parking spots.</p>
+            <strong>The Neville Goddard Stance</strong>
+            Mentally dwelling in an imaginal future accomplished reality is essential to collapse time and impress the subconscious mind.
           </div>
           <div class="matrix-side">
-            <div class="matrix-side-label">The Neurobiological & Epigenetic Reality (Dispenza, Cognitive Science)</div>
-            <p>Brainwaves dissipate millimeters from the skull. The real mechanism is the Reticular Activating System (RAS) and Heart-Brain Coherence: elevated emotions upregulate health genes and synchronize neural firing, turning on selective attention filters.</p>
+            <strong>The Eckhart Tolle Stance</strong>
+            Chronic future-projection is an egoic delusion that feeds dissatisfaction and denies the only reality that actually exists: the present Now.
           </div>
         </div>
-        <div class="matrix-verdict">
-          <strong>Unified Synthesis Verdict:</strong> Reject pseudo-quantum buzzwords. You do not change physical gravity; you change your brain's perceptual threshold and subsequent behavioral decision-making.
+        <div class="matrix-synthesis">
+          <strong>Unified Resolution:</strong> Anchor your psychological being in the present moment without resistance, while using imaginal assumption to calibrate your intentional vector.
         </div>
       </div>
 
       <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 4: Hyper-Specificity vs. General Surrender</h3>
+        <h3 class="matrix-title">Dispute 3: Quantum Physics vs. Cognitive Neuroscience</h3>
         <div class="matrix-sides">
           <div class="matrix-side">
-            <div class="matrix-side-label">The Hyper-Specific Camp (Murphy, Byrne, Rae, Shinn)</div>
-            <p>Define every millimeter of the goal: exact salary down to the cent, specific partner attributes, exact vehicle model and color.</p>
+            <strong>The Pop-Manifestation Fallacy (The Secret)</strong>
+            The human brain operates like a radio broadcast tower emitting electromagnetic waves that bend physical light and gravitationally pull objects to you.
           </div>
           <div class="matrix-side">
-            <div class="matrix-side-label">The General Alignment Camp (Hicks, Arden G., Tolle)</div>
-            <p>Hyper-specificity triggers anxiety and resistance ("How will it happen? What if it fails?"). Surrendering details and holding the general emotional state of relief is far more effective.</p>
+            <strong>The Empirical Neurobiological Reality</strong>
+            Brainwaves dissipate millimeters outside the cranium. The true mechanism is the <em>Reticular Activating System (RAS)</em> and <em>heart-brain coherence</em>.
           </div>
         </div>
-        <div class="matrix-verdict">
-          <strong>Unified Synthesis Verdict:</strong> Use specificity to establish clear <em>direction</em>, but surrender attachment to the <em>mechanism and timeline</em>.
+        <div class="matrix-synthesis">
+          <strong>Unified Resolution:</strong> When an intention is prioritized emotionally, the RAS strips away background sensory noise, allowing you to recognize opportunities and resources that were already physically present but previously filtered out.
         </div>
       </div>
 
       <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 5: The Victim-Blaming Fallacy</h3>
+        <h3 class="matrix-title">Dispute 4: The Victim-Blaming Fallacy</h3>
         <div class="matrix-sides">
           <div class="matrix-side">
-            <div class="matrix-side-label">The Dangerous Overreach (Pop Law of Attraction)</div>
-            <p>Asserts that victims of poverty, genocide, domestic violence, or pediatric cancer "attracted" their suffering through low-vibrational thoughts.</p>
+            <strong>The Toxic Positivity Trap</strong>
+            Claims that people experiencing poverty, war, illness, or trauma 'vibrated at a low frequency' and attracted their misfortune.
           </div>
           <div class="matrix-side">
-            <div class="matrix-side-label">The Epistemic Defense (Intellectualist Codex Standard)</div>
-            <p>Biological disease, war, and economic oppression operate on external physical, ecological, and geopolitical laws, entirely independent of personal thought frequencies.</p>
+            <strong>The Intellectualist Forensic Audit</strong>
+            This is a catastrophic manifestation of the Just-World Fallacy and survivor bias. External tragedies obey physical, biological, and historical causality.
           </div>
         </div>
-        <div class="matrix-verdict">
-          <strong>Unified Synthesis Verdict:</strong> The Just-World Fallacy is categorically rejected. Manifestation applies strictly to an individual's personal agency, emotional resilience, and behavioral optimization—never as a cruel moral judgment on others' suffering.
+        <div class="matrix-synthesis">
+          <strong>Unified Resolution:</strong> Manifestation is strictly an internal cybernetic model for personal agency and perceptual focus—never an ethical explanation for external geopolitical or biological catastrophes.
         </div>
       </div>
     </section>
 
+    <!-- VIEW C: 24-HOUR PROTOCOL -->
     <section id="view-c">
       <div class="protocol-step">
-        <div class="protocol-time">07:00 – 07:25 | Morning Priming</div>
-        <h3 class="protocol-heading">Phase 1: Attention, Heart Coherence & Neural Calibration</h3>
+        <div class="protocol-time">06:00 – 06:25 | Morning Priming</div>
+        <h3 class="protocol-heading">Phase 1: Neural & Autonomic Calibration</h3>
         <ol class="protocol-items">
-          <li><strong>Digital Fast:</strong> Zero smartphone, notifications, or news consumption for the first 25 minutes. Protect theta/alpha brainwaves from external reactive hijacking.</li>
-          <li><strong>Somatic Breath Reset (3 Mins):</strong> Three minutes of physiological sighs (double inhale through nose, long unforced exhale through mouth) to lower sympathetic heart rate.</li>
-          <li><strong>Heart-Brain Coherence Meditation (5 Mins - Dispenza):</strong> Focus attention on the heart center; breathe deeply into the chest and cultivate elevated somatic gratitude or awe.</li>
-          <li><strong>Sensory Gratitude Drill (3 Mins - Gawain/Hicks):</strong> Viscerally anchor appreciation for 3 specific, mundane realities (warm water, shelter, heartbeat). Avoid any comparative caveats.</li>
-          <li><strong>RAS Vision Calibration (10 Mins - Nafousi):</strong> Review the primary quarterly milestone. Define the single most uncomfortable high-leverage action required today.</li>
+          <li><strong>Digital Fast (25 mins):</strong> No smartphone or emails upon waking; protect theta-alpha brainwave plasticity.</li>
+          <li><strong>Physiological Sigh (3 mins):</strong> Double inhale through the nose, long unforced exhale through the mouth to discharge cortisol.</li>
+          <li><strong>Heart-Brain Coherence (5 mins - Dispenza):</strong> Focus attention in the center of the chest; breathe slowly and cultivate gratitude.</li>
+          <li><strong>Sensory Gratitude (3 mins - Gawain/Hicks):</strong> Viscerally appreciate 3 mundane physical realities.</li>
+          <li><strong>RAS Vision Calibration (10 mins - Nafousi):</strong> Review the primary quarterly milestone and select the day's most intimidating high-leverage task.</li>
         </ol>
       </div>
 
       <div class="protocol-step">
-        <div class="protocol-time">09:00 – 17:00 | Daytime Execution</div>
-        <h3 class="protocol-heading">Phase 2: Aligned Action, Presence & The Boundary Filter</h3>
+        <div class="protocol-time">09:00 – 17:00 | Working Hours</div>
+        <h3 class="protocol-heading">Phase 2: Aligned Action & Mind Defense</h3>
         <ol class="protocol-items">
-          <li><strong>The Comfort-Zone Step:</strong> Execute the single most intimidating task of the day before noon (the proposal, the difficult conversation, the cold outreach).</li>
-          <li><strong>The Arden G. Detachment Anchor:</strong> When timeline anxiety strikes, recite: <em>“What is meant for me will not pass me. I control my input; I release my attachment to the immediate outcome.”</em></li>
-          <li><strong>The Tolle Presence Reset:</strong> When feeling overwhelmed, pause for 60 seconds, feel the inner energy of your hands and feet, and witness the thinking mind without judgment.</li>
-          <li><strong>The Florence Scovel Shinn Spoken Word Guard:</strong> Speak only words of abundance and peace. Cast your heaviest burdens onto the deeper intelligence.</li>
-          <li><strong>The Boundary Test Filter:</strong> When low-standard temptations or breadcrumbs appear, recognize them as extinction tests of your self-worth. Say NO without guilt.</li>
-          <li><strong>The Envy Transmutation Drill:</strong> The moment comparison stings your heart on social media, immediately bless that person: <em>“I celebrate your success, and I recognize it as empirical proof of what is possible for me.”</em></li>
+          <li><strong>The Comfort-Zone Step:</strong> Execute your most intimidating task early before decision fatigue sets in.</li>
+          <li><strong>The Detachment Anchor (Arden G.):</strong> Repeat: <em>“I control my inputs; I release attachment to the timeline.”</em></li>
+          <li><strong>The Tolle Presence Reset:</strong> When overwhelmed, take 60 seconds to feel the energy in your hands and feet.</li>
+          <li><strong>The Spoken Word Guard (Shinn):</strong> Eliminate self-deprecating humor regarding lack or poverty.</li>
+          <li><strong>Envy Transmutation Trigger:</strong> Bless anyone whose success triggers comparison as proof of what is possible.</li>
         </ol>
       </div>
 
       <div class="protocol-step">
-        <div class="protocol-time">22:00 – 22:30 | Evening SATS Routine</div>
-        <h3 class="protocol-heading">Phase 3: Hypnagogic Subconscious Imprinting (Neville / Murphy)</h3>
+        <div class="protocol-time">22:00 – 22:30 | Evening Slumber</div>
+        <h3 class="protocol-heading">Phase 3: The SATS Hypnagogic Routine</h3>
         <ol class="protocol-items">
-          <li><strong>Subconscious De-Escalation:</strong> Turn off all blue-light screens and work discussions 30 minutes before sleep.</li>
-          <li><strong>Baudouin Drowsy State:</strong> Lie comfortably in bed, relax all muscles from scalp to toes, and enter the heavy, drowsy hypnagogic state where conscious intellectual resistance drops.</li>
-          <li><strong>The 10-Second Looping Scene (Neville Goddard):</strong> Loop a single, first-person sensory scene implying the goal is an accomplished fact (shaking a mentor's hand, reading an acceptance letter, feeling emotional relief).</li>
-          <li><strong>Consolidation into Sleep:</strong> Do not force effort; gently hold the feeling of relief and completion as sleep overtakes you.</li>
+          <li><strong>Subconscious De-escalation:</strong> Eliminate television and work emails 30 minutes before sleep.</li>
+          <li><strong>Baudouin Drowsy State:</strong> Lie comfortably in bed, relax all muscles from scalp to toes, and enter the heavy hypnagogic state.</li>
+          <li><strong>The 10-Second Looping Scene (Neville Goddard):</strong> Loop a single first-person sensory scene implying the goal is an accomplished fact.</li>
+          <li><strong>Consolidation into Sleep:</strong> Hold the feeling of naturalness and relief as sleep overtakes you.</li>
         </ol>
       </div>
 
@@ -1680,6 +2271,7 @@
     <div class="footer-links">
       <a href="../../index.html">&larr; Return to Intellectualist Master Library</a>
       <a href="master-notes.md" target="_blank">Download Master Notes (Markdown)</a>
+      <a href="rosetta-stone.json" target="_blank">Rosetta Stone JSON</a>
       <a href="knowledge-units.json" target="_blank">Canonical JSON Payload</a>
     </div>
     <div>Intellectualist &bull; Book Knowledge Reconstruction System (BKRS v1.0) &bull; The Manifestation Mega-Codex</div>
@@ -1703,13 +2295,41 @@
     }
 
     function switchView(view) {
+      document.getElementById('view-stone').style.display = (view === 'stone') ? 'block' : 'none';
       document.getElementById('view-a').style.display = (view === 'a') ? 'block' : 'none';
       document.getElementById('view-b').style.display = (view === 'b') ? 'block' : 'none';
       document.getElementById('view-c').style.display = (view === 'c') ? 'block' : 'none';
 
+      document.getElementById('tab-stone').classList.toggle('active', view === 'stone');
       document.getElementById('tab-a').classList.toggle('active', view === 'a');
       document.getElementById('tab-b').classList.toggle('active', view === 'b');
       document.getElementById('tab-c').classList.toggle('active', view === 'c');
+    }
+
+    function filterRosetta() {
+      const q = document.getElementById('rosetta-search').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.rosetta-term-card');
+      cards.forEach(card => {
+        const term = card.getAttribute('data-term') || '';
+        const text = card.getAttribute('data-text') || '';
+        const match = !q || term.includes(q) || text.includes(q);
+        card.style.display = match ? 'block' : 'none';
+      });
+    }
+
+    let activeRosettaCategory = 'all';
+    function filterRosettaCategory(cat) {
+      activeRosettaCategory = cat;
+      document.querySelectorAll('.rosetta-chip').forEach(chip => {
+        const onclickAttr = chip.getAttribute('onclick');
+        chip.classList.toggle('active', onclickAttr.includes("'" + cat + "'"));
+      });
+      const cards = document.querySelectorAll('.rosetta-term-card');
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        const match = (cat === 'all' || cardCat === cat);
+        card.style.display = match ? 'block' : 'none';
+      });
     }
 
     function filterUnits() {
