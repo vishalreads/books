@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 17,
-  "total_hours_saved": 399.5,
+  "total_books": 18,
+  "total_hours_saved": 405.5,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -714,6 +714,48 @@
       ],
       "html_path": "distillations/homage-to-catalonia/index.html",
       "markdown_path": "distillations/homage-to-catalonia/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "siddhartha",
+      "title": "Siddhartha",
+      "subtitle": "A Forensic Epistemological Reconstruction of the Quest for Atman, Experiential Awakening, and the Unity of Opposites",
+      "author": "Hermann Hesse",
+      "year": 1922,
+      "publisher": "S. Fischer Verlag / Intellectualist Philosophical Fiction Series",
+      "epistemic_tier": "Tier 1: Master Philosophical Fiction & Spiritual Phenomenology",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "12 Canonical Chapters (2 Foundational Parts)",
+      "reading_time_saved": "6.0 hrs saved",
+      "hours_val": 6.0,
+      "core_axiom": "Wisdom cannot be passed on. Wisdom which a wise man tries to communicate always sounds like foolishness.",
+      "tags": [
+        "Hermann Hesse",
+        "Siddhartha",
+        "Atman",
+        "Buddha",
+        "Asceticism",
+        "Sansara",
+        "The Ferryman",
+        "Om",
+        "Wisdom vs Knowledge"
+      ],
+      "key_models": [
+        "The Triad of Absolute Leverage ('I can think. I can wait. I can fast.')",
+        "The Incommunicability of Wisdom (The Doctrine vs. Experience Paradox)",
+        "The Ascetic Flight Fallacy (Self-Mortification as Temporary Ego-Anesthesia)",
+        "The River's Secret (Simultaneity of Being & Dissolution of Linear Time)",
+        "The Dialectic of Simultaneous Opposites"
+      ],
+      "landmark_studies": [
+        "Upanishadic Atman-Brahman Metaphysical Canon",
+        "Early Buddhist Jetavana Monastic Vinaya & Sutta Pitaka",
+        "Hegelian-Romantic Dialectical Transformation Structures",
+        "Carl Jung Archetypal Individuation & Persona Dissolution"
+      ],
+      "html_path": "distillations/siddhartha/index.html",
+      "markdown_path": "distillations/siddhartha/master-notes.md",
       "featured": false
     }
   ]

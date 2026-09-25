@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siddhartha — Hermann Hesse | Intellectualist Master Codex</title>
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="stylesheet" href="../../css/reader-style.css">
+  <style>
+    :root {
+      --bg-primary: #fcfbf9;
+      --bg-card: #ffffff;
+      --text-main: #1f1f1e;
+      --text-muted: #6b6762;
+      --accent-color: #85221c;
+      --accent-soft: rgba(133, 34, 28, 0.08);
+      --border-color: #e5e0d8;
+      --border-subtle: #f0ebe1;
+      --badge-bg: #f5f2ea;
+      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-serif: "Merriweather", Georgia, "Times New Roman", serif;
+      --line-height: 1.75;
+      --max-measure: 820px;
+    }
+
+    body.dark-mode {
+      --bg-primary: #121314;
+      --bg-card: #1c1d1f;
+      --text-main: #e8e6e3;
+      --text-muted: #9e9a93;
+      --accent-color: #d9534f;
+      --accent-soft: rgba(217, 83, 79, 0.15);
+      --border-color: #2e3035;
+      --border-subtle: #242629;
+      --badge-bg: #26282c;
+    }
+
+    body.sepia-mode {
+      --bg-primary: #f4ecd8;
+      --bg-card: #fcf8ee;
+      --text-main: #433422;
+      --text-muted: #79664f;
+      --accent-color: #8f3418;
+      --accent-soft: rgba(143, 52, 24, 0.1);
+      --border-color: #dfd2b9;
+      --border-subtle: #ebdcc0;
+      --badge-bg: #ebe0ca;
+    }
+
+    body.serif-font {
+      font-family: var(--font-serif);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      transition: background-color 0.25s ease, color 0.25s ease;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Universal Header */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(8px);
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-logo-img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+    .brand-text h1 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+    .brand-text span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .topbar-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-ctrl {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn-ctrl:hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    /* Sub-nav Views */
+    .view-tabs-bar {
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .view-tab {
+      background: transparent;
+      border: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .view-tab.active {
+      background: var(--accent-soft);
+      color: var(--accent-color);
+    }
+
+    /* Main Container */
+    .reader-container {
+      max-width: var(--max-measure);
+      margin: 32px auto;
+      padding: 0 20px;
+      flex: 1;
+      width: 100%;
+    }
+
+    /* Hero Header */
+    .codex-hero {
+      text-align: center;
+      padding: 36px 0 28px 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 36px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent-color);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .codex-hero h2 {
+      font-size: 2.3rem;
+      font-family: var(--font-serif);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .codex-hero .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 16px auto;
+    }
+    .hero-meta-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Unit Card */
+    .unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      transition: border-color 0.2s;
+    }
+    .unit-card:hover {
+      border-color: var(--accent-color);
+    }
+    .unit-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 12px;
+    }
+    .unit-meta-top {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-color);
+      margin-bottom: 4px;
+    }
+    .unit-title {
+      font-size: 1.35rem;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .unit-tier-badge {
+      background: var(--badge-bg);
+      border: 1px solid var(--border-color);
+      font-size: 0.72rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .unit-section-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin: 18px 0 8px 0;
+    }
+
+    .prose-p {
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    .bullet-list {
+      list-style-type: none;
+      margin-bottom: 16px;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 0.94rem;
+    }
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .mechanism-box {
+      background: var(--bg-primary);
+      border-left: 3px solid var(--accent-color);
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin: 14px 0;
+    }
+    .mechanism-box h5 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 4px;
+    }
+    .mechanism-box p {
+      font-size: 0.92rem;
+      font-style: italic;
+    }
+
+    .quote-box {
+      background: var(--badge-bg);
+      border-left: 3px solid #7c6f64;
+      padding: 12px 18px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 0.95rem;
+      margin: 12px 0;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* Views visibility */
+    .view-content {
+      display: none;
+    }
+    .view-content.active {
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      padding: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Universal Sticky Topbar -->
+  <header class="topbar">
+    <a href="../../index.html" class="brand-group">
+      <img src="../../assets/images/logo.png" alt="Intellectualist Pantheon" class="brand-logo-img">
+      <div class="brand-text">
+        <h1>Intellectualist Codex</h1>
+        <span>Total Replacement Benchmark &bull; Hermann Hesse</span>
+      </div>
+    </a>
+    <div class="topbar-controls">
+      <button class="btn-ctrl" id="themeBtn" title="Toggle Theme">🌓 Theme</button>
+      <button class="btn-ctrl" id="fontBtn" title="Toggle Serif / Sans">Aa Font</button>
+      <a href="master-notes.md" class="btn-ctrl" download style="text-decoration:none;">📥 MD</a>
+    </div>
+  </header>
+
+  <!-- View Switcher -->
+  <nav class="view-tabs-bar">
+    <button class="view-tab active" data-target="view-journey">View A: 12-Chapter Pilgrim's Path</button>
+    <button class="view-tab" data-target="view-dialectic">View B: Ontological Transmutation Cycle</button>
+    <button class="view-tab" data-target="view-heuristics">View C: Operational Heuristics of Living</button>
+  </nav>
+
+  <main class="reader-container">
+
+    <!-- Hero Header -->
+    <div class="codex-hero">
+      <span class="hero-badge">BKRS v1.0 Philosophical Masterwork Benchmark</span>
+      <h2>Siddhartha</h2>
+      <p class="hero-sub">A Forensic Epistemological Reconstruction of the Quest for Atman, Experiential Awakening, and the Unity of Opposites</p>
+      <div class="hero-meta-row">
+        <span><strong>Author:</strong> Hermann Hesse</span>
+        <span>&bull;</span>
+        <span><strong>Published:</strong> 1922</span>
+        <span>&bull;</span>
+        <span><strong>Structure:</strong> 12 Invariant Chapters (2 Parts)</span>
+        <span>&bull;</span>
+        <span><strong>Fidelity:</strong> 100% Zero-Loss</span>
+      </div>
+    </div>
+
+    <!-- VIEW A: 12-Chapter Pilgrim's Path -->
+    <section id="view-journey" class="view-content active">
+      
+      <article class="unit-card" id="unit-01">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part One &bull; Chapter 1 &bull; Ancient India, Brahmic Homestead</div>
+            <h3 class="unit-title">The Son of the Brahmin: The Insufficiency of Ritual</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Siddhartha, the handsome, gifted son of a high-caste Brahmin, grows up revered by all, accompanied by his devoted shadow Govinda. Despite mastering the Rigveda, the sacred ablutions, and sacrificial rites, Siddhartha's soul remains profoundly unquenched. He realizes that the learned Brahmins, who know all rituals and possess vast textual knowledge, have not themselves achieved Atman or conquered restlessness. When wandering Samana ascetics pass through town preaching the annihilation of the self, Siddhartha resolves to abandon his caste privileges. He stands motionless throughout an entire night in silent, unbroken resolve until his father, recognizing his son's irrevocable inner calling, reluctantly grants his blessing to depart.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Theoretical and ritualistic religious knowledge is fundamentally incapable of satisfying the existential hunger for direct spiritual realization.</li><li>The Brahmins possess knowledge *about* God, but do not abide *in* God.</li><li>Total commitment requires non-violent, immutable resolve: standing motionless until external authority yields to internal necessity.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Mastery of the holy Om, the Rigveda verses, and the ablutions at the holy river.</li><li>Standing upright with folded arms in the dark bedroom through all four watches of the night until his father's knees tremble with fatigue.</li><li>Govinda immediately choosing to renounce family and follow Siddhartha into the wilderness.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Ritual Knowledge Deficit</h5>
+          <p>Accumulating intellectual descriptions of transcendent states creates the illusion of spiritual attainment while leaving underlying existential thirst untouched.</p>
+        </div>
+        
+        <div class="mechanism-box">
+          <h5>Immutable Silent Resolve</h5>
+          <p>Unshakable physical and mental stillness overcomes authoritarian patriarchal resistance without resorting to destructive conflict.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"The vessel was not full, the mind was not satisfied, the soul was not at peace, the heart was not quiet."</div>
+        
+        <div class="quote-box">"One had to find the source in one's own self, one had to own it! Everything else was merely searching, a detour, getting lost."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-02">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part One &bull; Chapter 2 &bull; Forest Wilderness</div>
+            <h3 class="unit-title">With the Samanas: The Limits of Self-Denial</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">For three years, Siddhartha and Govinda live among the gaunt Samana ascetics. Siddhartha strips away his fine clothes, wears a loincloth, eats only once a day, fasts for weeks, and masters extreme practices of breath cessation and sensory detachment. He learns to project his consciousness into animals, dead jackals, and stones. Yet, upon returning to his human body, he discovers that asceticism is merely a temporary anesthesia—a fleeting escape from the agonizing pain of the Self, no different in kind from the drunkenness of an ox-driver at the tavern. Confronting the oldest Samana, Siddhartha demonstrates superior hypnotic power before departing to seek Gotama, the Buddha.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Self-mortification and sensory suppression do not dissolve the ego; they merely numb it temporarily.</li><li>The ascetic fleeing from the Self is functionally identical to the drunkard escaping into alcohol—both are temporary flights from existence.</li><li>Asceticism cannot grant lasting enlightenment because it treats the body and senses as enemies to be crushed rather than understood.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Living in the forest on raw roots and water, skin blistered by midday heat and chilled by monsoon rains.</li><li>Siddhartha meditating until his heartbeat drops to a faint pulse and he experiences the consciousness of a decaying carcass.</li><li>Hypnotizing the venerable elder Samana with a single gaze, freezing him in silent obedience.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Ascetic Flight Paradox</h5>
+          <p>Any method that relies on suppressing the senses merely postpones confrontation with the ego; the Self re-emerges intact the moment the trance breaks.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"What I have learned so far among the Samanas, I could have learned more quickly and easily in every tavern... a brief numbing of the senses against the pain and senselessness of life."</div>
+        
+        <div class="quote-box">"It is a flight from the Self, a brief escape from the torment of being a Self, a temporary opiate against the pain and folly of life."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-03">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part One &bull; Chapter 3 &bull; Jetavana Grove, Savathi</div>
+            <h3 class="unit-title">Gotama: The Encounter with the Buddha</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Siddhartha and Govinda journey to the Jetavana grove to hear Gotama, the Illustrious One, who has attained supreme enlightenment. Recognized instantly by the immaculate tranquility of his walk and downcast gaze, the Buddha radiates unearthly perfection. Overcome with faith, Govinda immediately takes refuge in the Buddha and joins the monastic order. Siddhartha, however, requests a private audience with Gotama. While praising the Buddha's seamless, flawless doctrine of dependent origination and release from suffering, Siddhartha points out its fatal logical paradox: the doctrine contains no flaw, yet the Buddha did not attain enlightenment through a doctrine—he attained it through his own secret, direct experience. Therefore, teachings cannot convey enlightenment; one cannot be saved by another's path. Siddhartha departs alone.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Enlightenment cannot be communicated or taught through doctrines, words, or intellectual systems.</li><li>The Buddha attained awakening through his own unrepeatable experiential search, not through listening to a master.</li><li>Following a spiritual master, no matter how holy, risks stealing one's own authentic search and replacing it with dogma.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>The yellow robe, begging bowl, and silent, serene steps of the Buddha in the Jetavana garden.</li><li>Govinda shaving his head and taking the vows of the Sangha.</li><li>The dialectical dialogue between Siddhartha and Gotama beneath the trees.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Incommunicability of Wisdom</h5>
+          <p>Doctrines can convey knowledge, rules, and conceptual coherence, but the living experience of awakening is strictly non-transferable.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"To nobody, O Illustrious One, can you communicate in words and through teachings what occurred to you in the hour of your enlightenment!"</div>
+        
+        <div class="quote-box">"The teaching of the enlightened Buddha contains much... but it does not contain the secret of what the Illustrious One himself experienced—he alone among hundreds of thousands."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-04">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part One &bull; Chapter 4 &bull; Road from Jetavana</div>
+            <h3 class="unit-title">Awakening: The Solitary Birth of the Self</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Walking away from the Jetavana grove, Siddhartha experiences a profound ontological awakening. He realizes that for years he sought to destroy his Self because he viewed the sensory world as Maya (illusion) and Atman as hidden behind it. Now, the scales fall from his eyes: meaning and essence are not concealed behind things, but reside in them. The world of blue skies, yellow rivers, and green forests is not an illusion to be escaped, but the living body of the divine. He is no longer a Brahmin, no longer a Samana, no longer an ascetic; he is utterly alone in the universe, without caste, family, or property. With shivering dread and exhilaration, he steps forward into the world of flesh and time.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>The sensory world is not a deceptive veil of illusion (Maya) to be despised, but the direct manifestation of reality.</li><li>Spiritual awakening requires accepting total existential isolation and relinquishing all institutional shelters.</li><li>True self-knowledge begins when one stops trying to escape the Self and instead embraces one's physical existence.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Looking at the sky, the river, and the forest as if seeing colors and forms for the very first time.</li><li>The physical chill running down his spine as he realizes he cannot return home to his father's house.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Sensory Re-enchantment</h5>
+          <p>When metaphysical prejudice is abandoned, ordinary physical phenomena cease to be barriers to enlightenment and become its direct expression.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"I was afraid of myself, I was fleeing from myself! I was seeking Atman, I was seeking Brahma... but in doing so, I lost myself on the way."</div>
+        
+        <div class="quote-box">"The world was beautiful, the world was colorful, the world was strange and enigmatic!"</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-05">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 5 &bull; The Great River & The City</div>
+            <h3 class="unit-title">Kamala: Entering the City & The Three Skills</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Siddhartha reaches a broad river and is ferried across by a serene, humble ferryman (Vasudeva), who refuses payment and prophesies that Siddhartha will return to the river. Entering the grand city, Siddhartha beholds Kamala, the most renowned and wealthy courtesan, carried in a gilded litter. Enchanted, he approaches her seeking the art of love. Kamala tells him that love requires fine clothes, shoes, money, and gifts; an ascetic beggar has no currency in her garden. When asked what assets he possesses, Siddhartha famously replies: 'I can think. I can wait. I can fast.' Kamala recognizes the extraordinary potency of these three spiritual disciplines and introduces him to the wealthy merchant Kamaswami.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Spiritual discipline and mental clarity translate directly into irresistible real-world agency.</li><li>The three foundational competencies for life mastery are: Thinking (discernment), Waiting (patience/non-reactivity), and Fasting (independence from physical desire).</li><li>Love and worldly intimacy are sophisticated arts requiring education, mastery, and aesthetic refinement.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>The ferryman predicting that the river always brings people back.</li><li>Kamala's pleasure grove with painted trees, tame monkeys, and crimson lips.</li><li>Siddhartha reciting an improvised poem of exquisite beauty to win Kamala's first kiss.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Triad of Absolute Leverage</h5>
+          <p>A person who can think clearly cannot be deceived; a person who can wait cannot be rushed into folly; a person who can fast cannot be bribed or coerced by physical necessity.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"‘What can you do?’ asked Kamala. ‘I can think. I can wait. I can fast.’"</div>
+        
+        <div class="quote-box">"A person who has nothing to eat has nothing more urgent than to find food. But a person who can fast can wait calmly; he knows no hunger, he is not ruled by impatience."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-06">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 6 &bull; The Merchant City</div>
+            <h3 class="unit-title">With the Childlike People: Commerce as a Game</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Employed by the obsessive merchant Kamaswami, Siddhartha quickly masters bookkeeping, trade contracts, and market negotiations. Because he does not care about accumulating money for its own sake, he conducts business without anxiety, fear, or greed. When a crop deal fails, he turns the business trip into an enjoyable holiday, befriending peasants and attending village festivals. Kamaswami is bewildered by Siddhartha's complete lack of distress over financial loss. Siddhartha observes the ordinary 'childlike people' (Menschen-Kinder)—their frantic passions, petty rivalries, and endless anxieties over trivial gains—feeling both sympathetic pity and detached superiority.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Total detachment from outcomes confers immense psychological leverage in business and negotiation.</li><li>Worldly people suffer because they invest ultimate emotional significance in transient material fluctuations.</li><li>Viewing commerce as a game preserves creative equanimity and prevents anxiety from clouding judgement.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Siddhartha writing contracts with flawless calligraphy while laughing at Kamaswami's frantic ledger-checking.</li><li>Riding to a distant village to buy a harvest, finding it already sold, and staying for days to enjoy the hospitality of local farmers.</li><li>Accumulating immense wealth, estates, horses, and servants without feeling bound to them.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Detached Mercantile Asymmetry</h5>
+          <p>The player who does not fear losing enjoys complete tactical clarity, whereas the player desperate for gain is perpetually compromised by anxiety.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Business was good for acquiring money for Kamala, but it remained a game whose rules one learned, nothing more."</div>
+        
+        <div class="quote-box">"He saw people living in a childlike or beastlike way, which he both loved and despised. He saw them toiling, saw them suffering, saw them becoming grey over things that seemed to him completely worthless—over money, petty pleasures, small honors."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-07">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 7 &bull; The Pleasure Villa & Gardens</div>
+            <h3 class="unit-title">Sansara: The Poisoning of the Soul & The Songbird Dream</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Years pass. Gradually, the subtle poison of wealth, luxury, and physical indulgence coats Siddhartha's soul. He begins to take money seriously, becomes irritable over lost sums, drinks heavy wines, and spends nights in frantic dice games—gambling away fortunes simply to feel a fleeting spike of emotional tension. His inward sanctuary goes silent. One night, after an exhausting, hollow session of lovemaking with Kamala, he dreams of her rare singing bird dying in its golden cage; in the dream, he discards the dead bird into the gutter with revulsion. Waking in cold horror, he realizes that for twenty years he has been killing his own divine soul in the quagmire of Sansara. Without saying farewell or taking any possessions, he walks out of his villa into the night, abandoning the city forever. Kamala, discovering his departure, releases her rare songbird into the open sky and quietly discovers she is pregnant with Siddhartha's child.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Material comfort and sensory over-indulgence gradually deaden the spiritual faculties through habituation.</li><li>High-stakes gambling and addictive pursuits are desperate attempts by a numb soul to simulate vitality through artificial tension.</li><li>When one's inner voice is smothered, the only path to salvation is radical, immediate renunciation.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Gambling large sums with desperate rage, losing with a sick sensation of self-disgust.</li><li>The dream of Kamala's prized songbird lying dead and stiff at the bottom of its cage.</li><li>Kamala opening the cage door and letting the bird fly away forever upon learning Siddhartha has left.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Seduction of Sansara</h5>
+          <p>Gradual accommodation to comfort erodes vigilance; what begins as detached play calcifies into an addictive psychological prison.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Like a veil, like a thin mist, tiredness had crept over Siddhartha... slowly, year by year, like moisture that enters a tree trunk, it had settled into his soul."</div>
+        
+        <div class="quote-box">"He had tasted of Sansara, he had drunk from the cup of lust, greed, and indolence until he was utterly nauseated."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-08">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 8 &bull; The Edge of the Great River</div>
+            <h3 class="unit-title">By the River: The Suicidal Abyss & The Holy Om</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Wandering in utter self-loathing, Siddhartha reaches the deep river. Leaning over the water, gazing at his reflection—bloated, corrupt, and wretched—he is seized by an overwhelming impulse to drown himself and end his pathetic existence. But just as he prepares to plunge, from the depths of his subconscious rings the primordial syllable: 'Om'—the perfection of all that is. The sound shatters his despair. He steps back from the edge, collapses beneath a tree, and falls into a deep, dreamless, regenerative sleep. When he awakens hours later, his soul is washed clean, filled with innocent joy. A Buddhist monk is sitting beside him, guarding him from wild animals: it is Govinda, who fails to recognize his friend under his rich, travel-stained garments. When Siddhartha reveals his identity, Govinda is astonished to find his ascetic brother dressed like a grand lord. Siddhartha proclaims that he is beginning life anew.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Total despair and the collapse of the false self are often the necessary prerequisites for spiritual rebirth.</li><li>The primordial sacred vibration ('Om') reconnects the fractured psyche to cosmic totality.</li><li>Regenerative surrender (letting the old identity die) achieves what decades of active striving could not.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Looking down into the dark water, spitting at his own reflection before the fatal drop.</li><li>The sound 'Om' echoing in his ear, instantly arresting his suicidal motion.</li><li>Govinda standing watch over the sleeping stranger, holding his staff in faithful monk's duty.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Abyss as Metaphysical Pivot</h5>
+          <p>When the ego reaches absolute rock bottom and acknowledges its total bankrupt nature, defensive posturing dissolves and true consciousness awakens.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"From a remote region of his soul, from past times of his weary life, a sound quivered... the holy Om. And in the same instant that the sound touched his ear, his slumbering spirit suddenly awoke and recognized the folly of his action."</div>
+        
+        <div class="quote-box">"I had to become a fool again in order to find Atman in myself. I had to sin, I had to taste despair, I had to unlearn all my wisdom."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-09">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 9 &bull; The River & Ferry Hut</div>
+            <h3 class="unit-title">The Ferryman: Vasudeva & The Secrets of the River</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Siddhartha returns to the ferry hut and meets Vasudeva, the aged ferryman who ferried him across years ago. Recognizing Vasudeva's extraordinary capacity for silent, compassionate listening, Siddhartha recounts his entire life story. Vasudeva welcomes him as an apprentice and brother. Together they ferry travelers across the river, living on simple rice and fruit. Under Vasudeva's gentle guidance, Siddhartha learns to listen to the river—not merely to its water, but to its infinite voices. The river teaches Siddhartha its greatest secret: there is no such thing as time. The river is everywhere at once—at its source, at the waterfall, at the ferry, in the sea—present simultaneously in all dimensions. Therefore, the division between past, present, and future is an illusion; life is an eternal Now.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Deep, non-judgmental listening is the highest form of spiritual companionship and therapeutic healing.</li><li>Time is a linear illusion created by human thought; all states of being exist simultaneously in the eternal present.</li><li>Nature (the river) is a living spiritual teacher superior to human doctrines.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Vasudeva listening without interrupting, his eyes reflecting radiant serenity.</li><li>The river roaring with laughing water, mourning water, yearning water, and whispering water.</li><li>The shared realization that the child, the young man, the decadent gambler, and the old ferryman are separated only by shadows, not by reality.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The River's Secret (Simultaneity of Being)</h5>
+          <p>When the illusion of linear time dissolves, regret over the past and anxiety over the future vanish; all things exist in complete, unified perfection.</p>
+        </div>
+        
+        <div class="mechanism-box">
+          <h5>The Practice of Pure Listening</h5>
+          <p>Absorbing another's confession without judgement, advice, or ego-assertion creates a sacred space where the speaker's trauma naturally heals.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"‘Have you also learned that secret from the river: that there is no such thing as time?’ ‘Yes, Siddhartha,’ said the ferryman. ‘The river is everywhere at the same time.’"</div>
+        
+        <div class="quote-box">"Vasudeva was a listener such as few people are. Without saying a word... he absorbed everything into himself, quietly, openly, patiently."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-10">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 10 &bull; The Ferry Hut & The Forest</div>
+            <h3 class="unit-title">The Son: The Wound of Attachment & Parental Helplessness</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">Word spreads that the Buddha is dying; thousands make pilgrimages to his deathbed. Among them is Kamala, traveling with her eleven-year-old son, young Siddhartha. Resting near the river, Kamala is bitten by a venomous snake. Vasudeva brings her to the hut, where Siddhartha recognizes her. Kamala dies peacefully in his arms after seeing that Siddhartha has found peace. Siddhartha takes in his spoiled, arrogant, urbanized son, loving him with an overwhelming, vulnerable passion he had never known before. He tries to win the boy through patience, gentle chores, and kindness. But the boy despises the primitive hut, mocks his father's poverty, steals their money, smashes the ferry boat, and flees back toward the city. Siddhartha pursues him in desperate agony, only to stop at Kamala's pleasure garden, realizing with shattering pain that he cannot protect his son from life, cannot spare him from his own mistakes, and must let him go.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Love for another person binds the soul to the mortal cycle of suffering (Sansara) more powerfully than any greed or lust.</li><li>No parent, regardless of spiritual wisdom, can spare their child the necessity of making their own mistakes and living their own karma.</li><li>True love requires the agonizing act of letting go rather than imposing protective control.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Kamala's fatal snakebite and burial beneath the trees by the river.</li><li>The spoiled boy shouting insults, refusing to gather firewood, and running away with the coin purse.</li><li>Siddhartha standing outside the pleasure garden for hours, staring through the gilded gate in helpless heartbreak.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Karmic Inevitability of Generation</h5>
+          <p>Just as Siddhartha had to break his own Brahmin father's heart to seek his path, his son must break Siddhartha's heart to live his own destiny.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"He loved him, and preferred the sorrow and trouble of love to happiness and joy without the boy."</div>
+        
+        <div class="quote-box">"Do you really believe that you committed your follies in order to spare your son them? Did your father protect you against the Samanas, against suffering, against the world?"</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-11">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 11 &bull; The River at Sunset</div>
+            <h3 class="unit-title">Om: The Symphony of All Voices & Vasudeva's Departure</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">The wound of losing his son festers in Siddhartha's heart for months. Looking at ordinary travelers with children, he no longer feels superior; he feels a deep kinship with their blind, desperate love. One day, overwhelmed by grief, he rows out into the river to seek his son again. The river laughs at his folly. Returning to Vasudeva, Siddhartha confesses his persistent agony. Vasudeva leads him to the riverbank and commands him to listen with a fresh ear. Siddhartha listens deeply: he hears the voices of his father, his son, Kamala, Govinda, the merchants, the warriors, the weeping, the rejoicing—ten thousand intertwining voices of sorrow, joy, longing, and triumph. When all the voices merge together into one grand symphony, they form the single sacred word: Om. Siddhartha's wound heals instantly; his ego dissolves into universal unity. Vasudeva, seeing that his work is complete and his companion has attained enlightenment, quietly departs into the forest to die.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Suffering is transcended not by detaching from it, but by listening to its harmony within the totality of existence.</li><li>The universe is an interconnected polyphonic unity where every voice—even of grief and sin—is essential to the cosmic song.</li><li>When one's destiny is fulfilled, one steps aside quietly, without clinging or fanfare.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>The laughter of the river mirroring Siddhartha's own father's heartbreak decades earlier.</li><li>The merging of all distinct voices of creation into the single harmonious vibration 'Om'.</li><li>Vasudeva's eyes glowing with luminous light as he walks away into the golden trees.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Polyphonic Integration of Being</h5>
+          <p>When individual pain is viewed in isolation, it is tragic; when heard as part of the infinite counterpoint of all existence, it is revealed as pure harmony.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"All these voices, all these goals, all these yearnings, all these sorrows, all these pleasures... when he heard them all together, heard the thousandfold song of life consist of a single word: Om—the perfection!"</div>
+        
+        <div class="quote-box">"His smile shone radiant... in this hour Siddhartha stopped fighting against his destiny, stopped suffering. On his face shone the serenity of knowledge."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-12">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Part Two &bull; Chapter 12 &bull; The Ferry Hut on the River</div>
+            <h3 class="unit-title">Govinda: The Final Revelation & The Kiss of Unity</h3>
+          </div>
+          <span class="unit-tier-badge">Canonical Philosophical Fiction</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative & Philosophical Synthesis</div>
+        <p class="prose-p">In his old age, Govinda, still an earnest Buddhist monk searching for peace, hears tales of a wise old ferryman and journeys to the river. Once again failing to recognize Siddhartha, Govinda asks him for guidance. Siddhartha reveals himself and articulates the ultimate insights of his life: (1) Wisdom cannot be communicated; words can only convey knowledge, and whenever a truth is stated in words, its opposite is equally true; (2) Time is an illusion, meaning every sinner is already potentially a Buddha, and everything that exists is holy; (3) The world does not need improvement—it is already complete and perfect in every moment; (4) Love is the highest virtue of all, whereas intellectual systems despise love. Still bewildered by Siddhartha's strange words, Govinda is told to kiss Siddhartha's forehead. As Govinda's lips touch Siddhartha's brow, time dissolves: Govinda beholds an overwhelming, infinite stream of faces—men, women, animals, corpses, babies, gods, lovers, and murderers—all flowing into each other, all forming the smiling, serene face of Siddhartha. Weeping with awe, Govinda bows to the ground before the perfected one.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Wisdom is non-verbal and experiential; any verbalized truth is only half the truth, because its opposite is also true.</li><li>Every being is already complete and sacred; the distinction between sinner and saint is a temporal illusion.</li><li>Intellectual philosophies often despise love as attachment, yet love for the world as it actually is remains the highest spiritual achievement.</li>
+        </ul>
+
+        <div class="unit-section-title">Empirical Evidence & Concrete Realia</div>
+        <ul class="bullet-list">
+          <li>Siddhartha picking up a stone from the riverbank, explaining that the stone is not merely a stone—it has been a cloud, a plant, an animal, and is worthy of love.</li><li>Govinda's vision of thousands of living forms and cosmic faces streaming simultaneously across Siddhartha's forehead.</li><li>Govinda prostrating himself with tears streaming down his face before the motionless, smiling ferryman.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Behavioral & Epistemological Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Dialectic of Simultaneous Opposites</h5>
+          <p>In the absolute realm, every truth carries its opposite within itself; light implies dark, virtue implies sin, and the seeker is already that which is sought.</p>
+        </div>
+        
+        <div class="mechanism-box">
+          <h5>The Cosmic Vision of Total Interbeing</h5>
+          <p>Direct communion beyond words reveals that all forms of life are transient expressions of a single, eternal, loving consciousness.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Wisdom cannot be passed on. Wisdom which a wise man tries to communicate always sounds like foolishness."</div>
+        
+        <div class="quote-box">"In every truth the opposite is equally true! That is to say: a truth can only be expressed and enveloped in words if it is one-sided."</div>
+        
+        <div class="quote-box">"The world, Govinda, is not imperfect or slowly evolving along a long path to perfection. No, it is perfect at every moment; every sin already carries grace within itself."</div>
+        
+        <div class="quote-box">"This smile of Siddhartha’s... was exactly the same as the calm, delicate, impenetrable, perhaps gracious, perhaps mocking, wise, thousandfold smile of Gotama, the Buddha."</div>
+        
+      </article>
+      
+    </section>
+
+    <!-- VIEW B: Ontological Transmutation Cycle -->
+    <section id="view-dialectic" class="view-content">
+      <div class="unit-card">
+        <h3 class="unit-title" style="margin-bottom:12px;">The Dialectical Transmutation of the Soul</h3>
+        <p class="prose-p">Hesse structures Siddhartha's awakening not as a straight ascent, but as a Hegelian-Vedic dialectic that must exhaust thesis, antithesis, and counter-antithesis before achieving radiant synthesis.</p>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>1. Thesis: Ritual & Intellectual Scholasticism (The Brahmin)</h5>
+          <p>Mastery of mantras, Vedas, and external religious forms. Result: Existential bankruptcy. Knowledge about truth is not truth itself.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>2. Antithesis A: Negative Mortification (The Samana)</h5>
+          <p>The denial of the body, sensory suppression, fasting, and trance. Result: The ego is anesthetized but remains alive. Asceticism is merely a pious flight from existence.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>3. Antithesis B: Positive Immersion (The Courtesan & Merchant)</h5>
+          <p>The total immersion in physical passion, luxury, commerce, and gaming. Result: Sensory deadening, nausea, and the suicidal abyss. The flesh cannot satisfy the spirit.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>4. Synthesis: Receptive At-One-Ment (The River & The Ferryman)</h5>
+          <p>Listening to the river, dissolving the illusion of linear time, accepting the simultaneously divine nature of all things, and radiating universal love.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW C: Operational Heuristics of Living -->
+    <section id="view-heuristics" class="view-content">
+      <div class="unit-card">
+        <h3 class="unit-title" style="margin-bottom:12px;">Operational Heuristics of Applied Living</h3>
+        <p class="prose-p">Siddhartha provides actionable mental models for real-world autonomy, psychological resilience, and relationship navigation.</p>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>1. The Triad of Absolute Leverage ("I can think. I can wait. I can fast.")</h5>
+          <p>He who can think cannot be misled by false dogma. He who can wait cannot be pressured into panic. He who can fast cannot be bribed by physical need.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>2. The Ferryman's Listening Protocol</h5>
+          <p>True communication is not advice-giving; it is non-judgmental presence. Listening without ego creates a mirror in which others heal themselves.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>3. The Law of Parental Relinquishment</h5>
+          <p>No master or parent can spare another soul their necessary suffering. Love requires opening the cage door and letting the beloved make their own mistakes.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>4. The Simultaneity of Opposites</h5>
+          <p>Never condemn the sinner; in the perspective of eternity, the sinner is already a Buddha. All things are holy at every instant.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Intellectualist Codex Benchmark &bull; Hermann Hesse's <em>Siddhartha</em> &bull; Standalone Certified Knowledge Reconstruction</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    const themes = ['light', 'dark-mode', 'sepia-mode'];
+    let currentThemeIdx = 0;
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.remove('dark-mode', 'sepia-mode');
+      currentThemeIdx = (currentThemeIdx + 1) % themes.length;
+      if (themes[currentThemeIdx] !== 'light') {
+        document.body.classList.add(themes[currentThemeIdx]);
+      }
+    });
+
+    // Font toggle
+    const fontBtn = document.getElementById('fontBtn');
+    fontBtn.addEventListener('click', () => {
+      document.body.classList.toggle('serif-font');
+    });
+
+    // View tabs switcher
+    const tabs = document.querySelectorAll('.view-tab');
+    const viewSections = document.querySelectorAll('.view-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        viewSections.forEach(s => s.classList.remove('active'));
+
+        tab.classList.add('active');
+        const targetId = tab.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
