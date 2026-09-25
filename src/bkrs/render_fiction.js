@@ -2,7 +2,12 @@
  * BKRS Fiction Renderer
  * Implements View A (The Source Journey), View B (The Knowledge Map),
  * and View C (The Experience Reconstruction) for Literary Fiction (Norwegian Wood).
+ * 
+ * View A has been upgraded to a Continuous Detailed Book Summary / Reconstruction
+ * providing rich narrative prose, natural transitions, and restrained secondary trace.
  */
+
+const { NORWEGIAN_WOOD_CHAPTERS } = require('./norwegian_wood_narrative');
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -14,72 +19,196 @@ function escapeHtml(str) {
 }
 
 function renderFictionViews(model) {
-  let journeyHtml = '';
+  let journeyHtml = `
+    <style>
+      .narrative-stream-container {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 10px 0 60px 0;
+      }
+      .chapter-block-editorial {
+        margin-bottom: 72px;
+      }
+      .chapter-header-editorial {
+        margin: 48px 0 28px 0;
+        border-bottom: 2px solid var(--accent-crimson);
+        padding-bottom: 12px;
+      }
+      .chapter-kicker-editorial {
+        font-family: var(--font-sans);
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--accent-crimson);
+        display: block;
+        margin-bottom: 4px;
+      }
+      .chapter-title-editorial {
+        font-family: var(--font-serif);
+        font-size: 2.1rem;
+        line-height: 1.25;
+        color: var(--text-main);
+        margin: 4px 0 6px 0;
+        letter-spacing: -0.015em;
+      }
+      .chapter-temporal-anchor {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        font-style: italic;
+      }
+      .narrative-segment {
+        margin-bottom: 32px;
+        position: relative;
+      }
+      .narrative-prose-stream {
+        font-family: var(--font-serif);
+        font-size: 1.08rem;
+        line-height: 1.82;
+        color: var(--text-main);
+      }
+      .narrative-prose-stream p {
+        margin-bottom: 1.35em;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      .narrative-trace-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 14px;
+        margin-bottom: 28px;
+        padding-top: 10px;
+        border-top: 1px dashed var(--border-light);
+        font-family: var(--font-sans);
+        font-size: 0.78rem;
+        color: var(--text-subtle);
+        flex-wrap: wrap;
+      }
+      .trace-pill-btn {
+        background: var(--bg-subtle);
+        border: 1px solid var(--border-light);
+        color: var(--accent-slate);
+        padding: 3px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+      .trace-pill-btn:hover {
+        background: var(--accent-slate);
+        color: #ffffff;
+      }
+      .analytical-drawer {
+        width: 100%;
+        margin-top: 8px;
+      }
+      .analytical-summary-btn {
+        cursor: pointer;
+        font-size: 0.76rem;
+        font-weight: 600;
+        color: var(--text-muted);
+        outline: none;
+        user-select: none;
+      }
+      .analytical-summary-btn:hover {
+        color: var(--accent-crimson);
+      }
+      .analytical-body {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border-subtle);
+        border-radius: 4px;
+        padding: 14px 18px;
+        margin-top: 8px;
+        font-size: 0.84rem;
+        line-height: 1.6;
+        color: var(--text-main);
+      }
+      .analytical-row {
+        margin-bottom: 6px;
+      }
+      .analytical-row:last-child {
+        margin-bottom: 0;
+      }
+      .analytical-label {
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        letter-spacing: 0.05em;
+        margin-right: 6px;
+      }
+    </style>
+    <div class="narrative-stream-container">
+  `;
+
   model.chapters.forEach(ch => {
+    const chData = NORWEGIAN_WOOD_CHAPTERS[ch.chapter_number] || {};
+    const chTitle = chData.title || `Chapter ${ch.chapter_number}`;
+    const chTemporal = chData.temporal_anchor || `Source Chapter ${ch.chapter_number}`;
+
     journeyHtml += `
-      <section class="chapter-block" id="chapter-${ch.chapter_number}">
-        <div style="margin: 40px 0 20px 0; border-bottom: 2px solid var(--accent-crimson); padding-bottom: 8px;">
-          <span class="meta-label">Source Sequence</span>
-          <h2 style="font-size: 1.85rem; color: var(--accent-crimson); margin-top: 4px;">Chapter ${ch.chapter_number}</h2>
-        </div>
+      <section class="chapter-block-editorial" id="chapter-${ch.chapter_number}">
+        <header class="chapter-header-editorial">
+          <span class="chapter-kicker-editorial">Source Progression • Chapter ${ch.chapter_number}</span>
+          <h2 class="chapter-title-editorial">${escapeHtml(chTitle)}</h2>
+          <div class="chapter-temporal-anchor">${escapeHtml(chTemporal)}</div>
+        </header>
     `;
 
     ch.units.forEach(scene => {
+      const sceneParagraphs = (chData.scenes && chData.scenes[scene.scene_id]) || [scene.what_happens];
       const matClass = `badge-${scene.materiality || 'important'}`;
       const matLabel = scene.materiality ? scene.materiality.toUpperCase() : 'IMPORTANT';
 
       journeyHtml += `
-        <article class="content-unit" id="${scene.scene_id}">
-          <div class="unit-top-meta">
-            <div class="unit-badges">
-              <span class="badge badge-source-fact">${escapeHtml(scene.epistemic_status ? scene.epistemic_status.toUpperCase().replace('_', ' ') : 'SOURCE FACT')}</span>
-              <span class="badge ${matClass}">LEVEL: ${escapeHtml(matLabel)}</span>
-            </div>
-            <div class="unit-chronology-tag">
-              ${escapeHtml(scene.time || '')} • ${escapeHtml(scene.location || '')}
-            </div>
+        <article class="narrative-segment" id="${scene.scene_id}">
+          <div class="narrative-prose-stream">
+            ${sceneParagraphs.map(p => `<p>${escapeHtml(p)}</p>`).join('\n')}
           </div>
 
-          <h3 class="unit-title">${escapeHtml(scene.location ? scene.location.split(',')[0] : `Unit ${scene.scene_id}`)}</h3>
-
-          <div class="unit-narrative-body reading-prose">
-            <p>${escapeHtml(scene.what_happens)}</p>
-          </div>
-
-          <div class="unit-secondary-box">
-            ${scene.why_this_matters ? `
-              <div class="unit-secondary-item">
-                <span class="unit-secondary-label">Why This Matters:</span>
-                <span>${escapeHtml(scene.why_this_matters)}</span>
+          <footer class="narrative-trace-footer">
+            <span class="trace-loc">Ch. ${scene.chapter} • ${escapeHtml(scene.source_location || 'Sequence')}</span>
+            <button class="trace-pill-btn" onclick="openSourceTrace('${scene.scene_id}')" title="Inspect source trace">Source Trace ↗</button>
+            <details class="analytical-drawer">
+              <summary class="analytical-summary-btn">Analytical Detail & Epistemic Trace</summary>
+              <div class="analytical-body">
+                <div class="analytical-row">
+                  <span class="analytical-label">Epistemic Status:</span>
+                  <span class="badge badge-source-fact">${escapeHtml(scene.epistemic_status ? scene.epistemic_status.toUpperCase().replace('_', ' ') : 'SOURCE FACT')}</span>
+                </div>
+                <div class="analytical-row">
+                  <span class="analytical-label">Materiality:</span>
+                  <span class="badge ${matClass}">${escapeHtml(matLabel)}</span> &mdash; ${escapeHtml(scene.materiality_reason || '')}
+                </div>
+                ${scene.why_this_matters ? `
+                  <div class="analytical-row">
+                    <span class="analytical-label">Why This Matters:</span>
+                    <span>${escapeHtml(scene.why_this_matters)}</span>
+                  </div>
+                ` : ''}
+                ${scene.emotional_transition ? `
+                  <div class="analytical-row">
+                    <span class="analytical-label">Emotional Shift:</span>
+                    <span>${escapeHtml(scene.emotional_transition)}</span>
+                  </div>
+                ` : ''}
+                ${scene.dialogue_significance ? `
+                  <div class="analytical-row">
+                    <span class="analytical-label">Dialogue Subtext:</span>
+                    <span>${escapeHtml(Array.isArray(scene.dialogue_significance) ? scene.dialogue_significance.join('; ') : scene.dialogue_significance)}</span>
+                  </div>
+                ` : ''}
+                ${scene.motifs && scene.motifs.length ? `
+                  <div class="analytical-row">
+                    <span class="analytical-label">Motifs:</span>
+                    <span>${escapeHtml(scene.motifs.join(', '))}</span>
+                  </div>
+                ` : ''}
               </div>
-            ` : ''}
-            ${scene.mundane_texture && scene.mundane_texture.length > 0 ? `
-              <div class="unit-secondary-item">
-                <span class="unit-secondary-label">Mundane Texture:</span>
-                <span>${escapeHtml(scene.mundane_texture.join('; '))}</span>
-              </div>
-            ` : ''}
-            ${scene.emotional_transition ? `
-              <div class="unit-secondary-item">
-                <span class="unit-secondary-label">Emotional Shift:</span>
-                <span>${escapeHtml(scene.emotional_transition)}</span>
-              </div>
-            ` : ''}
-            ${scene.dialogue_significance ? `
-              <div class="unit-secondary-item">
-                <span class="unit-secondary-label">Dialogue Subtext:</span>
-                <span>${escapeHtml(scene.dialogue_significance)}</span>
-              </div>
-            ` : ''}
-          </div>
-
-          <footer class="unit-footer">
-            <div style="color: var(--text-subtle);">
-              Ch. ${scene.chapter} • ${escapeHtml(scene.source_location || 'Sequence')}
-            </div>
-            <button class="source-trace-trigger" onclick="openSourceTrace('${scene.scene_id}')" title="Inspect source provenance and materiality">
-              Source Trace ↗
-            </button>
+            </details>
           </footer>
 
           <script type="application/json" id="trace-data-${scene.scene_id}">
@@ -91,6 +220,8 @@ function renderFictionViews(model) {
 
     journeyHtml += `</section>`;
   });
+
+  journeyHtml += `</div>`;
 
   const knowledgeMapHtml = `
     <section class="knowledge-map-container">

@@ -1,0 +1,85 @@
+{
+  "audit_version": "1.0.0",
+  "timestamp": "2026-09-25T09:48:30Z",
+  "audit_name": "BKRS Detailed Summary / Reconstruction Product Direction Audit",
+  "status": "PROTOTYPE_IMPLEMENTED_AND_CERTIFIED",
+  "content_sufficiency_audit": {
+    "norwegian_wood": {
+      "genre": "literary_fiction",
+      "canonical_units_audited": 36,
+      "representative_chapters_audited": [1, 2, 3, 4, 6, 11],
+      "determination": "SUFFICIENT_FOR_DETAILED_SUMMARY",
+      "missing_information": [],
+      "rationale": "Canonical scene units contain all necessary narrative events, actions, dialogue significance, character emotional transitions, motifs, themes, sensory textures, and consequences. Previously observed fragmentation was entirely a consequence of the card-based renderer presentation."
+    },
+    "the_psychology_of_money": {
+      "genre": "analytical_nonfiction",
+      "canonical_units_audited": 24,
+      "representative_chapters_audited": [0, 1, 5, 8, 11, 20],
+      "determination": "SUFFICIENT_FOR_DETAILED_SUMMARY",
+      "missing_information": [],
+      "rationale": "Canonical units already contain core thesis claims, step-by-step logical chains, paired case study evidence, empirical study citations, qualifications, and counterarguments."
+    },
+    "bhagat_singh_a_life_in_revolution": {
+      "genre": "historical_biography",
+      "canonical_units_audited": 78,
+      "representative_chapters_audited": [0, 1, 22, 27, 46, 49],
+      "determination": "SUFFICIENT_FOR_DETAILED_SUMMARY",
+      "missing_information": [],
+      "rationale": "Canonical units contain narrative bodies, primary document extracts, 5-layer epistemic classifications, dual-timeline anchors, and micro/meso/macro contexts."
+    }
+  },
+  "prototype_implementation": {
+    "book_id": "norwegian-wood",
+    "view_modified": "VIEW_A_SOURCE_JOURNEY",
+    "components_created": [
+      "src/bkrs/norwegian_wood_narrative.js"
+    ],
+    "components_updated": [
+      "src/bkrs/render_fiction.js",
+      "src/bkrs/bkrs_adapter.js",
+      "docs/distillations/norwegian-wood/index.html"
+    ],
+    "design_features": {
+      "chapter_hierarchy": true,
+      "continuous_prose_stream": true,
+      "natural_transitions": true,
+      "integrated_conversations": true,
+      "integrated_emotional_transitions": true,
+      "restrained_secondary_trace": true,
+      "optional_analytical_drawer": true,
+      "database_cards_removed": true,
+      "epistemic_badges_demoted_to_secondary": true
+    },
+    "output_file_size_kb": 266.6
+  },
+  "regression_verification": {
+    "verify_all_readers": {
+      "status": "PASS",
+      "score": "3/3",
+      "norwegian_wood_scenes_rendered": "36/36",
+      "views_verified": ["view-journey", "view-map", "view-experience"],
+      "reader_controls_attached": true
+    },
+    "verify_cross_book_normalization": {
+      "status": "PASS",
+      "determinism_verified": true,
+      "validation_gates_passed": 12
+    },
+    "verify_cross_book_forensic": {
+      "status": "PASS",
+      "score": "50/50"
+    },
+    "audit_synthesis_forensic": {
+      "status": "PASS",
+      "score": "60/60",
+      "cryptographic_hashes_byte_identical": true
+    }
+  },
+  "governance_immutability_check": {
+    "book_master_json_mutated": false,
+    "normalized_corpora_mutated": false,
+    "synthesis_corpus_mutated": false,
+    "validation_artifacts_mutated": false
+  }
+}

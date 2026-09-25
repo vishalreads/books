@@ -65,7 +65,24 @@ function adaptKnowledgeUnits(kuPath) {
                   `Chapter ${chNum}`;
       }
     } else {
-      chTitle = unit.chapter_title || (chNum === 0 ? "Introduction" : (chNum === 21 && isNonFiction ? "Postscript" : `Chapter ${chNum}`));
+      if (data.book_id === 'norwegian-wood') {
+        const nwTitles = {
+          1: "The Boeing 747 at Hamburg & The Phantom Meadow",
+          2: "The Kobe Triad & Kizuki's Silent Exhaust Pipe",
+          3: "Sunday Walks in Tokyo & Naoko's 20th Birthday",
+          4: "The Electra Lecture & The Shadow of Nagasawa",
+          5: "Fire on the Rooftop & The Kobayashi Bookstore",
+          6: "Ami Hostel & The Pine Wood Confessions",
+          7: "The Strike Collapses & Midori's Hospital Vigil",
+          8: "The Terminal Ward & The Cucumber Vigil",
+          9: "The Farewell Dinner & Hatsumi's Doomed Billiard Game",
+          10: "Naoko's Relapse & The Final Winter in Kyoto",
+          11: "The Requiem Wake, Coastal Wandering & The Telephone Booth"
+        };
+        chTitle = nwTitles[chNum] || `Chapter ${chNum}`;
+      } else {
+        chTitle = unit.chapter_title || (chNum === 0 ? "Introduction" : (chNum === 21 && isNonFiction ? "Postscript" : `Chapter ${chNum}`));
+      }
     }
 
     if (!chaptersMap.has(chKey)) {
