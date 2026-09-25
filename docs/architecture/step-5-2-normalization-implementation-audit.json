@@ -1,0 +1,122 @@
+{
+  "audit_version": "1.0.0",
+  "timestamp": "2026-09-25T13:05:00Z",
+  "phase": "Step 5.2 — Independent Read-Only Cross-Book Normalization Adapter Implementation & Verification",
+  "source_census": {
+    "norwegian-wood": 36,
+    "the-psychology-of-money": 24,
+    "bhagat-singh-a-life-in-revolution": 78
+  },
+  "normalized_census": {
+    "norwegian-wood": 36,
+    "the-psychology-of-money": 24,
+    "bhagat-singh-a-life-in-revolution": 78
+  },
+  "validation_gates": {
+    "VAL-NORM-01": {
+      "gate": "All source units represented",
+      "status": "PASS",
+      "expected": 138,
+      "actual": 138,
+      "breakdown": {
+        "nw": 36,
+        "pm": 24,
+        "bs": 78
+      }
+    },
+    "VAL-NORM-02": {
+      "gate": "Zero duplicate source references",
+      "status": "PASS",
+      "duplicate_count": 0
+    },
+    "VAL-NORM-03": {
+      "gate": "Zero orphan references",
+      "status": "PASS",
+      "orphan_count": 0
+    },
+    "VAL-NORM-04": {
+      "gate": "Zero source-unit mutation",
+      "status": "PASS",
+      "details": "Pre- and post-normalization SHA-256 hashes identical"
+    },
+    "VAL-NORM-05": {
+      "gate": "Zero epistemic-status mutation",
+      "status": "PASS",
+      "mismatch_count": 0
+    },
+    "VAL-NORM-06": {
+      "gate": "Zero voice mutation",
+      "status": "PASS",
+      "voice_error_count": 0
+    },
+    "VAL-NORM-07": {
+      "gate": "Zero materiality mutation",
+      "status": "PASS",
+      "mismatch_count": 0
+    },
+    "VAL-NORM-08": {
+      "gate": "Zero temporal mutation",
+      "status": "PASS",
+      "error_count": 0
+    },
+    "VAL-NORM-09": {
+      "gate": "Zero provenance loss",
+      "status": "PASS",
+      "loss_count": 0
+    },
+    "VAL-NORM-10": {
+      "gate": "Zero causal-status mutation",
+      "status": "PASS",
+      "error_count": 0
+    },
+    "VAL-NORM-11": {
+      "gate": "Zero competing-account loss",
+      "status": "PASS",
+      "loss_count": 0
+    },
+    "VAL-NORM-12": {
+      "gate": "Zero genre-boundary collapse",
+      "status": "PASS",
+      "error_count": 0
+    }
+  },
+  "mutation_test": {
+    "status": "PASS",
+    "initial_hashes": {
+      "norwegian-wood": "115af84408e05379efd89e11970f57d0e076f27a992c4e577ee30b858c5af4ef",
+      "the-psychology-of-money": "b7b3395de8e5d3b03cdf4bb856c7e2a76a4398fce7e3a75bf7dfeaa981090ac2",
+      "bhagat-singh-a-life-in-revolution": "6624afef80a833bff957c0aa23c1fe4a6a58cb41c17e01e4cc16d6ca55c81360"
+    },
+    "post_hashes": {
+      "norwegian-wood": "115af84408e05379efd89e11970f57d0e076f27a992c4e577ee30b858c5af4ef",
+      "the-psychology-of-money": "b7b3395de8e5d3b03cdf4bb856c7e2a76a4398fce7e3a75bf7dfeaa981090ac2",
+      "bhagat-singh-a-life-in-revolution": "6624afef80a833bff957c0aa23c1fe4a6a58cb41c17e01e4cc16d6ca55c81360"
+    },
+    "zero_mutation_verified": true
+  },
+  "determinism_test": {
+    "status": "PASS",
+    "details": {
+      "norwegian-wood": {
+        "units_byte_identical": true,
+        "manifest_byte_identical": true
+      },
+      "the-psychology-of-money": {
+        "units_byte_identical": true,
+        "manifest_byte_identical": true
+      },
+      "bhagat-singh-a-life-in-revolution": {
+        "units_byte_identical": true,
+        "manifest_byte_identical": true
+      }
+    }
+  },
+  "cross_genre_regression": {},
+  "governance_checks": {
+    "reversibility_check": "PASS",
+    "no_synthesis_units_generated": "PASS",
+    "no_cross_book_relationships_generated": "PASS",
+    "concept_mappings_empty_check": "PASS"
+  },
+  "final_verdict": "PASS"
+}

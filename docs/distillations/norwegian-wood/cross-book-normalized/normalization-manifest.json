@@ -1,0 +1,15 @@
+{
+  "book_id": "norwegian-wood",
+  "title": "Norwegian Wood",
+  "author": "Haruki Murakami",
+  "genre": "literary_fiction",
+  "source_units_count": 36,
+  "normalized_units_count": 36,
+  "source_file_sha256": "115af84408e05379efd89e11970f57d0e076f27a992c4e577ee30b858c5af4ef",
+  "normalization_standard": "BKRS Core Schema v1.0 / Step 5.1",
+  "schema_compliance": "STRICT_READ_ONLY",
+  "reversibility": "100%_SOURCE_TRACEABLE",
+  "concept_mappings_populated": false,
+  "synthesis_units_generated": false,
+  "cross_book_relationships_generated": false
+}

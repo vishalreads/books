@@ -1,0 +1,15 @@
+{
+  "book_id": "bhagat-singh-a-life-in-revolution",
+  "title": "Bhagat Singh: A Life in Revolution",
+  "author": "Satvinder S. Juss",
+  "genre": "historical_biography",
+  "source_units_count": 78,
+  "normalized_units_count": 78,
+  "source_file_sha256": "6624afef80a833bff957c0aa23c1fe4a6a58cb41c17e01e4cc16d6ca55c81360",
+  "normalization_standard": "BKRS Core Schema v1.0 / Step 5.1",
+  "schema_compliance": "STRICT_READ_ONLY",
+  "reversibility": "100%_SOURCE_TRACEABLE",
+  "concept_mappings_populated": false,
+  "synthesis_units_generated": false,
+  "cross_book_relationships_generated": false
+}

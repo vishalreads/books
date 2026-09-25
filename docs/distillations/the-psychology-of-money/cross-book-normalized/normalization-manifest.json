@@ -1,0 +1,15 @@
+{
+  "book_id": "the-psychology-of-money",
+  "title": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "genre": "analytical_nonfiction",
+  "source_units_count": 24,
+  "normalized_units_count": 24,
+  "source_file_sha256": "b7b3395de8e5d3b03cdf4bb856c7e2a76a4398fce7e3a75bf7dfeaa981090ac2",
+  "normalization_standard": "BKRS Core Schema v1.0 / Step 5.1",
+  "schema_compliance": "STRICT_READ_ONLY",
+  "reversibility": "100%_SOURCE_TRACEABLE",
+  "concept_mappings_populated": false,
+  "synthesis_units_generated": false,
+  "cross_book_relationships_generated": false
+}
