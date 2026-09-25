@@ -1,0 +1,341 @@
+{
+  "timestamp": "2026-09-25T06:04:21.026Z",
+  "benchmark": "Bhagat Singh: A Life in Revolution (Juss, 2022)",
+  "verifier": "BKRS Forensic Semantic Verification Engine",
+  "sections": {
+    "A_structural_preservation": {
+      "status": "PASS",
+      "expected_units": 78,
+      "rendered_units": 78,
+      "rendered_sections": 58,
+      "views": {
+        "view_a": true,
+        "view_b": true,
+        "view_c": true
+      },
+      "sidebar_toc": true
+    },
+    "B_field_preservation": {
+      "status": "PASS",
+      "total_units_audited": 78,
+      "trace_payloads_recovered": 78,
+      "canonical_fields_checked": [
+        "unit_id",
+        "unit_type",
+        "title",
+        "source_location",
+        "structural_position",
+        "summary_statement",
+        "materiality",
+        "materiality_reason",
+        "epistemic_status",
+        "confidence",
+        "relationships",
+        "causal_relationships",
+        "source_evidence",
+        "genre_specific_payload",
+        "competing_accounts",
+        "temporal_metadata",
+        "archival_metadata"
+      ],
+      "failure_count": 0,
+      "failures": []
+    },
+    "C_epistemic_preservation": {
+      "status": "PASS",
+      "canonical_distribution": {
+        "[PRIMARY_SUBJECT_WRITING]": 8,
+        "[BIOGRAPHER_THESIS]": 8,
+        "[CORROBORATED_HISTORICAL_FACT]": 32,
+        "[CONTEMPORARY_RECORD]": 29,
+        "[COERCED_TESTIMONY]": 1
+      },
+      "mismatches": []
+    },
+    "D_causal_preservation": {
+      "status": "PASS",
+      "total_edges": 44,
+      "causal_status_distribution": {
+        "[DOCUMENTED_CAUSATION]": 42,
+        "[HISTORIAN_CAUSAL_HYPOTHESIS]": 1,
+        "[CORROBORATED_CAUSAL_INFERENCE]": 1
+      },
+      "view_b_dag_present": true,
+      "mismatches": []
+    },
+    "E_competing_account_preservation": {
+      "status": "PASS",
+      "dispute_units_count": 5,
+      "total_contested_issues": 8,
+      "view_b_matrix_present": true,
+      "mismatches": []
+    },
+    "F_temporal_preservation": {
+      "status": "PASS",
+      "units_audited": 78,
+      "mismatches": []
+    },
+    "G_source_traceability": {
+      "status": "PASS",
+      "representative_units_audited": 7,
+      "passed_units": 7,
+      "audit_details": [
+        {
+          "unit_id": "KU-BS-CH22-01",
+          "category": "historical_episode",
+          "description": "Saunders Action",
+          "status": "PASS",
+          "checks": {
+            "chapter_title_preserved": true,
+            "document_file_preserved": true,
+            "element_ids_preserved": true,
+            "referenced_notes_preserved": true,
+            "archival_citations_preserved": true,
+            "verbatim_evidence_preserved": true
+          }
+        },
+        {
+          "unit_id": "KU-BS-CH01-01",
+          "category": "life_episode",
+          "description": "Ancestral Heritage and Family Birth",
+          "status": "PASS",
+          "checks": {
+            "chapter_title_preserved": true,
+            "document_file_preserved": true,
+            "element_ids_preserved": true,
+            "referenced_notes_preserved": true,
+            "archival_citations_preserved": true,
+            "verbatim_evidence_preserved": true
+          }
+        },
+        {
+          "unit_id": "KU-BS-CH27-01",
+          "category": "document_unit",
+          "description": "Red Leaflets",
+          "status": "PASS",
+          "checks": {
+            "chapter_title_preserved": true,
+            "document_file_preserved": true,
+            "element_ids_preserved": true,
+            "referenced_notes_preserved": true,
+            "archival_citations_preserved": true,
+            "verbatim_evidence_preserved": true
+          }
+        },
+        {
+          "unit_id": "KU-BS-CH16-01",
+          "category": "archival_plate",
+          "description": "Assembly Plan / Plate 1",
+          "status": "PASS",
+          "checks": {
+            "chapter_title_preserved": true,
+            "document_file_preserved": true,
+            "element_ids_preserved": true,
+            "referenced_notes_preserved": true,
+            "archival_citations_preserved": true,
+            "verbatim_evidence_preserved": true
+          }
+        },
+        {
+          "unit_id": "KU-BS-CH48-01",
+          "category": "primary_source",
+          "description": "Why I Am an Atheist",
+          "status": "PASS",
+          "checks": {
+            "chapter_title_preserved": true,
+            "document_file_preserved": true,
+            "element_ids_preserved": true,
+            "referenced_notes_preserved": true,
+            "archival_citations_preserved": true,
+            "verbatim_evidence_preserved": true
+          }
+        },
+        {
+          "unit_id": "KU-BS-PROLOGUE-01",
+          "category": "biographer_thesis",
+          "description": "Emergency Powers Thesis",
+          "status": "PASS",
+          "checks": {
+            "chapter_title_preserved": true,
+            "document_file_preserved": true,
+            "element_ids_preserved": true,
+            "referenced_notes_preserved": true,
+            "archival_citations_preserved": true,
+            "verbatim_evidence_preserved": true
+          }
+        },
+        {
+          "unit_id": "KU-BS-CH50-01",
+          "category": "contested_account",
+          "description": "Gandhi-Irwin Commutation Discussions",
+          "status": "PASS",
+          "checks": {
+            "chapter_title_preserved": true,
+            "document_file_preserved": true,
+            "element_ids_preserved": true,
+            "referenced_notes_preserved": true,
+            "archival_citations_preserved": true,
+            "verbatim_evidence_preserved": true
+          }
+        }
+      ]
+    },
+    "H_materiality": {
+      "status": "PASS",
+      "distribution": {
+        "critical": 63,
+        "important": 14,
+        "textural": 1
+      },
+      "textural_unit_retained": true,
+      "mismatches": []
+    },
+    "I_search_retrieval": {
+      "status": "PASS",
+      "index_size": 78,
+      "test_queries_run": 17,
+      "failed_queries": 0,
+      "details": [
+        {
+          "category": "person/entity",
+          "query": "Sukhdev",
+          "status": "PASS",
+          "total_matches": 15,
+          "top_match": "KU-BS-CH17-01: 1922, Chauri Chaura: The Bardoli Retreat and the Great Disillusionment"
+        },
+        {
+          "category": "person/entity",
+          "query": "Saunders",
+          "status": "PASS",
+          "total_matches": 5,
+          "top_match": "KU-BS-CH22-01: 1928, J.P. Saunders’ Murder: The Assassination, FIR No. 121, Autopsy Discrepancies, and the Clandestine Escape"
+        },
+        {
+          "category": "organisation",
+          "query": "Hindustan Socialist Republican Association",
+          "status": "PASS",
+          "total_matches": 1,
+          "top_match": "KU-BS-CH24-01: 1928, Ferozeshah Kotla: The Socialist Watershed and Reconstitution of the HSRA"
+        },
+        {
+          "category": "organisation",
+          "query": "Naujawan Bharat Sabha",
+          "status": "PASS",
+          "total_matches": 4,
+          "top_match": "KU-BS-CH10-01: Punjabiyat: Syncretic Cultural Identity, Vernacular Secularism, and the Anti-Communal Ethos"
+        },
+        {
+          "category": "event",
+          "query": "Assembly Bombs",
+          "status": "PASS",
+          "total_matches": 1,
+          "top_match": "KU-BS-CH23-01: 1929, Delhi Assembly Bombs: The Non-Lethal Blast, Red Leaflets, and Voluntary Surrender"
+        },
+        {
+          "category": "event",
+          "query": "Kakori",
+          "status": "PASS",
+          "total_matches": 4,
+          "top_match": "KU-BS-CH09-01: 1924, Matwala: Journalism in Kanpur and Calcutta under the Pseudonym 'Balwant Singh'"
+        },
+        {
+          "category": "legal instrument",
+          "query": "Ordinance III",
+          "status": "PASS",
+          "total_matches": 17,
+          "top_match": "KU-BS-EPIGRAPH-01: Epigraph: The Last Letter to Comrades and the Affirmation of Reason"
+        },
+        {
+          "category": "legal instrument",
+          "query": "Section 121",
+          "status": "PASS",
+          "total_matches": 1,
+          "top_match": "KU-BS-APP-13: Archival Plate 13: Special Tribunal Final Judgment Extract (7 October 1930)"
+        },
+        {
+          "category": "archival plate",
+          "query": "Plate 1",
+          "status": "PASS",
+          "total_matches": 15,
+          "top_match": "KU-BS-CH35-01: The ‘Approvers’: State Pardons under Section 337 CrPC, Police Tutoring, and Treachery"
+        },
+        {
+          "category": "archival plate",
+          "query": "Plate 7",
+          "status": "PASS",
+          "total_matches": 1,
+          "top_match": "KU-BS-APP-07: Archival Plate 7: Lahore High Court Habeas Corpus Application"
+        },
+        {
+          "category": "primary document",
+          "query": "Why I Am an Atheist",
+          "status": "PASS",
+          "total_matches": 3,
+          "top_match": "KU-BS-EPIGRAPH-01: Epigraph: The Last Letter to Comrades and the Affirmation of Reason"
+        },
+        {
+          "category": "primary document",
+          "query": "Young Political Workers",
+          "status": "PASS",
+          "total_matches": 1,
+          "top_match": "KU-BS-CH37-01: 1931, ‘I Was Never a Terrorist’: The Final Political Testament to Young Political Workers"
+        },
+        {
+          "category": "disputed issue",
+          "query": "FIR No. 121",
+          "status": "PASS",
+          "total_matches": 2,
+          "top_match": "KU-BS-CH22-01: 1928, J.P. Saunders’ Murder: The Assassination, FIR No. 121, Autopsy Discrepancies, and the Clandestine Escape"
+        },
+        {
+          "category": "disputed issue",
+          "query": "Ganda Singh Wala",
+          "status": "PASS",
+          "total_matches": 2,
+          "top_match": "KU-BS-CH47-01: 23 March 1931: The Advanced Execution, Gallows Scene, and Clandestine Sutlej Disposal"
+        },
+        {
+          "category": "epistemic category",
+          "query": "PRIMARY_SUBJECT_WRITING",
+          "status": "PASS",
+          "total_matches": 9,
+          "top_match": "KU-BS-EPIGRAPH-01: Epigraph: The Last Letter to Comrades and the Affirmation of Reason"
+        },
+        {
+          "category": "epistemic category",
+          "query": "BIOGRAPHER_THESIS",
+          "status": "PASS",
+          "total_matches": 8,
+          "top_match": "KU-BS-PROLOGUE-01: Prologue: The Archival Excavation and the Legalist-Intellectual Thesis"
+        },
+        {
+          "category": "epistemic category",
+          "query": "COERCED_TESTIMONY",
+          "status": "PASS",
+          "total_matches": 2,
+          "top_match": "KU-BS-CH22-01: 1928, J.P. Saunders’ Murder: The Assassination, FIR No. 121, Autopsy Discrepancies, and the Clandestine Escape"
+        }
+      ]
+    },
+    "J_cross_genre_regression": {
+      "status": "PASS",
+      "benchmarks": {
+        "norwegian_wood": {
+          "genre": "literary_fiction",
+          "status": "PASS",
+          "scenes_audited": 36,
+          "trace_payloads_recovered": 36,
+          "field_failures": 0
+        },
+        "the_psychology_of_money": {
+          "genre": "analytical_nonfiction",
+          "status": "PASS",
+          "arguments_audited": 24,
+          "trace_payloads_recovered": 24,
+          "field_failures": 0
+        }
+      }
+    }
+  },
+  "overall_status": "PASS"
+}
