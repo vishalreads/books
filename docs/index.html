@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Intellectualist Grand Library • Master Codex Directory</title>
+  <style>
+    :root {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #ffffff;
+      --bg-subtle: #f4efe4;
+      --bg-elevated: #faf7f0;
+      --text-main: #181715;
+      --text-muted: #5c574e;
+      --accent-crimson: #85221c;
+      --accent-slate: #1f3347;
+      --accent-gold: #916c16;
+      --border-light: #ded7c8;
+      --border-dark: #7a7060;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.03);
+      --shadow-md: 0 6px 20px rgba(0,0,0,0.06);
+      --shadow-lg: 0 12px 36px rgba(0,0,0,0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    h1, h2, h3, h4, .serif {
+      font-family: "Georgia", "Cambria", "Times New Roman", serif;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 30px 24px 120px 24px;
+    }
+
+    /* Master Gazette Header */
+    .portal-header {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-top: 6px solid var(--accent-crimson);
+      padding: 36px 44px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-slate);
+      font-weight: 700;
+    }
+
+    .portal-title {
+      font-size: 3rem;
+      line-height: 1.1;
+      color: var(--accent-crimson);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .portal-tagline {
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-family: "Georgia", serif;
+    }
+
+    .golden-test-banner {
+      background: var(--bg-subtle);
+      border-left: 4px solid var(--accent-crimson);
+      padding: 14px 18px;
+      font-style: italic;
+      font-size: 0.94rem;
+      color: var(--text-main);
+    }
+
+    /* Featured Codex Spotlight */
+    .spotlight-box {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-left: 5px solid var(--accent-gold);
+      padding: 24px 32px;
+      margin-bottom: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .spotlight-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-gold);
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .spotlight-content { flex: 1; min-width: 320px; }
+    .spotlight-title { font-size: 1.6rem; color: var(--accent-slate); margin-bottom: 4px; }
+    .spotlight-desc { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 10px; font-style: italic; font-family: "Georgia", serif; }
+
+    /* Dashboard Stats Bar */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 18px;
+      text-align: center;
+    }
+
+    .stat-val {
+      font-family: "Georgia", serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-slate);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    /* Multi-Faceted Filter & Control Bar */
+    .control-deck {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 22px 28px;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .search-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .search-input-wrap {
+      flex: 2;
+      min-width: 300px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 18px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-subtle);
+      font-size: 0.95rem;
+      color: var(--text-main);
+      outline: none;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-crimson);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(133, 34, 28, 0.08);
+    }
+
+    .dropdown-select {
+      flex: 1;
+      min-width: 180px;
+      padding: 11px 14px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-subtle);
+      font-size: 0.88rem;
+      color: var(--text-main);
+      outline: none;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .view-toggle-grp {
+      display: flex;
+      border: 1px solid var(--border-light);
+    }
+
+    .view-btn {
+      background: var(--bg-subtle);
+      border: none;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--accent-slate);
+      transition: all 0.15s ease;
+    }
+
+    .view-btn.active {
+      background: var(--accent-slate);
+      color: #fff;
+    }
+
+    .pill-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid var(--border-light);
+      padding-top: 14px;
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill-btn {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      color: var(--text-main);
+      padding: 6px 12px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.15s ease;
+    }
+
+    .pill-btn:hover, .pill-btn.active {
+      background: var(--accent-slate);
+      color: #ffffff;
+      border-color: var(--accent-slate);
+    }
+
+    .pill-btn.bookmark-pill.active {
+      background: var(--accent-crimson);
+      border-color: var(--accent-crimson);
+    }
+
+    /* VIEW 1: EDITORIAL CARD GRID */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
+      gap: 28px;
+    }
+
+    .codex-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-top: 4px solid var(--accent-slate);
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .codex-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .badge-tier {
+      background: var(--accent-slate);
+      color: #fff;
+      padding: 3px 8px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+    }
+
+    .badge-hours {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      color: var(--accent-crimson);
+      padding: 3px 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .card-title {
+      font-size: 1.85rem;
+      line-height: 1.2;
+      color: var(--accent-crimson);
+      margin-bottom: 4px;
+    }
+
+    .card-subtitle {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      font-family: "Georgia", serif;
+    }
+
+    .card-author-line {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 10px;
+    }
+
+    .card-axiom {
+      font-family: "Georgia", serif;
+      font-style: italic;
+      font-size: 0.96rem;
+      background: var(--bg-subtle);
+      border-left: 3px solid var(--accent-slate);
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      color: #111;
+    }
+
+    .tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .tag-badge {
+      background: #f0eae1;
+      color: var(--accent-slate);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      cursor: pointer;
+    }
+
+    .tag-badge:hover {
+      background: var(--accent-slate);
+      color: #fff;
+    }
+
+    .card-btn-deck {
+      display: flex;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-light);
+      align-items: center;
+    }
+
+    .btn-codex {
+      display: inline-block;
+      background: var(--accent-crimson);
+      color: #ffffff;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s ease;
+      text-align: center;
+      flex: 2;
+    }
+
+    .btn-codex:hover { background: #631712; }
+
+    .btn-preview {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      color: var(--accent-slate);
+      padding: 10px 14px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .btn-preview:hover { background: #eae3d5; }
+
+    .star-bookmark-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.3rem;
+      color: #b0a898;
+      transition: color 0.15s ease;
+      padding: 0 4px;
+    }
+
+    .star-bookmark-btn.bookmarked {
+      color: var(--accent-gold);
+    }
+
+    /* VIEW 2: DENSE TABLE LEDGER (For 500 Books Scanning) */
+    .ledger-table-wrap {
+      display: none;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      overflow-x: auto;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ledger-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    .ledger-table th, .ledger-table td {
+      border-bottom: 1px solid var(--border-light);
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    .ledger-table th {
+      background: var(--bg-subtle);
+      font-family: "Georgia", serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-slate);
+      cursor: pointer;
+    }
+
+    .ledger-table tr:hover td {
+      background: #faf7f0;
+    }
+
+    /* SLIDE-OVER QUICK-PREVIEW DRAWER */
+    .drawer-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 2000;
+      display: none;
+      backdrop-filter: blur(2px);
+    }
+
+    .drawer-overlay.active { display: block; }
+
+    .drawer-panel {
+      position: fixed;
+      top: 0; right: -650px;
+      width: 600px;
+      max-width: 90vw;
+      height: 100%;
+      background: #ffffff;
+      z-index: 2001;
+      box-shadow: var(--shadow-lg);
+      padding: 40px;
+      overflow-y: auto;
+      transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .drawer-panel.active { right: 0; }
+
+    .drawer-close-btn {
+      position: absolute;
+      top: 20px; right: 24px;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .drawer-title { font-size: 2rem; color: var(--accent-crimson); margin-bottom: 6px; }
+    .drawer-subtitle { font-size: 1.15rem; font-style: italic; color: var(--text-muted); margin-bottom: 14px; font-family: "Georgia", serif; }
+
+    /* Drop Zone Card */
+    .drop-card {
+      background: #faf8f4;
+      border: 2px dashed var(--border-light);
+      padding: 32px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .code-tag {
+      font-family: monospace;
+      background: #e8e2d4;
+      padding: 2px 6px;
+      font-size: 0.85rem;
+    }
+
+    /* Pagination controls */
+    .pagination-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 36px;
+      padding: 16px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      font-size: 0.85rem;
+    }
+
+    .page-btn-grp { display: flex; gap: 8px; }
+    .page-btn {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      padding: 6px 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .page-btn.disabled { opacity: 0.5; cursor: not-allowed; }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-light);
+      padding-top: 30px;
+    }
+
+    @media (max-width: 820px) {
+      .catalog-grid { grid-template-columns: 1fr; }
+      .portal-title { font-size: 2.3rem; }
+      .portal-header { padding: 24px; }
+      .search-row { flex-direction: column; align-items: stretch; }
+      .drawer-panel { width: 100%; padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- MASTER GAZETTE HEADER -->
+  <header class="portal-header">
+    <div class="meta-bar">
+      <span>THE INTELLECTUALIST MASTER REPOSITORY</span>
+      <span>INDEX CATALOG: ARCHIVE-500-READY</span>
+      <span>EPIC SCALE CODEX PORTAL</span>
+    </div>
+    <h1 class="portal-title">The Master Library</h1>
+    <div class="portal-tagline">Exhaustive, Replacement-Grade Codices of Seminal Human Knowledge</div>
+    <div class="golden-test-banner">
+      <strong>The Standard of Total Replacement:</strong> Engineered to eliminate the need to read the source texts. Every codex stores deep causal mechanics, primary empirical trials, diagnostic typologies, edge cases, and verbatim operational scripts with zero publisher padding.
+    </div>
+    <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <a href="notebook.html" class="btn-codex" style="background: var(--accent-slate); color: #ffffff; padding: 10px 20px; text-decoration: none; font-weight: 700; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 8px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">📓 Open All-in-One 500-Book Single HTML Notebook &rarr;</a>
+    </div>
+  </header>
+
+  <!-- SPOTLIGHT HERO: ROTATING FEATURED CODEX -->
+  <aside class="spotlight-box" id="spotlightHero">
+    <div class="spotlight-content">
+      <div class="spotlight-tag">★ Featured Codex of the Week</div>
+      <h2 class="spotlight-title" id="spotlightTitle">Atomic Habits (James Clear)</h2>
+      <div class="spotlight-desc" id="spotlightDesc">"You do not rise to the level of your goals. You fall to the level of your systems."</div>
+      <p style="font-size: 0.88rem; color: var(--text-main); margin-bottom: 0;">
+        <strong>The Paradigm Shift:</strong> Deconstructs the finish-line trap of goal-setting; introduces the 4-step loop (Cue, Craving, Response, Reward) powered by Wolfram Schultz's dopamine anticipation curve.
+      </p>
+    </div>
+    <div>
+      <a href="distillations/atomic-habits/index.html" class="btn-codex" style="padding: 12px 24px; font-size: 0.85rem;">Open 20-Chapter Codex &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- DASHBOARD STATS -->
+  <section class="stats-row">
+    <div class="stat-card">
+      <div class="stat-val" id="statBooks">10</div>
+      <div class="stat-label">Codices in Library</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val" id="statHours">266.5 hrs</div>
+      <div class="stat-label">Reading Time Saved</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val" id="statStudies">42 Trials</div>
+      <div class="stat-label">Empirical Studies Vaulted</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">500 Books</div>
+      <div class="stat-label">Architectural Capacity</div>
+    </div>
+  </section>
+
+  <!-- MULTI-FACETED CONTROL DECK -->
+  <section class="control-deck">
+    <div class="search-row">
+      <div class="search-input-wrap">
+        <input type="text" id="searchInput" class="search-input" placeholder="Instant search across 500 titles, authors, mental models, studies, or tags...">
+      </div>
+      <select id="categorySelect" class="dropdown-select" onchange="applyFilters()">
+        <option value="all">All Disciplines & Fields</option>
+        <option value="Linguistics, German Language & CEFR Mastery">German Language & CEFR Mastery</option>
+        <option value="Behavioral Psychology & Habit Architecture">Behavioral Psychology</option>
+        <option value="Realpolitik, Strategy & Courtier Dynamics">Strategy & Realpolitik</option>
+        <option value="Applied Financial Mindset & Cash Flow Architecture">Financial Mindset & Cash Flow</option>
+        <option value="Trauma Dynamics, IPV & Narrative Psychology">Trauma Dynamics & IPV</option>
+        <option value="Cognitive Science & Decision Making">Cognitive Science</option>
+        <option value="Systems Thinking & Complex Systems">Systems Thinking</option>
+        <option value="Philosophy & Classical Ethics">Philosophy & Ethics</option>
+        <option value="Classical Mystical Philosophy & Yogic Metaphysics">Classical Mystical Philosophy & Metaphysics</option>
+      </select>
+      <select id="sortSelect" class="dropdown-select" onchange="applyFilters()">
+        <option value="recent">Sort: Recently Cataloged</option>
+        <option value="title">Sort: Title (A &rarr; Z)</option>
+        <option value="author">Sort: Author Name</option>
+        <option value="hours">Sort: Time Saved (High &rarr; Low)</option>
+        <option value="year">Sort: Publication Year</option>
+      </select>
+      <div class="view-toggle-grp">
+        <button id="viewGridBtn" class="view-btn active" onclick="switchView('grid')" title="Editorial Card View">⊞ Cards</button>
+        <button id="viewTableBtn" class="view-btn" onclick="switchView('table')" title="Dense Ledger Table (500 Books)">☰ Ledger</button>
+      </div>
+    </div>
+
+    <div class="pill-filter-row">
+      <div class="filter-pills">
+        <button class="pill-btn active" onclick="filterTier('all', this)">All Tiers</button>
+        <button class="pill-btn" onclick="filterTier('Tier 1', this)">Tier 1 (Empirical/Clinical)</button>
+        <button class="pill-btn" onclick="filterTier('Tier 2', this)">Tier 2 (Applied Systems)</button>
+        <button class="pill-btn" onclick="filterTier('Tier 3', this)">Tier 3 (Pop-Science)</button>
+        <button class="pill-btn bookmark-pill" id="bookmarkFilterBtn" onclick="toggleBookmarkFilter(this)">★ Saved Reading List (<span id="bookmarkCount">0</span>)</button>
+      </div>
+      <div style="font-size: 0.8rem; color: var(--text-muted);" id="resultCountLabel">
+        Showing 2 of 2 codices
+      </div>
+    </div>
+  </section>
+
+  <!-- VIEW 1: EDITORIAL CARD GRID -->
+  <main class="catalog-grid" id="catalogGrid">
+    <!-- Populated via JavaScript -->
+  </main>
+
+  <!-- VIEW 2: DENSE LEDGER TABLE (Engineered for 500 Books Scanning) -->
+  <section class="ledger-table-wrap" id="ledgerView">
+    <table class="ledger-table">
+      <thead>
+        <tr>
+          <th style="width: 40px;">★</th>
+          <th onclick="setSort('title')">Book Title & Subtitle ▾</th>
+          <th onclick="setSort('author')">Author ▾</th>
+          <th onclick="setSort('year')">Year ▾</th>
+          <th onclick="setSort('tier')">Epistemic Tier ▾</th>
+          <th>Discipline</th>
+          <th onclick="setSort('hours')">Time Saved ▾</th>
+          <th style="text-align: right;">Action</th>
+        </tr>
+      </thead>
+      <tbody id="ledgerTableBody">
+        <!-- Populated via JavaScript -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- PAGINATION DECK -->
+  <div class="pagination-bar" id="paginationBar">
+    <div id="pageInfo">Showing Page 1 of 1</div>
+    <div class="page-btn-grp">
+      <button class="page-btn disabled" id="prevPageBtn" onclick="changePage(-1)">← Previous</button>
+      <button class="page-btn disabled" id="nextPageBtn" onclick="changePage(1)">Next →</button>
+    </div>
+  </div>
+
+  <!-- SLIDE-OVER QUICK PREVIEW DRAWER -->
+  <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+  <aside class="drawer-panel" id="previewDrawer">
+    <button class="drawer-close-btn" onclick="closeDrawer()" title="Close (Esc)">&times;</button>
+    <div style="margin-bottom: 12px;">
+      <span class="badge-tier" id="drawerTier">Tier 2: Applied</span>
+      <span class="badge-hours" id="drawerHours" style="margin-left: 8px;">7.5 hrs saved</span>
+    </div>
+    <h2 class="drawer-title" id="drawerTitle">Atomic Habits</h2>
+    <div class="drawer-subtitle" id="drawerSubtitle">An Easy & Proven Way to Build Good Habits</div>
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px;" id="drawerAuthorYear">James Clear (2018) • Avery</div>
+    
+    <div class="card-axiom" id="drawerAxiom">"You do not rise to the level of your goals. You fall to the level of your systems."</div>
+
+    <div style="margin-bottom: 20px;">
+      <h4 style="font-size: 0.95rem; color: var(--accent-slate); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;">Foundational Mental Models:</h4>
+      <ul style="padding-left: 20px; font-size: 0.92rem;" id="drawerModels"></ul>
+    </div>
+
+    <div style="margin-bottom: 24px;">
+      <h4 style="font-size: 0.95rem; color: var(--accent-slate); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;">Vaulted Empirical Trials & Case Studies:</h4>
+      <ul style="padding-left: 20px; font-size: 0.92rem;" id="drawerStudies"></ul>
+    </div>
+
+    <div style="margin-bottom: 24px;">
+      <h4 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;">Cross-Index Tags:</h4>
+      <div class="tags-row" id="drawerTags"></div>
+    </div>
+
+    <div style="margin-top: auto; display: flex; gap: 10px;">
+      <a href="#" id="drawerLaunchBtn" class="btn-codex" style="flex: 2;">Launch Full 20-Chapter Codex &rarr;</a>
+      <a href="#" id="drawerMarkdownBtn" class="btn-preview" style="text-decoration: none; text-align: center;">Markdown</a>
+    </div>
+  </aside>
+
+  <footer>
+    <p>Intellectualist Distillation Engine • 500-Book Scalable Library Architecture</p>
+    <p style="font-size: 0.8rem; margin-top: 6px;">Drop any <span class="code-tag">.pdf</span>, <span class="code-tag">.epub</span>, <span class="code-tag">.mobi</span>, or <span class="code-tag">.md</span> book into <span class="code-tag">src/books/</span> to automatically generate and register another replacement codex.</p>
+  </footer>
+
+</div>
+
+<script>
+  // CANONICAL INLINE DATABASE (Auto-synced with docs/library-index.json)
+  const libraryData = {
+  "last_updated": "2026-09-25",
+  "total_books": 10,
+  "total_hours_saved": 266.5,
+  "categories": [
+    "Behavioral Psychology & Habit Architecture",
+    "Realpolitik, Strategy & Courtier Dynamics",
+    "Applied Financial Mindset & Cash Flow Architecture",
+    "Cognitive Science & Decision Making",
+    "Systems Thinking & Complex Systems",
+    "Philosophy & Classical Ethics",
+    "Trauma Dynamics, IPV & Narrative Psychology",
+    "Linguistics, German Language & CEFR Mastery",
+    "Classical Mystical Philosophy & Yogic Metaphysics",
+    "Security, Cryptography, Privacy & Tradecraft"
+  ],
+  "books": [
+    {
+      "id": "german-mastery-codex",
+      "title": "Der Weg zum Meister (The German Mastery Codex)",
+      "subtitle": "A Zero-to-Fluency A1–C1 Pedagogical Blueprint & Institute-Grade PDF Textbook Series",
+      "author": "Intellectualist Codex Series",
+      "year": 2026,
+      "publisher": "Intellectualist Press / CEFR Standards",
+      "epistemic_tier": "Tier 1: Comprehensive Linguistic Architecture",
+      "tier_short": "Tier 1",
+      "category": "Linguistics, German Language & CEFR Mastery",
+      "original_volume": "5 Volumes (56 Modules, Active Recall Drills, Goethe/TestDaF Exams)",
+      "reading_time_saved": "180.0 hrs saved",
+      "hours_val": 180,
+      "core_axiom": "German is not mastered through arbitrary memorization, but through understanding its underlying mechanical syntax engine.",
+      "tags": [
+        "German Language",
+        "CEFR A1-C1",
+        "Goethe-Zertifikat",
+        "TestDaF",
+        "Grammar Mechanics",
+        "Active Recall"
+      ],
+      "key_models": [
+        "The V2 Word Order & Verbal Bracket (Satzklammer)",
+        "The Suffix Gender Prediction Law (-ung, -heit, -keit, -ling)",
+        "The Universal Adjective Declension Flowchart",
+        "The Positional Verb Matrix (stellen/stehen, legen/liegen)",
+        "The Two-Way Preposition Decision Engine (Wohin vs. Wo)",
+        "The Nominalstil Transformation Algorithm (Scientific German)"
+      ],
+      "landmark_studies": [
+        "CEFR Common European Framework of Reference (Council of Europe)",
+        "Goethe-Institut Start Deutsch 1 & Zertifikat B1 Syllabi",
+        "telc Deutsch B2 Prüfungshandbuch",
+        "TestDaF Institut Academic Language Matrix (TDN 3-5)"
+      ],
+      "html_path": "distillations/german-mastery-codex/der-weg-zum-meister.html",
+      "markdown_path": "distillations/german-mastery-codex/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "atomic-habits",
+      "title": "Atomic Habits",
+      "subtitle": "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+      "author": "James Clear",
+      "year": 2018,
+      "publisher": "Avery / Penguin Random House",
+      "epistemic_tier": "Tier 2: Applied Behavioral System",
+      "tier_short": "Tier 2",
+      "category": "Behavioral Psychology & Habit Architecture",
+      "original_volume": "461,247 characters (20 chapters)",
+      "reading_time_saved": "7.5 hrs saved",
+      "hours_val": 7.5,
+      "core_axiom": "You do not rise to the level of your goals. You fall to the level of your systems.",
+      "tags": [
+        "Compounding",
+        "Habits",
+        "Neurobiology",
+        "Dopamine",
+        "Systems Thinking"
+      ],
+      "key_models": [
+        "The 4-Stage Loop (Cue, Craving, Response, Reward)",
+        "Identity-Based Habits (Three Concentric Rings)",
+        "Dopamine Anticipation (Schultz Prediction Error)",
+        "The 4 Laws & Their Reciprocal Negative Inversions",
+        "The Plateau of Latent Potential (Ice Cube at 32°F)",
+        "The Two-Minute Rule & Implementation Intentions"
+      ],
+      "landmark_studies": [
+        "Thorndike's Cat Puzzle Box (1898)",
+        "Robins' Vietnam Heroin Study (1971)",
+        "Milne/Orbell British Exercise Trial (2001)",
+        "Thorndike's Cafeteria Choice Architecture (2012)"
+      ],
+      "html_path": "distillations/atomic-habits/index.html",
+      "markdown_path": "distillations/atomic-habits/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "48-laws-of-power",
+      "title": "The 48 Laws of Power",
+      "subtitle": "A Definitive Manual of Realpolitik, Deception, and Courtier Strategy",
+      "author": "Robert Greene (with Joost Elffers)",
+      "year": 2000,
+      "publisher": "Viking / Penguin Publishing Group",
+      "epistemic_tier": "Tier 2: Applied Strategic Psychology",
+      "tier_short": "Tier 2",
+      "category": "Realpolitik, Strategy & Courtier Dynamics",
+      "original_volume": "937 KB (48 complete laws & historical archives)",
+      "reading_time_saved": "12.0 hrs saved",
+      "hours_val": 12,
+      "core_axiom": "Any man who tries to be good all the time is bound to come to ruin among the great number who are not good.",
+      "tags": [
+        "Power",
+        "Strategy",
+        "Deception",
+        "History",
+        "Courtier Dynamics"
+      ],
+      "key_models": [
+        "The Courtier's Dilemma (Indirection over Force)",
+        "Law 1: Never Outshine the Master (Fouquet vs. Louis XIV)",
+        "Law 15: Crush Your Enemy Totally (Liu Bang vs. Xiang Yu)",
+        "Law 20: Do Not Commit to Anyone (Virgin Queen Doctrine)",
+        "Law 33: Discover Each Man's Thumbscrew (Vulnerability Auditing)",
+        "Law 48: Assume Formlessness (Supreme Adaptability)"
+      ],
+      "landmark_studies": [
+        "Fouquet & Vaux-le-Vicomte Spectacle (1661)",
+        "Galileo's Dedication to Cosimo II de' Medici (1610)",
+        "Talleyrand's Survival Across 5 Opposing Regimes (1789-1830)",
+        "Bismarck's Ems Dispatch & German Unification (1870)"
+      ],
+      "html_path": "distillations/48-laws-of-power/index.html",
+      "markdown_path": "distillations/48-laws-of-power/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "rich-dad-poor-dad",
+      "title": "Rich Dad Poor Dad",
+      "subtitle": "What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
+      "author": "Robert T. Kiyosaki (with Sharon L. Lechter)",
+      "year": 2017,
+      "publisher": "Plata Publishing / Warner Books",
+      "epistemic_tier": "Tier 3: Applied Financial Mindset",
+      "tier_short": "Tier 3",
+      "category": "Applied Financial Mindset & Cash Flow Architecture",
+      "original_volume": "195 Pages (9 Core Lessons & Quadrant Excerpt)",
+      "reading_time_saved": "6.0 hrs saved",
+      "hours_val": 6,
+      "core_axiom": "The poor and middle class work for money. The rich have money work for them.",
+      "tags": [
+        "Cash Flow",
+        "Assets vs Liabilities",
+        "Real Estate",
+        "Taxes",
+        "CASHFLOW Quadrant"
+      ],
+      "key_models": [
+        "The Definition of Wealth (Fuller Survivability Time)",
+        "Asset vs. Liability Cash Flow Geometry",
+        "The Corporate Tax Asymmetry (Pre-tax expense deductions)",
+        "The Four Pillars of Financial IQ (Accounting, Investing, Markets, Law)",
+        "The CASHFLOW Quadrant (E, S, B, I Systems)",
+        "The Bill vs. Ed Water Pipeline Parable"
+      ],
+      "landmark_studies": [
+        "The 1923 Edgewater Beach Tycoons Crash",
+        "The 1956 Comic Book Basement Library",
+        "The 1990s Phoenix Foreclosure Arbitrage Machine",
+        "Ray Kroc's McDonald's Real Estate Strategy"
+      ],
+      "html_path": "distillations/rich-dad-poor-dad/index.html",
+      "markdown_path": "distillations/rich-dad-poor-dad/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "it-ends-with-us",
+      "title": "It Ends with Us",
+      "subtitle": "A Forensic Deconstruction of Intimate Partner Violence, Cognitive Dissonance, and Cycle Disruption",
+      "author": "Colleen Hoover",
+      "year": 2016,
+      "publisher": "Atria Books / Simon & Schuster",
+      "epistemic_tier": "Tier 1/2: Clinical Trauma Dynamics in Narrative Transmutation",
+      "tier_short": "Tier 1/2",
+      "category": "Trauma Dynamics, IPV & Narrative Psychology",
+      "original_volume": "384 Pages (35 Chapters, Epilogue, Author's Note)",
+      "reading_time_saved": "8.0 hrs saved",
+      "hours_val": 8,
+      "core_axiom": "It stops here. With me and you. It ends with us.",
+      "tags": [
+        "Trauma Bonding",
+        "Domestic Violence",
+        "Cycle of Abuse",
+        "Intergenerational Trauma",
+        "Cognitive Dissonance",
+        "Coercive Control"
+      ],
+      "key_models": [
+        "Walker's Cycle of Violence (Tension, Battering, Contrition)",
+        "Dutton & Painter's Traumatic Bonding (Intermittent Reinforcement)",
+        "The Sunk Cost of Empathy (Weaponized Childhood Tragedy)",
+        "The Gradual Heat Fallacy (Boiling Frog Boundary Erosion)",
+        "The Delivery Room Decoupling Heuristic (Future Generation Test)",
+        "The Dual-Identity Split (The Healer vs. The Batterer)"
+      ],
+      "landmark_studies": [
+        "Lenore E. Walker's Cycle of Violence & BWS (1979)",
+        "Dutton & Painter's Traumatic Bonding Theory (1981, 1993)",
+        "Evan Stark's Theory of Coercive Control (2007)",
+        "Widom's Longitudinal Cycle of Violence Study (1989)",
+        "Campbell's Femicide Lethality Assessment (2003)"
+      ],
+      "html_path": "distillations/it-ends-with-us/index.html",
+      "markdown_path": "distillations/it-ends-with-us/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "autobiography-of-a-yogi",
+      "title": "Autobiography of a Yogi",
+      "subtitle": "Paramahansa Yogananda's Definitive Treatise on Kriya Yoga, Lifetronic Physics, and Cosmic Consciousness",
+      "author": "Paramahansa Yogananda",
+      "year": 1946,
+      "publisher": "Philosophical Library / Self-Realization Fellowship",
+      "epistemic_tier": "Tier 1/2: Classical Mystical Philosophy, Yogic Science & Metaphysics",
+      "tier_short": "Tier 1/2",
+      "category": "Classical Mystical Philosophy & Yogic Metaphysics",
+      "original_volume": "~500 Pages (49 Chapters)",
+      "reading_time_saved": "14.0 hrs saved",
+      "hours_val": 14,
+      "core_axiom": "Kriya Yoga is an instrument through which human evolution can be mathematically accelerated.",
+      "tags": [
+        "Kriya Yoga",
+        "Pranayama",
+        "Lifetronic Physics",
+        "Maya",
+        "Samadhi",
+        "Cosmic Consciousness"
+      ],
+      "key_models": [
+        "The Spinal Decarbonization Engine (Kevala Kumbhaka)",
+        "The Mathematical Evolution Acceleration Formula (1 Kriya = 1 Solar Year)",
+        "Matter as Condensed Light (E = mc² & Lifetronic Atomic Manipulation)",
+        "The Threefold Nature of Man (Physical 16, Astral 19, Causal 35 Elements)",
+        "Sri Yukteswar's 24,000-Year Equinoctial Precession Yuga Cycle",
+        "Guru-Disciple Quantum Entanglement & Lineage Resonance"
+      ],
+      "landmark_studies": [
+        "Sir J.C. Bose's Plant Crescograph & Metal Fatigue Demonstrations (Calcutta)",
+        "Luther Burbank's Mind-Directed Botanical Mutations (Santa Rosa)",
+        "Therese Neumann's 35-Year Stigmatic Inedia Medical Surveillance (Bavaria)",
+        "Giri Bala's 56-Year Total Inedia Palace Quarantine (Murshidabad/Burdwan)",
+        "Sri Yukteswar's Equinoctial Precession Yuga Calculations (Serampore, 1894)"
+      ],
+      "html_path": "distillations/autobiography-of-a-yogi/index.html",
+      "markdown_path": "distillations/autobiography-of-a-yogi/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "norwegian-wood",
+      "title": "Norwegian Wood",
+      "subtitle": "A Forensic Autopsy of Grief, Suicide Contagion, and the Integration of Death into Life",
+      "author": "Haruki Murakami",
+      "year": 1987,
+      "publisher": "Kodansha / Vintage International (Jay Rubin Translation)",
+      "epistemic_tier": "Tier 1/2: Elegiac Existential Realism & Forensic Trauma",
+      "tier_short": "Tier 1/2",
+      "category": "Trauma Dynamics, IPV & Narrative Psychology",
+      "original_volume": "3,630 Paragraphs (11 Chapters)",
+      "reading_time_saved": "10.5 hrs saved",
+      "hours_val": 10.5,
+      "core_axiom": "Death exists, not as the opposite but as a part of life. By living our lives, we nurture death.",
+      "tags": [
+        "Grief",
+        "Suicide Contagion",
+        "Trauma",
+        "Thanatos vs Eros",
+        "Ami Hostel",
+        "Elegiac Realism"
+      ],
+      "key_models": [
+        "The Integration of Death Axiom (Compressed Node inside Life)",
+        "The Dichotomy of the Two Women: Thanatos (Naoko) vs Eros (Midori)",
+        "The Phantom Meadow Well (Latent Clinical Madness)",
+        "The Strawberry Shortcake Heuristic for Unconditional Acceptance",
+        "The Werther Effect in Adolescent Triads",
+        "The Kichijoji Requiem Wake (51 Guitar Songs as Secular Exorcism)"
+      ],
+      "landmark_studies": [
+        "David Phillips' Werther Effect / Suicide Contagion Epidemiology (1974)",
+        "ICD-11 / Prigerson Prolonged Grief Disorder Criteria",
+        "Functional Neurological Disorder / Psychogenic Conversion Paralysis (Reiko)",
+        "Thomas Mann's Sanatorium Inversion Dynamics (The Magic Mountain / Ami Hostel)"
+      ],
+      "html_path": "distillations/norwegian-wood/index.html",
+      "markdown_path": "distillations/norwegian-wood/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "the-psychology-of-money",
+      "title": "The Psychology of Money",
+      "subtitle": "Timeless Lessons on Wealth, Greed, and Happiness",
+      "author": "Morgan Housel",
+      "year": 2020,
+      "publisher": "Harriman House",
+      "epistemic_tier": "Tier 2: Behavioral Finance & Applied Economic Psychology",
+      "tier_short": "Tier 2",
+      "category": "Applied Financial Mindset & Cash Flow Architecture",
+      "original_volume": "242 Pages (20 Chapters + Introduction & Postscript)",
+      "reading_time_saved": "6.5 hrs saved",
+      "hours_val": 6.5,
+      "core_axiom": "Doing well with money is not a science of mathematics or finance; it is a soft skill of psychology and behavior control.",
+      "tags": [
+        "Behavioral Finance",
+        "Compounding",
+        "Frugality",
+        "Margin of Safety",
+        "Psychology",
+        "Wealth"
+      ],
+      "key_models": [
+        "The Wealth Asymmetry (Getting Wealthy vs. Staying Wealthy)",
+        "Wealth is What You Don't See (Hidden Options vs. Conspicuous Display)",
+        "The Man in the Car Paradox (Admiration vs. Object Fetishization)",
+        "Reasonable > Rational (Psychological Durability over Mathematical Perfection)",
+        "Tails Rule Everything (Fat-Tail Distributions in Returns)",
+        "The End of History Illusion (Underestimating Future Personal Change)"
+      ],
+      "landmark_studies": [
+        "Ulrike Malmendier & Stefan Nagel Generational Risk Tolerance NBER Study (2011)",
+        "Angus Campbell University of Michigan Sense of Well-Being Survey (1981)",
+        "Jordi Quoidbach & Daniel Gilbert End of History Illusion (Science, 2013)",
+        "Russell 3000 Index 34-Year Tail-Return Deconstruction (J.P. Morgan, 2014)"
+      ],
+      "html_path": "distillations/the-psychology-of-money/index.html",
+      "markdown_path": "distillations/the-psychology-of-money/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "open-source-intelligence-techniques",
+      "title": "Open Source Intelligence Techniques",
+      "subtitle": "Resources for Searching and Analyzing Online Information (6th Edition)",
+      "author": "Michael Bazzell",
+      "year": 2018,
+      "publisher": "CreateSpace / IntelTechniques",
+      "epistemic_tier": "Tier 1: Operational Tradecraft & Digital Forensics",
+      "tier_short": "Tier 1",
+      "category": "Security, Cryptography, Privacy & Tradecraft",
+      "original_volume": "480 Pages (24 Chapters)",
+      "reading_time_saved": "16.0 hrs saved",
+      "hours_val": 16,
+      "core_axiom": "95% of actionable intelligence value derives from the disciplined, lawful exploitation of public digital exhaust across fragmented namespaces without alerting the target.",
+      "tags": [
+        "OSINT",
+        "Digital Forensics",
+        "Investigation",
+        "Dorking",
+        "OPSEC",
+        "Social Engineering",
+        "Privacy"
+      ],
+      "key_models": [
+        "The Multi-Vector Identity Resolution & Triangulation Doctrine",
+        "The Sock Puppet Isolation & Demographic Genesis Architecture",
+        "The Advanced Boolean Dorking Matrix (site:, intitle:, inurl:, filetype:)",
+        "The WebRTC & Network Leak Containment Model",
+        "The Mobile Contact Synchronization Exploitation Engine",
+        "The Multi-Tier Investigative Pivot Flowchart (Email, Username, Phone, Domain)"
+      ],
+      "landmark_studies": [
+        "Smith v. Maryland / Carpenter v. United States Third-Party Doctrine",
+        "Computer Fraud and Abuse Act (18 U.S.C. § 1030) Access Boundaries",
+        "Electronic Communications Privacy Act (18 U.S.C. § 2510) Standards",
+        "Buscador Linux Investigative Forensic Architecture (Bazzell & Westcott, 2018)"
+      ],
+      "html_path": "distillations/open-source-intelligence-techniques/index.html",
+      "markdown_path": "distillations/open-source-intelligence-techniques/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "dont-bug-me",
+      "title": "Don't Bug Me: The Latest High-Tech Spy Methods",
+      "subtitle": "A Manual for Self-Defense Against Eavesdroppers & Technical Surveillance Countermeasures (TSCM)",
+      "author": "M.L. Shannon",
+      "year": 1992,
+      "publisher": "Paladin Press",
+      "epistemic_tier": "Tier 1: Physical TSCM & Electronic Countersurveillance",
+      "tier_short": "Tier 1",
+      "category": "Security, Cryptography, Privacy & Tradecraft",
+      "original_volume": "150 Pages (10 Parts + 10 Appendices)",
+      "reading_time_saved": "6.0 hrs saved",
+      "hours_val": 6,
+      "core_axiom": "Surveillance is constrained by immutable physical laws; every transmitter radiates energy, every semiconductor harmonic reflects RF, and every physical tap alters line impedance.",
+      "tags": [
+        "TSCM",
+        "Countersurveillance",
+        "Wiretaps",
+        "RF Bugs",
+        "NLJD",
+        "Physical Security",
+        "TEMPEST"
+      ],
+      "key_models": [
+        "The Acoustic Transducer to Modulation Pipeline",
+        "The Non-Linear Junction Detector Harmonic Principle (2nd vs 3rd Harmonic)",
+        "Series vs. Parallel Wiretap Electrical Displacement (Voltage/Resistance Mismatch)",
+        "The Infinity Transmitter Acoustic Seizure Architecture",
+        "The Time-Domain Reflectometry (TDR) Pulse Echo Mapping Engine",
+        "The Systematic 3-Level Physical & RF Sweep Protocol"
+      ],
+      "landmark_studies": [
+        "Wim van Eck Electromagnetic Radiation from Video Display Units (Computers & Security, 1985)",
+        "Bell System Technical Journal: Analog POTS Loop Electrical Standards",
+        "U.S. Department of Defense TEMPEST / NACSIM 5100A Standards",
+        "Principles of Non-Linear Junction Detection in Semiconductor Physics"
+      ],
+      "html_path": "distillations/dont-bug-me/index.html",
+      "markdown_path": "distillations/dont-bug-me/master-notes.md",
+      "featured": true
+    }
+  ]
+};
+
+  // State Management
+  let currentView = 'grid'; // 'grid' | 'table'
+  let activeTier = 'all';
+  let onlyBookmarks = false;
+  let bookmarks = JSON.parse(localStorage.getItem('intellectualist_bookmarks') || '[]');
+  let filteredList = [];
+  let currentPage = 1;
+  const pageSize = 12;
+
+  function updateBookmarkCount() {
+    document.getElementById('bookmarkCount').textContent = bookmarks.length;
+  }
+
+  function toggleBookmark(id, event) {
+    if (event) event.stopPropagation();
+    if (bookmarks.includes(id)) {
+      bookmarks = bookmarks.filter(b => b !== id);
+    } else {
+      bookmarks.push(id);
+    }
+    localStorage.setItem('intellectualist_bookmarks', JSON.stringify(bookmarks));
+    updateBookmarkCount();
+    applyFilters();
+  }
+
+  function toggleBookmarkFilter(btn) {
+    onlyBookmarks = !onlyBookmarks;
+    btn.classList.toggle('active', onlyBookmarks);
+    applyFilters();
+  }
+
+  function filterTier(tier, btn) {
+    activeTier = tier;
+    document.querySelectorAll('.filter-pills .pill-btn:not(.bookmark-pill)').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  }
+
+  function setTagSearch(tag) {
+    document.getElementById('searchInput').value = tag;
+    applyFilters();
+  }
+
+  function switchView(view) {
+    currentView = view;
+    document.getElementById('viewGridBtn').classList.toggle('active', view === 'grid');
+    document.getElementById('viewTableBtn').classList.toggle('active', view === 'table');
+    document.getElementById('catalogGrid').style.display = view === 'grid' ? 'grid' : 'none';
+    document.getElementById('ledgerView').style.display = view === 'table' ? 'block' : 'none';
+    renderCurrentPage();
+  }
+
+  function applyFilters() {
+    const search = document.getElementById('searchInput').value.toLowerCase();
+    const cat = document.getElementById('categorySelect').value;
+    const sort = document.getElementById('sortSelect').value;
+
+    filteredList = libraryData.books.filter(b => {
+      const matchTier = activeTier === 'all' || b.epistemic_tier.includes(activeTier);
+      const matchCat = cat === 'all' || b.category === cat;
+      const matchBookmark = !onlyBookmarks || bookmarks.includes(b.id);
+      const matchSearch = !search ||
+        b.title.toLowerCase().includes(search) ||
+        b.author.toLowerCase().includes(search) ||
+        b.core_axiom.toLowerCase().includes(search) ||
+        b.tags.some(t => t.toLowerCase().includes(search)) ||
+        b.key_models.some(m => m.toLowerCase().includes(search)) ||
+        b.landmark_studies.some(s => s.toLowerCase().includes(search));
+      return matchTier && matchCat && matchBookmark && matchSearch;
+    });
+
+    // Sort
+    if (sort === 'title') {
+      filteredList.sort((a,b) => a.title.localeCompare(b.title));
+    } else if (sort === 'author') {
+      filteredList.sort((a,b) => a.author.localeCompare(b.author));
+    } else if (sort === 'hours') {
+      filteredList.sort((a,b) => b.hours_val - a.hours_val);
+    } else if (sort === 'year') {
+      filteredList.sort((a,b) => b.year - a.year);
+    }
+
+    currentPage = 1;
+    renderCurrentPage();
+  }
+
+  function renderCurrentPage() {
+    document.getElementById('resultCountLabel').textContent = `Showing ${filteredList.length} of ${libraryData.books.length} codices`;
+
+    if (currentView === 'grid') {
+      renderGrid();
+    } else {
+      renderTable();
+    }
+  }
+
+  function renderGrid() {
+    const grid = document.getElementById('catalogGrid');
+    grid.innerHTML = '';
+
+    if (filteredList.length === 0) {
+      grid.innerHTML = `
+        <div style="grid-column: 1 / -1; background: #fff; padding: 40px; text-align: center; border: 1px solid var(--border-light);">
+          <p style="font-size: 1.1rem; color: var(--text-muted);">No codices found matching your query. Adjust your filter or search terms.</p>
+        </div>
+      `;
+      return;
+    }
+
+    filteredList.forEach(book => {
+      const isBookmarked = bookmarks.includes(book.id);
+      const card = document.createElement('article');
+      card.className = 'codex-card';
+      card.innerHTML = `
+        <div>
+          <div class="card-meta-bar">
+            <span class="badge-tier">${book.epistemic_tier}</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="badge-hours">${book.reading_time_saved}</span>
+              <button class="star-bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" onclick="toggleBookmark('${book.id}', event)" title="Bookmark this codex">★</button>
+            </div>
+          </div>
+          <h2 class="card-title">${book.title}</h2>
+          <div class="card-subtitle">${book.subtitle}</div>
+          <div class="card-author-line">
+            <strong>${book.author}</strong> (${book.year}) • ${book.publisher}
+          </div>
+          <div class="card-axiom">"${book.core_axiom}"</div>
+          <div class="tags-row">
+            ${book.tags.map(t => `<span class="tag-badge" onclick="setTagSearch('${t}')">#${t}</span>`).join('')}
+          </div>
+        </div>
+        <div class="card-btn-deck">
+          <a href="${book.html_path}" class="btn-codex">Open Master Codex</a>
+          <button class="btn-preview" onclick="openDrawer('${book.id}')">Quick Preview</button>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    // Drop card to expand
+    const drop = document.createElement('div');
+    drop.className = 'drop-card';
+    drop.innerHTML = `
+      <h3 style="font-size: 1.3rem; color: var(--accent-slate); margin-bottom: 8px;">+ Ingest Another Book</h3>
+      <p style="font-size: 0.88rem; color: var(--text-muted); max-width: 400px; margin: 0 auto 12px auto;">
+        Drop any <span class="code-tag">.pdf</span>, <span class="code-tag">.epub</span>, <span class="code-tag">.mobi</span>, or <span class="code-tag">.md</span> file into <span class="code-tag">src/books/</span> to generate and register another codex.
+      </p>
+    `;
+    grid.appendChild(drop);
+  }
+
+  function renderTable() {
+    const tbody = document.getElementById('ledgerTableBody');
+    tbody.innerHTML = '';
+
+    if (filteredList.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; padding: 30px; color: var(--text-muted);">No codices found.</td></tr>`;
+      return;
+    }
+
+    filteredList.forEach(book => {
+      const isBookmarked = bookmarks.includes(book.id);
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>
+          <button class="star-bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" onclick="toggleBookmark('${book.id}', event)">★</button>
+        </td>
+        <td>
+          <strong style="color: var(--accent-crimson); cursor: pointer;" onclick="openDrawer('${book.id}')">${book.title}</strong>
+          <div style="font-size: 0.78rem; color: var(--text-muted); font-style: italic;">${book.subtitle}</div>
+        </td>
+        <td>${book.author}</td>
+        <td>${book.year}</td>
+        <td><span class="badge-tier" style="font-size: 0.65rem;">${book.tier_short || 'Tier 2'}</span></td>
+        <td style="font-size: 0.8rem; color: var(--text-muted);">${book.category}</td>
+        <td><strong style="color: var(--accent-crimson);">${book.reading_time_saved}</strong></td>
+        <td style="text-align: right; white-space: nowrap;">
+          <a href="${book.html_path}" style="color: var(--accent-crimson); font-weight: 700; text-decoration: none; margin-right: 10px;">Codex</a>
+          <button onclick="openDrawer('${book.id}')" style="background: none; border: 1px solid var(--border-light); padding: 4px 8px; cursor: pointer; font-size: 0.75rem;">Preview</button>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Quick-Preview Drawer Controls
+  function openDrawer(id) {
+    const book = libraryData.books.find(b => b.id === id);
+    if (!book) return;
+
+    document.getElementById('drawerTitle').textContent = book.title;
+    document.getElementById('drawerSubtitle').textContent = book.subtitle;
+    document.getElementById('drawerAuthorYear').textContent = `${book.author} (${book.year}) • ${book.publisher} • ${book.original_volume}`;
+    document.getElementById('drawerTier').textContent = book.epistemic_tier;
+    document.getElementById('drawerHours').textContent = book.reading_time_saved;
+    document.getElementById('drawerAxiom').textContent = `"${book.core_axiom}"`;
+
+    const modelsUl = document.getElementById('drawerModels');
+    modelsUl.innerHTML = book.key_models.map(m => `<li style="margin-bottom: 6px;"><strong>${m}</strong></li>`).join('');
+
+    const studiesUl = document.getElementById('drawerStudies');
+    studiesUl.innerHTML = book.landmark_studies.map(s => `<li style="margin-bottom: 6px;">${s}</li>`).join('');
+
+    const tagsDiv = document.getElementById('drawerTags');
+    tagsDiv.innerHTML = book.tags.map(t => `<span class="tag-badge" onclick="setTagSearch('${t}'); closeDrawer();">#${t}</span>`).join('');
+
+    document.getElementById('drawerLaunchBtn').href = book.html_path;
+    document.getElementById('drawerMarkdownBtn').href = book.markdown_path;
+
+    document.getElementById('drawerOverlay').classList.add('active');
+    document.getElementById('previewDrawer').classList.add('active');
+  }
+
+  function closeDrawer() {
+    document.getElementById('drawerOverlay').classList.remove('active');
+    document.getElementById('previewDrawer').classList.remove('active');
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeDrawer();
+  });
+
+  document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+  // Initialize
+  updateBookmarkCount();
+  applyFilters();
+</script>
+
+</body>
+</html>

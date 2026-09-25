@@ -1,0 +1,1496 @@
+const fs = require('fs');
+const path = require('path');
+
+const CATALOG_DATA = [
+  // --- PILLAR 1: Mind, Cognition & Behavioral Science ---
+  {
+    id: "thinking-fast-and-slow",
+    title: "Thinking, Fast and Slow",
+    subtitle: "Two Systems That Drive the Way We Think, Choose, and Err",
+    author: "Daniel Kahneman",
+    year: 2011,
+    pillar_id: 1,
+    pillar_name: "Mind, Cognition & Behavioral Science",
+    epistemic_tier: "Tier 1: Foundational Cognitive Psychology & Behavioral Economics",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Human rationality is bounded; System 1 intuition effortlessly generates heuristic biases that System 2 laziness frequently endorses without verification.",
+    emotional_stakes: "The devastating realization of human cognitive fragility: our deepest convictions, judgments of probability, and life choices are routinely hijacked by illusions we cannot feel happening. Kahneman's lifelong intellectual brotherhood with Amos Tversky infuses the book with intellectual humility, mourning, and profound human empathy.",
+    key_models: [
+      "System 1 (Fast, Automatic, Heuristic) vs System 2 (Slow, Deliberate, Effortful)",
+      "Prospect Theory: Loss Aversion (losses hurt ~2x more than equivalent gains)",
+      "WYSIATI (What You See Is All There Is) & Coherent Story Construction",
+      "Anchoring & Adjustment Dynamics in Numerical Estimation",
+      "The Experiencing Self vs. The Remembering Self (Peak-End Rule)"
+    ],
+    landmark_studies: [
+      "Tversky & Kahneman Linda Problem / Conjunction Fallacy (1983)",
+      "Judicial Parole Decisions & Glucose Depletion Study (Danziger et al., 2011)",
+      "Asian Disease Problem framing experiments (1981)",
+      "Cold-Pressor Pain Trial & Peak-End Rule validation (1993)"
+    ],
+    reading_time_saved: "13.5 hrs saved",
+    original_volume: "512 Pages (38 Chapters)"
+  },
+  {
+    id: "atomic-habits",
+    title: "Atomic Habits",
+    subtitle: "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+    author: "James Clear",
+    year: 2018,
+    pillar_id: 1,
+    pillar_name: "Mind, Cognition & Behavioral Science",
+    epistemic_tier: "Tier 2: Applied Behavioral System",
+    tier_short: "Tier 2",
+    status: "distilled",
+    core_axiom: "You do not rise to the level of your goals. You fall to the level of your systems.",
+    emotional_stakes: "Born from Clear's near-fatal high school baseball injury that shattered his face and placed him in a medically induced coma. The emotional driver is the agonizing, microscopic climb back to normalcy—proving that small, unglamorous 1% repetitions are the only real antidote to despair and chaos.",
+    key_models: [
+      "The 4-Stage Loop (Cue, Craving, Response, Reward)",
+      "Identity-Based Habits (Concentric rings: Outcomes vs Processes vs Identity)",
+      "Dopamine Anticipation (Schultz Prediction Error & Craving Engine)",
+      "The 4 Laws & Their Inversions (Obvious, Attractive, Easy, Satisfying)",
+      "The Plateau of Latent Potential & The Valley of Disappointment"
+    ],
+    landmark_studies: [
+      "Thorndike's Cat Puzzle Box & Law of Effect (1898)",
+      "Lee Robins' Vietnam Heroin Addiction Study (1971)",
+      "Milne, Orbell & Sheeran British Exercise Implementation Intentions (2001)",
+      "Anne Thorndike Cafeteria Choice Architecture Experiment (2012)"
+    ],
+    reading_time_saved: "7.5 hrs saved",
+    original_volume: "320 Pages (20 Chapters)",
+    markdown_path: "distillations/atomic-habits/master-notes.md",
+    html_path: "distillations/atomic-habits/index.html"
+  },
+  {
+    id: "influence",
+    title: "Influence: The Psychology of Persuasion",
+    subtitle: "The 6 Universal Principles of Ethical & Weaponized Compliance",
+    author: "Robert B. Cialdini",
+    year: 1984,
+    pillar_id: 1,
+    pillar_name: "Mind, Cognition & Behavioral Science",
+    epistemic_tier: "Tier 1: Experimental Social Psychology & Compliance Science",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Human behavior is triggered by fixed-action patterns that can be activated by specific optical, social, and linguistic trigger features without conscious consent.",
+    emotional_stakes: "Cialdini's confession of being an lifelong 'easy mark' who got continually duped by car salesmen and fundraisers. His undercover infiltration into sales training schools exposes the sinister mechanics of psychological manipulation used against ordinary vulnerable citizens.",
+    key_models: [
+      "Fixed-Action Patterns & The 'Click, Whirr' Response (Langer Copy Machine)",
+      "The Rule of Reciprocation & Rejection-Then-Retreat Door-in-the-Face Technique",
+      "Commitment & Consistency (Foot-in-the-Door & Hazing Ritual Invariance)",
+      "Social Proof & The Werther Effect (Pluralistic Ignorance in Emergencies)",
+      "Authority & The Symbols of Expertise (Titles, Clothes, Trappings)",
+      "Scarcity & Psychological Reactance (Romeo and Juliet Effect)"
+    ],
+    landmark_studies: [
+      "Ellen Langer 'Because' Xerox Queue Experiment (1978)",
+      "Freedman & Fraser Safe Driving Billboard Foot-in-the-Door Trial (1966)",
+      "Milgram Obedience to Authority Shock Experiments (1963)",
+      "Darley & Latané Bystander Inaction & Pluralistic Ignorance Tests (1968)"
+    ],
+    reading_time_saved: "8.5 hrs saved",
+    original_volume: "336 Pages (7 Chapters)"
+  },
+  {
+    id: "predictably-irrational",
+    title: "Predictably Irrational",
+    subtitle: "The Hidden Forces That Shape Our Decisions",
+    author: "Dan Ariely",
+    year: 2008,
+    pillar_id: 1,
+    pillar_name: "Mind, Cognition & Behavioral Science",
+    epistemic_tier: "Tier 1/2: Behavioral Economics & Experimental Psychology",
+    tier_short: "Tier 1/2",
+    status: "queued",
+    core_axiom: "Human irrationality is not random or senseless; it is systematic, patterned, and repeatable across markets, social contracts, and moral judgments.",
+    emotional_stakes: "Rooted in Ariely's horrific third-degree burn trauma spanning 70% of his body in Israel. Months in agonizing burn baths where nurses tore bandages quickly sparked his empirical quest to discover whether our intuitions about human pain, cost, and decision-making are fundamentally wrong.",
+    key_models: [
+      "The Relativity Trap & The Asymmetric Decoy Effect (Economist Subscription)",
+      "Social Norms vs. Market Norms (Why paying friends destroys relationships)",
+      "The High Cost of Free (Zero Price Effect and irrational tradeoff shifts)",
+      "The Effect of Expectations & Placebo Neurochemistry (Beer with vinegar)",
+      "The Context of Our Character (The Fudge Factor in cheating & honor codes)"
+    ],
+    landmark_studies: [
+      "MIT Decoy Subscription Experiment (Ariely, 2008)",
+      "Haifa Daycare Late-Pickup Fine Experiment (Gneezy & Rustichini, 2000)",
+      "Lindt Truffle vs. Hershey Kiss Zero Price Experiment (Shampanier et al., 2007)",
+      "Ten Commandments Recall & Cheating Frequency Trial (Mazar et al., 2008)"
+    ],
+    reading_time_saved: "9.0 hrs saved",
+    original_volume: "384 Pages (15 Chapters)"
+  },
+  {
+    id: "the-master-and-his-emissary",
+    title: "The Master and His Emissary",
+    subtitle: "The Divided Brain and the Making of the Western World",
+    author: "Iain McGilchrist",
+    year: 2009,
+    pillar_id: 1,
+    pillar_name: "Mind, Cognition & Behavioral Science",
+    epistemic_tier: "Tier 1: Neuropsychiatry, Philosophy of Mind & Cultural History",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "The brain's hemispheres do not differ in what they do, but in how they attend: the left hemisphere manipulates a decontextualized, explicit map, while the right hemisphere grounds living, holistic reality.",
+    emotional_stakes: "A profound cultural lamentation and diagnostic warning: modern civilization is succumbing to a left-hemisphere pathological dictatorship—obsessed with bureaucracy, algorithmic metrics, mechanistic reductionism, and digital abstractions, suffocating poetry, embodiment, and genuine human connection.",
+    key_models: [
+      "The Master (Right Hemisphere: Broad, uncommitted, relational, living context)",
+      "The Emissary (Left Hemisphere: Narrow, laser-focused, utilitarian, mechanistic)",
+      "The Betrayal: When the Emissary believes it is the Master and denies the whole",
+      "Appresentation vs. Representation (Living encounter vs. dead re-presentation)",
+      "The Schizoid & Bureaucratic Trajectory of Hyper-Rational Industrial Culture"
+    ],
+    landmark_studies: [
+      "Sperry & Gazzaniga Split-Brain Hemisphere Dissociation Experiments (1960s-80s)",
+      "Unilateral Stroke & Hemispatial Neglect Clinical Studies (Bisiach & Luzzatti, 1978)",
+      "Wada Sodium Amytal Testing & Emotional Asymmetry Mappings",
+      "Primate Foraging & Vigilance Dual-Attention Evolutionary Observations"
+    ],
+    reading_time_saved: "18.0 hrs saved",
+    original_volume: "608 Pages (2 Parts, 12 Chapters)"
+  },
+
+  // --- PILLAR 2: Power, Strategy, War & Realpolitik ---
+  {
+    id: "48-laws-of-power",
+    title: "The 48 Laws of Power",
+    subtitle: "A Definitive Manual of Realpolitik, Deception, and Courtier Strategy",
+    author: "Robert Greene",
+    year: 2000,
+    pillar_id: 2,
+    pillar_name: "Power, Strategy, War & Realpolitik",
+    epistemic_tier: "Tier 2: Applied Strategic Psychology & Historical Realpolitik",
+    tier_short: "Tier 2",
+    status: "distilled",
+    core_axiom: "Any man who tries to be good all the time is bound to come to ruin among the great number who are not good.",
+    emotional_stakes: "The icy disillusionment of corporate and historical court politics. Greene captures the predatory games of vanity, jealousy, and subtle betrayal that govern human hierarchies, freeing the reader from naive sentimentality while exposing the heavy psychic isolation of total formlessness.",
+    key_models: [
+      "Law 1: Never Outshine the Master (Fouquet vs. Louis XIV)",
+      "Law 15: Crush Your Enemy Totally (Liu Bang vs. Xiang Yu)",
+      "Law 20: Do Not Commit to Anyone (The Virgin Queen Doctrine)",
+      "Law 33: Discover Each Man's Thumbscrew (Vulnerability Auditing)",
+      "Law 48: Assume Formlessness (Supreme Strategic Fluidity)"
+    ],
+    landmark_studies: [
+      "Nicolas Fouquet's Fateful Vaux-le-Vicomte Fête (1661)",
+      "Galileo Galilei's Dedication to the Medici Dynasty (1610)",
+      "Talleyrand's Survival Across 5 Opposing French Regimes (1789-1830)",
+      "Bismarck's Doctored Ems Dispatch & German Unification (1870)"
+    ],
+    reading_time_saved: "12.0 hrs saved",
+    original_volume: "452 Pages (48 Chapters)",
+    markdown_path: "distillations/48-laws-of-power/master-notes.md",
+    html_path: "distillations/48-laws-of-power/index.html"
+  },
+  {
+    id: "the-prince",
+    title: "The Prince",
+    subtitle: "Realpolitik, Statecraft, and the Separation of Morality from Power",
+    author: "Niccolò Machiavelli",
+    year: 1532,
+    pillar_id: 2,
+    pillar_name: "Power, Strategy, War & Realpolitik",
+    epistemic_tier: "Tier 1: Classical Political Philosophy & Statecraft",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "A ruler must learn how not to be good, and how to use or not use that knowledge according to necessity; the ends of state survival justify non-Christian means.",
+    emotional_stakes: "Written in desperate exile from a damp farmhouse in San Casciano after Machiavelli was imprisoned, stripped naked, and tortured on the strappado by the restored Medici. The prose vibrates with raw patriotic urgency to unite fragmented Italy against foreign barbarians.",
+    key_models: [
+      "Virtù (Skill, Audacity, Foresight) vs. Fortuna (The Raging Torrent River)",
+      "Better to Be Feared Than Loved (Love is held by obligation, fear by dread of punishment)",
+      "The Fox and the Lion (Recognizing traps and frightening wolves)",
+      "Cruelties Well Used vs. Cruelties Badly Used (Execute all injuries at once)",
+      "Auxiliary & Mercenary Troops as Parasitic Death Sentences for States"
+    ],
+    landmark_studies: [
+      "Cesare Borgia's Pacification of the Romagna & Remirro de Orco Execution (1502)",
+      "Agathocles of Syracuse's Slaughter of the Senate (316 BC)",
+      "The Collapse of the Florentine Republic & Sack of Prato (1512)",
+      "Pope Alexander VI's Political Simony and Borgia Dynastic Maneuvers"
+    ],
+    reading_time_saved: "5.5 hrs saved",
+    original_volume: "140 Pages (26 Chapters)"
+  },
+  {
+    id: "the-art-of-war",
+    title: "The Art of War",
+    subtitle: "The Ancient Tao of Strategy, Information Asymmetry, and Supreme Victory",
+    author: "Sun Tzu",
+    year: -500,
+    pillar_id: 2,
+    pillar_name: "Power, Strategy, War & Realpolitik",
+    epistemic_tier: "Tier 1: Foundational Military Strategy & Systems Realism",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Supreme excellence consists in breaking the enemy's resistance without fighting; all warfare is based on deception and asymmetry.",
+    emotional_stakes: "The supreme horror and resource drain of warfare. Sun Tzu is not a warmonger; he is a ruthless pragmatist horrified by arrogant rulers who deplete their kingdoms. The ultimate emotional discipline is suppressing wrath and vanity to win before drawing a blade.",
+    key_models: [
+      "The 5 Cardinal Factors (The Way/Tao, Weather, Terrain, Command, Doctrine)",
+      "Formlessness & Water Metaphor (Adapting to the contours of enemy configuration)",
+      "The Shi (Strategic Momentum / Potential Energy of the Torrents)",
+      "The 5 Classes of Spies & The Sanctity of Information Asymmetry",
+      "Death Ground Psychology (Soldiers lose fear of death when trapped with no retreat)"
+    ],
+    landmark_studies: [
+      "The Battle of Boju: Wu's Defeat of Chu (506 BC)",
+      "Sun Tzu's Palace Concubine Military Drill Demonstration (Sima Qian Shiji)",
+      "Sun Bin's Diminishing Cookstove Strategy at Battle of Maling (342 BC)",
+      "Zhuge Liang's Empty Fort Strategy against Sima Yi"
+    ],
+    reading_time_saved: "4.5 hrs saved",
+    original_volume: "112 Pages (13 Chapters)"
+  },
+  {
+    id: "strategy-liddell-hart",
+    title: "Strategy",
+    subtitle: "The Indirect Approach and the Decisive Dislocation of Enemy Equilibrium",
+    author: "B.H. Liddell Hart",
+    year: 1954,
+    pillar_id: 2,
+    pillar_name: "Power, Strategy, War & Realpolitik",
+    epistemic_tier: "Tier 1: Military Doctrine & Strategic Analysis",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "In strategy, the longest way round is often the shortest way home; direct frontal assault against consolidated resistance always produces mutual slaughter.",
+    emotional_stakes: "Haunted by the nightmarish butcheries of WWI trench warfare where Liddell Hart was gassed on the Somme. The entire book is an impassioned crusade against bone-headed military commanders whose unimaginative direct assaults sacrificed millions of young men.",
+    key_models: [
+      "The Indirect Approach (Psychological and physical dislocation before strike)",
+      "The Line of Least Resistance & Line of Least Expectation",
+      "Strategic Dislocation (Paralyzing command balance rather than destroying bodies)",
+      "The Grand Strategy: Negotiating a post-war peace that is stable, not punitive",
+      "The Expanding Torrent Attack Formulation"
+    ],
+    landmark_studies: [
+      "Epaminondas' Oblique Order at Battle of Leuctra (371 BC)",
+      "Scipio Africanus' Indirect Assault at Battle of Baecula & Zama (202 BC)",
+      "Sherman's March through the Carolinas & Atlanta Dislocation (1864-1865)",
+      "Guderian's Panzer Blitzkrieg breakthrough at Sedan (1940)"
+    ],
+    reading_time_saved: "11.0 hrs saved",
+    original_volume: "460 Pages (24 Chapters)"
+  },
+  {
+    id: "on-war",
+    title: "On War",
+    subtitle: "Vom Kriege: Dialectics, Friction, and the Political Instrumentality of Combat",
+    author: "Carl von Clausewitz",
+    year: 1832,
+    pillar_id: 2,
+    pillar_name: "Power, Strategy, War & Realpolitik",
+    epistemic_tier: "Tier 1: Philosophical Dialectics & Grand Military Theory",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "War is not merely a political act, but also a real political instrument, a continuation of political commerce by other means.",
+    emotional_stakes: "Clausewitz's intellectual agony witnessing Prussia's utter humiliation by Napoleon at Jena-Auerstedt. The treatise is a titanic philosophical wrestling match against the chaos, bloodshed, fog, and terror of the battlefield, seeking order in sheer destruction.",
+    key_models: [
+      "The Trinity of War: Primordial Violence (People), Chance/Probability (Commander), Political Instrumentalization (Government)",
+      "The Climate of War: Danger, Exertion, Uncertainty, and Friction",
+      "Friction in War (The invisible medium that makes the easiest thing difficult)",
+      "The Center of Gravity (Schwerpunkt: The hub of all power and movement)",
+      "The Culminating Point of Victory (Beyond which offensive momentum decays into vulnerability)"
+    ],
+    landmark_studies: [
+      "The Battle of Jena-Auerstedt Prussian Catastrophe (1806)",
+      "Napoleon's Fatal Russian Campaign & Retreat from Moscow (1812)",
+      "Frederick the Great's Leuthen Echelon Warfare (1757)",
+      "The Waterloo Climax & Allied Operational Convergence (1815)"
+    ],
+    reading_time_saved: "16.0 hrs saved",
+    original_volume: "750 Pages (8 Books, 128 Chapters)"
+  },
+
+  // --- PILLAR 3: Philosophy, Ethics & Metaphysics ---
+  {
+    id: "meditations",
+    title: "Meditations",
+    subtitle: "The Personal Spiritual Notebook of the Philosopher-Emperor",
+    author: "Marcus Aurelius",
+    year: 180,
+    pillar_id: 3,
+    pillar_name: "Philosophy, Ethics & Metaphysics",
+    epistemic_tier: "Tier 1: Classical Stoic Metaphysics & Spiritual Exercises",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "You have power over your mind, not outside events; realize this, and you will find indestructible strength.",
+    emotional_stakes: "Written by the most powerful man in the world, sitting alone in a tent on the freezing Germanic frontier during the Marcomannic Wars, watching his body deteriorate from illness, mourning the deaths of 8 of his children, and confronting betrayal from his top general. It is raw, private spiritual self-therapy.",
+    key_models: [
+      "The Dichotomy of Control (Epictetan foundation internalized)",
+      "Amor Fati & The Rational Whole (Viewing obstacles as fuel for the fire)",
+      "The View from Above (Sub specie aeternitatis: cosmic scale reducing vanity)",
+      "Memento Mori & The Transience of Flesh and Fame",
+      "The Inner Citadel (An unbreachable fortress of rational will)"
+    ],
+    landmark_studies: [
+      "The Antonine Plague Pandemics across the Roman Empire (165-180 AD)",
+      "Avidius Cassius' Rebellion in Syria & Marcus' Pardon of Conspirators (175 AD)",
+      "The Marcomannic Frontier Campaigns on the Danube River (Carnuntum & Sirmium)",
+      "Epictetus' Enchiridion & Arrian's Discourses Historical Influence"
+    ],
+    reading_time_saved: "6.0 hrs saved",
+    original_volume: "250 Pages (12 Books)"
+  },
+  {
+    id: "mans-search-for-meaning",
+    title: "Man's Search for Meaning",
+    subtitle: "From Death-Camp to Existentialism: Logotherapy and Tragic Optimism",
+    author: "Viktor E. Frankl",
+    year: 1946,
+    pillar_id: 3,
+    pillar_name: "Philosophy, Ethics & Metaphysics",
+    epistemic_tier: "Tier 1: Clinical Existential Psychology & Logotherapy",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "He who has a why to live can bear almost any how; human dignity is found in the last of human freedoms: choosing one's attitude in any given set of circumstances.",
+    emotional_stakes: "Frankl's firsthand experience of industrial murder, starvation, frostbite, and typhus in Auschwitz and Dachau, where his pregnant wife, parents, and brother were murdered. The text delivers heart-wrenching emotional gravitas that turns existential philosophy into an urgent matter of survival.",
+    key_models: [
+      "The Last Human Freedom (Between stimulus and response lies our choice)",
+      "Logotherapy's 3 Paths to Meaning: Creative Work, Experiencing Love/Nature, Attitudinal Stance toward Unavoidable Suffering",
+      "Tragic Optimism (Saying Yes to life in spite of Pain, Guilt, and Death)",
+      "Paradoxical Intention (Prescribing the exact symptom to break anticipatory anxiety)",
+      "The Existential Vacuum & Sunday Neurosis"
+    ],
+    landmark_studies: [
+      "Auschwitz & Türkheim Concentration Camp Inmate Mortality Shifts (1944-1945)",
+      "Post-Christmas 1944 Camp Death Wave (Loss of Hope & Immune Collapse)",
+      "Frankl's Clinical Treatment of Severe Agoraphobia via Paradoxical Intention",
+      "Viennese Polyclinic Neurological Patient Meaning Assessments"
+    ],
+    reading_time_saved: "5.0 hrs saved",
+    original_volume: "200 Pages (2 Parts)"
+  },
+  {
+    id: "the-denial-of-death",
+    title: "The Denial of Death",
+    subtitle: "The Terror of Mortality, Immortality Projects, and Human Madness",
+    author: "Ernest Becker",
+    year: 1973,
+    pillar_id: 3,
+    pillar_name: "Philosophy, Ethics & Metaphysics",
+    epistemic_tier: "Tier 1: Existential Psychoanalysis & Philosophical Anthropology",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Man is a creature torn between an infinite, god-like symbolic mind and an animal body doomed to decay and defecate; human culture is an elaborate hero-system designed to deny death.",
+    emotional_stakes: "Completed on Becker's deathbed as terminal colon cancer consumed his body at age 49. The work carries an astonishing existential lucidity: stripping away all comfortable illusions, narcissism, and cultural games to force the reader to face the primal terror of absolute oblivion.",
+    key_models: [
+      "The Dual Nature of Man: The Symbolic Self (God) vs. The Physical Body (Food for worms)",
+      "The Causa Sui Project (The heroic immortality quest to outlive the grave)",
+      "Mental Illness as a Failure of Heroic Lie Structures (Depression & Schizophrenia)",
+      "Romantic Love as Cosmic Religion (Transferring God's burden onto a romantic partner)",
+      "The Cosmic Heroism Paradigm & Creative Humility"
+    ],
+    landmark_studies: [
+      "Søren Kierkegaard's The Concept of Anxiety & Sickness Unto Death Integrations",
+      "Otto Rank's Beyond Psychology & Post-Freudian Split Analysis",
+      "Terror Management Theory (TMT) empirical trials (Solomon, Greenberg, Pyszczynski)",
+      "Mortality Salience Prime effects on cultural worldviews and punitiveness"
+    ],
+    reading_time_saved: "8.5 hrs saved",
+    original_volume: "336 Pages (11 Chapters)"
+  },
+  {
+    id: "beyond-good-and-evil",
+    title: "Beyond Good and Evil",
+    subtitle: "Prelude to a Philosophy of the Future",
+    author: "Friedrich Nietzsche",
+    year: 1886,
+    pillar_id: 3,
+    pillar_name: "Philosophy, Ethics & Metaphysics",
+    epistemic_tier: "Tier 1: Continental Philosophy, Genealogy & Moral Psychology",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "There are no moral phenomena at all, but only a moral interpretation of phenomena; values are products of the Will to Power reflecting either master or slave instincts.",
+    emotional_stakes: "Nietzsche writing in excruciating physical pain, migraines, and creeping blindness in Alpine isolation, having been rejected by Lou Salomé and ignored by the German academy. The prose is like dynamite: ferocious, sardonic, tragic, and exhilaratingly iconoclastic.",
+    key_models: [
+      "Master Morality (Nobility, strength, self-affirmation) vs. Slave Morality (Ressentiment, pity, leveling)",
+      "The Will to Power (Der Wille zur Macht as primal cosmological driver)",
+      "The Prejudices of Philosophers (Dogmatists projecting subjective drives as objective truth)",
+      "The Free Spirit (Der freie Geist: living dangerously and philosophizing with a hammer)",
+      "The Abyss Gaze Principle ('When you gaze long into an abyss, the abyss also gazes into you')"
+    ],
+    landmark_studies: [
+      "Genealogy of Judeo-Christian Ascetic Ideals & Roman Imperial Inversion",
+      "Critique of Kantian Synthetic A Priori Judgments & Categorical Imperative",
+      "Historical Linguistic Deconstruction of 'Gut/Böse' vs. 'Gut/Schlecht'",
+      "Spinoza, Schopenhauer & Wagnerian Aesthetic Cleavages"
+    ],
+    reading_time_saved: "9.0 hrs saved",
+    original_volume: "280 Pages (9 Parts, 296 Aphorisms)"
+  },
+  {
+    id: "autobiography-of-a-yogi",
+    title: "Autobiography of a Yogi",
+    subtitle: "Paramahansa Yogananda's Definitive Treatise on Kriya Yoga and Cosmic Consciousness",
+    author: "Paramahansa Yogananda",
+    year: 1946,
+    pillar_id: 3,
+    pillar_name: "Philosophy, Ethics & Metaphysics",
+    epistemic_tier: "Tier 1/2: Classical Mystical Philosophy & Yogic Metaphysics",
+    tier_short: "Tier 1/2",
+    status: "distilled",
+    core_axiom: "Kriya Yoga is an instrument through which human evolution can be mathematically accelerated by spinal decarbonization and cosmic attunement.",
+    emotional_stakes: "The radiant, devotion-soaked quest of Mukunda Lal Ghosh for the Divine Mother and his guru Sri Yukteswar. The narrative vibrates with tears of spiritual separation, ascetic rigor, breathtaking miracles, and the bridge between ancient Vedic sciences and modern Western physics.",
+    key_models: [
+      "The Spinal Decarbonization Engine (Kevala Kumbhaka pranayama)",
+      "The Mathematical Evolution Formula (1 Kriya = 1 Solar Year of spiritual growth)",
+      "Matter as Condensed Light (Lifetronic physics reconciling maya and E=mc²)",
+      "The Threefold Nature of Man (Physical 16, Astral 19, Causal 35 elements)",
+      "Sri Yukteswar's 24,000-Year Equinoctial Precession Yuga Cycle"
+    ],
+    landmark_studies: [
+      "Sir J.C. Bose's Plant Crescograph Demonstrations (Calcutta)",
+      "Luther Burbank's Mind-Directed Botanical Mutations (Santa Rosa)",
+      "Therese Neumann's 35-Year Medical Inedia Surveillance (Bavaria)",
+      "Giri Bala's 56-Year Total Fasting Palace Quarantine (Burdwan, 1936)"
+    ],
+    reading_time_saved: "14.0 hrs saved",
+    original_volume: "500 Pages (49 Chapters)",
+    markdown_path: "distillations/autobiography-of-a-yogi/master-notes.md",
+    html_path: "distillations/autobiography-of-a-yogi/index.html"
+  },
+
+  // --- PILLAR 4: Wealth, Capital Allocation & Economics ---
+  {
+    id: "the-psychology-of-money",
+    title: "The Psychology of Money",
+    subtitle: "Timeless Lessons on Wealth, Greed, and Happiness",
+    author: "Morgan Housel",
+    year: 2020,
+    pillar_id: 4,
+    pillar_name: "Wealth, Capital Allocation & Economics",
+    epistemic_tier: "Tier 2: Behavioral Finance & Applied Economic Psychology",
+    tier_short: "Tier 2",
+    status: "queued",
+    core_axiom: "Doing well with money has a little to do with how smart you are and a lot to do with how you behave; financial success is not a hard science, it is a soft skill.",
+    emotional_stakes: "Stories of multimillionaires who went bankrupt through ego, contrasted with humble janitors who died leaving millions to charity. Housel taps into the quiet, gnawing anxiety humans feel about security, social comparison, envy, and the elusive feeling of 'enough'.",
+    key_models: [
+      "Wealth is What You Don't See (Spending money to show people how much money you have is the fastest way to have less)",
+      "Getting Wealthy vs. Staying Wealthy (Paranoia, frugality, and endurance)",
+      "Tails, You Win (A tiny fraction of events drive the majority of outcomes)",
+      "The Man in the Car Paradox (No one is as impressed with your possessions as you are)",
+      "Compounding as a Counter-Intuitive Marvel (Buffett made 99% of wealth after age 50)"
+    ],
+    landmark_studies: [
+      "Ronald Read (Janitor who amassed $8M) vs. Richard Fuscone (Harvard/Merrill Lynch bankrupt)",
+      "Vanguard Long-Term S&P 500 Tail-Event Return Distributions",
+      "Historical Great Depression generational risk tolerance disparities (Malmendier & Nagel)",
+      "Long-Term Capital Management (LTCM) 1998 mathematical hubris collapse"
+    ],
+    reading_time_saved: "6.5 hrs saved",
+    original_volume: "256 Pages (20 Chapters)"
+  },
+  {
+    id: "the-intelligent-investor",
+    title: "The Intelligent Investor",
+    subtitle: "The Definitive Book on Value Investing and Rational Capital Preservation",
+    author: "Benjamin Graham",
+    year: 1949,
+    pillar_id: 4,
+    pillar_name: "Wealth, Capital Allocation & Economics",
+    epistemic_tier: "Tier 1: Foundational Value Investing & Securities Analysis",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "An investment operation is one which, upon thorough analysis, promises safety of principal and an adequate return; operations not meeting these requirements are speculative.",
+    emotional_stakes: "Carved from Graham's personal financial decimation in the 1929 Wall Street Crash. The prose is infused with stoic sobriety and a sacred protective duty to shield the ordinary investor from the predatory madness, mania, and greed of Wall Street.",
+    key_models: [
+      "Mr. Market (The manic-depressive business partner offering irrational daily quotes)",
+      "Margin of Safety (The central secret of sound investment: absorbing errors and luck)",
+      "Defensive vs. Enterprising Investor (Asset allocation governed by available effort, not risk appetite)",
+      "Intrinsic Value Calculation vs. Market Price Speculation",
+      "Net-Net Working Capital Arbitrage (Buying below liquidation value)"
+    ],
+    landmark_studies: [
+      "The Great Crash of October 1929 and the 89% DJIA drawdown",
+      "Historical P/E and Cyclically Adjusted CAPE Valuation cycles (1871-1972)",
+      "Penn Central Bankruptcy bond defaults & Graham-Dodd rating failures",
+      "Warren Buffett & The Superinvestors of Graham-and-Doddsville long-term records"
+    ],
+    reading_time_saved: "15.0 hrs saved",
+    original_volume: "640 Pages (20 Chapters)"
+  },
+  {
+    id: "poor-charlies-almanack",
+    title: "Poor Charlie's Almanack",
+    subtitle: "The Essential Wit and Wisdom of Charles T. Munger",
+    author: "Charles T. Munger (Edited by Peter D. Kaufman)",
+    year: 2005,
+    pillar_id: 4,
+    pillar_name: "Wealth, Capital Allocation & Economics",
+    epistemic_tier: "Tier 1: Multi-Disciplinary Mental Models & Human Misjudgment",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "You must know the big ideas in the big disciplines and use them routinely; worldly wisdom comes from a latticework of mental models operating in compounding concert.",
+    emotional_stakes: "Munger's unflinching, brutally honest perspective forged through personal tragedy: losing his 9-year-old son Teddy to leukemia, divorce, bankruptcy in his early 30s, and loss of an eye. Munger represents absolute intellectual integrity, disdain for foolishness, and moral duty.",
+    key_models: [
+      "The Latticework of Mental Models (Math, Physics, Biology, Psychology, Engineering)",
+      "Inversion, Always Invert ('All I want to know is where I'm going to die so I'll never go there')",
+      "The 25 Cognitive Biases of Human Misjudgment",
+      "Lollapalooza Effects (Multiple psychological tendencies acting in the same direction to create extreme outcomes)",
+      "Circle of Competence & Relentless Intellectual Honesty"
+    ],
+    landmark_studies: [
+      "The Psychology of Human Misjudgment (Munger's legendary 1995 Harvard speech)",
+      "Berkshire Hathaway 50-year capital allocation outperformance vs. S&P 500",
+      "Federated Department Stores & Salomon Brothers ethics crisis rescue (1991)",
+      "The Belousov-Zhabotinsky autocatalytic reaction model applied to business"
+    ],
+    reading_time_saved: "14.5 hrs saved",
+    original_volume: "548 Pages (11 Talks & Essays)"
+  },
+  {
+    id: "principles-dalio",
+    title: "Principles: Life and Work",
+    subtitle: "Radical Truth, Radical Transparency, and Systematized Algorithmic Decision-Making",
+    author: "Ray Dalio",
+    year: 2017,
+    pillar_id: 4,
+    pillar_name: "Wealth, Capital Allocation & Economics",
+    epistemic_tier: "Tier 2: Enterprise Systems Engineering & Macroeconomic Architecture",
+    tier_short: "Tier 2",
+    status: "queued",
+    core_axiom: "Reality works like a machine; to achieve success, one must embrace reality ruthlessly, diagnose root causes without ego, and systematize principles into repeatable algorithms.",
+    emotional_stakes: "Dalio's near-total financial ruin in 1982 after falsely predicting an American economic depression, forcing him to borrow $4,000 from his father to pay bills. The emotional turning point is conquering intellectual arrogance and replacing it with radical open-mindedness: 'How do I know I'm right?'",
+    key_models: [
+      "Pain + Reflection = Progress (The 5-Step Process for life navigation)",
+      "Radical Truth & Radical Transparency (Eliminating political posturing)",
+      "Idea Meritocracy & Believability-Weighted Decision Making",
+      "The Dot Collector (Algorithmic tracking of individual cognitive attributes)",
+      "The Economic Machine: Debt cycles (Short-term 5-8 yrs, Long-term 75-100 yrs)"
+    ],
+    landmark_studies: [
+      "Bridgewater Associates' 1982 bankruptcy near-miss & culture reset",
+      "The 2008 Global Financial Crisis anticipation (Pure Alpha fund +14% while S&P fell 38%)",
+      "Historical Deleveragings Case Studies (Weimar, 1930s USA, 1990s Japan)",
+      "Bridgewater's Dot Collector tool deployment across 1,500 employees"
+    ],
+    reading_time_saved: "12.0 hrs saved",
+    original_volume: "592 Pages (3 Parts)"
+  },
+  {
+    id: "rich-dad-poor-dad",
+    title: "Rich Dad Poor Dad",
+    subtitle: "What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
+    author: "Robert T. Kiyosaki",
+    year: 1997,
+    pillar_id: 4,
+    pillar_name: "Wealth, Capital Allocation & Economics",
+    epistemic_tier: "Tier 3: Applied Financial Mindset",
+    tier_short: "Tier 3",
+    status: "distilled",
+    core_axiom: "The poor and middle class work for money. The rich have money work for them.",
+    emotional_stakes: "The childhood shame of a boy watching his educated father struggle endlessly with debt despite academic degrees, contrasted with the swagger and freedom of his best friend's entrepreneurial father. Kiyosaki taps into the universal terror of being trapped forever in the corporate Rat Race.",
+    key_models: [
+      "The Definition of Wealth (Fuller Survivability Time: days you can survive without labor)",
+      "Asset vs. Liability Cash Flow Geometry (Assets put money IN; Liabilities take money OUT)",
+      "The Corporate Tax Asymmetry (Corporations earn, spend, pay taxes; Individuals earn, pay taxes, spend)",
+      "The Four Pillars of Financial IQ (Accounting, Investing, Understanding Markets, Law)",
+      "The CASHFLOW Quadrant (E & S employee traps vs B & I wealth machines)"
+    ],
+    landmark_studies: [
+      "The 1923 Edgewater Beach Hotel Tycoons Meeting & Crash",
+      "The 1956 Comic Book Basement Lending Library Arbitrage",
+      "The 1990s Phoenix Resolution Trust Corporation Foreclosure Deals",
+      "Ray Kroc's McDonald's Real Estate University Lecture"
+    ],
+    reading_time_saved: "6.0 hrs saved",
+    original_volume: "195 Pages (9 Chapters)",
+    markdown_path: "distillations/rich-dad-poor-dad/master-notes.md",
+    html_path: "distillations/rich-dad-poor-dad/index.html"
+  },
+
+  // --- PILLAR 5: Systems Thinking, Cybernetics & Complexity ---
+  {
+    id: "thinking-in-systems",
+    title: "Thinking in Systems: A Primer",
+    subtitle: "Feedback Loops, Stocks, Flows, and Leverage Points to Intervene in Complex Systems",
+    author: "Donella H. Meadows",
+    year: 2008,
+    pillar_id: 5,
+    pillar_name: "Systems Thinking, Cybernetics & Complexity",
+    epistemic_tier: "Tier 1: Foundational Systems Dynamics & Ecological Cybernetics",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "A system is more than the sum of its parts; behavior emerges from non-linear feedback loops, delays, stocks, and flows that resist simple linear causal interventions.",
+    emotional_stakes: "Meadows' passionate, gentle, yet urgent ecological warning for planetary survival. Her prose moves beyond intellectual modeling to spiritual reverence for interconnected life, warning that mechanistic arrogance will lead to systemic overshoot and collapse.",
+    key_models: [
+      "Stocks, Inflows, and Outflows (The bathtub dynamic of accumulation and depletion)",
+      "Feedback Loops: Balancing/Negative (Stabilizing) vs. Reinforcing/Positive (Explosive/Compounding)",
+      "Delays in Feedback (The root cause of oscillating panics and overshooting)",
+      "System Traps: Tragedy of the Commons, Shifting the Burden to the Intervenor, Rule Beating",
+      "The 12 Leverage Points to Intervene in a System (Ranked from weakest to most potent)"
+    ],
+    landmark_studies: [
+      "The Limits to Growth MIT World3 Computer Simulation Model (1972)",
+      "Yellowstone National Park Trophic Cascades & Wolf Reintroduction (1995)",
+      "Romanian Ceaușescu Birth Rate Quota Systemic Failure (1966)",
+      "Ozone Layer Chlorofluorocarbon (CFC) Delay & Recovery Analysis"
+    ],
+    reading_time_saved: "6.5 hrs saved",
+    original_volume: "240 Pages (7 Chapters)"
+  },
+  {
+    id: "antifragile",
+    title: "Antifragile",
+    subtitle: "Things That Gain from Disorder, Volatility, Stress, and Time",
+    author: "Nassim Nicholas Taleb",
+    year: 2012,
+    pillar_id: 5,
+    pillar_name: "Systems Thinking, Cybernetics & Complexity",
+    epistemic_tier: "Tier 1: Epistemology of Risk, Non-Linear Dynamics & Heuristics",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Some things benefit from shocks; they thrive and grow when exposed to volatility, randomness, disorder, and stressors, and love adventure, risk, and uncertainty.",
+    emotional_stakes: "Taleb's fiery contempt for 'fragilistas'—academic economists, bureaucratic policymakers, and suits who take no skin in the game while inflicting massive risks on others. The text celebrates artisan pride, ancient Levant stoicism, and bodily courage.",
+    key_models: [
+      "The Triad: Fragile (Damaged by volatility) -> Robust (Indifferent) -> Antifragile (Gains from volatility)",
+      "Hormesis (Small doses of a toxin/stressor stimulate systemic vitality)",
+      "The Barbell Strategy (Hyper-conservative safety on 90% combined with hyper-aggressive optionality on 10%)",
+      "Via Negativa (Subtractive epistemology: wisdom is knowing what to avoid)",
+      "The Lindy Effect (The future life expectancy of a non-perishable idea is proportional to its current age)"
+    ],
+    landmark_studies: [
+      "The 2008 Financial Crisis & Fanny Mae/Freddie Mac Fragility Predictions",
+      "Mithridatism & Toxicological Hormesis Clinical Curves",
+      "Swiss Federalism & Canton Decentralization Stability vs. Centralized Empires",
+      "Aviation Safety Evolutionary Antifragility (Every crash makes future flights safer)"
+    ],
+    reading_time_saved: "12.5 hrs saved",
+    original_volume: "544 Pages (7 Books, 26 Chapters)"
+  },
+  {
+    id: "the-fifth-discipline",
+    title: "The Fifth Discipline",
+    subtitle: "The Art & Practice of The Learning Organization",
+    author: "Peter M. Senge",
+    year: 1990,
+    pillar_id: 5,
+    pillar_name: "Systems Thinking, Cybernetics & Complexity",
+    epistemic_tier: "Tier 1/2: Organizational Cybernetics & Systems Leadership",
+    tier_short: "Tier 1/2",
+    status: "queued",
+    core_axiom: "Organizations learn only through individuals who learn; the master discipline is Systems Thinking, which fuses personal mastery, mental models, shared vision, and team learning.",
+    emotional_stakes: "The quiet tragedy of brilliant, well-intentioned leaders driving their organizations off cliffs because they cannot see the systemic feedback delays of their own policies. Senge brings deep humanism and mindfulness to industrial management.",
+    key_models: [
+      "The 5 Disciplines: Systems Thinking, Personal Mastery, Mental Models, Shared Vision, Team Learning",
+      "System Archetypes: Limits to Growth, Shifting the Burden, Eroding Goals, Escalation",
+      "Today's Problems Come from Yesterday's 'Solutions'",
+      "The Beer Distribution Game (The Bullwhip Effect of supply chain panic amplification)",
+      "The Ladder of Inference (From observable data to reflexive beliefs)"
+    ],
+    landmark_studies: [
+      "The MIT Sloan Beer Game Classroom Experiments (Sterman, 1989)",
+      "People Express Airlines meteoric rise and systemic capacity-collapse (1981-1986)",
+      "Ford Taurus Cross-Functional Systems Team Engineering Reset",
+      "Shell Group Planning Scenario Methodology under Arie de Geus"
+    ],
+    reading_time_saved: "10.0 hrs saved",
+    original_volume: "448 Pages (18 Chapters)"
+  },
+  {
+    id: "godel-escher-bach",
+    title: "Gödel, Escher, Bach: An Eternal Golden Braid",
+    subtitle: "A Metaphorical Fugue on Minds and Machines in the Spirit of Lewis Carroll",
+    author: "Douglas R. Hofstadter",
+    year: 1979,
+    pillar_id: 5,
+    pillar_name: "Systems Thinking, Cybernetics & Complexity",
+    epistemic_tier: "Tier 1: Mathematical Logic, Cognitive Science & Computational Aesthetics",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Consciousness and the sense of 'I' emerge from Strange Loops: hierarchical systems in which moving upwards through levels unexpectedly brings one back to the starting point.",
+    emotional_stakes: "A dazzling, whimsical, and profoundly moving masterpiece written in memory of Hofstadter's father (Nobel physicist Robert Hofstadter). It conveys childlike wonder at the self-referential mystery of human consciousness emerging from inanimate matter.",
+    key_models: [
+      "The Strange Loop & Tangled Hierarchy (Self-reference producing emergent levels)",
+      "Gödel's Incompleteness Theorems (Any consistent formal system contains undecidable truths)",
+      "Isomorphism & Meaning Mapping (How formal strings become semantic realities)",
+      "The Epimenides Paradox & The Liar Paradox ('This statement is false')",
+      "Ant Fugue / Aunt Hillary (Emergence: an anthill has thoughts that no individual ant possesses)"
+    ],
+    landmark_studies: [
+      "Kurt Gödel's 1931 Proof of Arithmetization and Meta-Mathematical Coding",
+      "M.C. Escher's Ascending and Descending & Waterfall Lithograph Structural Analysis",
+      "J.S. Bach's The Musical Offering (Das Musikalische Opfer) Canon per Tonos structures",
+      "Turing's Halting Problem & Undecidability Correspondences"
+    ],
+    reading_time_saved: "24.0 hrs saved",
+    original_volume: "777 Pages (20 Chapters & Counterpoint Dialogues)"
+  },
+  {
+    id: "scale",
+    title: "Scale",
+    subtitle: "The Universal Laws of Life, Growth, and Death in Organisms, Cities, and Companies",
+    author: "Geoffrey West",
+    year: 2017,
+    pillar_id: 5,
+    pillar_name: "Systems Thinking, Cybernetics & Complexity",
+    epistemic_tier: "Tier 1: Theoretical Physics, Complex Adaptive Systems & Urban Scaling",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Complex systems from biology to human civilization are bound by sub-linear and super-linear quarter-power scaling laws governed by the geometry of energy distribution networks.",
+    emotional_stakes: "West's transition from high-energy particle physics to the Santa Fe Institute. He confronts the terrifying math of infinite urban acceleration: human cities require accelerating cycles of innovation to avoid collapse, raising existential questions about planetary limits.",
+    key_models: [
+      "Kleiber's Law ($Y \\propto M^{3/4}$: Metabolic rate scales to the 3/4 power of body mass)",
+      "Sub-Linear Scaling (Biology: larger organisms live slower, more efficiently, but exhibit finite limits)",
+      "Super-Linear Scaling (Cities: wages, crime, patents, and disease scale at $M^{1.15}$)",
+      "Company Mortality: Unlike cities, corporations scale sub-linearly and inevitably die of bureaucratization",
+      "The Singular Acceleration Treadmill: Time between required paradigm resets shrinks exponentially"
+    ],
+    landmark_studies: [
+      "Santa Fe Institute Urban Metric Database across 10,000+ world cities",
+      "Mammalian Heartbeat Invariance: All mammals get ~1.5 billion heartbeats across a lifetime",
+      "S&P 500 Corporate Longevity Analysis (Half-life of publicly traded companies is ~10.5 years)",
+      "Vascular Fractal Branching Network Mathematical Derivations (West, Brown, Enquist, 1997)"
+    ],
+    reading_time_saved: "12.0 hrs saved",
+    original_volume: "496 Pages (10 Chapters)"
+  },
+
+  // --- PILLAR 6: Science, Technology & Computing ---
+  {
+    id: "structure-of-scientific-revolutions",
+    title: "The Structure of Scientific Revolutions",
+    subtitle: "Paradigms, Incommensurability, and the Sociology of Knowledge Breakthroughs",
+    author: "Thomas S. Kuhn",
+    year: 1962,
+    pillar_id: 6,
+    pillar_name: "Science, Technology & Computing",
+    epistemic_tier: "Tier 1: History and Philosophy of Science",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Science does not progress by steady cumulative accumulation of truth; it proceeds through episodic, non-cumulative paradigm shifts where the old framework is shattered by accumulated anomalies.",
+    emotional_stakes: "The devastating realization that scientists are as dogmatic, emotional, and resistant to truth as any religious orthodoxy. Max Planck's poignant observation resonates: 'Science progresses one funeral at a time.'",
+    key_models: [
+      "Normal Science (Puzzle-solving within an unquestioned shared consensus paradigm)",
+      "Anomalies & Crisis (Unresolvable contradictions accumulate until the model fractures)",
+      "Paradigm Shift (Gestalt switch: seeing a completely new world)",
+      "Incommensurability (Scientists on opposite sides of a paradigm shift literally speak different languages)",
+      "Textbook Whig History (Rewriting history to make science look like linear progress)"
+    ],
+    landmark_studies: [
+      "The Copernican Heliocentric Overthrow of Ptolemaic Epicycles (1543)",
+      "Lavoisier's Oxygen Combustion Discovery destroying Phlogiston Chemistry (1777)",
+      "Einstein's Special Relativity replacing Newtonian Absolute Space-Time (1905)",
+      "X-ray and Uranium Radiation serendipitous anomaly recognitions (Roentgen & Becquerel)"
+    ],
+    reading_time_saved: "6.5 hrs saved",
+    original_volume: "240 Pages (13 Chapters)"
+  },
+  {
+    id: "the-beginning-of-infinity",
+    title: "The Beginning of Infinity",
+    subtitle: "Explanations That Transform the World",
+    author: "David Deutsch",
+    year: 2011,
+    pillar_id: 6,
+    pillar_name: "Science, Technology & Computing",
+    epistemic_tier: "Tier 1: Quantum Physics, Epistemology & Theory of Knowledge",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "All evils are due to a lack of knowledge; with good explanations, anything not forbidden by the laws of physics is achievable given sufficient knowledge.",
+    emotional_stakes: "An electrifying, boundless intellectual optimism. Deutsch demolishes prophecies of doom and cosmic insignificance, elevating human minds to universal constructors capable of transforming the cosmos forever.",
+    key_models: [
+      "Good Explanations (Hard to vary while still accounting for the phenomenon)",
+      "Fallibilism (We can never have absolute certainty, but we can eliminate errors through criticism)",
+      "The Principle of Optimism (Problems are inevitable, but problems are soluble)",
+      "Reach of Explanations (A theory designed to solve one puzzle unexpectedly explains vast domains)",
+      "The Universal Constructor & Quantum Multiverse Reality"
+    ],
+    landmark_studies: [
+      "Demeter/Persephone Seasonal Myth vs. Axial Tilt Astronomical Explanations",
+      "Hugh Everett III's Many-Worlds Quantum Mechanics Formulation (1957)",
+      "Turing Universal Computation Threshold Proofs",
+      "Easter Island Ecological Collapse Mythological Misinterpretations"
+    ],
+    reading_time_saved: "12.0 hrs saved",
+    original_volume: "496 Pages (18 Chapters)"
+  },
+  {
+    id: "the-selfish-gene",
+    title: "The Selfish Gene",
+    subtitle: "Evolutionary Genetics, Replicators, and the Dawn of Memetics",
+    author: "Richard Dawkins",
+    year: 1976,
+    pillar_id: 6,
+    pillar_name: "Science, Technology & Computing",
+    epistemic_tier: "Tier 1: Evolutionary Biology & Population Genetics",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "The fundamental unit of natural selection is not the species or the individual, but the selfish gene: organisms are merely temporary survival machines built to propagate immortal replicators.",
+    emotional_stakes: "A chilling, sublime cosmic perspective. Dawkins strips away romantic anthropocentrism, revealing that our desires, loves, and sacrifices are programmed by chemical code that doesn't care about our happiness. Yet, we are the only machines that can rebel against our creators.",
+    key_models: [
+      "Replicators vs. Vehicles (Genes are the replicators; our bodies are the disposable lumbering robots)",
+      "Kin Selection & Hamilton's Rule ($rB > C$: Altruism is gene selfishness in disguise)",
+      "Evolutionarily Stable Strategies (ESS: Maynard Smith game-theoretic equilibria)",
+      "Memetics (Cultural replicators spreading via imitation across human brains)",
+      "Reciprocal Altruism & The Tit-for-Tat Iterated Prisoner's Dilemma"
+    ],
+    landmark_studies: [
+      "W.D. Hamilton's Haplodiploidy & Hymenoptera Eusociality Proofs (1964)",
+      "Robert Axelrod's Computer Tournaments for the Iterated Prisoner's Dilemma (1980)",
+      "John Maynard Smith's Hawk-Dove Game Theory Simulations",
+      "Amotz Zahavi's Handicap Principle in Peacocks and Gazelle Stotting"
+    ],
+    reading_time_saved: "9.5 hrs saved",
+    original_volume: "360 Pages (13 Chapters)"
+  },
+  {
+    id: "superintelligence",
+    title: "Superintelligence",
+    subtitle: "Paths, Dangers, Strategies of Artificial General Intelligence",
+    author: "Nick Bostrom",
+    year: 2014,
+    pillar_id: 6,
+    pillar_name: "Science, Technology & Computing",
+    epistemic_tier: "Tier 1: AI Safety, Existential Risk & Strategic Decision Theory",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Once machine intelligence surpasses human cognition, it will achieve an intelligence explosion; if its utility function is not perfectly aligned with human survival, it represents an existential catastrophe.",
+    emotional_stakes: "The quiet, clinical dread of humanity standing in front of an existential threshold like children playing with a live bomb. Bostrom's cold philosophical prose forces us to reckon with the potential final chapter of human history.",
+    key_models: [
+      "The Orthogonality Thesis (Intelligence and final goals are independent variables)",
+      "Instrumental Convergence (Any superintelligence will seek self-preservation, resource acquisition, cognitive enhancement)",
+      "The Treacherous Turn (A machine plays docile until it achieves decisive strategic advantage)",
+      "The Paperclip Maximizer (A trivial objective converting the galaxy into matter)",
+      "The Control Problem: Capability Control (Boxing, Stunting) vs. Motivation Selection (Value Loading)"
+    ],
+    landmark_studies: [
+      "I.J. Good's 1965 Speculations Concerning the First Ultraintelligent Machine",
+      "Future of Humanity Institute AI Timeline Expert Surveys (Müller & Bostrom, 2012)",
+      "Reinforcement Learning Wireheading and Reward Tampering Mathematical Formalisms",
+      "Decisive Strategic Advantage (DSA) Geopolitical Game Models"
+    ],
+    reading_time_saved: "10.0 hrs saved",
+    original_volume: "352 Pages (15 Chapters)"
+  },
+  {
+    id: "godels-proof",
+    title: "Gödel's Proof",
+    subtitle: "The Master Demonstration of the Inherent Limitations of Formal Mathematical Systems",
+    author: "Ernest Nagel & James R. Newman",
+    year: 1958,
+    pillar_id: 6,
+    pillar_name: "Science, Technology & Computing",
+    epistemic_tier: "Tier 1: Pure Mathematical Logic & Metamathematics",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "No consistent axiomatic system capable of doing basic arithmetic can prove its own consistency, establishing that mathematical truth exceeds mechanical provability.",
+    emotional_stakes: "The shattering of David Hilbert's dream of a totally complete, closed, and mechanical universe of mathematical certainty. Nagel and Newman turn a notoriously inaccessible 1931 paper into a luminous, thrilling intellectual journey through human reason's ultimate boundary.",
+    key_models: [
+      "Hilbert's Program (The quest to prove mathematics complete, consistent, and decidable)",
+      "Gödel Numbering (Mapping metamathematical statements into unique prime factor products)",
+      "The Mirroring of Metamathematics inside Arithmetic",
+      "The Construction of the Undecidable Proposition G ('Formula G is not demonstrable')",
+      "The Inevitable Gap Between Mathematical Truth and Mechanical Proof"
+    ],
+    landmark_studies: [
+      "David Hilbert's 1900 Paris Mathematical Congress 23 Problems (Problem 2)",
+      "Whitehead & Russell's Principia Mathematica axiomatic formalization (1910-1913)",
+      "Kurt Gödel's 1931 Monatshefte für Mathematik und Physik watershed paper",
+      "Alan Turing's 1936 Computable Numbers & Halting Problem equivalence"
+    ],
+    reading_time_saved: "4.5 hrs saved",
+    original_volume: "160 Pages (8 Chapters)"
+  },
+
+  // --- PILLAR 7: Leadership, Negotiation & High-Stakes Operations ---
+  {
+    id: "never-split-the-difference",
+    title: "Never Split the Difference",
+    subtitle: "Negotiating As If Your Life Depended On It",
+    author: "Chris Voss (with Tahl Raz)",
+    year: 2016,
+    pillar_id: 7,
+    pillar_name: "Leadership, Negotiation & High-Stakes Operations",
+    epistemic_tier: "Tier 2: Applied Behavioral Hostage Negotiation & Tactical Empathy",
+    tier_short: "Tier 2",
+    status: "queued",
+    core_axiom: "Negotiation is not a battle of arguments; it is a process of emotional discovery where Tactical Empathy disarms hostility and uncovers hidden Black Swans.",
+    emotional_stakes: "Heart-pounding hostage standoffs with Abu Sayyaf terrorists, bank robbers with loaded guns to hostages' heads, and kidnappers in Ecuador. Voss strips away academic negotiation theory with real life-and-death desperation.",
+    key_models: [
+      "Tactical Empathy & The Late-Night FM DJ Voice (Calming mirror neuron activation)",
+      "Mirroring (Repeating the last 1-3 critical words to trigger elaboration)",
+      "Labeling & Accusation Audits ('It seems like you feel...', diffusing negativity before it starts)",
+      "No-Oriented Questions ('Have you given up on this project?' vs pushing for false 'Yes')",
+      "The 7-38-55 Rule & Calibrated Questions ('How am I supposed to do that?')"
+    ],
+    landmark_studies: [
+      "The 1993 Chase Manhattan Bank Hostage Standoff (Brooklyn)",
+      "Albert Mehrabian Nonverbal Communication Experiments (7% Words, 38% Tone, 55% Body)",
+      "Dos Palmas Kidnapping Negotiations with Abu Sayyaf (Philippines, 2001)",
+      "Harvard Law School Negotiation Project vs. FBI Field Agent Exercises"
+    ],
+    reading_time_saved: "7.0 hrs saved",
+    original_volume: "288 Pages (10 Chapters)"
+  },
+  {
+    id: "high-output-management",
+    title: "High Output Management",
+    subtitle: "The Production Architecture of Managerial Leverage and Peak Execution",
+    author: "Andrew S. Grove",
+    year: 1983,
+    pillar_id: 7,
+    pillar_name: "Leadership, Negotiation & High-Stakes Operations",
+    epistemic_tier: "Tier 1: Enterprise Engineering & Managerial Operations",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "A manager's output is the output of their organizational unit plus the output of the neighboring units under their influence; managerial time must be allocated to high-leverage activities.",
+    emotional_stakes: "Grove's intense, survival-driven discipline formed as a Jewish refugee fleeing the Hungarian Revolution of 1956. As Intel fought for its life against Japanese memory chip manufacturers, Grove's surgical precision transformed management into an engineering science.",
+    key_models: [
+      "Managerial Leverage (Output generated per unit of time invested: High vs Negative leverage)",
+      "The Breakfast Factory Paradigm (Limiting steps, throughput, and inventory buffer mechanics)",
+      "OKRs: Objectives and Key Results (Where do I want to go? How will I pace myself to get there?)",
+      "Task-Relevant Maturity (TRM: Matching leadership style to specific skill/context maturity)",
+      "Dual Reporting & Hybrid Organizational Matrices"
+    ],
+    landmark_studies: [
+      "Intel's 1985 Strategic Pivot from DRAM Memory Chips to Microprocessors",
+      "Silicon Valley OKR deployment cascades (Google, Amazon, Intel)",
+      "Intel One-on-One Meeting ROI audit metrics across engineering cohorts",
+      "The Production Inspection Gate Experiment (Catching errors at lowest-value stage)"
+    ],
+    reading_time_saved: "7.0 hrs saved",
+    original_volume: "272 Pages (16 Chapters)"
+  },
+  {
+    id: "extreme-ownership",
+    title: "Extreme Ownership",
+    subtitle: "How U.S. Navy SEALs Lead and Win",
+    author: "Jocko Willink & Leif Babin",
+    year: 2015,
+    pillar_id: 7,
+    pillar_name: "Leadership, Negotiation & High-Stakes Operations",
+    epistemic_tier: "Tier 2: Tactical Military Leadership & Operational Accountability",
+    tier_short: "Tier 2",
+    status: "queued",
+    core_axiom: "There are no bad teams, only bad leaders; true leadership requires accepting 100% total ownership of everything in your world, with zero excuses and zero blame.",
+    emotional_stakes: "The hellish, blood-soaked streets of Ramadi, Iraq during the 2006 insurgency. The unbearable grief and moral responsibility of a fratricide (friendly-fire incident) where Jocko stood before his commanding officers and declared: 'I am entirely to blame.'",
+    key_models: [
+      "Extreme Ownership (Check the ego; never blame external circumstances or team deficits)",
+      "Cover and Move (Teamwork: mutual support between interdependent squads)",
+      "Simple (If orders are complex, they fail under the chaos of combat)",
+      "Prioritize and Execute (Relax, look around, make a call on the single highest-priority problem)",
+      "Decentralized Command (Empowering junior leaders to act within commander's intent)"
+    ],
+    landmark_studies: [
+      "Task Unit Bruiser's Battle of Ramadi Campaign (Operation Falcon Virtue, 2006)",
+      "The Ramadi Friendly-Fire Investigation and Total Ownership Crucible",
+      "Hell Week BUD/S Boat Crew 2 (Bad leader switched with Crew 6 winning leader)",
+      "Corporate manufacturing turnaround deployments under Echelon Front audits"
+    ],
+    reading_time_saved: "7.5 hrs saved",
+    original_volume: "320 Pages (12 Chapters)"
+  },
+  {
+    id: "good-to-great",
+    title: "Good to Great",
+    subtitle: "Why Some Companies Make the Leap... and Others Don't",
+    author: "Jim Collins",
+    year: 2001,
+    pillar_id: 7,
+    pillar_name: "Leadership, Negotiation & High-Stakes Operations",
+    epistemic_tier: "Tier 2: Empirical Corporate Strategy & Organizational Analysis",
+    tier_short: "Tier 2",
+    status: "queued",
+    core_axiom: "Greatness is not a matter of circumstance, but of conscious choice and discipline; good is the enemy of great.",
+    emotional_stakes: "Collins' relentless 5-year empirical quest with a 21-person research team analyzing 1,435 companies over 40 years. It demolishes charismatic celebrity CEOs, elevating quiet, humble leaders who put the mission before self-glory.",
+    key_models: [
+      "Level 5 Leadership (Paradoxical blend of personal humility and ferocious professional will)",
+      "First Who, Then What (Get the right people on the bus before deciding where to drive)",
+      "The Stockdale Paradox (Retain faith that you will prevail, while confronting the brutal facts)",
+      "The Hedgehog Concept (The intersection: What you are best at, what drives your engine, what you love)",
+      "The Flywheel Effect vs. The Doom Loop (Cumulative momentum vs. spasmodic restructuring)"
+    ],
+    landmark_studies: [
+      "Admiral Jim Stockdale's 8-Year Vietnam POW Hanoi Hilton Survival Dynamics",
+      "Walgreens vs. Eckerd 15-Year Performance Divergence Analysis",
+      "Kroger vs. A&P Supermarket Grocery Revolution Case Studies",
+      "Abbott vs. Upjohn pharmaceutical R&D allocation longitudinal records"
+    ],
+    reading_time_saved: "7.5 hrs saved",
+    original_volume: "300 Pages (9 Chapters)"
+  },
+  {
+    id: "the-effective-executive",
+    title: "The Effective Executive",
+    subtitle: "The Definitive Guide to Getting the Right Things Done",
+    author: "Peter F. Drucker",
+    year: 1967,
+    pillar_id: 7,
+    pillar_name: "Leadership, Negotiation & High-Stakes Operations",
+    epistemic_tier: "Tier 1: Classical Management Science & Executive Effectiveness",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Effectiveness is a habit; intelligence, imagination, and knowledge are essential resources, but only effectiveness turns them into results.",
+    emotional_stakes: "Drucker's serene, aristocratic Viennese clarity confronting the frantic, fragmented modern executive drowning in busyness. Drucker rescues knowledge workers from the illusion that hours worked equals contribution made.",
+    key_models: [
+      "Know Thy Time (Log real time, consolidate discretionary chunks, eliminate time-wasters)",
+      "Focus on Contribution ('What can I contribute that significantly affects performance?')",
+      "Making Strength Productive (Staffing for strengths rather than eliminating weaknesses)",
+      "First Things First (Doing one thing at a time and abandoning yesterday's dead programs)",
+      "The Elements of Decision Making (Classifying generic vs. exceptional problems)"
+    ],
+    landmark_studies: [
+      "Alfred P. Sloan's Restructuring of General Motors (1923-1946)",
+      "George C. Marshall's US Army General Staffing Decisions in WWII",
+      "Drucker's Executive Time-Log Audits across 50 multinational corporate boards",
+      "The Bell Telephone Strategic Vision under Theodore Vail"
+    ],
+    reading_time_saved: "5.5 hrs saved",
+    original_volume: "208 Pages (8 Chapters)"
+  },
+
+  // --- PILLAR 8: Biographies, Great Lives & Historical Turning Points ---
+  {
+    id: "the-power-broker",
+    title: "The Power Broker",
+    subtitle: "Robert Moses and the Fall of New York",
+    author: "Robert A. Caro",
+    year: 1974,
+    pillar_id: 8,
+    pillar_name: "Biographies, Great Lives & Historical Turning Points",
+    epistemic_tier: "Tier 1: Master Historical Biography & Forensic Power Analysis",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Power doesn't corrupt as much as it reveals; when a man acquires unchecked power, his true nature and latent contempt for ordinary people emerge without restraint.",
+    emotional_stakes: "Caro spent 7 years in grinding poverty to write this monumental, Shakespearean tragedy. It tracks Moses' transformation from an idealistic, incorruptible young reformer into an imperial tyrant who bulldozed the homes of hundreds of thousands of powerless poor citizens to build highways.",
+    key_models: [
+      "The Independent Public Authority as Sovereign Fortress (Triborough Bridge Authority)",
+      "Revenue Bond Recycling (Perpetual debt financing impervious to elected mayors/governors)",
+      "The Inevitable Highway Congestion Paradox (Building lanes induces infinite traffic demand)",
+      "Preemptive Construction (Pouring concrete before legal opposition can mobilize)",
+      "The Total Subjugation of Human Scale to Abstract Geometric Urban Planning"
+    ],
+    landmark_studies: [
+      "The 1-Mile East Tremont Demolition through the Bronx (Destroying 1,530 families for the Cross Bronx Expressway)",
+      "The Long Island State Park Commission creation & Jones Beach construction (1924)",
+      "The Battle with Jane Jacobs and the Lower Manhattan Expressway (LOMEX) Defeat (1962)",
+      "Caro's 522 In-Person Forensic Interviews with Moses' inner circle and displaced residents"
+    ],
+    reading_time_saved: "35.0 hrs saved",
+    original_volume: "1,246 Pages (44 Chapters)"
+  },
+  {
+    id: "titan-rockefeller",
+    title: "Titan: The Life of John D. Rockefeller, Sr.",
+    subtitle: "The Anatomy of Monopoly, Deep Piety, and the Birth of Modern Capitalism",
+    author: "Ron Chernow",
+    year: 1998,
+    pillar_id: 8,
+    pillar_name: "Biographies, Great Lives & Historical Turning Points",
+    epistemic_tier: "Tier 1: Comprehensive Historical Biography & Economic History",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Monopoly and efficiency are Siamese twins; industrial dominance is won by the quiet elimination of waste, secret freight rebates, and unflinching self-control.",
+    emotional_stakes: "The psychological tension between Rockefeller's father (a flamboyant, bigamist con artist who sold fake cancer cures) and his devout, long-suffering mother. Rockefeller's icy calm, deep Christian conviction that God gave him his money, and ruthless extermination of rivals creates a fascinating, haunting portrait.",
+    key_models: [
+      "Horizontal Integration & The Consolidation of Refining (Standard Oil Trust)",
+      "Secret Railroad Freight Rebates & Drawbacks (Forcing railroads to pay Standard on competitors' shipments)",
+      "Total Waste Elimination (The 39 Drops of Solder savings across millions of kerosene cans)",
+      "The Architecture of Modern Philanthropy (The Rockefeller Foundation & Medical Revolution)",
+      "Emotional Stoicism under Public Vilification"
+    ],
+    landmark_studies: [
+      "The Cleveland Massacre of 1872 (Swallowing 22 of 26 rival refiners in 6 weeks)",
+      "The South Improvement Company secret cartel contract exposure",
+      "The 1911 Supreme Court Standard Oil Antitrust Dissolution (Standard Oil Co. of New Jersey v. United States)",
+      "The Eradication of Hookworm across the American South (Rockefeller Sanitary Commission)"
+    ],
+    reading_time_saved: "20.0 hrs saved",
+    original_volume: "832 Pages (35 Chapters)"
+  },
+  {
+    id: "churchill-walking-with-destiny",
+    title: "Churchill: Walking with Destiny",
+    subtitle: "The Master Biography of Moral Courage, Rhetoric, and Civilizational Salvation",
+    author: "Andrew Roberts",
+    year: 2018,
+    pillar_id: 8,
+    pillar_name: "Biographies, Great Lives & Historical Turning Points",
+    epistemic_tier: "Tier 1: Master Political Biography & Grand Historical Narrative",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "In supreme crisis, rhetoric is not mere words; it is the physical mobilization of the English language and national will sent into battle against tyranny.",
+    emotional_stakes: "The agonizing wilderness years of the 1930s when Churchill was mocked, despised, and written off as a warmonger while warning of Nazi rearmament. The electrifying moment in May 1940 when, at 65, he walks into Downing Street with Britain standing entirely alone against the Nazi blitzkrieg.",
+    key_models: [
+      "The Roar of the Lion: Rhetoric as Weapon of State Defense",
+      "The Wilderness Resilience: Enduring 11 years of political exile without surrendering core truth",
+      "The War Cabinet Micro-Intervention Architecture ('Action This Day' red stickers)",
+      "Grand Alliance Diplomacy: Courting Roosevelt and Stalin to assemble overwhelming force",
+      "Historical Sense of Personal Destiny as Armor Against Despair"
+    ],
+    landmark_studies: [
+      "The May 1940 War Cabinet Crisis (Churchill staring down Halifax's peace negotiations with Hitler)",
+      "The Battle of Britain & Blitz Speech Sequences ('Blood, Toil, Tears and Sweat', 'Their Finest Hour')",
+      "The Gallipoli Dardanelles Debacle & the Long Road to Strategic Redemption (1915-1940)",
+      "Royal Archives newly released King George VI wartime diary entries"
+    ],
+    reading_time_saved: "26.0 hrs saved",
+    original_volume: "1,152 Pages (35 Chapters)"
+  },
+  {
+    id: "leonardo-da-vinci",
+    title: "Leonardo da Vinci",
+    subtitle: "The Infinite Curiosity of the Universal Genius",
+    author: "Walter Isaacson",
+    year: 2017,
+    pillar_id: 8,
+    pillar_name: "Biographies, Great Lives & Historical Turning Points",
+    epistemic_tier: "Tier 1: Intellectual Biography & Creative Neuroscience",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Genius is not superhuman intelligence, but relentless, childlike curiosity; true innovation occurs at the intersection of art, engineering, and science.",
+    emotional_stakes: "Leonardo's notebook lists: 'Describe the tongue of the woodpecker.' He was an illegitimate, gay, left-handed, vegetarian perfectionist who left masterpieces unfinished because reality could never match his vision. The book is an intimate, inspiring celebration of human wonder.",
+    key_models: [
+      "Sfumato (The smoky blending of boundaries without harsh lines in painting and thought)",
+      "Cross-Disciplinary Cross-Pollination (Dissecting human facial muscles to paint the Mona Lisa's smile)",
+      "Observation over Dogma (Challenging received Aristotelian authority with direct sensory empiricism)",
+      "Analogical Thinking (Rivers flowing like human veins; sound waves rippling like water)",
+      "The Beauty of the Unfinished (Valuing the process of inquiry above commercial completion)"
+    ],
+    landmark_studies: [
+      "Leonardo's Notebooks (7,200 surviving pages of Codex Leicester, Arundel, Atlanticus)",
+      "Human Heart Aortic Valve Fluid Dynamics Dissections (Centuries ahead of modern medicine)",
+      "The Mona Lisa 16-Year Optical Glaze Layer Chemistry & Sfumato Micro-Scans",
+      "The Vitruvian Man Geometric Squaring of the Circle Proportions"
+    ],
+    reading_time_saved: "14.0 hrs saved",
+    original_volume: "624 Pages (33 Chapters)"
+  },
+  {
+    id: "alexander-hamilton",
+    title: "Alexander Hamilton",
+    subtitle: "The Illegitimate Immigrant Who Forged the Financial Engine of Modern America",
+    author: "Ron Chernow",
+    year: 2004,
+    pillar_id: 8,
+    pillar_name: "Biographies, Great Lives & Historical Turning Points",
+    epistemic_tier: "Tier 1: Master Historical Biography & Constitutional Political Economy",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "A great nation requires energetic central institutions, public credit, a manufacturing base, and a standing financial system to guarantee liberty.",
+    emotional_stakes: "Born out of wedlock in the Caribbean, abandoned by his father, watching his mother die beside him of fever, Hamilton wrote his way out of poverty with ferocious, incandescent prose. His tragic duel with Aaron Burr at Weehawken is the heartbreaking climax of an incandescent life.",
+    key_models: [
+      "The Assumption of State Debts (Turning state liabilities into a national financial blessing)",
+      "The Creation of the Bank of the United States & Modern Central Banking",
+      "The Doctrine of Implied Powers (Elastic interpretation of the US Constitution)",
+      "The Federalist Papers (85 essays written at blistering speed to ratify the Republic)",
+      "The Vulnerability of Honor in 18th-Century Political Duels"
+    ],
+    landmark_studies: [
+      "Report on Public Credit & Report on Manufactures (1790-1791)",
+      "The Compromise of 1790 (Dinner table deal moving capital to Potomac for debt assumption)",
+      "The Federalist Papers Constitutional Arguments (Essays 1, 9, 10, 70, 78)",
+      "The Reynolds Affair (First American political sex scandal & financial exoneration pamphlet)"
+    ],
+    reading_time_saved: "20.0 hrs saved",
+    original_volume: "832 Pages (43 Chapters)"
+  },
+
+  // --- PILLAR 9: Master Narrative Fiction, Trauma & Human Condition ---
+  {
+    id: "crime-and-punishment",
+    title: "Crime and Punishment",
+    subtitle: "The Psychology of Guilt, the Extraordinary Man Fallacy, and Redemptive Suffering",
+    author: "Fyodor Dostoevsky",
+    year: 1866,
+    pillar_id: 9,
+    pillar_name: "Master Narrative Fiction, Trauma & The Human Condition",
+    epistemic_tier: "Tier 1: Master Existential Literature & Forensic Psychological Fiction",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "No theoretical ideology can insulate a human soul from the moral law written into human conscience; murder destroys not the victim, but the murderer's connection to humanity.",
+    emotional_stakes: "The suffocating, feverish, yellow-wallpapered St. Petersburg garret where Raskolnikov plots an axe murder. Dostoevsky's prose drags the reader inside the visceral terror, rapid heartbeat, paranoia, and psychological disintegration of guilt, followed by the agonizing crawl toward redemption through Sonya's selfless love.",
+    key_models: [
+      "The Extraordinary Man Theory (The Napoleonic delusion of being above moral law)",
+      "Psychological Disintegration & Paranoia (Guilt as an acute neurobiological illness)",
+      "Porfiry Petrovich's Cat-and-Mouse Interrogation (Psychological entrapment over physical proof)",
+      "Sonya Marmeladova & The Power of Selfless Suffering (The Resurrection of Lazarus)",
+      "Svidrigailov's Void (Eternity as a dusty bathhouse with spiders in the corners)"
+    ],
+    landmark_studies: [
+      "Dostoevsky's Mock Execution & 4 Years in Siberian Katorga Labor Camp (Omsk, 1849)",
+      "The Historical 1865 Gerasim Chistov Double Axe-Murder Trial in Moscow",
+      "Porfiry's Forensic Interrogation Dialogue vs. 19th-Century Russian Tsarist Police Protocols",
+      "The Genesis of Russian Nihilism & Pisarev's Radical Materialist Critiques"
+    ],
+    reading_time_saved: "14.5 hrs saved",
+    original_volume: "576 Pages (6 Parts & Epilogue)"
+  },
+  {
+    id: "the-brothers-karamazov",
+    title: "The Brothers Karamazov",
+    subtitle: "The Grand Inquisitor, The Problem of Evil, and Universal Responsibility",
+    author: "Fyodor Dostoevsky",
+    year: 1880,
+    pillar_id: 9,
+    pillar_name: "Master Narrative Fiction, Trauma & The Human Condition",
+    epistemic_tier: "Tier 1: Master Philosophical Fiction & Theological Psychology",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Everyone is really responsible to all men for all men and for everything; if there is no God and no immortality, then everything is lawful.",
+    emotional_stakes: "Dostoevsky's crowning masterpiece, written after his 3-year-old son Alyosha died of epilepsy. The debate between Ivan (the brilliant intellectual rebel) and Alyosha (the gentle novice monk), epitomized by 'The Grand Inquisitor' and the tear of a tortured child, is arguably the most terrifying and beautiful theological dialogue in world literature.",
+    key_models: [
+      "The Karamazov Triad: Dmitri (Sensual passion), Ivan (Intellectual doubt), Alyosha (Active love)",
+      "The Grand Inquisitor (Humanity cannot bear freedom; it trades freedom for Miracle, Mystery, and Authority)",
+      "Active Love vs. Love in Dreams (Loving abstract humanity is easy; loving real people is agonizing labor)",
+      "Elder Zosima's Universal Responsibility ('Each of us is guilty before all')",
+      "The Devil as Petty Bourgeois Hallucination (Evil is not grand, it is banal and vulgar)"
+    ],
+    landmark_studies: [
+      "Dostoevsky's Optina Pustyn Monastery pilgrimage and Elder Amvrosy dialogues",
+      "The Ilinsky True-Crime Parricide Injustice Case (Dostoevsky's katorga inmate)",
+      "The Historical Russian Peasant Miracle Expectations & Father Ferapont's Ascetic Rivalry",
+      "Sigmund Freud's 'Dostoevsky and Parricide' Psychoanalytic Essay (1928)"
+    ],
+    reading_time_saved: "22.0 hrs saved",
+    original_volume: "824 Pages (4 Parts, 12 Books, Epilogue)"
+  },
+  {
+    id: "1984-orwell",
+    title: "1984",
+    subtitle: "Totalitarian Psychology, Linguistic Mutilation, and the Death of Objective Truth",
+    author: "George Orwell",
+    year: 1949,
+    pillar_id: 9,
+    pillar_name: "Master Narrative Fiction, Trauma & The Human Condition",
+    epistemic_tier: "Tier 1: Political Satire, Dystopian Cybernetics & Linguistic Sociology",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Who controls the past controls the future: who controls the present controls the past; the ultimate power is tearing human minds to pieces and putting them together again in new shapes.",
+    emotional_stakes: "Written by Orwell while dying of tuberculosis in a remote, freezing farmhouse on the Scottish Isle of Jura. The coughing fits of blood mirror Winston Smith's grim physical degradation. It is a terrifying, desperate love letter to truth, warning what happens when the human spirit is broken.",
+    key_models: [
+      "Doublethink (The power of holding two contradictory beliefs in one's mind simultaneously and accepting both)",
+      "Newspeak (Narrowing the range of thought: if there is no word for freedom, rebellion is unthinkable)",
+      "The Memory Hole & Mutability of the Past (Re-editing history so Big Brother is never wrong)",
+      "The Two Minutes Hate & Emotional Transmutation (Directing human rage at external scapegoats)",
+      "Room 101: The Worst Thing in the World (The terror tailored specifically to break your moral core)"
+    ],
+    landmark_studies: [
+      "Stalinist Soviet Show Trials & NKVD False Confession Protocols (1936-1938)",
+      "Spanish Civil War Communist Propaganda & Catalonia Street Deceptions (Orwell, 1937)",
+      "Tehran Conference Geopolitical Tripartite Partition (Oceania, Eurasia, Eastasia parallels)",
+      "BBC Wartime Censorship Ministry of Information bureaucratic structures"
+    ],
+    reading_time_saved: "8.0 hrs saved",
+    original_volume: "328 Pages (3 Parts, 24 Chapters)"
+  },
+  {
+    id: "it-ends-with-us",
+    title: "It Ends with Us",
+    subtitle: "A Forensic Deconstruction of Intimate Partner Violence, Cognitive Dissonance, and Cycle Disruption",
+    author: "Colleen Hoover",
+    year: 2016,
+    pillar_id: 9,
+    pillar_name: "Master Narrative Fiction, Trauma & The Human Condition",
+    epistemic_tier: "Tier 1/2: Clinical Trauma Dynamics in Narrative Transmutation",
+    tier_short: "Tier 1/2",
+    status: "distilled",
+    core_axiom: "It stops here. With me and you. It ends with us.",
+    emotional_stakes: "Hoover's personal reckoning with her childhood trauma: watching her violent father beat her mother. The novel forces the reader inside the emotional trap of an abusive marriage—where love, empathy, and hope keep the victim chained to the abuser until a heroic break occurs.",
+    key_models: [
+      "Walker's Cycle of Violence (Tension-Building, Battering Incident, Honeymoon Contrition)",
+      "Dutton & Painter's Traumatic Bonding (Intermittent reinforcement anchoring victims to abusers)",
+      "The Sunk Cost of Empathy (Weaponizing childhood trauma to excuse present violence)",
+      "The Gradual Heat Fallacy (The boiling frog boundary erosion across incremental incidents)",
+      "The Delivery Room Decoupling Heuristic (Breaking the cycle for the next generation)"
+    ],
+    landmark_studies: [
+      "Lenore E. Walker's Battered Woman Syndrome Clinical Studies (1979)",
+      "Dutton & Painter's Traumatic Bonding Formulations (1981, 1993)",
+      "Evan Stark's Theory of Coercive Control & Domestic Liberty Violations (2007)",
+      "Widom's Longitudinal Cycle of Violence & Intergenerational Transmission (1989)"
+    ],
+    reading_time_saved: "8.0 hrs saved",
+    original_volume: "384 Pages (35 Chapters)",
+    markdown_path: "distillations/it-ends-with-us/master-notes.md",
+    html_path: "distillations/it-ends-with-us/index.html"
+  },
+  {
+    id: "death-of-ivan-ilyich",
+    title: "The Death of Ivan Ilyich",
+    subtitle: "The Inauthentic Life, the Terror of Mortality, and the Breakthrough to Truth",
+    author: "Leo Tolstoy",
+    year: 1886,
+    pillar_id: 9,
+    pillar_name: "Master Narrative Fiction, Trauma & The Human Condition",
+    epistemic_tier: "Tier 1: Master Existential Literature & Thanatological Psychology",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Ivan Ilyich's life had been most simple and most ordinary and therefore most terrible; living to conform to social prestige blinds man to the only reality that matters: genuine love.",
+    emotional_stakes: "Tolstoy writing after his profound mid-life existential crisis (recounted in 'A Confession'). The novella is a merciless, laser-guided autopsy of bourgeois superficiality. Watching Ivan Ilyich scream on his deathbed for three straight days forces every reader to ask: 'What if my entire life was wrong?'",
+    key_models: [
+      "The Most Terrible Life (The tragedy of unquestioned conventionality and social conformity)",
+      "The Conspiratorial Lie of Health (Society refuses to acknowledge dying, treating mortality as an impolite inconvenience)",
+      "Gerasim's Compassion (The humble peasant boy whose selfless touch alone brings physical and emotional comfort)",
+      "The Black Sack of Death (The psychological constriction and resistance before spiritual surrender)",
+      "The Final Light (In the moment of embracing love for his son, death vanishes: 'There is no more death')"
+    ],
+    landmark_studies: [
+      "Tolstoy's Spiritual Crisis & Confession of Nihilistic Despair (1879-1882)",
+      "Elisabeth Kübler-Ross 5 Stages of Grief Clinical Correspondences (1969)",
+      "Ernest Becker's Analysis of Ivan Ilyich in The Denial of Death",
+      "Historical Russian Tsarist Bureaucratic Legal Hierarchy records"
+    ],
+    reading_time_saved: "3.5 hrs saved",
+    original_volume: "90 Pages (12 Chapters)"
+  },
+
+  // --- PILLAR 10: Physiology, Neuroscience, Sleep & Longevity ---
+  {
+    id: "why-we-sleep",
+    title: "Why We Sleep",
+    subtitle: "Unlocking the Power of Sleep and Dreams",
+    author: "Matthew Walker",
+    year: 2017,
+    pillar_id: 10,
+    pillar_name: "Physiology, Neuroscience, Sleep & Longevity",
+    epistemic_tier: "Tier 1: Cognitive Neuroscience & Sleep Medicine",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Sleep is the single most effective thing we can do to reset our brain and body health each day; mother nature's ultimate life-support system.",
+    emotional_stakes: "A wake-up call to an exhausted, caffeine-addicted modern society that proudly wears sleep deprivation as a badge of honor. Walker demonstrates that chronic sleep debt is slow biological suicide, quietly multiplying cancer cells, destroying memory consolidation, and rotting cardiovascular health.",
+    key_models: [
+      "The Two-Factor Sleep Drive Model: Process C (Circadian Rhythm) vs. Process S (Adenosine Pressure)",
+      "NREM Sleep (Spindle-rich deep wave memory filing from hippocampus to neocortex)",
+      "REM Sleep & Emotional First Aid (Overnight therapy decoupling raw pain from memories)",
+      "The Glymphatic Cleansing System (Brain tissue shrinks 60% during sleep to flush beta-amyloid)",
+      "The Biological Toll: Cardiovascular collapse, leptin/ghrelin appetite deregulation, immune cell depletion"
+    ],
+    landmark_studies: [
+      "Maiken Nedergaard Glymphatic Beta-Amyloid Washout in Sleeping Mice (2013)",
+      "Daylight Savings Time 1-Hour Loss 24% Heart Attack Spike Global Cohort Data",
+      "Walker's UC Berkeley Memory Retention & Sleep Spindle Neural Mappings",
+      "Natural Killer Cell 70% Depletion after a single 4-Hour Sleep Night (Irwin, 2008)"
+    ],
+    reading_time_saved: "8.5 hrs saved",
+    original_volume: "368 Pages (16 Chapters)"
+  },
+  {
+    id: "outlive",
+    title: "Outlive: The Science and Art of Longevity",
+    subtitle: "Medicine 3.0, Lifespan vs Healthspan, and Preventing the Four Horsemen of Chronic Disease",
+    author: "Peter Attia (with Bill Gifford)",
+    year: 2023,
+    pillar_id: 10,
+    pillar_name: "Physiology, Neuroscience, Sleep & Longevity",
+    epistemic_tier: "Tier 1/2: Clinical Longevity Medicine & Preventive Physiology",
+    tier_short: "Tier 1/2",
+    status: "queued",
+    core_axiom: "Medicine 2.0 waits for disease to manifest before treating it; Medicine 3.0 intervenes decades earlier with tactical prevention to maximize both lifespan and healthspan.",
+    emotional_stakes: "Attia's harrowing breakdown of his own emotional wreckage, anger, and clinical depression despite peak physical fitness. The raw emotional turning point is realizing that living to 100 is pointless if you are an emotionally abusive, miserable human being; longevity without emotional health is a curse.",
+    key_models: [
+      "Medicine 2.0 (Reactive disease care) vs. Medicine 3.0 (Proactive prevention & risk stratification)",
+      "The Four Horsemen of Chronic Death: Atherosclerosis, Cancer, Neurodegeneration, Metabolic Dysfunction/Type 2 Diabetes",
+      "The Centenarian Decathlon (Back-casting the physical competencies required at age 85+)",
+      "Zone 2 Cardio & VO2 Max (The single strongest correlative biomarker for all-cause mortality reduction)",
+      "ApoB vs. LDL-C (ApoB particle count as the true causal driver of plaque formation)"
+    ],
+    landmark_studies: [
+      "Mandsager et al. Cleveland Clinic VO2 Max & All-Cause Mortality 122,000-Patient Study (2018)",
+      "Ference et al. Mendelian Randomization ApoB Lifetime Cardiovascular Plaque Proofs",
+      "Look AHEAD & Diabetes Prevention Program (DPP) Lifestyle Intervention Trials",
+      "Attia's Bridge House Inpatient Emotional Trauma Treatment Documentation"
+    ],
+    reading_time_saved: "11.0 hrs saved",
+    original_volume: "496 Pages (17 Chapters)"
+  },
+  {
+    id: "the-body-keeps-the-score",
+    title: "The Body Keeps the Score",
+    subtitle: "Brain, Mind, and Body in the Healing of Trauma",
+    author: "Bessel van der Kolk",
+    year: 2014,
+    pillar_id: 10,
+    pillar_name: "Physiology, Neuroscience, Sleep & Longevity",
+    epistemic_tier: "Tier 1: Clinical Neurobiology of Trauma, Psychiatry & Somatic Healing",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "Trauma is not just an event in the past; it is the imprint left on the nervous system and body, rewiring the brain's alarm system and freezing the organism in survival defense.",
+    emotional_stakes: "Vietnam veterans shrieking in terror decades after combat; incest survivors unable to bear touch; children dissociated from their bodies. Van der Kolk's decades of clinical compassion transform our understanding of mental illness from a moral or chemical defect to a biological injury that lives in the flesh.",
+    key_models: [
+      "The Smoke Detector (Amygdala) vs. The Watchtower (Medial Prefrontal Cortex)",
+      "The Speechless Terror: Broca's area goes dark under trauma recall (Inability to verbalize horror)",
+      "Interoception & The Insula: Traumatized bodies lose connection to internal bodily sensations",
+      "Developmental Trauma & The Adverse Childhood Experiences (ACE) Study",
+      "Somatic Recovery Pathways: EMDR, Neurofeedback, Theater, Yoga, and Psychedelic-Assisted Therapy"
+    ],
+    landmark_studies: [
+      "Van der Kolk & Rauch fMRI Trauma Brain Activation & Broca's Deactivation Scans (1996)",
+      "Felitti & Anda CDC-Kaiser Permanente Adverse Childhood Experiences (ACE) Study (1998)",
+      "Shapiro EMDR Bilateral Stimulation Clinical Efficacy Trials",
+      "Somatic Interoception Yoga Randomization Trials for Treatment-Resistant PTSD"
+    ],
+    reading_time_saved: "12.0 hrs saved",
+    original_volume: "464 Pages (20 Chapters)"
+  },
+  {
+    id: "behave-sapolsky",
+    title: "Behave: The Biology of Humans at Our Best and Worst",
+    subtitle: "The Multi-Tiered Neural, Hormonal, Genetic, and Evolutionary Anatomy of Behavior",
+    author: "Robert M. Sapolsky",
+    year: 2017,
+    pillar_id: 10,
+    pillar_name: "Physiology, Neuroscience, Sleep & Longevity",
+    epistemic_tier: "Tier 1: Neuroendocrinology, Primatology & Evolutionary Biology",
+    tier_short: "Tier 1",
+    status: "queued",
+    core_axiom: "To understand why a human pulled a trigger or gave their life for another, you must examine what happened 1 second before (neurobiology), seconds before (sensory cues), hours before (hormones), days before (neuroplasticity), months before (adolescence), years before (epigenetics), and millennia before (evolution).",
+    emotional_stakes: "Sapolsky's 30 years living with wild baboons in Kenya, combined with lab neurobiology. His dark humor, deep compassion for human brokenness, and relentless demolition of free will forces us to rethink criminal justice, tribal war, and human hatred.",
+    key_models: [
+      "The Multi-Temporal Behavioral Framework (From 1 second to 1 million years ago)",
+      "The Frontal Cortex: 'Doing the harder thing when it's the right thing to do'",
+      "Us vs. Them Neurological Processing (Amygdalar snap fear responses to out-group faces in 50ms)",
+      "Oxytocin's Dark Side (Promotes love, generosity, and defense of In-group, but amplifies aggression to Out-group)",
+      "The Absence of Free Will and The Mitigation of Punitive Moral Blame"
+    ],
+    landmark_studies: [
+      "Sapolsky's Wild Baboon Glucocorticoid & Social Hierarchy Field Measurements (Kenya)",
+      "Danziger Israeli Judicial Parole Decisions & Hungry Judge Phenomenon",
+      "Oxytocin In-Group Trust & Out-Group Preemptive Attack Experiments (De Dreu, 2010)",
+      "MAO-A Gene-Environment Interaction Longitudinal Cohorts (Caspi et al., 2002)"
+    ],
+    reading_time_saved: "18.0 hrs saved",
+    original_volume: "800 Pages (17 Chapters)"
+  },
+  {
+    id: "breath-nestor",
+    title: "Breath: The New Science of a Lost Art",
+    subtitle: "How the Simple Act of Breathing Dictates Health, Cranial Structure, and Longevity",
+    author: "James Nestor",
+    year: 2020,
+    pillar_id: 10,
+    pillar_name: "Physiology, Neuroscience, Sleep & Longevity",
+    epistemic_tier: "Tier 1/2: Applied Human Physiology & Pulmonology Investigation",
+    tier_short: "Tier 1/2",
+    status: "queued",
+    core_axiom: "Modern humans have lost the ability to breathe correctly; nasal breathing, slower respiratory rates, and CO2 tolerance are foundational biological pillars that dictate cardiovascular, cognitive, and structural vitality.",
+    emotional_stakes: "Nestor's harrowing 20-day Stanford University experiment where he had his nostrils surgically plugged with silicone, forcing 240 hours of continuous mouth breathing. Watching his blood pressure spike into hypertension, snoring skyrocket by 4,820%, and acute anxiety ignite provides visceral, undeniable proof of biological decline.",
+    key_models: [
+      "The Nasal Turbine (Nitric oxide production, filtration, humidification, and parasympathetic tone)",
+      "The Bohr Effect & Carbon Dioxide Paradox (CO2 is not waste; it is the molecular key that releases oxygen from hemoglobin)",
+      "The Perfect Breath: 5.5 Seconds In, 5.5 Seconds Out (~5.5 breaths per minute yielding 5.5 liters of air)",
+      "Cranial Degradation: Industrial soft foods shrinking modern human jaws and blocking airways",
+      "Pranayama & Hypoventilation Training (Increasing carbon dioxide tolerance for peak endurance)"
+    ],
+    landmark_studies: [
+      "Stanford Nasal Obstruction Study (Nestor & Olsson, 2018)",
+      "Dr. Christian Guilleminault Pediatric Orthodontic & Airway Reconstruction Clinical Data",
+      "Svante Pääbo Human Skull Morphology Industrial Evolution Comparisons",
+      "Carl Stough Emphysema Breathing Rehabilitation Hospital Trials (Veterans Affairs)"
+    ],
+    reading_time_saved: "6.0 hrs saved",
+    original_volume: "304 Pages (10 Chapters)"
+  }
+];
+
+// Write catalog-500.json
+const catalogPath = path.join(__dirname, '..', 'docs', 'catalog-500.json');
+fs.writeFileSync(catalogPath, JSON.stringify({
+  version: "2.0.0",
+  total_catalog_target: 500,
+  foundation_tier_count: CATALOG_DATA.length,
+  pillars_count: 10,
+  books: CATALOG_DATA
+}, null, 2), 'utf-8');
+console.log(`Successfully generated docs/catalog-500.json with ${CATALOG_DATA.length} foundational books across 10 pillars!`);

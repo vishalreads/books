@@ -1,0 +1,309 @@
+THE LATEST
+HIGH-TECH
+SPY METHODS
+M, L, Shonnon
+
+-- 1 of 150 --
+
+T
+
+-- 2 of 150 --
+
+I ttnnk the many people who trave provided me with information and zuggetiors that made ttris book pos-
+sible. Most of them have asked that their names not be published. They have not. Others declined to idefuify
+themselves so I do not even know who they are.
+
+-- 3 of 150 --
+
+THE LATEST
+HIGH-TECH
+( SPY METHODS
+& M,L, shonnon
+\\ ,o*or'f$o*Jxs*
+
+-- 4 of 150 --
+
+AIso by M.L. Shannon:
+The Bug Book: Everything You Ever Wanted to Know about Electronic Eavesdropping . . . But
+Were Afraid to Ask
+Digital Privacy: A Guide to Computer Security
+The Phone Book: The Latest High Tech Techniques and Equipment for Preventing Electronic
+Eavesdropping, Recording Phone Calls, Ending Harassing Calls, and Stopping Toll Fraud
+Don't Bug Me:
+The Latest High-Tech Spy Methods
+by M.L. Shannon
+Copyright @ 1992 by M.L. Shannon
+ISBN 0-87364-658-4
+Printed in the United States of America
+Published by Paladin Press,
+a division of Paladin Enterprises, Inc.
+Cunbarrel Tech Center
+7077 Winchester Circle
+Boulder, Colorado 80301, USA
++1303.443.7250
+Direct inquiries and/or orders to the above address.
+PALADIN, PALADIN PRESS, and the "horse head" design
+are trademarks belonging to Paladin Enterprises and
+registered in United States Patent and Tiademark Office.
+All rights resewed. Except for use in a review, no
+portion of this book may be reproduced in any form
+without the express written permission of the publisher.
+Neither the author nor the publisher assumes
+any responsibility for the use or misuse of
+information contained in this book.
+Visit Our Web site at www.paladin-press.com
+
+-- 5 of 150 --
+
+ONTE}{TS
+TNIRODUCTTON .............1
+Surveillance and Eftil""""'
+A Speculative History of Eavesdropping
+Your Right to Know
+The Truth about Countersurveillance
+\fhy Me?
+The Laws That Concem Surveillance
+Surveillance and Privacy in the present
+PART & TNSTDE DWTCES.. ................g
+Microphones
+Contact
+The T\rbe
+The Radio Spectrum
+RF Transmitters
+Remote Control
+The Repeater
+The Burst Transmitter
+Microwave
+Low Frequency
+Infrared Transmitters
+Visibl e Light Transmitters
+I7ireless Intercoms
+PART II: TELEPIIOI\E SLTRVEIIIT\NCE ............I7
+An Overview
+Direct Listening Viretaps
+Remote Listening lfiretaps
+TYpes ofRF Phone Bugs
+Line-Powered
+The Drop-In
+Series and Parallel
+The Infinity Transmitter
+Subcarrier Extensions
+Down-Line Taps
+REMOBS Eavesdropping
+Cordless Phones
+Cellular Phones
+Answering Machines
+Voice Mailboxes
+Satellite and Microwave Listening
+Phone Tricks
+Secure Phone Communications
+PART III: FII\DING AUGS AND WIRETAPS ......Zg
+An Overview
+Conducting a Physical Search
+\Vhat Does a Bug Look Like?
+Batteries
+Antennas
+Covering the Sound of a Search
+The Electronic Searctr: Tlpes of Equpment Arailable
+The Bug Detector
+Microwave Detectors
+ljltrasonic Sound Generators
+Tape-Recorder Detectors
+Using a Scanner
+The Hunter
+The Scan-Lock
+The Spectrum Analyzer
+Nonlinear Junction Detectors
+The Frequency Counter
+Searching the Phone Lines
+Tracking'Wires
+
+-- 6 of 150 --
+
+I DON:T BUG ME I
+Meazuring Line Resistance
+The Reflectometer
+Gremlins, Martians, and Ghosts
+luohat to Do If You Find a Bug
+look Again
+Make a Profile
+Make a Plan
+Destnrction of Bugs
+PARTIV: OUISIDEDEVICES.. ........47
+Parabolic Reflectors and Shotgun Microphones
+Microwave tistening Devices
+Finding Microwave Devices
+Lasers: How They Vork
+Finding Lasers
+Defeating Lasers
+PAaT Ys COMPUIER EAVESDROPPING ..........51
+Tempest and the Van Eck Tectrrology
+Defeating Van Eck
+Securing Methods
+Data Encryption
+The Pak-Rat Experiment
+El ectronic Tlpewriters
+PART Vb VIDEO OPTICAL $]NYEII,.L/II\[C8.....57
+Equipment Available
+Defeating Video Surveillance
+Two-r!7ay Television?
+PARTVtr:(}III3R
+sriRvDrrrl\NcEMErrroDs ............6r
+Rain, Sleet, and Gloom of Night
+Sticky Fingers
+Bumper Beepers, Lojack, and Cats
+1,984
+PART VIII: PREVENTING SLIRVEILIf,\NCE .......65
+Securing the Area: A Prisoner in Your Own Home?
+Old Sparky
+The RF Room Guard
+Phone Guards
+Trojan Horses
+Look Around
+PARTDS OBIAII\ING
+sr,lRvErrrl\NcE EQT.mMENT .........71
+Make It Yourself
+Vhere to Buy It
+Using Surveillance Devices
+The Listening Post
+PARTIG USING
+INTERCEPTED INFOBM/IIIION .,,..,75
+Surveillance and Privacy in the Future
+PART )C: APPENDICES................. ......................77
+Appendix A: The Story of a Bugging...................77
+Appendix B: Equipment.......................................81
+Appendix C: List of Suppliers ............93
+Appendix D: Frequency List............................... 1 0 1
+Appendix E: Frequency Allocation Table .......... 105
+Appendix F: How Cellular Radios Vork............109
+Appendix G : Modifying Scanners ...................... 1 19
+Appendix H: The Cellular Phone NAM layout.J27
+Appendix I: Glossary. ......................125
+Appendix J: Suggested Reading ......................... 1 37
+Juvenal (ca. 50 - 130 A.D.)
+Satlres
+"Sed qds custodbt tpsos Custofu?" ("But who ls to guard the guards tbetnselus?')
+vi
+
+-- 7 of 150 --
+
+\K{+RNrh{c
+This book contains a considerable amount of information about surveillance methods and equipment,
+some of which has never been published.
+It is intended as a manual for self-defense against eavesdroppers. I do not encourage anyone to use it to
+invade the privacy of any other person. Bugging people is against several laws. It could get you arrested
+and put in a place you wouldn't like very much.
+The author and the publisher are not responsible for the use or misuse of any information contained in
+this book.
+I
+II
+I
+I
+vll
+
+-- 8 of 150 --
+
+
+
+-- 9 of 150 --
+
+NTRODIJCTION
+I believe that everyone in America should be al-
+lowed to enjoy the right guaranteed by the Fourth
+Amendment: the right to be left alone by govern-
+ment and others who would invade their privacy.
+I believe this, but not everyone else does.
+There are many people in this country-and not
+just federal agents-who can listen to everything
+you and your family are saying in your home, on
+your telephones, or in your office or car. They can
+and sometimes do. I think that everyone has the
+right to know about this.
+Information about the methods, types of equip-
+ment, easy availability, effectiveness, and means to
+find and defeat them should be available to every-
+one who wants it.
+People are entitled to get what they bargained
+for when they place their security, peace of mind,
+and their cash (usually a lot of the last) in the hands
+of someone who claims he can make their homes
+and offices seqire from spies and wiretappers.
+SI]RVEIII.ANCE AND gIIilCS
+Bugging people may be unlawful, but it is not
+always morally s'rong, e.g.rwhen a person is be-
+ing victimized by another and law-enforcement
+agencies are unable or unwilling to help. Bugging
+should be used only in self-defense. There are no
+"Equalizers" and "A-Teams" in real life.
+The guy uas a reml lowlife, uery big and uery
+rneAn, and he had a lot offrtends. Eueryone wbo
+freEtented tbe bar was afratd of btm, ryecwl$ tbe
+barterdu, who was hts u-wife. He would come lnto
+the bar drunk andforce her to go ultth hirn on hK
+rnotorcycle. Somettrns be unuld beat bq andwhen
+sbe came back to work, aneryone sAu her brulsed,
+puffyface.
+She called bts mllttary cotnrnandtng offfer, but
+he told bq that uttbout aidence orwltnesses, there
+u6r,s notblnghe could do.
+Sbe called the police, uho satd tbqt would "driue
+by" and lookfor hlrn, but they could net)er catch
+btm at the tauern.
+One of the barregulan u6$ an electronlcs tecbnl-
+clan, utbo, afiu seeing ber abused on@ too ofen, told,
+bq be mrgh be abb to belp. He butlt a bug, showed
+her bow to turn lt on, and suggested some bidtng
+places for it. Tbe nst ttrte bq %-hwfund forced bu
+to go wttb him,, sbe btd tbe bug tn bts bedroorn.
+For ten nigbts tbe tecbntctan parked his old
+Dod.ge uan near tbe guy's apartffient and listened
+until he got sonetbtng he could use: the sounds af
+hl.m uerbally abusing and tben beating anotber
+wornan he had taken botne.
+The rrcxt day, he made copi6 of the tape and sent
+one to tbe guy, along wtth a note, and anotber to
+his CO. The ex neuer catne back to tbe bar again.
+This ts a tr,,rc stoty.
+I understand the helplessness law-enforcement
+officials must feel when arrested drug dealers and
+other criminals are back on the street within hours;
+I sympathize with them if they bend the rules to try
+to keep known criminals off the street. I don't like
+crime either.
+\fhat I do not sympathize with is the govern-
+
+-- 10 of 150 --
+
+I DONTBUGME I
+ment's abuse of the power it has to spy on people
+who are not criminals and are not even suspected of
+a crime, such as political activists and protestors
+who disagree with the way the administration is
+running the country. This I am against.
+\Xtren Richard Nixon had Assistant U.S. Attomey
+General Morton Halperin's phones tapped, was
+there a clear and present danger to national secu-
+rity to justify this action? Nixon remarked of this;
+"$7hen a president does it, it is not illegal."
+During the Nixon administration, federal agents
+tapped the phones of those they believed to be po-
+litical dissidents, and U.S. Attorney General John
+Mitchell tried to justiff this by claiming that "national
+security may involve threats from domestic groups."
+The U.S. Supreme Court disagreed with Mitchell,
+and ruled that the government could not indis-
+criminately ap the phones of zuspected dissidents.
+The Federal Bureau of Investigation (nBI) has,
+for years, tried to get public libraries to provide the
+names of patrons vfio check out certain books that
+it corsiders seditious, and agants have admiued that
+they go to libraries to look for people who read
+publications such as Aviation 'Week, Defense
+Electronics, and other technical magazine.Is read-
+nga magaztne that anyone can subscribe to a threat
+to national security?
+A few year6 ago, the FBI conducted a large-scale
+zurveillance operation against menrbers of a group
+of people who were protesting the United States'
+involvement in El Salvador, and the agency got
+caught doing this. The punishment for 

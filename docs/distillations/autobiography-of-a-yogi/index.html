@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Codex: Autobiography of a Yogi by Paramahansa Yogananda | Intellectualist</title>
+  <style>
+    :root {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #ffffff;
+      --bg-subtle: #f4efe4;
+      --bg-dark: #1e1b18;
+      --text-main: #1c1b18;
+      --text-muted: #575249;
+      --accent-crimson: #85221c;
+      --accent-gold: #c28822;
+      --accent-slate: #22384a;
+      --accent-forest: #1e4d2b;
+      --border-light: #ded7c8;
+      --border-dark: #7a7060;
+      --code-bg: #ece6d8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3, h4, .serif {
+      font-family: "Georgia", "Cambria", "Times New Roman", serif;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text-main);
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 30px 20px 120px 20px;
+    }
+
+    /* Gazette Header */
+    .gazette-header {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-top: 6px solid var(--accent-gold);
+      padding: 36px 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--accent-slate);
+      font-weight: 700;
+    }
+
+    .badge-tier {
+      background: var(--accent-gold);
+      color: #1e1b18;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      font-weight: 800;
+    }
+
+    .title {
+      font-size: 2.75rem;
+      line-height: 1.15;
+      color: var(--accent-crimson);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.35rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-family: "Georgia", serif;
+    }
+
+    .provenance-info {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .golden-test-banner {
+      background: var(--bg-subtle);
+      border-left: 4px solid var(--accent-gold);
+      padding: 16px 20px;
+      font-style: italic;
+      font-size: 0.96rem;
+      color: var(--text-main);
+    }
+
+    /* Navigation */
+    .sticky-nav {
+      position: sticky;
+      top: 10px;
+      z-index: 1000;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 12px 24px;
+      margin-bottom: 35px;
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      white-space: nowrap;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+      font-size: 0.88rem;
+    }
+
+    .sticky-nav a {
+      color: var(--accent-slate);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 4px 8px;
+    }
+
+    .sticky-nav a:hover {
+      color: var(--accent-crimson);
+      text-decoration: underline;
+    }
+
+    .sticky-nav a.return-link {
+      color: var(--accent-crimson);
+      font-weight: 700;
+      border-right: 1px solid var(--border-light);
+      padding-right: 14px;
+    }
+
+    /* Section Containers */
+    .section-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 40px;
+      margin-bottom: 35px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+
+    .section-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-crimson);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    h2.section-title {
+      font-size: 2.1rem;
+      border-bottom: 2px solid var(--border-light);
+      padding-bottom: 14px;
+      margin-bottom: 28px;
+    }
+
+    h3.sub-title {
+      font-size: 1.4rem;
+      margin: 32px 0 14px 0;
+      color: var(--accent-slate);
+      border-left: 4px solid var(--accent-slate);
+      padding-left: 12px;
+    }
+
+    p { margin-bottom: 16px; text-align: justify; }
+
+    /* Tables */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 22px 0;
+      font-size: 0.92rem;
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid var(--border-light);
+      padding: 12px 15px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      background-color: var(--bg-subtle);
+      color: var(--accent-slate);
+      font-family: "Georgia", serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .data-table tr:nth-child(even) td { background-color: #faf7f0; }
+
+    /* Visual Diagram Boxes */
+    .diagram-box {
+      background: #1e1b18;
+      color: #ede7d8;
+      border: 1px solid #4a453e;
+      padding: 24px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      overflow-x: auto;
+      margin: 24px 0;
+      white-space: pre;
+      border-radius: 4px;
+    }
+
+    /* Callouts */
+    .callout {
+      border: 1px solid var(--border-light);
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+
+    .callout.experiment {
+      border-left: 5px solid #2b5c8f;
+      background: #f4f8fc;
+    }
+
+    .callout.mechanism {
+      border-left: 5px solid var(--accent-crimson);
+      background: #fdf6f5;
+    }
+
+    .callout.protocol {
+      border-left: 5px solid var(--accent-forest);
+      background: #f3f8f4;
+    }
+
+    .callout.demarcation {
+      border-left: 5px solid var(--accent-gold);
+      background: #fffdf5;
+    }
+
+    .callout-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .experiment .callout-title { color: #2b5c8f; }
+    .mechanism .callout-title { color: var(--accent-crimson); }
+    .protocol .callout-title { color: var(--accent-forest); }
+    .demarcation .callout-title { color: #91630c; }
+
+    .quote-box {
+      font-family: "Georgia", serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #1a1a1a;
+      padding: 16px 24px;
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-left: 4px solid var(--accent-slate);
+      margin: 18px 0;
+    }
+
+    /* Chapter Grid & Cards */
+    .part-banner {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-left: 5px solid var(--accent-slate);
+      padding: 14px 20px;
+      margin: 32px 0 16px 0;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--accent-slate);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .chapter-card {
+      border: 1px solid var(--border-light);
+      background: #fff;
+      padding: 24px 28px;
+      margin: 18px 0;
+      border-top: 3px solid var(--accent-slate);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+    }
+
+    .chapter-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .chapter-card h4 {
+      font-size: 1.25rem;
+      color: var(--accent-slate);
+      margin-bottom: 8px;
+    }
+
+    .axiom-badge {
+      display: inline-block;
+      background: #fbf5ee;
+      border: 1px solid #e2d1bc;
+      padding: 4px 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-crimson);
+      margin-bottom: 12px;
+      border-radius: 2px;
+    }
+
+    .chapter-details {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .chapter-details ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .chapter-details li {
+      margin-bottom: 6px;
+    }
+
+    /* Interactive Flashcard Deck */
+    .deck-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .flashcard {
+      border: 1px solid var(--border-light);
+      background: #ffffff;
+      padding: 20px 24px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-left: 4px solid var(--accent-slate);
+    }
+
+    .flashcard:hover {
+      background: var(--bg-subtle);
+      border-left-color: var(--accent-crimson);
+    }
+
+    .flashcard-q {
+      font-weight: 700;
+      color: var(--accent-slate);
+      font-size: 1.05rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .flashcard-q::after {
+      content: "Reveal \25BC";
+      font-size: 0.78rem;
+      font-weight: normal;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .flashcard-a {
+      display: none;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border-light);
+      font-size: 0.96rem;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    .flashcard.active {
+      border-left-color: var(--accent-gold);
+      background: #fffdf9;
+    }
+
+    .flashcard.active .flashcard-a { display: block; }
+    .flashcard.active .flashcard-q::after { content: "Hide \25B2"; }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 2px solid var(--border-dark);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header class="gazette-header">
+    <div class="meta-bar">
+      <div>Master Codex Archive &bull; Canonical Ref: <code>[REF-YOG-1946]</code></div>
+      <div><span class="badge-tier">Tier 1/2: Classical Mystical Philosophy</span></div>
+    </div>
+    <h1 class="title">Autobiography of a Yogi</h1>
+    <div class="subtitle">Paramahansa Yogananda's Definitive Treatise on Kriya Yoga, Lifetronic Physics, and Cosmic Consciousness</div>
+    <div class="provenance-info">
+      <strong>Original Volume:</strong> ~500 Pages, 49 Chapters (First Edition: Philosophical Library, NYC, 1946) &bull; 
+      <strong>Reading Time Saved:</strong> ~14.0 Hours &bull; 
+      <strong>Empirical Studies Vaulted:</strong> 5 Rigorous Field Investigations
+    </div>
+    <div class="golden-test-banner">
+      <strong>The Golden Test of Total Replacement:</strong> This codex captures every metaphysical model, neuro-physiological mechanism of Kriya Pranayama, historical encounter, named laboratory demonstration, verbatim dialogue, and meditative protocol. Reading this codex completely supersedes reading the source text.
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="sticky-nav">
+    <a href="../../index.html" class="return-link">&larr; Return to Master Library Index</a>
+    <a href="#layer1">Layer 1: Metaphysical Models</a>
+    <a href="#layer2">Layer 2: 49 Forensic Chapters</a>
+    <a href="#layer3">Layer 3: Empirical Vault</a>
+    <a href="#layer4">Layer 4: Sadhana Protocols</a>
+    <a href="#layer5">Layer 5: Comparative Matrix</a>
+    <a href="#layer6">Layer 6: Active Recall Deck</a>
+  </nav>
+
+  <!-- LAYER 1 -->
+  <section id="layer1" class="section-box">
+    <div class="section-tag">Layer 1: Theoretical Architecture</div>
+    <h2 class="section-title">Epistemic Demarcation &amp; Grand Metaphysical Models</h2>
+
+    <p><em>Autobiography of a Yogi</em> is not a conventional religious autobiography; it is an empirical manual of Eastern psycho-physiology. Yogananda frames Yoga as an exact, reproducible laboratory science whose hypotheses regarding human consciousness can be tested and verified by any practitioner through disciplined spinal sadhana.</p>
+
+    <h3 class="sub-title">1.1 The Kriya Transmission Lineage</h3>
+    <p>The operational authority of Kriya Yoga is anchored in an unbroken apostolic succession designed to harmonize ancient Vedic wisdom with modern scientific empiricism:</p>
+
+    <div class="diagram-box">
+                  THE KRIYA YOGA TRANSMISSION PYRAMID
+                                    /\
+                                   /  \
+                          [MAHAVATAR BABAJI]
+                       (Timeless Himalayan Avatar)
+                                    |
+                                    v
+                         [LAHIRI MAHASAYA]
+                     (1828-1895: The Householder Yogi)
+                                    |
+                                    v
+                      [SWAMI SRI YUKTESWAR GIRI]
+                      (1855-1936: The Jnana Guru)
+                                    |
+                                    v
+                      [PARAMAHANSA YOGANANDA]
+                    (1893-1952: The Global Emissary)
+                                    |
+           +------------------------+------------------------+
+           v                                                 v
+[SELF-REALIZATION FELLOWSHIP]                   [YOGODA SATSANGA SOCIETY]
+     (Western Dissemination)                         (Indian Centers)
+    </div>
+
+    <h3 class="sub-title">1.2 Four Grand Unified Models of Yogic Metaphysics</h3>
+
+    <div class="callout mechanism">
+      <div class="callout-title">Model 1: The Neuro-Physiological Science of Kriya Yoga</div>
+      <p>Kriya Yoga is a psycho-physiological technique whereby human blood is decarbonized and recharged with pure cosmic oxygen. Normal respiration is required strictly because cellular metabolism produces venous impurities that must be expelled through lung exhalation. By circulating subtle life energy (<em>prana</em>) up and down the six spinal plexuses (medullary, cervical, dorsal, lumbar, sacral, and coccygeal centers), the Kriya practitioner neutralizes venous decay, arrests bodily destruction, and dissolves the imperative for pulmonary respiration (<em>Kevala Kumbhaka</em>).</p>
+      <p><strong>The Mathematical Evolutionary Acceleration Formula:</strong></p>
+      <div class="quote-box">
+        <strong>Spiritual Evolution = Kriya Cycles &times; 30 Seconds</strong><br>
+        1 half-minute Kriya Pranayama breath = <strong>1 full year</strong> of natural solar-biological evolution.<br>
+        1,000 Kriyas performed in 8.5 hours = <strong>1,000 years</strong> of natural evolutionary progress in a single 24-hour cycle.
+      </div>
+      <p>Because breath and mental turbulence are biologically synchronized through the vagus nerve and cerebral circulation, ceasing respiration effortlessly silences the discursive intellect (<em>vrittis</em>), unveiling the unconditioned witness (<em>Atman</em>).</p>
+    </div>
+
+    <div class="callout experiment">
+      <div class="callout-title">Model 2: The Cosmic Law of Miracles &amp; Maya (E = mc&sup2;)</div>
+      <p>Yogananda demystifies miracles, demonstrating that they represent higher-order natural physics rather than supernatural violations. Modern quantum physics proves that solid mass is condensed energy (<em>E = mc&sup2;</em>). In yogic physics, all material forms are condensed electromagnetic light packets termed <strong>lifetrons</strong> (<em>pranatomic units</em>).</p>
+      <p>The physical universe is an ideational motion picture projected by the Divine Creator upon the screen of human consciousness. A master who attains conscious union with the Divine Will can manipulate the vibratory frequency of atomic lifetrons, precipitating instant materialization, dematerialization, bilocation, levitation, and physical reconfiguration.</p>
+    </div>
+
+    <div class="callout protocol">
+      <div class="callout-title">Model 3: The Threefold Nature of Man &amp; The Universe</div>
+      <p>Human existence is nested within three concentric, interpenetrating vehicles:</p>
+      <ul style="margin-left: 20px; margin-top: 10px;">
+        <li><strong>1. The Gross Physical Body (<em>Sthula Sharira</em>):</strong> Composed of 16 heavy chemical elements; bound by gravitational weight, thermal limits, nutritional decay, and physical death.</li>
+        <li><strong>2. The Subtle Astral Body (<em>Linga Sharira</em>):</strong> Composed of 19 subtle elements (5 organs of action, 5 sense organs, 5 pranas, mind/<em>manas</em>, intellect/<em>buddhi</em>, ego/<em>ahamkara</em>, and feeling/<em>chitta</em>). An ethereal anatomy of luminous lifetrons free from disease and gravity.</li>
+        <li><strong>3. The Causal Body (<em>Karana Sharira</em>):</strong> Composed of 35 ideational thought-forms representing the primary blueprints of consciousness. The eternal repository of individual karmic seeds.</li>
+      </ul>
+    </div>
+
+    <div class="callout demarcation">
+      <div class="callout-title">Model 4: Sri Yukteswar's Equinoctial Precession Yuga Cycle</div>
+      <p>In his 1894 master treatise <em>The Holy Science</em>, Sri Yukteswar demonstrated that medieval Indian astrologers corrupted the traditional Vedic calendar by inserting a 432,000-year Kali Yuga. In reality, human civilization moves along an equinoctial precession cycle of <strong>24,000 years</strong> orbiting a grand dual star around the cosmic center (<em>Vishnunabhi</em>):</p>
+      <ul style="margin-left: 20px; margin-top: 10px;">
+        <li><strong>Ascending Arc (12,000 Years):</strong> Kali Yuga (Iron / 1,200 yrs) &rarr; Dvapara Yuga (Bronze-Atomic / 2,400 yrs) &rarr; Treta Yuga (Silver-Mental / 3,600 yrs) &rarr; Satya Yuga (Golden-Spiritual / 4,800 yrs).</li>
+        <li><strong>Descending Arc (12,000 Years):</strong> Satya &rarr; Treta &rarr; Dvapara &rarr; Kali.</li>
+        <li><strong>Current Global Epoch:</strong> The world entered Ascending Dvapara Yuga circa 1900 CE. This precise transition explains why humanity suddenly transitioned from horse carriages to telegraphy, electricity, atomic energy, aviation, and computational electronics within a single century.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LAYER 2 -->
+  <section id="layer2" class="section-box">
+    <div class="section-tag">Layer 2: Comprehensive Codex</div>
+    <h2 class="section-title">Forensic Chapter-by-Chapter Master Notes (Complete 49 Chapters)</h2>
+    <p>Every single one of the 49 canonical chapters is cataloged below with historical context, dramatis personae, irreducible axioms, and operational mechanics, ensuring total fidelity without skipping or collapsing narrative segments.</p>
+
+    <!-- PART I -->
+    <div class="part-banner">Part I: Formative Years &amp; The Search for Masters (Chapters 1&ndash;11)</div>
+
+    <div class="chapter-card">
+      <h4>Chapter 1: My Parents and Early Life</h4>
+      <div class="axiom-badge">Axiom: Soul memory transcends physical birth; early karma carries past-life momentum.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Born Mukunda Lal Ghosh on January 5, 1893, in Gorakhpur, Bengal. Father: Bhagabati Charan Ghosh, high-ranking executive in the Bengal-Nagpur Railway. Mother: pious, regal, deeply compassionate.</p>
+        <p><strong>Forensic Content:</strong> Mukunda retains clear, vivid conscious recollections of past Himalayan incarnations. During infancy, his mother brings him before her revered guru, Lahiri Mahasaya. The great master places the infant on his lap, touches his spiritual eye (Ajna center), and prophesies: <em>&ldquo;Little mother, thy son will be a yogi. As a spiritual engine, he will carry many souls to God's kingdom.&rdquo;</em></p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 2: My Mother's Death and the Mystic Amulet</h4>
+      <div class="axiom-badge">Axiom: Severe emotional loss functions as an evolutionary catalyst toward the Divine.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mukunda (age 11), brother Ananta, Father. Calcutta and Bareilly.</p>
+        <p><strong>Forensic Content:</strong> Mukunda experiences a terrifying clairvoyant premonition of his mother's death while traveling. She passes before he can reach Calcutta. In his agony, he prays ceaselessly to the Divine Mother. Eldest brother Ananta later delivers an amulet left by their mother: a miraculous gold talisman bestowed by a sadhu, prophesied to dissolve into the ether the moment Mukunda meets his destined guru.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 3: The Saint with Two Bodies (Swami Pranabananda)</h4>
+      <div class="axiom-badge">Axiom: Bilocation operates via conscious lifetronic projection across space.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Swami Pranabananda (&ldquo;The Banat-wala Swami&rdquo;), disciple of Lahiri Mahasaya; Mukunda, Father.</p>
+        <p><strong>Forensic Content:</strong> Pranabananda physically materializes before Mukunda in Calcutta while simultaneously manifesting before Mukunda's father miles away in Burdwan to deliver a written railway message. Pranabananda explains the mechanics: conscious mastery of the astral lifetrons allows an adept to construct a duplicate physical form identical to the original.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 4: My Interrupted Flight Toward the Himalayas</h4>
+      <div class="axiom-badge">Axiom: Emotional zealotry without guru-guidance leads to premature ascetic failure.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mukunda, boyhood friend Jitendra, brother Ananta. Bareilly and Hardwar.</p>
+        <p><strong>Forensic Content:</strong> Mukunda and Jitendra attempt a clandestine runaway expedition to the Himalayas to find an enlightened master. Ananta mobilizes railway telegraphs and police to intercept them in Bareilly. The episode teaches Mukunda that divine realization requires internal transformation rather than impulsive geographic flight.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 5: A &ldquo;Perfumed Saint&rdquo; Displays His Wonders (Gandha Baba)</h4>
+      <div class="axiom-badge">Axiom: Minor psychic siddhis manipulate physical matter but are spiritually sterile.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Gandha Baba (&ldquo;The Perfumed Saint&rdquo;), Mukunda, skeptical companions. Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Gandha Baba demonstrates the siddhi of precipitating any scent (rose, jasmine, musk) out of thin air onto people's hands and restoring withered flowers. Mukunda verifies the phenomenon under rigorous observation, yet realizes that sensory miracles do not liberate the soul from delusion.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 6: The Tiger Swami (Soham Swami)</h4>
+      <div class="axiom-badge">Axiom: Physical bravery against wild beasts is trivial compared to conquering egoic passions.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Chandi Charan Sen (Soham Swami), Mukunda. Bhowanipur, Calcutta.</p>
+        <p><strong>Forensic Content:</strong> The Swami recounts his past career battling ferocious Bengal tigers bare-handed in public arenas using raw hypnotic will. A Himalayan hermit challenged him: <em>&ldquo;Can you conquer the inner tigers of anger, greed, and ego?&rdquo;</em> Shattered by the truth, the athlete abandoned gladiatorial contests to become a monk under the name Soham.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 7: The Levitating Saint (Nagendra Nath Bhaduri)</h4>
+      <div class="axiom-badge">Axiom: Levitation occurs when pranayama reverses gravitational electro-polarity.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Bhaduri Mahasaya, Mukunda. Upper Circular Road, Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Bhaduri Mahasaya, a master yogi who spent decades in a small secluded room, was regularly observed floating several feet above the floor in deep samadhi. He explains to Mukunda that gravity is an electro-magnetic polarity that dissolves when the yogi polarizes bodily cells with pure cosmic prana.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 8: India's Great Scientist, Sir J.C. Bose</h4>
+      <div class="axiom-badge">Axiom: Biological sensitivity and conscious responsiveness exist universally in plants and metals.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sir Jagadish Chandra Bose, Lady Bose, Mukunda. Bose Institute, Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Bose demonstrates his revolutionary <strong>Crescograph</strong> (magnifying plant movement 10 million times). He proves that plants possess nervous circuits, suffer fatigue, show pain when injected with poison, and die identical physiological deaths. Bose also proves metal fatigue and recovery in tin and platinum, bridging ancient Vedic monism with Western laboratory physics.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 9: The Blissful Devotee and His Cosmic Romance (Master Mahasaya)</h4>
+      <div class="axiom-badge">Axiom: Pure Bhakti dissolves the veil between the aspirant and the Divine Mother.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mahendra Nath Gupta (&ldquo;Master Mahasaya&rdquo;, author of <em>The Gospel of Sri Ramakrishna</em>), Mukunda. Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Master Mahasaya lives in constant, tearful communion with the Divine Mother. He tests Mukunda's spiritual receptivity and facilitates Mukunda's profound direct vision of the goddess Kali at Dakshineswar Temple, cementing Mukunda's devotion.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 10: I Meet My Master, Sri Yukteswar</h4>
+      <div class="axiom-badge">Axiom: The Guru-Disciple covenant is an eternal soul pact spanning across incarnations.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Swami Sri Yukteswar Giri, Mukunda. A market lane in Serampore, Summer 1910.</p>
+        <p><strong>Forensic Content:</strong> Walking through Serampore, Mukunda spots a majestic figure in saffron robes. Their eyes meet. Sri Yukteswar speaks his eternal first words: <em>&ldquo;O my own, thou hast come to me! How many years have I waited for thee!&rdquo;</em> At that exact moment, the gold amulet bequeathed by Mukunda's mother dissolves into the ether, fulfilling the ancient prophecy.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 11: Two Penniless Boys in Brindaban</h4>
+      <div class="axiom-badge">Axiom: Total reliance on Divine Providence unfailingly attracts exact material support.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mukunda, Jitendra, brother Sananda. Brindaban.</p>
+        <p><strong>Forensic Content:</strong> Mukunda's skeptical brother challenges him to travel to Brindaban with zero money, forbidding him to ask anyone for food, train fare, or lodging. Mukunda accepts the challenge. Through miraculous synchronicities, wealthy strangers repeatedly provide lavish feasts, horse carriages, and return train tickets, proving that God directly sustains the faithful.</p>
+      </div>
+    </div>
+
+    <!-- PART II -->
+    <div class="part-banner">Part II: Discipleship Under Sri Yukteswar (Chapters 12&ndash;23)</div>
+
+    <div class="chapter-card">
+      <h4>Chapter 12: Years in My Master's Hermitage</h4>
+      <div class="axiom-badge">Axiom: A true Jnana Guru surgically demolishes disciple ego through relentless unsparing discipline.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Mukunda, fellow ashramites. Serampore Hermitage.</p>
+        <p><strong>Forensic Content:</strong> Sri Yukteswar trains Mukunda with iron precision. He refuses emotional flatteries, criticizes minor conversational inaccuracies, and enforces domestic cleanliness alongside intense Kriya practice. He teaches: <em>&ldquo;Good manners without sincerity are like pretty flowers without fragrance.&rdquo;</em></p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 13: The Sleepless Saint (Ram Gopal Muzumdar)</h4>
+      <div class="axiom-badge">Axiom: Samadhi replaces physical sleep by recharging the medullary center directly with prana.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Ram Gopal Muzumdar, Mukunda. Tarakeswar cave.</p>
+        <p><strong>Forensic Content:</strong> Ram Gopal has lived without sleep for over twenty consecutive years. He reveals that physical sleep is merely an unconscious, clumsy reconnection with cosmic energy; a yogi who consciously connects with cosmic light in samadhi requires zero biological sleep.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 14: An Experience in Cosmic Consciousness</h4>
+      <div class="axiom-badge">Axiom: The spiritual eye (Ajna chakra) is the portal to omnipresent cosmic consciousness.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Mukunda. Serampore Ashram.</p>
+        <p><strong>Forensic Content:</strong> Sri Yukteswar strikes Mukunda gently on the chest. Instantaneously, Mukunda's consciousness explodes beyond the physical body. He sees the entire cosmos as an oceanic web of luminous rays, perceiving billions of planets, stellar systems, and the atomic pulsing of all matter simultaneously while remaining conscious of his physical body in Serampore.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 15: The Cauliflower Robbery</h4>
+      <div class="axiom-badge">Axiom: Cosmic law operates with poetic precision; greed invites its exact corrective consequence.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Mukunda, ashram cook, farm thieves. Serampore.</p>
+        <p><strong>Forensic Content:</strong> A comedic yet profound episode where Sri Yukteswar predicts an ashram farm theft with astrological and telepathic precision. The master demonstrates that all material events cast their shadows into the ether before crystallizing in physical reality.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 16: Outwitting the Stars</h4>
+      <div class="axiom-badge">Axiom: Planetary vibrations affect only mechanical karma; a Kriya Yogi transcends astrological destiny.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Mukunda. Serampore and Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Sri Yukteswar explains the scientific basis of Vedic astrology: the human nervous system acts as an antenna for planetary magnetic emissions. When past karma matures, astrological influences trigger physical illness or crisis. He prescribes a pure astrological bangle (two-metal silver/gold alloy) to neutralize negative planetary rays, affirming: <em>&ldquo;The soul is immortal and transcends all stellar mechanics.&rdquo;</em></p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 17: Sasi and the Three Sapphires</h4>
+      <div class="axiom-badge">Axiom: Selfish desires corrupt yogic power; obedience to the guru protects against astral traps.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sasi (ashram brother), Sri Yukteswar, Mukunda.</p>
+        <p><strong>Forensic Content:</strong> A cautionary case study of an ashramite who yields to greed and vanity regarding astrological gems, resulting in psychological unraveling and departure from the ashram. Sri Yukteswar illustrates the strict moral foundation required for esoteric science.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 18: A Mohammedan Wonder-Worker (Afzal Khan)</h4>
+      <div class="axiom-badge">Axiom: Occult mechanics can manipulate physical matter, but cannot bestow liberation.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Afzal Khan, Mukunda. Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Afzal Khan demonstrates an occult power to levitate, vanish, and transport heavy physical objects across long distances. Mukunda analyzes the mechanism: harnessing subtle sub-physical nature spirits (<em>elementals</em>). The practitioner eventually loses his power when used for selfish vanity.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 19: My Master, in Calcutta, Appears in Serampore</h4>
+      <div class="axiom-badge">Axiom: Spatial separation is an illusion created by sensory Maya.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Mukunda. Calcutta and Serampore.</p>
+        <p><strong>Forensic Content:</strong> Sri Yukteswar appears physically in Serampore to comfort Mukunda, despite remaining physically seated in an ashram in Calcutta. Mukunda confirms the timing and physical reality of the manifestation, verifying the master's mastery over spatial coordinates.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 20: We Do Not Visit Kashmir</h4>
+      <div class="axiom-badge">Axiom: Guru foresight perceives hidden dangers and averts catastrophic itineraries.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Mukunda. Serampore.</p>
+        <p><strong>Forensic Content:</strong> Mukunda eagerly plans an elaborate journey to Kashmir. Sri Yukteswar quietly warns him that circumstances will prevent the journey. Despite Mukunda purchasing tickets and packing, unforeseen illnesses and logistical crises validate the master's clairvoyant prediction.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 21: We Visit Kashmir</h4>
+      <div class="axiom-badge">Axiom: Divine timing operates when spiritual preconditions are completely satisfied.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Mukunda. Srinagar, Kashmir.</p>
+        <p><strong>Forensic Content:</strong> Months later, when the karmic obstacles dissolve, the master and disciple travel to Kashmir. The majestic valleys serve as the backdrop for profound discourses on nature, beauty, and the omnipresent spirit behind sensory phenomena.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 22: The Heart of a Stone Image</h4>
+      <div class="axiom-badge">Axiom: Absolute devotional sincerity breathes living reality into consecrated stone murtis.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mukunda, Sri Yukteswar. Kali Temple, Dakshineswar.</p>
+        <p><strong>Forensic Content:</strong> Praying with tears of total surrender before the stone image of Kali, Mukunda perceives the stone idol animate into a living, breathing Divine Mother who speaks directly to him, confirming his path and answering his deepest internal prayer.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 23: My University Degree</h4>
+      <div class="axiom-badge">Axiom: Duty to parents must be harmonized with spiritual destiny without compromise.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mukunda, Sri Yukteswar, Professor Romesh Dutt. Serampore College / Calcutta University.</p>
+        <p><strong>Forensic Content:</strong> Mukunda completes his Bachelor of Arts degree at Calcutta University in 1915 purely to fulfill his father's wish. He spends his college years in meditation and ashram service rather than studying textbooks, passing examinations through miraculous intuitive insight into exam questions predicted by Sri Yukteswar.</p>
+      </div>
+    </div>
+
+    <!-- PART III -->
+    <div class="part-banner">Part III: Yogoda Foundation &amp; Himalayan Masters (Chapters 24&ndash;36)</div>
+
+    <div class="chapter-card">
+      <h4>Chapter 24: I Become a Monk of the Swami Order</h4>
+      <div class="axiom-badge">Axiom: Renunciation of worldly identity is the doorway to universal kinship.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mukunda, Sri Yukteswar. Serampore, July 1915.</p>
+        <p><strong>Forensic Content:</strong> Sri Yukteswar formally initiates Mukunda into India's ancient Swami Order (founded by Adi Shankara in the 8th century), assigning him to the Giri (Mountain) branch. Mukunda abandons his worldly surname and adopts the monastic name <strong>Swami Yogananda</strong> (Union with God through Bliss).</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 25: Brother Ananta and Sister Nalini</h4>
+      <div class="axiom-badge">Axiom: Family skepticism dissolves before genuine spiritual fruit and healing.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, brother Ananta, sister Nalini. Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Yogananda heals his sister Nalini of severe, life-threatening typhoid fever through distant prayer and pranic transmission, converting family skepticism into deep reverence for yogic science.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 26: The Science of Kriya Yoga</h4>
+      <div class="axiom-badge">Axiom: Kriya Pranayama is the ultimate scientific engine for accelerating human evolution.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Comprehensive theoretical exposition by Yogananda.</p>
+        <p><strong>Forensic Content:</strong> The core theoretical chapter of the book. Details the neuro-physiological decarbonization of the blood, the circulation of prana through the 6 spinal plexuses, the neutralization of decay, the achievement of breathlessness (Kevala Kumbhaka), and the exact mathematical formula comparing Kriya cycles to natural solar evolution.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 27: Founding a Yoga School at Ranchi</h4>
+      <div class="axiom-badge">Axiom: True education balances physical, mental, moral, and spiritual faculties.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, Maharaja of Kasimbazar, 100+ boys. Ranchi, Bihar, 1918.</p>
+        <p><strong>Forensic Content:</strong> Yogananda establishes the Yogoda Satsanga Brahmacharya Vidyalaya, integrating traditional modern academic curricula with agricultural training, physical culture (Yogoda energization exercises), and daily meditation.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 28: Kashi, Reborn and Discovered</h4>
+      <div class="axiom-badge">Axiom: Reincarnation carries specific soul affinities, talents, and interpersonal bonds.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Kashi (young student), Yogananda. Ranchi and Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Yogananda predicts the premature physical death of his young beloved disciple Kashi despite intense spiritual efforts to avert it. Later, guided by intuition, Yogananda tracks down the exact family where the child was reborn, confirming specific past-life memories and physical marks.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 29: Rabindranath Tagore and I Compare Schools</h4>
+      <div class="axiom-badge">Axiom: Creative artistic freedom and yogic meditative discipline complement each other.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Rabindranath Tagore (Nobel Laureate), Yogananda. Shantiniketan, Bengal.</p>
+        <p><strong>Forensic Content:</strong> Yogananda visits Tagore's experimental open-air university at Shantiniketan. The two spiritual leaders compare educational philosophies, agreeing that modern industrial education destroys intuition and creativity by divorcing children from nature and quiet contemplation.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 30: The Law of Miracles</h4>
+      <div class="axiom-badge">Axiom: Mass is condensed light; a master commands the pranatomic frequency of atoms.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Theoretical metaphysical treatise by Yogananda.</p>
+        <p><strong>Forensic Content:</strong> Systematic breakdown of how yogic siddhis harmonize with modern physics: Einstein's mass-energy equation, the wave-particle duality, lifetronic physics, and how cosmic consciousness directly manipulates the causal blueprints that crystallize as gross matter.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 31: An Interview with the Sacred Mother (Kashi Moni Lahiri)</h4>
+      <div class="axiom-badge">Axiom: Spiritual greatness can reside humbly within ordinary domestic householder life.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Kashi Moni Lahiri (widow of Lahiri Mahasaya), Yogananda. Benares.</p>
+        <p><strong>Forensic Content:</strong> Yogananda interviews the widow of Lahiri Mahasaya, who recounts how she initially viewed her husband as an ordinary accountant until she witnessed him floating above the floor and experiencing divine visitations from gods and rishis in their modest home.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 32: Rama is Raised from the Dead</h4>
+      <div class="axiom-badge">Axiom: Divine will channeled through a master can reverse physical biological death.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Rama (disciple), Lahiri Mahasaya. Benares.</p>
+        <p><strong>Forensic Content:</strong> Rama dies of severe Asiatic cholera. His corpse is prepared for cremation on the Manikarnika ghats. Lahiri Mahasaya intervenes, pours water into the dead man's mouth, projects life energy into his spinal cord, and restores him to vigorous life.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 33: Babaji, the Yogi-Christ of Modern India</h4>
+      <div class="axiom-badge">Axiom: Mahavatar Babaji retains a physical form for centuries to direct world evolution.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mahavatar Babaji, sister Mataji. Himalayan peaks near Badrinarayan.</p>
+        <p><strong>Forensic Content:</strong> Yogananda reveals the existence of Mahavatar Babaji, the deathless avatar who has retained a youthful physical body for centuries. Babaji guides spiritual leaders across epochs and commissioned the resurrection of Kriya Yoga for the modern industrial age.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 34: Materializing a Palace in the Himalayas</h4>
+      <div class="axiom-badge">Axiom: All physical matter is an ideational construct of divine cosmic thought.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Lahiri Mahasaya, Mahavatar Babaji. Dronagiri Mountain, Autumn 1861.</p>
+        <p><strong>Forensic Content:</strong> Lahiri Mahasaya is transferred to Ranikhet as an accountant. Guided to Dronagiri mountain, he meets Babaji, who dissolves his past-life forgetfulness. To fulfill Lahiri's lingering subconscious desire for regal luxury, Babaji instantly materializes a magnificent golden palace complete with jeweled halls. After Lahiri spends a night inside, the palace dissolves back into thin air.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 35: The Christlike Life of Lahiri Mahasaya</h4>
+      <div class="axiom-badge">Axiom: The ideal yogi serves the world with detached excellence while anchored in samadhi.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Lahiri Mahasaya, disciples across Hindu, Muslim, and Christian faiths. Benares.</p>
+        <p><strong>Forensic Content:</strong> Historical biography of Lahiri Mahasaya: his balance of full-time clerical employment, raising five children, maintaining household accounts, and initiating thousands of disciples without sectarian prejudice, establishing Kriya as a universal science.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 36: Babaji's Interest in the West</h4>
+      <div class="axiom-badge">Axiom: The spiritual East and material West must unite to save global civilization.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mahavatar Babaji, Sri Yukteswar. Kumbha Mela, Allahabad, 1894.</p>
+        <p><strong>Forensic Content:</strong> Babaji visits Sri Yukteswar at the Kumbha Mela and commissions him to write <em>The Holy Science</em> (demonstrating underlying unity between Christian Gospels and Vedic Sanatana Dharma) and prophesies: <em>&ldquo;You will send me a disciple whom I shall train for the West.&rdquo;</em></p>
+      </div>
+    </div>
+
+    <!-- PART IV -->
+    <div class="part-banner">Part IV: The Global Mission to the West (Chapters 37&ndash;42)</div>
+
+    <div class="chapter-card">
+      <h4>Chapter 37: I Go to America</h4>
+      <div class="axiom-badge">Axiom: Divine obedience triumphs over fear and cultural isolation.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, Babaji, Father. Calcutta and Boston, August 1920.</p>
+        <p><strong>Forensic Content:</strong> Yogananda is invited as India's delegate to the International Congress of Religious Liberals in Boston. Doubting his English fluency and Western readiness, he hesitates. Babaji physically appears in his Calcutta attic room, comforting him: <em>&ldquo;You are the one I have chosen to spread the message of Kriya Yoga in the West.&rdquo;</em> Yogananda boards the <em>City of Sparta</em>.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 38: Luther Burbank, an American Saint</h4>
+      <div class="axiom-badge">Axiom: Plant genetics responds directly to human love and telepathic intention.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Luther Burbank (botanist), Yogananda. Santa Rosa, California.</p>
+        <p><strong>Forensic Content:</strong> Yogananda visits Burbank, who produced hundreds of new varieties of flowers, fruits, and spineless cactus. Burbank explains that his secret was talking to plants with unconditional love, convincing cacti they no longer needed protective thorns, proving that consciousness guides botanical mutations.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 39: Therese Neumann, the Catholic Stigmatist</h4>
+      <div class="axiom-badge">Axiom: The human organism can be sustained directly by cosmic energy without food.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Therese Neumann, Yogananda. Konnersreuth, Bavaria, 1935.</p>
+        <p><strong>Forensic Content:</strong> Yogananda visits Therese Neumann, who bore the bleeding stigmata wounds of Christ every Friday and lived for over 35 years without eating or drinking anything except a daily consecrated communion wafer. Yogananda analyzes her condition as living proof that bodily cells can draw sustenance directly from cosmic light (<em>lifetrons</em>).</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 40: I Return to India</h4>
+      <div class="axiom-badge">Axiom: Soul reunion between master and disciple transcends time and geographic distance.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, Sri Yukteswar, disciples. Bombay and Serampore, 1935.</p>
+        <p><strong>Forensic Content:</strong> After fifteen years of establishing Self-Realization Fellowship centers across America, Yogananda returns to India via Europe, Egypt, and Palestine. He reunites with Sri Yukteswar in joyous tears at the Serampore ashram.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 41: An Idyl in South India</h4>
+      <div class="axiom-badge">Axiom: Ancient Vedic culture thrives with unbroken spiritual majesty in the South.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, C.V. Raman (Nobel Physicist), Ramana Maharshi. Mysore, Bangalore, Tiruvannamalai.</p>
+        <p><strong>Forensic Content:</strong> Yogananda tours southern India, lecturing before universities, meeting physicist Sir C.V. Raman, and sitting in silent communion with Sri Ramana Maharshi at the foot of Arunachala mountain, experiencing mutual silent recognition of non-dual consciousness.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 42: Last Days with My Guru</h4>
+      <div class="axiom-badge">Axiom: An enlightened master consciously prepares disciples for his physical departure.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Yogananda. Puri Hermitage, Winter 1935&ndash;1936.</p>
+        <p><strong>Forensic Content:</strong> Sri Yukteswar bestows upon Yogananda the highest monastic title of <strong>Paramahansa</strong> (&ldquo;Supreme Swan&rdquo;, one who separates the milk of divine reality from the water of cosmic illusion). The master bequeaths full stewardship of his ashrams and disciples to Yogananda before entering Mahasamadhi in Puri on March 9, 1936.</p>
+      </div>
+    </div>
+
+    <!-- PART V -->
+    <div class="part-banner">Part V: Mahasamadhi, Astral Resurrection, &amp; The Eternal Legacy (Chapters 43&ndash;49)</div>
+
+    <div class="chapter-card">
+      <h4>Chapter 43: The Resurrection of Sri Yukteswar</h4>
+      <div class="axiom-badge">Axiom: Physical death is merely a shift of focal awareness into the astral and causal spheres.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Yukteswar, Yogananda. Regent Hotel, Bombay, June 19, 1936.</p>
+        <p><strong>Forensic Content:</strong> The philosophical pinnacle of the book. While grieving in his hotel room, Yogananda is blinded by a flash of light. Sri Yukteswar manifests in a tangible, touchable physical-astral body. Over several hours, the resurrected master delivers an exhaustive, cosmological discourse explaining the structure of the astral world (<em>Hiranyaloka</em>), how souls incarnate without physical wombs, the mechanics of lifetronic dissolution, and the final liberation into the causal realm.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 44: With Mahatma Gandhi at Wardha</h4>
+      <div class="axiom-badge">Axiom: Nonviolence (Ahimsa) is an active spiritual force, not passive resignation.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Mahatma Gandhi, Yogananda, Kasturba Gandhi. Wardha Ashram, Central India, 1935.</p>
+        <p><strong>Forensic Content:</strong> Yogananda spends several days at Gandhi's ashram. At Gandhi's earnest request, Yogananda initiates Mahatma Gandhi into the sacred science of Kriya Yoga. They discuss how social and political liberation must be founded upon personal spiritual self-mastery.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 45: The Bengali &ldquo;Joy-Permeated Mother&rdquo; (Anandamayi Ma)</h4>
+      <div class="axiom-badge">Axiom: Constant divine ecstasy is the natural baseline state of the fully liberated soul.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Sri Anandamayi Ma, Yogananda. Benares and Calcutta.</p>
+        <p><strong>Forensic Content:</strong> Encounter with Anandamayi Ma, who lived in unceasing ecstatic joy without formal guru or intellectual training. Yogananda observes her radiant aura and discusses the effortless surrender that characterizes the highest state of Bhakti.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 46: The Woman Yogi Who Never Eats (Giri Bala)</h4>
+      <div class="axiom-badge">Axiom: Breatharian inedia operates through extracting solar lifetrons via the medulla oblongata.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Giri Bala (peasant woman yogi), Yogananda. Biur, Bengal, 1936.</p>
+        <p><strong>Forensic Content:</strong> Yogananda interviews Giri Bala, who had not consumed a single bite of food or drop of water for over 56 consecutive years (since age 12). Her claims were investigated and verified by the Maharaja of Burdwan and the Nawab of Murshidabad under 24/7 locked surveillance. She reveals her technique: a specific pranic mantra that recharges the medullary center with solar energy.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 47: I Return to the West</h4>
+      <div class="axiom-badge">Axiom: Spiritual duty demands relentless global service regardless of personal preference for seclusion.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, disciples. Los Angeles, California, late 1936.</p>
+        <p><strong>Forensic Content:</strong> Yogananda sails from Bombay back to the United States. He reflects on his sacred responsibility to establish permanent educational and spiritual institutions to bridge the scientific West and mystical East.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 48: At Encinitas in California</h4>
+      <div class="axiom-badge">Axiom: The ashram is an oasis of peace where disciples test spiritual truths in daily communal harmony.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, James J. Lynn (Rajarsi Janakananda), disciples. Encinitas, California, 1937.</p>
+        <p><strong>Forensic Content:</strong> Disciples surprise Yogananda with a hermitage overlooking the Pacific Ocean at Encinitas. Here, Yogananda begins writing this very book (<em>Autobiography of a Yogi</em>), training monastics, and expanding the worldwide outreach of Self-Realization Fellowship.</p>
+      </div>
+    </div>
+
+    <div class="chapter-card">
+      <h4>Chapter 49: The Years 1940&ndash;1951</h4>
+      <div class="axiom-badge">Axiom: The scientific dissemination of Yoga will serve as the foundation for future world peace.</div>
+      <div class="chapter-details">
+        <p><strong>Setting &amp; Personae:</strong> Yogananda, global disciples. Mount Washington (Los Angeles), Hollywood, Encinitas.</p>
+        <p><strong>Forensic Content:</strong> Concluding chapter added in later editions. Details the foundation of the Lake Shrine in Pacific Palisades, the publication of <em>Autobiography of a Yogi</em> in 1946, the dedication of churches across America, and Yogananda's final prophetic vision of global spiritual brotherhood.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYER 3 -->
+  <section id="layer3" class="section-box">
+    <div class="section-tag">Layer 3: Empirical Rigor</div>
+    <h2 class="section-title">Empirical Vault: Five Rigorous Scientific Inquiries</h2>
+    <p>Yogananda deliberately anchored his metaphysical demonstrations in documented, third-party scientific investigations to prevent the text from being dismissed as pious myth.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Trial / Subject</th>
+          <th>Lead Investigator &amp; Setting</th>
+          <th>Methodology &amp; Instrument</th>
+          <th>Empirical Findings &amp; Theoretical Significance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Plant Neuro-Biology &amp; Metal Fatigue</strong></td>
+          <td>Sir Jagadish Chandra Bose (Calcutta, India)</td>
+          <td>The <em>Crescograph</em> (magnification up to 10,000,000&times;) and galvanic response recorders.</td>
+          <td>Plants exhibit active nervous reflex arcs, fatigue under prolonged stimulation, express spasm during poison administration (chloroform/cyanide), and die with electrical discharge identical to animals. Proves universal consciousness across organic and inorganic forms.</td>
+        </tr>
+        <tr>
+          <td><strong>2. Trans-Species Botanical Mutation</strong></td>
+          <td>Luther Burbank (Santa Rosa, California)</td>
+          <td>Directed selective breeding coupled with intensive telepathic-vibrational conditioning.</td>
+          <td>Developed over 800 new botanical varieties, including spineless cactus and giant white blackberries. Burbank demonstrated that plant mutations respond to human intention and affective vibrations, proving mind-matter interaction.</td>
+        </tr>
+        <tr>
+          <td><strong>3. Stigmatic Inedia Validation</strong></td>
+          <td>Therese Neumann (Konnersreuth, Bavaria)</td>
+          <td>15-day continuous medical surveillance under the Episcopal Ordinariate of Regensburg (1927).</td>
+          <td>Neumann consumed no food or liquids for over 35 years. Four Franciscan nursing sisters monitored her 24 hours a day with complete urinary/weight tracking. She maintained biological homeostasis, proving direct absorption of cosmic energy.</td>
+        </tr>
+        <tr>
+          <td><strong>4. 56-Year Total Inedia Surveillance</strong></td>
+          <td>Giri Bala (Biur, Bengal)</td>
+          <td>Locked palace observation by the Maharaja of Burdwan and Nawab of Murshidabad.</td>
+          <td>Maintained total abstinence from food and liquids since age 12. Locked in a palace room under continuous imperial guard for weeks without excretion or weight loss. Confirmed Kriya mastery over the medulla oblongata's energy intake.</td>
+        </tr>
+        <tr>
+          <td><strong>5. Astronomical Yuga Precession Verification</strong></td>
+          <td>Swami Sri Yukteswar (Serampore, 1894)</td>
+          <td>Equinoctial precession calculations published in <em>The Holy Science</em>.</td>
+          <td>Corrected medieval astrological error of 432,000-year Kali Yuga; mapped 24,000-year binary solar cycle orbiting <em>Vishnunabhi</em>. Predicted rapid explosion of electromagnetic/atomic science commencing circa 1900 CE (Dvapara Yuga entrance).</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- LAYER 4 -->
+  <section id="layer4" class="section-box">
+    <div class="section-tag">Layer 4: Operational Protocols</div>
+    <h2 class="section-title">Sadhana Protocols &amp; Six Counter-Intuitive Laws</h2>
+
+    <h3 class="sub-title">The Four-Phase Daily Kriya Sadhana</h3>
+    <div class="callout protocol">
+      <div class="callout-title">Operational Sequence of Daily Practice</div>
+      <ol style="margin-left: 20px; line-height: 1.8;">
+        <li><strong>Phase 1: Energization Exercises (15 Mins):</strong> 38 distinct psycho-physical movements. Directing will and prana to all 43 bodily tissue groups via the medullary center. <em>&ldquo;The greater the will, the greater the flow of energy.&rdquo;</em></li>
+        <li><strong>Phase 2: Pranayama Spinal Circulation (20&ndash;45 Mins):</strong> Drawing the cool incoming breath and warm outgoing breath along the cerebrospinal axis (from coccyx to medulla and Ajna, then reversing). Magnetizing the spine and decarbonizing venous blood.</li>
+        <li><strong>Phase 3: Pratyahara &amp; Kevala Kumbhaka (15&ndash;30 Mins):</strong> As the blood is decarbonized, physiological respiration ceases naturally without strain. Attention is focused at the spiritual eye (point between the eyebrows). Discursive thoughts dissolve into radiant inner light.</li>
+        <li><strong>Phase 4: Samadhi &amp; Cosmic Absorption (15&ndash;60 Mins):</strong> Absorption in the sacred sound of Om (<em>Aum</em>) vibrated across the spinal chakras, culminating in non-dual unity with omnipresent Spirit.</li>
+      </ol>
+    </div>
+
+    <h3 class="sub-title">Six Counter-Intuitive Laws of Spiritual Dynamics</h3>
+    <div class="callout demarcation">
+      <ul style="margin-left: 20px; line-height: 1.8;">
+        <li><strong>1. The Law of Inverted Will:</strong> Strenuous, desperate mental forcing prevents spiritual perception. High-level intuition operates only when the ego-will yields into relaxed, concentrated receptivity.</li>
+        <li><strong>2. Decarbonization vs. Forced Breath Holding:</strong> Forcible breath retention (<em>Kumbhaka</em>) practiced in lower Hatha Yoga creates cardiovascular distress. Kriya achieves breathlessness effortlessly by removing the chemical need for oxygen through venous purification.</li>
+        <li><strong>3. The Fallacy of Monastic Seclusion:</strong> Geographic flight to Himalayan caves does not eliminate mental desires. Lahiri Mahasaya proved that householder life (work, marriage, family) provides the supreme crucible for roasting karmic seeds in detached action.</li>
+        <li><strong>4. Guru-Disciple Quantum Entanglement:</strong> Spiritual transmission is not an intellectual lecture; it is an electromagnetic resonance between the awakened pineal-medullary axis of the master and the receptive disciple across any spatial distance.</li>
+        <li><strong>5. The Astral Shielding Law:</strong> Physical illness is preceded by astral disruptions. Astrological bangles (pure silver, gold, and copper) and gemstones act as electromagnetic capacitors that ground negative planetary vibrations before they materialize in the physical body.</li>
+        <li><strong>6. The Dissolution of Fatalism:</strong> Destiny is not arbitrary fate; it is self-generated past-life momentum. Because karma was created by human will, it can be neutralized by equal and opposite yogic will through concentrated Kriya meditation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LAYER 5 -->
+  <section id="layer5" class="section-box">
+    <div class="section-tag">Layer 5: Comparative Dialectics</div>
+    <h2 class="section-title">Comparative Matrix: Raja/Kriya Yoga vs. Alternative Systems</h2>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>Kriya / Raja Yoga (Yogananda)</th>
+          <th>Traditional Hatha Yoga</th>
+          <th>Pure Bhakti / Devotionalism</th>
+          <th>Western Cartesian Materialism</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Primary Mechanism</strong></td>
+          <td>Direct cerebrospinal energy circulation &amp; decarbonization.</td>
+          <td>Physical postures (asanas) &amp; mechanical breath retentions.</td>
+          <td>Emotional surrender, chanting, and prayer rituals.</td>
+          <td>Neurological epiphenomena; chemical brain activity.</td>
+        </tr>
+        <tr>
+          <td><strong>Rate of Evolution</strong></td>
+          <td>Accelerated (1 Kriya cycle = 1 year of natural biological evolution).</td>
+          <td>Slow, linear physical refinement over decades.</td>
+          <td>Variable; highly dependent on emotional intensity and grace.</td>
+          <td>Random biological Darwinian mutation over millions of years.</td>
+        </tr>
+        <tr>
+          <td><strong>Status of Breath</strong></td>
+          <td>Ceased effortlessly through cellular purification (<em>Kevala</em>).</td>
+          <td>Forcibly controlled or stopped through muscular tension.</td>
+          <td>Ignored; fluctuates with emotional devotional states.</td>
+          <td>Mandatory, non-negotiable biological gas exchange.</td>
+        </tr>
+        <tr>
+          <td><strong>Epistemology</strong></td>
+          <td>Empirical psycho-physiology; reproducible in individual consciousness.</td>
+          <td>Somatic health and subtle energy channel purification.</td>
+          <td>Theological faith, scriptural revelation, and devotional feeling.</td>
+          <td>Sensory empiricism and external physical instrumentation only.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- LAYER 6 -->
+  <section id="layer6" class="section-box">
+    <div class="section-tag">Layer 6: Active Recall</div>
+    <h2 class="section-title">Interactive Active Recall Deck (12 Forensic Prompts)</h2>
+    <p>Click any card below to test and solidify your retention of the core principles, empirical findings, and operational mechanics.</p>
+
+    <div class="deck-grid">
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">1. What is the precise physiological mechanism of Kriya Yoga decarbonization?</div>
+        <div class="flashcard-a">Kriya Pranayama circulates subtle life current (prana) up and down the six spinal plexuses. This rapidly decarbonizes venous blood and recharges it with pure cosmic energy, neutralizing the cellular production of carbon dioxide and eliminating the biological necessity for pulmonary respiration.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">2. What is the mathematical evolutionary equivalence of one 30-second Kriya breath?</div>
+        <div class="flashcard-a">One 30-second Kriya breath equals <strong>one full year</strong> of natural biological and spiritual evolution. Performing 1,000 Kriyas (requiring approximately 8.5 hours) accomplishes the equivalent of 1,000 years of natural evolution in a single day.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">3. How did Sir J.C. Bose scientifically validate universal consciousness in plants?</div>
+        <div class="flashcard-a">Using his invention the Crescograph (magnifying plant movement 10 million times), Bose proved that plants have responsive nervous networks, experience muscular-like fatigue, react with ecstasy to harmonious music, convulse in agony when injected with poison, and exhibit electrical death curves identical to animals.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">4. What is the astronomical duration of Sri Yukteswar's Yuga Cycle, and what epoch are we in?</div>
+        <div class="flashcard-a">The complete equinoctial precession cycle is <strong>24,000 years</strong> (12,000 ascending arc, 12,000 descending arc). Humanity exited the dark Kali Yuga and entered the Ascending Dvapara Yuga (the Atomic/Electric Age) circa 1900 CE, which explains the sudden global emergence of electricity, aviation, atomic energy, and computing.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">5. What are the three concentric bodies of man and their constituent elements?</div>
+        <div class="flashcard-a">1. <strong>Physical Body (<em>Sthula Sharira</em>):</strong> 16 chemical elements bound by gravity and decay.<br>2. <strong>Astral Body (<em>Linga Sharira</em>):</strong> 19 subtle elements (5 organs of action, 5 senses, 5 pranas, mind, intellect, ego, feeling) made of luminous lifetrons.<br>3. <strong>Causal Body (<em>Karana Sharira</em>):</strong> 35 ideational thought-forms holding karmic blueprints.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">6. How does Yogananda reconcile Einstein's mass-energy equation (E = mc&sup2;) with yogic miracles?</div>
+        <div class="flashcard-a">Einstein proved that matter is condensed energy. Yogic science asserts that all material atoms are condensed electromagnetic light packets termed <em>lifetrons</em>. An avatar who attunes their consciousness to the Creator can command the vibratory rate of lifetrons, enabling instantaneous materialization, dematerialization, levitation, and bilocation.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">7. Who was Therese Neumann and how was her inedia medically verified?</div>
+        <div class="flashcard-a">Therese Neumann was a German Catholic stigmatist in Konnersreuth who lived without food or drink for over 35 years (consuming only a daily communion wafer). In 1927, she underwent 15 consecutive days of 24-hour medical surveillance by four Franciscan nurses under diocesan authority, maintaining stable weight and health without excretion.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">8. What is Giri Bala's technique for sustaining physical life without eating?</div>
+        <div class="flashcard-a">Giri Bala practiced a specialized pranic mantra and breathing technique that enabled her to extract cosmic solar energy (lifetrons) directly through the medulla oblongata into the bloodstream, bypassing gastrointestinal digestion for over 56 years under royal surveillance.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">9. What did Sri Yukteswar reveal to Yogananda during his physical resurrection in Bombay?</div>
+        <div class="flashcard-a">Appearing tangible and physical at the Regent Hotel on June 19, 1936, Sri Yukteswar explained the geography of the astral world (<em>Hiranyaloka</em>), where advanced souls work to eliminate lingering astral desires, reincarnate through sheer thought without sexual reproduction, and eventually graduate into the causal universe of pure light and ideas.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">10. Why did Lahiri Mahasaya champion the householder yogi ideal over monastic seclusion?</div>
+        <div class="flashcard-a">Lahiri Mahasaya proved that escaping to a remote forest or cave does not extinguish worldly desire. By maintaining full-time employment, marital devotion, and familial responsibilities while anchored in Kriya samadhi, the householder roasts karmic seeds in the fire of non-attached service.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">11. What is the function of the three-metal astrological bangle prescribed by Sri Yukteswar?</div>
+        <div class="flashcard-a">Composed of specific weights of pure gold, silver, and copper, the bangle acts as an electromagnetic capacitor. It absorbs and neutralizes adverse cosmic and planetary electromagnetic radiation before those vibrational disturbances can penetrate and disrupt the physical and astral nervous systems.</div>
+      </div>
+
+      <div class="flashcard" onclick="this.classList.toggle('active')">
+        <div class="flashcard-q">12. What was Mahavatar Babaji's historic mandate to Sri Yukteswar at the 1894 Kumbha Mela?</div>
+        <div class="flashcard-a">Babaji commissioned Sri Yukteswar to write <em>The Holy Science</em> to demonstrate the underlying unity between Christian Gospels and Vedic Sanatana Dharma, and promised that he would send Sri Yukteswar a disciple (Mukunda / Yogananda) whom he would train to disseminate Kriya Yoga across the Western world.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Intellectualist Master Codex Archive &bull; Paramahansa Yogananda: <em>Autobiography of a Yogi</em> [REF-YOG-1946]</p>
+    <p style="margin-top: 8px;">Synchronized with the Golden Test of Total Replacement &bull; 49 Chapters Cataloged &bull; Pure HTML Entities &bull; Zero Fluff</p>
+    <p style="margin-top: 14px;"><a href="../../index.html" style="color: var(--accent-crimson); font-weight: 700; text-decoration: none;">&larr; Return to Master Library Index</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>

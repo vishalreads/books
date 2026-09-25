@@ -1,0 +1,144 @@
+/* ==========================================================================
+   BKRS Reading Interface — Design System Theme Tokens
+   ========================================================================== */
+
+:root {
+  /* Default Editorial Cream Theme */
+  --bg-canvas: #fbf9f4;
+  --bg-card: #ffffff;
+  --bg-subtle: #f4efe4;
+  --bg-elevated: #faf7f0;
+  --bg-surface: #ffffff;
+  --text-main: #181715;
+  --text-muted: #5c574e;
+  --text-subtle: #7a7469;
+  --accent-crimson: #85221c;
+  --accent-crimson-hover: #6d1a15;
+  --accent-slate: #1f3347;
+  --accent-gold: #916c16;
+  --accent-forest: #1e4d2b;
+  --border-light: #ded7c8;
+  --border-dark: #7a7060;
+  --border-subtle: #eae3d5;
+  --code-bg: #ece6d8;
+
+  /* Epistemic Demarcation Badges */
+  --badge-fact-bg: #eaf1e7;
+  --badge-fact-text: #1b4d24;
+  --badge-fact-border: #c3d9bc;
+  --badge-arg-bg: #edf2f7;
+  --badge-arg-text: #1a365d;
+  --badge-arg-border: #cbd5e0;
+  --badge-lens-bg: #f8e8e8;
+  --badge-lens-text: #85221c;
+  --badge-lens-border: #f0c5c5;
+
+  /* Materiality Taxonomy Badges */
+  --mat-critical-bg: #fbeae9;
+  --mat-critical-text: #8c1d18;
+  --mat-critical-border: #f5c4c2;
+  --mat-important-bg: #fbf4e4;
+  --mat-important-text: #8c640e;
+  --mat-important-border: #eedcaa;
+  --mat-textural-bg: #edf2f0;
+  --mat-textural-text: #22543d;
+  --mat-textural-border: #c6f6d5;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 0 3px rgba(133, 34, 28, 0.2);
+}
+
+/* Midnight Dark Theme */
+body.theme-midnight {
+  --bg-canvas: #0f1115;
+  --bg-card: #181b22;
+  --bg-subtle: #212631;
+  --bg-elevated: #1a1e27;
+  --bg-surface: #1e222b;
+  --text-main: #e6edf3;
+  --text-muted: #9da7b3;
+  --text-subtle: #6e7681;
+  --accent-crimson: #ff7575;
+  --accent-crimson-hover: #ff9494;
+  --accent-slate: #58a6ff;
+  --accent-gold: #e3b341;
+  --accent-forest: #3fb950;
+  --border-light: #30363d;
+  --border-dark: #6e7681;
+  --border-subtle: #242930;
+  --code-bg: #161b22;
+
+  --badge-fact-bg: #152d1c;
+  --badge-fact-text: #7ee787;
+  --badge-fact-border: #23532e;
+  --badge-arg-bg: #162a45;
+  --badge-arg-text: #79c0ff;
+  --badge-arg-border: #264a78;
+  --badge-lens-bg: #3d1b1b;
+  --badge-lens-text: #ffa1a1;
+  --badge-lens-border: #6d2f2f;
+
+  --mat-critical-bg: #381b1b;
+  --mat-critical-text: #ff8585;
+  --mat-critical-border: #6b2d2d;
+  --mat-important-bg: #382c16;
+  --mat-important-text: #ffd369;
+  --mat-important-border: #6b5327;
+  --mat-textural-bg: #182e23;
+  --mat-textural-text: #7be0a6;
+  --mat-textural-border: #27523d;
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.7);
+  --shadow-focus: 0 0 0 3px rgba(255, 117, 117, 0.35);
+}
+
+/* Sepia Archival Theme */
+body.theme-sepia {
+  --bg-canvas: #f4ecd8;
+  --bg-card: #fcf6e8;
+  --bg-subtle: #e9dec4;
+  --bg-elevated: #f8f1df;
+  --bg-surface: #fefcf6;
+  --text-main: #33261a;
+  --text-muted: #6b5541;
+  --text-subtle: #8a735c;
+  --accent-crimson: #8c2d19;
+  --accent-crimson-hover: #732212;
+  --accent-slate: #2d4559;
+  --accent-gold: #825f16;
+  --accent-forest: #22543d;
+  --border-light: #d6c6a8;
+  --border-dark: #826f53;
+  --border-subtle: #e2d4b8;
+  --code-bg: #e2d5b8;
+
+  --badge-fact-bg: #dceddb;
+  --badge-fact-text: #1d5427;
+  --badge-fact-border: #b8d4b6;
+  --badge-arg-bg: #dbe4eb;
+  --badge-arg-text: #1d3a52;
+  --badge-arg-border: #b5c7d6;
+  --badge-lens-bg: #f4dada;
+  --badge-lens-text: #8c2d19;
+  --badge-lens-border: #e0b0b0;
+
+  --mat-critical-bg: #f7deda;
+  --mat-critical-text: #8c2d19;
+  --mat-critical-border: #e2b4ad;
+  --mat-important-bg: #f7eed7;
+  --mat-important-text: #7c570f;
+  --mat-important-border: #dfcb9f;
+  --mat-textural-bg: #e2ece3;
+  --mat-textural-text: #215437;
+  --mat-textural-border: #b9d8bd;
+
+  --shadow-sm: 0 2px 6px rgba(51, 38, 26, 0.06);
+  --shadow-md: 0 6px 18px rgba(51, 38, 26, 0.09);
+  --shadow-lg: 0 12px 32px rgba(51, 38, 26, 0.15);
+  --shadow-focus: 0 0 0 3px rgba(140, 45, 25, 0.25);
+}

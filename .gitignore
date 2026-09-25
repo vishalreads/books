@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Large source files & book binaries
+Books/
+*.pdf
+*.epub
+*.zip
+
+# Temporary, scratch & OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+scratch/
+scratch_*
+*.tmp
+caption_*
+raw_caption_*
+youtube_transcript_*
+
+# Visual Studio Code & IDE
+.vscode/
+.idea/

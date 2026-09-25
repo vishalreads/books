@@ -1,0 +1,420 @@
+{
+  "last_updated": "2026-09-25",
+  "total_books": 10,
+  "total_hours_saved": 266.5,
+  "categories": [
+    "Behavioral Psychology & Habit Architecture",
+    "Realpolitik, Strategy & Courtier Dynamics",
+    "Applied Financial Mindset & Cash Flow Architecture",
+    "Cognitive Science & Decision Making",
+    "Systems Thinking & Complex Systems",
+    "Philosophy & Classical Ethics",
+    "Trauma Dynamics, IPV & Narrative Psychology",
+    "Linguistics, German Language & CEFR Mastery",
+    "Classical Mystical Philosophy & Yogic Metaphysics",
+    "Security, Cryptography, Privacy & Tradecraft"
+  ],
+  "books": [
+    {
+      "id": "german-mastery-codex",
+      "title": "Der Weg zum Meister (The German Mastery Codex)",
+      "subtitle": "A Zero-to-Fluency A1–C1 Pedagogical Blueprint & Institute-Grade PDF Textbook Series",
+      "author": "Intellectualist Codex Series",
+      "year": 2026,
+      "publisher": "Intellectualist Press / CEFR Standards",
+      "epistemic_tier": "Tier 1: Comprehensive Linguistic Architecture",
+      "tier_short": "Tier 1",
+      "category": "Linguistics, German Language & CEFR Mastery",
+      "original_volume": "5 Volumes (56 Modules, Active Recall Drills, Goethe/TestDaF Exams)",
+      "reading_time_saved": "180.0 hrs saved",
+      "hours_val": 180,
+      "core_axiom": "German is not mastered through arbitrary memorization, but through understanding its underlying mechanical syntax engine.",
+      "tags": [
+        "German Language",
+        "CEFR A1-C1",
+        "Goethe-Zertifikat",
+        "TestDaF",
+        "Grammar Mechanics",
+        "Active Recall"
+      ],
+      "key_models": [
+        "The V2 Word Order & Verbal Bracket (Satzklammer)",
+        "The Suffix Gender Prediction Law (-ung, -heit, -keit, -ling)",
+        "The Universal Adjective Declension Flowchart",
+        "The Positional Verb Matrix (stellen/stehen, legen/liegen)",
+        "The Two-Way Preposition Decision Engine (Wohin vs. Wo)",
+        "The Nominalstil Transformation Algorithm (Scientific German)"
+      ],
+      "landmark_studies": [
+        "CEFR Common European Framework of Reference (Council of Europe)",
+        "Goethe-Institut Start Deutsch 1 & Zertifikat B1 Syllabi",
+        "telc Deutsch B2 Prüfungshandbuch",
+        "TestDaF Institut Academic Language Matrix (TDN 3-5)"
+      ],
+      "html_path": "distillations/german-mastery-codex/der-weg-zum-meister.html",
+      "markdown_path": "distillations/german-mastery-codex/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "atomic-habits",
+      "title": "Atomic Habits",
+      "subtitle": "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+      "author": "James Clear",
+      "year": 2018,
+      "publisher": "Avery / Penguin Random House",
+      "epistemic_tier": "Tier 2: Applied Behavioral System",
+      "tier_short": "Tier 2",
+      "category": "Behavioral Psychology & Habit Architecture",
+      "original_volume": "461,247 characters (20 chapters)",
+      "reading_time_saved": "7.5 hrs saved",
+      "hours_val": 7.5,
+      "core_axiom": "You do not rise to the level of your goals. You fall to the level of your systems.",
+      "tags": [
+        "Compounding",
+        "Habits",
+        "Neurobiology",
+        "Dopamine",
+        "Systems Thinking"
+      ],
+      "key_models": [
+        "The 4-Stage Loop (Cue, Craving, Response, Reward)",
+        "Identity-Based Habits (Three Concentric Rings)",
+        "Dopamine Anticipation (Schultz Prediction Error)",
+        "The 4 Laws & Their Reciprocal Negative Inversions",
+        "The Plateau of Latent Potential (Ice Cube at 32°F)",
+        "The Two-Minute Rule & Implementation Intentions"
+      ],
+      "landmark_studies": [
+        "Thorndike's Cat Puzzle Box (1898)",
+        "Robins' Vietnam Heroin Study (1971)",
+        "Milne/Orbell British Exercise Trial (2001)",
+        "Thorndike's Cafeteria Choice Architecture (2012)"
+      ],
+      "html_path": "distillations/atomic-habits/index.html",
+      "markdown_path": "distillations/atomic-habits/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "48-laws-of-power",
+      "title": "The 48 Laws of Power",
+      "subtitle": "A Definitive Manual of Realpolitik, Deception, and Courtier Strategy",
+      "author": "Robert Greene (with Joost Elffers)",
+      "year": 2000,
+      "publisher": "Viking / Penguin Publishing Group",
+      "epistemic_tier": "Tier 2: Applied Strategic Psychology",
+      "tier_short": "Tier 2",
+      "category": "Realpolitik, Strategy & Courtier Dynamics",
+      "original_volume": "937 KB (48 complete laws & historical archives)",
+      "reading_time_saved": "12.0 hrs saved",
+      "hours_val": 12,
+      "core_axiom": "Any man who tries to be good all the time is bound to come to ruin among the great number who are not good.",
+      "tags": [
+        "Power",
+        "Strategy",
+        "Deception",
+        "History",
+        "Courtier Dynamics"
+      ],
+      "key_models": [
+        "The Courtier's Dilemma (Indirection over Force)",
+        "Law 1: Never Outshine the Master (Fouquet vs. Louis XIV)",
+        "Law 15: Crush Your Enemy Totally (Liu Bang vs. Xiang Yu)",
+        "Law 20: Do Not Commit to Anyone (Virgin Queen Doctrine)",
+        "Law 33: Discover Each Man's Thumbscrew (Vulnerability Auditing)",
+        "Law 48: Assume Formlessness (Supreme Adaptability)"
+      ],
+      "landmark_studies": [
+        "Fouquet & Vaux-le-Vicomte Spectacle (1661)",
+        "Galileo's Dedication to Cosimo II de' Medici (1610)",
+        "Talleyrand's Survival Across 5 Opposing Regimes (1789-1830)",
+        "Bismarck's Ems Dispatch & German Unification (1870)"
+      ],
+      "html_path": "distillations/48-laws-of-power/index.html",
+      "markdown_path": "distillations/48-laws-of-power/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "rich-dad-poor-dad",
+      "title": "Rich Dad Poor Dad",
+      "subtitle": "What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
+      "author": "Robert T. Kiyosaki (with Sharon L. Lechter)",
+      "year": 2017,
+      "publisher": "Plata Publishing / Warner Books",
+      "epistemic_tier": "Tier 3: Applied Financial Mindset",
+      "tier_short": "Tier 3",
+      "category": "Applied Financial Mindset & Cash Flow Architecture",
+      "original_volume": "195 Pages (9 Core Lessons & Quadrant Excerpt)",
+      "reading_time_saved": "6.0 hrs saved",
+      "hours_val": 6,
+      "core_axiom": "The poor and middle class work for money. The rich have money work for them.",
+      "tags": [
+        "Cash Flow",
+        "Assets vs Liabilities",
+        "Real Estate",
+        "Taxes",
+        "CASHFLOW Quadrant"
+      ],
+      "key_models": [
+        "The Definition of Wealth (Fuller Survivability Time)",
+        "Asset vs. Liability Cash Flow Geometry",
+        "The Corporate Tax Asymmetry (Pre-tax expense deductions)",
+        "The Four Pillars of Financial IQ (Accounting, Investing, Markets, Law)",
+        "The CASHFLOW Quadrant (E, S, B, I Systems)",
+        "The Bill vs. Ed Water Pipeline Parable"
+      ],
+      "landmark_studies": [
+        "The 1923 Edgewater Beach Tycoons Crash",
+        "The 1956 Comic Book Basement Library",
+        "The 1990s Phoenix Foreclosure Arbitrage Machine",
+        "Ray Kroc's McDonald's Real Estate Strategy"
+      ],
+      "html_path": "distillations/rich-dad-poor-dad/index.html",
+      "markdown_path": "distillations/rich-dad-poor-dad/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "it-ends-with-us",
+      "title": "It Ends with Us",
+      "subtitle": "A Forensic Deconstruction of Intimate Partner Violence, Cognitive Dissonance, and Cycle Disruption",
+      "author": "Colleen Hoover",
+      "year": 2016,
+      "publisher": "Atria Books / Simon & Schuster",
+      "epistemic_tier": "Tier 1/2: Clinical Trauma Dynamics in Narrative Transmutation",
+      "tier_short": "Tier 1/2",
+      "category": "Trauma Dynamics, IPV & Narrative Psychology",
+      "original_volume": "384 Pages (35 Chapters, Epilogue, Author's Note)",
+      "reading_time_saved": "8.0 hrs saved",
+      "hours_val": 8,
+      "core_axiom": "It stops here. With me and you. It ends with us.",
+      "tags": [
+        "Trauma Bonding",
+        "Domestic Violence",
+        "Cycle of Abuse",
+        "Intergenerational Trauma",
+        "Cognitive Dissonance",
+        "Coercive Control"
+      ],
+      "key_models": [
+        "Walker's Cycle of Violence (Tension, Battering, Contrition)",
+        "Dutton & Painter's Traumatic Bonding (Intermittent Reinforcement)",
+        "The Sunk Cost of Empathy (Weaponized Childhood Tragedy)",
+        "The Gradual Heat Fallacy (Boiling Frog Boundary Erosion)",
+        "The Delivery Room Decoupling Heuristic (Future Generation Test)",
+        "The Dual-Identity Split (The Healer vs. The Batterer)"
+      ],
+      "landmark_studies": [
+        "Lenore E. Walker's Cycle of Violence & BWS (1979)",
+        "Dutton & Painter's Traumatic Bonding Theory (1981, 1993)",
+        "Evan Stark's Theory of Coercive Control (2007)",
+        "Widom's Longitudinal Cycle of Violence Study (1989)",
+        "Campbell's Femicide Lethality Assessment (2003)"
+      ],
+      "html_path": "distillations/it-ends-with-us/index.html",
+      "markdown_path": "distillations/it-ends-with-us/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "autobiography-of-a-yogi",
+      "title": "Autobiography of a Yogi",
+      "subtitle": "Paramahansa Yogananda's Definitive Treatise on Kriya Yoga, Lifetronic Physics, and Cosmic Consciousness",
+      "author": "Paramahansa Yogananda",
+      "year": 1946,
+      "publisher": "Philosophical Library / Self-Realization Fellowship",
+      "epistemic_tier": "Tier 1/2: Classical Mystical Philosophy, Yogic Science & Metaphysics",
+      "tier_short": "Tier 1/2",
+      "category": "Classical Mystical Philosophy & Yogic Metaphysics",
+      "original_volume": "~500 Pages (49 Chapters)",
+      "reading_time_saved": "14.0 hrs saved",
+      "hours_val": 14,
+      "core_axiom": "Kriya Yoga is an instrument through which human evolution can be mathematically accelerated.",
+      "tags": [
+        "Kriya Yoga",
+        "Pranayama",
+        "Lifetronic Physics",
+        "Maya",
+        "Samadhi",
+        "Cosmic Consciousness"
+      ],
+      "key_models": [
+        "The Spinal Decarbonization Engine (Kevala Kumbhaka)",
+        "The Mathematical Evolution Acceleration Formula (1 Kriya = 1 Solar Year)",
+        "Matter as Condensed Light (E = mc² & Lifetronic Atomic Manipulation)",
+        "The Threefold Nature of Man (Physical 16, Astral 19, Causal 35 Elements)",
+        "Sri Yukteswar's 24,000-Year Equinoctial Precession Yuga Cycle",
+        "Guru-Disciple Quantum Entanglement & Lineage Resonance"
+      ],
+      "landmark_studies": [
+        "Sir J.C. Bose's Plant Crescograph & Metal Fatigue Demonstrations (Calcutta)",
+        "Luther Burbank's Mind-Directed Botanical Mutations (Santa Rosa)",
+        "Therese Neumann's 35-Year Stigmatic Inedia Medical Surveillance (Bavaria)",
+        "Giri Bala's 56-Year Total Inedia Palace Quarantine (Murshidabad/Burdwan)",
+        "Sri Yukteswar's Equinoctial Precession Yuga Calculations (Serampore, 1894)"
+      ],
+      "html_path": "distillations/autobiography-of-a-yogi/index.html",
+      "markdown_path": "distillations/autobiography-of-a-yogi/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "norwegian-wood",
+      "title": "Norwegian Wood",
+      "subtitle": "A Forensic Autopsy of Grief, Suicide Contagion, and the Integration of Death into Life",
+      "author": "Haruki Murakami",
+      "year": 1987,
+      "publisher": "Kodansha / Vintage International (Jay Rubin Translation)",
+      "epistemic_tier": "Tier 1/2: Elegiac Existential Realism & Forensic Trauma",
+      "tier_short": "Tier 1/2",
+      "category": "Trauma Dynamics, IPV & Narrative Psychology",
+      "original_volume": "3,630 Paragraphs (11 Chapters)",
+      "reading_time_saved": "10.5 hrs saved",
+      "hours_val": 10.5,
+      "core_axiom": "Death exists, not as the opposite but as a part of life. By living our lives, we nurture death.",
+      "tags": [
+        "Grief",
+        "Suicide Contagion",
+        "Trauma",
+        "Thanatos vs Eros",
+        "Ami Hostel",
+        "Elegiac Realism"
+      ],
+      "key_models": [
+        "The Integration of Death Axiom (Compressed Node inside Life)",
+        "The Dichotomy of the Two Women: Thanatos (Naoko) vs Eros (Midori)",
+        "The Phantom Meadow Well (Latent Clinical Madness)",
+        "The Strawberry Shortcake Heuristic for Unconditional Acceptance",
+        "The Werther Effect in Adolescent Triads",
+        "The Kichijoji Requiem Wake (51 Guitar Songs as Secular Exorcism)"
+      ],
+      "landmark_studies": [
+        "David Phillips' Werther Effect / Suicide Contagion Epidemiology (1974)",
+        "ICD-11 / Prigerson Prolonged Grief Disorder Criteria",
+        "Functional Neurological Disorder / Psychogenic Conversion Paralysis (Reiko)",
+        "Thomas Mann's Sanatorium Inversion Dynamics (The Magic Mountain / Ami Hostel)"
+      ],
+      "html_path": "distillations/norwegian-wood/index.html",
+      "markdown_path": "distillations/norwegian-wood/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "the-psychology-of-money",
+      "title": "The Psychology of Money",
+      "subtitle": "Timeless Lessons on Wealth, Greed, and Happiness",
+      "author": "Morgan Housel",
+      "year": 2020,
+      "publisher": "Harriman House",
+      "epistemic_tier": "Tier 2: Behavioral Finance & Applied Economic Psychology",
+      "tier_short": "Tier 2",
+      "category": "Applied Financial Mindset & Cash Flow Architecture",
+      "original_volume": "242 Pages (20 Chapters + Introduction & Postscript)",
+      "reading_time_saved": "6.5 hrs saved",
+      "hours_val": 6.5,
+      "core_axiom": "Doing well with money is not a science of mathematics or finance; it is a soft skill of psychology and behavior control.",
+      "tags": [
+        "Behavioral Finance",
+        "Compounding",
+        "Frugality",
+        "Margin of Safety",
+        "Psychology",
+        "Wealth"
+      ],
+      "key_models": [
+        "The Wealth Asymmetry (Getting Wealthy vs. Staying Wealthy)",
+        "Wealth is What You Don't See (Hidden Options vs. Conspicuous Display)",
+        "The Man in the Car Paradox (Admiration vs. Object Fetishization)",
+        "Reasonable > Rational (Psychological Durability over Mathematical Perfection)",
+        "Tails Rule Everything (Fat-Tail Distributions in Returns)",
+        "The End of History Illusion (Underestimating Future Personal Change)"
+      ],
+      "landmark_studies": [
+        "Ulrike Malmendier & Stefan Nagel Generational Risk Tolerance NBER Study (2011)",
+        "Angus Campbell University of Michigan Sense of Well-Being Survey (1981)",
+        "Jordi Quoidbach & Daniel Gilbert End of History Illusion (Science, 2013)",
+        "Russell 3000 Index 34-Year Tail-Return Deconstruction (J.P. Morgan, 2014)"
+      ],
+      "html_path": "distillations/the-psychology-of-money/index.html",
+      "markdown_path": "distillations/the-psychology-of-money/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "open-source-intelligence-techniques",
+      "title": "Open Source Intelligence Techniques",
+      "subtitle": "Resources for Searching and Analyzing Online Information (6th Edition)",
+      "author": "Michael Bazzell",
+      "year": 2018,
+      "publisher": "CreateSpace / IntelTechniques",
+      "epistemic_tier": "Tier 1: Operational Tradecraft & Digital Forensics",
+      "tier_short": "Tier 1",
+      "category": "Security, Cryptography, Privacy & Tradecraft",
+      "original_volume": "480 Pages (24 Chapters)",
+      "reading_time_saved": "16.0 hrs saved",
+      "hours_val": 16,
+      "core_axiom": "95% of actionable intelligence value derives from the disciplined, lawful exploitation of public digital exhaust across fragmented namespaces without alerting the target.",
+      "tags": [
+        "OSINT",
+        "Digital Forensics",
+        "Investigation",
+        "Dorking",
+        "OPSEC",
+        "Social Engineering",
+        "Privacy"
+      ],
+      "key_models": [
+        "The Multi-Vector Identity Resolution & Triangulation Doctrine",
+        "The Sock Puppet Isolation & Demographic Genesis Architecture",
+        "The Advanced Boolean Dorking Matrix (site:, intitle:, inurl:, filetype:)",
+        "The WebRTC & Network Leak Containment Model",
+        "The Mobile Contact Synchronization Exploitation Engine",
+        "The Multi-Tier Investigative Pivot Flowchart (Email, Username, Phone, Domain)"
+      ],
+      "landmark_studies": [
+        "Smith v. Maryland / Carpenter v. United States Third-Party Doctrine",
+        "Computer Fraud and Abuse Act (18 U.S.C. § 1030) Access Boundaries",
+        "Electronic Communications Privacy Act (18 U.S.C. § 2510) Standards",
+        "Buscador Linux Investigative Forensic Architecture (Bazzell & Westcott, 2018)"
+      ],
+      "html_path": "distillations/open-source-intelligence-techniques/index.html",
+      "markdown_path": "distillations/open-source-intelligence-techniques/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "dont-bug-me",
+      "title": "Don't Bug Me: The Latest High-Tech Spy Methods",
+      "subtitle": "A Manual for Self-Defense Against Eavesdroppers & Technical Surveillance Countermeasures (TSCM)",
+      "author": "M.L. Shannon",
+      "year": 1992,
+      "publisher": "Paladin Press",
+      "epistemic_tier": "Tier 1: Physical TSCM & Electronic Countersurveillance",
+      "tier_short": "Tier 1",
+      "category": "Security, Cryptography, Privacy & Tradecraft",
+      "original_volume": "150 Pages (10 Parts + 10 Appendices)",
+      "reading_time_saved": "6.0 hrs saved",
+      "hours_val": 6,
+      "core_axiom": "Surveillance is constrained by immutable physical laws; every transmitter radiates energy, every semiconductor harmonic reflects RF, and every physical tap alters line impedance.",
+      "tags": [
+        "TSCM",
+        "Countersurveillance",
+        "Wiretaps",
+        "RF Bugs",
+        "NLJD",
+        "Physical Security",
+        "TEMPEST"
+      ],
+      "key_models": [
+        "The Acoustic Transducer to Modulation Pipeline",
+        "The Non-Linear Junction Detector Harmonic Principle (2nd vs 3rd Harmonic)",
+        "Series vs. Parallel Wiretap Electrical Displacement (Voltage/Resistance Mismatch)",
+        "The Infinity Transmitter Acoustic Seizure Architecture",
+        "The Time-Domain Reflectometry (TDR) Pulse Echo Mapping Engine",
+        "The Systematic 3-Level Physical & RF Sweep Protocol"
+      ],
+      "landmark_studies": [
+        "Wim van Eck Electromagnetic Radiation from Video Display Units (Computers & Security, 1985)",
+        "Bell System Technical Journal: Analog POTS Loop Electrical Standards",
+        "U.S. Department of Defense TEMPEST / NACSIM 5100A Standards",
+        "Principles of Non-Linear Junction Detection in Semiconductor Physics"
+      ],
+      "html_path": "distillations/dont-bug-me/index.html",
+      "markdown_path": "distillations/dont-bug-me/master-notes.md",
+      "featured": true
+    }
+  ]
+}
