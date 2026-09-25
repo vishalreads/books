@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "book_metadata": {
+    "id": "the-myth-of-sisyphus",
+    "title": "The Myth of Sisyphus and Other Essays",
+    "subtitle": "An Essay on the Absurd, Philosophical Suicide, and the Lucidity of Revolt",
+    "author": "Albert Camus",
+    "translator": "Justin O'Brien",
+    "year": "1942 / 1955",
+    "publisher": "Alfred A. Knopf / Intellectualist Classical Philosophy Series",
+    "category": "Philosophy & Classical Ethics",
+    "epistemic_tier": "Tier 1: Foundational Existential Philosophy & Absurdism",
+    "total_units": 8,
+    "reading_time_saved": "9.5 hrs saved"
+  },
+  "units": [
+    {
+      "id": "KU-MOS-CH-01",
+      "chapter_number": 1,
+      "chapter_title": "Absurdity and Suicide (The Fundamental Question of Philosophy)",
+      "source_coordinates": "Section I: An Absurd Reasoning, pp. 3–14",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "All other philosophical inquiries—whether the world has three dimensions or twelve categories of mind—are secondary games. Men die for ideas, or kill themselves because they judge life is not worth the trouble. Camus examines why someone commits suicide: the feeling of absurdity arises when the human longing for clarity and meaning collides violently with the cold, irrational silence of the universe. Suicide is an evasion—a confession that one is outstripped by life or that one does not understand it.",
+      "actionable_heuristics": [
+        "Distinguish between physical suicide (terminating biological life) and philosophical suicide (evading reality through spiritual leaps).",
+        "Refuse to escape the friction of existence: to live is to keep the absurd alive.",
+        "Acknowledge that life can be lived all the better if it has no ultimate transcendental meaning."
+      ],
+      "verbatim_quote": "There is but one truly serious philosophical problem, and that is suicide. Judging whether life is or is not worth living amounts to answering the fundamental question of philosophy.",
+      "primary_axiom": "There is but one truly serious philosophical problem, and that is suicide. Judging whether life is or is not worth living constitutes the fundamental question of philosophy."
+    },
+    {
+      "id": "KU-MOS-CH-02",
+      "chapter_number": 2,
+      "chapter_title": "An Absurd Walls (The Mechanical Daily Collapse into 'Why?')",
+      "source_coordinates": "Section I: An Absurd Reasoning, pp. 15–28",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "The absurd feeling is triggered by four distinct existential shocks: (1) The breakdown of mechanical daily habits: the routine suddenly collapses, and consciousness awakens; (2) The strangeness of nature: seeing the world stripped of human metaphors, recognizing that nature is alien, hostile, and indifferent; (3) The strangeness of other people and oneself: watching a man speak behind a glass booth, gesturing meaninglessly, or staring at one's own hands in a mirror as an unrecognizable stranger; (4) The visceral reality of physical death: time becomes our mortal enemy, bearing us toward irrevocable annihilation.",
+      "actionable_heuristics": [
+        "When the 'Why?' arises, do not numb it with distraction or social sedation; use it as an invitation to lucid consciousness.",
+        "Strip nature of anthropomorphic myths: the universe does not care about human happiness or suffering.",
+        "Confront your mortality without flinching: awareness of death is the supreme engine of lucidity."
+      ],
+      "verbatim_quote": "Rising, streetcar, four hours in the office or the factory, meal, streetcar, four hours of work, meal, sleep, and Monday Tuesday Wednesday Thursday Friday and Saturday according to the same rhythm—this path is easily followed most of the time. But one day the 'why' arises and everything begins in that weariness tinged with amazement.",
+      "primary_axiom": "At any street corner, the feeling of absurdity can strike any man in the face: rising, streetcar, four hours in the office, meal, sleep, Monday-Tuesday-Wednesday-Thursday-Friday in the same rhythm—until one day the 'Why?' arises."
+    },
+    {
+      "id": "KU-MOS-CH-03",
+      "chapter_number": 3,
+      "chapter_title": "Philosophical Suicide (The Escape into Transcendence)",
+      "source_coordinates": "Section I: An Absurd Reasoning, pp. 29–48",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "Camus critiques the great existentialists and phenomenologists: Søren Kierkegaard, Lev Chestov, Karl Jaspers, and Edmund Husserl. Each rightly diagnoses the absurdity of the human condition, but when faced with the unbearable void, each makes an irrational 'leap' (Kierkegaard leaps into Christian paradox; Chestov into arbitrary divine miracle; Husserl into eternal essences). Camus brands this 'Philosophical Suicide': killing the rational intellect in order to manufacture a comforting illusion of eternal hope. True integrity demands living in the tension without making the leap.",
+      "actionable_heuristics": [
+        "Never reconcile contradictions by inventing comforting dogmas.",
+        "Reject the 'leap of faith': if the universe is irrational, accept its irrationality rather than turning it into God.",
+        "Live with what you know: maintain lucid reason while acknowledging its severe empirical boundaries."
+      ],
+      "verbatim_quote": "I do not know whether this world has a meaning that transcends it. But I know that I do not know that meaning and that it is impossible for me just now to know it. What can a meaning outside my condition mean to me? I can understand only in human terms.",
+      "primary_axiom": "Existential thinkers deify the very irrational that crushes them; taking a leap of faith to escape the absurd is an act of intellectual cowardice—a philosophical suicide."
+    },
+    {
+      "id": "KU-MOS-CH-04",
+      "chapter_number": 4,
+      "chapter_title": "Absurd Freedom (Revolt, Freedom, and Passion)",
+      "source_coordinates": "Section I: An Absurd Reasoning, pp. 49–68",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "Discarding eternal meaning yields three profound operational consequences: (1) **Revolt**: An ongoing, constant defiance against one's mortal condition and the silence of the world. Revolt gives life its value and majesty. (2) **Freedom**: Liberated from the illusion of an afterlife, future goals, or divine purpose, one gains absolute present liberty. The condemned prisoner waiting for dawn is the freest human on earth because he has no tomorrow. (3) **Passion**: If quality of life is no longer measured by divine virtue, what matters is the **quantity of experiences**—burning through life with maximal intensity, awareness, and lucidity.",
+      "actionable_heuristics": [
+        "Replace the search for the 'best' life with the pursuit of the most lived life.",
+        "Live entirely in the present: hope for a better tomorrow is an opiate that steals the only reality you possess.",
+        "Maintain active revolt: defying an indifferent universe through conscious presence is the highest human triumph."
+      ],
+      "verbatim_quote": "The absurd man realizes that hitherto he was bound to the postulate of hope... Now he feels free of that bondage. The present and the succession of presents before a constantly conscious soul—that is the ideal of the absurd man.",
+      "primary_axiom": "By eliminating eternal hope and illusory destiny, the absurd man achieves absolute earthly liberty; the three consequences are my revolt, my freedom, and my passion."
+    },
+    {
+      "id": "KU-MOS-CH-05",
+      "chapter_number": 5,
+      "chapter_title": "The Absurd Archetypes: Don Juan, The Actor, and The Conqueror",
+      "source_coordinates": "Section II: The Absurd Man, pp. 69–92",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "Camus presents three personifications of the absurd mindset: (1) **Don Juan**: He does not lack love; he loves too intensely to settle for the myth of a single, lifelong romance. He multiplies his loves quantitatively, knowing each is transient and finite. (2) **The Actor**: The actor reigns over the ephemeral. He inhabits dozens of human souls and destinies for three hours on stage, then disappears into the dressing room. He proves that human identity is a series of transient masks. (3) **The Conqueror**: The political or military man of action who chooses historical struggle over contemplation. He knows that his empire will crumble to dust, but prefers the tactile clash of earthly forces over cowardly monastic withdrawal.",
+      "actionable_heuristics": [
+        "Do not hoard emotions for a mythical future; expend them generously across your lifetime.",
+        "Treat your social roles as an actor treats his script: commit to the role fully while recognizing it is a construct.",
+        "Embrace direct worldly engagement: action without illusions is superior to passive contemplation."
+      ],
+      "verbatim_quote": "Don Juan does not think of 'collecting' women. He exhausts their number and with them his chances of life. 'Collecting' belongs to the man who wants to possess; Don Juan wants to experience.",
+      "primary_axiom": "The absurd man does not seek eternal ideals; he multiplies his presence in the world through ephemeral roles, transient conquests, and embodied passion."
+    },
+    {
+      "id": "KU-MOS-CH-06",
+      "chapter_number": 6,
+      "chapter_title": "Philosophy, Fiction, and Kirilov (The Artist as the Ultimate Rebel)",
+      "source_coordinates": "Section III: Absurd Creation, pp. 93–118",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "The absurd artist creates without illusion. Unlike the dogmatic philosopher who constructs rigid metaphysical systems to explain away chaos, the novelist and artist simply describe reality in its concrete texture. Camus analyzes Kirilov in Dostoevsky's *Demons*: Kirilov realizes that if God does not exist, man is God, and the supreme act of divine sovereignty is to kill oneself without fear. Yet Dostoevsky himself ultimately retreats into Christian faith in *The Brothers Karamazov*, demonstrating how difficult it is for even genius creators to sustain the absurd without leaping.",
+      "actionable_heuristics": [
+        "Express reality through description and sensory detail rather than moralistic preaching.",
+        "Create freely without demanding that your work achieve immortality.",
+        "A work of art that attempts to provide a universal philosophical answer ceases to be art; true art merely reflects human struggle."
+      ],
+      "verbatim_quote": "To create is to live twice. The creator's path is to observe, to enrich, and to multiply his images without adding an illusory doctrine to them.",
+      "primary_axiom": "Art is the supreme absurd triumph: to create without explaining, to sculpt a world knowing it will vanish into dust, is the ultimate gesture of rebellion."
+    },
+    {
+      "id": "KU-MOS-CH-07",
+      "chapter_number": 7,
+      "chapter_title": "The Descent Down the Mountain (One Must Imagine Sisyphus Happy)",
+      "source_coordinates": "Section IV: The Myth of Sisyphus, pp. 119–128",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "The gods condemned Sisyphus to ceaselessly roll a massive boulder up to the summit of a mountain, only to watch it roll back down to the plains by its own weight. They had thought with some reason that there is no more dreadful punishment than futile and hopeless labor. Camus focuses on the **hour of the descent**: the moment Sisyphus turns and walks down the slope to retrieve the boulder. In that pause, Sisyphus is conscious of his condition. His fate belongs to him; the rock is his thing. By accepting the eternal toil without appeal to the gods and without despair, he conquers his punishment. His scorn for the gods renders him free.",
+      "actionable_heuristics": [
+        "Conquer tragedy through lucidity: when you recognize and claim your struggle as your own, fate loses its sting.",
+        "Find fulfillment in the process rather than the destination: the boulder is your life's work.",
+        "Never look for divine redemption: your mountain, your rock, and your effort are your supreme kingdom."
+      ],
+      "verbatim_quote": "I leave Sisyphus at the foot of the mountain! One always finds one's burden again. But Sisyphus teaches the higher fidelity that negates the gods and raises rocks... The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy.",
+      "primary_axiom": "There is no fate that cannot be surmounted by scorn. The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy."
+    },
+    {
+      "id": "KU-MOS-CH-08",
+      "chapter_number": 8,
+      "chapter_title": "Summer in Algiers & The Minotaur in Oran (The Pagan Splendor of the Earth)",
+      "source_coordinates": "Section V: Mediterranean Essays, pp. 129–176",
+      "epistemic_status": "EXISTENTIAL_PHILOSOPHICAL_AXIOM",
+      "materiality": "CRITICAL",
+      "claim": "In *Summer in Algiers* and *The Minotaur*, Camus explores the Mediterranean sensory experience. In Algiers, young men spend their days swimming in the sea and sunbathing on warm stone docks. They live intensely with their bodies, possessing no interest in abstract theology or afterlife. They know that beauty is fleeting and that aging and death are swift, but they embrace the sensual immediacy of the physical earth. This pagan lucidity represents Camus's ultimate alternative to Northern European intellectual nihilism.",
+      "actionable_heuristics": [
+        "Ground your philosophy in somatic embodiment: swim in the sea, feel the sun, touch the earth.",
+        "Do not trade the palpable beauty of this world for the promised perfection of a mythical heaven.",
+        "Embrace sensory lucidity: to appreciate the finite transience of youth and nature is the highest wisdom."
+      ],
+      "verbatim_quote": "If there is a sin against life, it consists perhaps not so much in despairing of life as in hoping for another life and in eluding the implacable grandeur of this life.",
+      "primary_axiom": "To live in the sun and by the sea is to know that the body has its own truth, superior to all the sterile metaphysical treatises of the North."
+    }
+  ]
+}

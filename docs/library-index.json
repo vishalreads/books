@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 15,
-  "total_hours_saved": 383.5,
+  "total_books": 16,
+  "total_hours_saved": 391.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -630,6 +630,49 @@
       ],
       "html_path": "distillations/cant-hurt-me/index.html",
       "markdown_path": "distillations/cant-hurt-me/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "the-myth-of-sisyphus",
+      "title": "The Myth of Sisyphus",
+      "subtitle": "An Absurdist Treatise on Suicide, Revolt, and the Quantification of Experience",
+      "author": "Albert Camus",
+      "year": 1942,
+      "publisher": "Éditions Gallimard / Intellectualist Applied Philosophy Series",
+      "epistemic_tier": "Tier 1: Master Existential & Absurdist Philosophical Treatise",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "212 Pages (4 Foundational Parts + Appendix on Franz Kafka + 3 Mediterranean Summer Essays)",
+      "reading_time_saved": "7.5 hrs saved",
+      "hours_val": 7.5,
+      "core_axiom": "There is only one really serious philosophical problem, and that is suicide. Judging whether life is or is not worth living amounts to answering the fundamental question of philosophy.",
+      "tags": [
+        "Albert Camus",
+        "Absurdism",
+        "Philosophical Suicide",
+        "Lucidity",
+        "Revolt",
+        "Freedom",
+        "Passion",
+        "Sisyphus"
+      ],
+      "key_models": [
+        "The Absurd Triad (Human Longing ↔ Irrational World ↔ The Absurd)",
+        "Philosophical Suicide vs. Physical Suicide vs. The Third Way (Revolt)",
+        "The Quantification of Experience (Quality Replaced by Raw Volume)",
+        "The Absurd Man Typology (Don Juan, The Actor, The Conqueror)",
+        "Dostoevsky's Kirilov & The Logic of Metaphysical Autonomy",
+        "The Sisyphus Archetype (The Pause on the Mountain Descent as Peak Consciousness)"
+      ],
+      "landmark_studies": [
+        "Kierkegaard's Leap of Faith Critique",
+        "Husserl & Phenomenological Intentionality",
+        "Franz Kafka's Metamorphosis & The Trial Analysis",
+        "Dostoevsky's The Possessed (Kirilov Analysis)",
+        "Homer's Odyssey & Classical Mythological Canon"
+      ],
+      "html_path": "distillations/the-myth-of-sisyphus/index.html",
+      "markdown_path": "distillations/the-myth-of-sisyphus/master-notes.md",
       "featured": false
     }
   ]
