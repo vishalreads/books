@@ -1,0 +1,225 @@
+{
+  "subject_master_id": "bhagat-singh-multi-source-synthesis",
+  "subject_title": "Bhagat Singh: Multi-Source Historiographical & Jurisprudential Subject Master",
+  "governance_standard": "BKRS Agent Operating Constitution (Rules 13–19, 33–35)",
+  "epistemic_demarcation": {
+    "primary_sources": [
+      {
+        "source_id": "SRC-BS-PRIMARY",
+        "title": "Why I Am an Atheist, Jail Notebook and Selected Writings (1928–1931)",
+        "author": "Bhagat Singh",
+        "epistemic_status": "[PRIMARY_SUBJECT_WRITING]",
+        "authority": "Unconditional primary subject voice; establishes authentic motives, philosophy, and worldview."
+      }
+    ],
+    "secondary_sources": [
+      {
+        "source_id": "SRC-JUSS-2022",
+        "title": "Bhagat Singh: A Life in Revolution",
+        "author": "Satvinder S. Juss",
+        "year": 2022,
+        "publisher": "Penguin Random House India",
+        "epistemic_status": "[CORROBORATED_HISTORICAL_BIOGRAPHY]",
+        "authority": "Authoritative on newly unsealed Punjab Archives files, 21 archival plates, and biographical chronology."
+      },
+      {
+        "source_id": "SRC-NOORANI-2001",
+        "title": "The Trial of Bhagat Singh: Politics of Justice",
+        "author": "A.G. Noorani",
+        "year": 2001,
+        "publisher": "Oxford University Press",
+        "epistemic_status": "[CONSTITUTIONAL_JURISPRUDENCE_ANALYSIS]",
+        "authority": "Definitive legal treatise on Ordinance III of 1930, Section 72 ultra vires doctrine, and Gandhi-Irwin minutes."
+      },
+      {
+        "source_id": "SRC-WARAICH-2007",
+        "title": "The Hanging of Bhagat Singh: Confessions, Statements and Facts",
+        "author": "Malwinderjit Singh Waraich",
+        "year": 2007,
+        "publisher": "Unistar Books",
+        "epistemic_status": "[JUDICIAL_DOSSIER_&_APPROVER_TESTIMONY]",
+        "authority": "Primary court records, verbatim approver depositions, execution certificates, and Ganda Singh Wala orders."
+      }
+    ]
+  },
+  "synthesis_nodes": [
+    {
+      "node_id": "SYN-BS-NODE-01",
+      "thematic_domain": "Forensic Ballistics & The Saunders Homicide",
+      "contested_issue": "Discrepancy between auditory witness reports, approver confessions, and autopsy findings regarding the shooting of ASP J.P. Saunders on 17 December 1928.",
+      "perspectives": [
+        {
+          "source_id": "SRC-JUSS-2022",
+          "claim": "Highlights that while police witnesses reported 8 shots, the post-mortem autopsy by Dr. C.H. Reis found only 2 bullet wounds, raising unresolved forensic questions regarding who fired the fatal shot.",
+          "epistemic_status": "[BIOGRAPHER_FORENSIC_ANALYSIS]"
+        },
+        {
+          "source_id": "SRC-WARAICH-2007",
+          "claim": "Documents approver Jai Gopal's testimony identifying Saunders and signaling Rajguru and Bhagat Singh, and Phanindra Nath Ghosh's confession on firearms logistics.",
+          "epistemic_status": "[COERCED_APPROVER_TESTIMONY]"
+        },
+        {
+          "source_id": "SRC-NOORANI-2001",
+          "claim": "Demonstrates that the identification parades were legally vitiated because the accused were exhibited to witnesses in police custody prior to formal identification.",
+          "epistemic_status": "[JURISPRUDENTIAL_CRITIQUE]"
+        },
+        {
+          "source_id": "SRC-BS-PRIMARY",
+          "claim": "Red Leaflet (18 Dec 1928): Claims political responsibility in the name of HSRA for executing Saunders to avenge the martyrdom of Lala Lajpat Rai.",
+          "epistemic_status": "[PRIMARY_SUBJECT_WRITING]"
+        }
+      ],
+      "synthesis_relationship": "EVIDENTIARY_QUALIFICATION_&_LEGAL_INVALIDITY",
+      "unresolved_elements": "The exact ballistic trajectory remains disputed due to the destruction of physical weapons and conflicting witness accounts, though HSRA's political agency is undisputed."
+    },
+    {
+      "node_id": "SYN-BS-NODE-02",
+      "thematic_domain": "The Assembly Bomb Intentionality",
+      "contested_issue": "Whether the bombing of the Central Legislative Assembly on 8 April 1929 was an attempt to kill or non-lethal propaganda-by-deed.",
+      "perspectives": [
+        {
+          "source_id": "SRC-JUSS-2022",
+          "claim": "Confirms bombs were constructed of low-explosive potassium chlorate and picric acid in cast iron casing, deliberately tossed into vacant spaces behind government benches to avoid loss of life.",
+          "epistemic_status": "[CORROBORATED_FACT]"
+        },
+        {
+          "source_id": "SRC-NOORANI-2001",
+          "claim": "Magistrate Pool's Section 307 conviction was perverse in law because government chemical inspectors admitted the bombs lacked shrapnel and were engineered not to kill.",
+          "epistemic_status": "[JURISPRUDENTIAL_ANALYSIS]"
+        },
+        {
+          "source_id": "SRC-BS-PRIMARY",
+          "claim": "Court Statement (6 June 1929): 'It takes a loud noise to make the deaf hear... We dropped the bombs not to kill anyone, but to create a national platform against repressive legislation.'",
+          "epistemic_status": "[PRIMARY_SUBJECT_WRITING]"
+        }
+      ],
+      "synthesis_relationship": "COMPLETE_CROSS_SOURCE_AGREEMENT",
+      "unresolved_elements": "None. Universal convergence across primary statements, forensic reports, and legal analyses that the act was symbolic non-lethal protest."
+    },
+    {
+      "node_id": "SYN-BS-NODE-03",
+      "thematic_domain": "The Hunger Strike & Political Prisoner Rights",
+      "contested_issue": "The moral and statutory status of revolutionary prisoners subjected to brutal forced feeding.",
+      "perspectives": [
+        {
+          "source_id": "SRC-JUSS-2022",
+          "claim": "Documents the 63-day hunger strike ending in the martyrdom of Jatindra Nath Das on 13 September 1929, provoking nationwide demonstrations and forcing colonial concessions.",
+          "epistemic_status": "[CORROBORATED_HISTORICAL_FACT]"
+        },
+        {
+          "source_id": "SRC-NOORANI-2001",
+          "claim": "Highlights the defeat of the British 'Hunger Strike Bill' in the Assembly, immortalized by M.A. Jinnah's impassioned defense of the accused's right to resist subhuman conditions.",
+          "epistemic_status": "[PARLIAMENTARY_HISTORY]"
+        },
+        {
+          "source_id": "SRC-WARAICH-2007",
+          "claim": "Reproduces secret jail superintendent daily feeding logs recording catheter insertions, milk forced into lungs, and medical resistance by Das.",
+          "epistemic_status": "[CONTEMPORARY_RECORD]"
+        },
+        {
+          "source_id": "SRC-BS-PRIMARY",
+          "claim": "Letters to Home Secretary (1929–1930): Demanding classification as political prisoners based on motive, educational background, and international conventions.",
+          "epistemic_status": "[PRIMARY_SUBJECT_WRITING]"
+        }
+      ],
+      "synthesis_relationship": "COMPLETE_CROSS_SOURCE_AGREEMENT",
+      "unresolved_elements": "None. Corroborated across official colonial records, legislative debates, and subject correspondence."
+    },
+    {
+      "node_id": "SYN-BS-NODE-04",
+      "thematic_domain": "Ordinance III of 1930 & Constitutional Legality",
+      "contested_issue": "The constitutional validity of Lord Irwin's proclamation bypassing ordinary criminal courts.",
+      "perspectives": [
+        {
+          "source_id": "SRC-JUSS-2022",
+          "claim": "Exposes the Special Tribunal as a star-chamber mechanism designed to prevent the accused from using the courtroom as an ideological platform.",
+          "epistemic_status": "[BIOGRAPHER_THESIS]"
+        },
+        {
+          "source_id": "SRC-NOORANI-2001",
+          "claim": "Demonstrates Ordinance III was void ab initio: no emergency existed under Section 72, the right of cross-examination was illegally stripped, and ex parte trial was unlawful.",
+          "epistemic_status": "[CONSTITUTIONAL_JURISPRUDENCE]"
+        },
+        {
+          "source_id": "SRC-WARAICH-2007",
+          "claim": "Publishes the handwritten dissent of Justice Syed Agha Haidar refusing to conduct trial in absentia and disassociating from police violence against the prisoners.",
+          "epistemic_status": "[CONTEMPORARY_JUDICIAL_RECORD]"
+        }
+      ],
+      "synthesis_relationship": "JURISPRUDENTIAL_CONSENSUS_ON_EXECUTIVE_TYRANNY",
+      "unresolved_elements": "Privy Council rejected the appeal without issuing a reasoned judgment, an omission Noorani condemns as imperial political collusion."
+    },
+    {
+      "node_id": "SYN-BS-NODE-05",
+      "thematic_domain": "Gandhi-Irwin Talks & Commutation Politics",
+      "contested_issue": "Did Mahatma Gandhi possess the leverage to save Bhagat Singh's life, and what were his actual communications with Viceroy Irwin?",
+      "perspectives": [
+        {
+          "source_id": "SRC-JUSS-2022",
+          "claim": "Gandhi raised commutation on moral grounds but could not make it an ultimatum without compromising the civil disobedience truce and the Gandhi-Irwin Pact.",
+          "epistemic_status": "[BIOGRAPHER_QUALIFICATION]"
+        },
+        {
+          "source_id": "SRC-NOORANI-2001",
+          "claim": "Reveals from Irwin's private letters and minutes that Gandhi suggested to Irwin on 20 March 1931 that if hanging was inevitable, it should occur before the Karachi Congress to avoid political awkwardness.",
+          "epistemic_status": "[ARCHIVAL_CRITIQUE]"
+        },
+        {
+          "source_id": "SRC-BS-PRIMARY",
+          "claim": "Letter of 22 March 1931: Rejects any plea for mercy; states they are prisoners of war and demands to be executed by firing squad like soldiers.",
+          "epistemic_status": "[PRIMARY_SUBJECT_WRITING]"
+        }
+      ],
+      "synthesis_relationship": "HISTORIOGRAPHICAL_DIVERGENCE_&_UNRESOLVED_TENSION",
+      "unresolved_elements": "Debate remains active between scholars viewing Gandhi as constrained by non-violence dogma versus those viewing his actions as political appeasement of the colonial state."
+    },
+    {
+      "node_id": "SYN-BS-NODE-06",
+      "thematic_domain": "Ideological Evolution: Revolutionary Socialism",
+      "contested_issue": "The transition from romantic terrorism to scientific Marxist-Leninist socialism.",
+      "perspectives": [
+        {
+          "source_id": "SRC-JUSS-2022",
+          "claim": "Traces intellectual growth through reading in Lahore Central Jail; Bhagat Singh had completely outgrown bomb-throwing by 1930.",
+          "epistemic_status": "[BIOGRAPHER_THESIS]"
+        },
+        {
+          "source_id": "SRC-BS-PRIMARY",
+          "claim": "Why I Am an Atheist (1930) & Letter to Young Political Workers (Feb 1931): Explicitly repudiates individual terrorism as obsolete; calls for mass peasant and labor revolution.",
+          "epistemic_status": "[PRIMARY_SUBJECT_WRITING]"
+        },
+        {
+          "source_id": "SRC-WARAICH-2007",
+          "claim": "Corroborates through jail library checkout slips and Mehta's interviews that Bhagat Singh was reading Lenin's 'State and Revolution' in his final hours.",
+          "epistemic_status": "[CORROBORATED_CONTEMPORARY_RECORD]"
+        }
+      ],
+      "synthesis_relationship": "COMPLETE_CROSS_SOURCE_AGREEMENT",
+      "unresolved_elements": "None. Definitive unanimity across primary and secondary sources that Bhagat Singh died an intellectual Marxist-Leninist revolutionary."
+    },
+    {
+      "node_id": "SYN-BS-NODE-07",
+      "thematic_domain": "Clandestine Execution & Ganda Singh Wala Cremation",
+      "contested_issue": "The illegal timing of the execution and secret destruction of the martyrs' bodies.",
+      "perspectives": [
+        {
+          "source_id": "SRC-JUSS-2022",
+          "claim": "Hanging advanced by 11 hours to 7:00 PM on 23 March 1931 in direct violation of the Punjab Jail Manual requiring dawn executions; bodies secretly mutilated and cremated at Ganda Singh Wala.",
+          "epistemic_status": "[CORROBORATED_FACT]"
+        },
+        {
+          "source_id": "SRC-WARAICH-2007",
+          "claim": "Reproduces confidential police orders commanding rear-gate blackout transport and kerosene cremation under armed guard, and subsequent recovery of charred relics by Lala Lajpat Rai's family.",
+          "epistemic_status": "[PRIMARY_ARCHIVAL_DOCUMENT]"
+        },
+        {
+          "source_id": "SRC-NOORANI-2001",
+          "claim": "Characterizes the nocturnal execution and clandestine cremation as the ultimate manifestation of colonial fear, subverting prison statutes to prevent public mourning.",
+          "epistemic_status": "[HISTORICAL_SYNTHESIS]"
+        }
+      ],
+      "synthesis_relationship": "COMPLETE_CROSS_SOURCE_AGREEMENT",
+      "unresolved_elements": "None. Established historical fact supported by primary colonial administration manifests and eyewitness family recoveries."
+    }
+  ]
+}

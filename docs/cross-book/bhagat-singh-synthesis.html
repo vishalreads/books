@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream" data-font="serif" data-size="base">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagat Singh: Multi-Source Subject Master — BKRS Synthesis Engine</title>
+  
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
+  <link rel="stylesheet" href="../assets/css/reader-shell.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    .synthesis-header {
+      padding: 48px 0 32px 0;
+      border-bottom: 2px solid var(--accent-crimson);
+      margin-bottom: 40px;
+    }
+    .synthesis-title {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      color: var(--text-main);
+      margin: 8px 0;
+      letter-spacing: -0.015em;
+    }
+    .synthesis-sub {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-style: italic;
+      max-width: 800px;
+      line-height: 1.5;
+    }
+    .sources-roster {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin: 28px 0 40px 0;
+    }
+    .source-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 16px 18px;
+      border-radius: 4px;
+      border-top: 3px solid var(--accent-crimson);
+    }
+    .source-role {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-crimson);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .source-name {
+      font-weight: 700;
+      font-size: 0.96rem;
+      color: var(--text-main);
+    }
+    .source-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+    .node-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      padding: 28px;
+      margin-bottom: 36px;
+      box-shadow: var(--shadow-sm);
+    }
+    .node-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .node-rel-badge {
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .rel-agreement { background: #edf7ef; color: var(--accent-forest); border: 1px solid #c2e2c8; }
+    .rel-dispute { background: #fdf3e7; color: var(--accent-gold); border: 1px solid #f3d4a0; }
+    .rel-qualification { background: #f4f6f8; color: var(--accent-slate); border: 1px solid #d0d7de; }
+    .node-title {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--accent-crimson);
+      margin-bottom: 8px;
+    }
+    .node-issue {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .perspectives-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .persp-item {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      padding: 14px 16px;
+      border-radius: 4px;
+    }
+    .persp-source {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent-crimson);
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .persp-claim {
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: var(--text-main);
+    }
+    .node-resolution {
+      background: var(--bg-elevated);
+      border-left: 3px solid var(--accent-crimson);
+      padding: 12px 16px;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body class="bkrs-app">
+
+  <!-- TOP BAR -->
+  <header class="reader-topbar">
+    <div class="topbar-left">
+      <a href="../index.html" class="topbar-back-link">
+        ← <span class="back-link-text">Master </span>Library
+      </a>
+      <div class="topbar-divider"></div>
+      <a href="index.html" class="topbar-back-link">
+        Synthesis Portal
+      </a>
+      <div class="topbar-divider"></div>
+      <div class="topbar-title-block">
+        <div class="topbar-book-title">Bhagat Singh: Multi-Source Subject Master</div>
+        <div class="topbar-book-author">Comparative Forensic Synthesis (Juss, Noorani, Waraich &amp; Primary Writings)</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <button class="control-btn" onclick="cycleTheme()" title="Switch Theme">🎨 Theme</button>
+      <button class="control-btn" onclick="cycleFont()" title="Font">Aa</button>
+      <button class="control-btn" onclick="cycleFontSize()" title="Size">A±</button>
+    </div>
+  </header>
+
+  <div class="reader-workspace" style="display: block; max-width: 1040px; margin: 0 auto; padding: 40px 24px;">
+    
+    <header class="synthesis-header">
+      <span class="meta-label">BKRS MULTI-SOURCE SUBJECT MASTER • CONSTITUTIONAL SPECIFICATION</span>
+      <h1 class="synthesis-title">Bhagat Singh: Ideology, Legality &amp; Martyrdom</h1>
+      <p class="synthesis-sub">
+        Cross-source comparative synthesis triangulating newly unsealed Punjab Archives records (Juss, 2022), constitutional jurisprudence (Noorani, 2001), judicial approver dossiers (Waraich, 2007), and Bhagat Singh's authentic primary writings (1928–1931).
+      </p>
+    </header>
+
+    <!-- Source Roster -->
+    <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-main); margin-bottom: 8px;">The Four Interlocking Source Layers</h3>
+    <div class="sources-roster">
+      <div class="source-box">
+        <div class="source-role">Primary Subject Voice</div>
+        <div class="source-name">Bhagat Singh (1928–1931)</div>
+        <div class="source-desc">Why I Am an Atheist, Jail Notebook, Court Statements, and Red Leaflets. Authentic motives, philosophy, and worldview.</div>
+      </div>
+      <div class="source-box">
+        <div class="source-role">Archival &amp; Biographical Record</div>
+        <div class="source-name">Satvinder S. Juss (2022)</div>
+        <div class="source-desc">A Life in Revolution. Newly unsealed Punjab Archives files, 21 archival plates, and definitive chronological reconstruction.</div>
+      </div>
+      <div class="source-box">
+        <div class="source-role">Constitutional Jurisprudence</div>
+        <div class="source-name">A.G. Noorani (2001)</div>
+        <div class="source-desc">The Trial of Bhagat Singh: Politics of Justice. Rigorous common-law analysis of Ordinance III of 1930 and Section 72 ultra vires doctrine.</div>
+      </div>
+      <div class="source-box">
+        <div class="source-role">Forensic Judicial Dossier</div>
+        <div class="source-name">Malwinderjit Singh Waraich (2007)</div>
+        <div class="source-desc">The Hanging of Bhagat Singh. Verbatim approver confessions, Black Warrants, and Ganda Singh Wala clandestine disposal orders.</div>
+      </div>
+    </div>
+
+    <!-- The 7 Synthesis Nodes -->
+    <h3 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--accent-crimson); margin-bottom: 24px;">The 7 Core Historiographical &amp; Legal Synthesis Nodes</h3>
+
+    
+        <article class="node-card" id="SYN-BS-NODE-01">
+          <div class="node-meta">
+            <span class="meta-label">Node 01 • <code>SYN-BS-NODE-01</code></span>
+            <span class="node-rel-badge rel-qualification">EVIDENTIARY_QUALIFICATION_&amp;_LEGAL_INVALIDITY</span>
+          </div>
+
+          <h4 class="node-title">Forensic Ballistics &amp; The Saunders Homicide</h4>
+          <div class="node-issue">Contested Issue: Discrepancy between auditory witness reports, approver confessions, and autopsy findings regarding the shooting of ASP J.P. Saunders on 17 December 1928.</div>
+
+          <div class="perspectives-grid">
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-JUSS-2022</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[BIOGRAPHER_FORENSIC_ANALYSIS]</span>
+                </div>
+                <div class="persp-claim">Highlights that while police witnesses reported 8 shots, the post-mortem autopsy by Dr. C.H. Reis found only 2 bullet wounds, raising unresolved forensic questions regarding who fired the fatal shot.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-WARAICH-2007</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[COERCED_APPROVER_TESTIMONY]</span>
+                </div>
+                <div class="persp-claim">Documents approver Jai Gopal's testimony identifying Saunders and signaling Rajguru and Bhagat Singh, and Phanindra Nath Ghosh's confession on firearms logistics.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-NOORANI-2001</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[JURISPRUDENTIAL_CRITIQUE]</span>
+                </div>
+                <div class="persp-claim">Demonstrates that the identification parades were legally vitiated because the accused were exhibited to witnesses in police custody prior to formal identification.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-BS-PRIMARY</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[PRIMARY_SUBJECT_WRITING]</span>
+                </div>
+                <div class="persp-claim">Red Leaflet (18 Dec 1928): Claims political responsibility in the name of HSRA for executing Saunders to avenge the martyrdom of Lala Lajpat Rai.</div>
+              </div>
+            
+          </div>
+
+          <div class="node-resolution">
+            <strong>Historiographical &amp; Epistemic Resolution:</strong> The exact ballistic trajectory remains disputed due to the destruction of physical weapons and conflicting witness accounts, though HSRA's political agency is undisputed.
+          </div>
+        </article>
+      
+        <article class="node-card" id="SYN-BS-NODE-02">
+          <div class="node-meta">
+            <span class="meta-label">Node 02 • <code>SYN-BS-NODE-02</code></span>
+            <span class="node-rel-badge rel-agreement">COMPLETE_CROSS_SOURCE_AGREEMENT</span>
+          </div>
+
+          <h4 class="node-title">The Assembly Bomb Intentionality</h4>
+          <div class="node-issue">Contested Issue: Whether the bombing of the Central Legislative Assembly on 8 April 1929 was an attempt to kill or non-lethal propaganda-by-deed.</div>
+
+          <div class="perspectives-grid">
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-JUSS-2022</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[CORROBORATED_FACT]</span>
+                </div>
+                <div class="persp-claim">Confirms bombs were constructed of low-explosive potassium chlorate and picric acid in cast iron casing, deliberately tossed into vacant spaces behind government benches to avoid loss of life.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-NOORANI-2001</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[JURISPRUDENTIAL_ANALYSIS]</span>
+                </div>
+                <div class="persp-claim">Magistrate Pool's Section 307 conviction was perverse in law because government chemical inspectors admitted the bombs lacked shrapnel and were engineered not to kill.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-BS-PRIMARY</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[PRIMARY_SUBJECT_WRITING]</span>
+                </div>
+                <div class="persp-claim">Court Statement (6 June 1929): 'It takes a loud noise to make the deaf hear... We dropped the bombs not to kill anyone, but to create a national platform against repressive legislation.'</div>
+              </div>
+            
+          </div>
+
+          <div class="node-resolution">
+            <strong>Historiographical &amp; Epistemic Resolution:</strong> None. Universal convergence across primary statements, forensic reports, and legal analyses that the act was symbolic non-lethal protest.
+          </div>
+        </article>
+      
+        <article class="node-card" id="SYN-BS-NODE-03">
+          <div class="node-meta">
+            <span class="meta-label">Node 03 • <code>SYN-BS-NODE-03</code></span>
+            <span class="node-rel-badge rel-agreement">COMPLETE_CROSS_SOURCE_AGREEMENT</span>
+          </div>
+
+          <h4 class="node-title">The Hunger Strike &amp; Political Prisoner Rights</h4>
+          <div class="node-issue">Contested Issue: The moral and statutory status of revolutionary prisoners subjected to brutal forced feeding.</div>
+
+          <div class="perspectives-grid">
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-JUSS-2022</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[CORROBORATED_HISTORICAL_FACT]</span>
+                </div>
+                <div class="persp-claim">Documents the 63-day hunger strike ending in the martyrdom of Jatindra Nath Das on 13 September 1929, provoking nationwide demonstrations and forcing colonial concessions.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-NOORANI-2001</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[PARLIAMENTARY_HISTORY]</span>
+                </div>
+                <div class="persp-claim">Highlights the defeat of the British 'Hunger Strike Bill' in the Assembly, immortalized by M.A. Jinnah's impassioned defense of the accused's right to resist subhuman conditions.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-WARAICH-2007</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[CONTEMPORARY_RECORD]</span>
+                </div>
+                <div class="persp-claim">Reproduces secret jail superintendent daily feeding logs recording catheter insertions, milk forced into lungs, and medical resistance by Das.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-BS-PRIMARY</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[PRIMARY_SUBJECT_WRITING]</span>
+                </div>
+                <div class="persp-claim">Letters to Home Secretary (1929–1930): Demanding classification as political prisoners based on motive, educational background, and international conventions.</div>
+              </div>
+            
+          </div>
+
+          <div class="node-resolution">
+            <strong>Historiographical &amp; Epistemic Resolution:</strong> None. Corroborated across official colonial records, legislative debates, and subject correspondence.
+          </div>
+        </article>
+      
+        <article class="node-card" id="SYN-BS-NODE-04">
+          <div class="node-meta">
+            <span class="meta-label">Node 04 • <code>SYN-BS-NODE-04</code></span>
+            <span class="node-rel-badge rel-agreement">JURISPRUDENTIAL_CONSENSUS_ON_EXECUTIVE_TYRANNY</span>
+          </div>
+
+          <h4 class="node-title">Ordinance III of 1930 &amp; Constitutional Legality</h4>
+          <div class="node-issue">Contested Issue: The constitutional validity of Lord Irwin's proclamation bypassing ordinary criminal courts.</div>
+
+          <div class="perspectives-grid">
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-JUSS-2022</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[BIOGRAPHER_THESIS]</span>
+                </div>
+                <div class="persp-claim">Exposes the Special Tribunal as a star-chamber mechanism designed to prevent the accused from using the courtroom as an ideological platform.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-NOORANI-2001</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[CONSTITUTIONAL_JURISPRUDENCE]</span>
+                </div>
+                <div class="persp-claim">Demonstrates Ordinance III was void ab initio: no emergency existed under Section 72, the right of cross-examination was illegally stripped, and ex parte trial was unlawful.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-WARAICH-2007</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[CONTEMPORARY_JUDICIAL_RECORD]</span>
+                </div>
+                <div class="persp-claim">Publishes the handwritten dissent of Justice Syed Agha Haidar refusing to conduct trial in absentia and disassociating from police violence against the prisoners.</div>
+              </div>
+            
+          </div>
+
+          <div class="node-resolution">
+            <strong>Historiographical &amp; Epistemic Resolution:</strong> Privy Council rejected the appeal without issuing a reasoned judgment, an omission Noorani condemns as imperial political collusion.
+          </div>
+        </article>
+      
+        <article class="node-card" id="SYN-BS-NODE-05">
+          <div class="node-meta">
+            <span class="meta-label">Node 05 • <code>SYN-BS-NODE-05</code></span>
+            <span class="node-rel-badge rel-dispute">HISTORIOGRAPHICAL_DIVERGENCE_&amp;_UNRESOLVED_TENSION</span>
+          </div>
+
+          <h4 class="node-title">Gandhi-Irwin Talks &amp; Commutation Politics</h4>
+          <div class="node-issue">Contested Issue: Did Mahatma Gandhi possess the leverage to save Bhagat Singh's life, and what were his actual communications with Viceroy Irwin?</div>
+
+          <div class="perspectives-grid">
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-JUSS-2022</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[BIOGRAPHER_QUALIFICATION]</span>
+                </div>
+                <div class="persp-claim">Gandhi raised commutation on moral grounds but could not make it an ultimatum without compromising the civil disobedience truce and the Gandhi-Irwin Pact.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-NOORANI-2001</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[ARCHIVAL_CRITIQUE]</span>
+                </div>
+                <div class="persp-claim">Reveals from Irwin's private letters and minutes that Gandhi suggested to Irwin on 20 March 1931 that if hanging was inevitable, it should occur before the Karachi Congress to avoid political awkwardness.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-BS-PRIMARY</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[PRIMARY_SUBJECT_WRITING]</span>
+                </div>
+                <div class="persp-claim">Letter of 22 March 1931: Rejects any plea for mercy; states they are prisoners of war and demands to be executed by firing squad like soldiers.</div>
+              </div>
+            
+          </div>
+
+          <div class="node-resolution">
+            <strong>Historiographical &amp; Epistemic Resolution:</strong> Debate remains active between scholars viewing Gandhi as constrained by non-violence dogma versus those viewing his actions as political appeasement of the colonial state.
+          </div>
+        </article>
+      
+        <article class="node-card" id="SYN-BS-NODE-06">
+          <div class="node-meta">
+            <span class="meta-label">Node 06 • <code>SYN-BS-NODE-06</code></span>
+            <span class="node-rel-badge rel-agreement">COMPLETE_CROSS_SOURCE_AGREEMENT</span>
+          </div>
+
+          <h4 class="node-title">Ideological Evolution: Revolutionary Socialism</h4>
+          <div class="node-issue">Contested Issue: The transition from romantic terrorism to scientific Marxist-Leninist socialism.</div>
+
+          <div class="perspectives-grid">
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-JUSS-2022</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[BIOGRAPHER_THESIS]</span>
+                </div>
+                <div class="persp-claim">Traces intellectual growth through reading in Lahore Central Jail; Bhagat Singh had completely outgrown bomb-throwing by 1930.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-BS-PRIMARY</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[PRIMARY_SUBJECT_WRITING]</span>
+                </div>
+                <div class="persp-claim">Why I Am an Atheist (1930) &amp; Letter to Young Political Workers (Feb 1931): Explicitly repudiates individual terrorism as obsolete; calls for mass peasant and labor revolution.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-WARAICH-2007</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[CORROBORATED_CONTEMPORARY_RECORD]</span>
+                </div>
+                <div class="persp-claim">Corroborates through jail library checkout slips and Mehta's interviews that Bhagat Singh was reading Lenin's 'State and Revolution' in his final hours.</div>
+              </div>
+            
+          </div>
+
+          <div class="node-resolution">
+            <strong>Historiographical &amp; Epistemic Resolution:</strong> None. Definitive unanimity across primary and secondary sources that Bhagat Singh died an intellectual Marxist-Leninist revolutionary.
+          </div>
+        </article>
+      
+        <article class="node-card" id="SYN-BS-NODE-07">
+          <div class="node-meta">
+            <span class="meta-label">Node 07 • <code>SYN-BS-NODE-07</code></span>
+            <span class="node-rel-badge rel-agreement">COMPLETE_CROSS_SOURCE_AGREEMENT</span>
+          </div>
+
+          <h4 class="node-title">Clandestine Execution &amp; Ganda Singh Wala Cremation</h4>
+          <div class="node-issue">Contested Issue: The illegal timing of the execution and secret destruction of the martyrs' bodies.</div>
+
+          <div class="perspectives-grid">
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-JUSS-2022</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[CORROBORATED_FACT]</span>
+                </div>
+                <div class="persp-claim">Hanging advanced by 11 hours to 7:00 PM on 23 March 1931 in direct violation of the Punjab Jail Manual requiring dawn executions; bodies secretly mutilated and cremated at Ganda Singh Wala.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-WARAICH-2007</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[PRIMARY_ARCHIVAL_DOCUMENT]</span>
+                </div>
+                <div class="persp-claim">Reproduces confidential police orders commanding rear-gate blackout transport and kerosene cremation under armed guard, and subsequent recovery of charred relics by Lala Lajpat Rai's family.</div>
+              </div>
+            
+              <div class="persp-item">
+                <div class="persp-source">
+                  <span>SRC-NOORANI-2001</span>
+                  <span style="font-size: 0.68rem; color: var(--text-subtle);">[HISTORICAL_SYNTHESIS]</span>
+                </div>
+                <div class="persp-claim">Characterizes the nocturnal execution and clandestine cremation as the ultimate manifestation of colonial fear, subverting prison statutes to prevent public mourning.</div>
+              </div>
+            
+          </div>
+
+          <div class="node-resolution">
+            <strong>Historiographical &amp; Epistemic Resolution:</strong> None. Established historical fact supported by primary colonial administration manifests and eyewitness family recoveries.
+          </div>
+        </article>
+      
+
+    <footer style="margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border-light); font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+      Intellectualist BKRS v1.0 • Multi-Source Historiographical Subject Engine • Zero Unsupported Assertions
+    </footer>
+
+  </div>
+
+  <script src="../assets/js/reader-controls.js"></script>
+</body>
+</html>
