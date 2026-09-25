@@ -3,1525 +3,1500 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Intellectualist Grand Library • Master Codex Directory</title>
+  <title>The Intellectualist • Master Library</title>
+  <meta name="description" content="A library of reconstructed books for deep understanding. Explore original source journeys, structural knowledge maps, and archival evidence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-canvas: #fbf9f4;
       --bg-card: #ffffff;
       --bg-subtle: #f4efe4;
       --bg-elevated: #faf7f0;
-      --text-main: #181715;
-      --text-muted: #5c574e;
+      --text-main: #1c1917;
+      --text-muted: #57534e;
+      --text-subtle: #78716c;
       --accent-crimson: #85221c;
+      --accent-crimson-hover: #681712;
       --accent-slate: #1f3347;
       --accent-gold: #916c16;
-      --border-light: #ded7c8;
+      --accent-forest: #1b4d24;
+      --border-light: #e7dfd3;
+      --border-medium: #ded7c8;
       --border-dark: #7a7060;
-      --shadow-sm: 0 2px 8px rgba(0,0,0,0.03);
-      --shadow-md: 0 6px 20px rgba(0,0,0,0.06);
-      --shadow-lg: 0 12px 36px rgba(0,0,0,0.12);
+      --shadow-sm: 0 2px 8px rgba(28, 25, 23, 0.04);
+      --shadow-md: 0 6px 20px rgba(28, 25, 23, 0.07);
+      --shadow-lg: 0 16px 36px rgba(28, 25, 23, 0.10);
+      --radius-sm: 3px;
+      --radius-md: 5px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-canvas);
+    }
 
     body {
       background-color: var(--bg-canvas);
       color: var(--text-main);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.65;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
     }
 
-    h1, h2, h3, h4, .serif {
-      font-family: "Georgia", "Cambria", "Times New Roman", serif;
-      font-weight: 700;
+    h1, h2, h3, h4, .serif-font {
+      font-family: "EB Garamond", "Georgia", "Cambria", serif;
+      font-weight: 600;
       color: var(--text-main);
+      letter-spacing: -0.015em;
     }
 
+    .display-font {
+      font-family: "Cinzel", "Georgia", serif;
+      letter-spacing: 0.04em;
+    }
+
+    a {
+      color: var(--accent-crimson);
+      text-decoration: none;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent-crimson-hover);
+    }
+
+    /* Container Layout */
     .container {
-      max-width: 1320px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 30px 24px 120px 24px;
+      padding: 0 24px;
     }
 
-    /* Master Gazette Header */
-    .portal-header {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-top: 6px solid var(--accent-crimson);
-      padding: 36px 44px;
-      margin-bottom: 24px;
-      box-shadow: var(--shadow-sm);
+    /* Minimal Navigation Header */
+    .site-header {
+      background: var(--bg-canvas);
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background-color: rgba(251, 249, 244, 0.94);
     }
 
-    .meta-bar {
+    .nav-inner {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 12px;
-      margin-bottom: 18px;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--accent-slate);
-      font-weight: 700;
+      height: 72px;
     }
 
-    .portal-title {
-      font-size: 3rem;
-      line-height: 1.1;
-      color: var(--accent-crimson);
-      margin-bottom: 8px;
-      letter-spacing: -0.02em;
-    }
-
-    .portal-tagline {
-      font-size: 1.25rem;
-      font-style: italic;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-      font-family: "Georgia", serif;
-    }
-
-    .golden-test-banner {
-      background: var(--bg-subtle);
-      border-left: 4px solid var(--accent-crimson);
-      padding: 14px 18px;
-      font-style: italic;
-      font-size: 0.94rem;
-      color: var(--text-main);
-    }
-
-    /* Featured Codex Spotlight */
-    .spotlight-box {
-      background: #ffffff;
-      border: 1px solid var(--border-light);
-      border-left: 5px solid var(--accent-gold);
-      padding: 24px 32px;
-      margin-bottom: 28px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      align-items: center;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .spotlight-tag {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent-gold);
-      font-weight: 800;
-      margin-bottom: 4px;
-    }
-
-    .spotlight-content { flex: 1; min-width: 320px; }
-    .spotlight-title { font-size: 1.6rem; color: var(--accent-slate); margin-bottom: 4px; }
-    .spotlight-desc { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 10px; font-style: italic; font-family: "Georgia", serif; }
-
-    /* Dashboard Stats Bar */
-    .stats-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 14px;
-      margin-bottom: 28px;
-    }
-
-    .stat-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      padding: 18px;
-      text-align: center;
-    }
-
-    .stat-val {
-      font-family: "Georgia", serif;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--accent-slate);
-      line-height: 1.1;
-      margin-bottom: 4px;
-    }
-
-    .stat-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      font-weight: 700;
-    }
-
-    /* Multi-Faceted Filter & Control Bar */
-    .control-deck {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      padding: 22px 28px;
-      margin-bottom: 28px;
+    .brand-mark {
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+    }
+
+    .brand-title {
+      font-family: "Cinzel", serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--text-main);
+      line-height: 1.1;
+    }
+
+    .brand-subtitle {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 3px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-item a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-item a:hover {
+      color: var(--accent-crimson);
+      border-bottom-color: var(--accent-crimson);
+    }
+
+    .nav-item.nav-highlight a {
+      color: var(--accent-crimson);
+      border: 1px solid var(--accent-crimson);
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+    }
+
+    .nav-item.nav-highlight a:hover {
+      background: var(--accent-crimson);
+      color: #ffffff;
+    }
+
+    /* Editorial Hero Section */
+    .hero-section {
+      padding: 96px 0 72px 0;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+      background: radial-gradient(circle at 50% 20%, #ffffff 0%, var(--bg-canvas) 70%);
+    }
+
+    .hero-kicker {
+      font-size: 0.76rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent-crimson);
+      margin-bottom: 18px;
+      display: inline-block;
+    }
+
+    .hero-title {
+      font-family: "Cinzel", serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.03em;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+      font-family: "EB Garamond", serif;
+      font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+      font-style: italic;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 24px auto;
+      line-height: 1.4;
+    }
+
+    .hero-prose {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 36px auto;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
       gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 28px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      min-height: 44px;
+    }
+
+    .btn-primary {
+      background: var(--accent-crimson);
+      color: #ffffff;
+      border: 1px solid var(--accent-crimson);
       box-shadow: var(--shadow-sm);
     }
 
-    .search-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
+    .btn-primary:hover {
+      background: var(--accent-crimson-hover);
+      border-color: var(--accent-crimson-hover);
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
     }
 
-    .search-input-wrap {
-      flex: 2;
-      min-width: 300px;
-      position: relative;
-    }
-
-    .search-input {
-      width: 100%;
-      padding: 12px 18px;
-      border: 1px solid var(--border-light);
-      background: var(--bg-subtle);
-      font-size: 0.95rem;
+    .btn-secondary {
+      background: var(--bg-card);
       color: var(--text-main);
-      outline: none;
-      font-family: inherit;
-      transition: all 0.2s ease;
+      border: 1px solid var(--border-medium);
     }
 
-    .search-input:focus {
-      border-color: var(--accent-crimson);
-      background: #fff;
-      box-shadow: 0 0 0 3px rgba(133, 34, 28, 0.08);
-    }
-
-    .dropdown-select {
-      flex: 1;
-      min-width: 180px;
-      padding: 11px 14px;
-      border: 1px solid var(--border-light);
+    .btn-secondary:hover {
       background: var(--bg-subtle);
+      border-color: var(--accent-slate);
+      color: var(--accent-slate);
+    }
+
+    /* Featured Work Spotlight */
+    .spotlight-section {
+      padding: 72px 0 80px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .spotlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-top: 5px solid var(--accent-crimson);
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .spotlight-body {
+      padding: 48px;
+    }
+
+    .spotlight-meta-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .spotlight-badge {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--accent-crimson);
+      background: #fdf1f0;
+      border: 1px solid #f8d5d3;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .spotlight-genre {
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .spotlight-title {
+      font-family: "EB Garamond", serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .spotlight-author {
+      font-size: 1.05rem;
+      color: var(--accent-slate);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .spotlight-synopsis {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+
+    .spotlight-trust {
+      background: var(--bg-subtle);
+      border-left: 3px solid var(--accent-forest);
+      padding: 12px 18px;
       font-size: 0.88rem;
       color: var(--text-main);
-      outline: none;
-      font-family: inherit;
-      cursor: pointer;
+      margin-bottom: 28px;
+      font-style: italic;
     }
 
-    .view-toggle-grp {
+    .spotlight-trust strong {
+      color: var(--accent-forest);
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.75rem;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .spotlight-views {
+      margin-bottom: 32px;
+    }
+
+    .views-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-subtle);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .views-list {
       display: flex;
-      border: 1px solid var(--border-light);
-    }
-
-    .view-btn {
-      background: var(--bg-subtle);
-      border: none;
-      padding: 10px 14px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      color: var(--accent-slate);
-      transition: all 0.15s ease;
-    }
-
-    .view-btn.active {
-      background: var(--accent-slate);
-      color: #fff;
-    }
-
-    .pill-filter-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      border-top: 1px solid var(--border-light);
-      padding-top: 14px;
-    }
-
-    .filter-pills {
-      display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 8px;
     }
 
-    .pill-btn {
-      background: var(--bg-subtle);
-      border: 1px solid var(--border-light);
+    .view-pill {
+      font-size: 0.88rem;
       color: var(--text-main);
-      padding: 6px 12px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: all 0.15s ease;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
     }
 
-    .pill-btn:hover, .pill-btn.active {
-      background: var(--accent-slate);
-      color: #ffffff;
-      border-color: var(--accent-slate);
+    .view-pill span {
+      color: var(--accent-crimson);
+      font-weight: 700;
+      font-size: 0.8rem;
     }
 
-    .pill-btn.bookmark-pill.active {
-      background: var(--accent-crimson);
-      border-color: var(--accent-crimson);
-    }
-
-    /* VIEW 1: EDITORIAL CARD GRID */
-    .catalog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
-      gap: 28px;
-    }
-
-    .codex-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-top: 4px solid var(--accent-slate);
-      padding: 28px 32px;
+    .spotlight-aside {
+      background: var(--bg-elevated);
+      border-left: 1px solid var(--border-light);
+      padding: 48px 36px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      box-shadow: var(--shadow-sm);
+    }
+
+    .aside-stat-block {
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .aside-stat-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-subtle);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .aside-stat-value {
+      font-family: "EB Garamond", serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--accent-slate);
+      line-height: 1.2;
+    }
+
+    .aside-stat-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* How It Works Section */
+    .method-section {
+      padding: 88px 0;
+      border-bottom: 1px solid var(--border-light);
+      background: #ffffff;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 56px auto;
+    }
+
+    .section-kicker {
+      font-size: 0.74rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent-crimson);
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: "Cinzel", serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-desc {
+      font-family: "EB Garamond", serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .method-card {
+      background: var(--bg-canvas);
+      border: 1px solid var(--border-medium);
+      padding: 36px 30px;
+      border-radius: var(--radius-sm);
       position: relative;
     }
 
-    .codex-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
+    .method-num {
+      font-family: "Cinzel", serif;
+      font-size: 1.1rem;
+      color: var(--accent-crimson);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
     }
 
-    .card-meta-bar {
+    .method-name {
+      font-family: "EB Garamond", serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .method-body {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .method-colophon {
+      margin-top: 48px;
+      text-align: center;
+      padding: 20px 24px;
+      background: var(--bg-canvas);
+      border: 1px dashed var(--border-medium);
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Library Collection Section */
+    .library-section {
+      padding: 88px 0;
+    }
+
+    .library-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-light);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .catalog-search-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .catalog-search {
+      width: 100%;
+      padding: 11px 18px;
+      background: #ffffff;
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      color: var(--text-main);
+      outline: none;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .catalog-search:focus {
+      border-color: var(--accent-crimson);
+      box-shadow: 0 0 0 3px rgba(133, 34, 28, 0.08);
+    }
+
+    .catalog-count {
+      font-size: 0.85rem;
+      color: var(--text-subtle);
+      font-weight: 500;
+    }
+
+    /* Genre Block */
+    .genre-block {
+      margin-bottom: 64px;
+    }
+
+    .genre-heading-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--text-main);
+      padding-bottom: 10px;
+      margin-bottom: 28px;
+    }
+
+    .genre-title {
+      font-family: "Cinzel", serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.08em;
+      color: var(--text-main);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .genre-desc {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--text-muted);
+      font-family: "EB Garamond", serif;
+    }
+
+    /* Book Cards Grid */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 28px;
+    }
+
+    .book-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      padding: 32px 28px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+    }
+
+    .book-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-dark);
+    }
+
+    .book-card.is-certified {
+      border-top: 3px solid var(--accent-forest);
+    }
+
+    .book-card-meta {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 12px;
-    }
-
-    .badge-tier {
-      background: var(--accent-slate);
-      color: #fff;
-      padding: 3px 8px;
-      font-size: 0.7rem;
+      font-size: 0.74rem;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      font-weight: 700;
+      letter-spacing: 0.08em;
     }
 
-    .badge-hours {
-      background: var(--bg-subtle);
-      border: 1px solid var(--border-light);
-      color: var(--accent-crimson);
-      padding: 3px 8px;
-      font-size: 0.72rem;
-      font-weight: 700;
-    }
-
-    .card-title {
-      font-size: 1.85rem;
-      line-height: 1.2;
-      color: var(--accent-crimson);
-      margin-bottom: 4px;
-    }
-
-    .card-subtitle {
-      font-size: 1.05rem;
-      font-style: italic;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-      font-family: "Georgia", serif;
-    }
-
-    .card-author-line {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 10px;
-    }
-
-    .card-axiom {
-      font-family: "Georgia", serif;
-      font-style: italic;
-      font-size: 0.96rem;
-      background: var(--bg-subtle);
-      border-left: 3px solid var(--accent-slate);
-      padding: 10px 14px;
-      margin-bottom: 16px;
-      color: #111;
-    }
-
-    .tags-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 18px;
-    }
-
-    .tag-badge {
-      background: #f0eae1;
-      color: var(--accent-slate);
-      font-size: 0.72rem;
-      font-weight: 600;
+    .cert-badge {
+      color: var(--accent-forest);
+      background: #edf7ef;
+      border: 1px solid #c2e2c8;
       padding: 2px 7px;
-      cursor: pointer;
-    }
-
-    .tag-badge:hover {
-      background: var(--accent-slate);
-      color: #fff;
-    }
-
-    .card-btn-deck {
-      display: flex;
-      gap: 10px;
-      margin-top: auto;
-      padding-top: 16px;
-      border-top: 1px solid var(--border-light);
-      align-items: center;
-    }
-
-    .btn-codex {
-      display: inline-block;
-      background: var(--accent-crimson);
-      color: #ffffff;
-      padding: 10px 18px;
-      text-decoration: none;
+      border-radius: 2px;
       font-weight: 700;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: background 0.2s ease;
-      text-align: center;
-      flex: 2;
-    }
-
-    .btn-codex:hover { background: #631712; }
-
-    .btn-preview {
-      background: var(--bg-subtle);
-      border: 1px solid var(--border-light);
-      color: var(--accent-slate);
-      padding: 10px 14px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .btn-preview:hover { background: #eae3d5; }
-
-    .star-bookmark-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 1.3rem;
-      color: #b0a898;
-      transition: color 0.15s ease;
-      padding: 0 4px;
-    }
-
-    .star-bookmark-btn.bookmarked {
-      color: var(--accent-gold);
-    }
-
-    /* VIEW 2: DENSE TABLE LEDGER (For 500 Books Scanning) */
-    .ledger-table-wrap {
-      display: none;
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      overflow-x: auto;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .ledger-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.88rem;
-    }
-
-    .ledger-table th, .ledger-table td {
-      border-bottom: 1px solid var(--border-light);
-      padding: 12px 16px;
-      text-align: left;
-    }
-
-    .ledger-table th {
-      background: var(--bg-subtle);
-      font-family: "Georgia", serif;
-      font-weight: 700;
-      font-size: 0.78rem;
-      text-transform: uppercase;
+      font-size: 0.68rem;
       letter-spacing: 0.06em;
+    }
+
+    .archival-badge {
+      color: var(--text-subtle);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      padding: 2px 7px;
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 0.68rem;
+    }
+
+    .book-scope-badge {
+      color: var(--text-subtle);
+      font-weight: 600;
+      font-size: 0.74rem;
+    }
+
+    .book-title {
+      font-family: "EB Garamond", serif;
+      font-size: 1.55rem;
+      line-height: 1.25;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .book-author {
+      font-size: 0.92rem;
       color: var(--accent-slate);
-      cursor: pointer;
+      font-weight: 600;
+      margin-bottom: 14px;
     }
 
-    .ledger-table tr:hover td {
-      background: #faf7f0;
-    }
-
-    /* SLIDE-OVER QUICK-PREVIEW DRAWER */
-    .drawer-overlay {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.4);
-      z-index: 2000;
-      display: none;
-      backdrop-filter: blur(2px);
-    }
-
-    .drawer-overlay.active { display: block; }
-
-    .drawer-panel {
-      position: fixed;
-      top: 0; right: -650px;
-      width: 600px;
-      max-width: 90vw;
-      height: 100%;
-      background: #ffffff;
-      z-index: 2001;
-      box-shadow: var(--shadow-lg);
-      padding: 40px;
-      overflow-y: auto;
-      transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .drawer-panel.active { right: 0; }
-
-    .drawer-close-btn {
-      position: absolute;
-      top: 20px; right: 24px;
-      background: none;
-      border: none;
-      font-size: 1.8rem;
-      cursor: pointer;
+    .book-synopsis {
+      font-size: 0.93rem;
       color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      flex-grow: 1;
     }
 
-    .drawer-title { font-size: 2rem; color: var(--accent-crimson); margin-bottom: 6px; }
-    .drawer-subtitle { font-size: 1.15rem; font-style: italic; color: var(--text-muted); margin-bottom: 14px; font-family: "Georgia", serif; }
-
-    /* Drop Zone Card */
-    .drop-card {
-      background: #faf8f4;
-      border: 2px dashed var(--border-light);
-      padding: 32px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .book-trust-note {
+      font-size: 0.78rem;
+      color: var(--text-subtle);
+      font-style: italic;
+      border-left: 2px solid var(--accent-forest);
+      padding-left: 10px;
+      margin-bottom: 20px;
     }
 
-    .code-tag {
-      font-family: monospace;
-      background: #e8e2d4;
-      padding: 2px 6px;
-      font-size: 0.85rem;
-    }
-
-    /* Pagination controls */
-    .pagination-bar {
+    .book-card-footer {
+      border-top: 1px solid var(--border-light);
+      padding-top: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 36px;
-      padding: 16px 20px;
+    }
+
+    .book-enter-link {
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.15s ease;
+    }
+
+    .book-enter-link:hover {
+      color: var(--accent-crimson-hover);
+      gap: 10px;
+    }
+
+    .book-views-indicator {
+      font-size: 0.74rem;
+      color: var(--text-subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* Cross-Book Synthesis Section */
+    .crossbook-section {
+      padding: 88px 0;
       background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      font-size: 0.85rem;
-    }
-
-    .page-btn-grp { display: flex; gap: 8px; }
-    .page-btn {
-      background: var(--bg-subtle);
-      border: 1px solid var(--border-light);
-      padding: 6px 12px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-    .page-btn.disabled { opacity: 0.5; cursor: not-allowed; }
-
-    footer {
-      margin-top: 60px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--text-muted);
       border-top: 1px solid var(--border-light);
-      padding-top: 30px;
+      border-bottom: 1px solid var(--border-light);
     }
 
-    @media (max-width: 820px) {
-      .catalog-grid { grid-template-columns: 1fr; }
-      .portal-title { font-size: 2.3rem; }
-      .portal-header { padding: 24px; }
-      .search-row { flex-direction: column; align-items: stretch; }
-      .drawer-panel { width: 100%; padding: 24px; }
+    .crossbook-card {
+      border: 1px solid var(--border-medium);
+      border-left: 5px solid var(--accent-slate);
+      background: var(--bg-canvas);
+      padding: 48px;
+      border-radius: var(--radius-sm);
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .crossbook-kicker {
+      font-size: 0.74rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent-slate);
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+
+    .crossbook-title {
+      font-family: "Cinzel", serif;
+      font-size: clamp(1.8rem, 3vw, 2.3rem);
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .crossbook-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+
+    .crossbook-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .crossbook-feature-item {
+      font-size: 0.92rem;
+      color: var(--text-main);
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      line-height: 1.5;
+    }
+
+    .crossbook-feature-bullet {
+      color: var(--accent-slate);
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .crossbook-interactive-preview {
+      background: #ffffff;
+      border: 1px solid var(--border-medium);
+      padding: 32px 28px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .preview-header {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      color: var(--accent-slate);
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+    }
+
+    .preview-concept-row {
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed var(--border-light);
+    }
+
+    .preview-concept-row:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .preview-concept-name {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .preview-concept-sources {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .source-tag {
+      background: var(--bg-subtle);
+      padding: 1px 6px;
+      border-radius: 2px;
+      border: 1px solid var(--border-light);
+    }
+
+    /* Colophon / Scholarly Footer */
+    .site-footer {
+      background: var(--bg-canvas);
+      padding: 80px 0 48px 0;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 64px;
+    }
+
+    .footer-col-title {
+      font-family: "Cinzel", serif;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .footer-prose {
+      line-height: 1.75;
+      color: var(--text-muted);
+      max-width: 480px;
+      font-size: 0.92rem;
+    }
+
+    .footer-prose strong {
+      color: var(--text-main);
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      transition: color 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-crimson);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-light);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 960px) {
+      .spotlight-card {
+        grid-template-columns: 1fr;
+      }
+
+      .spotlight-aside {
+        border-left: none;
+        border-top: 1px solid var(--border-light);
+      }
+
+      .method-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .crossbook-card {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .hero-section {
+        padding: 56px 0 44px 0;
+      }
+
+      .spotlight-body {
+        padding: 28px 20px;
+      }
+
+      .spotlight-aside {
+        padding: 28px 20px;
+      }
+
+      .crossbook-card {
+        padding: 28px 20px;
+      }
+
+      .books-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .genre-heading-row {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .nav-links {
+        gap: 16px;
+      }
+
+      .nav-item a {
+        font-size: 0.78rem;
+      }
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-
-  <!-- MASTER GAZETTE HEADER -->
-  <header class="portal-header">
-    <div class="meta-bar">
-      <span>THE INTELLECTUALIST MASTER REPOSITORY</span>
-      <span>INDEX CATALOG: ARCHIVE-500-READY</span>
-      <span>EPIC SCALE CODEX PORTAL</span>
-    </div>
-    <h1 class="portal-title">The Master Library</h1>
-    <div class="portal-tagline">Exhaustive, Replacement-Grade Codices of Seminal Human Knowledge</div>
-    <div class="golden-test-banner">
-      <strong>The Standard of Total Replacement:</strong> Engineered to eliminate the need to read the source texts. Every codex stores deep causal mechanics, primary empirical trials, diagnostic typologies, edge cases, and verbatim operational scripts with zero publisher padding.
-    </div>
-    <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
-      <a href="notebook.html" class="btn-codex" style="background: var(--accent-slate); color: #ffffff; padding: 10px 20px; text-decoration: none; font-weight: 700; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 8px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">📓 Open All-in-One 500-Book Single HTML Notebook &rarr;</a>
-      <a href="cross-book/index.html" class="btn-codex" style="background: var(--accent-crimson); color: #ffffff; padding: 10px 20px; text-decoration: none; font-weight: 700; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 8px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">🌐 Explore Certified Cross-Book Knowledge Synthesis &rarr;</a>
+  <!-- Minimal Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="index.html" class="brand-mark">
+          <span class="brand-title">INTELLECTUALIST</span>
+          <span class="brand-subtitle">The Master Library</span>
+        </a>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#collection">Library</a></li>
+          <li class="nav-item"><a href="#how-it-works">How It Works</a></li>
+          <li class="nav-item nav-highlight"><a href="cross-book/index.html">Cross-Book</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- CERTIFIED BKRS BENCHMARKS SHOWCASE -->
-  <section class="certified-showcase" style="background: var(--bg-card); border: 1px solid var(--border-light); border-top: 5px solid var(--accent-crimson); border-radius: 6px; padding: 28px 32px; margin-bottom: 28px; box-shadow: var(--shadow-sm);">
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border-light);">
-      <div>
-        <span class="meta-label" style="color: var(--accent-crimson); font-weight: 800; letter-spacing: 0.08em;">BKRS CANONICAL PRODUCTION BENCHMARKS</span>
-        <h2 style="font-size: 1.7rem; color: var(--text-main); margin-top: 2px;">Certified Multi-Genre Book Reconstructions</h2>
-      </div>
-      <a href="cross-book/index.html" class="btn-codex" style="flex: none; padding: 8px 18px; font-size: 0.82rem; background: var(--accent-slate);">Explore Cross-Book Synthesis &rarr;</a>
-    </div>
-    <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px;">
-      These certified benchmarks represent the complete Book Knowledge Reconstruction System (BKRS v1.0 standard). Each benchmark is driven by canonical structured JSON data, passes 50+ independent forensic validation tests, and provides three distinct reading modes: <strong>View A (Source Journey)</strong>, <strong>View B (Relational Knowledge Map)</strong>, and <strong>View C (Dialectical & Experiential Engine)</strong>.
-    </p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
-      <!-- Benchmark 1: Norwegian Wood -->
-      <div style="background: var(--bg-subtle); border: 1px solid var(--border-light); border-radius: 4px; padding: 20px 22px; display: flex; flex-direction: column; justify-content: space-between; border-left: 4px solid var(--accent-crimson);">
-        <div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-            <span class="badge" style="background:#eaf1e7; color:#1b4d24; border:1px solid #c3d9bc; font-size:0.68rem; font-weight:800;">LITERARY FICTION</span>
-            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-subtle);">36 SCENES</span>
-          </div>
-          <h3 style="font-size: 1.25rem; color: var(--accent-crimson); margin-bottom: 4px;">Norwegian Wood</h3>
-          <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 10px; font-style: italic;">Haruki Murakami (1987) • Trans. Jay Rubin</div>
-          <p style="font-size: 0.86rem; color: var(--text-main); line-height: 1.45; margin-bottom: 16px;">
-            Complete scene-level experiential reconstruction: 7 developmental relationship trajectories across 6 stages, sensory weather systems, and active recall deck.
-          </p>
-        </div>
-        <a href="distillations/norwegian-wood/index.html" class="btn-codex" style="font-size: 0.8rem; padding: 9px 14px; text-align: center;">Open 3-View Master Codex &rarr;</a>
-      </div>
-
-      <!-- Benchmark 2: Psychology of Money -->
-      <div style="background: var(--bg-subtle); border: 1px solid var(--border-light); border-radius: 4px; padding: 20px 22px; display: flex; flex-direction: column; justify-content: space-between; border-left: 4px solid var(--accent-slate);">
-        <div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-            <span class="badge" style="background:#edf2f7; color:#1a365d; border:1px solid #cbd5e0; font-size:0.68rem; font-weight:800;">ANALYTICAL NONFICTION</span>
-            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-subtle);">24 ARGUMENT UNITS</span>
-          </div>
-          <h3 style="font-size: 1.25rem; color: var(--accent-slate); margin-bottom: 4px;">The Psychology of Money</h3>
-          <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 10px; font-style: italic;">Morgan Housel (2020)</div>
-          <p style="font-size: 0.86rem; color: var(--text-main); line-height: 1.45; margin-bottom: 16px;">
-            Argument-level cognitive blueprint: 4 theoretical traditions, master empirical research corpus, asymmetric payoff heuristics, and actionable behavioral rules.
-          </p>
-        </div>
-        <a href="distillations/the-psychology-of-money/index.html" class="btn-codex" style="font-size: 0.8rem; padding: 9px 14px; text-align: center; background: var(--accent-slate);">Open 3-View Master Codex &rarr;</a>
-      </div>
-
-      <!-- Benchmark 3: Bhagat Singh -->
-      <div style="background: var(--bg-subtle); border: 1px solid var(--border-light); border-radius: 4px; padding: 20px 22px; display: flex; flex-direction: column; justify-content: space-between; border-left: 4px solid var(--accent-gold);">
-        <div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-            <span class="badge" style="background:#e8edf3; color:#1e3d59; border:1px solid #b8c9dc; font-size:0.68rem; font-weight:800;">HISTORICAL BIOGRAPHY</span>
-            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-subtle);">78 UNITS • 21 PLATES</span>
-          </div>
-          <h3 style="font-size: 1.25rem; color: var(--accent-gold); margin-bottom: 4px;">Bhagat Singh: A Life in Revolution</h3>
-          <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 10px; font-style: italic;">Satvinder S. Juss (2020)</div>
-          <p style="font-size: 0.86rem; color: var(--text-main); line-height: 1.45; margin-bottom: 16px;">
-            Forensic archival reconstruction: dual-timeline event anchors, 21 contemporaneous exhibits, coerced testimony quarantines, and 93 historical entities.
-          </p>
-        </div>
-        <a href="distillations/bhagat-singh-a-life-in-revolution/index.html" class="btn-codex" style="font-size: 0.8rem; padding: 9px 14px; text-align: center; background: var(--accent-gold); color: #181715;">Open 3-View Master Codex &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SPOTLIGHT HERO: ROTATING FEATURED CODEX -->
-  <aside class="spotlight-box" id="spotlightHero">
-    <div class="spotlight-content">
-      <div class="spotlight-tag">★ Featured Codex of the Week</div>
-      <h2 class="spotlight-title" id="spotlightTitle">Atomic Habits (James Clear)</h2>
-      <div class="spotlight-desc" id="spotlightDesc">"You do not rise to the level of your goals. You fall to the level of your systems."</div>
-      <p style="font-size: 0.88rem; color: var(--text-main); margin-bottom: 0;">
-        <strong>The Paradigm Shift:</strong> Deconstructs the finish-line trap of goal-setting; introduces the 4-step loop (Cue, Craving, Response, Reward) powered by Wolfram Schultz's dopamine anticipation curve.
+  <!-- Editorial Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <span class="hero-kicker">Reconstructed Knowledge Architecture</span>
+      <h1 class="hero-title">THE MASTER LIBRARY</h1>
+      <p class="hero-subtitle">A library of reconstructed books for deep understanding.</p>
+      <p class="hero-prose">
+        Follow the original journey of a work, explore its underlying knowledge, and trace important ideas back to their source.
+        Every book in this collection is painstakingly deconstructed into canonical knowledge units—preserving causal links, evidentiary nuance, and material realism without superficial compression.
       </p>
-    </div>
-    <div>
-      <a href="distillations/atomic-habits/index.html" class="btn-codex" style="padding: 12px 24px; font-size: 0.85rem;">Open 20-Chapter Codex &rarr;</a>
-    </div>
-  </aside>
-
-  <!-- DASHBOARD STATS -->
-  <section class="stats-row">
-    <div class="stat-card">
-      <div class="stat-val" id="statBooks">10</div>
-      <div class="stat-label">Codices in Library</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-val" id="statHours">266.5 hrs</div>
-      <div class="stat-label">Reading Time Saved</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-val" id="statStudies">42 Trials</div>
-      <div class="stat-label">Empirical Studies Vaulted</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-val">500 Books</div>
-      <div class="stat-label">Architectural Capacity</div>
-    </div>
-  </section>
-
-  <!-- MULTI-FACETED CONTROL DECK -->
-  <section class="control-deck">
-    <div class="search-row">
-      <div class="search-input-wrap">
-        <input type="text" id="searchInput" class="search-input" placeholder="Instant search across 500 titles, authors, mental models, studies, or tags...">
-      </div>
-      <select id="categorySelect" class="dropdown-select" onchange="applyFilters()">
-        <option value="all">All Disciplines & Fields</option>
-        <option value="Linguistics, German Language & CEFR Mastery">German Language & CEFR Mastery</option>
-        <option value="Behavioral Psychology & Habit Architecture">Behavioral Psychology</option>
-        <option value="Realpolitik, Strategy & Courtier Dynamics">Strategy & Realpolitik</option>
-        <option value="Applied Financial Mindset & Cash Flow Architecture">Financial Mindset & Cash Flow</option>
-        <option value="Trauma Dynamics, IPV & Narrative Psychology">Trauma Dynamics & IPV</option>
-        <option value="Cognitive Science & Decision Making">Cognitive Science</option>
-        <option value="Systems Thinking & Complex Systems">Systems Thinking</option>
-        <option value="Philosophy & Classical Ethics">Philosophy & Ethics</option>
-        <option value="Classical Mystical Philosophy & Yogic Metaphysics">Classical Mystical Philosophy & Metaphysics</option>
-      </select>
-      <select id="sortSelect" class="dropdown-select" onchange="applyFilters()">
-        <option value="recent">Sort: Recently Cataloged</option>
-        <option value="title">Sort: Title (A &rarr; Z)</option>
-        <option value="author">Sort: Author Name</option>
-        <option value="hours">Sort: Time Saved (High &rarr; Low)</option>
-        <option value="year">Sort: Publication Year</option>
-      </select>
-      <div class="view-toggle-grp">
-        <button id="viewGridBtn" class="view-btn active" onclick="switchView('grid')" title="Editorial Card View">⊞ Cards</button>
-        <button id="viewTableBtn" class="view-btn" onclick="switchView('table')" title="Dense Ledger Table (500 Books)">☰ Ledger</button>
-      </div>
-    </div>
-
-    <div class="pill-filter-row">
-      <div class="filter-pills">
-        <button class="pill-btn active" onclick="filterTier('all', this)">All Codices</button>
-        <button class="pill-btn" onclick="filterTier('certified', this)" style="border-left: 3px solid var(--accent-crimson); font-weight: 700;">★ Certified BKRS Benchmarks (3)</button>
-        <button class="pill-btn" onclick="filterTier('Tier 1', this)">Tier 1 (Empirical/Clinical)</button>
-        <button class="pill-btn" onclick="filterTier('Tier 2', this)">Tier 2 (Applied Systems)</button>
-        <button class="pill-btn" onclick="filterTier('Tier 3', this)">Tier 3 (Pop-Science)</button>
-        <button class="pill-btn bookmark-pill" id="bookmarkFilterBtn" onclick="toggleBookmarkFilter(this)">★ Saved Reading List (<span id="bookmarkCount">0</span>)</button>
-      </div>
-      <div style="font-size: 0.8rem; color: var(--text-muted);" id="resultCountLabel">
-        Showing 2 of 2 codices
+      <div class="hero-actions">
+        <a href="#collection" class="btn btn-primary">Browse the Library</a>
+        <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+        <a href="cross-book/index.html" class="btn btn-secondary">Cross-Book Synthesis &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- VIEW 1: EDITORIAL CARD GRID -->
-  <main class="catalog-grid" id="catalogGrid">
-    <!-- Populated via JavaScript -->
-  </main>
+  <!-- Featured Work Spotlight -->
+  <section class="spotlight-section">
+    <div class="container">
+      <article class="spotlight-card">
+        <div class="spotlight-body">
+          <div class="spotlight-meta-header">
+            <span class="spotlight-badge">Featured Reconstruction</span>
+            <span class="spotlight-genre">Historical Biography &bull; Legal Archival</span>
+          </div>
+          <h2 class="spotlight-title">Bhagat Singh: A Life in Revolution</h2>
+          <div class="spotlight-author">Satvinder S. Juss (2022) &bull; Penguin Random House India</div>
+          <p class="spotlight-synopsis">
+            Drawing directly from newly unsealed Punjab Archives records, this landmark historical reconstruction deconstructs the political, legal, and intellectual arc of Bhagat Singh. Rather than relying on popular mythology or selective quotation, every major claim, courtroom testimony, prison hunger strike, and ideological treatise is mapped into canonical evidence units—rigorously separating corroborated historical fact from biographer thesis and subject writings.
+          </p>
+          <div class="spotlight-trust">
+            <strong>Certified Reconstruction</strong>
+            Independently validated against the source-derived reconstruction. Covers all 1,954 source manifest units with 100% causal and evidentiary integrity.
+          </div>
+          <div class="spotlight-views">
+            <div class="views-title">Three Integrated Reading Modes Available</div>
+            <div class="views-list">
+              <div class="view-pill"><span>01. Source Journey</span> Chronological reconstruction following the historical events and trial proceedings</div>
+              <div class="view-pill"><span>02. Knowledge Map</span> Systematic ideological and conceptual network independent of chronology</div>
+              <div class="view-pill"><span>03. Legal Deep View</span> Complete archival dossier of court transcripts, FIRs, petitions, and unsealed records</div>
+            </div>
+          </div>
+          <div>
+            <a href="distillations/bhagat-singh-a-life-in-revolution/index.html" class="btn btn-primary">Enter Reader &rarr;</a>
+          </div>
+        </div>
 
-  <!-- VIEW 2: DENSE LEDGER TABLE (Engineered for 500 Books Scanning) -->
-  <section class="ledger-table-wrap" id="ledgerView">
-    <table class="ledger-table">
-      <thead>
-        <tr>
-          <th style="width: 40px;">★</th>
-          <th onclick="setSort('title')">Book Title & Subtitle ▾</th>
-          <th onclick="setSort('author')">Author ▾</th>
-          <th onclick="setSort('year')">Year ▾</th>
-          <th onclick="setSort('tier')">Epistemic Tier ▾</th>
-          <th>Discipline</th>
-          <th onclick="setSort('hours')">Time Saved ▾</th>
-          <th style="text-align: right;">Action</th>
-        </tr>
-      </thead>
-      <tbody id="ledgerTableBody">
-        <!-- Populated via JavaScript -->
-      </tbody>
-    </table>
+        <aside class="spotlight-aside">
+          <div>
+            <div class="aside-stat-block">
+              <div class="aside-stat-label">Reconstructed Scope</div>
+              <div class="aside-stat-value">78 Units</div>
+              <div class="aside-stat-sub">49 Historical Episodes &bull; 25 Document Units &bull; 4 Life Episodes</div>
+            </div>
+            <div class="aside-stat-block">
+              <div class="aside-stat-label">Primary Exhibits</div>
+              <div class="aside-stat-value">21 Documents</div>
+              <div class="aside-stat-sub">Courtroom statements, Privy Council appeals, and jail writings</div>
+            </div>
+            <div class="aside-stat-block">
+              <div class="aside-stat-label">Epistemic Standard</div>
+              <div class="aside-stat-value">5 Rigorous Layers</div>
+              <div class="aside-stat-sub">Corroborated Fact, Contemporary Record, Primary Writing, Thesis, Coerced Record</div>
+            </div>
+          </div>
+          <div>
+            <a href="distillations/bhagat-singh-a-life-in-revolution/index.html" class="btn btn-secondary" style="width: 100%;">View Reconstruction</a>
+          </div>
+        </aside>
+      </article>
+    </div>
   </section>
 
-  <!-- PAGINATION DECK -->
-  <div class="pagination-bar" id="paginationBar">
-    <div id="pageInfo">Showing Page 1 of 1</div>
-    <div class="page-btn-grp">
-      <button class="page-btn disabled" id="prevPageBtn" onclick="changePage(-1)">← Previous</button>
-      <button class="page-btn disabled" id="nextPageBtn" onclick="changePage(1)">Next →</button>
-    </div>
-  </div>
+  <!-- How It Works Section -->
+  <section class="method-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Architecture & Methodology</span>
+        <h2 class="section-title">HOW THE RECONSTRUCTIONS WORK</h2>
+        <p class="section-desc">A structured reading environment designed to replace the need for superficial summaries.</p>
+      </div>
 
-  <!-- SLIDE-OVER QUICK PREVIEW DRAWER -->
-  <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
-  <aside class="drawer-panel" id="previewDrawer">
-    <button class="drawer-close-btn" onclick="closeDrawer()" title="Close (Esc)">&times;</button>
-    <div style="margin-bottom: 12px;">
-      <span class="badge-tier" id="drawerTier">Tier 2: Applied</span>
-      <span class="badge-hours" id="drawerHours" style="margin-left: 8px;">7.5 hrs saved</span>
-    </div>
-    <h2 class="drawer-title" id="drawerTitle">Atomic Habits</h2>
-    <div class="drawer-subtitle" id="drawerSubtitle">An Easy & Proven Way to Build Good Habits</div>
-    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px;" id="drawerAuthorYear">James Clear (2018) • Avery</div>
-    
-    <div class="card-axiom" id="drawerAxiom">"You do not rise to the level of your goals. You fall to the level of your systems."</div>
+      <div class="method-grid">
+        <div class="method-card">
+          <div class="method-num">LAYER 01</div>
+          <h3 class="method-name">Source Journey</h3>
+          <p class="method-body">
+            Read the book in its original sequence, experiencing its arguments, episodes, or narrative revelations as the author constructed them. Preserves the original structural progression, emotional arcs, and deliberate pacing of the master text.
+          </p>
+        </div>
 
-    <div style="margin-bottom: 20px;">
-      <h4 style="font-size: 0.95rem; color: var(--accent-slate); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;">Foundational Mental Models:</h4>
-      <ul style="padding-left: 20px; font-size: 0.92rem;" id="drawerModels"></ul>
-    </div>
+        <div class="method-card">
+          <div class="method-num">LAYER 02</div>
+          <h3 class="method-name">Knowledge Map</h3>
+          <p class="method-body">
+            Explore the underlying concepts, arguments, and structures organized systematically independent of source order. Ideal for analytical exploration, conceptual comparison, and examining how individual ideas connect across chapters.
+          </p>
+        </div>
 
-    <div style="margin-bottom: 24px;">
-      <h4 style="font-size: 0.95rem; color: var(--accent-slate); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;">Vaulted Empirical Trials & Case Studies:</h4>
-      <ul style="padding-left: 20px; font-size: 0.92rem;" id="drawerStudies"></ul>
-    </div>
+        <div class="method-card">
+          <div class="method-num">LAYER 03</div>
+          <h3 class="method-name">Deep Reconstruction</h3>
+          <p class="method-body">
+            Genre-adapted deep investigation: in fiction, an experiential scene-level reconstruction with emotional causality; in nonfiction, actionable mental models with empirical studies; in history, an archival matrix of primary documents and forensic records.
+          </p>
+        </div>
+      </div>
 
-    <div style="margin-bottom: 24px;">
-      <h4 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;">Cross-Index Tags:</h4>
-      <div class="tags-row" id="drawerTags"></div>
+      <div class="method-colophon">
+        Every book in this library is independently reconstructed to preserve material depth, nuance, and evidence. Facts, arguments, hypotheses, and interpretations are never conflated, and zero content is ever fabricated.
+      </div>
     </div>
+  </section>
 
-    <div style="margin-top: auto; display: flex; gap: 10px;">
-      <a href="#" id="drawerLaunchBtn" class="btn-codex" style="flex: 2;">Launch Full 20-Chapter Codex &rarr;</a>
-      <a href="#" id="drawerMarkdownBtn" class="btn-preview" style="text-decoration: none; text-align: center;">Markdown</a>
+  <!-- Library Collection Section -->
+  <section class="library-section" id="collection">
+    <div class="container">
+      
+      <div class="library-toolbar">
+        <div>
+          <h2 class="serif-font" style="font-size: 1.85rem; margin-bottom: 4px;">The Library Collection</h2>
+          <p class="catalog-count" id="catalogSummary">10 Complete Reconstructions &bull; 3 Certified Canonical Benchmarks</p>
+        </div>
+        <div class="catalog-search-wrap">
+          <input type="search" id="catalogSearch" class="catalog-search" placeholder="Filter by title, author, or keyword..." aria-label="Filter collection">
+        </div>
+      </div>
+
+      <!-- Genre 1: Literary Fiction -->
+      <div class="genre-block" data-genre="fiction">
+        <div class="genre-heading-row">
+          <h3 class="genre-title">Literary Fiction</h3>
+          <span class="genre-desc">Experiential reconstructions preserving scene rhythm, character psychology, and narrative causality</span>
+        </div>
+
+        <div class="books-grid">
+          
+          <!-- Norwegian Wood -->
+          <article class="book-card is-certified" data-keywords="norwegian wood haruki murakami fiction grief trauma tokyo naoko toru渡辺 midori certified">
+            <div>
+              <div class="book-card-meta">
+                <span class="cert-badge">★ Certified Benchmark</span>
+                <span class="book-scope-badge">36 Scenes</span>
+              </div>
+              <h4 class="book-title">Norwegian Wood</h4>
+              <div class="book-author">Haruki Murakami (1987)</div>
+              <p class="book-synopsis">
+                A forensic autopsy of grief, memory, and suicide contagion in late-1960s Tokyo. Reconstructed scene-by-scene with emotional causality, sensory texture, and atmospheric nuance fully intact without arbitrary plot compression.
+              </p>
+              <div class="book-trust-note">
+                Certified Reconstruction: Independently validated across 36 chronological scenes with complete emotional and thematic fidelity.
+              </div>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">3 Reading Views</span>
+              <a href="distillations/norwegian-wood/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+          <!-- It Ends with Us -->
+          <article class="book-card" data-keywords="it ends with us colleen hoover trauma domestic abuse cycle coercive control narrative">
+            <div>
+              <div class="book-card-meta">
+                <span class="archival-badge">Archival Distillation</span>
+                <span class="book-scope-badge">35 Chapters</span>
+              </div>
+              <h4 class="book-title">It Ends with Us</h4>
+              <div class="book-author">Colleen Hoover (2016)</div>
+              <p class="book-synopsis">
+                A narrative deconstruction of intimate partner violence, cognitive dissonance, and trauma bonding. Analyzes the psychological mechanics of coercive control and the structural friction required for intergenerational cycle disruption.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">Archival Reader</span>
+              <a href="distillations/it-ends-with-us/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Genre 2: Applied Nonfiction & Ideas -->
+      <div class="genre-block" data-genre="nonfiction">
+        <div class="genre-heading-row">
+          <h3 class="genre-title">Applied Nonfiction & Ideas</h3>
+          <span class="genre-desc">Systematic deconstructions of behavioral psychology, finance, power dynamics, and systems thinking</span>
+        </div>
+
+        <div class="books-grid">
+
+          <!-- The Psychology of Money -->
+          <article class="book-card is-certified" data-keywords="psychology of money morgan housel finance behavioral investing compounding certified">
+            <div>
+              <div class="book-card-meta">
+                <span class="cert-badge">★ Certified Benchmark</span>
+                <span class="book-scope-badge">24 Argument Units</span>
+              </div>
+              <h4 class="book-title">The Psychology of Money</h4>
+              <div class="book-author">Morgan Housel (2020)</div>
+              <p class="book-synopsis">
+                A foundational deconstruction demonstrating that doing well with money is not a science of mathematics or finance, but a soft skill of psychology and behavior control. Maps 19 landmark empirical studies and all core behavioral models.
+              </p>
+              <div class="book-trust-note">
+                Certified Reconstruction: Independently verified against all 24 source chapters with zero loss of empirical qualification.
+              </div>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">3 Reading Views</span>
+              <a href="distillations/the-psychology-of-money/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Atomic Habits -->
+          <article class="book-card" data-keywords="atomic habits james clear behavioral psychology systems compounding habits loops">
+            <div>
+              <div class="book-card-meta">
+                <span class="archival-badge">Archival Distillation</span>
+                <span class="book-scope-badge">20 Systems</span>
+              </div>
+              <h4 class="book-title">Atomic Habits</h4>
+              <div class="book-author">James Clear (2018)</div>
+              <p class="book-synopsis">
+                A comprehensive behavioral architecture analyzing habit formation through neurological dopamine loops, identity-level shifts, environment design, and reciprocal negative inversions.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">Archival Reader</span>
+              <a href="distillations/atomic-habits/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+          <!-- The 48 Laws of Power -->
+          <article class="book-card" data-keywords="48 laws of power robert greene strategy realpolitik history courtier influence">
+            <div>
+              <div class="book-card-meta">
+                <span class="archival-badge">Archival Distillation</span>
+                <span class="book-scope-badge">48 Treatises</span>
+              </div>
+              <h4 class="book-title">The 48 Laws of Power</h4>
+              <div class="book-author">Robert Greene (2000)</div>
+              <p class="book-synopsis">
+                A definitive manual of realpolitik, indirect strategy, and courtier dynamics drawn from three millennia of historical records across European, Chinese, and Middle Eastern statecraft.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">Archival Reader</span>
+              <a href="distillations/48-laws-of-power/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Rich Dad Poor Dad -->
+          <article class="book-card" data-keywords="rich dad poor dad robert kiyosaki cash flow assets liabilities financial mindset">
+            <div>
+              <div class="book-card-meta">
+                <span class="archival-badge">Archival Distillation</span>
+                <span class="book-scope-badge">9 Core Lessons</span>
+              </div>
+              <h4 class="book-title">Rich Dad Poor Dad</h4>
+              <div class="book-author">Robert T. Kiyosaki (2017)</div>
+              <p class="book-synopsis">
+                An applied financial mindset framework contrasting cash flow geometries, asset accumulation, corporate tax asymmetries, and the transition from earned income to business ownership.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">Archival Reader</span>
+              <a href="distillations/rich-dad-poor-dad/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Genre 3: History, Biography & Philosophy -->
+      <div class="genre-block" data-genre="history">
+        <div class="genre-heading-row">
+          <h3 class="genre-title">History, Biography & Philosophy</h3>
+          <span class="genre-desc">Forensic historical investigations, primary source archives, metaphysics, and operational tradecraft</span>
+        </div>
+
+        <div class="books-grid">
+
+          <!-- Bhagat Singh: A Life in Revolution -->
+          <article class="book-card is-certified" data-keywords="bhagat singh a life in revolution satvinder juss history biography lahore trials archives revolution certified">
+            <div>
+              <div class="book-card-meta">
+                <span class="cert-badge">★ Certified Benchmark</span>
+                <span class="book-scope-badge">78 Units &bull; 21 Exhibits</span>
+              </div>
+              <h4 class="book-title">Bhagat Singh: A Life in Revolution</h4>
+              <div class="book-author">Satvinder S. Juss (2022)</div>
+              <p class="book-synopsis">
+                An exhaustive legal and biographical reconstruction based on unsealed Punjab Archives records, documenting the Lahore conspiracy trials, prison hunger strikes, and secular socialist political philosophy.
+              </p>
+              <div class="book-trust-note">
+                Certified Reconstruction: Independently validated across all 78 units, 21 archival exhibits, and 5 epistemic classifications.
+              </div>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">3 Reading Views</span>
+              <a href="distillations/bhagat-singh-a-life-in-revolution/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Autobiography of a Yogi -->
+          <article class="book-card" data-keywords="autobiography of a yogi paramahansa yogananda kriya yoga philosophy metaphysics mysticism">
+            <div>
+              <div class="book-card-meta">
+                <span class="archival-badge">Archival Distillation</span>
+                <span class="book-scope-badge">49 Chapters</span>
+              </div>
+              <h4 class="book-title">Autobiography of a Yogi</h4>
+              <div class="book-author">Paramahansa Yogananda (1946)</div>
+              <p class="book-synopsis">
+                A classical treatise on Kriya Yoga mechanics, subtle-body physiology, cosmic consciousness, and the reconciliation of classical Vedic metaphysics with modern relativistic physics.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">Archival Reader</span>
+              <a href="distillations/autobiography-of-a-yogi/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Open Source Intelligence Techniques -->
+          <article class="book-card" data-keywords="open source intelligence techniques osint michael bazzell tradecraft investigation digital forensics privacy">
+            <div>
+              <div class="book-card-meta">
+                <span class="archival-badge">Archival Distillation</span>
+                <span class="book-scope-badge">24 Modules</span>
+              </div>
+              <h4 class="book-title">Open Source Intelligence Techniques</h4>
+              <div class="book-author">Michael Bazzell (2018)</div>
+              <p class="book-synopsis">
+                A rigorous manual of operational digital tradecraft, detailing sock-puppet isolation, advanced Boolean dorking, identity namespace triangulation, and lawful evidence collection.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">Archival Reader</span>
+              <a href="distillations/open-source-intelligence-techniques/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Don't Bug Me -->
+          <article class="book-card" data-keywords="dont bug me ml shannon tscm surveillance eavesdropping wiretaps rf bugs security">
+            <div>
+              <div class="book-card-meta">
+                <span class="archival-badge">Archival Distillation</span>
+                <span class="book-scope-badge">10 Parts</span>
+              </div>
+              <h4 class="book-title">Don't Bug Me: High-Tech Spy Methods</h4>
+              <div class="book-author">M.L. Shannon (1992)</div>
+              <p class="book-synopsis">
+                A technical self-defense guide to electronic countersurveillance, examining RF modulation principles, non-linear junction detection physics, and physical tap impedance testing.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <span class="book-views-indicator">Archival Reader</span>
+              <a href="distillations/dont-bug-me/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
     </div>
-  </aside>
+  </section>
 
-  <footer>
-    <p>Intellectualist Distillation Engine • 500-Book Scalable Library Architecture</p>
-    <p style="font-size: 0.8rem; margin-top: 6px;">Drop any <span class="code-tag">.pdf</span>, <span class="code-tag">.epub</span>, <span class="code-tag">.mobi</span>, or <span class="code-tag">.md</span> book into <span class="code-tag">src/books/</span> to automatically generate and register another replacement codex.</p>
+  <!-- Cross-Book Knowledge Section -->
+  <section class="crossbook-section">
+    <div class="container">
+      <div class="crossbook-card">
+        <div>
+          <span class="crossbook-kicker">Multi-Book Synthesis Engine</span>
+          <h2 class="crossbook-title">CROSS-BOOK SYNTHESIS</h2>
+          <p class="crossbook-desc">
+            Explore how concepts, arguments, and historical realities connect across independently reconstructed books.
+            The cross-book synthesis engine normalizes shared conceptual nodes while strictly preserving original epistemic boundaries and source provenance.
+          </p>
+          <ul class="crossbook-features">
+            <li class="crossbook-feature-item">
+              <span class="crossbook-feature-bullet">&bull;</span>
+              <div><strong>Canonical Concept Registry:</strong> Standardized multi-domain concepts across literary fiction, behavioral economics, and political history.</div>
+            </li>
+            <li class="crossbook-feature-item">
+              <span class="crossbook-feature-bullet">&bull;</span>
+              <div><strong>Epistemic Separation:</strong> Strictly distinguishes corroborated facts from author arguments and subject positions across sources.</div>
+            </li>
+            <li class="crossbook-feature-item">
+              <span class="crossbook-feature-bullet">&bull;</span>
+              <div><strong>Complete Source Provenance:</strong> Every synthesis claim traces directly back to underlying atomic knowledge units in certified Book Masters.</div>
+            </li>
+          </ul>
+          <div>
+            <a href="cross-book/index.html" class="btn btn-primary">Explore Cross-Book Knowledge &rarr;</a>
+          </div>
+        </div>
+
+        <div class="crossbook-interactive-preview">
+          <div class="preview-header">Active Synthesized Concepts</div>
+          
+          <div class="preview-concept-row">
+            <div class="preview-concept-name">Self-Sacrifice & Ideological Commitment</div>
+            <div class="preview-concept-sources">
+              <span class="source-tag">Bhagat Singh: A Life in Revolution</span>
+              <span class="source-tag">Norwegian Wood</span>
+            </div>
+          </div>
+
+          <div class="preview-concept-row">
+            <div class="preview-concept-name">Rationality vs. Emotional Discipline</div>
+            <div class="preview-concept-sources">
+              <span class="source-tag">The Psychology of Money</span>
+              <span class="source-tag">Atomic Habits</span>
+            </div>
+          </div>
+
+          <div class="preview-concept-row">
+            <div class="preview-concept-name">Strategic Concealment & Asymmetric Power</div>
+            <div class="preview-concept-sources">
+              <span class="source-tag">The 48 Laws of Power</span>
+              <span class="source-tag">Bhagat Singh: A Life in Revolution</span>
+            </div>
+          </div>
+
+          <div class="preview-concept-row">
+            <div class="preview-concept-name">Trauma Integration & Psychological Boundaries</div>
+            <div class="preview-concept-sources">
+              <span class="source-tag">Norwegian Wood</span>
+              <span class="source-tag">It Ends with Us</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scholarly Colophon & Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 class="footer-col-title">The Intellectualist Project</h4>
+          <p class="footer-prose">
+            The Intellectualist is an independent research initiative dedicated to the deep reconstruction of books as canonical, structured knowledge representations.
+            We operate on the principle that genuine understanding requires preserving context, causal links, and original evidentiary nuance.
+            <strong>Zero content is ever fabricated, omitted arbitrarily, or compressed superficially.</strong>
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Core Principles</h4>
+          <ul class="footer-links">
+            <li><a href="#how-it-works">Source-Faithful Reconstruction</a></li>
+            <li><a href="#how-it-works">Canonical Structured Data</a></li>
+            <li><a href="#how-it-works">Epistemic Demarcation</a></li>
+            <li><a href="#how-it-works">Independent Forensic Validation</a></li>
+            <li><a href="cross-book/index.html">Cross-Book Synthesis</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#collection">Library Catalogue</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="cross-book/index.html">Cross-Book Directory</a></li>
+            <li><a href="https://github.com/vishalreads/books" target="_blank" rel="noopener">GitHub Repository</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Book Knowledge Reconstruction System (BKRS v1.0) &bull; Static High-Performance Deployment</div>
+        <div>All original authorial rights reserved by original copyright holders. Reconstructions for scholarly analysis.</div>
+      </div>
+    </div>
   </footer>
 
-</div>
+  <!-- Lightweight Search Filter Script -->
+  <script>
+    (function() {
+      const searchInput = document.getElementById('catalogSearch');
+      const bookCards = document.querySelectorAll('.book-card');
+      const genreBlocks = document.querySelectorAll('.genre-block');
 
-<script>
-  // CANONICAL INLINE DATABASE (Auto-synced with docs/library-index.json)
-  const libraryData = {
-  "last_updated": "2026-09-25",
-  "total_books": 10,
-  "total_hours_saved": 266.5,
-  "categories": [
-    "Behavioral Psychology & Habit Architecture",
-    "Realpolitik, Strategy & Courtier Dynamics",
-    "Applied Financial Mindset & Cash Flow Architecture",
-    "Cognitive Science & Decision Making",
-    "Systems Thinking & Complex Systems",
-    "Philosophy & Classical Ethics",
-    "Trauma Dynamics, IPV & Narrative Psychology",
-    "Linguistics, German Language & CEFR Mastery",
-    "Classical Mystical Philosophy & Yogic Metaphysics",
-    "Security, Cryptography, Privacy & Tradecraft"
-  ],
-  "books": [
-    {
-      "id": "german-mastery-codex",
-      "title": "Der Weg zum Meister (The German Mastery Codex)",
-      "subtitle": "A Zero-to-Fluency A1–C1 Pedagogical Blueprint & Institute-Grade PDF Textbook Series",
-      "author": "Intellectualist Codex Series",
-      "year": 2026,
-      "publisher": "Intellectualist Press / CEFR Standards",
-      "epistemic_tier": "Tier 1: Comprehensive Linguistic Architecture",
-      "tier_short": "Tier 1",
-      "category": "Linguistics, German Language & CEFR Mastery",
-      "original_volume": "5 Volumes (56 Modules, Active Recall Drills, Goethe/TestDaF Exams)",
-      "reading_time_saved": "180.0 hrs saved",
-      "hours_val": 180,
-      "core_axiom": "German is not mastered through arbitrary memorization, but through understanding its underlying mechanical syntax engine.",
-      "tags": [
-        "German Language",
-        "CEFR A1-C1",
-        "Goethe-Zertifikat",
-        "TestDaF",
-        "Grammar Mechanics",
-        "Active Recall"
-      ],
-      "key_models": [
-        "The V2 Word Order & Verbal Bracket (Satzklammer)",
-        "The Suffix Gender Prediction Law (-ung, -heit, -keit, -ling)",
-        "The Universal Adjective Declension Flowchart",
-        "The Positional Verb Matrix (stellen/stehen, legen/liegen)",
-        "The Two-Way Preposition Decision Engine (Wohin vs. Wo)",
-        "The Nominalstil Transformation Algorithm (Scientific German)"
-      ],
-      "landmark_studies": [
-        "CEFR Common European Framework of Reference (Council of Europe)",
-        "Goethe-Institut Start Deutsch 1 & Zertifikat B1 Syllabi",
-        "telc Deutsch B2 Prüfungshandbuch",
-        "TestDaF Institut Academic Language Matrix (TDN 3-5)"
-      ],
-      "html_path": "distillations/german-mastery-codex/der-weg-zum-meister.html",
-      "markdown_path": "distillations/german-mastery-codex/master-notes.md",
-      "featured": true
-    },
-    {
-      "id": "atomic-habits",
-      "title": "Atomic Habits",
-      "subtitle": "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
-      "author": "James Clear",
-      "year": 2018,
-      "publisher": "Avery / Penguin Random House",
-      "epistemic_tier": "Tier 2: Applied Behavioral System",
-      "tier_short": "Tier 2",
-      "category": "Behavioral Psychology & Habit Architecture",
-      "original_volume": "461,247 characters (20 chapters)",
-      "reading_time_saved": "7.5 hrs saved",
-      "hours_val": 7.5,
-      "core_axiom": "You do not rise to the level of your goals. You fall to the level of your systems.",
-      "tags": [
-        "Compounding",
-        "Habits",
-        "Neurobiology",
-        "Dopamine",
-        "Systems Thinking"
-      ],
-      "key_models": [
-        "The 4-Stage Loop (Cue, Craving, Response, Reward)",
-        "Identity-Based Habits (Three Concentric Rings)",
-        "Dopamine Anticipation (Schultz Prediction Error)",
-        "The 4 Laws & Their Reciprocal Negative Inversions",
-        "The Plateau of Latent Potential (Ice Cube at 32°F)",
-        "The Two-Minute Rule & Implementation Intentions"
-      ],
-      "landmark_studies": [
-        "Thorndike's Cat Puzzle Box (1898)",
-        "Robins' Vietnam Heroin Study (1971)",
-        "Milne/Orbell British Exercise Trial (2001)",
-        "Thorndike's Cafeteria Choice Architecture (2012)"
-      ],
-      "html_path": "distillations/atomic-habits/index.html",
-      "markdown_path": "distillations/atomic-habits/master-notes.md",
-      "featured": false
-    },
-    {
-      "id": "48-laws-of-power",
-      "title": "The 48 Laws of Power",
-      "subtitle": "A Definitive Manual of Realpolitik, Deception, and Courtier Strategy",
-      "author": "Robert Greene (with Joost Elffers)",
-      "year": 2000,
-      "publisher": "Viking / Penguin Publishing Group",
-      "epistemic_tier": "Tier 2: Applied Strategic Psychology",
-      "tier_short": "Tier 2",
-      "category": "Realpolitik, Strategy & Courtier Dynamics",
-      "original_volume": "937 KB (48 complete laws & historical archives)",
-      "reading_time_saved": "12.0 hrs saved",
-      "hours_val": 12,
-      "core_axiom": "Any man who tries to be good all the time is bound to come to ruin among the great number who are not good.",
-      "tags": [
-        "Power",
-        "Strategy",
-        "Deception",
-        "History",
-        "Courtier Dynamics"
-      ],
-      "key_models": [
-        "The Courtier's Dilemma (Indirection over Force)",
-        "Law 1: Never Outshine the Master (Fouquet vs. Louis XIV)",
-        "Law 15: Crush Your Enemy Totally (Liu Bang vs. Xiang Yu)",
-        "Law 20: Do Not Commit to Anyone (Virgin Queen Doctrine)",
-        "Law 33: Discover Each Man's Thumbscrew (Vulnerability Auditing)",
-        "Law 48: Assume Formlessness (Supreme Adaptability)"
-      ],
-      "landmark_studies": [
-        "Fouquet & Vaux-le-Vicomte Spectacle (1661)",
-        "Galileo's Dedication to Cosimo II de' Medici (1610)",
-        "Talleyrand's Survival Across 5 Opposing Regimes (1789-1830)",
-        "Bismarck's Ems Dispatch & German Unification (1870)"
-      ],
-      "html_path": "distillations/48-laws-of-power/index.html",
-      "markdown_path": "distillations/48-laws-of-power/master-notes.md",
-      "featured": true
-    },
-    {
-      "id": "rich-dad-poor-dad",
-      "title": "Rich Dad Poor Dad",
-      "subtitle": "What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
-      "author": "Robert T. Kiyosaki (with Sharon L. Lechter)",
-      "year": 2017,
-      "publisher": "Plata Publishing / Warner Books",
-      "epistemic_tier": "Tier 3: Applied Financial Mindset",
-      "tier_short": "Tier 3",
-      "category": "Applied Financial Mindset & Cash Flow Architecture",
-      "original_volume": "195 Pages (9 Core Lessons & Quadrant Excerpt)",
-      "reading_time_saved": "6.0 hrs saved",
-      "hours_val": 6,
-      "core_axiom": "The poor and middle class work for money. The rich have money work for them.",
-      "tags": [
-        "Cash Flow",
-        "Assets vs Liabilities",
-        "Real Estate",
-        "Taxes",
-        "CASHFLOW Quadrant"
-      ],
-      "key_models": [
-        "The Definition of Wealth (Fuller Survivability Time)",
-        "Asset vs. Liability Cash Flow Geometry",
-        "The Corporate Tax Asymmetry (Pre-tax expense deductions)",
-        "The Four Pillars of Financial IQ (Accounting, Investing, Markets, Law)",
-        "The CASHFLOW Quadrant (E, S, B, I Systems)",
-        "The Bill vs. Ed Water Pipeline Parable"
-      ],
-      "landmark_studies": [
-        "The 1923 Edgewater Beach Tycoons Crash",
-        "The 1956 Comic Book Basement Library",
-        "The 1990s Phoenix Foreclosure Arbitrage Machine",
-        "Ray Kroc's McDonald's Real Estate Strategy"
-      ],
-      "html_path": "distillations/rich-dad-poor-dad/index.html",
-      "markdown_path": "distillations/rich-dad-poor-dad/master-notes.md",
-      "featured": false
-    },
-    {
-      "id": "it-ends-with-us",
-      "title": "It Ends with Us",
-      "subtitle": "A Forensic Deconstruction of Intimate Partner Violence, Cognitive Dissonance, and Cycle Disruption",
-      "author": "Colleen Hoover",
-      "year": 2016,
-      "publisher": "Atria Books / Simon & Schuster",
-      "epistemic_tier": "Tier 1/2: Clinical Trauma Dynamics in Narrative Transmutation",
-      "tier_short": "Tier 1/2",
-      "category": "Trauma Dynamics, IPV & Narrative Psychology",
-      "original_volume": "384 Pages (35 Chapters, Epilogue, Author's Note)",
-      "reading_time_saved": "8.0 hrs saved",
-      "hours_val": 8,
-      "core_axiom": "It stops here. With me and you. It ends with us.",
-      "tags": [
-        "Trauma Bonding",
-        "Domestic Violence",
-        "Cycle of Abuse",
-        "Intergenerational Trauma",
-        "Cognitive Dissonance",
-        "Coercive Control"
-      ],
-      "key_models": [
-        "Walker's Cycle of Violence (Tension, Battering, Contrition)",
-        "Dutton & Painter's Traumatic Bonding (Intermittent Reinforcement)",
-        "The Sunk Cost of Empathy (Weaponized Childhood Tragedy)",
-        "The Gradual Heat Fallacy (Boiling Frog Boundary Erosion)",
-        "The Delivery Room Decoupling Heuristic (Future Generation Test)",
-        "The Dual-Identity Split (The Healer vs. The Batterer)"
-      ],
-      "landmark_studies": [
-        "Lenore E. Walker's Cycle of Violence & BWS (1979)",
-        "Dutton & Painter's Traumatic Bonding Theory (1981, 1993)",
-        "Evan Stark's Theory of Coercive Control (2007)",
-        "Widom's Longitudinal Cycle of Violence Study (1989)",
-        "Campbell's Femicide Lethality Assessment (2003)"
-      ],
-      "html_path": "distillations/it-ends-with-us/index.html",
-      "markdown_path": "distillations/it-ends-with-us/master-notes.md",
-      "featured": true
-    },
-    {
-      "id": "autobiography-of-a-yogi",
-      "title": "Autobiography of a Yogi",
-      "subtitle": "Paramahansa Yogananda's Definitive Treatise on Kriya Yoga, Lifetronic Physics, and Cosmic Consciousness",
-      "author": "Paramahansa Yogananda",
-      "year": 1946,
-      "publisher": "Philosophical Library / Self-Realization Fellowship",
-      "epistemic_tier": "Tier 1/2: Classical Mystical Philosophy, Yogic Science & Metaphysics",
-      "tier_short": "Tier 1/2",
-      "category": "Classical Mystical Philosophy & Yogic Metaphysics",
-      "original_volume": "~500 Pages (49 Chapters)",
-      "reading_time_saved": "14.0 hrs saved",
-      "hours_val": 14,
-      "core_axiom": "Kriya Yoga is an instrument through which human evolution can be mathematically accelerated.",
-      "tags": [
-        "Kriya Yoga",
-        "Pranayama",
-        "Lifetronic Physics",
-        "Maya",
-        "Samadhi",
-        "Cosmic Consciousness"
-      ],
-      "key_models": [
-        "The Spinal Decarbonization Engine (Kevala Kumbhaka)",
-        "The Mathematical Evolution Acceleration Formula (1 Kriya = 1 Solar Year)",
-        "Matter as Condensed Light (E = mc² & Lifetronic Atomic Manipulation)",
-        "The Threefold Nature of Man (Physical 16, Astral 19, Causal 35 Elements)",
-        "Sri Yukteswar's 24,000-Year Equinoctial Precession Yuga Cycle",
-        "Guru-Disciple Quantum Entanglement & Lineage Resonance"
-      ],
-      "landmark_studies": [
-        "Sir J.C. Bose's Plant Crescograph & Metal Fatigue Demonstrations (Calcutta)",
-        "Luther Burbank's Mind-Directed Botanical Mutations (Santa Rosa)",
-        "Therese Neumann's 35-Year Stigmatic Inedia Medical Surveillance (Bavaria)",
-        "Giri Bala's 56-Year Total Inedia Palace Quarantine (Murshidabad/Burdwan)",
-        "Sri Yukteswar's Equinoctial Precession Yuga Calculations (Serampore, 1894)"
-      ],
-      "html_path": "distillations/autobiography-of-a-yogi/index.html",
-      "markdown_path": "distillations/autobiography-of-a-yogi/master-notes.md",
-      "featured": true
-    },
-    {
-      "id": "norwegian-wood",
-      "title": "Norwegian Wood",
-      "subtitle": "A Forensic Autopsy of Grief, Suicide Contagion, and the Integration of Death into Life",
-      "author": "Haruki Murakami",
-      "year": 1987,
-      "publisher": "Kodansha / Vintage International (Jay Rubin Translation)",
-      "epistemic_tier": "Tier 1/2: Elegiac Existential Realism & Forensic Trauma",
-      "tier_short": "Tier 1/2",
-      "category": "Trauma Dynamics, IPV & Narrative Psychology",
-      "original_volume": "3,630 Paragraphs (11 Chapters)",
-      "reading_time_saved": "10.5 hrs saved",
-      "hours_val": 10.5,
-      "core_axiom": "Death exists, not as the opposite but as a part of life. By living our lives, we nurture death.",
-      "tags": [
-        "Grief",
-        "Suicide Contagion",
-        "Trauma",
-        "Thanatos vs Eros",
-        "Ami Hostel",
-        "Elegiac Realism"
-      ],
-      "key_models": [
-        "The Integration of Death Axiom (Compressed Node inside Life)",
-        "The Dichotomy of the Two Women: Thanatos (Naoko) vs Eros (Midori)",
-        "The Phantom Meadow Well (Latent Clinical Madness)",
-        "The Strawberry Shortcake Heuristic for Unconditional Acceptance",
-        "The Werther Effect in Adolescent Triads",
-        "The Kichijoji Requiem Wake (51 Guitar Songs as Secular Exorcism)"
-      ],
-      "landmark_studies": [
-        "David Phillips' Werther Effect / Suicide Contagion Epidemiology (1974)",
-        "ICD-11 / Prigerson Prolonged Grief Disorder Criteria",
-        "Functional Neurological Disorder / Psychogenic Conversion Paralysis (Reiko)",
-        "Thomas Mann's Sanatorium Inversion Dynamics (The Magic Mountain / Ami Hostel)"
-      ],
-      "html_path": "distillations/norwegian-wood/index.html",
-      "markdown_path": "distillations/norwegian-wood/master-notes.md",
-      "featured": true,
-      "is_certified_bkrs": true,
-      "bkrs_genre": "literary_fiction"
-    },
-    {
-      "id": "the-psychology-of-money",
-      "title": "The Psychology of Money",
-      "subtitle": "Timeless Lessons on Wealth, Greed, and Happiness",
-      "author": "Morgan Housel",
-      "year": 2020,
-      "publisher": "Harriman House",
-      "epistemic_tier": "Tier 2: Behavioral Finance & Applied Economic Psychology",
-      "tier_short": "Tier 2",
-      "category": "Applied Financial Mindset & Cash Flow Architecture",
-      "original_volume": "242 Pages (20 Chapters + Introduction & Postscript)",
-      "reading_time_saved": "6.5 hrs saved",
-      "hours_val": 6.5,
-      "core_axiom": "Doing well with money is not a science of mathematics or finance; it is a soft skill of psychology and behavior control.",
-      "tags": [
-        "Behavioral Finance",
-        "Compounding",
-        "Frugality",
-        "Margin of Safety",
-        "Psychology",
-        "Wealth"
-      ],
-      "key_models": [
-        "The Wealth Asymmetry (Getting Wealthy vs. Staying Wealthy)",
-        "Wealth is What You Don't See (Hidden Options vs. Conspicuous Display)",
-        "The Man in the Car Paradox (Admiration vs. Object Fetishization)",
-        "Reasonable > Rational (Psychological Durability over Mathematical Perfection)",
-        "Tails Rule Everything (Fat-Tail Distributions in Returns)",
-        "The End of History Illusion (Underestimating Future Personal Change)"
-      ],
-      "landmark_studies": [
-        "Ulrike Malmendier & Stefan Nagel Generational Risk Tolerance NBER Study (2011)",
-        "Angus Campbell University of Michigan Sense of Well-Being Survey (1981)",
-        "Jordi Quoidbach & Daniel Gilbert End of History Illusion (Science, 2013)",
-        "Russell 3000 Index 34-Year Tail-Return Deconstruction (J.P. Morgan, 2014)"
-      ],
-      "html_path": "distillations/the-psychology-of-money/index.html",
-      "markdown_path": "distillations/the-psychology-of-money/master-notes.md",
-      "featured": true,
-      "is_certified_bkrs": true,
-      "bkrs_genre": "analytical_nonfiction"
-    },
-    {
-      "id": "bhagat-singh-a-life-in-revolution",
-      "title": "Bhagat Singh: A Life in Revolution",
-      "subtitle": "A Forensic Archival and Judicial Re-examination of Revolutionary Praxis, Colonial Legality, and Socialist Political Thought",
-      "author": "Satvinder S. Juss",
-      "year": 2020,
-      "publisher": "Penguin Random House India",
-      "epistemic_tier": "Tier 1: Archival History, Judicial Forensics & Political Biography",
-      "tier_short": "Tier 1",
-      "category": "Historical Biography & Political Economy",
-      "original_volume": "384 Pages (78 Canonical Units)",
-      "reading_time_saved": "18.5 hrs saved",
-      "hours_val": 18.5,
-      "core_axiom": "Revolution did not mean mere violence or assassination; it meant an uncompromising, scientifically analyzed reconstruction of society on socialist principles.",
-      "tags": [
-        "Bhagat Singh",
-        "Colonial Law",
-        "Revolutionary Socialism",
-        "Trial Forensics",
-        "Saunders Case",
-        "Assembly Bomb",
-        "Historical Biography"
-      ],
-      "key_models": [
-        "The Dual-Timeline Historical Framework (Event Time vs. Record Revelation Time)",
-        "Epistemic Quarantine of Coerced Police Testimony",
-        "Propaganda of the Deed as Forensic Legal Defense",
-        "Scientific Socialism vs. Terrorism (The Philosophy of the Bomb Shift)",
-        "The Lahore Conspiracy Case Ordinance III Judicial Bypass",
-        "The Hunger Strike as Institutional and Moral Battlefield"
-      ],
-      "landmark_studies": [
-        "National Archives of India (Home Political Files & Special Tribunal Exhibits)",
-        "Punjab State Archives (Lahore Conspiracy Case Transcripts 1929-1930)",
-        "Saunders Murder Case First Information Report (FIR 121, Anarkali Police Station)",
-        "Bhagat Singh's Prison Notebook & Jail Petitions (1929-1931)"
-      ],
-      "html_path": "distillations/bhagat-singh-a-life-in-revolution/index.html",
-      "markdown_path": "distillations/bhagat-singh-a-life-in-revolution/master-notes.md",
-      "featured": true,
-      "is_certified_bkrs": true,
-      "bkrs_genre": "historical_biography"
-    },
-    {
-      "id": "open-source-intelligence-techniques",
-      "title": "Open Source Intelligence Techniques",
-      "subtitle": "Resources for Searching and Analyzing Online Information (6th Edition)",
-      "author": "Michael Bazzell",
-      "year": 2018,
-      "publisher": "CreateSpace / IntelTechniques",
-      "epistemic_tier": "Tier 1: Operational Tradecraft & Digital Forensics",
-      "tier_short": "Tier 1",
-      "category": "Security, Cryptography, Privacy & Tradecraft",
-      "original_volume": "480 Pages (24 Chapters)",
-      "reading_time_saved": "16.0 hrs saved",
-      "hours_val": 16,
-      "core_axiom": "95% of actionable intelligence value derives from the disciplined, lawful exploitation of public digital exhaust across fragmented namespaces without alerting the target.",
-      "tags": [
-        "OSINT",
-        "Digital Forensics",
-        "Investigation",
-        "Dorking",
-        "OPSEC",
-        "Social Engineering",
-        "Privacy"
-      ],
-      "key_models": [
-        "The Multi-Vector Identity Resolution & Triangulation Doctrine",
-        "The Sock Puppet Isolation & Demographic Genesis Architecture",
-        "The Advanced Boolean Dorking Matrix (site:, intitle:, inurl:, filetype:)",
-        "The WebRTC & Network Leak Containment Model",
-        "The Mobile Contact Synchronization Exploitation Engine",
-        "The Multi-Tier Investigative Pivot Flowchart (Email, Username, Phone, Domain)"
-      ],
-      "landmark_studies": [
-        "Smith v. Maryland / Carpenter v. United States Third-Party Doctrine",
-        "Computer Fraud and Abuse Act (18 U.S.C. § 1030) Access Boundaries",
-        "Electronic Communications Privacy Act (18 U.S.C. § 2510) Standards",
-        "Buscador Linux Investigative Forensic Architecture (Bazzell & Westcott, 2018)"
-      ],
-      "html_path": "distillations/open-source-intelligence-techniques/index.html",
-      "markdown_path": "distillations/open-source-intelligence-techniques/master-notes.md",
-      "featured": true
-    },
-    {
-      "id": "dont-bug-me",
-      "title": "Don't Bug Me: The Latest High-Tech Spy Methods",
-      "subtitle": "A Manual for Self-Defense Against Eavesdroppers & Technical Surveillance Countermeasures (TSCM)",
-      "author": "M.L. Shannon",
-      "year": 1992,
-      "publisher": "Paladin Press",
-      "epistemic_tier": "Tier 1: Physical TSCM & Electronic Countersurveillance",
-      "tier_short": "Tier 1",
-      "category": "Security, Cryptography, Privacy & Tradecraft",
-      "original_volume": "150 Pages (10 Parts + 10 Appendices)",
-      "reading_time_saved": "6.0 hrs saved",
-      "hours_val": 6,
-      "core_axiom": "Surveillance is constrained by immutable physical laws; every transmitter radiates energy, every semiconductor harmonic reflects RF, and every physical tap alters line impedance.",
-      "tags": [
-        "TSCM",
-        "Countersurveillance",
-        "Wiretaps",
-        "RF Bugs",
-        "NLJD",
-        "Physical Security",
-        "TEMPEST"
-      ],
-      "key_models": [
-        "The Acoustic Transducer to Modulation Pipeline",
-        "The Non-Linear Junction Detector Harmonic Principle (2nd vs 3rd Harmonic)",
-        "Series vs. Parallel Wiretap Electrical Displacement (Voltage/Resistance Mismatch)",
-        "The Infinity Transmitter Acoustic Seizure Architecture",
-        "The Time-Domain Reflectometry (TDR) Pulse Echo Mapping Engine",
-        "The Systematic 3-Level Physical & RF Sweep Protocol"
-      ],
-      "landmark_studies": [
-        "Wim van Eck Electromagnetic Radiation from Video Display Units (Computers & Security, 1985)",
-        "Bell System Technical Journal: Analog POTS Loop Electrical Standards",
-        "U.S. Department of Defense TEMPEST / NACSIM 5100A Standards",
-        "Principles of Non-Linear Junction Detection in Semiconductor Physics"
-      ],
-      "html_path": "distillations/dont-bug-me/index.html",
-      "markdown_path": "distillations/dont-bug-me/master-notes.md",
-      "featured": true
-    }
-  ]
-};
+      if (!searchInput) return;
 
-  // State Management
-  let currentView = 'grid'; // 'grid' | 'table'
-  let activeTier = 'all';
-  let onlyBookmarks = false;
-  let bookmarks = JSON.parse(localStorage.getItem('intellectualist_bookmarks') || '[]');
-  let filteredList = [];
-  let currentPage = 1;
-  const pageSize = 12;
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
 
-  function updateBookmarkCount() {
-    document.getElementById('bookmarkCount').textContent = bookmarks.length;
-  }
+        bookCards.forEach(card => {
+          const keywords = card.getAttribute('data-keywords') || '';
+          const title = card.querySelector('.book-title')?.textContent.toLowerCase() || '';
+          const author = card.querySelector('.book-author')?.textContent.toLowerCase() || '';
+          const synopsis = card.querySelector('.book-synopsis')?.textContent.toLowerCase() || '';
 
-  function toggleBookmark(id, event) {
-    if (event) event.stopPropagation();
-    if (bookmarks.includes(id)) {
-      bookmarks = bookmarks.filter(b => b !== id);
-    } else {
-      bookmarks.push(id);
-    }
-    localStorage.setItem('intellectualist_bookmarks', JSON.stringify(bookmarks));
-    updateBookmarkCount();
-    applyFilters();
-  }
+          const matches = !query || 
+            keywords.includes(query) || 
+            title.includes(query) || 
+            author.includes(query) || 
+            synopsis.includes(query);
 
-  function toggleBookmarkFilter(btn) {
-    onlyBookmarks = !onlyBookmarks;
-    btn.classList.toggle('active', onlyBookmarks);
-    applyFilters();
-  }
+          card.style.display = matches ? 'flex' : 'none';
+        });
 
-  function filterTier(tier, btn) {
-    activeTier = tier;
-    document.querySelectorAll('.filter-pills .pill-btn:not(.bookmark-pill)').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    applyFilters();
-  }
-
-  function setTagSearch(tag) {
-    document.getElementById('searchInput').value = tag;
-    applyFilters();
-  }
-
-  function switchView(view) {
-    currentView = view;
-    document.getElementById('viewGridBtn').classList.toggle('active', view === 'grid');
-    document.getElementById('viewTableBtn').classList.toggle('active', view === 'table');
-    document.getElementById('catalogGrid').style.display = view === 'grid' ? 'grid' : 'none';
-    document.getElementById('ledgerView').style.display = view === 'table' ? 'block' : 'none';
-    renderCurrentPage();
-  }
-
-  function applyFilters() {
-    const search = document.getElementById('searchInput').value.toLowerCase();
-    const cat = document.getElementById('categorySelect').value;
-    const sort = document.getElementById('sortSelect').value;
-
-    filteredList = libraryData.books.filter(b => {
-      const matchTier = activeTier === 'all' || 
-        (activeTier === 'certified' ? (b.is_certified_bkrs === true) : b.epistemic_tier.includes(activeTier));
-      const matchCat = cat === 'all' || b.category === cat;
-      const matchBookmark = !onlyBookmarks || bookmarks.includes(b.id);
-      const matchSearch = !search ||
-        b.title.toLowerCase().includes(search) ||
-        b.author.toLowerCase().includes(search) ||
-        b.core_axiom.toLowerCase().includes(search) ||
-        b.tags.some(t => t.toLowerCase().includes(search)) ||
-        b.key_models.some(m => m.toLowerCase().includes(search)) ||
-        b.landmark_studies.some(s => s.toLowerCase().includes(search));
-      return matchTier && matchCat && matchBookmark && matchSearch;
-    });
-
-    // Sort
-    if (sort === 'title') {
-      filteredList.sort((a,b) => a.title.localeCompare(b.title));
-    } else if (sort === 'author') {
-      filteredList.sort((a,b) => a.author.localeCompare(b.author));
-    } else if (sort === 'hours') {
-      filteredList.sort((a,b) => b.hours_val - a.hours_val);
-    } else if (sort === 'year') {
-      filteredList.sort((a,b) => b.year - a.year);
-    }
-
-    currentPage = 1;
-    renderCurrentPage();
-  }
-
-  function renderCurrentPage() {
-    document.getElementById('resultCountLabel').textContent = `Showing ${filteredList.length} of ${libraryData.books.length} codices`;
-    const statBooks = document.getElementById('statBooks');
-    if (statBooks) statBooks.textContent = libraryData.books.length;
-
-    if (currentView === 'grid') {
-      renderGrid();
-    } else {
-      renderTable();
-    }
-  }
-
-  function renderGrid() {
-    const grid = document.getElementById('catalogGrid');
-    grid.innerHTML = '';
-
-    if (filteredList.length === 0) {
-      grid.innerHTML = `
-        <div style="grid-column: 1 / -1; background: #fff; padding: 40px; text-align: center; border: 1px solid var(--border-light);">
-          <p style="font-size: 1.1rem; color: var(--text-muted);">No codices found matching your query. Adjust your filter or search terms.</p>
-        </div>
-      `;
-      return;
-    }
-
-    filteredList.forEach(book => {
-      const isBookmarked = bookmarks.includes(book.id);
-      const isCertified = book.is_certified_bkrs === true;
-      const card = document.createElement('article');
-      card.className = 'codex-card';
-      if (isCertified) {
-        card.style.borderTop = '4px solid var(--accent-crimson)';
-      }
-      card.innerHTML = `
-        <div>
-          <div class="card-meta-bar" style="align-items: flex-start; gap: 8px;">
-            <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-              <span class="badge-tier">${book.epistemic_tier}</span>
-              ${isCertified ? '<span class="badge" style="background: #eaf1e7; color: #1b4d24; border: 1px solid #c3d9bc; font-size: 0.68rem; font-weight: 800; padding: 2px 6px; border-radius: 3px;">★ CERTIFIED BKRS</span>' : ''}
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span class="badge-hours">${book.reading_time_saved}</span>
-              <button class="star-bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" onclick="toggleBookmark('${book.id}', event)" title="Bookmark this codex">★</button>
-            </div>
-          </div>
-          <h2 class="card-title">${book.title}</h2>
-          <div class="card-subtitle">${book.subtitle}</div>
-          <div class="card-author-line">
-            <strong>${book.author}</strong> (${book.year}) • ${book.publisher}
-          </div>
-          <div class="card-axiom">"${book.core_axiom}"</div>
-          <div class="tags-row">
-            ${book.tags.map(t => `<span class="tag-badge" onclick="setTagSearch('${t}')">#${t}</span>`).join('')}
-          </div>
-        </div>
-        <div class="card-btn-deck">
-          <a href="${book.html_path}" class="btn-codex" style="${isCertified ? 'background: var(--accent-crimson);' : ''}">${isCertified ? 'Open 3-View Master Codex' : 'Open Master Codex'}</a>
-          <button class="btn-preview" onclick="openDrawer('${book.id}')">Quick Preview</button>
-        </div>
-      `;
-      grid.appendChild(card);
-    });
-
-    // Drop card to expand
-    const drop = document.createElement('div');
-    drop.className = 'drop-card';
-    drop.innerHTML = `
-      <h3 style="font-size: 1.3rem; color: var(--accent-slate); margin-bottom: 8px;">+ Ingest Another Book</h3>
-      <p style="font-size: 0.88rem; color: var(--text-muted); max-width: 400px; margin: 0 auto 12px auto;">
-        Drop any <span class="code-tag">.pdf</span>, <span class="code-tag">.epub</span>, <span class="code-tag">.mobi</span>, or <span class="code-tag">.md</span> file into <span class="code-tag">src/books/</span> to generate and register another codex.
-      </p>
-    `;
-    grid.appendChild(drop);
-  }
-
-  function renderTable() {
-    const tbody = document.getElementById('ledgerTableBody');
-    tbody.innerHTML = '';
-
-    if (filteredList.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; padding: 30px; color: var(--text-muted);">No codices found.</td></tr>`;
-      return;
-    }
-
-    filteredList.forEach(book => {
-      const isBookmarked = bookmarks.includes(book.id);
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td>
-          <button class="star-bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" onclick="toggleBookmark('${book.id}', event)">★</button>
-        </td>
-        <td>
-          <strong style="color: var(--accent-crimson); cursor: pointer;" onclick="openDrawer('${book.id}')">${book.title}</strong>
-          ${book.is_certified_bkrs ? '<span class="badge" style="background: #eaf1e7; color: #1b4d24; border: 1px solid #c3d9bc; font-size: 0.62rem; font-weight: 800; padding: 1px 4px; border-radius: 2px; margin-left: 4px;">★ CERTIFIED BKRS</span>' : ''}
-          <div style="font-size: 0.78rem; color: var(--text-muted); font-style: italic;">${book.subtitle}</div>
-        </td>
-        <td>${book.author}</td>
-        <td>${book.year}</td>
-        <td><span class="badge-tier" style="font-size: 0.65rem;">${book.tier_short || 'Tier 2'}</span></td>
-        <td style="font-size: 0.8rem; color: var(--text-muted);">${book.category}</td>
-        <td><strong style="color: var(--accent-crimson);">${book.reading_time_saved}</strong></td>
-        <td style="text-align: right; white-space: nowrap;">
-          <a href="${book.html_path}" style="color: var(--accent-crimson); font-weight: 700; text-decoration: none; margin-right: 10px;">Codex</a>
-          <button onclick="openDrawer('${book.id}')" style="background: none; border: 1px solid var(--border-light); padding: 4px 8px; cursor: pointer; font-size: 0.75rem;">Preview</button>
-        </td>
-      `;
-      tbody.appendChild(tr);
-    });
-  }
-
-  // Quick-Preview Drawer Controls
-  function openDrawer(id) {
-    const book = libraryData.books.find(b => b.id === id);
-    if (!book) return;
-
-    document.getElementById('drawerTitle').textContent = book.title;
-    document.getElementById('drawerSubtitle').textContent = book.subtitle;
-    document.getElementById('drawerAuthorYear').textContent = `${book.author} (${book.year}) • ${book.publisher} • ${book.original_volume}`;
-    document.getElementById('drawerTier').textContent = book.epistemic_tier;
-    document.getElementById('drawerHours').textContent = book.reading_time_saved;
-    document.getElementById('drawerAxiom').textContent = `"${book.core_axiom}"`;
-
-    const modelsUl = document.getElementById('drawerModels');
-    modelsUl.innerHTML = book.key_models.map(m => `<li style="margin-bottom: 6px;"><strong>${m}</strong></li>`).join('');
-
-    const studiesUl = document.getElementById('drawerStudies');
-    studiesUl.innerHTML = book.landmark_studies.map(s => `<li style="margin-bottom: 6px;">${s}</li>`).join('');
-
-    const tagsDiv = document.getElementById('drawerTags');
-    tagsDiv.innerHTML = book.tags.map(t => `<span class="tag-badge" onclick="setTagSearch('${t}'); closeDrawer();">#${t}</span>`).join('');
-
-    document.getElementById('drawerLaunchBtn').href = book.html_path;
-    document.getElementById('drawerMarkdownBtn').href = book.markdown_path;
-
-    document.getElementById('drawerOverlay').classList.add('active');
-    document.getElementById('previewDrawer').classList.add('active');
-  }
-
-  function closeDrawer() {
-    document.getElementById('drawerOverlay').classList.remove('active');
-    document.getElementById('previewDrawer').classList.remove('active');
-  }
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeDrawer();
-  });
-
-  document.getElementById('searchInput').addEventListener('input', applyFilters);
-
-  // Initialize
-  updateBookmarkCount();
-  applyFilters();
-</script>
+        // Hide empty genre blocks if all their cards are hidden
+        genreBlocks.forEach(block => {
+          const visibleCards = block.querySelectorAll('.book-card[style*="display: flex"], .book-card:not([style*="display: none"])');
+          const hasVisible = Array.from(block.querySelectorAll('.book-card')).some(c => c.style.display !== 'none');
+          block.style.display = hasVisible ? 'block' : 'none';
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
