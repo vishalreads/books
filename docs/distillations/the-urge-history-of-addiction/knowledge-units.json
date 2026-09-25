@@ -1,0 +1,310 @@
+[
+  {
+    "id": "unit-01-the-personal-crucible-doctor-patient",
+    "unit_number": 1,
+    "title": "The Double Identity: The Physician as Addict & The Anatomy of the Urge",
+    "book_part": "Introduction & Part I: Behavior in Search of a Name",
+    "chapter": "Introduction & Chapter 1 (Part I)",
+    "key_figures": [
+      "Carl Erik Fisher, M.D.",
+      "Alcoholics Anonymous",
+      "Physician Health Program (PHP)"
+    ],
+    "historical_context": "Columbia University Medical Center & Bellevue Hospital, New York, late 2000s; modern psychiatric residency.",
+    "core_thesis": "Addiction is neither an exotic moral failing nor a simple mechanical brain defect; it is a universal, deeply human struggle situated on a continuum with normal desire, as revealed by a Columbia psychiatric resident who spiraled into alcoholism and stimulant addiction while training to treat it.",
+    "key_arguments": [
+      "Carl Erik Fisher, while training as a psychiatrist at Columbia, experienced severe dual addiction to alcohol and prescription Adderall, culminating in manic agitation, hospitalization in a locked psychiatric ward, and arrest.",
+      "The experience exposed the profound disconnect between the sterile, reductive medical models taught in medical school (dopamine receptor downregulation in the nucleus accumbens) and the lived, terrifying reality of the urge.",
+      "Medicine has oscillated for centuries between two polar reductions: the **Moral Model** (addiction as willful sin, selfishness, and spiritual deficiency) and the **Disease Model** (addiction as an involuntary, chronic, relapsing brain disease).",
+      "Both models fail: the moral model produces cruelty, stigma, and mass incarceration; the rigid brain disease model strips patients of agency, medicalizes complex social and existential pain, and ignores that recovery always requires personal meaning and social connection."
+    ],
+    "clinical_takeaways": "Addiction cannot be understood or treated as a purely biochemical glitch; it is an existential, psychological, and social crisis of the divided self.",
+    "verbatim_quote": "“I was a doctor in training at Columbia, learning to treat psychiatric illness, while in secret I was descending into the hell of alcohol and stimulant addiction... Addiction is not a defect confined to a small, broken subset of humanity. It is an amplification of the universal human struggle with desire, suffering, and the divided will.”",
+    "epistemic_status": "MEMOIR & CLINICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-02-foundations-before-addiction",
+    "unit_number": 2,
+    "title": "Before 'Addiction': Ancient Philosophy, Augustine, and the Divided Will",
+    "book_part": "Part I: Behavior in Search of a Name",
+    "chapter": "Chapter 1",
+    "key_figures": [
+      "Aristotle",
+      "Saint Augustine",
+      "The Buddha (Siddhartha Gautama)",
+      "Ancient Greeks"
+    ],
+    "historical_context": "Classical Antiquity and Early Christianity; 4th century BCE to 4th century CE.",
+    "core_thesis": "Long before modern medicine invented the category of 'chemical dependency', ancient traditions conceptualized addiction as *akrasia* (weakness of will) and *tanha* (thirst/craving), recognizing that the human will is inherently divided and prone to voluntary enslavement.",
+    "key_arguments": [
+      "The word 'addiction' derives from the Latin legal term *addicere*: to deliver someone over by court order into debt bondage or slavery; historically, to be 'addicted' meant to be devoted, bound, or attached to any master—including philosophy or religion.",
+      "Aristotle examined **akrasia** (incontinence / acting against one's better judgment): a person can intellectually know the good, yet be overpowered by appetite, acting in a state resembling sleep or intoxication.",
+      "Buddhism diagnosed **tanha** (craving/thirst) as the universal root of suffering (*dukkha*), noting that grasping after transient sensory pleasure creates a self-reinforcing cycle of dissatisfaction.",
+      "Saint Augustine in his *Confessions* provided the classical psychological description of compulsive habit: *'The enemy held my will in his power and from it he had made a chain and shackled me. For of a perverse will was lust made; and lust indulged became habit; and habit not resisted became necessity.'*"
+    ],
+    "clinical_takeaways": "Addiction is an ancient, fundamental vulnerability of human consciousness: repeated habit solidifies into compulsory necessity.",
+    "verbatim_quote": "“The Latin addicere meant to bind or surrender by law. For millennia, humanity understood addiction not as a disease of a molecule, but as a condition of servitude—where habit unresisted becomes necessity, and the will becomes a stranger to itself.”",
+    "epistemic_status": "HISTORICAL & PHILOSOPHICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-03-epidemics-distillation-and-rum",
+    "unit_number": 3,
+    "title": "Epidemics: Industrial Distillation, The Gin Craze, and Colonial Disruption",
+    "book_part": "Part I: Behavior in Search of a Name",
+    "chapter": "Chapter 2",
+    "key_figures": [
+      "William Hogarth (*Gin Lane*)",
+      "British Parliament",
+      "Native American Tribes",
+      "Colonial Rum Traders"
+    ],
+    "historical_context": "17th and 18th centuries; England and the Atlantic World; the advent of cheap distilled spirits.",
+    "core_thesis": "The emergence of modern severe addiction epidemics was not caused by human moral decay, but by the technological invention of industrial distillation, transforming mild fermented beverages (beer, wine) into concentrated, high-potency chemical commodities that overwhelmed human biology and social structures.",
+    "key_arguments": [
+      "For thousands of years, humans drank beer and wine with natural alcohol ceilings (under 12%); industrial distillation produced cheap, 40%+ spirits (gin, rum, whiskey).",
+      "The London 'Gin Craze' (1720–1750) saw per-capita gin consumption explode, resulting in widespread urban mortality, infant neglect, and social panic, immortalized in William Hogarth's harrowing engraving *Gin Lane*.",
+      "European colonial powers weaponized distilled rum and brandy against indigenous populations across the Americas, deliberately disrupting tribal governance and driving severe social collapse.",
+      "These epidemics proved that drug addiction is deeply ecological: when potency increases and social guardrails disappear, addiction spreads rapidly across vulnerable populations."
+    ],
+    "clinical_takeaways": "Technological innovations that dramatically increase drug potency and lower procurement costs will reliably trigger epidemic-level compulsive consumption.",
+    "verbatim_quote": "“Industrial distillation was the original high-potency drug technology. When cheap, concentrated gin flooded London, and rum flooded the colonies, humanity encountered chemical substances that overwhelmed millions of years of evolutionary defenses.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-04-a-disease-in-the-will-benjamin-rush",
+    "unit_number": 4,
+    "title": "A Disease of the Will: Benjamin Rush and the Birth of Medical Inebriety",
+    "book_part": "Part I: Behavior in Search of a Name",
+    "chapter": "Chapter 3",
+    "key_figures": [
+      "Dr. Benjamin Rush",
+      "Thomas Trotter",
+      "The Washingtonian Movement"
+    ],
+    "historical_context": "Philadelphia, 1784–1840; the Early American Republic.",
+    "core_thesis": "Dr. Benjamin Rush founded the modern disease concept of addiction by identifying habitual drunkenness not as a moral crime, but as a specific physical and mental disease: a 'palsy of the will' caused by chemical exposure.",
+    "key_arguments": [
+      "In his 1784 landmark treatise, *An Enquiry into the Effects of Ardent Spirits upon the Human Mind and Body*, Benjamin Rush (Founding Father and physician) revolutionized medicine by classifying chronic drunkenness as a discrete medical disease.",
+      "Rush argued that alcohol acts as a physical stimulus that first seduces the body and ultimately destroys the faculty of volition: *'A disease in the will.'*",
+      "Rush proposed compassionate, medicalized treatment: specialized 'Sober Houses' (the precursors of modern rehabilitation centers) rather than punitive jails or public whippings.",
+      "However, Rush's formulation contained an enduring paradox: if inebriety is a disease of the will, how can an individual use their diseased will to achieve recovery? This paradox would haunt addiction medicine for two centuries."
+    ],
+    "clinical_takeaways": "Classifying addiction as a disease historically rescued sufferers from the gallows and prison, but created the ongoing paradox of treating a broken volition with personal agency.",
+    "verbatim_quote": "“Benjamin Rush removed habitual drunkenness from the pulpit and placed it in the clinic. He called it a disease of the will—a brilliant, compassionate breakthrough that nonetheless left medicine with the riddle: how can a sick will cure itself?”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-05-possession-and-temperance-crusade",
+    "unit_number": 5,
+    "title": "Possession & The Temperance Crusade: Moral Totalitarianism and Inebriate Asylums",
+    "book_part": "Part II: The Age of Intemperance",
+    "chapter": "Chapter 4",
+    "key_figures": [
+      "Lyman Beecher",
+      "Carrie Nation",
+      "The Washingtonians",
+      "New York State Inebriate Asylum (Binghamton)"
+    ],
+    "historical_context": "1830–1890; Antebellum America and the Gilded Age.",
+    "core_thesis": "The American Temperance Movement shifted from an initial grassroots peer-support model (the Washingtonians) into a punitive, religious crusade that demanded total prohibition and built coercive inebriate asylums.",
+    "key_arguments": [
+      "The Washingtonian Movement (1840) was the first mass peer-recovery fellowship: six working-class alcoholics in Baltimore began sharing their stories and supporting each other in total sobriety, helping tens of thousands without dogma.",
+      "However, evangelical clergy like Lyman Beecher co-opted temperance, transforming it into a moralistic political crusade that demonized alcohol as 'Demon Rum' and demanded legislative coercion.",
+      "In the mid-19th century, specialized Inebriate Asylums were built (notably the New York State Inebriate Asylum in Binghamton); intended as therapeutic refuges, they quickly devolved into prison-like institutions of involuntary confinement.",
+      "When medical treatments failed to produce permanent cures, public sympathy curdled back into moral condemnation, laying the groundwork for 20th-century criminalization."
+    ],
+    "clinical_takeaways": "Grassroots mutual aid succeeds through empathy and shared vulnerability; when co-opted into moralistic state coercion, it reliably turns punitive.",
+    "verbatim_quote": "“The Washingtonians proved that alcoholics could heal one another through honesty and fellowship. But when the moral crusaders took over, compassion was replaced by prohibition, and the sanctuary became an asylum.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-06-the-first-american-opioid-epidemic",
+    "unit_number": 6,
+    "title": "The First American Opioid Epidemic: Morphine, Hypodermics, and Civil War Trauma",
+    "book_part": "Part II: The Age of Intemperance",
+    "chapter": "Chapter 5",
+    "key_figures": [
+      "Alexander Wood (Inventor of Hypodermic Needle)",
+      "Civil War Veterans",
+      "Upper-Class White Women",
+      "Patent Medicine Manufacturers"
+    ],
+    "historical_context": "1860–1900; Post-Civil War United States.",
+    "core_thesis": "America's first massive opioid epidemic in the late 19th century was entirely iatrogenic (doctor-prescribed), enabled by the invention of the hypodermic needle and commercial patent medicines, and afflicted predominantly middle-class white women and wounded veterans.",
+    "key_arguments": [
+      "The invention of the hypodermic syringe in the 1850s was hailed as a medical miracle; physicians erroneously believed that injecting morphine directly into the bloodstream bypassed the stomach and eliminated the risk of physical addiction.",
+      "During the Civil War, hundreds of thousands of wounded soldiers were treated with liberal morphine injections, giving rise to chronic addiction (popularly called the 'Army Disease').",
+      "In the late 19th century, patent medicines (Mrs. Winslow's Soothing Syrup, Laudanum) were sold unregulated in pharmacies and grocery stores, laced with morphine, cocaine, and alcohol.",
+      "The typical late-19th-century American opioid addict was not a criminal in a back alley, but a middle-aged, upper-middle-class white woman prescribed morphine for 'female complaints', insomnia, or hysteria.",
+      "Because the victims were respectable white citizens, society viewed them with medical sympathy rather than criminal hatred—a double standard that vanished when drug use became associated with racial minorities."
+    ],
+    "clinical_takeaways": "Addiction epidemics are frequently initiated by medical over-prescribing; societal reaction to addiction depends on the race and class of the user, not the chemical nature of the drug.",
+    "verbatim_quote": "“The first opioid epidemic was created in doctors' offices and pharmacies. The typical nineteenth-century addict was an affluent white woman drinking patent medicine. Society called her an unfortunate invalid, reserving its criminal fury for those who looked different.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-07-criminalization-and-the-harrison-act",
+    "unit_number": 7,
+    "title": "Junkies: The Harrison Act and the Birth of the Narco-Police State",
+    "book_part": "Part II: The Age of Intemperance",
+    "chapter": "Chapter 6",
+    "key_figures": [
+      "Richmond P. Hobson",
+      "Hamilton Wright",
+      "The Harrison Narcotics Act of 1914",
+      "Federal Bureau of Narcotics (FBN)",
+      "Harry Anslinger"
+    ],
+    "historical_context": "1900–1930; Jim Crow America, anti-Chinese xenophobia, and the Progressive Era.",
+    "core_thesis": "The criminalization of narcotics and the creation of the modern 'junkie' underclass were driven by explicit racial panic (anti-Black hysteria in the South, anti-Chinese racism on the West Coast), weaponized through the 1914 Harrison Act to strip doctors of prescribing authority and turn addicts into criminals.",
+    "key_arguments": [
+      "Early narcotics prohibition was fueled by sensationalist, fabricated racial narratives: claims that cocaine made Black men immune to .32 caliber police bullets, and that Chinese opium dens were ensnaring white women.",
+      "The Harrison Narcotics Tax Act of 1914 was ostensibly a tax measure, but federal enforcement agents interpreted it to forbid physicians from prescribing maintenance doses to dependent patients.",
+      "In a series of disastrous Supreme Court rulings (*Webb v. U.S.*, *Jin Fuey Moy*), the Court ruled that prescribing narcotics to keep an addict comfortable was not legitimate medical practice; over 25,000 physicians were arrested or lost their licenses.",
+      "Municipal maintenance clinics (which provided clean, cheap medical maintenance) were forced to shut down by 1923.",
+      "By cutting off medical access, the federal government created the illicit black market overnight: users were forced to turn to organized crime, crime syndicates flourished, and the modern stigmatized identity of the 'junkie' was legally manufactured."
+    ],
+    "clinical_takeaways": "Criminalizing medical maintenance does not reduce addiction; it destroys the therapeutic relationship and births violent illicit cartels.",
+    "verbatim_quote": "“The federal government made the junkie by cutting off the doctor. By arresting physicians who provided maintenance therapy, the Harrison Act drove addicts into the underworld and gave organized crime the most lucrative monopoly in human history.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-08-the-birth-of-aa-and-modern-alcoholism",
+    "unit_number": 8,
+    "title": "The Modern Alcoholism Movement: Bill W., Marty Mann, and the Disease Pragmatism",
+    "book_part": "Part III: The Roots of Modern Addiction",
+    "chapter": "Chapter 7",
+    "key_figures": [
+      "Bill Wilson (Bill W.)",
+      "Dr. Bob Smith",
+      "Marty Mann",
+      "E. M. Jellinek",
+      "The Yale Center of Alcohol Studies"
+    ],
+    "historical_context": "Akron & New York, 1935–1955; the post-Prohibition era.",
+    "core_thesis": "Alcoholics Anonymous and the modern alcoholism movement rescued millions by strategically reviving the disease concept as a pragmatic, destigmatizing public relations tool, even while AA's actual practice was grounded in spiritual surrender, peer confession, and moral inventory.",
+    "key_arguments": [
+      "In 1935, two hopeless alcoholics—stockbroker Bill Wilson and surgeon Dr. Bob Smith—discovered that an alcoholic could stay sober by sharing his struggle and helping another suffering alcoholic.",
+      "AA synthesized William James's *Varieties of Religious Experience* (the necessity of spiritual collapse and conversion), the Oxford Group (confession, restitution, service), and Dr. William Silkworth's medical theory of an 'allergy of the body and obsession of the mind'.",
+      "Marty Mann, the first woman to achieve long-term sobriety in AA, founded the National Committee for Education on Alcoholism (NCEA), launching an aggressive media campaign: 'Alcoholism is a disease, not a moral weakness; the alcoholic is a sick person who can be helped.'",
+      "Biostatistician E. M. Jellinek at Yale formalized the 'Jellinek Curve' and progressive stages of alcoholism, providing the scientific veneer for the disease model.",
+      "While immensely liberating in lifting moral blame, this framing created a rigid dogma: alcoholism was defined as a binary, lifelong, biologically fixed entity where total abstinence was the only acceptable goal."
+    ],
+    "clinical_takeaways": "Mutual-aid peer groups provide irreplaceable social architecture for recovery; however, rigid dogmas of abstinence can marginalize those who benefit from harm reduction.",
+    "verbatim_quote": "“Marty Mann and Bill W. engineered the greatest public relations triumph in modern medicine: they convinced America that alcoholism is an illness, not a sin. It saved millions of lives, but it also cemented a rigid orthodoxy that left little room for nuance.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-09-good-drugs-and-bad-drugs-pharmaceuticals",
+    "unit_number": 9,
+    "title": "Good Drugs and Bad Drugs: Pharmaceutical Capitalism and Moral Hypocrisy",
+    "book_part": "Part III: The Roots of Modern Addiction",
+    "chapter": "Chapter 8",
+    "key_figures": [
+      "Sackler Family (Purdue Pharma)",
+      "Benzodiazepine Manufacturers (Valium, Miltown)",
+      "Cigarette Companies",
+      "The FDA"
+    ],
+    "historical_context": "1950–2000; The postwar consumer boom and the pharmaceutical revolution.",
+    "core_thesis": "Modern society established a grotesque moral double standard: criminalizing street drugs used by marginalized communities while corporatizing, advertising, and medicalizing identical psychoactive molecules produced by pharmaceutical corporations.",
+    "key_arguments": [
+      "In the 1950s and 60s, America consumed billions of tranquilizers (Miltown, Valium) and amphetamines (Benzedrine, Dexedrine), marketed to housewives, executives, and soldiers as scientific tools for modern coping.",
+      "Tobacco and alcohol—the two most lethal addictive substances, causing more deaths than all illicit drugs combined—remained legal, commercially advertised, and socially celebrated.",
+      "In the 1990s, Purdue Pharma launched OxyContin, aggressively marketing it through deceitful claims that its delayed-release coating made it virtually non-addictive ('less than 1% of patients become addicted').",
+      "Pharmaceutical executives showered doctors with luxury retreats, paid speaking fees, and sponsored medical education, igniting the modern opioid catastrophe that has killed over one million Americans.",
+      "This double standard reveals that drug prohibition has never been about the biological pharmacology of addiction; it has always been about who profits, who prescribes, and who uses."
+    ],
+    "clinical_takeaways": "The legal status of a psychoactive drug reflects social power and commercial lobbying rather than its inherent biological harm or addiction potential.",
+    "verbatim_quote": "“We have never had a rational policy toward drugs. We criminalize street opioids while corporations make billions marketing prescription opioids. The distinction between 'medicine' and 'narcotic' has always been a political fiction.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-10-the-politics-of-rehabilitation-and-synanon",
+    "unit_number": 10,
+    "title": "Rehabilitation: The Lexington 'Narco Farm' & The Cult of Synanon",
+    "book_part": "Part IV: Addiction on Trial",
+    "chapter": "Chapter 9",
+    "key_figures": [
+      "U.S. Public Health Service Hospital (Lexington, KY)",
+      "Charles Dederich (Synanon)",
+      "Daytop Village",
+      "Phoenix House"
+    ],
+    "historical_context": "1935–1980; Lexington, Kentucky, and California; the evolution of inpatient addiction treatment.",
+    "core_thesis": "The quest for a total institutional cure for addiction gave birth to the therapeutic community movement, which began as an egalitarian alternative to prison but rapidly devolved into authoritarian, abusive cults of personality.",
+    "key_arguments": [
+      "In 1935, the federal government opened the U.S. Public Health Service Hospital in Lexington, Kentucky (the 'Narco Farm')—a hybrid prison-hospital where jazz musicians, prisoners, and voluntary patients were detoxed and studied.",
+      "Despite pastoral grounds and psychiatric care, relapse rates at Lexington exceeded 90% once patients returned to their home communities.",
+      "In 1958, Charles Dederich founded **Synanon** in California: a peer-led residential commune that rejected professional psychiatry in favor of brutal, humiliating peer-confrontation sessions known as 'The Synanon Game'.",
+      "Synanon initially achieved remarkable recovery rates and was praised as a breakthrough model, inspiring modern therapeutic communities (Daytop, Phoenix House).",
+      "However, Synanon devolved into a violent, paranoid cult: Dederich declared that members could never leave, ordered forced vasectomies, stockpiled weapons, and placed a rattlesnake in a lawyer's mailbox, demonstrating the profound dangers of coercive recovery ideologies."
+    ],
+    "clinical_takeaways": "Coercive, attack-based therapies that demand total submission produce psychological trauma and cult dynamics rather than genuine healing.",
+    "verbatim_quote": "“Synanon began as a courageous refuge where addicts healed each other when medicine had failed them. It ended as an armed cult placing rattlesnakes in mailboxes. It was a tragic warning of what happens when recovery demands total obedience.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "IMPORTANT"
+  },
+  {
+    "id": "unit-11-zero-tolerance-and-the-war-on-drugs",
+    "unit_number": 11,
+    "title": "Zero Tolerance: The War on Drugs, Mass Incarceration, and Moral Panics",
+    "book_part": "Part IV: Addiction on Trial",
+    "chapter": "Chapter 10",
+    "key_figures": [
+      "Richard Nixon",
+      "Ronald Reagan",
+      "The Crack Cocaine Panic (1980s)",
+      "Mass Incarceration"
+    ],
+    "historical_context": "1971–2010; The expansion of the American carceral state.",
+    "core_thesis": "The modern 'War on Drugs' was an orchestrated political strategy that deployed zero-tolerance criminalization, racialized media panics, and draconian mandatory minimums, transforming a public health problem into an engine of mass incarceration that devastated Black and Latino communities without reducing drug supply.",
+    "key_arguments": [
+      "Richard Nixon declared drug abuse 'public enemy number one' in 1971; while Nixon's initial budget actually allocated two-thirds of funds to treatment and methadone maintenance, subsequent administrations dismantled the medical approach.",
+      "Under Ronald Reagan in the 1980s, the drug war became an aggressive carceral crusade, typified by the 'Just Say No' campaign, mandatory minimums, and the Anti-Drug Abuse Act of 1986.",
+      "The 1986 Act established the notorious 100-to-1 sentencing disparity between crack cocaine (disproportionately used by poor Black citizens) and powder cocaine (used by affluent white citizens), leading to explosive prison population growth.",
+      "Between 1970 and 2010, the U.S. prison population surged from 300,000 to over 2.3 million—the highest incarceration rate in the world—with half of federal prisoners serving time for nonviolent drug offenses.",
+      "Criminological research proved conclusively that harsh penalties do not deter drug use; instead, incarceration worsens addiction by traumatizing individuals, severing social ties, and ensuring devastating post-release overdose spikes."
+    ],
+    "clinical_takeaways": "Punitive criminal justice policies actively exacerbate addiction morbidity, destabilize families, and entrench systemic racial inequality.",
+    "verbatim_quote": "“The War on Drugs was never a war on substances; it was a war on people. It cost a trillion dollars, locked millions in cages, destroyed communities of color, and left drugs cheaper, purer, and more lethal than ever before.”",
+    "epistemic_status": "HISTORICAL FACT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-12-beyond-the-brain-disease-recovery-and-harm-reduction",
+    "unit_number": 12,
+    "title": "Beyond the Brain Disease: Biopsychosocial Integration and The Many Paths to Recovery",
+    "book_part": "Part IV & Conclusion",
+    "chapter": "Chapter 11 & Conclusion: Recovery",
+    "key_figures": [
+      "Nora Volkow (NIDA)",
+      "Carl Erik Fisher, M.D.",
+      "Harm Reduction Pioneers",
+      "Medication-Assisted Treatment (Buprenorphine, Methadone)"
+    ],
+    "historical_context": "Present Day; The Fentanyl Crisis, Neuroscience, and the Harm Reduction Revolution.",
+    "core_thesis": "The future of addiction medicine requires transcending both the moral failure model and the narrow brain disease model, adopting a flexible, biopsychosocial framework that combines neurobiology, trauma healing, harm reduction (clean needles, safe supply, naloxone), evidence-based medications, and holistic human recovery.",
+    "key_arguments": [
+      "The dominant NIDA 'Brain Disease Model'—championed by Alan Leshner and Nora Volkow—defines addiction as a 'chronic, relapsing brain disease' characterized by dopamine hijacking and prefrontal cortex dysfunction.",
+      "While scientifically valuable, treating addiction solely as a molecular brain defect is deeply misleading: neuroscience reveals that the brain is plastic and adaptive; addiction neurobiology is the biology of learning, habit, and emotional coping, not an unalterable neurochemical doom.",
+      "Real-world epidemiological data reveals that the majority of people with substance use disorders actually recover without formal treatment ('natural recovery' or aging out).",
+      "Medication-Assisted Treatment (MAT) with buprenorphine and methadone reduces opioid overdose mortality by 50%, yet remains severely underutilized due to lingering abstinence-only stigma.",
+      "Harm Reduction (supervised consumption sites, fentanyl test strips, naloxone distribution) proves that saving lives must take priority over enforcing ideological sobriety.",
+      "Recovery is not a single finish line; it is an open-ended, deeply personal process of reclaiming wholeness, connection, and purpose."
+    ],
+    "clinical_takeaways": "Effective addiction treatment meets people where they are: integrating medications, psychotherapy, trauma resolution, and social support without requiring moral surrender or chemical perfection.",
+    "verbatim_quote": "“Addiction is not a disease of broken brains or corrupt morals; it is a profound human condition of suffering, learning, and attachment. True recovery is not merely the absence of a chemical; it is the presence of meaning, connection, and care.”",
+    "epistemic_status": "SCIENTIFIC & CLINICAL SYNTHESIS",
+    "materiality": "CRITICAL"
+  }
+]

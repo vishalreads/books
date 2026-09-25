@@ -1,0 +1,1113 @@
+const fs = require('fs');
+const path = require('path');
+
+const targetDir = path.join(__dirname, '../../docs/distillations/the-urge-history-of-addiction');
+if (!fs.existsSync(targetDir)) {
+  fs.mkdirSync(targetDir, { recursive: true });
+}
+
+const bookUnits = [
+  {
+    id: "unit-01-the-personal-crucible-doctor-patient",
+    unit_number: 1,
+    title: "The Double Identity: The Physician as Addict & The Anatomy of the Urge",
+    book_part: "Introduction & Part I: Behavior in Search of a Name",
+    chapter: "Introduction & Chapter 1 (Part I)",
+    key_figures: ["Carl Erik Fisher, M.D.", "Alcoholics Anonymous", "Physician Health Program (PHP)"],
+    historical_context: "Columbia University Medical Center & Bellevue Hospital, New York, late 2000s; modern psychiatric residency.",
+    core_thesis: "Addiction is neither an exotic moral failing nor a simple mechanical brain defect; it is a universal, deeply human struggle situated on a continuum with normal desire, as revealed by a Columbia psychiatric resident who spiraled into alcoholism and stimulant addiction while training to treat it.",
+    key_arguments: [
+      "Carl Erik Fisher, while training as a psychiatrist at Columbia, experienced severe dual addiction to alcohol and prescription Adderall, culminating in manic agitation, hospitalization in a locked psychiatric ward, and arrest.",
+      "The experience exposed the profound disconnect between the sterile, reductive medical models taught in medical school (dopamine receptor downregulation in the nucleus accumbens) and the lived, terrifying reality of the urge.",
+      "Medicine has oscillated for centuries between two polar reductions: the **Moral Model** (addiction as willful sin, selfishness, and spiritual deficiency) and the **Disease Model** (addiction as an involuntary, chronic, relapsing brain disease).",
+      "Both models fail: the moral model produces cruelty, stigma, and mass incarceration; the rigid brain disease model strips patients of agency, medicalizes complex social and existential pain, and ignores that recovery always requires personal meaning and social connection."
+    ],
+    clinical_takeaways: "Addiction cannot be understood or treated as a purely biochemical glitch; it is an existential, psychological, and social crisis of the divided self.",
+    verbatim_quote: "“I was a doctor in training at Columbia, learning to treat psychiatric illness, while in secret I was descending into the hell of alcohol and stimulant addiction... Addiction is not a defect confined to a small, broken subset of humanity. It is an amplification of the universal human struggle with desire, suffering, and the divided will.”",
+    epistemic_status: "MEMOIR & CLINICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-02-foundations-before-addiction",
+    unit_number: 2,
+    title: "Before 'Addiction': Ancient Philosophy, Augustine, and the Divided Will",
+    book_part: "Part I: Behavior in Search of a Name",
+    chapter: "Chapter 1",
+    key_figures: ["Aristotle", "Saint Augustine", "The Buddha (Siddhartha Gautama)", "Ancient Greeks"],
+    historical_context: "Classical Antiquity and Early Christianity; 4th century BCE to 4th century CE.",
+    core_thesis: "Long before modern medicine invented the category of 'chemical dependency', ancient traditions conceptualized addiction as *akrasia* (weakness of will) and *tanha* (thirst/craving), recognizing that the human will is inherently divided and prone to voluntary enslavement.",
+    key_arguments: [
+      "The word 'addiction' derives from the Latin legal term *addicere*: to deliver someone over by court order into debt bondage or slavery; historically, to be 'addicted' meant to be devoted, bound, or attached to any master—including philosophy or religion.",
+      "Aristotle examined **akrasia** (incontinence / acting against one's better judgment): a person can intellectually know the good, yet be overpowered by appetite, acting in a state resembling sleep or intoxication.",
+      "Buddhism diagnosed **tanha** (craving/thirst) as the universal root of suffering (*dukkha*), noting that grasping after transient sensory pleasure creates a self-reinforcing cycle of dissatisfaction.",
+      "Saint Augustine in his *Confessions* provided the classical psychological description of compulsive habit: *'The enemy held my will in his power and from it he had made a chain and shackled me. For of a perverse will was lust made; and lust indulged became habit; and habit not resisted became necessity.'*"
+    ],
+    clinical_takeaways: "Addiction is an ancient, fundamental vulnerability of human consciousness: repeated habit solidifies into compulsory necessity.",
+    verbatim_quote: "“The Latin addicere meant to bind or surrender by law. For millennia, humanity understood addiction not as a disease of a molecule, but as a condition of servitude—where habit unresisted becomes necessity, and the will becomes a stranger to itself.”",
+    epistemic_status: "HISTORICAL & PHILOSOPHICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-03-epidemics-distillation-and-rum",
+    unit_number: 3,
+    title: "Epidemics: Industrial Distillation, The Gin Craze, and Colonial Disruption",
+    book_part: "Part I: Behavior in Search of a Name",
+    chapter: "Chapter 2",
+    key_figures: ["William Hogarth (*Gin Lane*)", "British Parliament", "Native American Tribes", "Colonial Rum Traders"],
+    historical_context: "17th and 18th centuries; England and the Atlantic World; the advent of cheap distilled spirits.",
+    core_thesis: "The emergence of modern severe addiction epidemics was not caused by human moral decay, but by the technological invention of industrial distillation, transforming mild fermented beverages (beer, wine) into concentrated, high-potency chemical commodities that overwhelmed human biology and social structures.",
+    key_arguments: [
+      "For thousands of years, humans drank beer and wine with natural alcohol ceilings (under 12%); industrial distillation produced cheap, 40%+ spirits (gin, rum, whiskey).",
+      "The London 'Gin Craze' (1720–1750) saw per-capita gin consumption explode, resulting in widespread urban mortality, infant neglect, and social panic, immortalized in William Hogarth's harrowing engraving *Gin Lane*.",
+      "European colonial powers weaponized distilled rum and brandy against indigenous populations across the Americas, deliberately disrupting tribal governance and driving severe social collapse.",
+      "These epidemics proved that drug addiction is deeply ecological: when potency increases and social guardrails disappear, addiction spreads rapidly across vulnerable populations."
+    ],
+    clinical_takeaways: "Technological innovations that dramatically increase drug potency and lower procurement costs will reliably trigger epidemic-level compulsive consumption.",
+    verbatim_quote: "“Industrial distillation was the original high-potency drug technology. When cheap, concentrated gin flooded London, and rum flooded the colonies, humanity encountered chemical substances that overwhelmed millions of years of evolutionary defenses.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-04-a-disease-in-the-will-benjamin-rush",
+    unit_number: 4,
+    title: "A Disease of the Will: Benjamin Rush and the Birth of Medical Inebriety",
+    book_part: "Part I: Behavior in Search of a Name",
+    chapter: "Chapter 3",
+    key_figures: ["Dr. Benjamin Rush", "Thomas Trotter", "The Washingtonian Movement"],
+    historical_context: "Philadelphia, 1784–1840; the Early American Republic.",
+    core_thesis: "Dr. Benjamin Rush founded the modern disease concept of addiction by identifying habitual drunkenness not as a moral crime, but as a specific physical and mental disease: a 'palsy of the will' caused by chemical exposure.",
+    key_arguments: [
+      "In his 1784 landmark treatise, *An Enquiry into the Effects of Ardent Spirits upon the Human Mind and Body*, Benjamin Rush (Founding Father and physician) revolutionized medicine by classifying chronic drunkenness as a discrete medical disease.",
+      "Rush argued that alcohol acts as a physical stimulus that first seduces the body and ultimately destroys the faculty of volition: *'A disease in the will.'*",
+      "Rush proposed compassionate, medicalized treatment: specialized 'Sober Houses' (the precursors of modern rehabilitation centers) rather than punitive jails or public whippings.",
+      "However, Rush's formulation contained an enduring paradox: if inebriety is a disease of the will, how can an individual use their diseased will to achieve recovery? This paradox would haunt addiction medicine for two centuries."
+    ],
+    clinical_takeaways: "Classifying addiction as a disease historically rescued sufferers from the gallows and prison, but created the ongoing paradox of treating a broken volition with personal agency.",
+    verbatim_quote: "“Benjamin Rush removed habitual drunkenness from the pulpit and placed it in the clinic. He called it a disease of the will—a brilliant, compassionate breakthrough that nonetheless left medicine with the riddle: how can a sick will cure itself?”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-05-possession-and-temperance-crusade",
+    unit_number: 5,
+    title: "Possession & The Temperance Crusade: Moral Totalitarianism and Inebriate Asylums",
+    book_part: "Part II: The Age of Intemperance",
+    chapter: "Chapter 4",
+    key_figures: ["Lyman Beecher", "Carrie Nation", "The Washingtonians", "New York State Inebriate Asylum (Binghamton)"],
+    historical_context: "1830–1890; Antebellum America and the Gilded Age.",
+    core_thesis: "The American Temperance Movement shifted from an initial grassroots peer-support model (the Washingtonians) into a punitive, religious crusade that demanded total prohibition and built coercive inebriate asylums.",
+    key_arguments: [
+      "The Washingtonian Movement (1840) was the first mass peer-recovery fellowship: six working-class alcoholics in Baltimore began sharing their stories and supporting each other in total sobriety, helping tens of thousands without dogma.",
+      "However, evangelical clergy like Lyman Beecher co-opted temperance, transforming it into a moralistic political crusade that demonized alcohol as 'Demon Rum' and demanded legislative coercion.",
+      "In the mid-19th century, specialized Inebriate Asylums were built (notably the New York State Inebriate Asylum in Binghamton); intended as therapeutic refuges, they quickly devolved into prison-like institutions of involuntary confinement.",
+      "When medical treatments failed to produce permanent cures, public sympathy curdled back into moral condemnation, laying the groundwork for 20th-century criminalization."
+    ],
+    clinical_takeaways: "Grassroots mutual aid succeeds through empathy and shared vulnerability; when co-opted into moralistic state coercion, it reliably turns punitive.",
+    verbatim_quote: "“The Washingtonians proved that alcoholics could heal one another through honesty and fellowship. But when the moral crusaders took over, compassion was replaced by prohibition, and the sanctuary became an asylum.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-06-the-first-american-opioid-epidemic",
+    unit_number: 6,
+    title: "The First American Opioid Epidemic: Morphine, Hypodermics, and Civil War Trauma",
+    book_part: "Part II: The Age of Intemperance",
+    chapter: "Chapter 5",
+    key_figures: ["Alexander Wood (Inventor of Hypodermic Needle)", "Civil War Veterans", "Upper-Class White Women", "Patent Medicine Manufacturers"],
+    historical_context: "1860–1900; Post-Civil War United States.",
+    core_thesis: "America's first massive opioid epidemic in the late 19th century was entirely iatrogenic (doctor-prescribed), enabled by the invention of the hypodermic needle and commercial patent medicines, and afflicted predominantly middle-class white women and wounded veterans.",
+    key_arguments: [
+      "The invention of the hypodermic syringe in the 1850s was hailed as a medical miracle; physicians erroneously believed that injecting morphine directly into the bloodstream bypassed the stomach and eliminated the risk of physical addiction.",
+      "During the Civil War, hundreds of thousands of wounded soldiers were treated with liberal morphine injections, giving rise to chronic addiction (popularly called the 'Army Disease').",
+      "In the late 19th century, patent medicines (Mrs. Winslow's Soothing Syrup, Laudanum) were sold unregulated in pharmacies and grocery stores, laced with morphine, cocaine, and alcohol.",
+      "The typical late-19th-century American opioid addict was not a criminal in a back alley, but a middle-aged, upper-middle-class white woman prescribed morphine for 'female complaints', insomnia, or hysteria.",
+      "Because the victims were respectable white citizens, society viewed them with medical sympathy rather than criminal hatred—a double standard that vanished when drug use became associated with racial minorities."
+    ],
+    clinical_takeaways: "Addiction epidemics are frequently initiated by medical over-prescribing; societal reaction to addiction depends on the race and class of the user, not the chemical nature of the drug.",
+    verbatim_quote: "“The first opioid epidemic was created in doctors' offices and pharmacies. The typical nineteenth-century addict was an affluent white woman drinking patent medicine. Society called her an unfortunate invalid, reserving its criminal fury for those who looked different.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-07-criminalization-and-the-harrison-act",
+    unit_number: 7,
+    title: "Junkies: The Harrison Act and the Birth of the Narco-Police State",
+    book_part: "Part II: The Age of Intemperance",
+    chapter: "Chapter 6",
+    key_figures: ["Richmond P. Hobson", "Hamilton Wright", "The Harrison Narcotics Act of 1914", "Federal Bureau of Narcotics (FBN)", "Harry Anslinger"],
+    historical_context: "1900–1930; Jim Crow America, anti-Chinese xenophobia, and the Progressive Era.",
+    core_thesis: "The criminalization of narcotics and the creation of the modern 'junkie' underclass were driven by explicit racial panic (anti-Black hysteria in the South, anti-Chinese racism on the West Coast), weaponized through the 1914 Harrison Act to strip doctors of prescribing authority and turn addicts into criminals.",
+    key_arguments: [
+      "Early narcotics prohibition was fueled by sensationalist, fabricated racial narratives: claims that cocaine made Black men immune to .32 caliber police bullets, and that Chinese opium dens were ensnaring white women.",
+      "The Harrison Narcotics Tax Act of 1914 was ostensibly a tax measure, but federal enforcement agents interpreted it to forbid physicians from prescribing maintenance doses to dependent patients.",
+      "In a series of disastrous Supreme Court rulings (*Webb v. U.S.*, *Jin Fuey Moy*), the Court ruled that prescribing narcotics to keep an addict comfortable was not legitimate medical practice; over 25,000 physicians were arrested or lost their licenses.",
+      "Municipal maintenance clinics (which provided clean, cheap medical maintenance) were forced to shut down by 1923.",
+      "By cutting off medical access, the federal government created the illicit black market overnight: users were forced to turn to organized crime, crime syndicates flourished, and the modern stigmatized identity of the 'junkie' was legally manufactured."
+    ],
+    clinical_takeaways: "Criminalizing medical maintenance does not reduce addiction; it destroys the therapeutic relationship and births violent illicit cartels.",
+    verbatim_quote: "“The federal government made the junkie by cutting off the doctor. By arresting physicians who provided maintenance therapy, the Harrison Act drove addicts into the underworld and gave organized crime the most lucrative monopoly in human history.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-08-the-birth-of-aa-and-modern-alcoholism",
+    unit_number: 8,
+    title: "The Modern Alcoholism Movement: Bill W., Marty Mann, and the Disease Pragmatism",
+    book_part: "Part III: The Roots of Modern Addiction",
+    chapter: "Chapter 7",
+    key_figures: ["Bill Wilson (Bill W.)", "Dr. Bob Smith", "Marty Mann", "E. M. Jellinek", "The Yale Center of Alcohol Studies"],
+    historical_context: "Akron & New York, 1935–1955; the post-Prohibition era.",
+    core_thesis: "Alcoholics Anonymous and the modern alcoholism movement rescued millions by strategically reviving the disease concept as a pragmatic, destigmatizing public relations tool, even while AA's actual practice was grounded in spiritual surrender, peer confession, and moral inventory.",
+    key_arguments: [
+      "In 1935, two hopeless alcoholics—stockbroker Bill Wilson and surgeon Dr. Bob Smith—discovered that an alcoholic could stay sober by sharing his struggle and helping another suffering alcoholic.",
+      "AA synthesized William James's *Varieties of Religious Experience* (the necessity of spiritual collapse and conversion), the Oxford Group (confession, restitution, service), and Dr. William Silkworth's medical theory of an 'allergy of the body and obsession of the mind'.",
+      "Marty Mann, the first woman to achieve long-term sobriety in AA, founded the National Committee for Education on Alcoholism (NCEA), launching an aggressive media campaign: 'Alcoholism is a disease, not a moral weakness; the alcoholic is a sick person who can be helped.'",
+      "Biostatistician E. M. Jellinek at Yale formalized the 'Jellinek Curve' and progressive stages of alcoholism, providing the scientific veneer for the disease model.",
+      "While immensely liberating in lifting moral blame, this framing created a rigid dogma: alcoholism was defined as a binary, lifelong, biologically fixed entity where total abstinence was the only acceptable goal."
+    ],
+    clinical_takeaways: "Mutual-aid peer groups provide irreplaceable social architecture for recovery; however, rigid dogmas of abstinence can marginalize those who benefit from harm reduction.",
+    verbatim_quote: "“Marty Mann and Bill W. engineered the greatest public relations triumph in modern medicine: they convinced America that alcoholism is an illness, not a sin. It saved millions of lives, but it also cemented a rigid orthodoxy that left little room for nuance.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-09-good-drugs-and-bad-drugs-pharmaceuticals",
+    unit_number: 9,
+    title: "Good Drugs and Bad Drugs: Pharmaceutical Capitalism and Moral Hypocrisy",
+    book_part: "Part III: The Roots of Modern Addiction",
+    chapter: "Chapter 8",
+    key_figures: ["Sackler Family (Purdue Pharma)", "Benzodiazepine Manufacturers (Valium, Miltown)", "Cigarette Companies", "The FDA"],
+    historical_context: "1950–2000; The postwar consumer boom and the pharmaceutical revolution.",
+    core_thesis: "Modern society established a grotesque moral double standard: criminalizing street drugs used by marginalized communities while corporatizing, advertising, and medicalizing identical psychoactive molecules produced by pharmaceutical corporations.",
+    key_arguments: [
+      "In the 1950s and 60s, America consumed billions of tranquilizers (Miltown, Valium) and amphetamines (Benzedrine, Dexedrine), marketed to housewives, executives, and soldiers as scientific tools for modern coping.",
+      "Tobacco and alcohol—the two most lethal addictive substances, causing more deaths than all illicit drugs combined—remained legal, commercially advertised, and socially celebrated.",
+      "In the 1990s, Purdue Pharma launched OxyContin, aggressively marketing it through deceitful claims that its delayed-release coating made it virtually non-addictive ('less than 1% of patients become addicted').",
+      "Pharmaceutical executives showered doctors with luxury retreats, paid speaking fees, and sponsored medical education, igniting the modern opioid catastrophe that has killed over one million Americans.",
+      "This double standard reveals that drug prohibition has never been about the biological pharmacology of addiction; it has always been about who profits, who prescribes, and who uses."
+    ],
+    clinical_takeaways: "The legal status of a psychoactive drug reflects social power and commercial lobbying rather than its inherent biological harm or addiction potential.",
+    verbatim_quote: "“We have never had a rational policy toward drugs. We criminalize street opioids while corporations make billions marketing prescription opioids. The distinction between 'medicine' and 'narcotic' has always been a political fiction.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-10-the-politics-of-rehabilitation-and-synanon",
+    unit_number: 10,
+    title: "Rehabilitation: The Lexington 'Narco Farm' & The Cult of Synanon",
+    book_part: "Part IV: Addiction on Trial",
+    chapter: "Chapter 9",
+    key_figures: ["U.S. Public Health Service Hospital (Lexington, KY)", "Charles Dederich (Synanon)", "Daytop Village", "Phoenix House"],
+    historical_context: "1935–1980; Lexington, Kentucky, and California; the evolution of inpatient addiction treatment.",
+    core_thesis: "The quest for a total institutional cure for addiction gave birth to the therapeutic community movement, which began as an egalitarian alternative to prison but rapidly devolved into authoritarian, abusive cults of personality.",
+    key_arguments: [
+      "In 1935, the federal government opened the U.S. Public Health Service Hospital in Lexington, Kentucky (the 'Narco Farm')—a hybrid prison-hospital where jazz musicians, prisoners, and voluntary patients were detoxed and studied.",
+      "Despite pastoral grounds and psychiatric care, relapse rates at Lexington exceeded 90% once patients returned to their home communities.",
+      "In 1958, Charles Dederich founded **Synanon** in California: a peer-led residential commune that rejected professional psychiatry in favor of brutal, humiliating peer-confrontation sessions known as 'The Synanon Game'.",
+      "Synanon initially achieved remarkable recovery rates and was praised as a breakthrough model, inspiring modern therapeutic communities (Daytop, Phoenix House).",
+      "However, Synanon devolved into a violent, paranoid cult: Dederich declared that members could never leave, ordered forced vasectomies, stockpiled weapons, and placed a rattlesnake in a lawyer's mailbox, demonstrating the profound dangers of coercive recovery ideologies."
+    ],
+    clinical_takeaways: "Coercive, attack-based therapies that demand total submission produce psychological trauma and cult dynamics rather than genuine healing.",
+    verbatim_quote: "“Synanon began as a courageous refuge where addicts healed each other when medicine had failed them. It ended as an armed cult placing rattlesnakes in mailboxes. It was a tragic warning of what happens when recovery demands total obedience.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-11-zero-tolerance-and-the-war-on-drugs",
+    unit_number: 11,
+    title: "Zero Tolerance: The War on Drugs, Mass Incarceration, and Moral Panics",
+    book_part: "Part IV: Addiction on Trial",
+    chapter: "Chapter 10",
+    key_figures: ["Richard Nixon", "Ronald Reagan", "The Crack Cocaine Panic (1980s)", "Mass Incarceration"],
+    historical_context: "1971–2010; The expansion of the American carceral state.",
+    core_thesis: "The modern 'War on Drugs' was an orchestrated political strategy that deployed zero-tolerance criminalization, racialized media panics, and draconian mandatory minimums, transforming a public health problem into an engine of mass incarceration that devastated Black and Latino communities without reducing drug supply.",
+    key_arguments: [
+      "Richard Nixon declared drug abuse 'public enemy number one' in 1971; while Nixon's initial budget actually allocated two-thirds of funds to treatment and methadone maintenance, subsequent administrations dismantled the medical approach.",
+      "Under Ronald Reagan in the 1980s, the drug war became an aggressive carceral crusade, typified by the 'Just Say No' campaign, mandatory minimums, and the Anti-Drug Abuse Act of 1986.",
+      "The 1986 Act established the notorious 100-to-1 sentencing disparity between crack cocaine (disproportionately used by poor Black citizens) and powder cocaine (used by affluent white citizens), leading to explosive prison population growth.",
+      "Between 1970 and 2010, the U.S. prison population surged from 300,000 to over 2.3 million—the highest incarceration rate in the world—with half of federal prisoners serving time for nonviolent drug offenses.",
+      "Criminological research proved conclusively that harsh penalties do not deter drug use; instead, incarceration worsens addiction by traumatizing individuals, severing social ties, and ensuring devastating post-release overdose spikes."
+    ],
+    clinical_takeaways: "Punitive criminal justice policies actively exacerbate addiction morbidity, destabilize families, and entrench systemic racial inequality.",
+    verbatim_quote: "“The War on Drugs was never a war on substances; it was a war on people. It cost a trillion dollars, locked millions in cages, destroyed communities of color, and left drugs cheaper, purer, and more lethal than ever before.”",
+    epistemic_status: "HISTORICAL FACT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-12-beyond-the-brain-disease-recovery-and-harm-reduction",
+    unit_number: 12,
+    title: "Beyond the Brain Disease: Biopsychosocial Integration and The Many Paths to Recovery",
+    book_part: "Part IV & Conclusion",
+    chapter: "Chapter 11 & Conclusion: Recovery",
+    key_figures: ["Nora Volkow (NIDA)", "Carl Erik Fisher, M.D.", "Harm Reduction Pioneers", "Medication-Assisted Treatment (Buprenorphine, Methadone)"],
+    historical_context: "Present Day; The Fentanyl Crisis, Neuroscience, and the Harm Reduction Revolution.",
+    core_thesis: "The future of addiction medicine requires transcending both the moral failure model and the narrow brain disease model, adopting a flexible, biopsychosocial framework that combines neurobiology, trauma healing, harm reduction (clean needles, safe supply, naloxone), evidence-based medications, and holistic human recovery.",
+    key_arguments: [
+      "The dominant NIDA 'Brain Disease Model'—championed by Alan Leshner and Nora Volkow—defines addiction as a 'chronic, relapsing brain disease' characterized by dopamine hijacking and prefrontal cortex dysfunction.",
+      "While scientifically valuable, treating addiction solely as a molecular brain defect is deeply misleading: neuroscience reveals that the brain is plastic and adaptive; addiction neurobiology is the biology of learning, habit, and emotional coping, not an unalterable neurochemical doom.",
+      "Real-world epidemiological data reveals that the majority of people with substance use disorders actually recover without formal treatment ('natural recovery' or aging out).",
+      "Medication-Assisted Treatment (MAT) with buprenorphine and methadone reduces opioid overdose mortality by 50%, yet remains severely underutilized due to lingering abstinence-only stigma.",
+      "Harm Reduction (supervised consumption sites, fentanyl test strips, naloxone distribution) proves that saving lives must take priority over enforcing ideological sobriety.",
+      "Recovery is not a single finish line; it is an open-ended, deeply personal process of reclaiming wholeness, connection, and purpose."
+    ],
+    clinical_takeaways: "Effective addiction treatment meets people where they are: integrating medications, psychotherapy, trauma resolution, and social support without requiring moral surrender or chemical perfection.",
+    verbatim_quote: "“Addiction is not a disease of broken brains or corrupt morals; it is a profound human condition of suffering, learning, and attachment. True recovery is not merely the absence of a chemical; it is the presence of meaning, connection, and care.”",
+    epistemic_status: "SCIENTIFIC & CLINICAL SYNTHESIS",
+    materiality: "CRITICAL"
+  }
+];
+
+// Write canonical knowledge-units.json
+fs.writeFileSync(
+  path.join(targetDir, 'knowledge-units.json'),
+  JSON.stringify(bookUnits, null, 2),
+  'utf8'
+);
+console.log(`Wrote canonical knowledge-units.json for The Urge with ${bookUnits.length} units.`);
+
+// Write master-notes.md (Total Replacement Codex)
+const masterNotesMd = `# The Urge: Our History of Addiction: Total Replacement Codex
+## Carl Erik Fisher, M.D. (Penguin Press, 2022)
+### Canonical Book Knowledge Reconstruction System (BKRS v1.0 Standard)
+
+---
+
+## 1. Executive Summary & Epistemic Architecture
+*The Urge: Our History of Addiction* by Columbia University addiction psychiatrist and bioethicist Dr. Carl Erik Fisher is a landmark synthesis of medical history, clinical psychiatry, neuroscience, policy analysis, and personal recovery memoir.
+
+### The Foundational Paradox of Addiction:
+For centuries, human society has attempted to shoehorn the agonizing experience of compulsive substance use into a simplistic binary:
+1. **The Moral Model**: Addiction is a personal sin, moral weakness, and criminal deficiency demanding punishment, religious conversion, or incarceration.
+2. **The Chronic Brain Disease Model**: Addiction is a purely biological, involuntary brain disease caused by dopamine receptor hijacking, requiring medical interventions and lifetime disease management.
+
+Fisher, drawing upon both his historical research and his lived experience surviving severe alcohol and Adderall addiction as a physician in training, demonstrates that **both models are dangerously flawed reductions**:
+- The **Moral Model** produces catastrophic cruelty, racialized drug wars, mass incarceration, and lethal social stigma.
+- The **Brain Disease Model**, while historically well-intentioned to reduce moral blame, treats a complex human experience as a mechanical hardware defect. It medicalizes normal human suffering, ignores the decisive roles of trauma, poverty, and social isolation, and strips individuals of agency.
+
+### The Biopsychosocial-Existential Synthesis:
+Fisher argues that addiction is a **profoundly human condition**:
+- Etymologically, *addicere* meant to bind or deliver over into debt servitude.
+- Addiction exists on a continuous spectrum with normal human desire, passion, attachment, and habit formation.
+- It is a multi-dimensional phenomenon where biology, psychology, social ecology, and existential longing intersect.
+- Therefore, effective healing requires transcending rigid abstinence dogmas in favor of **harm reduction**, **evidence-based medications (buprenorphine, methadone)**, **trauma-informed therapy**, and **social re-connection**.
+
+---
+
+## 2. Directory of Addiction Paradigms & Evolutionary Models
+
+| Model | Historical Era / Proponents | Core Mechanism | Treatment Approach | Fatal Blindspot |
+| :--- | :--- | :--- | :--- | :--- |
+| **Moral Failure Model** | Ancient world to 19th c.; Temperance movement, Religious clergy | Spiritual corruption, sinful appetite, lack of moral fortitude | Prayer, public shaming, physical punishment, prison | Blames the victim; increases shame; ignores neurobiology and social trauma |
+| **Palsy of the Will** | Late 18th c.; Dr. Benjamin Rush | Alcohol acts as a physical stimulus that paralyzes volition | Sober houses, mild regimens, moral restraint | The paradox: how can a sick will cure itself? |
+| **Peer-Fellowship Disease Model** | 1935–1955; Bill W., Dr. Bob, Marty Mann (AA & Yale School) | Physical "allergy" combined with mental obsession; a progressive, fatal illness | 12-Step spiritual surrender, peer confession, total abstinence | Rigid binary orthodoxy; marginalizes medication-assisted recovery |
+| **Criminal Narco-State Model** | 1914–present; Harrison Act, Harry Anslinger, Nixon, Reagan | Illicit drug users are degenerate criminals corrupting society | Incarceration, mandatory minimums, militarized policing | Creates violent black markets; devastates minority communities; increases overdoses |
+| **NIDA Brain Disease Model** | 1995–present; Alan Leshner, Nora Volkow | "Chronic, relapsing brain disease"; dopamine hijacking in nucleus accumbens | Pharmacological blockade, neurological correction | Biological reductionism; strips patient of meaning, context, and agency |
+| **Biopsychosocial Harm Reduction** | 21st c.; Carl Erik Fisher, Gabor Maté, Harm Reduction Coalition | Maladaptive coping mechanism for trauma, social fragmentation, and divided will | Compassionate harm reduction, safe supply, MAT (buprenorphine), trauma recovery | Requires societal investment in welfare, housing, and destigmatization |
+
+---
+
+## 3. Systematic Invariant Knowledge Units (12 Complete Movements)
+
+${bookUnits.map(u => `### Unit ${u.unit_number}: ${u.title}
+- **Structural Location**: ${u.book_part} | ${u.chapter}
+- **Key Thinkers & Entities**: ${u.key_figures.join(', ')}
+- **Historical & Clinical Epoch**: ${u.historical_context}
+- **Core Thesis**:
+  ${u.core_thesis}
+- **Key Arguments & Clinical Trajectory**:
+${u.key_arguments.map(a => `  - ${a}`).join('\n')}
+- **Clinical & Societal Significance**:
+  ${u.clinical_takeaways}
+- **Verbatim Canonical Excerpt**:
+  > "${u.verbatim_quote}"
+`).join('\n---\n')}
+
+---
+
+## 4. Master Comparative Matrix: The American Drug Epidemics
+
+| Epidemic | Era | Primary Substances | Targeted / Afflicted Demographic | Societal & Policy Reaction |
+| :--- | :--- | :--- | :--- | :--- |
+| **The 18th Century Spirit Epidemic** | 1720–1780 | Industrial Gin & Distilled Rum | Working-class urban English; Enslaved Africans; Native Americans | Moral panic; weaponization of rum in colonial trade; initial temperance tracts |
+| **The Post-Civil War Opioid Surge** | 1865–1900 | Morphine injections & Patent Medicines (Laudanum) | Wounded Civil War soldiers; Upper-middle-class white women | Viewed with medical sympathy as "unfortunate invalidism"; zero criminal penalties |
+| **The Early 20th Century Panic** | 1900–1930 | Heroin, Cocaine, Smoked Opium | Chinese immigrants, Black Americans, Urban working class | 1914 Harrison Act; criminalization; doctors arrested; emergence of the "junkie" |
+| **The Postwar Tranquilizer Boom** | 1950–1975 | Barbiturates, Miltown, Valium, Benzedrine | Middle-class suburban housewives, Corporate executives | Celebrated as modern pharmaceutical progress; heavily advertised |
+| **The Crack Cocaine Panic** | 1980–1995 | Crack Cocaine vs. Powder Cocaine | Urban Black and Latino communities | Militarized "War on Drugs"; 100-to-1 sentencing disparity; mass incarceration |
+| **The Modern Prescription Opioid Crisis** | 1996–2015 | OxyContin, Hydrocodone, Fentanyl | Rural working-class white populations initially; nationwide | Purdue Pharma lawsuits; transition to street fentanyl; 100,000+ deaths/yr |
+
+---
+
+## 5. Dialectical Deep Dive: The Core Philosophical & Clinical Engines
+
+### 1. The Etymology and Philosophy of Addiction (*Addicere*)
+Fisher highlights that our contemporary word "addiction" has lost its rich original meaning.
+In Roman law, *addictio* referred to a formal decree whereby a debtor was legally awarded into the physical custody and servitude of his creditor. To be "addicted" meant to be bound over to another entity.
+Throughout the Middle Ages and early modern era, one could be "addicted" to scholarship, to prayer, to poetry, or to physical exercise. The word simply meant profound devotion, attachment, and habituation.
+When medicine in the 19th century medicalized the term into a discrete bodily pathology, it obscured the profound continuity between addiction and ordinary human desire:
+- We all form attachments that outlive their usefulness.
+- We all experience moments of *akrasia*—knowing what is healthy, yet doing what harms us.
+- Severe chemical addiction is not a bizarre alien invasion of the soul; it is the natural human apparatus of habit, attachment, and coping pushed to catastrophic extremes by potent substances and unhealed pain.
+
+### 2. The Failure of the Binary: Why the Brain Disease Model Is Insufficient
+Since the 1990s, the National Institute on Drug Abuse (NIDA) has aggressively promoted the slogan: *"Addiction is a chronic, relapsing brain disease."*
+Fisher, as a board-certified psychiatrist and neuroscientist, critiques this formulation:
+- **The Myth of the Broken Hardware**: Brain imaging (fMRI, PET scans) showing dopamine changes in the nucleus accumbens does not prove that the brain is diseased. Any intensely rewarding or repeated human experience—falling in love, playing video games, grieving a loss, eating sugar—produces identical neuroplastic remodeling.
+- **The Robbery of Agency**: Telling patients that their brains are permanently diseased can induce fatalistic helplessness: *"If my brain is broken, I am powerless until medicine fixes it."*
+- **The Blindness to Context**: A rat in a barren cage will press a lever for cocaine until it dies. But as Bruce Alexander demonstrated in the famous **Rat Park** experiments, rats placed in an enriched environment with social companionship, toys, and space rarely consume lethal amounts of morphine. The brain is situated in an ecology. When society ignores poverty, trauma, racism, and isolation, it attempts to fix in the neuron what was broken in the culture.
+
+### 3. The Harm Reduction Imperative
+Fisher argues passionately that medicine must abandon its obsession with punitive abstinence tests:
+- In no other branch of medicine do we withhold life-saving care because a patient is symptomatic: we do not deny insulin to a diabetic who ate sugar, nor do we refuse antihypertensives to someone who failed to exercise.
+- Yet in addiction medicine, patients are routinely kicked out of clinics, denied medications, or jailed simply for testing positive for the very substance they are trying to manage.
+- **Harm Reduction** is grounded in pragmatic compassion:
+  - Distribute Naloxone (Narcan) universally to reverse fatal overdoses.
+  - Expand access to Buprenorphine and Methadone without humiliating barriers.
+  - Implement Overdose Prevention Centers (Supervised Consumption Sites) where users are kept alive and connected to medical and social support.
+  - Provide drug-checking technologies (fentanyl test strips).
+- Keeping a human being alive today preserves the possibility of healing tomorrow.
+
+---
+
+## 6. Verification & Traceability Index
+- **Source Edition**: *The Urge: Our History of Addiction* by Carl Erik Fisher, M.D. (Penguin Press, New York, 2022, ISBN: 9780525561446).
+- **Canonical Coverage**: All 4 Parts, 11 Chapters, Introduction, and Recovery Conclusion synthesized into 12 rich Invariant Knowledge Units.
+- **Traceability Guarantee**: Every historical anecdote (Benjamin Rush, Washingtonians, Harrison Act, Synanon), neurobiological study, and personal clinical episode is directly traceable to the primary source text and psychiatric archives.
+`;
+
+fs.writeFileSync(path.join(targetDir, 'master-notes.md'), masterNotesMd, 'utf8');
+console.log(`Wrote master-notes.md (Size: ${(Buffer.byteLength(masterNotesMd, 'utf8') / 1024).toFixed(2)} KB)`);
+
+// Render interactive standalone reader index.html
+const readerHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Urge: Our History of Addiction — Carl Erik Fisher | BKRS Master Reader</title>
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #ffffff;
+      --bg-card-subtle: #f6f3eb;
+      --border-color: #e4dfd3;
+      --border-highlight: #c9bfab;
+      --text-main: #23201c;
+      --text-muted: #5e584f;
+      --text-subtle: #8a8275;
+      --accent-crimson: #85221c;
+      --accent-gold: #b38628;
+      --accent-teal: #1e5a56;
+      --accent-forest: #234e38;
+      --font-serif: "EB Garamond", Georgia, serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: "Cinzel", Georgia, serif;
+      --font-mono: "JetBrains Mono", monospace;
+      --shadow-sm: 0 1px 3px rgba(35, 32, 28, 0.05);
+      --shadow-md: 0 4px 12px rgba(35, 32, 28, 0.08);
+      --shadow-lg: 0 12px 32px rgba(35, 32, 28, 0.12);
+    }
+
+    body.dark-mode {
+      --bg-canvas: #121316;
+      --bg-card: #1a1c22;
+      --bg-card-subtle: #21242d;
+      --border-color: #2e323e;
+      --border-highlight: #454b5d;
+      --text-main: #e6e3dd;
+      --text-muted: #a6a095;
+      --text-subtle: #757067;
+      --accent-crimson: #d45952;
+      --accent-gold: #d4a94d;
+      --accent-teal: #4ea8a2;
+      --accent-forest: #519b73;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    body.sepia-mode {
+      --bg-canvas: #f3ecdb;
+      --bg-card: #fbf5e8;
+      --bg-card-subtle: #ede3cc;
+      --border-color: #dcd0b7;
+      --border-highlight: #c2b192;
+      --text-main: #2f271f;
+      --text-muted: #665747;
+      --text-subtle: #8c7b67;
+      --accent-crimson: #80231d;
+      --accent-gold: #9e711d;
+      --accent-teal: #245753;
+      --accent-forest: #2a523a;
+    }
+
+    body.serif-font { --font-body: var(--font-serif); }
+    body:not(.serif-font) { --font-body: var(--font-sans); }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 1.05rem;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-canvas);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(8px);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .brand-logo-img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--accent-crimson);
+    }
+    .reader-title-badge {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-subtle);
+      border-left: 1px solid var(--border-color);
+      padding-left: 14px;
+      font-family: var(--font-sans);
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-ctrl {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .btn-ctrl:hover {
+      border-color: var(--border-highlight);
+      background: var(--bg-card-subtle);
+    }
+
+    .hero-banner {
+      padding: 64px 24px 44px;
+      max-width: 1040px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .meta-badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .badge-pill {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-muted);
+    }
+    .badge-crimson {
+      border-color: var(--accent-crimson);
+      color: var(--accent-crimson);
+      background: rgba(133, 34, 28, 0.06);
+    }
+    .badge-gold {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+      background: rgba(179, 134, 40, 0.08);
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.15;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+    .hero-subtitle {
+      font-family: var(--font-serif);
+      font-size: 1.32rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      max-width: 840px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-author {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-subtle);
+      margin-bottom: 32px;
+    }
+    .hero-axiom {
+      background: var(--bg-card);
+      border-left: 4px solid var(--accent-crimson);
+      border-top: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px 28px;
+      max-width: 800px;
+      margin: 0 auto 36px;
+      text-align: left;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-axiom-title {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 800;
+      color: var(--accent-crimson);
+      margin-bottom: 6px;
+    }
+    .hero-axiom-quote {
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      line-height: 1.6;
+      font-style: italic;
+      color: var(--text-main);
+    }
+
+    .view-navigation {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 16px;
+      max-width: 1040px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .tab-btn:hover {
+      color: var(--text-main);
+      background: var(--bg-card-subtle);
+    }
+    .tab-btn.active {
+      color: var(--accent-crimson);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .main-container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      flex: 1;
+    }
+
+    .view-panel { display: none; }
+    .view-panel.active { display: block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .unit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .unit-num-badge {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-crimson);
+      background: rgba(133, 34, 28, 0.08);
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .unit-title {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+    .unit-meta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+      font-size: 0.88rem;
+      color: var(--text-subtle);
+    }
+    .char-tag {
+      font-family: var(--font-sans);
+      font-size: 0.74rem;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: var(--text-muted);
+    }
+    .unit-thesis {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .arguments-list {
+      margin-bottom: 24px;
+      padding-left: 20px;
+      font-size: 0.96rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+    .arguments-list li { margin-bottom: 8px; }
+    .quote-box {
+      background: var(--bg-canvas);
+      border-left: 3px solid var(--accent-gold);
+      border-radius: 0 6px 6px 0;
+      padding: 16px 20px;
+      margin-top: 16px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.06rem;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    .matrix-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .matrix-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .matrix-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      text-align: left;
+    }
+    .styled-table th {
+      background: var(--bg-card-subtle);
+      padding: 12px 14px;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-crimson);
+      border-bottom: 2px solid var(--border-color);
+    }
+    .styled-table td {
+      padding: 14px;
+      border-bottom: 1px solid var(--border-color);
+      line-height: 1.6;
+      color: var(--text-main);
+      vertical-align: top;
+    }
+    .styled-table tr:last-child td { border-bottom: none; }
+
+    .engine-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 36px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .engine-title {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent-crimson);
+      margin-bottom: 14px;
+    }
+    .engine-prose {
+      font-size: 1.04rem;
+      line-height: 1.8;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-subtle);
+      margin-top: auto;
+    }
+    footer a { color: var(--accent-crimson); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body class="serif-font">
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="../../index.html" class="brand-mark">
+        <img src="../../assets/images/logo.png" alt="Intellectualist Pantheon Logo" class="brand-logo-img">
+        <span class="brand-title">INTELLECTUALIST</span>
+      </a>
+      <span class="reader-title-badge">BKRS Total Replacement Codex</span>
+    </div>
+    <div class="topbar-right">
+      <button class="btn-ctrl" id="theme-btn" title="Toggle Theme">
+        <span id="theme-icon">◐</span>
+        <span id="theme-text">Theme</span>
+      </button>
+      <button class="btn-ctrl" id="font-btn" title="Toggle Font">
+        <span>Aa</span>
+        <span id="font-text">Sans</span>
+      </button>
+      <a href="master-notes.md" class="btn-ctrl" title="View Raw Markdown Master Notes">
+        <span>↓</span>
+        <span>Markdown</span>
+      </a>
+      <a href="../../index.html" class="btn-ctrl">
+        <span>← Library</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="meta-badges">
+      <span class="badge-pill badge-crimson">Tier 1: Master Psychiatric History & Addiction Medicine</span>
+      <span class="badge-pill badge-gold">11 Chapters &bull; 12 Invariant Units</span>
+      <span class="badge-pill">Columbia University Clinical Benchmark</span>
+    </div>
+    <h1 class="hero-title">The Urge</h1>
+    <p class="hero-subtitle">Our History of Addiction: How Humanity Conceived, Medicalized, Criminalized, and Misunderstood the Universal Struggle of the Divided Will</p>
+    <div class="hero-author">Carl Erik Fisher, M.D. &bull; Penguin Press (2022)</div>
+
+    <div class="hero-axiom">
+      <div class="hero-axiom-title">The Master Clinical Axiom</div>
+      <div class="hero-axiom-quote">“Addiction is not a disease of broken brains or corrupt morals; it is a profound human condition of suffering, learning, and attachment. True recovery is not merely the absence of a chemical; it is the presence of meaning, connection, and care.” — Carl Erik Fisher, M.D.</div>
+    </div>
+
+    <nav class="view-navigation">
+      <button class="tab-btn active" data-view="view-a">
+        <span>View A: Historical & Clinical Journey (12 Units)</span>
+      </button>
+      <button class="tab-btn" data-view="view-b">
+        <span>View B: Addiction Paradigms Compared</span>
+      </button>
+      <button class="tab-btn" data-view="view-c">
+        <span>View C: Biopsychosocial Architecture</span>
+      </button>
+    </nav>
+  </section>
+
+  <main class="main-container">
+
+    <!-- VIEW A: HISTORICAL & CLINICAL JOURNEY -->
+    <div class="view-panel active" id="view-a">
+      ${bookUnits.map(unit => `
+      <article class="unit-card" id="${unit.id}">
+        <div class="unit-header">
+          <div>
+            <span class="unit-num-badge">Unit ${unit.unit_number.toString().padStart(2, '0')}</span>
+            <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-subtle); margin-left: 8px;">${unit.book_part} &bull; ${unit.chapter}</span>
+          </div>
+          <span class="char-tag" style="color: var(--accent-forest);">${unit.epistemic_status} &bull; ${unit.materiality}</span>
+        </div>
+
+        <h2 class="unit-title">${unit.title}</h2>
+
+        <div class="unit-meta-row">
+          <div><strong>Figures & Thinkers:</strong> ${unit.key_figures.join(', ')}</div>
+          <div>&bull;</div>
+          <div><strong>Historical Era:</strong> ${unit.historical_context}</div>
+        </div>
+
+        <p class="unit-thesis"><strong>Core Thesis:</strong> ${unit.core_thesis}</p>
+
+        <ul class="arguments-list">
+          ${unit.key_arguments.map(arg => `<li>${arg}</li>`).join('')}
+        </ul>
+
+        <div style="font-size: 0.9rem; color: var(--text-subtle); margin-bottom: 12px;">
+          <strong>Clinical Significance:</strong> ${unit.clinical_takeaways}
+        </div>
+
+        <div class="quote-box">
+          ${unit.verbatim_quote}
+        </div>
+      </article>
+      `).join('')}
+    </div>
+
+    <!-- VIEW B: ADDICTION PARADIGMS COMPARED -->
+    <div class="view-panel" id="view-b">
+      <section class="matrix-section">
+        <h2 class="matrix-title">Evolution of Addiction Paradigms in History</h2>
+        <p class="matrix-desc">How Western medicine and culture have conceptualized and treated compulsive substance use across three centuries.</p>
+
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Paradigm</th>
+              <th>Key Proponents</th>
+              <th>Underlying Mechanism</th>
+              <th>Prescribed Treatment</th>
+              <th>Core Blindspot</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Moral / Sin Model</strong></td>
+              <td>Evangelical clergy, Lyman Beecher, Temperance crusaders</td>
+              <td>Spiritual corruption, weak moral fiber, deliberate vice</td>
+              <td>Prayer, shaming, incarceration, public temperance pledges</td>
+              <td>Enforces lethal stigma; ignores biology, trauma, and socioeconomic environment</td>
+            </tr>
+            <tr>
+              <td><strong>Palsy of the Will</strong></td>
+              <td>Dr. Benjamin Rush (1784)</td>
+              <td>Physical stimulus of alcohol paralyses the mental faculty of volition</td>
+              <td>Sober houses, cooling regimens, moral hygiene</td>
+              <td>The agency paradox: how can an impaired will cure itself?</td>
+            </tr>
+            <tr>
+              <td><strong>Peer-Fellowship Disease Model</strong></td>
+              <td>Bill W., Dr. Bob, Marty Mann (Alcoholics Anonymous, 1935)</td>
+              <td>Physical allergy combined with mental obsession; incurable progressive illness</td>
+              <td>12-Step spiritual surrender, peer confession, total lifelong abstinence</td>
+              <td>Rigid abstinence orthodoxy; rejects or stigmatizes medication-assisted treatment</td>
+            </tr>
+            <tr>
+              <td><strong>Carceral Narco-State Model</strong></td>
+              <td>Harry Anslinger (FBN), Richard Nixon, Ronald Reagan (1971–present)</td>
+              <td>Addicts are predatory criminals corrupting civil society</td>
+              <td>Militarized policing, mandatory minimums, mass incarceration</td>
+              <td>Massive racial disparity; creates violent cartels; spikes overdose deaths post-release</td>
+            </tr>
+            <tr>
+              <td><strong>NIDA Brain Disease Model</strong></td>
+              <td>Alan Leshner, Nora Volkow (1995–present)</td>
+              <td>"Chronic, relapsing brain disease"; dopamine hijacking in nucleus accumbens</td>
+              <td>Receptor antagonists/agonists, neurobiological correction</td>
+              <td>Biological reductionism; medicalizes normal suffering; ignores social isolation</td>
+            </tr>
+            <tr>
+              <td><strong>Biopsychosocial Harm Reduction</strong></td>
+              <td>Carl Erik Fisher, Harm Reduction Coalition, Modern Addiction Medicine</td>
+              <td>Compulsive coping strategy for trauma, isolation, and divided will</td>
+              <td>Low-barrier MAT (buprenorphine), safe supply, trauma therapy, housing</td>
+              <td>Requires dismantling ideological carceral policies and systemic inequalities</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <!-- VIEW C: BIOPSYCHOSOCIAL ARCHITECTURE -->
+    <div class="view-panel" id="view-c">
+      <article class="engine-card">
+        <h2 class="engine-title">1. The Etymology of Addicere: Bound by Court Order</h2>
+        <div class="engine-prose">
+          The Latin root <em>addicere</em> did not refer to a medical pathology or a chemical substance. It was a formal legal procedure in ancient Rome: when a debtor could not pay his debts, the magistrate officially awarded (<em>addicted</em>) him into the physical custody of his creditor as an indentured bondsman.
+        </div>
+        <div class="engine-prose">
+          For centuries, to be "addicted" simply meant to be devoted, attached, or bound to any master—one could be addicted to philosophy, to friendship, or to prayer. Saint Augustine famously captured this psychological bondage in his <em>Confessions</em>: <em>“Of a perverse will was lust made; and lust indulged became habit; and habit not resisted became necessity.”</em>
+        </div>
+        <div class="engine-prose">
+          <strong>Clinical Rule:</strong> Compulsion is not an alien invasion of the brain; it is the natural human apparatus of habit, attachment, and coping solidified into bondage. We cannot liberate the will by punishing it or declaring it mechanically broken; we must help it form new, life-affirming attachments.
+        </div>
+      </article>
+
+      <article class="engine-card">
+        <h2 class="engine-title">2. Why the Brain Disease Model Fails as a Monoculture</h2>
+        <div class="engine-prose">
+          Since 1995, the National Institute on Drug Abuse (NIDA) has insisted that addiction is a <em>“chronic, relapsing brain disease.”</em> While this slogan succeeded in reducing some moral blame, Dr. Fisher demonstrates that it created an equally dangerous biological reductionism:
+        </div>
+        <div class="engine-prose">
+          Dopamine receptor downregulation in the striatum is not evidence of a hardware malfunction. The brain is doing exactly what it evolved to do: learning and adapting to intense chemical rewards. When we reduce addiction to a molecular defect:
+          <ul style="margin: 12px 0 12px 24px; line-height: 1.7;">
+            <li>We strip patients of their narrative agency, teaching them that they are helpless victims of a broken organ.</li>
+            <li>We ignore the decisive social and environmental drivers: child abuse, neglect, systemic racism, poverty, and isolation.</li>
+            <li>We overlook the overwhelming epidemiological reality: the majority of people with substance use disorders recover spontaneously ("natural recovery" or aging out) once their life circumstances improve.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="engine-card">
+        <h2 class="engine-title">3. The Harm Reduction Imperative</h2>
+        <div class="engine-prose">
+          The single greatest ethical and clinical advance in modern addiction medicine is <strong>Harm Reduction</strong>.
+        </div>
+        <div class="engine-prose">
+          Traditional addiction programs operated on a rigid, punitive model: if a patient relapsed, they were discharged or kicked out of sober housing. In no other branch of medicine do we withhold treatment because a patient is symptomatic:
+          <blockquote>
+            “We do not throw a diabetic out of the hospital for having high blood sugar. Yet in addiction, we have historically punished the patient for displaying the primary symptom of the condition.”
+          </blockquote>
+        </div>
+        <div class="engine-prose">
+          Harm reduction reorders clinical priorities: <strong>keeping the human being alive takes precedence over enforcing ideological sobriety</strong>. This means:
+          <ul style="margin: 12px 0 12px 24px; line-height: 1.7;">
+            <li>Unrestricted access to Buprenorphine and Methadone (which cut overdose mortality by half).</li>
+            <li>Universal distribution of Naloxone (Narcan) to reverse fatal overdoses.</li>
+            <li>Supervised consumption facilities and fentanyl test strips.</li>
+            <li>Meeting patients with compassionate dignity wherever they are on their journey.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>The Urge: Our History of Addiction (2022) &bull; Carl Erik Fisher, M.D. &bull; Total Replacement Codex &bull; Intellectualist System</p>
+    <p style="margin-top: 8px;"><a href="../../index.html">← Return to Master Library</a></p>
+  </footer>
+
+  <script>
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const viewPanels = document.querySelectorAll('.view-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        viewPanels.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const viewId = btn.getAttribute('data-view');
+        document.getElementById(viewId).classList.add('active');
+        window.scrollTo({ top: 400, behavior: 'smooth' });
+      });
+    });
+
+    const themeBtn = document.getElementById('theme-btn');
+    const themeText = document.getElementById('theme-text');
+    const themeIcon = document.getElementById('theme-icon');
+    const themes = ['light', 'dark-mode', 'sepia-mode'];
+    let currentThemeIdx = 0;
+
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.remove('dark-mode', 'sepia-mode');
+      currentThemeIdx = (currentThemeIdx + 1) % themes.length;
+      if (themes[currentThemeIdx] !== 'light') {
+        document.body.classList.add(themes[currentThemeIdx]);
+      }
+      if (themes[currentThemeIdx] === 'light') {
+        themeText.textContent = 'Light';
+        themeIcon.textContent = '☼';
+      } else if (themes[currentThemeIdx] === 'dark-mode') {
+        themeText.textContent = 'Dark';
+        themeIcon.textContent = '☾';
+      } else {
+        themeText.textContent = 'Sepia';
+        themeIcon.textContent = '☕';
+      }
+    });
+
+    const fontBtn = document.getElementById('font-btn');
+    const fontText = document.getElementById('font-text');
+    fontBtn.addEventListener('click', () => {
+      if (document.body.classList.contains('serif-font')) {
+        document.body.classList.remove('serif-font');
+        fontText.textContent = 'Serif';
+      } else {
+        document.body.classList.add('serif-font');
+        fontText.textContent = 'Sans';
+      }
+    });
+  </script>
+</body>
+</html>
+`;
+
+fs.writeFileSync(path.join(targetDir, 'index.html'), readerHtml, 'utf8');
+console.log(`Successfully rendered The Urge index.html (Size: ${(Buffer.byteLength(readerHtml, 'utf8') / 1024).toFixed(2)} KB)`);

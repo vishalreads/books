@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 26,
-  "total_hours_saved": 497.5,
+  "total_books": 27,
+  "total_hours_saved": 511.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1112,6 +1112,52 @@
       ],
       "html_path": "distillations/the-mosquito/index.html",
       "markdown_path": "distillations/the-mosquito/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "the-urge-history-of-addiction",
+      "title": "The Urge: Our History of Addiction",
+      "subtitle": "How Humanity Conceived, Medicalized, Criminalized, and Misunderstood the Universal Struggle of the Divided Will",
+      "author": "Carl Erik Fisher, M.D.",
+      "year": 2022,
+      "publisher": "Penguin Press / Intellectualist Clinical Psychiatry Series",
+      "epistemic_tier": "Tier 1: Master Psychiatric History & Addiction Medicine",
+      "tier_short": "Tier 1",
+      "category": "Trauma Dynamics, IPV & Narrative Psychology",
+      "original_volume": "11 Chapters across 4 Parts Synthesized into 12 Invariant Units",
+      "reading_time_saved": "13.5 hrs saved",
+      "hours_val": 13.5,
+      "core_axiom": "Addiction is not a disease of broken brains or corrupt morals; it is a profound human condition of suffering, learning, and attachment. True recovery is not merely the absence of a chemical; it is the presence of meaning, connection, and care.",
+      "tags": [
+        "Carl Erik Fisher",
+        "The Urge",
+        "Addiction",
+        "Psychiatry",
+        "Recovery",
+        "Harm Reduction",
+        "Alcoholics Anonymous",
+        "Opioid Epidemic",
+        "War on Drugs",
+        "Buprenorphine",
+        "Mental Health"
+      ],
+      "key_models": [
+        "The Ancient Concept of Addicere (Bound by Legal Judgment)",
+        "The Falure of the Binary (Beyond Moral Flaw and Mechanical Brain Disease)",
+        "The Iatrogenic Cycle (How Medicine Repeatedly Creates Drug Epidemics)",
+        "The Carceral Manufacture of the Junkie (Harrison Act to Mass Incarceration)",
+        "The Biopsychosocial-Existential Synthesis of Volition",
+        "The Harm Reduction Imperative (Keeping People Alive Above Ideological Sobriety)"
+      ],
+      "landmark_studies": [
+        "Dr. Benjamin Rush 1784 Inebriety Treatise & Disease in the Will",
+        "The 1840 Washingtonian Peer-Recovery Mass Movement in Baltimore",
+        "The 1914 Harrison Act & Supreme Court Criminalization of Maintenance",
+        "The Lexington Kentucky 'Narco Farm' & Synanon Therapeutic Cult",
+        "Columbia University Psychiatric Residency & Physician Health Recovery"
+      ],
+      "html_path": "distillations/the-urge-history-of-addiction/index.html",
+      "markdown_path": "distillations/the-urge-history-of-addiction/master-notes.md",
       "featured": true
     }
   ]
