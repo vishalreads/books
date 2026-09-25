@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 13,
-  "total_hours_saved": 358,
+  "total_books": 14,
+  "total_hours_saved": 372,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -542,6 +542,51 @@
       ],
       "html_path": "distillations/the-art-of-war/index.html",
       "markdown_path": "distillations/the-art-of-war/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "deep-survival",
+      "title": "Deep Survival: Who Lives, Who Dies, and Why",
+      "subtitle": "True Stories of Miraculous Endurance and Sudden Death",
+      "author": "Laurence Gonzales",
+      "year": 2003,
+      "publisher": "W. W. Norton & Company / Intellectualist Survival Psychology Series",
+      "epistemic_tier": "Tier 1: Cognitive Neuroscience & Empirical Survival Behavior",
+      "tier_short": "Tier 1",
+      "category": "Cognitive Science & Decision Making",
+      "original_volume": "15 Chapters + Appendix (16 Comprehensive Units, Cognitive Models & Case Studies)",
+      "reading_time_saved": "14.0 hrs saved",
+      "hours_val": 14,
+      "core_axiom": "Survival is not determined by physical strength or technical gear, but by emotional regulation, mental models, and cognitive mastery under mortal stress.",
+      "tags": [
+        "Survival Psychology",
+        "Cognitive Science",
+        "Decision Making",
+        "Normal Accidents",
+        "Amygdala Hijack",
+        "10/80/10 Rule",
+        "Extreme Environments"
+      ],
+      "key_models": [
+        "The Fast vs. Slow Visual Pathway (Amygdala Hijack vs. Neocortex)",
+        "Somatic Markers & Mental Models (Memories of the Future)",
+        "Bending the Map (The Psychology of Lostness & Cognitive Dissonance)",
+        "The 10/80/10 Disaster Behavior Law (10% Panic, 80% Paralyzed, 10% Calm)",
+        "Normal Accidents & Tight Coupling (Charles Perrow)",
+        "Self-Organized Criticality & Sandpile Avalanches (Per Bak)",
+        "Risk Homeostasis & Why Experts Die (Gerald Wilde)",
+        "The 12 Infallible Rules of Survival"
+      ],
+      "landmark_studies": [
+        "Antonio Damasio Somatic Marker Hypothesis (Descartes' Error)",
+        "Joseph LeDoux Amygdala Fear Circuitry (The Emotional Brain)",
+        "Charles Perrow Normal Accidents (Living with High-Risk Technologies)",
+        "Christopher Chabris & Daniel Simons Inattentional Blindness Studies",
+        "National Association for Search and Rescue (NASAR) Lost Person Database",
+        "Joe Simpson Peruvian Andes Glacier Survival (Touching the Void)"
+      ],
+      "html_path": "distillations/deep-survival/index.html",
+      "markdown_path": "distillations/deep-survival/master-notes.md",
       "featured": false
     }
   ]
