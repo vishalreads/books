@@ -1,0 +1,617 @@
+{
+  "audit_timestamp": "2026-09-25T05:32:10.933Z",
+  "audit_standard": "BKRS v1.0 Step 3.1 Validation Accounting Integrity Check",
+  "benchmark_target": "Satvinder S. Juss, Bhagat Singh: A Life in Revolution (2022)",
+  "verdict": "PASS",
+  "summary": "Underlying validation uses the original frozen 50-question identities, dimensions, and archetypes with zero discrepancy in the canonical JSON or Markdown report. The apparent discrepancy in the previous chat summary was purely an ad-hoc presentation/grouping artifact in the assistant prose.",
+  "checks": {
+    "question_identity": {
+      "total_frozen_questions": 50,
+      "total_evaluated_questions": 50,
+      "missing_question_ids": [],
+      "extra_question_ids": [],
+      "duplicate_question_ids": [],
+      "status": "PASS"
+    },
+    "dimension_identity": {
+      "total_checked": 50,
+      "matched": 50,
+      "mismatched": 0,
+      "status": "PASS"
+    },
+    "archetype_identity": {
+      "total_checked": 50,
+      "matched": 50,
+      "mismatched": 0,
+      "status": "PASS"
+    },
+    "verdict_identity": {
+      "total_checked": 50,
+      "pass_count": 50,
+      "partial_count": 0,
+      "fail_count": 0,
+      "status": "PASS"
+    },
+    "aggregate_reconciliation": {
+      "frozen_allocation": {
+        "D1 (Macro-Historical Structure & Chronology)": 7,
+        "D2 (Primary Text & Verbatim Subject Utterance)": 8,
+        "D3 (Micro-Texture & Evidentiary Forensics)": 8,
+        "D4 (Multi-Step Causal Historical Mechanics)": 8,
+        "D5 (Epistemic Demarcation: Author vs. Subject)": 8,
+        "D6 (Historiographical Disputes & Conflicting Evidence)": 6,
+        "D7 (Cross-Event Dependencies & Relational Trajectories)": 5,
+        "Total": 50
+      },
+      "validation_allocation": {
+        "D1 (Macro-Historical Structure & Chronology)": 7,
+        "D2 (Primary Text & Verbatim Subject Utterance)": 8,
+        "D3 (Micro-Texture & Evidentiary Forensics)": 8,
+        "D4 (Multi-Step Causal Historical Mechanics)": 8,
+        "D5 (Epistemic Demarcation: Author vs. Subject)": 8,
+        "D6 (Historiographical Disputes & Conflicting Evidence)": 6,
+        "D7 (Cross-Event Dependencies & Relational Trajectories)": 5,
+        "Total": 50
+      },
+      "status": "PASS"
+    },
+    "discrepancy_explanation": {
+      "category": "Outcome A: Presentation/grouping error in conversational response text while canonical underlying artifacts are 100% correct.",
+      "detail": "In the assistant summary text of the previous conversational response, questions were informally grouped under 7 thematic subheadings with counts (7, 6, 7, 7, 7, 8, 8). In the actual underlying data artifacts (book-master-validation.json, BOOK_MASTER_VALIDATION.md, and questions.json), every question retains its exact frozen dimension and archetype in exact sequence matching the frozen protocol (7, 8, 8, 8, 8, 6, 5)."
+    },
+    "qualified_directives_enforcement": {
+      "total_qualified": 9,
+      "verified_in_validation": 9,
+      "directives": [
+        {
+          "id": "VAL-HIST-D1-03",
+          "requirement": "Clandestine rail itinerary recorded; daily underground lodgings acknowledged as unrecorded due to tradecraft.",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D5-33",
+          "requirement": "Bhagat Singh letter on love isolated as [PRIMARY_SUBJECT_WRITING]; Kanpur romance isolated as [BIOGRAPHER_CONJECTURE].",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D5-34",
+          "requirement": "FIR 121 namelessness preserved alongside later approver and trial shot assignments.",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D6-40",
+          "requirement": "Irwin private minute vs nationalist recollections of private talks preserved without synthesis.",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D6-41",
+          "requirement": "Bose ultimatum thesis vs Gandhian satyagraha and police resignation threat thesis preserved.",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D6-42",
+          "requirement": "Panicked auditory bystander shot counts (2 to 12+) vs Dr. Rai autopsy (8 bullet wounds) preserved.",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D6-43",
+          "requirement": "Secret Ganda Singh Wala disposal order preserved alongside public discovery on Sutlej banks.",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D6-44",
+          "requirement": "Bipan Chandra scientific Marxism vs Maclean/Moffat revolutionary romanticism debate preserved.",
+          "status": "VERIFIED_PASS"
+        },
+        {
+          "id": "VAL-HIST-D6-45",
+          "requirement": "Jail Notebook chain of custody to Kumari Lajjawati preserved; unresolved status of missing tracts recorded.",
+          "status": "VERIFIED_PASS"
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "question_mapping_table": [
+    {
+      "question_id": "VAL-HIST-D1-01",
+      "frozen_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "validation_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-01: Epochal Calendar Anchor",
+      "validation_archetype": "ARCHETYPE-01: Epochal Calendar Anchor",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D1-02",
+      "frozen_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "validation_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-02: Interval & Pacing",
+      "validation_archetype": "ARCHETYPE-02: Interval & Pacing",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D1-03",
+      "frozen_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "validation_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-03: Spatial-Temporal Tracking",
+      "validation_archetype": "ARCHETYPE-03: Spatial-Temporal Tracking",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D1-04",
+      "frozen_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "validation_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-04: Institutional/Legal Timeline Progression",
+      "validation_archetype": "ARCHETYPE-04: Institutional/Legal Timeline Progression",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D1-05",
+      "frozen_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "validation_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-05: Confinement/Action Duration",
+      "validation_archetype": "ARCHETYPE-05: Confinement/Action Duration",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D1-06",
+      "frozen_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "validation_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-06: Structural Organizational Turning Point",
+      "validation_archetype": "ARCHETYPE-06: Structural Organizational Turning Point",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D1-07",
+      "frozen_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "validation_dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-07: Narrative Exposure vs. Historical Occurrence",
+      "validation_archetype": "ARCHETYPE-07: Narrative Exposure vs. Historical Occurrence",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-08",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-08: Core Theoretical/Philosophical Formulation",
+      "validation_archetype": "ARCHETYPE-08: Core Theoretical/Philosophical Formulation",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-09",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-09: Formal Public/Courtroom Declarations",
+      "validation_archetype": "ARCHETYPE-09: Formal Public/Courtroom Declarations",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-10",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-10: Ideological Re-definition of Core Terms",
+      "validation_archetype": "ARCHETYPE-10: Ideological Re-definition of Core Terms",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-11",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-11: Private Correspondence Nuance",
+      "validation_archetype": "ARCHETYPE-11: Private Correspondence Nuance",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-12",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-12: Reading Corpus & Intellectual Provenance",
+      "validation_archetype": "ARCHETYPE-12: Reading Corpus & Intellectual Provenance",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-13",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-13: Direct Rebuttal to Contemporary Opponents",
+      "validation_archetype": "ARCHETYPE-13: Direct Rebuttal to Contemporary Opponents",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-14",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-14: Underground Manifesto / Agitational Text",
+      "validation_archetype": "ARCHETYPE-14: Underground Manifesto / Agitational Text",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D2-15",
+      "frozen_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "validation_dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-15: Final Testament / Concluding Life Declaration",
+      "validation_archetype": "ARCHETYPE-15: Final Testament / Concluding Life Declaration",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-16",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-16: Disguise & Physical Alteration",
+      "validation_archetype": "ARCHETYPE-16: Disguise & Physical Alteration",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-17",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-17: Operational Artifacts & Technology",
+      "validation_archetype": "ARCHETYPE-17: Operational Artifacts & Technology",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-18",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-18: Physical Spatial Scene Forensics",
+      "validation_archetype": "ARCHETYPE-18: Physical Spatial Scene Forensics",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-19",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-19: Daily Incarceration / Somatic Realism",
+      "validation_archetype": "ARCHETYPE-19: Daily Incarceration / Somatic Realism",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-20",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-20: Material & Financial Scarcity",
+      "validation_archetype": "ARCHETYPE-20: Material & Financial Scarcity",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-21",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-21: Clandestine Tradecraft & Communications",
+      "validation_archetype": "ARCHETYPE-21: Clandestine Tradecraft & Communications",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-22",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-22: State Surveillance & Intelligence Methods",
+      "validation_archetype": "ARCHETYPE-22: State Surveillance & Intelligence Methods",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D3-23",
+      "frozen_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "validation_dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-23: Eyewitness Physical & Emotional Reactions",
+      "validation_archetype": "ARCHETYPE-23: Eyewitness Physical & Emotional Reactions",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-24",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-24: Multi-Link Retaliatory Causation",
+      "validation_archetype": "ARCHETYPE-24: Multi-Link Retaliatory Causation",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-25",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-25: The Mechanics of Operational Divergence",
+      "validation_archetype": "ARCHETYPE-25: The Mechanics of Operational Divergence",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-26",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-26: Strategic Function of Sacrificial Action",
+      "validation_archetype": "ARCHETYPE-26: Strategic Function of Sacrificial Action",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-27",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-27: Instrumentalization of Legal / State Forums",
+      "validation_archetype": "ARCHETYPE-27: Instrumentalization of Legal / State Forums",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-28",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-28: Physiological Protest & Political Mobilization",
+      "validation_archetype": "ARCHETYPE-28: Physiological Protest & Political Mobilization",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-29",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-29: Coercive Pressures Driving Collaboration / Betrayal",
+      "validation_archetype": "ARCHETYPE-29: Coercive Pressures Driving Collaboration / Betrayal",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-30",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-30: State Institutional Reaction & Extraordinary Law",
+      "validation_archetype": "ARCHETYPE-30: State Institutional Reaction & Extraordinary Law",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D4-31",
+      "frozen_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "validation_dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-31: Post-Crisis Political Shockwaves",
+      "validation_archetype": "ARCHETYPE-31: Post-Crisis Political Shockwaves",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-32",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-32: Subject Utterance vs. Biographer Modernization",
+      "validation_archetype": "ARCHETYPE-32: Subject Utterance vs. Biographer Modernization",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-33",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-33: Empirical Record vs. Biographer Psychological Conjecture",
+      "validation_archetype": "ARCHETYPE-33: Empirical Record vs. Biographer Psychological Conjecture",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-34",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-34: Contemporaneous Record vs. Retrospective Recollection",
+      "validation_archetype": "ARCHETYPE-34: Contemporaneous Record vs. Retrospective Recollection",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-35",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-35: Subjective Perception vs. Documented Reality",
+      "validation_archetype": "ARCHETYPE-35: Subjective Perception vs. Documented Reality",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-36",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-36: Quarantining Biographer Ideological Framework",
+      "validation_archetype": "ARCHETYPE-36: Quarantining Biographer Ideological Framework",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-37",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-37: Approver / Coerced Deposition Discounting",
+      "validation_archetype": "ARCHETYPE-37: Approver / Coerced Deposition Discounting",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-38",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-38: Official Record Disinformation / Bias",
+      "validation_archetype": "ARCHETYPE-38: Official Record Disinformation / Bias",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D5-39",
+      "frozen_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "validation_dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-39: Quarantining Systemic Synthesis",
+      "validation_archetype": "ARCHETYPE-39: Quarantining Systemic Synthesis",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D6-40",
+      "frozen_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "validation_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-40: Disputed Key Leader Meeting / Conversation",
+      "validation_archetype": "ARCHETYPE-40: Disputed Key Leader Meeting / Conversation",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D6-41",
+      "frozen_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "validation_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-41: Contested Diplomatic / Political Negotiation",
+      "validation_archetype": "ARCHETYPE-41: Contested Diplomatic / Political Negotiation",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D6-42",
+      "frozen_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "validation_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-42: Ballistic / Physical Forensic Contradiction",
+      "validation_archetype": "ARCHETYPE-42: Ballistic / Physical Forensic Contradiction",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D6-43",
+      "frozen_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "validation_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-43: Clandestine Disposal / Cover-Up Controversy",
+      "validation_archetype": "ARCHETYPE-43: Clandestine Disposal / Cover-Up Controversy",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D6-44",
+      "frozen_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "validation_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-44: Ideological Maturation / Evolution Debate",
+      "validation_archetype": "ARCHETYPE-44: Ideological Maturation / Evolution Debate",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D6-45",
+      "frozen_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "validation_dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-45: Document Authenticity / Secret Intelligence Dossier",
+      "validation_archetype": "ARCHETYPE-45: Document Authenticity / Secret Intelligence Dossier",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D7-46",
+      "frozen_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "validation_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-46: Interpersonal Trajectory Under Legal / Physical Pressure",
+      "validation_archetype": "ARCHETYPE-46: Interpersonal Trajectory Under Legal / Physical Pressure",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D7-47",
+      "frozen_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "validation_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-47: Generational / Ideological Rupture",
+      "validation_archetype": "ARCHETYPE-47: Generational / Ideological Rupture",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D7-48",
+      "frozen_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "validation_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-48: Tactical Reversal Causal Dependency",
+      "validation_archetype": "ARCHETYPE-48: Tactical Reversal Causal Dependency",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D7-49",
+      "frozen_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "validation_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-49: Organizational Post-Crisis Survival",
+      "validation_archetype": "ARCHETYPE-49: Organizational Post-Crisis Survival",
+      "archetype_match": true,
+      "verdict": "PASS"
+    },
+    {
+      "question_id": "VAL-HIST-D7-50",
+      "frozen_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "validation_dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "dimension_match": true,
+      "frozen_archetype": "ARCHETYPE-50: Historical Reality vs. Posthumous Myth",
+      "validation_archetype": "ARCHETYPE-50: Historical Reality vs. Posthumous Myth",
+      "archetype_match": true,
+      "verdict": "PASS"
+    }
+  ]
+}
