@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 10,
-  "total_hours_saved": 266.5,
+  "total_books": 11,
+  "total_hours_saved": 281.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -414,6 +414,48 @@
       ],
       "html_path": "distillations/dont-bug-me/index.html",
       "markdown_path": "distillations/dont-bug-me/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "endurance",
+      "title": "Endurance: Shackleton's Incredible Voyage",
+      "subtitle": "The Definitive Polar Survival Chronicle of the Imperial Trans-Antarctic Expedition (1914–1916)",
+      "author": "Alfred Lansing",
+      "year": 1959,
+      "publisher": "McGraw-Hill / Carroll & Graf (2010)",
+      "epistemic_tier": "Tier 1: Corroborated Historical Survival Narrative",
+      "tier_short": "Tier 1",
+      "category": "History, Biography & Philosophy",
+      "original_volume": "282 Pages (8 Parts, 41 Chapters)",
+      "reading_time_saved": "14.5 hrs saved",
+      "hours_val": 14.5,
+      "core_axiom": "When the ship was crushed and ambition died, survival became the sole mission: through iron leadership, absolute camaraderie, and impossible audacity, every single man came back alive.",
+      "tags": [
+        "Antarctica",
+        "Polar Survival",
+        "Ernest Shackleton",
+        "James Caird",
+        "Weddell Sea",
+        "Crisis Leadership",
+        "Elephant Island",
+        "South Georgia"
+      ],
+      "key_models": [
+        "The Immediate Pivot: From Exploration Ambition to Survival Mission",
+        "Egalitarian Social Management under Complete Polar Isolation",
+        "The Weddell Sea Ice Drift Dynamics (Clockwise Gyre)",
+        "The Furious Fifties Navigation Engine (Worsley's Miraculous Sextant Sights)",
+        "The Snuggery Micro-Climate Architecture (Inverted Lifeboats on Gravel)",
+        "The 36-Hour Uncharted Alpine Crossing of South Georgia"
+      ],
+      "landmark_studies": [
+        "Imperial Trans-Antarctic Expedition Official Ship's Logs (1914–1916)",
+        "Diaries of Sir Ernest Shackleton, Frank Worsley, and Frank Wild",
+        "Photographic Glass Plate Records of Frank Hurley (120 Preserved Negatives)",
+        "Medical Records of Surgeons Alexander Macklin and James McIlroy"
+      ],
+      "html_path": "distillations/endurance/index.html",
+      "markdown_path": "distillations/endurance/knowledge-units.json",
       "featured": true
     }
   ]

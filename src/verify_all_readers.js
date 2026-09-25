@@ -169,11 +169,51 @@ function runRegressionSuite() {
     console.error("    => VERDICT: FAIL\n");
   }
 
+  // -------------------------------------------------------------------------
+  // 4. Endurance: Shackleton's Incredible Voyage (Polar Survival Benchmark)
+  // -------------------------------------------------------------------------
+  console.log(">>> [4/4] Auditing: Endurance: Shackleton's Incredible Voyage (Survival Benchmark)...");
+  const endDir = path.join(__dirname, '..', 'docs', 'distillations', 'endurance');
+  const endKu = JSON.parse(fs.readFileSync(path.join(endDir, 'knowledge-units.json'), 'utf8'));
+  const endHtml = fs.readFileSync(path.join(endDir, 'index.html'), 'utf8');
+
+  let endUnitsRendered = 0;
+  let endTracePayloads = 0;
+  let endExcerptsFound = 0;
+  endKu.content_units.forEach(u => {
+    if (endHtml.includes(`id="${u.unit_id}"`)) endUnitsRendered++;
+    if (endHtml.includes(`id="trace-data-${u.unit_id}"`)) endTracePayloads++;
+    if (u.source_evidence && u.source_evidence.length > 0) {
+      if (endHtml.includes(u.source_evidence[0])) endExcerptsFound++;
+    }
+  });
+
+  const endViewA = endHtml.includes('id="view-journey"');
+  const endViewB = endHtml.includes('id="view-map"');
+  const endViewC = endHtml.includes('id="view-experience"');
+  const endControls = endHtml.includes('reader-controls.js');
+
+  console.log(`    - Canonical Narrative Units: ${endKu.content_units.length}`);
+  console.log(`    - Rendered Unit Segments: ${endUnitsRendered} / ${endKu.content_units.length}`);
+  console.log(`    - Rendered Trace Script Payloads: ${endTracePayloads} / ${endKu.content_units.length}`);
+  console.log(`    - Primary Verbatim Excerpts Preserved: ${endExcerptsFound} / ${endKu.content_units.length}`);
+  console.log(`    - View A (Chronicle): ${endViewA}, View B (Relational Map): ${endViewB}, View C (Leadership): ${endViewC}`);
+  console.log(`    - Reader Controls Script Attached: ${endControls}`);
+
+  if (endUnitsRendered === 41 && endTracePayloads === 41 && endExcerptsFound === 41 && endViewA && endViewB && endViewC && endControls) {
+    results.endurance = { status: "PASS", units: "41/41", views: "3/3" };
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.endurance = { status: "FAIL", units: `${endUnitsRendered}/41` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
   console.log("================================================================================");
   console.log("  FINAL REGRESSION SUMMARY:");
   console.log(`  - Norwegian Wood (Fiction)           : ${results.norwegian_wood.status}`);
   console.log(`  - The Psychology of Money (Nonfiction): ${results.psychology_of_money.status}`);
   console.log(`  - Bhagat Singh (Historical Biography): ${results.bhagat_singh.status}`);
+  console.log(`  - Endurance (Survival History)       : ${results.endurance.status}`);
   console.log("================================================================================");
 
   const allPass = Object.values(results).every(r => r.status === "PASS");
