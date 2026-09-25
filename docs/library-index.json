@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 22,
-  "total_hours_saved": 442.5,
+  "total_books": 23,
+  "total_hours_saved": 448.5,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -931,6 +931,49 @@
       ],
       "html_path": "distillations/tuesdays-with-morrie/index.html",
       "markdown_path": "distillations/tuesdays-with-morrie/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "scientific-autobiography-planck",
+      "title": "Scientific Autobiography and Other Papers",
+      "subtitle": "The Genesis of the Quantum Hypothesis, Planck's Principle of Generational Succession, and the Epistemology of Physics",
+      "author": "Max Planck",
+      "year": 1949,
+      "publisher": "Philosophical Library / Philosophical Foundations Series",
+      "epistemic_tier": "Tier 1: Foundational Theoretical Physics & Epistemology",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "5 Landmark Treatises Synthesized into 8 Rigorous Epistemic Units",
+      "reading_time_saved": "6.0 hrs saved",
+      "hours_val": 6.0,
+      "core_axiom": "A new scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die, and a new generation grows up that is familiar with it.",
+      "tags": [
+        "Max Planck",
+        "Quantum Theory",
+        "Planck Constant",
+        "Blackbody Radiation",
+        "Epistemology",
+        "Planck Principle",
+        "Determinism",
+        "Wave Function",
+        "Philosophy of Science"
+      ],
+      "key_models": [
+        "Planck's Principle of Generational Paradigm Shift",
+        "Blackbody Radiation & the Energy Quantum (E = hv)",
+        "Dissipative Irreversibility & Absolute Entropy Foundation",
+        "The Anatomy of Phantom Problems (Scheinprobleme)",
+        "Dual Perspective on Free Will (Subjective Agency vs. Objective Causality)",
+        "Statistical vs. Dynamic Determinism in the Quantum State (Psi)"
+      ],
+      "landmark_studies": [
+        "1900 German Physical Society Quantum Resolution of the Ultraviolet Catastrophe",
+        "Thermodynamic Irreversibility & Boltzmann Clashing Theories",
+        "Positivist Instrumentalism (Mach) vs. Physical Realism (Planck/Einstein)",
+        "Heisenberg Uncertainty vs. Strict Lawfulness in Mathematical Wave Fields"
+      ],
+      "html_path": "distillations/scientific-autobiography-planck/index.html",
+      "markdown_path": "distillations/scientific-autobiography-planck/master-notes.md",
       "featured": false
     }
   ]
