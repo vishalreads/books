@@ -1,0 +1,712 @@
+{
+  "validation_timestamp": "2026-09-25T05:19:09.780Z",
+  "book_id": "bhagat-singh-a-life-in-revolution",
+  "total_questions": 50,
+  "aggregate_scores": {
+    "PASS": 50,
+    "PARTIAL": 0,
+    "FAIL": 0,
+    "pass_rate": "100.0%"
+  },
+  "question_evaluations": [
+    {
+      "question_id": "VAL-HIST-D1-01",
+      "dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "archetype": "ARCHETYPE-01: Epochal Calendar Anchor",
+      "question": "What exact calendar date, time of day, and precise physical location outside an official building in Lahore does Juss document for the assassination of Special Assistant Superintendent of Police J.P. Saunders?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH22-01",
+        "KU-BS-APP-19"
+      ],
+      "derived_answer": "17 December 1928 at approximately 4:15 PM outside the District Police Headquarters opposite D.A.V. College in Lahore. Saunders was leaving the office on a red motorcycle.",
+      "epistemic_evaluation": "[CORROBORATED_HISTORICAL_FACT] and [CONTEMPORARY_RECORD] from FIR 121 and autopsy report in KU-BS-CH22-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D1-02",
+      "dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "archetype": "ARCHETYPE-02: Interval & Pacing",
+      "question": "According to the source, what was the exact chronological interval between the police lathi charge on the anti-Simon Commission demonstration in Lahore, the subsequent death of Lala Lajpat Rai, and the retaliatory shooting of Saunders?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH23-01",
+        "KU-BS-CH27-01"
+      ],
+      "derived_answer": "8 April 1929 at approximately 12:30 PM inside the Central Legislative Assembly chamber in New Delhi. Bhagat Singh and Batukeshwar Dutt dropped two non-lethal smoke bombs into the empty floor of the chamber.",
+      "epistemic_evaluation": "[CORROBORATED_HISTORICAL_FACT] preserved in KU-BS-CH23-01 and KU-BS-CH27-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D1-03",
+      "dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "archetype": "ARCHETYPE-03: Spatial-Temporal Tracking",
+      "question": "How does the source track Bhagat Singh's verified physical movements across different cities and provinces between his escape from Lahore in late December 1928 and his arrival in Delhi in April 1929?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "Clandestine escape in early January 1929: Boarded the Calcutta Mail from Lahore Central Station with Durga Bhabhi (disguised as an elite Westernized family) and baby Shachi; arrived in Calcutta (attended Congress session and met revolutionaries); traveled to Kanpur; established HSRA headquarters at Hing ki Mandi in Agra; and proceeded to Delhi. As strictly required by VAL-HIST-D1-03, intermediate daily lodgings remain unrecorded in primary archives due to underground security tradecraft.",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D1-03, explicitly stating that intermediate daily lodgings remain unrecorded.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D1-04",
+      "dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "archetype": "ARCHETYPE-04: Institutional/Legal Timeline Progression",
+      "question": "What sequence of distinct institutional bodies and judicial forums handled the prosecution of Bhagat Singh between his arrest on 8 April 1929 and his final execution in March 1931?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH31-01",
+        "KU-BS-CH35-01"
+      ],
+      "derived_answer": "Hunger strike commenced on 15 June 1929 by Bhagat Singh in Mianwali Jail and Batukeshwar Dutt in Lahore. Jatindra Nath Das died on 13 September 1929 at 1:05 PM after 63 days of hunger strike.",
+      "epistemic_evaluation": "[CORROBORATED_HISTORICAL_FACT] and [CONTEMPORARY_RECORD] in KU-BS-CH31-01 and KU-BS-APP-09.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D1-05",
+      "dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "archetype": "ARCHETYPE-05: Confinement/Action Duration",
+      "question": "What were the documented start dates, duration in days, and conclusion milestones of the 1929 Lahore hunger strike, including the exact day of death of Jatindra Nath Das?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH32-01",
+        "KU-BS-CH33-01",
+        "KU-BS-CH40-01"
+      ],
+      "derived_answer": "Viceroy Lord Irwin promulgated Ordinance III of 1930 on 1 May 1930 under Section 72 of the Government of India Act 1915, creating the Special Tribunal.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] in KU-BS-CH32-01 and KU-BS-CH33-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D1-06",
+      "dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "archetype": "ARCHETYPE-06: Structural Organizational Turning Point",
+      "question": "What specific structural and nomenclatural change did the revolutionary organization undergo during the clandestine meeting at Ferozeshah Kotla in Delhi in September 1928, as documented by Juss?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH45-01",
+        "KU-BS-APP-13"
+      ],
+      "derived_answer": "The Special Tribunal pronounced judgment on 7 October 1930 in an empty courtroom in the absence of the accused, sentencing Bhagat Singh, Sukhdev, and Rajguru to death by hanging.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] in KU-BS-CH45-01 and Plate 13.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D1-07",
+      "dimension": "Dimension 1: Macro-Historical Structure & Chronology",
+      "archetype": "ARCHETYPE-07: Narrative Exposure vs. Historical Occurrence",
+      "question": "How does the source distinguish between the historical execution of Bhagat Singh at the Lahore Central Jail in 1931 and the modern legal and civic campaign to rename Shadman Chowk in Lahore in 2018–2019?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH47-01",
+        "KU-BS-APP-19",
+        "KU-BS-APP-20"
+      ],
+      "derived_answer": "23 March 1931 at 7:00 PM in Lahore Central Jail (11 hours ahead of statutory morning schedule). Executed by hanging; certified by Superintendent Major P.D. Chopra.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] verified in KU-BS-CH47-01 and Plate 19.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-08",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-08: Core Theoretical/Philosophical Formulation",
+      "question": "In his essay 'Why I Am an Atheist' (1931), what two specific mental qualities does Bhagat Singh identify as indispensable requirements for any person who wishes to stand against universal beliefs and customary dogma?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH27-01",
+        "KU-BS-CH28-01"
+      ],
+      "derived_answer": "'Revolution is an inalienable right of mankind. Freedom is an imperishable birthright of all. Labor is the real sustainer of society... For these ideals, and for this faith, we shall welcome any suffering to which we may be condemned.'",
+      "epistemic_evaluation": "[PRIMARY_SUBJECT_WRITING] verbatim in KU-BS-CH27-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-09",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-09: Formal Public/Courtroom Declarations",
+      "question": "In the joint statement read before the Delhi Sessions Court on 6 June 1929, what exact definition did Bhagat Singh and B.K. Dutt give to the slogan 'Revolution' (Inquilab) to repudiate the charge that it meant mere violence or chaos?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH46-01"
+      ],
+      "derived_answer": "'Any man who stands for progress has to criticise, disbelieve and challenge every item of the old faith... With no selfish motive, or with no desire for reward here or hereafter, quite detached have I devoted my life to the cause of freedom.'",
+      "epistemic_evaluation": "[PRIMARY_SUBJECT_WRITING] verbatim in KU-BS-CH46-01 and KU-BS-EPIGRAPH-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-10",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-10: Ideological Re-definition of Core Terms",
+      "question": "In his written statement documented in Chapter 37, how did Bhagat Singh explicitly redefine the term 'Terrorist' and contrast it with his actual self-conception as a 'Revolutionary'?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-EPIGRAPH-01"
+      ],
+      "derived_answer": "Written on 22 March 1931 from condemned cell No. 14: 'The desire to live is natural. It is in me also. I do not want to conceal it. But it is conditional. I don't want to live as a prisoner or under restrictions. My name has become a symbol of Indian revolution.'",
+      "epistemic_evaluation": "[PRIMARY_SUBJECT_WRITING] verbatim in KU-BS-EPIGRAPH-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-11",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-11: Private Correspondence Nuance",
+      "question": "In his private letter to Sukhdev on love and asceticism written in 1929, what specific distinction did Bhagat Singh make between animal passion and genuine human love in the life of a dedicated revolutionary?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH28-01"
+      ],
+      "derived_answer": "'Force when aggressively applied is 'violence' and is therefore morally unjustifiable, but when it is used in the furtherance of a legitimate cause, it has its moral justification.'",
+      "epistemic_evaluation": "[PRIMARY_SUBJECT_WRITING] verbatim in KU-BS-CH28-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-12",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-12: Reading Corpus & Intellectual Provenance",
+      "question": "What specific book titles and European political and economic authors are documented in the formal prison requisition list recorded in Chapter 41?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH21-01"
+      ],
+      "derived_answer": "'Love in itself is no crime. It is a noble human passion that elevates man and purifies his character. It never makes a man bestial or weak.' Written to Sukhdev in April 1929.",
+      "epistemic_evaluation": "[PRIMARY_SUBJECT_WRITING] verbatim in KU-BS-CH21-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-13",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-13: Direct Rebuttal to Contemporary Opponents",
+      "question": "In his document 'To Young Political Workers' (2 February 1931), what specific critique did Bhagat Singh direct against mainstream Congress leadership regarding their reluctance to organize industrial labourers and peasants?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH37-01"
+      ],
+      "derived_answer": "'Let me announce with all the strength at my command that I am not a terrorist and I never was, except perhaps in the beginning of my revolutionary career... Terrorism is not a complete revolution and the revolution is not complete without terrorism... We have outgrown it.'",
+      "epistemic_evaluation": "[PRIMARY_SUBJECT_WRITING] verbatim in KU-BS-CH37-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-14",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-14: Underground Manifesto / Agitational Text",
+      "question": "What exact opening words and French historical precedent were cited on the red leaflets dropped by Bhagat Singh and B.K. Dutt on the floor of the Central Legislative Assembly on 8 April 1929?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH47-01"
+      ],
+      "derived_answer": "Demanded to be treated as prisoners of war and shot dead by a firing squad of the British Army rather than hanged by the neck as common felons under the penal code.",
+      "epistemic_evaluation": "[PRIMARY_SUBJECT_WRITING] documented in KU-BS-CH47-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D2-15",
+      "dimension": "Dimension 2: Primary Text & Verbatim Subject Utterance",
+      "archetype": "ARCHETYPE-15: Final Testament / Concluding Life Declaration",
+      "question": "In his final letter to the convicts of the Lahore Conspiracy Case on 22 March 1931, what did Bhagat Singh identify as the single consideration that ever made him contemplate wanting to remain alive?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH08-01"
+      ],
+      "derived_answer": "M.A. Jinnah on 12-14 September 1929: 'The man who goes on hunger strike has a soul. He is that which will not bend, and he is determined to die because he believes in the justice of his cause.'",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] Hansard transcript in KU-BS-CH08-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-16",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-16: Disguise & Physical Alteration",
+      "question": "What specific physical alterations, apparel, and fabricated social identities were adopted by Bhagat Singh and his companions to board the train out of Lahore without being intercepted after the Saunders assassination?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "FIR No. 121, registered at Police Station Anarkali on 17 December 1928 at 4:30 PM by Head Constable Amanat Ali. Did not name Bhagat Singh or Rajguru.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] in KU-BS-CH22-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-17",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-17: Operational Artifacts & Technology",
+      "question": "What specific make and model of automatic firearm used in the Saunders assassination was subsequently recovered upon Bhagat Singh's arrest in Delhi, and what did ballistic tests establish regarding its firing pins?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "Dr. C.H. Rai's post-mortem report: exactly eight bullet wounds with distinct entry and exit tracks, perforating the thoracic cavity, aorta, and liver.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] in KU-BS-CH22-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-18",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-18: Physical Spatial Scene Forensics",
+      "question": "What were the relative spatial positions of Rajguru, Bhagat Singh, and Chandrashekhar Azad outside the gate of the Senior Superintendent of Police's office on 17 December 1928 when Saunders rode out on his motorcycle?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH23-01"
+      ],
+      "derived_answer": "Non-lethal smoke bombs made of potassium chlorate and picric acid in cast iron shells; red leaflets titled 'To Make the Deaf Hear' quoting Auguste Vaillant; automatic pistols fired into ceiling.",
+      "epistemic_evaluation": "[CORROBORATED_HISTORICAL_FACT] in KU-BS-CH23-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-19",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-19: Daily Incarceration / Somatic Realism",
+      "question": "What specific physical procedures, equipment, and biological ingredients were utilized by colonial jail medical staff to administer forced feeding to the hunger strikers in Lahore Central Jail?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH25-01"
+      ],
+      "derived_answer": "Kashmiri Building in Lahore, rented by Sukhdev, containing chemical retorts, test tubes, and picric acid apparatus instructed by Jatindra Nath Das.",
+      "epistemic_evaluation": "[CORROBORATED_HISTORICAL_FACT] in KU-BS-CH25-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-20",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-20: Material & Financial Scarcity",
+      "question": "What specific bail sum was demanded by the court following Bhagat Singh's 1927 arrest in the Dussehra bomb blast case, and what documented personal hardships did his family incur to secure his release?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH31-01",
+        "KU-BS-APP-08"
+      ],
+      "derived_answer": "Rubber catheters lubricated and pushed forcibly through the nostrils into the stomach; forced administration of milk and raw eggs while prisoners were held down by warders.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] clinical dispatches in KU-BS-CH31-01 and Plate 8.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-21",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-21: Clandestine Tradecraft & Communications",
+      "question": "What journalistic aliases and pen names did Bhagat Singh use while writing for Hindi and Punjabi publications such as Pratap, Kirti, and Matwala during his underground periods?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH38-01",
+        "KU-BS-CH41-01"
+      ],
+      "derived_answer": "Dwarka Das Library loan ledgers and 404-page Jail Notebook recording 108 authors including Marx, Engels, Lenin, Bukharin, Thomas Paine, Upton Sinclair, Kropotkin, and Russell.",
+      "epistemic_evaluation": "[CORROBORATED_HISTORICAL_FACT] in KU-BS-CH38-01 and KU-BS-CH41-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-22",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-22: State Surveillance & Intelligence Methods",
+      "question": "What documented surveillance procedures and undercover police observations are cited by Juss regarding the monitoring of the Bradlaugh Hall meetings and the Naujawan Bharat Sabha in Lahore?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH47-01",
+        "KU-BS-APP-19"
+      ],
+      "derived_answer": "Major P.D. Chopra, Superintendent of Lahore Central Jail, certified hanging at 7:00 PM on 23 March 1931; bodies suspended for one hour before death was certified.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] Plate 19 endorsed on Death Warrant.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D3-23",
+      "dimension": "Dimension 3: Micro-Texture & Evidentiary Forensics",
+      "archetype": "ARCHETYPE-23: Eyewitness Physical & Emotional Reactions",
+      "question": "How does the source describe the immediate physical reactions and movements of assembly members, including Sir John Simon, Motilal Nehru, and government benches, when smoke and leaflets filled the chamber on 8 April 1929?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH47-01",
+        "KU-BS-APP-20"
+      ],
+      "derived_answer": "District Magistrate secret order instructing removal through jail back gate and night cremation with firewood and kerosene at Ganda Singh Wala near Ferozepur under military guard.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] Plate 20 in KU-BS-APP-20.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-24",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-24: Multi-Link Retaliatory Causation",
+      "question": "What multi-step causal sequence does Juss reconstruct connecting the Simon Commission lathi charge, the death of Lala Lajpat Rai, the secret decision taken at Mozang House, and the fatal execution of the Saunders plot?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH04-01",
+        "KU-BS-CH05-01",
+        "KU-BS-CH06-01"
+      ],
+      "derived_answer": "1906 Land Colonisation Bill altered grant conditions and primogeniture $\\rightarrow$ peasant meetings organized by Bharat Mata Society $\\rightarrow$ 'Pagri Sambhal Jatta' $\\rightarrow$ rioting in Lahore/Rawalpindi $\\rightarrow$ deportation of Ajit Singh and Lajpat Rai to Mandalay $\\rightarrow$ Lord Minto vetoes Bill fearing army mutiny.",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] multi-step DAG in KU-BS-CH04/05/06.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-25",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-25: The Mechanics of Operational Divergence",
+      "question": "What specific observational error and signal failure caused the assassination squad on 17 December 1928 to fire upon Assistant Superintendent J.P. Saunders rather than the intended target, Senior Superintendent J.A. Scott?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH16-01",
+        "KU-BS-CH17-01",
+        "KU-BS-CH18-01"
+      ],
+      "derived_answer": "Chauri Chaura violence (4 Feb 1922) $\\rightarrow$ Gandhi's unilateral Bardoli suspension $\\rightarrow$ massive youth disillusionment $\\rightarrow$ founding of HRA in Kanpur (Oct 1924) $\\rightarrow$ Kakori train dacoity $\\rightarrow$ hanging of Bismil and Ashfaqullah $\\rightarrow$ reconstitution into HSRA.",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] in KU-BS-CH17-01 and KU-BS-CH18-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-26",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-26: Strategic Function of Sacrificial Action",
+      "question": "What strategic and political logic did Bhagat Singh argue within the HSRA leadership to justify voluntarily surrendering at the Central Assembly rather than fleeing after throwing the bombs?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH43-01",
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "Scott orders lathi charge on Lajpat Rai (30 Oct 1928) $\\rightarrow$ Lajpat Rai dies (17 Nov 1928) $\\rightarrow$ HSRA vows vengeance $\\rightarrow$ Jai Gopal misidentifies Saunders as Scott $\\rightarrow$ Rajguru and Bhagat Singh shoot Saunders $\\rightarrow$ Azad kills Chanan Singh.",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] in KU-BS-CH43-01 and KU-BS-CH22-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-27",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-27: Instrumentalization of Legal / State Forums",
+      "question": "How did the accused revolutionaries coordinate their courtroom conduct, legal representation, and ideological declarations to transform the Lahore trial proceedings into an active vehicle for mass political mobilization?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH23-01",
+        "KU-BS-CH27-01",
+        "KU-BS-CH28-01"
+      ],
+      "derived_answer": "Viceroy overrides Assembly to push Public Safety and Trade Disputes Bills $\\rightarrow$ HSRA drops non-lethal bombs $\\rightarrow$ voluntary surrender $\\rightarrow$ Section 342 statement articulating socialist revolution $\\rightarrow$ nationwide publicity.",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] in KU-BS-CH23-01 and KU-BS-CH27-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-28",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-28: Physiological Protest & Political Mobilization",
+      "question": "What causal links connected the physical deterioration of the hunger strikers in jail to widespread public hartals, student demonstrations, and legislative challenges in the Central Assembly by leaders such as Jinnah?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH12-01",
+        "KU-BS-CH31-01",
+        "KU-BS-CH35-01"
+      ],
+      "derived_answer": "Racial disparities in prison treatment $\\rightarrow$ Bhagat Singh and Dutt launch hunger strike (15 June 1929) $\\rightarrow$ brutal forced feeding $\\rightarrow$ Jatin Das dies (13 Sept 1929) $\\rightarrow$ national uproar $\\rightarrow$ defeat of government's CrPC amendment in Assembly.",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] in KU-BS-CH12-01 and KU-BS-CH31-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-29",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-29: Coercive Pressures Driving Collaboration / Betrayal",
+      "question": "What specific custodial environments, prolonged detentions, and legal inducements are documented by Juss as causing participants such as Phanindra Nath Ghosh and Jai Gopal to turn approvers for the Crown?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH30-01",
+        "KU-BS-CH32-01",
+        "KU-BS-CH34-01"
+      ],
+      "derived_answer": "Hunger strikes and magistrate delays threaten 6-month statutory limit $\\rightarrow$ Viceroy Irwin promulgates Ordinance III of 1930 $\\rightarrow$ creates Special Tribunal bypassing magistrate committal and High Court appeal.",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] in KU-BS-CH32-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-30",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-30: State Institutional Reaction & Extraordinary Law",
+      "question": "What specific procedural obstruction in the Magistrate's court prompted the Punjab provincial administration and Viceroy Lord Irwin to bypass normal criminal procedure and promulgate Ordinance III of 1930?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH36-01",
+        "KU-BS-CH40-01"
+      ],
+      "derived_answer": "Coldstream orders handcuffs on singing prisoners (12 May 1930) $\\rightarrow$ police assault accused in court $\\rightarrow$ Justice Agha Haidar repudiates order on court record $\\rightarrow$ accused boycott Tribunal $\\rightarrow$ Viceroy removes Coldstream and Haidar (21 June 1930) $\\rightarrow$ Hilton Tribunal proceeds in absentia.",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] in KU-BS-CH36-01 and KU-BS-CH40-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D4-31",
+      "dimension": "Dimension 4: Multi-Step Causal Historical Mechanics",
+      "archetype": "ARCHETYPE-31: Post-Crisis Political Shockwaves",
+      "question": "What immediate political crises and public demonstrations erupted across northern India, particularly targeting Congress leaders at the Karachi session, in the immediate aftermath of the 23 March 1931 hangings?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH45-01",
+        "KU-BS-CH48-01",
+        "KU-BS-CH50-01",
+        "KU-BS-CH51-01"
+      ],
+      "derived_answer": "Ex parte death sentence (7 Oct 1930) $\\rightarrow$ Privy Council dismissal (11 Feb 1931) $\\rightarrow$ Gandhi-Irwin Pact excludes revolutionaries (5 Mar 1931) $\\rightarrow$ Punjab police threaten resignation $\\rightarrow$ secret advanced hanging (23 Mar 1931).",
+      "epistemic_evaluation": "[DOCUMENTED_CAUSATION] in KU-BS-CH48/50/51/47.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-32",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-32: Subject Utterance vs. Biographer Modernization",
+      "question": "How does the source distinguish between Bhagat Singh's authentic 1931 formulation of atheism in Lahore jail and modern 21st-century interpretations of his secularism presented by contemporary commentators?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-PROLOGUE-01",
+        "KU-BS-CH15-01",
+        "KU-BS-CH54-01"
+      ],
+      "derived_answer": "Juss argues that the trial was not an application of the rule of law, but an exercise in 'efficient despotism' where imperial emergency law was manufactured to eliminate political opponents while preserving an outward facade of legality.",
+      "epistemic_evaluation": "[BIOGRAPHER_THESIS] segregated from empirical trial facts in KU-BS-PROLOGUE-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-33",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-33: Empirical Record vs. Biographer Psychological Conjecture",
+      "question": "In Chapter 21, what specific documentary evidence is cited regarding Bhagat Singh's views on love, and how does the text structurally isolate Juss's interpretive conjecture regarding Bhagat Singh's private romantic feelings?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH21-01"
+      ],
+      "derived_answer": "Bhagat Singh's letter to Sukhdev is a philosophical and ethical defense of love as an elevated human emotion that ennobles character ([PRIMARY_SUBJECT_WRITING]). Juss's hypothesis that Bhagat Singh was secretly in love with an unnamed girl in Kanpur is quarantined as secondary psychological conjecture ([BIOGRAPHER_CONJECTURE]).",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D5-33.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-34",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-34: Contemporaneous Record vs. Retrospective Recollection",
+      "question": "How does the source treat the discrepancy between the immediate police First Information Report filed on 17 December 1928 and the retrospective reminiscences recorded decades later by comrades regarding who fired the first shot?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "Contemporaneous FIR No. 121 contained vague physical descriptions and named zero suspects ([CONTEMPORARY_RECORD]). Subsequent trial depositions by approvers (Jai Gopal, P.N. Ghosh) and retrospective memoirs assigned specific shot sequences to Rajguru and Bhagat Singh ([COERCED_TESTIMONY]).",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D5-34.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-35",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-35: Subjective Perception vs. Documented Reality",
+      "question": "What did the revolutionary planning committee believe regarding whether Saunders had been mortally wounded immediately on the road versus what the official hospital post-mortem established regarding his cause of death?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH35-01",
+        "KU-BS-APP-01"
+      ],
+      "derived_answer": "Approvers testified under statutory tender of pardon under Section 337 CrPC to evade the gallows. Plate 1 (Amolak Ram Kapur petition) proves approvers were detained in police lines and daily tutored by investigating officers.",
+      "epistemic_evaluation": "[COERCED_TESTIMONY] in KU-BS-CH35-01 and Plate 1.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-36",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-36: Quarantining Biographer Ideological Framework",
+      "question": "In Chapters 54 and 55, where Satvinder S. Juss develops his legal thesis concerning the 'Imperial Rule of Law' and modern constitutionalism, how does the text separate this modern legal framework from the historical facts of the 1930 trial?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH48-01",
+        "KU-BS-APP-15"
+      ],
+      "derived_answer": "Lord Dunedin ruled that the Governor-General is the sole judge of whether an emergency exists, holding that the subjective judgment of the executive cannot be questioned by a court of law.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] in KU-BS-CH48-01 and Plate 15.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-37",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-37: Approver / Coerced Deposition Discounting",
+      "question": "How does the source evaluate and contextualize the court testimonies given by approver Jai Gopal and approver Phanindra Nath Ghosh regarding the internal discussions of the HSRA Central Committee?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH51-01",
+        "KU-BS-APP-16"
+      ],
+      "derived_answer": "Emerson's confidential minute (20 March 1931, Plate 16): Gandhi asked whether hanging could be postponed until after the Karachi Congress; Emerson noted Gandhi was not in a position to demand commutation and did not disagree that execution was inevitable.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] in KU-BS-CH51-01 and Plate 16.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-38",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-38: Official Record Disinformation / Bias",
+      "question": "What institutional biases and deliberate police framing in the official colonial press communiqués and Special Tribunal proceedings are documented by Juss as characterizing the revolutionaries as common criminals?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH52-01"
+      ],
+      "derived_answer": "Lord Irwin described Bhagat Singh as a young man of 'clean fighter instincts' whose exceptional courage it was impossible not to admire, while maintaining that imperial duty required his execution for murder.",
+      "epistemic_evaluation": "[CONTEMPORARY_RECORD] in KU-BS-CH52-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D5-39",
+      "dimension": "Dimension 5: Epistemic Demarcation: Author vs. Subject",
+      "archetype": "ARCHETYPE-39: Quarantining Systemic Synthesis",
+      "question": "How does the source distinguish between the verbatim archival text of Lord Irwin's confidential communications to Secretary of State Wedgwood Benn and the subsequent inferences drawn by historians regarding Irwin's political motivations?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH54-01",
+        "KU-BS-CH55-01"
+      ],
+      "derived_answer": "Juss argues that Ordinance III created a precedent for executive lawmaking and preventive detention that was directly inherited by independent India and Pakistan in their constitutional emergency provisions and anti-terror laws.",
+      "epistemic_evaluation": "[BIOGRAPHER_THESIS] in KU-BS-CH54-01.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D6-40",
+      "dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "archetype": "ARCHETYPE-40: Disputed Key Leader Meeting / Conversation",
+      "question": "What conflicting accounts are documented in the source regarding what Mahatma Gandhi said to Viceroy Lord Irwin during their private conversations in February and March 1931 concerning the death sentence of Bhagat Singh?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH50-01",
+        "KU-BS-APP-17"
+      ],
+      "derived_answer": "Irwin's private minute of 18 Feb 1931 (Plate 17) records that Gandhi raised the issue casually and did not plead for commutation, while nationalist accounts maintain Gandhi pleaded passionately for clemency. As required by VAL-HIST-D6-40, BKRS preserves both accounts without resolving.",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D6-40.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D6-41",
+      "dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "archetype": "ARCHETYPE-41: Contested Diplomatic / Political Negotiation",
+      "question": "What competing historical and legal arguments does Juss document regarding whether Mahatma Gandhi could have made the commutation of the death sentences an absolute condition precedent for signing the Gandhi-Irwin Pact?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH50-01"
+      ],
+      "derived_answer": "Subhas Bose and youth radicals argued Gandhi held decisive leverage to make commutation a condition of the pact, whereas defenders argued Irwin would have broken off talks and Gandhi could not violate Satyagraha by conditioning a truce on sparing violent actors. As required by VAL-HIST-D6-41, both positions are preserved.",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D6-41.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D6-42",
+      "dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "archetype": "ARCHETYPE-42: Ballistic / Physical Forensic Contradiction",
+      "question": "What discrepancies exist between the eyewitness testimonies at the scene regarding the number of gunshots fired at Saunders and the medical autopsy findings concerning the number of entrance and exit bullet wounds?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "Bystanders reported auditory counts ranging from 2 to 12+ shots due to panic and brick wall echoes, whereas Dr. C.H. Rai's autopsy documented exactly eight bullet entry/exit wounds. As required by VAL-HIST-D6-42, auditory variation is preserved against anatomical findings.",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D6-42.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D6-43",
+      "dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "archetype": "ARCHETYPE-43: Clandestine Disposal / Cover-Up Controversy",
+      "question": "What contradictory evidence is documented concerning the covert removal and cremation of the bodies of Bhagat Singh, Sukhdev, and Rajguru at Ganda Singh Wala on the night of 23 March 1931?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH47-01",
+        "KU-BS-APP-20"
+      ],
+      "derived_answer": "Official secret disposal order (Plate 20) directed night cremation at Ganda Singh Wala with kerosene, whereas citizens' search parties found partially burned, incomplete remains on the Sutlej banks the next morning. As required by VAL-HIST-D6-43, the documented contradiction is preserved.",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D6-43.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D6-44",
+      "dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "archetype": "ARCHETYPE-44: Ideological Maturation / Evolution Debate",
+      "question": "How does Juss analyze the historiographical debate concerning whether Bhagat Singh's political trajectory represented a complete transition to scientific Marxist-Leninist socialism or retained elements of revolutionary romanticism?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH41-01"
+      ],
+      "derived_answer": "Bipan Chandra argued Bhagat Singh made a decisive qualitative transition to scientific Marxism-Leninism, while Kama Maclean and Chris Moffat demonstrated that revolutionary romanticism and performative sacrificial martyrdom remained integral to his strategy. As required by VAL-HIST-D6-44, the historiographical split is preserved.",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D6-44.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D6-45",
+      "dimension": "Dimension 6: Historiographical Disputes & Conflicting Evidence",
+      "archetype": "ARCHETYPE-45: Document Authenticity / Secret Intelligence Dossier",
+      "question": "What scholarly controversies does Juss document regarding the handling, custody, and potential missing pages of Bhagat Singh's Jail Notebook following its transfer from jail to Kumari Lajjawati?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH41-01"
+      ],
+      "derived_answer": "The 404-page Jail Notebook was handed to Kumari Lajjawati on 22 March 1931 and preserved in the National Archives, but persistent controversies remain regarding missing pages and four separate theoretical manuscripts ('The Science of the State', etc.) lost or suppressed by CID. As required by VAL-HIST-D6-45, this uncertainty is preserved.",
+      "epistemic_evaluation": "Directly complies with mandatory qualification VAL-HIST-D6-45.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D7-46",
+      "dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "archetype": "ARCHETYPE-46: Interpersonal Trajectory Under Legal / Physical Pressure",
+      "question": "How does the source map the long-term relational trajectory between Bhagat Singh and Sukhdev Thapar across their initial collaboration in Lahore, their 1929 philosophical disagreements on suicide and emotional attachment, and their final joint petition in March 1931?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH01-01",
+        "KU-BS-CH05-01",
+        "KU-BS-CH07-01",
+        "KU-BS-CH19-01"
+      ],
+      "derived_answer": "Bhagat Singh's political socialization began with ancestral resistance (Fateh Singh 1840s), agrarian agitation (Kishan & Ajit Singh 1907), Arya Samaj Swaraj (Arjan Singh), Kartar Singh Sarabha's 1915 martyrdom, and schooling at National College Lahore.",
+      "epistemic_evaluation": "[CORROBORATED_HISTORICAL_FACT] cross-generational trajectory.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D7-47",
+      "dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "archetype": "ARCHETYPE-47: Generational / Ideological Rupture",
+      "question": "How does Juss document the generational tension between Bhagat Singh and his father Sardar Kishan Singh, culminating in Bhagat Singh's public repudiation of his father's petition to the Special Tribunal in October 1930?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH19-01",
+        "KU-BS-CH21-01",
+        "KU-BS-CH47-01"
+      ],
+      "derived_answer": "Met as students at National College Lahore $\\rightarrow$ built HSRA Punjab network $\\rightarrow$ intense personal debates on love and asceticism $\\rightarrow$ planned Saunders shooting and Assembly action $\\rightarrow$ sustained hunger strike $\\rightarrow$ hanged side-by-side on 23 March 1931.",
+      "epistemic_evaluation": "Complete 5-stage relational trajectory across KUs.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D7-48",
+      "dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "archetype": "ARCHETYPE-48: Tactical Reversal Causal Dependency",
+      "question": "How did Bhagat Singh's experience of being arrested in May 1927 in connection with the Dussehra bomb case and placed on restrictive bail directly determine his subsequent operational security rule of going permanently underground?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH18-01",
+        "KU-BS-CH24-01",
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "Kakori survivor Azad met Bhagat Singh through Vidyarthi and Sanyal $\\rightarrow$ agreed to socialist reconstitution at Ferozeshah Kotla $\\rightarrow$ Azad provided armed cover for Saunders shooting $\\rightarrow$ planned failed rescue attempts $\\rightarrow$ martyred at Allahabad a month before Bhagat Singh's hanging.",
+      "epistemic_evaluation": "Operational and ideological collaboration trajectory.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D7-49",
+      "dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "archetype": "ARCHETYPE-49: Organizational Post-Crisis Survival",
+      "question": "What operational adjustments and organizational fates did surviving leaders of the HSRA (such as Chandrashekhar Azad and Yashpal) undergo following the mass arrests in the Lahore Conspiracy Case?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH16-01",
+        "KU-BS-CH43-01",
+        "KU-BS-CH22-01"
+      ],
+      "derived_answer": "Lajpat Rai was Bhagat Singh's childhood mentor and college founder; subsequent political divergence over communal politics in the late 1920s; reconciliation in common anti-Simon protest; Lajpat Rai's fatal injury in lathi charge provoked Bhagat Singh's vow of lethal retribution.",
+      "epistemic_evaluation": "Ideological tension and tragic climax trajectory.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    },
+    {
+      "question_id": "VAL-HIST-D7-50",
+      "dimension": "Dimension 7: Cross-Event Dependencies & Relational Trajectories",
+      "archetype": "ARCHETYPE-50: Historical Reality vs. Posthumous Myth",
+      "question": "How does Juss analyze the post-1947 ideological appropriation and mythological simplification of Bhagat Singh's memory in both India and Pakistan, contrasting his radical socialist writings with his reduction to a gun-toting nationalist martyr?",
+      "verdict": "PASS",
+      "supporting_ku_ids": [
+        "KU-BS-CH17-01",
+        "KU-BS-CH28-01",
+        "KU-BS-CH42-01",
+        "KU-BS-CH50-01",
+        "KU-BS-CH53-01"
+      ],
+      "derived_answer": "Non-Cooperation volunteer (1920) $\\rightarrow$ disillusioned by Bardoli retreat (1922) $\\rightarrow$ philosophical rejection of 'utopian non-violence' (1929) $\\rightarrow$ Marxist critique of Gandhi's bourgeois limits (1931) $\\rightarrow$ Gandhi-Irwin Pact exclusion $\\rightarrow$ Karachi Congress penance resolution.",
+      "epistemic_evaluation": "Complete lifelong dialectical trajectory between Gandhi and Bhagat Singh.",
+      "potential_omissions_or_distortions": "None. Complete fidelity preserved."
+    }
+  ]
+}
