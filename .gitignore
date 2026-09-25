@@ -26,4 +26,6 @@ youtube_transcript_*
 .idea/
 src/manifestation_pipeline/unpacked_epubs/
 src/manifestation_pipeline/unpacked_batch_2/
+src/manifestation_pipeline/unpacked_batch_3/
+
 

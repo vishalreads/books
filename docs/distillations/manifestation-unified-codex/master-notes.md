@@ -1,32 +1,34 @@
 # The Master Codex of Manifestation: A Unified Cross-Source Synthesis
-**Corpus Scope:** 14 Canonical Works Synthesized (Dr. Joseph Murphy, Neville Goddard [2 Works], Florence Scovel Shinn, Dr. Joe Dispenza [2 Works], Eckhart Tolle, Shakti Gawain, Rhonda Byrne, Esther & Jerry Hicks, Roxie Nafousi, Arden G., Z Z Rae, Jeffery Dawson)  
+**Corpus Scope:** 18 Canonical Works Synthesized (Dr. Joseph Murphy, Neville Goddard [3 Works], Florence Scovel Shinn, Dr. Joe Dispenza [2 Works], Eckhart Tolle, Shakti Gawain, Dr. James R. Doty, MD [Stanford], Gabrielle Bernstein, Rhonda Byrne [2 Works], Esther & Jerry Hicks, Roxie Nafousi, Arden G., Z Z Rae, Jeffery Dawson)  
 **System Standard:** BKRS v1.0 Total Replacement Codex  
-**Corpus Architecture:** 14 Movements | 25 Invariant Knowledge Units | Comprehensive Epistemic Audit  
+**Corpus Architecture:** 16 Movements | 30 Invariant Knowledge Units | Comprehensive Epistemic Audit  
 **Objective:** Transform disparate manifestation literature into a scientifically grounded, source-faithful, and genuinely followable master codex.  
 
 ---
 
 ## Executive Summary: The Complete Epistemic Architecture
 
-For over a century, manifestation literature has oscillated between profound psychological insight and absurd, predatory pseudoscience. When stripped of New Age mysticism and commercialization, manifestation is not a magical method for altering the gravitational or quantum properties of the universe through wishful thinking. Rather, it is **the systematic alignment of subconscious identity, cognitive salience (the Reticular Activating System), neurobiological heart-brain coherence, emotional regulation, and high-probability behavioral action.**
+For over a century, manifestation literature has oscillated between profound psychological insight and absurd, predatory pseudoscience. When stripped of New Age mysticism and commercialization, manifestation is not a magical method for altering the gravitational or quantum properties of the universe through wishful thinking. Rather, it is **the systematic convergence of subconscious identity, cognitive salience (the Reticular Activating System & Salience Network), neurobiological heart-brain coherence, vagal parasympathetic regulation, and high-probability behavioral action.**
 
-This Unified Master Codex synthesizes the core contributions of all 14 canonical works:
+This Unified Master Codex synthesizes the core contributions of all 18 canonical works:
 1. **Dr. Joseph Murphy (*The Power of Your Subconscious Mind*):** The mechanics of the subjective subconscious mind, autosuggestion, the Law of Reversed Effort, and hypnagogic sleep-state imprinting (Baudouin technique).
-2. **Neville Goddard (*Feeling Is the Secret* & *The Power of Awareness*):** The Law of Assumption, "I AM" consciousness, first-person sensory imagery, the SATS hypnagogic loop, and the collapse of external cause.
+2. **Neville Goddard (*Feeling Is the Secret*, *The Power of Awareness*, & *Infinite Potential*):** The Law of Assumption, "I AM" consciousness, first-person sensory imagery, the SATS hypnagogic loop, the Law of the Reversible Process, and the Pruning Shears of Revision.
 3. **Florence Scovel Shinn (*The Game of Life and How to Play It*):** The Law of the Spoken Word, casting the burden, non-resistance, karmic boomerangs, and the Divine Design.
 4. **Dr. Joe Dispenza (*Breaking the Habit of Being Yourself* & *Becoming Supernatural*):** The neurobiology of transformation: breaking emotional addictions to past trauma, crossing the river of change, heart-brain coherence, epigenetics, and collapsing the quantum wave function.
 5. **Eckhart Tolle (*The Power of Now*):** The philosophy of presence: disidentifying from the egoic mind, transcending psychological time, surrender, and creating from the timeless Unmanifested Now.
 6. **Shakti Gawain (*Creative Visualization*):** The classic holistic visualization toolkit: the Four Basic Steps, the Pink Bubble technique, mental sanctuary, and clearing energy blocks.
-7. **Rhonda Byrne (*The Secret*):** The global popularization of the Law of Attraction, the three-step creative formula (*Ask, Believe, Receive*), gratitude mechanics, and the psychology of emotional frequency.
-8. **Esther & Jerry Hicks (*Ask and It Is Given*):** The 22-rung Emotional Guidance Scale, the mechanics of non-resistance, the "Art of Allowing", and navigating cognitive contrast.
-9. **Roxie Nafousi (*Manifest: 7 Steps to Living Your Best Life*):** The modern cognitive-behavioral translation: grounding manifestation in self-worth, comfort-zone expansion, passing "universe tests", and turning envy into inspiration.
-10. **Arden G. (*Detachment & Manifestation: Stop Chasing, Start Attracting*):** The paradox of surrender, attachment theory, eliminating needy desperation, and nervous system regulation.
-11. **Z Z Rae (*How to Manifest a Soulmate*):** Relational self-concept, clearing past relationship trauma, and interpersonal boundary mechanics.
-12. **Jeffery Dawson (*Mind Control: Manipulation, Deception and Persuasion*):** The psychological mirror: linguistic framing, covert suggestion, detecting manipulative gurus, and intellectual self-defense.
+7. **Dr. James R. Doty, MD (*Mind Magic: The Neuroscience of Manifestation and How It Changes Everything*, 2024):** The Stanford clinical neurosurgical framework: down-regulating the Default Mode Network (DMN), recruiting the Salience Network, and the biological power of prosocial compassion over selfish scarcity.
+8. **Gabrielle Bernstein (*The Universe Has Your Back: Transform Fear to Faith*):** Transforming panic into radical trust, the practice of the Holy Instant, overcoming manic control, and reframing obstacles as divine detours.
+9. **Rhonda Byrne (*The Secret* & *The Power of Feelings*):** The global popularization of the Law of Attraction, the 51% Emotional Tipping Point, feeling as the fuel of thought, and gratitude mechanics.
+10. **Esther & Jerry Hicks (*Ask and It Is Given*):** The 22-rung Emotional Guidance Scale, the mechanics of non-resistance, the "Art of Allowing", and navigating cognitive contrast.
+11. **Roxie Nafousi (*Manifest: 7 Steps to Living Your Best Life*):** The modern cognitive-behavioral translation: grounding manifestation in self-worth, comfort-zone expansion, passing "universe tests", and turning envy into inspiration.
+12. **Arden G. (*Detachment & Manifestation: Stop Chasing, Start Attracting*):** The paradox of surrender, attachment theory, eliminating needy desperation, and nervous system regulation.
+13. **Z Z Rae (*How to Manifest a Soulmate*):** Relational self-concept, clearing past relationship trauma, and interpersonal boundary mechanics.
+14. **Jeffery Dawson (*Mind Control: Manipulation, Deception and Persuasion*):** The psychological mirror: linguistic framing, covert suggestion, detecting manipulative gurus, and intellectual self-defense.
 
 ---
 
-## The Beginner's Rosetta Stone: 16 Essential Terms Decoded in Plain English
+## The Beginner's Rosetta Stone: 20 Essential Terms Decoded in Plain English
 
 If you are reading this literature for the first time, you will encounter a wall of esoteric New Age jargon and dense neurological terms. Use this table as your master translation guide:
 
@@ -48,10 +50,14 @@ If you are reading this literature for the first time, you will encounter a wall
 | **Pacing and Leading**<br>*`Persuasion & Guru Defense`* | “Charismatic vibrational resonance.” (Commercial Gurus) | **A psychological persuasion tactic where an influencer matches your body language, tone, and private complaints (pacing) to win your trust, then steers your wallet toward their expensive masterclass (leading).** | A street tour guide matching your slow walking pace for three minutes so you feel at ease, then casually turning a corner and leading you straight into his cousin's overpriced rug shop. | Jeffery Dawson (Mind Control) |
 | **The Unmanifested / Psychological Time**<br>*`Existential Philosophy`* | “The formless realm of Being from which all physical matter arises.” (The Power of Now) | **The quiet, spacious awareness behind your racing thoughts, accessible only when you stop reliving yesterday's guilt or dreading tomorrow's meetings and ground your senses in the present room.** | The vast blue sky behind heavy storm clouds. The stormy clouds (worries, bills, arguments) rage and drift, but the sky itself is never scratched, burned, or destroyed. | Eckhart Tolle |
 | **Aligned Action vs. 'Secret Couch Fallacy'**<br>*`Behavioral Execution`* | “Vibrational alignment is 99% of creation; physical effort is secondary.” (The Secret / Hicks) | **Visualization and mindset conditioning exist to calm your nervous system so you can take terrifying, high-leverage physical actions in the real world—not to sit on the couch waiting for money to fall from the sky.** | An Olympic archer visualizing the arrow piercing the center of the bullseye 100 times before drawing the bow. The mental rehearsal ensures steady nerves, but she still has to pull the string and release the arrow. | Dr. Joe Dispenza, Roxie Nafousi, Dr. Joseph Murphy |
+| **Default Mode Network (DMN) & Salience Network**<br>*`Neuroscience & Attention`* | “Quieting the ego to enter the universal quantum matrix.” (Mind Magic) | **The DMN is the brain circuit that generates endless wandering thoughts, self-doubt, and regrets. The Salience Network is the radar that detects what matters right now in the real world.** | The DMN is like having 10 TV channels blaring reality TV dramas in the background. Taming the DMN mutes those noisy TVs so you can hear the important doorbell ring (the Salience Network). | Dr. James R. Doty, MD (Stanford) |
+| **Prosocial Compassion vs. Selfish Scarcity**<br>*`Evolutionary Biology & Somatics`* | “Aligning your soul frequency with cosmic love.” (Bernstein / Byrne) | **When you want something just to flex or show off, your brain triggers fear and threat. When your goal genuinely helps others, your brain releases oxytocin and dopamine, widening your intelligence.** | A pack of wolves. An isolated wolf hoarding food stays anxious and hyper-vigilant (cortisol). A wolf sharing with the pack rests calmly because the entire pack has its back. | Dr. James R. Doty, MD |
+| **The Pruning Shears of Revision**<br>*`Cognitive Reconsolidation`* | “Changing the past in the spiritual 4th dimension.” (Infinite Potential) | **Mentally rewriting a stressful argument or rejection before you go to sleep, replacing it with the outcome you wished had happened so your brain doesn't store the trauma.** | Editing a rough draft in a Word document before hitting Save. If a bad paragraph happened at 2 PM, you delete it and type the clean sentence before closing your laptop for the night. | Neville Goddard |
+| **The 51% Tipping Point Rule**<br>*`Behavioral Momentum`* | “Tipping the cosmic scales into the frequency of love.” (The Power of Feelings) | **You do not need to be a cheerful saint 100% of the day. Choosing appreciation over complaints just 51% of the time creates an irreversible upward momentum loop.** | A sports team winning 51 out of 100 games. You don't need a clean sweep blowout; winning by a single point tipping past 50% guarantees a championship season over time. | Rhonda Byrne |
 
 ---
 
-## 25 Unified Invariant Knowledge Units
+## 30 Unified Invariant Knowledge Units
 
 ### [Unit 01] The Subconscious Operating System: Objective vs. Subjective Consciousness
 - **Structural Movement:** Movement I: Cognitive Architecture & The Subconscious Foundation
@@ -689,11 +695,136 @@ OPERATIONAL BLUEPRINT & ACTIONABLE HEURISTICS. Structured for empirical personal
 
 ---
 
+### [Unit 26] The Neurosurgical Architecture: Taming the Default Mode Network & Calibrating Salience
+- **Structural Movement:** Movement XV: Clinical Neuroscience & Attention Regulation (Dr. James R. Doty, MD)
+- **Corpus Sources:** Doty (Mind Magic, Ch. 1–3, 2024)
+- **Primary Authors:** Dr. James R. Doty, MD
+- **Epistemic Classification:** `EMPIRICAL CLINICAL NEUROSCIENCE` | Materiality: **CRITICAL**
+
+#### Core Invariant Concept
+Manifestation is the deliberate neurosurgical recruitment of attention networks: suppressing the Default Mode Network (DMN), which generates endless self-critical mind-wandering, to engage the Salience Network and Central Executive Network so the brain prioritizes intention into physical action.
+
+#### Epistemic Audit & Scientific Translation
+EMPIRICAL CLINICAL NEUROSCIENCE. Formulated by Stanford neurosurgeon Dr. James R. Doty; maps the neural pathways of intention directly to fMRI evidence, basal ganglia habit loops, and prefrontal attentional networks.
+
+#### Systematic Tenets & Cross-Source Principles
+1. The Default Mode Network (DMN) is the brain's resting state circuit, responsible for narrative self-referential rumination, shame, and projecting past trauma into the future (Doty).
+1. When attention is undirected, the DMN hijacks consciousness with catastrophic worst-case scenarios, keeping the nervous system trapped in low-grade chronic threat (Doty).
+1. By cultivating deliberate sensory stillness (breath awareness), the DMN is down-regulated, allowing the Salience Network (anterior insula and dorsal anterior cingulate) to detect real-world opportunities that match conscious goals.
+
+#### Operational Heuristic & Behavioral Maxim
+> *Reclaim your attentional bandwidth; quiet the DMN rumination loop through 5 minutes of focused sensory grounding before setting daily intentions.*
+
+#### Verbatim Archival Anchor
+“Manifestation isn’t about magic. It is about how our brains process information, how we focus our attention, and how we turn our inner visions into external realities.” — Dr. James R. Doty, MD (Mind Magic)
+
+---
+
+### [Unit 27] Prosocial Compassion vs. Selfish Scarcity: The Vagal & Oxytocin Advantage
+- **Structural Movement:** Movement XV: Clinical Neuroscience & Attention Regulation (Dr. James R. Doty, MD)
+- **Corpus Sources:** Doty (Mind Magic, Ch. 4–6, 2024)
+- **Primary Authors:** Dr. James R. Doty, MD
+- **Epistemic Classification:** `EVOLUTIONARY BIOLOGY` | Materiality: **CRITICAL**
+
+#### Core Invariant Concept
+Selfish, ego-driven manifestation ('I want power and luxury to prove I am worthy') activates the amygdala's threat circuits, elevating cortisol and narrowing visual-perceptual focus; whereas prosocial, compassionate intentions stimulate the vagus nerve, releasing oxytocin and dopamine, which radically broadens creative problem-solving.
+
+#### Epistemic Audit & Scientific Translation
+EVOLUTIONARY BIOLOGY & VAGAL TONE. Corroborated by polyvagal theory and neuroimaging research at Stanford CCARE; demonstrates that evolutionary survival mechanisms reward social cooperation over isolated greed.
+
+#### Systematic Tenets & Cross-Source Principles
+1. When a goal is rooted in fear of scarcity or vanity, the brain perceives the goal as an emergency, firing the sympathetic nervous system and impairing the prefrontal cortex (Doty).
+1. Compassion and prosocial intent trigger the parasympathetic 'care-and-connect' system, lowering blood pressure and stimulating neurogenesis (Doty).
+1. People manifest with far greater speed and resilience when their goals benefit others alongside themselves, because human beings are biologically wired as hyper-social primates.
+
+#### Operational Heuristic & Behavioral Maxim
+> *Frame every personal goal in terms of how it elevates those around you; prosocial intent disarms the amygdala and mobilizes the highest cognitive faculties.*
+
+#### Verbatim Archival Anchor
+“When you manifest from a place of compassion and service, your brain shifts out of survival mode and opens up vast neural networks of creativity and connection.” — Dr. James R. Doty, MD
+
+---
+
+### [Unit 28] The Pruning Shears of Revision & The Law of the Reversible Process
+- **Structural Movement:** Movement XVI: Imaginal Revision & Surrender (Goddard & Bernstein)
+- **Corpus Sources:** Neville Goddard (Infinite Potential / Awakened Imagination, Ch. 4)
+- **Primary Authors:** Neville Goddard
+- **Epistemic Classification:** `COGNITIVE RECONSOLIDATION` | Materiality: **CRITICAL**
+
+#### Core Invariant Concept
+The human memory is not a fixed video recording; it is dynamically reconsolidated each time it is accessed. By applying the 'Pruning Shears of Revision'—rewriting an unpleasant daily event into the exact outcome desired before sleep—the emotional brain dissolves trauma and halts negative momentum.
+
+#### Epistemic Audit & Scientific Translation
+COGNITIVE RECONSOLIDATION & HEURISTIC IMAGERY. Parallels modern neurobiological research on memory reconsolidation (Nader et al.), which proves that recalling a memory in a new emotional state alters its permanent neurological synaptic strength.
+
+#### Systematic Tenets & Cross-Source Principles
+1. The Law of the Reversible Process: In physics, if heat can generate mechanical work, mechanical work can generate heat. In psychology, if a physical event produces an emotional state, feeling that emotional state will inevitably create conditions that mirror it (Goddard).
+1. The Revision Drill: At the end of the day, review every conversation, email, or encounter that went poorly; replay the scene in your mind repeatedly, replacing what happened with the ideal harmonious interaction until your chest feels peace (Goddard).
+1. Carrying unresolved grievances or insults into sleep allows the subconscious mind to incubate them as dominant reality patterns for tomorrow.
+
+#### Operational Heuristic & Behavioral Maxim
+> *Prune your daily mental garden before sleep; never allow a negative argument or rejection to enter the subconscious unrevised.*
+
+#### Verbatim Archival Anchor
+“By using the pruning shears of revision, you take the shears to the day's experiences and cut away whatever was discordant, replacing it with the perfection you desire.” — Neville Goddard (Infinite Potential)
+
+---
+
+### [Unit 29] The 51% Emotional Tipping Point & Feelings as the Reactive Fuel
+- **Structural Movement:** Movement XVI: Imaginal Revision & Surrender (Goddard & Bernstein)
+- **Corpus Sources:** Rhonda Byrne (The Power of Feelings, Ch. 2–3)
+- **Primary Authors:** Rhonda Byrne
+- **Epistemic Classification:** `QUALIFIED BEHAVIORAL HEURISTIC` | Materiality: **IMPORTANT**
+
+#### Core Invariant Concept
+Thoughts and words possess zero creative traction without somatic emotion: thoughts are the vehicle, but feelings are the rocket fuel. The 51% Tipping Point establishes that total emotional perfection is unnecessary; maintaining just 51% positive, appreciative feelings over reactivity tips the balance into compounding momentum.
+
+#### Epistemic Audit & Scientific Translation
+QUALIFIED BEHAVIORAL HEURISTIC. Strips Byrne's magical radio-wave claims; validates the psychological truth that emotional baselines compound through perceptual confirmation bias and self-reinforcing upward spirals (Fredrickson's Broaden-and-Build Theory).
+
+#### Systematic Tenets & Cross-Source Principles
+1. You are a feeling organism before you are a thinking organism; your skin, nervous system, and sensory organs are designed to generate somatic feedback (Byrne).
+1. The 51% Rule: You do not need to be enlightened or immune to sadness; tipping just 51% of your daily emotional baseline toward gratitude, enthusiasm, or peace creates an asymmetric upward spiral (Byrne).
+1. Feelings reflect what you are giving out: reacting with anger to a bill reinforces financial panic; leading with appreciation for service breaks the scarcity feedback loop.
+
+#### Operational Heuristic & Behavioral Maxim
+> *Aim for the 51% tipping point: win slightly more than half of your daily emotional reactions with appreciation rather than annoyance.*
+
+#### Verbatim Archival Anchor
+“Even if you just give 51 percent good thoughts and good feelings, you have tipped the scales of your life! Once you reach the tipping point, good things multiply.” — Rhonda Byrne (The Power of Feelings)
+
+---
+
+### [Unit 30] The Holy Instant & Transforming Fear-Based Control into Radical Trust
+- **Structural Movement:** Movement XVI: Imaginal Revision & Surrender (Goddard & Bernstein)
+- **Corpus Sources:** Gabrielle Bernstein (The Universe Has Your Back, Ch. 1–5)
+- **Primary Authors:** Gabrielle Bernstein
+- **Epistemic Classification:** `COGNITIVE REFRAMING` | Materiality: **IMPORTANT**
+
+#### Core Invariant Concept
+The root of manifestation failure is manic control—the frantic, fear-based micromanagement of outcomes. By executing the 'Holy Instant', the practitioner catches the ego in panic, forgives the thought, and consciously surrenders the timeline and mechanism to a higher intelligence.
+
+#### Epistemic Audit & Scientific Translation
+COGNITIVE REFRAMING & ATTACHMENT REGULATION. Derived from New Thought and *A Course in Miracles*; aligns with clinical cognitive reappraisal and acceptance-based behavioral therapies (ACT).
+
+#### Systematic Tenets & Cross-Source Principles
+1. Obstacles are Detours in the Right Direction: When a business deal collapses or a relationship ends, viewing it as a catastrophic punishment creates despair; viewing it as divine redirection preserves psychological momentum (Bernstein).
+1. The 5-Step Shift: (1) Notice the fear, (2) Forgive the thought, (3) Choose love/peace, (4) Surrender the timeline, (5) Rest in faith.
+1. Manic Manifesting: When you demand that something must happen by Friday or else your life is ruined, you are manifesting from intense fear, which repels collaboration and blinds you to lateral opportunities.
+
+#### Operational Heuristic & Behavioral Maxim
+> *Recognize that manic control is fear in disguise; when you hit a roadblock, declare: 'Thank you for this detour in the right direction,' and let go of the timetable.*
+
+#### Verbatim Archival Anchor
+“The Universe is always responding to the energy behind your beliefs... When you trade fear for faith, obstacles become miraculous detours.” — Gabrielle Bernstein (The Universe Has Your Back)
+
+---
+
 ## The Grand Dispute Matrix: Where the Authors Contradict
 
 ### Dispute 1: Action vs. Pure Vibrational Alignment
 - **The Byrne/Hicks Position:** Rhonda Byrne and Esther Hicks argue that physical action is secondary. Hicks asserts that "99% of your creation is completed before you see any physical evidence" and that forcing action when out of alignment causes failure.
-- **The Dispenza/Nafousi/Murphy/Dawson Counter-Position:** Dr. Joe Dispenza, Dr. Joseph Murphy, Roxie Nafousi, and Jeffery Dawson insist that action is the physical currency of reality. Nafousi calls passive visualization without uncomfortable action the "Secret Couch Fallacy."
+- **The Dispenza/Doty/Nafousi/Murphy Counter-Position:** Dr. James R. Doty (Stanford), Dr. Joe Dispenza, Dr. Joseph Murphy, and Roxie Nafousi insist that action is the physical currency of reality. Nafousi calls passive visualization without uncomfortable action the "Secret Couch Fallacy."
 - **Unified Synthesis:** Alignment without action is delusional fantasy; action without alignment is burnout and friction. True manifestation is **aligned, proactive behavioral execution**: visualization prepares the nervous system to execute difficult, high-leverage actions without paralysis.
 
 ### Dispute 2: Future Desires vs. The Present Moment
@@ -703,14 +834,19 @@ OPERATIONAL BLUEPRINT & ACTIONABLE HEURISTICS. Structured for empirical personal
 
 ### Dispute 3: Quantum Physics vs. Cognitive Attention
 - **The Byrne Error:** *The Secret* asserts that the human brain operates like a radio transmission tower broadcasting electromagnetic frequencies that gravitationally attract physical circumstances.
-- **The Neurobiological Truth:** The human brain emits micro-voltage EEG waves that dissipate within millimeters of the skull. The real mechanism is the **Reticular Activating System (RAS)** and **heart-brain coherence** (Dispenza): when a goal is emotionally prioritized, the RAS filters out environmental noise, enabling the brain to spot opportunities, patterns, and resources that were already physically present but previously ignored.
+- **The Neurobiological Truth (Doty & Dispenza):** The human brain emits micro-voltage EEG waves that dissipate within millimeters of the skull. The real mechanism is the **Reticular Activating System (RAS)**, **Salience Network**, and **heart-brain coherence**: when a goal is emotionally prioritized, neural filters clear away noise, enabling you to spot opportunities and resources that were already physically present but previously ignored.
 
-### Dispute 4: Specificity vs. General Surrender
+### Dispute 4: Selfish Materialism vs. Prosocial Compassion
+- **The Pop-Culture Jargon (Byrne / Commercial Gurus):** Manifestation is framed as a personal weapon to obtain luxury watches, mansions, and romantic conquests to satisfy egoic vanity.
+- **The Stanford Neurosurgical Finding (Dr. James R. Doty):** Scans demonstrate that selfish vanity intentions activate amygdala threat circuits, elevating cortisol and restricting visual bandwidth. Prosocial, compassionate intentions stimulate the vagus nerve and release oxytocin and dopamine, unlocking prefrontal creativity and attracting human cooperation.
+- **Unified Synthesis:** You can pursue financial and material security, but ground it in service and generosity; disconnected greed produces biological stress and eventual self-sabotage.
+
+### Dispute 5: Specificity vs. General Surrender
 - **The Hyper-Specific Camp (Murphy, Byrne, Rae, Shinn):** Demand exact numbers, detailed partner specifications, and precise visual details.
-- **The General Alignment Camp (Hicks, Arden G., Tolle):** Argue that hyper-specificity triggers anxiety and resistance ("How will this happen? What if it doesn't?"). Recommends surrendering details and focusing purely on the underlying emotional state of freedom and relief.
+- **The General Alignment Camp (Hicks, Bernstein, Arden G., Tolle):** Argue that hyper-specificity triggers anxiety and resistance ("How will this happen? What if it doesn't?"). Recommends surrendering details and focusing purely on the underlying emotional state of freedom and relief.
 - **Unified Synthesis:** Use specificity to define the **target direction**, but use general surrender to release **attachment to the timeline and mechanism**.
 
-### Dispute 5: The Victim-Blaming Fallacy
+### Dispute 6: The Victim-Blaming Fallacy
 - **The Pop-Manifestation Hazard:** Extreme proponents of the Law of Attraction claim that individuals in poverty, victims of war, or people diagnosed with terminal illnesses "attracted" their suffering through low-vibrational thoughts.
 - **The Unified Codex Verdict:** This is a monstrous philosophical error rooted in survivor bias and the Just-World Fallacy. Biological illness, geopolitical conflict, and socioeconomic structural oppression operate on external physical and historical laws. Manifestation applies strictly to an individual's **subjective mindset, behavioral choices, and perceptual agency**, never as a moral explanation for collective external catastrophes.
 
@@ -719,24 +855,25 @@ OPERATIONAL BLUEPRINT & ACTIONABLE HEURISTICS. Structured for empirical personal
 ## The Master 24-Hour Operational Protocol (The Actionable Practice Engine)
 
 ### Phase 1: Morning Priming Protocol (First 25 Minutes)
-1. **Digital Fast:** No smartphone, email, or social media for the first 25 minutes. Protect theta/alpha brainwaves from external reactive hijacking.
-2. **Somatic Breath Reset (3 Mins):** Three minutes of physiological sighs (double inhale through nose, long unforced exhale through mouth) to lower sympathetic heart rate.
-3. **Heart-Brain Coherence Meditation (5 Mins - Dispenza):** Focus attention on the center of the chest. Breathe deeply into the heart and generate an elevated somatic emotion: gratitude, awe, or profound appreciation.
-4. **Sensory Gratitude Drill (3 Mins - Gawain/Hicks):** Viscerally feel bodily appreciation for 3 specific, mundane realities (warm water, shelter, heartbeat). Avoid caveats.
-5. **RAS Vision Calibration (10 Mins - Nafousi):** Review primary quarterly objective. Clarify the single most uncomfortable high-leverage action required today.
+1. **Digital Fast:** No smartphone, email, or social media for the first 25 minutes. Protect theta/alpha brainwave plasticity.
+2. **Somatic Breath Reset (3 Mins):** Three minutes of physiological sighs or box breathing to silence the Default Mode Network (DMN) (Doty).
+3. **Heart-Brain Coherence Meditation (5 Mins - Dispenza):** Focus attention on the center of the chest. Breathe deeply into the heart and generate an elevated somatic emotion: gratitude, awe, or compassion.
+4. **Sensory Gratitude Drill (3 Mins - Gawain/Hicks):** Viscerally feel bodily appreciation for 3 specific, mundane realities.
+5. **RAS & Salience Vision Calibration (10 Mins - Nafousi/Doty):** Review primary quarterly objective. Clarify the single most uncomfortable high-leverage action required today.
 
 ### Phase 2: Daytime Execution & Aligned Action (Working Hours)
 1. **The Comfort-Zone Step:** Execute the single most intimidating, high-leverage task early in the day (the pitch, the cold email, the boundary conversation).
-2. **The Arden G. Detachment Anchor:** When timeline anxiety or fear of rejection surfaces, repeat: *“What is meant for me will not pass me. I control my input; I release my attachment to the immediate outcome.”*
+2. **The Detachment Anchor (Arden G. / Bernstein):** When timeline anxiety surfaces, repeat: *“What is meant for me will not pass me. Obstacles are detours in the right direction. I control my input; I release the outcome.”*
 3. **The Tolle Presence Reset:** When feeling overwhelmed, pause for 60 seconds, feel the inner energy of your hands and feet, and witness the thinking mind without judgment.
-4. **The Florence Scovel Shinn Spoken Word Guard:** Never speak self-deprecating words about poverty or illness. Declare: *“My supply is limitless and comes under grace in harmonious ways.”*
+4. **The 51% Tipping Point Guard (Byrne):** Ensure slightly more than half of your daily reactions are grounded in appreciation rather than complaints.
 5. **The Envy Transmutation Trigger:** The moment you feel envy or comparison on social media, immediately bless that person: *“I celebrate your success, and I recognize it as empirical proof that this level of abundance is achievable in human reality.”*
 
-### Phase 3: Evening SATS Routine (Last 15 Minutes Pre-Sleep - Neville Goddard / Murphy)
+### Phase 3: Evening SATS & Revision Routine (Last 20 Minutes Pre-Sleep - Neville Goddard / Murphy)
 1. **Subconscious De-Escalation:** Cease television, stimulating media, and work discussions 30 minutes before sleep.
-2. **Enter the Drowsy State (Baudouin Technique):** Lie comfortably in bed, relax all muscles from scalp to toes, and allow the body to enter the heavy, sleepy, hypnagogic state.
-3. **The Short-Loop Imaginal Scene (Neville Goddard):** Run a single 5-to-10 second first-person scene that naturally implies your desire is already an accomplished fact (shaking a mentor's hand, looking at an official approval email, resting your head on a loving partner's chest).
-4. **Somatic Feeling Consolidation:** Do not strive; gently loop the scene until the feeling of naturalness and relief settles into the chest. Drift into sleep holding that emotional atmosphere.
+2. **The Pruning Shears of Revision (5 Mins - Goddard):** Review any difficult or negative encounter that occurred today; mentally rewrite the scene in your imagination until it ends with harmony, respect, and peace.
+3. **Enter the Drowsy State (Baudouin Technique):** Lie comfortably in bed, relax all muscles from scalp to toes, and allow the body to enter the heavy, sleepy hypnagogic state.
+4. **The Short-Loop Imaginal Scene (Neville Goddard):** Run a single 5-to-10 second first-person scene that naturally implies your desire is already an accomplished fact.
+5. **Somatic Feeling Consolidation:** Do not strive; gently loop the scene until the feeling of naturalness and relief settles into the chest. Drift into sleep holding that emotional atmosphere.
 
 ### Phase 4: The Empirical Falsification Journal (Weekly Tracking)
 Maintain a strict weekly log with four columns:
