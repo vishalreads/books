@@ -13,13 +13,12 @@
     "core_concept": "Human consciousness operates as a dual-layer cybernetic hierarchy: the conscious (objective/reasoning) mind acts as the gatekeeper choosing inputs, while the subconscious (subjective/habitual) mind operates non-judgmentally, executing whichever premises are emotionally accepted as true.",
     "epistemic_audit": "EMPIRICAL PSYCHOLOGY & COGNITIVE ARCHITECTURE. Translates Murphy's theological 'Infinite Intelligence' into the established biological reality of the basal ganglia, autonomic nervous system, and implicit procedural memory.",
     "key_tenets": [
-      "The conscious mind reasons inductively, analyzes evidence, and makes choices; the subconscious mind accepts all premises without debate, deduce consequences from them, and controls all autonomic bodily functions and habitual motor routines (Murphy).",
-      "The subconscious mind cannot understand a joke, sarcasm, or negative phrasing ('Don't think of an elephant'); it responds solely to the emotional intensity and visual imagery of the dominant impression (Dawson).",
-      "Whatever premise the conscious mind repeatedly affirms and emotionally validates becomes an automated subconscious belief, subsequently filtering all sensory perception and driving unconscious micro-behaviors (Nafousi).",
-      "Epistemic Warning: The subconscious is not an external deity or cosmic magic box; it is an organic biological neural processing network that automates repeated mental patterns."
+      "The conscious mind reasons inductively, analyzes evidence, and makes choices; the subconscious mind accepts all premises without debate, deducing consequences from them and controlling autonomic bodily functions (Murphy).",
+      "The subconscious mind cannot process a negative ('Do not crash'); it responds solely to the emotional intensity and visual imagery of the dominant representation (Dawson).",
+      "Whatever premise the conscious mind repeatedly affirms and emotionally validates becomes an automated neural subroutine, filtering perception and driving unconscious micro-behaviors (Nafousi)."
     ],
-    "operational_heuristic": "Never plant seeds of failure in the conscious mind; guard the gates of consciousness against fear, cynism, and hostile suggestions from others.",
-    "verbatim_anchor": "“The subconscious mind does not argue, neither does it answer back... It accepts what the conscious mind decrees. If you say, 'I can't afford it,' your subconscious sees to it that you will not have the money to buy what you want.” — Dr. Joseph Murphy",
+    "operational_heuristic": "Guard the gates of conscious thought; never allow fear, cynical humor, or hostile third-party suggestions to take root in the subjective psyche.",
+    "verbatim_anchor": "“The subconscious mind does not argue, neither does it answer back... It accepts what the conscious mind decrees.” — Dr. Joseph Murphy",
     "epistemic_status": "EMPIRICAL PSYCHOLOGY",
     "materiality": "CRITICAL"
   },
@@ -36,21 +35,174 @@
     "core_concept": "Applying forceful conscious willpower to manifest a desire produces internal conflict that magnifies the fear of failure, triggering the Law of Reversed Effort (Coué's Baudouin Principle): when conscious will and subconscious imagination clash, imagination inevitably triumphs.",
     "epistemic_audit": "BEHAVIORAL HEURISTIC & PSYCHOLOGICAL PRINCIPLE. Formulated by French psychotherapist Émile Coué and Charles Baudouin; corroborated by modern performance psychology regarding choking under pressure.",
     "key_tenets": [
-      "Mental coercion and forceful striving create subconscious tension; the more desperately one tries to force a belief, the more the underlying subconscious conviction of lack and insufficiency is reinforced (Murphy).",
-      "When you say 'I want this so badly I will force it to happen,' your subconscious interprets the desperation as proof that you currently do not possess it, locking you into the state of 'wanting' rather than 'having' (Arden G.).",
-      "Resolution requires passive, relaxed surrender rather than violent struggle: entering a drowsy, sleepy state where conscious resistance is suspended and presenting the simple end result as an already accomplished fact.",
-      "The Law of Reversed Effort explains why obsessive micromanagement in careers, dating, and creative work consistently repels the desired outcome."
+      "Mental coercion and forceful striving create subconscious tension; the more desperately one tries to force a belief, the more the underlying subconscious conviction of lack is reinforced (Murphy).",
+      "When you say 'I want this so badly I will force it to happen,' your subconscious interprets the desperation as proof of absence, locking you into the state of 'wanting' rather than 'having' (Arden G.).",
+      "Resolution requires passive surrender: entering a relaxed state where conscious resistance is suspended and presenting the simple end result as an already accomplished fact."
     ],
     "operational_heuristic": "Eliminate mental strain; when seeking an outcome, imagine the relief and satisfaction of the completed result rather than the arduous mechanics of achieving it.",
-    "verbatim_anchor": "“When your desires and imagination are in conflict, your imagination invariably gains the day... In using your subconscious mind you infer no opponent, you use no force. You imagine the end and the freedom state.” — Dr. Joseph Murphy",
+    "verbatim_anchor": "“When your desires and imagination are in conflict, your imagination invariably gains the day... In using your subconscious mind you infer no opponent, you use no force.” — Dr. Joseph Murphy",
     "epistemic_status": "BEHAVIORAL HEURISTIC",
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-03-pop-catalyst-the-secret",
+    "id": "unit-03-dispenza-breaking-habit",
     "unit_number": 3,
+    "title": "Breaking the Habit of Being Yourself: Neural Pruning & The River of Change",
+    "movement": "Movement II: Neuroplasticity & Epigenetics (Dispenza)",
+    "scope": "Dispenza (Breaking the Habit, Part I & II)",
+    "primary_authors": [
+      "Dr. Joe Dispenza"
+    ],
+    "core_concept": "By age 35, 95% of who we are is a memorized set of behaviors, emotional reactions, unconscious habits, and hardwired beliefs operating like an automated computer program. To change your life, you must literally 'lose your mind'—unwiring the neural networks of the old self and stepping into the fertile void of the unknown.",
+    "epistemic_audit": "NEUROPLASTICITY & CELLULAR BIOLOGY. Merges Hebbian learning ('nerve cells that fire together wire together') with cognitive-behavioral extinction and autonomic nervous system regulation.",
+    "key_tenets": [
+      "Thoughts create feelings, and feelings create thoughts: this produces a 'state of being' where the body becomes the subconscious mind, chemically addicted to past emotional trauma (shame, guilt, anxiety, unworthiness) (Dispenza).",
+      "Crossing the River of Change: The profound biological discomfort felt when breaking an old habit is not failure; it is the physiological death of the old neurological self and the chemical withdrawal of the body.",
+      "Mental Rehearsal: The brain cannot distinguish between an event occurring in the physical external world and an event emotionally and visually imagined within consciousness; repeated rehearsal changes brain circuitry ahead of the physical experience."
+    ],
+    "operational_heuristic": "To manifest a new reality, you must become greater than your environment, greater than your body's emotional addictions, and greater than chronological time.",
+    "verbatim_anchor": "“If you want a new outcome, you will have to break the habit of being yourself, and reinvent a new self.” — Dr. Joe Dispenza",
+    "epistemic_status": "EMPIRICAL PSYCHOLOGY & NEUROPLASTICITY",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-04-heart-brain-coherence-quantum",
+    "unit_number": 4,
+    "title": "Heart-Brain Coherence & Tuning into the Quantum Potential",
+    "movement": "Movement II: Neuroplasticity & Epigenetics (Dispenza)",
+    "scope": "Dispenza (Becoming Supernatural, Ch. 2–4, 7)",
+    "primary_authors": [
+      "Dr. Joe Dispenza"
+    ],
+    "core_concept": "Manifestation requires a precise electro-magnetic signature: a clear, elevated intention in the brain (electrical signal sending the information outward) combined with an elevated, heart-centered emotion such as awe, gratitude, or love (magnetic signal drawing the potential to you).",
+    "epistemic_audit": "PSYCHONEUROIMMUNOLOGY & QUALIFIED QUANTUM METAPHOR. Supported by HeartMath Institute heart-rate variability (HRV) metrics; uses quantum potential as a macro-metaphor for probabilistic reality.",
+    "key_tenets": [
+      "Incoherence: Stress hormones (cortisol, adrenaline) cause the brain's hemispheres to fire out of sync and produce erratic, jagged heart rate variability, signaling survival panic to every cell.",
+      "Heart-Brain Coherence: Breathing slowly into the heart center and cultivating elevated emotions (gratitude, joy, appreciation) synchronizes the heart's rhythmic field with the brain's alpha/theta waves, producing a coherent electromagnetic field.",
+      "The Quantum Potential: In the quantum realm, all possibilities exist simultaneously as wave functions of information; when you collapse the wave function with coherent intention and feeling, you pull the future into the present."
+    ],
+    "operational_heuristic": "Never combine a new vision with an old survival emotion (frustration, anxiety, impatience); align the elevated thought with the elevated somatic feeling of gratitude.",
+    "verbatim_anchor": "“A clear intention combined with an elevated emotion changes the energy... The thought sends the signal out, and the feeling draws the event to you.” — Dr. Joe Dispenza",
+    "epistemic_status": "QUALIFIED PSYCHOSOMATIC SCIENCE",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-05-neville-feeling-is-the-secret",
+    "unit_number": 5,
+    "title": "Feeling Is the Secret: The Law of Assumption & SATS Mastery",
+    "movement": "Movement III: The Assumption School (Neville Goddard)",
+    "scope": "Goddard (Feeling Is the Secret, Ch. 1–4)",
+    "primary_authors": [
+      "Neville Goddard"
+    ],
+    "core_concept": "The conscious mind is masculine (generating ideas), while the subconscious mind is feminine (conceiving and giving birth to them). The subconscious is never moved by logic or arguments, but exclusively by feeling: whatever feeling of reality you capture in imagination, the subconscious inevitably objectifies in physical space.",
+    "epistemic_audit": "SOURCE ARGUMENT & PHENOMENOLOGICAL HEURISTIC. Neville's formulation represents the purest expression of psychological non-dualism and hypnagogic autosuggestion.",
+    "key_tenets": [
+      "Feeling defined: Feeling is not mere emotional excitement; it is the subjective conviction of reality—the visceral sensation of 'It is done' (Goddard).",
+      "The State Akin to Sleep (SATS): Inducing physical immobility and drowsiness prior to sleep, and looping a single, brief, first-person sensory action that implies fulfillment (e.g., shaking hands, wearing a wedding ring, smelling salt air).",
+      "Do not visualize yourself from the outside like an actor in a movie; visualize from inside your own body in the first person, looking through your own eyes and touching objects in imagination.",
+      "Sleep is the natural door to the subconscious: whatever state of consciousness you carry into sleep is the precise state that will govern your physical tomorrow."
+    ],
+    "operational_heuristic": "Never go to sleep feeling discouraged, anxious, or incomplete; assume the feeling of the wish fulfilled and fall asleep in the atmosphere of victory.",
+    "verbatim_anchor": "“Feeling is the secret of subconscious impregnation... You must assume the feeling of the wish fulfilled until the assumption has all the sensory vividness of reality.” — Neville Goddard",
+    "epistemic_status": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-06-neville-power-of-awareness",
+    "unit_number": 6,
+    "title": "The Power of Awareness: The 'I AM' & The Collapse of External Cause",
+    "movement": "Movement III: The Assumption School (Neville Goddard)",
+    "scope": "Goddard (The Power of Awareness, Ch. 1–7, 21–22)",
+    "primary_authors": [
+      "Neville Goddard",
+      "Mitch Horowitz"
+    ],
+    "core_concept": "Your concept of yourself is the sole cause of the phenomena of your life. The world has no independent existence separate from your awareness; 'I AM' is the primary reality, and all outer conditions are merely projected shadows of your internal self-definition.",
+    "epistemic_audit": "SOURCE HYPOTHESIS & PHILOSOPHICAL IDEALISM. Connects directly to classical Advaita Vedanta and Western subjective idealism (Berkeley, Emerson).",
+    "key_tenets": [
+      "The Illusion of External Obstacles: To attempt to change circumstances by fighting external conditions is as futile as smashing a mirror because you dislike the reflection (Goddard).",
+      "Changing the Self-Concept: You do not attract what you want; you attract what you are conscious of being. If you define yourself as poor, no financial opportunity will stick; if you define yourself as abundant, circumstances bend to fit.",
+      "The Effortless Way: Creation is already finished; all possibilities exist simultaneously in infinite consciousness. Manifestation is simply selecting a new state of awareness and dwelling in it until it hardens into fact.",
+      "Persistence: When external senses deny your assumption, do not waver; remain faithful to your internal unseen reality."
+    ],
+    "operational_heuristic": "Disregard external appearances and the evidence of the physical senses; sustain the assumption that you already are what you desire to be.",
+    "verbatim_anchor": "“Leave the mirror and change your face. Leave the world alone and change your conceptions of yourself.” — Neville Goddard",
+    "epistemic_status": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-07-shinn-game-of-life-spoken-word",
+    "unit_number": 7,
+    "title": "The Game of Life: The Law of the Spoken Word & Casting the Burden",
+    "movement": "Movement IV: The New Thought Spoken Word (Florence Scovel Shinn)",
+    "scope": "Shinn (The Game of Life and How to Play It, Ch. 1–6)",
+    "primary_authors": [
+      "Florence Scovel Shinn"
+    ],
+    "core_concept": "Life is not a battle, but a game of boomerangs: man’s thoughts, deeds, and words return to him sooner or later with astounding accuracy. The spoken word is a vibrational decree that commands subconscious energy and shapes destiny.",
+    "epistemic_audit": "BEHAVIORAL HEURISTIC & LINGUISTIC REFRAMING. Anticipates modern cognitive linguistic research into how self-talk constructs neural bias and perceptual framing.",
+    "key_tenets": [
+      "The Power of the Word: Every spoken word is an order to the subconscious mind; complaining, gossiping, and joking about poverty or illness ('I am dying to see you', 'I am broke as usual') register as literal commands (Shinn).",
+      "Casting the Burden: When an individual is overwhelmed by a problem, conscious struggle only magnifies anxiety; one must mentally 'cast the burden' onto the Superconscious (or Divine Design) through a definitive vocal decree.",
+      "The Law of Non-Resistance: What you resist, you empower; do not fight evil, do not harbor resentment against enemies; bless what you fear and it loses its power to harm you.",
+      "The Divine Design: Every human soul has a pre-existing blueprint of perfect health, wealth, love, and self-expression; manifestation is removing personal egoic blocks to let the Divine Design unfold."
+    ],
+    "operational_heuristic": "Speak only words of blessing, prosperity, and peace; cast your heaviest anxieties out of your conscious mind through a definitive spoken decree.",
+    "verbatim_anchor": "“By your words you are justified, and by your words you are condemned... The game of life is a game of boomerangs. Man's thoughts, deeds and words, return to him sooner or later with astounding accuracy.” — Florence Scovel Shinn",
+    "epistemic_status": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-08-tolle-power-of-now",
+    "unit_number": 8,
+    "title": "The Power of Now: Manifesting from Presence vs. Egoic Striving",
+    "movement": "Movement V: Presence & Egoless Creation (Eckhart Tolle)",
+    "scope": "Tolle (The Power of Now, Ch. 1–4, 9–10)",
+    "primary_authors": [
+      "Eckhart Tolle"
+    ],
+    "core_concept": "Most manifestation is hijacked by the egoic mind, which projects past trauma into a fictitious future, creating chronic dissatisfaction and psychological time. Authentic creation arises only from deep presence in the timeless Now, where action is uncorrupted by needy attachment.",
+    "epistemic_audit": "EMPIRICAL MINDFULNESS & PHENOMENOLOGY. Rigorously verified by contemporary neuroscience on the Default Mode Network (DMN), rumination, and somatic presence.",
+    "key_tenets": [
+      "The Egoic Manifestation Trap: Believing that future external achievements (money, status, partner) will finally grant inner peace is an illusion; the future exists only as a mental concept in the present moment (Tolle).",
+      "Disidentification from the Mind: You are not your thoughts; you are the silent, spacious awareness behind the thoughts. Stepping out of mental chatter collapses the pain-body and stops reactive suffering.",
+      "Surrender vs. Resignation: Surrender is the internal acceptance of 'what is' without mental resistance; from this quiet, centered space, inspired action arises with immense clarity and power.",
+      "Creating from the Unmanifested: When you honor the present moment without resistance, the creative intelligence of life flows through you effortlessly, without the toxic friction of egoic ambition."
+    ],
+    "operational_heuristic": "Do not use the present moment as a mere stepping stone to a fictitious future; bring your entire awareness into the Now, and let aligned action flow from stillness.",
+    "verbatim_anchor": "“Unease, anxiety, tension, stress, worry—all forms of fear—are caused by too much future, and not enough presence... Nothing ever happened in the past; it happened in the Now. Nothing will ever happen in the future; it will happen in the Now.” — Eckhart Tolle",
+    "epistemic_status": "EMPIRICAL MINDFULNESS",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-09-gawain-creative-visualization",
+    "unit_number": 9,
+    "title": "Creative Visualization: The Four Basic Steps & The Pink Bubble Technique",
+    "movement": "Movement VI: Somatic Imagery & Energetic Clearing (Shakti Gawain)",
+    "scope": "Gawain (Creative Visualization, Parts 1–3)",
+    "primary_authors": [
+      "Shakti Gawain",
+      "Marci Shimoff"
+    ],
+    "core_concept": "Creative visualization is the intentional use of mental imagery, affirmation, and relaxed somatic presence to effect positive changes in reality. It operates on the principle that the physical universe is dynamic energy responding to mental thought-forms.",
+    "epistemic_audit": "BEHAVIORAL HEURISTIC & MOTOR IMAGERY. Supported by sports psychology research confirming mental imagery activates identical motor and sensory pathways in the brain.",
+    "key_tenets": [
+      "The Four Basic Steps: 1. Set your goal (clear decision); 2. Create a clear mental idea or feeling; 3. Focus on it often in deep relaxation; 4. Give it positive energy through affirmations and gratitude (Gawain).",
+      "The Three Necessary Elements: Desire (genuine hunger, not what others expect), Belief (reasonable conviction that it is possible), and Acceptance (willingness to receive it).",
+      "The Pink Bubble Technique: In deep meditation, visualize your desired reality inside a radiant pink bubble; then gently release the bubble into the universe, symbolizing complete emotional detachment.",
+      "Clearing Energy Blocks: Confronting and releasing emotional resentment, guilt, and scarcity beliefs that act as psychic dam walls blocking creative flow."
+    ],
+    "operational_heuristic": "Practice 10 minutes of relaxed mental visualization daily, concluding by releasing the image with the affirmation: 'This, or something even better, now manifests for me in totally satisfying and harmonious ways, for the highest good of all concerned.'",
+    "verbatim_anchor": "“Creative visualization is magic in the truest and highest sense of the word. It involves understanding and aligning yourself with the natural principles that govern the workings of our universe.” — Shakti Gawain",
+    "epistemic_status": "BEHAVIORAL HEURISTIC",
+    "materiality": "CRITICAL"
+  },
+  {
+    "id": "unit-10-pop-catalyst-the-secret",
+    "unit_number": 10,
     "title": "The Pop Catalyst: 'The Secret' and the Three-Step Creation Formula",
-    "movement": "Movement II: The Law of Attraction & Pop Formulations",
+    "movement": "Movement VII: The Law of Attraction & Pop Formulations",
     "scope": "Byrne (Ch. 1–3) • Hicks (Ch. 1–4)",
     "primary_authors": [
       "Rhonda Byrne",
@@ -59,21 +211,21 @@
     "core_concept": "The foundational popular formula of manifestation dictates a three-phase dynamic: Ask (clarify desire), Believe (maintain unwavering cognitive and emotional alignment), and Receive (enter the receptive psychological state of gratitude and fulfillment).",
     "epistemic_audit": "SOURCE ARGUMENT & HEURISTIC FILTER. Deconstructs Byrne's pseudoscientific claim that 'thoughts are magnetic transmissions travelling through quantum ether' into its true psychological equivalent: goal salience, selective attention (RAS), and self-fulfilling behavioral prophecy.",
     "key_tenets": [
-      "Step 1: Ask. Formulate clear, unambiguous, precise desire without contradictory qualifiers; vagueness produces diffuse focus.",
+      "Step 1: Ask. Formulate clear, unambiguous desire without contradictory qualifiers; vagueness produces diffuse focus.",
       "Step 2: Believe. Cultivate unwavering internal certainty; think, speak, and act as if the intended outcome is an inevitability (Byrne).",
       "Step 3: Receive. Attune emotional state to feeling good now; do not postpone happiness until the manifestation arrives, because joy in the present is the condition that enables the perception of opportunities.",
       "Pseudoscience Audit: Byrne claims thoughts radiate electromagnetic frequencies that physically rearrange external physical matter at a distance. Science disproves this; what thoughts actually rearrange is the practitioner's neurobiology, attentional filter, and behavioral choices, which in turn alters their external environment."
     ],
     "operational_heuristic": "Treat the three-step formula not as a magical wish-granting incantation, but as an optimization protocol for attentional salience and decision congruence.",
-    "verbatim_anchor": "“Step 1: Ask. Make it clear what you want... Step 2: Believe. Believe that it is already yours. Have what I love to call unwavering faith... Step 3: Receive. Begin to feel wonderful about it now.” — Rhonda Byrne",
+    "verbatim_anchor": "“Step 1: Ask. Make it clear what you want... Step 2: Believe. Believe that it is already yours... Step 3: Receive. Begin to feel wonderful about it now.” — Rhonda Byrne",
     "epistemic_status": "SOURCE ARGUMENT",
     "materiality": "IMPORTANT"
   },
   {
-    "id": "unit-04-vibrational-spectrum-emotional-scale",
-    "unit_number": 4,
+    "id": "unit-11-vibrational-spectrum-emotional-scale",
+    "unit_number": 11,
     "title": "The Vibrational Spectrum & The 22-Rung Emotional Guidance Scale",
-    "movement": "Movement II: The Law of Attraction & Pop Formulations",
+    "movement": "Movement VII: The Law of Attraction & Pop Formulations",
     "scope": "Hicks (Ch. 5–16) • Byrne (Ch. 2) • Nafousi (Step 2)",
     "primary_authors": [
       "Esther & Jerry Hicks",
@@ -81,12 +233,11 @@
       "Roxie Nafousi"
     ],
     "core_concept": "Human emotional states function as an internal navigational guidance system; rather than toxic forced positivity, psychological alignment requires recognizing one's current rung on the emotional spectrum and taking the next accessible upward step.",
-    "epistemic_audit": "BEHAVIORAL HEURISTIC & AFFECT REGULATION. Hicks presents this as metaphysical 'vibrational frequency', which cognitive science maps directly to autonomic nervous system states (dorsal vagal collapse vs. sympathetic fight/flight vs. ventral vagal social engagement).",
+    "epistemic_audit": "BEHAVIORAL HEURISTIC & AFFECT REGULATION. Hicks presents this as metaphysical 'vibrational frequency', which cognitive science maps directly to autonomic nervous system states.",
     "key_tenets": [
       "The 22-Rung Scale spans from Rung 1 (Joy, Knowledge, Empowerment, Freedom, Love) down through Rung 8 (Boredom), Rung 10 (Frustration/Impatience), Rung 17 (Anger), Rung 21 (Jealousy), and Rung 22 (Fear, Grief, Depression, Despair).",
       "The Fallacy of the Instant Leap: A practitioner in severe depression (Rung 22) cannot instantaneously leap to Joy (Rung 1); attempting to do so produces cognitive dissonance and cynical despair (Hicks).",
-      "The Functional Role of Anger: Moving from Depression/Helplessness (Rung 22) up into Anger (Rung 17) is an actual therapeutic improvement because anger possesses kinetic agency; from anger, one can climb to Frustration, then Hopefulness, and finally Optimism.",
-      "Emotions are real-time feedback loops indicating whether your current thought pattern is expansive (ventral vagal) or contracted (sympathetic/dorsal threat)."
+      "The Functional Role of Anger: Moving from Depression/Helplessness (Rung 22) up into Anger (Rung 17) is an actual therapeutic improvement because anger possesses kinetic agency; from anger, one can climb to Frustration, then Hopefulness, and finally Optimism."
     ],
     "operational_heuristic": "Do not repress negative emotion with fake smiles; identify where you sit on the 22-rung spectrum and reach for the best-feeling thought that is genuinely believable in that moment.",
     "verbatim_anchor": "“You cannot jump from despair to joy in a single bound... but you can reach for the relief of anger from despair. Any relief is a movement toward the Vortex.” — Esther & Jerry Hicks",
@@ -94,10 +245,10 @@
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-05-allowing-vortex-paradox",
-    "unit_number": 5,
+    "id": "unit-12-allowing-vortex-paradox",
+    "unit_number": 12,
     "title": "The Art of Allowing & The 'Vortex' Paradox",
-    "movement": "Movement III: The Mechanics of Alignment & Resistance",
+    "movement": "Movement VIII: Alignment & Resistance Elimination",
     "scope": "Hicks (Ch. 17–22) • Arden G. (Part 2) • Murphy (Ch. 8)",
     "primary_authors": [
       "Esther & Jerry Hicks",
@@ -118,10 +269,10 @@
     "materiality": "IMPORTANT"
   },
   {
-    "id": "unit-06-self-worth-neuroplasticity",
-    "unit_number": 6,
+    "id": "unit-13-self-worth-neuroplasticity",
+    "unit_number": 13,
     "title": "The Neuroplasticity of Self-Worth: Deconstructing Fear and Doubt",
-    "movement": "Movement III: The Mechanics of Alignment & Resistance",
+    "movement": "Movement IX: Modern Cognitive-Behavioral Alignment",
     "scope": "Nafousi (Step 1–2) • Murphy (Ch. 19) • Dawson (Ch. 10)",
     "primary_authors": [
       "Roxie Nafousi",
@@ -133,8 +284,7 @@
     "key_tenets": [
       "If you consciously visualize millions of dollars but subconsciously believe you are intrinsically unworthy, unlovable, or destined to struggle, your nervous system will actively sabotage financial opportunities to preserve self-concept consistency (Nafousi).",
       "Fear and self-doubt are evolutionary threat responses developed to protect the organism from social exile; they must not be fought with self-hatred, but gently reconditioned through repeated, low-stakes micro-exposures and positive affirmations (Dawson).",
-      "Cultivating unconditional self-love is the indispensable prerequisite for manifestation: treating oneself with dignity, setting non-negotiable boundaries, and speaking to oneself as a valued ally rather than an abusive critic.",
-      "Neuroplastic rewiring requires emotional repetition: replacing ancient childhood shame narratives with conscious evidence of personal agency and growth."
+      "Cultivating unconditional self-love is the indispensable prerequisite for manifestation: treating oneself with dignity, setting non-negotiable boundaries, and speaking to oneself as a valued ally rather than an abusive critic."
     ],
     "operational_heuristic": "Identify your core subconscious limiting belief (e.g., 'I am not enough') and systematically construct daily behavioral evidence that contradicts it.",
     "verbatim_anchor": "“Manifesting is not about sitting on the sofa and daydreaming. You do not attract what you want; you attract what you believe you are worthy of having.” — Roxie Nafousi",
@@ -142,10 +292,10 @@
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-07-paradox-detachment-stop-chasing",
-    "unit_number": 7,
+    "id": "unit-14-paradox-detachment-stop-chasing",
+    "unit_number": 14,
     "title": "The Paradox of Detachment: Why Chasing Repels",
-    "movement": "Movement IV: Detachment, Surrender & Identity Shift",
+    "movement": "Movement IX: Modern Cognitive-Behavioral Alignment",
     "scope": "Arden G. (Parts 1–3) • Murphy (Ch. 8) • Hicks (Ch. 20)",
     "primary_authors": [
       "Arden G.",
@@ -157,19 +307,18 @@
     "key_tenets": [
       "Chasing behavior (incessant texting, compulsive checking of bank accounts, anxiety-driven networking) signals desperation to other humans and triggers their innate repulsion instinct (Arden G.).",
       "Detachment means divorcing your emotional equilibrium from the immediate external outcome: 'I desire this outcome, I will act toward it, but my personal wholeness and peace do not depend on it.'",
-      "The Neurological Shift of Letting Go: Dropping obsessive attachment lowers cortisol and amygdala hyper-arousal, restoring prefrontal cortex executive functioning and allowing the brain to perceive creative solutions that tunnel vision concealed.",
-      "The Law of Surrender: Surrendering is letting go of the ego's demand to control the precise timeline and procedural route of manifestation."
+      "The Neurological Shift of Letting Go: Dropping obsessive attachment lowers cortisol and amygdala hyper-arousal, restoring prefrontal cortex executive functioning and allowing the brain to perceive creative solutions that tunnel vision concealed."
     ],
     "operational_heuristic": "Adopt the internal mantra: 'What is meant for me will not pass me.' Stop checking the soil every ten minutes to see if the seed has sprouted.",
-    "verbatim_anchor": "“Detachment is not about not caring; it is about caring so deeply about your own peace that you refuse to let an external outcome dictate your worth. Stop chasing. Start attracting.” — Arden G.",
+    "verbatim_anchor": "“Detachment is not about not caring; it is about caring so deeply about your own peace that you refuse to let an external outcome dictate your worth.” — Arden G.",
     "epistemic_status": "BEHAVIORAL HEURISTIC",
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-08-behavioral-alignment-comfort-zones",
-    "unit_number": 8,
+    "id": "unit-15-behavioral-alignment-comfort-zones",
+    "unit_number": 15,
     "title": "Behavioral Alignment: Stepping Outside Comfort Zones",
-    "movement": "Movement V: Behavioral Execution & Proactive Action",
+    "movement": "Movement X: Behavioral Execution & Proactive Action",
     "scope": "Nafousi (Step 3) • Dawson (Ch. 6–7) • Byrne (Ch. 4)",
     "primary_authors": [
       "Roxie Nafousi",
@@ -181,8 +330,7 @@
     "key_tenets": [
       "The 'Secret Couch' Fallacy: Believing that visualizing a check will cause money to magically materialize in the mailbox without business activity, labor, or exchange of value is delusional magical thinking (Nafousi).",
       "Aligned Action defined: Taking the specific, often frightening steps that the future, successful version of yourself would take (making the cold call, launching the website, ending the dead relationship, auditioning).",
-      "Comfort Zone Expansion: Growth never occurs in familiarity; the brain's neuroplasticity requires friction, uncertainty, and novelty to form robust new synaptic architectures.",
-      "Congruence Principle: When internal visualization matches external disciplined action, cognitive dissonance vanishes, unlocking massive persuasive power and momentum (Dawson)."
+      "Comfort Zone Expansion: Growth never occurs in familiarity; the brain's neuroplasticity requires friction, uncertainty, and novelty to form robust new synaptic architectures."
     ],
     "operational_heuristic": "Ask yourself daily: 'What would the person I am manifesting becoming do in this situation?' and immediately execute that action, regardless of discomfort.",
     "verbatim_anchor": "“If you want to live a life you have never lived, you must do things you have never done. Align your behaviour with your vision, and take bold, proactive action.” — Roxie Nafousi",
@@ -190,10 +338,10 @@
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-09-universe-tests-boundary-filter",
-    "unit_number": 9,
+    "id": "unit-16-universe-tests-boundary-filter",
+    "unit_number": 16,
     "title": "Tests from the Universe & The Boundary Filter",
-    "movement": "Movement V: Behavioral Execution & Proactive Action",
+    "movement": "Movement X: Behavioral Execution & Proactive Action",
     "scope": "Nafousi (Step 4) • Arden G. (Part 3) • Rae (Ch. 12–20)",
     "primary_authors": [
       "Roxie Nafousi",
@@ -205,19 +353,18 @@
     "key_tenets": [
       "A 'test' typically manifests as an ex-partner returning with empty promises, a low-ball job offer that preys on financial anxiety, or an invitation to compromise personal integrity (Nafousi).",
       "Passing the test requires saying NO to what is merely 'good enough' to leave space for what is truly aligned with your new standards (Rae).",
-      "The Energetic Cost of Settling: Accepting a counterfeit offer confirms to the subconscious mind that your previous affirmation of high self-worth was a bluff (Arden G.).",
-      "Every time a boundary is maintained in the face of fear, the internal neurological conviction of deservingness multiplies exponentially."
+      "The Energetic Cost of Settling: Accepting a counterfeit offer confirms to the subconscious mind that your previous affirmation of high self-worth was a bluff (Arden G.)."
     ],
     "operational_heuristic": "View setbacks and low-value temptations not as cosmic punishments, but as final exams designed to confirm whether you have genuinely outgrown your past.",
-    "verbatim_anchor": "“The universe will test you to see if you have truly changed, or if you will still settle for what you used to accept. Say no to what drains you, and make space for what elevates you.” — Roxie Nafousi",
+    "verbatim_anchor": "“The universe will test you to see if you have truly changed, or if you will still settle for what you used to accept. Say no to what drains you.” — Roxie Nafousi",
     "epistemic_status": "BEHAVIORAL HEURISTIC",
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-10-neuro-somatic-gratitude",
-    "unit_number": 10,
+    "id": "unit-17-neuro-somatic-gratitude",
+    "unit_number": 17,
     "title": "The Neuro-Somatic Power of Gratitude Without Caveats",
-    "movement": "Movement VI: Somatic State Regulation & Emotional Alchemy",
+    "movement": "Movement XI: Somatic State Regulation & Emotional Alchemy",
     "scope": "Byrne (Ch. 4) • Nafousi (Step 5) • Hicks (Process 1) • Murphy (Ch. 6)",
     "primary_authors": [
       "Rhonda Byrne",
@@ -234,15 +381,15 @@
       "Murphy's Thank-You Technique: Going to sleep whispering 'Thank you, Father' or 'Thank you for this blessing', allowing the subconscious to stew in gratitude throughout the night."
     ],
     "operational_heuristic": "Practice daily somatic gratitude: do not just list items mentally; feel the warmth in your chest and belly for three specific things for at least 60 seconds.",
-    "verbatim_anchor": "“Gratitude is the single most powerful tool you have to change your frequency. If you only do one thing from this book, be genuinely grateful for what you have now.” — Rhonda Byrne",
+    "verbatim_anchor": "“Gratitude is the single most powerful tool you have to change your frequency. If you only do one thing, be genuinely grateful for what you have now.” — Rhonda Byrne",
     "epistemic_status": "EMPIRICAL PSYCHOLOGY",
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-11-envy-to-inspiration-transmutation",
-    "unit_number": 11,
+    "id": "unit-18-envy-to-inspiration-transmutation",
+    "unit_number": 18,
     "title": "The Psychology of Envy vs. Inspiration: Transmuting Scarcity",
-    "movement": "Movement VI: Somatic State Regulation & Emotional Alchemy",
+    "movement": "Movement XI: Somatic State Regulation & Emotional Alchemy",
     "scope": "Nafousi (Step 6) • Murphy (Ch. 9, 16) • Dawson (Ch. 8)",
     "primary_authors": [
       "Roxie Nafousi",
@@ -253,9 +400,8 @@
     "epistemic_audit": "BEHAVIORAL PSYCHOLOGY & SOCIAL COMPARISON THEORY. Based on Festinger's social comparison research and cognitive reframing protocols.",
     "key_tenets": [
       "The Subconscious Mirror: When you condemn another person's wealth, relationship, or beauty, your subconscious mind internalizes the condemnation and prevents you from acquiring those same attributes (Murphy).",
-      "Transmutation into Inspiration: When you see someone enjoying what you desire, reframe it immediately as empirical evidence that it is possible in the human realm: 'If they can have it, that proves it exists and can be experienced' (Nafousi).",
-      "Blessing What You Desire: Actively celebrating and wishing greater prosperity for your competitors and peers dissolves competitive panic and aligns your mind with infinite supply.",
-      "Dawson's Persuasion Insight: Those who operate from envy are easily manipulated by populist demagogues and predatory marketers who exploit grievances."
+      "Transmutation into Inspiration: When you see someone enjoying what you desire, reframe it immediately as empirical evidence that it is possible in the human realm (Nafousi).",
+      "Blessing What You Desire: Actively celebrating and wishing greater prosperity for your competitors and peers dissolves competitive panic and aligns your mind with infinite supply."
     ],
     "operational_heuristic": "The moment envy stings your heart on social media, bless that person silently: 'I rejoice in your success, and I claim the same possibility for myself.'",
     "verbatim_anchor": "“Never say or think anything derogatory about another's success or wealth. To do so is to place your own subconscious in opposition to prosperity.” — Dr. Joseph Murphy",
@@ -263,71 +409,70 @@
     "materiality": "IMPORTANT"
   },
   {
-    "id": "unit-12-hypnagogic-state-sats",
-    "unit_number": 12,
+    "id": "unit-19-hypnagogic-state-sats",
+    "unit_number": 19,
     "title": "The Hypnagogic State & Sleep-State Suggestion (SATS)",
-    "movement": "Movement VII: Practical Methods & Hypnagogic Imprinting",
-    "scope": "Murphy (Ch. 6, 13) • Arden G. (Part 2) • Dawson (Ch. 3)",
+    "movement": "Movement XII: Practical Methods & Hypnagogic Imprinting",
+    "scope": "Murphy (Ch. 6, 13) • Goddard (Feeling, Ch. 2) • Dawson (Ch. 3)",
     "primary_authors": [
       "Dr. Joseph Murphy",
-      "Arden G.",
+      "Neville Goddard",
       "Jeffery Dawson"
     ],
     "core_concept": "The transition state between wakefulness and sleep (the hypnagogic state, characterized by theta brainwave oscillations) represents the single most receptive cognitive portal for imprinting the subconscious mind without conscious critical friction.",
     "epistemic_audit": "EMPIRICAL NEUROPHYSIOLOGY & HYPNOTIC SUGGESTION. Directly validated by neuroscience regarding sleep spindles, memory consolidation, and reduced prefrontal cortex inhibition during Stage 1 NREM sleep.",
     "key_tenets": [
       "The Baudouin Technique: Charles Baudouin proved that entering a drowsy, sleepy state (where conscious intellectual debate drops to near zero) allows a single concentrated idea to penetrate directly into the subjective psyche (Murphy).",
-      "The Short Loop Principle: Do not play an entire long movie; loop a single, 5-to-10 second sensory scene implying that your goal is already accomplished (e.g., shaking a hand, hearing congratulations, seeing a specific sign).",
-      "Somatic Feeling over Words: Focus on the physical feeling of relief, gratitude, and satisfaction; words are mere scaffolding; the emotional resonance is what imprints the neural circuitry.",
+      "The Short Loop Principle: Do not play an entire long movie; loop a single, 5-to-10 second sensory scene implying that your goal is already accomplished (Goddard).",
       "The Pre-Sleep Danger: Going to sleep dwelling on worries, bills, or anger programs the subconscious mind to spend 8 hours of sleep processing threat vectors and stress hormones."
     ],
     "operational_heuristic": "As you drift off to sleep, systematically loop your short scene of fulfillment until sleep overtakes you; let your last waking thought be the feeling of the wish fulfilled.",
-    "verbatim_anchor": "“In a drowsy, sleepy state, effort is reduced to a minimum. The conscious mind is submerged to a great extent... This is the ideal condition for impregnating your subconscious mind.” — Dr. Joseph Murphy",
+    "verbatim_anchor": "“In a drowsy, sleepy state, effort is reduced to a minimum... This is the ideal condition for impregnating your subconscious mind.” — Dr. Joseph Murphy",
     "epistemic_status": "EMPIRICAL PSYCHOLOGY",
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-13-wealth-architecture-prosperity-consciousness",
-    "unit_number": 13,
+    "id": "unit-20-wealth-architecture-prosperity-consciousness",
+    "unit_number": 20,
     "title": "Wealth Architecture: Prosperity Consciousness vs. Scarcity Conditioning",
-    "movement": "Movement VIII: Domain-Specific Applications (Wealth, Health, Love)",
-    "scope": "Murphy (Ch. 9–11) • Byrne (Ch. 5) • Hicks (Process 4)",
+    "movement": "Movement XIII: Domain-Specific Applications (Wealth, Health, Love)",
+    "scope": "Murphy (Ch. 9–11) • Byrne (Ch. 5) • Hicks (Process 4) • Shinn (Ch. 2)",
     "primary_authors": [
       "Dr. Joseph Murphy",
       "Rhonda Byrne",
+      "Florence Scovel Shinn",
       "Esther & Jerry Hicks"
     ],
     "core_concept": "Money is an inert medium of exchange and energy; chronic poverty and financial lack are not noble virtues or immutable curses, but subconscious mental diseases born of fear, condemnation of wealth, and deep-seated scarcity conditioning.",
     "epistemic_audit": "BEHAVIORAL ECONOMICS & COGNITIVE REFRAMING. Separates sound behavioral principles (value creation, eliminating fear around money) from Byrne's absurd claim that visualizing bank accounts causes cash to appear without work.",
     "key_tenets": [
       "The Mental Block against Money: Believing that 'money is the root of all evil' or that rich people are inherently evil creates an unconscious conflict where the subconscious protects you from money to keep you morally pure (Murphy).",
-      "Claiming Your Right to Be Rich: Replacing shame around financial desire with the understanding that wealth provides freedom, health, educational opportunity, and the capacity for grand philanthropic contribution.",
-      "Hicks's Prosperity Game: Imagining receiving escalating sums of money daily and mentally spending it on specific goods and services, expanding the mental capacity to handle larger financial flows.",
+      "Shinn's Law of Prosperity: God is your unfailing, limitless supply; large sums of money come to you under grace in miraculous ways when you eliminate the fear of lack and circulate funds boldly.",
       "The Law of Circulation: Hoarding money out of terror locks in scarcity; circulating money with gratitude and confidence keeps the financial nervous system relaxed and receptive to new enterprise."
     ],
     "operational_heuristic": "Repeat silently several times daily: 'I like money. I love it. I use it wisely, constructively, and judiciously. Money is constantly circulating in my life.'",
-    "verbatim_anchor": "“Never make a god of money. It is only a symbol. Remember that the real riches are in your mind... You are here to lead a balanced life, and this includes acquiring all the money you need.” — Dr. Joseph Murphy",
+    "verbatim_anchor": "“Never make a god of money. It is only a symbol. Remember that the real riches are in your mind... You are here to lead a balanced life.” — Dr. Joseph Murphy",
     "epistemic_status": "BEHAVIORAL HEURISTIC",
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-14-relational-manifestation-soulmate-mirror",
-    "unit_number": 14,
+    "id": "unit-21-relational-manifestation-soulmate-mirror",
+    "unit_number": 21,
     "title": "Relational Manifestation & The Soulmate Mirror",
-    "movement": "Movement VIII: Domain-Specific Applications (Wealth, Health, Love)",
-    "scope": "Rae (Ch. 1–60) • Murphy (Ch. 14–15) • Byrne (Ch. 6)",
+    "movement": "Movement XIII: Domain-Specific Applications (Wealth, Health, Love)",
+    "scope": "Rae (Ch. 1–60) • Murphy (Ch. 14–15) • Byrne (Ch. 6) • Tolle (Ch. 8)",
     "primary_authors": [
       "Z Z Rae",
       "Dr. Joseph Murphy",
-      "Rhonda Byrne"
+      "Rhonda Byrne",
+      "Eckhart Tolle"
     ],
     "core_concept": "Interpersonal romantic relationships function as precise psychological mirrors; you never attract the partner you desire with your conscious mind, but the partner who matches your unconscious attachment patterns, self-respect, and emotional maturity.",
     "epistemic_audit": "ATTACHMENT THEORY & INTERPERSONAL PSYCHOLOGY. Reflects Bowlby's attachment theory, schema therapy, and boundaries research.",
     "key_tenets": [
       "Clearing the Psychic Debris: Attempting to manifest a new soulmate while harboring burning resentment or unresolved grief toward an ex-partner ensures you will manifest another version of the same trauma (Rae).",
-      "The Anchor of Wholeness: Entering dating looking for someone to 'complete' you guarantees needy codependency; healthy love requires entering relationship as two whole, self-contained sovereign individuals.",
-      "Constructing the Specific Blueprint: Writing down the emotional, moral, spiritual, and intellectual attributes of your ideal partner, and then asking: 'Am I embodying these exact qualities in my own life right now?'",
-      "Murphy's Conjugal Prayer: Visualizing your ideal companion as loving, peaceful, harmonious, and prosperous, releasing all obsession over specific third parties."
+      "Tolle's Enlightened Relationships: Transforming relationship from a battleground of egoic need into a shared spiritual practice; ending the cycle of using a partner to fill internal emptiness.",
+      "The Anchor of Wholeness: Entering dating looking for someone to 'complete' you guarantees needy codependency; healthy love requires entering relationship as two whole, self-contained sovereign individuals."
     ],
     "operational_heuristic": "Become the person you are looking for; your soulmate is the biological and psychological mirror of your own internal self-respect.",
     "verbatim_anchor": "“You attract what you are, not what you want. If you want love, be loving. If you want respect, respect yourself first.” — Z Z Rae",
@@ -335,21 +480,21 @@
     "materiality": "IMPORTANT"
   },
   {
-    "id": "unit-15-somatic-healing-biology-of-belief",
-    "unit_number": 15,
+    "id": "unit-22-somatic-healing-biology-of-belief",
+    "unit_number": 22,
     "title": "Somatic Healing, The Placebo Effect & The Biology of Belief",
-    "movement": "Movement VIII: Domain-Specific Applications (Wealth, Health, Love)",
-    "scope": "Murphy (Ch. 4–5) • Byrne (Ch. 7)",
+    "movement": "Movement XIII: Domain-Specific Applications (Wealth, Health, Love)",
+    "scope": "Murphy (Ch. 4–5) • Byrne (Ch. 7) • Dispenza (Supernatural, Ch. 5, 7)",
     "primary_authors": [
       "Dr. Joseph Murphy",
+      "Dr. Joe Dispenza",
       "Rhonda Byrne"
     ],
     "core_concept": "The human body is an electro-chemical organism directed by the nervous system; subjective emotional states, chronic stress, and profound belief exert immense influence over cellular regeneration, immune function, and cardiovascular health.",
     "epistemic_audit": "CRITICAL MEDICAL AUDIT & PSYCHONEUROIMMUNOLOGY. Affirms the scientifically proven Placebo/Nocebo effect and stress biology; unequivocally condemns Byrne's dangerous assertion that cancer or terminal diseases can be cured solely by smiling and positive thinking without medical intervention.",
     "key_tenets": [
       "Psychoneuroimmunology: Chronic fear, resentment, and bitterness flood the body with cortisol and catecholamines, impairing killer T-cells and suppressing autonomic tissue repair (Murphy).",
-      "The Placebo Architecture: When a patient genuinely believes they are receiving a healing cure, the brain releases endogenous opioids, endorphins, and dopamine, generating objective biological recovery.",
-      "Mental Healing as Adjunct: Using visualization, prayer, and relaxation techniques to support conventional medical therapeutics, fostering an optimal internal environment for physical healing.",
+      "Epigenetic Modulation: Dispenza demonstrates that elevated emotional states upregulate beneficial genes (immune proteins, neurogenesis) and downregulate disease pathways.",
       "Ethical Boundary: Never tell a sick person that they 'caused' their illness through bad thoughts; illness is biological and environmental, not a spiritual moral failure."
     ],
     "operational_heuristic": "Use mental affirmations and peaceful emotional states to optimize your nervous system and immune vitality, while always utilizing modern medical science.",
@@ -358,10 +503,10 @@
     "materiality": "IMPORTANT"
   },
   {
-    "id": "unit-16-mind-control-persuasion-defense",
-    "unit_number": 16,
+    "id": "unit-23-mind-control-persuasion-defense",
+    "unit_number": 23,
     "title": "Mind Control, Persuasion, and Intellectual Self-Defense",
-    "movement": "Movement IX: Persuasion Mechanics & Critical Defense",
+    "movement": "Movement XIV: Persuasion Mechanics & Critical Defense",
     "scope": "Dawson (Ch. 1–11)",
     "primary_authors": [
       "Jeffery Dawson"
@@ -371,30 +516,29 @@
     "key_tenets": [
       "Pacing and Leading: How a manipulator first matches your vocal tone, posture, and beliefs (pacing) to establish subconscious rapport, then subtly redirects your behavior in the direction of their choosing (leading) (Dawson).",
       "The Dark Side of Manifestation Gurus: Recognizing how commercial cults hijack manifestation jargon (promising godlike wealth while blaming victims for 'low vibrational energy' when their expensive courses fail).",
-      "The Weaponization of Scarcity and Isolation: Inducing cognitive overload and sleep deprivation to weaken conscious critical gatekeeping, making the subject hyper-suggestible.",
       "Building Psychological Armor: Maintaining intellectual autonomy, demanding empirical evidence, and testing whether advice fosters genuine internal sovereignty or dependency on an external authority."
     ],
     "operational_heuristic": "Audit who controls your subconscious inputs: if someone promises you effortless wealth while asking you to surrender critical logic, they are manipulating you, not teaching manifestation.",
-    "verbatim_anchor": "“Mind control is the systematic manipulation of another’s thoughts, emotions, and behaviors... The only real defense is absolute self-awareness and an understanding of how persuasion triggers work.” — Jeffery Dawson",
+    "verbatim_anchor": "“Mind control is the systematic manipulation of another’s thoughts, emotions, and behaviors... The only real defense is absolute self-awareness.” — Jeffery Dawson",
     "epistemic_status": "EMPIRICAL SOCIAL PSYCHOLOGY",
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-17-grand-dispute-matrix",
-    "unit_number": 17,
+    "id": "unit-24-grand-dispute-matrix",
+    "unit_number": 24,
     "title": "The Grand Dialectical Dispute Matrix: Where the Authors Clash",
-    "movement": "Movement X: Cross-Source Epistemic Synthesis & Dispute Resolution",
-    "scope": "Cross-Corpus Comparative Analysis (All 7 Authors)",
+    "movement": "Movement XIV: Persuasion Mechanics & Critical Defense",
+    "scope": "Cross-Corpus Comparative Analysis (All 14 Authors)",
     "primary_authors": [
-      "All 7 Canonical Authors Synthesized"
+      "All 14 Canonical Authors Synthesized"
     ],
     "core_concept": "A transparent, forensic breakdown of the irreconcilable contradictions and disagreements within the manifestation corpus, resolving conflicting theories into a coherent, balanced epistemic framework.",
     "epistemic_audit": "BKRS CROSS-SOURCE SYNTHESIS STANDARD (Rule 14 & Rule 18). Preserves disagreements and exposes pseudoscientific overreach rather than manufacturing false consensus.",
     "key_tenets": [
-      "Dispute 1: Action vs. Non-Action. Byrne and Hicks assert that vibrational alignment is 99% of creation and physical action is secondary or unnecessary. Refuted by Nafousi, Murphy, and Dawson, who prove that action is mandatory to create physical channels for results.",
-      "Dispute 2: Quantum Physics vs. Cognitive Neuroscience. Byrne claims thoughts literally bend photons and gravitationally attract bank checks. Modern science proves this is false; the real mechanism is the Reticular Activating System (RAS) and behavioral probability.",
-      "Dispute 3: Specificity vs. General Surrender. Murphy and Byrne demand ultra-specific visualizations (exact dollar amounts, specific cars); Hicks and Arden G. argue that rigid specificity triggers anxiety and that general emotional alignment ('The feeling of freedom') is far superior.",
-      "Dispute 4: The Victim Blaming Fallacy. Pop-manifestation claims victims of war, starvation, or sexual assault 'attracted' it through bad vibrations. The Unified Codex unequivocally rejects this as toxic survivor bias and pseudoscientific cruelty."
+      "Dispute 1: Action vs. Non-Action. Byrne and Hicks assert vibrational alignment is 99% of creation; refuted by Nafousi, Dispenza, Murphy, and Dawson, who prove that physical action is mandatory to create real-world conduits for results.",
+      "Dispute 2: Future Desires vs. Present Moment. Neville demands assuming future fulfillment now; Tolle warns that longing for the future feeds egoic dissatisfaction. Resolved: use presence to anchor peace in the Now, and use assumption to calibrate intentional direction.",
+      "Dispute 3: Quantum Physics vs. Cognitive Neuroscience. Byrne claims thoughts bend photons; Dispenza connects quantum observer effect to meditation; science proves the primary mechanism is the Reticular Activating System (RAS) and behavioral probability.",
+      "Dispute 4: The Victim Blaming Fallacy. The Unified Codex categorically rejects the claim that victims of war, poverty, or disease 'attracted' their misfortune."
     ],
     "operational_heuristic": "Reject magical shortcuts; view manifestation as the convergence of high subconscious self-worth, radical focus, and relentless, high-integrity behavioral execution.",
     "verbatim_anchor": "“Synthesis Verdict: Manifestation is not magical physics; it is the systematic alignment of subconscious identity, cognitive attention, and courageous physical action.” — Intellectualist Synthesis",
@@ -402,22 +546,22 @@
     "materiality": "CRITICAL"
   },
   {
-    "id": "unit-18-master-operational-protocol",
-    "unit_number": 18,
+    "id": "unit-25-master-operational-protocol",
+    "unit_number": 25,
     "title": "The Master 24-Hour Operational Protocol (The Daily Practice Engine)",
-    "movement": "Movement XI: The Actionable Practice Engine",
-    "scope": "Operational Synthesis across Murphy, Hicks, Nafousi, Arden G., and Dawson",
+    "movement": "Movement XIV: Persuasion Mechanics & Critical Defense",
+    "scope": "Operational Synthesis across Murphy, Goddard, Dispenza, Tolle, Hicks, Nafousi, Arden G., and Gawain",
     "primary_authors": [
       "Unified Operational Synthesis"
     ],
-    "core_concept": "A rigorous, practical, fluff-free daily execution architecture that integrates the proven subconscious, cognitive, and behavioral principles of the 7 books into a sustainable 24-hour lifestyle routine.",
+    "core_concept": "A rigorous, practical, fluff-free daily execution architecture that integrates the proven subconscious, cognitive, neurobiological, and behavioral principles of the 14 books into a sustainable 24-hour lifestyle routine.",
     "epistemic_audit": "OPERATIONAL BLUEPRINT & ACTIONABLE HEURISTICS. Structured for empirical personal experimentation with built-in falsification metrics.",
     "key_tenets": [
-      "Phase 1: Morning Priming (First 20 Minutes). Zero smartphone consumption; 5 minutes somatic breathing; 5 minutes sensory-specific gratitude (Hicks/Byrne); 10 minutes RAS calibration reviewing the primary quarterly vision (Nafousi).",
-      "Phase 2: Daytime Execution & Aligned Action (Working Hours). Step outside comfort zones; execute at least one intimidating high-leverage task; practice Arden G.'s detachment mantra when anxiety strikes; enforce boundary filter against 'tests'.",
+      "Phase 1: Morning Priming (First 25 Minutes). Digital fast; 5 mins somatic breathwork; 5 mins heart-brain coherence meditation (Dispenza); 5 mins sensory gratitude (Hicks/Gawain); 10 mins RAS calibration reviewing primary vision (Nafousi).",
+      "Phase 2: Daytime Execution & Aligned Action (Working Hours). Step outside comfort zones; execute at least one intimidating high-leverage task; practice Arden G.'s detachment mantra when anxiety strikes; enforce boundary filter against 'tests'; anchor in Tolle's presence.",
       "Phase 3: The Envy Transmutation Trigger. Whenever comparison or envy arises during the day, execute the 10-second blessing drill: 'I bless their success and recognize it as proof of my own potential.'",
-      "Phase 4: Evening SATS Routine (Last 15 Minutes Pre-Sleep). Enter theta drowsy state; loop a single 10-second first-person sensory scene of fulfillment; drift off feeling relief and gratitude (Murphy/Baudouin).",
-      "Phase 5: The Empirical Falsification Journal. Weekly tracking of inputs, emotional baselines, actions taken, and concrete real-world opportunities, treating your own mind as an objective laboratory."
+      "Phase 4: Evening SATS Routine (Last 15 Minutes Pre-Sleep). Enter theta drowsy state; loop a single 10-second first-person sensory scene of fulfillment; drift off feeling relief and gratitude (Murphy/Neville Goddard).",
+      "Phase 5: The Empirical Falsification Journal. Weekly tracking of inputs, emotional baselines, actions taken, and concrete real-world opportunities."
     ],
     "operational_heuristic": "Execute the 24-hour protocol with relentless consistency for 30 consecutive days; evaluate results based on objective behavioral output and emotional resilience.",
     "verbatim_anchor": "“Consistency in the practice of mental discipline is the sole bridge between philosophical contemplation and tangible reality.” — The Master Manifestation Codex",

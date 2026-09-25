@@ -25,3 +25,5 @@ youtube_transcript_*
 .vscode/
 .idea/
 src/manifestation_pipeline/unpacked_epubs/
+src/manifestation_pipeline/unpacked_batch_2/
+
