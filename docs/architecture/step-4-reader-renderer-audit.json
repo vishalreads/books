@@ -1,0 +1,67 @@
+{
+  "audit_timestamp": "2026-09-25T05:38:54.489Z",
+  "audit_standard": "BKRS v1.0 Step 4.0 Canonical Reader / Renderer Forensic Audit",
+  "benchmark_target": "Satvinder S. Juss, Bhagat Singh: A Life in Revolution (2022) & Shared Multi-Genre Reading Interface",
+  "inspected_files": [
+    "src/bkrs/bkrs_adapter.js",
+    "src/bkrs/render_fiction.js",
+    "src/bkrs/render_nonfiction.js",
+    "src/render_bkrs_book.js",
+    "docs/assets/css/reader-shell.css",
+    "docs/assets/css/theme.css",
+    "docs/assets/css/typography.css",
+    "docs/assets/js/reader-controls.js",
+    "docs/distillations/norwegian-wood/index.html",
+    "docs/distillations/the-psychology-of-money/index.html",
+    "docs/distillations/bhagat-singh-a-life-in-revolution/knowledge-units.json",
+    "docs/distillations/bhagat-singh-a-life-in-revolution/master-notes.md",
+    "docs/ui/FRONTEND_AUDIT.md",
+    "docs/ui/IMPLEMENTATION_REPORT.md",
+    "docs/ui/SCREEN_MAP.md",
+    "docs/architecture/BKRS_AGENT_OPERATING_CONSTITUTION.md",
+    "docs/architecture/HISTORICAL_BIOGRAPHICAL_BENCHMARK_PROTOCOL.md"
+  ],
+  "verdicts": {
+    "can_render_juss_without_loss_currently": false,
+    "canonical_data_source": "docs/distillations/bhagat-singh-a-life-in-revolution/knowledge-units.json",
+    "reusability_score": "HIGH (Shell & CSS reusable; View engines require extension and refactoring)",
+    "recommended_path": "REUSE -> EXTEND -> REFACTOR"
+  },
+  "findings": {
+    "shared_infrastructure": {
+      "css_tokens": "100% Reusable (theme.css, typography.css)",
+      "layout_shell": "95% Reusable (reader-shell.css topbar, sidebar, viewport, modal, drawer)",
+      "interaction_controller": "Partially Reusable (reader-controls.js requires event-binding and element-ID reconciliation)"
+    },
+    "genre_specific_payloads": {
+      "fiction": "Scene, What Happens, Texture, Dialogue Subtext, Emotional Shift, Motifs",
+      "nonfiction": "Argument, Thesis Claim, Logical Chain, Empirical Studies, Heuristic, Models",
+      "historical_biographical": "Historical/Life Episode, Document Unit, Dual Timeline, Causal DAG, Forensic Evidence, Competing Accounts, Epistemic Demarcation"
+    },
+    "current_renderer_defects": [
+      {
+        "id": "DEFECT-01",
+        "description": "bkrs_adapter.js misidentifies historical_biography as fiction and collapses all chapters into Chapter 1 due to chapter property key mismatch."
+      },
+      {
+        "id": "DEFECT-02",
+        "description": "render_fiction.js and render_nonfiction.js contain hardcoded book-specific content in View B and View C instead of deriving from knowledge-units.json."
+      },
+      {
+        "id": "DEFECT-03",
+        "description": "Element ID and JavaScript handler mismatch between render_bkrs_book.js (inline handlers) and reader-controls.js (addEventListener to non-matching IDs)."
+      },
+      {
+        "id": "DEFECT-04",
+        "description": "Absence of historical epistemic badge styles and causal relationship edge renderers."
+      }
+    ]
+  },
+  "implementation_sequence": [
+    "Step 4.1: Reconcile Shared Shell & Interaction IDs (reader-controls.js, reader-shell.css)",
+    "Step 4.2: Extend Universal Adapter Layer (bkrs_adapter.js) to support historical_biography schema, dual timelines, causal relationships, and plates",
+    "Step 4.3: Implement Specialized Historical Renderer Engine (src/bkrs/render_historical.js) with dynamic View A, View B, and View C",
+    "Step 4.4: Wire Historical Engine into Universal Entry Point (src/render_bkrs_book.js)",
+    "Step 4.5: Compile and Verify Juss Reader (docs/distillations/bhagat-singh-a-life-in-revolution/index.html)"
+  ]
+}
