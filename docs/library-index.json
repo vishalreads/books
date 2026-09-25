@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 24,
-  "total_hours_saved": 466.5,
+  "total_books": 25,
+  "total_hours_saved": 482.5,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1020,6 +1020,52 @@
       ],
       "html_path": "distillations/master-and-margarita/index.html",
       "markdown_path": "distillations/master-and-margarita/master-notes.md",
+      "featured": true
+    },
+    {
+      "id": "the-metaphysical-club",
+      "title": "The Metaphysical Club",
+      "subtitle": "A Story of Ideas in America: How the Civil War Traumatized a Generation into Forging Pragmatism, Fallibilism, and the Free Marketplace of Ideas",
+      "author": "Louis Menand",
+      "year": 2001,
+      "publisher": "Farrar, Straus and Giroux / Intellectualist Intellectual History Series",
+      "epistemic_tier": "Tier 1: Master Intellectual History & Philosophy of Science",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "15 Chapters across 5 Parts Synthesized into 15 Invariant Units",
+      "reading_time_saved": "16.0 hrs saved",
+      "hours_val": 16.0,
+      "core_axiom": "The life of the law has not been logic: it has been experience. The best test of truth is the power of the thought to get itself accepted in the competition of the market.",
+      "tags": [
+        "Louis Menand",
+        "Pragmatism",
+        "Oliver Wendell Holmes Jr",
+        "William James",
+        "Charles Sanders Peirce",
+        "John Dewey",
+        "American Philosophy",
+        "Civil War",
+        "Free Speech",
+        "Fallibilism",
+        "Marketplace of Ideas"
+      ],
+      "key_models": [
+        "The Anti-Certitude Principle (Civil War Trauma as Philosophical Vaccine)",
+        "Peirce's Pragmatic Maxim (Meaning as Conceivable Practical Consequences)",
+        "The Statistical Revolution (Tychism & Probability over Newtonian Determinism)",
+        "Holmes's Common Law Realism ('The Life of the Law Has Been Experience')",
+        "Holmes's Free Marketplace of Ideas (Abrams v. United States Dissent)",
+        "Dewey's Democratic Experimentalism (Education as Living Community)"
+      ],
+      "landmark_studies": [
+        "Civil War Battlefields: Ball's Bluff, Antietam, and The Wilderness",
+        "Louis Agassiz & the 1865 Thayer Amazon Expedition against Darwinism",
+        "The 1872 Metaphysical Club Meetings in Cambridge",
+        "The 1894 Pullman Strike & Jane Addams's Hull House in Chicago",
+        "Supreme Court Jurisprudence: Lochner (1905) and Abrams (1919)"
+      ],
+      "html_path": "distillations/the-metaphysical-club/index.html",
+      "markdown_path": "distillations/the-metaphysical-club/master-notes.md",
       "featured": true
     }
   ]
