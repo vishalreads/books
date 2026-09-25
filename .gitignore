@@ -24,3 +24,4 @@ youtube_transcript_*
 # Visual Studio Code & IDE
 .vscode/
 .idea/
+src/manifestation_pipeline/unpacked_epubs/
