@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 21,
-  "total_hours_saved": 436.0,
+  "total_books": 22,
+  "total_hours_saved": 442.5,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -888,6 +888,49 @@
       ],
       "html_path": "distillations/gandhi-experiments-with-truth/index.html",
       "markdown_path": "distillations/gandhi-experiments-with-truth/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "tuesdays-with-morrie",
+      "title": "Tuesdays with Morrie",
+      "subtitle": "A Forensic Thanatological, Ethical, and Humanist Reconstruction of the Meaning of Life, Conscious Dying, and Radical Compassion",
+      "author": "Mitch Albom",
+      "year": 1997,
+      "publisher": "Doubleday / Intellectualist Wisdom Literature Series",
+      "epistemic_tier": "Tier 1: Master Thanatological Memoir & Practical Philosophy",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "23 Chapters Synthesized into 13 Invariant Units",
+      "reading_time_saved": "6.5 hrs saved",
+      "hours_val": 6.5,
+      "core_axiom": "Once you learn how to die, you learn how to live. Death ends a life, not a relationship.",
+      "tags": [
+        "Mitch Albom",
+        "Morrie Schwartz",
+        "ALS",
+        "Thanatology",
+        "Meaning of Life",
+        "Detachment",
+        "Forgiveness",
+        "Auden",
+        "Love Goes On"
+      ],
+      "key_models": [
+        "The Living Paradox (Conscious Mortality as Prerequisite for Life)",
+        "The Little Bird on the Shoulder Heuristic (Daily Existential Audit)",
+        "The Bounded Mourning Protocol (Finite Window for Self-Pity)",
+        "The Fearless Immersion-Detachment Protocol",
+        "Auden's Law of Mutual Interdependence ('Love Each Other or Perish')",
+        "The Wave on the Ocean Parable (Cosmic Identity Transmutation)"
+      ],
+      "landmark_studies": [
+        "Amyotrophic Lateral Sclerosis (ALS) Clinical Neurodegenerative Pathophysiology",
+        "W. H. Auden 1939 Historical Poetic Philosophy",
+        "Buddhist Detachment & Mindful Thanatology Canon",
+        "Sociological Subculture Theory & Resistance to Materialist Norms"
+      ],
+      "html_path": "distillations/tuesdays-with-morrie/index.html",
+      "markdown_path": "distillations/tuesdays-with-morrie/master-notes.md",
       "featured": false
     }
   ]

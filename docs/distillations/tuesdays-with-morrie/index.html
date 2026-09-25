@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuesdays with Morrie — Mitch Albom | Intellectualist Master Codex</title>
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="stylesheet" href="../../css/reader-style.css">
+  <style>
+    :root {
+      --bg-primary: #fcfbf9;
+      --bg-card: #ffffff;
+      --text-main: #1f1f1e;
+      --text-muted: #6b6762;
+      --accent-color: #85221c;
+      --accent-soft: rgba(133, 34, 28, 0.08);
+      --border-color: #e5e0d8;
+      --border-subtle: #f0ebe1;
+      --badge-bg: #f5f2ea;
+      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-serif: "Merriweather", Georgia, "Times New Roman", serif;
+      --line-height: 1.75;
+      --max-measure: 820px;
+    }
+
+    body.dark-mode {
+      --bg-primary: #121314;
+      --bg-card: #1c1d1f;
+      --text-main: #e8e6e3;
+      --text-muted: #9e9a93;
+      --accent-color: #d9534f;
+      --accent-soft: rgba(217, 83, 79, 0.15);
+      --border-color: #2e3035;
+      --border-subtle: #242629;
+      --badge-bg: #26282c;
+    }
+
+    body.sepia-mode {
+      --bg-primary: #f4ecd8;
+      --bg-card: #fcf8ee;
+      --text-main: #433422;
+      --text-muted: #79664f;
+      --accent-color: #8f3418;
+      --accent-soft: rgba(143, 52, 24, 0.1);
+      --border-color: #dfd2b9;
+      --border-subtle: #ebdcc0;
+      --badge-bg: #ebe0ca;
+    }
+
+    body.serif-font {
+      font-family: var(--font-serif);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: var(--line-height);
+      transition: background-color 0.25s ease, color 0.25s ease;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Universal Header */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(8px);
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-logo-img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+    .brand-text h1 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+    .brand-text span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .topbar-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-ctrl {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn-ctrl:hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    /* Sub-nav Views */
+    .view-tabs-bar {
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .view-tab {
+      background: transparent;
+      border: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .view-tab.active {
+      background: var(--accent-soft);
+      color: var(--accent-color);
+    }
+
+    /* Main Container */
+    .reader-container {
+      max-width: var(--max-measure);
+      margin: 32px auto;
+      padding: 0 20px;
+      flex: 1;
+      width: 100%;
+    }
+
+    /* Hero Header */
+    .codex-hero {
+      text-align: center;
+      padding: 36px 0 28px 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 36px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent-color);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .codex-hero h2 {
+      font-size: 2.3rem;
+      font-family: var(--font-serif);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .codex-hero .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 16px auto;
+    }
+    .hero-meta-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Unit Card */
+    .unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      transition: border-color 0.2s;
+    }
+    .unit-card:hover {
+      border-color: var(--accent-color);
+    }
+    .unit-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 12px;
+    }
+    .unit-meta-top {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-color);
+      margin-bottom: 4px;
+    }
+    .unit-title {
+      font-size: 1.35rem;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .unit-tier-badge {
+      background: var(--badge-bg);
+      border: 1px solid var(--border-color);
+      font-size: 0.72rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .unit-section-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin: 18px 0 8px 0;
+    }
+
+    .prose-p {
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    .bullet-list {
+      list-style-type: none;
+      margin-bottom: 16px;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 0.94rem;
+    }
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .mechanism-box {
+      background: var(--bg-primary);
+      border-left: 3px solid var(--accent-color);
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin: 14px 0;
+    }
+    .mechanism-box h5 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 4px;
+    }
+    .mechanism-box p {
+      font-size: 0.92rem;
+      font-style: italic;
+    }
+
+    .quote-box {
+      background: var(--badge-bg);
+      border-left: 3px solid #7c6f64;
+      padding: 12px 18px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 0.95rem;
+      margin: 12px 0;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* Matrix Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .matrix-table th, .matrix-table td {
+      border: 1px solid var(--border-color);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .matrix-table th {
+      background: var(--badge-bg);
+      font-weight: 700;
+    }
+
+    /* Views visibility */
+    .view-content {
+      display: none;
+    }
+    .view-content.active {
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      padding: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Universal Sticky Topbar -->
+  <header class="topbar">
+    <a href="../../index.html" class="brand-group">
+      <img src="../../assets/images/logo.png" alt="Intellectualist Pantheon" class="brand-logo-img">
+      <div class="brand-text">
+        <h1>Intellectualist Codex</h1>
+        <span>Total Replacement Benchmark &bull; Mitch Albom</span>
+      </div>
+    </a>
+    <div class="topbar-controls">
+      <button class="btn-ctrl" id="themeBtn" title="Toggle Theme">🌓 Theme</button>
+      <button class="btn-ctrl" id="fontBtn" title="Toggle Serif / Sans">Aa Font</button>
+      <a href="master-notes.md" class="btn-ctrl" download style="text-decoration:none;">📥 MD</a>
+    </div>
+  </header>
+
+  <!-- View Switcher -->
+  <nav class="view-tabs-bar">
+    <button class="view-tab active" data-target="view-journey">View A: The 14 Tuesdays Journey</button>
+    <button class="view-tab" data-target="view-axioms">View B: The 8 Morrie Axioms</button>
+    <button class="view-tab" data-target="view-artofliving">View C: Operational Art of Living</button>
+  </nav>
+
+  <main class="reader-container">
+
+    <!-- Hero Header -->
+    <div class="codex-hero">
+      <span class="hero-badge">BKRS v1.0 Thanatological Benchmark</span>
+      <h2>Tuesdays with Morrie</h2>
+      <p class="hero-sub">A Forensic Thanatological, Ethical, and Humanist Reconstruction of the Meaning of Life, Conscious Dying, and Radical Compassion</p>
+      <div class="hero-meta-row">
+        <span><strong>Author:</strong> Mitch Albom</span>
+        <span>&bull;</span>
+        <span><strong>Published:</strong> 1997</span>
+        <span>&bull;</span>
+        <span><strong>Scope:</strong> 23 Chapters Synthesized into 12 Invariant Units</span>
+        <span>&bull;</span>
+        <span><strong>Fidelity:</strong> 100% Zero-Loss</span>
+      </div>
+    </div>
+
+    <!-- VIEW A: The 14 Tuesdays Journey -->
+    <section id="view-journey" class="view-content active">
+      
+      <article class="unit-card" id="unit-00">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 0 &bull; Summer 1994 – Spring 1995, West Newton, Massachusetts</div>
+            <h3 class="unit-title">The Curriculum & The Syllabus: ALS & Making Death the Final Project</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Thanatological Memoir</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">In the summer of 1994, seventy-eight-year-old Brandeis University sociology professor Morrie Schwartz receives a death sentence: Amyotrophic Lateral Sclerosis (ALS), a brutal neurodegenerative disease that destroys the motor neurons, steadily paralyzing the body from the legs upward while leaving the brain fully intact. Instead of withering in shame or hiding away, Morrie resolves to make death his final research project: 'Am I going to withdraw from the world, or am I going to live? I decided I'm going to live—or at least try to live—the way I want, with dignity, with courage, with humor, with composure.' He holds a 'living funeral' so he can hear the loving eulogies of his friends before he dies. In March 1995, ABC's *Nightline* with Ted Koppel broadcasts a profile on Morrie. In Detroit, Mitch Albom—once Morrie's favorite student, now a hyper-ambitious, workaholic sports journalist buried under deadlines and commercial success—sees his old mentor on television, paralyzed with guilt that sixteen years have passed without a single contact.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Faced with terminal illness, an individual can choose active pedagogical engagement over passive despair, transforming dying into a source of wisdom for others.</li><li>Modern society hides death away as an obscene, embarrassing failure; embracing mortality with transparency restores human dignity.</li><li>Unchecked professional ambition often functions as a psychological defense mechanism against confronting existential mortality.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>The clinical progression of ALS: starting with unsteadiness, moving to cane, walker, wheelchair, and loss of diaphragm control.</li><li>The 'living funeral' held in Morrie's West Newton home with twenty close friends.</li><li>The twenty-two-year-old promise Mitch made at Brandeis graduation in 1979 to stay in touch, broken for sixteen years.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Thanatological Reframing</h5>
+          <p>Reframing a terminal disease from a shameful personal catastrophe into a final pedagogical research project transforms helpless victimhood into profound agency.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"The last class of my old professor's life took place once a week in his house... The subject was The Meaning of Life. It was taught from experience."</div>
+        
+        <div class="quote-box">"ALS is like a lit candle: it melts your nerves and leaves your body a pile of wax. Often it begins with the legs and works its way up."</div>
+        
+        <div class="quote-box">"Morrie refused to be depressed. Instead, he made death his final project, the central point of his days."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-01">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 1 &bull; May – June 1995, Morrie's Study, West Newton, MA</div>
+            <h3 class="unit-title">The Orientation & The First Tuesday: We Talk About the World</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Philosophical Dialogue</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">Mitch drives up Morrie's driveway, sitting in his car finishing a cellphone call with a radio producer while Morrie sits on the porch waiting—an act of self-absorbed careerism that fills Mitch with deep shame. Morrie welcomes him with an unconditional, rib-cracking embrace. A newspaper strike in Detroit abruptly halts Mitch's frantic work schedule, freeing him to fly to Boston every Tuesday. On their first formal Tuesday session, Morrie explains why he weeps openly while watching news reports of suffering refugees in Bosnia: as his physical body shrinks, his capacity for universal compassion expands. He articulates his first great maxim: 'Love is the only rational act.'</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>The pace of modern hyper-capitalist culture conditions individuals to prioritize trivial professional transactions over human connection.</li><li>Physical suffering and helplessness, rather than hardening the heart, can shatter self-absorption and awaken radical empathy for strangers.</li><li>In a universe without inherent script, genuine love is the only logically coherent response to human frailty.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Mitch ducking his head in the car to pretend he hadn't seen Morrie while wrapping up a trivial business call.</li><li>Morrie's study: a small room with a window overlooking a hibiscus plant shedding pink petals on the sill.</li><li>Morrie weeping over television footage of the Bosnian war.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Universalized Somatic Resonance</h5>
+          <p>Experiencing acute personal physical vulnerability sensitizes the mirror-neuron system to the agony of distant strangers, dissolving tribal detachment.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"I was doing what I had become so good at doing: squeezing every second of my life until it yielded a dollar or a word."</div>
+        
+        <div class="quote-box">"Love is the only rational act."</div>
+        
+        <div class="quote-box">"The most important thing in life is to learn how to give out love, and to let it come in."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-02">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 2 &bull; June 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Second Tuesday: We Talk About Feeling Sorry for Yourself</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Emotional Regulation Model</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">By the second Tuesday, Morrie is confined to an armchair, requiring help to move, go to the bathroom, and eat. When Mitch asks if he ever feels sorry for himself, Morrie admits that he does—every morning. But he introduces his strict emotional discipline: he gives himself a daily quota of mourning. In the quiet morning hours, he feels his losses, cries a few tears, and grieves for his dead legs and hands. And then he stops. He concentrates on all the good things still left in his life—the visitors, the sunlight, the music, and the rare opportunity to say a conscious, loving farewell to everyone he loves before the curtain falls.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Denying negative emotions is unnatural and toxic; self-pity must be acknowledged and expressed, but strictly bounded in time.</li><li>A sudden, violent death robs an individual of the sacred opportunity for reconciliation; a terminal illness provides the gift of conscious closure.</li><li>Gratitude for remaining faculties instantly neutralizes mourning over lost abilities.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Morrie's physical loss: unable to lift his arms to touch his glasses; needing his head propped with pillows.</li><li>The morning routine: sitting in bed, crying for a few minutes, then ringing the small handbell for his caretaker Connie.</li><li>The contrast between sudden cardiac arrest and the gradual farewell of ALS.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Bounded Mourning Protocol</h5>
+          <p>Allocate a strict, daily window (5 to 10 minutes) to fully mourn and weep for physical and emotional losses; once the timer expires, consciously pivot attention outward toward gratitude.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Sometimes I do feel sorry for myself... I give myself a good cry if I need it. But then I concentrate on all the good things still in my life."</div>
+        
+        <div class="quote-box">"It's horrible to watch my body slowly perish. But it's also wonderful because I have plenty of time to say good-bye."</div>
+        
+        <div class="quote-box">"I give myself a little pity party every morning. A few minutes. And then I stop."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-03">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 3 &bull; June 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Third Tuesday: We Talk About Regrets</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Cultural Diagnosis</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">Mitch brings a Sony tape recorder, wanting to preserve Morrie's voice for posterity. Morrie looks at Mitch's list of questions about regrets. Morrie diagnoses the central pathology of modern culture: it keeps human beings running on a continuous hamster wheel of trivial tasks, sensory distractions, and material consumption so they never stop to ask the fundamental question: 'Is this all there is? Is there something missing?' Because the culture does not encourage contemplation of death, people wake up at age fifty or sixty with crushing regrets, realizing they invested their entire lives in career prestige that means nothing on a deathbed.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Modern culture systematically distracts individuals from existential self-examination through consumerism and overwork.</li><li>Regret is the inevitable byproduct of living according to an unexamined, externally imposed script.</li><li>Confronting death is the only lens powerful enough to strip away cultural trivia and illuminate what genuinely matters.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>The small black tape recorder spinning on the table beside Morrie's pills.</li><li>Mitch's frantic lifestyle: tracking scores, chasing planes, filing columns, never pausing for two quiet minutes.</li><li>Morrie's reading: newspapers, poetry, and letters from total strangers seeking guidance.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Existential Audit Question</h5>
+          <p>Regularly interrupt routine activity to ask: 'If I were to die next week, would I regret spending today on this pursuit?' If yes, immediately realign priorities.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"The culture we have does not make people feel good about themselves. And you have to be strong enough to say if the culture doesn't work, don't buy it."</div>
+        
+        <div class="quote-box">"We are too involved in materialistic things, and they don't satisfy us. The loving relationships we have, the universe around us, we take these things for granted."</div>
+        
+        <div class="quote-box">"So many people walk around with a meaningless life. They seem half-asleep, even when they're busy doing things they think are important."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-04">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 4 &bull; July 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Fourth Tuesday: We Talk About Death (The Little Bird)</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Thanatological Principle</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">On the fourth Tuesday, oxygen tubes are delivered to Morrie's house. Morrie articulates his core thanatological theorem: 'Everyone knows they're going to die, but nobody believes it. If we did, we would do things differently.' He introduces the Buddhist heuristic of the **Little Bird on the Shoulder**: every morning, imagine a small bird sitting on your shoulder asking: 'Is today the day? Am I ready? Am I doing what I should be doing? Am I being the person I want to be?' By acknowledging mortality every single morning, you strip away ambition, vanity, and ego, living with exquisite clarity. Morrie summarizes the supreme paradox: 'Once you learn how to die, you learn how to live.'</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Intellectual awareness of mortality is useless; only emotional, daily integration of death alters human behavior.</li><li>Living with conscious awareness of death enhances appreciation for life, rendering ordinary moments (looking through a window, tasting food) profoundly sacred.</li><li>Eradicating denial of death is the foundational step toward spiritual liberation.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>The tall oxygen tank with clear plastic cannula tubes arriving in Morrie's living room.</li><li>The Buddhist practice of asking the bird on the shoulder every morning: 'Is today the day?'</li><li>Morrie gazing through the window at the leaves of the oak tree: 'I appreciate that window more than you do.'</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Little Bird on the Shoulder Heuristic</h5>
+          <p>Visualize a sentinel bird on your shoulder throughout the day asking: 'Is today the day?' Use this question to instantly filter trivial conflicts from genuine priorities.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Once you learn how to die, you learn how to live."</div>
+        
+        <div class="quote-box">"Everyone knows they're going to die, but nobody believes it. If we did, we would do things differently."</div>
+        
+        <div class="quote-box">"Ask the bird: 'Is today the day? Am I ready? Am I doing everything I need to do? Am I being the person I want to be?'"</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-05">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 5 &bull; July 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Fifth Tuesday: We Talk About Family (Auden's Law)</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Relational Philosophy</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">Morrie's condition deteriorates; he requires a suction machine to clear phlegm from his throat. They discuss family. Quoting his favorite line from poet W. H. Auden—'Love each other or perish'—Morrie explains that without family, human beings stand completely naked in the universe, without foundation. While friends can be wonderful, only a family provides the unshakable psychological security of knowing that someone will sit by your bedside, hold your hand, and watch over you when you are coughing and dying. When Mitch asks about raising children, Morrie explains that having children teaches you something no other human experience can: how to love another being more than you love yourself, and how to accept total, unconditional responsibility for another soul.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Family represents the ultimate emotional safety net in human civilization; without it, mortal crisis becomes unbearable.</li><li>W. H. Auden's dictum ('Love each other or perish') is an absolute biological and psychological law of human survival.</li><li>Parenthood provides the deepest crucible for transcending narcissism and learning unconditional self-sacrifice.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Morrie's sons Rob and Jon visiting, kissing their father's forehead, and massaging his withered limbs.</li><li>The suction machine humming on the table beside the bed, vacuuming saliva from Morrie's mouth.</li><li>Morrie's childhood trauma: his mother dying when he was eight, leaving him starved for maternal touch until his stepmother Eva arrived.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Auden's Law of Mutual Interdependence</h5>
+          <p>Individual autonomy is an illusion during birth, childhood, and dying; human survival requires an unbroken chain of sacrificial, reciprocal love.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Love each other or perish."</div>
+        
+        <div class="quote-box">"There is no foundation, no secure ground, upon which people may stand today if it isn't the family."</div>
+        
+        <div class="quote-box">"If you don't have the support and love and caring and concern that you get from a family, you don't have much at all."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-06">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 6 &bull; August 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Sixth Tuesday: We Talk About Emotions (The Detachment Protocol)</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Psychological Regulation Technique</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">Morrie suffers from violent coughing fits that leave him gasping for air, choking on his own saliva. He introduces his psychological technique of **Detachment**—a concept borrowed from Buddhist psychology. Most people fear intense emotions (grief, terror, loneliness, heartbreak), so they build walls, repress their feelings, and pretend they are fine. Morrie advocates the opposite: dive completely into the emotion. If you feel fear, plunge into it; let it wash over you; feel the terror, the grief, the tears. Experience it 100% without resistance. And only by experiencing it fully can you say: 'All right. That was my fear. That was my grief. I know it now. Now I can step outside it and detach.'</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Emotional repression perpetuates suffering; true detachment is achieved not by avoiding emotion, but by total, fearless immersion in it.</li><li>Once an emotion is fully felt and named, it loses its unconscious power to terrify or control the individual.</li><li>Detachment allows a dying person to experience terror without being overwhelmed by panic.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Morrie coughing violently until his face turns blue, hitting his chest to dislodge phlegm, then consciously breathing to calm his nervous system.</li><li>Morrie explaining how he handles nocturnal panic attacks: acknowledging the suffocation terror, feeling it completely, then detaching.</li><li>Mitch watching Morrie transform from a choking invalid into a serene sage within sixty seconds.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Fearless Immersion-Detachment Protocol</h5>
+          <p>When seized by overwhelming emotion (fear, pain, sorrow), stop running: dive into it, name it, let it saturate your nervous system, and then consciously step back: 'I have experienced you; now I release you.'</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Don't cling to things, because everything is impermanent."</div>
+        
+        <div class="quote-box">"If you hold back on the emotions—if you don't allow yourself to go all the way through them—you can never get to being detached, you're too busy being afraid."</div>
+        
+        <div class="quote-box">"You take any emotion—love for a woman, or grief for a loved one, or what I'm going through, fear and pain from a deadly disease... You plunge yourself into it, and then you say, 'All right, that was fear. Now I can step away from it.'"</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-07">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 7 &bull; August 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Seventh Tuesday: We Talk About the Fear of Aging</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Gerontological & Existential Philosophy</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">Morrie reaches a milestone he previously dreaded: he can no longer wipe his own behind after using the commode. Instead of feeling humiliated, Morrie embraces it, explaining that it allows him to return to the vulnerability of infancy—being bathed, turned, and touched by loving caretakers. When Mitch asks about society's obsessive fear of aging and youth worship, Morrie dismisses it as a symptom of unfulfilled lives: people who fear aging are people who never lived fully. Morrie views aging not as decay, but as growth. He explains that he does not envy youth: 'I am every age I have ever been. I am a three-year-old, a twenty-year-old, a thirty-year-old, a fifty-year-old, and a seventy-eight-year-old. How can I envy you your youth when I have already been there?'</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Physical dependency is not inherently humiliating; receiving care with grace and gratitude connects human beings in profound tenderness.</li><li>The societal obsession with youth reflects a culture of unfulfilled, arrested development; people who live meaningfully welcome aging as accumulated wisdom.</li><li>Chronological age is cumulative: a fully integrated psyche contains all prior developmental stages simultaneously.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Connie the physical therapist helping Morrie to the portable toilet and wiping him clean.</li><li>Billboards and television commercials glorifying smooth skin and twenty-year-old bodies.</li><li>Morrie smiling in his wheelchair: 'I enjoy being dependent. It's like being a baby again.'</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Cumulative Age Integration</h5>
+          <p>View current age not as a loss of youth, but as an expansion that encompasses all past ages, eliminating the toxic envy of younger generations.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"It's not just that I'm seventy-eight. I am three, I am seven, I am twenty, I am thirty-two, I am fifty. I've lived through all of them, and I know what it's like."</div>
+        
+        <div class="quote-box">"How can I be envious of where you are—when I've been there myself?"</div>
+        
+        <div class="quote-box">"Aging is not just decay, you know. It's growth. It's more than the negative that you're going to die, it's also the positive that you understand you're going to die, and that you live a better life because of it."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-08">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 8 &bull; August 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Eighth Tuesday: We Talk About Money & Materialism</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Economic & Sociological Critique</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">Mitch reads headlines about corporate executives and sports superstars signing multi-million-dollar contracts. Morrie critiques the capitalist delusion that material wealth can buy fulfillment: 'We've got a form of brainwashing going on in our country. Do you know how they brainwash people? They repeat something over and over: More is good. More is good. More is good.' People accumulate houses, cars, and designer watches because they are starved for love, and they attempt to use material objects as a substitute for tenderness. But things cannot hug you back when you are dying. Morrie teaches that true wealth is giving: giving your time, your undivided attention, and your listening to another person.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Consumer capitalism brainwashes citizens into confusing material accumulation with human worth and emotional fulfillment.</li><li>Material possessions cannot satisfy the fundamental human hunger for love, belonging, and meaning.</li><li>Giving your undivided presence to another person is the only currency that produces lasting spiritual satisfaction.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Billionaires hoarding vast fortunes while remaining emotionally impoverished and terrified of death.</li><li>Morrie living in the same modest house for forty years with zero interest in upgrading furniture or electronics.</li><li>Mitch reflecting on his expensive cars and luxury apartment that failed to bring him peace.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Presence-over-Possession Pivot</h5>
+          <p>Whenever you feel an urge to buy an unneeded material luxury to cure boredom or sadness, immediately redirect that energy toward offering undivided presence to someone in need.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"We've got a form of brainwashing going on in our country. Do you know how they brainwash people? More is good. More is good. More money is good. More wealth is good. More cars is good. More property is good."</div>
+        
+        <div class="quote-box">"You can't substitute material things for love or for gentleness or for tenderness or for a sense of comradeship."</div>
+        
+        <div class="quote-box">"Giving is living. Offering others your time, your concern, your storytelling—that's what makes you feel alive."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-09">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 9 &bull; September 1995, Morrie's Study</div>
+            <h3 class="unit-title">The Ninth Tuesday: We Talk About How Love Goes On</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Memorial Epistemology</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">As America is consumed by the sensationalist spectacle of the O.J. Simpson murder trial, Mitch visits Morrie, whose lungs are failing rapidly. Mitch asks if Morrie fears being forgotten after he dies. Morrie smiles gently: 'I don't think I will be forgotten. I've got too many people who love me. Death ends a life, not a relationship.' Love creates an indestructible energetic imprint: the affection, wisdom, and tenderness you pour into other people continues to reverberate through them long after your physical body has returned to dust. They decide on Morrie's tombstone epitaph: 'A Teacher to the Last.'</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Human immortality is not biological or monument-based; it is relational, surviving in the hearts and actions of those one has loved and taught.</li><li>The noise of sensationalist mass media trivializes human consciousness, blinding society to the quiet reality of mortality.</li><li>A relationship transcends physical death through the memory and internalized voice of the departed.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Millions of people glued to television screens watching police cars chase O.J. Simpson while real human beings die in silence.</li><li>Morrie dictating his epitaph: 'A Teacher to the Last.'</li><li>Morrie making Mitch promise to visit his grave on Tuesdays and talk to him: 'It'll be a dialogue, Mitch. You'll ask questions, and you'll know my answers.'</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Relational Immortality Theorem</h5>
+          <p>Physical death terminates biological respiration, but cannot terminate a loving relationship; the deceased continues to exist as an internalized moral dialogue within the survivor.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"Death ends a life, not a relationship."</div>
+        
+        <div class="quote-box">"Love is how you stay alive, even after you are gone."</div>
+        
+        <div class="quote-box">"You'll talk, and I'll listen. Even from the grave, Mitch, I'll be listening."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-10">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 10 &bull; September – October 1995, Morrie's Study</div>
+            <h3 class="unit-title">Marriage, Culture, & Forgiveness: The Norman Sculptor Tragedy</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Ethical & Relational Codification</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">Across October, Morrie articulates his core guidance on marriage, culture, and forgiveness. When Mitch brings his wife Janine, Janine sings a Ray Noble jazz ballad that brings Morrie to tears. Morrie gives his rules for lasting marriage: respect each other, compromise constantly, talk openly, and share a common set of values. In Chapter 18, Morrie emphasizes the necessity of constructing your own subculture: do not follow society's poisonous rules on vanity, status, and selfishness; build small micro-communities founded on loyalty and love. In Chapter 19, Morrie weeps openly over a bust sculpted by his old friend Norman forty years earlier. When Morrie's wife Charlotte underwent major surgery, Norman never reached out; deeply hurt, Morrie cut off communication, refusing Norman's subsequent attempts at reconciliation. Years later, Norman died suddenly of cancer before Morrie could forgive him. Morrie's eyes stream with tears of bitter remorse: 'Forgive yourself before you die. Then forgive others. Don't wait, Mitch. Pride and stubbornness are worthless fools.'</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>Lasting marriage requires deep mutual respect, total communication, and identical spiritual values, not just romantic infatuation.</li><li>One must consciously build an alternative moral subculture to inoculate oneself against the toxic materialism of mainstream society.</li><li>Postponing forgiveness out of pride is one of the most agonizing, irreversible regrets a human being can carry to their deathbed.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Janine singing *The Very Thought of You* while Morrie closes his eyes in bliss.</li><li>The bronze bust sculpted by Norman sitting on a shelf in Morrie's study.</li><li>Morrie weeping over Norman's death forty years after their petty estrangement.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Pre-Emptive Forgiveness Heuristic</h5>
+          <p>Immediately forgive friends and family who have hurt you; pride and stubbornness are trivial compared to the permanent agony of unresolved estrangement after death.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"There are a few rules I know to be true about love and marriage: If you don't respect the other person, you're going to have a lot of trouble. If you don't know how to compromise, you're going to have a lot of trouble... And you have to have a common set of values."</div>
+        
+        <div class="quote-box">"Forgive yourself before you die. Then forgive others."</div>
+        
+        <div class="quote-box">"I had this friend, Norman... He died a few years ago. We never reconciled. It breaks my heart to think about it now. Such a waste."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-11">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 11 &bull; Late October – November 1995, Morrie's Bedroom</div>
+            <h3 class="unit-title">The Perfect Day & The Final Good-bye</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Tragic & Transcendental Climax</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">On the thirteenth Tuesday, Mitch asks Morrie what he would do if he were granted twenty-four hours of full health. Instead of dreaming of world travel or grand adventures, Morrie describes an exquisitely ordinary day: wake up, do morning exercises, have breakfast of rolls and tea, go for a walk in the woods with friends, have lunch, go to a restaurant for dinner, dance with friends until exhausted, and then go home to a deep, peaceful sleep. The ordinary is revealed as the sublime. Morrie tells the parable of the little wave on the ocean who is terrified of crashing on the shore, until another wave tells him: 'Don't be afraid. You're not just a wave; you're part of the ocean.' On the fourteenth and final Tuesday, Morrie is bedridden, frail, and fading on continuous oxygen. Speaking in weak whispers, Morrie takes Mitch's hand: 'You're a good man, Mitch.' For the first time in sixteen years, Mitch weeps openly against Morrie's cheek, and Morrie smiles weakly in triumph: he finally made Mitch cry.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>The pinnacle of human happiness is found not in exotic sensory extravagance, but in the peaceful enjoyment of simple, everyday human communion.</li><li>The individual is not an isolated entity facing extinction (the wave), but an inseparable manifestation of the cosmic whole (the ocean).</li><li>Emotional vulnerability (crying) is not weakness, but the ultimate marker of psychological liberation.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Morrie's twenty-four-hour dream day: eating sweet rolls, walking in the garden, dancing, and sleeping.</li><li>The wave on the ocean parable.</li><li>Morrie's skin cold and pale, breathing shallowly through the green oxygen cannula.</li><li>Mitch kissing Morrie's cheek, his tears soaking into Morrie's grey whiskers.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>The Wave and Ocean Parable (Cosmic Identity)</h5>
+          <p>Overcome the terror of personal physical annihilation by shifting identity from the individual form (the wave) to the underlying eternal substrate (the ocean).</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"The little wave says, 'You don't understand! We're all going to crash into the rocks and be destroyed!' And the other wave says, 'No, you don't understand. You're not a wave, you're part of the ocean.'"</div>
+        
+        <div class="quote-box">"It was so simple. So average. After all we'd been through, that was what he wanted: a twenty-four-hour ordinary day."</div>
+        
+        <div class="quote-box">"I kissed his cheek, and I felt his breath, weak and shallow. And then I cried. I finally cried."</div>
+        
+      </article>
+      
+      <article class="unit-card" id="unit-12">
+        <div class="unit-card-header">
+          <div>
+            <div class="unit-meta-top">Unit 12 &bull; November 4, 1995, West Newton, MA</div>
+            <h3 class="unit-title">Graduation: The Birch Trees by the Pond & Love Goes On</h3>
+          </div>
+          <span class="unit-tier-badge">Primary Memorial Epilogue</span>
+        </div>
+
+        <div class="unit-section-title">Forensic Narrative Synthesis</div>
+        <p class="prose-p">On Saturday, November 4, 1995, Morrie slips into a coma. In a final act of characteristic grace, he waits until his wife, sons, and caretaker step out of the room for a few moments to make coffee before taking his final breath in complete peace. His funeral takes place on a gentle hill beneath white birch trees overlooking a pond, exactly as he chose. Mitch touches the stone, realizing that the dialogue did not end with Morrie's death; whenever he thinks of Morrie, he hears his voice answering questions with laughing warmth. Inspired by Morrie's teachings on family and forgiveness, Mitch reaches out to his estranged brother Peter, who is undergoing chemotherapy for cancer in Spain, repairing their relationship. The graduation is complete: the student has become a whole human being.</p>
+
+        <div class="unit-section-title">Invariant Philosophical Claims</div>
+        <ul class="bullet-list">
+          <li>A peaceful death on one's own terms is the crowning achievement of a life lived with awareness and love.</li><li>The teachings of a true mentor survive death, functioning as an eternal inner compass within the student.</li><li>Wisdom is validated only when applied to reconcile fractured personal relationships in the real world.</li>
+        </ul>
+
+        <div class="unit-section-title">Concrete Evidence & Clinical Realia</div>
+        <ul class="bullet-list">
+          <li>Morrie dying peacefully at age seventy-nine during the few minutes he was alone in the bedroom.</li><li>The funeral beneath the birch trees with a rabbi reciting prayers and wind blowing over the pond.</li><li>Mitch calling his brother Peter in Spain and healing their ten-year estrangement.</li>
+        </ul>
+
+        <div class="unit-section-title">Operational Psychological & Spiritual Mechanisms</div>
+        
+        <div class="mechanism-box">
+          <h5>Trans-Generational Wisdom Transmission</h5>
+          <p>A mentor's soul survives not in granite monuments, but in the student who puts the mentor's lessons into immediate relational action.</p>
+        </div>
+        
+
+        <div class="unit-section-title">Verbatim Canonical Citations</div>
+        
+        <div class="quote-box">"The funeral was held on a Tuesday... As the wind blew through the trees, I looked at the pond and I looked at his stone. 'A Teacher to the Last.'"</div>
+        
+        <div class="quote-box">"There is no such thing as 'too late' in life. Although Morrie was gone, he was still with me."</div>
+        
+        <div class="quote-box">"Have you ever had a teacher? One who saw you as a raw but precious thing, a jewel that, with wisdom, could be polished to a proud shine?"</div>
+        
+      </article>
+      
+    </section>
+
+    <!-- VIEW B: The 8 Morrie Axioms -->
+    <section id="view-axioms" class="view-content">
+      <div class="unit-card">
+        <h3 class="unit-title" style="margin-bottom:12px;">The Eight Invariant Morrie Axioms</h3>
+        <p class="prose-p">A systematic codification of the foundational thanatological and relational principles articulated across Morrie Schwartz's final semester.</p>
+
+        <div class="table-container">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Axiom</th>
+                <th>Core Formulation</th>
+                <th>Operational Psychological Law</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>I. The Living Paradox</strong></td>
+                <td><em>"Once you learn how to die, you learn how to live."</em></td>
+                <td>Daily conscious awareness of physical mortality strips away trivial vanity and clarifies genuine priorities.</td>
+              </tr>
+              <tr>
+                <td><strong>II. The Auden Law</strong></td>
+                <td><em>"Love each other or perish."</em></td>
+                <td>Human beings are fundamentally interdependent; isolation during mortal crisis produces psychological collapse.</td>
+              </tr>
+              <tr>
+                <td><strong>III. The Detachment Protocol</strong></td>
+                <td><em>"Plunge yourself into emotion, then detach."</em></td>
+                <td>Total immersion in grief, fear, or pain allows the emotion to be experienced and released rather than repressed into neurosis.</td>
+              </tr>
+              <tr>
+                <td><strong>IV. The Subculture Mandate</strong></td>
+                <td><em>"If the culture doesn't work, don't buy it."</em></td>
+                <td>Construct an intentional micro-community founded on presence, listening, and love, rejecting commercial status competition.</td>
+              </tr>
+              <tr>
+                <td><strong>V. The Substitution Fallacy</strong></td>
+                <td><em>"You can't substitute material things for love."</em></td>
+                <td>Hoarding consumer goods is a symptom of emotional starvation; true wealth is giving undivided presence to others.</td>
+              </tr>
+              <tr>
+                <td><strong>VI. The Cumulative Self</strong></td>
+                <td><em>"I am every age I've ever been."</em></td>
+                <td>Aging is cumulative growth; an integrated elder possesses all previous developmental stages simultaneously without envy.</td>
+              </tr>
+              <tr>
+                <td><strong>VII. Pre-Emptive Forgiveness</strong></td>
+                <td><em>"Forgive yourself, then forgive others."</em></td>
+                <td>Never allow stubborn pride to postpone reconciliation; death renders unresolved estrangement an eternal regret.</td>
+              </tr>
+              <tr>
+                <td><strong>VIII. Relational Immortality</strong></td>
+                <td><em>"Death ends a life, not a relationship."</em></td>
+                <td>Physical form dissolves, but the internalized dialogue and moral influence continue indefinitely in the hearts of survivors.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW C: Operational Art of Living -->
+    <section id="view-artofliving" class="view-content">
+      <div class="unit-card">
+        <h3 class="unit-title" style="margin-bottom:12px;">Operational Heuristics for Everyday Living</h3>
+        <p class="prose-p">Practical mental models derived from Morrie's study for navigating grief, relationships, and modern distraction.</p>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>1. The Little Bird on the Shoulder</h5>
+          <p>Every morning, visualize a sentinel bird on your shoulder asking: <em>"Is today the day? Am I doing what I should be doing? Am I being the person I want to be?"</em> Use this filter to dissolve petty squabbles immediately.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>2. The Bounded Mourning Protocol</h5>
+          <p>Do not deny pain or grief. Give yourself a strict, daily window (5–10 minutes) to weep and feel sorry for your losses. When the timer expires, pivot your focus outward to gratitude and service.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>3. The Wave on the Ocean Parable</h5>
+          <p>When terrified of mortality, remember the parable: the small wave fears crashing on the shore until it realizes it is not an isolated wave, but an integral part of the infinite ocean.</p>
+        </div>
+
+        <div class="mechanism-box" style="margin-bottom:20px;">
+          <h5>4. The Twenty-Four-Hour Ordinary Day</h5>
+          <p>When asked for his ideal dream day with full health, Morrie requested simple rolls, a walk in the woods, lunch with friends, dancing, and sleeping. The ordinary is the miraculous.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Intellectualist Codex Benchmark &bull; Mitch Albom's <em>Tuesdays with Morrie</em> &bull; Standalone Certified Knowledge Reconstruction</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    const themes = ['light', 'dark-mode', 'sepia-mode'];
+    let currentThemeIdx = 0;
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.remove('dark-mode', 'sepia-mode');
+      currentThemeIdx = (currentThemeIdx + 1) % themes.length;
+      if (themes[currentThemeIdx] !== 'light') {
+        document.body.classList.add(themes[currentThemeIdx]);
+      }
+    });
+
+    // Font toggle
+    const fontBtn = document.getElementById('fontBtn');
+    fontBtn.addEventListener('click', () => {
+      document.body.classList.toggle('serif-font');
+    });
+
+    // View tabs switcher
+    const tabs = document.querySelectorAll('.view-tab');
+    const viewSections = document.querySelectorAll('.view-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        viewSections.forEach(s => s.classList.remove('active'));
+
+        tab.classList.add('active');
+        const targetId = tab.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
