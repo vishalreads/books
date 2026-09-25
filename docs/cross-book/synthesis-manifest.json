@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-25T13:15:00Z",
+  "generator": "src/bkrs/synthesize_cross_book.js",
+  "corpus_scope": [
+    "norwegian-wood",
+    "the-psychology-of-money",
+    "bhagat-singh-a-life-in-revolution"
+  ],
+  "census": {
+    "synthesis_units_total": 12,
+    "canonical_concepts_total": 14,
+    "book_specific_concepts_total": 28,
+    "cross_book_relationships_total": 15,
+    "contradictions_total": 8,
+    "consensus_states_total": 12,
+    "causal_relationships_by_tier": {
+      "tier_a": 1,
+      "tier_b": 1,
+      "tier_c": 1,
+      "tier_d": 10
+    },
+    "consensus_states_distribution": {
+      "CONVERGENT_INDEPENDENT_OBSERVATION": 2,
+      "EXPLICIT_MULTI_BOOK_AGREEMENT": 1,
+      "PARTIAL_AGREEMENT": 1,
+      "DISAGREEMENT": 1,
+      "UNRESOLVED_TENSION": 3,
+      "INSUFFICIENT_EVIDENCE": 4
+    },
+    "concept_mapping_distribution": {
+      "ANALOGICAL_RELATION": 8,
+      "SAME_LABEL_DIFFERENT_CONCEPT": 6,
+      "RELATED_NON_EQUIVALENT": 4,
+      "PARTIAL_OVERLAP": 2,
+      "FUNCTIONAL_EQUIVALENCE": 2,
+      "AMBIGUOUS_REQUIRES_REVIEW": 3,
+      "DIFFERENT_LABEL_SAME_CONCEPT": 1,
+      "EXACT_EQUIVALENCE": 1,
+      "UNMAPPED": 1
+    },
+    "relationship_class_distribution": {
+      "CONCEPTUAL_PARALLEL": 1,
+      "THEMATIC_PARALLEL": 1,
+      "EXPLICIT_AGREEMENT": 1,
+      "EXPLICIT_DISAGREEMENT": 1,
+      "CONTRADICTION": 1,
+      "COMPLEMENTARY_EVIDENCE": 1,
+      "HISTORICAL_INSTANCE": 1,
+      "FICTIONAL_EXPLORATION": 1,
+      "ANALYTICAL_APPLICATION": 1,
+      "CONCEPTUAL_EXTENSION": 1,
+      "CONCEPTUAL_LIMITATION": 1,
+      "DISTINCT_FRAME": 1,
+      "DIFFERENT_DEFINITION": 1,
+      "CAUSALLY_RELATED": 1,
+      "NO_ESTABLISHED_RELATIONSHIP": 1
+    },
+    "contradiction_gate_distribution": {
+      "UNRESOLVED_TENSION": 1,
+      "DIFFERENT_DEFINITION": 1,
+      "DISTINCT_FRAME": 2,
+      "DIFFERENT_SCOPE": 1,
+      "PARTIAL_OVERLAP": 2,
+      "NO_ESTABLISHED_RELATIONSHIP": 1
+    },
+    "human_review_items": 2,
+    "quarantined_items": 1,
+    "rejected_items": 1
+  },
+  "governance_invariants": {
+    "book_masters_mutated": 0,
+    "normalized_corpora_mutated": 0,
+    "orphan_synthesis_units": 0
+  },
+  "hash_ledger": {
+    "baseline_verified": true,
+    "hashes": {
+      "nwMaster": "115af84408e05379efd89e11970f57d0e076f27a992c4e577ee30b858c5af4ef",
+      "pmMaster": "b7b3395de8e5d3b03cdf4bb856c7e2a76a4398fce7e3a75bf7dfeaa981090ac2",
+      "bsMaster": "6624afef80a833bff957c0aa23c1fe4a6a58cb41c17e01e4cc16d6ca55c81360",
+      "nwNorm": "46667d5931ab0079955f5c4ba36806c7581e7340640bbc95e4ac91eecb61a515",
+      "pmNorm": "8f85db9dd74fb0cdddd936946ec28530e98dc838135bd972558956b9819d17c8",
+      "bsNorm": "dba6b02e69cc70b885d8849231327611093537fbbf35875955042774733c7951"
+    }
+  }
+}

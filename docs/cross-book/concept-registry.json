@@ -1,0 +1,604 @@
+[
+  {
+    "canonical_concept_id": "CC-COMPOUNDING-DISCIPLINE",
+    "preferred_label": "Compounding Effects of Sustained Habitual Input",
+    "formal_definition": "The non-linear, geometric accumulation of long-term output resulting from continuous, iterative input over prolonged time horizons.",
+    "domain": "GENERAL",
+    "scope": "BEHAVIORAL_MESO",
+    "aliases": [
+      "compounding",
+      "geometric accumulation",
+      "iterative habituation"
+    ],
+    "related_concept_ids": [
+      "CC-EXTENDED-TIME-HORIZON",
+      "CC-PRISON-SELF-CULTIVATION"
+    ],
+    "equivalence_basis": "Requires identity of operational mechanism and output function across identical domains.",
+    "non_equivalence_basis": "Financial compound interest (capital returns) vs intellectual self-cultivation (revolutionary ideology).",
+    "temporal_scope": "Trans-historical / Modern Industrial",
+    "contextual_scope": "Operates in environments with institutional stability or long isolated horizons.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Mathematical identity of rate-of-return equations across subjects.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-01",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-COMPOUNDING",
+        "source_label": "Compounding",
+        "source_definition": "Financial returns accumulating exponentially across long time horizons (Buffett effect).",
+        "mapping_state": "ANALOGICAL_RELATION"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-PRISON-CULTIVATION",
+        "source_label": "Revolutionary Study Routine",
+        "source_definition": "Systematic multi-volume ideological study inside colonial prison cells.",
+        "mapping_state": "ANALOGICAL_RELATION"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-RATIONALITY-FRAMEWORKS",
+    "preferred_label": "Rationality vs Psychological Reasonableness",
+    "formal_definition": "The demarcation between cold computational/mathematical optimization and human emotional or dialectical alignment.",
+    "domain": "EPISTEMOLOGY",
+    "scope": "UNIVERSAL_ABSTRACT",
+    "aliases": [
+      "reasonableness",
+      "dialectical reason",
+      "bounded rationality"
+    ],
+    "related_concept_ids": [
+      "CC-DIALECTICAL-MATERIALISM",
+      "CC-BEHAVIORAL-PRUDENCE"
+    ],
+    "equivalence_basis": "Requires identical epistemic criteria for justifying belief and action.",
+    "non_equivalence_basis": "Pragmatic psychological comfort (Housel) vs militant materialist destruction of dogma (Singh).",
+    "temporal_scope": "Modern era (20th–21st c.)",
+    "contextual_scope": "Epistemic justification systems.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography",
+      "philosophy"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Demonstrable convergence on truth criteria.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-02",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-REASONABLENESS",
+        "source_label": "Reasonable > Rational",
+        "source_definition": "Prioritizing emotional peace of mind and sleeping well over strict spreadsheet optimization.",
+        "mapping_state": "SAME_LABEL_DIFFERENT_CONCEPT"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-DIALECTICAL-REASON",
+        "source_label": "Critical Reason and Realism",
+        "source_definition": "Unrelenting materialist rationality dismantling religious superstition and customary authority.",
+        "mapping_state": "SAME_LABEL_DIFFERENT_CONCEPT"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-FREEDOM-DISAMBIGUATION",
+    "preferred_label": "Autonomous Agency and Liberty",
+    "formal_definition": "The degree of self-determination possessed by an entity relative to external institutional or economic constraints.",
+    "domain": "POLITICAL_ECONOMY",
+    "scope": "UNIVERSAL_ABSTRACT",
+    "aliases": [
+      "liberty",
+      "autonomy",
+      "swaraj",
+      "emancipation"
+    ],
+    "related_concept_ids": [
+      "CC-CALENDAR-AUTONOMY",
+      "CC-ANTI-COLONIAL-SOVEREIGNTY"
+    ],
+    "equivalence_basis": "Requires identical locus of liberation (individual schedule vs sovereign state/class).",
+    "non_equivalence_basis": "Individual temporal schedule control in a market society vs armed overthrow of colonial capitalism.",
+    "temporal_scope": "Modern era (1920s to present)",
+    "contextual_scope": "Political and economic systems.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Identical structural targets of liberation.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-04",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-CALENDAR-AUTONOMY",
+        "source_label": "Controlling Your Time",
+        "source_definition": "The ability to do what you want, when you want, with whom you want, for as long as you want.",
+        "mapping_state": "SAME_LABEL_DIFFERENT_CONCEPT"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-ANTI-COLONIAL-LIBERATION",
+        "source_label": "Azaadi / Complete Independence",
+        "source_definition": "The total overthrow of British imperialism and abolition of capitalist exploitation of human by human.",
+        "mapping_state": "SAME_LABEL_DIFFERENT_CONCEPT"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-SURVIVAL-VS-MARTYRDOM",
+    "preferred_label": "Life Preservation vs Ideological Martyrdom",
+    "formal_definition": "The normative hierarchy between physical survival and transcendent political/existential commitment.",
+    "domain": "ETHICS",
+    "scope": "BEHAVIORAL_MESO",
+    "aliases": [
+      "survival",
+      "ruin avoidance",
+      "martyrdom",
+      "ultimate sacrifice"
+    ],
+    "related_concept_ids": [
+      "CC-OUTLIER-CATALYTIC-EVENTS"
+    ],
+    "equivalence_basis": "Requires identical utility functions regarding life forfeiture.",
+    "non_equivalence_basis": "Minimizing risk of ruin to compound assets vs voluntarily embracing gallows execution to awaken national consciousness.",
+    "temporal_scope": "Universal",
+    "contextual_scope": "High-stakes decision environments.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Evidence of shared utility function toward biological mortality.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-05",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-SURVIVAL-MINDSET",
+        "source_label": "Staying Wealthy / Survival",
+        "source_definition": "Avoiding financial ruin at all costs so that compounding never breaks.",
+        "mapping_state": "RELATED_NON_EQUIVALENT"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-CONSCIOUS-SACRIFICE",
+        "source_label": "Supreme Sacrifice",
+        "source_definition": "Embracing death on the gallows as an irreplaceable political weapon to mobilize India.",
+        "mapping_state": "RELATED_NON_EQUIVALENT"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-MORTALITY-CROSS-GENRE",
+    "preferred_label": "Existential Trauma of Mortality and Loss",
+    "formal_definition": "The psychological and collective repercussions of premature death across personal and political spheres.",
+    "domain": "PSYCHOLOGY",
+    "scope": "EXPERIENTIAL_INTERIOR",
+    "aliases": [
+      "suicide",
+      "martyrdom",
+      "adolescent grief",
+      "loss"
+    ],
+    "related_concept_ids": [
+      "CC-SURVIVAL-VS-MARTYRDOM"
+    ],
+    "equivalence_basis": "Requires identical ontological status (fictional depiction vs corroborated archival death).",
+    "non_equivalence_basis": "Fictional teenage suicide (Kizuki/Naoko) vs archival political hunger strike death (Jatin Das).",
+    "temporal_scope": "20th Century (1929 / 1969)",
+    "contextual_scope": "Interior psychological vs political penal contexts.",
+    "genre_applicability": [
+      "literary_fiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Ontological parity of historical documentation.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-06",
+    "book_specific_manifests": [
+      {
+        "book_id": "norwegian-wood",
+        "book_concept_id": "NW-C-UNEXPLAINED-SUICIDE",
+        "source_label": "Private Grief / Suicide",
+        "source_definition": "Inexplicable psychological rupture severing intimate youth relationships.",
+        "mapping_state": "ANALOGICAL_RELATION"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-POLITICAL-HUNGER-STRIKE",
+        "source_label": "Penal Resistance Unto Death",
+        "source_definition": "63-day hunger strike against brutal British jail discrimination culminating in death.",
+        "mapping_state": "ANALOGICAL_RELATION"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-MERIT-VS-LUCK",
+    "preferred_label": "Meritocratic Agency vs Systemic Luck/Risk",
+    "formal_definition": "The balance of attribution between personal competence/willpower and non-deterministic systemic randomness.",
+    "domain": "SOCIOLOGY",
+    "scope": "BEHAVIORAL_MESO",
+    "aliases": [
+      "luck",
+      "risk",
+      "elitism",
+      "meritocracy"
+    ],
+    "related_concept_ids": [
+      "CC-OUTLIER-CATALYTIC-EVENTS"
+    ],
+    "equivalence_basis": "Requires identical voice category and causal model of success.",
+    "non_equivalence_basis": "Fictional character elitism (Nagasawa) vs nonfiction authorial humility (Housel).",
+    "temporal_scope": "Late 20th / 21st c.",
+    "contextual_scope": "Competitive social and economic environments.",
+    "genre_applicability": [
+      "literary_fiction",
+      "analytical_nonfiction"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Voice parity and methodological alignment.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-07",
+    "book_specific_manifests": [
+      {
+        "book_id": "norwegian-wood",
+        "book_concept_id": "NW-C-NAGASAWA-ELITISM",
+        "source_label": "Willful Elitism",
+        "source_definition": "A fictional character belief that elite discipline and indifference to social norms entitle one to dominate.",
+        "mapping_state": "SAME_LABEL_DIFFERENT_CONCEPT"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-LUCK-RISK-PRIMACY",
+        "source_label": "Primacy of Luck and Risk",
+        "source_definition": "Authorial proposition that individual outcomes are heavily governed by forces outside personal control.",
+        "mapping_state": "SAME_LABEL_DIFFERENT_CONCEPT"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-OUTLIER-CATALYTIC-EVENTS",
+    "preferred_label": "High-Impact Tail Events and Direct Action Catalysts",
+    "formal_definition": "Rare, extreme outlier occurrences that account for the overwhelming majority of subsequent system dynamics.",
+    "domain": "HISTORIOGRAPHY",
+    "scope": "UNIVERSAL_ABSTRACT",
+    "aliases": [
+      "tail events",
+      "catalytic assassination",
+      "outlier dynamics"
+    ],
+    "related_concept_ids": [
+      "CC-COMPOUNDING-DISCIPLINE"
+    ],
+    "equivalence_basis": "Requires structural isomorphism in probability distributions and systemic outcomes.",
+    "non_equivalence_basis": "Statistical investment returns in stock markets vs deliberate political assassination of a police officer.",
+    "temporal_scope": "Modern era",
+    "contextual_scope": "Complex dynamic systems.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Empirical demonstration of mathematical power-law distribution in political events.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-10",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-TAIL-EVENTS",
+        "source_label": "Tails, You Win",
+        "source_definition": "A tiny fraction of events drive the majority of investment returns and economic outcomes.",
+        "mapping_state": "ANALOGICAL_RELATION"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-CATALYTIC-ACTION",
+        "source_label": "Propaganda by the Deed",
+        "source_definition": "A single dramatic assassination (Saunders) transforming an underground group into national icons.",
+        "mapping_state": "ANALOGICAL_RELATION"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-RESOURCE-MOBILIZATION",
+    "preferred_label": "Emergency Reserves and Underground Resource Mobilization",
+    "formal_definition": "The accumulation and strategic allocation of liquid reserves to survive unexpected shocks and enable covert operations.",
+    "domain": "POLITICAL_ECONOMY",
+    "scope": "INSTITUTIONAL_MACRO",
+    "aliases": [
+      "liquidity buffer",
+      "defense funds",
+      "emergency savings"
+    ],
+    "related_concept_ids": [
+      "CC-SURVIVAL-VS-MARTYRDOM"
+    ],
+    "equivalence_basis": "Requires identical operational purpose and management structure.",
+    "non_equivalence_basis": "Personal bank savings cushion vs clandestine legal defense fund under colonial police surveillance.",
+    "temporal_scope": "1920s to present",
+    "contextual_scope": "Financial and political survival.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Convergence on risk mitigation mechanisms.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.4 Cross-Book Extension",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-SAVINGS-BUFFER",
+        "source_label": "Save Money for Unexpected Shocks",
+        "source_definition": "Accumulating cash reserves without a specific purchase goal to retain flexibility.",
+        "mapping_state": "PARTIAL_OVERLAP"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-KAKORI-DEFENSE-FUND",
+        "source_label": "Political Defense Fund",
+        "source_definition": "Public and clandestine subscription campaigns to finance legal defense for arrested comrades.",
+        "mapping_state": "PARTIAL_OVERLAP"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-EARLY-EXPERIENCE-IMPRINTING",
+    "preferred_label": "Experiential Conditioning of Adult Worldview",
+    "formal_definition": "Early formative emotional and socioeconomic experiences permanently structuring adult psychological responses.",
+    "domain": "PSYCHOLOGY",
+    "scope": "INDIVIDUAL_MICRO",
+    "aliases": [
+      "early imprinting",
+      "generational memory",
+      "formative trauma"
+    ],
+    "related_concept_ids": [
+      "CC-MORTALITY-CROSS-GENRE"
+    ],
+    "equivalence_basis": "Requires psychological mechanism continuity across fictional and empirical subjects.",
+    "non_equivalence_basis": "Fictional sensory trauma triggering memory in an airplane vs historical economic generations experiencing recessions.",
+    "temporal_scope": "20th Century",
+    "contextual_scope": "Cognitive and emotional development.",
+    "genre_applicability": [
+      "literary_fiction",
+      "analytical_nonfiction"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Empirical psychological evidence verifying fictional representation.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.4 Cross-Book Extension",
+    "book_specific_manifests": [
+      {
+        "book_id": "norwegian-wood",
+        "book_concept_id": "NW-C-SENSORY-TRIGGER",
+        "source_label": "Somatic Sensory Anchor",
+        "source_definition": "Hearing an orchestral melody triggering immediate, overwhelming psychosomatic recall of youth grief.",
+        "mapping_state": "ANALOGICAL_RELATION"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-EXPERIENCE-BIAS",
+        "source_label": "No One's Crazy",
+        "source_definition": "Personal experiences with money make up maybe 0.00000001% of what has happened, but 80% of how you think the world works.",
+        "mapping_state": "ANALOGICAL_RELATION"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-EXTENDED-TIME-HORIZON",
+    "preferred_label": "Intergenerational Strategic Time Horizon",
+    "formal_definition": "The deliberate elongation of planning cycles far beyond short-term milestones to achieve structural transformation.",
+    "domain": "PHILOSOPHY",
+    "scope": "UNIVERSAL_ABSTRACT",
+    "aliases": [
+      "long horizon",
+      "patience",
+      "intergenerational struggle"
+    ],
+    "related_concept_ids": [
+      "CC-COMPOUNDING-DISCIPLINE"
+    ],
+    "equivalence_basis": "Functional isomorphism in temporal discounting behavior.",
+    "non_equivalence_basis": "Multi-decade stock market compounding vs century-long socialist world transformation.",
+    "temporal_scope": "Trans-historical",
+    "contextual_scope": "Strategic planning.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Identical temporal discounting curves.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.4 Cross-Book Extension",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-LONG-HORIZON",
+        "source_label": "Long Time Horizon",
+        "source_definition": "Staying invested across decades to allow economic compounding to materialize.",
+        "mapping_state": "FUNCTIONAL_EQUIVALENCE"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-EPOCHAL-HORIZON",
+        "source_label": "Continuous Revolutionary Process",
+        "source_definition": "Revolution is not a momentary armed insurrection but an epochal historical process spanning generations.",
+        "mapping_state": "FUNCTIONAL_EQUIVALENCE"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-EVIDENTIARY-STANDARDS",
+    "preferred_label": "Forensic Judicial Verification vs Pedagogical Parable",
+    "formal_definition": "The methodological divide between legal-evidentiary proof standards and narrative anecdotal illustration.",
+    "domain": "EPISTEMOLOGY",
+    "scope": "INSTITUTIONAL_MACRO",
+    "aliases": [
+      "evidentiary parity",
+      "forensic record",
+      "anecdotal parable"
+    ],
+    "related_concept_ids": [
+      "CC-RATIONALITY-FRAMEWORKS"
+    ],
+    "equivalence_basis": "Requires identical legal or empirical rules of admissibility.",
+    "non_equivalence_basis": "Popular biographical parables vs police first information reports and medical autopsy records.",
+    "temporal_scope": "1920s / 2020s",
+    "contextual_scope": "Legal and journalistic discourses.",
+    "genre_applicability": [
+      "analytical_nonfiction",
+      "historical_biography"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Legal judicial certification of anecdotal sources.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.0A Adversarial Benchmark TC-09",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-POPULAR-ANECDOTE",
+        "source_label": "Illustrative Anecdote",
+        "source_definition": "Narrative comparison of two contrasting individuals to communicate behavioral concepts.",
+        "mapping_state": "RELATED_NON_EQUIVALENT"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-FORENSIC-RECORD",
+        "source_label": "Forensic Judicial Exhibit",
+        "source_definition": "Archival FIR, ballistic records, post-mortem findings submitted under criminal cross-examination.",
+        "mapping_state": "RELATED_NON_EQUIVALENT"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-AMBIGUOUS-CONCEPT-PROBE",
+    "preferred_label": "Abstract Unanchored Existential Fulfillment",
+    "formal_definition": "Diffuse, non-operationalized notions of subjective human meaning without clear institutional boundary conditions.",
+    "domain": "PHILOSOPHY",
+    "scope": "UNIVERSAL_ABSTRACT",
+    "aliases": [
+      "meaning",
+      "fulfillment",
+      "higher purpose"
+    ],
+    "related_concept_ids": [],
+    "equivalence_basis": "Undefined; concept is intrinsically ambiguous across disparate domains.",
+    "non_equivalence_basis": "Lacks empirical or formal propositional criteria for comparison.",
+    "temporal_scope": "Universal",
+    "contextual_scope": "Abstract subjective philosophy.",
+    "genre_applicability": [
+      "all"
+    ],
+    "concept_status": "PROVISIONAL",
+    "evidence_required_for_equivalence": "Rigorous formal operationalization before mapping.",
+    "human_review_status": "PENDING",
+    "provenance": "Step 5.4 Concept Registry Governance Probe",
+    "book_specific_manifests": [
+      {
+        "book_id": "norwegian-wood",
+        "book_concept_id": "NW-C-EXISTENTIAL-VOID",
+        "source_label": "Sense of Loss and Recovery",
+        "source_definition": "Navigating life after intimate grief.",
+        "mapping_state": "AMBIGUOUS_REQUIRES_REVIEW"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-ENOUGH",
+        "source_label": "Knowing When You Have Enough",
+        "source_definition": "Freedom from endless materialistic comparison.",
+        "mapping_state": "AMBIGUOUS_REQUIRES_REVIEW"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "book_concept_id": "BS-C-LIFE-PURPOSE",
+        "source_label": "Devotion to Revolutionary Ideal",
+        "source_definition": "Subordinating individual existence to emancipation of humanity.",
+        "mapping_state": "AMBIGUOUS_REQUIRES_REVIEW"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-SYNONYMOUS-PRUDENCE",
+    "preferred_label": "Defensive Financial Margin of Safety",
+    "formal_definition": "Maintaining excess operational buffers to absorb unforeseen variance without catastrophe.",
+    "domain": "POLITICAL_ECONOMY",
+    "scope": "BEHAVIORAL_MESO",
+    "aliases": [
+      "room for error",
+      "margin of safety",
+      "cushion against disaster"
+    ],
+    "related_concept_ids": [
+      "CC-RESOURCE-MOBILIZATION"
+    ],
+    "equivalence_basis": "Identical probabilistic principle applied within the same economic domain under different authorial phrasing.",
+    "non_equivalence_basis": "Differences in vocabulary between classic Benjamin Graham margin of safety and Housel room for error.",
+    "temporal_scope": "20th–21st Century",
+    "contextual_scope": "Risk management.",
+    "genre_applicability": [
+      "analytical_nonfiction"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "Verifiable propositional equivalence in risk modeling.",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.4 Synonymy Validation Probe",
+    "book_specific_manifests": [
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-ROOM-FOR-ERROR",
+        "source_label": "Room for Error",
+        "source_definition": "The wisdom of acknowledging that uncertainty and chance are an inescapable part of life.",
+        "mapping_state": "DIFFERENT_LABEL_SAME_CONCEPT"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "book_concept_id": "PM-C-MARGIN-OF-SAFETY",
+        "source_label": "Margin of Safety",
+        "source_definition": "A buffer that enables survival under unforeseen negative outcomes.",
+        "mapping_state": "EXACT_EQUIVALENCE"
+      }
+    ]
+  },
+  {
+    "canonical_concept_id": "CC-UNMAPPED-CORPUS-OUTLIER",
+    "preferred_label": "Uncorrelated Subject-Specific Terminology",
+    "formal_definition": "A concept native to a specific source that shares zero conceptual, structural, or lexical overlap with any other work in the corpus.",
+    "domain": "LITERARY_AESTHETICS",
+    "scope": "EXPERIENTIAL_INTERIOR",
+    "aliases": [
+      "dormitory lifestyle",
+      "1960s tokyo student culture"
+    ],
+    "related_concept_ids": [],
+    "equivalence_basis": "None.",
+    "non_equivalence_basis": "Entirely isolated historical and literary setting.",
+    "temporal_scope": "1968–1970 Tokyo",
+    "contextual_scope": "Post-war Japanese student dormitories.",
+    "genre_applicability": [
+      "literary_fiction"
+    ],
+    "concept_status": "CERTIFIED",
+    "evidence_required_for_equivalence": "N/A",
+    "human_review_status": "CERTIFIED",
+    "provenance": "Step 5.4 Unmapped Governance Probe",
+    "book_specific_manifests": [
+      {
+        "book_id": "norwegian-wood",
+        "book_concept_id": "NW-C-STORM-TROOPER-DORM",
+        "source_label": "Storm Trooper Morning Calisthenics",
+        "source_definition": "Eccentric roommate ritual symbolizing rigid conformist discipline in a student dormitory.",
+        "mapping_state": "UNMAPPED"
+      }
+    ]
+  }
+]

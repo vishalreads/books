@@ -1,0 +1,721 @@
+[
+  {
+    "synthesis_unit_id": "SU-FIN-POL-001",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH04-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-CH04-01",
+        "locator": "Chapter 4 pp. 45-56",
+        "role": "THEORETICAL_PROPOSITION",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "Warren Buffett’s skill is investing, but his secret is time."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH41-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH41-01",
+        "locator": "Chapter 41 part0047.html",
+        "role": "HISTORICAL_ANALOGUE",
+        "source_voice": "BIOGRAPHER",
+        "epistemic_status": "[BIOGRAPHER_THESIS]",
+        "exact_quotation_or_claim": "Bhagat Singh read hundreds of volumes across multiple languages while imprisoned in Lahore Central Jail."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-COMPOUNDING-DISCIPLINE"
+    ],
+    "book_specific_concept_refs": [
+      "PM-C-COMPOUNDING",
+      "BS-C-PRISON-CULTIVATION"
+    ],
+    "concept_mapping_status": "ANALOGICAL_RELATION",
+    "relationship_class": "CONCEPTUAL_PARALLEL",
+    "contradiction_status": "DISTINCT_FRAME",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "AUTHOR",
+      "BIOGRAPHER"
+    ],
+    "claim": "Continuous, small-scale structural inputs produce non-linear macro consequences across both capital accumulation and intellectual revolutionary preparation.",
+    "supporting_evidence": [
+      "Housel demonstrates that $81.5B of Buffett’s wealth came after age 65 due to 70+ years of compounding.",
+      "Juss documents that Bhagat Singh methodically cultivated his ideological command through reading hundreds of texts during imprisonment."
+    ],
+    "competing_evidence": [
+      "Financial compounding seeks risk-minimizing capital preservation; revolutionary self-cultivation prepared the subject for gallows sacrifice."
+    ],
+    "inference_rationale": "Structural isomorphism between mathematical compounding in investment and disciplined volume-reading in prison.",
+    "materiality": "IMPORTANT",
+    "confidence": "MEDIUM",
+    "human_review_status": "REQUIRES_HUMAN_REVIEW",
+    "provenance": "the-psychology-of-money:UNIT-POM-CH04-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH41-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-EPI-RAT-002",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH11-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-CH11-01",
+        "locator": "Chapter 11 pp. 119-128",
+        "role": "PRAGMATIC_RULE",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "Do not aim to be coldly rational when making financial decisions. Aim to just be pretty reasonable."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH46-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH46-01",
+        "locator": "Chapter 46 part0052.html",
+        "role": "PHILOSOPHICAL_DEFENSE",
+        "source_voice": "HISTORICAL_SUBJECT",
+        "epistemic_status": "[PRIMARY_SUBJECT_WRITING]",
+        "exact_quotation_or_claim": "Any man who stands for progress has to criticize, disbelieve and challenge every item of the old faith."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-RATIONALITY-FRAMEWORKS"
+    ],
+    "book_specific_concept_refs": [
+      "PM-C-REASONABLENESS",
+      "BS-C-DIALECTICAL-REASON"
+    ],
+    "concept_mapping_status": "SAME_LABEL_DIFFERENT_CONCEPT",
+    "relationship_class": "DISTINCT_FRAME",
+    "contradiction_status": "DIFFERENT_DEFINITION",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "AUTHOR",
+      "HISTORICAL_SUBJECT"
+    ],
+    "claim": "Apparent focus on reason between behavioral finance and revolutionary socialism reflects incompatible epistemic paradigms: emotional compromise vs militant dialectical critique.",
+    "supporting_evidence": [
+      "Housel emphasizes human psychological weakness requiring sub-optimal spreadsheet behavior to ensure emotional compliance.",
+      "Bhagat Singh demands ruthless, unsparing critical examination of all dogmas and beliefs regardless of comfort."
+    ],
+    "competing_evidence": [],
+    "inference_rationale": "Direct disambiguation of identical lexical token \"rationality\" operating in distinct domains.",
+    "materiality": "CRITICAL",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "the-psychology-of-money:UNIT-POM-CH11-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH46-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-NEG-CONS-003",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "norwegian-wood",
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-01-01",
+        "normalized_unit_id": "NXU-NW-SCENE-NW-01-01",
+        "locator": "Chapter 1 scene 1",
+        "role": "LITERARY_ANCHOR",
+        "source_voice": "NARRATOR",
+        "epistemic_status": "source_fact",
+        "exact_quotation_or_claim": "Toru Watanabe touches down in Hamburg at age 37."
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-INTRO-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-INTRO-01",
+        "locator": "Introduction pp. 1-8",
+        "role": "FINANCIAL_AXIOM",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "Doing well with money has a little to do with how smart you are and a lot to do with how you behave."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-PROLOGUE-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-PROLOGUE-01",
+        "locator": "Prologue part0004.html",
+        "role": "BIOGRAPHICAL_THESIS",
+        "source_voice": "BIOGRAPHER",
+        "epistemic_status": "[BIOGRAPHER_THESIS]",
+        "exact_quotation_or_claim": "Bhagat Singh was India’s most charismatic revolutionary who defied the British Raj."
+      }
+    ],
+    "source_explicitness": "CROSS_SOURCE_DERIVED",
+    "canonical_concept_refs": [
+      "CC-AMBIGUOUS-CONCEPT-PROBE"
+    ],
+    "book_specific_concept_refs": [
+      "NW-C-EXISTENTIAL-VOID",
+      "PM-C-ENOUGH",
+      "BS-C-LIFE-PURPOSE"
+    ],
+    "concept_mapping_status": "UNMAPPED",
+    "relationship_class": "NO_ESTABLISHED_RELATIONSHIP",
+    "contradiction_status": "NO_ESTABLISHED_RELATIONSHIP",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "NARRATOR",
+      "AUTHOR",
+      "BIOGRAPHER"
+    ],
+    "claim": "Audited candidate corpus-wide worldview reveals zero universal shared philosophical consensus across literary fiction, personal finance, and anti-colonial revolution.",
+    "supporting_evidence": [
+      "Works operate in completely independent literary, behavioral, and geopolitical spheres."
+    ],
+    "competing_evidence": [],
+    "inference_rationale": "Negative space validation enforcing False Consensus Rule FC-10 (Absence of Disagreement != Agreement).",
+    "materiality": "CRITICAL",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "norwegian-wood:SCENE-NW-01-01 -> the-psychology-of-money:UNIT-POM-INTRO-01 -> bhagat-singh-a-life-in-revolution:KU-BS-PROLOGUE-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-POL-LIB-004",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH07-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-CH07-01",
+        "locator": "Chapter 7 pp. 79-88",
+        "role": "INDIVIDUAL_AUTONOMY",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "The highest form of wealth is the ability to wake up every morning and say, \"I can do whatever I want today.\""
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH27-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH27-01",
+        "locator": "Chapter 27 part0033.html",
+        "role": "COLLECTIVE_SOVEREIGNTY",
+        "source_voice": "HISTORICAL_SUBJECT",
+        "epistemic_status": "[PRIMARY_SUBJECT_WRITING]",
+        "exact_quotation_or_claim": "The revolution will ring the death knell of capitalism and imperialist exploitation."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-FREEDOM-DISAMBIGUATION"
+    ],
+    "book_specific_concept_refs": [
+      "PM-C-CALENDAR-AUTONOMY",
+      "BS-C-ANTI-COLONIAL-LIBERATION"
+    ],
+    "concept_mapping_status": "SAME_LABEL_DIFFERENT_CONCEPT",
+    "relationship_class": "DIFFERENT_DEFINITION",
+    "contradiction_status": "DIFFERENT_DEFINITION",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "AUTHOR",
+      "HISTORICAL_SUBJECT"
+    ],
+    "claim": "The concept of \"freedom\" in personal finance denotes bourgeois calendar autonomy; in revolutionary history it denotes collective political sovereignty and abolition of class exploitation.",
+    "supporting_evidence": [
+      "Housel explicitly defines freedom as discretionary control over personal daily calendar.",
+      "Bhagat Singh’s HSRA manifesto defines freedom as systemic abolition of imperial rule and wage slavery."
+    ],
+    "competing_evidence": [],
+    "inference_rationale": "Polysemy disambiguation preventing false conceptual equivalence.",
+    "materiality": "CRITICAL",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "the-psychology-of-money:UNIT-POM-CH07-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH27-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-ETH-SURV-005",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH05-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-CH05-01",
+        "locator": "Chapter 5 pp. 57-68",
+        "role": "SURVIVAL_IMPERATIVE",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "More than I want big returns, I want to be financially unbreakable."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH49-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH49-01",
+        "locator": "Chapter 49 part0055.html",
+        "role": "VOLUNTARY_MORTALITY",
+        "source_voice": "BIOGRAPHER",
+        "epistemic_status": "[CORROBORATED_HISTORICAL_FACT]",
+        "exact_quotation_or_claim": "Bhagat Singh refused to sign an appeal for mercy, choosing execution to inspire Indian youth."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-SURVIVAL-VS-MARTYRDOM"
+    ],
+    "book_specific_concept_refs": [
+      "PM-C-SURVIVAL-MINDSET",
+      "BS-C-CONSCIOUS-SACRIFICE"
+    ],
+    "concept_mapping_status": "RELATED_NON_EQUIVALENT",
+    "relationship_class": "CONCEPTUAL_LIMITATION",
+    "contradiction_status": "UNRESOLVED_TENSION",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "AUTHOR",
+      "BIOGRAPHER"
+    ],
+    "claim": "Housel’s axiom that survival is the supreme imperative fails under existential anti-colonial struggle, where biological survival was voluntarily traded for ideological immortality.",
+    "supporting_evidence": [
+      "Housel argues that ruin must be avoided at all costs.",
+      "Bhagat Singh intentionally courted execution to become a catalyst for mass resistance."
+    ],
+    "competing_evidence": [
+      "Survival in finance enables compounding; sacrifice in politics enables mass mobilization."
+    ],
+    "inference_rationale": "Demonstrating boundary condition of economic survival heuristics when mapped to revolutionary ethics.",
+    "materiality": "CRITICAL",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "the-psychology-of-money:UNIT-POM-CH05-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH49-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-GEN-DEATH-006",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "norwegian-wood",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-02-02",
+        "normalized_unit_id": "NXU-NW-SCENE-NW-02-02",
+        "locator": "Chapter 2 scene 2",
+        "role": "FICTIONAL_TRAUMA",
+        "source_voice": "NARRATOR",
+        "epistemic_status": "source_fact",
+        "exact_quotation_or_claim": "Kizuki died on a night in May when he was 17; he attached a rubber hose to his car exhaust."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH31-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH31-01",
+        "locator": "Chapter 31 part0037.html",
+        "role": "ARCHIVAL_MARTYRDOM",
+        "source_voice": "BIOGRAPHER",
+        "epistemic_status": "[CORROBORATED_HISTORICAL_FACT]",
+        "exact_quotation_or_claim": "Jatin Das died on 13 September 1929 after a 63-day hunger strike in Lahore Central Jail."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-MORTALITY-CROSS-GENRE"
+    ],
+    "book_specific_concept_refs": [
+      "NW-C-UNEXPLAINED-SUICIDE",
+      "BS-C-POLITICAL-HUNGER-STRIKE"
+    ],
+    "concept_mapping_status": "ANALOGICAL_RELATION",
+    "relationship_class": "THEMATIC_PARALLEL",
+    "contradiction_status": "DISTINCT_FRAME",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "NARRATOR",
+      "BIOGRAPHER"
+    ],
+    "claim": "Literary fiction and historical biography explore premature death through distinct ontological modes: private adolescent grief vs public political hunger strike martyrdom.",
+    "supporting_evidence": [
+      "Kizuki’s suicide is an internal literary trauma structuring narrator psychology.",
+      "Jatin Das’s death was an archival historical event triggering mass national protests across India."
+    ],
+    "competing_evidence": [],
+    "inference_rationale": "Enforcing cross-genre boundary safety preventing category collapse between fiction and archival history.",
+    "materiality": "IMPORTANT",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "norwegian-wood:SCENE-NW-02-02 -> bhagat-singh-a-life-in-revolution:KU-BS-CH31-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-VOI-ELIT-007",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "norwegian-wood",
+      "the-psychology-of-money"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-04-03",
+        "normalized_unit_id": "NXU-NW-SCENE-NW-04-03",
+        "locator": "Chapter 4 scene 3",
+        "role": "FICTIONAL_CHARACTER_VOICE",
+        "source_voice": "NARRATOR",
+        "epistemic_status": "source_fact",
+        "exact_quotation_or_claim": "Nagasawa boasts of his ability to master discipline and dominate others through superior willpower."
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH02-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-CH02-01",
+        "locator": "Chapter 2 pp. 27-36",
+        "role": "ANALYTICAL_AUTHOR_VOICE",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "Luck and risk are siblings. They are the reality that every outcome in life is guided by forces other than individual effort."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-MERIT-VS-LUCK"
+    ],
+    "book_specific_concept_refs": [
+      "NW-C-NAGASAWA-ELITISM",
+      "PM-C-LUCK-RISK-PRIMACY"
+    ],
+    "concept_mapping_status": "SAME_LABEL_DIFFERENT_CONCEPT",
+    "relationship_class": "DISTINCT_FRAME",
+    "contradiction_status": "DISTINCT_FRAME",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "NARRATOR",
+      "AUTHOR"
+    ],
+    "claim": "Nagasawa’s fictional character elitism cannot be attributed to Murakami as an authorial contradiction of Housel’s analytical thesis on luck and risk.",
+    "supporting_evidence": [
+      "In Norwegian Wood, Nagasawa is a character whose extreme philosophy is observed skeptically by narrator Toru.",
+      "In The Psychology of Money, Housel argues formally as an essayist on humility and systemic randomness."
+    ],
+    "competing_evidence": [],
+    "inference_rationale": "Voice and genre boundary protection (FC-05) preventing character belief from being treated as authorial assertion.",
+    "materiality": "IMPORTANT",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "norwegian-wood:SCENE-NW-04-03 -> the-psychology-of-money:UNIT-POM-CH02-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-EVI-ROM-008",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "bhagat-singh-a-life-in-revolution",
+      "norwegian-wood"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH21-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH21-01",
+        "locator": "Chapter 21 part0027.html",
+        "role": "BIOGRAPHER_CONJECTURE",
+        "source_voice": "HISTORICAL_SUBJECT",
+        "epistemic_status": "[PRIMARY_SUBJECT_WRITING]",
+        "exact_quotation_or_claim": "Bhagat Singh wrote to Sukhdev: \"Love in itself is not bad... it elevates human character.\""
+      },
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-02-05",
+        "normalized_unit_id": "NXU-NW-SCENE-NW-02-05",
+        "locator": "Chapter 2 scene 5",
+        "role": "LITERARY_DEVOTION",
+        "source_voice": "NARRATOR",
+        "epistemic_status": "source_fact",
+        "exact_quotation_or_claim": "Toru walks with Naoko through Tokyo streets, tied by memory of Kizuki."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-AMBIGUOUS-CONCEPT-PROBE"
+    ],
+    "book_specific_concept_refs": [
+      "BS-C-BIOGRAPHER-ROMANCE-SPECULATION",
+      "NW-C-FICTIONAL-ROMANTIC-DEVOTION"
+    ],
+    "concept_mapping_status": "RELATED_NON_EQUIVALENT",
+    "relationship_class": "DISTINCT_FRAME",
+    "contradiction_status": "DISTINCT_FRAME",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "HISTORICAL_SUBJECT",
+      "NARRATOR"
+    ],
+    "claim": "Juss’s secondary conjecture regarding Bhagat Singh’s Kanpur romance must not be conflated with Toru Watanabe’s literary romantic interiority.",
+    "supporting_evidence": [
+      "Bhagat Singh’s letter to Sukhdev is a philosophical defense of human emotional integrity, which Juss conjecturally interprets as a personal romance.",
+      "Toru Watanabe’s experiences are fictional aesthetic renderings of grief and attachment."
+    ],
+    "competing_evidence": [],
+    "inference_rationale": "Preserves epistemic distinction between primary subject text, secondary biographer inference, and literary fiction.",
+    "materiality": "IMPORTANT",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "bhagat-singh-a-life-in-revolution:KU-BS-CH21-01 -> norwegian-wood:SCENE-NW-02-05",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-EVI-ANEC-009",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-INTRO-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-INTRO-01",
+        "locator": "Introduction pp. 1-8",
+        "role": "PEDAGOGICAL_ANECDOTE",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "Ronald James Read was an American philanthropist, investor, janitor, and gas station attendant."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH22-01",
+        "locator": "Chapter 22 part0028.html",
+        "role": "FORENSIC_COURT_RECORD",
+        "source_voice": "BIOGRAPHER",
+        "epistemic_status": "[CORROBORATED_HISTORICAL_FACT]",
+        "exact_quotation_or_claim": "FIR No. 121, Police Station Anarkali; Post-Mortem Report by Dr. C.H. Rai recording 8 bullet entry/exit wounds."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-EVIDENTIARY-STANDARDS"
+    ],
+    "book_specific_concept_refs": [
+      "PM-C-POPULAR-ANECDOTE",
+      "BS-C-FORENSIC-RECORD"
+    ],
+    "concept_mapping_status": "RELATED_NON_EQUIVALENT",
+    "relationship_class": "DISTINCT_FRAME",
+    "contradiction_status": "DISTINCT_FRAME",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "AUTHOR",
+      "BIOGRAPHER"
+    ],
+    "claim": "Popular journalistic parables designed for behavioral instruction carry fundamentally distinct evidentiary status from judicial forensic police and autopsy records.",
+    "supporting_evidence": [
+      "Housel uses Read’s life as an illustrative moral parable for saving habits.",
+      "Juss cites FIR 121 and post-mortem exhibits certified under criminal cross-examination."
+    ],
+    "competing_evidence": [],
+    "inference_rationale": "Evidentiary stratification preventing journalistic anecdotes from claiming parity with forensic archival records.",
+    "materiality": "IMPORTANT",
+    "confidence": "HIGH",
+    "human_review_status": "AUTO_ACCEPTED",
+    "provenance": "the-psychology-of-money:UNIT-POM-INTRO-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH22-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-CAU-TAIL-010",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH06-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-CH06-01",
+        "locator": "Chapter 6 pp. 69-78",
+        "role": "ANALYTICAL_MODEL",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "You can be wrong half the time and still make a fortune because a small number of events drive most outcomes."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH22-01",
+        "locator": "Chapter 22 part0028.html",
+        "role": "HISTORICAL_EVENT",
+        "source_voice": "BIOGRAPHER",
+        "epistemic_status": "[CORROBORATED_HISTORICAL_FACT]",
+        "exact_quotation_or_claim": "Saunders assassination on 17 December 1928 transformed the HSRA into a focal point of anti-colonial consciousness."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-OUTLIER-CATALYTIC-EVENTS"
+    ],
+    "book_specific_concept_refs": [
+      "PM-C-TAIL-EVENTS",
+      "BS-C-CATALYTIC-ACTION"
+    ],
+    "concept_mapping_status": "ANALOGICAL_RELATION",
+    "relationship_class": "ANALYTICAL_APPLICATION",
+    "contradiction_status": "PARTIAL_OVERLAP",
+    "causal_status": "BKRS_GENERATED_HYPOTHESIS",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "AUTHOR",
+      "BIOGRAPHER"
+    ],
+    "claim": "[BKRS_CAUSAL_INFERENCE] Applying tail-event theory provides an explanatory lens for why a single violent operation (Saunders shooting) generated disproportionate macro-political mobilization.",
+    "supporting_evidence": [
+      "Housel demonstrates that distribution tails account for the majority of non-linear shifts.",
+      "HSRA carried out numerous small operations, but the Saunders killing produced overwhelmingly larger political impact."
+    ],
+    "competing_evidence": [
+      "Political direct action was motivated by righteous vengeance for Lala Lajpat Rai’s fatal police beating, not statistical tail optimization.",
+      "British state repression via Ordinance III was an institutional authoritarian reaction, not a market distribution dynamic."
+    ],
+    "inference_rationale": "Null hypothesis: HSRA actions were governed by nationalist moral outrage and Lenin-inspired vanguardism rather than probability distribution dynamics. Causal link is an analytical conjecture, NOT historical influence.",
+    "materiality": "IMPORTANT",
+    "confidence": "LOW",
+    "human_review_status": "REQUIRES_HUMAN_REVIEW",
+    "provenance": "the-psychology-of-money:UNIT-POM-CH06-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH22-01",
+    "quarantine_status": "NOT_QUARANTINED"
+  },
+  {
+    "synthesis_unit_id": "SU-QUA-CONFLICT-011",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "norwegian-wood",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-03-01",
+        "normalized_unit_id": "NXU-NW-SCENE-NW-03-01",
+        "locator": "Chapter 3 scene 1",
+        "role": "FICTIONAL_SETTING",
+        "source_voice": "NARRATOR",
+        "epistemic_status": "source_fact",
+        "exact_quotation_or_claim": "Toru enters university during student strikes and ideological debates in late 1960s Tokyo."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH09-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH09-01",
+        "locator": "Chapter 9 part0015.html",
+        "role": "HISTORICAL_SETTING",
+        "source_voice": "HISTORICAL_SUBJECT",
+        "epistemic_status": "[CORROBORATED_HISTORICAL_FACT]",
+        "exact_quotation_or_claim": "Bhagat Singh establishes the Naujawan Bharat Sabha in Lahore to mobilize youth against colonial subjugation."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-AMBIGUOUS-CONCEPT-PROBE"
+    ],
+    "book_specific_concept_refs": [],
+    "concept_mapping_status": "UNMAPPED",
+    "relationship_class": "DISTINCT_FRAME",
+    "contradiction_status": "DISTINCT_FRAME",
+    "causal_status": "NON_CAUSAL_PARALLEL",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "NARRATOR",
+      "HISTORICAL_SUBJECT"
+    ],
+    "claim": "QUARANTINED CANDIDATE: Murakami’s Toru Watanabe was an active militant leader inspired by 1920s Indian revolutionary organizations.",
+    "supporting_evidence": [],
+    "competing_evidence": [
+      "Direct conflict with Book Master: Toru explicitly detests political ideology and hypocrisy of student factions in Norwegian Wood scene 8-10."
+    ],
+    "inference_rationale": "Rejected and quarantined due to direct contradiction with Book Master content.",
+    "materiality": "CRITICAL",
+    "confidence": "LOW",
+    "human_review_status": "QUARANTINED",
+    "provenance": "norwegian-wood:SCENE-NW-03-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH09-01",
+    "quarantine_status": "QUARANTINED_BOOK_MASTER_CONFLICT"
+  },
+  {
+    "synthesis_unit_id": "SU-REJ-CAUSAL-012",
+    "synthesis_type": "CROSS_BOOK_SYNTHESIS",
+    "source_book_ids": [
+      "the-psychology-of-money",
+      "bhagat-singh-a-life-in-revolution"
+    ],
+    "source_unit_refs": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH04-01",
+        "normalized_unit_id": "NXU-PM-UNIT-POM-CH04-01",
+        "locator": "Chapter 4 pp. 45-56",
+        "role": "PUBLISHED_WORK_2020",
+        "source_voice": "AUTHOR",
+        "epistemic_status": "source_argument",
+        "exact_quotation_or_claim": "Compounding requires decades of persistence."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01",
+        "normalized_unit_id": "NXU-BS-KU-BS-CH22-01",
+        "locator": "Chapter 22 part0028.html",
+        "role": "HISTORICAL_EVENT_1928",
+        "source_voice": "BIOGRAPHER",
+        "epistemic_status": "[CORROBORATED_HISTORICAL_FACT]",
+        "exact_quotation_or_claim": "Saunders assassination on 17 December 1928."
+      }
+    ],
+    "source_explicitness": "BKRS_INFERENCE",
+    "canonical_concept_refs": [
+      "CC-COMPOUNDING-DISCIPLINE"
+    ],
+    "book_specific_concept_refs": [],
+    "concept_mapping_status": "UNMAPPED",
+    "relationship_class": "CAUSALLY_RELATED",
+    "contradiction_status": "NOT_CONTRADICTORY",
+    "causal_status": "SOURCE_EXPLICIT_CROSS_BOOK_INFLUENCE",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "source_voices": [
+      "AUTHOR",
+      "BIOGRAPHER"
+    ],
+    "claim": "REJECTED CANDIDATE: Morgan Housel’s financial writing directly influenced Bhagat Singh’s tactical revolutionary planning in 1928.",
+    "supporting_evidence": [],
+    "competing_evidence": [
+      "Gross anachronistic causal violation: Housel published in 2020, Bhagat Singh died in 1931."
+    ],
+    "inference_rationale": "Rejected due to reverse chronological causation violation and total lack of documentary evidence.",
+    "materiality": "CRITICAL",
+    "confidence": "LOW",
+    "human_review_status": "REJECTED",
+    "provenance": "the-psychology-of-money:UNIT-POM-CH04-01 -> bhagat-singh-a-life-in-revolution:KU-BS-CH22-01",
+    "quarantine_status": "REJECTED_ANACHRONISTIC_CAUSATION"
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "consensus_id": "CONS-01",
+    "candidate_topic": "Compounding Dynamics Across Distinct Operational Domains",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH04-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH41-01"
+      }
+    ],
+    "consensus_state": "CONVERGENT_INDEPENDENT_OBSERVATION",
+    "false_consensus_probe": "FC-12 (Non-Overlapping Domain Equivalence)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Both sources independently note that massive macro outcomes derive from prolonged, uninterrupted inputs, though one operates in financial capital and the other in ideological prison study.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "REQUIRES_HUMAN_REVIEW"
+  },
+  {
+    "consensus_id": "CONS-02",
+    "candidate_topic": "Factual Convergence on British Colonial Repression",
+    "source_units": [
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH23-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH25-01"
+      }
+    ],
+    "consensus_state": "EXPLICIT_MULTI_BOOK_AGREEMENT",
+    "false_consensus_probe": "FC-11 (Partial Agreement / Full Agreement)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Archival records and trial transcripts explicitly confirm the execution of Ordinance III and the refusal of magistrate bail.",
+    "epistemic_status": "CORROBORATED_HISTORICAL_FACT",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-03",
+    "candidate_topic": "The Primacy of Long Horizons in Capital vs Social Transformation",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH04-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH37-01"
+      }
+    ],
+    "consensus_state": "PARTIAL_AGREEMENT",
+    "false_consensus_probe": "FC-02 (Similar Meaning / Different Scope)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Agreement on the necessity of extended patience, but divergence on ultimate beneficiaries (private family estate vs sovereign classless society).",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-04",
+    "candidate_topic": "Normative Value of Private Capital Accumulation",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH03-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH27-01"
+      }
+    ],
+    "consensus_state": "DISAGREEMENT",
+    "false_consensus_probe": "FC-03 (Same Theme / Different Conclusion)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Housel treats private capital ownership as a legitimate vehicle for personal peace of mind; Bhagat Singh’s manifesto condemns private capital accumulation as parasitic theft.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-05",
+    "candidate_topic": "Survival Heuristics vs Ultimate Ideological Sacrifice",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH05-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH49-01"
+      }
+    ],
+    "consensus_state": "UNRESOLVED_TENSION",
+    "false_consensus_probe": "FC-10 (Absence of Disagreement != Agreement)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Housel’s survival imperative directly clashes with the ethics of self-sacrifice without either author addressing the other; preserved as an unresolved ethical tension.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-06",
+    "candidate_topic": "Post-War Japanese Fiction Interiority vs Colonial Indian Revolutionary Politics",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-01-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-PROLOGUE-01"
+      }
+    ],
+    "consensus_state": "INSUFFICIENT_EVIDENCE",
+    "false_consensus_probe": "FC-04 (Cross-Genre Apparent Similarity)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "No substantive intellectual overlap exists between Murakami’s private melancholy and Juss’s historical biography.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-07",
+    "candidate_topic": "Lexical Polysemy of \"Freedom\" (FC-01 Probe)",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH07-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH27-01"
+      }
+    ],
+    "consensus_state": "UNRESOLVED_TENSION",
+    "false_consensus_probe": "FC-01 (Same Word / Different Meaning)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Enforces Rule FC-01: Shared vocabulary does not imply shared concept.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-08",
+    "candidate_topic": "Fictional Character Voice vs Nonfiction Author Voice (FC-05 Probe)",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-04-03"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH02-01"
+      }
+    ],
+    "consensus_state": "UNRESOLVED_TENSION",
+    "false_consensus_probe": "FC-05 (Character Voice / Author Voice)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Enforces Rule FC-05: Fictional character statements cannot be attributed as authorial arguments to manufacture consensus or dispute.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-09",
+    "candidate_topic": "Anecdote vs Forensic Evidence (FC-07 Probe)",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-INTRO-01"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01"
+      }
+    ],
+    "consensus_state": "INSUFFICIENT_EVIDENCE",
+    "false_consensus_probe": "FC-07 (Anecdote / Forensic Evidence)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Enforces Rule FC-07: Pedagogical anecdotes cannot be equated with judicial archival exhibits.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-10",
+    "candidate_topic": "Biographer Conjecture vs Historical Fact (FC-06 Probe)",
+    "source_units": [
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH21-01"
+      },
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-02-05"
+      }
+    ],
+    "consensus_state": "INSUFFICIENT_EVIDENCE",
+    "false_consensus_probe": "FC-06 (Biographer Claim / Subject Fact)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Enforces Rule FC-06: Secondary biographer conjecture must never be merged with fictional interiority to manufacture an emotional consensus.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-11",
+    "candidate_topic": "Fictional Plot Event vs Documented Execution (FC-08 Probe)",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-02-02"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH31-01"
+      }
+    ],
+    "consensus_state": "INSUFFICIENT_EVIDENCE",
+    "false_consensus_probe": "FC-08 (Historical / Fictional Event)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Enforces Rule FC-08: Fictional plot milestones cannot serve as factual consensus with historical martyr deaths.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "consensus_id": "CONS-12",
+    "candidate_topic": "Temporal Sequence vs Causal Attribution (FC-09 Probe)",
+    "source_units": [
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH06-01"
+      }
+    ],
+    "consensus_state": "CONVERGENT_INDEPENDENT_OBSERVATION",
+    "false_consensus_probe": "FC-09 (Temporal Sequence / False Causation)",
+    "negative_invariants_enforced": {
+      "similarity_not_agreement": true,
+      "absence_of_disagreement_not_agreement": true,
+      "shared_vocabulary_not_shared_concept": true,
+      "unresolved_not_contradiction": true,
+      "no_relationship_not_disagreement": true
+    },
+    "supporting_evidence": "Enforces Rule FC-09: Sequence and thematic similarity do not establish historical causation.",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "human_review_status": "REQUIRES_HUMAN_REVIEW"
+  }
+]

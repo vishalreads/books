@@ -1,0 +1,342 @@
+[
+  {
+    "contradiction_id": "CONT-GATE-01",
+    "candidate_title": "Wealth Survival vs Revolutionary Martyrdom",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH05-01",
+        "claim": "Staying alive and avoiding ruin is the only thing that matters."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH49-01",
+        "claim": "Embracing death on the gallows is necessary to awaken the nation."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": true,
+        "details": "Both evaluate the ultimate priority of life preservation."
+      },
+      "gate_2_same_definition": {
+        "passed": true,
+        "details": "Both evaluate biological mortality vs continued existence."
+      },
+      "gate_3_same_scope": {
+        "passed": false,
+        "details": "Failed: Personal capital management vs anti-colonial liberation struggle."
+      },
+      "gate_4_same_timeframe": {
+        "passed": false,
+        "details": "Failed: 2020 post-industrial capital markets vs 1931 colonial India under martial decree."
+      },
+      "gate_5_same_evidence_domain": {
+        "passed": false,
+        "details": "Failed: Market volatility statistics vs political executions and martial law."
+      },
+      "gate_6_same_level_of_analysis": {
+        "passed": false,
+        "details": "Failed: Micro-individual behavior vs Macro-state transformation."
+      },
+      "gate_7_same_genre_register": {
+        "passed": false,
+        "details": "Failed: Analytical nonfiction vs Historical biography."
+      },
+      "gate_8_same_attributor_category": {
+        "passed": false,
+        "details": "Failed: Contemporary author heuristic vs Historical subject writing in condemned cell."
+      },
+      "gate_9_both_absolute_statements": {
+        "passed": true,
+        "details": "Both assert unconditional imperative."
+      },
+      "gate_10_mutually_exclusive_facts": {
+        "passed": false,
+        "details": "Failed: Normative priorities, not mutually exclusive empirical facts."
+      }
+    },
+    "gate_outcome": "UNRESOLVED_TENSION",
+    "rationale": "Fails Gates 3, 4, 5, 6, 7, 8, and 10. The disagreement is an irreconcilable ethical tension between bourgeois self-preservation and revolutionary martyrdom, not a factual contradiction.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "contradiction_id": "CONT-GATE-02",
+    "candidate_title": "The Meaning of Freedom",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH07-01",
+        "claim": "Freedom is the ability to do what you want with your daily calendar."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH27-01",
+        "claim": "Freedom is the total abolition of imperialism and capitalism."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": false,
+        "details": "Failed: Different predicates attached to lexical token \"freedom\"."
+      },
+      "gate_2_same_definition": {
+        "passed": false,
+        "details": "Failed: Temporal schedule control vs collective political-economic emancipation."
+      }
+    },
+    "gate_outcome": "DIFFERENT_DEFINITION",
+    "rationale": "Dissolved at Gate 2. The authors use the identical word \"freedom\" to denote completely distinct concepts (lexical polysemy).",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "contradiction_id": "CONT-GATE-03",
+    "candidate_title": "Reason vs Rationality",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH11-01",
+        "claim": "Aiming to be reasonable beats being strictly rational."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH46-01",
+        "claim": "Reason is the supreme weapon that must challenge all blind belief."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": false,
+        "details": "Failed: Pragmatic emotional heuristic vs militant materialist epistemological defense."
+      },
+      "gate_2_same_definition": {
+        "passed": false,
+        "details": "Failed: Spreadsheet optimization vs scientific materialist skepticism."
+      }
+    },
+    "gate_outcome": "DISTINCT_FRAME",
+    "rationale": "Dissolved at Gate 1 & 2. The works operate within completely orthogonal epistemic frameworks.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "contradiction_id": "CONT-GATE-04",
+    "candidate_title": "Personal Capital Accumulation vs Elimination of Private Wealth",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH03-01",
+        "claim": "Growing wealth safely provides security and personal freedom."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH27-01",
+        "claim": "Private capital concentration produces exploitation and must be abolished."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": true,
+        "details": "Both evaluate the social desirability of private capital accumulation."
+      },
+      "gate_2_same_definition": {
+        "passed": true,
+        "details": "Both refer to monetary and capital assets."
+      },
+      "gate_3_same_scope": {
+        "passed": false,
+        "details": "Failed: Individual household allocation vs total sovereign socioeconomic order."
+      },
+      "gate_4_same_timeframe": {
+        "passed": true,
+        "details": "Capitalist property relations exist in both periods."
+      },
+      "gate_5_same_evidence_domain": {
+        "passed": true,
+        "details": "Economic and political theory."
+      },
+      "gate_6_same_level_of_analysis": {
+        "passed": false,
+        "details": "Failed: Micro-economic behavior vs Macro-structural class struggle."
+      },
+      "gate_7_same_genre_register": {
+        "passed": true,
+        "details": "Both present non-fiction analytical arguments."
+      },
+      "gate_8_same_attributor_category": {
+        "passed": true,
+        "details": "Both reflect authorial / programmatic commitments."
+      },
+      "gate_9_both_absolute_statements": {
+        "passed": true,
+        "details": "Both affirm fundamental political-economic positions."
+      },
+      "gate_10_mutually_exclusive_facts": {
+        "passed": true,
+        "details": "Mutually exclusive normative goals for human society."
+      }
+    },
+    "gate_outcome": "DIFFERENT_SCOPE",
+    "rationale": "Fails Gates 3 and 6. While normative conclusions clash directly, Housel speaks strictly to micro-individual adaptation within an existing market system, whereas Bhagat Singh speaks to macro-revolutionary restructuring.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "contradiction_id": "CONT-GATE-05",
+    "candidate_title": "Nagasawa Elitism vs Housel Luck/Risk Primacy",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-04-03",
+        "claim": "Nagasawa claims superior discipline entitles one to lord over others."
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH02-01",
+        "claim": "Luck and risk dwarf individual effort; humility is mandatory."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": true,
+        "details": "Both evaluate individual control over life outcomes."
+      },
+      "gate_2_same_definition": {
+        "passed": true,
+        "details": "Competence vs external luck."
+      },
+      "gate_3_same_scope": {
+        "passed": false,
+        "details": "Failed: Fictional psychology vs analytical economic reality."
+      },
+      "gate_7_same_genre_register": {
+        "passed": false,
+        "details": "Failed: Literary fiction vs analytical essay."
+      },
+      "gate_8_same_attributor_category": {
+        "passed": false,
+        "details": "Failed: Fictional character dialogue vs nonfiction author argument."
+      }
+    },
+    "gate_outcome": "DISTINCT_FRAME",
+    "rationale": "Dissolved at Gate 7 and 8. A fictional character’s spoken worldview cannot form a factual or authorial contradiction with a nonfiction author’s thesis.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "contradiction_id": "CONT-GATE-06",
+    "candidate_title": "Outlier Events Distribution",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH06-01",
+        "claim": "Tail events drive everything; normal events do not determine outcomes."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01",
+        "claim": "The Saunders assassination acted as a decisive tipping point."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": true,
+        "details": "Both examine non-linear impact of rare occurrences."
+      },
+      "gate_2_same_definition": {
+        "passed": true,
+        "details": "Outlier catalysts."
+      },
+      "gate_3_same_scope": {
+        "passed": false,
+        "details": "Financial distribution curves vs single historical political assassination."
+      }
+    },
+    "gate_outcome": "PARTIAL_OVERLAP",
+    "rationale": "Shares core logic regarding the disproportionate weight of outlier events, but differs in operational scope.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "contradiction_id": "CONT-GATE-07",
+    "candidate_title": "Independent Baseline Across Corpus",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-01-01",
+        "claim": "Toru recalls Hamburg touch-down."
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-INTRO-01",
+        "claim": "Ronald Read lived a quiet frugal life."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": false,
+        "details": "Failed: Entirely disjoint topics."
+      }
+    },
+    "gate_outcome": "NO_ESTABLISHED_RELATIONSHIP",
+    "rationale": "Zero proposition or conceptual overlap.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "contradiction_id": "CONT-GATE-08",
+    "candidate_title": "Saunders Murder Weapon Ownership",
+    "source_units": [
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01",
+        "claim": "Saunders shot by Colt and Mauser pistols."
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH29-01",
+        "claim": "Trial exhibits confirm ballistic match with recovered Colt pistol."
+      }
+    ],
+    "gate_steps": {
+      "gate_1_same_proposition": {
+        "passed": true,
+        "details": "Weapon identity."
+      },
+      "gate_2_same_definition": {
+        "passed": true,
+        "details": "Ballistic evidence."
+      },
+      "gate_3_same_scope": {
+        "passed": true,
+        "details": "Forensic trial facts."
+      },
+      "gate_4_same_timeframe": {
+        "passed": true,
+        "details": "December 1928 - 1930."
+      },
+      "gate_5_same_evidence_domain": {
+        "passed": true,
+        "details": "Archival criminal record."
+      },
+      "gate_6_same_level_of_analysis": {
+        "passed": true,
+        "details": "Micro-forensic."
+      },
+      "gate_7_same_genre_register": {
+        "passed": true,
+        "details": "Historical court records."
+      },
+      "gate_8_same_attributor_category": {
+        "passed": true,
+        "details": "Forensic experts and court witnesses."
+      },
+      "gate_9_both_absolute_statements": {
+        "passed": true,
+        "details": "Empirical factual claims."
+      },
+      "gate_10_mutually_exclusive_facts": {
+        "passed": false,
+        "details": "Claims corroborate rather than contradict."
+      }
+    },
+    "gate_outcome": "PARTIAL_OVERLAP",
+    "rationale": "Evaluated empirical test confirming ballistic corroboration; no factual contradiction exists.",
+    "human_review_status": "AUTO_ACCEPTED"
+  }
+]

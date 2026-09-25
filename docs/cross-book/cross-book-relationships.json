@@ -1,0 +1,347 @@
+[
+  {
+    "relationship_id": "REL-CB-01",
+    "relationship_class": "CONCEPTUAL_PARALLEL",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH04-01",
+        "role": "THEORETICAL_MODEL"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH41-01",
+        "role": "HISTORICAL_PARALLEL"
+      }
+    ],
+    "directionality": "NON_DIRECTIONAL",
+    "evidence": "Housel defines compounding as non-linear geometric returns from routine inputs (Buffett). Juss documents Bhagat Singh reading hundreds of dense ideological volumes continuously in prison.",
+    "provenance": "PM-CH04 p. 45-56 <-> BS-CH41 part0047.html",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "MEDIUM",
+    "alternative_interpretation": "DISTINCT_FRAME: Financial compounding serves capital wealth accumulation whereas revolutionary reading prepared the subject for sacrifice.",
+    "human_review_status": "REQUIRES_HUMAN_REVIEW"
+  },
+  {
+    "relationship_id": "REL-CB-02",
+    "relationship_class": "THEMATIC_PARALLEL",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-02-02",
+        "role": "LITERARY_DEPICTION"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH31-01",
+        "role": "HISTORICAL_FACT"
+      }
+    ],
+    "directionality": "NON_DIRECTIONAL",
+    "evidence": "Both works explore profound existential trauma triggered by premature mortality, but in radically divergent genres (fictional suicide vs penal hunger strike martyrdom).",
+    "provenance": "NW-SC-02-02 <-> BS-CH31-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "HIGH",
+    "alternative_interpretation": "NO_ESTABLISHED_RELATIONSHIP: Fiction and history occupy distinct ontological universes.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-03",
+    "relationship_class": "EXPLICIT_AGREEMENT",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH01-01",
+        "role": "AXIOM_A"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH09-01",
+        "role": "AXIOM_B"
+      }
+    ],
+    "directionality": "BI_DIRECTIONAL",
+    "evidence": "Demonstrated strict propositional agreement on identical scope within nonfiction: personal background dictates financial posture; true wealth is what is unseen.",
+    "provenance": "PM-CH01 & PM-CH09",
+    "epistemic_status": "SOURCE_ARGUMENT",
+    "confidence": "HIGH",
+    "alternative_interpretation": "None; authorial agreement is verbatim.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-04",
+    "relationship_class": "EXPLICIT_DISAGREEMENT",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH03-01",
+        "role": "CAPITALIST_PREMISE"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH27-01",
+        "role": "SOCIALIST_PREMISE"
+      }
+    ],
+    "directionality": "BI_DIRECTIONAL",
+    "evidence": "Housel advises individuals on how to preserve and enjoy personal capital accumulation. Bhagat Singh and the HSRA manifesto explicitly demand the abolition of private capital and the overthrow of capitalism.",
+    "provenance": "PM-CH03 <-> BS-CH27-01 (Manifesto)",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "HIGH",
+    "alternative_interpretation": "DIFFERENT_SCOPE: Micro-household finance vs macro-revolutionary state restructuring.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-05",
+    "relationship_class": "CONTRADICTION",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH05-01",
+        "role": "CLAIM_A"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH49-01",
+        "role": "CLAIM_B"
+      }
+    ],
+    "directionality": "BI_DIRECTIONAL",
+    "evidence": "Evaluated candidate pair: Survival as primary imperative vs voluntary martyrdom. Passed through 10-step Contradiction Gate; resolved as UNRESOLVED_TENSION rather than TRUE_CONTRADICTION due to differing normative axioms.",
+    "provenance": "PM-CH05 <-> BS-CH49-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "HIGH",
+    "alternative_interpretation": "TRUE_CONTRADICTION in practical life triage.",
+    "human_review_status": "REQUIRES_HUMAN_REVIEW"
+  },
+  {
+    "relationship_id": "REL-CB-06",
+    "relationship_class": "COMPLEMENTARY_EVIDENCE",
+    "source_units": [
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01",
+        "role": "FORENSIC_RECORD"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH28-01",
+        "role": "WITNESS_TESTIMONY"
+      }
+    ],
+    "directionality": "A_TO_B",
+    "evidence": "FIR No. 121 and post-mortem bullet trajectory analysis corroborate the physical mechanics described in conspirator testimonies regarding Saunders shooting.",
+    "provenance": "BS-CH22-01 <-> BS-CH28-01",
+    "epistemic_status": "CORROBORATED_HISTORICAL_FACT",
+    "confidence": "HIGH",
+    "alternative_interpretation": "None; primary archival records corroborate ballistic findings.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-07",
+    "relationship_class": "HISTORICAL_INSTANCE",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH10-01",
+        "role": "ANALYTICAL_RULE"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH12-01",
+        "role": "CONCRETE_INSTANCE"
+      }
+    ],
+    "directionality": "A_TO_B",
+    "evidence": "Housel’s rule that unexpected shocks require unallocated liquidity buffers is historically instantiated by the Kakori defense campaign mobilizing rapid funds across India under emergency arrests.",
+    "provenance": "PM-CH10 <-> BS-CH12-01",
+    "epistemic_status": "BKRS_ANALYTICAL_APPLICATION",
+    "confidence": "MEDIUM",
+    "alternative_interpretation": "DISTINCT_FRAME: Political solidarity funds have distinct dynamics from personal emergency savings.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-08",
+    "relationship_class": "FICTIONAL_EXPLORATION",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-01-01",
+        "role": "EXPERIENTIAL_SCENE"
+      },
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH01-01",
+        "role": "THEORETICAL_PROPOSITION"
+      }
+    ],
+    "directionality": "A_TO_B",
+    "evidence": "Toru Watanabe’s involuntary psychosomatic reaction to hearing an acoustic song explores the raw subjective interiority of Housel’s proposition that formative experiences indelibly dictate emotional response.",
+    "provenance": "NW-SC-01-01 <-> PM-CH01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "MEDIUM",
+    "alternative_interpretation": "THEMATIC_PARALLEL: Independent literary depiction of trauma.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-09",
+    "relationship_class": "ANALYTICAL_APPLICATION",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH06-01",
+        "role": "ANALYTICAL_FRAMEWORK"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH22-01",
+        "role": "TARGET_CASE"
+      }
+    ],
+    "directionality": "A_TO_B",
+    "evidence": "Applying Housel’s tail-risk framework (outlier events driving 99% of macro results) to evaluate the Saunders assassination as a high-impact catalyst that altered the trajectory of the freedom struggle.",
+    "provenance": "PM-CH06 <-> BS-CH22-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "LOW",
+    "alternative_interpretation": "DISTINCT_FRAME: Political direct action operates under ideological and state power imperatives, not probability distributions.",
+    "human_review_status": "REQUIRES_HUMAN_REVIEW"
+  },
+  {
+    "relationship_id": "REL-CB-10",
+    "relationship_class": "CONCEPTUAL_EXTENSION",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH04-01",
+        "role": "ORIGINAL_CONCEPT"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH37-01",
+        "role": "EXTENDED_DOMAIN"
+      }
+    ],
+    "directionality": "A_TO_B",
+    "evidence": "Extending the concept of ultra-long time horizons from investment portfolios to multi-generational anti-colonial class struggle where participants expect no personal reward in their lifetimes.",
+    "provenance": "PM-CH04 <-> BS-CH37-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "MEDIUM",
+    "alternative_interpretation": "DISTINCT_FRAME: Financial discounting is self-interested; revolutionary struggle is altruistic.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-11",
+    "relationship_class": "CONCEPTUAL_LIMITATION",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH05-01",
+        "role": "GENERAL_RULE"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH23-01",
+        "role": "BOUNDARY_CONDITION"
+      }
+    ],
+    "directionality": "B_TO_A",
+    "evidence": "Bhagat Singh’s decision to throw non-lethal bombs in the Assembly and court death demonstrates the failure boundary of Housel’s universal rule of survival: in anti-colonial crises, biological survival can mean political ruin.",
+    "provenance": "PM-CH05 <-> BS-CH23-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "HIGH",
+    "alternative_interpretation": "EXPLICIT_DISAGREEMENT on core ethical priorities.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-12",
+    "relationship_class": "DISTINCT_FRAME",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH11-01",
+        "role": "PRAGMATIC_FRAME"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH46-01",
+        "role": "DIALECTICAL_FRAME"
+      }
+    ],
+    "directionality": "NON_DIRECTIONAL",
+    "evidence": "Apparent focus on reason resolves into incompatible paradigms: Housel defines reasonableness as emotional peace of mind; Bhagat Singh defines reason as ruthless dialectical destruction of unscientific illusion.",
+    "provenance": "PM-CH11 <-> BS-CH46-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "HIGH",
+    "alternative_interpretation": "DIFFERENT_DEFINITION: Same lexical root denoting distinct philosophies.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-13",
+    "relationship_class": "DIFFERENT_DEFINITION",
+    "source_units": [
+      {
+        "book_id": "the-psychology-of-money",
+        "source_unit_id": "UNIT-POM-CH07-01",
+        "role": "BOURGEOIS_AUTONOMY"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH27-01",
+        "role": "SOCIALIST_LIBERATION"
+      }
+    ],
+    "directionality": "NON_DIRECTIONAL",
+    "evidence": "Identical word \"freedom\" denotes completely different concepts: control over personal calendar in a market society vs elimination of imperialist subjugation and class exploitation.",
+    "provenance": "PM-CH07 <-> BS-CH27-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "HIGH",
+    "alternative_interpretation": "DISTINCT_FRAME: Incommensurable political-economic systems.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-14",
+    "relationship_class": "CAUSALLY_RELATED",
+    "source_units": [
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH04-01",
+        "role": "DOCUMENTED_INFLUENCE_SOURCE"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH46-01",
+        "role": "INFLUENCED_WRITING"
+      }
+    ],
+    "directionality": "A_TO_B",
+    "evidence": "Documented archival reading: Bhagat Singh explicitly studied European anarchist and revolutionary literature (Bakunin, Marx, Kropotkin), directly citing their works in his jail writings.",
+    "provenance": "BS-CH04-01 <-> BS-CH46-01",
+    "epistemic_status": "CORROBORATED_HISTORICAL_FACT",
+    "confidence": "HIGH",
+    "alternative_interpretation": "None; documented in subject’s own prison notebooks and citations.",
+    "human_review_status": "AUTO_ACCEPTED"
+  },
+  {
+    "relationship_id": "REL-CB-15",
+    "relationship_class": "NO_ESTABLISHED_RELATIONSHIP",
+    "source_units": [
+      {
+        "book_id": "norwegian-wood",
+        "source_unit_id": "SCENE-NW-01-02",
+        "role": "UNIT_A"
+      },
+      {
+        "book_id": "bhagat-singh-a-life-in-revolution",
+        "source_unit_id": "KU-BS-CH25-01",
+        "role": "UNIT_B"
+      }
+    ],
+    "directionality": "NON_DIRECTIONAL",
+    "evidence": "Formal negative determination: Murakami’s description of dormitory life in 1968 Tokyo and the Lahore Special Tribunal legal proceedings share zero conceptual, historical, or empirical connection.",
+    "provenance": "NW-SC-01-02 <-> BS-CH25-01",
+    "epistemic_status": "BKRS_DERIVED_SYNTHETIC_INFERENCE",
+    "confidence": "HIGH",
+    "alternative_interpretation": "None; confirmed absent.",
+    "human_review_status": "AUTO_ACCEPTED"
+  }
+]
