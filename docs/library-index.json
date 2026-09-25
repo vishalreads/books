@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 18,
-  "total_hours_saved": 405.5,
+  "total_books": 19,
+  "total_hours_saved": 414.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -756,6 +756,49 @@
       ],
       "html_path": "distillations/siddhartha/index.html",
       "markdown_path": "distillations/siddhartha/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "brave-new-world",
+      "title": "Brave New World",
+      "subtitle": "A Forensic Biopolitical Reconstruction of Technological Totalitarianism, Engineered Contentment, and the Abolition of Human Nature",
+      "author": "Aldous Huxley",
+      "year": 1932,
+      "publisher": "Chatto & Windus / Intellectualist Dystopian Classics Series",
+      "epistemic_tier": "Tier 1: Master Dystopian Fiction & Biopolitical Philosophy",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "18 Invariant Chapters (Complete Canonical Text)",
+      "reading_time_saved": "8.5 hrs saved",
+      "hours_val": 8.5,
+      "core_axiom": "Community, Identity, Stability: The ultimate totalitarian trap is not cruelty, but the total elimination of suffering in exchange for the voluntary surrender of the human soul.",
+      "tags": [
+        "Aldous Huxley",
+        "Brave New World",
+        "Biopolitics",
+        "Conditioning",
+        "Soma",
+        "Bokanovsky",
+        "Mustapha Mond",
+        "John the Savage",
+        "Right to be Unhappy"
+      ],
+      "key_models": [
+        "The Bokanovsky Biological Predestination Engine",
+        "Hypnopaedic Subconscious Value Inculcation",
+        "The Pharmacological Pacification Shield (Soma)",
+        "The Art-Stability Trade-Off Theorem",
+        "The Cyprus Experiment Elite Saturation Law",
+        "The Unhappy Dignity Axiom (The Right to Suffer)"
+      ],
+      "landmark_studies": [
+        "Pavlovian Classical Conditioning & Reflex Modification",
+        "Industrial Taylorism & Fordist Assembly Line Psychology",
+        "Cardinal Newman & Maine de Biran Religious Epistemology",
+        "The 1930s Eugenics & Embryological Laboratory Canon"
+      ],
+      "html_path": "distillations/brave-new-world/index.html",
+      "markdown_path": "distillations/brave-new-world/master-notes.md",
       "featured": false
     }
   ]
