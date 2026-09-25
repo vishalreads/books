@@ -1,0 +1,134 @@
+{
+  "$schema": "https://intellectualist.org/schemas/bkrs-synthesis-hardening-v1.json",
+  "audit_version": "1.0.0",
+  "timestamp": "2026-09-25T12:56:00Z",
+  "phase": "Step 5.0A — Cross-Book Synthesis Specification Hardening Audit",
+  "audit_scope": "Evaluation and hardening of Step 5.0 architecture against epistemic drift, false consensus, concept collapse, and causal importation",
+  "executive_determination": "SPECIFICATION_HARDENED_PENDING_IMPLEMENTATION_STAGING",
+  "findings": [
+    {
+      "finding_id": "FINDING-01",
+      "component": "Relationship Taxonomy",
+      "severity": "HIGH",
+      "step_5_0_status": "Taxonomy truncated from 15 proposed classes to 10 classes without exhaustive semantic preservation proof.",
+      "required_amendment": "Restore all 15 distinct relationship classes with formal evidentiary thresholds, epistemic boundaries, and negative implications for each.",
+      "rationale": "Omitting ANALYTICAL_APPLICATION, CONCEPTUAL_EXTENSION, CONCEPTUAL_LIMITATION, DIFFERENT_DEFINITION, and CAUSALLY_RELATED creates semantic collapse where distinct logical relations are forced into generic parallels.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-02",
+      "component": "Consensus Model",
+      "severity": "HIGH",
+      "step_5_0_status": "Consensus states lacked formal negative rules, risking false consensus when sources share vocabulary or general topic.",
+      "required_amendment": "Formalize 6 discrete consensus states with mandatory negative rules: SIMILARITY != AGREEMENT, ABSENCE_OF_DISAGREEMENT != AGREEMENT, SHARED_VOCABULARY != SHARED_CONCEPT, UNRESOLVED != CONTRADICTION.",
+      "rationale": "Prevents synthesis engines from conflating superficial topical overlap with intellectual agreement.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-03",
+      "component": "Concept Registry",
+      "severity": "CRITICAL",
+      "step_5_0_status": "Concept mapping model lacked dual-identifier structure and permitted embedding similarity to influence concept equivalence.",
+      "required_amendment": "Mandate canonical_concept_id vs book_specific_concept_id separation; prohibit embedding similarity alone from establishing equivalence; add explicit non-equivalence evidence field; test polysemic terms like 'freedom' across NW, PM, and BS.",
+      "rationale": "Without strict conceptual demarcation, words with radically different meanings across genres (e.g. bourgeois autonomy vs revolutionary liberation) are collapsed into single nodes.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-04",
+      "component": "Attribution Model",
+      "severity": "HIGH",
+      "step_5_0_status": "Attribution model lacked explicit voice layers (author vs character, narrator vs character, subject vs biographer).",
+      "required_amendment": "Expand attribution schema to explicitly track speaker voice, text level (primary vs secondary), and modality (explicit source assertion vs BKRS synthetic inference); define fallback for ambiguous attribution.",
+      "rationale": "Fictional characters and secondary biographers must never be cited as speaking for the author or historical subject.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-05",
+      "component": "Cross-Genre Epistemic Boundaries",
+      "severity": "CRITICAL",
+      "step_5_0_status": "Cross-genre interaction rules were qualitative rather than enforceable programmatic boundary constraints.",
+      "required_amendment": "Codify 9 explicit cross-genre boundaries with permitted relationship types, prohibited inferences, and concrete benchmark examples.",
+      "rationale": "Prevents fictional scenes from masquerading as historical evidence, and biographer hypotheses from becoming subject facts.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-06",
+      "component": "Contradiction Gate",
+      "severity": "HIGH",
+      "step_5_0_status": "Contradiction criteria did not distinguish scope, timeframe, or analytical level differences, risking false contradiction assignments.",
+      "required_amendment": "Establish a 10-step sequential Contradiction Gate yielding 7 distinct outcome states (TRUE_CONTRADICTION, DIFFERENT_DEFINITION, DIFFERENT_SCOPE, DIFFERENT_FRAME, PARTIAL_OVERLAP, UNRESOLVED_TENSION, NO_ESTABLISHED_RELATIONSHIP).",
+      "rationale": "Divergent conclusions arising from different frames (e.g. survival vs sacrifice) are dialectical tensions, not propositional contradictions.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-07",
+      "component": "Cross-Book Causality",
+      "severity": "CRITICAL",
+      "step_5_0_status": "Prohibition on causal importation did not distinguish source-internal causality from legitimate source-explicit cross-book intellectual influence.",
+      "required_amendment": "Define 4 discrete causal tiers (A: Source-Internal, B: Source-Explicit Cross-Book Influence, C: BKRS-Generated Causal Hypothesis, D: Mere Temporal/Thematic Association); mandate [BKRS_CAUSAL_INFERENCE] tag with mandatory competing explanations.",
+      "rationale": "Historical subjects sometimes explicitly read and were influenced by other thinkers; this must be represented without allowing ungrounded causal importation.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-08",
+      "component": "SynthesisUnit Schema",
+      "severity": "HIGH",
+      "step_5_0_status": "Proposed SynthesisUnit schema lacked operational audit flags (source_explicitness, concept_mapping_status, human_review_status, inference_rationale).",
+      "required_amendment": "Incorporate 8 additional mandatory operational fields into the SynthesisUnit schema to guarantee machine checkability and backward auditability.",
+      "rationale": "Without operational flags, downstream verification engines cannot programmatically distinguish automated inferences from verified source extractions.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-09",
+      "component": "Adversarial Test Suite",
+      "severity": "MEDIUM",
+      "step_5_0_status": "Adversarial test cases in Step 5.0 were labeled 'VERIFIED' despite not having been executed against an active synthesis engine.",
+      "required_amendment": "Reclassify all 10 test cases as 'DESIGNED'; specify alternative admissible classifications, prohibited inferences, and circularity safeguards for each.",
+      "rationale": "Accuracy in test accounting: a test suite cannot be verified before the engine it tests is implemented.",
+      "implementation_blocker": false
+    },
+    {
+      "finding_id": "FINDING-10",
+      "component": "False-Consensus Prevention",
+      "severity": "HIGH",
+      "step_5_0_status": "Step 5.0 lacked a dedicated catalog of false-consensus archetypes.",
+      "required_amendment": "Author a catalog of 12 distinct false-consensus archetypes with explicit detection rules and failure modes.",
+      "rationale": "Protects against subtle LLM blending tendencies where superficially similar prose is coerced into agreement.",
+      "implementation_blocker": true
+    },
+    {
+      "finding_id": "FINDING-11",
+      "component": "View Architecture",
+      "severity": "MEDIUM",
+      "step_5_0_status": "The proposed 3-view triad assumed a 'dialectical' framing that might inadequately surface non-dialectical analytical relationships.",
+      "required_amendment": "Re-align view definitions to ensure full coverage of the 5 canonical perspectives: Landscape, Agreements/Differences, Tensions, Evidence/Attribution, and Cross-Book Relationships.",
+      "rationale": "Ensures the synthesis reading interface is intellectually comprehensive and renderer-agnostic.",
+      "implementation_blocker": false
+    },
+    {
+      "finding_id": "FINDING-12",
+      "component": "Governance & Invariants",
+      "severity": "CRITICAL",
+      "step_5_0_status": "Conflict resolution between Book Master and Synthesis Unit was stated in prose but lacked a formal programmatic precedence rule.",
+      "required_amendment": "Codify the Invariant: Book Master is unconditionally immutable and authoritative; any synthesis unit conflicting with an underlying Book Master is automatically quarantined; orphan synthesis units are strictly prohibited.",
+      "rationale": "Guarantees that the secondary derivation layer cannot corrupt canonical book data.",
+      "implementation_blocker": true
+    }
+  ],
+  "amendments_summary": {
+    "total_findings": 12,
+    "critical_count": 4,
+    "high_count": 6,
+    "medium_count": 2,
+    "blocking_count": 10
+  },
+  "readiness_verdict": {
+    "step_5_0a_status": "HARDENED_SPECIFICATION_CERTIFIED",
+    "ready_for_step_5_1": true,
+    "conditions_for_step_5_1": [
+      "No production synthesis engine implementation until Step 5.1 data structures are frozen",
+      "No Book Master file may be touched",
+      "Adversarial test suite must be authored before synthesis engine execution"
+    ]
+  }
+}
