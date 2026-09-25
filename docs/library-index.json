@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 19,
-  "total_hours_saved": 414.0,
+  "total_books": 20,
+  "total_hours_saved": 424.0,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -799,6 +799,50 @@
       ],
       "html_path": "distillations/brave-new-world/index.html",
       "markdown_path": "distillations/brave-new-world/master-notes.md",
+      "featured": false
+    },
+    {
+      "id": "open-agassi",
+      "title": "Open: An Autobiography",
+      "subtitle": "A Forensic Psychobiographical Reconstruction of Parental Coercion, Identity Crisis, Elite Performance, and Altruistic Redemption",
+      "author": "Andre Agassi (with J. R. Moehringer)",
+      "year": 2009,
+      "publisher": "Alfred A. Knopf / Intellectualist Master Autobiography Series",
+      "epistemic_tier": "Tier 1: Master Sports Psychobiography & Performance Psychology",
+      "tier_short": "Tier 1",
+      "category": "Behavioral Psychology & Habit Architecture",
+      "original_volume": "14 Invariant Life Episodes (388 Pages Unabridged)",
+      "reading_time_saved": "10.0 hrs saved",
+      "hours_val": 10.0,
+      "core_axiom": "I play tennis for a living, even though I hate tennis, hate it with a dark and secret passion, and always have.",
+      "tags": [
+        "Andre Agassi",
+        "Open",
+        "Tennis",
+        "Parental Coercion",
+        "The Dragon",
+        "Winning Ugly",
+        "Brad Gilbert",
+        "Gil Reyes",
+        "Steffi Graf",
+        "Redemption"
+      ],
+      "key_models": [
+        "The Prison of Imposed Excellence (Childhood Coercion & Autonomous Rebellion)",
+        "The Dragon's Arithmetic (1 Million Repetitions / Year Motor Automation)",
+        "The Percentage Asymmetry Law ('Winning Ugly' & The Gravity Well)",
+        "The Dopaminergic Escape Trap (Crystal Meth & False Personas)",
+        "The Desert Forge Crucible (Gil Reyes Physical & Moral Rebuilding)",
+        "Altruistic Transmutation (Converting Childhood Trauma into Educational Philanthropy)"
+      ],
+      "landmark_studies": [
+        "Early High-Volume Motor Skill Acquisition & Myelination Studies",
+        "Brad Gilbert's Tactical Percentage Play Framework (Winning Ugly)",
+        "ATP Tour Historical Ranking Points & Grand Slam Match Forensics",
+        "Psychology of Spondylolisthesis, Spinal Stenosis & Cortisone Performance"
+      ],
+      "html_path": "distillations/open-agassi/index.html",
+      "markdown_path": "distillations/open-agassi/master-notes.md",
       "featured": false
     }
   ]
