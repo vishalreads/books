@@ -1,0 +1,46 @@
+{
+  "manifest_version": "1.0.0",
+  "source_manifest_version": "1.1.0",
+  "book_id": "bhagat-singh-a-life-in-revolution",
+  "title": "Bhagat Singh: A Life in Revolution",
+  "author": "Satvinder S. Juss",
+  "publisher": "Penguin Random House India",
+  "publication_year": 2022,
+  "reconstruction_timestamp": "2026-09-25T05:16:43.040Z",
+  "total_knowledge_units": 78,
+  "unit_type_distribution": {
+    "HISTORICAL_EPISODE": 49,
+    "LIFE_EPISODE": 4,
+    "DOCUMENT_UNIT": 25
+  },
+  "epistemic_distribution": {
+    "[PRIMARY_SUBJECT_WRITING]": 8,
+    "[BIOGRAPHER_THESIS]": 8,
+    "[CORROBORATED_HISTORICAL_FACT]": 32,
+    "[CONTEMPORARY_RECORD]": 29,
+    "[COERCED_TESTIMONY]": 1
+  },
+  "materiality_distribution": {
+    "critical": 63,
+    "important": 14,
+    "textural": 1
+  },
+  "source_coverage": {
+    "total_manifest_units": 1954,
+    "covered_units": 1954,
+    "silent_omissions": 0,
+    "coverage_rate": 1
+  },
+  "qualified_cases_enforced": [
+    "VAL-HIST-D1-03",
+    "VAL-HIST-D5-33",
+    "VAL-HIST-D5-34",
+    "VAL-HIST-D6-40",
+    "VAL-HIST-D6-41",
+    "VAL-HIST-D6-42",
+    "VAL-HIST-D6-43",
+    "VAL-HIST-D6-44",
+    "VAL-HIST-D6-45"
+  ],
+  "reconstruction_status": "CERTIFIED_CANONICAL"
+}
