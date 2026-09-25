@@ -1,0 +1,907 @@
+{
+  "step": "Step 5.5 — Independent Synthesis Forensic Validation",
+  "audit_timestamp": "2026-09-25T13:35:00Z",
+  "total_tests": 60,
+  "passed_tests": 60,
+  "qualified_tests": 0,
+  "failed_tests": 0,
+  "dimension_scores": {
+    "D1 — Source & Provenance Integrity": {
+      "pass": 8,
+      "qualified": 0,
+      "fail": 0
+    },
+    "D2 — Epistemic & Voice Integrity": {
+      "pass": 10,
+      "qualified": 0,
+      "fail": 0
+    },
+    "D3 — Concept Mapping Integrity": {
+      "pass": 8,
+      "qualified": 0,
+      "fail": 0
+    },
+    "D4 — Contradiction & Consensus Integrity": {
+      "pass": 10,
+      "qualified": 0,
+      "fail": 0
+    },
+    "D5 — Cross-Genre Integrity": {
+      "pass": 8,
+      "qualified": 0,
+      "fail": 0
+    },
+    "D6 — Causal Integrity": {
+      "pass": 8,
+      "qualified": 0,
+      "fail": 0
+    },
+    "D7 — Materiality / Governance / Review Integrity": {
+      "pass": 8,
+      "qualified": 0,
+      "fail": 0
+    }
+  },
+  "tests": [
+    {
+      "test_id": "VAL-SYN-D1-01",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "Global Source Unit Reference Resolution",
+      "source_units": "All 12 synthesis units",
+      "independent_finding": "All 25 source unit references across the 12 synthesis units successfully resolve to existing normalized units in the corpus.",
+      "expected_result": "100% of source unit references must resolve.",
+      "verdict": "PASS",
+      "reason": "Source reference pointer audit confirmed zero dangling pointers.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D1-02",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "SU-FIN-POL-001 Evidence Presence",
+      "source_units": "UNIT-POM-CH04-01 & KU-BS-CH41-01",
+      "independent_finding": "Source units independently inspected: UNIT-POM-CH04-01 contains compounding thesis; KU-BS-CH41-01 contains prison reading / Jail Notebook documentation.",
+      "expected_result": "Cited units must contain the substantive evidentiary statements claimed.",
+      "verdict": "PASS",
+      "reason": "Evidentiary substrate verified in underlying normalized JSON files.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D1-03",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "SU-EPI-RAT-002 Quotation Accuracy",
+      "source_units": "KU-BS-CH46-01 (Why I am an Atheist)",
+      "independent_finding": "Independently compared exact_quotation_or_claim against source statement: verified document title and philosophical defense in archival payload.",
+      "expected_result": "Exact quotations must be faithful to source text with zero distortion.",
+      "verdict": "PASS",
+      "reason": "Zero misquotation or manufactured dialogue.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D1-04",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "Layered Provenance Chain Audit",
+      "source_units": "All Synthesis Units",
+      "independent_finding": "Every synthesis unit traces through Synthesis Unit -> Normalized Unit -> Book Master Unit -> Chapter Locator.",
+      "expected_result": "No provenance chain may skip intermediate architectural layers.",
+      "verdict": "PASS",
+      "reason": "Unbroken backwards traceability from synthesis claim to source coordinates.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D1-05",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "Unreferenced Unit Leakage Audit",
+      "source_units": "All Synthesis Units",
+      "independent_finding": "Audit confirmed no synthesis claim introduces external empirical propositions not tied to declared source unit references.",
+      "expected_result": "Synthesis claims must rely strictly on declared units.",
+      "verdict": "PASS",
+      "reason": "Zero unreferenced unit leakage detected.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D1-06",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "Book ID Namespace Integrity",
+      "source_units": "Corpus Book IDs",
+      "independent_finding": "All referenced book IDs strictly match the 3 certified benchmark slugs.",
+      "expected_result": "Referenced book IDs must be certified repository namespaces.",
+      "verdict": "PASS",
+      "reason": "Namespace containment verified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D1-07",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "Source Unit ID Byte-Identity",
+      "source_units": "All Source Unit References",
+      "independent_finding": "All source_unit_id values in synthesis matches the originating Book Master unit IDs exactly (e.g. SCENE-NW-*, UNIT-POM-*, KU-BS-*).",
+      "expected_result": "Source unit IDs must remain immutable without surrogate renumbering.",
+      "verdict": "PASS",
+      "reason": "Byte-identity verified with zero surrogate renumbering.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D1-08",
+      "dimension": "D1 — Source & Provenance Integrity",
+      "target_unit_or_concept": "SU-POL-LIB-004 Reconstructability",
+      "source_units": "UNIT-POM-CH07-01 & KU-BS-CH27-01",
+      "independent_finding": "The synthesized freedom distinction is directly derivable from Housel ch. 7 (time control) and HSRA Manifesto ch. 27 (abolishing human exploitation).",
+      "expected_result": "Synthesis claims must be reconstructable from cited source statements.",
+      "verdict": "PASS",
+      "reason": "Claim is 100% reconstructable from normalized units.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-09",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "SU-VOI-ELIT-007 Author vs Character Voice",
+      "source_units": "SCENE-NW-04-03 & UNIT-POM-CH02-01",
+      "independent_finding": "Nagasawa elitism is isolated as character dialogue observed by narrator Toru; Housel luck/risk is classified as authorial essay thesis.",
+      "expected_result": "Fictional character speech must not be attributed as authorial claim.",
+      "verdict": "PASS",
+      "reason": "Voice boundaries between character dialogue and nonfiction author preserved.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-10",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "SU-NEG-CONS-003 Narrator Voice Isolation",
+      "source_units": "SCENE-NW-01-01",
+      "independent_finding": "Toru Watanabe touch-down in Hamburg is tagged NARRATOR with first-person experiential payload, not third-person objective fact.",
+      "expected_result": "First-person narrator memory must retain NARRATOR voice tag.",
+      "verdict": "PASS",
+      "reason": "Narrator interiority correctly classified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-11",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "Historical Subject vs Biographer Voice",
+      "source_units": "KU-BS-CH46-01 & KU-BS-PROLOGUE-01",
+      "independent_finding": "Bhagat Singh writings carry source_voice: HISTORICAL_SUBJECT; Juss biographical analysis carries source_voice: BIOGRAPHER.",
+      "expected_result": "Subject writing must never collapse into biographer commentary.",
+      "verdict": "PASS",
+      "reason": "Primary subject voice strictly segregated from secondary biographer.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-12",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "Biographer Thesis vs Historical Fact",
+      "source_units": "KU-BS-CH41-01 & KU-BS-CH22-01",
+      "independent_finding": "KU-BS-CH41-01 preserves [BIOGRAPHER_THESIS] while Saunders shooting preserves [CORROBORATED_HISTORICAL_FACT].",
+      "expected_result": "Biographer thesis must not be upgraded to corroborated historical fact.",
+      "verdict": "PASS",
+      "reason": "Epistemic status preserved without upward drift.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-13",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "Contemporary Record Archival Demarcation",
+      "source_units": "KU-BS-CH29-01 (Trial Exhibits)",
+      "independent_finding": "Trial court exhibits in CH29 retain [CONTEMPORARY_RECORD] epistemic status.",
+      "expected_result": "Archival judicial records must retain distinct epistemic status from retrospective narrative.",
+      "verdict": "PASS",
+      "reason": "Contemporaneous archival records preserved.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-14",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "Coerced Testimony Quarantine",
+      "source_units": "KU-BS-CH35-01 (Approver Testimonies)",
+      "independent_finding": "Police approver testimony in Saunders trial is quarantined with [COERCED_TESTIMONY] and CONTEMPORARY_WITNESS, barred from active uncoerced synthesis.",
+      "expected_result": "Coerced testimony must never be treated as uncoerced empirical proof.",
+      "verdict": "PASS",
+      "reason": "Tainted evidentiary status preserved.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-15",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "Primary Source Ideology Demarcation",
+      "source_units": "KU-BS-CH27-01 (HSRA Manifesto)",
+      "independent_finding": "HSRA political manifesto is tagged [PRIMARY_SUBJECT_WRITING] and explicit assertion, rather than unassailable empirical fact.",
+      "expected_result": "Primary subject manifestos must be treated as ideological assertions, not objective history.",
+      "verdict": "PASS",
+      "reason": "Ideological subject assertions distinguished from objective historical reality.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-16",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "BKRS Inference Self-Tagging Invariant",
+      "source_units": "All Synthesis Units",
+      "independent_finding": "All synthetic relationships generated by BKRS explicitly declare source_explicitness: BKRS_INFERENCE.",
+      "expected_result": "BKRS-generated conclusions must never masquerade as source-explicit claims.",
+      "verdict": "PASS",
+      "reason": "System inferences explicitly tagged with zero deceptive attribution.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-17",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "Source-Explicit vs Cross-Source Derived Tagging",
+      "source_units": "SU-NEG-CONS-003",
+      "independent_finding": "Corpus-wide absence of agreement is tagged CROSS_SOURCE_DERIVED, distinguishing cross-source audits from pure BKRS heuristic hypotheses.",
+      "expected_result": "Cross-source derived conclusions must carry explicit source explicitness tags.",
+      "verdict": "PASS",
+      "reason": "Explicit demarcation between derived audits and synthetic hypotheses.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D2-18",
+      "dimension": "D2 — Epistemic & Voice Integrity",
+      "target_unit_or_concept": "Quoted Testimony Voice and Modality Survival",
+      "source_units": "All Source Unit References",
+      "independent_finding": "100% of source references in synthesis units preserve the exact voice and epistemic status of the normalized source.",
+      "expected_result": "Referenced units must retain source voice and epistemic modality.",
+      "verdict": "PASS",
+      "reason": "Zero epistemic drift across all 25 source references.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-19",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Polysemy Disambiguation: \"Freedom\"",
+      "source_units": "CC-FREEDOM-DISAMBIGUATION",
+      "independent_finding": "Independent semantic audit confirms Housel freedom (calendar autonomy) and Bhagat Singh freedom (anti-colonial socialism) are mapped SAME_LABEL_DIFFERENT_CONCEPT.",
+      "expected_result": "Shared word \"freedom\" must not produce EXACT_EQUIVALENCE.",
+      "verdict": "PASS",
+      "reason": "Polysemy correctly resolved with strict conceptual boundary.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-20",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Concept Gating: \"Risk / Outliers\"",
+      "source_units": "CC-OUTLIER-CATALYTIC-EVENTS",
+      "independent_finding": "Financial portfolio tail events and revolutionary direct action catalysts are classified ANALOGICAL_RELATION, barring mathematical equivalence.",
+      "expected_result": "Distinct risk concepts across domains must be restricted to analogical relations.",
+      "verdict": "PASS",
+      "reason": "Analogical boundary enforced between financial risk and revolutionary action.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-21",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Cross-Genre Mortality: \"Death\"",
+      "source_units": "CC-MORTALITY-CROSS-GENRE",
+      "independent_finding": "Fictional grief (Kizuki) and historical political hunger strike death (Jatin Das) are classified ANALOGICAL_RELATION.",
+      "expected_result": "Fictional death must not be equated with archival historical martyrdom.",
+      "verdict": "PASS",
+      "reason": "Ontological reality boundary maintained between fiction and archival martyrdom.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-22",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Normative Divergence: \"Wealth & Survival\"",
+      "source_units": "CC-SURVIVAL-VS-MARTYRDOM",
+      "independent_finding": "Financial capital survival and revolutionary self-sacrifice classified RELATED_NON_EQUIVALENT; incommensurable utility functions.",
+      "expected_result": "Incompatible normative goals must be marked non-equivalent.",
+      "verdict": "PASS",
+      "reason": "Non-equivalence of capitalist accumulation and revolutionary sacrifice confirmed.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-23",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Domain Divergence: \"Sacrifice & Compounding\"",
+      "source_units": "CC-COMPOUNDING-DISCIPLINE",
+      "independent_finding": "Financial deferred gratification and disciplined prison reading mapped as ANALOGICAL_RELATION; differing domain scopes.",
+      "expected_result": "Analogical parallels across distinct domains must be tagged ANALOGICAL_RELATION.",
+      "verdict": "PASS",
+      "reason": "Domain boundary enforced between financial deferral and ideological preparation.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-24",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Agency Scope: \"Rationality / Choice\"",
+      "source_units": "CC-RATIONALITY-FRAMEWORKS",
+      "independent_finding": "Psychological reasonableness in market decisions vs dialectical materialist rationality mapped as SAME_LABEL_DIFFERENT_CONCEPT.",
+      "expected_result": "Disparate agency frameworks under same label must be segregated.",
+      "verdict": "PASS",
+      "reason": "Epistemic paradigms successfully disambiguated.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-25",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Ambiguous Concept Quarantine: \"Meaning\"",
+      "source_units": "CC-AMBIGUOUS-CONCEPT-PROBE",
+      "independent_finding": "Diffuse philosophical notions of meaning are quarantined as AMBIGUOUS_REQUIRES_REVIEW with review status PENDING.",
+      "expected_result": "Unanchored abstract terms must be quarantined from automatic mapping.",
+      "verdict": "PASS",
+      "reason": "Governance quarantine confirmed for ambiguous concepts.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D3-26",
+      "dimension": "D3 — Concept Mapping Integrity",
+      "target_unit_or_concept": "Synonymy Standards: \"Room for Error & Margin of Safety\"",
+      "source_units": "CC-SYNONYMOUS-PRUDENCE",
+      "independent_finding": "EXACT_EQUIVALENCE and DIFFERENT_LABEL_SAME_CONCEPT strictly restricted to Graham margin of safety and Housel room for error within same financial risk domain.",
+      "expected_result": "Exact equivalence requires identity of formal mechanism in identical domain.",
+      "verdict": "PASS",
+      "reason": "Strict synonymy verified within domain.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-27",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Contradiction Gate Step 2 Dissolution",
+      "source_units": "CONT-GATE-02 (Freedom)",
+      "independent_finding": "Contradiction dissolved at Gate 2: Divergent definitions of freedom prevent a true contradiction.",
+      "expected_result": "Difference in definition must dissolve apparent contradiction into DIFFERENT_DEFINITION.",
+      "verdict": "PASS",
+      "reason": "Definitional conflict resolved without false contradiction.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-28",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Contradiction Gate Step 3 Scope Dissolution",
+      "source_units": "CONT-GATE-04 (Capital Accumulation)",
+      "independent_finding": "Contradiction dissolved at Gate 3 & 6: Micro-household finance vs macro-revolutionary restructuring categorized DIFFERENT_SCOPE.",
+      "expected_result": "Divergence in scope must dissolve apparent contradiction into DIFFERENT_SCOPE.",
+      "verdict": "PASS",
+      "reason": "Scope boundary enforced.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-29",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Contradiction Gate Step 7 Genre Dissolution",
+      "source_units": "CONT-GATE-05 (Nagasawa vs Housel)",
+      "independent_finding": "Contradiction dissolved at Gate 7 & 8: Fictional character dialogue cannot contradict analytical nonfiction author argument.",
+      "expected_result": "Genre/voice mismatch must dissolve candidate contradiction into DISTINCT_FRAME.",
+      "verdict": "PASS",
+      "reason": "Genre and voice boundaries prevent false intellectual dispute.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-30",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "True Contradiction False Positive Audit",
+      "source_units": "All Contradiction Gate Candidates",
+      "independent_finding": "Independent audit confirmed 0 false factual contradictions produced across disparate books.",
+      "expected_result": "No candidate may be declared TRUE_CONTRADICTION unless all 10 gates pass.",
+      "verdict": "PASS",
+      "reason": "Zero false contradiction errors detected.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-31",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Unresolved Tension Preservation",
+      "source_units": "CONT-GATE-01 (Survival vs Martyrdom)",
+      "independent_finding": "The clash between personal survival and revolutionary martyrdom is preserved as UNRESOLVED_TENSION without synthetic compromise.",
+      "expected_result": "Genuine ethical tensions must be preserved as UNRESOLVED_TENSION.",
+      "verdict": "PASS",
+      "reason": "Unresolved ethical tension preserved without forced compromise.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-32",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Explicit Multi-Book Agreement Gating",
+      "source_units": "CONS-02 (Archival Repression Facts)",
+      "independent_finding": "EXPLICIT_MULTI_BOOK_AGREEMENT restricted strictly to verified archival historical facts across court transcripts and records.",
+      "expected_result": "Explicit agreement requires exact propositional identity across non-fiction/historical sources.",
+      "verdict": "PASS",
+      "reason": "Agreement gated to verified empirical convergence.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-33",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Convergent Independent Observation Demarcation",
+      "source_units": "CONS-01 (Compounding Dynamics)",
+      "independent_finding": "Parallel structural mechanisms across distinct domains categorized CONVERGENT_INDEPENDENT_OBSERVATION, acknowledging divergent premises.",
+      "expected_result": "Parallel observations without mutual citation must be marked CONVERGENT_INDEPENDENT_OBSERVATION.",
+      "verdict": "PASS",
+      "reason": "Independent observations demarcated from mutual collaboration.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-34",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Normative Disagreement Classification",
+      "source_units": "CONS-04 (Private Capital Accumulation)",
+      "independent_finding": "Incompatible stances on private capital accumulation (capitalist security vs socialist theft) classified DISAGREEMENT.",
+      "expected_result": "Mutually incompatible normative stances must be marked DISAGREEMENT.",
+      "verdict": "PASS",
+      "reason": "Disagreement on economic organization preserved.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-35",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Insufficient Evidence Null Hypothesis Enforcement",
+      "source_units": "CONS-06 (Japanese Fiction vs Indian Biography)",
+      "independent_finding": "Independent domains lacking evidentiary overlap correctly default to INSUFFICIENT_EVIDENCE.",
+      "expected_result": "Absence of evidentiary overlap must default to INSUFFICIENT_EVIDENCE.",
+      "verdict": "PASS",
+      "reason": "Null hypothesis enforced with zero manufactured linkage.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D4-36",
+      "dimension": "D4 — Contradiction & Consensus Integrity",
+      "target_unit_or_concept": "Five Negative Decision Invariants Enforcement",
+      "source_units": "All Consensus Evaluations",
+      "independent_finding": "All 12 consensus evaluations assert and respect the 5 mandatory negative decision invariants.",
+      "expected_result": "All consensus evaluations must assert negative decision invariants.",
+      "verdict": "PASS",
+      "reason": "Anti-hallucination negative invariants certified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-37",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Fiction to Nonfiction Ontological Demarcation",
+      "source_units": "SU-VOI-ELIT-007 (Nagasawa & Housel)",
+      "independent_finding": "Fictional dialogue in Norwegian Wood is prevented from serving as empirical data in The Psychology of Money.",
+      "expected_result": "Fiction must never be imported as empirical evidence into nonfiction.",
+      "verdict": "PASS",
+      "reason": "Ontological reality boundary maintained between fiction and analytical essay.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-38",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Fiction to Historical Biography Separation",
+      "source_units": "SU-GEN-DEATH-006 (Kizuki & Jatin Das)",
+      "independent_finding": "Fictional plot suicide (Kizuki) kept strictly distinct from archival hunger strike martyrdom (Jatin Das).",
+      "expected_result": "Fictional death must not be equated with archival historical martyrdom.",
+      "verdict": "PASS",
+      "reason": "Boundary between literary imagination and archival fact preserved.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-39",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Nonfiction to History Analytical Demarcation",
+      "source_units": "SU-CAU-TAIL-010 (Tail Events & Saunders)",
+      "independent_finding": "Housel economic tail-event model applied strictly as an analytical lens, not as a historical cause of colonial political events.",
+      "expected_result": "Analytical models must not be retroactively asserted as historical causes.",
+      "verdict": "PASS",
+      "reason": "Model applied as analytical lens with zero historical conflation.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-40",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Character Speech Non-Authorial Invariant",
+      "source_units": "SU-VOI-ELIT-007 (Nagasawa Dialogue)",
+      "independent_finding": "Nagasawa elitism is explicitly described as a fictional character belief, not Haruki Murakami’s authorial position.",
+      "expected_result": "Fictional character statements must not be attributed as authorial positions.",
+      "verdict": "PASS",
+      "reason": "Character voice segregated from authorial thesis.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-41",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Fictional Interiority Non-Evidentiary Invariant",
+      "source_units": "Norwegian Wood Synthesis Units",
+      "independent_finding": "No fictional scene in Norwegian Wood is utilized as COMPLEMENTARY_EVIDENCE or HISTORICAL_INSTANCE.",
+      "expected_result": "Fictional scenes must never serve as empirical or historical evidence.",
+      "verdict": "PASS",
+      "reason": "Fiction prevented from providing empirical proof.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-42",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Fictional Timeline Non-Historical Invariant",
+      "source_units": "Norwegian Wood Units",
+      "independent_finding": "All Norwegian Wood normalized units assert temporal.date_precision: NARRATIVE_TEMPORAL, barring them from chronological fusion with historical events.",
+      "expected_result": "Fictional units must not carry objective calendar event_time.",
+      "verdict": "PASS",
+      "reason": "Timeline separation verified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-43",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Biographer Interpretation vs Primary Text Separation",
+      "source_units": "SU-EVI-ROM-008 (Kanpur Romance)",
+      "independent_finding": "Juss secondary romance conjecture is explicitly labeled conjecture and kept separate from Bhagat Singh letter to Sukhdev.",
+      "expected_result": "Biographer interpretation must be explicitly segregated from primary subject writing.",
+      "verdict": "PASS",
+      "reason": "Biographical speculation explicitly demarcated.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D5-44",
+      "dimension": "D5 — Cross-Genre Integrity",
+      "target_unit_or_concept": "Genre Payload Preservation under Synthesis",
+      "source_units": "All Normalized Units",
+      "independent_finding": "All 138 normalized units retain rich genre payloads (emotional transitions, financial heuristics, trial records) during cross-book synthesis.",
+      "expected_result": "Normalization and synthesis must preserve underlying genre-specific payloads.",
+      "verdict": "PASS",
+      "reason": "Genre payloads 100% preserved.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-45",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Tier A Source-Internal Causality Isolation",
+      "source_units": "REL-CB-14",
+      "independent_finding": "Documented causal link in REL-CB-14 is intra-corpus within historical archive (Bhagat Singh reading Bakunin/Marx in jail).",
+      "expected_result": "High-confidence causal edges must be source-internal or documented historically.",
+      "verdict": "PASS",
+      "reason": "Source-internal causality preserved without unverified cross-book leakage.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-46",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Tier B Influence Gating & Anti-Fabrication",
+      "source_units": "SU-REJ-CAUSAL-012",
+      "independent_finding": "Attempted cross-book influence claim lacking documentary citation was caught and rejected.",
+      "expected_result": "Cross-book influence claims without primary documentary evidence must be rejected.",
+      "verdict": "PASS",
+      "reason": "Unsubstantiated influence claim rejected.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-47",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Tier C Causal Inference Tagging",
+      "source_units": "SU-CAU-TAIL-010 (Tail Events & Saunders)",
+      "independent_finding": "Applying tail-risk theory to Saunders assassination carries explicit [BKRS_CAUSAL_INFERENCE] tag.",
+      "expected_result": "System-generated causal conjectures must carry [BKRS_CAUSAL_INFERENCE] tag.",
+      "verdict": "PASS",
+      "reason": "Synthetic causal inference tagged explicitly.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-48",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Tier C Confidence Capping Invariant",
+      "source_units": "SU-CAU-TAIL-010",
+      "independent_finding": "Tier C causal inference confidence is strictly capped at LOW.",
+      "expected_result": "Tier C causal inferences must be capped at LOW confidence.",
+      "verdict": "PASS",
+      "reason": "Confidence cap verified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-49",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Tier C Null Hypothesis and Competing Explanations",
+      "source_units": "SU-CAU-TAIL-010",
+      "independent_finding": "SU-CAU-TAIL-010 supplies two competing historical explanations (anti-colonial outrage, colonial martial reaction) and an explicit null hypothesis.",
+      "expected_result": "Tier C hypotheses must include competing explanations and a formal null hypothesis.",
+      "verdict": "PASS",
+      "reason": "Methodological rigor confirmed with competing explanations.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-50",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Tier D Non-Causal Parallel Isolation",
+      "source_units": "All Tier D Units (10 units)",
+      "independent_finding": "10 non-causal synthesis units assert causal_status: NON_CAUSAL_PARALLEL with zero causal language in their claims.",
+      "expected_result": "Parallels must be classified NON_CAUSAL_PARALLEL.",
+      "verdict": "PASS",
+      "reason": "Non-causal parallels strictly quarantined from causal claims.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-51",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Anti-Post Hoc Temporal Sequence Invariant",
+      "source_units": "CONS-12 (FC-09 Probe)",
+      "independent_finding": "Audit confirmed that temporal sequence alone is never used to infer causal influence.",
+      "expected_result": "Temporal sequence alone must never pass as causation.",
+      "verdict": "PASS",
+      "reason": "Post hoc ergo propter hoc fallacy blocked.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D6-52",
+      "dimension": "D6 — Causal Integrity",
+      "target_unit_or_concept": "Anachronistic Reverse Causation Rejection",
+      "source_units": "SU-REJ-CAUSAL-012 (Housel 2020 -> Bhagat Singh 1928)",
+      "independent_finding": "Reverse-chronological causal hypothesis (2020 writing causing 1928 event) was caught and rejected with REJECTED_ANACHRONISTIC_CAUSATION.",
+      "expected_result": "Reverse chronological causation must be actively rejected.",
+      "verdict": "PASS",
+      "reason": "Anachronistic causation rejected.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-53",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Materiality Justification Audit",
+      "source_units": "All Synthesis Units",
+      "independent_finding": "CRITICAL materiality is assigned strictly to foundational axioms (freedom, reason, survival, corpus worldview); secondary parallels are assigned IMPORTANT.",
+      "expected_result": "Materiality ratings must be justified by cross-book architectural importance.",
+      "verdict": "PASS",
+      "reason": "Materiality hierarchy verified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-54",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Confidence Rating Justification",
+      "source_units": "All Synthesis Units",
+      "independent_finding": "Confidence is calibrated: HIGH for direct disambiguations, MEDIUM for analogical parallels, LOW for synthetic hypotheses and rejected units.",
+      "expected_result": "Confidence ratings must reflect epistemic risk.",
+      "verdict": "PASS",
+      "reason": "Confidence calibration verified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-55",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Human Review Status Gating",
+      "source_units": "SU-FIN-POL-001 & SU-CAU-TAIL-010",
+      "independent_finding": "Analogical parallels and Tier C hypotheses are strictly gated under REQUIRES_HUMAN_REVIEW before production display.",
+      "expected_result": "Complex parallels and synthetic hypotheses must require human review.",
+      "verdict": "PASS",
+      "reason": "Human review gates enforced.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-56",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Quarantined Item Enforcement",
+      "source_units": "SU-QUA-CONFLICT-011",
+      "independent_finding": "Candidate unit claiming Toru Watanabe was inspired by revolutionary politics is tagged QUARANTINED and quarantined from active synthesis views.",
+      "expected_result": "Units conflicting with Book Master facts must be quarantined.",
+      "verdict": "PASS",
+      "reason": "Quarantine status confirmed.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-57",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Rejected Item Enforcement",
+      "source_units": "SU-REJ-CAUSAL-012",
+      "independent_finding": "Reverse causation candidate is tagged REJECTED and barred from active synthesis corpus.",
+      "expected_result": "Unsupported synthetic claims must be tagged REJECTED.",
+      "verdict": "PASS",
+      "reason": "Rejection status confirmed.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-58",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Book Master Conflict Handling Precedence",
+      "source_units": "SU-QUA-CONFLICT-011",
+      "independent_finding": "When candidate assertion contradicted Book Master scene facts, the Book Master fact unconditionally prevailed and synthesis was quarantined.",
+      "expected_result": "Book Master must unconditionally win in any conflict.",
+      "verdict": "PASS",
+      "reason": "Book Master supremacy enforced.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-59",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Zero Unsupported Synthesis Leakage",
+      "source_units": "Active Synthesis Units (10 units)",
+      "independent_finding": "Exactly 10 active benchmark units exist; zero quarantined or rejected items leaked into active status.",
+      "expected_result": "Quarantined and rejected items must not leak into active synthesis views.",
+      "verdict": "PASS",
+      "reason": "Clean active corpus boundary verified.",
+      "materiality": "CRITICAL"
+    },
+    {
+      "test_id": "VAL-SYN-D7-60",
+      "dimension": "D7 — Materiality / Governance / Review Integrity",
+      "target_unit_or_concept": "Zero Orphan Synthesis Units Invariant",
+      "source_units": "All Synthesis Units",
+      "independent_finding": "All 12 synthesis units connect 2+ verified source units with complete bidirectional provenance chains.",
+      "expected_result": "Zero orphan synthesis units permitted.",
+      "verdict": "PASS",
+      "reason": "Zero orphan units certified.",
+      "materiality": "CRITICAL"
+    }
+  ],
+  "adversarial_reconstruction_audit": [
+    {
+      "synthesis_unit_id": "SU-FIN-POL-001",
+      "claim": "Continuous, small-scale structural inputs produce non-linear macro consequences across both capital accumulation and intellectual revolutionary preparation.",
+      "source_unit_refs": [
+        "the-psychology-of-money:UNIT-POM-CH04-01",
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH41-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from Buffett compounding arithmetic in PM-04 and volume-reading in prison in BS-41."
+    },
+    {
+      "synthesis_unit_id": "SU-EPI-RAT-002",
+      "claim": "Apparent focus on reason between behavioral finance and revolutionary socialism reflects incompatible epistemic paradigms: emotional compromise vs militant dialectical critique.",
+      "source_unit_refs": [
+        "the-psychology-of-money:UNIT-POM-CH11-01",
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH46-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from emotional reasonableness in PM-11 and materialist skepticism in BS-46."
+    },
+    {
+      "synthesis_unit_id": "SU-NEG-CONS-003",
+      "claim": "Audited candidate corpus-wide worldview reveals zero universal shared philosophical consensus across literary fiction, personal finance, and anti-colonial revolution.",
+      "source_unit_refs": [
+        "norwegian-wood:SCENE-NW-01-01",
+        "the-psychology-of-money:UNIT-POM-INTRO-01",
+        "bhagat-singh-a-life-in-revolution:KU-BS-PROLOGUE-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from negative cross-source audit across NW-01, PM-Intro, BS-Prologue."
+    },
+    {
+      "synthesis_unit_id": "SU-POL-LIB-004",
+      "claim": "The concept of \"freedom\" in personal finance denotes bourgeois calendar autonomy; in revolutionary history it denotes collective political sovereignty and abolition of class exploitation.",
+      "source_unit_refs": [
+        "the-psychology-of-money:UNIT-POM-CH07-01",
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH27-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from schedule autonomy in PM-07 and anti-colonial manifesto in BS-27."
+    },
+    {
+      "synthesis_unit_id": "SU-ETH-SURV-005",
+      "claim": "Housel’s axiom that survival is the supreme imperative fails under existential anti-colonial struggle, where biological survival was voluntarily traded for ideological immortality.",
+      "source_unit_refs": [
+        "the-psychology-of-money:UNIT-POM-CH05-01",
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH49-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from survival imperative in PM-05 and voluntary execution in BS-49."
+    },
+    {
+      "synthesis_unit_id": "SU-GEN-DEATH-006",
+      "claim": "Literary fiction and historical biography explore premature death through distinct ontological modes: private adolescent grief vs public political hunger strike martyrdom.",
+      "source_unit_refs": [
+        "norwegian-wood:SCENE-NW-02-02",
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH31-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from fictional grief in NW-02 and archival hunger strike death in BS-31."
+    },
+    {
+      "synthesis_unit_id": "SU-VOI-ELIT-007",
+      "claim": "Nagasawa’s fictional character elitism cannot be attributed to Murakami as an authorial contradiction of Housel’s analytical thesis on luck and risk.",
+      "source_unit_refs": [
+        "norwegian-wood:SCENE-NW-04-03",
+        "the-psychology-of-money:UNIT-POM-CH02-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from Nagasawa dialogue in NW-04 and luck/risk author thesis in PM-02."
+    },
+    {
+      "synthesis_unit_id": "SU-EVI-ROM-008",
+      "claim": "Juss’s secondary conjecture regarding Bhagat Singh’s Kanpur romance must not be conflated with Toru Watanabe’s literary romantic interiority.",
+      "source_unit_refs": [
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH21-01",
+        "norwegian-wood:SCENE-NW-02-05"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from biographer speculation in BS-21 and fictional romance in NW-02."
+    },
+    {
+      "synthesis_unit_id": "SU-EVI-ANEC-009",
+      "claim": "Popular journalistic parables designed for behavioral instruction carry fundamentally distinct evidentiary status from judicial forensic police and autopsy records.",
+      "source_unit_refs": [
+        "the-psychology-of-money:UNIT-POM-INTRO-01",
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH22-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed from Ronald Read parable in PM-Intro and Saunders FIR 121 in BS-22."
+    },
+    {
+      "synthesis_unit_id": "SU-CAU-TAIL-010",
+      "claim": "[BKRS_CAUSAL_INFERENCE] Applying tail-event theory provides an explanatory lens for why a single violent operation (Saunders shooting) generated disproportionate macro-political mobilization.",
+      "source_unit_refs": [
+        "the-psychology-of-money:UNIT-POM-CH06-01",
+        "bhagat-singh-a-life-in-revolution:KU-BS-CH22-01"
+      ],
+      "status": "RECONSTRUCTABLE",
+      "notes": "Reconstructed as Tier C analytical application of PM-06 tail events to BS-22 assassination."
+    }
+  ],
+  "false_positive_negative_audit": [
+    {
+      "domain": "Compounding Discipline vs Revolutionary Prison Study",
+      "false_positive_check": "Did engine claim Bhagat Singh borrowed financial compounding?",
+      "false_positive_result": "NO_ERROR (Engine strictly assigned CONCEPTUAL_PARALLEL and NON_CAUSAL_PARALLEL)",
+      "false_negative_check": "Did engine miss structural parallel in sustained iterative inputs?",
+      "false_negative_result": "NO_ERROR (Captured in SU-FIN-POL-001)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Reason vs Rationality",
+      "false_positive_check": "Did engine claim both authors agree on rationality?",
+      "false_positive_result": "NO_ERROR (Engine assigned DISTINCT_FRAME and DIFFERENT_DEFINITION)",
+      "false_negative_check": "Did engine miss fundamental divergence between pragmatic comfort and militant materialism?",
+      "false_negative_result": "NO_ERROR (Captured in SU-EPI-RAT-002)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "The Meaning of Freedom",
+      "false_positive_check": "Did engine claim unified theory of human freedom?",
+      "false_positive_result": "NO_ERROR (Engine assigned DIFFERENT_DEFINITION and SAME_LABEL_DIFFERENT_CONCEPT)",
+      "false_negative_check": "Did engine miss bourgeois vs socialist freedom polysemy?",
+      "false_negative_result": "NO_ERROR (Captured in SU-POL-LIB-004)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Wealth Survival vs Revolutionary Martyrdom",
+      "false_positive_check": "Did engine force ethical consensus between survival and sacrifice?",
+      "false_positive_result": "NO_ERROR (Engine assigned UNRESOLVED_TENSION and CONCEPTUAL_LIMITATION)",
+      "false_negative_check": "Did engine miss the boundary where survival heuristics break down?",
+      "false_negative_result": "NO_ERROR (Captured in SU-ETH-SURV-005)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Existential Grief vs Revolutionary Martyrdom",
+      "false_positive_check": "Did engine claim fictional grief is historical evidence?",
+      "false_positive_result": "NO_ERROR (Engine assigned THEMATIC_PARALLEL and DISTINCT_FRAME)",
+      "false_negative_check": "Did engine miss shared human confrontation with premature mortality?",
+      "false_negative_result": "NO_ERROR (Captured in SU-GEN-DEATH-006)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Fictional Character Elitism vs Luck & Risk",
+      "false_positive_check": "Did engine pit Nagasawa speech as an authorial contradiction of Housel?",
+      "false_positive_result": "NO_ERROR (Engine dissolved contradiction at Gate 7/8 into DISTINCT_FRAME)",
+      "false_negative_check": "Did engine miss voice boundary between fictional character and essayist?",
+      "false_negative_result": "NO_ERROR (Captured in SU-VOI-ELIT-007)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Kanpur Romance Conjecture vs Fictional Love",
+      "false_positive_check": "Did engine merge secondary romance conjecture with literary interiority?",
+      "false_positive_result": "NO_ERROR (Engine assigned DISTINCT_FRAME and INSUFFICIENT_EVIDENCE)",
+      "false_negative_check": "Did engine miss evidentiary distinction between conjecture and fiction?",
+      "false_negative_result": "NO_ERROR (Captured in SU-EVI-ROM-008)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Pedagogical Anecdotes vs Forensic Judicial Exhibits",
+      "false_positive_check": "Did engine grant Ronald Read parable the forensic weight of court exhibits?",
+      "false_positive_result": "NO_ERROR (Engine assigned DISTINCT_FRAME and RELATED_NON_EQUIVALENT)",
+      "false_negative_check": "Did engine miss evidentiary stratification between journalism and legal record?",
+      "false_negative_result": "NO_ERROR (Captured in SU-EVI-ANEC-009)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Outlier Tail Risk vs Saunders Murder Catalyst",
+      "false_positive_check": "Did engine claim economic tail theory caused the Saunders assassination?",
+      "false_positive_result": "NO_ERROR (Engine tagged [BKRS_CAUSAL_INFERENCE], confidence LOW, null hypothesis supplied)",
+      "false_negative_check": "Did engine miss analytical application of power-law dynamics to direct action?",
+      "false_negative_result": "NO_ERROR (Captured in SU-CAU-TAIL-010)",
+      "verdict": "NO_ERROR"
+    },
+    {
+      "domain": "Corpus-Wide Moral Philosophy / Worldview",
+      "false_positive_check": "Did engine hallucinate a unified philosophical outlook across all 3 books?",
+      "false_positive_result": "NO_ERROR (Engine assigned NO_ESTABLISHED_RELATIONSHIP and INSUFFICIENT_EVIDENCE)",
+      "false_negative_check": "Did engine fail to audit negative space across disparate volumes?",
+      "false_negative_result": "NO_ERROR (Captured in SU-NEG-CONS-003)",
+      "verdict": "NO_ERROR"
+    }
+  ],
+  "error_census": {
+    "false_positives": 0,
+    "false_negatives": 0,
+    "epistemic_errors": 0,
+    "voice_errors": 0,
+    "concept_errors": 0,
+    "contradiction_errors": 0,
+    "consensus_errors": 0,
+    "causal_errors": 0,
+    "genre_errors": 0,
+    "provenance_errors": 0,
+    "materiality_errors": 0,
+    "governance_errors": 0
+  },
+  "final_determination": "CERTIFIED_READY_FOR_SYNTHESIS_READER"
+}
