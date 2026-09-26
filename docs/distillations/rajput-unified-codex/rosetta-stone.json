@@ -1,0 +1,72 @@
+[
+  {
+    "term": "Naukar / Naukari",
+    "category": "Military Ethnohistory",
+    "traditional_claim": "The feudal vassal bound by blood and sacred oath to a hereditary liege lord. (Tod)",
+    "modern_audit": "The soldier-for-hire in the competitive North Indian military labour market, moving freely between Sultanates, Mughals, and regional chieftains before caste closure. (Dirk Kolff)",
+    "analogy": "A free-agent professional athlete in the modern draft market choosing the franchise offering the highest signing bonus and status, rather than a permanent medieval serf."
+  },
+  {
+    "term": "Rajputization",
+    "category": "Sociology & Caste Formation",
+    "traditional_claim": "The pure, unbroken transmission of ancient Vedic solar and lunar Kshatriya bloodlines. (Tod)",
+    "modern_audit": "The socio-cultural process where successful pastoral, tribal, or mercenary warrior leaders patronized Brahmins and Charans to manufacture clean solar/lunar genealogies and close caste boundaries. (Kolff & Chattopadhyaya)",
+    "analogy": "A wildly successful startup founder hiring a prestigious public relations and branding firm to write a glossy corporate myth proving his family was aristocratic for seven generations."
+  },
+  {
+    "term": "Jauhar & Saka",
+    "category": "Chivalric Protocol & Sacrificial Warfare",
+    "traditional_claim": "Tragic romantic mass suicide by women in response to medieval besiegers. (Tod)",
+    "modern_audit": "The formal, sacred two-stage battle protocol of unconditional resistance: Jauhar (women immolating in fire to prevent capture and release men from domestic concern) followed immediately by Saka (men donning saffron robes, opening gates, and charging into death). (Harlan & Tod)",
+    "analogy": "A scuttling protocol on a naval battleship under absolute siege: destroying the ship and firing all remaining munitions so zero intelligence, honor, or spoils are captured by the adversary."
+  },
+  {
+    "term": "Purbiya",
+    "category": "Military Labour Market",
+    "traditional_claim": "A regional geographical label for warriors from the eastern Gangetic plain.",
+    "modern_audit": "The vast infantry mercenary class from Awadh, Bihar, and Bundelkhand who identified as Rajputs through arms-bearing, playing a decisive role in Malwa and Gujarat before the British Bengal Army. (Kolff)",
+    "analogy": "The Swiss pikemen of Renaissance Europe—peasant warriors whose regional reputation for elite martial contracts made their name synonymous with mercenary infantry service."
+  },
+  {
+    "term": "Kuldevi & Sati",
+    "category": "Anthropology & Religion",
+    "traditional_claim": "Folk goddesses and tragic mythological figures in folklore.",
+    "modern_audit": "The twin supernatural pillars of Rajput lineage continuity: the Kuldevi (goddess protecting the clan's biological and political survival) and the Sati (the heroic ancestor whose curse or blessing polices lineage morality). (Lindsey Harlan)",
+    "analogy": "A constitutional court and supreme guardian angel of a dynasty: safeguarding the family from extinction so long as members uphold strict behavioral honor."
+  },
+  {
+    "term": "Watan Jagir",
+    "category": "Mughal-Rajput Statecraft",
+    "traditional_claim": "Submission and loss of sovereign Rajput homeland to imperial overlords.",
+    "modern_audit": "The brilliant imperial compromise created by Akbar: the Rajput raja's ancestral kingdom was confirmed as an inalienable, hereditary estate (watan) while granting him imperial ranks (mansabs) and revenues outside Rajasthan. (Hallissey & Sarkar)",
+    "analogy": "A semi-autonomous state government retaining 100% control over its domestic territory while its governor simultaneously serves as a federal cabinet secretary with national revenue perks."
+  },
+  {
+    "term": "Agnikula (Fire-born Clans)",
+    "category": "Mythology & Genealogy",
+    "traditional_claim": "The miraculous creation of four warrior clans (Paramara, Parihara, Chalukya, Chauhan) from a sacrificial fire-pit on Mount Abu by sage Vashistha. (Tod / Prithviraj Raso)",
+    "modern_audit": "A bardic purification and legitimation metaphor developed between the 10th and 14th centuries to assimilate diverse martial lineages (including assimilated Central Asian and indigenous warriors) into orthodox Kshatriya status. (Modern Epigraphy)",
+    "analogy": "A naturalization ceremony for elite foreign recruits, granting them full honorary citizenship and sacred pedigree through an elaborate national ritual."
+  },
+  {
+    "term": "Asymmetric Fortress Architecture",
+    "category": "Military Architecture",
+    "traditional_claim": "Romantic, whimsical palaces built without planning on rugged hilltops. (Tod / Fergusson)",
+    "modern_audit": "Sophisticated contour-hugging military engineering designed to exploit natural scarps, trap invading armies in winding chokepoints, collect monsoon runoff in rock-cut cisterns, and offer interlocking fields of fire. (Giles Tillotson)",
+    "analogy": "A stealth aircraft designed with radical angles: every slope, bastion, and zig-zag wall is engineered to deflect military impact and maximize defensive survival."
+  },
+  {
+    "term": "The Marwar Crisis (1679)",
+    "category": "Imperial Historiography",
+    "traditional_claim": "Aurangzeb's religious crusade to forcefully convert the Rathores and demolish their temples. (Tod)",
+    "modern_audit": "A structural imperial succession dispute caused by Maharaja Jaswant Singh dying without an adult heir in Jamrud, prompting Aurangzeb to assert crown control over crucial Agra-Gujarat trade corridors, provoking Rathore resistance. (Robert Hallissey)",
+    "analogy": "A federal government attempting to seize control of a strategic oil transit pipeline running through a territory when the local governor dies without a verified will, triggering armed defiance."
+  },
+  {
+    "term": "Khatridharma",
+    "category": "Ethical Philosophy",
+    "traditional_claim": "Reckless, suicidal chivalry for bardic fame. (Tod)",
+    "modern_audit": "The total ethical duty of the Kshatriya warrior: defending the weak, governing the land with generosity, protecting Brahmins and cows, and refusing to flee from the battlefield regardless of odds. (Harlan & Tod)",
+    "analogy": "The Spartan warrior ethos or the Japanese Bushido code: death in battle is an honorable coronation, whereas cowardly surrender is worse than biological annihilation."
+  }
+]

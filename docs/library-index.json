@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-25",
-  "total_books": 36,
-  "total_hours_saved": 745,
+  "total_books": 43,
+  "total_hours_saved": 880,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
     "Realpolitik, Strategy & Courtier Dynamics",
@@ -1358,6 +1358,36 @@
       "html_path": "distillations/manifestation-unified-codex/index.html",
       "markdown_path": "distillations/manifestation-unified-codex/master-notes.md",
       "featured": true
+    },
+    {
+      "id": "rajput-unified-codex",
+      "title": "The Rajput Mega-Codex: The Definitive Historical & Historiographical Synthesis",
+      "subtitle": "Lineage Ethnogenesis, Sultanate Sieges, Mughal Statecraft, Gender Ethics & Fort Architecture Across 7 Canonical Volumes",
+      "author": "James Tod, Dirk H.A. Kolff, Lindsey Harlan, Giles Tillotson, Robert C. Hallissey",
+      "year": 2026,
+      "publisher": "Intellectualist Subject Master Series (Cambridge, Oxford, UC Press, Missouri, Routledge)",
+      "epistemic_tier": "Tier 1: Master Historiographical & Multi-Source Synthesis",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "7 Volumes Synthesized (24 Invariant Units, 10 Rosetta Terms, 8 Movements, 5-Point Dispute Matrix)",
+      "reading_time_saved": "135.0 hrs saved",
+      "hours_val": 135,
+      "core_axiom": "Rajput history is not a simplistic romantic legend of reckless chivalry, but a complex centuries-long dialectic between an open military labour market and rigid caste closure, heroic sacrificial resistance (Jauhar & Saka), astute imperial realpolitik (Watan Jagirs), and autonomous asymmetric mountain architecture.",
+      "tags": [
+        "Subject Master Codex",
+        "Rajput History",
+        "Mewar & Sisodias",
+        "Maharana Pratap",
+        "Rana Kumbha & Sanga",
+        "Marwar & Rathores",
+        "Durga Das Rathore",
+        "Amber & Kachwahas",
+        "Dirk Kolff (Military Labour)",
+        "Lindsey Harlan (Gender & Sati)",
+        "Giles Tillotson (Fortresses)",
+        "Robert Hallissey (Rebellion)",
+        "James Tod (Annals)"
+      ]
     }
   ]
 }

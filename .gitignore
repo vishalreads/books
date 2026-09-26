@@ -27,5 +27,7 @@ youtube_transcript_*
 src/manifestation_pipeline/unpacked_epubs/
 src/manifestation_pipeline/unpacked_batch_2/
 src/manifestation_pipeline/unpacked_batch_3/
+src/rajput_pipeline/unpacked/
+
 
 
