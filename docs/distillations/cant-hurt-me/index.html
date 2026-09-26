@@ -1,853 +1,710 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="cream">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Can't Hurt Me: Master Your Mind and Defy the Odds — BKRS Master Reader</title>
-  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <title>Can't Hurt Me — David Goggins | BKRS Master Reader</title>
+  
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-base: #0c0a09;
-      --bg-surface: #1c1917;
-      --bg-surface-elevated: #292524;
-      --border-subtle: #44403c;
-      --text-main: #fafaf9;
-      --text-secondary: #a8a29e;
-      --color-fire: #ea580c;
-      --color-gold: #f59e0b;
-      --font-display: 'Cinzel', serif;
-      --font-serif: 'Merriweather', Georgia, serif;
-      --font-sans: 'Inter', sans-serif;
+      --accent-crimson: #8b181b;
+      --accent-gold: #b38628;
+      --accent-forest: #225e43;
+      --border-color: #e5e0d3;
     }
 
-    [data-theme="light"] {
-      --bg-base: #fafaf9;
-      --bg-surface: #ffffff;
-      --bg-surface-elevated: #f5f5f4;
-      --border-subtle: #e7e5e4;
-      --text-main: #1c1917;
-      --text-secondary: #57534e;
-      --color-fire: #c2410c;
-      --color-gold: #d97706;
+    [data-theme="cream"] {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #f5f2ea;
+      --bg-card-subtle: #efebe0;
+      --border-color: #e2dccf;
+      --border-color-focus: #b5a895;
+      --text-main: #24211e;
+      --text-muted: #5c5549;
+      --text-subtle: #857b6c;
+      --accent-crimson: #8b181b;
+      --accent-gold: #966b1d;
+      --accent-forest: #225e43;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--bg-base);
+      background-color: var(--bg-canvas);
       color: var(--text-main);
-      font-family: var(--font-serif);
-      line-height: 1.85;
-      font-size: 1.08rem;
+      font-family: var(--font-serif, "EB Garamond", Georgia, serif);
+      font-size: 1.15rem;
+      line-height: 1.8;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* TOP HEADER */
-    .top-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--border-subtle);
-      padding: 12px 24px;
+    .unit-card-deep {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 38px 46px;
+      margin-bottom: 44px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    @media (max-width: 768px) {
+      .unit-card-deep { padding: 24px 20px; margin-bottom: 30px; }
+    }
+
+    .unit-meta-line {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      backdrop-filter: blur(8px);
-    }
-
-    .brand-group {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-    }
-
-    .brand-logo-img {
-      width: 32px;
-      height: 32px;
-      object-fit: contain;
-    }
-
-    .brand-title {
-      font-family: var(--font-display);
-      font-weight: 900;
-      font-size: 1.05rem;
-      letter-spacing: 0.1em;
-      color: var(--color-fire);
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .btn-action {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-main);
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    /* APP GRID */
-    .app-layout {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      min-height: calc(100vh - 60px);
-    }
-
-    @media (max-width: 1024px) {
-      .app-layout { grid-template-columns: 1fr; }
-      .app-sidebar { display: none; }
-    }
-
-    /* SIDEBAR */
-    .app-sidebar {
-      background: var(--bg-surface);
-      border-right: 1px solid var(--border-subtle);
-      padding: 24px 16px;
-      height: calc(100vh - 60px);
-      position: sticky;
-      top: 60px;
-      overflow-y: auto;
-    }
-
-    .sidebar-title {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-secondary);
       margin-bottom: 16px;
-      padding-left: 8px;
-    }
-
-    .nav-ch-link {
-      display: flex;
-      gap: 10px;
-      align-items: baseline;
-      padding: 8px 10px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      border-radius: 6px;
-      transition: all 0.15s ease;
-      line-height: 1.35;
-    }
-
-    .nav-ch-link:hover {
-      background: var(--bg-surface-elevated);
-      color: var(--text-main);
-    }
-
-    .nav-ch-num {
-      font-weight: 700;
-      color: var(--color-fire);
-      min-width: 18px;
-    }
-
-    /* MAIN CONTENT */
-    .reading-surface {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 24px 100px;
-      width: 100%;
-    }
-
-    /* HERO */
-    .hero-box {
-      border-bottom: 2px solid var(--border-subtle);
-      padding-bottom: 36px;
-      margin-bottom: 50px;
-    }
-
-    .hero-kicker {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--color-fire);
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: 2.8rem;
-      line-height: 1.15;
-      font-weight: 900;
-      color: var(--text-main);
-      margin-bottom: 14px;
-    }
-
-    .hero-subtitle {
-      font-family: var(--font-sans);
-      font-size: 1.15rem;
-      color: var(--text-secondary);
-      margin-bottom: 24px;
-      line-height: 1.5;
-    }
-
-    .meta-badges {
-      display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
     }
-
-    .badge {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
-      padding: 4px 10px;
-      border-radius: 6px;
+    .unit-badge {
       font-family: var(--font-sans);
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-    }
-
-    .badge.highlight {
-      background: rgba(234, 88, 12, 0.15);
-      border-color: rgba(234, 88, 12, 0.35);
-      color: var(--color-fire);
-      font-weight: 600;
-    }
-
-    /* CHAPTERS */
-    .chapter-wrapper {
-      margin-bottom: 64px;
-      padding-bottom: 40px;
-      border-bottom: 1px dashed var(--border-subtle);
-    }
-
-    .chapter-header {
-      margin-bottom: 32px;
-    }
-
-    .chapter-kicker {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--color-gold);
-      margin-bottom: 6px;
+      padding: 3px 10px;
+      background: #8b181b15;
+      color: var(--accent-crimson);
+      border: 1px solid var(--accent-crimson);
+      border-radius: 4px;
     }
-
-    .chapter-title {
-      font-family: var(--font-display);
-      font-size: 2.1rem;
-      line-height: 1.25;
-      color: var(--text-main);
-      margin-bottom: 12px;
-    }
-
-    .chapter-axiom {
-      background: var(--bg-surface);
-      border-left: 4px solid var(--color-fire);
-      padding: 12px 18px;
-      border-radius: 0 8px 8px 0;
+    .unit-epistemic {
       font-family: var(--font-sans);
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-    }
-
-    /* GOGGINS BLOCK */
-    .goggins-block {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 32px;
-    }
-
-    /* CHALLENGE BOX */
-    .challenge-box {
-      background: rgba(234, 88, 12, 0.08);
-      border: 1px solid rgba(234, 88, 12, 0.25);
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin-bottom: 24px;
-      font-family: var(--font-sans);
-    }
-
-    .challenge-tag {
-      font-size: 0.8rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--color-fire);
-      margin-bottom: 6px;
-    }
-
-    .challenge-desc {
-      font-size: 0.95rem;
-      color: var(--text-main);
-      line-height: 1.6;
-    }
-
-    .goggins-heading {
-      font-family: var(--font-sans);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 8px;
-    }
-
-    .goggins-text {
-      color: var(--text-main);
-      margin-bottom: 20px;
-      line-height: 1.85;
-    }
-
-    /* HEURISTICS */
-    .heuristics-container {
-      background: var(--bg-surface-elevated);
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-      border: 1px solid var(--border-subtle);
-    }
-
-    .heuristics-title {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--color-fire);
-      margin-bottom: 10px;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      background: var(--bg-card-subtle);
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
     }
 
-    .heuristics-list {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-family: var(--font-sans);
-      font-size: 0.92rem;
-      color: var(--text-secondary);
-    }
-
-    .heuristics-list li {
-      position: relative;
-      padding-left: 20px;
-    }
-
-    .heuristics-list li::before {
-      content: "•";
-      color: var(--color-fire);
-      font-weight: bold;
-      position: absolute;
-      left: 6px;
-    }
-
-    /* QUOTE */
-    .goggins-quote {
-      border-left: 3px solid var(--color-fire);
-      padding: 12px 20px;
-      margin-top: 20px;
-      font-style: italic;
+    .unit-heading-deep {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3;
       color: var(--text-main);
-      background: rgba(234, 88, 12, 0.05);
+      margin-bottom: 18px;
+    }
+
+    .narrative-p {
+      margin-bottom: 1.4em;
+      font-size: 1.15rem;
+      line-height: 1.82;
+      text-align: justify;
+    }
+
+    .quote-box {
+      margin: 24px 0;
+      padding: 18px 24px;
+      background: var(--bg-card-subtle);
+      border-left: 4px solid var(--accent-crimson);
       border-radius: 0 6px 6px 0;
-      font-size: 1.05rem;
+      font-style: italic;
+      font-size: 1.12rem;
     }
 
-    .quote-symbol {
-      color: var(--color-fire);
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      line-height: 0;
-      margin-right: 4px;
+    .heuristic-box {
+      margin-top: 24px;
+      padding: 16px 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 6px 6px 0;
+      font-size: 1.02rem;
     }
   </style>
 </head>
 <body>
 
-  <header class="top-header">
-    <a href="../../index.html" class="brand-group">
-      <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo-img">
-      <span class="brand-title">INTELLECTUALIST</span>
-    </a>
-    <div class="nav-actions">
-      <button class="btn-action" id="theme-btn">🌓 Theme</button>
-      <a href="../../index.html" class="btn-action">← Library</a>
+  <!-- TOP APP BAR -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="icon-btn toggle-sidebar-btn" id="toggle-sidebar-btn" title="Toggle Table of Contents" aria-label="Toggle Sidebar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <a href="../../index.html" class="brand-link">
+          <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo">
+          <div class="brand-meta">
+            <span class="brand-title">THE INTELLECTUALIST</span>
+            <span class="brand-sub">BKRS Master Distillation Series</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- VIEW SELECTOR BUTTONS -->
+      <div class="view-pills" style="display: flex; gap: 6px;">
+        <button class="pill-btn active" id="btn-view-journey" onclick="switchView('journey')">View A: The 11 Chapters</button>
+        <button class="pill-btn" id="btn-view-map" onclick="switchView('map')">View B: Mental Weapons Blueprint</button>
+      </div>
+
+      <!-- THEME SELECTOR -->
+      <div class="top-controls">
+        <select class="theme-select" id="theme-select" onchange="setTheme(this.value)">
+          <option value="cream" selected>Editorial Cream</option>
+          <option value="light">Crisp Light</option>
+          <option value="sepia">Warm Sepia</option>
+          <option value="dark">Nocturne Dark</option>
+        </select>
+        <div class="font-toggle" style="display: flex; gap: 4px;">
+          <button class="icon-btn" onclick="setFont('serif')" title="Serif Font" style="font-family: serif; font-weight: bold;">T</button>
+          <button class="icon-btn" onclick="setFont('sans')" title="Sans Font" style="font-family: sans-serif; font-weight: bold;">S</button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <div class="app-layout">
-    <aside class="app-sidebar">
-      <div class="sidebar-title">11 Chapters &amp; 10 Challenges</div>
-      <nav>
+  <div class="reader-shell" id="reader-shell">
+    
+    <!-- LEFT SIDEBAR TOC -->
+    <aside class="reader-sidebar" id="reader-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Goggins' Crucible</div>
+        <div class="sidebar-meta">11 Invariant Chapters</div>
+      </div>
+      <div class="sidebar-toc" id="sidebar-toc">
         
-    <a href="#ch-01" class="nav-ch-link">
-      <span class="nav-ch-num">1</span>
-      <span class="nav-ch-title">I Should Have Been a Statistic (The Bad Hand & Inherited Trauma)</span>
-    </a>
-  
-
-    <a href="#ch-02" class="nav-ch-link">
-      <span class="nav-ch-num">2</span>
-      <span class="nav-ch-title">My Dirty Secret (The Accountability Mirror & Eradicating Delusion)</span>
-    </a>
-  
-
-    <a href="#ch-03" class="nav-ch-link">
-      <span class="nav-ch-num">3</span>
-      <span class="nav-ch-title">The Impossible Task (Comfort Zone Destruction: 106 Lbs in 3 Months)</span>
-    </a>
-  
-
-    <a href="#ch-04" class="nav-ch-link">
-      <span class="nav-ch-num">4</span>
-      <span class="nav-ch-title">Taking Souls (Psychological Dominance Over Adversity)</span>
-    </a>
-  
-
-    <a href="#ch-05" class="nav-ch-link">
-      <span class="nav-ch-num">5</span>
-      <span class="nav-ch-title">Armored Mind (Mental Calluses & Visualizing Calamity)</span>
-    </a>
-  
-
-    <a href="#ch-06" class="nav-ch-link">
-      <span class="nav-ch-num">6</span>
-      <span class="nav-ch-title">It's Not About a Trophy (The Cookie Jar of Past Victories)</span>
-    </a>
-  
-
-    <a href="#ch-07" class="nav-ch-link">
-      <span class="nav-ch-num">7</span>
-      <span class="nav-ch-title">The Most Powerful Weapon (The 40% Rule & Overriding the Governor)</span>
-    </a>
-  
-
-    <a href="#ch-08" class="nav-ch-link">
-      <span class="nav-ch-num">8</span>
-      <span class="nav-ch-title">Talent Not Required (Extreme Time Compartmentalization)</span>
-    </a>
-  
-
-    <a href="#ch-09" class="nav-ch-link">
-      <span class="nav-ch-num">9</span>
-      <span class="nav-ch-title">Uncommon Amongst Uncommon (Fighting Elite Complacency)</span>
-    </a>
-  
-
-    <a href="#ch-10" class="nav-ch-link">
-      <span class="nav-ch-num">10</span>
-      <span class="nav-ch-title">The Empowerment of Failure (The After Action Report & The Pull-Up Record)</span>
-    </a>
-  
-
-    <a href="#ch-11" class="nav-ch-link">
-      <span class="nav-ch-num">11</span>
-      <span class="nav-ch-title">What If? (Open Heart Surgery & Uncapped Human Potential)</span>
-    </a>
-  
-      </nav>
+          <div class="nav-ch-item">
+            <a href="#unit-1" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">1</span>
+              <span class="nav-ch-title">I Should Have Been a Statistic: Childhood Trauma & The Domestic Crucible</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-2" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">2</span>
+              <span class="nav-ch-title">The Accountability Mirror: Eradicating Excuses and Facing the Naked Truth</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-3" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">3</span>
+              <span class="nav-ch-title">The Impossible Task: Shedding 106 Pounds in Three Months</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-4" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">4</span>
+              <span class="nav-ch-title">Taking Souls: BUD/S Hell Week and Psychological Warfare</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-5" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">5</span>
+              <span class="nav-ch-title">The Armored Mind: Building Calluses on the Brain</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-6" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">6</span>
+              <span class="nav-ch-title">It's Not About a Trophy: The San Diego One Day 100-Miler</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-7" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">7</span>
+              <span class="nav-ch-title">The Most Powerful Weapon: The Cookie Jar</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-8" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">8</span>
+              <span class="nav-ch-title">Talent Not Required: The 40% Rule & The Biological Governor</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-9" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">9</span>
+              <span class="nav-ch-title">Uncommon Amongst Uncommon: Escaping the Seduction of Comfort</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-10" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">10</span>
+              <span class="nav-ch-title">The Empowerment of Failure: The 24-Hour Pull-Up World Record</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-11" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">11</span>
+              <span class="nav-ch-title">What If? The Infinite Capacity of the Human Mind</span>
+            </a>
+          </div>
+        
+      </div>
     </aside>
 
-    <main class="reading-surface">
-      <div class="hero-box">
-        <div class="hero-kicker">BKRS Master Replacement Codex • Crucible Mindset</div>
-        <h1 class="hero-title">Can't Hurt Me: Master Your Mind and Defy the Odds</h1>
-        <p class="hero-subtitle">A Complete Operational Codification of the 11 Chapters and 10 Challenges</p>
-        <div class="meta-badges">
-          <span class="badge highlight">✦ Tier 1: Crucible Autobiography & Applied Mental Toughness</span>
-          <span class="badge">⏱ 11.5 hrs saved</span>
-          <span class="badge">🔥 11 Crucible Chapters</span>
-          <span class="badge">⚔ 10 Field Challenges</span>
-        </div>
+    <!-- MAIN READING VIEWPORT -->
+    <main class="reader-viewport" id="reader-viewport">
+      <div class="reader-measure" id="reader-measure">
+
+        <!-- VIEW A: THE 11 CHAPTERS -->
+        <section id="view-journey" class="view-panel active">
+          
+          <div style="margin-bottom: 40px; padding: 28px 0; border-bottom: 2px solid var(--accent-crimson);">
+            <div style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); margin-bottom: 8px;">
+              BKRS Single-Volume Master Reconstruction
+            </div>
+            <h1 style="font-family: var(--font-serif); font-size: 2.6rem; line-height: 1.2; color: var(--text-main); margin-bottom: 12px; letter-spacing: -0.02em;">
+              Can't Hurt Me
+            </h1>
+            <div style="font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; color: var(--text-muted); line-height: 1.6; max-width: 900px;">
+              A comprehensive reconstruction of David Goggins’ masterwork on mental toughness. Analyzing the 40% Rule, the biological governor, trauma inoculation, Hell Week psychology, the Accountability Mirror, and the Cookie Jar.
+            </div>
+          </div>
+
+          <!-- THE 11 UNITS -->
+          
+            <div class="unit-card-deep" id="unit-1">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 1</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 1
+                  </span>
+                </div>
+                <span class="unit-epistemic">TRAUMA INOCULATION & SURVIVAL RESILIENCE</span>
+              </div>
+
+              <h3 class="unit-heading-deep">I Should Have Been a Statistic: Childhood Trauma & The Domestic Crucible</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                Severe environmental trauma, domestic violence, and systemic racism do not have to determine destiny; they can be forged into the raw fuel of an indomitable will.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">David Goggins grew up in Buffalo, New York, in a household dominated by a tyrannical, violent father who forced him and his mother to labor all night at his roller-skating rink (Skateland) and beat them with belts and coat hangers. Escaping in the dead of night to Brazil, Indiana, Goggins arrived impoverished, suffering from severe learning disabilities, social anxiety, and a debilitating stutter caused by toxic stress.</p><p class="narrative-p">In Indiana, he faced overt racial hostility: death threats, racial slurs painted on his car, and notebook death lists. Paralyzed by fear, Goggins adapted by cheating his way through high school, lying to friends, and hiding behind a mask of clownish swagger to conceal his deep shame.</p><p class="narrative-p">The lesson of Chapter 1 is the brutal reality of the 'Bad Hand': life is not fair, and complaining about unfairness is a passive surrender to victimhood. Goggins recognized that his trauma was an unvarnished baseline from which he had to construct an artificial armor.</p>
+              </div>
+
+              <div class="quote-box">
+                “I was a stuttering, illiterate, depressed kid from the Midwest with no future... The only way I could survive was to build an armored mind.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Do not hide your trauma or wait for apologies from abusers. Acknowledge your scarred hand and use it as fuel.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-2">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 2</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 2
+                  </span>
+                </div>
+                <span class="unit-epistemic">SELF-RADICAL HONESTY & METACONSCIOUSNESS</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Accountability Mirror: Eradicating Excuses and Facing the Naked Truth</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                True transformation requires radical, unflinching self-honesty. You cannot sugarcoat your weaknesses with comforting positive affirmations; you must confront your inadequacies in the mirror.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">At age seventeen, faced with failing the Armed Services Vocational Aptitude Battery (ASVAB) and washing out of high school, Goggins stood before his bathroom mirror. Shaving his head, he stared directly into his own eyes and stopped the excuses. He called himself out for being illiterate, lazy, terrified, and dishonest.</p><p class="narrative-p">He created 'The Accountability Mirror': plastering Post-it notes across his mirror listing his exact shortcomings, tasks, and daily goals (e.g., 'Learn multiplication tables,' 'Wash your clothes,' 'Run 2 miles'). Every morning and evening, he stood naked before that mirror, holding himself strictly accountable.</p><p class="narrative-p">The mirror ritual cuts through the internal narrative of victimhood. It replaces vague aspirations with objective visual metrics: you are either doing the work or you are making excuses.</p>
+              </div>
+
+              <div class="quote-box">
+                “The Accountability Mirror asked me one question: Are you going to continue being a soft, lying coward, or are you going to do something about it?” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Stare into your own eyes in the mirror every day and tell yourself the cold truth. Eradicate all flattering self-deceptions.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-3">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 3</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 3
+                  </span>
+                </div>
+                <span class="unit-epistemic">METABOLIC DISCIPLINE & PHYSICAL OBSESSION</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Impossible Task: Shedding 106 Pounds in Three Months</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                When your back is against the wall and your dream demands the impossible, conventional pacing must be discarded for total obsession.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">At age twenty-four, Goggins had resigned himself to a dead-end job spraying cockroach poison in restaurants at 2:00 AM, weighing 297 pounds. Watching a television documentary on Navy SEAL training (BUD/S), a lightning bolt struck his consciousness: he saw men surviving Hell Week and realized that was the ultimate test of human dignity.</p><p class="narrative-p">Every military recruiter rejected him except one, who delivered the brutal math: Navy SEAL regulations required Goggins to weigh no more than 191 pounds. He had less than three months to drop 106 pounds before his age waiver expired.</p><p class="narrative-p">Goggins embarked on a metabolic death march: waking at 4:30 AM, riding a stationary bike for two hours, running two miles, swimming for an hour, doing hundreds of calisthenics, eating a single meal of chicken breast and broccoli (800 calories), and returning to the gym in the evening wearing trash bags under sweatshirts to sweat out water. He stepped onto the scale at MEPS weighing 190.5 pounds.</p>
+              </div>
+
+              <div class="quote-box">
+                “It wasn’t about losing weight. It was about seeing how much pain I could endure without tapping out.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                When an opportunity has an absolute deadline, discard comfortable balance. Total obsession is the only bridge across the impossible.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-4">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 4</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 4
+                  </span>
+                </div>
+                <span class="unit-epistemic">PSYCHOLOGICAL WARFARE & THE CULTURE OF DOMINANCE</span>
+              </div>
+
+              <h3 class="unit-heading-deep">Taking Souls: BUD/S Hell Week and Psychological Warfare</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                When an opponent or instructor attempts to break your spirit through pain, you do not merely endure; you excel so joyfully and aggressively that you 'take their soul'—shattering their psychological confidence.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Goggins was forced through Navy SEAL Hell Week three times due to stress fractures and double pneumonia. Hell Week consists of 130 hours of continuous brutal physical training in freezing Pacific Ocean surf, hauling 200-pound logs and inflatable boats, with less than four hours of total sleep across five and a half days.</p><p class="narrative-p">During his third Hell Week with Class 235, Goggins recognized that the instructors' objective was psychological: to crush the candidates' spirit and force them to ring the bell. Goggins devised the tactic of 'Taking Souls': when the instructors ordered them back into the freezing surf at 2:00 AM, Goggins led his boat crew in joyful, booming cadences, smiling and asking for more.</p><p class="narrative-p">By demonstrating that the instructors' worst punishments only made him stronger and happier, Goggins reversed the psychological leverage. The instructors became unsettled, frustrated, and bewildered. Taking souls means dominating the mental environment through undeniable energetic excellence.</p>
+              </div>
+
+              <div class="quote-box">
+                “Taking souls means you’ve mastered the art of psychological warfare... You achieve excellence when the person trying to break you realizes you cannot be broken.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                When subjected to unfair suffering or hostile pressure, respond with ferocious excellence and good cheer. Break their will by out-enduring them.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-5">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 5</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 5
+                  </span>
+                </div>
+                <span class="unit-epistemic">NEUROPLASTIC HARDENING & PAIN ACCORD</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Armored Mind: Building Calluses on the Brain</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                Just as lifting heavy barbells builds thick, protective calluses on the palms of the hands, enduring prolonged mental and physical discomfort builds protective calluses on the brain.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Society promotes a culture of soft comfort: air-conditioned rooms, instant digital entertainment, and avoidance of all friction. Goggins realized that this lifestyle softens the human spirit, making individuals brittle and fragile when inevitable life crises arrive.</p><p class="narrative-p">A 'Callused Mind' is developed by voluntarily doing what you hate to do every single day: waking up when you want to sleep, running in freezing rain, cleaning the bathroom, reading the dense textbook. Over time, the prefrontal cortex overrides the limbic system's whining.</p><p class="narrative-p">When life presents a catastrophic shock—a divorce, a cancer diagnosis, or financial ruin—an individual with a callused mind does not panic or crumble; their brain has already memorized the sensation of extreme discomfort and knows how to function through the storm.</p>
+              </div>
+
+              <div class="quote-box">
+                “The mind is the ultimate battleground. It is where your greatest strengths and your greatest weaknesses reside. You must callus your mind through deliberate, voluntary hardship.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Do something you hate every single day. Build the calluses before the storm hits.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-6">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 6</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 6
+                  </span>
+                </div>
+                <span class="unit-epistemic">ULTRA-ENDURANCE & THE SOMATIC THRESHOLD</span>
+              </div>
+
+              <h3 class="unit-heading-deep">It's Not About a Trophy: The San Diego One Day 100-Miler</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                True greatness is not achieved in comfortable competitions with cheering crowds; it is discovered in the lonely, horrifying basement of human suffering where you must keep moving forward on broken bones.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">In November 2005, following the tragic death of several Navy SEAL brothers in Operation Red Wings in Afghanistan, Goggins resolved to raise money for the Special Operations Warrior Foundation. To qualify for the elite Badwater 135 ultramarathon, he was told he had to run 100 miles in under 24 hours at the San Diego One Day race.</p><p class="narrative-p">Goggins had not run more than a few miles in months and weighed 260 pounds of dense muscle. At mile 70, his body suffered total catastrophic physiological collapse: shin splints, stress fractures in both feet, kidney failure, urine black with myoglobin, and uncontrollable bowel movements.</p><p class="narrative-p">Sitting on a lawn chair, bleeding, shivering, and near death, Goggins tapped into the deepest reservoir of human consciousness. He realized that the human body can endure ten times what the rational mind permits. Wrapping his ankles in duct tape, he stood up and walked and jogged the remaining 30 miles, finishing 101 miles in 19 hours and 6 minutes.</p>
+              </div>
+
+              <div class="quote-box">
+                “I was in the worst physical pain of my life... But in that dark room, I realized that we are all walking around at 40% of our capability.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                When your body tells you you are finished, you have only reached the threshold of your true reserve. The spirit must command the flesh.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-7">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 7</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 7
+                  </span>
+                </div>
+                <span class="unit-epistemic">COGNITIVE RECALL & ADVERSITY ANCHORING</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Most Powerful Weapon: The Cookie Jar</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                In moments of severe suffering, your brain panics and tries to convince you to quit. The 'Cookie Jar' is a mental vault containing memories of every hardship, trial, and impossible obstacle you have ever overcome in your life.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">During the Badwater 135—running across Death Valley in 130-degree Fahrenheit heat on melting asphalt—Goggins reached mile 50 with heat stroke, vomiting, and dizziness. His internal voice began shouting: 'Quit! This is insane! You're going to die!'</p><p class="narrative-p">To silence this voice, Goggins reached into his 'Cookie Jar.' He pulled out a mental cookie: the memory of surviving his father's beatings; the memory of dropping 106 pounds in three months; the memory of surviving three Hell Weeks; the memory of finishing the San Diego 100-miler with broken feet.</p><p class="narrative-p">Reminding yourself of who you are and what you have survived floods the nervous system with primal confidence. It changes your self-talk from 'I can't take this' to 'Who the hell is going to stop me?'</p>
+              </div>
+
+              <div class="quote-box">
+                “The Cookie Jar is a reminder of who you are and what you are capable of. It is an internal bank account of your own hard-earned victories.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                When you are in the depths of despair, reach into your Cookie Jar. Feed on your past triumphs to crush current resistance.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-8">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 8</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 8
+                  </span>
+                </div>
+                <span class="unit-epistemic">NEUROPHYSIOLOGY & THE GOVERNOR THEORY</span>
+              </div>
+
+              <h3 class="unit-heading-deep">Talent Not Required: The 40% Rule & The Biological Governor</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The human mind operates under an artificial biological 'Governor' (Prof. Tim Noakes' Central Governor Model) that sends panic signals when we have only tapped approximately 40% of our true physical and mental capacity.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Just as a sports car has an electronic governor that limits top speed to prevent the engine from overheating, the human brain has an evolved survival mechanism designed to protect us from cellular damage. When your lungs burn, your muscles ache, and your mind screams 'Stop, you have nothing left!', you are actually only at 40% of your absolute reserve.</p><p class="narrative-p">Most people hit this 40% wall and stop, believing they have reached their physical limit. Elite performers recognize that the pain signal is merely an early warning system, not an absolute wall.</p><p class="narrative-p">By deliberately remaining calm when the governor engages, and nudging forward 5% more, then 10% more, you recalibrate the governor, expanding your baseline work capacity far beyond conventional human limits.</p>
+              </div>
+
+              <div class="quote-box">
+                “The 40% Rule is simple: when your mind is telling you you’re done, that you’re exhausted, that it’s impossible to go on, you’re only at 40% of your true capability.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                When your mind tells you you are completely exhausted, remember the 40% rule. You still have 60% left in the tank.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-9">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 9</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 9
+                  </span>
+                </div>
+                <span class="unit-epistemic">COMPLACENCY RESISTANCE & CONTINUOUS HORIZONS</span>
+              </div>
+
+              <h3 class="unit-heading-deep">Uncommon Amongst Uncommon: Escaping the Seduction of Comfort</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The greatest danger of success is that it breeds complacency. It is not enough to be 'uncommon' in a weak society; you must strive to be 'uncommon amongst the uncommon.'
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">After graduating from BUD/S and becoming a Navy SEAL, Goggins observed that many SEALs rested on their tridents, becoming arrogant and comfortable with their elite status. Goggins refused to settle. He volunteered for Army Ranger School (graduating as Enlisted Honor Man), Air Force Tactical Air Controller school, and extreme ultra-marathons.</p><p class="narrative-p">Being 'uncommon amongst the uncommon' means that even when you reach the top 1% of your field, you do not celebrate or boast; you search for the next mountain, the next weakness, the next challenge.</p><p class="narrative-p">True self-mastery is an infinite horizon: there is no finish line where you get to sit back and declare yourself complete. The moment you believe you have arrived, you begin to decay.</p>
+              </div>
+
+              <div class="quote-box">
+                “Don’t let your desire for comfort hold you back from your potential. Be uncommon amongst the uncommon.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Never rest on your past laurels. When you achieve an elite milestone, immediately set a new standard that demands renewed struggle.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-10">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 10</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 10
+                  </span>
+                </div>
+                <span class="unit-epistemic">FAILURE HARVESTING & TACTICAL ITERATION</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Empowerment of Failure: The 24-Hour Pull-Up World Record</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                Failure is not an indictment of your worth; failure is the ultimate diagnostic report. Winning teaches you very little; dissecting a failure with clinical honesty provides the exact roadmap to triumph.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">In 2012, Goggins attempted to break the Guinness World Record for the most pull-ups in 24 hours (then 4,020 pull-ups). On his first attempt in Akron, Ohio, his pull-up bar was too springy and he didn't pad his hands; after 2,500 pull-ups, the skin tore completely off his palms and his wrists swelled to twice their size, forcing him to quit.</p><p class="narrative-p">On his second attempt in Nashville, he completed 3,241 pull-ups, but pushed his pace too fast; his right lat muscle tore, causing excruciating pain and kidney stress, forcing another failure.</p><p class="narrative-p">Rather than retreating in shame, Goggins conducted an 'After Action Report' (AAR): analyzing the friction of the bar, the taping of his hands, the hourly pacing, and the rest intervals. On his third attempt in Brentwood, Tennessee, in January 2013, Goggins completed 4,030 pull-ups in seventeen hours, setting the new World Record.</p>
+              </div>
+
+              <div class="quote-box">
+                “Failure is the ultimate training ground. It provides the cold, hard data of what needs to be fixed... I didn’t celebrate the world record. I celebrated the obsession that carried me through two failures to get it.” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Do not mourn a public failure. Conduct a ruthless After Action Report: audit the exact point of breakdown, adjust tactics, and re-engage.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-11">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 11</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 11
+                  </span>
+                </div>
+                <span class="unit-epistemic">EXISTENTIAL SELF-ACTUALIZATION & THE UNCAPPED LIFE</span>
+              </div>
+
+              <h3 class="unit-heading-deep">What If? The Infinite Capacity of the Human Mind</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The two most powerful words in the English language are 'What If?' They silence all cynical naysayers and unlock an uncapped, limitless life.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Whenever Goggins faced a seemingly insurmountable challenge and critics screamed 'You can't do that, nobody has ever done that!', he replied with two words: 'What if?'
+- What if I can drop 106 pounds in three months?
+- What if I can survive Hell Week with broken legs?
+- What if an illiterate, terrified Black kid from rural Indiana can become one of the toughest human beings on planet Earth?</p><p class="narrative-p">The 'What If' mentality neutralizes self-doubt by reframing impossible obstacles into thrilling hypotheses waiting to be tested in the laboratory of life.</p><p class="narrative-p">In the end, you are not competing against other people; you are competing against your own potential. Live in such a way that when you die and meet your creator or look back upon your life, you left nothing on the table.</p>
+              </div>
+
+              <div class="quote-box">
+                “The most important conversation you will ever have is the one you have with yourself. You wake up with it, you walk around with it, you go to bed with it. Tell yourself: What if?” — David Goggins
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                When doubt whispers that a goal is impossible, silence it with 'What if?' Live an uncapped existence.
+              </div>
+            </div>
+          
+
+        </section>
+
+        <!-- VIEW B: MENTAL WEAPONS BLUEPRINT -->
+        <section id="view-map" class="view-panel" style="display: none;">
+          <div style="margin-bottom: 32px; border-bottom: 2px solid var(--accent-crimson); padding-bottom: 16px;">
+            <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--text-main);">The Mental Weapons Blueprint</h2>
+            <p style="font-family: var(--font-serif); font-style: italic; color: var(--text-muted); font-size: 1.05rem;">The Five Cognitive Weapons for Overriding the Biological Governor</p>
+          </div>
+
+          <div style="display: grid; gap: 20px;">
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid var(--accent-crimson); border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--accent-crimson); margin-bottom: 6px;">1. The Accountability Mirror</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Facing your unvarnished reflection daily. Eradicating excuses and posting explicit metrics of improvement on the glass.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid var(--accent-gold); border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--accent-gold); margin-bottom: 6px;">2. Taking Souls</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Dominating an oppressive environment by responding to pain and hostility with cheerful, booming excellence. Breaking the will of the oppressor.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid var(--accent-forest); border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--accent-forest); margin-bottom: 6px;">3. The Callused Mind</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Doing what you hate every single day to build psychological armor. Inoculating the nervous system before real-world crises hit.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid #2b6cb0; border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: #2b6cb0; margin-bottom: 6px;">4. The Cookie Jar</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">A mental memory bank of every impossible hardship you have ever survived. Reaching in to silence panic and self-doubt in the depths of suffering.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid #6b46c1; border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: #6b46c1; margin-bottom: 6px;">5. The 40% Rule</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Recognizing that when your body screams 'I have nothing left,' your evolved biological governor has only engaged at 40% capacity. You have 60% left.</p>
+            </div>
+          </div>
+        </section>
+
       </div>
-
-      
-    <section class="chapter-wrapper" id="ch-01">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 1</div>
-        <h2 class="chapter-title">I Should Have Been a Statistic (The Bad Hand & Inherited Trauma)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Your circumstances and trauma do not excuse your failure; they are the raw ore from which an unshakeable identity must be forged.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 1: The Bad Hand Inventory</div>
-          <p class="challenge-desc">Write down every factor, disadvantage, trauma, and obstacle working against you in your past and present. Convert victimhood into combustible fuel.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">Childhood exposure to severe domestic violence, parental abuse (Trunbull Street, Buffalo), extreme poverty, and toxic racism in rural Indiana creates a psychological baseline of terror, toxic shame, and hypervigilance. The brain instinctively defaults to victimhood as a self-protective defense mechanism, accepting low societal expectations as an immutable ceiling.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Catalog your 'bad hand' without self-pity or romanticization.</li>
-<li>Recognize that pain and trauma are unrefined emotional energy; re-channel them as fuel for relentless self-transformation.</li>
-<li>Refuse the seduction of sympathy: pity reinforces helplessness.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          You are in danger of living a life so soft and comfortable that you will die without ever knowing your true potential.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-02">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 2</div>
-        <h2 class="chapter-title">My Dirty Secret (The Accountability Mirror & Eradicating Delusion)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Brutal, unvarnished self-honesty is the prerequisite for transformation; you must face your own reflection without cosmetic lies.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 2: The Accountability Mirror</div>
-          <p class="challenge-desc">Post honest Post-it notes on your bathroom mirror detailing your current weaknesses, flaws, and daily commitments. Look yourself in the eye every morning and hold yourself accountable.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">To survive academic failure, illiteracy, and a severe childhood stutter, Goggins developed a coping mechanism of cheating, social masking, and false swagger. The 'Accountability Mirror' functions as cognitive behavioral restructuring: by confronting one's physical and behavioral flaws in the mirror with explicit, written Post-it goals, the individual dissolves self-deception and bridges the chasm between who they pretend to be and who they actually are.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Stand in front of the mirror every day and state the truth about your fitness, discipline, and integrity.</li>
-<li>Break major life goals into micro-commitments written on Post-it notes.</li>
-<li>Call yourself out without mercy: sugarcoating your weaknesses guarantees that they will enslave you.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          Tell yourself the truth! If you're fat, admit you're fat. If you're lazy, admit you're lazy. The truth will set you free, but first it will piss you off.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-03">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 3</div>
-        <h2 class="chapter-title">The Impossible Task (Comfort Zone Destruction: 106 Lbs in 3 Months)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Radical transformation requires destroying the protective cocoon of comfort; physical suffering expands the boundary of the possible.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 3: Daily Discomfort Inoculation</div>
-          <p class="challenge-desc">Identify something you hate doing or that makes you intensely uncomfortable every single day, and do it repeatedly until discomfort becomes familiar.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">Working as a night-shift exterminator weighing 297 pounds, Goggins saw a documentary on Navy SEAL training Class 224 and decided to enlist. To meet the recruit cutoff, he was required to lose 106 pounds in less than 90 days. He subjected his body to extreme caloric restriction (800 calories/day) and 16 hours of daily cardiovascular exercise on a stationary bike and elliptical. This physical crucible rewired his neurobiology, demonstrating that perceived physical limits are cognitive illusions created by the brain's homeostatic preservation drive.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Do things you hate every day to build a habit of voluntary suffering.</li>
-<li>When the body screams that it has reached its absolute limit, recognize that you are only at 40% of your true reserve.</li>
-<li>Treat intense physical conditioning not as fitness, but as surgical reconstruction of your will.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          I was twenty-four, 297 pounds, spraying cockroaches for a living. I decided that either I was going to die trying to become a Navy SEAL, or I was going to make it. There was no third option.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-04">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 4</div>
-        <h2 class="chapter-title">Taking Souls (Psychological Dominance Over Adversity)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> True dominance is not achieved by defeating your opponent physically, but by demonstrating that you love the suffering they are trying to inflict on you.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 4: Taking Souls in Competition</div>
-          <p class="challenge-desc">In any competitive arena, project an aura of unshakeable ferocity and joy in the midst of suffering, destroying your opponent's psychological resolve.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">During BUD/S (Basic Underwater Demolition/SEAL) Hell Week, instructors subject trainees to continuous sleep deprivation, hypothermia in Pacific surf, and crushing boat-carry drills to break their spirit. 'Taking Souls' is an asymmetric psychological tactic: when an instructor or rival expects you to break, cry, or quit, you smile, sing louder, and execute reps with explosive energy. This inverts the power dynamic: the tormentor becomes disoriented and demoralized by realizing that their worst torture only energizes you.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Find energy in the darkest moments of a trial by out-suffering your competition.</li>
-<li>Excellence is the ultimate intimidation: when conditions are horrific, execute with flawless precision.</li>
-<li>Never show pain or weakness to someone who is trying to break you.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          Taking someone’s soul means you have exerted an energy so great and displayed a mindset so unbreakable that the other person begins to doubt their own existence.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-05">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 5</div>
-        <h2 class="chapter-title">Armored Mind (Mental Calluses & Visualizing Calamity)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Just as hands develop thick calluses from friction with iron, the mind develops calluses through repeated friction with suffering and fear.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 5: Calamity Visualization</div>
-          <p class="challenge-desc">Do not visualize only triumph; visualize every horrific failure, catastrophe, and agonizing obstacle, and pre-program your psychological response.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">Surviving BUD/S after failing twice (pneumonia, stress fractures) required Goggins to complete Hell Week with double shin splints and a fractured patella, wrapping his legs in duct tape every morning. Building an 'Armored Mind' relies on stress inoculation: by voluntarily exposing oneself to physical pain and rehearsing worst-case scenarios, the brain down-regulates cortisol reactivity. When actual catastrophe strikes, the mind treats it not as a shock, but as a familiar training ground.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Callus your mind through regular exposure to friction, cold, exhaustion, and repetition.</li>
-<li>Practice negative visualization: prepare for equipment failure, hypothermia, betrayal, and physical injury.</li>
-<li>When pain strikes, remember that pain is information, not an instruction to stop.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          You have to build calluses on your brain just like how you build calluses on your hands. If you never push yourself to failure, your mind remains soft and fragile.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-06">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 6</div>
-        <h2 class="chapter-title">It's Not About a Trophy (The Cookie Jar of Past Victories)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> When the mind enters acute crisis, memory fails; you must carry an explicit catalog of past triumphs to remind yourself of who you are.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 6: The Cookie Jar Repository</div>
-          <p class="challenge-desc">Create an inventory of all past hardships you have overcome, victories you have won, and pain you have outlasted. Reach into this Cookie Jar when despair tempts you to quit.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">Under conditions of severe hypothermia, acute physical agony, and exhaustion, the brain's prefrontal cortex suffers cognitive narrowing, causing the individual to forget their own capabilities and experience intense existential helplessness. 'The Cookie Jar' is an intentional cognitive retrieval heuristic: by deliberately pulling up vivid sensory memories of past trials survived, the individual activates dopamine pathways, dislodging helplessness and restoring self-efficacy.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Maintain a mental and written inventory of every dark trial you have endured and conquered.</li>
-<li>When your mind screams 'I can't take this anymore,' dip into the Cookie Jar and remember what you survived.</li>
-<li>Use your past suffering as proof that you are stronger than your current circumstance.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          The Cookie Jar is a reminder of who you are at your core. It's a mental file cabinet filled with all the times you overcame insurmountable odds and refused to quit.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-07">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 7</div>
-        <h2 class="chapter-title">The Most Powerful Weapon (The 40% Rule & Overriding the Governor)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> When your mind screams that you are completely exhausted and must stop, you have only tapped 40% of your actual physical and mental capacity.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 7: Pushing Past the 40% Governor</div>
-          <p class="challenge-desc">When your mind tells you that you are completely empty, exhausted, and finished, force yourself to complete another 5% to 10% incrementally.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">The human brain contains a biological 'Governor' (analyzed in exercise physiology by Dr. Timothy Noakes) designed to protect the organism from cellular damage and death. When energy reserves drop and lactic acid rises, the Governor sends overwhelming distress signals—pain, panic, nausea—demanding cessation of effort. In reality, human physiology retains a massive 60% emergency safety margin. Ultra-endurance athletes and elite military operators learn to cognitively override the Governor's panic alarms.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Acknowledge the brain's Governor as a survival alarm, not an absolute barrier.</li>
-<li>When you hit the wall, realize that you still have 60% in reserve.</li>
-<li>Push past exhaustion in small 5% increments to systematically widen your performance ceiling.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          The 40% Rule is simple: when your mind is telling you that you are completely done, you are only at 40% of your true potential.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-08">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 8</div>
-        <h2 class="chapter-title">Talent Not Required (Extreme Time Compartmentalization)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Greatness does not require natural genius or athletic pedigree; it requires an obsessive, militarized mastery of the clock.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 8: Schedule Compartmentalization & Time Audits</div>
-          <p class="challenge-desc">Audit every 15-minute block of your 24-hour day for a full week. Ruthlessly eliminate passive screen time, idle chatter, and wasted filler to create deep blocks of focused execution.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">While preparing for the Badwater 135 (a 135-mile ultramarathon through Death Valley in 130°F heat) and the Ultraman World Championship while serving as an active-duty Navy SEAL, Goggins developed a system of compartmentalized time architecture. By eliminating passive media consumption, waking at 4:00 AM, and commuting 50 miles daily on a bicycle, he captured 4–6 productive hours that average individuals squander on distraction.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Audit your daily schedule in 15-to-30-minute increments to eliminate hidden time theft.</li>
-<li>Single-task with savage focus: when training, only train; when studying, only study; when resting, only rest.</li>
-<li>Reject the myth of talent: sustained, focused labor outworks gifted complacency every time.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          We all have 24 hours in a day. Most people spend half of it wandering around in a fog of distraction, and then complain they don't have time to achieve their dreams.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-09">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 9</div>
-        <h2 class="chapter-title">Uncommon Amongst Uncommon (Fighting Elite Complacency)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> The greatest enemy of sustained excellence is the comfort that comes from achieving an elite status; greatness is never owned, it is rented daily.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 9: Being Uncommon Amongst Uncommon</div>
-          <p class="challenge-desc">When you reach an elite group or achieve a major milestone, refuse to relax or celebrate. Raise your personal standard above the group's collective baseline.</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">After earning his Navy SEAL Trident, graduating from Army Ranger School as Top Enlisted Man, and completing Air Force Tactical Air Control training, Goggins observed a pervasive phenomenon: once individuals achieve elite status, they frequently slow down, celebrate their past credentials, and settle into collective mediocrity. To combat this entropy, the true warrior must become 'uncommon amongst the uncommon', refusing to let institutional reputation substitute for daily relentless exertion.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Never allow a credential, degree, or uniform to define your current worth.</li>
-<li>When everyone around you rests and pat themselves on the back, put your boots back on and seek the next challenge.</li>
-<li>Hold yourself to an internal standard higher than any supervisor or organization can demand.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          It's easy to be great among the weak. The real test is: can you be uncommon amongst the uncommon? When you surround yourself with killers, do you still stand out?
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-10">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 10</div>
-        <h2 class="chapter-title">The Empowerment of Failure (The After Action Report & The Pull-Up Record)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Failure is not a reflection of your identity; it is empirical operational data showing you the exact engineering flaws in your preparation.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 10: The Forensic After Action Report (AAR)</div>
-          <p class="challenge-desc">Following any failure or defeat, immediately write a clinical, emotionless After Action Report: (1) What went well? (2) What failed? (3) How did my mindset falter? (4) What exact adjustments will I make on the next attempt?</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">In attempting to break the Guinness World Record for 24-hour pull-ups, Goggins failed twice: on his first attempt, his hands tore down to the bone and severe chemical burns from foam padding forced him to stop at 2,588 pull-ups; on his second attempt, extreme muscle swelling caused rhabdomyolysis at 3,207 pull-ups. Rather than quitting, he conducted military-grade After Action Reports (AARs), re-engineered his grip, adjusted his pacing, hardened his palms, and succeeded on his third attempt with 4,030 pull-ups in 17 hours.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Treat failure as clinical data, not emotional condemnation.</li>
-<li>Run an AAR immediately after defeat: dissect preparation, nutrition, mental state, and pacing.</li>
-<li>Return to the arena with adjusted variables until the objective is conquered.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          Failure is the most powerful tool you have if you are willing to learn from it. My failures taught me more about my soul than any medal I ever won.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-11">
-      <header class="chapter-header">
-        <div class="chapter-kicker">David Goggins • Chapter 11</div>
-        <h2 class="chapter-title">What If? (Open Heart Surgery & Uncapped Human Potential)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> The phrase 'What if?' is the ultimate cognitive weapon: it silences negativity, obliterates doubt, and turns impossible obstacles into historic invitations.</div>
-      </header>
-      
-      <div class="goggins-block">
-        <div class="challenge-box">
-          <div class="challenge-tag">Challenge 11: The 'What If?' Mindset Anchor</div>
-          <p class="challenge-desc">When facing impossible odds or when everyone tells you that something cannot be done, quiet your mind and whisper: 'What if I can pull this off?'</p>
-        </div>
-
-        <h3 class="goggins-heading">Psychological &amp; Behavioral Mechanism</h3>
-        <p class="goggins-text">After competing in world-championship endurance races and serving as a SEAL, doctors discovered that Goggins had an Atrial Septal Defect (ASD)—a hole in his heart that caused his heart to operate on roughly 50% oxygen capacity his entire life. Following two open-heart surgeries, he faced total physical devastation. By employing the 'What If?' mental frame, he dismantled fear and returned to elite endurance running, demonstrating that the human spirit possesses an uncapped, transcendent capacity when it refuses surrender.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Use 'What If?' to flip negative self-talk into curiosity and audacious possibility.</li>
-<li>Understand that human potential is not a fixed ceiling; it expands in direct proportion to your willingness to endure.</li>
-<li>Live your life so that at the moment of death, you leave nothing in the tank.</li>
-          </ul>
-        </div>
-
-        <blockquote class="goggins-quote">
-          <span class="quote-symbol">“</span>
-          Heraclitus said: 'Out of every hundred men, ten shouldn't even be there, eighty are just targets, nine are the real fighters, and we are lucky to have them, for they make the battle. Ah, but the one, one is a warrior, and he will bring the others back.' Be that one.
-        </blockquote>
-      </div>
-    </section>
-  
     </main>
   </div>
 
+  <script src="../../assets/js/reader-controls.js"></script>
   <script>
-    const themeBtn = document.getElementById('theme-btn');
-    const htmlEl = document.documentElement;
-    let theme = localStorage.getItem('intellectualist_theme') || 'dark';
-    htmlEl.setAttribute('data-theme', theme);
-    themeBtn.addEventListener('click', () => {
-      theme = theme === 'dark' ? 'light' : 'dark';
-      htmlEl.setAttribute('data-theme', theme);
-      localStorage.setItem('intellectualist_theme', theme);
-    });
+    function switchView(viewName) {
+      document.querySelectorAll('.view-panel').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+
+      if (viewName === 'journey') {
+        document.getElementById('view-journey').style.display = 'block';
+        document.getElementById('btn-view-journey').classList.add('active');
+      } else if (viewName === 'map') {
+        document.getElementById('view-map').style.display = 'block';
+        document.getElementById('btn-view-map').classList.add('active');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeSidebarOnMobile() {
+      if (window.innerWidth <= 1024) {
+        document.getElementById('reader-shell').classList.remove('sidebar-open');
+      }
+    }
   </script>
 </body>
 </html>

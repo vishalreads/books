@@ -1,0 +1,322 @@
+[
+  {
+    "unit_id": "unit-01",
+    "unit_number": 1,
+    "title": "The Aggregation of Marginal Gains: The Mathematics of 1% Compounding",
+    "section": "The Fundamentals: How Tiny Changes Make a Big Difference",
+    "epistemic_status": "MATHEMATICAL COMPOUNDING & EXPONENTIAL HABITS",
+    "core_concept": "Habits are the compound interest of self-improvement. Getting 1 percent better each day for one year results in becoming 37.78 times better ($1.01^{365} = 37.78$). Conversely, declining 1 percent each day erodes your capacity down to near zero ($0.99^{365} = 0.03$).",
+    "narrative_breakdown": [
+      "In 2003, British Cycling hired Dave Brailsford as performance director. British riders had won a single gold medal in 100 years. Brailsford implemented the 'aggregation of marginal gains'—searching for a tiny 1% improvement in everything: redesigning bike seats, testing aerodynamic fabrics in wind tunnels, rubbing alcohol on tires for better grip, determining the best mattress and pillow for each rider's sleep, and teaching riders the best hand-washing technique to prevent colds.",
+      "Within five years, British Cycling dominated the Beijing 2008 Olympics (winning 60% of track cycling gold medals) and went on to win six Tour de France victories in seven years. The human brain consistently underestimates the power of small daily choices because the immediate payoff is imperceptible: eating a burger today does not cause a heart attack, and saving $100 today does not buy a house.",
+      "Outcomes lag behind habits: your net worth is a lagging measure of your financial habits; your weight is a lagging measure of your eating habits; your knowledge is a lagging measure of your learning habits. Breaking through requires surviving the 'Plateau of Latent Potential'—the early phase where massive effort yields zero visible results until the critical threshold is crossed."
+    ],
+    "verbatim_anchor": "“You do not rise to the level of your goals. You fall to the level of your systems.” — James Clear",
+    "operational_heuristic": "Forget about overnight breakthroughs; focus on the daily 1% compounding trajectory. Trajectory beats current position.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-02",
+    "unit_number": 2,
+    "title": "Identity-Based Habits: The Three Layers of Behavior Change",
+    "section": "The Fundamentals: How Tiny Changes Make a Big Difference",
+    "epistemic_status": "COGNITIVE IDENTITY & SELF-EFFICACY",
+    "core_concept": "Behavior change occurs across three concentric layers: (1) Outcomes (what you get); (2) Processes (what you do); (3) Identity (what you believe about yourself). Most people fail because they attempt outcome-based change without altering the core identity.",
+    "narrative_breakdown": [
+      "The difference between an outcome-based habit and an identity-based habit is visible in how two former smokers decline a cigarette. Person A says: 'No thanks, I'm trying to quit.' This person still views themselves as a smoker who is suffering through deprivation. Person B says: 'No thanks, I'm not a smoker.' This person has shifted their internal identity; smoking is no longer congruent with who they are.",
+      "Every action you take is a vote for the type of person you wish to become. No single instance will transform your identity, but as the votes accumulate, the evidence of your new self becomes overwhelming. If you write one page, you cast a vote for being a writer; if you lace up your shoes and run 100 meters, you cast a vote for being an athlete.",
+      "True behavior change is identity change. You can convince yourself to go to the gym once or twice through willpower, but you will only sustain it for decades if 'I am an active person' becomes your fundamental self-concept."
+    ],
+    "verbatim_anchor": "“The ultimate form of intrinsic motivation is when a habit becomes part of your identity. It’s one thing to say I’m the type of person who wants this. It’s something very different to say I’m the type of person who is this.” — James Clear",
+    "operational_heuristic": "Decide who you want to be, then prove it to yourself with small daily wins. Every action is a vote for your identity.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-03",
+    "unit_number": 3,
+    "title": "The 4-Step Habit Loop: Cue, Craving, Response, and Reward",
+    "section": "The Fundamentals: How Tiny Changes Make a Big Difference",
+    "epistemic_status": "NEUROBIOLOGICAL HABIT CYBERNETICS",
+    "core_concept": "Every habit is a neurological feedback loop comprising four sequential stages: (1) Cue (triggers the brain to initiate behavior); (2) Craving (the motivational force / desire to change state); (3) Response (the actual action performed); (4) Reward (the satisfaction and reinforcement that closes the loop).",
+    "narrative_breakdown": [
+      "The Cue is a bit of sensory information predicting a reward. Your ancestors noticed berries; your modern brain hears a phone chime. The cue notices the opportunity; the Craving provides the emotional energy to act. You do not crave smoking a cigarette; you crave the relief and dopamine shift it provides. You do not crave opening Instagram; you crave the distraction from your boring spreadsheet.",
+      "The Response is the actual habit you perform (lighting the cigarette, tapping the phone). Whether a response occurs depends on your motivation and the amount of friction involved. If the response requires more physical or cognitive effort than you are willing to expend, it fails.",
+      "The Reward is the end goal: it satisfies the craving and teaches the brain which actions are worth remembering. If an action delivers pleasure or relief, the brain marks the cue for future automation.",
+      "From this 4-step loop arise Clear’s Four Laws of Behavior Change:\n- To build a good habit: (1) Make it obvious; (2) Make it attractive; (3) Make it easy; (4) Make it satisfying.\n- To break a bad habit: (1) Make it invisible; (2) Make it unattractive; (3) Make it difficult; (4) Make it unsatisfying."
+    ],
+    "verbatim_anchor": "“A habit is a behavior that has been repeated enough times to become automatic... The primary purpose of habits is to solve the problems of life with as little energy and effort as possible.” — James Clear",
+    "operational_heuristic": "Diagnose any broken habit by identifying which of the four stages is failing: Is it hidden? Boring? Difficult? Or unrewarding?",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-04",
+    "unit_number": 4,
+    "title": "The Habits Scorecard & Pointing-and-Calling",
+    "section": "The 1st Law: Make It Obvious (Cues & Environment)",
+    "epistemic_status": "COGNITIVE CONSCIOUSNESS & AWARENESS PRIMING",
+    "core_concept": "Before you can change a habit, you must become conscious of it. Over time, automatic cues slip below the threshold of conscious awareness, causing people to act without thinking.",
+    "narrative_breakdown": [
+      "The Japanese railway system uses 'Pointing-and-Calling' (shisa kanko)—train conductors point at signals, speed dials, and platform edges while calling out their status aloud ('Signal is green! Speed is 70!'). This simple verbalization engages the motor, vocal, and visual cortex simultaneously, reducing industrial safety errors by up to 85%.",
+      "Clear adapts this into 'The Habits Scorecard': writing down every single daily action from waking to sleeping (wake up, turn off alarm, check phone, brush teeth, drink coffee...) and categorizing each as positive (+), negative (-), or neutral (=) based on long-term trajectory.",
+      "By vocalizing bad habits aloud before performing them ('I am about to eat this entire bag of chips, but I don't need it and it will make me feel sluggish'), you drag the unconscious impulse back into the prefrontal cortex, giving conscious choice an opportunity to intervene."
+    ],
+    "verbatim_anchor": "“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Jung (cited by James Clear)",
+    "operational_heuristic": "You cannot change what you do not notice. Point and call your unconscious actions aloud to regain executive control.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-05",
+    "unit_number": 5,
+    "title": "Implementation Intentions & Habit Stacking: Time, Location, and Sequence",
+    "section": "The 1st Law: Make It Obvious (Cues & Environment)",
+    "epistemic_status": "BEHAVIORAL SPECIFICITY & ANCHORING",
+    "core_concept": "Vague intentions ('I will exercise more' or 'I will read this week') fail because they lack an operational trigger. Hundreds of studies prove that specifying exact Time and Location doubles or triples adherence rates.",
+    "narrative_breakdown": [
+      "The Implementation Intention formula: 'I will [BEHAVIOR] at [TIME] in [LOCATION].' (e.g., 'I will meditate for 10 minutes at 7:00 AM in my living room chair'). When the designated moment arrives, your brain does not need to debate or make decisions; the environment triggers the action automatically.",
+      "Clear builds upon Dr. BJ Fogg's Tiny Habits to create 'Habit Stacking': anchoring a new habit onto an existing, deeply established habit rather than a clock time. Formula: 'After [CURRENT HABIT], I will [NEW HABIT].'",
+      "Examples of habit stacking:\n- After I pour my morning coffee, I will write down three priorities for today.\n- After I take off my work shoes, I will immediately change into my running clothes.\n- After I sit down for dinner, I will say one thing I am grateful for today.\nBy chaining new behaviors onto existing neural pathways, the friction of initiation drops to near zero."
+    ],
+    "verbatim_anchor": "“Many people think they lack motivation when what they really lack is clarity.” — James Clear",
+    "operational_heuristic": "Never leave a good habit floating without an anchor: tie it directly to an established daily action.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-06",
+    "unit_number": 6,
+    "title": "Environment Design: The Architecture of Visual Cues",
+    "section": "The 1st Law: Make It Obvious (Cues & Environment)",
+    "epistemic_status": "CHOICE ARCHITECTURE & SENSORY AFFORDANCE",
+    "core_concept": "Motivation is overrated; environment matters far more. Human beings are predominantly visual creatures: 50% of the brain's sensory processing power is devoted to vision. We choose what is easiest to see and reach.",
+    "narrative_breakdown": [
+      "Dr. Anne Thorndike, a physician at Massachusetts General Hospital, redesigned the hospital cafeteria without telling patients or staff. She placed bottled water next to every cash register and food station, while leaving sodas in their original refrigerators. Over three months, soda sales dropped by 11.4% and water sales increased by 25.8%. People did not suddenly develop willpower; they simply responded to visual affordances.",
+      "If you want a habit to be a big part of your life, make the cue a big part of your environment: place the book on your pillow in the morning; put the water bottle on your desk; set the guitar in the middle of the living room on a stand.",
+      "Conversely, to break a bad habit, Make It Invisible: place your phone in another room while working; unplug the television after each use; hide junk food on the highest shelf in the garage. Out of sight is literally out of mind."
+    ],
+    "verbatim_anchor": "“Environment is the invisible hand that shapes human behavior.” — James Clear",
+    "operational_heuristic": "Be the architect of your environment, not merely the tenant. Design spaces where good cues are obvious and bad cues are hidden.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-07",
+    "unit_number": 7,
+    "title": "Dopamine Feedback Loops & Temptation Bundling",
+    "section": "The 2nd Law: Make It Attractive (Dopamine & Social Norms)",
+    "epistemic_status": "NEUROCHEMISTRY OF ANTICIPATION & PREMACK'S PRINCIPLE",
+    "core_concept": "Habits are a dopamine-driven feedback loop. Neurobiology proves that dopamine spikes not when you receive a reward, but in anticipation of the reward. It is the craving, not the fulfillment, that drives action.",
+    "narrative_breakdown": [
+      "In animal studies, when researchers blocked dopamine receptors in rats, the rats lost all desire to eat, groom, or reproduce; within days, they died of thirst next to water dishes, even though they still enjoyed food when placed directly on their tongues. Dopamine is the molecule of desire, motivation, and pursuit.",
+      "Clear applies Premack's Principle ('more probable behaviors will reinforce less probable behaviors') through 'Temptation Bundling': pairing an action you need to do with an action you want to do.",
+      "Irish engineering student Ronan Byrne wanted to exercise more but loved watching Netflix. He rigged an exercise bike to his laptop with an Arduino microcontroller: Netflix would play only if he pedaled above a certain speed; if he slowed down, the video paused. Formula: 'After [HABIT I NEED], I will [HABIT I WANT].'"
+    ],
+    "verbatim_anchor": "“Desire is the engine that drives behavior... It is the anticipation of a reward—not the fulfillment of it—that gets us to take action.” — James Clear",
+    "operational_heuristic": "Bundle your obligations with your indulgences: allow yourself to enjoy the reward only while or after performing the habit.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-08",
+    "unit_number": 8,
+    "title": "The Role of Family and Friends: Mimetic Social Norms",
+    "section": "The 2nd Law: Make It Attractive (Dopamine & Social Norms)",
+    "epistemic_status": "MIMETIC CONTAGION & TRIBAL BELONGING",
+    "core_concept": "Human beings are tribal primates. We imitate the habits of three social groups: (1) The Close (family and friends); (2) The Many (the crowd / social consensus); (3) The Powerful (those with high status).",
+    "narrative_breakdown": [
+      "In 1965, Hungarian educator László Polgár decided to test his theory that geniuses are made, not born. He and his wife homeschooled their three daughters (Susan, Sofia, and Judit) in chess, filling their house with chess books and tournament boards. All three daughters became global chess prodigies; Judit Polgár became the greatest female chess player in world history. For the girls, studying chess six hours a day was not an agonizing chore; it was the normal, celebrated culture of their home.",
+      "Nothing sustains motivation better than belonging to a tribe where your desired behavior is the normal behavior. When you join a fitness running club, running 10 miles on Sunday morning ceases to be extreme; it is simply what everyone does.",
+      "To cement a habit, join a culture where: (1) Your desired behavior is the normal behavior; and (2) You already have something in common with the group."
+    ],
+    "verbatim_anchor": "“The shared identity of the tribe begins to reinforce your personal identity... There is tremendous internal pressure to comply with the norms of the group.” — James Clear",
+    "operational_heuristic": "Surround yourself with people who have the habits you want to have. You will rise or fall to the culture of your tribe.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-09",
+    "unit_number": 9,
+    "title": "The Law of Least Effort & Reducing Friction",
+    "section": "The 3rd Law: Make It Easy (Friction & The Two-Minute Rule)",
+    "epistemic_status": "BEHAVIORAL FRICTION & PHYSICAL AFFORDANCES",
+    "core_concept": "Human behavior naturally follows the path of least resistance. Every habit requires a specific amount of energy. The greater the friction, the less likely the habit will occur.",
+    "narrative_breakdown": [
+      "Japanese manufacturers revolutionized industrial productivity in the 1970s through 'lean manufacturing' and friction reduction: eliminating wasted motion, placing tools within arm's reach, and streamlining assembly lines. This concept applies directly to personal habit architecture.",
+      "If you want to exercise in the morning, lay out your workout clothes, socks, and sneakers next to your bed the night before; fill your water bottle and set your keys by the door. You have eliminated 80% of the friction between waking up and stepping out the door.",
+      "To eliminate bad habits, Increase Friction: create twenty seconds of delay. Remove social media apps from your phone; leave your television remote in a drawer in another room; store credit cards in a bowl of water in the freezer so you must wait 30 minutes for them to thaw before impulse shopping online."
+    ],
+    "verbatim_anchor": "“Energy is precious, and the brain is wired to conserve it wherever possible... Make your habits so easy that you’ll do them even when you don’t feel like it.” — James Clear",
+    "operational_heuristic": "Prime the environment to make good habits take fewer steps than bad habits. Reduce friction for virtues; add friction for vices.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-10",
+    "unit_number": 10,
+    "title": "The Two-Minute Rule: Scaling Down to the Gateway Habit",
+    "section": "The 3rd Law: Make It Easy (Friction & The Two-Minute Rule)",
+    "epistemic_status": "GATEWAY BEHAVIORS & MOMENTUM CONSERVATION",
+    "core_concept": "When you start a new habit, it should take less than two minutes to do. The goal is not to achieve the complete workout or write the complete novel; the goal is to master the art of showing up.",
+    "narrative_breakdown": [
+      "People consistently sabotage new habits by attempting too much too soon: trying to run five miles on day one, or write for two hours every evening. When fatigue strikes, the habit collapses.",
+      "The Two-Minute Rule scales down any massive ambition into an effortless two-minute ritual:\n- 'Read 30 books a year' becomes 'Read one page.'\n- 'Do 30 minutes of yoga' becomes 'Unroll my yoga mat.'\n- 'Study for exam' becomes 'Open my textbook.'\n- 'Fold the laundry' becomes 'Fold one pair of socks.'",
+      "A habit must be established before it can be improved. If you cannot master the basic skill of showing up for two minutes, you have no hope of mastering the finer details. Once you stand on the yoga mat or open the book, momentum takes over."
+    ],
+    "verbatim_anchor": "“A habit must be established before it can be improved. If you can’t learn the basic skill of showing up, then you have little hope of mastering the finer details.” — James Clear",
+    "operational_heuristic": "Standardize before you optimize. Master the two-minute gateway habit before you attempt to scale intensity.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-11",
+    "unit_number": 11,
+    "title": "Commitment Devices & The Automation of History",
+    "section": "The 3rd Law: Make It Easy (Friction & The Two-Minute Rule)",
+    "epistemic_status": "ODYSSEAN PLEDGES & IRREVERSIBLE CHOICES",
+    "core_concept": "A commitment device is a choice you make in the present that controls your actions in the future. It is a way to lock in good behavior before temptation strikes.",
+    "narrative_breakdown": [
+      "In 1830, French novelist Victor Hugo faced an impossible deadline for *The Hunchback of Notre-Dame*. He had spent months procrastinating with dinner parties. To force himself to write, Hugo collected all his clothes, locked them in a chest, and handed the key to his assistant with strict orders not to return it until the deadline passed. Left with nothing to wear but a large gray woolen shawl, Hugo could not leave his study; he wrote furiously throughout the autumn and completed the masterpiece weeks ahead of schedule.",
+      "Modern commitment devices leverage technology and banking: setting up automated monthly retirement transfers on payday (paying yourself first before you can spend the money); using internet-blocking software like Freedom; or buying single-serving bags of snacks instead of wholesale jumbo packs.",
+      "Single one-time choices that automate good habits forever:\n- Buy a high-quality mattress (improves sleep for 10 years).\n- Turn off all phone push notifications (saves 2 hours of daily focus).\n- Cancel cable subscriptions (eliminates passive television consumption)."
+    ],
+    "verbatim_anchor": "“The best way to break a bad habit is to make it impractical to do. Increase the friction until you don’t even have the option to act.” — James Clear",
+    "operational_heuristic": "Use one-time choices in the present to eliminate future decisions. Automate good behavior through technology and physical lock-ins.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-12",
+    "unit_number": 12,
+    "title": "The Cardinal Rule of Behavior Change: Immediate vs. Delayed Returns",
+    "section": "The 4th Law: Make It Satisfying (Reinforcement & Tracking)",
+    "epistemic_status": "TEMPORAL DISCOUNTING & HYPERBOLIC PREFERENCE",
+    "core_concept": "The Cardinal Rule of Behavior Change: What is immediately rewarded is repeated. What is immediately punished is avoided. The human brain evolved in an 'Immediate Return Environment', but modern society operates in a 'Delayed Return Environment.'",
+    "narrative_breakdown": [
+      "For 99% of human evolutionary history, decisions yielded immediate consequences: hunting delivered food today; fleeing a predator preserved life today. In modern society, good habits have delayed rewards (saving money delivers wealth in thirty years; exercising delivers fitness in six months), while bad habits have immediate rewards (smoking relieves stress right now; donuts taste delicious right now).",
+      "With our bad habits, the immediate outcome is usually enjoyable, but the ultimate outcome is disastrous. With our good habits, the immediate outcome is unpleasurable (sweat, delayed gratification), but the ultimate outcome is glorious.",
+      "To make a good habit stick, you must attach an immediate splash of pleasure to the finish line: e.g., opening a savings account labeled 'Trip to Europe' and transferring $50 into it every time you skip dining out, creating immediate visual satisfaction."
+    ],
+    "verbatim_anchor": "“The costs of your good habits are in the present. The costs of your bad habits are in the future.” — James Clear",
+    "operational_heuristic": "Add immediate satisfaction to delayed-reward habits, and add immediate pain to delayed-consequence vices.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-13",
+    "unit_number": 13,
+    "title": "The Paper Clip Strategy & Habit Trackers: Making Progress Visible",
+    "section": "The 4th Law: Make It Satisfying (Reinforcement & Tracking)",
+    "epistemic_status": "VISUAL FEEDBACK & THE ENDOWMENT EFFECT",
+    "core_concept": "Making progress visible provides immediate, intrinsic reinforcement. A habit tracker—marking an 'X' on a calendar or moving paper clips—provides visual proof that you are casting votes for your new identity.",
+    "narrative_breakdown": [
+      "In 1993, Trent Dyrsmid, a twenty-three-year-old stockbroker in Abbotsford, Canada, began his career with two jars on his desk. One jar was filled with 120 paper clips; the other jar was empty. Every morning, he dialed a prospect; each time he hung up the phone, he moved one paper clip to the empty jar. He did not go home until all 120 paper clips were transferred. Within eighteen months, he was generating $5 million in business and earning $75,000 a month.",
+      "Visual tracking accomplishes three things: (1) It creates an obvious visual cue reminding you to act; (2) It is inherently motivating because you see your progress accumulating; (3) It is immediately satisfying to cross off another day.",
+      "The 'Don't Break the Chain' rule (popularized by Jerry Seinfeld): your only goal is to keep the unbroken chain of X's alive on your wall calendar."
+    ],
+    "verbatim_anchor": "“The most effective form of motivation is progress. When we get a signal that we are moving forward, we become more motivated to keep going.” — James Clear",
+    "operational_heuristic": "Track your habits visually. The visual proof of your progress becomes its own powerful reward.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-14",
+    "unit_number": 14,
+    "title": "The 'Never Miss Twice' Rule: The Antidote to Perfectionism",
+    "section": "The 4th Law: Make It Satisfying (Reinforcement & Tracking)",
+    "epistemic_status": "RECOVERY PROTOCOLS & RESILIENCE ARCHITECTURE",
+    "core_concept": "Missing once is an accident. Missing twice is the start of a new habit. Perfection is impossible; what separates winners from losers is the speed of recovery.",
+    "narrative_breakdown": [
+      "Too many people abandon a diet or fitness regimen because of the 'All-or-Nothing Fallacy': they slip up, eat a slice of pizza on Wednesday, declare the entire week ruined, and binge all weekend. Clear proves that the first mistake is never the fatal one; it is the spiral of repeated misses that destroys the neural habit loop.",
+      "If you miss one day at the gym because of an emergency meeting, you must show up the next day, even if only for five minutes (Law of the Two-Minute Rule). If you eat a poor lunch, ensure your dinner is pristine.",
+      "A bad workout is the most important workout of your life: not because of the calories burned, but because it confirms to your subconscious identity that you do not abandon your systems when conditions are imperfect."
+    ],
+    "verbatim_anchor": "“Missing once is an accident. Missing twice is the start of a new habit... Anyone can have a bad performance, but when successful people fail, they rebound quickly.” — James Clear",
+    "operational_heuristic": "Never miss twice. If life interrupts your routine for one day, rebound immediately the following day.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-15",
+    "unit_number": 15,
+    "title": "The Accountability Partner & The Habit Contract",
+    "section": "The 4th Law: Make It Satisfying (Reinforcement & Tracking)",
+    "epistemic_status": "SOCIAL ACCOUNTABILITY & IMMEDIATE PENALTIES",
+    "core_concept": "Just as rewards make behavior satisfying, immediate social and financial costs make bad habits painful. An Accountability Partner creates immediate social embarrassment for failure; a Habit Contract adds legal and financial teeth.",
+    "narrative_breakdown": [
+      "Bryan Harris, an entrepreneur from Nashville, created a formal three-way Habit Contract with his wife and his personal trainer. He agreed to track his daily food intake and weigh himself every day. If he failed to log his food, he had to pay his trainer $200; if he failed to weigh himself, he had to pay his wife $100 and dress up in an absurd costume in public. The contract worked with 100% adherence: the immediate social and financial pain far outweighed the momentary pleasure of skipping a weigh-in.",
+      "We care deeply about what others think of us. We do not want others to perceive us as lazy, undisciplined, or untrustworthy. Knowing that someone is watching provides the immediate accountability the solitary mind lacks."
+    ],
+    "verbatim_anchor": "“The more immediate and the more costly the pain, the less likely the behavior... We always want to present our best selves to the world.” — James Clear",
+    "operational_heuristic": "Create a habit contract with financial penalties and an accountability partner. Make failure immediately painful.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-16",
+    "unit_number": 16,
+    "title": "The Truth About Talent: When Genes Matter and When They Don't",
+    "section": "Advanced Tactics: Going from Merely Good to Truly Great",
+    "epistemic_status": "GENETIC COMPATIBILITY & STRATEGIC ARENAS",
+    "core_concept": "Genes do not eliminate the need for hard work; they clarify *where* to direct your hard work. Choose the habits that best suit your biological predispositions.",
+    "narrative_breakdown": [
+      "Michael Phelps has the ideal genetic physique for swimming: a long torso, short legs, size 14 feet, and a massive 6-foot-7 wingspan. Hicham El Guerrouj has the ideal genetic physique for distance running: long, slender legs and a short, light torso. If Phelps attempted to run distance or El Guerrouj attempted to swim, neither would have become Olympic champions.",
+      "Aligning your habits with your natural strengths makes progress faster and satisfaction deeper. How to identify habits aligned with your nature:\n1. What feels like fun to you, but looks like work to others?\n2. What makes you lose track of time (flow states)?\n3. Where do you get greater returns than the average person?\n4. What comes naturally to you?",
+      "Pick the right game. If you cannot find a game where the odds are stacked in your favor, create one by combining two distinct skills where you reside in the top 25%."
+    ],
+    "verbatim_anchor": "“Genes do not determine your destiny. They determine your areas of opportunity... Play a game that favors your strengths.” — James Clear",
+    "operational_heuristic": "Work hard in the areas where your natural biology provides an unfair advantage. Specialize in your flow states.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-17",
+    "unit_number": 17,
+    "title": "The Goldilocks Rule: How to Stay Motivated in Life and Work",
+    "section": "Advanced Tactics: Going from Merely Good to Truly Great",
+    "epistemic_status": "OPTIMAL CHALLENGE & BOREDOM RESISTANCE",
+    "core_concept": "The human brain experiences peak motivation when working on tasks right on the edge of current ability—not too hard, not too easy (just right: approximately 4% beyond current capacity).",
+    "narrative_breakdown": [
+      "If you play tennis against a four-year-old, you become bored within ten minutes. If you play against Roger Federer, you become demoralized immediately. But if you play against someone who is exactly your equal—where every point is a contest and you win roughly 50% of games—you enter a state of deep flow.",
+      "The greatest threat to sustained excellence is not failure; it is Boredom. Once a habit becomes established, it becomes familiar and ceases to deliver novelty. Amateurs allow boredom to distract them into seeking a new shiny routine; professionals fall in love with the boredom.",
+      "The only way to become truly great is to show up and perform the same fundamental drills on the days when you are tired, bored, uninspired, and would rather do anything else."
+    ],
+    "verbatim_anchor": "“The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.” — James Clear",
+    "operational_heuristic": "The greatest threat to success is boredom, not failure. Master the discipline of doing the work when you are bored.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-18",
+    "unit_number": 18,
+    "title": "The Downside of Habits: Habits + Deliberate Practice = Mastery",
+    "section": "Advanced Tactics: Going from Merely Good to Truly Great",
+    "epistemic_status": "DELIBERATE PRACTICE & METACOGNITION",
+    "core_concept": "While habits automate basic tasks, they can also lock you into unconscious complacency. Once a behavior becomes effortless, you stop thinking about how to improve it. True mastery requires coupling habits with deliberate reflection and review.",
+    "narrative_breakdown": [
+      "A surgeon or pilot who has practiced for twenty years is not automatically better than one who has practiced for five years, unless their repetitions are accompanied by deliberate feedback and error correction. Repeating an error 10,000 times merely cements bad technique.",
+      "Formula for Mastery: Habits + Deliberate Practice = Mastery. Once a movement or skill is automated, the executive brain must zoom out, inspect the metrics, and deliberately introduce adjustments.",
+      "Clear maintains two annual reflection rituals:\n1. The Annual Review (December): Auditing progress across three questions: (a) What went well this year? (b) What didn't go so well? (c) What did I learn?\n2. The Integrity Report (June): Auditing values: (a) What are the core values driving my work? (b) How am I living and working with integrity? (c) How can I set a higher standard?"
+    ],
+    "verbatim_anchor": "“Habits are the backbone of any pursuit of excellence. However, the benefits of habits come at a cost. At first, each repetition develops fluency, speed, and skill. But then, as a habit becomes automatic, you become less sensitive to feedback.” — James Clear",
+    "operational_heuristic": "Habits without review lead to stagnation. Couple automated routines with periodic audits and deliberate practice.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-19",
+    "unit_number": 19,
+    "title": "How to Break a Bad Habit: The Inversion of the Four Laws",
+    "section": "Advanced Tactics: Going from Merely Good to Truly Great",
+    "epistemic_status": "BEHAVIORAL INVERSION & EXTINCTION PROTOCOLS",
+    "core_concept": "Breaking a bad habit requires inverting the Four Laws: (1) Make it invisible (extinguish cues); (2) Make it unattractive (reframe mindset); (3) Make it difficult (increase friction); (4) Make it unsatisfying (add immediate social/financial penalties).",
+    "narrative_breakdown": [
+      "In 1971, US Congressman Robert Steele discovered that over 15% of American soldiers serving in Vietnam were addicted to heroin. Society anticipated a catastrophic public health crisis when the veterans returned home. However, follow-up studies by Dr. Lee Robins revealed that 90% of the addicted soldiers stopped using heroin almost immediately upon landing back in the United States.",
+      "The soldiers had not undergone intense moral rehabilitation; rather, their entire cue environment had vanished. In Vietnam, they were surrounded by constant terror, easy access to heroin, and fellow addicted soldiers. Back home with family, the cues disappeared, making the habit invisible.",
+      "You cannot easily extinguish a bad habit by sheer self-control in an environment saturated with triggers. You must systematically eliminate the cue, add physical friction, and reframe the emotional meaning of the indulgence."
+    ],
+    "verbatim_anchor": "“Self-control is a short-term strategy, not a long-term one. You may be able to resist temptation once or twice, but it’s unlikely you can muster the willpower to override your desires every time.” — James Clear",
+    "operational_heuristic": "Do not rely on willpower to conquer temptation in a toxic room. Change rooms: make bad cues invisible.",
+    "materiality": "CRITICAL"
+  },
+  {
+    "unit_id": "unit-20",
+    "unit_number": 20,
+    "title": "The Ultimate Synthesis: Systems Over Goals & The Continuous Horizon",
+    "section": "Advanced Tactics: Going from Merely Good to Truly Great",
+    "epistemic_status": "SYSTEMS TELEOLOGY & INFINITE GAMES",
+    "core_concept": "Goals are about the results you want to achieve. Systems are about the processes that lead to those results. Winners and losers share the same goals; what differentiates winners is the quality of their systems.",
+    "narrative_breakdown": [
+      "Every Olympian wants to win gold; every candidate wants the job; every business wants profit. Goal-setting suffers from massive survivorship bias: we focus on the winners and assume their goal caused their victory, ignoring all the losers who possessed the identical goal.",
+      "Four fatal problems with goal-oriented thinking:\n1. Winners and losers have the same goals.\n2. Achieving a goal is only a momentary change (cleaning your room today does not prevent it from getting messy tomorrow if your system remains flawed).\n3. Goals restrict your happiness ('Once I achieve X, then I'll be happy').\n4. Goals are at odds with long-term progress (marathoners train for months, but quit running the day after the race because the goal is reached).",
+      "True mastery is playing an infinite game: you do not practice to reach a finish line; you build a system to stay in the game of continuous refinement forever."
+    ],
+    "verbatim_anchor": "“The purpose of setting goals is to win the game. The purpose of building systems is to continue playing the game... It is not about any single accomplishment. It is about the cycle of endless refinement and continuous improvement.” — James Clear",
+    "operational_heuristic": "Fall in love with the daily system, not the distant goal. The score will take care of itself.",
+    "materiality": "CRITICAL"
+  }
+]

@@ -1,1201 +1,1080 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cream">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master Codex: Atomic Habits by James Clear | Intellectualist</title>
+  <title>Atomic Habits — James Clear | BKRS Master Reader</title>
+  
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-canvas: #fbf9f4;
-      --bg-card: #ffffff;
-      --bg-subtle: #f4efe4;
-      --bg-dark: #1e1b18;
-      --text-main: #1c1b18;
-      --text-muted: #575249;
-      --accent-crimson: #85221c;
-      --accent-slate: #22384a;
-      --accent-forest: #1e4d2b;
-      --border-light: #ded7c8;
-      --border-dark: #7a7060;
-      --code-bg: #ece6d8;
+      --accent-crimson: #8b181b;
+      --accent-gold: #b38628;
+      --accent-forest: #225e43;
+      --border-color: #e5e0d3;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    [data-theme="cream"] {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #f5f2ea;
+      --bg-card-subtle: #efebe0;
+      --border-color: #e2dccf;
+      --border-color-focus: #b5a895;
+      --text-main: #24211e;
+      --text-muted: #5c5549;
+      --text-subtle: #857b6c;
+      --accent-crimson: #8b181b;
+      --accent-gold: #966b1d;
+      --accent-forest: #225e43;
+    }
 
     body {
       background-color: var(--bg-canvas);
       color: var(--text-main);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
+      font-family: var(--font-serif, "EB Garamond", Georgia, serif);
+      font-size: 1.15rem;
+      line-height: 1.8;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3, h4, .serif {
-      font-family: "Georgia", "Cambria", "Times New Roman", serif;
-      font-weight: 700;
-      letter-spacing: -0.015em;
-      color: var(--text-main);
-    }
-
-    .container {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 30px 20px 120px 20px;
-    }
-
-    /* Gazette Header */
-    .gazette-header {
+    .unit-card-deep {
       background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-top: 6px solid var(--accent-crimson);
-      padding: 36px 40px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 38px 46px;
+      margin-bottom: 44px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    @media (max-width: 768px) {
+      .unit-card-deep { padding: 24px 20px; margin-bottom: 30px; }
     }
 
-    .meta-bar {
+    .unit-meta-line {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 14px;
-      margin-bottom: 20px;
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      color: var(--accent-slate);
-      font-weight: 700;
-    }
-
-    .badge-tier {
-      background: var(--accent-slate);
-      color: #fff;
-      padding: 4px 10px;
-      font-size: 0.75rem;
-      letter-spacing: 0.05em;
-    }
-
-    .title {
-      font-size: 2.75rem;
-      line-height: 1.15;
-      color: var(--accent-crimson);
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      font-size: 1.35rem;
-      font-style: italic;
-      color: var(--text-muted);
       margin-bottom: 16px;
-      font-family: "Georgia", serif;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
     }
-
-    .provenance-info {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      margin-bottom: 18px;
-    }
-
-    .golden-test-banner {
-      background: var(--bg-subtle);
-      border-left: 4px solid var(--accent-crimson);
-      padding: 16px 20px;
-      font-style: italic;
-      font-size: 0.96rem;
-      color: var(--text-main);
-    }
-
-    /* Navigation */
-    .sticky-nav {
-      position: sticky;
-      top: 10px;
-      z-index: 1000;
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      padding: 12px 24px;
-      margin-bottom: 35px;
-      display: flex;
-      gap: 14px;
-      overflow-x: auto;
-      white-space: nowrap;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-      font-size: 0.88rem;
-    }
-
-    .sticky-nav a {
-      color: var(--accent-slate);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 4px 8px;
-    }
-
-    .sticky-nav a:hover {
-      color: var(--accent-crimson);
-      text-decoration: underline;
-    }
-
-    /* Section Containers */
-    .section-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      padding: 40px;
-      margin-bottom: 35px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-    }
-
-    .section-tag {
-      font-size: 0.8rem;
+    .unit-badge {
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
+      padding: 3px 10px;
+      background: #8b181b15;
       color: var(--accent-crimson);
-      font-weight: 700;
-      margin-bottom: 6px;
+      border: 1px solid var(--accent-crimson);
+      border-radius: 4px;
     }
-
-    h2.section-title {
-      font-size: 2.1rem;
-      border-bottom: 2px solid var(--border-light);
-      padding-bottom: 14px;
-      margin-bottom: 28px;
-    }
-
-    h3.sub-title {
-      font-size: 1.4rem;
-      margin: 32px 0 14px 0;
-      color: var(--accent-slate);
-      border-left: 4px solid var(--accent-slate);
-      padding-left: 12px;
-    }
-
-    h4.chapter-num {
-      font-size: 1.15rem;
-      color: var(--accent-crimson);
-      margin: 28px 0 8px 0;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    p { margin-bottom: 16px; text-align: justify; }
-
-    /* Tables */
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 22px 0;
-      font-size: 0.92rem;
-    }
-
-    .data-table th, .data-table td {
-      border: 1px solid var(--border-light);
-      padding: 12px 15px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .data-table th {
-      background-color: var(--bg-subtle);
-      color: var(--accent-slate);
-      font-family: "Georgia", serif;
-      font-weight: 700;
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .data-table tr:nth-child(even) td { background-color: #faf7f0; }
-
-    /* Clinical Callout Boxes */
-    .callout {
-      border: 1px solid var(--border-light);
-      padding: 22px 26px;
-      margin: 24px 0;
-    }
-
-    .callout.experiment {
-      border-left: 5px solid #2b5c8f;
-      background: #f4f8fc;
-    }
-
-    .callout.mechanism {
-      border-left: 5px solid var(--accent-crimson);
-      background: #fdf6f5;
-    }
-
-    .callout.protocol {
-      border-left: 5px solid var(--accent-forest);
-      background: #f3f8f4;
-    }
-
-    .callout.demarcation {
-      border-left: 5px solid #9c4114;
-      background: #fff8f2;
-    }
-
-    .callout-title {
-      font-size: 0.85rem;
+    .unit-epistemic {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      margin-bottom: 10px;
+      color: var(--text-muted);
+      background: var(--bg-card-subtle);
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
     }
 
-    .experiment .callout-title { color: #2b5c8f; }
-    .mechanism .callout-title { color: var(--accent-crimson); }
-    .protocol .callout-title { color: var(--accent-forest); }
-    .demarcation .callout-title { color: #9c4114; }
+    .unit-heading-deep {
+      font-family: var(--font-serif);
+      font-size: 1.95rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+    .narrative-p {
+      margin-bottom: 1.4em;
+      font-size: 1.15rem;
+      line-height: 1.82;
+      text-align: justify;
+    }
 
     .quote-box {
-      font-family: "Georgia", serif;
-      font-size: 1.1rem;
+      margin: 24px 0;
+      padding: 18px 24px;
+      background: var(--bg-card-subtle);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 6px 6px 0;
       font-style: italic;
-      color: #1a1a1a;
-      padding: 14px 22px;
-      background: #ffffff;
-      border: 1px solid var(--border-light);
-      border-left: 4px solid var(--accent-slate);
-      margin: 16px 0;
+      font-size: 1.12rem;
     }
 
-    .formula-box {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-      font-size: 0.92rem;
-      background: var(--code-bg);
-      border: 1px solid #dcd5c4;
-      padding: 14px 18px;
-      margin: 16px 0;
-      white-space: pre-wrap;
-      color: #24221f;
+    .heuristic-box {
+      margin-top: 24px;
+      padding: 16px 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-forest);
+      border-radius: 0 6px 6px 0;
+      font-size: 1.02rem;
     }
 
-    /* Chapter Card */
-    .chapter-card {
-      border: 1px solid var(--border-light);
-      background: #fff;
-      padding: 24px 28px;
-      margin: 22px 0;
-      border-top: 3px solid var(--accent-slate);
-    }
-
-    .chapter-card h4 {
-      font-size: 1.25rem;
-      color: var(--accent-slate);
-      margin-bottom: 10px;
-    }
-
-    .axiom-badge {
-      display: inline-block;
-      background: var(--bg-subtle);
-      border: 1px solid var(--border-light);
-      padding: 3px 8px;
-      font-size: 0.8rem;
-      font-weight: 700;
+    .nav-epoch-title {
+      font-family: var(--font-sans);
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       color: var(--accent-crimson);
-      margin-bottom: 12px;
-    }
-
-    /* Flashcards */
-    .flashcard {
-      border: 1px solid var(--border-light);
-      background: #ffffff;
-      padding: 18px 22px;
-      margin-bottom: 14px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .flashcard:hover {
-      background: var(--bg-subtle);
-    }
-
-    .flashcard-q {
-      font-weight: 700;
-      color: var(--accent-slate);
-      font-size: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .flashcard-q::after {
-      content: "Reveal Mechanism ▼";
-      font-size: 0.75rem;
-      font-weight: normal;
-      color: var(--text-muted);
-    }
-
-    .flashcard-a {
-      display: none;
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px dashed var(--border-light);
-      font-size: 0.95rem;
-      color: var(--text-main);
-    }
-
-    .flashcard.active .flashcard-a { display: block; }
-    .flashcard.active .flashcard-q::after { content: "Hide ▲"; }
-
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      border-top: 2px solid var(--border-dark);
-      margin-top: 60px;
+      padding: 12px 16px 4px;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-
-  <!-- GAZETTE PROVENANCE HEADER -->
-  <header class="gazette-header">
-    <div style="margin-bottom: 16px;">
-      <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; color: var(--accent-slate); text-decoration: none; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 6px 12px; background: var(--bg-subtle); border: 1px solid var(--border-light);">
-        ← Return to Master Library Index
-      </a>
-    </div>
-    <div class="meta-bar">
-      <span>INTELLECTUALIST MASTER CODEX • SERIES 2018-01</span>
-      <span>CANONICAL REF: [REF-CLR-2018]</span>
-      <span class="badge-tier">EPISTEMIC TIER 2: APPLIED BEHAVIORAL SYSTEM</span>
-    </div>
-    <h1 class="title">Atomic Habits</h1>
-    <div class="subtitle">An Easy & Proven Way to Build Good Habits & Break Bad Ones</div>
-    <div class="provenance-info">
-      <strong>Author:</strong> James Clear &nbsp;|&nbsp; 
-      <strong>Original Publisher:</strong> Avery / Penguin Random House (2018) &nbsp;|&nbsp; 
-      <strong>Source Volume:</strong> 461,247 Characters, 20 Chapters &nbsp;|&nbsp; 
-      <strong>Reading Time Saved:</strong> ~7.5 Hours
-    </div>
-    <div class="golden-test-banner">
-      <strong>The Golden Test of Total Replacement:</strong> This codex provides an uncompromised, forensic distillation of all 20 chapters. Every foundational neurochemical mechanism, experimental trial, mathematical model, diagnostic distinction, and verbatim protocol is cataloged. Reading the source book is entirely unnecessary.
-    </div>
-  </header>
-
-  <!-- STICKY NAV -->
-  <nav class="sticky-nav">
-    <a href="#layer1">L1: Grand Theoretical Architecture</a>
-    <a href="#part1">L2: Part I (Ch 1–3)</a>
-    <a href="#part2">L2: Part II (Ch 4–7)</a>
-    <a href="#part3">L2: Part III (Ch 8–10)</a>
-    <a href="#part4">L2: Part IV (Ch 11–14)</a>
-    <a href="#part5">L2: Part V (Ch 15–17)</a>
-    <a href="#part6">L2: Part VI (Ch 18–20)</a>
-    <a href="#layer3">L3: Landmark Experiments Vault</a>
-    <a href="#layer4">L4: Operational Field Manual</a>
-    <a href="#layer5">L5: Skeptic Audit</a>
-    <a href="#layer6">L6: Active Recall Suite</a>
-  </nav>
-
-  <!-- ========================================================================= -->
-  <!-- LAYER 1: GRAND THEORETICAL ARCHITECTURE -->
-  <!-- ========================================================================= -->
-  <section id="layer1" class="section-box">
-    <div class="section-tag">Layer 1 • Core Epistemic Architecture</div>
-    <h2 class="section-title">The Grand Theoretical Model of Behavior Change</h2>
-    
-    <div class="quote-box">
-      "You do not rise to the level of your goals. You fall to the level of your systems."
-    </div>
-
-    <h3 class="sub-title">1. Theoretical Pedigree & Historical Lineage</h3>
-    <p>
-      Clear’s model is an integration of four distinct scientific lineages:
-    </p>
-    <table class="data-table">
-      <tr>
-        <th>Discipline & Thinker</th>
-        <th>Foundational Model</th>
-        <th>Clear’s Evolutionary Synthesis</th>
-      </tr>
-      <tr>
-        <td><strong>Operant Conditioning</strong><br>(B.F. Skinner, 1938)</td>
-        <td>Stimulus &rarr; Response &rarr; Reward</td>
-        <td>Skinner explained external behavior but ignored cognition. Clear introduces <strong>Craving</strong> to account for internal dopamine anticipation.</td>
-      </tr>
-      <tr>
-        <td><strong>Classical Pragmatism & Psychology</strong><br>(Edward Thorndike, 1898)</td>
-        <td>The Law of Effect (behaviors followed by satisfaction are repeated)</td>
-        <td>Adopts the law of effect as the biological foundation: habits exist solely to economize cognitive energy and working memory.</td>
-      </tr>
-      <tr>
-        <td><strong>Behavioral Economics</strong><br>(Kahneman, Tversky, Thaler)</td>
-        <td>Choice Architecture & Heuristic Biases</td>
-        <td>Transforms choice architecture into the 1st and 3rd Laws: modifying physical environments to remove friction and expose visual cues.</td>
-      </tr>
-      <tr>
-        <td><strong>Neurobiology of Reward</strong><br>(Wolfram Schultz, 1997)</td>
-        <td>Dopamine Reward Prediction Error (RPE)</td>
-        <td>Establishes that dopamine spikes occur in response to <em>cues</em> predicting rewards, proving that craving (anticipation) drives action, not the reward itself.</td>
-      </tr>
-    </table>
-
-    <h3 class="sub-title">2. Mathematical Compounding of Atomic Gains</h3>
-    <p>
-      Clear defines an <em>atomic habit</em> as an irreducible component of a larger system—like an atom in a molecule. The mathematics of habit compounding operate non-linearly over time:
-    </p>
-    <div class="formula-box">
-1% Daily Improvement:  (1.01)^365 = 37.78  (37.8x improvement per year)
-1% Daily Deterioration: (0.99)^365 = 00.03  (Decline of 97% to near zero)
-    </div>
-    <p>
-      Because humans evaluate progress through linear expectations, they fall into what Clear terms the <strong>Valley of Disappointment</strong>: early efforts produce negligible observable results while latency is silently accumulated.
-    </p>
-
-    <h3 class="sub-title">3. The 3 Concentric Rings of Behavior Change</h3>
-    <table class="data-table">
-      <tr>
-        <th>Layer</th>
-        <th>Focus</th>
-        <th>Primary Failure Mode</th>
-        <th>Exemplar Script</th>
-      </tr>
-      <tr>
-        <td><strong>Layer 1: Outcome</strong></td>
-        <td>Changing results (e.g., losing 20 lbs, publishing a book)</td>
-        <td>Fails once the goal is hit or abandoned; superficial, temporary.</td>
-        <td><em>"I want to run a marathon."</em></td>
-      </tr>
-      <tr>
-        <td><strong>Layer 2: Process</strong></td>
-        <td>Changing habits and workflows (e.g., running 3x/week)</td>
-        <td>Fails under stress if it conflicts with underlying self-perception.</td>
-        <td><em>"I am trying to follow a running routine."</em></td>
-      </tr>
-      <tr>
-        <td><strong>Layer 3: Identity</strong></td>
-        <td>Changing subconscious beliefs and self-image</td>
-        <td>Requires accumulated empirical proof; cannot be faked with affirmations.</td>
-        <td><em>"I am a runner."</em> (Every run is a vote for this identity).</td>
-      </tr>
-    </table>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- LAYER 2: CHAPTER-BY-CHAPTER FORENSIC DISTILLATION -->
-  <!-- ========================================================================= -->
-  <section id="part1" class="section-box">
-    <div class="section-tag">Layer 2 • Forensic Chapter Distillation</div>
-    <h2 class="section-title">Part I: The Fundamentals (Chapters 1–3)</h2>
-
-    <!-- Chapter 1 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 1 AXIOM</div>
-      <h4>Chapter 1: The Surprising Power of Atomic Habits</h4>
-      <p><strong>Core Axiom:</strong> Massive success does not require massive action; it is the mathematical compounding of unnoticeable 1% marginal gains.</p>
-      
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: British Cycling (2003–2017)</div>
-        <p><strong>Context:</strong> British professional cycling had endured nearly 100 years of mediocrity (1 gold medal since 1908; zero Tour de France wins in 110 years).</p>
-        <p><strong>Intervention:</strong> Performance director Dave Brailsford applied "the aggregation of marginal gains": 1% improvements across bike seats, electrically heated overshorts, wind tunnel fabrics, outdoor riders switching to indoor aerodynamic suits, massage gels, surgical handwashing techniques to prevent colds, and painting team trucks white to spot dust particles degrading bike tuning.</p>
-        <p><strong>Outcome:</strong> From 2007 to 2017, British riders won 178 world championships, 66 Olympic/Paralympic gold medals, and 5 Tour de France victories.</p>
+  <!-- TOP APP BAR -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="icon-btn toggle-sidebar-btn" id="toggle-sidebar-btn" title="Toggle Table of Contents" aria-label="Toggle Sidebar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <a href="../../index.html" class="brand-link">
+          <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo">
+          <div class="brand-meta">
+            <span class="brand-title">THE INTELLECTUALIST</span>
+            <span class="brand-sub">BKRS Master Distillation Series</span>
+          </div>
+        </a>
       </div>
 
-      <p><strong>The Four Systemic Flaws of Goal-Setting:</strong></p>
-      <ol style="padding-left: 20px; margin-bottom: 12px;">
-        <li><em>Winners and losers have the same goals:</em> Goal-setting suffers from survivor bias.</li>
-        <li><em>Achieving a goal is only a momentary change:</em> Cleaning a dirty room fixes the symptom, not the messy system that dirtied it.</li>
-        <li><em>Goals restrict your happiness:</em> Imposes the toxic binary: <em>"Either I hit my goal and am happy, or I fail and am miserable."</em></li>
-        <li><em>Goals are at odds with long-term progress:</em> The "yo-yo" effect: athletes train hard until the race ends, then immediately cease training.</li>
-      </ol>
-      <p><strong>Master Analogy:</strong> <em>The Ice Cube at 32°F (Plateau of Latent Potential).</em> Warming an ice cube from 25°F to 31°F produces zero visible change. At 32°F, it phase-changes into liquid. Prior work was not wasted; it was stored.</p>
-    </div>
-
-    <!-- Chapter 2 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 2 AXIOM</div>
-      <h4>Chapter 2: How Your Habits Shape Your Identity (and Vice Versa)</h4>
-      <p><strong>Core Axiom:</strong> The ultimate form of intrinsic motivation is when a habit becomes an integral part of your identity.</p>
-      <p><strong>Causal Mechanism:</strong> The word <em>identity</em> is derived from Latin: <em>essentitas</em> (being) and <em>identidem</em> (repeatedly). Identity is literally your "repeated being." Every action you take is a <strong>vote</strong> cast for the type of person you wish to become. A single vote does not win an election, but an accumulation of votes creates undeniable empirical self-evidence.</p>
-      <div class="callout mechanism">
-        <div class="callout-title">The Two-Step Identity Algorithm</div>
-        <ol style="padding-left: 20px;">
-          <li>Decide the type of person you want to be (e.g., a healthy person, a prolific writer, a reliable leader).</li>
-          <li>Prove it to yourself with small wins (e.g., write one paragraph, walk around the block).</li>
-        </ol>
+      <!-- VIEW SELECTOR BUTTONS -->
+      <div class="view-pills" style="display: flex; gap: 6px;">
+        <button class="pill-btn active" id="btn-view-journey" onclick="switchView('journey')">View A: The 20 Units</button>
+        <button class="pill-btn" id="btn-view-map" onclick="switchView('map')">View B: The 4 Laws Blueprint</button>
       </div>
-      <p><strong>Diagnostic Script:</strong> Person A says, <em>"No thanks, I'm trying to quit smoking."</em> Person B says, <em>"No thanks, I'm not a smoker."</em> Person A still views their identity as a smoker resisting temptation; Person B has rewritten their identity, eliminating internal conflict.</p>
-    </div>
 
-    <!-- Chapter 3 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 3 AXIOM</div>
-      <h4>Chapter 3: How to Build Better Habits in 4 Simple Steps</h4>
-      <p><strong>Core Axiom:</strong> A habit is a behavior that has been repeated enough times to become automatic through cognitive trial and error.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: Thorndike’s Cat Puzzle Box (1898)</div>
-        <p><strong>Protocol:</strong> Edward Thorndike placed cats inside puzzle boxes designed to escape via a simple lever/cord mechanism. Initially, cats paced and clawed randomly before hitting the lever by accident (taking ~5 minutes).</p>
-        <p><strong>Data:</strong> Across successive trials, escape times plummeted: Trial 1 took 160 seconds; by Trial 20–30, cats escaped in 7 seconds. Neurological connections between the stimulus (box) and response (lever press) were stamped in by the reward (food outside).</p>
-      </div>
-      <p><strong>The Four-Step Neurological Loop:</strong></p>
-      <p>
-        <strong>1. Cue:</strong> Sensed stimulus predicting reward.<br>
-        <strong>2. Craving:</strong> Motivational force/anticipation of internal state change.<br>
-        <strong>3. Response:</strong> Execution of the physical/mental action.<br>
-        <strong>4. Reward:</strong> Satisfaction of craving and memory reinforcement.
-      </p>
-      <p><strong>The Operational Bifurcation:</strong></p>
-      <ul style="padding-left: 20px;">
-        <li><em>Problem Phase:</em> Cue &rarr; Craving (What needs to be noticed and desired).</li>
-        <li><em>Solution Phase:</em> Response &rarr; Reward (What needs to be executed and satisfied).</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- PART II: THE 1ST LAW: MAKE IT OBVIOUS -->
-  <!-- ========================================================================= -->
-  <section id="part2" class="section-box">
-    <div class="section-tag">Layer 2 • Forensic Chapter Distillation</div>
-    <h2 class="section-title">Part II: The 1st Law: Make It Obvious (Chapters 4–7)</h2>
-
-    <!-- Chapter 4 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 4 AXIOM</div>
-      <h4>Chapter 4: The Man Who Didn't Look Right</h4>
-      <p><strong>Core Axiom:</strong> With enough practice, the brain picks up on the cues that predict certain outcomes without consciously thinking about it.</p>
-      <p><strong>Causal Mechanism:</strong> Non-conscious pattern recognition. An experienced paramedic glance at a father-in-law and notices facial discolouration, calling an ambulance for a major heart blockage before symptoms manifest. Museum curators identify fake Greek statues instantly by instinct.</p>
-      <div class="callout protocol">
-        <div class="callout-title">Protocol: The Habit Scorecard & Pointing-and-Calling</div>
-        <p>Inspired by the Japanese railway safety protocol (<em>Shisa Kanko</em> / Pointing-and-Calling), which reduces errors by 85% and accidents by 30%:</p>
-        <ol style="padding-left: 20px;">
-          <li>Inventory daily habits from waking to sleep on a ledger.</li>
-          <li>Classify each behavior: <strong>(+) Positive</strong>, <strong>(-) Negative</strong>, <strong>(=) Neutral</strong> based on identity alignment.</li>
-          <li>For negative behaviors, verbalize the cue and the consequence out loud: <em>"I am about to eat this cookie, but I don't need it and it will spike my insulin."</em> Verbalization shifts cognition from non-conscious automaticity to conscious prefrontal scrutiny.</li>
-        </ol>
-      </div>
-    </div>
-
-    <!-- Chapter 5 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 5 AXIOM</div>
-      <h4>Chapter 5: The Best Way to Start a New Habit</h4>
-      <p><strong>Core Axiom:</strong> Motivation is nebulous; specificity of time and location eliminates cognitive decision fatigue.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: British Exercise Trial (Milne, Orbell, Sheeran, 2001)</div>
-        <p><strong>Sample:</strong> 248 participants tracked over two weeks to build an exercise routine.</p>
-        <p><strong>Design:</strong> Group 1 (Control): Tracked exercise. Group 2 (Motivation): Read motivational material on coronary disease. Group 3 (Implementation Intentions): Read motivational material AND filled out the plan: <em>"During the next week, I will partake in at least 20 minutes of vigorous exercise on [DAY] at [TIME] in [PLACE]."</em></p>
-        <p><strong>Result:</strong> Group 1: 35% exercised. Group 2: 38% exercised. <strong>Group 3: 91% exercised.</strong></p>
-      </div>
-      <p><strong>The Core Formulas:</strong></p>
-      <div class="formula-box">
-Implementation Intention:
-"I will [BEHAVIOR] at [TIME] in [LOCATION]."
-
-Habit Stacking (Dr. BJ Fogg / James Clear):
-"After [CURRENT HABIT], I will [NEW HABIT]."
-Example: "After I take off my work shoes, I will immediately change into my workout clothes."
-      </div>
-      <p><strong>The Diderot Effect:</strong> 18th-century French philosopher Denis Diderot received a gift of a scarlet robe, which made his existing possessions look shabby, triggering a consumption spiral where he replaced his rugs, chairs, and desk. Habit stacking uses this natural cascading tendency productively.</p>
-    </div>
-
-    <!-- Chapter 6 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 6 AXIOM</div>
-      <h4>Chapter 6: Motivation Is Overrated; Environment Often Matters More</h4>
-      <p><strong>Core Axiom:</strong> Environment is the invisible hand that shapes human behavior; we are guided by visual choice architecture.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: Anne Thorndike Cafeteria Experiment (MGH, 2012)</div>
-        <p><strong>Context:</strong> Massachusetts General Hospital cafeteria sought to alter drink choices of thousands of staff without willpower.</p>
-        <p><strong>Intervention:</strong> Replaced soda-only refrigerators with baskets of bottled water next to cash registers and food stations.</p>
-        <p><strong>Result:</strong> Over 3 months, soda sales dropped by 11.4%, while bottled water sales surged by 25.8%. Not a single word was spoken to a patron; environment alone redirected choice.</p>
-      </div>
-      <p><strong>Kurt Lewin’s Behavioral Equation:</strong> $B = f(P, E)$ — Behavior is a function of the Person and their Environment.</p>
-      <p><strong>Heuristic: Context Over Object:</strong> Do not see an environment as a collection of objects (a desk, a phone); see it as a collection of <em>relationships</em>. Dedicate specific spaces to single uses: <em>"One space, one use."</em> (e.g., computer exclusively for work; armchair exclusively for reading; bed exclusively for sleep).</p>
-    </div>
-
-    <!-- Chapter 7 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 7 AXIOM</div>
-      <h4>Chapter 7: The Secret to Self-Control (Inversion of 1st Law)</h4>
-      <p><strong>Core Axiom:</strong> "Disciplined" people do not possess superhuman willpower; they simply spend less time in tempting situations.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: The Vietnam War Heroin Epidemic (Lee Robins, 1971)</div>
-        <p><strong>Context:</strong> Congressman Robert Steele discovered that over 15% of U.S. service members in Vietnam were heroin addicts (35% had tried it).</p>
-        <p><strong>Findings:</strong> Special Action Office for Drug Abuse Prevention tracked addicted soldiers returning home. Classical addiction theory predicted a 90% relapse rate. <strong>In reality, only 5% relapsed within the first year, and 88% completely recovered without treatment.</strong></p>
-        <p><strong>Causal Reason:</strong> In Vietnam, soldiers were surrounded by environmental cues (constant stress, accessible heroin, drug-using comrades). When removed from that context and placed into normal domestic environments, the environmental triggers vanished, extinguishing the cue-induced craving.</p>
-      </div>
-      <p><strong>The Law of Cue Persistence:</strong> Once a habit is encoded into the neural circuitry of the basal ganglia, the urge remains ready to fire whenever the cue reappears. <em>You can break a habit, but you cannot forget the neural loop.</em> The only permanent cure is to <strong>Make It Invisible</strong>.</p>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- PART III: THE 2ND LAW: MAKE IT ATTRACTIVE -->
-  <!-- ========================================================================= -->
-  <section id="part3" class="section-box">
-    <div class="section-tag">Layer 2 • Forensic Chapter Distillation</div>
-    <h2 class="section-title">Part III: The 2nd Law: Make It Attractive (Chapters 8–10)</h2>
-
-    <!-- Chapter 8 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 8 AXIOM</div>
-      <h4>Chapter 8: How to Make a Habit Irresistible</h4>
-      <p><strong>Core Axiom:</strong> The more attractive an opportunity is, the more likely it is to become habit-forming, driven by supernormal stimuli and dopamine anticipation.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: Tinbergen’s Supernormal Stimuli (1950s)</div>
-        <p>Dutch biologist Niko Tinbergen studied herring gulls: chicks peck at a red dot on mother's beak to receive food. Tinbergen created artificial cardboard beaks with larger, exaggerated red dots. The chicks ignored their real mothers and aggressively pecked at the fake, exaggerated beak. Modern food, porn, video games, and social media apps are supernormal stimuli engineered to hijack our paleolithic dopamine circuits.</p>
-      </div>
-      <p><strong>The Dopamine Anticipation Loop:</strong></p>
-      <p>
-        Dopamine is not the pleasure molecule (consumption); it is the <strong>desire molecule (anticipation)</strong>. Wolfram Schultz’s monkey experiments showed dopamine spikes occur upon the <em>cue</em>, not the reward.
-      </p>
-      <p><strong>Temptation Bundling (Premack’s Principle):</strong> More probable behaviors will reinforce less probable behaviors.</p>
-      <div class="formula-box">
-Temptation Bundling Architecture:
-1. "After [HABIT I NEED], I will [HABIT I WANT]."
-2. "After [CURRENT HABIT], I will [HABIT I NEED]."
-3. "After [HABIT I NEED], I will [HABIT I WANT]."
-
-Case: Ronan Byrne, an engineering student in Dublin, hacked his stationary exercise bike to only stream Netflix if he was cycling above a specific RPM.
-      </div>
-    </div>
-
-    <!-- Chapter 9 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 9 AXIOM</div>
-      <h4>Chapter 9: The Role of Family and Friends in Shaping Your Habits</h4>
-      <p><strong>Core Axiom:</strong> We do not choose our earliest habits; we imitate them from three social groups: The Close, The Many, and The Powerful.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: The Polgár Sisters Chess Experiment (1970s)</div>
-        <p>Hungarian educational psychologist László Polgár hypothesized: <em>"A genius is not born, but educated and trained."</em> He and his wife homeschooled their three daughters (Susan, Sofia, Judit) in an environment completely saturated with chess books, portraits, and games. Result: All three became world-class prodigies; Judit became the youngest Grandmaster in history at age 15, breaking Bobby Fischer's record. What looks like innate brilliance was environmental cultural indoctrination.</p>
-      </div>
-      <p><strong>The Three Tiers of Social Mimicry:</strong></p>
-      <ul style="padding-left: 20px;">
-        <li><strong>1. Imitating the Close:</strong> Proximity dictates habits. The Framingham Heart Study proved that a person's chances of becoming obese increase by 57% if a close friend becomes obese.</li>
-        <li><strong>2. Imitating the Many:</strong> Solomon Asch’s conformity experiments (1951) proved that 75% of subjects conformed to obviously wrong group consensus. The normal behavior of the tribe overpowers individual desires.</li>
-        <li><strong>3. Imitating the Powerful:</strong> Humans mimic status symbols to acquire prestige and social acceptance.</li>
-      </ul>
-      <div class="quote-box">
-        "Join a culture where: (1) your desired behavior is the normal behavior, and (2) you already have something in common with the group."
-      </div>
-    </div>
-
-    <!-- Chapter 10 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 10 AXIOM</div>
-      <h4>Chapter 10: How to Find and Fix the Causes of Your Bad Habits (Inversion of 2nd Law)</h4>
-      <p><strong>Core Axiom:</strong> Every craving is merely a specific surface manifestation of a deeper underlying evolutionary biological motive.</p>
-      <table class="data-table">
-        <tr>
-          <th>Deep Evolutionary Motive</th>
-          <th>Ancient Behavior</th>
-          <th>Modern Supernormal Habit</th>
-        </tr>
-        <tr>
-          <td>Conserve energy</td>
-          <td>Resting in cave</td>
-          <td>Binge-watching streaming television</td>
-        </tr>
-        <tr>
-          <td>Obtain food & calories</td>
-          <td>Foraging berries/nuts</td>
-          <td>Ordering processed fast food via DoorDash</td>
-        </tr>
-        <tr>
-          <td>Connect & mate</td>
-          <td>Tribal storytelling</td>
-          <td>Browsing Instagram / Tinder</td>
-        </tr>
-        <tr>
-          <td>Win social approval</td>
-          <td>Hunting for tribe status</td>
-          <td>Getting "likes" on social media posts</td>
-        </tr>
-      </table>
-      <p><strong>Cognitive Reframing Heuristic:</strong> Replace <em>"I have to"</em> with <em>"I get to"</em>. <em>"I have to go to work"</em> &rarr; <em>"I get to earn a living."</em> <em>"I have to cook dinner"</em> &rarr; <em>"I get to feed my family."</em> Transitions perception from burden to privilege.</p>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- PART IV: THE 3RD LAW: MAKE IT EASY -->
-  <!-- ========================================================================= -->
-  <section id="part4" class="section-box">
-    <div class="section-tag">Layer 2 • Forensic Chapter Distillation</div>
-    <h2 class="section-title">Part IV: The 3rd Law: Make It Easy (Chapters 11–14)</h2>
-
-    <!-- Chapter 11 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 11 AXIOM</div>
-      <h4>Chapter 11: Walk Slowly, but Never Backward</h4>
-      <p><strong>Core Axiom:</strong> Habit formation is a function of frequency and repetitions, not the passage of calendar time.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: Jerry Uelsmann Photography Experiment (Univ. of Florida)</div>
-        <p>Film photography professor Jerry Uelsmann split his class into two groups: The <strong>Quantity Group</strong> was graded purely on the volume of photos submitted (100 photos = A; 90 = B). The <strong>Quality Group</strong> was graded on producing one single, perfect photograph.</p>
-        <p><strong>Result:</strong> At the end of the term, all the best photos were produced by the <em>Quantity Group</em>. They spent the semester actively experimenting, learning from darkroom mistakes, and mastering composition. The <em>Quality Group</em> sat around speculating about perfection, producing uninspired work.</p>
-      </div>
-      <p><strong>Motion vs. Action:</strong></p>
-      <ul style="padding-left: 20px; margin-bottom: 12px;">
-        <li><em>Motion:</em> Strategizing, reading, researching, outlining. Feels like work, but will never produce an outcome on its own. It is an unconscious avoidance mechanism to avoid failure.</li>
-        <li><em>Action:</em> The physical behavior that directly produces an outcome.</li>
-      </ul>
-      <p><strong>Hebb’s Law:</strong> <em>"Neurons that fire together wire together."</em> Long-term potentiation (LTP) strengthens synaptic signaling each time a habit is repeated. The Habit Curve measures <strong>automaticity against repetitions</strong>, not days.</p>
-    </div>
-
-    <!-- Chapter 12 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 12 AXIOM</div>
-      <h4>Chapter 12: The Law of Least Effort</h4>
-      <p><strong>Core Axiom:</strong> The human brain will naturally follow the path of least resistance; design environments where the good behavior has lowest friction.</p>
-      <p><strong>Mechanism:</strong> Physics principles apply to cognition: friction is an inverse coefficient to action. Add friction to bad habits (e.g., unplug the television and remove batteries after each use); subtract friction from good habits (e.g., lay out gym clothes before sleeping).</p>
-      <div class="callout protocol">
-        <div class="callout-title">Protocol: Priming the Environment</div>
-        <ul style="padding-left: 20px;">
-          <li><em>Want to draw?</em> Put pencils, pens, and sketchbooks directly on top of the desk.</li>
-          <li><em>Want to exercise?</em> Pack your gym bag, set water bottle out, place shoes at door.</li>
-          <li><em>Want to eat healthy?</em> Pre-chop apples and carrots and place them at eye level in the fridge.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Chapter 13 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 13 AXIOM</div>
-      <h4>Chapter 13: How to Stop Procrastinating by Using the Two-Minute Rule</h4>
-      <p><strong>Core Axiom:</strong> Standardize before you optimize; you cannot improve a habit that does not exist.</p>
-      <p><strong>The Two-Minute Rule:</strong> When starting any new habit, it must take less than two minutes to perform. The goal is not to perform the entire habit, but to master the <strong>gateway habit</strong> that initiates the routine.</p>
-      <table class="data-table">
-        <tr>
-          <th>Target Habit</th>
-          <th>Two-Minute Gateway Protocol</th>
-        </tr>
-        <tr>
-          <td>Run three miles</td>
-          <td>Tie my running shoes.</td>
-        </tr>
-        <tr>
-          <td>Read 30 books a year</td>
-          <td>Read one single page.</td>
-        </tr>
-        <tr>
-          <td>Study for exam</td>
-          <td>Open my notebook and write the title.</td>
-        </tr>
-        <tr>
-          <td>Fold the laundry</td>
-          <td>Fold one pair of socks.</td>
-        </tr>
-      </table>
-      <div class="quote-box">
-        "A habit must be established before it can be improved. If you can’t learn the basic skill of showing up, then you have little hope of mastering the finer details."
-      </div>
-    </div>
-
-    <!-- Chapter 14 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 14 AXIOM</div>
-      <h4>Chapter 14: How to Make Good Habits Inevitable and Bad Habits Impossible (Inversion of 3rd Law)</h4>
-      <p><strong>Core Axiom:</strong> Use commitment devices to lock in future behavior while in a state of rational composure.</p>
-      <div class="callout mechanism">
-        <div class="callout-title">Historical Precedents of Commitment Devices</div>
-        <p><strong>Victor Hugo (1830):</strong> Facing an impossible deadline for <em>The Hunchback of Notre-Dame</em>, Hugo instructed his assistant to lock all his clothes in a chest, leaving him with only a large gray shawl. Unable to leave the house in public, he wrote furiously through the autumn and published the book two weeks early.</p>
-        <p><strong>John Henry Patterson (1879):</strong> NCR storeowner Patterson suffered chronic retail theft from his clerks. He purchased James Ritty's newly invented mechanical "Incorruptible Cashier" (cash register), which locked receipts and rang a bell whenever opened, physically preventing employee theft and scaling his retail empire.</p>
-      </div>
-      <p><strong>One-Time Automated Actions That Lock in Good Habits:</strong></p>
-      <ul style="padding-left: 20px;">
-        <li>Automate 401(k) payroll deductions on payday.</li>
-        <li>Purchase blackout curtains and remove the television from the bedroom.</li>
-        <li>Unsubscribe from promotional shopping newsletters.</li>
-        <li>Downgrade internet speeds or set router timers to shut down Wi-Fi at 10:30 PM.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- PART V: THE 4TH LAW: MAKE IT SATISFYING -->
-  <!-- ========================================================================= -->
-  <section id="part5" class="section-box">
-    <div class="section-tag">Layer 2 • Forensic Chapter Distillation</div>
-    <h2 class="section-title">Part V: The 4th Law: Make It Satisfying (Chapters 15–17)</h2>
-
-    <!-- Chapter 15 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 15 AXIOM</div>
-      <h4>Chapter 15: The Cardinal Rule of Behavior Change</h4>
-      <p><strong>Core Axiom:</strong> What is immediately rewarded is repeated. What is immediately punished is avoided.</p>
-      <div class="callout mechanism">
-        <div class="callout-title">The Evolutionary Mismatch (Immediate vs. Delayed Return Environments)</div>
-        <p>For 99% of human evolutionary history, our ancestors lived in an <strong>Immediate Return Environment</strong> (hunting, foraging, seeking shelter; consequences occurred immediately). Modern society operates in a <strong>Delayed Return Environment</strong> (work today &rarr; get paid next month; exercise today &rarr; avoid cardiovascular disease in 30 years).</p>
-        <p>The human brain evolved to value the present over the future (hyperbolic discounting). <strong>The Asymmetry of Habits:</strong> The cost of your good habits is in the present; the cost of your bad habits is in the future.</p>
-      </div>
-      <p><strong>Immediate Reinforcement Heuristic:</strong> To make an avoidance habit satisfying (e.g., not eating out, not buying coffee), create an immediate visual reward: open a savings account labeled <em>"Trip to Europe"</em> and transfer $50 directly into it every time you cook at home.</p>
-    </div>
-
-    <!-- Chapter 16 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 16 AXIOM</div>
-      <h4>Chapter 16: How to Stick with Good Habits Every Day</h4>
-      <p><strong>Core Axiom:</strong> Visual habit tracking provides clear empirical proof of progress, keeping your identity active.</p>
-      <div class="callout experiment">
-        <div class="callout-title">The Empirical Anchor: Trent Dyrsmid's Paperclip Strategy (1993)</div>
-        <p>Trent Dyrsmid, a 23-year-old stockbroker at a boutique firm in Abbotsford, Canada, placed two jars on his desk: one filled with 120 paperclips, the other empty. Every time he made a sales call, he transferred one paperclip to the second jar. He did not stop until all 120 were moved. Within 18 months, he was generating $5 million in assets and $75,000 in monthly commissions.</p>
-      </div>
-      <div class="callout protocol">
-        <div class="callout-title">The "Never Miss Twice" Recovery Algorithm</div>
-        <p>Anyone can miss once due to illness, travel, or emergencies. <strong>Missing once is an accident. Missing twice is the start of a new habit.</strong></p>
-        <p>If you miss a scheduled workout, do 5 push-ups or 10 bodyweight squats immediately. The objective is not fitness gains; it is preserving the voting record for your identity.</p>
-      </div>
-      <p><strong>Goodhart’s Law Caution:</strong> <em>"When a measure becomes a target, it ceases to be a good measure."</em> Tracking must serve the habit, not become an obsessive vanity metric.</p>
-    </div>
-
-    <!-- Chapter 17 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 17 AXIOM</div>
-      <h4>Chapter 17: How an Accountability Partner Can Change Everything (Inversion of 4th Law)</h4>
-      <p><strong>Core Axiom:</strong> The pain of immediate social and financial embarrassment eliminates excuses.</p>
-      <div class="callout protocol">
-        <div class="callout-title">Verbatim Habit Contract Template: Bryan Harris Case Study</div>
-        <div class="formula-box">
-HABIT CONTRACT OF BRYAN HARRIS
-Objective: Maintain body composition under 200 lbs and 18% body fat.
-
-Daily System:
-1. Log all food intake into MyFitnessPal before consumption.
-2. Weigh in daily and log data onto shared Google Sheet with wife & trainer.
-
-Penalties:
-• If Bryan fails to log food on any given day, he owes his trainer $100 in cash.
-• If Bryan fails to weigh in, he owes his wife $500 in cash to spend as she sees fit.
-• If Bryan fails to run 3x/week, he must wear an Alabama Crimson Tide hat in public for 48 hours.
-
-Signed: Bryan Harris (Principal), Joey (Trainer), Shannon (Spouse)
+      <!-- THEME SELECTOR -->
+      <div class="top-controls">
+        <select class="theme-select" id="theme-select" onchange="setTheme(this.value)">
+          <option value="cream" selected>Editorial Cream</option>
+          <option value="light">Crisp Light</option>
+          <option value="sepia">Warm Sepia</option>
+          <option value="dark">Nocturne Dark</option>
+        </select>
+        <div class="font-toggle" style="display: flex; gap: 4px;">
+          <button class="icon-btn" onclick="setFont('serif')" title="Serif Font" style="font-family: serif; font-weight: bold;">T</button>
+          <button class="icon-btn" onclick="setFont('sans')" title="Sans Font" style="font-family: sans-serif; font-weight: bold;">S</button>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ========================================================================= -->
-  <!-- PART VI: ADVANCED TACTICS -->
-  <!-- ========================================================================= -->
-  <section id="part6" class="section-box">
-    <div class="section-tag">Layer 2 • Forensic Chapter Distillation</div>
-    <h2 class="section-title">Part VI: Advanced Tactics (Chapters 18–20)</h2>
-
-    <!-- Chapter 18 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 18 AXIOM</div>
-      <h4>Chapter 18: The Truth About Talent (When Genes Matter and When They Don't)</h4>
-      <p><strong>Core Axiom:</strong> Genes do not eliminate the need for hard work; they clarify what to work hard <em>on</em>.</p>
-      <p><strong>Morphological Case Study:</strong> Michael Phelps (Olympic swimmer) and Hicham El Guerrouj (Olympic 1500m runner) are both world champions. Both have the exact same inseam length on pants (32 inches). Yet Phelps is 6'4" with a long torso and short legs (ideal for swimming hydrodynamics), while El Guerrouj is 5'9" with long legs and a short torso (ideal for long-distance stride efficiency). If they switched sports, genetic disadvantage would prevent either from reaching world-class status.</p>
-      
-      <p><strong>The Big Five Personality Alignment Matrix:</strong></p>
-      <table class="data-table">
-        <tr>
-          <th>Personality Dimension</th>
-          <th>Biological Profile</th>
-          <th>Habit System Design Strategy</th>
-        </tr>
-        <tr>
-          <td><strong>Openness to Experience</strong></td>
-          <td>High: Curiosity, novelty<br>Low: Practical, predictable</td>
-          <td>High: Rotate workouts, switch reading genres.<br>Low: Strict, repeatable daily schedules.</td>
-        </tr>
-        <tr>
-          <td><strong>Conscientiousness</strong></td>
-          <td>High: Orderly, disciplined<br>Low: Spontaneous, disorganized</td>
-          <td>High: Detailed habit tracking apps, spreadsheets.<br>Low: Environmental defaults; automate decisions.</td>
-        </tr>
-        <tr>
-          <td><strong>Extraversion</strong></td>
-          <td>High: Energized by social stimuli<br>Low: Solitary recharge</td>
-          <td>High: Group fitness, co-working spaces.<br>Low: Home gym, solo writing retreats.</td>
-        </tr>
-        <tr>
-          <td><strong>Agreeableness</strong></td>
-          <td>High: Empathetic, trusting<br>Low: Competitive, skeptical</td>
-          <td>High: Peer accountability buddies.<br>Low: Competitive leaderboards, financial wagers.</td>
-        </tr>
-        <tr>
-          <td><strong>Neuroticism</strong></td>
-          <td>High: Anxious, stress-reactive<br>Low: Calm, emotionally stable</td>
-          <td>High: Stress-reduction habits (breathwork, walking).<br>Low: High-intensity, high-risk stretch goals.</td>
-        </tr>
-      </table>
-      <p><strong>The Explore / Exploit Trade-off:</strong> Allocate 80–90% of your time exploiting the habits that produce reliable results, and 10–20% exploring novel experiments.</p>
-    </div>
-
-    <!-- Chapter 19 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 19 AXIOM</div>
-      <h4>Chapter 19: The Goldilocks Rule: How to Stay Motivated in Life and Work</h4>
-      <p><strong>Core Axiom:</strong> The greatest threat to success is not failure; it is boredom.</p>
-      <div class="callout mechanism">
-        <div class="callout-title">The Goldilocks Principle & Flow Edge</div>
-        <p>Humans experience peak motivation when working on tasks right on the perimeter of their current abilities: <strong>approximately 4% beyond current capacity</strong>. Anything easier induces boredom; anything significantly harder induces anxiety.</p>
-        <p><strong>The Mastery Differentiator:</strong> Amateurs let boredom derail their routine; professionals fall in love with boredom. The only way to become excellent is to be endlessly fascinated by doing the same thing every day.</p>
+  <div class="reader-shell" id="reader-shell">
+    
+    <!-- LEFT SIDEBAR TOC -->
+    <aside class="reader-sidebar" id="reader-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Atomic Units</div>
+        <div class="sidebar-meta">6 Sections • 20 Invariant Units</div>
       </div>
-    </div>
-
-    <!-- Chapter 20 -->
-    <div class="chapter-card">
-      <div class="axiom-badge">CHAPTER 20 AXIOM</div>
-      <h4>Chapter 20: The Downside of Creating Good Habits</h4>
-      <p><strong>Core Axiom:</strong> Habits create the foundation for mastery, but automaticity breeds complacency unless paired with deliberate review.</p>
-      <div class="formula-box">
-The Universal Mastery Equation:
-HABITS + DELIBERATE PRACTICE = MASTERY
+      <div class="sidebar-toc" id="sidebar-toc">
+        
+          <div class="nav-epoch-title">The Fundamentals: How Tiny Changes Make a Big Difference</div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-1" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">1</span>
+                <span class="nav-ch-title">The Aggregation of Marginal Gains: The Mathematics of 1% Compounding</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-2" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">2</span>
+                <span class="nav-ch-title">Identity-Based Habits: The Three Layers of Behavior Change</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-3" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">3</span>
+                <span class="nav-ch-title">The 4-Step Habit Loop: Cue, Craving, Response, and Reward</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">The 1st Law: Make It Obvious (Cues & Environment)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-4" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">4</span>
+                <span class="nav-ch-title">The Habits Scorecard & Pointing-and-Calling</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-5" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">5</span>
+                <span class="nav-ch-title">Implementation Intentions & Habit Stacking: Time, Location, and Sequence</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-6" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">6</span>
+                <span class="nav-ch-title">Environment Design: The Architecture of Visual Cues</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">The 2nd Law: Make It Attractive (Dopamine & Social Norms)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-7" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">7</span>
+                <span class="nav-ch-title">Dopamine Feedback Loops & Temptation Bundling</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-8" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">8</span>
+                <span class="nav-ch-title">The Role of Family and Friends: Mimetic Social Norms</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">The 3rd Law: Make It Easy (Friction & The Two-Minute Rule)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-9" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">9</span>
+                <span class="nav-ch-title">The Law of Least Effort & Reducing Friction</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-10" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">10</span>
+                <span class="nav-ch-title">The Two-Minute Rule: Scaling Down to the Gateway Habit</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-11" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">11</span>
+                <span class="nav-ch-title">Commitment Devices & The Automation of History</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">The 4th Law: Make It Satisfying (Reinforcement & Tracking)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-12" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">12</span>
+                <span class="nav-ch-title">The Cardinal Rule of Behavior Change: Immediate vs. Delayed Returns</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-13" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">13</span>
+                <span class="nav-ch-title">The Paper Clip Strategy & Habit Trackers: Making Progress Visible</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-14" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">14</span>
+                <span class="nav-ch-title">The 'Never Miss Twice' Rule: The Antidote to Perfectionism</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-15" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">15</span>
+                <span class="nav-ch-title">The Accountability Partner & The Habit Contract</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Advanced Tactics: Going from Merely Good to Truly Great</div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-16" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">16</span>
+                <span class="nav-ch-title">The Truth About Talent: When Genes Matter and When They Don't</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-17" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">17</span>
+                <span class="nav-ch-title">The Goldilocks Rule: How to Stay Motivated in Life and Work</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-18" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">18</span>
+                <span class="nav-ch-title">The Downside of Habits: Habits + Deliberate Practice = Mastery</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-19" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">19</span>
+                <span class="nav-ch-title">How to Break a Bad Habit: The Inversion of the Four Laws</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#unit-20" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">20</span>
+                <span class="nav-ch-title">The Ultimate Synthesis: Systems Over Goals & The Continuous Horizon</span>
+              </a>
+            </div>
+          
+        
       </div>
-      <p><strong>The Career Best Effort (CBE) Program:</strong> NBA coach Pat Riley tracked the CBE score of every Los Angeles Lakers player across historical benchmarks. After establishing fundamentals, players were asked to improve their total CBE output by 1% during the 1986–87 season, leading to back-to-back NBA championships.</p>
-      
-      <div class="callout protocol">
-        <div class="callout-title">The Two-Part Annual Review Protocol</div>
-        <ol style="padding-left: 20px;">
-          <li><strong>Annual Review (December):</strong>
-            <br>• What went well this year?
-            <br>• What didn’t go so well?
-            <br>• What did I learn?
-          </li>
-          <li style="margin-top: 8px;"><strong>Integrity Report (June):</strong>
-            <br>• What are the core values that drive my life and work?
-            <br>• How am I living and working with integrity right now?
-            <br>• How can I set a higher standard in the future?
-          </li>
-        </ol>
+    </aside>
+
+    <!-- MAIN READING VIEWPORT -->
+    <main class="reader-viewport" id="reader-viewport">
+      <div class="reader-measure" id="reader-measure">
+
+        <!-- VIEW A: THE 20 UNITS -->
+        <section id="view-journey" class="view-panel active">
+          
+          <div style="margin-bottom: 40px; padding: 28px 0; border-bottom: 2px solid var(--accent-crimson);">
+            <div style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); margin-bottom: 8px;">
+              BKRS Single-Volume Master Reconstruction
+            </div>
+            <h1 style="font-family: var(--font-serif); font-size: 2.6rem; line-height: 1.2; color: var(--text-main); margin-bottom: 12px; letter-spacing: -0.02em;">
+              Atomic Habits
+            </h1>
+            <div style="font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; color: var(--text-muted); line-height: 1.6; max-width: 900px;">
+              A comprehensive reconstruction of James Clear’s behavioral architecture. Synthesizing cognitive neurobiology, the 4-stage habit loop, identity-based systems, environmental choice design, and deliberate practice.
+            </div>
+          </div>
+
+          <!-- THE 6 SECTIONS -->
+          
+            <div style="margin-bottom: 48px;">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Section
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The Fundamentals: How Tiny Changes Make a Big Difference</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="unit-1">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 1</span>
+                    <span class="unit-epistemic">MATHEMATICAL COMPOUNDING & EXPONENTIAL HABITS</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Aggregation of Marginal Gains: The Mathematics of 1% Compounding</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Habits are the compound interest of self-improvement. Getting 1 percent better each day for one year results in becoming 37.78 times better ($1.01^{365} = 37.78$). Conversely, declining 1 percent each day erodes your capacity down to near zero ($0.99^{365} = 0.03$).
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">In 2003, British Cycling hired Dave Brailsford as performance director. British riders had won a single gold medal in 100 years. Brailsford implemented the 'aggregation of marginal gains'—searching for a tiny 1% improvement in everything: redesigning bike seats, testing aerodynamic fabrics in wind tunnels, rubbing alcohol on tires for better grip, determining the best mattress and pillow for each rider's sleep, and teaching riders the best hand-washing technique to prevent colds.</p><p class="narrative-p">Within five years, British Cycling dominated the Beijing 2008 Olympics (winning 60% of track cycling gold medals) and went on to win six Tour de France victories in seven years. The human brain consistently underestimates the power of small daily choices because the immediate payoff is imperceptible: eating a burger today does not cause a heart attack, and saving $100 today does not buy a house.</p><p class="narrative-p">Outcomes lag behind habits: your net worth is a lagging measure of your financial habits; your weight is a lagging measure of your eating habits; your knowledge is a lagging measure of your learning habits. Breaking through requires surviving the 'Plateau of Latent Potential'—the early phase where massive effort yields zero visible results until the critical threshold is crossed.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “You do not rise to the level of your goals. You fall to the level of your systems.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Forget about overnight breakthroughs; focus on the daily 1% compounding trajectory. Trajectory beats current position.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-2">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 2</span>
+                    <span class="unit-epistemic">COGNITIVE IDENTITY & SELF-EFFICACY</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Identity-Based Habits: The Three Layers of Behavior Change</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Behavior change occurs across three concentric layers: (1) Outcomes (what you get); (2) Processes (what you do); (3) Identity (what you believe about yourself). Most people fail because they attempt outcome-based change without altering the core identity.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">The difference between an outcome-based habit and an identity-based habit is visible in how two former smokers decline a cigarette. Person A says: 'No thanks, I'm trying to quit.' This person still views themselves as a smoker who is suffering through deprivation. Person B says: 'No thanks, I'm not a smoker.' This person has shifted their internal identity; smoking is no longer congruent with who they are.</p><p class="narrative-p">Every action you take is a vote for the type of person you wish to become. No single instance will transform your identity, but as the votes accumulate, the evidence of your new self becomes overwhelming. If you write one page, you cast a vote for being a writer; if you lace up your shoes and run 100 meters, you cast a vote for being an athlete.</p><p class="narrative-p">True behavior change is identity change. You can convince yourself to go to the gym once or twice through willpower, but you will only sustain it for decades if 'I am an active person' becomes your fundamental self-concept.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The ultimate form of intrinsic motivation is when a habit becomes part of your identity. It’s one thing to say I’m the type of person who wants this. It’s something very different to say I’m the type of person who is this.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Decide who you want to be, then prove it to yourself with small daily wins. Every action is a vote for your identity.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-3">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 3</span>
+                    <span class="unit-epistemic">NEUROBIOLOGICAL HABIT CYBERNETICS</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The 4-Step Habit Loop: Cue, Craving, Response, and Reward</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Every habit is a neurological feedback loop comprising four sequential stages: (1) Cue (triggers the brain to initiate behavior); (2) Craving (the motivational force / desire to change state); (3) Response (the actual action performed); (4) Reward (the satisfaction and reinforcement that closes the loop).
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">The Cue is a bit of sensory information predicting a reward. Your ancestors noticed berries; your modern brain hears a phone chime. The cue notices the opportunity; the Craving provides the emotional energy to act. You do not crave smoking a cigarette; you crave the relief and dopamine shift it provides. You do not crave opening Instagram; you crave the distraction from your boring spreadsheet.</p><p class="narrative-p">The Response is the actual habit you perform (lighting the cigarette, tapping the phone). Whether a response occurs depends on your motivation and the amount of friction involved. If the response requires more physical or cognitive effort than you are willing to expend, it fails.</p><p class="narrative-p">The Reward is the end goal: it satisfies the craving and teaches the brain which actions are worth remembering. If an action delivers pleasure or relief, the brain marks the cue for future automation.</p><p class="narrative-p">From this 4-step loop arise Clear’s Four Laws of Behavior Change:
+- To build a good habit: (1) Make it obvious; (2) Make it attractive; (3) Make it easy; (4) Make it satisfying.
+- To break a bad habit: (1) Make it invisible; (2) Make it unattractive; (3) Make it difficult; (4) Make it unsatisfying.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “A habit is a behavior that has been repeated enough times to become automatic... The primary purpose of habits is to solve the problems of life with as little energy and effort as possible.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Diagnose any broken habit by identifying which of the four stages is failing: Is it hidden? Boring? Difficult? Or unrewarding?
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div style="margin-bottom: 48px;">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Section
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The 1st Law: Make It Obvious (Cues & Environment)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="unit-4">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 4</span>
+                    <span class="unit-epistemic">COGNITIVE CONSCIOUSNESS & AWARENESS PRIMING</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Habits Scorecard & Pointing-and-Calling</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Before you can change a habit, you must become conscious of it. Over time, automatic cues slip below the threshold of conscious awareness, causing people to act without thinking.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">The Japanese railway system uses 'Pointing-and-Calling' (shisa kanko)—train conductors point at signals, speed dials, and platform edges while calling out their status aloud ('Signal is green! Speed is 70!'). This simple verbalization engages the motor, vocal, and visual cortex simultaneously, reducing industrial safety errors by up to 85%.</p><p class="narrative-p">Clear adapts this into 'The Habits Scorecard': writing down every single daily action from waking to sleeping (wake up, turn off alarm, check phone, brush teeth, drink coffee...) and categorizing each as positive (+), negative (-), or neutral (=) based on long-term trajectory.</p><p class="narrative-p">By vocalizing bad habits aloud before performing them ('I am about to eat this entire bag of chips, but I don't need it and it will make me feel sluggish'), you drag the unconscious impulse back into the prefrontal cortex, giving conscious choice an opportunity to intervene.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Jung (cited by James Clear)
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    You cannot change what you do not notice. Point and call your unconscious actions aloud to regain executive control.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-5">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 5</span>
+                    <span class="unit-epistemic">BEHAVIORAL SPECIFICITY & ANCHORING</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Implementation Intentions & Habit Stacking: Time, Location, and Sequence</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Vague intentions ('I will exercise more' or 'I will read this week') fail because they lack an operational trigger. Hundreds of studies prove that specifying exact Time and Location doubles or triples adherence rates.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">The Implementation Intention formula: 'I will [BEHAVIOR] at [TIME] in [LOCATION].' (e.g., 'I will meditate for 10 minutes at 7:00 AM in my living room chair'). When the designated moment arrives, your brain does not need to debate or make decisions; the environment triggers the action automatically.</p><p class="narrative-p">Clear builds upon Dr. BJ Fogg's Tiny Habits to create 'Habit Stacking': anchoring a new habit onto an existing, deeply established habit rather than a clock time. Formula: 'After [CURRENT HABIT], I will [NEW HABIT].'</p><p class="narrative-p">Examples of habit stacking:
+- After I pour my morning coffee, I will write down three priorities for today.
+- After I take off my work shoes, I will immediately change into my running clothes.
+- After I sit down for dinner, I will say one thing I am grateful for today.
+By chaining new behaviors onto existing neural pathways, the friction of initiation drops to near zero.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Many people think they lack motivation when what they really lack is clarity.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Never leave a good habit floating without an anchor: tie it directly to an established daily action.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-6">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 6</span>
+                    <span class="unit-epistemic">CHOICE ARCHITECTURE & SENSORY AFFORDANCE</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Environment Design: The Architecture of Visual Cues</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Motivation is overrated; environment matters far more. Human beings are predominantly visual creatures: 50% of the brain's sensory processing power is devoted to vision. We choose what is easiest to see and reach.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">Dr. Anne Thorndike, a physician at Massachusetts General Hospital, redesigned the hospital cafeteria without telling patients or staff. She placed bottled water next to every cash register and food station, while leaving sodas in their original refrigerators. Over three months, soda sales dropped by 11.4% and water sales increased by 25.8%. People did not suddenly develop willpower; they simply responded to visual affordances.</p><p class="narrative-p">If you want a habit to be a big part of your life, make the cue a big part of your environment: place the book on your pillow in the morning; put the water bottle on your desk; set the guitar in the middle of the living room on a stand.</p><p class="narrative-p">Conversely, to break a bad habit, Make It Invisible: place your phone in another room while working; unplug the television after each use; hide junk food on the highest shelf in the garage. Out of sight is literally out of mind.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Environment is the invisible hand that shapes human behavior.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Be the architect of your environment, not merely the tenant. Design spaces where good cues are obvious and bad cues are hidden.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div style="margin-bottom: 48px;">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Section
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The 2nd Law: Make It Attractive (Dopamine & Social Norms)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="unit-7">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 7</span>
+                    <span class="unit-epistemic">NEUROCHEMISTRY OF ANTICIPATION & PREMACK'S PRINCIPLE</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Dopamine Feedback Loops & Temptation Bundling</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Habits are a dopamine-driven feedback loop. Neurobiology proves that dopamine spikes not when you receive a reward, but in anticipation of the reward. It is the craving, not the fulfillment, that drives action.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">In animal studies, when researchers blocked dopamine receptors in rats, the rats lost all desire to eat, groom, or reproduce; within days, they died of thirst next to water dishes, even though they still enjoyed food when placed directly on their tongues. Dopamine is the molecule of desire, motivation, and pursuit.</p><p class="narrative-p">Clear applies Premack's Principle ('more probable behaviors will reinforce less probable behaviors') through 'Temptation Bundling': pairing an action you need to do with an action you want to do.</p><p class="narrative-p">Irish engineering student Ronan Byrne wanted to exercise more but loved watching Netflix. He rigged an exercise bike to his laptop with an Arduino microcontroller: Netflix would play only if he pedaled above a certain speed; if he slowed down, the video paused. Formula: 'After [HABIT I NEED], I will [HABIT I WANT].'</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Desire is the engine that drives behavior... It is the anticipation of a reward—not the fulfillment of it—that gets us to take action.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Bundle your obligations with your indulgences: allow yourself to enjoy the reward only while or after performing the habit.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-8">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 8</span>
+                    <span class="unit-epistemic">MIMETIC CONTAGION & TRIBAL BELONGING</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Role of Family and Friends: Mimetic Social Norms</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Human beings are tribal primates. We imitate the habits of three social groups: (1) The Close (family and friends); (2) The Many (the crowd / social consensus); (3) The Powerful (those with high status).
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">In 1965, Hungarian educator László Polgár decided to test his theory that geniuses are made, not born. He and his wife homeschooled their three daughters (Susan, Sofia, and Judit) in chess, filling their house with chess books and tournament boards. All three daughters became global chess prodigies; Judit Polgár became the greatest female chess player in world history. For the girls, studying chess six hours a day was not an agonizing chore; it was the normal, celebrated culture of their home.</p><p class="narrative-p">Nothing sustains motivation better than belonging to a tribe where your desired behavior is the normal behavior. When you join a fitness running club, running 10 miles on Sunday morning ceases to be extreme; it is simply what everyone does.</p><p class="narrative-p">To cement a habit, join a culture where: (1) Your desired behavior is the normal behavior; and (2) You already have something in common with the group.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The shared identity of the tribe begins to reinforce your personal identity... There is tremendous internal pressure to comply with the norms of the group.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Surround yourself with people who have the habits you want to have. You will rise or fall to the culture of your tribe.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div style="margin-bottom: 48px;">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Section
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The 3rd Law: Make It Easy (Friction & The Two-Minute Rule)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="unit-9">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 9</span>
+                    <span class="unit-epistemic">BEHAVIORAL FRICTION & PHYSICAL AFFORDANCES</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Law of Least Effort & Reducing Friction</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Human behavior naturally follows the path of least resistance. Every habit requires a specific amount of energy. The greater the friction, the less likely the habit will occur.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">Japanese manufacturers revolutionized industrial productivity in the 1970s through 'lean manufacturing' and friction reduction: eliminating wasted motion, placing tools within arm's reach, and streamlining assembly lines. This concept applies directly to personal habit architecture.</p><p class="narrative-p">If you want to exercise in the morning, lay out your workout clothes, socks, and sneakers next to your bed the night before; fill your water bottle and set your keys by the door. You have eliminated 80% of the friction between waking up and stepping out the door.</p><p class="narrative-p">To eliminate bad habits, Increase Friction: create twenty seconds of delay. Remove social media apps from your phone; leave your television remote in a drawer in another room; store credit cards in a bowl of water in the freezer so you must wait 30 minutes for them to thaw before impulse shopping online.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Energy is precious, and the brain is wired to conserve it wherever possible... Make your habits so easy that you’ll do them even when you don’t feel like it.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Prime the environment to make good habits take fewer steps than bad habits. Reduce friction for virtues; add friction for vices.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-10">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 10</span>
+                    <span class="unit-epistemic">GATEWAY BEHAVIORS & MOMENTUM CONSERVATION</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Two-Minute Rule: Scaling Down to the Gateway Habit</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    When you start a new habit, it should take less than two minutes to do. The goal is not to achieve the complete workout or write the complete novel; the goal is to master the art of showing up.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">People consistently sabotage new habits by attempting too much too soon: trying to run five miles on day one, or write for two hours every evening. When fatigue strikes, the habit collapses.</p><p class="narrative-p">The Two-Minute Rule scales down any massive ambition into an effortless two-minute ritual:
+- 'Read 30 books a year' becomes 'Read one page.'
+- 'Do 30 minutes of yoga' becomes 'Unroll my yoga mat.'
+- 'Study for exam' becomes 'Open my textbook.'
+- 'Fold the laundry' becomes 'Fold one pair of socks.'</p><p class="narrative-p">A habit must be established before it can be improved. If you cannot master the basic skill of showing up for two minutes, you have no hope of mastering the finer details. Once you stand on the yoga mat or open the book, momentum takes over.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “A habit must be established before it can be improved. If you can’t learn the basic skill of showing up, then you have little hope of mastering the finer details.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Standardize before you optimize. Master the two-minute gateway habit before you attempt to scale intensity.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-11">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 11</span>
+                    <span class="unit-epistemic">ODYSSEAN PLEDGES & IRREVERSIBLE CHOICES</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Commitment Devices & The Automation of History</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    A commitment device is a choice you make in the present that controls your actions in the future. It is a way to lock in good behavior before temptation strikes.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">In 1830, French novelist Victor Hugo faced an impossible deadline for *The Hunchback of Notre-Dame*. He had spent months procrastinating with dinner parties. To force himself to write, Hugo collected all his clothes, locked them in a chest, and handed the key to his assistant with strict orders not to return it until the deadline passed. Left with nothing to wear but a large gray woolen shawl, Hugo could not leave his study; he wrote furiously throughout the autumn and completed the masterpiece weeks ahead of schedule.</p><p class="narrative-p">Modern commitment devices leverage technology and banking: setting up automated monthly retirement transfers on payday (paying yourself first before you can spend the money); using internet-blocking software like Freedom; or buying single-serving bags of snacks instead of wholesale jumbo packs.</p><p class="narrative-p">Single one-time choices that automate good habits forever:
+- Buy a high-quality mattress (improves sleep for 10 years).
+- Turn off all phone push notifications (saves 2 hours of daily focus).
+- Cancel cable subscriptions (eliminates passive television consumption).</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The best way to break a bad habit is to make it impractical to do. Increase the friction until you don’t even have the option to act.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Use one-time choices in the present to eliminate future decisions. Automate good behavior through technology and physical lock-ins.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div style="margin-bottom: 48px;">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Section
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The 4th Law: Make It Satisfying (Reinforcement & Tracking)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="unit-12">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 12</span>
+                    <span class="unit-epistemic">TEMPORAL DISCOUNTING & HYPERBOLIC PREFERENCE</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Cardinal Rule of Behavior Change: Immediate vs. Delayed Returns</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    The Cardinal Rule of Behavior Change: What is immediately rewarded is repeated. What is immediately punished is avoided. The human brain evolved in an 'Immediate Return Environment', but modern society operates in a 'Delayed Return Environment.'
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">For 99% of human evolutionary history, decisions yielded immediate consequences: hunting delivered food today; fleeing a predator preserved life today. In modern society, good habits have delayed rewards (saving money delivers wealth in thirty years; exercising delivers fitness in six months), while bad habits have immediate rewards (smoking relieves stress right now; donuts taste delicious right now).</p><p class="narrative-p">With our bad habits, the immediate outcome is usually enjoyable, but the ultimate outcome is disastrous. With our good habits, the immediate outcome is unpleasurable (sweat, delayed gratification), but the ultimate outcome is glorious.</p><p class="narrative-p">To make a good habit stick, you must attach an immediate splash of pleasure to the finish line: e.g., opening a savings account labeled 'Trip to Europe' and transferring $50 into it every time you skip dining out, creating immediate visual satisfaction.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The costs of your good habits are in the present. The costs of your bad habits are in the future.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Add immediate satisfaction to delayed-reward habits, and add immediate pain to delayed-consequence vices.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-13">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 13</span>
+                    <span class="unit-epistemic">VISUAL FEEDBACK & THE ENDOWMENT EFFECT</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Paper Clip Strategy & Habit Trackers: Making Progress Visible</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Making progress visible provides immediate, intrinsic reinforcement. A habit tracker—marking an 'X' on a calendar or moving paper clips—provides visual proof that you are casting votes for your new identity.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">In 1993, Trent Dyrsmid, a twenty-three-year-old stockbroker in Abbotsford, Canada, began his career with two jars on his desk. One jar was filled with 120 paper clips; the other jar was empty. Every morning, he dialed a prospect; each time he hung up the phone, he moved one paper clip to the empty jar. He did not go home until all 120 paper clips were transferred. Within eighteen months, he was generating $5 million in business and earning $75,000 a month.</p><p class="narrative-p">Visual tracking accomplishes three things: (1) It creates an obvious visual cue reminding you to act; (2) It is inherently motivating because you see your progress accumulating; (3) It is immediately satisfying to cross off another day.</p><p class="narrative-p">The 'Don't Break the Chain' rule (popularized by Jerry Seinfeld): your only goal is to keep the unbroken chain of X's alive on your wall calendar.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The most effective form of motivation is progress. When we get a signal that we are moving forward, we become more motivated to keep going.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Track your habits visually. The visual proof of your progress becomes its own powerful reward.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-14">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 14</span>
+                    <span class="unit-epistemic">RECOVERY PROTOCOLS & RESILIENCE ARCHITECTURE</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The 'Never Miss Twice' Rule: The Antidote to Perfectionism</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Missing once is an accident. Missing twice is the start of a new habit. Perfection is impossible; what separates winners from losers is the speed of recovery.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">Too many people abandon a diet or fitness regimen because of the 'All-or-Nothing Fallacy': they slip up, eat a slice of pizza on Wednesday, declare the entire week ruined, and binge all weekend. Clear proves that the first mistake is never the fatal one; it is the spiral of repeated misses that destroys the neural habit loop.</p><p class="narrative-p">If you miss one day at the gym because of an emergency meeting, you must show up the next day, even if only for five minutes (Law of the Two-Minute Rule). If you eat a poor lunch, ensure your dinner is pristine.</p><p class="narrative-p">A bad workout is the most important workout of your life: not because of the calories burned, but because it confirms to your subconscious identity that you do not abandon your systems when conditions are imperfect.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Missing once is an accident. Missing twice is the start of a new habit... Anyone can have a bad performance, but when successful people fail, they rebound quickly.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Never miss twice. If life interrupts your routine for one day, rebound immediately the following day.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-15">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 15</span>
+                    <span class="unit-epistemic">SOCIAL ACCOUNTABILITY & IMMEDIATE PENALTIES</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Accountability Partner & The Habit Contract</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Just as rewards make behavior satisfying, immediate social and financial costs make bad habits painful. An Accountability Partner creates immediate social embarrassment for failure; a Habit Contract adds legal and financial teeth.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">Bryan Harris, an entrepreneur from Nashville, created a formal three-way Habit Contract with his wife and his personal trainer. He agreed to track his daily food intake and weigh himself every day. If he failed to log his food, he had to pay his trainer $200; if he failed to weigh himself, he had to pay his wife $100 and dress up in an absurd costume in public. The contract worked with 100% adherence: the immediate social and financial pain far outweighed the momentary pleasure of skipping a weigh-in.</p><p class="narrative-p">We care deeply about what others think of us. We do not want others to perceive us as lazy, undisciplined, or untrustworthy. Knowing that someone is watching provides the immediate accountability the solitary mind lacks.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The more immediate and the more costly the pain, the less likely the behavior... We always want to present our best selves to the world.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Create a habit contract with financial penalties and an accountability partner. Make failure immediately painful.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div style="margin-bottom: 48px;">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Section
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Advanced Tactics: Going from Merely Good to Truly Great</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="unit-16">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 16</span>
+                    <span class="unit-epistemic">GENETIC COMPATIBILITY & STRATEGIC ARENAS</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Truth About Talent: When Genes Matter and When They Don't</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Genes do not eliminate the need for hard work; they clarify *where* to direct your hard work. Choose the habits that best suit your biological predispositions.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">Michael Phelps has the ideal genetic physique for swimming: a long torso, short legs, size 14 feet, and a massive 6-foot-7 wingspan. Hicham El Guerrouj has the ideal genetic physique for distance running: long, slender legs and a short, light torso. If Phelps attempted to run distance or El Guerrouj attempted to swim, neither would have become Olympic champions.</p><p class="narrative-p">Aligning your habits with your natural strengths makes progress faster and satisfaction deeper. How to identify habits aligned with your nature:
+1. What feels like fun to you, but looks like work to others?
+2. What makes you lose track of time (flow states)?
+3. Where do you get greater returns than the average person?
+4. What comes naturally to you?</p><p class="narrative-p">Pick the right game. If you cannot find a game where the odds are stacked in your favor, create one by combining two distinct skills where you reside in the top 25%.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Genes do not determine your destiny. They determine your areas of opportunity... Play a game that favors your strengths.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Work hard in the areas where your natural biology provides an unfair advantage. Specialize in your flow states.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-17">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 17</span>
+                    <span class="unit-epistemic">OPTIMAL CHALLENGE & BOREDOM RESISTANCE</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Goldilocks Rule: How to Stay Motivated in Life and Work</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    The human brain experiences peak motivation when working on tasks right on the edge of current ability—not too hard, not too easy (just right: approximately 4% beyond current capacity).
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">If you play tennis against a four-year-old, you become bored within ten minutes. If you play against Roger Federer, you become demoralized immediately. But if you play against someone who is exactly your equal—where every point is a contest and you win roughly 50% of games—you enter a state of deep flow.</p><p class="narrative-p">The greatest threat to sustained excellence is not failure; it is Boredom. Once a habit becomes established, it becomes familiar and ceases to deliver novelty. Amateurs allow boredom to distract them into seeking a new shiny routine; professionals fall in love with the boredom.</p><p class="narrative-p">The only way to become truly great is to show up and perform the same fundamental drills on the days when you are tired, bored, uninspired, and would rather do anything else.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    The greatest threat to success is boredom, not failure. Master the discipline of doing the work when you are bored.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-18">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 18</span>
+                    <span class="unit-epistemic">DELIBERATE PRACTICE & METACOGNITION</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Downside of Habits: Habits + Deliberate Practice = Mastery</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    While habits automate basic tasks, they can also lock you into unconscious complacency. Once a behavior becomes effortless, you stop thinking about how to improve it. True mastery requires coupling habits with deliberate reflection and review.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">A surgeon or pilot who has practiced for twenty years is not automatically better than one who has practiced for five years, unless their repetitions are accompanied by deliberate feedback and error correction. Repeating an error 10,000 times merely cements bad technique.</p><p class="narrative-p">Formula for Mastery: Habits + Deliberate Practice = Mastery. Once a movement or skill is automated, the executive brain must zoom out, inspect the metrics, and deliberately introduce adjustments.</p><p class="narrative-p">Clear maintains two annual reflection rituals:
+1. The Annual Review (December): Auditing progress across three questions: (a) What went well this year? (b) What didn't go so well? (c) What did I learn?
+2. The Integrity Report (June): Auditing values: (a) What are the core values driving my work? (b) How am I living and working with integrity? (c) How can I set a higher standard?</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Habits are the backbone of any pursuit of excellence. However, the benefits of habits come at a cost. At first, each repetition develops fluency, speed, and skill. But then, as a habit becomes automatic, you become less sensitive to feedback.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Habits without review lead to stagnation. Couple automated routines with periodic audits and deliberate practice.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-19">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 19</span>
+                    <span class="unit-epistemic">BEHAVIORAL INVERSION & EXTINCTION PROTOCOLS</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">How to Break a Bad Habit: The Inversion of the Four Laws</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Breaking a bad habit requires inverting the Four Laws: (1) Make it invisible (extinguish cues); (2) Make it unattractive (reframe mindset); (3) Make it difficult (increase friction); (4) Make it unsatisfying (add immediate social/financial penalties).
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">In 1971, US Congressman Robert Steele discovered that over 15% of American soldiers serving in Vietnam were addicted to heroin. Society anticipated a catastrophic public health crisis when the veterans returned home. However, follow-up studies by Dr. Lee Robins revealed that 90% of the addicted soldiers stopped using heroin almost immediately upon landing back in the United States.</p><p class="narrative-p">The soldiers had not undergone intense moral rehabilitation; rather, their entire cue environment had vanished. In Vietnam, they were surrounded by constant terror, easy access to heroin, and fellow addicted soldiers. Back home with family, the cues disappeared, making the habit invisible.</p><p class="narrative-p">You cannot easily extinguish a bad habit by sheer self-control in an environment saturated with triggers. You must systematically eliminate the cue, add physical friction, and reframe the emotional meaning of the indulgence.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “Self-control is a short-term strategy, not a long-term one. You may be able to resist temptation once or twice, but it’s unlikely you can muster the willpower to override your desires every time.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Do not rely on willpower to conquer temptation in a toxic room. Change rooms: make bad cues invisible.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="unit-20">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit 20</span>
+                    <span class="unit-epistemic">SYSTEMS TELEOLOGY & INFINITE GAMES</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Ultimate Synthesis: Systems Over Goals & The Continuous Horizon</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    Goals are about the results you want to achieve. Systems are about the processes that lead to those results. Winners and losers share the same goals; what differentiates winners is the quality of their systems.
+                  </div>
+
+                  <div class="narrative-prose">
+                    <p class="narrative-p">Every Olympian wants to win gold; every candidate wants the job; every business wants profit. Goal-setting suffers from massive survivorship bias: we focus on the winners and assume their goal caused their victory, ignoring all the losers who possessed the identical goal.</p><p class="narrative-p">Four fatal problems with goal-oriented thinking:
+1. Winners and losers have the same goals.
+2. Achieving a goal is only a momentary change (cleaning your room today does not prevent it from getting messy tomorrow if your system remains flawed).
+3. Goals restrict your happiness ('Once I achieve X, then I'll be happy').
+4. Goals are at odds with long-term progress (marathoners train for months, but quit running the day after the race because the goal is reached).</p><p class="narrative-p">True mastery is playing an infinite game: you do not practice to reach a finish line; you build a system to stay in the game of continuous refinement forever.</p>
+                  </div>
+
+                  <div class="quote-box">
+                    “The purpose of setting goals is to win the game. The purpose of building systems is to continue playing the game... It is not about any single accomplishment. It is about the cycle of endless refinement and continuous improvement.” — James Clear
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Fall in love with the daily system, not the distant goal. The score will take care of itself.
+                  </div>
+                </div>
+              
+            </div>
+          
+
+        </section>
+
+        <!-- VIEW B: THE 4 LAWS BLUEPRINT -->
+        <section id="view-map" class="view-panel" style="display: none;">
+          <div style="margin-bottom: 32px; border-bottom: 2px solid var(--accent-crimson); padding-bottom: 16px;">
+            <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--text-main);">The 4 Laws of Behavior Change Blueprint</h2>
+            <p style="font-family: var(--font-serif); font-style: italic; color: var(--text-muted); font-size: 1.05rem;">The Neurobiological Operating Matrix for Habit Formation & Inversion</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            <div style="padding: 24px; background: var(--bg-card); border-left: 4px solid var(--accent-forest); border-radius: 8px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--accent-forest); margin-bottom: 16px;">How to Create a Good Habit</h3>
+              <p style="margin-bottom: 12px;"><strong>1st Law (Cue):</strong> Make it obvious. (Implementation intentions, habit stacking, visual cues).</p>
+              <p style="margin-bottom: 12px;"><strong>2nd Law (Craving):</strong> Make it attractive. (Temptation bundling, joining a tribe where desired behavior is normal).</p>
+              <p style="margin-bottom: 12px;"><strong>3rd Law (Response):</strong> Make it easy. (Reduce friction, Two-Minute Rule, prime the environment).</p>
+              <p><strong>4th Law (Reward):</strong> Make it satisfying. (Immediate rewards, habit tracking, never miss twice).</p>
+            </div>
+
+            <div style="padding: 24px; background: var(--bg-card); border-left: 4px solid var(--accent-crimson); border-radius: 8px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--accent-crimson); margin-bottom: 16px;">How to Break a Bad Habit</h3>
+              <p style="margin-bottom: 12px;"><strong>Inversion 1st Law (Cue):</strong> Make it invisible. (Remove cues, out of sight out of mind).</p>
+              <p style="margin-bottom: 12px;"><strong>Inversion 2nd Law (Craving):</strong> Make it unattractive. (Reframe mindset, highlight hidden costs).</p>
+              <p style="margin-bottom: 12px;"><strong>Inversion 3rd Law (Response):</strong> Make it difficult. (Increase friction, commitment devices, 20-second delays).</p>
+              <p><strong>Inversion 4th Law (Reward):</strong> Make it unsatisfying. (Accountability partners, Habit Contracts, immediate social pain).</p>
+            </div>
+          </div>
+        </section>
+
       </div>
+    </main>
+  </div>
 
-      <p><strong>The Danger of Inflexible Identity (Paul Graham):</strong> <em>"Keep your identity small."</em> When you define yourself narrowly (<em>"I am the CEO"</em> or <em>"I am a star athlete"</em>), the loss of that role destroys your psyche. Redefine yourself by underlying principles: <em>"I am someone who builds things"</em> or <em>"I am someone who is physically disciplined."</em></p>
-    </div>
-  </section>
+  <script src="../../assets/js/reader-controls.js"></script>
+  <script>
+    function switchView(viewName) {
+      document.querySelectorAll('.view-panel').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
 
-  <!-- ========================================================================= -->
-  <!-- LAYER 3: LANDMARK EXPERIMENTS COMPENDIUM -->
-  <!-- ========================================================================= -->
-  <section id="layer3" class="section-box">
-    <div class="section-tag">Layer 3 • Empirical Corpus</div>
-    <h2 class="section-title">The Landmark Experiments & Primary Evidence Vault</h2>
-    <p>A centralized forensic catalog of the primary scientific studies establishing the book’s empirical claims:</p>
+      if (viewName === 'journey') {
+        document.getElementById('view-journey').style.display = 'block';
+        document.getElementById('btn-view-journey').classList.add('active');
+      } else if (viewName === 'map') {
+        document.getElementById('view-map').style.display = 'block';
+        document.getElementById('btn-view-map').classList.add('active');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
-    <table class="data-table">
-      <tr>
-        <th>Study & Researcher</th>
-        <th>Sample / Setting</th>
-        <th>Intervention vs. Control</th>
-        <th>Empirical Result</th>
-        <th>Causal Takeaway</th>
-      </tr>
-      <tr>
-        <td><strong>Puzzle Box Experiment</strong><br>Edward Thorndike (1898)</td>
-        <td>Cats in puzzle boxes</td>
-        <td>Trial and error testing lever releases</td>
-        <td>Escape time dropped from 160s to 7s across 25 trials.</td>
-        <td>Law of Effect: Satisfying outcomes stamp in neurological circuits.</td>
-      </tr>
-      <tr>
-        <td><strong>Vietnam Heroin Study</strong><br>Dr. Lee Robins (1971)</td>
-        <td>U.S. soldiers deployed in Vietnam War</td>
-        <td>Returning home to domestic environments vs. staying in warzone</td>
-        <td>Only 5% relapsed in Year 1; 88% avoided addiction permanently.</td>
-        <td>Cues in environment drive addiction far more than biological craving alone.</td>
-      </tr>
-      <tr>
-        <td><strong>Implementation Intentions</strong><br>Milne, Orbell, Sheeran (2001)</td>
-        <td>248 British adults tracked for exercise</td>
-        <td>Control vs. Motivation vs. Specific [Time & Location] Plan</td>
-        <td>Control: 35%. Motivation: 38%. <strong>Implementation: 91%.</strong></td>
-        <td>Vague motivation fails; concrete environmental execution triggers succeed.</td>
-      </tr>
-      <tr>
-        <td><strong>Choice Architecture Cafeteria</strong><br>Dr. Anne Thorndike (2012)</td>
-        <td>Mass General Hospital cafeteria patrons</td>
-        <td>Baskets of bottled water added next to registers; zero verbal prompts</td>
-        <td>Soda sales dropped 11.4%; water sales increased 25.8%.</td>
-        <td>Visual salience directs subconscious choice without conscious willpower.</td>
-      </tr>
-      <tr>
-        <td><strong>Supernormal Stimuli</strong><br>Niko Tinbergen (1950s)</td>
-        <td>Herring gull chicks & cardboard beaks</td>
-        <td>Natural beak dot vs. exaggerated fake red markers</td>
-        <td>Chicks pecked frantically at fake, exaggerated markers.</td>
-        <td>Brain reward pathways are easily hijacked by exaggerated artificial stimuli.</td>
-      </tr>
-      <tr>
-        <td><strong>Dopamine Anticipation</strong><br>Wolfram Schultz (1997)</td>
-        <td>Rhesus monkeys & juice rewards</td>
-        <td>Light cue paired with juice reward; neuro-monitoring</td>
-        <td>Dopamine spikes shifted from reward arrival to the initial light cue.</td>
-        <td>Dopamine powers the <em>craving</em> for reward, not the pleasure of consumption.</td>
-      </tr>
-      <tr>
-        <td><strong>Photography Quantity vs Quality</strong><br>Jerry Uelsmann (Univ. of Florida)</td>
-        <td>Film photography students</td>
-        <td>Graded on quantity (volume) vs graded on one single photo (perfection)</td>
-        <td>The Quantity Group produced all the highest-quality photos.</td>
-        <td>Repetition and action drive mastery; speculative "motion" causes stagnation.</td>
-      </tr>
-      <tr>
-        <td><strong>Social Conformity Lines</strong><br>Solomon Asch (1951)</td>
-        <td>College students judging line lengths</td>
-        <td>Solo judgment vs answering after confederates gave wrong answers</td>
-        <td>75% of participants conformed to obviously incorrect group answers.</td>
-        <td>Tribal conformity overpowers objective perception.</td>
-      </tr>
-    </table>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- LAYER 4: OPERATIONAL FIELD MANUAL & DIAGNOSTIC ENGINE -->
-  <!-- ========================================================================= -->
-  <section id="layer4" class="section-box">
-    <div class="section-tag">Layer 4 • Field Manual</div>
-    <h2 class="section-title">The Operational Diagnostic & Troubleshooting Engine</h2>
-
-    <h3 class="sub-title">1. The Habit Failure Diagnostic Matrix</h3>
-    <p>If you are struggling to build or break a habit, isolate the failure to its specific broken law:</p>
-    <table class="data-table">
-      <tr>
-        <th>Diagnostic Symptom</th>
-        <th>Broken Law</th>
-        <th>Underlying Neuro-Cognitive Breakdown</th>
-        <th>Prescriptive Remediation</th>
-      </tr>
-      <tr>
-        <td><em>"I constantly forget to do it."</em></td>
-        <td><strong>1st Law: Make It Obvious</strong></td>
-        <td>No salient environmental cue exists in your visual sightline.</td>
-        <td>Deploy <strong>Habit Stacking</strong> or anchor the cue in physical space.</td>
-      </tr>
-      <tr>
-        <td><em>"I don't feel like doing it; I have no motivation."</em></td>
-        <td><strong>2nd Law: Make It Attractive</strong></td>
-        <td>Dopamine anticipation is low; perceived effort exceeds anticipated state change.</td>
-        <td>Apply <strong>Temptation Bundling</strong> or join an aligned social tribe.</td>
-      </tr>
-      <tr>
-        <td><em>"It feels too hard; I procrastinate endlessly."</em></td>
-        <td><strong>3rd Law: Make It Easy</strong></td>
-        <td>Excessive physical or cognitive friction in the starting steps.</td>
-        <td>Downscale to the <strong>Two-Minute Rule</strong>; prime the room in advance.</td>
-      </tr>
-      <tr>
-        <td><em>"I do it for 3 days and then abandon it."</em></td>
-        <td><strong>4th Law: Make It Satisfying</strong></td>
-        <td>No immediate neurochemical payoff; delayed return environment trap.</td>
-        <td>Use a visual <strong>Habit Tracker</strong> or immediate artificial reinforcement.</td>
-      </tr>
-    </table>
-
-    <h3 class="sub-title">2. Master Habit Stacking Architecture</h3>
-    <div class="formula-box">
-MORNING SEQUENCE:
-1. After I wake up and turn off my alarm, I will drink a full glass of water (1st Law).
-2. After I drink my glass of water, I will sit on the floor and do 60 seconds of stretching (3rd Law).
-3. After I stretch for 60 seconds, I will write down my 3 core objectives for the day (Identity Vote).
-4. After I write my 3 objectives, I will pour my first cup of coffee (2nd Law - Temptation Bundle).
-    </div>
-
-    <h3 class="sub-title">3. Verbatim Field Scripts</h3>
-    <div class="callout protocol">
-      <div class="callout-title">Script 1: De-escalating Workplace Social Distraction</div>
-      <div class="quote-box">
-        "I'm in deep focus on [PROJECT] until 11:30 AM today. Send me a calendar invite for 15 minutes after lunch and I'll give you my complete attention."
-      </div>
-      <p><em>Mechanic:</em> Avoids negotiable softness; grounds boundary in a clear schedule and provides a respectful counter-offer.</p>
-    </div>
-
-    <div class="callout protocol">
-      <div class="callout-title">Script 2: Neutralizing Identity Sabotage During Slumps</div>
-      <div class="quote-box">
-        "Today was a terrible workout, but I showed up. Five minutes of bad effort keeps the voting record alive."
-      </div>
-      <p><em>Mechanic:</em> Eliminates the "what-the-hell effect" where a minor slip-up cascades into complete abandonment.</p>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- LAYER 5: SKEPTIC AUDITOR'S DEMARCATION -->
-  <!-- ========================================================================= -->
-  <section id="layer5" class="section-box">
-    <div class="section-tag">Layer 5 • Skeptic Audit</div>
-    <h2 class="section-title">Skeptic Auditor’s Demarcation & Stress-Test</h2>
-
-    <div class="callout demarcation">
-      <div class="callout-title">1. The Biological Limits of "Identity Voting"</div>
-      <p>
-        <strong>The Claim:</strong> Clear asserts that changing your identity by casting small votes is universally sufficient to alter behavior.
-      </p>
-      <p>
-        <strong>The Scientific Limitation:</strong> Severe neurochemical imbalances (clinical depression, ADHD, major trauma) cannot be overridden solely by small habit votes. In patients with severe executive dysfunction or dopamine transporter irregularities, prefrontal friction cannot be lowered enough through environmental design alone without pharmacological or clinical intervention.
-      </p>
-    </div>
-
-    <div class="callout demarcation">
-      <div class="callout-title">2. Survivorship Bias in the British Cycling Narrative</div>
-      <p>
-        <strong>The Claim:</strong> 1% marginal gains alone caused British Cycling to dominate the Olympics and Tour de France.
-      </p>
-      <p>
-        <strong>The Counter-Evidence:</strong> While Brailsford's marginal gains were real, British Cycling also received unprecedented lottery funding (£26+ million) that allowed them to hire the best physiologists in the world and supply custom £10,000 carbon bikes. Marginal gains are a multiplier on top of baseline capital and talent, not a substitute for them.
-      </p>
-    </div>
-
-    <div class="callout demarcation">
-      <div class="callout-title">3. The Rigidity Trap of Deliberate Habituation</div>
-      <p>
-        Automaticity creates cognitive cognitive stiffness. When conditions rapidly shift (a financial collapse, war, career change), highly automated people struggle to adapt because their routines have bypassed deliberate reasoning. Flexibility requires periodic deconstruction of existing habits.
-      </p>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- LAYER 6: ACTIVE RECALL CODEX -->
-  <!-- ========================================================================= -->
-  <section id="layer6" class="section-box">
-    <div class="section-tag">Layer 6 • Long-Term Retention</div>
-    <h2 class="section-title">Active Recall Spaced-Repetition Deck</h2>
-    <p>Click any card to reveal the comprehensive causal mechanism:</p>
-
-    <div class="flashcard" onclick="this.classList.toggle('active')">
-      <div class="flashcard-q">1. Why does Wolfram Schultz's research prove that craving, not reward, drives human action?</div>
-      <div class="flashcard-a">
-        Schultz recorded neuronal activity in primates and found that once a conditioned cue is established, dopamine fires immediately upon the detection of the cue, rather than upon receiving the reward. If a reward arrives as expected, dopamine levels remain flat. If an expected reward fails to arrive, dopamine drops below baseline (depression). Thus, dopamine regulates the <em>anticipatory pursuit</em> of an imagined state change.
-      </div>
-    </div>
-
-    <div class="flashcard" onclick="this.classList.toggle('active')">
-      <div class="flashcard-q">2. How did Lee Robins’ Vietnam War study refute the classical biochemical view of addiction?</div>
-      <div class="flashcard-a">
-        Classical addiction theory assumed heroin causes permanent biochemical dependence that guarantees high relapse rates (~90%). Robins proved that 88% of addicted soldiers who returned home to their families recovered without treatment, because the entire constellation of environmental cues, social pressures, and daily war stressors that triggered the habit loop were completely absent in their home environment.
-      </div>
-    </div>
-
-    <div class="flashcard" onclick="this.classList.toggle('active')">
-      <div class="flashcard-q">3. What was the exact intervention that caused Group 3 in the Milne/Orbell/Sheeran study to reach 91% exercise adherence?</div>
-      <div class="flashcard-a">
-        Group 3 utilized "Implementation Intentions" by explicitly filling out a sentence stating the exact day, time, and physical location of their workout (<em>"I will exercise for 20 minutes on [DAY] at [TIME] in [PLACE]"</em>). This linked the behavior to a precise environmental context, eliminating the need for willpower or spontaneous decision-making.
-      </div>
-    </div>
-
-    <div class="flashcard" onclick="this.classList.toggle('active')">
-      <div class="flashcard-q">4. Why did the "Quantity Group" in Jerry Uelsmann’s photography experiment produce superior work compared to the "Quality Group"?</div>
-      <div class="flashcard-a">
-        The quantity group spent their time in "action"—taking hundreds of photos, adjusting lighting, experiencing darkroom errors, and learning through continuous repetition. The quality group remained in "motion"—sitting around speculating and theorizing about perfection without taking action. Repetition directly drives neurological potentiation and skill acquisition.
-      </div>
-    </div>
-
-    <div class="flashcard" onclick="this.classList.toggle('active')">
-      <div class="flashcard-q">5. What is the difference between an immediate return environment and a delayed return environment?</div>
-      <div class="flashcard-a">
-        In an immediate return environment (paleolithic hunter-gatherer existence), actions produce immediate consequences: hunting yields immediate meat, running avoids immediate predators. In a delayed return environment (modern civilized life), efforts today (working, saving, dieting) yield returns years or decades in the future. The human brain evolved for immediate returns, which is why bad habits (immediate pleasure, delayed pain) thrive over good habits (immediate sacrifice, delayed reward).
-      </div>
-    </div>
-
-    <div class="flashcard" onclick="this.classList.toggle('active')">
-      <div class="flashcard-q">6. What is the "Goldilocks Rule" and why does Clear consider boredom more dangerous than failure?</div>
-      <div class="flashcard-a">
-        The Goldilocks Rule states that peak motivation occurs when working on tasks that are roughly 4% beyond current abilities. When an activity becomes automated, boredom sets in. People then abandon good habits not because they failed, but because they lost novel stimulation. Mastery requires falling in love with boredom.
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>Intellectualist Distillation Engine • Audited against the Golden Test of Total Replacement</p>
-    <p style="font-size: 0.8rem; margin-top: 8px;">All original concepts and case studies belong to James Clear (2018). This codex is an exhaustive academic and operational distillation.</p>
-  </footer>
-
-</div>
-
+    function closeSidebarOnMobile() {
+      if (window.innerWidth <= 1024) {
+        document.getElementById('reader-shell').classList.remove('sidebar-open');
+      }
+    }
+  </script>
 </body>
 </html>

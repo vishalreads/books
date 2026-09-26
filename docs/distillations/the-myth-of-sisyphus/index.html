@@ -1,671 +1,745 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="cream">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Myth of Sisyphus and Other Essays — BKRS Master Reader</title>
-  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <title>The Myth of Sisyphus — Albert Camus | BKRS Master Reader</title>
+  
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-base: #0f1016;
-      --bg-surface: #181924;
-      --bg-surface-elevated: #222332;
-      --border-subtle: #2d2f42;
-      --text-main: #f1f3f9;
-      --text-secondary: #9aa0b8;
-      --color-gold: #fbbf24;
-      --color-crimson: #f43f5e;
-      --font-display: 'Cinzel', serif;
-      --font-serif: 'Merriweather', Georgia, serif;
-      --font-sans: 'Inter', sans-serif;
+      --accent-crimson: #8b181b;
+      --accent-gold: #b38628;
+      --accent-forest: #225e43;
+      --border-color: #e5e0d3;
     }
 
-    [data-theme="light"] {
-      --bg-base: #f8fafc;
-      --bg-surface: #ffffff;
-      --bg-surface-elevated: #f1f5f9;
-      --border-subtle: #e2e8f0;
-      --text-main: #0f172a;
-      --text-secondary: #475569;
-      --color-gold: #d97706;
-      --color-crimson: #e11d48;
+    [data-theme="cream"] {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #f5f2ea;
+      --bg-card-subtle: #efebe0;
+      --border-color: #e2dccf;
+      --border-color-focus: #b5a895;
+      --text-main: #24211e;
+      --text-muted: #5c5549;
+      --text-subtle: #857b6c;
+      --accent-crimson: #8b181b;
+      --accent-gold: #966b1d;
+      --accent-forest: #225e43;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--bg-base);
+      background-color: var(--bg-canvas);
       color: var(--text-main);
-      font-family: var(--font-serif);
-      line-height: 1.85;
-      font-size: 1.08rem;
+      font-family: var(--font-serif, "EB Garamond", Georgia, serif);
+      font-size: 1.15rem;
+      line-height: 1.8;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* TOP HEADER */
-    .top-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--border-subtle);
-      padding: 12px 24px;
+    .unit-card-deep {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 38px 46px;
+      margin-bottom: 44px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    @media (max-width: 768px) {
+      .unit-card-deep { padding: 24px 20px; margin-bottom: 30px; }
+    }
+
+    .unit-meta-line {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      backdrop-filter: blur(8px);
-    }
-
-    .brand-group {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-    }
-
-    .brand-logo-img {
-      width: 32px;
-      height: 32px;
-      object-fit: contain;
-    }
-
-    .brand-title {
-      font-family: var(--font-display);
-      font-weight: 900;
-      font-size: 1.05rem;
-      letter-spacing: 0.1em;
-      color: var(--color-gold);
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .btn-action {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-main);
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    /* APP GRID */
-    .app-layout {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      min-height: calc(100vh - 60px);
-    }
-
-    @media (max-width: 1024px) {
-      .app-layout { grid-template-columns: 1fr; }
-      .app-sidebar { display: none; }
-    }
-
-    /* SIDEBAR */
-    .app-sidebar {
-      background: var(--bg-surface);
-      border-right: 1px solid var(--border-subtle);
-      padding: 24px 16px;
-      height: calc(100vh - 60px);
-      position: sticky;
-      top: 60px;
-      overflow-y: auto;
-    }
-
-    .sidebar-title {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-secondary);
       margin-bottom: 16px;
-      padding-left: 8px;
-    }
-
-    .nav-ch-link {
-      display: flex;
-      gap: 10px;
-      align-items: baseline;
-      padding: 8px 10px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      border-radius: 6px;
-      transition: all 0.15s ease;
-      line-height: 1.35;
-    }
-
-    .nav-ch-link:hover {
-      background: var(--bg-surface-elevated);
-      color: var(--text-main);
-    }
-
-    .nav-ch-num {
-      font-weight: 700;
-      color: var(--color-gold);
-      min-width: 18px;
-    }
-
-    /* MAIN CONTENT */
-    .reading-surface {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 24px 100px;
-      width: 100%;
-    }
-
-    /* HERO */
-    .hero-box {
-      border-bottom: 2px solid var(--border-subtle);
-      padding-bottom: 36px;
-      margin-bottom: 50px;
-    }
-
-    .hero-kicker {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--color-gold);
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: 2.8rem;
-      line-height: 1.15;
-      font-weight: 900;
-      color: var(--text-main);
-      margin-bottom: 14px;
-    }
-
-    .hero-subtitle {
-      font-family: var(--font-sans);
-      font-size: 1.15rem;
-      color: var(--text-secondary);
-      margin-bottom: 24px;
-      line-height: 1.5;
-    }
-
-    .meta-badges {
-      display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
     }
-
-    .badge {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
-      padding: 4px 10px;
-      border-radius: 6px;
+    .unit-badge {
       font-family: var(--font-sans);
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-    }
-
-    .badge.highlight {
-      background: rgba(251, 191, 36, 0.12);
-      border-color: rgba(251, 191, 36, 0.35);
-      color: var(--color-gold);
-      font-weight: 600;
-    }
-
-    /* CHAPTERS */
-    .chapter-wrapper {
-      margin-bottom: 64px;
-      padding-bottom: 40px;
-      border-bottom: 1px dashed var(--border-subtle);
-    }
-
-    .chapter-header {
-      margin-bottom: 32px;
-    }
-
-    .chapter-kicker {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--color-gold);
-      margin-bottom: 6px;
+      padding: 3px 10px;
+      background: #8b181b15;
+      color: var(--accent-crimson);
+      border: 1px solid var(--accent-crimson);
+      border-radius: 4px;
     }
-
-    .chapter-title {
-      font-family: var(--font-display);
-      font-size: 2.1rem;
-      line-height: 1.25;
-      color: var(--text-main);
-      margin-bottom: 12px;
-    }
-
-    .chapter-axiom {
-      background: var(--bg-surface);
-      border-left: 4px solid var(--color-gold);
-      padding: 12px 18px;
-      border-radius: 0 8px 8px 0;
+    .unit-epistemic {
       font-family: var(--font-sans);
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-    }
-
-    /* CAMUS BLOCK */
-    .camus-block {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 32px;
-    }
-
-    .camus-heading {
-      font-family: var(--font-sans);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 8px;
-    }
-
-    .camus-text {
-      color: var(--text-main);
-      margin-bottom: 20px;
-      line-height: 1.85;
-    }
-
-    /* HEURISTICS */
-    .heuristics-container {
-      background: var(--bg-surface-elevated);
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-      border: 1px solid var(--border-subtle);
-    }
-
-    .heuristics-title {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--color-gold);
-      margin-bottom: 10px;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      background: var(--bg-card-subtle);
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
     }
 
-    .heuristics-list {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-family: var(--font-sans);
-      font-size: 0.92rem;
-      color: var(--text-secondary);
-    }
-
-    .heuristics-list li {
-      position: relative;
-      padding-left: 20px;
-    }
-
-    .heuristics-list li::before {
-      content: "•";
-      color: var(--color-gold);
-      font-weight: bold;
-      position: absolute;
-      left: 6px;
-    }
-
-    /* QUOTE */
-    .camus-quote {
-      border-left: 3px solid var(--color-crimson);
-      padding: 12px 20px;
-      margin-top: 20px;
-      font-style: italic;
+    .unit-heading-deep {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3;
       color: var(--text-main);
-      background: rgba(244, 63, 94, 0.05);
-      border-radius: 0 6px 6px 0;
-      font-size: 1.05rem;
+      margin-bottom: 18px;
     }
 
-    .quote-symbol {
-      color: var(--color-crimson);
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      line-height: 0;
-      margin-right: 4px;
+    .narrative-p {
+      margin-bottom: 1.4em;
+      font-size: 1.15rem;
+      line-height: 1.82;
+      text-align: justify;
+    }
+
+    .quote-box {
+      margin: 24px 0;
+      padding: 18px 24px;
+      background: var(--bg-card-subtle);
+      border-left: 4px solid var(--accent-crimson);
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+      font-size: 1.12rem;
+    }
+
+    .heuristic-box {
+      margin-top: 24px;
+      padding: 16px 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 6px 6px 0;
+      font-size: 1.02rem;
     }
   </style>
 </head>
 <body>
 
-  <header class="top-header">
-    <a href="../../index.html" class="brand-group">
-      <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo-img">
-      <span class="brand-title">INTELLECTUALIST</span>
-    </a>
-    <div class="nav-actions">
-      <button class="btn-action" id="theme-btn">🌓 Theme</button>
-      <a href="../../index.html" class="btn-action">← Library</a>
+  <!-- TOP APP BAR -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="icon-btn toggle-sidebar-btn" id="toggle-sidebar-btn" title="Toggle Table of Contents" aria-label="Toggle Sidebar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <a href="../../index.html" class="brand-link">
+          <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo">
+          <div class="brand-meta">
+            <span class="brand-title">THE INTELLECTUALIST</span>
+            <span class="brand-sub">BKRS Master Distillation Series</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- VIEW SELECTOR BUTTONS -->
+      <div class="view-pills" style="display: flex; gap: 6px;">
+        <button class="pill-btn active" id="btn-view-journey" onclick="switchView('journey')">View A: The 12 Units</button>
+        <button class="pill-btn" id="btn-view-map" onclick="switchView('map')">View B: The Absurd Triad</button>
+      </div>
+
+      <!-- THEME SELECTOR -->
+      <div class="top-controls">
+        <select class="theme-select" id="theme-select" onchange="setTheme(this.value)">
+          <option value="cream" selected>Editorial Cream</option>
+          <option value="light">Crisp Light</option>
+          <option value="sepia">Warm Sepia</option>
+          <option value="dark">Nocturne Dark</option>
+        </select>
+        <div class="font-toggle" style="display: flex; gap: 4px;">
+          <button class="icon-btn" onclick="setFont('serif')" title="Serif Font" style="font-family: serif; font-weight: bold;">T</button>
+          <button class="icon-btn" onclick="setFont('sans')" title="Sans Font" style="font-family: sans-serif; font-weight: bold;">S</button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <div class="app-layout">
-    <aside class="app-sidebar">
-      <div class="sidebar-title">The Myth of Sisyphus</div>
-      <nav>
+  <div class="reader-shell" id="reader-shell">
+    
+    <!-- LEFT SIDEBAR TOC -->
+    <aside class="reader-sidebar" id="reader-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Camus' Dialectic</div>
+        <div class="sidebar-meta">12 Invariant Units</div>
+      </div>
+      <div class="sidebar-toc" id="sidebar-toc">
         
-    <a href="#ch-01" class="nav-ch-link">
-      <span class="nav-ch-num">1</span>
-      <span class="nav-ch-title">Absurdity and Suicide (The Fundamental Question of Philosophy)</span>
-    </a>
-  
-
-    <a href="#ch-02" class="nav-ch-link">
-      <span class="nav-ch-num">2</span>
-      <span class="nav-ch-title">An Absurd Walls (The Mechanical Daily Collapse into 'Why?')</span>
-    </a>
-  
-
-    <a href="#ch-03" class="nav-ch-link">
-      <span class="nav-ch-num">3</span>
-      <span class="nav-ch-title">Philosophical Suicide (The Escape into Transcendence)</span>
-    </a>
-  
-
-    <a href="#ch-04" class="nav-ch-link">
-      <span class="nav-ch-num">4</span>
-      <span class="nav-ch-title">Absurd Freedom (Revolt, Freedom, and Passion)</span>
-    </a>
-  
-
-    <a href="#ch-05" class="nav-ch-link">
-      <span class="nav-ch-num">5</span>
-      <span class="nav-ch-title">The Absurd Archetypes: Don Juan, The Actor, and The Conqueror</span>
-    </a>
-  
-
-    <a href="#ch-06" class="nav-ch-link">
-      <span class="nav-ch-num">6</span>
-      <span class="nav-ch-title">Philosophy, Fiction, and Kirilov (The Artist as the Ultimate Rebel)</span>
-    </a>
-  
-
-    <a href="#ch-07" class="nav-ch-link">
-      <span class="nav-ch-num">7</span>
-      <span class="nav-ch-title">The Descent Down the Mountain (One Must Imagine Sisyphus Happy)</span>
-    </a>
-  
-
-    <a href="#ch-08" class="nav-ch-link">
-      <span class="nav-ch-num">8</span>
-      <span class="nav-ch-title">Summer in Algiers & The Minotaur in Oran (The Pagan Splendor of the Earth)</span>
-    </a>
-  
-      </nav>
+          <div class="nav-ch-item">
+            <a href="#unit-1" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">1</span>
+              <span class="nav-ch-title">An Absurd Reasoning: The Only Serious Philosophical Problem</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-2" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">2</span>
+              <span class="nav-ch-title">The Feeling of Absurdity: The Collapse of Mechanical Routine</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-3" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">3</span>
+              <span class="nav-ch-title">The Absurd Walls: The Collision of Human Longing and Cosmic Silence</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-4" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">4</span>
+              <span class="nav-ch-title">Philosophical Suicide: The Evasion of Kierkegaard, Chestov, and Jaspers</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-5" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">5</span>
+              <span class="nav-ch-title">Absurd Freedom & The Three Consequences: Revolt, Freedom, and Passion</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-6" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">6</span>
+              <span class="nav-ch-title">The Absurd Man I: Don Juanism and the Ethic of Quantity</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-7" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">7</span>
+              <span class="nav-ch-title">The Absurd Man II: The Actor and Fleeting Immortality</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-8" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">8</span>
+              <span class="nav-ch-title">The Absurd Man III: The Conqueror and Historical Action</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-9" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">9</span>
+              <span class="nav-ch-title">Absurd Creation: Art as the Supreme Gratuitous Act</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-10" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">10</span>
+              <span class="nav-ch-title">The Myth of Sisyphus: The Rock, the Mountain, and the Punishment</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-11" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">11</span>
+              <span class="nav-ch-title">The Hour of Consciousness: The Descent Down the Mountain</span>
+            </a>
+          </div>
+        
+          <div class="nav-ch-item">
+            <a href="#unit-12" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+              <span class="nav-ch-num">12</span>
+              <span class="nav-ch-title">One Must Imagine Sisyphus Happy: The Triumph Over the Gods</span>
+            </a>
+          </div>
+        
+      </div>
     </aside>
 
-    <main class="reading-surface">
-      <div class="hero-box">
-        <div class="hero-kicker">BKRS Master Replacement Codex • Classical Philosophy</div>
-        <h1 class="hero-title">The Myth of Sisyphus and Other Essays</h1>
-        <p class="hero-subtitle">An Essay on the Absurd, Philosophical Suicide, and the Lucidity of Revolt</p>
-        <div class="meta-badges">
-          <span class="badge highlight">✦ Tier 1: Foundational Existential Philosophy & Absurdism</span>
-          <span class="badge">⏱ 9.5 hrs saved</span>
-          <span class="badge">🏛 8 Foundational Treatises</span>
-          <span class="badge">⚖ Uncapped Revolt &amp; Lucidity</span>
-        </div>
+    <!-- MAIN READING VIEWPORT -->
+    <main class="reader-viewport" id="reader-viewport">
+      <div class="reader-measure" id="reader-measure">
+
+        <!-- VIEW A: THE 12 UNITS -->
+        <section id="view-journey" class="view-panel active">
+          
+          <div style="margin-bottom: 40px; padding: 28px 0; border-bottom: 2px solid var(--accent-crimson);">
+            <div style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); margin-bottom: 8px;">
+              BKRS Single-Volume Master Reconstruction
+            </div>
+            <h1 style="font-family: var(--font-serif); font-size: 2.6rem; line-height: 1.2; color: var(--text-main); margin-bottom: 12px; letter-spacing: -0.02em;">
+              The Myth of Sisyphus
+            </h1>
+            <div style="font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; color: var(--text-muted); line-height: 1.6; max-width: 900px;">
+              A comprehensive philosophical reconstruction of Albert Camus’ essay on the absurd. Deconstructing the problem of suicide, philosophical leaps of faith, radical revolt, the absurd hero, and the eternal triumph of Sisyphus over the gods.
+            </div>
+          </div>
+
+          <!-- THE 12 UNITS -->
+          
+            <div class="unit-card-deep" id="unit-1">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 1</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 1: Absurdity and Suicide
+                  </span>
+                </div>
+                <span class="unit-epistemic">EXISTENTIAL ONTOLOGY & PHILOSOPHICAL SUICIDE</span>
+              </div>
+
+              <h3 class="unit-heading-deep">An Absurd Reasoning: The Only Serious Philosophical Problem</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                There is but one truly serious philosophical problem, and that is suicide. Judging whether life is or is not worth living amounts to answering the fundamental question of philosophy.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">All other philosophical inquiries—whether the world has three dimensions, how the mind categorizes perceptions, or the nature of logic—are secondary intellectual games. The primal question is existential: does the realization of the meaninglessness of human existence inevitably demand physical self-destruction?</p><p class="narrative-p">Camus examines the mechanics of suicide: it begins not in open public debate, but as a silent worm gnawing within the heart. The individual suddenly awakens from the mechanical routine of daily life and experiences a profound estrangement from their own existence.</p><p class="narrative-p">Camus rejects physical suicide as a confession of helplessness: suicide is an act of capitulation to the absurd, a surrender that eliminates the confrontation rather than resolving it. True philosophical honesty demands confronting the meaninglessness of the universe while stubbornly continuing to live.</p>
+              </div>
+
+              <div class="quote-box">
+                “There is but one truly serious philosophical problem, and that is suicide. Judging whether life is or is not worth living amounts to answering the fundamental question of philosophy. All the rest comes afterwards.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Do not escape existential crisis through physical or intellectual suicide. Live in the tension of the unanswered question.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-2">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 2</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 1: Absurd Walls
+                  </span>
+                </div>
+                <span class="unit-epistemic">PHENOMENOLOGY OF ALIENATION & THE AWAKENING</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Feeling of Absurdity: The Collapse of Mechanical Routine</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The feeling of the absurd can strike any man at any street corner. It arises when the mechanical routine of everyday life suddenly shatters, leaving consciousness naked before the terrifying question: 'Why?'
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Rising, streetcar, four hours in the office or the factory, meal, streetcar, four hours of work, meal, sleep, and Monday Tuesday Wednesday Thursday Friday and Saturday according to the same rhythm—this path is easily followed most of the time. But one day the 'why' arises and everything begins in that weariness tinged with amazement.</p><p class="narrative-p">The absurdity of the world is experienced through four specific encounters:
+1. The strangeness of nature: looking at a tree, a pebble, or a jagged mountain ridge and realizing that the physical world is utterly indifferent, foreign, and irreducible to human logic.
+2. The strangeness of others: observing a man speaking behind a glass telephone booth without hearing his voice; his wild pantomime appears grotesque, ridiculous, and insane.
+3. The strangeness of oneself: looking into a mirror and catching a glimpse of a foreign stranger behind the familiar face.
+4. The certainty of death: the ultimate, bloody finish line that turns all human ambition into dust.</p>
+              </div>
+
+              <div class="quote-box">
+                “At any streetcorner the feeling of absurdity can strike any man in the face. In its distressing nudity, in its light without effulgence, it is elusive.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                When the routine of daily life collapses into weariness, do not numb yourself; use the awakening to perceive reality without illusions.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-3">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 3</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 1: Absurd Walls
+                  </span>
+                </div>
+                <span class="unit-epistemic">DIALECTICAL ONTOLOGY & THE ABSURD DEFINITION</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Absurd Walls: The Collision of Human Longing and Cosmic Silence</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The absurd is not located in man alone, nor is it located in the world alone. The absurd is the confrontation between the human mind's desperate demand for unity, order, and meaning, and the cold, irrational silence of the universe.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Camus provides the precise philosophical definition of the Absurd: it is a relation, a collision. Just as a collision requires two cars, the absurd requires both terms of the equation: (1) The passionate human longing for clarity, immortality, and moral purpose; and (2) The blind, irrational, and completely silent cosmos that refuses to answer.</p><p class="narrative-p">If the universe possessed a clear divine order, there would be no absurd. If human beings were unthinking beasts who felt no hunger for meaning, there would be no absurd. The absurd exists exclusively at their intersection.</p><p class="narrative-p">Therefore, any attempt to resolve the absurd by destroying one of the two terms—either by destroying the human mind through physical suicide, or by imagining a divine afterlife through mystical faith—is a cowardly evasion of the truth.</p>
+              </div>
+
+              <div class="quote-box">
+                “The absurd is born of this confrontation between the human need and the unreasonable silence of the world... It all begins with the lucid refusal to accept comforting lies.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                The absurd is born of a clash. Never deny your hunger for clarity, and never invent fairy tales to tame the cosmic silence.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-4">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 4</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 1: Philosophical Suicide
+                  </span>
+                </div>
+                <span class="unit-epistemic">CRITICAL EPISTEMOLOGY & THE LEAP OF FAITH</span>
+              </div>
+
+              <h3 class="unit-heading-deep">Philosophical Suicide: The Evasion of Kierkegaard, Chestov, and Jaspers</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                Existentialist philosophers correctly diagnose the absurdity of human existence, but then commit 'Philosophical Suicide'—leaping into transcendent faith, God, or mysticism to escape the despair.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Camus audits the major existentialist thinkers of his era: Søren Kierkegaard, Lev Shestov, and Karl Jaspers. All three brilliant minds stare into the terrifying abyss of the absurd, but then lose their courage.</p><p class="narrative-p">Kierkegaard takes the 'Leap of Faith' (*Salto Mortale*): he embraces the absurd not as a tragic reality to be endured, but as proof of God. He deifies the irrational, sacrificing his own intellect on the altar of the divine.</p><p class="narrative-p">Camus condemns this as 'Philosophical Suicide': killing human reason in order to preserve psychological comfort. For Camus, an honest mind must live without appeal to the supernatural: 'I want to know if I can live with what I know, and with that alone.'</p>
+              </div>
+
+              <div class="quote-box">
+                “I do not know whether this world has a meaning that transcends it. But I know that I do not know that meaning and that it is impossible for me just now to know it.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Beware of philosophies that diagnose suffering only to offer comforting supernatural escapes. Live with the evidence, and that alone.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-5">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 5</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 1: Absurd Freedom
+                  </span>
+                </div>
+                <span class="unit-epistemic">EXISTENTIAL ETHICS & RADICAL REVOLT</span>
+              </div>
+
+              <h3 class="unit-heading-deep">Absurd Freedom & The Three Consequences: Revolt, Freedom, and Passion</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                From the lucid contemplation of the absurd, Camus derives three non-negotiable operational consequences: (1) My Revolt; (2) My Freedom; (3) My Passion.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">1. My Revolt: The constant, unyielding refusal to surrender to death, God, or despair. Revolt gives life its value and majesty. It is the human being standing upon the barren earth, shaking his fist at the stars, and declaring: 'I am here, and I will live fully without illusions.'
+2. My Freedom: Traditional religious freedom is an illusion governed by divine commandments and eternal punishments. The absurd man possesses absolute situational freedom: knowing that there is no afterlife, no cosmic judge, and no divine script, he is free to choose his actions and bear total responsibility for their temporal consequences.
+3. My Passion: If life has no transcendent purpose, the goal of existence is not to live 'the best' life (a moral hierarchy), but to live 'the most' (an experiential intensity). The absurd man chooses the quantity of experiences over their supposed eternal quality.</p>
+              </div>
+
+              <div class="quote-box">
+                “Thus I draw from the absurd three consequences, which are my revolt, my freedom, and my passion. By the mere activity of consciousness I transform into a rule of life what was an invitation to death.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Replace the pursuit of eternal salvation with the fiery intensity of temporal revolt. Live lucidly, intensely, and rebelliously.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-6">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 6</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 2: The Absurd Man - Don Juanism
+                  </span>
+                </div>
+                <span class="unit-epistemic">EXISTENTIAL PSYCHOLOGY & THE QUANTITATIVE ETHIC</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Absurd Man I: Don Juanism and the Ethic of Quantity</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                Don Juan is not a vulgar womanizer searching for the 'one true love'; he is an absurd hero who understands that all loves are finite and ephemeral. He chooses the ethic of quantity over the illusion of eternal romance.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Moralists condemn Don Juan as selfish, shallow, and incapable of deep attachment. Camus proves they misunderstand his nature: Don Juan does not lack love; he loves too intensely to bind himself to a single person for sixty years under a false promise of eternity.</p><p class="narrative-p">Don Juan gives himself completely to each encounter, experiencing the full ecstasy and tragedy of connection with absolute lucidity, knowing that tomorrow the curtain falls and the feeling will dissolve. He does not seek salvation in woman; he seeks experiential saturation.</p><p class="narrative-p">Don Juan does not mourn the passage of time. When old age and death arrive, he looks back without regret, having consumed his allotment of earthly passion without leaving a drop in the glass.</p>
+              </div>
+
+              <div class="quote-box">
+                “Why should it be essential to love rarely in order to love much? Don Juan is a collector of moments, knowing that each one is unique and that none will survive.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Do not hoard your emotional life for an imaginary eternal tomorrow. Give yourself fully to the present encounter without illusions of permanence.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-7">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 7</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 2: The Drama
+                  </span>
+                </div>
+                <span class="unit-epistemic">THEATRICAL PHENOMENOLOGY & TEMPORAL SATURATION</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Absurd Man II: The Actor and Fleeting Immortality</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The actor is the ultimate absurd hero: for three hours on stage, he inhabits a complete human destiny—a king, a murderer, a lover—and then watches it dissolve into the empty air of the theater.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">The writer or sculptor leaves behind a permanent physical monument—a book or a statue—that survives his death, creating an illusion of worldly immortality. The actor leaves behind nothing: his art exists only in the vibrating physical air of the auditorium, dying the moment the curtain falls.</p><p class="narrative-p">The actor demonstrates the profound truth of human existence: life is a series of roles played against the backdrop of an indifferent cosmos. By living a thousand passionate lives in a single lifetime, the actor expands his consciousness across the human condition.</p><p class="narrative-p">The actor lives intensely in the temporal present: 'He displays the absurdity of all human ambition by building masterpieces out of physical breath and passing shadows.'</p>
+              </div>
+
+              <div class="quote-box">
+                “The actor's realm is that of the fleeting. Of all kinds of glory, his is the least durable... For three hours he is Caesar, for three hours he is Hamlet. He lives and dies a thousand times before the dust settles.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Recognize that all social roles and titles are costumes worn for an evening. Inhabit your role with full theatrical brilliance, but never mistake the costume for your soul.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-8">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 8</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 2: Conquest
+                  </span>
+                </div>
+                <span class="unit-epistemic">POLITICAL ACTION & TEMPORAL ENGAGEMENT</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Absurd Man III: The Conqueror and Historical Action</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The conqueror does not fight to build an eternal empire or bring about a utopian end of history; he acts because historical action is the supreme expression of human vitality and rebellion.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">The conqueror chooses the arena of human struggle over monastic withdrawal or scholarly contemplation. He knows that his victories are temporary, that his treaties will be torn up, and that the sands of time will bury his monuments.</p><p class="narrative-p">Yet he chooses to fight: not because the cause is eternal, but because the fight itself affirms human dignity. To lead men, to reshape boundaries, to build institutions in the face of certain mortality is the ultimate political revolt against cosmic indifference.</p><p class="narrative-p">The conqueror accepts the tragic condition: 'I am choosing the temporal over the eternal. If I must die, let me die with my boots on, commanding my destiny on the physical earth.'</p>
+              </div>
+
+              <div class="quote-box">
+                “Conquerors know that action is in itself useless. There is only one useful action, that of remaking man and the earth. I shall never remake men. But one must act 'as if.'” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Engage in the real-world battles of your era without the delusion that your work will create a permanent utopia. Action is its own justification.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-9">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 9</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 3: Absurd Creation
+                  </span>
+                </div>
+                <span class="unit-epistemic">AESTHETICS & THE PHILOSOPHY OF THE NOVEL</span>
+              </div>
+
+              <h3 class="unit-heading-deep">Absurd Creation: Art as the Supreme Gratuitous Act</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The absurd work of art is created not to explain the universe or preach a moral sermon, but to bear witness to the richness of human experience without providing a comforting conclusion.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">If the world were clear and explainable, art would not exist. Art is born from the failure of philosophy: where philosophical logic breaks down, the creative imagination steps in to describe the drama without pretending to solve the mystery.</p><p class="narrative-p">The absurd creator does not seek to justify or redeem existence. He creates as Sisyphus pushes his rock: as an act of pure gratuity, discipline, and joy. To create is to live twice.</p><p class="narrative-p">Camus examines Fyodor Dostoevsky: in *The Possessed*, Kirillov chooses logical suicide to become God (proving human autonomy). But in *The Brothers Karamazov*, Dostoevsky ultimately takes the Christian leap of faith, betraying the absurd to embrace salvation. True absurd art must resist the temptation to provide a holy ending.</p>
+              </div>
+
+              <div class="quote-box">
+                “To create is to live twice... The absurd work of art illustrates the mind's triumph over its fantasies. It is a rebellion that produces beauty out of nothingness.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Create art, businesses, and prose that describe the richness of life without forcing moralistic, tidy endings. Art is a witness, not a priest.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-10">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 10</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 4: The Myth of Sisyphus
+                  </span>
+                </div>
+                <span class="unit-epistemic">CLASSICAL MYTHOLOGY & EXISTENTIAL PUNISHMENT</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Myth of Sisyphus: The Rock, the Mountain, and the Punishment</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                The gods condemned Sisyphus to ceaselessly rolling a rock to the top of a mountain, whence the stone would fall back of its own weight. They had thought with some reason that there is no more dreadful punishment than futile and hopeless labor.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Sisyphus was the wisest and most prudent of mortals, but he defied the gods: he put Death in chains so that no man died, and he stole the secrets of the underworld to return to the sunlight, the sea, and the embrace of his wife. For his passionate hatred of death and love of earthly life, the Olympian gods condemned him to eternal torment in Tartarus.</p><p class="narrative-p">Camus paints the physical labor: the tense body, the strained muscles, the face pressed against the stone, the shoulder wedged against the clay mass, the foot braced against the slope, the hands caked in dirt. Sisyphus pushes the boulder up the steep incline; step by step, inch by inch, he reaches the summit.</p><p class="narrative-p">And then, in a single instant, the stone slips from his grasp and bounds down into the lower world in a cloud of dust. Sisyphus stands alone at the peak, watching his life's labor roll into the abyss.</p>
+              </div>
+
+              <div class="quote-box">
+                “The gods had condemned Sisyphus to ceaselessly rolling a rock to the top of a mountain, whence the stone would fall back of its own weight. They had thought with some reason that there is no more dreadful punishment than futile and hopeless labor.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Recognize that much of human existence is repetitive, heavy labor that will eventually be wiped clean. Look the futility in the eye without flinching.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-11">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 11</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 4: The Hour of Consciousness
+                  </span>
+                </div>
+                <span class="unit-epistemic">LUCIDITY & THE TRANSCENDENCE OF FATE</span>
+              </div>
+
+              <h3 class="unit-heading-deep">The Hour of Consciousness: The Descent Down the Mountain</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                It is during that return, that pause, that Sisyphus interests me. That hour like a breathing-space which returns as surely as his suffering, that is the hour of consciousness.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Camus focuses his entire philosophical masterpiece on a single moment: not the agonizing struggle up the mountain, but the silent walk down the slope to retrieve the fallen rock.</p><p class="narrative-p">At that moment, Sisyphus is superior to his fate. He is stronger than his rock. If this myth is tragic, that is because its hero is conscious. Where would his torment be if at every step the hope of succeeding sustained him? The workman of today works every day in his life at the same tasks, and this fate is no less absurd. But it is tragic only at the rare moments when it becomes conscious.</p><p class="narrative-p">Sisyphus, returning toward his rock, contemplates that series of unrelated actions which becomes his fate, created by him, combined under his memory's eye and soon sealed by his death. By becoming fully conscious of the futility, Sisyphus transforms punishment into sovereignty.</p>
+              </div>
+
+              <div class="quote-box">
+                “It is during that return, that pause, that Sisyphus interests me... At each of those moments when he leaves the heights and gradually sinks toward the lairs of the gods, he is superior to his fate. He is stronger than his rock.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                The moment of greatest victory is the quiet pause between tasks when you recognize your fate with absolute clarity and choose to continue anyway.
+              </div>
+            </div>
+          
+            <div class="unit-card-deep" id="unit-12">
+              <div class="unit-meta-line">
+                <div>
+                  <span class="unit-badge">Unit 12</span>
+                  <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-left: 10px;">
+                    Chapter 4: Conclusion
+                  </span>
+                </div>
+                <span class="unit-epistemic">RADICAL AFFIRMATION & TRAGIC JOY</span>
+              </div>
+
+              <h3 class="unit-heading-deep">One Must Imagine Sisyphus Happy: The Triumph Over the Gods</h3>
+
+              <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                There is no sun without shadow, and it is essential to know the night. The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy.
+              </div>
+
+              <div class="narrative-prose">
+                <p class="narrative-p">Camus concludes with the ultimate philosophical transfiguration: Sisyphus does not merely endure his punishment; he conquers the gods through his scorn. 'There is no fate that cannot be surmounted by scorn.'</p><p class="narrative-p">When Sisyphus acknowledges that the universe is silent and that his rock is his own creation, the gods lose all power over him. The boulder is not an instrument of divine torture; it is his kingdom, his property, his companion.</p><p class="narrative-p">Sisyphus teaches the higher fidelity that negates the gods and raises rocks. He too concludes that all is well. This universe henceforth without a master seems to him neither sterile nor futile. Each atom of that stone, each mineral flake of that night-filled mountain, in itself forms a world.</p><p class="narrative-p">The struggle itself toward the heights is enough to fill a human heart. We must imagine Sisyphus happy.</p>
+              </div>
+
+              <div class="quote-box">
+                “I leave Sisyphus at the foot of the mountain! One always finds one’s burden again. But Sisyphus teaches the higher fidelity that negates the gods and raises rocks. He too concludes that all is well... One must imagine Sisyphus happy.” — Albert Camus
+              </div>
+
+              <div class="heuristic-box">
+                <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                  Operational Heuristic:
+                </strong>
+                Your life is your rock. Embrace the heavy, endless task with scorn for despair, and find total joy in the act of pushing.
+              </div>
+            </div>
+          
+
+        </section>
+
+        <!-- VIEW B: THE ABSURD TRIAD -->
+        <section id="view-map" class="view-panel" style="display: none;">
+          <div style="margin-bottom: 32px; border-bottom: 2px solid var(--accent-crimson); padding-bottom: 16px;">
+            <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--text-main);">The Absurd Triad</h2>
+            <p style="font-family: var(--font-serif); font-style: italic; color: var(--text-muted); font-size: 1.05rem;">The Three Operational Rules for Living Without Appeal</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+            <div style="padding: 24px; background: var(--bg-card); border-top: 4px solid var(--accent-crimson); border-radius: 8px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-crimson); margin-bottom: 10px;">1. My Revolt</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);">The refusal to surrender to death, God, or despair. Revolt gives life its value. Man stands upon the earth and defiantly asserts his dignity against the indifferent cosmos.</p>
+            </div>
+            <div style="padding: 24px; background: var(--bg-card); border-top: 4px solid var(--accent-gold); border-radius: 8px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 10px;">2. My Freedom</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);">Freedom from illusory eternal rules and divine judgment. The absurd man is completely free in the temporal present, taking full responsibility for his choices.</p>
+            </div>
+            <div style="padding: 24px; background: var(--bg-card); border-top: 4px solid var(--accent-forest); border-radius: 8px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-forest); margin-bottom: 10px;">3. My Passion</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);">The choice of the quantity of experiences over the illusion of eternal quality. Saturating every earthly moment with lucidity and intensity.</p>
+            </div>
+          </div>
+        </section>
+
       </div>
-
-      
-    <section class="chapter-wrapper" id="ch-01">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section I: An Absurd Reasoning • Chapter 1</div>
-        <h2 class="chapter-title">Absurdity and Suicide (The Fundamental Question of Philosophy)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> There is but one truly serious philosophical problem, and that is suicide. Judging whether life is or is not worth living constitutes the fundamental question of philosophy.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">All other philosophical inquiries—whether the world has three dimensions or twelve categories of mind—are secondary games. Men die for ideas, or kill themselves because they judge life is not worth the trouble. Camus examines why someone commits suicide: the feeling of absurdity arises when the human longing for clarity and meaning collides violently with the cold, irrational silence of the universe. Suicide is an evasion—a confession that one is outstripped by life or that one does not understand it.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>Distinguish between physical suicide (terminating biological life) and philosophical suicide (evading reality through spiritual leaps).</li>
-<li>Refuse to escape the friction of existence: to live is to keep the absurd alive.</li>
-<li>Acknowledge that life can be lived all the better if it has no ultimate transcendental meaning.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          There is but one truly serious philosophical problem, and that is suicide. Judging whether life is or is not worth living amounts to answering the fundamental question of philosophy.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-02">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section I: An Absurd Reasoning • Chapter 2</div>
-        <h2 class="chapter-title">An Absurd Walls (The Mechanical Daily Collapse into 'Why?')</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> At any street corner, the feeling of absurdity can strike any man in the face: rising, streetcar, four hours in the office, meal, sleep, Monday-Tuesday-Wednesday-Thursday-Friday in the same rhythm—until one day the 'Why?' arises.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">The absurd feeling is triggered by four distinct existential shocks: (1) The breakdown of mechanical daily habits: the routine suddenly collapses, and consciousness awakens; (2) The strangeness of nature: seeing the world stripped of human metaphors, recognizing that nature is alien, hostile, and indifferent; (3) The strangeness of other people and oneself: watching a man speak behind a glass booth, gesturing meaninglessly, or staring at one's own hands in a mirror as an unrecognizable stranger; (4) The visceral reality of physical death: time becomes our mortal enemy, bearing us toward irrevocable annihilation.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>When the 'Why?' arises, do not numb it with distraction or social sedation; use it as an invitation to lucid consciousness.</li>
-<li>Strip nature of anthropomorphic myths: the universe does not care about human happiness or suffering.</li>
-<li>Confront your mortality without flinching: awareness of death is the supreme engine of lucidity.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          Rising, streetcar, four hours in the office or the factory, meal, streetcar, four hours of work, meal, sleep, and Monday Tuesday Wednesday Thursday Friday and Saturday according to the same rhythm—this path is easily followed most of the time. But one day the 'why' arises and everything begins in that weariness tinged with amazement.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-03">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section I: An Absurd Reasoning • Chapter 3</div>
-        <h2 class="chapter-title">Philosophical Suicide (The Escape into Transcendence)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Existential thinkers deify the very irrational that crushes them; taking a leap of faith to escape the absurd is an act of intellectual cowardice—a philosophical suicide.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">Camus critiques the great existentialists and phenomenologists: Søren Kierkegaard, Lev Chestov, Karl Jaspers, and Edmund Husserl. Each rightly diagnoses the absurdity of the human condition, but when faced with the unbearable void, each makes an irrational 'leap' (Kierkegaard leaps into Christian paradox; Chestov into arbitrary divine miracle; Husserl into eternal essences). Camus brands this 'Philosophical Suicide': killing the rational intellect in order to manufacture a comforting illusion of eternal hope. True integrity demands living in the tension without making the leap.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>Never reconcile contradictions by inventing comforting dogmas.</li>
-<li>Reject the 'leap of faith': if the universe is irrational, accept its irrationality rather than turning it into God.</li>
-<li>Live with what you know: maintain lucid reason while acknowledging its severe empirical boundaries.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          I do not know whether this world has a meaning that transcends it. But I know that I do not know that meaning and that it is impossible for me just now to know it. What can a meaning outside my condition mean to me? I can understand only in human terms.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-04">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section I: An Absurd Reasoning • Chapter 4</div>
-        <h2 class="chapter-title">Absurd Freedom (Revolt, Freedom, and Passion)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> By eliminating eternal hope and illusory destiny, the absurd man achieves absolute earthly liberty; the three consequences are my revolt, my freedom, and my passion.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">Discarding eternal meaning yields three profound operational consequences: (1) **Revolt**: An ongoing, constant defiance against one's mortal condition and the silence of the world. Revolt gives life its value and majesty. (2) **Freedom**: Liberated from the illusion of an afterlife, future goals, or divine purpose, one gains absolute present liberty. The condemned prisoner waiting for dawn is the freest human on earth because he has no tomorrow. (3) **Passion**: If quality of life is no longer measured by divine virtue, what matters is the **quantity of experiences**—burning through life with maximal intensity, awareness, and lucidity.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>Replace the search for the 'best' life with the pursuit of the most lived life.</li>
-<li>Live entirely in the present: hope for a better tomorrow is an opiate that steals the only reality you possess.</li>
-<li>Maintain active revolt: defying an indifferent universe through conscious presence is the highest human triumph.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          The absurd man realizes that hitherto he was bound to the postulate of hope... Now he feels free of that bondage. The present and the succession of presents before a constantly conscious soul—that is the ideal of the absurd man.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-05">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section II: The Absurd Man • Chapter 5</div>
-        <h2 class="chapter-title">The Absurd Archetypes: Don Juan, The Actor, and The Conqueror</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> The absurd man does not seek eternal ideals; he multiplies his presence in the world through ephemeral roles, transient conquests, and embodied passion.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">Camus presents three personifications of the absurd mindset: (1) **Don Juan**: He does not lack love; he loves too intensely to settle for the myth of a single, lifelong romance. He multiplies his loves quantitatively, knowing each is transient and finite. (2) **The Actor**: The actor reigns over the ephemeral. He inhabits dozens of human souls and destinies for three hours on stage, then disappears into the dressing room. He proves that human identity is a series of transient masks. (3) **The Conqueror**: The political or military man of action who chooses historical struggle over contemplation. He knows that his empire will crumble to dust, but prefers the tactile clash of earthly forces over cowardly monastic withdrawal.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>Do not hoard emotions for a mythical future; expend them generously across your lifetime.</li>
-<li>Treat your social roles as an actor treats his script: commit to the role fully while recognizing it is a construct.</li>
-<li>Embrace direct worldly engagement: action without illusions is superior to passive contemplation.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          Don Juan does not think of 'collecting' women. He exhausts their number and with them his chances of life. 'Collecting' belongs to the man who wants to possess; Don Juan wants to experience.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-06">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section III: Absurd Creation • Chapter 6</div>
-        <h2 class="chapter-title">Philosophy, Fiction, and Kirilov (The Artist as the Ultimate Rebel)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Art is the supreme absurd triumph: to create without explaining, to sculpt a world knowing it will vanish into dust, is the ultimate gesture of rebellion.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">The absurd artist creates without illusion. Unlike the dogmatic philosopher who constructs rigid metaphysical systems to explain away chaos, the novelist and artist simply describe reality in its concrete texture. Camus analyzes Kirilov in Dostoevsky's *Demons*: Kirilov realizes that if God does not exist, man is God, and the supreme act of divine sovereignty is to kill oneself without fear. Yet Dostoevsky himself ultimately retreats into Christian faith in *The Brothers Karamazov*, demonstrating how difficult it is for even genius creators to sustain the absurd without leaping.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>Express reality through description and sensory detail rather than moralistic preaching.</li>
-<li>Create freely without demanding that your work achieve immortality.</li>
-<li>A work of art that attempts to provide a universal philosophical answer ceases to be art; true art merely reflects human struggle.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          To create is to live twice. The creator's path is to observe, to enrich, and to multiply his images without adding an illusory doctrine to them.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-07">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section IV: The Myth of Sisyphus • Chapter 7</div>
-        <h2 class="chapter-title">The Descent Down the Mountain (One Must Imagine Sisyphus Happy)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> There is no fate that cannot be surmounted by scorn. The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">The gods condemned Sisyphus to ceaselessly roll a massive boulder up to the summit of a mountain, only to watch it roll back down to the plains by its own weight. They had thought with some reason that there is no more dreadful punishment than futile and hopeless labor. Camus focuses on the **hour of the descent**: the moment Sisyphus turns and walks down the slope to retrieve the boulder. In that pause, Sisyphus is conscious of his condition. His fate belongs to him; the rock is his thing. By accepting the eternal toil without appeal to the gods and without despair, he conquers his punishment. His scorn for the gods renders him free.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>Conquer tragedy through lucidity: when you recognize and claim your struggle as your own, fate loses its sting.</li>
-<li>Find fulfillment in the process rather than the destination: the boulder is your life's work.</li>
-<li>Never look for divine redemption: your mountain, your rock, and your effort are your supreme kingdom.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          I leave Sisyphus at the foot of the mountain! One always finds one's burden again. But Sisyphus teaches the higher fidelity that negates the gods and raises rocks... The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy.
-        </blockquote>
-      </div>
-    </section>
-  
-
-    <section class="chapter-wrapper" id="ch-08">
-      <header class="chapter-header">
-        <div class="chapter-kicker">Section V: Mediterranean Essays • Chapter 8</div>
-        <h2 class="chapter-title">Summer in Algiers & The Minotaur in Oran (The Pagan Splendor of the Earth)</h2>
-        <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> To live in the sun and by the sea is to know that the body has its own truth, superior to all the sterile metaphysical treatises of the North.</div>
-      </header>
-      
-      <div class="camus-block">
-        <h3 class="camus-heading">Philosophical Mechanism &amp; Dialectic</h3>
-        <p class="camus-text">In *Summer in Algiers* and *The Minotaur*, Camus explores the Mediterranean sensory experience. In Algiers, young men spend their days swimming in the sea and sunbathing on warm stone docks. They live intensely with their bodies, possessing no interest in abstract theology or afterlife. They know that beauty is fleeting and that aging and death are swift, but they embrace the sensual immediacy of the physical earth. This pagan lucidity represents Camus's ultimate alternative to Northern European intellectual nihilism.</p>
-
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Absurdist Heuristics for Living Without Appeal</div>
-          <ul class="heuristics-list">
-            <li>Ground your philosophy in somatic embodiment: swim in the sea, feel the sun, touch the earth.</li>
-<li>Do not trade the palpable beauty of this world for the promised perfection of a mythical heaven.</li>
-<li>Embrace sensory lucidity: to appreciate the finite transience of youth and nature is the highest wisdom.</li>
-          </ul>
-        </div>
-
-        <blockquote class="camus-quote">
-          <span class="quote-symbol">“</span>
-          If there is a sin against life, it consists perhaps not so much in despairing of life as in hoping for another life and in eluding the implacable grandeur of this life.
-        </blockquote>
-      </div>
-    </section>
-  
     </main>
   </div>
 
+  <script src="../../assets/js/reader-controls.js"></script>
   <script>
-    const themeBtn = document.getElementById('theme-btn');
-    const htmlEl = document.documentElement;
-    let theme = localStorage.getItem('intellectualist_theme') || 'dark';
-    htmlEl.setAttribute('data-theme', theme);
-    themeBtn.addEventListener('click', () => {
-      theme = theme === 'dark' ? 'light' : 'dark';
-      htmlEl.setAttribute('data-theme', theme);
-      localStorage.setItem('intellectualist_theme', theme);
-    });
+    function switchView(viewName) {
+      document.querySelectorAll('.view-panel').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+
+      if (viewName === 'journey') {
+        document.getElementById('view-journey').style.display = 'block';
+        document.getElementById('btn-view-journey').classList.add('active');
+      } else if (viewName === 'map') {
+        document.getElementById('view-map').style.display = 'block';
+        document.getElementById('btn-view-map').classList.add('active');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeSidebarOnMobile() {
+      if (window.innerWidth <= 1024) {
+        document.getElementById('reader-shell').classList.remove('sidebar-open');
+      }
+    }
   </script>
 </body>
 </html>

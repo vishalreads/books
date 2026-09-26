@@ -1,1102 +1,1349 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="cream">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Art of War — BKRS Master Reader</title>
-  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <title>The Art of War — Sun Tzu | BKRS Master Reader</title>
+  
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-base: #0f1117;
-      --bg-surface: #181b24;
-      --bg-surface-elevated: #222634;
-      --border-subtle: #2d3345;
-      --text-main: #f3f4f6;
-      --text-secondary: #9ca3af;
-      --color-gold: #f59e0b;
-      --color-crimson: #ef4444;
-      --color-crimson-dark: #991b1b;
-      --font-display: 'Cinzel', serif;
-      --font-serif: 'Merriweather', Georgia, serif;
-      --font-sans: 'Inter', sans-serif;
+      --accent-crimson: #8b181b;
+      --accent-gold: #b38628;
+      --accent-forest: #225e43;
+      --border-color: #e5e0d3;
     }
 
-    [data-theme="light"] {
-      --bg-base: #f9fafb;
-      --bg-surface: #ffffff;
-      --bg-surface-elevated: #f3f4f6;
-      --border-subtle: #e5e7eb;
-      --text-main: #111827;
-      --text-secondary: #4b5563;
-      --color-gold: #d97706;
-      --color-crimson: #b91c1c;
+    [data-theme="cream"] {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #f5f2ea;
+      --bg-card-subtle: #efebe0;
+      --border-color: #e2dccf;
+      --border-color-focus: #b5a895;
+      --text-main: #24211e;
+      --text-muted: #5c5549;
+      --text-subtle: #857b6c;
+      --accent-crimson: #8b181b;
+      --accent-gold: #966b1d;
+      --accent-forest: #225e43;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--bg-base);
+      background-color: var(--bg-canvas);
       color: var(--text-main);
-      font-family: var(--font-serif);
+      font-family: var(--font-serif, "EB Garamond", Georgia, serif);
+      font-size: 1.15rem;
       line-height: 1.8;
-      font-size: 1.08rem;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* TOP HEADER */
-    .top-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--border-subtle);
-      padding: 12px 24px;
+    .chapter-block {
+      margin-bottom: 56px;
+    }
+
+    .unit-card-deep {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 36px 44px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    @media (max-width: 768px) {
+      .unit-card-deep { padding: 22px 18px; margin-bottom: 24px; }
+    }
+
+    .unit-meta-line {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      backdrop-filter: blur(8px);
-    }
-
-    .brand-group {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-    }
-
-    .brand-logo-img {
-      width: 32px;
-      height: 32px;
-      object-fit: contain;
-    }
-
-    .brand-title {
-      font-family: var(--font-display);
-      font-weight: 900;
-      font-size: 1.05rem;
-      letter-spacing: 0.1em;
-      color: var(--color-crimson);
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .btn-action {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-main);
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    /* APP GRID */
-    .app-layout {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      min-height: calc(100vh - 60px);
-    }
-
-    @media (max-width: 1024px) {
-      .app-layout { grid-template-columns: 1fr; }
-      .app-sidebar { display: none; }
-    }
-
-    /* SIDEBAR */
-    .app-sidebar {
-      background: var(--bg-surface);
-      border-right: 1px solid var(--border-subtle);
-      padding: 24px 16px;
-      height: calc(100vh - 60px);
-      position: sticky;
-      top: 60px;
-      overflow-y: auto;
-    }
-
-    .sidebar-title {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-secondary);
-      margin-bottom: 16px;
-      padding-left: 8px;
-    }
-
-    .nav-ch-link {
-      display: flex;
-      gap: 10px;
-      align-items: baseline;
-      padding: 8px 10px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      border-radius: 6px;
-      transition: all 0.15s ease;
-      line-height: 1.35;
-    }
-
-    .nav-ch-link:hover {
-      background: var(--bg-surface-elevated);
-      color: var(--text-main);
-    }
-
-    .nav-ch-num {
-      font-weight: 700;
-      color: var(--color-gold);
-      min-width: 18px;
-    }
-
-    /* MAIN CONTENT */
-    .reading-surface {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 24px 100px;
-      width: 100%;
-    }
-
-    /* HERO */
-    .hero-box {
-      border-bottom: 2px solid var(--border-subtle);
-      padding-bottom: 36px;
-      margin-bottom: 50px;
-    }
-
-    .hero-kicker {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--color-crimson);
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: 2.8rem;
-      line-height: 1.15;
-      font-weight: 900;
-      color: var(--text-main);
       margin-bottom: 14px;
-    }
-
-    .hero-subtitle {
-      font-family: var(--font-sans);
-      font-size: 1.15rem;
-      color: var(--text-secondary);
-      margin-bottom: 24px;
-      line-height: 1.5;
-    }
-
-    .meta-badges {
-      display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
     }
-
-    .badge {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
-      padding: 4px 10px;
-      border-radius: 6px;
+    .unit-badge {
       font-family: var(--font-sans);
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-    }
-
-    .badge.highlight {
-      background: rgba(239, 68, 68, 0.12);
-      border-color: rgba(239, 68, 68, 0.3);
-      color: var(--color-crimson);
-      font-weight: 600;
-    }
-
-    /* CHAPTERS */
-    .chapter-wrapper {
-      margin-bottom: 64px;
-      padding-bottom: 40px;
-      border-bottom: 1px dashed var(--border-subtle);
-    }
-
-    .chapter-header {
-      margin-bottom: 32px;
-    }
-
-    .chapter-kicker {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--color-gold);
-      margin-bottom: 6px;
+      padding: 3px 10px;
+      background: #8b181b15;
+      color: var(--accent-crimson);
+      border: 1px solid var(--accent-crimson);
+      border-radius: 4px;
     }
-
-    .chapter-title {
-      font-family: var(--font-display);
-      font-size: 2.1rem;
-      line-height: 1.25;
-      color: var(--text-main);
-      margin-bottom: 12px;
-    }
-
-    .chapter-axiom {
-      background: var(--bg-surface);
-      border-left: 4px solid var(--color-gold);
-      padding: 12px 18px;
-      border-radius: 0 8px 8px 0;
+    .unit-epistemic {
       font-family: var(--font-sans);
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-    }
-
-    /* STRATEGY BLOCK */
-    .strategy-block {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 32px;
-    }
-
-    .strategy-heading {
-      font-family: var(--font-sans);
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 8px;
-    }
-
-    .strategy-text {
-      color: var(--text-main);
-      margin-bottom: 20px;
-      line-height: 1.8;
-    }
-
-    /* HEURISTICS */
-    .heuristics-container {
-      background: var(--bg-surface-elevated);
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-      border: 1px solid var(--border-subtle);
-    }
-
-    .heuristics-title {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--color-gold);
-      margin-bottom: 10px;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      background: var(--bg-card-subtle);
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
     }
 
-    .heuristics-list {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-family: var(--font-sans);
-      font-size: 0.92rem;
-      color: var(--text-secondary);
-    }
-
-    .heuristics-list li {
-      position: relative;
-      padding-left: 20px;
-    }
-
-    .heuristics-list li::before {
-      content: "•";
-      color: var(--color-gold);
-      font-weight: bold;
-      position: absolute;
-      left: 6px;
-    }
-
-    /* QUOTE */
-    .sun-tzu-quote {
-      border-left: 3px solid var(--color-crimson);
-      padding: 12px 20px;
-      margin-top: 20px;
-      font-style: italic;
+    .unit-heading-deep {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      font-weight: 700;
+      line-height: 1.3;
       color: var(--text-main);
-      background: rgba(239, 68, 68, 0.05);
-      border-radius: 0 6px 6px 0;
-      font-size: 1.05rem;
+      margin-bottom: 16px;
     }
 
-    .quote-symbol {
-      color: var(--color-crimson);
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      line-height: 0;
-      margin-right: 4px;
+    .claim-box {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      margin-bottom: 18px;
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .quote-box {
+      margin: 20px 0;
+      padding: 18px 24px;
+      background: var(--bg-card-subtle);
+      border-left: 4px solid var(--accent-crimson);
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+      font-size: 1.12rem;
+    }
+
+    .heuristic-box {
+      margin-top: 20px;
+      padding: 16px 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 6px 6px 0;
+      font-size: 1.02rem;
+    }
+
+    .nav-epoch-title {
+      font-family: var(--font-sans);
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-crimson);
+      padding: 12px 16px 4px;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <header class="top-header">
-    <a href="../../index.html" class="brand-group">
-      <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo-img">
-      <span class="brand-title">INTELLECTUALIST</span>
-    </a>
-    <div class="nav-actions">
-      <button class="btn-action" id="theme-btn">🌓 Theme</button>
-      <a href="../../index.html" class="btn-action">← Library</a>
+  <!-- TOP APP BAR -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="icon-btn toggle-sidebar-btn" id="toggle-sidebar-btn" title="Toggle Table of Contents" aria-label="Toggle Sidebar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <a href="../../index.html" class="brand-link">
+          <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo">
+          <div class="brand-meta">
+            <span class="brand-title">THE INTELLECTUALIST</span>
+            <span class="brand-sub">BKRS Master Distillation Series</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- VIEW SELECTOR BUTTONS -->
+      <div class="view-pills" style="display: flex; gap: 6px;">
+        <button class="pill-btn active" id="btn-view-journey" onclick="switchView('journey')">View A: The 13 Chapters</button>
+        <button class="pill-btn" id="btn-view-map" onclick="switchView('map')">View B: Strategic Compass</button>
+      </div>
+
+      <!-- THEME SELECTOR -->
+      <div class="top-controls">
+        <select class="theme-select" id="theme-select" onchange="setTheme(this.value)">
+          <option value="cream" selected>Editorial Cream</option>
+          <option value="light">Crisp Light</option>
+          <option value="sepia">Warm Sepia</option>
+          <option value="dark">Nocturne Dark</option>
+        </select>
+        <div class="font-toggle" style="display: flex; gap: 4px;">
+          <button class="icon-btn" onclick="setFont('serif')" title="Serif Font" style="font-family: serif; font-weight: bold;">T</button>
+          <button class="icon-btn" onclick="setFont('sans')" title="Sans Font" style="font-family: sans-serif; font-weight: bold;">S</button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <div class="app-layout">
-    <aside class="app-sidebar">
-      <div class="sidebar-title">The 13 Classical Chapters</div>
-      <nav>
+  <div class="reader-shell" id="reader-shell">
+    
+    <!-- LEFT SIDEBAR TOC -->
+    <aside class="reader-sidebar" id="reader-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">The 13 Chapters</div>
+        <div class="sidebar-meta">13 Chapters • 26 Invariant Units</div>
+      </div>
+      <div class="sidebar-toc" id="sidebar-toc">
         
-    <a href="#ch-01" class="nav-ch-link">
-      <span class="nav-ch-num">1</span>
-      <span class="nav-ch-title">Laying Plans (Initial Estimations & The Five Factors)</span>
-    </a>
-  
-
-    <a href="#ch-02" class="nav-ch-link">
-      <span class="nav-ch-num">2</span>
-      <span class="nav-ch-title">Waging War (The Economics and Logistics of Attrition)</span>
-    </a>
-  
-
-    <a href="#ch-03" class="nav-ch-link">
-      <span class="nav-ch-num">3</span>
-      <span class="nav-ch-title">Attack by Stratagem (The Hierarchy of Victory & The Rule of Five)</span>
-    </a>
-  
-
-    <a href="#ch-04" class="nav-ch-link">
-      <span class="nav-ch-num">4</span>
-      <span class="nav-ch-title">Tactical Dispositions (Invincibility and Invisibility)</span>
-    </a>
-  
-
-    <a href="#ch-05" class="nav-ch-link">
-      <span class="nav-ch-num">5</span>
-      <span class="nav-ch-title">Energy (Direct vs. Indirect Tactics & The Physics of Momentum)</span>
-    </a>
-  
-
-    <a href="#ch-06" class="nav-ch-link">
-      <span class="nav-ch-num">6</span>
-      <span class="nav-ch-title">Weak Points and Strong (Emptiness and Fullness / Formlessness)</span>
-    </a>
-  
-
-    <a href="#ch-07" class="nav-ch-link">
-      <span class="nav-ch-num">7</span>
-      <span class="nav-ch-title">Maneuvering (The Art of Turning the Devious into the Direct)</span>
-    </a>
-  
-
-    <a href="#ch-08" class="nav-ch-link">
-      <span class="nav-ch-num">8</span>
-      <span class="nav-ch-title">Variation in Tactics (Adapting to Variables & The 5 Fatal Faults)</span>
-    </a>
-  
-
-    <a href="#ch-09" class="nav-ch-link">
-      <span class="nav-ch-num">9</span>
-      <span class="nav-ch-title">The Army on the March (Encampment & Forensic Battlefield Signals)</span>
-    </a>
-  
-
-    <a href="#ch-10" class="nav-ch-link">
-      <span class="nav-ch-num">10</span>
-      <span class="nav-ch-title">Terrain (The Six Terrains and The Six Calamities of Command)</span>
-    </a>
-  
-
-    <a href="#ch-11" class="nav-ch-link">
-      <span class="nav-ch-num">11</span>
-      <span class="nav-ch-title">The Nine Situations (Psychological Conditioning on Death Ground)</span>
-    </a>
-  
-
-    <a href="#ch-12" class="nav-ch-link">
-      <span class="nav-ch-num">12</span>
-      <span class="nav-ch-title">The Attack by Fire (Thermal Warfare and Prudent Restraint)</span>
-    </a>
-  
-
-    <a href="#ch-13" class="nav-ch-link">
-      <span class="nav-ch-num">13</span>
-      <span class="nav-ch-title">The Use of Spies (Divine Intelligence & The Espionage Matrix)</span>
-    </a>
-  
-      </nav>
+          <div class="nav-epoch-title">Chapter 1: Laying Plans (Initial Estimations & The Five Factors)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH01-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Five Constant Factors and Seven Deliberations</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH01-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Deception Matrix: The 12 Asymmetrical Inversions</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 2: Waging War (The Economics and Logistics of Attrition)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH02-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Compounding Bleed of Protracted Campaigns</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH02-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Foraging Law: The 20-to-1 Logistical Ratio</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 3: Attack by Stratagem (The Hierarchy of Victory & The Rule of Five)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH03-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Four-Tiered Strategic Hierarchy</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH03-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Five Relative Force Ratios & Sovereign Interference</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 4: Tactical Dispositions (Invincibility and Invisibility)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH04-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Dialectic of Defense and Offense</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH04-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Soundless Victory and the Five Military Calculations</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 5: Energy (Direct vs. Indirect Tactics & The Physics of Momentum)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH05-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Zheng and Qi Invariant: Direct and Indirect Forces</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH05-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Physics of Positional Momentum (Shi)</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 6: Weak Points and Strong (Emptiness and Fullness / Formlessness)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH06-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">Initiative: Imposing Your Will on the Enemy</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH06-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">Formlessness and the Water Metaphor</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 7: Maneuvering (The Art of Turning the Devious into the Direct)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH07-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Hazard of Forced Marches & Supply Deprivation</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH07-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Diurnal Rhythm of Morale & The Desperate Foe</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 8: Variation in Tactics (Adapting to Variables & The 5 Fatal Faults)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH08-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Nine Invariants of Situational Adaptation</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH08-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Five Fatal Psychological Flaws of a Commander</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 9: The Army on the March (Encampment & Forensic Battlefield Signals)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH09-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">Topographical Rules of Encampment</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH09-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">Forensic Decoding of Enemy Battlefield Signals</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 10: Terrain (The Six Terrains and The Six Calamities of Command)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH10-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Six Structural Terrains</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH10-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Six Calamities Arising from Internal Command Failure</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 11: The Nine Situations (Psychological Conditioning on Death Ground)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH11-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Nine Situations and Tactical Responses</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH11-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Mount Chang Serpent (Shuai-ran) & Total Secrecy</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 12: The Attack by Fire (Thermal Warfare and Prudent Restraint)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH12-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Five Thermal Attacks and Atmospheric Conditions</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH12-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Supreme Warning on Emotional Governance</span>
+              </a>
+            </div>
+          
+        
+          <div class="nav-epoch-title">Chapter 13: The Use of Spies (Divine Intelligence & The Espionage Matrix)</div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH13-01" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">01</span>
+                <span class="nav-ch-title">The Economics of Intelligence: The Sin of Parsimony</span>
+              </a>
+            </div>
+          
+            <div class="nav-ch-item">
+              <a href="#KU-AOW-CH13-02" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">02</span>
+                <span class="nav-ch-title">The Five Classes of Spies and the Converted Key</span>
+              </a>
+            </div>
+          
+        
+      </div>
     </aside>
 
-    <main class="reading-surface">
-      <div class="hero-box">
-        <div class="hero-kicker">BKRS Master Replacement Codex • Classical Strategy</div>
-        <h1 class="hero-title">The Art of War</h1>
-        <p class="hero-subtitle">The Definitive Translation and Strategic Commentary of the Thirteen Classical Chapters</p>
-        <div class="meta-badges">
-          <span class="badge highlight">✦ Tier 1: Foundational Military Philosophy & Heuristics</span>
-          <span class="badge">⏱ 12.0 hrs saved</span>
-          <span class="badge">🏛 13 Classical Chapters</span>
-          <span class="badge">⚔ 26 Irreducible Strategic Models</span>
-        </div>
+    <!-- MAIN READING VIEWPORT -->
+    <main class="reader-viewport" id="reader-viewport">
+      <div class="reader-measure" id="reader-measure">
+
+        <!-- VIEW A: THE 13 CHAPTERS -->
+        <section id="view-journey" class="view-panel active">
+          
+          <div style="margin-bottom: 40px; padding: 28px 0; border-bottom: 2px solid var(--accent-crimson);">
+            <div style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); margin-bottom: 8px;">
+              BKRS Single-Volume Master Reconstruction
+            </div>
+            <h1 style="font-family: var(--font-serif); font-size: 2.6rem; line-height: 1.2; color: var(--text-main); margin-bottom: 12px; letter-spacing: -0.02em;">
+              The Art of War (孫子兵法)
+            </h1>
+            <div style="font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; color: var(--text-muted); line-height: 1.6; max-width: 900px;">
+              A comprehensive strategic reconstruction of Sun Tzu’s classical treatise. Analyzing deception, the five fundamental factors, formlessness, energy manipulation, tactical terrain, and the supreme art of winning without fighting.
+            </div>
+          </div>
+
+          <!-- THE 13 CHAPTERS -->
+          
+            <div class="chapter-block" id="chapter-1">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 1
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Laying Plans (Initial Estimations & The Five Factors)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH01-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH01-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Five Constant Factors and Seven Deliberations</h3>
+
+                  <div class="claim-box">
+                    Warfare is a matter of vital importance to the State—a road to safety or ruin. It is governed by five irreducible variables: (1) Moral Law (the Tao, uniting people and ruler in shared purpose), (2) Heaven (meteorology, diurnal cycles, seasonal changes), (3) Earth (topography, distances, natural chokepoints), (4) The Commander (the balance of wisdom, sincerity, benevolence, courage, and strictness), and (5) Method and Discipline (organizational subdivision, logistics, and expenditure control).
+                  </div>
+
+                  <div class="quote-box">
+                    "The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (I. Laying Plans, pp. 1–12)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Deliberate on the seven questions before deploying: Which ruler has the Moral Law? Which commander has superior ability? With whom lie Heaven and Earth? Whose discipline is enforced? Whose army is stronger? Whose soldiers are better trained? Whose rewards and punishments are constant? • Temple calculations: The general who wins computes many calculations before fighting; he who loses computes few.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH01-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH01-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Deception Matrix: The 12 Asymmetrical Inversions</h3>
+
+                  <div class="claim-box">
+                    Because warfare is fundamentally the manipulation of enemy perception, the commander must actively project false states: when capable of attack, appear unable; when active, appear still; when near, make the enemy believe you are far; when far, make him believe you are near.
+                  </div>
+
+                  <div class="quote-box">
+                    "All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (I. Laying Plans, pp. 1–12)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Hold out baits to entice the enemy; feign disorder, and crush him. • If secure at all points, prepare; if in superior strength, evade. • If opponent is choleric, irritate him; pretend to be weak, that he may grow arrogant. • If taking ease, give him no rest; if forces are united, separate them. • Attack him where he is unprepared; appear where you are not expected.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-2">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 2
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Waging War (The Economics and Logistics of Attrition)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH02-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH02-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Compounding Bleed of Protracted Campaigns</h3>
+
+                  <div class="claim-box">
+                    Deploying a host of 100,000 men costs 1,000 ounces of silver per day in domestic supplies, transport, equipment repair, and allowances. When war drags on, weapons blunt, ardour dampens, and treasury reserves collapse. At the moment of systemic exhaustion, rival leaders will inevitably strike at your extremity.
+                  </div>
+
+                  <div class="quote-box">
+                    "There is no instance of a country having benefited from prolonged warfare."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (II. Waging War, pp. 13–22)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Though we have heard of stupid haste in war, cleverness has never been seen associated with long delays. • Only one who knows the disastrous evils of war can thoroughly understand the profitable way of conducting it.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH02-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH02-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Foraging Law: The 20-to-1 Logistical Ratio</h3>
+
+                  <div class="claim-box">
+                    Transporting grain across long distances bankrupts the peasantry. Hence, the skilled general makes it his business to forage on the enemy: one cartload of enemy grain is equivalent to twenty of one's own, and one picul of enemy fodder equals twenty transported from home.
+                  </div>
+
+                  <div class="quote-box">
+                    "Bring war material with you from home, but forage on the enemy. Thus the army will have food enough for its needs."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (II. Waging War, pp. 13–22)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Treat captured enemy soldiers well and incorporate them into your ranks. • Reward the men who capture the first chariots to sustain offensive momentum. • In war, let your great object be victory, not lengthy campaigns.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-3">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 3
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Attack by Stratagem (The Hierarchy of Victory & The Rule of Five)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH03-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH03-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Four-Tiered Strategic Hierarchy</h3>
+
+                  <div class="claim-box">
+                    The highest victory preserves the state intact; to shatter it is inferior. The highest military achievement is to thwart the enemy's strategy; next best is to disrupt his alliances; third is to attack his army in the field; the worst and most catastrophic policy is to besiege walled cities (which consumes three months preparing mantlets and another three building earthworks).
+                  </div>
+
+                  <div class="quote-box">
+                    "To fight and conquer in all your battles is not supreme excellence; supreme excellence consists in breaking the enemy's resistance without fighting."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (III. Attack by Stratagem, pp. 23–36)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    The skillful leader subdues the enemy's troops without any fighting; he captures their cities without laying siege; he overthrows their kingdom without lengthy operations. • With his forces intact he disputes the empire, winning complete victory without losing a man.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH03-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH03-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Five Relative Force Ratios & Sovereign Interference</h3>
+
+                  <div class="claim-box">
+                    Tactical execution depends on relative force: (1) If ten to one, surround him; (2) If five to one, attack him; (3) If two to one, divide your army; (4) If equally matched, offer battle; (5) If slightly fewer, evade; (6) If vastly unequal in all respects, flee.
+                  </div>
+
+                  <div class="quote-box">
+                    "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (III. Attack by Stratagem, pp. 23–36)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    The three ways a sovereign ruins an army: (1) Ordering advance or retreat ignorant of military impossibility (hobbling); (2) Attempting to govern an army like a civilian state; (3) Employing officers without military competence. • The Five Essentials: He will win who knows when to fight and when not; who knows how to handle superior and inferior forces; whose army is animated by the same spirit; who prepares himself to take the enemy unprepared; who has military capacity and is not interfered with by the sovereign.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-4">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 4
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Tactical Dispositions (Invincibility and Invisibility)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH04-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH04-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Dialectic of Defense and Offense</h3>
+
+                  <div class="claim-box">
+                    Ancient masters first made themselves invincible, then waited for the enemy to expose a vulnerability. Invincibility depends on yourself; the enemy's vulnerability depends on him. One may know how to conquer without being able to do it.
+                  </div>
+
+                  <div class="quote-box">
+                    "To secure ourselves against defeat lies in our own hands, but the opportunity of defeating the enemy is provided by the enemy himself."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (IV. Tactical Dispositions, pp. 37–46)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Stand on the defensive when strength is inadequate; attack when strength is abundant. • The general skilled in defense hides in the most secret recesses of the earth; he skilled in attack flashes forth from the topmost heights of heaven.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH04-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH04-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Soundless Victory and the Five Military Calculations</h3>
+
+                  <div class="claim-box">
+                    To foresee victory when all men can foresee it is not the acme of skill. True masters win with neither reputation for wisdom nor credit for courage, because they win battles before they are ever fought by making defeat impossible.
+                  </div>
+
+                  <div class="quote-box">
+                    "He wins his battles by making no mistakes. Making no mistakes is what establishes the certainty of victory, for it means conquering an enemy that is already defeated."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (IV. Tactical Dispositions, pp. 37–46)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    The victorious strategist only seeks battle after the victory has been won, whereas he who is destined to defeat first fights and afterwards looks for victory. • The five steps of strategic measurement: (1) Measurement of space; (2) Estimation of quantities; (3) Calculation of numbers; (4) Balancing of chances; (5) Victory.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-5">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 5
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Energy (Direct vs. Indirect Tactics & The Physics of Momentum)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH05-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH05-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Zheng and Qi Invariant: Direct and Indirect Forces</h3>
+
+                  <div class="claim-box">
+                    Managing a large force is identical to managing a small force: a matter of division of units (organization) and communication of signals (drums and banners). In combat, the direct force (Zheng) joins battle, but the indirect force (Qi) secures decisive victory. The combinations of direct and indirect are inexhaustible.
+                  </div>
+
+                  <div class="quote-box">
+                    "In all fighting, the direct method may be used for joining battle, but indirect methods will be needed in order to secure victory."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (V. Energy, pp. 47–58)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    There are not more than five primary colors, yet in combination they produce more hues than can ever be seen. • In battle, there are only two methods of attack: direct and indirect; yet these two give rise to an endless series of maneuvers.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH05-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH05-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Physics of Positional Momentum (Shi)</h3>
+
+                  <div class="claim-box">
+                    The onset of troops is like the rush of a torrent that rolls stones along in its course. Energy may be likened to the bending of a crossbow; decision, to the releasing of a trigger. Simulated disorder presupposes perfect discipline; simulated fear presupposes courage; simulated weakness presupposes strength.
+                  </div>
+
+                  <div class="quote-box">
+                    "The clever combatant looks to the effect of combined energy, and does not require too much from individuals."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (V. Energy, pp. 47–58)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    He who relies on the energy of momentum uses his men in battle like rolling logs or stones: logs and stones are stationary on flat ground, but roll on an incline; if square, they stop, if round, they roll. • The energy developed by good fighting men is as the momentum of a round stone rolled down a mountain a thousand feet high.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-6">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 6
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Weak Points and Strong (Emptiness and Fullness / Formlessness)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH06-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH06-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Initiative: Imposing Your Will on the Enemy</h3>
+
+                  <div class="claim-box">
+                    Whoever is first in the field and awaits the enemy will be fresh; whoever comes late and rushes into fight will arrive exhausted. Therefore, the clever combatant imposes his will on the enemy, but does not allow the enemy's will to be imposed on him.
+                  </div>
+
+                  <div class="quote-box">
+                    "The clever combatant imposes his will on the enemy, but does not allow the enemy's will to be imposed on him."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (VI. Weak Points and Strong, pp. 59–74)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    By holding out advantages, induce the enemy to approach; by inflicting damage, make it impossible for him to draw near. • If the enemy is taking his ease, harass him; if well-fed, starve him; if quietly encamped, force him to move.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH06-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH06-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Formlessness and the Water Metaphor</h3>
+
+                  <div class="claim-box">
+                    When you concentrate your forces into one unified mass while the enemy is dispersed across ten points, you can strike each of his tenths with your ten: you are ten to one at the point of contact. By remaining formless, the deepest spies cannot pry, nor can the wisest minds plot against you.
+                  </div>
+
+                  <div class="quote-box">
+                    "Do not repeat the tactics which have gained you one victory, but let your methods be regulated by the infinite variety of circumstances."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (VI. Weak Points and Strong, pp. 59–74)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Military tactics are like unto water: for water in its natural course runs away from high places and hastens downwards. • So in war, the way is to avoid what is strong and to strike at what is weak. • Water shapes its course according to the nature of the ground over which it flows; the soldier works out his victory in relation to the foe whom he is facing.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-7">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 7
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Maneuvering (The Art of Turning the Devious into the Direct)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH07-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH07-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Hazard of Forced Marches & Supply Deprivation</h3>
+
+                  <div class="claim-box">
+                    Maneuvering with an army is advantageous; with an undisciplined multitude, most dangerous. If you order your men to march 100 Li in order to gain an advantage, the leaders of all three divisions will fall into the enemy's hands. An army without baggage, without provisions, or without bases of supply is lost.
+                  </div>
+
+                  <div class="quote-box">
+                    "In war, practice dissimulation, and you will succeed. Move only if there is a real advantage to be gained."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (VII. Maneuvering, pp. 75–88)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    We cannot enter into alliances until we are acquainted with the designs of our neighbors. • We cannot lead an army on the march unless we make use of local guides. • Let your rapidity be that of the wind, your compactness that of the forest; in raiding like fire, in standing motionless like a mountain; dark as night, moving like a thunderbolt.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH07-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH07-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Diurnal Rhythm of Morale & The Desperate Foe</h3>
+
+                  <div class="claim-box">
+                    A soldier's spirit is keenest in the morning; by afternoon it flags; by evening his thoughts turn home. A clever general avoids an army when its spirit is keen, but attacks when it is sluggish and inclined to return.
+                  </div>
+
+                  <div class="quote-box">
+                    "To a surrounded enemy, you must leave a way of escape... Do not press a desperate foe."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (VII. Maneuvering, pp. 75–88)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Disciplined, await disorder; calm, await clamor: this is the art of retaining self-possession. • Do not swallow bait offered by the enemy; do not interfere with an army that is returning home. • When you surround an army, leave an outlet free; do not press a desperate foe too hard.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-8">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 8
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Variation in Tactics (Adapting to Variables & The 5 Fatal Faults)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH08-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH08-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Nine Invariants of Situational Adaptation</h3>
+
+                  <div class="claim-box">
+                    The general must not blindly follow rigid rules: there are roads which must not be followed, armies which must not be attacked, towns which must not be besieged, positions which must not be contested, and commands of the sovereign which must not be obeyed.
+                  </div>
+
+                  <div class="quote-box">
+                    "There are commands of the sovereign which must not be obeyed when the life of the army is at stake."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (VIII. Variation in Tactics, pp. 89–98)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    The general who thoroughly understands the advantages that accompany variation of tactics knows how to handle his troops. • In the midst of difficulties, seize opportunities; in the midst of advantages, prepare for difficulties.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH08-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH08-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Five Fatal Psychological Flaws of a Commander</h3>
+
+                  <div class="claim-box">
+                    There are five dangerous faults which may affect a general: (1) Recklessness, which leads to destruction; (2) Cowardice, which leads to capture; (3) A hasty temper, which can be provoked by insults; (4) A delicacy of honor, which is sensitive to shame; (5) Over-solicitude for his men, which exposes him to worry and trouble.
+                  </div>
+
+                  <div class="quote-box">
+                    "He who is reckless can be killed; he who is cowardly can be captured; he who is quick-tempered can be insulted; he who is sensitive to honor can be shamed."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (VIII. Variation in Tactics, pp. 89–98)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    These five flaws are the catastrophic sins of the general, fatal to the conduct of war. • When an army is overthrown and its leader slain, the cause will surely be found among these five dangerous faults.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-9">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 9
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The Army on the March (Encampment & Forensic Battlefield Signals)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH09-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH09-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Topographical Rules of Encampment</h3>
+
+                  <div class="claim-box">
+                    Camp on high ground facing the sun. After crossing a river, move far away from it; if an enemy crosses, do not meet him in midstream—strike when half his force has crossed. Never fight uphill or against the current.
+                  </div>
+
+                  <div class="quote-box">
+                    "All armies prefer high ground to low, and sunny places to dark."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (IX. The Army on the March, pp. 99–114)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Pass quickly over mountains and stay near valleys. • In dry, level country, take up an easily accessible position with rising ground to your right and rear. • Camp where health is maintained; an army free from disease is said to be sure of victory.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH09-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH09-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">Forensic Decoding of Enemy Battlefield Signals</h3>
+
+                  <div class="claim-box">
+                    Nature and animal behavior reveal hidden enemy movements: (1) Birds rising in flight signal an ambush; (2) Startled beasts indicate a sudden attack; (3) High, sharp dust columns reveal chariots; low, broad dust indicates advancing infantry; (4) Men leaning on spears indicate hunger; (5) Drawers of water drinking first indicate extreme thirst; (6) Envoys speaking humbly while preparations advance mean the enemy will attack; (7) Envoys asking for a truce without signed treaty indicate an impending stratagem.
+                  </div>
+
+                  <div class="quote-box">
+                    "Birds rising in their flight is a sign of an ambush. Startled beasts indicate that a sudden attack is coming."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (IX. The Army on the March, pp. 99–114)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    If the enemy sees an advantage and does not advance, his men are weary. • When the general is nervous and prone to anger, his authority is crumbling. • Order soldiers with civil education, but unify them with military discipline: this is called certain victory.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-10">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 10
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">Terrain (The Six Terrains and The Six Calamities of Command)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH10-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH10-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Six Structural Terrains</h3>
+
+                  <div class="claim-box">
+                    Ground may be classified as: (1) Accessible (which both sides can traverse freely—seize high, sunny ground first); (2) Entangling (easy to abandon, difficult to reoccupy); (3) Temporizing (neither side gains by making the first move—lure the enemy out by feigning retreat); (4) Narrow Passes (if occupied first, fortify and await enemy); (5) Precipitous Heights (occupy high ground first; if enemy has it, do not follow); (6) Positions at Great Distance (if equal in strength, battle is not easily provoked).
+                  </div>
+
+                  <div class="quote-box">
+                    "The natural formation of the country is the soldier's best ally."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (X. Terrain, pp. 115–128)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    He who knows these six grounds will conquer; he who does not will fail. • The natural formation of the country is the soldier's best ally; but a power of estimating the adversary and controlling forces of victory belongs to the supreme general.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH10-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH10-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Six Calamities Arising from Internal Command Failure</h3>
+
+                  <div class="claim-box">
+                    There are six conditions not born of natural defects, but of errors committed by the general: (1) Flight (attacking tenfold force with equal numbers); (2) Insubordination (soldiers too strong, officers too weak); (3) Collapse (officers too strong, soldiers too weak); (4) Ruin (angry subordinate officers charging without orders); (5) Disorganization (general weak, rules vague, lines crooked); (6) Rout (general incapable, pitting weak vanguard against strong foe).
+                  </div>
+
+                  <div class="quote-box">
+                    "If we know that our own men are in a condition to attack, but are unaware that the enemy is not open to attack, we have gone only half way towards victory."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (X. Terrain, pp. 115–128)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your beloved sons, and they will stand by you unto death. • If you are indulgent, unable to make your authority felt, your soldiers will be like spoiled children, useless for any practical purpose.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-11">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 11
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The Nine Situations (Psychological Conditioning on Death Ground)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH11-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH11-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Nine Situations and Tactical Responses</h3>
+
+                  <div class="claim-box">
+                    Situations are defined by relative geography: (1) Dispersive (fighting in own territory—do not fight); (2) Facile (shallow penetration into enemy territory—do not halt); (3) Contentious (advantageous to either side—do not attack); (4) Open (free movement—do not block); (5) Intersecting (surrounded by three states—form alliances); (6) Heavy (deep in enemy territory—forage); (7) Bad (marshes, forests—march through); (8) Hemmed-in (narrow entrance—stratagem); (9) Desperate / Death Ground (surrounded, no escape—fight).
+                  </div>
+
+                  <div class="quote-box">
+                    "Throw your soldiers into positions whence there is no escape, and they will prefer death to flight."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (XI. The Nine Situations, pp. 129–152)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    On dispersive ground, unify the will of the army. • On facile ground, keep the ranks tightly knit. • On desperate ground, proclaim to your soldiers that there is no hope of safety: burn your boats, break your cooking pots, and show them that they must conquer or die.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH11-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH11-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Mount Chang Serpent (Shuai-ran) & Total Secrecy</h3>
+
+                  <div class="claim-box">
+                    The skillful tactician resembles the Shuai-ran of Mount Chang: strike its head, its tail attacks; strike its tail, its head attacks; strike its middle, both head and tail attack simultaneously. The general must be quiet and secret, upright and just; he alters his methods and plans to keep the enemy without definite knowledge.
+                  </div>
+
+                  <div class="quote-box">
+                    "Confront your soldiers with the deed itself; never let them know your design. When the outlook is bright, bring it before their eyes; but tell them nothing when the aspect is gloomy."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (XI. The Nine Situations, pp. 129–152)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    He burns his boats and breaks his cooking pots; like a shepherd driving a flock of sheep, he drives his men this way and that, and nothing knows whither he is going. • Forestall the enemy by seizing what he holds dear, and subtly ascertain his plans.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-12">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 12
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The Attack by Fire (Thermal Warfare and Prudent Restraint)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH12-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH12-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Five Thermal Attacks and Atmospheric Conditions</h3>
+
+                  <div class="claim-box">
+                    There are five ways of attacking with fire: (1) Burning soldiers in camp; (2) Burning stores; (3) Burning baggage trains; (4) Burning arsenals; (5) Dropping fire into enemy lines. Material for starting fire must always be kept ready. Fire attacks must align with meteorological dry seasons and specific windy days of the lunar cycle.
+                  </div>
+
+                  <div class="quote-box">
+                    "In every case, the commander must be prepared to respond to fire with immediate military action, not merely watch the flames."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (XII. The Attack by Fire, pp. 153–162)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    When fire breaks out inside the enemy camp, respond immediately with an attack from without. • If the enemy remains calm when fire breaks out, stay your hand; do not attack recklessly. • Wind that rises in the day lasts long, but a night breeze soon falls.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH12-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH12-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Supreme Warning on Emotional Governance</h3>
+
+                  <div class="claim-box">
+                    Unchecked anger is fatal to statecraft. A ruler must never launch an army merely to gratify his personal rage; a general must never fight a battle merely out of pique. If it is to your advantage, make a forward move; if not, stay where you are.
+                  </div>
+
+                  <div class="quote-box">
+                    "A sovereign cannot raise an army simply to satisfy his own anger; a general cannot fight a battle simply because he is resentful. Anger can turn to happiness, and resentment can turn to joy; but a destroyed state cannot be revived, and the dead cannot be brought back to life."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (XII. The Attack by Fire, pp. 153–162)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Anger may in time change to gladness; vexation may be succeeded by content. • A kingdom that has once been destroyed can never come again into being; nor can the dead ever be brought back to life. • Hence the enlightened ruler is heedful, and the good general full of caution. This is the way to keep a country at peace and an army intact.
+                  </div>
+                </div>
+              
+            </div>
+          
+            <div class="chapter-block" id="chapter-13">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Chapter 13
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">The Use of Spies (Divine Intelligence & The Espionage Matrix)</h2>
+              </div>
+
+              
+                <div class="unit-card-deep" id="KU-AOW-CH13-01">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH13-01</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Economics of Intelligence: The Sin of Parsimony</h3>
+
+                  <div class="claim-box">
+                    Raising an army of 100,000 men and marching thousands of miles drains the state and leaves 700,000 households impoverished. Hostile armies may face each other for years, striving for victory decided in a single day. To begrudge a few hundred ounces of silver for intelligence is the height of inhumanity.
+                  </div>
+
+                  <div class="quote-box">
+                    "To grudge an expenditure of a hundred ounces of silver in honors and emoluments, thereby remaining in ignorance of the enemy's condition, is the height of inhumanity."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (XIII. The Use of Spies, pp. 163–174)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    Knowledge of the enemy cannot be deduced from spirits, nor from natural law, nor from calculations of stars. • Foreknowledge can only be obtained from human beings who possess intimate knowledge of the enemy's condition.
+                  </div>
+                </div>
+              
+                <div class="unit-card-deep" id="KU-AOW-CH13-02">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">KU-AOW-CH13-02</span>
+                    <span class="unit-epistemic">CLASSICAL_STRATEGIC_AXIOM</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">The Five Classes of Spies and the Converted Key</h3>
+
+                  <div class="claim-box">
+                    There are five classes of spies: (1) Local Spies (recruited from ordinary enemy citizens); (2) Inward Spies (recruited from enemy officials); (3) Converted Spies (enemy spies captured and bought over as double agents); (4) Doomed Spies (our own spies fed false plans so that when captured, they report falsehoods to the enemy); (5) Surviving Spies (those who return alive from the enemy's camp with intelligence).
+                  </div>
+
+                  <div class="quote-box">
+                    "The end and aim of spying in all its five varieties is knowledge of the enemy; and this knowledge can only be derived, in the first instance, from the converted spy. Hence the converted spy must be treated with the utmost liberality."
+                    <cite style="display: block; font-family: var(--font-sans); font-size: 0.82rem; font-style: normal; color: var(--text-muted); text-align: right; margin-top: 8px;">
+                      — Sun Tzu (XIII. The Use of Spies, pp. 163–174)
+                    </cite>
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-gold); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    When all five kinds of spies are at work, none can discover the secret system: this is called divine manipulation of the threads. • The Converted Spy is the foundation: it is through the converted spy that local and inward spies can be recruited, doomed spies can deceive, and surviving spies can be protected. • Spies must be rewarded with utmost generosity and managed with sublime subtlety and benevolence.
+                  </div>
+                </div>
+              
+            </div>
+          
+
+        </section>
+
+        <!-- VIEW B: STRATEGIC COMPASS -->
+        <section id="view-map" class="view-panel" style="display: none;">
+          <div style="margin-bottom: 32px; border-bottom: 2px solid var(--accent-crimson); padding-bottom: 16px;">
+            <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--text-main);">The 5 Fundamental Strategic Factors</h2>
+            <p style="font-family: var(--font-serif); font-style: italic; color: var(--text-muted); font-size: 1.05rem;">The Core Invariants Determining Victory Before Combat Begins</p>
+          </div>
+
+          <div style="display: grid; gap: 20px;">
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid var(--accent-crimson); border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--accent-crimson); margin-bottom: 6px;">1. The Moral Law (Tao)</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Causes the people to be in complete accord with their ruler, so that they will follow him regardless of their lives, undismayed by any danger.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid var(--accent-gold); border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--accent-gold); margin-bottom: 6px;">2. Heaven (Cosmic & Seasonal Timing)</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Signifies night and day, cold and heat, times and seasons. Aligning operations with the natural temporal rhythms of reality.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid var(--accent-forest); border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--accent-forest); margin-bottom: 6px;">3. Earth (Physical Terrain & Distance)</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Comprises distances, great and small; danger and security; open ground and narrow passes; the chances of life and death.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid #2b6cb0; border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: #2b6cb0; margin-bottom: 6px;">4. The Commander (Virtues of Leadership)</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">Stands for the five cardinal virtues of the sovereign general: Wisdom, Sincerity, Benevolence, Courage, and Strictness.</p>
+            </div>
+            <div style="padding: 20px; background: var(--bg-card); border-left: 4px solid #6b46c1; border-radius: 6px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: #6b46c1; margin-bottom: 6px;">5. Method and Discipline (Logistical Systems)</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6;">The marshaling of the army in its proper subdivisions, the graduations of rank among the officers, the maintenance of roads, and control of expenditure.</p>
+            </div>
+          </div>
+        </section>
+
       </div>
-
-      
-      <section class="chapter-wrapper" id="ch-01">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 1</div>
-          <h2 class="chapter-title">Laying Plans (Initial Estimations & The Five Factors)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> All warfare is based on deception; victory is determined by deliberate calculations in the temple before battle is joined.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch01-01">
-        <h3 class="strategy-heading">The Five Constant Factors and Seven Deliberations</h3>
-        <p class="strategy-text">Warfare is a matter of vital importance to the State—a road to safety or ruin. It is governed by five irreducible variables: (1) Moral Law (the Tao, uniting people and ruler in shared purpose), (2) Heaven (meteorology, diurnal cycles, seasonal changes), (3) Earth (topography, distances, natural chokepoints), (4) The Commander (the balance of wisdom, sincerity, benevolence, courage, and strictness), and (5) Method and Discipline (organizational subdivision, logistics, and expenditure control).</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Deliberate on the seven questions before deploying: Which ruler has the Moral Law? Which commander has superior ability? With whom lie Heaven and Earth? Whose discipline is enforced? Whose army is stronger? Whose soldiers are better trained? Whose rewards and punishments are constant?</li>
-<li>Temple calculations: The general who wins computes many calculations before fighting; he who loses computes few.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch01-02">
-        <h3 class="strategy-heading">The Deception Matrix: The 12 Asymmetrical Inversions</h3>
-        <p class="strategy-text">Because warfare is fundamentally the manipulation of enemy perception, the commander must actively project false states: when capable of attack, appear unable; when active, appear still; when near, make the enemy believe you are far; when far, make him believe you are near.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Hold out baits to entice the enemy; feign disorder, and crush him.</li>
-<li>If secure at all points, prepare; if in superior strength, evade.</li>
-<li>If opponent is choleric, irritate him; pretend to be weak, that he may grow arrogant.</li>
-<li>If taking ease, give him no rest; if forces are united, separate them.</li>
-<li>Attack him where he is unprepared; appear where you are not expected.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-02">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 2</div>
-          <h2 class="chapter-title">Waging War (The Economics and Logistics of Attrition)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> No nation ever benefited from prolonged warfare; speed and living off the enemy's logistics prevent fatal economic exhaustion.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch02-01">
-        <h3 class="strategy-heading">The Compounding Bleed of Protracted Campaigns</h3>
-        <p class="strategy-text">Deploying a host of 100,000 men costs 1,000 ounces of silver per day in domestic supplies, transport, equipment repair, and allowances. When war drags on, weapons blunt, ardour dampens, and treasury reserves collapse. At the moment of systemic exhaustion, rival leaders will inevitably strike at your extremity.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Though we have heard of stupid haste in war, cleverness has never been seen associated with long delays.</li>
-<li>Only one who knows the disastrous evils of war can thoroughly understand the profitable way of conducting it.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          There is no instance of a country having benefited from prolonged warfare.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch02-02">
-        <h3 class="strategy-heading">The Foraging Law: The 20-to-1 Logistical Ratio</h3>
-        <p class="strategy-text">Transporting grain across long distances bankrupts the peasantry. Hence, the skilled general makes it his business to forage on the enemy: one cartload of enemy grain is equivalent to twenty of one's own, and one picul of enemy fodder equals twenty transported from home.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Treat captured enemy soldiers well and incorporate them into your ranks.</li>
-<li>Reward the men who capture the first chariots to sustain offensive momentum.</li>
-<li>In war, let your great object be victory, not lengthy campaigns.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          Bring war material with you from home, but forage on the enemy. Thus the army will have food enough for its needs.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-03">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 3</div>
-          <h2 class="chapter-title">Attack by Stratagem (The Hierarchy of Victory & The Rule of Five)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Supreme excellence consists in breaking the enemy's resistance without fighting; attack their strategy and alliances before their army.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch03-01">
-        <h3 class="strategy-heading">The Four-Tiered Strategic Hierarchy</h3>
-        <p class="strategy-text">The highest victory preserves the state intact; to shatter it is inferior. The highest military achievement is to thwart the enemy's strategy; next best is to disrupt his alliances; third is to attack his army in the field; the worst and most catastrophic policy is to besiege walled cities (which consumes three months preparing mantlets and another three building earthworks).</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>The skillful leader subdues the enemy's troops without any fighting; he captures their cities without laying siege; he overthrows their kingdom without lengthy operations.</li>
-<li>With his forces intact he disputes the empire, winning complete victory without losing a man.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          To fight and conquer in all your battles is not supreme excellence; supreme excellence consists in breaking the enemy's resistance without fighting.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch03-02">
-        <h3 class="strategy-heading">The Five Relative Force Ratios & Sovereign Interference</h3>
-        <p class="strategy-text">Tactical execution depends on relative force: (1) If ten to one, surround him; (2) If five to one, attack him; (3) If two to one, divide your army; (4) If equally matched, offer battle; (5) If slightly fewer, evade; (6) If vastly unequal in all respects, flee.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>The three ways a sovereign ruins an army: (1) Ordering advance or retreat ignorant of military impossibility (hobbling); (2) Attempting to govern an army like a civilian state; (3) Employing officers without military competence.</li>
-<li>The Five Essentials: He will win who knows when to fight and when not; who knows how to handle superior and inferior forces; whose army is animated by the same spirit; who prepares himself to take the enemy unprepared; who has military capacity and is not interfered with by the sovereign.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-04">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 4</div>
-          <h2 class="chapter-title">Tactical Dispositions (Invincibility and Invisibility)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Invincibility lies in defense; the possibility of victory lies in attack. Win first, then go to war.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch04-01">
-        <h3 class="strategy-heading">The Dialectic of Defense and Offense</h3>
-        <p class="strategy-text">Ancient masters first made themselves invincible, then waited for the enemy to expose a vulnerability. Invincibility depends on yourself; the enemy's vulnerability depends on him. One may know how to conquer without being able to do it.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Stand on the defensive when strength is inadequate; attack when strength is abundant.</li>
-<li>The general skilled in defense hides in the most secret recesses of the earth; he skilled in attack flashes forth from the topmost heights of heaven.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          To secure ourselves against defeat lies in our own hands, but the opportunity of defeating the enemy is provided by the enemy himself.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch04-02">
-        <h3 class="strategy-heading">The Soundless Victory and the Five Military Calculations</h3>
-        <p class="strategy-text">To foresee victory when all men can foresee it is not the acme of skill. True masters win with neither reputation for wisdom nor credit for courage, because they win battles before they are ever fought by making defeat impossible.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>The victorious strategist only seeks battle after the victory has been won, whereas he who is destined to defeat first fights and afterwards looks for victory.</li>
-<li>The five steps of strategic measurement: (1) Measurement of space; (2) Estimation of quantities; (3) Calculation of numbers; (4) Balancing of chances; (5) Victory.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          He wins his battles by making no mistakes. Making no mistakes is what establishes the certainty of victory, for it means conquering an enemy that is already defeated.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-05">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 5</div>
-          <h2 class="chapter-title">Energy (Direct vs. Indirect Tactics & The Physics of Momentum)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> In battle, use the direct force to engage and the indirect force to win; momentum is like releasing the trigger of a bent crossbow.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch05-01">
-        <h3 class="strategy-heading">The Zheng and Qi Invariant: Direct and Indirect Forces</h3>
-        <p class="strategy-text">Managing a large force is identical to managing a small force: a matter of division of units (organization) and communication of signals (drums and banners). In combat, the direct force (Zheng) joins battle, but the indirect force (Qi) secures decisive victory. The combinations of direct and indirect are inexhaustible.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>There are not more than five primary colors, yet in combination they produce more hues than can ever be seen.</li>
-<li>In battle, there are only two methods of attack: direct and indirect; yet these two give rise to an endless series of maneuvers.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          In all fighting, the direct method may be used for joining battle, but indirect methods will be needed in order to secure victory.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch05-02">
-        <h3 class="strategy-heading">The Physics of Positional Momentum (Shi)</h3>
-        <p class="strategy-text">The onset of troops is like the rush of a torrent that rolls stones along in its course. Energy may be likened to the bending of a crossbow; decision, to the releasing of a trigger. Simulated disorder presupposes perfect discipline; simulated fear presupposes courage; simulated weakness presupposes strength.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>He who relies on the energy of momentum uses his men in battle like rolling logs or stones: logs and stones are stationary on flat ground, but roll on an incline; if square, they stop, if round, they roll.</li>
-<li>The energy developed by good fighting men is as the momentum of a round stone rolled down a mountain a thousand feet high.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          The clever combatant looks to the effect of combined energy, and does not require too much from individuals.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-06">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 6</div>
-          <h2 class="chapter-title">Weak Points and Strong (Emptiness and Fullness / Formlessness)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Be subtle to the point of formlessness; strike emptiness and avoid fullness, as water flows according to the ground.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch06-01">
-        <h3 class="strategy-heading">Initiative: Imposing Your Will on the Enemy</h3>
-        <p class="strategy-text">Whoever is first in the field and awaits the enemy will be fresh; whoever comes late and rushes into fight will arrive exhausted. Therefore, the clever combatant imposes his will on the enemy, but does not allow the enemy's will to be imposed on him.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>By holding out advantages, induce the enemy to approach; by inflicting damage, make it impossible for him to draw near.</li>
-<li>If the enemy is taking his ease, harass him; if well-fed, starve him; if quietly encamped, force him to move.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          The clever combatant imposes his will on the enemy, but does not allow the enemy's will to be imposed on him.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch06-02">
-        <h3 class="strategy-heading">Formlessness and the Water Metaphor</h3>
-        <p class="strategy-text">When you concentrate your forces into one unified mass while the enemy is dispersed across ten points, you can strike each of his tenths with your ten: you are ten to one at the point of contact. By remaining formless, the deepest spies cannot pry, nor can the wisest minds plot against you.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Military tactics are like unto water: for water in its natural course runs away from high places and hastens downwards.</li>
-<li>So in war, the way is to avoid what is strong and to strike at what is weak.</li>
-<li>Water shapes its course according to the nature of the ground over which it flows; the soldier works out his victory in relation to the foe whom he is facing.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          Do not repeat the tactics which have gained you one victory, but let your methods be regulated by the infinite variety of circumstances.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-07">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 7</div>
-          <h2 class="chapter-title">Maneuvering (The Art of Turning the Devious into the Direct)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Turn the devious into the direct and misfortune into gain; move as fast as the wind, stand like a mountain, strike like a thunderbolt.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch07-01">
-        <h3 class="strategy-heading">The Hazard of Forced Marches & Supply Deprivation</h3>
-        <p class="strategy-text">Maneuvering with an army is advantageous; with an undisciplined multitude, most dangerous. If you order your men to march 100 Li in order to gain an advantage, the leaders of all three divisions will fall into the enemy's hands. An army without baggage, without provisions, or without bases of supply is lost.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>We cannot enter into alliances until we are acquainted with the designs of our neighbors.</li>
-<li>We cannot lead an army on the march unless we make use of local guides.</li>
-<li>Let your rapidity be that of the wind, your compactness that of the forest; in raiding like fire, in standing motionless like a mountain; dark as night, moving like a thunderbolt.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          In war, practice dissimulation, and you will succeed. Move only if there is a real advantage to be gained.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch07-02">
-        <h3 class="strategy-heading">The Diurnal Rhythm of Morale & The Desperate Foe</h3>
-        <p class="strategy-text">A soldier's spirit is keenest in the morning; by afternoon it flags; by evening his thoughts turn home. A clever general avoids an army when its spirit is keen, but attacks when it is sluggish and inclined to return.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Disciplined, await disorder; calm, await clamor: this is the art of retaining self-possession.</li>
-<li>Do not swallow bait offered by the enemy; do not interfere with an army that is returning home.</li>
-<li>When you surround an army, leave an outlet free; do not press a desperate foe too hard.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          To a surrounded enemy, you must leave a way of escape... Do not press a desperate foe.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-08">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 8</div>
-          <h2 class="chapter-title">Variation in Tactics (Adapting to Variables & The 5 Fatal Faults)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> The general who understands the variation of tactics knows how to use his troops; five psychological flaws guarantee destruction.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch08-01">
-        <h3 class="strategy-heading">The Nine Invariants of Situational Adaptation</h3>
-        <p class="strategy-text">The general must not blindly follow rigid rules: there are roads which must not be followed, armies which must not be attacked, towns which must not be besieged, positions which must not be contested, and commands of the sovereign which must not be obeyed.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>The general who thoroughly understands the advantages that accompany variation of tactics knows how to handle his troops.</li>
-<li>In the midst of difficulties, seize opportunities; in the midst of advantages, prepare for difficulties.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          There are commands of the sovereign which must not be obeyed when the life of the army is at stake.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch08-02">
-        <h3 class="strategy-heading">The Five Fatal Psychological Flaws of a Commander</h3>
-        <p class="strategy-text">There are five dangerous faults which may affect a general: (1) Recklessness, which leads to destruction; (2) Cowardice, which leads to capture; (3) A hasty temper, which can be provoked by insults; (4) A delicacy of honor, which is sensitive to shame; (5) Over-solicitude for his men, which exposes him to worry and trouble.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>These five flaws are the catastrophic sins of the general, fatal to the conduct of war.</li>
-<li>When an army is overthrown and its leader slain, the cause will surely be found among these five dangerous faults.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          He who is reckless can be killed; he who is cowardly can be captured; he who is quick-tempered can be insulted; he who is sensitive to honor can be shamed.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-09">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 9</div>
-          <h2 class="chapter-title">The Army on the March (Encampment & Forensic Battlefield Signals)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Camp on high ground facing the sun; read the physical and behavioral anomalies of the enemy as infallible forensic signals.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch09-01">
-        <h3 class="strategy-heading">Topographical Rules of Encampment</h3>
-        <p class="strategy-text">Camp on high ground facing the sun. After crossing a river, move far away from it; if an enemy crosses, do not meet him in midstream—strike when half his force has crossed. Never fight uphill or against the current.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Pass quickly over mountains and stay near valleys.</li>
-<li>In dry, level country, take up an easily accessible position with rising ground to your right and rear.</li>
-<li>Camp where health is maintained; an army free from disease is said to be sure of victory.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          All armies prefer high ground to low, and sunny places to dark.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch09-02">
-        <h3 class="strategy-heading">Forensic Decoding of Enemy Battlefield Signals</h3>
-        <p class="strategy-text">Nature and animal behavior reveal hidden enemy movements: (1) Birds rising in flight signal an ambush; (2) Startled beasts indicate a sudden attack; (3) High, sharp dust columns reveal chariots; low, broad dust indicates advancing infantry; (4) Men leaning on spears indicate hunger; (5) Drawers of water drinking first indicate extreme thirst; (6) Envoys speaking humbly while preparations advance mean the enemy will attack; (7) Envoys asking for a truce without signed treaty indicate an impending stratagem.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>If the enemy sees an advantage and does not advance, his men are weary.</li>
-<li>When the general is nervous and prone to anger, his authority is crumbling.</li>
-<li>Order soldiers with civil education, but unify them with military discipline: this is called certain victory.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          Birds rising in their flight is a sign of an ambush. Startled beasts indicate that a sudden attack is coming.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-10">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 10</div>
-          <h2 class="chapter-title">Terrain (The Six Terrains and The Six Calamities of Command)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Terrain is the general's natural ally; understand the six grounds and guard against the six internal leadership failures.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch10-01">
-        <h3 class="strategy-heading">The Six Structural Terrains</h3>
-        <p class="strategy-text">Ground may be classified as: (1) Accessible (which both sides can traverse freely—seize high, sunny ground first); (2) Entangling (easy to abandon, difficult to reoccupy); (3) Temporizing (neither side gains by making the first move—lure the enemy out by feigning retreat); (4) Narrow Passes (if occupied first, fortify and await enemy); (5) Precipitous Heights (occupy high ground first; if enemy has it, do not follow); (6) Positions at Great Distance (if equal in strength, battle is not easily provoked).</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>He who knows these six grounds will conquer; he who does not will fail.</li>
-<li>The natural formation of the country is the soldier's best ally; but a power of estimating the adversary and controlling forces of victory belongs to the supreme general.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          The natural formation of the country is the soldier's best ally.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch10-02">
-        <h3 class="strategy-heading">The Six Calamities Arising from Internal Command Failure</h3>
-        <p class="strategy-text">There are six conditions not born of natural defects, but of errors committed by the general: (1) Flight (attacking tenfold force with equal numbers); (2) Insubordination (soldiers too strong, officers too weak); (3) Collapse (officers too strong, soldiers too weak); (4) Ruin (angry subordinate officers charging without orders); (5) Disorganization (general weak, rules vague, lines crooked); (6) Rout (general incapable, pitting weak vanguard against strong foe).</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your beloved sons, and they will stand by you unto death.</li>
-<li>If you are indulgent, unable to make your authority felt, your soldiers will be like spoiled children, useless for any practical purpose.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          If we know that our own men are in a condition to attack, but are unaware that the enemy is not open to attack, we have gone only half way towards victory.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-11">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 11</div>
-          <h2 class="chapter-title">The Nine Situations (Psychological Conditioning on Death Ground)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Place soldiers where there is no escape, and they will prefer death to flight; desperate ground generates invincible ferocity.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch11-01">
-        <h3 class="strategy-heading">The Nine Situations and Tactical Responses</h3>
-        <p class="strategy-text">Situations are defined by relative geography: (1) Dispersive (fighting in own territory—do not fight); (2) Facile (shallow penetration into enemy territory—do not halt); (3) Contentious (advantageous to either side—do not attack); (4) Open (free movement—do not block); (5) Intersecting (surrounded by three states—form alliances); (6) Heavy (deep in enemy territory—forage); (7) Bad (marshes, forests—march through); (8) Hemmed-in (narrow entrance—stratagem); (9) Desperate / Death Ground (surrounded, no escape—fight).</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>On dispersive ground, unify the will of the army.</li>
-<li>On facile ground, keep the ranks tightly knit.</li>
-<li>On desperate ground, proclaim to your soldiers that there is no hope of safety: burn your boats, break your cooking pots, and show them that they must conquer or die.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          Throw your soldiers into positions whence there is no escape, and they will prefer death to flight.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch11-02">
-        <h3 class="strategy-heading">The Mount Chang Serpent (Shuai-ran) & Total Secrecy</h3>
-        <p class="strategy-text">The skillful tactician resembles the Shuai-ran of Mount Chang: strike its head, its tail attacks; strike its tail, its head attacks; strike its middle, both head and tail attack simultaneously. The general must be quiet and secret, upright and just; he alters his methods and plans to keep the enemy without definite knowledge.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>He burns his boats and breaks his cooking pots; like a shepherd driving a flock of sheep, he drives his men this way and that, and nothing knows whither he is going.</li>
-<li>Forestall the enemy by seizing what he holds dear, and subtly ascertain his plans.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          Confront your soldiers with the deed itself; never let them know your design. When the outlook is bright, bring it before their eyes; but tell them nothing when the aspect is gloomy.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-12">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 12</div>
-          <h2 class="chapter-title">The Attack by Fire (Thermal Warfare and Prudent Restraint)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Fire is an auxiliary weapon requiring immediate tactical follow-up; never launch a war out of anger or fight out of personal pique.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch12-01">
-        <h3 class="strategy-heading">The Five Thermal Attacks and Atmospheric Conditions</h3>
-        <p class="strategy-text">There are five ways of attacking with fire: (1) Burning soldiers in camp; (2) Burning stores; (3) Burning baggage trains; (4) Burning arsenals; (5) Dropping fire into enemy lines. Material for starting fire must always be kept ready. Fire attacks must align with meteorological dry seasons and specific windy days of the lunar cycle.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>When fire breaks out inside the enemy camp, respond immediately with an attack from without.</li>
-<li>If the enemy remains calm when fire breaks out, stay your hand; do not attack recklessly.</li>
-<li>Wind that rises in the day lasts long, but a night breeze soon falls.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          In every case, the commander must be prepared to respond to fire with immediate military action, not merely watch the flames.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch12-02">
-        <h3 class="strategy-heading">The Supreme Warning on Emotional Governance</h3>
-        <p class="strategy-text">Unchecked anger is fatal to statecraft. A ruler must never launch an army merely to gratify his personal rage; a general must never fight a battle merely out of pique. If it is to your advantage, make a forward move; if not, stay where you are.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Anger may in time change to gladness; vexation may be succeeded by content.</li>
-<li>A kingdom that has once been destroyed can never come again into being; nor can the dead ever be brought back to life.</li>
-<li>Hence the enlightened ruler is heedful, and the good general full of caution. This is the way to keep a country at peace and an army intact.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          A sovereign cannot raise an army simply to satisfy his own anger; a general cannot fight a battle simply because he is resentful. Anger can turn to happiness, and resentment can turn to joy; but a destroyed state cannot be revived, and the dead cannot be brought back to life.
-        </blockquote>
-      </div>
-    
-      </section>
-    
-
-      <section class="chapter-wrapper" id="ch-13">
-        <header class="chapter-header">
-          <div class="chapter-kicker">Sun Tzu • Chapter 13</div>
-          <h2 class="chapter-title">The Use of Spies (Divine Intelligence & The Espionage Matrix)</h2>
-          <div class="chapter-axiom">✦ <strong>Master Axiom:</strong> Foreknowledge cannot be gained from ghosts or spirits, but only from men; the converted spy is the linchpin of the entire network.</div>
-        </header>
-        
-      <div class="strategy-block" id="ch13-01">
-        <h3 class="strategy-heading">The Economics of Intelligence: The Sin of Parsimony</h3>
-        <p class="strategy-text">Raising an army of 100,000 men and marching thousands of miles drains the state and leaves 700,000 households impoverished. Hostile armies may face each other for years, striving for victory decided in a single day. To begrudge a few hundred ounces of silver for intelligence is the height of inhumanity.</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>Knowledge of the enemy cannot be deduced from spirits, nor from natural law, nor from calculations of stars.</li>
-<li>Foreknowledge can only be obtained from human beings who possess intimate knowledge of the enemy's condition.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          To grudge an expenditure of a hundred ounces of silver in honors and emoluments, thereby remaining in ignorance of the enemy's condition, is the height of inhumanity.
-        </blockquote>
-      </div>
-    
-
-      <div class="strategy-block" id="ch13-02">
-        <h3 class="strategy-heading">The Five Classes of Spies and the Converted Key</h3>
-        <p class="strategy-text">There are five classes of spies: (1) Local Spies (recruited from ordinary enemy citizens); (2) Inward Spies (recruited from enemy officials); (3) Converted Spies (enemy spies captured and bought over as double agents); (4) Doomed Spies (our own spies fed false plans so that when captured, they report falsehoods to the enemy); (5) Surviving Spies (those who return alive from the enemy's camp with intelligence).</p>
-        
-        <div class="heuristics-container">
-          <div class="heuristics-title">⚡ Operational Heuristics</div>
-          <ul class="heuristics-list">
-            <li>When all five kinds of spies are at work, none can discover the secret system: this is called divine manipulation of the threads.</li>
-<li>The Converted Spy is the foundation: it is through the converted spy that local and inward spies can be recruited, doomed spies can deceive, and surviving spies can be protected.</li>
-<li>Spies must be rewarded with utmost generosity and managed with sublime subtlety and benevolence.</li>
-          </ul>
-        </div>
-
-        <blockquote class="sun-tzu-quote">
-          <span class="quote-symbol">“</span>
-          The end and aim of spying in all its five varieties is knowledge of the enemy; and this knowledge can only be derived, in the first instance, from the converted spy. Hence the converted spy must be treated with the utmost liberality.
-        </blockquote>
-      </div>
-    
-      </section>
-    
     </main>
   </div>
 
+  <script src="../../assets/js/reader-controls.js"></script>
   <script>
-    const themeBtn = document.getElementById('theme-btn');
-    const htmlEl = document.documentElement;
-    let theme = localStorage.getItem('intellectualist_theme') || 'dark';
-    htmlEl.setAttribute('data-theme', theme);
-    themeBtn.addEventListener('click', () => {
-      theme = theme === 'dark' ? 'light' : 'dark';
-      htmlEl.setAttribute('data-theme', theme);
-      localStorage.setItem('intellectualist_theme', theme);
-    });
+    function switchView(viewName) {
+      document.querySelectorAll('.view-panel').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+
+      if (viewName === 'journey') {
+        document.getElementById('view-journey').style.display = 'block';
+        document.getElementById('btn-view-journey').classList.add('active');
+      } else if (viewName === 'map') {
+        document.getElementById('view-map').style.display = 'block';
+        document.getElementById('btn-view-map').classList.add('active');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeSidebarOnMobile() {
+      if (window.innerWidth <= 1024) {
+        document.getElementById('reader-shell').classList.remove('sidebar-open');
+      }
+    }
   </script>
 </body>
 </html>

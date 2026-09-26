@@ -282,6 +282,133 @@ function runRegressionSuite() {
     console.error("    => VERDICT: FAIL\n");
   }
 
+  // 7. THE 48 LAWS OF POWER
+  console.log(">>> [7/13] Auditing: The 48 Laws of Power...");
+  const flDir = path.join(__dirname, '..', 'docs', 'distillations', '48-laws-of-power');
+  const flKu = JSON.parse(fs.readFileSync(path.join(flDir, 'knowledge-units.json'), 'utf8'));
+  const flHtml = fs.readFileSync(path.join(flDir, 'index.html'), 'utf8');
+  let flRendered = 0;
+  flKu.forEach(u => { if (flHtml.includes(`id="law-${u.unit_number}"`)) flRendered++; });
+  const flCream = flHtml.includes('data-theme="cream"');
+  const flControls = flHtml.includes('reader-controls.js');
+  if (flRendered === 48 && flCream && flControls) {
+    results.laws_of_power = { status: "PASS", units: "48/48" };
+    console.log(`    - Rendered Laws: ${flRendered}/48 | Editorial Cream: ${flCream} | Controls: ${flControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.laws_of_power = { status: "FAIL", units: `${flRendered}/48` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 8. RICH DAD POOR DAD
+  console.log(">>> [8/13] Auditing: Rich Dad Poor Dad & CASHFLOW Quadrant...");
+  const rdDir = path.join(__dirname, '..', 'docs', 'distillations', 'rich-dad-poor-dad');
+  const rdKu = JSON.parse(fs.readFileSync(path.join(rdDir, 'knowledge-units.json'), 'utf8'));
+  const rdHtml = fs.readFileSync(path.join(rdDir, 'index.html'), 'utf8');
+  let rdRendered = 0;
+  rdKu.forEach(u => { if (rdHtml.includes(`id="unit-${u.unit_number}"`)) rdRendered++; });
+  const rdCream = rdHtml.includes('data-theme="cream"');
+  const rdControls = rdHtml.includes('reader-controls.js');
+  if (rdRendered === 10 && rdCream && rdControls) {
+    results.rich_dad = { status: "PASS", units: "10/10" };
+    console.log(`    - Rendered Units: ${rdRendered}/10 | Editorial Cream: ${rdCream} | Controls: ${rdControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.rich_dad = { status: "FAIL", units: `${rdRendered}/10` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 9. ATOMIC HABITS
+  console.log(">>> [9/13] Auditing: Atomic Habits...");
+  const ahDir = path.join(__dirname, '..', 'docs', 'distillations', 'atomic-habits');
+  const ahKu = JSON.parse(fs.readFileSync(path.join(ahDir, 'knowledge-units.json'), 'utf8'));
+  const ahHtml = fs.readFileSync(path.join(ahDir, 'index.html'), 'utf8');
+  let ahRendered = 0;
+  ahKu.forEach(u => { if (ahHtml.includes(`id="unit-${u.unit_number}"`)) ahRendered++; });
+  const ahCream = ahHtml.includes('data-theme="cream"');
+  const ahControls = ahHtml.includes('reader-controls.js');
+  if (ahRendered === 20 && ahCream && ahControls) {
+    results.atomic_habits = { status: "PASS", units: "20/20" };
+    console.log(`    - Rendered Units: ${ahRendered}/20 | Editorial Cream: ${ahCream} | Controls: ${ahControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.atomic_habits = { status: "FAIL", units: `${ahRendered}/20` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 10. THE MYTH OF SISYPHUS
+  console.log(">>> [10/13] Auditing: The Myth of Sisyphus...");
+  const msDir = path.join(__dirname, '..', 'docs', 'distillations', 'the-myth-of-sisyphus');
+  const msKu = JSON.parse(fs.readFileSync(path.join(msDir, 'knowledge-units.json'), 'utf8'));
+  const msHtml = fs.readFileSync(path.join(msDir, 'index.html'), 'utf8');
+  let msRendered = 0;
+  msKu.forEach(u => { if (msHtml.includes(`id="unit-${u.unit_number}"`)) msRendered++; });
+  const msCream = msHtml.includes('data-theme="cream"');
+  const msControls = msHtml.includes('reader-controls.js');
+  if (msRendered === 12 && msCream && msControls) {
+    results.myth_of_sisyphus = { status: "PASS", units: "12/12" };
+    console.log(`    - Rendered Units: ${msRendered}/12 | Editorial Cream: ${msCream} | Controls: ${msControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.myth_of_sisyphus = { status: "FAIL", units: `${msRendered}/12` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 11. CAN'T HURT ME
+  console.log(">>> [11/13] Auditing: Can't Hurt Me...");
+  const chmDir = path.join(__dirname, '..', 'docs', 'distillations', 'cant-hurt-me');
+  const chmKu = JSON.parse(fs.readFileSync(path.join(chmDir, 'knowledge-units.json'), 'utf8'));
+  const chmHtml = fs.readFileSync(path.join(chmDir, 'index.html'), 'utf8');
+  let chmRendered = 0;
+  chmKu.forEach(u => { if (chmHtml.includes(`id="unit-${u.unit_number}"`)) chmRendered++; });
+  const chmCream = chmHtml.includes('data-theme="cream"');
+  const chmControls = chmHtml.includes('reader-controls.js');
+  if (chmRendered === 11 && chmCream && chmControls) {
+    results.cant_hurt_me = { status: "PASS", units: "11/11" };
+    console.log(`    - Rendered Units: ${chmRendered}/11 | Editorial Cream: ${chmCream} | Controls: ${chmControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.cant_hurt_me = { status: "FAIL", units: `${chmRendered}/11` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 12. THE ART OF WAR
+  console.log(">>> [12/13] Auditing: The Art of War...");
+  const aowDir = path.join(__dirname, '..', 'docs', 'distillations', 'the-art-of-war');
+  const aowKu = JSON.parse(fs.readFileSync(path.join(aowDir, 'knowledge-units.json'), 'utf8'));
+  const aowUnits = aowKu.units || aowKu;
+  const aowHtml = fs.readFileSync(path.join(aowDir, 'index.html'), 'utf8');
+  let aowRendered = 0;
+  aowUnits.forEach(u => { if (aowHtml.includes(`id="${u.id}"`)) aowRendered++; });
+  const aowCream = aowHtml.includes('data-theme="cream"');
+  const aowControls = aowHtml.includes('reader-controls.js');
+  if (aowRendered === 26 && aowCream && aowControls) {
+    results.art_of_war = { status: "PASS", units: "26/26" };
+    console.log(`    - Rendered Units: ${aowRendered}/26 | Editorial Cream: ${aowCream} | Controls: ${aowControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.art_of_war = { status: "FAIL", units: `${aowRendered}/26` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 13. WAR AND PEACE
+  console.log(">>> [13/13] Auditing: War and Peace...");
+  const wapDir = path.join(__dirname, '..', 'docs', 'distillations', 'war-and-peace');
+  const wapKu = JSON.parse(fs.readFileSync(path.join(wapDir, 'knowledge-units.json'), 'utf8'));
+  const wapHtml = fs.readFileSync(path.join(wapDir, 'index.html'), 'utf8');
+  let wapRendered = 0;
+  wapKu.forEach(u => { if (wapHtml.includes(`id="${u.id}"`)) wapRendered++; });
+  const wapCream = wapHtml.includes('data-theme="cream"');
+  const wapControls = wapHtml.includes('reader-controls.js');
+  if (wapRendered === 20 && wapCream && wapControls) {
+    results.war_and_peace = { status: "PASS", units: "20/20" };
+    console.log(`    - Rendered Units: ${wapRendered}/20 | Editorial Cream: ${wapCream} | Controls: ${wapControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.war_and_peace = { status: "FAIL", units: `${wapRendered}/20` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
   console.log("================================================================================");
   console.log("  FINAL REGRESSION SUMMARY:");
   console.log(`  - Norwegian Wood (Fiction)           : ${results.norwegian_wood.status}`);
@@ -290,6 +417,13 @@ function runRegressionSuite() {
   console.log(`  - Endurance (Survival History)       : ${results.endurance.status}`);
   console.log(`  - Rajput Unified Mega-Codex (History): ${results.rajput_codex.status}`);
   console.log(`  - Manifestation Unified Codex (Mind) : ${results.manifestation_codex.status}`);
+  console.log(`  - The 48 Laws of Power (Realpolitik) : ${results.laws_of_power.status}`);
+  console.log(`  - Rich Dad Poor Dad (Finance)        : ${results.rich_dad.status}`);
+  console.log(`  - Atomic Habits (Behavior)           : ${results.atomic_habits.status}`);
+  console.log(`  - The Myth of Sisyphus (Philosophy)  : ${results.myth_of_sisyphus.status}`);
+  console.log(`  - Can't Hurt Me (Mental Toughness)   : ${results.cant_hurt_me.status}`);
+  console.log(`  - The Art of War (Strategy)          : ${results.art_of_war.status}`);
+  console.log(`  - War and Peace (Epic Literature)    : ${results.war_and_peace.status}`);
   console.log("================================================================================");
 
   const allPass = Object.values(results).every(r => r.status === "PASS");
