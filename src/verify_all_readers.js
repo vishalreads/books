@@ -305,8 +305,12 @@ function runRegressionSuite() {
   const rdDir = path.join(__dirname, '..', 'docs', 'distillations', 'rich-dad-poor-dad');
   const rdKu = JSON.parse(fs.readFileSync(path.join(rdDir, 'knowledge-units.json'), 'utf8'));
   const rdHtml = fs.readFileSync(path.join(rdDir, 'index.html'), 'utf8');
+  const rdUnits = Array.isArray(rdKu) ? rdKu : (rdKu.units || []);
   let rdRendered = 0;
-  rdKu.forEach(u => { if (rdHtml.includes(`id="unit-${u.unit_number}"`)) rdRendered++; });
+  rdUnits.forEach(u => {
+    const num = u.unit_number || u.num;
+    if (rdHtml.includes(`id="unit-${num}"`)) rdRendered++;
+  });
   const rdCream = rdHtml.includes('data-theme="cream"');
   const rdControls = rdHtml.includes('reader-controls.js');
   if (rdRendered === 10 && rdCream && rdControls) {
