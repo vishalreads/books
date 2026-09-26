@@ -34,412 +34,448 @@
       "summary": "In *The Holy Science*, Sri Yukteswar corrected the medieval error of the 432,000-year Kali Yuga, proving that the earth moves through an equinoctial precession cycle of **24,000 years** around the grand center (*Vishnunabhi*): - **Ascending Arc (12,000 years):** Kali (1,200 yrs) ",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 661
+      "text_length": 737
     },
     {
       "id": "YOGI-U05",
       "title": "Chapter 1: My Parents and Early Life",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Dramatis Personae:** Born Mukunda Lal Ghosh on January 5, 1893, in Gorakhpur, Bengal. Father: Bhagabati Charan Ghosh, high-ranking executive in the Bengal-Nagpur Railway, disciplined, deeply honest, and philanthropic. Mother: compassionate, queenly, devout. - **Irre",
+      "summary": "- **Scope & Setting:** Gorakhpur and Calcutta, Bengal (1893–early 1900s) - **Dramatis Personae & Figures:** Mukunda Lal Ghosh (Paramahansa Yogananda), Bhagabati Charan Ghosh (Father), Gyana Prabha Ghosh (Mother), Lahiri Mahasaya - **Epistemic Classification:** `SOURCE_FACT / SPIR",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 710
+      "text_length": 3152
     },
     {
       "id": "YOGI-U06",
       "title": "Chapter 2: My Mother's Death and the Mystic Amulet",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** At age 11, Mukunda experiences an ominous premonition of his mother's death while traveling. She dies suddenly in Calcutta before he can reach her bedside. - **Forensic Content:** Plunged into inconsolable grief, Mukunda seeks solace in the Divine Mother. ",
+      "summary": "- **Scope & Setting:** Bareilly and Calcutta (1904, Mukunda age 11) - **Dramatis Personae & Figures:** Mukunda, Gyana Prabha Ghosh (Mother), Ananta (Eldest Brother), A mysterious Sadhu - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 494
+      "text_length": 3110
     },
     {
       "id": "YOGI-U07",
       "title": "Chapter 3: The Saint with Two Bodies (Swami Pranabananda)",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Mukunda visits Swami Pranabananda (\"The Banat-wala Swami\"), an exalted disciple of Lahiri Mahasaya. - **Irreducible Axiom:** Bilocation (occupying two distinct physical bodies simultaneously) is achievable via conscious control of the astral lifetrons. - ",
+      "summary": "- **Scope & Setting:** Calcutta and Burdwan - **Dramatis Personae & Figures:** Mukunda, Swami Pranabananda ('The Banat-wala Swami'), Bhagabati Charan Ghosh - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 588
+      "text_length": 2669
     },
     {
       "id": "YOGI-U08",
       "title": "Chapter 4: My Interrupted Flight Toward the Himalayas",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** Mukunda and his boyhood friend Jitendra attempt a clandestine runaway journey to the Himalayas in search of enlightened rishis. - **Forensic Content:** Guided by strict intuition, they travel on trains without tickets, intending to reach Hardwar. Mukunda's",
+      "summary": "- **Scope & Setting:** Calcutta to Bareilly (circa 1908) - **Dramatis Personae & Figures:** Mukunda, Jitendra Nath Mazumdar (Boyhood companion), Ananta (Elder brother) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 473
+      "text_length": 2840
     },
     {
       "id": "YOGI-U09",
-      "title": "Chapter 5: A \"Perfumed Saint\" Displays His Wonders (Gandha Baba)",
+      "title": "Chapter 5: A 'Perfumed Saint' Displays His Wonders",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Encounter with Gandha Baba in Calcutta. - **Irreducible Axiom:** Minor yogic powers (*siddhis*) can manipulate atomic odors but often serve merely as spiritual side-shows. - **Forensic Content:** Gandha Baba demonstrates the ability to extract any scent (",
+      "summary": "- **Scope & Setting:** Calcutta - **Dramatis Personae & Figures:** Mukunda, Gandha Baba ('The Perfumed Saint'), Ananta - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 555
+      "text_length": 2611
     },
     {
       "id": "YOGI-U10",
-      "title": "Chapter 6: The Tiger Swami (Soham Swami)",
+      "title": "Chapter 6: The Tiger Swami",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Encounter with Chandi Charan Sen (\"Soham Swami\"), who formerly fought wild Bengal tigers with his bare hands. - **Irreducible Axiom:** Physical courage and mastery over wild beasts is subordinate to the inner conquest of the ego-tiger. - **Forensic Conten",
+      "summary": "- **Scope & Setting:** Calcutta (Encounter with Soham Swami) - **Dramatis Personae & Figures:** Mukunda, Chandi Charan Sen (Soham Swami) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 648
+      "text_length": 2742
     },
     {
       "id": "YOGI-U11",
       "title": "Chapter 7: The Levitating Saint (Bhaduri Mahasaya)",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Mukunda visits Nagendra Nath Bhaduri in Upper Circular Road, Calcutta. - **Irreducible Axiom:** Levitation occurs when pranayama reverses the gravitational polarity of the human body. - **Forensic Content:** Bhaduri Mahasaya, who rarely left his small ash",
+      "summary": "- **Scope & Setting:** Upper Circular Road, Calcutta - **Dramatis Personae & Figures:** Mukunda, Nagendra Nath Bhaduri Mahasaya - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 533
+      "text_length": 2538
     },
     {
       "id": "YOGI-U12",
       "title": "Chapter 8: India's Great Scientist, J.C. Bose",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Sir Jagadish Chandra Bose at the Bose Institute in Calcutta. - **Irreducible Axiom:** Organic and inorganic matter share an identical underlying responsive consciousness. - **Forensic Content:** Bose demonstrates his invention, the **Crescograph** (capabl",
+      "summary": "- **Scope & Setting:** The Bose Institute, Calcutta - **Dramatis Personae & Figures:** Mukunda, Sir Jagadish Chandra Bose (Pioneering Biophysicist) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 629
+      "text_length": 2936
     },
     {
       "id": "YOGI-U13",
-      "title": "Chapter 9: The Blissful Devotee and His Cosmic Romance (Master Mahasaya)",
+      "title": "Chapter 9: The Blissful Devotee and His Cosmic Romance",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Mahendra Nath Gupta (\"Master Mahasaya\", author of *The Gospel of Sri Ramakrishna*). - **Irreducible Axiom:** Pure devotional love (*Bhakti*) dissolves the veil between the soul and the Divine Mother. - **Forensic Content:** Master Mahasaya lives in profou",
+      "summary": "- **Scope & Setting:** Calcutta and Dakshineswar Temple - **Dramatis Personae & Figures:** Mukunda, Mahendra Nath Gupta ('Master Mahasaya', chronicler of Sri Ramakrishna) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 453
+      "text_length": 2642
     },
     {
       "id": "YOGI-U14",
       "title": "Chapter 10: I Meet My Master, Sri Yukteswar",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** Summer 1910, in a crowded marketplace in Serampore (near Calcutta). - **Irreducible Axiom:** The guru-disciple relationship is an eternal, pre-ordained soul covenant spanning multiple incarnations. - **Forensic Content:** Walking through a narrow lane, Muk",
+      "summary": "- **Scope & Setting:** Serampore, Bengal (Summer 1910) - **Dramatis Personae & Figures:** Mukunda (Age 17), Swami Sri Yukteswar Giri - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 640
+      "text_length": 2547
     },
     {
       "id": "YOGI-U15",
       "title": "Chapter 11: Two Penniless Boys in Brindaban",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** Sri Yukteswar tests Mukunda's absolute faith in divine providence by sending him and his friend Jitendra to the holy city of Brindaban with zero money. - **Forensic Content:** Rule of the test: they may not beg, ask for food, or reveal their penniless cond",
+      "summary": "- **Scope & Setting:** Brindaban, Uttar Pradesh (1910) - **Dramatis Personae & Figures:** Mukunda, Jitendra, Swami Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 508
+      "text_length": 2614
     },
     {
       "id": "YOGI-U16",
       "title": "Chapter 12: Years in My Master's Hermitage",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Sri Yukteswar's hermitage in Serampore. - **Irreducible Axiom:** A true guru operates as a mirror of uncompromising truth, shattering the ego rather than feeding flattery. - **Forensic Content:** Sri Yukteswar subjects Mukunda to ruthless psychological an",
+      "summary": "- **Scope & Setting:** Sri Yukteswar's Hermitage, Serampore - **Dramatis Personae & Figures:** Mukunda, Swami Sri Yukteswar Giri, Fellow Disciples - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 551
+      "text_length": 2906
     },
     {
       "id": "YOGI-U17",
       "title": "Chapter 13: The Sleepless Saint (Ram Gopal Muzumdar)",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Tarakeswar shrine; encounter with Ram Gopal Muzumdar. - **Forensic Content:** Ram Gopal has practiced continuous meditation for over forty years without sleeping or blinking during samadhi. He reveals that he was present in the Himalayan caves when Mahava",
+      "summary": "- **Scope & Setting:** Tarakeswar Temple Shrine, Bengal - **Dramatis Personae & Figures:** Mukunda, Ram Gopal Muzumdar ('The Sleepless Saint'), Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 333
+      "text_length": 2748
     },
     {
       "id": "YOGI-U18",
       "title": "Chapter 14: An Experience in Cosmic Consciousness (Samadhi)",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** Sri Yukteswar strikes Mukunda's chest gently above the heart in the Serampore hermitage. - **Irreducible Axiom:** The physical body is not a cage, but a focal point within an infinite ocean of omnipresent light. - **Forensic Content:** Mukunda enters breat",
+      "summary": "- **Scope & Setting:** Upper Balcony, Serampore Hermitage - **Dramatis Personae & Figures:** Mukunda, Swami Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 629
+      "text_length": 2999
     },
     {
       "id": "YOGI-U19",
       "title": "Chapter 15: The Cauliflower Robbery",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** An illustrative comic episode demonstrating Sri Yukteswar's uncanny precognition and the precision of karmic retribution involving a stolen crop of cauliflowers.",
+      "summary": "- **Scope & Setting:** Serampore Hermitage Gardens - **Dramatis Personae & Figures:** Mukunda, Sri Yukteswar, Hermitage Gardeners, Thieves - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 185
+      "text_length": 2699
     },
     {
       "id": "YOGI-U20",
-      "title": "Chapter 16: Outwitting the Stars (Astrology & Karma)",
+      "title": "Chapter 16: Outwitting the Stars",
       "type": "spiritual_narrative",
-      "summary": "- **Irreducible Axiom:** Astrology maps the mathematical momentum of past karma, but spiritual will and astrological remedial metals can neutralize planetary electromagnetic friction. - **Forensic Content:** Sri Yukteswar explains that astrological rays are electromagnetic forces",
+      "summary": "- **Scope & Setting:** Serampore Hermitage - **Dramatis Personae & Figures:** Mukunda, Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 567
+      "text_length": 2612
     },
     {
       "id": "YOGI-U21",
       "title": "Chapter 17: Sasi and the Three Sapphires",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** Demonstrating the disastrous effects of greed and ignoring the guru's specific instructions regarding gemstone remedies and karmic shielding.",
+      "summary": "- **Scope & Setting:** Calcutta and Serampore - **Dramatis Personae & Figures:** Mukunda, Sasi (Fellow disciple), Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 165
+      "text_length": 2408
     },
     {
       "id": "YOGI-U22",
       "title": "Chapter 18: A Mohammedan Wonder-Worker (Afzal Khan)",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** An encounter with a Sufi occultist who uses minor psychic entities to materialize objects from distant stores. Sri Yukteswar exposes the moral trap of using lower astral spirits for material greed.",
+      "summary": "- **Scope & Setting:** Calcutta - **Dramatis Personae & Figures:** Mukunda, Afzal Khan (A Sufi occultist), Master Mahasaya - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 221
+      "text_length": 2518
     },
     {
       "id": "YOGI-U23",
       "title": "Chapter 19: My Master, in Calcutta, Appears in Serampore",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** Sri Yukteswar telepathically projects his physical form to Mukunda across dozens of miles, arriving precisely on a railway platform to reassure his disciple.",
+      "summary": "- **Scope & Setting:** Calcutta and Serampore (Railway station and Hermitage) - **Dramatis Personae & Figures:** Mukunda, Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 181
+      "text_length": 2625
     },
     {
       "id": "YOGI-U24",
-      "title": "Chapter 20 & 21: The Kashmir Journeys",
+      "title": "Chapter 20: The Kashmir Journeys & We Do Not Visit Kashmir",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** Travel through Srinagar, Rawalpindi, and the Himalayan valleys. Encounters with high-altitude yogis, illustrating the spiritual geography of northern India.",
+      "summary": "- **Scope & Setting:** Calcutta, Serampore, and aborted Kashmir travels - **Dramatis Personae & Figures:** Mukunda, Sri Yukteswar, Family members - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 180
+      "text_length": 2391
     },
     {
       "id": "YOGI-U25",
-      "title": "Chapter 22: The Heart of a Stone Image",
+      "title": "Chapter 21: The Heart of a Stone Image",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** Dakshineswar Kali Temple. - **Forensic Content:** Mukunda challenges the stone murti of Kali to reveal whether it is mere basalt or a living channel of God. The deity animates before his eyes, speaking directly to him and answering his deepest prayer.",
+      "summary": "- **Scope & Setting:** Calcutta Kali Temple - **Dramatis Personae & Figures:** Mukunda, Sri Yukteswar, Temple Priests - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 275
+      "text_length": 2428
     },
     {
       "id": "YOGI-U26",
-      "title": "Chapter 23 & 24: University Degree & Taking the Monastic Vows",
+      "title": "Chapter 22: I Receive My University Degree",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** Despite neglecting academic textbooks in favor of meditation, Mukunda miraculously passes his B.A. examinations at Scottish Church College (Serampore) through last-minute photographic retention and Sri Yukteswar's blessing. In 1915, he formally enters the ",
+      "summary": "- **Scope & Setting:** Serampore College and University of Calcutta (1915) - **Dramatis Personae & Figures:** Mukunda, Sri Yukteswar, College Professors, Romesh Chandra Dutt - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 377
+      "text_length": 2705
     },
     {
       "id": "YOGI-U27",
-      "title": "Chapter 25: Brother Ananta and Sister Nalini",
+      "title": "Chapter 23: I Become a Monk of the Swami Order",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** Healing family members through yogic prayers and the painful death of brother Ananta, reinforcing the non-attachment to temporal biological bodies. ---",
+      "summary": "- **Scope & Setting:** Serampore Hermitage (July 1915) - **Dramatis Personae & Figures:** Mukunda Lal Ghosh (Paramahansa Yogananda), Swami Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 175
+      "text_length": 2389
     },
     {
       "id": "YOGI-U28",
-      "title": "Chapter 26: The Science of Kriya Yoga",
+      "title": "Chapter 24: Brother Ananta and Sister Nalini",
       "type": "spiritual_narrative",
-      "summary": "- **Irreducible Axiom:** Spiritual evolution can be mathematically accelerated by magnetizing the spinal axis and neutralizing breath currents. - **Forensic Content:** The technical and scriptural core of the book. Quotes the *Bhagavad Gita* (IV:29: *\"Offering inhaling breath int",
+      "summary": "- **Scope & Setting:** Calcutta (Gurpar Road residence) - **Dramatis Personae & Figures:** Swami Yogananda, Ananta (Elder brother), Nalini (Sister), Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 558
+      "text_length": 2532
     },
     {
       "id": "YOGI-U29",
-      "title": "Chapter 27: Founding a Yoga School at Ranchi",
+      "title": "Chapter 25: The Science of Kriya Yoga",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** 1917, at Dihika and later Ranchi (Bihar). - **Forensic Content:** Yogananda establishes a \"How-to-Live\" school combining modern academic curricula with agricultural training, physical culture, and daily Kriya meditation. The school flourishes with the supp",
+      "summary": "- **Scope & Setting:** Philosophical and physiological treatise - **Dramatis Personae & Figures:** Paramahansa Yogananda, Patanjali, Krishna, Lahiri Mahasaya - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 314
+      "text_length": 2831
     },
     {
       "id": "YOGI-U30",
-      "title": "Chapter 28: Kashi, Reborn and Discovered",
+      "title": "Chapter 26: Founding a Yoga School at Ranchi",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** Demonstrates the reality of reincarnation: a young student at Ranchi dies, and Yogananda uses spiritual intuition to track his rebirth to a specific family in Calcutta, identifying the boy by physical birthmarks and memory retention.",
+      "summary": "- **Scope & Setting:** Dihika and Ranchi, Bihar (1917–1918) - **Dramatis Personae & Figures:** Swami Yogananda, Sir Manindra Chandra Nundy (Maharaja of Kasimbazar), School Children - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 257
+      "text_length": 3238
     },
     {
       "id": "YOGI-U31",
-      "title": "Chapter 29: Rabindranath Tagore and I Compare Schools",
+      "title": "Chapter 27: Kashi, Reborn and Discovered",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Nobel Laureate Rabindranath Tagore at Shantiniketan. - **Forensic Content:** Yogananda and Tagore discuss the integration of artistic freedom with spiritual discipline in education. Tagore praises Yogananda's synthesis of physical, mental, and meditative ",
+      "summary": "- **Scope & Setting:** Ranchi School and Calcutta - **Dramatis Personae & Figures:** Swami Yogananda, Kashi (Young student), Kashi's father - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 289
+      "text_length": 2731
     },
     {
       "id": "YOGI-U32",
-      "title": "Chapter 30: The Law of Miracles",
+      "title": "Chapter 28: Rabindranath Tagore and I Compare Schools",
       "type": "spiritual_narrative",
-      "summary": "- **Irreducible Axiom:** A master operates with the master-switch of cosmic consciousness, where light and thought-waves are interchangeable. - **Forensic Content:** Detailed philosophical reconciliation between the Hindu concept of *Maya*, the physics of light, and the miraculou",
+      "summary": "- **Scope & Setting:** Santiniketan ('Abode of Peace'), Bengal - **Dramatis Personae & Figures:** Swami Yogananda, Rabindranath Tagore (Nobel Laureate Poet) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 322
+      "text_length": 2490
     },
     {
       "id": "YOGI-U33",
-      "title": "Chapter 31: An Interview with the Sacred Mother (Kashi Moni Lahiri)",
+      "title": "Chapter 29: The Law of Miracles",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Meeting with Kashi Moni, the widow of Lahiri Mahasaya. - **Forensic Content:** She recounts the early days of their marriage when she viewed Lahiri as an ordinary husband, only to be shocked upon seeing him levitate in their bedroom and materialize celest",
+      "summary": "- **Scope & Setting:** Philosophical and Scientific Exposition - **Dramatis Personae & Figures:** Paramahansa Yogananda, Albert Einstein, Max Planck - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 394
+      "text_length": 2784
     },
     {
       "id": "YOGI-U34",
-      "title": "Chapter 32: Rama is Raised from the Dead",
+      "title": "Chapter 30: An Interview with the Sacred Mother",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** A historical case study where Lahiri Mahasaya physically resuscitates a dead disciple whose body was already being transported to the burning ghats, demonstrating authority over the pranas of biological life.",
+      "summary": "- **Scope & Setting:** Benares (Varanasi), Uttar Pradesh - **Dramatis Personae & Figures:** Swami Yogananda, Srimati Kashi Moni (Wife of Lahiri Mahasaya) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 232
+      "text_length": 2585
     },
     {
       "id": "YOGI-U35",
-      "title": "Chapter 33: Babaji, the Yogi-Christ of Modern India",
+      "title": "Chapter 31: Rama Is Raised from the Dead",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** The introduction of Mahavatar Babaji. - **Irreducible Axiom:** Certain avatars retain physical form across millennia to silently guide planetary evolution. - **Forensic Content:** Babaji has lived in the Himalayas for centuries without aging, appearing as",
+      "summary": "- **Scope & Setting:** Benares (Varanasi) - **Dramatis Personae & Figures:** Lahiri Mahasaya, Rama (Deceased disciple), Disciple's weeping family - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 531
+      "text_length": 2444
     },
     {
       "id": "YOGI-U36",
-      "title": "Chapter 34: Materializing a Palace in the Himalayas",
+      "title": "Chapter 32: Babaji, the Yogi of Modern India",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** Dronagiri mountain, 1861. - **Forensic Content:** Lahiri Mahasaya is summoned to the Himalayas by Babaji. In the wilderness, Babaji materializes a colossal, gold-encrusted celestial palace to fulfill Lahiri's lingering subconscious desire for regal luxury ",
+      "summary": "- **Scope & Setting:** The High Himalayas (Badrinath and Dronagiri) - **Dramatis Personae & Figures:** Mahavatar Babaji, Lahiri Mahasaya, Swami Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 458
+      "text_length": 2553
     },
     {
       "id": "YOGI-U37",
-      "title": "Chapter 35: The Christlike Life of Lahiri Mahasaya",
+      "title": "Chapter 33: Materializing a Palace in the Himalayas",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** Lahiri's daily life in Benares: sitting in a small room in the posture of lotus, sleeping barely two hours, answering letters, initiating thousands of householders, Muslims, Christians, and untouchables into Kriya Yoga without requiring them to abandon the",
+      "summary": "- **Scope & Setting:** Drongiri Mountain, Ranikhet (Autumn 1861) - **Dramatis Personae & Figures:** Mahavatar Babaji, Lahiri Mahasaya (Age 33) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 298
+      "text_length": 2905
     },
     {
       "id": "YOGI-U38",
-      "title": "Chapter 36: Babaji's Interest in the West",
+      "title": "Chapter 34: The Christlike Life of Lahiri Mahasaya",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** In 1920, Babaji visits Yogananda in his attic room in Calcutta, blessing his departure to America: *\"Thou art the one I have chosen to spread the message of Kriya Yoga in the West. Long ago I met thy guru Yukteswar at a Kumbha Mela; I told him then I would",
+      "summary": "- **Scope & Setting:** Benares (Varanasi) - **Dramatis Personae & Figures:** Lahiri Mahasaya, Disciples of all castes and creeds - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 317
+      "text_length": 2510
     },
     {
       "id": "YOGI-U39",
-      "title": "Chapter 37: I Go to America",
+      "title": "Chapter 35: Babaji's Interest in the West",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** 1920, aboard the *City of Sparta*. - **Forensic Content:** Yogananda arrives in Boston as the Indian delegate to the International Congress of Religious Liberals. Delivers his historic first American address on \"The Science of Religion\", receiving an overw",
+      "summary": "- **Scope & Setting:** Kumbha Mela in Allahabad (1894) and Calcutta - **Dramatis Personae & Figures:** Swami Sri Yukteswar, Mahavatar Babaji, Paramahansa Yogananda - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 305
+      "text_length": 2768
     },
     {
       "id": "YOGI-U40",
-      "title": "Chapter 38: Luther Burbank, a Saint Amidst the Roses",
+      "title": "Chapter 36: Babaji Visits Me in Calcutta",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Santa Rosa, California; meeting with Luther Burbank. - **Irreducible Axiom:** Affection and mental harmony can influence plant genetics and evolutionary mutations. - **Forensic Content:** Burbank shows Yogananda his revolutionary agricultural creations, i",
+      "summary": "- **Scope & Setting:** Gurpar Road Attic Room, Calcutta (1920) - **Dramatis Personae & Figures:** Swami Yogananda, Mahavatar Babaji - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 671
+      "text_length": 2688
     },
     {
       "id": "YOGI-U41",
-      "title": "Chapter 39: Therese Neumann, the Catholic Stigmatist",
+      "title": "Chapter 37: I Go to America",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** 1935, Konnersreuth, Bavaria (Germany). - **Irreducible Axiom:** The human body can subsist purely on divine light without organic calories. - **Forensic Content:** Yogananda visits Therese Neumann, who has eaten no food or drink since 1926 (35 years), exc",
+      "summary": "- **Scope & Setting:** Voyage aboard 'City of Sparta' and Arrival in Boston, USA (August–October 1920) - **Dramatis Personae & Figures:** Swami Yogananda, American Delegates, Boston Religious Liberals - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 528
+      "text_length": 2804
     },
     {
       "id": "YOGI-U42",
-      "title": "Chapter 40 & 41: Return to India & South India",
+      "title": "Chapter 38: Luther Burbank, A Saint Amidst the Roses",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** 1935--1936. Yogananda returns to India. Travels through Mysore, meets the Maharaja of Mysore and Nobel Laureate physicist Sir C.V. Raman.",
+      "summary": "- **Scope & Setting:** Santa Rosa, California (1924) - **Dramatis Personae & Figures:** Swami Yogananda, Luther Burbank (World-renowned Horticulturalist and Plant Breeder) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 161
+      "text_length": 2846
     },
     {
       "id": "YOGI-U43",
-      "title": "Chapter 42: Last Days with My Guru",
+      "title": "Chapter 39: Therese Neumann, The Catholic Stigmatist",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** March 1936, Puri (Orissa). - **Forensic Content:** Sri Yukteswar bestows upon Yogananda India's highest spiritual title: **Paramahansa** (\"Supreme Swan\", signifying one who separates the milk of reality from the water of delusion). On March 9, 1936, Sri Yu",
+      "summary": "- **Scope & Setting:** Konnersreuth, Bavaria, Germany (1935) - **Dramatis Personae & Figures:** Swami Yogananda, Therese Neumann (Catholic Mystic), Local German villagers - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 394
+      "text_length": 3058
     },
     {
       "id": "YOGI-U44",
-      "title": "Chapter 43: The Resurrection of Sri Yukteswar (Astral Cosmology)",
+      "title": "Chapter 40: I Return to India",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** June 1936, Regent Hotel, Bombay. - **Irreducible Axiom:** Physical death is merely the shedding of an outer coat; the soul continues its evolution in astral and causal realms. - **Forensic Content:** Sri Yukteswar resurrects in a glorified, solid physical ",
+      "summary": "- **Scope & Setting:** Europe, Palestine, Egypt, and Arrival in Bombay/Serampore (1935) - **Dramatis Personae & Figures:** Paramahansa Yogananda, Swami Sri Yukteswar, Disciples - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 864
+      "text_length": 2633
     },
     {
       "id": "YOGI-U45",
-      "title": "Chapter 44: With Mahatma Gandhi at Wardha",
+      "title": "Chapter 41: An Idyl in South India",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** August 1935, Sevagram ashram in Wardha. - **Irreducible Axiom:** Political and social non-violence (*Ahimsa*) is impossible without the inner spiritual science of self-mastery. - **Forensic Content:** Yogananda spends days with Gandhi, discussing the prac",
+      "summary": "- **Scope & Setting:** Mysore, Bangalore, and Chamundi Hill, South India (1935) - **Dramatis Personae & Figures:** Paramahansa Yogananda, Maharaja of Mysore, Sir C.V. Raman (Nobel Physicist) - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 429
+      "text_length": 2571
     },
     {
       "id": "YOGI-U46",
-      "title": "Chapter 45: The Bengali \"Joy-Permeated Mother\" (Anandamayi Ma)",
+      "title": "Chapter 42: Last Days with My Master",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Meeting with Sri Anandamayi Ma in Benares. - **Forensic Content:** Anandamayi Ma lives in constant ecstatic samadhi, oblivious to personal ego, radiating unconditional bliss and maternal divine grace.",
+      "summary": "- **Scope & Setting:** Puri Hermitage, Orissa (March 1936) - **Dramatis Personae & Figures:** Paramahansa Yogananda, Swami Sri Yukteswar Giri - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 225
+      "text_length": 2672
     },
     {
       "id": "YOGI-U47",
-      "title": "Chapter 46: The Woman Yogi Who Never Eats (Giri Bala)",
+      "title": "Chapter 43: The Resurrection of Sri Yukteswar",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Figures:** Biur, Bengal; meeting with Giri Bala. - **Irreducible Axiom:** Non-eating (*inedia*) operates through a specific yogic technique extracting cosmic prana through the medulla oblongata. - **Forensic Content:** Giri Bala has consumed neither food nor liquid ",
+      "summary": "- **Scope & Setting:** The Regent Hotel, Bombay (June 19, 1936, 3:00 PM) - **Dramatis Personae & Figures:** Paramahansa Yogananda, The Resurrected Swami Sri Yukteswar - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 606
+      "text_length": 3275
     },
     {
       "id": "YOGI-U48",
-      "title": "Chapter 47 & 48: Return to America & Encinitas",
+      "title": "Chapter 44: With Mahatma Gandhi at Wardha",
       "type": "spiritual_narrative",
-      "summary": "- **Setting & Events:** 1936--1946. Yogananda returns to the United States. James J. Lynn (Rajarsi Janakananda), a self-made American industrial tycoon and dedicated disciple, purchases a dramatic coastal estate in Encinitas, California, establishing the hermitage where Yogananda",
+      "summary": "- **Scope & Setting:** Wardha Ashram, Maharashtra (1935) - **Dramatis Personae & Figures:** Paramahansa Yogananda, Mahatma Gandhi, Kasturba Gandhi, Mahadev Desai - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 307
+      "text_length": 2435
     },
     {
       "id": "YOGI-U49",
-      "title": "Chapter 49: The Years 1940-1951 (The Global Legacy)",
+      "title": "Chapter 45: The Bengali 'Joy-Permeated Mother' (Anandamayi Ma)",
       "type": "spiritual_narrative",
-      "summary": "- **Forensic Content:** The expansion of Self-Realization Fellowship centers worldwide, the completion of the Lake Shrine in Pacific Palisades, the prediction of his own physical departure, and the final spiritual testament: *\"God is a joy that never ends.\"* ---",
+      "summary": "- **Scope & Setting:** Calcutta and Benares (1935) - **Dramatis Personae & Figures:** Paramahansa Yogananda, Sri Anandamayi Ma ('The Joy-Permeated Mother') - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
       "materiality": "CRITICAL",
       "epistemic_status": "SOURCE_ARGUMENT",
-      "text_length": 262
+      "text_length": 2352
+    },
+    {
+      "id": "YOGI-U50",
+      "title": "Chapter 46: The Woman Yogi Who Never Eats (Giri Bala)",
+      "type": "spiritual_narrative",
+      "summary": "- **Scope & Setting:** Bihor Village, Bankura District, Bengal (May 1936) - **Dramatis Personae & Figures:** Paramahansa Yogananda, Giri Bala (Elderly village woman yogi), Local villagers - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_ARGUMENT",
+      "text_length": 2645
+    },
+    {
+      "id": "YOGI-U51",
+      "title": "Chapter 47: I Return to the West",
+      "type": "spiritual_narrative",
+      "summary": "- **Scope & Setting:** Voyage to England, New York, and Los Angeles, California (Autumn 1936) - **Dramatis Personae & Figures:** Paramahansa Yogananda, Western Disciples - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_ARGUMENT",
+      "text_length": 2513
+    },
+    {
+      "id": "YOGI-U52",
+      "title": "Chapter 48: At Encinitas in California",
+      "type": "spiritual_narrative",
+      "summary": "- **Scope & Setting:** Hermitage on the Pacific Ocean, Encinitas, California (Late 1930s–1940s) - **Dramatis Personae & Figures:** Paramahansa Yogananda, James J. Lynn (Rajarsi Janakananda), Disciples - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_ARGUMENT",
+      "text_length": 2499
+    },
+    {
+      "id": "YOGI-U53",
+      "title": "Chapter 49: The Years 1940–1951",
+      "type": "spiritual_narrative",
+      "summary": "- **Scope & Setting:** Mount Washington, Encinitas, World War II Era, and Anticipation of Mahasamadhi - **Dramatis Personae & Figures:** Paramahansa Yogananda, Global Seekers, Ambasssador of India - **Epistemic Classification:** `SOURCE_FACT / SPIRITUAL_NARRATIVE`",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_ARGUMENT",
+      "text_length": 3007
     }
   ]
 }

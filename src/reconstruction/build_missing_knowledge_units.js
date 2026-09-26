@@ -54,17 +54,17 @@ function buildYogi() {
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-    if (line.startsWith('#### Chapter ') || line.startsWith('#### Model ')) {
+    if (line.startsWith('### Chapter ') || line.startsWith('#### Chapter ') || line.startsWith('#### Model ')) {
       if (currentUnit) units.push(currentUnit);
-      const title = line.replace(/^####\s+/, '').trim();
+      const title = line.replace(/^###+\s+/, '').trim();
       currentUnit = {
         id: `YOGI-U${(units.length + 1).toString().padStart(2, '0')}`,
         title: title,
-        type: line.startsWith('#### Model') ? 'metaphysical_model' : 'spiritual_narrative',
+        type: line.includes('Model') ? 'metaphysical_model' : 'spiritual_narrative',
         content: []
       };
     } else if (currentUnit) {
-      if (line.startsWith('## ') || line.startsWith('### PART')) {
+      if ((line.startsWith('## ') && !line.includes('LAYER 2')) || line.startsWith('### PART')) {
         units.push(currentUnit);
         currentUnit = null;
       } else if (line.trim().length > 0) {
