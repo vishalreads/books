@@ -38,14 +38,14 @@
     "term": "Watan Jagir",
     "category": "Mughal-Rajput Statecraft",
     "traditional_claim": "Submission and loss of sovereign Rajput homeland to imperial overlords.",
-    "modern_audit": "The brilliant imperial compromise created by Akbar: the Rajput raja's ancestral kingdom was confirmed as an inalienable, hereditary estate (watan) while granting him imperial ranks (mansabs) and revenues outside Rajasthan. (Hallissey & Sarkar)",
+    "modern_audit": "The brilliant imperial compromise created by Akbar: the Rajput raja's ancestral kingdom was confirmed as an inalienable, hereditary estate (watan) while granting him imperial ranks (mansabs) and revenues outside Rajasthan. (Hallissey & Banerjee)",
     "analogy": "A semi-autonomous state government retaining 100% control over its domestic territory while its governor simultaneously serves as a federal cabinet secretary with national revenue perks."
   },
   {
     "term": "Agnikula (Fire-born Clans)",
     "category": "Mythology & Genealogy",
     "traditional_claim": "The miraculous creation of four warrior clans (Paramara, Parihara, Chalukya, Chauhan) from a sacrificial fire-pit on Mount Abu by sage Vashistha. (Tod / Prithviraj Raso)",
-    "modern_audit": "A bardic purification and legitimation metaphor developed between the 10th and 14th centuries to assimilate diverse martial lineages (including assimilated Central Asian and indigenous warriors) into orthodox Kshatriya status. (Modern Epigraphy)",
+    "modern_audit": "A bardic purification and legitimation metaphor developed between the 10th and 14th centuries to assimilate diverse martial lineages (including assimilated Central Asian and indigenous warriors) into orthodox Kshatriya status. (Modern Epigraphy & Banerjee)",
     "analogy": "A naturalization ceremony for elite foreign recruits, granting them full honorary citizenship and sacred pedigree through an elaborate national ritual."
   },
   {
@@ -59,7 +59,7 @@
     "term": "Dewan of Eklingji",
     "category": "Sacred Kingship",
     "traditional_claim": "The Maharana of Mewar as absolute divine monarch. (Tod)",
-    "modern_audit": "A radical constitutional theology where Lord Shiva (Eklingji) is the sole sovereign king of Mewar, and the Maharana is merely His mortal prime minister (Dewan), making territorial surrender an act of cosmic treason. (Tod & Epigraphy)",
+    "modern_audit": "A radical constitutional theology where Lord Shiva (Eklingji) is the sole sovereign king of Mewar, and the Maharana is merely His mortal prime minister (Dewan), making territorial surrender an act of cosmic sacrilege. (Tod & Epigraphy)",
     "analogy": "The Prime Minister of the United Kingdom acting strictly in the name of the Crown, unable to alienate British territory because it belongs to an eternal constitutional entity."
   },
   {
@@ -98,10 +98,45 @@
     "analogy": "Queen Elizabeth I or Catherine de' Medici: operating from behind court protocols to command statecraft, finance, and foreign diplomacy with ruthless acumen."
   },
   {
-    "term": "Thikana & Bhai-Bandh",
-    "category": "Clan Governance",
-    "traditional_claim": "Subservient feudal fiefs ruled by despotic local warlords.",
-    "modern_audit": "Hereditary noble estates governed through egalitarian clan brotherhood (bhai-bandh), where the ruling Raja was merely 'primus inter pares' (first among equals) and could not dictate policy without noble council. (Eva Ulian, Kolff)",
-    "analogy": "A corporate board of founding partners holding veto power over the CEO, preventing central despotism through distributed equity."
+    "term": "Bhai-Bandh & Pattavat Council",
+    "category": "Constitutional Clan Structure",
+    "traditional_claim": "Absolute feudal monarchy ruling over docile peasant serfs.",
+    "modern_audit": "An agnatic kinship fraternity where the Raja was only primus inter pares (first among equals) and major estates (thikanas) were held by clan brethren (Pattavats/Umraos) who possessed constitutional veto power over royal succession. (A.C. Banerjee)",
+    "analogy": "A corporate board of co-founders holding equity and veto power over the CEO, preventing central despotism through distributed ownership."
+  },
+  {
+    "term": "Madhurya-Bhakti vs. Khatridharma",
+    "category": "Spiritual & Social Dialectic",
+    "traditional_claim": "Meerabai as a simple singing saint without political friction.",
+    "modern_audit": "The profound ideological collision between Meerabai's radical, unmediated bridal devotion to Krishna and the Sisodia royal house's demand for patriarchal purdah, Kuldevi blood-sacrifice, and dynastic submission. (Jyoti Jafa & Lindsey Harlan)",
+    "analogy": "Antigone defying the decree of King Creon: prioritizing sacred cosmic law over the secular demands of royal statecraft."
+  },
+  {
+    "term": "Nath Yogic Cosmology in Art",
+    "category": "Esoteric Visual Philosophy",
+    "traditional_claim": "Standard Hindu temple devotional scenes in Rajasthani painting.",
+    "modern_audit": "A revolutionary metaphysical school of Marwar painting under Maharaja Man Singh (1803–1843) visualizing esoteric Nath yogic texts (Siddha Siddhanta Paddhati) with massive cosmic golden voids, chakras, and subtle-body energy conduits. (Rosemary Crill)",
+    "analogy": "Abstract metaphysical quantum visualizations representing the origins of the cosmos before the emergence of physical form."
+  },
+  {
+    "term": "Bani Thani Aesthetic Canon",
+    "category": "Classical Painting Aesthetics",
+    "traditional_claim": "A generic portrait of a royal court dancer in Kishangarh.",
+    "modern_audit": "The supreme masterpiece of Indian lyricism created by Nihal Chand under Savant Singh (Nagari Das), transforming a historical royal poetess into the transcendental aesthetic embodiment of Sri Radha through exaggerated, ethereal facial geometry. (Jai Singh Neeraj & Sherman Lee)",
+    "analogy": "Leonardo da Vinci's Mona Lisa or Botticelli's Birth of Venus: elevating an individual human subject into an eternal cultural archetype of divine beauty."
+  },
+  {
+    "term": "Alha-Khand Chivalric Code (Vair)",
+    "category": "Epic Ballad Lore",
+    "traditional_claim": "Fictional folk poetry sung by wandering beggars.",
+    "modern_audit": "The living oral warrior epic of Bundelkhand celebrating the Banaphar champions Alha and Udal, codifying the absolute North Indian Rajput code of generational blood-feud (vair), refuge protection (sharan), and tragic self-destructive chivalry on the eve of the Turkish conquest. (Waterfield & Grierson)",
+    "analogy": "The Song of Roland or Beowulf: preserving the tragic heroic memory of a warrior nobility on the precipice of civilizational change."
+  },
+  {
+    "term": "Maratha Chauth & Rajput Decline",
+    "category": "18th-Century Geopolitics",
+    "traditional_claim": "A peaceful post-Mughal golden age of Rajput chivalry.",
+    "modern_audit": "The devastating 18th-century extraction of chauth (tribute) by Maratha warlords (Holkar, Scindia) exploiting internecine Rajput succession civil wars, draining treasuries and prompting the 1818 British Subsidiary Treaties. (A.C. Banerjee)",
+    "analogy": "Predatory subprime debt restructuring: external creditors exploiting internal corporate infighting to seize assets and force receivership."
   }
 ]
