@@ -417,8 +417,98 @@ function runRegressionSuite() {
     console.error("    => VERDICT: FAIL\n");
   }
 
-  // 14. COMPREHENSIVE 32-TITLE REPOSITORY AUDIT SWEEP
-  console.log(">>> [14/14] Auditing Complete 32-Title Library Corpus for Standard BKRS Compliance...");
+  // 14. THE GREAT GATSBY
+  console.log(">>> [14/19] Auditing: The Great Gatsby...");
+  const ggDir = path.join(__dirname, '..', 'docs', 'distillations', 'the-great-gatsby');
+  const ggKu = JSON.parse(fs.readFileSync(path.join(ggDir, 'knowledge-units.json'), 'utf8'));
+  const ggHtml = fs.readFileSync(path.join(ggDir, 'index.html'), 'utf8');
+  let ggRendered = 0;
+  ggKu.forEach(u => { if (ggHtml.includes(`id="unit-${u.chapter_number}"`)) ggRendered++; });
+  const ggCream = ggHtml.includes('data-theme="cream"');
+  const ggControls = ggHtml.includes('reader-controls.js');
+  if (ggRendered === 9 && ggCream && ggControls) {
+    results.great_gatsby = { status: "PASS", units: "9/9" };
+    console.log(`    - Rendered Units: ${ggRendered}/9 | Editorial Cream: ${ggCream} | Controls: ${ggControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.great_gatsby = { status: "FAIL", units: `${ggRendered}/9` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 15. HEART OF DARKNESS
+  console.log(">>> [15/19] Auditing: Heart of Darkness...");
+  const hodDir = path.join(__dirname, '..', 'docs', 'distillations', 'heart-of-darkness');
+  const hodKu = JSON.parse(fs.readFileSync(path.join(hodDir, 'knowledge-units.json'), 'utf8'));
+  const hodHtml = fs.readFileSync(path.join(hodDir, 'index.html'), 'utf8');
+  let hodRendered = 0;
+  hodKu.forEach(u => { if (hodHtml.includes(`id="unit-${u.unit_id}"`)) hodRendered++; });
+  const hodCream = hodHtml.includes('data-theme="cream"');
+  const hodControls = hodHtml.includes('reader-controls.js');
+  if (hodRendered === 6 && hodCream && hodControls) {
+    results.heart_of_darkness = { status: "PASS", units: "6/6" };
+    console.log(`    - Rendered Units: ${hodRendered}/6 | Editorial Cream: ${hodCream} | Controls: ${hodControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.heart_of_darkness = { status: "FAIL", units: `${hodRendered}/6` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 16. THE PICTURE OF DORIAN GRAY
+  console.log(">>> [16/19] Auditing: The Picture of Dorian Gray...");
+  const dgDir = path.join(__dirname, '..', 'docs', 'distillations', 'the-picture-of-dorian-gray');
+  const dgKu = JSON.parse(fs.readFileSync(path.join(dgDir, 'knowledge-units.json'), 'utf8'));
+  const dgHtml = fs.readFileSync(path.join(dgDir, 'index.html'), 'utf8');
+  let dgRendered = 0;
+  dgKu.forEach(u => { if (dgHtml.includes(`id="unit-${u.unit_id}"`)) dgRendered++; });
+  const dgCream = dgHtml.includes('data-theme="cream"');
+  const dgControls = dgHtml.includes('reader-controls.js');
+  if (dgRendered === 13 && dgCream && dgControls) {
+    results.dorian_gray = { status: "PASS", units: "13/13" };
+    console.log(`    - Rendered Units: ${dgRendered}/13 | Editorial Cream: ${dgCream} | Controls: ${dgControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.dorian_gray = { status: "FAIL", units: `${dgRendered}/13` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 17. THE METAMORPHOSIS AND OTHER STORIES
+  console.log(">>> [17/19] Auditing: The Metamorphosis and Other Stories...");
+  const kafkaDir = path.join(__dirname, '..', 'docs', 'distillations', 'the-metamorphosis-and-other-stories');
+  const kafkaKu = JSON.parse(fs.readFileSync(path.join(kafkaDir, 'knowledge-units.json'), 'utf8'));
+  const kafkaHtml = fs.readFileSync(path.join(kafkaDir, 'index.html'), 'utf8');
+  let kafkaRendered = 0;
+  kafkaKu.forEach(u => { if (kafkaHtml.includes(`id="unit-${u.unit_id}"`)) kafkaRendered++; });
+  const kafkaCream = kafkaHtml.includes('data-theme="cream"');
+  const kafkaControls = kafkaHtml.includes('reader-controls.js');
+  if (kafkaRendered === 8 && kafkaCream && kafkaControls) {
+    results.kafka_stories = { status: "PASS", units: "8/8" };
+    console.log(`    - Rendered Units: ${kafkaRendered}/8 | Editorial Cream: ${kafkaCream} | Controls: ${kafkaControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.kafka_stories = { status: "FAIL", units: `${kafkaRendered}/8` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 18. ELON MUSK
+  console.log(">>> [18/19] Auditing: Elon Musk...");
+  const emDir = path.join(__dirname, '..', 'docs', 'distillations', 'elon-musk');
+  const emKu = JSON.parse(fs.readFileSync(path.join(emDir, 'knowledge-units.json'), 'utf8'));
+  const emHtml = fs.readFileSync(path.join(emDir, 'index.html'), 'utf8');
+  let emRendered = 0;
+  emKu.forEach(u => { if (emHtml.includes(`id="unit-${u.unit_id}"`)) emRendered++; });
+  const emCream = emHtml.includes('data-theme="cream"');
+  const emControls = emHtml.includes('reader-controls.js');
+  if (emRendered === 12 && emCream && emControls) {
+    results.elon_musk = { status: "PASS", units: "12/12" };
+    console.log(`    - Rendered Units: ${emRendered}/12 | Editorial Cream: ${emCream} | Controls: ${emControls}`);
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.elon_musk = { status: "FAIL", units: `${emRendered}/12` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
+  // 19. COMPREHENSIVE 37-TITLE REPOSITORY AUDIT SWEEP
+  console.log(">>> [19/19] Auditing Complete 37-Title Library Corpus for Standard BKRS Compliance...");
   const distillationsDir = path.join(__dirname, '..', 'docs', 'distillations');
   const allDirs = fs.readdirSync(distillationsDir).filter(d => fs.statSync(path.join(distillationsDir, d)).isDirectory());
   
@@ -467,7 +557,12 @@ function runRegressionSuite() {
   console.log(`  - Can't Hurt Me (Mental Toughness)   : ${results.cant_hurt_me.status}`);
   console.log(`  - The Art of War (Strategy)          : ${results.art_of_war.status}`);
   console.log(`  - War and Peace (Epic Literature)    : ${results.war_and_peace.status}`);
-  console.log(`  - Full 32-Title Library Standard     : ${results.full_library.status} (${results.full_library.count})`);
+  console.log(`  - The Great Gatsby (Literature)      : ${results.great_gatsby.status}`);
+  console.log(`  - Heart of Darkness (Literature)     : ${results.heart_of_darkness.status}`);
+  console.log(`  - The Picture of Dorian Gray (Gothic): ${results.dorian_gray.status}`);
+  console.log(`  - Kafka: Stories (Existentialism)    : ${results.kafka_stories.status}`);
+  console.log(`  - Elon Musk (Industrial Biography)   : ${results.elon_musk.status}`);
+  console.log(`  - Full 37-Title Library Standard     : ${results.full_library.status} (${results.full_library.count})`);
   console.log("================================================================================");
 
   const allPass = Object.values(results).every(r => r.status === "PASS");
