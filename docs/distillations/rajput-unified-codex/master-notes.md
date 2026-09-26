@@ -37,6 +37,60 @@ If you are exploring Rajput history for the first time, use this master lexicon 
 
 ---
 
+## The Dynastic Compass: The Big Three Royal Houses of Rajasthan
+
+For a beginner, the biggest hurdle is tracking dozens of kings across different kingdoms. Rajput history is anchored in **Three Primary Dynastic Houses**:
+
+| Royal House & Lineage | Capitals & Primary Strongholds | Core Ethos & Identity | Landmark Historical Monarchs |
+| :--- | :--- | :--- | :--- |
+| **House of Mewar**<br>*(Guhila / Sisodia Clan)*<br>Solar Dynasty (*Suryavansha*) | **Chittorgarh** (Monolithic Rock)<br>**Kumbhalgarh** (Cloud Mountain Keep)<br>**Udaipur / Chawand** (Lakes & Hills) | **Uncompromising Sovereignty.** Ruled not as kings, but as mortal prime ministers (*Dewan*) of Eklingji (Shiva). The only royal house that never attended Mughal court or gave daughters in marriage. | **Bappa Rawal** (8th c. founder)<br>**Rana Kumbha** (1433–68, Builder of 32 forts)<br>**Rana Sanga** (1508–27, Khanwa confederation)<br>**Maharana Pratap** (1572–97, Haldighati & Dewair)<br>**Amar Singh I** (1615 Treaty)<br>**Raj Singh I** (1679 anti-Jizya coalition) |
+| **House of Marwar**<br>*(Rathore Clan)*<br>Solar Dynasty (Rashtrakuta branch) | **Mandore** (Ancient seat)<br>**Jodhpur** (*Mehrangarh* cliff citadel)<br>**Bikaner** (Northern desert branch) | **Desert Chivalry & Territorial Tenacity.** Masters of rapid desert cavalry charges and rugged defensive fortresses. Governed vast arid expanses through kinship-clan networks. | **Rao Jodha** (1459, founder of Jodhpur)<br>**Rao Maldeo** (1532–62, Giri-Sumel battle)<br>**Rao Chandrasen** (1562–81, Precursor to Pratap)<br>**Jaswant Singh I** (1638–78, Imperial general)<br>**Durga Das Rathore** (1679–1707, 30-year resistance) |
+| **House of Amber / Jaipur**<br>*(Kachwaha Clan)*<br>Solar Dynasty (Descent from Kusha) | **Dausa** (Early seat)<br>**Amber** (Lakeside ridge citadel)<br>**Jaipur** (Planned Enlightenment City) | **Astute Realpolitik & Imperial Command.** Traded formal submission for paramount military leadership in the Mughal Empire, financing vast Hindu architecture and astronomical science. | **Raja Bharmal** (1562, Akbar alliance)<br>**Raja Bhagwant Das** (Imperial commander)<br>**Raja Man Singh I** (1589–1614, Viceroy of Kabul & Bengal)<br>**Mirza Raja Jai Singh I** (Purandar treaty with Shivaji)<br>**Sawai Jai Singh II** (1699–1743, Jantar Mantar & Jaipur) |
+
+---
+
+## Master Chronological Timeline (734 to 1743 CE)
+
+```text
+[c. 734 CE] Bappa Rawal establishes Guhila rule at Chittorgarh under Eklingji's sovereignty.
+    │
+[1303 CE]  First Siege of Chittor by Alauddin Khalji; Rani Padmini & First Jauhar; Saka charge.
+    │
+[1433–68]  Golden Age of Rana Kumbha; construction of Kumbhalgarh's 36-km wall & Vijay Stambha.
+    │
+[1459 CE]  Rao Jodha founds Jodhpur and lays the foundation of Mehrangarh rock citadel.
+    │
+[1527 CE]  Battle of Khanwa: Babur's gunpowder artillery defeats Rana Sanga's grand confederation.
+    │
+[1535 CE]  Second Siege of Chittor by Bahadur Shah of Gujarat; Rani Karnavati's Jauhar.
+    │
+[1544 CE]  Battle of Giri-Sumel: Sher Shah Suri nearly perishes against Rathore commanders Jaita & Kumpa.
+    │
+[1562 CE]  Raja Bharmal of Amber forms the historic Mughal-Rajput diplomatic alliance with Akbar.
+    │
+[1568 CE]  Third Siege of Chittor: Akbar's siege mines fall upon defenders Jaimal & Patta; Third Jauhar.
+    │
+[1570 CE]  Nagaur Darbar: Akbar demands royal submissions; Rao Chandrasen of Marwar defies and flees.
+    │
+[1576 CE]  Battle of Haldighati: Maharana Pratap clashes with imperial vanguard under Raja Man Singh.
+    │
+[1582 CE]  Battle of Dewair: Pratap's 'Marathon of Mewar'; systematic liberation of 36 Mughal outposts.
+    │
+[1585–97]  Pratap establishes civilizational capital at Chawand; dies undefeated in bed (1597).
+    │
+[1615 CE]  The Treaty of 1615: Amar Singh I accepts honorable peace with Jahangir; Mewar sovereignty preserved.
+    │
+[1678–79]  Death of Jaswant Singh at Jamrud; Aurangzeb invades Marwar; Durga Das rescues baby Ajit Singh.
+    │
+[1679–81]  Rathore-Sisodia Coalition; Maharana Raj Singh's anti-Jizya epistle; 30-Year War erupts.
+    │
+[1707 CE]  Death of Aurangzeb; Durga Das Rathore triumphantly installs Ajit Singh as Maharaja of Jodhpur.
+    │
+[1727 CE]  Maharaja Sawai Jai Singh II founds the planned city of Jaipur and builds Jantar Mantar.
+```
+
+---
+
 ## 24 Unified Invariant Knowledge Units
 
 ### [Unit 01] The Open Horizon: 'Rajput' as an Open Status Category in the Military Labour Market
