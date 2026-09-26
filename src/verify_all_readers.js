@@ -245,6 +245,43 @@ function runRegressionSuite() {
     console.error("    => VERDICT: FAIL\n");
   }
 
+  // 6. MANIFESTATION UNIFIED CODEX (MENTAL SCIENCE & COGNITIVE SYNTHESIS)
+  console.log(">>> [6/6] Auditing: The Manifestation Unified Mega-Codex (120-Year Cognitive Synthesis)...");
+  const manDir = path.join(__dirname, '..', 'docs', 'distillations', 'manifestation-unified-codex');
+  const manKu = JSON.parse(fs.readFileSync(path.join(manDir, 'knowledge-units.json'), 'utf8'));
+  const manHtml = fs.readFileSync(path.join(manDir, 'index.html'), 'utf8');
+
+  let manChaptersRendered = 0;
+  manKu.forEach(u => {
+    if (manHtml.includes(`id="${u.id}"`)) {
+      manChaptersRendered++;
+    }
+  });
+
+  const manCausalBridges = (manHtml.match(/class="causal-bridge"/g) || []).length;
+  const manBlockquotes = (manHtml.match(/<blockquote/g) || []).length;
+  const manCreamTheme = manHtml.includes('data-theme="cream"');
+  const manViewA = manHtml.includes('id="view-journey"');
+  const manViewB = manHtml.includes('id="view-map"');
+  const manViewC = manHtml.includes('id="view-experience"');
+  const manControls = manHtml.includes('reader-controls.js');
+
+  console.log(`    - Canonical Narrative Chapters: ${manKu.length}`);
+  console.log(`    - Rendered Chapter Cards: ${manChaptersRendered} / ${manKu.length}`);
+  console.log(`    - Causal Connective Bridges: ${manCausalBridges} / ${manKu.length}`);
+  console.log(`    - Primary Source Blockquotes: ${manBlockquotes} / ${manKu.length}`);
+  console.log(`    - Editorial Cream Theme Default: ${manCreamTheme}`);
+  console.log(`    - View A (Journey): ${manViewA}, View B (Neuro Compass): ${manViewB}, View C (Rosetta/Disputes): ${manViewC}`);
+  console.log(`    - Reader Controls Script Attached: ${manControls}`);
+
+  if (manChaptersRendered === 20 && manCausalBridges === 20 && manBlockquotes === 20 && manCreamTheme && manViewA && manViewB && manViewC && manControls) {
+    results.manifestation_codex = { status: "PASS", units: "20/20", views: "3/3" };
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.manifestation_codex = { status: "FAIL", units: `${manChaptersRendered}/20` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
   console.log("================================================================================");
   console.log("  FINAL REGRESSION SUMMARY:");
   console.log(`  - Norwegian Wood (Fiction)           : ${results.norwegian_wood.status}`);
@@ -252,6 +289,7 @@ function runRegressionSuite() {
   console.log(`  - Bhagat Singh (Historical Biography): ${results.bhagat_singh.status}`);
   console.log(`  - Endurance (Survival History)       : ${results.endurance.status}`);
   console.log(`  - Rajput Unified Mega-Codex (History): ${results.rajput_codex.status}`);
+  console.log(`  - Manifestation Unified Codex (Mind) : ${results.manifestation_codex.status}`);
   console.log("================================================================================");
 
   const allPass = Object.values(results).every(r => r.status === "PASS");

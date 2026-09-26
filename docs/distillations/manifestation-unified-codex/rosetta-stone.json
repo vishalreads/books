@@ -1,40 +1,27 @@
 [
   {
     "term": "Reticular Activating System (RAS)",
-    "category": "Neuroscience & Attention",
+    "category": "Neuroscience & Attentional Filtering",
     "jargon_claim": "“The universe aligns synchronicities when you vibrate at the right frequency.” (The Secret)",
-    "plain_english": "A bundle of nerves in your brainstem that acts as a spam filter, screening out 99.9% of sensory noise and only letting through what you have emotionally marked as critically important.",
-    "analogy": "The search filter on an online store. When you search for 'red sneakers', the store doesn't magically manufacture shoes on the spot—it simply hides all the blue shirts so the red sneakers you previously ignored immediately catch your eye.",
-    "origin_authors": [
-      "Dr. Joe Dispenza",
-      "Roxie Nafousi"
-    ],
-    "actionable_rule": "Write down your single highest-priority goal every morning so your brain's radar spots relevant people, emails, and opportunities during the day."
+    "plain_english": "A bundle of nerves in your brainstem that acts as a sensory spam filter, screening out 99.9% of background noise and letting through only what you have emotionally tagged as critically important.",
+    "analogy": "The search bar on Amazon. When you search for 'red running shoes', Amazon doesn't manufacture shoes on the spot—it simply filters out the blue shirts and jackets so the red shoes you previously ignored immediately catch your eye.",
+    "origin_authors": "Dr. James R. Doty, MD • Dr. Joe Dispenza"
   },
   {
     "term": "State Akin to Sleep (SATS)",
     "category": "Cognitive State & Hypnagogia",
     "jargon_claim": "“Entering the fourth dimension where imagination becomes physical fact.” (Neville Goddard)",
-    "plain_english": "The drowsy, relaxed mental state (theta brainwave rhythm) experienced in the 5–10 minutes right before you fall asleep at night or immediately upon waking.",
-    "analogy": "Your conscious mind is like a strict security guard at the gate of your brain. During SATS, the guard gets sleepy and nods off, allowing you to walk right into your subconscious memory bank and install new beliefs without argument.",
-    "origin_authors": [
-      "Neville Goddard",
-      "Dr. Joseph Murphy (Baudouin Technique)"
-    ],
-    "actionable_rule": "Never fall asleep scrolling bad news or worrying about bills; loop a 5-second mental clip of your desired outcome being already true until you drift off."
+    "plain_english": "The drowsy, deeply relaxed mental state (alpha and theta brainwaves) experienced in the 5 to 10 minutes right before you fall asleep at night or immediately upon waking.",
+    "analogy": "Your conscious mind is a strict security guard at the gate of your brain. During SATS, the guard gets sleepy and nods off, allowing you to walk right into your subconscious memory bank and install new software without an argument.",
+    "origin_authors": "Neville Goddard • Charles Baudouin • Dr. Joseph Murphy"
   },
   {
     "term": "The Law of Reversed Effort",
-    "category": "Behavioral Psychology",
+    "category": "Autonomic Stress Physiology",
     "jargon_claim": "“Force negates itself; trying too hard repels your manifestation.” (Arden G.)",
-    "plain_english": "When your conscious will ('I must force this to happen!') clashes with your subconscious imagination ('I am terrified I will fail'), your imagination always wins and the fear gets amplified.",
+    "plain_english": "When your conscious will ('I must force this to happen!') clashes with your subconscious imagination ('I am terrified I will fail'), your imagination always wins, triggering performance anxiety.",
     "analogy": "A Chinese finger trap. The harder and more frantically you yank your fingers outward, the tighter the woven mesh traps you. To get free, you must relax, push inward, and soften the tension.",
-    "origin_authors": [
-      "Dr. Joseph Murphy",
-      "Émile Coué",
-      "Arden G."
-    ],
-    "actionable_rule": "Stop straining to 'force' positive thinking. Instead, relax your body completely and focus solely on the quiet relief of the end result."
+    "origin_authors": "Émile Coué • Charles Baudouin • Dr. Joseph Murphy"
   },
   {
     "term": "Heart-Brain Coherence & HRV",
@@ -42,205 +29,15 @@
     "jargon_claim": "“Broadcasting an elevated electromagnetic signal into the quantum field.” (Becoming Supernatural)",
     "plain_english": "Synchronizing your breathing and heart rhythm (Heart Rate Variability) with calm brainwaves, signaling to your body that you are safe rather than in emergency fight-or-flight survival.",
     "analogy": "An orchestra tuning their instruments before a performance. When musicians play out of rhythm, it's painful racket (stress & cortisol). When they lock into the same smooth tempo, it becomes powerful, harmonious music.",
-    "origin_authors": [
-      "Dr. Joe Dispenza",
-      "HeartMath Institute"
-    ],
-    "actionable_rule": "Place your hand on your chest, breathe slowly in and out through your heart for 3 minutes, and recall a memory of profound gratitude."
-  },
-  {
-    "term": "Hebbian Neuroplasticity ('Fire & Wire')",
-    "category": "Neuroscience",
-    "jargon_claim": "“Quantum rewiring of your cellular vibration.” (Dispenza)",
-    "plain_english": "Neurons that fire together wire together. Whenever you repeat a thought, emotion, or action, your brain builds and insulates a physical highway so doing it again requires zero conscious effort.",
-    "analogy": "Walking across a wild, overgrown grassy field every morning. On day one, the tall grass trips you up. By day 30, your repeated footsteps have carved a smooth dirt trail that you can walk with your eyes closed.",
-    "origin_authors": [
-      "Donald Hebb",
-      "Dr. Joe Dispenza"
-    ],
-    "actionable_rule": "Catching yourself in an old negative thought pattern isn't a failure—it is the literal moment you starve the old neural highway of electricity."
-  },
-  {
-    "term": "The Law of Assumption & 'Living in the End'",
-    "category": "Mindset & Subconscious Identity",
-    "jargon_claim": "“Assume the feeling of the wish fulfilled until it hardens into fact.” (Feeling Is the Secret)",
-    "plain_english": "Adopting the internal identity, confidence, and calmness of the person who already possesses the result, preventing you from acting like a needy beggar in real-world negotiations.",
-    "analogy": "Ordering a package on Amazon. You don't spend three days pacing by the front door chewing your fingernails wondering if Amazon exists; you receive the confirmation, assume the box is arriving, and calmly go about your life.",
-    "origin_authors": [
-      "Neville Goddard"
-    ],
-    "actionable_rule": "Ask yourself: 'If this goal were already guaranteed, how would I walk, breathe, and speak to people today?' Then act from that calm assurance."
-  },
-  {
-    "term": "Detachment / The Art of Allowing",
-    "category": "Emotional Regulation",
-    "jargon_claim": "“Surrendering your desires to the universe to allow them into your physical reality.” (Ask and It Is Given)",
-    "plain_english": "Putting 100% of your effort into the daily work while letting go of the obsessive need to control the exact timeline, person, or mechanism that delivers the result.",
-    "analogy": "Dating. If someone on a first date is frantic, clingy, and demands an immediate lifetime marriage commitment, they scare everyone away. Confidence means being your best self without demanding an instant guarantee.",
-    "origin_authors": [
-      "Arden G.",
-      "Esther & Jerry Hicks",
-      "Florence Scovel Shinn"
-    ],
-    "actionable_rule": "Commit ruthlessly to your daily inputs (the pitch, the workout, the study session), but surrender attachment to whether the answer arrives on Tuesday or next month."
-  },
-  {
-    "term": "Concept of Self / 'I AM' Consciousness",
-    "category": "Self-Worth & Identity",
-    "jargon_claim": "“You never attract what you want; you attract what you ARE.” (The Power of Awareness)",
-    "plain_english": "Your subconscious internal thermostat—the baseline level of wealth, love, and respect you privately believe you deserve and feel comfortable tolerating.",
-    "analogy": "An air conditioner set to 68 degrees. If a sudden blast of heat enters the room (e.g., an unexpected financial windfall), the AC blasts cold air until the room is back at 68 (spending it all) unless you manually reprogram the dial.",
-    "origin_authors": [
-      "Neville Goddard",
-      "Dr. Joseph Murphy",
-      "Roxie Nafousi"
-    ],
-    "actionable_rule": "Elevate your self-worth before chasing the external prize; otherwise, you will unconsciously sabotage what you acquire."
-  },
-  {
-    "term": "The Emotional Guidance Scale (22 Rungs)",
-    "category": "Emotional Reframing",
-    "jargon_claim": "“Vibrational frequencies ranging from Joy/Freedom at Rung 1 down to Fear/Grief at Rung 22.” (Hicks)",
-    "plain_english": "A psychological map showing that you cannot jump instantly from deep depression to joy. Stepping into anger or frustration is actually healthy progress because it has more energy and agency than helpless despair.",
-    "analogy": "Shifting gears in a manual car. You cannot shift straight from reverse gear into fifth gear on the highway without destroying the transmission; you must shift through neutral, first, second, and third.",
-    "origin_authors": [
-      "Esther & Jerry Hicks"
-    ],
-    "actionable_rule": "If you feel depressed or helpless, don't force fake positivity. Channel anger or constructive frustration into cleaning your desk or taking a brisk walk."
-  },
-  {
-    "term": "The Pain-Body",
-    "category": "Ego Transcendence & Mindfulness",
-    "jargon_claim": "“A semi-autonomous energetic life-form feeding on emotional misery.” (The Power of Now)",
-    "plain_english": "The accumulated backlog of old emotional trauma and unresolved childhood grievances that temporarily takes over your thoughts, provoking fights or drama just to re-experience familiarity.",
-    "analogy": "An argumentative roommate inside your head who feeds on drama. The key is not to fight or argue with him, but to simply watch him quietly until he runs out of breath and sits down.",
-    "origin_authors": [
-      "Eckhart Tolle"
-    ],
-    "actionable_rule": "When you feel an irrational urge to start an argument or wallow in old resentment, pause and say: 'The pain-body is trying to feed. I am the conscious watcher, not the drama.'"
-  },
-  {
-    "term": "The Divine Design & Casting the Burden",
-    "category": "Intuitive Metaphysics",
-    "jargon_claim": "“The divine pattern for your life which cannot be defeated by human will.” (The Game of Life)",
-    "plain_english": "Trusting that your unique strengths and values have a natural, harmonious place in the world, and stopping the exhausting struggle to force outcomes that violate your integrity.",
-    "analogy": "Floating down a gentle river in a kayak instead of furiously paddling upstream against rapids until your shoulders dislocate.",
-    "origin_authors": [
-      "Florence Scovel Shinn"
-    ],
-    "actionable_rule": "When facing an insurmountable bureaucratic or personal deadlock, say: 'I cast this burden onto my deeper intelligence, and I accept the harmonious solution under grace.'"
-  },
-  {
-    "term": "The 'Universe Test'",
-    "category": "Behavioral Resilience",
-    "jargon_claim": "“The cosmos testing your energetic vibration before granting your manifestation.” (Manifest)",
-    "plain_english": "A predictable psychological obstacle or temptation (like a toxic ex-partner texting or an easy shortcut) that tests whether you have genuinely changed your standards or will slide back into old patterns.",
-    "analogy": "A pop quiz on day 10 of a healthy diet when a colleague brings a box of warm chocolate donuts to the office. It's not a mystical trap; it's a test of whether your new identity has a spine.",
-    "origin_authors": [
-      "Roxie Nafousi"
-    ],
-    "actionable_rule": "When an old toxic situation reappears just as your life is improving, treat it as a test: uphold your boundary, smile, and say no without drama."
-  },
-  {
-    "term": "The Just-World Fallacy (The Victim-Blaming Error)",
-    "category": "Critical Defense & Ethics",
-    "jargon_claim": "“There are no accidents; people attract their own poverty, disease, and abuse.” (The Secret / Pop Law of Attraction)",
-    "plain_english": "A toxic cognitive bias where people falsely believe the universe always rewards good people and punishes bad people, leading them to cruelly blame victims of war, cancer, or natural disasters for their 'bad thoughts.'",
-    "analogy": "Claiming someone whose house was destroyed by a hurricane lost their home because they 'didn't smile enough,' instead of recognizing the physical category 5 hurricane. It is pseudoscientific delusion.",
-    "origin_authors": [
-      "Forensic Refutation by Intellectualist Codex"
-    ],
-    "actionable_rule": "Use manifestation exclusively to govern your own psychology and daily choices; never use it to judge, blame, or invalidate the real-world suffering of others."
-  },
-  {
-    "term": "Pacing and Leading",
-    "category": "Persuasion & Guru Defense",
-    "jargon_claim": "“Charismatic vibrational resonance.” (Commercial Gurus)",
-    "plain_english": "A psychological persuasion tactic where an influencer matches your body language, tone, and private complaints (pacing) to win your trust, then steers your wallet toward their expensive masterclass (leading).",
-    "analogy": "A street tour guide matching your slow walking pace for three minutes so you feel at ease, then casually turning a corner and leading you straight into his cousin's overpriced rug shop.",
-    "origin_authors": [
-      "Jeffery Dawson (Mind Control)"
-    ],
-    "actionable_rule": "Whenever a manifestation coach makes you feel deeply understood before asking for a $2,000 credit card swipe, step back and ask: 'What concrete skill am I actually buying?'"
-  },
-  {
-    "term": "The Unmanifested / Psychological Time",
-    "category": "Existential Philosophy",
-    "jargon_claim": "“The formless realm of Being from which all physical matter arises.” (The Power of Now)",
-    "plain_english": "The quiet, spacious awareness behind your racing thoughts, accessible only when you stop reliving yesterday's guilt or dreading tomorrow's meetings and ground your senses in the present room.",
-    "analogy": "The vast blue sky behind heavy storm clouds. The stormy clouds (worries, bills, arguments) rage and drift, but the sky itself is never scratched, burned, or destroyed.",
-    "origin_authors": [
-      "Eckhart Tolle"
-    ],
-    "actionable_rule": "Take 60 seconds right now: feel the weight of your feet on the floor and the air moving into your nostrils. Your worries exist only in thought; the room is peaceful."
-  },
-  {
-    "term": "Aligned Action vs. 'Secret Couch Fallacy'",
-    "category": "Behavioral Execution",
-    "jargon_claim": "“Vibrational alignment is 99% of creation; physical effort is secondary.” (The Secret / Hicks)",
-    "plain_english": "Visualization and mindset conditioning exist to calm your nervous system so you can take terrifying, high-leverage physical actions in the real world—not to sit on the couch waiting for money to fall from the sky.",
-    "analogy": "An Olympic archer visualizing the arrow piercing the center of the bullseye 100 times before drawing the bow. The mental rehearsal ensures steady nerves, but she still has to pull the string and release the arrow.",
-    "origin_authors": [
-      "Dr. Joe Dispenza",
-      "Roxie Nafousi",
-      "Dr. Joseph Murphy"
-    ],
-    "actionable_rule": "Never conclude a morning visualization session without identifying the single most uncomfortable real-world action you will execute today."
-  },
-  {
-    "term": "Default Mode Network (DMN) & Salience Network",
-    "category": "Neuroscience & Attention",
-    "jargon_claim": "“Quieting the ego to enter the universal quantum matrix.” (Mind Magic)",
-    "plain_english": "The DMN is the brain circuit that generates endless wandering thoughts, self-doubt, and regrets. The Salience Network is the radar that detects what matters right now in the real world.",
-    "analogy": "The DMN is like having 10 TV channels blaring reality TV dramas in the background. Taming the DMN mutes those noisy TVs so you can hear the important doorbell ring (the Salience Network).",
-    "origin_authors": [
-      "Dr. James R. Doty, MD (Stanford)"
-    ],
-    "actionable_rule": "Spend 5 minutes focusing purely on your physical breathing before work to down-regulate the DMN and awaken your Salience Network."
-  },
-  {
-    "term": "Prosocial Compassion vs. Selfish Scarcity",
-    "category": "Evolutionary Biology & Somatics",
-    "jargon_claim": "“Aligning your soul frequency with cosmic love.” (Bernstein / Byrne)",
-    "plain_english": "When you want something just to flex or show off, your brain triggers fear and threat. When your goal genuinely helps others, your brain releases oxytocin and dopamine, widening your intelligence.",
-    "analogy": "A pack of wolves. An isolated wolf hoarding food stays anxious and hyper-vigilant (cortisol). A wolf sharing with the pack rests calmly because the entire pack has its back.",
-    "origin_authors": [
-      "Dr. James R. Doty, MD"
-    ],
-    "actionable_rule": "Never set a goal solely for personal vanity; ask: 'Who will this allow me to serve, protect, or elevate?'"
-  },
-  {
-    "term": "The Pruning Shears of Revision",
-    "category": "Cognitive Reconsolidation",
-    "jargon_claim": "“Changing the past in the spiritual 4th dimension.” (Infinite Potential)",
-    "plain_english": "Mentally rewriting a stressful argument or rejection before you go to sleep, replacing it with the outcome you wished had happened so your brain doesn't store the trauma.",
-    "analogy": "Editing a rough draft in a Word document before hitting Save. If a bad paragraph happened at 2 PM, you delete it and type the clean sentence before closing your laptop for the night.",
-    "origin_authors": [
-      "Neville Goddard"
-    ],
-    "actionable_rule": "Before drifting to sleep, replay any upsetting daily conversation until you hear them saying the supportive words you needed to hear."
-  },
-  {
-    "term": "The 51% Tipping Point Rule",
-    "category": "Behavioral Momentum",
-    "jargon_claim": "“Tipping the cosmic scales into the frequency of love.” (The Power of Feelings)",
-    "plain_english": "You do not need to be a cheerful saint 100% of the day. Choosing appreciation over complaints just 51% of the time creates an irreversible upward momentum loop.",
-    "analogy": "A sports team winning 51 out of 100 games. You don't need a clean sweep blowout; winning by a single point tipping past 50% guarantees a championship season over time.",
-    "origin_authors": [
-      "Rhonda Byrne"
-    ],
-    "actionable_rule": "When you feel like complaining, catch yourself and name two things in the room you are genuinely glad exist."
+    "origin_authors": "Dr. Joe Dispenza • HeartMath Institute"
   },
   {
     "term": "Pendulums (Energy Egregors)",
-    "category": "Systems Dynamics & Attention",
+    "category": "Systems Dynamics & Social Contagion",
     "jargon_claim": "“Energy vampires feeding on human emotional vibration.” (Reality Transurfing)",
-    "plain_english": "Large social institutions, trends, or internet outrage mobs that hijack your attention and suck your emotional energy, regardless of whether you love them or hate them.",
+    "plain_english": "Large social institutions, internet outrage mobs, corporate cultures, or political parties that hijack your attention and suck your emotional energy, regardless of whether you love them or hate them.",
     "analogy": "A screaming toddler throwing a tantrum in a grocery store. If you scream back or argue, he screams louder; if you look away with complete indifference, he stops because he has no audience.",
-    "origin_authors": [
-      "Vadim Zeland"
-    ],
-    "actionable_rule": "Whenever news or social media outrages you, refuse to react; extinguish the pendulum by turning off the screen."
+    "origin_authors": "Vadim Zeland"
   },
   {
     "term": "Excess Potential & Balancing Forces",
@@ -248,20 +45,150 @@
     "jargon_claim": "“Distorting the energy balance of the universe.” (Reality Transurfing)",
     "plain_english": "When you obsess over something so desperately that you make it life-or-death, your anxiety triggers performance choking and ruins the opportunity.",
     "analogy": "Carrying a glass of water filled to the absolute brim across a crowded room. If you obsess over not spilling a drop, your hands shake violently and you spill it. If you relax, you walk smoothly.",
-    "origin_authors": [
-      "Vadim Zeland"
-    ],
-    "actionable_rule": "Drop the drama: accept that you can survive happily without this goal, and pursue it with calm, playful nonchalance."
+    "origin_authors": "Vadim Zeland"
   },
   {
     "term": "Outer Intention vs. Inner Intention",
-    "category": "Phenomenology & Agency",
+    "category": "Phenomenology & Agency Selection",
     "jargon_claim": "“Choosing your sector in the space of variations.” (Reality Transurfing)",
-    "plain_english": "Inner intention is grinding yourself to exhaustion trying to force reality to change. Outer intention is choosing the right direction calmly and letting opportunities open naturally.",
+    "plain_english": "Inner intention is grinding yourself to exhaustion trying to force reality to change with muscle. Outer intention is choosing the right direction calmly and letting opportunities open naturally.",
     "analogy": "Inner intention is swimming furiously against a raging river until your muscles cramp. Outer intention is turning your boat and riding the swift, smooth current downstream.",
-    "origin_authors": [
-      "Vadim Zeland"
-    ],
-    "actionable_rule": "Stop forcing resistant people or dead-end negotiations; focus on the open doors where cooperation flows naturally."
+    "origin_authors": "Vadim Zeland"
+  },
+  {
+    "term": "The Law of Assumption & 'Living in the End'",
+    "category": "Identity & Subconscious Thermostat",
+    "jargon_claim": "“Assume the feeling of the wish fulfilled until it hardens into fact.” (Feeling Is the Secret)",
+    "plain_english": "Adopting the internal identity, confidence, and calmness of the person who already possesses the result, preventing you from acting like a needy beggar in real-world negotiations.",
+    "analogy": "Ordering a package on Amazon. You don't spend three days pacing by the front door chewing your fingernails wondering if Amazon exists; you receive the confirmation, assume the box is arriving, and calmly go about your life.",
+    "origin_authors": "Neville Goddard"
+  },
+  {
+    "term": "The Pruning Shears of Revision",
+    "category": "Cognitive Memory Reconsolidation",
+    "jargon_claim": "“Changing the past in the spiritual 4th dimension.” (The Law and the Promise)",
+    "plain_english": "Mentally rewriting a stressful argument or rejection before you go to sleep, replacing it with the outcome you wished had happened so your brain doesn't store the trauma.",
+    "analogy": "Editing a rough draft in a Word document before hitting Save. If a bad paragraph happened at 2 PM, you delete it and type the clean sentence before closing your laptop for the night.",
+    "origin_authors": "Neville Goddard"
+  },
+  {
+    "term": "Hebbian Neuroplasticity ('Fire & Wire')",
+    "category": "Neurobiology & Habit Formation",
+    "jargon_claim": "“Quantum rewiring of your cellular vibration.” (Dispenza)",
+    "plain_english": "Neurons that fire together wire together. Whenever you repeat a thought, emotion, or action, your brain builds and insulates a physical highway so doing it again requires zero conscious effort.",
+    "analogy": "Walking across a wild, overgrown grassy field every morning. On day one, the tall grass trips you up. By day 30, your repeated footsteps have carved a smooth dirt trail that you can walk with your eyes closed.",
+    "origin_authors": "Donald Hebb • Dr. Joe Dispenza"
+  },
+  {
+    "term": "The Default Mode Network (DMN)",
+    "category": "Cognitive Neuroscience & Rumination",
+    "jargon_claim": "“Quieting the ego to enter the universal quantum matrix.” (Mind Magic)",
+    "plain_english": "The interconnected brain regions that generate wandering thoughts, self-doubt, past regrets, and future catastrophizing. Quieting the DMN allows high-focus creative action.",
+    "analogy": "Having ten television sets blaring noisy, conflicting talk shows in the background. Quieting the DMN mutes those televisions so you can hear the important doorbell ring.",
+    "origin_authors": "Dr. James R. Doty, MD"
+  },
+  {
+    "term": "Prosocial Compassion vs. Selfish Scarcity",
+    "category": "Evolutionary Biology & Vagal Regulation",
+    "jargon_claim": "“Aligning your soul frequency with cosmic love.” (Bernstein)",
+    "plain_english": "When you want something just to flex or show off, your brain triggers threat and cortisol. When your goal genuinely helps others, your brain floods with oxytocin and dopamine, widening your intelligence.",
+    "analogy": "A pack of wolves. An isolated wolf hoarding food stays anxious and hyper-vigilant (cortisol). A wolf sharing with the pack rests calmly because the entire pack has its back.",
+    "origin_authors": "Dr. James R. Doty, MD"
+  },
+  {
+    "term": "The 22-Rung Emotional Guidance Scale",
+    "category": "Emotional Reframing & Dialectics",
+    "jargon_claim": "“Vibrational frequencies ranging from Joy at Rung 1 down to Grief at Rung 22.” (Ask and It Is Given)",
+    "plain_english": "A psychological map showing that you cannot jump instantly from deep depression to joy. Stepping into anger or frustration is actually healthy progress because it has more agency than helpless despair.",
+    "analogy": "Shifting gears in a manual transmission car. You cannot shift straight from reverse gear into fifth gear on the highway without destroying the transmission; you must shift through neutral, first, second, and third.",
+    "origin_authors": "Esther & Jerry Hicks"
+  },
+  {
+    "term": "The Pain-Body",
+    "category": "Somatic Trauma & Ego Dynamics",
+    "jargon_claim": "“A semi-autonomous energetic life-form feeding on emotional misery.” (The Power of Now)",
+    "plain_english": "The accumulated backlog of old emotional trauma and unresolved childhood grievances that temporarily takes over your thoughts, provoking fights or drama just to re-experience familiarity.",
+    "analogy": "An argumentative roommate inside your head who feeds on drama. The key is not to fight or argue with him, but to simply watch him quietly until he runs out of breath and sits down.",
+    "origin_authors": "Eckhart Tolle"
+  },
+  {
+    "term": "The Unmanifested / Radical Presence",
+    "category": "Contemplative Phenomenology",
+    "jargon_claim": "“The formless realm of Being from which all physical matter arises.” (The Power of Now)",
+    "plain_english": "The quiet, spacious awareness behind your racing thoughts, accessible only when you stop reliving yesterday's guilt or dreading tomorrow's meetings and ground your senses in the present room.",
+    "analogy": "The vast blue sky behind heavy storm clouds. The stormy clouds (worries, bills, arguments) rage and drift, but the sky itself is never scratched, burned, or destroyed.",
+    "origin_authors": "Eckhart Tolle"
+  },
+  {
+    "term": "The Creative Plane vs. The Competitive Plane",
+    "category": "Economic Philosophy & Ethics",
+    "jargon_claim": "“Harmonizing with the formless thinking substance.” (The Science of Getting Rich)",
+    "plain_english": "Creating new value that expands the pie for everyone versus scheming to steal, manipulate, or extract wealth from others in a zero-sum battle.",
+    "analogy": "Baking a brand-new, giant fresh pizza for the entire neighborhood versus elbowing someone in the face to grab the last remaining cold crust from their plate.",
+    "origin_authors": "Wallace D. Wattles"
+  },
+  {
+    "term": "The 'Universe Test'",
+    "category": "Behavioral Resilience & Exposure",
+    "jargon_claim": "“The cosmos testing your energetic vibration before granting your manifestation.” (Manifest)",
+    "plain_english": "A predictable psychological obstacle or temptation (like a toxic ex texting or an underpaying client) that tests whether you have genuinely changed your standards or will slide back into old patterns.",
+    "analogy": "A pop quiz on day 10 of a healthy diet when a colleague brings a box of warm chocolate donuts to the office. It's not a mystical trap; it's a test of whether your new identity has a spine.",
+    "origin_authors": "Roxie Nafousi"
+  },
+  {
+    "term": "The Just-World Fallacy (Victim-Blaming Error)",
+    "category": "Critical Epistemology & Ethics",
+    "jargon_claim": "“There are no accidents; people attract their own poverty, disease, and abuse.” (The Secret)",
+    "plain_english": "A cruel cognitive bias where people falsely believe the universe always rewards good people and punishes bad people, leading them to blame victims of war, cancer, or natural disasters for their 'bad thoughts.'",
+    "analogy": "Claiming someone whose house was leveled by a category 5 hurricane lost their home because they 'didn't smile enough,' rather than recognizing the meteorological reality of 160-mph winds. It is pseudoscientific delusion.",
+    "origin_authors": "Forensic Epistemic Audit (BKRS)"
+  },
+  {
+    "term": "The Secret Couch Fallacy (Aligned Action)",
+    "category": "Behavioral Execution",
+    "jargon_claim": "“Vibrational alignment is 99% of creation; physical effort is secondary.” (The Secret / Hicks)",
+    "plain_english": "Visualization and mindset conditioning exist to calm your nervous system so you can take terrifying, high-leverage physical actions in the real world—not to sit on the couch waiting for money to fall from the sky.",
+    "analogy": "An Olympic archer visualizing the arrow piercing the center of the bullseye 100 times before drawing the bow. The mental rehearsal ensures steady nerves, but she still has to pull the string and release the arrow.",
+    "origin_authors": "Dr. Joe Dispenza • Roxie Nafousi • Wallace Wattles"
+  },
+  {
+    "term": "The Fraile Principle",
+    "category": "Relational Cybernetics",
+    "jargon_claim": "“Attuning to the individual soul frequency of others.” (Reality Transurfing)",
+    "plain_english": "Never attempt to force, manipulate, or bend someone else's personality to match yours. Allow yourself to be yourself, and allow others to be others.",
+    "analogy": "Letting a cat come curl up on your lap when it's ready, rather than chasing it around the living room and grabbing it by the tail.",
+    "origin_authors": "Vadim Zeland"
+  },
+  {
+    "term": "Pacing and Leading",
+    "category": "Persuasion & Guru Defense",
+    "jargon_claim": "“Charismatic vibrational resonance.” (Commercial Gurus)",
+    "plain_english": "A psychological persuasion tactic where an influencer matches your body language, tone, and private complaints (pacing) to win your trust, then steers your wallet toward their expensive masterclass (leading).",
+    "analogy": "A street tour guide matching your slow walking pace for three minutes so you feel at ease, then casually turning a corner and leading you straight into his cousin's overpriced rug shop.",
+    "origin_authors": "Jeffery Dawson (Mind Control)"
+  },
+  {
+    "term": "Concept of Self / 'I AM' Consciousness",
+    "category": "Subconscious Self-Worth",
+    "jargon_claim": "“You never attract what you want; you attract what you ARE.” (The Power of Awareness)",
+    "plain_english": "Your subconscious internal thermostat—the baseline level of wealth, love, and respect you privately believe you deserve and feel comfortable tolerating.",
+    "analogy": "An air conditioner set to 68 degrees. If a sudden blast of heat enters the room (e.g., an unexpected financial windfall), the AC blasts cold air until the room is back at 68 (spending it all) unless you manually reprogram the dial.",
+    "origin_authors": "Neville Goddard • Dr. Joseph Murphy"
+  },
+  {
+    "term": "The 51% Tipping Point Rule",
+    "category": "Behavioral Momentum",
+    "jargon_claim": "“Tipping the cosmic scales into the frequency of love.” (The Power of Feelings)",
+    "plain_english": "You do not need to be a cheerful saint 100% of the day. Choosing appreciation over complaints just 51% of the time creates an irreversible upward momentum loop.",
+    "analogy": "A sports team winning 51 out of 100 games. You don't need a clean sweep blowout; winning by a single point tipping past 50% guarantees a championship season over time.",
+    "origin_authors": "Rhonda Byrne"
+  },
+  {
+    "term": "Definiteness of Purpose & Master Mind",
+    "category": "Strategic Organization",
+    "jargon_claim": "“Tapping into the Infinite Intelligence of the ether.” (Think and Grow Rich)",
+    "plain_english": "Formulating a laser-precise objective with deadlines and trade-offs, and coordinating with trusted, brilliant peers in harmony to solve complex problems together.",
+    "analogy": "Connecting multiple batteries in series to generate high voltage rather than expecting a single AA flashlight battery to power an entire factory.",
+    "origin_authors": "Napoleon Hill"
   }
 ]
