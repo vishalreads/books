@@ -1,0 +1,265 @@
+{
+  "units": [
+    {
+      "id": "OSINT-U01",
+      "title": "1.1 The Nature of Open Source Intelligence (OSINT)",
+      "type": "investigative_methodology",
+      "summary": "OSINT is intelligence derived from strictly publicly available information (PAI) that can be gathered, processed, and analyzed lawfully. It differs from: - **SIGINT (Signals Intelligence):** Interception of radio, satellite, or telecommunications payloads. - **HUMINT (Human Intel",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 488
+    },
+    {
+      "id": "OSINT-U02",
+      "title": "1.2 The Demarcation of Lawful Collection",
+      "type": "investigative_methodology",
+      "summary": "Bazzell operates under a strict legal paradigm governed by U.S. Federal statutes and investigative ethics: - **The Computer Fraud and Abuse Act (CFAA, 18 U.S.C. § 1030):** The cardinal rule is that an investigator must *never* exceed authorized access or bypass authentication gat",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1101
+    },
+    {
+      "id": "OSINT-U03",
+      "title": "1.3 The Triangulation Doctrine",
+      "type": "investigative_methodology",
+      "summary": "A single data point is never accepted as fact. OSINT operates on the principle of **Multi-Vector Identity Resolution**: - An asserted fact must be corroborated across at least three independent vectors (e.g., a username match, an email verification handshake, and a voter registra",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1133
+    },
+    {
+      "id": "OSINT-U04",
+      "title": "2.1 The Investigator's Threat Model",
+      "type": "investigative_methodology",
+      "summary": "1. **Target Alerting:** The subject detects the inquiry, purges accounts, alters routines, or initiates counter-surveillance. 2. **Identity Exposure:** The investigator's personal or official identity is doxxed or tied to the subject matter. 3. **Cross-Contamination:** Personal c",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 601
+    },
+    {
+      "id": "OSINT-U05",
+      "title": "2.2 Sock Puppet Engineering: Architecture of a Digital Persona",
+      "type": "investigative_methodology",
+      "summary": "A \"sock puppet\" is a synthetic online identity constructed to interact with social platforms and search engines without revealing the investigator. #### Rules of Sock Puppet Genesis: 1. **Never Reuse Personal Artifacts:** Zero phone numbers, email addresses, credit cards, recover",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1377
+    },
+    {
+      "id": "OSINT-U06",
+      "title": "Chapter 1: Prepare Your Computer (Hardening & Isolation)",
+      "type": "investigative_methodology",
+      "summary": "- **Host Security Baseline:** - Antivirus and automated malware protection must be updated daily, but real-time signature scanning is insufficient. System hygiene utilities (BleachBit, CCleaner) purge local session traces and temporary caches. - **Firefox as the Master OSINT Brow",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2090
+    },
+    {
+      "id": "OSINT-U07",
+      "title": "Chapter 2: Buscador Linux OSINT Virtual Machine",
+      "type": "investigative_methodology",
+      "summary": "- **Virtual Machine Foundations:** - Virtual machines (using Oracle VM VirtualBox) ensure full isolation between the host OS and the investigative environment. If a malicious link or PDF compromises the guest OS, the host machine remains untainted. - **The Buscador Philosophy:**",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 879
+    },
+    {
+      "id": "OSINT-U08",
+      "title": "Chapter 3: Search Engines (Advanced Dorking Mechanics)",
+      "type": "investigative_methodology",
+      "summary": "The difference between an amateur and a professional investigator lies in Boolean query syntax. Search engines index billions of pages, but hide 99% of relevant evidence behind generic algorithmic ranking. #### Advanced Google Search Operators: | Operator | Function | Forensic Us",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2342
+    },
+    {
+      "id": "OSINT-U09",
+      "title": "Chapter 4: Social Networks: Facebook Reconnaissance",
+      "type": "investigative_methodology",
+      "summary": "Facebook constitutes the largest consumer registry on Earth, but its proprietary Graph API changes constantly. Bazzell deconstructs Facebook's underlying numeric identifiers and search endpoints. #### Facebook Core Mechanics: 1. **Resolution of Numeric User ID:**",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1615
+    },
+    {
+      "id": "OSINT-U10",
+      "title": "Chapter 5: Social Networks: Twitter / X",
+      "type": "investigative_methodology",
+      "summary": "Twitter is a primary vector for real-time human intelligence, geolocation metadata, sentiment analysis, and social graph modeling. #### Advanced Twitter Operators: - `from:username`: All tweets sent by an account.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1099
+    },
+    {
+      "id": "OSINT-U11",
+      "title": "Chapter 6: Other Social Networks (Instagram & LinkedIn)",
+      "type": "investigative_methodology",
+      "summary": "- **Instagram:** - Account types: Public vs. Private. - Profile metadata: Extract profile picture in full resolution (inspect source code for `display_url` or `profile_pic_url_hd`).",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1283
+    },
+    {
+      "id": "OSINT-U12",
+      "title": "Chapter 7: Online Communities & Forums",
+      "type": "investigative_methodology",
+      "summary": "- **Reddit:** - High disclosure environment where individuals discuss niche topics, legal issues, medical conditions, and illicit activities under assumed handles. - **Deleted Content Extraction:** Reconstructing deleted Reddit posts and comments via historical APIs (e.g., Pushsh",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1046
+    },
+    {
+      "id": "OSINT-U13",
+      "title": "Chapter 8: Email Address Intelligence",
+      "type": "investigative_methodology",
+      "summary": "Email addresses serve as the primary cryptographic key tying a person to digital platforms. ``` [ TARGET EMAIL ADDRESS ]",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1913
+    },
+    {
+      "id": "OSINT-U14",
+      "title": "Chapter 9: User Name Reconnaissance",
+      "type": "investigative_methodology",
+      "summary": "Users are creatures of habit. A handle created at age 14 for online gaming is frequently recycled across professional forums, GitHub, Reddit, and adult websites. 1. **Namespace Collision Checking:** - Automated querying of hundreds of social media and web platforms using tools li",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 826
+    },
+    {
+      "id": "OSINT-U15",
+      "title": "Chapter 10: People Search Engines & Public Records",
+      "type": "investigative_methodology",
+      "summary": "Commercial data brokers aggregate billions of public records, credit bureau headers, magazine subscriptions, real estate deeds, voter registries, and utility hookups. 1. **Major Aggregators:** - Pipl, FastPeopleSearch, TruePeopleSearch, Radaris, Spokeo, Whitepages.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 970
+    },
+    {
+      "id": "OSINT-U16",
+      "title": "Chapter 11: Telephone Number Exploitation",
+      "type": "investigative_methodology",
+      "summary": "Phone numbers are tightly regulated, geographically anchored, and linked to hardware SIM cards. 1. **Carrier & Line Type Identification:** - Determine whether a number is a Landline, Wireless (Mobile), or VoIP (Voice over IP, e.g., Google Voice, Bandwidth.com, Twilio).",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1089
+    },
+    {
+      "id": "OSINT-U17",
+      "title": "Chapter 12: Online Maps & Geospatial Intelligence (GEOINT)",
+      "type": "investigative_methodology",
+      "summary": "- **Mapping Platforms:** - Google Maps & Google Earth (historical satellite imagery slider, 3D photogrammetry, high-resolution tilt angles). - Bing Maps (\"Bird's Eye\" oblique aerial photography captured at 45-degree angles, revealing building entrances, window configurations, and",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 758
+    },
+    {
+      "id": "OSINT-U18",
+      "title": "Chapter 13: Documents & Leaked Data",
+      "type": "investigative_methodology",
+      "summary": "Documents are rich forensic repositories that inadvertently store author names, software versions, network paths, and printer codes. 1. **Document Metadata Forensics:** - Tools: **ExifTool**, **FOCA (Fingerprinting Organizations with Collected Archives)**.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1037
+    },
+    {
+      "id": "OSINT-U19",
+      "title": "Chapter 14: Photographs & Image Forensics",
+      "type": "investigative_methodology",
+      "summary": "1. **Reverse Image Search Engines:** - Google Images (strong for identical matches and graphic design assets). - Yandex (peerless for facial recognition, background environment matching, and similar real-world scenes).",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1036
+    },
+    {
+      "id": "OSINT-U20",
+      "title": "Chapter 15: Videos & Live Streams",
+      "type": "investigative_methodology",
+      "summary": "1. **YouTube Intelligence:** - Bypassing geographic and age restrictions. - Extracting raw video files (`yt-dlp` / youtube-dl).",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 786
+    },
+    {
+      "id": "OSINT-U21",
+      "title": "Chapter 16: Domain Names & Infrastructure Intelligence",
+      "type": "investigative_methodology",
+      "summary": "1. **WHOIS Registration Records:** - Registrar, Registrant Name, Organization, Mailing Address, Phone Number, Admin Email. - **Historical WHOIS:** Modern privacy shielding (WhoisGuard, DomainsByProxy) masks current data, but historical records (DomainTools, Whoisology) frequently",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1333
+    },
+    {
+      "id": "OSINT-U22",
+      "title": "Chapter 17: IP Addresses & Network Reconnaissance",
+      "type": "investigative_methodology",
+      "summary": "1. **Geolocation & Routing Intelligence:** - IP Geo-lookup (MaxMind, IPinfo) provides city, ISP, Autonomous System Number (ASN), and BGP routing paths. 2. **Shodan & Censys (Search Engines for Internet-Connected Devices):**",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1024
+    },
+    {
+      "id": "OSINT-U23",
+      "title": "Chapter 18: Government Records & Regulatory Filings",
+      "type": "investigative_methodology",
+      "summary": "1. **Court Records & Litigation History:** - Federal court dockets via PACER (Public Access to Court Electronic Records). - State and county court repositories for civil lawsuits, criminal indictments, divorces, bankruptcies, and eviction filings.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1157
+    },
+    {
+      "id": "OSINT-U24",
+      "title": "Chapter 19: Dedicated Software Tools",
+      "type": "investigative_methodology",
+      "summary": "- **ExifTool (Phil Harvey):** The gold-standard command-line tool for reading, writing, and editing metadata in virtually every media and document file format. - **FOCA:** Automated document harvester that downloads all public files from a domain, extracts metadata, and maps netw",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 816
+    },
+    {
+      "id": "OSINT-U25",
+      "title": "Chapter 20: Application Programming Interfaces (APIs)",
+      "type": "investigative_methodology",
+      "summary": "When web interfaces restrict data display, direct API querying provides raw JSON payloads containing unmasked fields, internal IDs, and timestamps. - Major data APIs explored: Pipl API, FullContact API, Flickr API, Reverse Caller ID APIs, ServiceObjects, TowerData, and HaveIBeenP",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 396
+    },
+    {
+      "id": "OSINT-U26",
+      "title": "Chapter 21: Android Emulation for Mobile-First Intelligence",
+      "type": "investigative_methodology",
+      "summary": "Mobile applications frequently expose endpoints, user directories, and data fields that are intentionally hidden from web browsers. - **Genymotion / Android Virtual Devices:** - Running a virtualized Android environment on the host machine.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 571
+    },
+    {
+      "id": "OSINT-U27",
+      "title": "Chapter 22: Recon-ng Framework",
+      "type": "investigative_methodology",
+      "summary": "Created by Tim Tomes, Recon-ng is a powerful reconnaissance framework written in Python with an interface mirroring Metasploit. - Modular architecture: discovery, exploitation, and reporting modules. - Centralized database: Stores discovered companies, domains, hosts, contacts, a",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 453
+    },
+    {
+      "id": "OSINT-U28",
+      "title": "Chapter 23: Radio Frequency & Signals Reconnaissance",
+      "type": "investigative_methodology",
+      "summary": "- **Software-Defined Radio (SDR):** Using low-cost USB RTL-SDR dongles (RTL2832U) to turn a standard computer into a wideband radio frequency scanner. - Frequencies monitored: Public safety broadcasts, aircraft ADS-B tracking (1090 MHz), marine AIS vessel tracking, pager networks",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 466
+    },
+    {
+      "id": "OSINT-U29",
+      "title": "Chapter 24: Comprehensive OSINT Workflow Integration",
+      "type": "investigative_methodology",
+      "summary": "Bazzell synthesizes the entire methodology into six standardized, non-linear investigative pivot cycles: 1. **Email Pivot:** Email → Breaches → Passwords → Usernames → Social Accounts → Real Name. 2. **Username Pivot:** Username → Multi-platform checks → Archived posts → Real Nam",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 757
+    }
+  ]
+}

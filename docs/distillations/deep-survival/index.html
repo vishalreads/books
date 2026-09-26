@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="cream">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deep Survival: Who Lives, Who Dies, and Why — BKRS Master Reader</title>
   <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
   <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +26,18 @@
       --font-display: 'Cinzel', serif;
       --font-serif: 'Merriweather', Georgia, serif;
       --font-sans: 'Inter', sans-serif;
+    }
+
+    [data-theme="cream"] {
+      --bg-base: #fbf9f4;
+      --bg-surface: #f5f2ea;
+      --bg-surface-elevated: #efebe0;
+      --border-subtle: #e2dccf;
+      --text-main: #24211e;
+      --text-secondary: #5c5549;
+      --color-ice: #0284c7;
+      --color-crimson: #85221c;
+      --color-gold: #966b1d;
     }
 
     [data-theme="light"] {
@@ -1112,13 +1127,16 @@
   <script>
     const themeBtn = document.getElementById('theme-btn');
     const htmlEl = document.documentElement;
-    let theme = localStorage.getItem('intellectualist_theme') || 'dark';
+    let theme = localStorage.getItem('intellectualist_theme') || 'cream';
     htmlEl.setAttribute('data-theme', theme);
+    const themeCycle = ['cream', 'dark', 'light'];
     themeBtn.addEventListener('click', () => {
-      theme = theme === 'dark' ? 'light' : 'dark';
+      let idx = themeCycle.indexOf(theme);
+      theme = themeCycle[(idx + 1) % themeCycle.length];
       htmlEl.setAttribute('data-theme', theme);
       localStorage.setItem('intellectualist_theme', theme);
     });
   </script>
+  <script src="../../assets/js/reader-controls.js"></script>
 </body>
 </html>

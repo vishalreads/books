@@ -409,6 +409,41 @@ function runRegressionSuite() {
     console.error("    => VERDICT: FAIL\n");
   }
 
+  // 14. COMPREHENSIVE 32-TITLE REPOSITORY AUDIT SWEEP
+  console.log(">>> [14/14] Auditing Complete 32-Title Library Corpus for Standard BKRS Compliance...");
+  const distillationsDir = path.join(__dirname, '..', 'docs', 'distillations');
+  const allDirs = fs.readdirSync(distillationsDir).filter(d => fs.statSync(path.join(distillationsDir, d)).isDirectory());
+  
+  let libraryPassCount = 0;
+  allDirs.forEach(slug => {
+    const dir = path.join(distillationsDir, slug);
+    const htmlPath = path.join(dir, 'index.html');
+    const mdPath = path.join(dir, 'master-notes.md');
+    const kuPath = path.join(dir, 'knowledge-units.json');
+
+    const html = fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, 'utf8') : '';
+    const hasCream = html.includes('data-theme="cream"');
+    const hasShell = html.includes('reader-shell.css');
+    const hasControls = html.includes('reader-controls.js');
+    const hasMd = fs.existsSync(mdPath) && fs.readFileSync(mdPath, 'utf8').length > 15000;
+    const hasKu = fs.existsSync(kuPath);
+
+    if (hasCream && hasShell && hasControls && hasMd && hasKu) {
+      libraryPassCount++;
+    } else {
+      console.error(`    [FAIL] ${slug}: cream=${hasCream}, shell=${hasShell}, controls=${hasControls}, md=${hasMd}, ku=${hasKu}`);
+    }
+  });
+
+  console.log(`    - Fully Verified BKRS Compliant Titles: ${libraryPassCount} / ${allDirs.length}`);
+  if (libraryPassCount === allDirs.length) {
+    results.full_library = { status: "PASS", count: `${libraryPassCount}/${allDirs.length}` };
+    console.log("    => VERDICT: PASS (100% Repository-Wide Standard Met)\n");
+  } else {
+    results.full_library = { status: "FAIL", count: `${libraryPassCount}/${allDirs.length}` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
   console.log("================================================================================");
   console.log("  FINAL REGRESSION SUMMARY:");
   console.log(`  - Norwegian Wood (Fiction)           : ${results.norwegian_wood.status}`);
@@ -424,6 +459,7 @@ function runRegressionSuite() {
   console.log(`  - Can't Hurt Me (Mental Toughness)   : ${results.cant_hurt_me.status}`);
   console.log(`  - The Art of War (Strategy)          : ${results.art_of_war.status}`);
   console.log(`  - War and Peace (Epic Literature)    : ${results.war_and_peace.status}`);
+  console.log(`  - Full 32-Title Library Standard     : ${results.full_library.status} (${results.full_library.count})`);
   console.log("================================================================================");
 
   const allPass = Object.values(results).every(r => r.status === "PASS");

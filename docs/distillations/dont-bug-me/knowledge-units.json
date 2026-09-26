@@ -1,0 +1,211 @@
+{
+  "units": [
+    {
+      "id": "BUG-U01",
+      "title": "PART I: Inside Devices (Room Transmitters & Audio Sensors)",
+      "type": "technical_protocol",
+      "summary": "",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 0
+    },
+    {
+      "id": "BUG-U02",
+      "title": "1. Microphone Typologies & Mechanisms",
+      "type": "technical_protocol",
+      "summary": "- **Carbon Microphones:** Small container filled with loosely packed carbon granules behind a diaphragm. Sound waves compress the granules, lowering electrical resistance and modulating DC current passing through them. Robust, high output, but noisy. - **Dynamic Microphones:** Di",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1077
+    },
+    {
+      "id": "BUG-U03",
+      "title": "2. Contact, Tube, and Spike Microphones",
+      "type": "technical_protocol",
+      "summary": "- **Contact Microphones:** Piezoelectric transducers pressed directly against structural surfaces (plasterboard, glass, pipes, heating ducts). They pick up structure-borne acoustic vibrations while rejecting ambient airborne noise. - **Tube / Spike Microphones:** A narrow metal s",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 514
+    },
+    {
+      "id": "BUG-U04",
+      "title": "3. RF Covert Transmitters",
+      "type": "technical_protocol",
+      "summary": "- **Frequencies & Bands:** - Standard FM broadcast band (88–108 MHz): Amateur bugs; easily intercepted by any FM radio. - VHF band (130–174 MHz): Excellent building penetration, manageable antenna lengths (quarter-wave ~18–20 inches).",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1638
+    },
+    {
+      "id": "BUG-U05",
+      "title": "4. Optical & Alternate Transmission",
+      "type": "technical_protocol",
+      "summary": "- **Infrared (IR) Transmitters:** Audio modulates an infrared LED emitting light in the non-visible spectrum (~850–950 nm). Beamed across a direct line of sight through a window to an optical receiver. Emits zero electromagnetic RF energy, rendering RF detectors useless. Defeated",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 775
+    },
+    {
+      "id": "BUG-U06",
+      "title": "PART II: Telephone Surveillance",
+      "type": "technical_protocol",
+      "summary": "``` [ CENTRAL OFFICE (CO) ] ═══════ PUNCH-DOWN BLOCK ═══════ DEMARC ═══════ [ ROOM HANDSET ] 48V DC                   (Terminal Box)                          On-Hook: 48V DC",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 446
+    },
+    {
+      "id": "BUG-U07",
+      "title": "1. Fundamental Telephone Circuit Specs (Analog POTS)",
+      "type": "technical_protocol",
+      "summary": "- **On-Hook Voltage:** 48V to 52V DC (battery supply from Central Office). - **Off-Hook Voltage:** 6V to 12V DC (drops as current flows through telephone hybrid coil, ~20–40 mA). - **Ringing Voltage:** 90V to 105V AC at 20 Hz, superimposed over the DC loop voltage.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 265
+    },
+    {
+      "id": "BUG-U08",
+      "title": "2. Series vs. Parallel Bugs",
+      "type": "technical_protocol",
+      "summary": "- **Series Wiretaps:** Installed in-line with one conductor (Tip or Ring). Current flowing through the phone must pass through the bug's circuitry. - *Effect:* Causes an unnatural DC voltage drop of 1V to 5V across the circuit when off-hook. Detectable with a calibrated digital m",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 653
+    },
+    {
+      "id": "BUG-U09",
+      "title": "3. The Drop-In Handset Bug",
+      "type": "technical_protocol",
+      "summary": "- A self-contained FM transmitter encased in the exact molded plastic form factor of a standard Western Electric carbon microphone element. - The eavesdropper simply unscrews the mouth cap of the target's telephone handset, swaps out the original carbon mic for the drop-in bug, a",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 496
+    },
+    {
+      "id": "BUG-U10",
+      "title": "4. The \"Infinity Transmitter\" (Harmonica Bug)",
+      "type": "technical_protocol",
+      "summary": "The most insidious analog telephone eavesdropping device ever devised. It converts the target's telephone into an open room microphone 24 hours a day, even while hung up on the hook. - **Operating Mechanism:** 1. The eavesdropper dials the target's phone number from anywhere in t",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 984
+    },
+    {
+      "id": "BUG-U11",
+      "title": "5. Cellular & Cordless Vulnerabilities",
+      "type": "technical_protocol",
+      "summary": "- **Cordless Phones (1st Gen):** Operating at 46/49 MHz analog FM. Anyone with an unmodified scanner or even an old television tuner could listen to cordless phone conversations for blocks. - **Cellular AMPS (Advanced Mobile Phone System - 800 MHz Analog):** Transmitted plain, un",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 600
+    },
+    {
+      "id": "BUG-U12",
+      "title": "PART III: Finding Bugs & Wiretaps (The TSCM Master Sweep Protocols)",
+      "type": "technical_protocol",
+      "summary": "``` [ TSCM SWEEP PHASES ] │",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 453
+    },
+    {
+      "id": "BUG-U13",
+      "title": "1. The Physical Search Discipline",
+      "type": "technical_protocol",
+      "summary": "No electronic tool replaces physical inspection. Over 80% of amateur bugs are discovered through methodical manual searches. - **Required Gear:** High-intensity flashlight, inspection dental mirror, assortment of jeweler screwdrivers, continuity tester, wire tracer, ladder. - **T",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 911
+    },
+    {
+      "id": "BUG-U14",
+      "title": "2. Electronic Sweeping Instrumentation",
+      "type": "technical_protocol",
+      "summary": "- **Broadband RF Bug Detectors:** Wideband diode detectors that measure ambient RF field strength across a broad spectrum (e.g., 1 MHz to 2 GHz). - *Acoustic Feedback Technique:* When the detector has an internal speaker, turning up the audio volume near a hidden microphone cause",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1721
+    },
+    {
+      "id": "BUG-U15",
+      "title": "3. Searching Telephone Lines",
+      "type": "technical_protocol",
+      "summary": "- **DC Voltage Measurements (Using DMM):** - Measure on-hook voltage: Must be 48V–52V. If reading is 38V–44V, a parallel bug or line-loading tap is drawing current. - Measure off-hook voltage: Must be 6V–12V. An abnormal reading outside this band indicates a series device.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 817
+    },
+    {
+      "id": "BUG-U16",
+      "title": "PART IV: Outside Devices & Standoff Surveillance",
+      "type": "technical_protocol",
+      "summary": "",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 0
+    },
+    {
+      "id": "BUG-U17",
+      "title": "1. Directional Acoustic Microphones",
+      "type": "technical_protocol",
+      "summary": "- **Parabolic Reflectors:** A concave dish focusing incoming parallel sound waves onto a microphone element at the focal point. Magnifies sound 20–40 dB. Highly effective across open fields, but ineffective indoors due to room reverberations, and prone to wind noise. - **Shotgun ",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 523
+    },
+    {
+      "id": "BUG-U18",
+      "title": "2. Laser Doppler Vibrometry",
+      "type": "technical_protocol",
+      "summary": "- An invisible infrared or helium-neon laser beam is fired through an optical telescope at a window of the target room. - Sound waves inside the room vibrate the glass pane (acting as a giant diaphragm). - The reflected laser beam carries phase and frequency modulation caused by ",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 663
+    },
+    {
+      "id": "BUG-U19",
+      "title": "PART V: Computer & Electronics Eavesdropping (TEMPEST)",
+      "type": "technical_protocol",
+      "summary": "",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 0
+    },
+    {
+      "id": "BUG-U20",
+      "title": "1. The Van Eck Phenomenon",
+      "type": "technical_protocol",
+      "summary": "In 1985, Dutch researcher Wim van Eck demonstrated that computer monitors emanate compromising electromagnetic radiation (compromising emissions). - **Physics of CRT Eavesdropping:** Cathode Ray Tubes shoot electron beams across a phosphor screen, steered by magnetic deflection c",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 680
+    },
+    {
+      "id": "BUG-U21",
+      "title": "2. Countermeasures (TEMPEST Standards)",
+      "type": "technical_protocol",
+      "summary": "- Solid metal Faraday shielding around video circuits and monitors. - Ferrite cores on all power, monitor, and keyboard cables. - Using fiber-optic cables instead of copper data cables.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 249
+    },
+    {
+      "id": "BUG-U22",
+      "title": "PART VI & VII: Video, Vehicle & Covert Physical Tracking",
+      "type": "technical_protocol",
+      "summary": "- **Optical Video Surveillance:** Pinhole lens cameras (1/16th inch aperture) hidden in electrical outlet faceplates, books, smoke detectors. - *TSCM Optical Sweeps:* Using active red LED reflection finders. When red light shines into a camera lens, the optical coating of the CCD",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 773
+    },
+    {
+      "id": "BUG-U23",
+      "title": "PART VIII: Preventing Surveillance & Perimeter Hardening",
+      "type": "technical_protocol",
+      "summary": "1. **Access Control:** The absolute primary defense against bugs. If an adversary cannot enter your premises, 90% of bugging methods are neutralized. Key control, deadbolts, window locks, tamper-evident tape on computer cases and junction boxes. 2. **RF Room Guards:** Continuous ",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1381
+    }
+  ]
+}

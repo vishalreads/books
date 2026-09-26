@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-25",
-  "total_books": 43,
+  "last_updated": "2026-09-26",
+  "total_books": 33,
   "total_hours_saved": 880,
   "categories": [
     "Behavioral Psychology & Habit Architecture",
@@ -1397,6 +1397,46 @@
         "Robert Hallissey (Rebellion)",
         "James Tod (Annals)"
       ]
+    },
+    {
+      "id": "bhagat-singh-a-life-in-revolution",
+      "title": "Bhagat Singh: A Life in Revolution",
+      "subtitle": "The Landmark Legal & Archival Biography of India's Foremost Revolutionary",
+      "author": "Satvinder S. Juss",
+      "year": 2022,
+      "publisher": "Penguin Random House India (Penguin Viking)",
+      "epistemic_tier": "Tier 1: Corroborated Historical Biography & Legal Documentary Edition",
+      "tier_short": "Tier 1",
+      "category": "Philosophy & Classical Ethics",
+      "original_volume": "400+ Pages (78 Canonical Units, 21 Archival Appendix Plates, 780 Endnotes Linked)",
+      "reading_time_saved": "25.0 hrs saved",
+      "hours_val": 25,
+      "core_axiom": "True revolutionary struggle is not explosive passion or sporadic assassination, but an intellectual, structural transformation of societal production and human dignity.",
+      "tags": [
+        "Bhagat Singh",
+        "Historical Biography",
+        "Legal History",
+        "Lahore Conspiracy Case",
+        "Archival Records",
+        "British National Archives",
+        "BKRS Flagship Benchmark"
+      ],
+      "key_models": [
+        "The Legal-Forensic Trial Reconstruction (Kew National Archives Secret Files)",
+        "The 21 Archival Evidence Plates (Jail Notebook, FIR 1928, Privy Council Petitions)",
+        "The Triple Epistemic Demarcation (Source Fact, British Accusation, Historiographical Resolution)",
+        "The Assembly Bomb Philosophy of Non-Lethal Noise",
+        "The Hunger Strike for Political Prisoner Rights"
+      ],
+      "landmark_studies": [
+        "British National Archives (Kew) KV 2/2271 and KV 2/2272 Intelligence Files",
+        "Lahore Conspiracy Case Commission Daily Proceedings (1930)",
+        "Crown v. Bhagat Singh and Others Special Tribunal Judgment (Oct 7, 1930)",
+        "Privy Council Appeal Record No. 8 of 1931"
+      ],
+      "html_path": "distillations/bhagat-singh-a-life-in-revolution/index.html",
+      "markdown_path": "distillations/bhagat-singh-a-life-in-revolution/master-notes.md",
+      "featured": true
     }
   ]
 }

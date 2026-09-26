@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" data-font="serif">
+<html lang="en" data-theme="cream" data-font="serif">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,9 @@
   <meta name="description" content="A Continuous Chronological Multi-Source Synthesis of Life, Ideology, Courtroom Battles, and Martyrdom (1907–1931)">
   <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
   <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,6 +25,22 @@
       --color-gold: #d97706;
       --color-gold-light: #fbbf24;
       --color-amber: #f59e0b;
+    [data-theme="cream"] {
+      --bg-base: #fbf9f4;
+      --bg-surface: #f5f2ea;
+      --bg-surface-elevated: #efebe0;
+      --bg-sidebar: #f7f4ed;
+      --border-subtle: #e2dccf;
+      --border-accent: #b5a895;
+      --text-main: #24211e;
+      --text-secondary: #4a443a;
+      --text-muted: #756d61;
+      --accent-glow: rgba(220, 38, 38, 0.08);
+      --quote-bg: #fffbf0;
+      --quote-border: #b45309;
+      --badge-bg: #e5dfd2;
+      --badge-text: #24211e;
+      --drawer-bg: #fbf9f4;
     }
 
     [data-theme="dark"] {
@@ -3116,11 +3135,13 @@
     // Theme toggle
     const themeBtn = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
-    let currentTheme = localStorage.getItem('intellectualist_theme') || 'dark';
+    let currentTheme = localStorage.getItem('intellectualist_theme') || 'cream';
     htmlEl.setAttribute('data-theme', currentTheme);
 
+    const themeCycle = ['cream', 'dark', 'light'];
     themeBtn.addEventListener('click', () => {
-      currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      let idx = themeCycle.indexOf(currentTheme);
+      currentTheme = themeCycle[(idx + 1) % themeCycle.length];
       htmlEl.setAttribute('data-theme', currentTheme);
       localStorage.setItem('intellectualist_theme', currentTheme);
     });
@@ -3168,5 +3189,6 @@
 
     movements.forEach(m => observer.observe(m));
   </script>
+  <script src="../../assets/js/reader-controls.js"></script>
 </body>
 </html>

@@ -1,0 +1,472 @@
+{
+  "units": [
+    {
+      "id": "BSUC-U01",
+      "title": "Movement I: The Crucible of Ancestry and Blood-Soaked Soil (1840–1919)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: 1840 – 1919* > **Movement Summary**: The revolutionary lineage of the Sandhu Jat family in Khatkar Kalan, the 1907 agrarian rebellion, Ghadar martyrs, and the harrowing trauma of Jallianwala Bagh.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 208
+    },
+    {
+      "id": "BSUC-U02",
+      "title": "The Roots in Khatkar Kalan and the Sandhu Rebel Heritage (1840 – 1906)",
+      "type": "historical_movement",
+      "summary": "The revolutionary temper of Bhagat Singh was neither an accident of youth nor an imported ideology; it was the biological and cultural inheritance of generations rooted in the soil of Khatkar Kalan. Situated in the Doaba region of Punjab, Khatkar Kalan was a fortified ancestral v",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2614
+    },
+    {
+      "id": "BSUC-U03",
+      "title": "The 1907 Agrarian Revolt and 'Pagri Sambhal Jatta' (March – May 1907)",
+      "type": "historical_movement",
+      "summary": "In the spring of 1907, Punjab erupted in its first mass political agitation since 1857. The Colonization Bill introduced by the Punjab Government sought to dispossess peasants of proprietary rights, enforce primogeniture, and permit summary fines for planting trees. Sardar Ajit S",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2317
+    },
+    {
+      "id": "BSUC-U04",
+      "title": "Kartar Singh Sarabha, the Ghadarites, and Jallianwala Bagh (1914 – April 1919)",
+      "type": "historical_movement",
+      "summary": "During the First World War, the revolutionary epicenter shifted to the Hindustan Ghadar Party, founded in San Francisco by expatriate Punjabi workers and intellectuals under Lala Har Dayal and Sohan Singh Bhakna. Among them rose Kartar Singh Sarabha, a nineteen-year-old student w",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2733
+    },
+    {
+      "id": "BSUC-U05",
+      "title": "Movement II: Awakening, National College, and Flight to Kanpur (1920–1924)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: 1920 – 1924* > **Movement Summary**: Refusal of British schooling, the intellectual explosion at National College Lahore, the Chauri Chaura fracture, and flight to Kanpur under the alias 'Balwant Singh'.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 215
+    },
+    {
+      "id": "BSUC-U06",
+      "title": "National College Lahore: The Intellectual Crucible (1921 – 1923)",
+      "type": "historical_movement",
+      "summary": "When Mahatma Gandhi launched the Non-Cooperation Movement in 1920, calling upon students to boycott government-aided educational institutions, fourteen-year-old Bhagat Singh immediately walked out of the D.A.V. High School in Lahore. To absorb these radicalized youth, Lala Lajpat",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2220
+    },
+    {
+      "id": "BSUC-U07",
+      "title": "The Chauri Chaura Fracture and Flight to Kanpur (February 1922 – late 1923)",
+      "type": "historical_movement",
+      "summary": "In February 1922, following the incident at Chauri Chaura in Uttar Pradesh where an enraged crowd set fire to a police station, killing twenty-two policemen, Gandhi abruptly suspended the nationwide Non-Cooperation Movement. For millions of Indians, but particularly for the youth",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2339
+    },
+    {
+      "id": "BSUC-U08",
+      "title": "Undercover in Kanpur as 'Balwant Singh' (1923 – 1924)",
+      "type": "historical_movement",
+      "summary": "In Kanpur, Ganesh Shankar Vidyarthi took the fugitive teenager under his wing, giving him employment at the *Pratap* printing press under the pseudonym 'Balwant Singh'. Kanpur was a bustling industrial metropolis, filled with textile mills, railway yards, and an emerging, exploit",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2169
+    },
+    {
+      "id": "BSUC-U09",
+      "title": "Movement III: Ideological Crystallization and the Early Radical Essays (1924–1926)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: 1924 – 1926* > **Movement Summary**: The founding of Naujawan Bharat Sabha, essays on Untouchability, Universal Love, and Communal Riots; defining anti-colonialism through social emancipation.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 204
+    },
+    {
+      "id": "BSUC-U10",
+      "title": "The Founding of Naujawan Bharat Sabha (March 1926) (March 1926)",
+      "type": "historical_movement",
+      "summary": "Recognizing that secret conspiratorial societies isolated revolutionaries from the broader masses, Bhagat Singh, alongside Ram Chandra and Bhagwati Charan Vohra, founded the **Naujawan Bharat Sabha** (Youth Society of India) in Lahore in March 1926. It was designed as an open, le",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2156
+    },
+    {
+      "id": "BSUC-U11",
+      "title": "The Problem of Untouchability: Caste Emancipation as Revolution (June 1928 (Drafted 1926))",
+      "type": "historical_movement",
+      "summary": "While conventional nationalist leaders treated the abolition of untouchability as a matter of moral charity or patronizing reform, Bhagat Singh analyzed caste through the lens of radical socio-economic liberation. In his landmark essay *Achhut Samasya* (The Problem of Untouchabil",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2109
+    },
+    {
+      "id": "BSUC-U12",
+      "title": "Universal Love and the Antidote to Communal Riots (1924 – 1927)",
+      "type": "historical_movement",
+      "summary": "Between 1924 and 1927, India was engulfed in a wave of horrific communal riots in Kohat, Calcutta, Multan, and Delhi. Mainstream leaders either indulged in mutual recrimination or offered sentimental appeals for harmony. Bhagat Singh cut through the confusion with ruthless dialec",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2179
+    },
+    {
+      "id": "BSUC-U13",
+      "title": "Movement IV: Terror, Prison, and the Transition to Scientific Socialism (1926–1928)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: 1926 – 1928* > **Movement Summary**: The Kakori hangings, arrest on Dussehra bomb charges, solitary confinement in Lahore Fort, and the transformative secret Amritsar dialogues with Sohan Singh Josh.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 211
+    },
+    {
+      "id": "BSUC-U14",
+      "title": "The Shock of Kakori and Solitary Confinement in Lahore Fort (August 1925 – May 1927)",
+      "type": "historical_movement",
+      "summary": "In August 1925, the HRA executed the daring Kakori train robbery near Lucknow to seize government funds for arms. The colonial crackdown was swift and merciless. Over forty revolutionaries were arrested, and in December 1927, four towering leaders—Ram Prasad Bismil, Ashfaqullah K",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2427
+    },
+    {
+      "id": "BSUC-U15",
+      "title": "The Amritsar Dialogue: Transition to Scientific Socialism (Late 1927 – Early 1928)",
+      "type": "historical_movement",
+      "summary": "Following his release, Bhagat Singh operated in Amritsar under tight surveillance, working for the Punjabi Marxist journal *Kirti*, edited by Sohan Singh Josh. It was during these intense months that Bhagat Singh underwent a decisive ideological transformation, transitioning perm",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2287
+    },
+    {
+      "id": "BSUC-U16",
+      "title": "Movement V: The Historic Conclave at Ferozeshah Kotla (September 1928)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: September 8–9, 1928* > **Movement Summary**: The clandestine meeting in the ruins of Ferozeshah Kotla, Delhi; adoption of 'Socialism', creation of the HSRA, and collective leadership.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 195
+    },
+    {
+      "id": "BSUC-U17",
+      "title": "The Ruins of Ferozeshah Kotla: Rebranding the Revolution (September 8–9, 1928)",
+      "type": "historical_movement",
+      "summary": "On September 8 and 9, 1928, ten young men slipped quietly past the crumbling stone ramparts of the 14th-century fortress of Ferozeshah Kotla in Delhi. They represented the surviving revolutionary networks of Punjab, Uttar Pradesh, Rajasthan, and Bengal. Among them were Bhagat Sin",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2620
+    },
+    {
+      "id": "BSUC-U18",
+      "title": "The Architecture of Democratic Centralism (September 9, 1928)",
+      "type": "historical_movement",
+      "summary": "The Ferozeshah Kotla conference did not just produce a new name; it created an entirely new operational architecture. The HSRA was organized on the Bolshevik principle of democratic centralism. A Central Committee of seven members was elected to direct the all-India struggle: Bha",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1912
+    },
+    {
+      "id": "BSUC-U19",
+      "title": "Movement VI: The Simon Commission and Lala Lajpat Rai's Martyrdom (October–November 1928)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: October 30 – November 17, 1928* > **Movement Summary**: The arrival of the all-white Simon Commission in Lahore, the brutal police lathi charge led by Scott, Lalaji's historic dying prophecy, and the national crisis.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 228
+    },
+    {
+      "id": "BSUC-U20",
+      "title": "The Black Flags of Lahore: October 30, 1928 (October 30, 1928)",
+      "type": "historical_movement",
+      "summary": "In 1927, the British government appointed the Indian Statutory Commission, headed by Sir John Simon, to report on constitutional reforms. In a brazen act of imperial arrogance, not a single Indian was included among its seven members. Across the subcontinent, every political form",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 1966
+    },
+    {
+      "id": "BSUC-U21",
+      "title": "The Blows on Lalaji and the Historic Prophecy (October 30 – November 17, 1928)",
+      "type": "historical_movement",
+      "summary": "During the melee, SSP Scott singled out Lala Lajpat Rai. Scott took a heavy cane and struck the elderly leader repeatedly across the chest, shoulders, and head. A young nationalist, Manmohan Trikha, attempted to shield Lalaji, but was beaten unconscious. Bhagat Singh, standing a ",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2183
+    },
+    {
+      "id": "BSUC-U22",
+      "title": "Movement VII: The Saunders Assassination and the Great Escape (December 1928)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: December 17 – 24, 1928* > **Movement Summary**: The execution of J.P. Saunders outside Lahore police headquarters, Azad's covering fire, the legendary HSRA posters, and Bhagat's disguise aboard the Calcutta Mail.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 224
+    },
+    {
+      "id": "BSUC-U23",
+      "title": "The Retaliation Outside Lahore Police Headquarters (December 17, 1928, 4:15 PM)",
+      "type": "historical_movement",
+      "summary": "Inside a secret safehouse in Lahore, the HSRA Central Committee met in an atmosphere of grim resolve. Bhagat Singh, Sukhdev, Chandrashekhar Azad, and Rajguru concluded that if the murder of the foremost national leader went unanswered, the national spirit would be crushed under a",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2713
+    },
+    {
+      "id": "BSUC-U24",
+      "title": "Azad's Covering Fire and the Red Posters of Revenge (December 17 – 18, 1928)",
+      "type": "historical_movement",
+      "summary": "As Bhagat and Rajguru sprinted through DAV College, Head Constable Chanan Singh and two constables gave chase, shouting for their capture. From behind a tree, Chandrashekhar Azad stepped out with his Mauser, calling out in Hindustani: 'Halt, or I fire!' Chanan Singh ignored the w",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2319
+    },
+    {
+      "id": "BSUC-U25",
+      "title": "The Master Disguise: Boarding the 1 Down Calcutta Mail (December 20, 1928)",
+      "type": "historical_movement",
+      "summary": "With five hundred police detectives and intelligence officers sealing off every railway station and highway in Punjab, escape seemed impossible. It was here that Bhagat Singh made the ultimate personal sacrifice for the cause: he shaved his sacred Sikh hair and beard—a profound c",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2309
+    },
+    {
+      "id": "BSUC-U26",
+      "title": "Movement VIII: The Clandestine Bomb Factories (January–March 1929)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: January – March 1929* > **Movement Summary**: Setting up bomb labs in Agra and Lahore, Jatin Das's chemical expertise, picric acid experiments in Jhansi, and the political decision for the Assembly strike.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 217
+    },
+    {
+      "id": "BSUC-U27",
+      "title": "The Agra Laboratory at Hing Ki Mandi and Jatin Das (January – March 1929)",
+      "type": "historical_movement",
+      "summary": "In Calcutta, Bhagat Singh established contact with the Bengal revolutionary network, specifically Jatindra Nath Das (Jatin Das), an extraordinarily skilled chemist and veteran of the Anushilan Samiti. Bhagat convinced Jatin Das to travel north and train the HSRA cadres in the com",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2232
+    },
+    {
+      "id": "BSUC-U28",
+      "title": "The Assembly Bomb Debate: The Ethics of Self-Sacrifice (Late March 1929)",
+      "type": "historical_movement",
+      "summary": "In March 1929, the British government introduced two draconian pieces of legislation in the Central Legislative Assembly in Delhi: the **Public Safety Bill** (designed to arrest and deport foreign socialist sympathizers and crush the communist movement) and the **Trade Disputes B",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2473
+    },
+    {
+      "id": "BSUC-U29",
+      "title": "Movement IX: 'To Make the Deaf Hear' — The Assembly Bombing (April 8, 1929)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: April 8, 1929* > **Movement Summary**: The detonation of two smoke bombs in the Central Legislative Assembly, the pink leaflets, the birth of 'Inquilab Zindabad!', and the deliberate court of arrest.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 211
+    },
+    {
+      "id": "BSUC-U30",
+      "title": "The Assembly Chamber: April 8, 1929, 12:30 PM (April 8, 1929, 12:30 PM)",
+      "type": "historical_movement",
+      "summary": "On the morning of April 8, 1929, the Central Legislative Assembly chamber in New Delhi was packed to capacity. In the gallery sat prominent leaders, journalists, and British dignitaries, including Sir John Simon himself. Below, on the treasury benches, sat the colonial executive.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2490
+    },
+    {
+      "id": "BSUC-U31",
+      "title": "The Leaflet and the Slogan: 'Inquilab Zindabad!' (April 8, 1929)",
+      "type": "historical_movement",
+      "summary": "As the smoke swirled toward the high dome, Bhagat Singh and Batukeshwar Dutt reached into their pockets and scattered hundreds of bright yellow and pink leaflets across the floor. The leaflet opened with the famous quotation from French anarchist Auguste Vaillant: 'IT TAKES A LOU",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2519
+    },
+    {
+      "id": "BSUC-U32",
+      "title": "Movement X: The Historic 63-Day Hunger Strike and Jatin Das's Martyrdom (June–September 1929)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: June 15 – September 24, 1929* > **Movement Summary**: The battle for political prisoner status, brutal forced feeding tortures, M.A. Jinnah's assembly defense, and Jatin Das's agonizing 63-day martyrdom.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 215
+    },
+    {
+      "id": "BSUC-U33",
+      "title": "The Battle for Political Status: Mianwali and Lahore Jails (June 15 – July 1929)",
+      "type": "historical_movement",
+      "summary": "Following the Assembly action, Bhagat Singh was sent to Mianwali Jail, while Dutt was moved to Lahore Central Jail. Bhagat immediately observed the appalling degradation of Indian prisoners: while European convicts, even ordinary murderers and embezzlers, received clean clothes, ",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2159
+    },
+    {
+      "id": "BSUC-U34",
+      "title": "The Horrors of Forced Feeding (July – August 1929)",
+      "type": "historical_movement",
+      "summary": "The colonial prison administration responded with brutal forced feeding. A squad of eight to ten muscular wardens would pin each fasting prisoner to the ground, sit on their limbs, and force a metal gag into their mouth. A thick rubber tube was jammed through the nostril down int",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2252
+    },
+    {
+      "id": "BSUC-U35",
+      "title": "Jinnah's Thunder in the Assembly and Jatin Das's Martyrdom (September 12–14, 1929)",
+      "type": "historical_movement",
+      "summary": "As news of the hunger strike spread, mass demonstrations broke out across India. In the Central Legislative Assembly, the government introduced the Code of Criminal Procedure Amendment Bill (the 'Hunger Strike Bill'), which sought to amend the law to allow trials to proceed even ",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2554
+    },
+    {
+      "id": "BSUC-U36",
+      "title": "Movement XI: The Courtroom as an Ideological Battlefield (1929–1930)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: June 1929 – May 1930* > **Movement Summary**: The Delhi Sessions statement, defining Revolution, Asaf Ali's legal strategy, and the magisterial farce in Lahore under approver betrayals.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 197
+    },
+    {
+      "id": "BSUC-U37",
+      "title": "The Historic Sessions Statement: Defining 'Revolution' (June 6, 1929)",
+      "type": "historical_movement",
+      "summary": "During the trial of the Assembly Bomb Case before the Sessions Judge Leonard Poole in Delhi, Bhagat Singh and Batukeshwar Dutt, represented by counsel Asaf Ali, adopted an unprecedented strategy. They did not contest the physical facts of dropping the bombs; instead, on June 6, 1",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2647
+    },
+    {
+      "id": "BSUC-U38",
+      "title": "The Magisterial Farce and Approver Betrayals in Lahore (July 1929 – May 1930)",
+      "type": "historical_movement",
+      "summary": "On July 10, 1929, the Lahore Conspiracy Case trial began before Special Magistrate Sri Kishen inside Lahore Central Jail. Twenty-four revolutionaries were charged with waging war against the King-Emperor and the murder of Saunders. The courtroom was packed with armed police. Ever",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2317
+    },
+    {
+      "id": "BSUC-U39",
+      "title": "Movement XII: The Despotic Special Tribunal and Justice Agha Haidar's Dissent (1930)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: May 1 – October 7, 1930* > **Movement Summary**: Ordinance III of 1930, the dissolution of judicial norms, Justice Syed Agha Haidar's heroic defiance, and the ex-parte death sentence.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 195
+    },
+    {
+      "id": "BSUC-U40",
+      "title": "Ordinance III of 1930: Despotism by Imperial Decree (May 1, 1930)",
+      "type": "historical_movement",
+      "summary": "Frustrated that the normal legal process had been paralyzed for ten months by the prisoners' defiance and hunger strikes, Viceroy Lord Irwin took an unprecedented, despotic step. On May 1, 1930, invoking the emergency powers of Section 72 of the Government of India Act 1915, Irwi",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2148
+    },
+    {
+      "id": "BSUC-U41",
+      "title": "The Battle in Court and the Heroic Dissent of Justice Agha Haidar (May 12, 1930)",
+      "type": "historical_movement",
+      "summary": "The Special Tribunal convened on May 5, 1930, in Poonch House, Lahore. Tensions boiled over on May 12. As the accused entered the court, they were ordered to stop singing. When they persisted, Justice Coldstream lost his temper and ordered British police officers to handcuff the ",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2622
+    },
+    {
+      "id": "BSUC-U42",
+      "title": "Movement XIII: In the Shadow of Death: The Philosophical Masterpieces (1930–1931)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: October 1930 – March 1931* > **Movement Summary**: Cell No. 14 in Lahore Central Jail; reading 300 books, compiling the Jail Notebook, the debate with Bhai Randhir Singh, and authoring 'Why I Am An Atheist'.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 219
+    },
+    {
+      "id": "BSUC-U43",
+      "title": "The Jail Notebook: 404 Pages of World Thought (September 1929 – March 1931)",
+      "type": "historical_movement",
+      "summary": "Confined in the condemned cells of Lahore Central Jail, under twenty-four-hour surveillance by armed wardens, Bhagat Singh turned his cell into an extraordinary university of the mind. Through his childhood friend Jaidev Gupta and the Dwarka Das Library, he obtained over three hu",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2239
+    },
+    {
+      "id": "BSUC-U44",
+      "title": "The Encounter with Bhai Randhir Singh and 'Why I Am An Atheist' (October 5–6, 1930)",
+      "type": "historical_movement",
+      "summary": "In late 1930, Bhai Randhir Singh, a venerable Sikh religious leader and Ghadar veteran imprisoned in Lahore Central Jail, learned that Bhagat Singh had cut his hair and denied the existence of God. Deeply distressed, Bhai Randhir obtained permission to visit Bhagat Singh's cell i",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 3181
+    },
+    {
+      "id": "BSUC-U45",
+      "title": "The Letter to his Father and the Rejection of Clemency (October 3–4, 1930)",
+      "type": "historical_movement",
+      "summary": "While the Tribunal prepared its verdict, Sardar Kishen Singh, overwhelmed by paternal grief and desperate to save his twenty-three-year-old son from the gallows, submitted an unauthorized petition to the Tribunal without consulting Bhagat Singh. Kishen Singh argued that Bhagat Si",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2131
+    },
+    {
+      "id": "BSUC-U46",
+      "title": "Movement XIV: The Verdict, London Privy Council, and the Gandhi Question (Oct 1930 – March 1931)",
+      "type": "historical_movement",
+      "summary": "*Timeframe: October 7, 1930 – March 21, 1931* > **Movement Summary**: The death judgment, London appeal rejected by Lord Dunedin, forensic audit of the Gandhi-Irwin negotiations, and the betrayal of commutation.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 211
+    },
+    {
+      "id": "BSUC-U47",
+      "title": "The Judgment of October 7, 1930 and the London Privy Council (October 7, 1930 – February 11, 1931)",
+      "type": "historical_movement",
+      "summary": "On October 7, 1930, in an empty courtroom devoid of the accused, their counsel, or the public, Justice Hilton pronounced the 300-page judgment of the Special Tribunal. Bhagat Singh, Shivaram Rajguru, and Sukhdev Thapar were sentenced to be **hanged by the neck until they be dead*",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2359
+    },
+    {
+      "id": "BSUC-U48",
+      "title": "Forensic Audit: Gandhi, Lord Irwin, and the Commutation Failure (February 17 – March 21, 1931)",
+      "type": "historical_movement",
+      "summary": "Between February 17 and March 5, 1931, Mahatma Gandhi and Viceroy Lord Irwin held historic negotiations that culminated in the Gandhi-Irwin Pact. With the entire nation pleading for the lives of Bhagat Singh, Sukhdev, and Rajguru, public pressure was overwhelming for Gandhi to ma",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2645
+    },
+    {
+      "id": "BSUC-U49",
+      "title": "Movement XV: March 23, 1931: The Clandestine Hanging and Immortality",
+      "type": "historical_movement",
+      "summary": "*Timeframe: March 20 – March 23, 1931 & Aftermath* > **Movement Summary**: The final petition ('No Hanging, Please Shoot Us'), the last letter to comrades, reading Lenin until the final second, the unprecedented evening hanging, the desecration at the Sutlej, and immortal legacy.",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 280
+    },
+    {
+      "id": "BSUC-U50",
+      "title": "The Final Petition: 'No Hanging, Please Shoot Us' (March 20, 1931)",
+      "type": "historical_movement",
+      "summary": "Three days before their scheduled execution, Bhagat Singh, Sukhdev, and Rajguru drafted their final formal communication to the Punjab Governor. It was not a plea for mercy; it was a defiant ideological declaration that placed their struggle within international law. They declare",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2006
+    },
+    {
+      "id": "BSUC-U51",
+      "title": "The Final Hours: 'Wait, One Revolutionary is Meeting Another!' (March 22 – 23, 1931)",
+      "type": "historical_movement",
+      "summary": "On March 22, Bhagat Singh wrote his final letter to his fellow prisoners of the Second Lahore Conspiracy Case: 'The desire to live is natural in man. I also have it. But I can live only on one condition—that I should not be imprisoned in a cage. My name has become the symbol of t",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 2137
+    },
+    {
+      "id": "BSUC-U52",
+      "title": "The Clandestine Evening Execution and the Fire on the Sutlej (March 23, 1931, 7:00 PM – Dawn, March 24)",
+      "type": "historical_movement",
+      "summary": "In a blatant, desperate violation of the Punjab Jail Manual—which mandated that executions take place at 6:00 AM at dawn—the British authorities brought forward the execution by eleven hours to **7:00 PM on the evening of March 23, 1931**. They feared that if the hangings occurre",
+      "materiality": "CRITICAL",
+      "epistemic_status": "SOURCE_FACT",
+      "text_length": 3398
+    }
+  ]
+}
