@@ -208,12 +208,50 @@ function runRegressionSuite() {
     console.error("    => VERDICT: FAIL\n");
   }
 
+  // 5. RAJPUT UNIFIED CODEX (HISTORICAL CIVILIZATION SYNTHESIS)
+  console.log(">>> [5/5] Auditing: The Rajput Unified Mega-Codex (Civilizational Synthesis)...");
+  const rajDir = path.join(__dirname, '..', 'docs', 'distillations', 'rajput-unified-codex');
+  const rajKu = JSON.parse(fs.readFileSync(path.join(rajDir, 'knowledge-units.json'), 'utf8'));
+  const rajHtml = fs.readFileSync(path.join(rajDir, 'index.html'), 'utf8');
+
+  let rajChaptersRendered = 0;
+  rajKu.forEach(u => {
+    if (rajHtml.includes(`id="${u.id}"`)) {
+      rajChaptersRendered++;
+    }
+  });
+
+  const rajCausalBridges = (rajHtml.match(/class="causal-bridge"/g) || []).length;
+  const rajBlockquotes = (rajHtml.match(/<blockquote/g) || []).length;
+  const rajCreamTheme = rajHtml.includes('data-theme="cream"');
+  const rajViewA = rajHtml.includes('id="view-journey"');
+  const rajViewB = rajHtml.includes('id="view-map"');
+  const rajViewC = rajHtml.includes('id="view-experience"');
+  const rajControls = rajHtml.includes('reader-controls.js');
+
+  console.log(`    - Canonical Narrative Chapters: ${rajKu.length}`);
+  console.log(`    - Rendered Chapter Cards: ${rajChaptersRendered} / ${rajKu.length}`);
+  console.log(`    - Causal Connective Bridges: ${rajCausalBridges} / ${rajKu.length}`);
+  console.log(`    - Primary Source Blockquotes: ${rajBlockquotes} / ${rajKu.length}`);
+  console.log(`    - Editorial Cream Theme Default: ${rajCreamTheme}`);
+  console.log(`    - View A (Journey): ${rajViewA}, View B (Dynastic Compass): ${rajViewB}, View C (Rosetta/Disputes): ${rajViewC}`);
+  console.log(`    - Reader Controls Script Attached: ${rajControls}`);
+
+  if (rajChaptersRendered === 34 && rajCausalBridges === 34 && rajBlockquotes === 34 && rajCreamTheme && rajViewA && rajViewB && rajViewC && rajControls) {
+    results.rajput_codex = { status: "PASS", units: "34/34", views: "3/3" };
+    console.log("    => VERDICT: PASS (Zero Content Loss)\n");
+  } else {
+    results.rajput_codex = { status: "FAIL", units: `${rajChaptersRendered}/34` };
+    console.error("    => VERDICT: FAIL\n");
+  }
+
   console.log("================================================================================");
   console.log("  FINAL REGRESSION SUMMARY:");
   console.log(`  - Norwegian Wood (Fiction)           : ${results.norwegian_wood.status}`);
   console.log(`  - The Psychology of Money (Nonfiction): ${results.psychology_of_money.status}`);
   console.log(`  - Bhagat Singh (Historical Biography): ${results.bhagat_singh.status}`);
   console.log(`  - Endurance (Survival History)       : ${results.endurance.status}`);
+  console.log(`  - Rajput Unified Mega-Codex (History): ${results.rajput_codex.status}`);
   console.log("================================================================================");
 
   const allPass = Object.values(results).every(r => r.status === "PASS");

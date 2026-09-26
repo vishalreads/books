@@ -1,0 +1,810 @@
+/**
+ * Narrative Chapter Data for the 34 Deep Forensic Chapters across 8 Epochs
+ * Provides rich, continuous, replacement-grade historical text.
+ */
+
+const epochs = [
+  // =========================================================================
+  // EPOCH I: THE PRIMORDIAL FOUNDATIONS, MILITARY LABOUR & THE TRAGEDY OF VAIR (734–1192 CE)
+  // =========================================================================
+  {
+    roman: "I",
+    title: "The Primordial Foundations, The Military Labour Market & The Tragedy of Vair (734–1192 CE)",
+    description: "The crystallization of early Rajput statecraft from the monolithic basalt plateau of Chittorgarh, the fluid military labour market of northern India, and the fatal chivalric blood-feuds that preceded the Sultanate invasions.",
+    chapters: [
+      {
+        id: "ch-01-bappa-rawal-chittor",
+        number: 1,
+        title: "The Basalt Monolith of Chittor: Bappa Rawal & Sacred Dewan Sovereignty",
+        date: "c. 734 CE",
+        scope: "James Tod (Vol. 1, History of Mewar) • A.C. Banerjee • Atpur Stone Inscriptions",
+        epistemic_tag: "EPIGRAPHIC FACT & INDIGENOUS POLITICAL THEOLOGY",
+        paragraphs: [
+          "In the early decades of the eighth century, a young pastoral warrior named Bappa Rawal, operating from the secluded valley of Nagda in the shadow of the Aravalli mountains, seized the sheer basalt plateau of Chittorgarh from the Mori rulers. Chittorgarh was no ordinary hill; rising over five hundred feet above the surrounding plains of Mewar and stretching nearly three miles in length, it formed a natural aircraft-carrier of stone commanding the primary commercial and military artery connecting the fertile river basins of Hindustan to the bustling sea-ports of Cambay and Broach in Gujarat.",
+          "According to bardic tradition codified in the seventeenth-century Rajprashasti and preserved on the stone slabs of the Atpur inscription (977 CE), Bappa Rawal did not establish himself as an absolute mortal autocrat. Instead, under the spiritual investiture of the Pashupata Shaivite sage Harit Rashi, Bappa enacted a revolutionary political theology: he consecrated the entirety of Mewar's land and sovereignty to Lord Shiva under the manifestation of Eklingji. The Guhila rulers of Mewar formally renounced the imperial title of 'King of Kings' (Maharajadhiraja), assuming instead the humble constitutional designation of 'Dewan'—the mortal prime minister and trustee of the supreme divine king.",
+          "This constitutional innovation fundamentally altered the nature of Rajput warfare and sovereign legitimacy. In contemporary Europe or the Islamic Sultanates, an absolute king could surrender his realm, pledge homage, or cede provinces in exchange for personal wealth or imperial titles. In Mewar, because the soil belonged in perpetuity to Eklingji, the Maharana had no legal or religious authority to alienate a single foot of territory to foreign conquerors. Surrender was not merely a military defeat; it was an act of cosmic treason against God. This theological anchor gave Mewar an existential immunity against psychological subjugation that endured across eight centuries."
+        ],
+        blockquote: {
+          text: "The crown of Mewar rested not upon the head of its mortal rulers, but upon the eternal altar of Eklingji; the Maharana was but his regent and sword-bearer, sworn to defend the sacred trust with his life.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "Furthermore, epigraphic records from Gwalior and Mewar indicate that Bappa Rawal was part of the broad regional martial coalition—which included Nagabhata I of the Gurjara-Pratiharas—that confronted and halted the eastern expansion of the Umayyad Arab raiding armies pushing across the Thar desert following the conquest of Sindh. By fortifying Chittorgarh as a citadel of permanent armed defense, Bappa established the foundational sanctuary of Hindu sovereign resistance in Western India."
+        ],
+        causal_bridge: "The establishment of Chittor as a sovereign religious sanctuary created the institutional nucleus around which a broad, regional warrior society would form over the next three centuries."
+      },
+      {
+        id: "ch-02-open-military-labour-market",
+        number: 2,
+        title: "The Open Horizon: 'Rajput' as an Open Martial Status in the Military Labour Market",
+        date: "c. 1000–1300 CE",
+        scope: "Dirk H.A. Kolff (Naukar, Rajput, and Sepoy, Ch. 1–2) • B.D. Chattopadhyaya",
+        epistemic_tag: "MODERN CRITICAL ETHNOHISTORY",
+        paragraphs: [
+          "For more than two centuries, popular imagination and colonial historiography treated the Rajputs as an immemorial, racially pure Vedic warrior caste that existed unchanged since the heroes of the Mahabharata. In his landmark Cambridge study, ethnohistorian Dirk H.A. Kolff completely overturned this romantic illusion, demonstrating that prior to the late sixteenth century, 'Rajput' was not a closed endogamous caste (jati), but an open, competitive status category of martial employment in the vast North Indian military labour market.",
+          "The medieval economy of northern India was deeply peasant-based and seasonal. Following the monsoon harvest, millions of armed cultivators migrated across Hindustan looking for military contracts (naukari) with regional warlords, Sultanate governors, and petty chieftains. Anyone who possessed a horse, a sword, martial courage, and a willingness to fight could enter a mercenary contract and claim the honorable status of a 'rajaputra' (literally, 'son of a king', used broadly to designate a horse-soldier or gentleman-at-arms).",
+          "These early war-bands were thoroughly multi-ethnic and socially fluid. Pastoralists, tribal archers, Bundelas, Gangetic Purbiyas, and unassimilated adventurers rode together under charismatic commanders. Social status was not determined by inherited genealogies, but by fidelity to the 'salt' (namak) of the employer and battlefield prowess. Caste closure only began centuries later when powerful dynasties hired Brahmins and Charans to manufacture clean solar and lunar pedigrees, converting an open martial class into an exclusive aristocracy."
+        ],
+        blockquote: {
+          text: "Being a Rajput was not a matter of birth, but of conduct, of military profession, and of service... The Rajput was, first and foremost, a soldier of fortune in the Hindustani market.",
+          citation: "Dirk H.A. Kolff, Naukar, Rajput, and Sepoy: The Ethnohistory of the Military Labour Market"
+        },
+        analysis_paragraphs: [
+          "Historian B.D. Chattopadhyaya's analysis of early medieval Rajasthan epigraphs confirms this trajectory: between the eighth and twelfth centuries, local chieftains who consolidated agrarian surpluses and commanded armed retainers gradually underwent 'Rajputization', adopting Kshatriya rituals, establishing matrimonial circles, and transforming military leadership into hereditary royalty."
+        ],
+        causal_bridge: "As diverse martial groups consolidated their regional rule, they required ideological mechanisms to purify their backgrounds and forge a collective sacred identity."
+      },
+      {
+        id: "ch-03-agnikula-epigraphy-vs-myth",
+        number: 3,
+        title: "Deconstructing the Sacred Crucible: Epigraphy vs. The Agnikula Fire-Pit Myth",
+        date: "12th–16th Century",
+        scope: "James Tod (Vol. 1) • Anil Chandra Banerjee (Lectures, Ch. 1–2) • Epigraphic Records",
+        epistemic_tag: "EPIGRAPHIC CORRECTION & MYTH DECONSTRUCTION",
+        paragraphs: [
+          "Among the most enduring legends of Indian history is the Agnikula myth: that when the ancient Kshatriyas had been destroyed and demons harassed the holy sages atop Mount Abu, the rishi Vashistha performed a great Vedic fire sacrifice. From the blazing sacrificial pit emerged four supreme martial lineages destined to defend the earth: the Paramaras, the Pariharas (Pratiharas), the Chalukyas (Solankis), and the Chauhans.",
+          "Lt. Col. James Tod accepted this myth as a literal folk record of racial regeneration, classifying them as the vanguard of his 'Thirty-Six Royal Races' (Chhattis Rajkula). However, modern epigraphists and constitutional historians like Anil Chandra Banerjee have forensically dismantled the antiquity of this tale. Extensive analysis of contemporary stone inscriptions—including the 973 CE Harsha stone inscription of the Chauhans and the 1170 CE Bijolia rock inscription—reveals that neither the Chauhans nor the Pratiharas made any mention of the Abu fire-pit in their foundational era.",
+          "Instead, 10th-century Chauhan inscriptions consistently claim origin from the Solar dynasty (Suryavansha), while the Pratiharas claimed direct descent from Lakshmana, the brother of Lord Rama. The Agnikula story did not appear until centuries later in the late medieval recensions of the *Prithviraj Raso* by court bards who sought a unified mythological origin to bind disparate clans together against the expanding Sultanates."
+        ],
+        blockquote: {
+          text: "The fire-fountain of Abu was a late bardic invention, a purification metaphor designed to naturalize diverse martial clans—including indigenous elements and assimilated Central Asian invaders—into the orthodox Vedic Kshatriya hierarchy.",
+          citation: "Anil Chandra Banerjee, Lectures on Rajput History"
+        },
+        analysis_paragraphs: [
+          "The Agnikula myth functioned historically as an ideological naturalization ceremony: it provided diverse warrior clans with a common, heroic pedigree that wiped clean their disparate origins and solidified their moral obligation to defend the sacred order."
+        ],
+        causal_bridge: "With clan legitimacy codified, North Indian kingdoms entered an era of fierce internal rivalry and personal chivalric vendettas that would prove disastrous on the battlefield."
+      },
+      {
+        id: "ch-04-lay-of-alha-eve-of-tarain",
+        number: 4,
+        title: "The Tragedy of Vair: The Lay of Alha, Prithviraj Chauhan & The Eve of Tarain",
+        date: "1182–1192 CE",
+        scope: "William Waterfield & Sir George Abraham Grierson • A.C. Banerjee (Lectures, Ch. 3)",
+        epistemic_tag: "LIVING ORAL EPIC & HISTORICAL RECORD",
+        paragraphs: [
+          "In the final decades of the twelfth century, the political landscape of northern India was dominated by three great Rajput royal houses: the Chauhans of Delhi and Ajmer under Prithviraj III, the Gahadavalas of Kanauj under Jaichand, and the Chandels of Mahoba in Bundelkhand under Raja Parmal. Rather than uniting to construct a coordinated northern defensive frontier against the gathering storm of the Ghurid empire in Central Asia, these three kingdoms were consumed by the fatal chivalric code of *vair* (inter-clan blood-feud and vendetta).",
+          "The reality of this warrior society is immortalized in northern India's greatest oral epic, *The Lay of Alha* (*Alha-Khand*), preserved by illiterate minstrels (*Alha Ganewalas*) and transliterated by Grierson and Waterfield. The epic celebrates the Banaphar Rajput heroes Alha and his younger brother Udal, generals of Mahoba who epitomized uncompromising martial fidelity. When Prithviraj Chauhan attacked Mahoba in 1182 following a petty border dispute, the resulting Battle of Mahoba witnessed the slaughter of northern India's elite chivalric nobility.",
+          "Though Udal fell in combat, Alha achieved legendary renown when, on the brink of annihilating Prithviraj's remaining retinue, he renounced his sword upon the admonition of his spiritual guru Gorakhnath, refusing to slaughter the women and young warriors of Delhi. Yet this very ethos of romantic chivalry and suicidal honor crippled the geopolitical strength of the Hindu kingdoms. When Muhammad of Ghor returned to the field of Tarain in 1192 with forty thousand mounted Central Asian archers, Prithviraj was forced to fight without the assistance of Kanauj or Mahoba, leading to his crushing defeat, capture, and the establishment of the Delhi Sultanate."
+        ],
+        blockquote: {
+          text: "Twelve years doth the jackal live, and fourteen the dog; but the son of a Rajput lives only eighteen years, and if he lives longer, his life is a shame.",
+          citation: "The Lay of Alha (translated by William Waterfield & Sir George Grierson)"
+        },
+        analysis_paragraphs: [
+          "The fall of Prithviraj Chauhan at Tarain in 1192 marked the end of ancient Hindu imperial rule over Delhi. Shattered by the Sultanate conquest of the fertile Gangetic plain, the surviving Rajput clans were pushed west and south into the rugged, arid hills and deserts of Rajasthan, where they dug into rocky hilltops to prepare for centuries of siege warfare."
+        ],
+        causal_bridge: "Displaced from Delhi and Ajmer, the martial clans converted the natural mountain fortresses of Rajasthan into sovereign citadels, drawing the inevitable wrath of the Delhi Sultans."
+      }
+    ]
+  },
+
+  // =========================================================================
+  // EPOCH II: THE SULTANATE SIEGES, SACRIFICIAL PROTOCOL & THE MEMORY OF PADMINI (1303–1364 CE)
+  // =========================================================================
+  {
+    roman: "II",
+    title: "The Cataclysms of the Sultanate, Sacrificial Protocol & The Memory of Padmini (1303–1364 CE)",
+    description: "The brutal 1303 siege of Chittorgarh by Alauddin Khalji, the historic deconstruction of the Padmini narrative across 400 years, the military theology of Jauhar, and the guerrilla recovery of Mewar under Rana Hammir.",
+    chapters: [
+      {
+        id: "ch-05-first-siege-chittor-1303",
+        number: 5,
+        title: "The Eight-Month Siege of Chittorgarh & The Fall of Rawal Ratan Singh",
+        date: "1303 CE",
+        scope: "Amir Khusrau (Khazain-ul-Futuh) • Ramya Sreenivasan (Ch. 1–2) • James Tod",
+        epistemic_tag: "PRIMARY CONTEMPORARY RECORD & EPIGRAPHY",
+        paragraphs: [
+          "In January 1303, Sultan Alauddin Khalji marched out of Delhi at the head of the largest and most technologically advanced imperial army yet assembled in medieval India. His target was Chittorgarh, the unyielding stone bastion of the Guhila monarch Rawal Ratan Singh. For Khalji, Chittorgarh was an intolerable strategic wedge: it sat directly across the imperial highway connecting Delhi to the rich commercial trading hubs and ports of Gujarat and the lucrative tribute routes to the Deccan.",
+          "For eight brutal months between January and August 1303, the Sultanate army encircled the base of the rock. Amir Khusrau, the renowned poet and chronicler who accompanied Khalji on the expedition, documented the siege in his contemporary eyewitness chronicle, the *Khazain-ul-Futuh*. Khusrau records the Sultan establishing his imperial pavilion atop the adjacent Chittori hill, positioning massive catapults and trebuchets (*manjaniqs*) that hurled boulders day and night against the citadel walls.",
+          "Despite ferocious resistance by the defenders, the relentless summer heat, followed by the torrential monsoon rains and the total severing of all food supplies, exhausted the garrison. Realizing that military relief was impossible, Rawal Ratan Singh was captured or fell, and the defenders initiated the ultimate sacrifice: the first historic Jauhar in Chittor's memory, followed by the dawn saffron charge of the warriors into the imperial ranks. On August 26, 1303, Alauddin entered the citadel and, enraged by the desperate resistance, ordered the slaughter of thirty thousand unarmed Hindu citizens before assigning the fortress to his young son Khizr Khan (renaming it Khizrabad)."
+        ],
+        blockquote: {
+          text: "On Monday, 11 Muharram 703 A.H., the Sultan ascended the mountain and entered the fort... in a single day, thirty thousand Hindus were cut down like dry grass.",
+          citation: "Amir Khusrau, Khazain-ul-Futuh (The Campaigns of Alauddin Khalji)"
+        },
+        analysis_paragraphs: [
+          "Critically, in Amir Khusrau's rigorous contemporary account, as well as Ziauddin Barani's *Tarikh-i-Firuz Shahi*, there is **zero mention** of Queen Padmini, a magic mirror, or a siege motivated by romantic lust. The 1303 campaign was a brutal, calculated imperial operation driven by imperial logistics, trade routes, and geopolitical supremacy."
+        ],
+        causal_bridge: "The military catastrophe of 1303 left an indelible scar upon Rajasthani consciousness, creating the historical fertile ground for one of the world's most enduring literary legends."
+      },
+      {
+        id: "ch-06-many-lives-of-padmini",
+        number: 6,
+        title: "The 400-Year Metamorphosis of Queen Padmini: From Jayasi's Sufi Allegory to Dynastic Scripture",
+        date: "1303–1900 CE",
+        scope: "Ramya Sreenivasan (The Many Lives of a Rajput Queen, Ch. 1–6)",
+        epistemic_tag: "CRITICAL HISTORIOGRAPHICAL RECONSTRUCTION",
+        paragraphs: [
+          "In her groundbreaking monograph *The Many Lives of a Rajput Queen*, historian Ramya Sreenivasan traces the extraordinary four-hundred-year evolution of the Padmini story, proving that rather than an ancient historical chronicle, it was a dynamic narrative that transformed across four distinct historical epochs to meet the political needs of different ruling elites.",
+          "The legend originated not in Rajasthan, but in the Gangetic plain in **1540 CE**, when the Awadhi Sufi poet Malik Muhammad Jayasi composed his monumental epic poem *Padmavat* under the patronage of the Afghan Sur empire. Jayasi’s work was explicitly an allegorical Sufi mystical romance: Padmini (the princess of Simhala) represented divine wisdom (*akla* or spiritual truth), King Ratansen represented the seeking human soul, the parrot Hiramani represented the spiritual guru, Chittor represented the physical body, and Alauddin Khalji represented the all-consuming worldly illusion and ego (*maya*).",
+          "In **1589 CE**, the narrative underwent its second transformation when the Jain monk Hemratan composed the *Gora Badal Padmini Chaupai* in Rajasthan. Hemratan stripped away Jayasi’s Sufi mysticism, transforming the tale into an epic celebration of Rajput martial chivalry, highlighting the cunning rescue of the king by the heroic vassals Gora and Badal (who infiltrated the Sultan's camp disguised as women in palanquins). By the **seventeenth century**, the royal court of Mewar formally adopted Padmini into its official stone-inscribed Sanskrit dynastic chronicles (*Rajprashasti*), canonizing her as an actual historical queen to assert Sisodia moral and marital purity over rival Rajput houses that were giving their daughters in marriage to the Mughal emperors."
+        ],
+        blockquote: {
+          text: "The Padmini legend is not an ancient fossil, but a dynamic, contested narrative whose meanings transformed as Rajput rulers renegotiated their power with the Mughal and British empires.",
+          citation: "Ramya Sreenivasan, The Many Lives of a Rajput Queen: Heroic Pasts in India, c. 1500–1900"
+        },
+        analysis_paragraphs: [
+          "Finally, in the **nineteenth century**, James Tod translated the Mewar bardic version into romantic English, where it was seized upon by late-nineteenth-century Bengali nationalists (including D.L. Ray and Abanindranath Tagore), who converted Padmini from a medieval royal martyr into the ultimate secular symbol of Indian patriotic resistance against foreign colonial oppression."
+        ],
+        causal_bridge: "Central to the Padmini narrative was the institutionalized military protocol that defined the final hours of Chittorgarh: the sacred rite of Jauhar."
+      },
+      {
+        id: "ch-07-doctrine-of-jauhar-and-saka",
+        number: 7,
+        title: "The Doctrine of Total Resistance: The Sacred Sacrificial Warfare of Jauhar & Saka",
+        date: "1303 CE onward",
+        scope: "Lindsey Harlan (Religion and Rajput Women, Ch. 4) • James Tod • Epigraphic Evidence",
+        epistemic_tag: "RELIGIOUS ANTHROPOLOGY & MILITARY STRATEGY",
+        paragraphs: [
+          "To understand medieval Rajput warfare is to understand the absolute military doctrine of Jauhar and Saka. Modern popular culture often reduces Jauhar to passive, tragic collective suicide driven by despair. In the anthropological analysis of Lindsey Harlan, Jauhar was an institutionalized sacrament of total warfare designed to achieve a definitive strategic and spiritual outcome.",
+          "When a hilltop fortress was completely surrounded, water reservoirs depleted, walls breached, and relief armies impossible, the royal council enacted the two-part sacrament. The first phase was the **Jauhar**: royal women, noble matrons, and children bathed, recited verses from the Bhagavad Gita, donned wedding jewelry, and immolated themselves en masse in deep vaulted subterranean pits filled with sandalwood and gunpowder.",
+          "This horrific rite served two critical military functions: first, it denied the besieging imperial army their primary war prizes—hostage capital, royal queens for imperial harems, and enslaved ransoms—which were routinely used to extort political and territorial surrenders. Second, it psychologically unleashed the surviving male garrison. Released from all concern for the physical protection or sexual violation of their families, the warriors performed the **Saka**."
+        ],
+        blockquote: {
+          text: "The fire consumed the flesh of the queens that their honor might remain unblemished; the saffron robe was the shroud of the warrior who knew no retreat.",
+          citation: "Lindsey Harlan, Religion and Rajput Women: The Ethic of Protection in Contemporary Narratives"
+        },
+        analysis_paragraphs: [
+          "The warriors bathed, placed sacred tulsi leaves on their tongues, tied saffron turbans (*kesariya*), broke open the heavy iron fortress gates, and launched a terrifying, no-quarter cavalry and sword sortie directly into the enemy lines, fighting until the last man was killed. Chittorgarh would witness three great Jauhars in its history (1303 under Khalji, 1535 under Bahadur Shah, and 1568 under Akbar), establishing the rock as the supreme sanctuary of sacrificial sovereignty in Hindu civilizational memory."
+        ],
+        causal_bridge: "Though the Rawal branch of Chittor was obliterated in 1303, the mountainous hinterland of Mewar remained fertile ground for a new dynasty born of guerrilla resistance."
+      },
+      {
+        id: "ch-08-rana-hammir-sisodia-rebirth",
+        number: 8,
+        title: "The Mountain Guerilla & The Sisodia Rebirth: Rana Hammir",
+        date: "1326–1364 CE",
+        scope: "James Tod (Vol. 1) • A.C. Banerjee (Lectures, Ch. 3) • Kumbhalgarh Inscription",
+        epistemic_tag: "EPIGRAPHIC DYNASTIC RESTORATION",
+        paragraphs: [
+          "The annihilation of Rawal Ratan Singh and his court in 1303 broke the senior Rawal lineage of the Guhilas, leaving Chittorgarh in the hands of the Sultanate puppet governor Maldeo Songara of Jalore. However, the soul of Mewar had not perished; it had simply retreated into the rugged, inaccessible gorges of the southern Aravallis. There, at the cadet estate of Sisoda, a brilliant young chieftain named Hammir gathered the dispersed remnants of the clan.",
+          "Operating from the natural mountain hideout of Kailwara, Hammir pioneered the asymmetric guerrilla tactics that would become the trademark of Mewar’s resistance for the next three hundred years. Refusing to fight pitched battles on the open plains against heavy Sultanate cavalry, Hammir’s mobile mountain war-bands harassed imperial supply convoys, ambushed communication posts, and laid waste to the plains, making it impossible for the occupation garrison in Chittorgarh to collect agricultural revenue.",
+          "In 1326, leveraging a diplomatic alliance and a surprise assault during a festive gathering, Hammir recaptured Chittorgarh from Maldeo Songara, expelled the Sultanate garrison, and re-established indigenous rule over Mewar. Hammir abandoned the old title of 'Rawal', adopting the royal title of **'Maharana'** (Great Prince) and establishing the **Sisodia dynasty**."
+        ],
+        blockquote: {
+          text: "From the crags of Kailwara, Hammir descended upon the plain, planting the sun-banner of Mewar once more upon the ramparts of Chittor.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "According to the 1460 Kumbhalgarh stone Prashasti, Hammir went on to defeat the armies of Sultan Muhammad bin Tughluq at the Battle of Singoli, extracting war indemnities and securing the sovereign recognition of Mewar. Hammir rebuilt the shattered temples of Eklingji and restored Chittor's granaries, proving that a mountain-based guerrilla dynasty could outlast the greatest centralized Sultanate in Asia."
+        ],
+        causal_bridge: "The hard-learned lessons of the 1303 sack convinced the Sisodia monarchs that survival in the age of siege warfare required an unprecedented revolution in stone architecture."
+      }
+    ]
+  },
+
+  // =========================================================================
+  // EPOCH III: THE RENAISSANCE OF KUMBHA & THE PAN-RAJPUT CONFEDERATION (1433–1527 CE)
+  // =========================================================================
+  {
+    roman: "III",
+    title: "The Renaissance of Kumbha & The Pan-Rajput Confederation of Sanga (1433–1527 CE)",
+    description: "The architectural golden age of Rana Kumbha, the founding of Mehrangarh in the Thar desert, the radical spiritual defiance of Meerabai, and the tragic clash of chivalry against gunpowder at Khanwa.",
+    chapters: [
+      {
+        id: "ch-09-rana-kumbha-architecture-kumbhalgarh",
+        number: 9,
+        title: "The Architecture of Hegemony: Rana Kumbha, Mandan’s Treatises & Kumbhalgarh’s 36-km Wall",
+        date: "1433–1468 CE",
+        scope: "Giles Tillotson (The Rajput Palaces, Ch. 2–3) • Rajavallabha Treatise • James Tod",
+        epistemic_tag: "ARCHITECTURAL ARCHAEOLOGY & INTELLECTUAL HISTORY",
+        paragraphs: [
+          "The ascension of Maharana Kumbhakarna (Rana Kumbha) in 1433 inaugurated the greatest cultural and architectural renaissance in Western Indian history. Hemmed in on both flanks by powerful hostile Islamic Sultanates—the Sultanate of Malwa to the east and the Sultanate of Gujarat to the south—Kumbha recognized that Mewar’s survival could no longer depend on the single fortress of Chittorgarh. In an astonishing campaign of military engineering, Kumbha personally planned and constructed **thirty-two of Mewar’s eighty-four defensive hill fortresses**.",
+          "The supreme masterpiece of this defense network was **Kumbhalgarh**, perched at an altitude of 3,568 feet atop the western ridge of the Aravalli range. Kumbha constructed a massive, serpentine curtain wall stretching thirty-six kilometers in length and wide enough for eight horsemen to ride abreast—making it the second-longest continuous fortification wall in the world after the Great Wall of China. Unlike European castles that were merely military barracks, Kumbhalgarh was an entire self-sustaining mountain kingdom enclosed within stone: its walls sheltered over three hundred temples, fertile agricultural terraces, and deep rainwater catchments capable of sustaining a royal court and thousands of citizens through years of siege.",
+          "To celebrate his historic defeat of the combined armies of Malwa and Gujarat at Sarangpur in 1437, Kumbha erected the **Vijay Stambha** (Tower of Victory) at Chittorgarh: a towering, nine-story, 122-foot monument of red sandstone and marble that served as a three-dimensional stone encyclopedia of classical Hindu iconography, literature, and astronomical science."
+        ],
+        blockquote: {
+          text: "Kumbhalgarh was not merely a military stronghold; it was an entire mountain kingdom enclosed within a serpent of stone, defying both the elements and the armies of the Sultanates.",
+          citation: "Giles Henry Rupert Tillotson, The Rajput Palaces: The Development of an Architectural Style"
+        },
+        analysis_paragraphs: [
+          "Equally significant was Kumbha’s intellectual patronage: his master architect, Mandan, authored foundational Sanskrit treatises on architectural engineering, including the *Rajavallabha*, *Vastusara*, and *Prasadmandana*, codifying the principles of organic hilltop fortress construction, bastion sightlines, and defensive hydraulic stepwells."
+        ],
+        causal_bridge: "While Mewar fortified its mountain ridges, the Rathores of Marwar were preparing to anchor their desert dominion in an equally formidable cliff citadel."
+      },
+      {
+        id: "ch-10-rao-jodha-foundation-mehrangarh",
+        number: 10,
+        title: "The Rathore Anchor in the Thar: Rao Jodha & The Foundation of Mehrangarh",
+        date: "1459 CE",
+        scope: "James Tod (Vol. 2: History of Marwar) • Giles Tillotson • Rosemary Crill (Ch. 1)",
+        epistemic_tag: "URBAN ETHNOHISTORY & FORTRESS ENGINEERING",
+        paragraphs: [
+          "In the arid northwestern plains of Marwar, the Rathore clan had governed from the ancient seat of Mandore. However, Mandore sat in a vulnerable, low-lying depression that had been captured multiple times by Sisodia and Sultanate armies. In 1459, Rao Jodha, a monarch of formidable strategic vision, made the historic decision to abandon Mandore and relocate his capital six miles to the south, atop an isolated, sheer volcanic cliff known as Chidiyatunk ('The Mountain of the Birds').",
+          "Rising four hundred feet straight out of the Thar desert sands, this natural volcanic bastion became the foundation of **Mehrangarh** ('The Citadel of the Sun'). As described by architectural historian Giles Tillotson, Mehrangarh represents the supreme embodiment of indigenous asymmetric rock engineering. The builders did not cut away the cliff to make a flat platform; instead, they grew the towering stone ramparts directly out of the jagged basalt precipice, making it visually and physically impossible to discern where the natural mountain ended and human stonework began.",
+          "Rao Jodha simultaneously revolutionized desert governance through the **Bhai-Bandh** (clan brotherhood) model: he distributed the peripheral frontiers of the kingdom to his energetic sons and brothers. His son Rao Bika rode north into the deepest dunes to found the desert kingdom of Bikaner in 1465, while other branches secured the frontiers of Nagaur and Merta, creating a distributed defensive network of Rathore cavalry estates capable of mobilizing thirty thousand mounted warriors at a moment's notice."
+        ],
+        blockquote: {
+          text: "Mehrangarh stands like a work of Titans or fairies, hewn from the living mountain to look down upon the sands of the Thar.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "Inside Mehrangarh, sophisticated hydraulic engineering captured every drop of precious desert monsoon rain from the rocky catchment plates into deep, subterranean stepwells (*baolis*) and tanks, enabling the garrison to survive decade-long desert sieges."
+        ],
+        causal_bridge: "As the Rajput royal houses consolidated their power, internal ideological fault-lines emerged between aristocratic martial codes and radical spiritual movements."
+      },
+      {
+        id: "ch-11-meerabai-bhakti-defiance",
+        number: 11,
+        title: "The Mystic in the Fortress: Meerabai, Bhakti Defiance & Sisodia Court Politics",
+        date: "1498–1547 CE",
+        scope: "Jyoti Jafa (Meera, Sanga and Mewar) • Lindsey Harlan • Historical Bhakti Padas",
+        epistemic_tag: "CULTURAL & GENDER DIALECTIC",
+        paragraphs: [
+          "While Mewar’s princes prepared for total war, a quiet civilizational revolution exploded inside the royal palace of Chittorgarh. Around 1516, Meerabai, a Rathore princess of Merta and granddaughter of Rao Duda, was married to Prince Bhojraj, the eldest son and crown heir of Maharana Sangram Singh (Rana Sanga). The marriage was an elite diplomatic alliance designed to unite the sword-arm of Marwar with the paramount sovereignty of Mewar.",
+          "However, as detailed in Jyoti Jafa’s incisive historical study *Meera, Sanga and Mewar*, Meera shattered the rigid patriarchal and religious conventions of the Sisodia royal house. The Sisodia identity rested upon **Khatridharma** (warrior honor), absolute female seclusion behind the veil (**purdah**), and bloody animal sacrifices to the martial clan goddess (**Kuldevi** Kalika or Bhimata). Meera outright rejected these codes: having consecrated her soul to Lord Krishna (Girdhar Gopal) as her eternal spiritual spouse, she refused to bow before the royal Kuldevi, declaring that her marriage was not of mortal clay, but of the divine.",
+          "Following the untimely death of Bhojraj in battle and the catastrophic demise of Rana Sanga in 1528, the royal court under Sanga's autocratic younger son, Maharana Vikramaditya, turned with ferocious vengeance upon the mystic princess. Viewing her public ecstatic dancing and singing with low-caste saint-devotees (including the Dalit tanner-guru Ravidas) as a disgrace to royal Sisodia dignity, Vikramaditya dispatched a cup of lethal poison (*visha ka pyala*) and a basket containing a venomous black cobra, demanding that she end her life to save clan honor."
+        ],
+        blockquote: {
+          text: "The Rana sent a basket of snake; Meera opened it and found a garland. The Rana sent a cup of poison; Meera drank it laughing, and it turned to nectar.",
+          citation: "Meerabai, Devotional Pada (sixteenth century)"
+        },
+        analysis_paragraphs: [
+          "Miraculously surviving the poisoning attempts and refusing the traditional royal suicide of the funeral pyre (*sati*), Meera renounced the royal palace entirely, walking barefoot out of Chittorgarh to spend her remaining years composing immortal lyrical poetry in Merta, Vrindavan, and Dwarka. Her defiance represented the supreme victory of radical, egalitarian Vaishnava *madhurya-bhakti* over aristocratic martial patriarchy."
+        ],
+        causal_bridge: "While domestic tragedy shook the inner palace, Rana Sanga was assembling the largest Hindu confederation in five centuries to meet a new invader from Kabul."
+      },
+      {
+        id: "ch-12-battle-of-khanwa-rana-sanga-1527",
+        number: 12,
+        title: "The Climax of Chivalry: Rana Sanga, The Pati Parwan & The Artillery Shock of Khanwa",
+        date: "1508–1527 CE",
+        scope: "Baburnama (Memoirs of Babur) • Dirk Kolff (Ch. 2) • James Tod (Vol. 1)",
+        epistemic_tag: "MILITARY TACTICAL DISRUPTION & CHRONICLE FACT",
+        paragraphs: [
+          "Maharana Sangram Singh I (Rana Sanga), ascending the throne in 1508, brought Rajput political power to its absolute historical zenith. A warrior of terrifying physical presence who had survived eighty battlefield wounds, lost an eye in a youth dispute, lost an arm in combat against the Lodi Sultanate, and had a leg crippled by cannon shot, Sanga succeeded in doing what no Hindu monarch had achieved since the fall of Prithviraj Chauhan: he united virtually every Hindu king and Muslim prince opposing Mughal rule into a grand imperial confederation under the ancient sacred custom of the **Pati Parwan** ('The Call to Arms').",
+          "When Zahir-ud-din Muhammad Babur invaded Hindustan, defeated Ibrahim Lodi at Panipat (1526), and occupied Delhi and Agra, Sanga marched north with an overwhelming army of over eighty thousand cavalry, accompanied by seven crowning kings, nine Raos, and one hundred and four great chieftains, including Prithviraj of Amber, Hasan Khan Mewati, and Mahmud Lodi. In early skirmishes at Bayana in February 1527, Sanga's ferocious Rajput cavalry completely routed Babur's vanguard, spreading such sheer terror through the Mughal army that Babur was forced to swear an oath renouncing alcohol, pour his wine into the dirt, and give an impassioned speech to his troops urging them to fight for holy martyrdom.",
+          "The two armies clashed on the dusty plain of **Khanwa** on March 17, 1527. Sanga deployed traditional medieval shock tactics, launching wave after wave of unyielding heavy cavalry against the Mughal center. However, Babur executed a revolutionary Ottoman tactical formation (*tulaqma*): he had chained together seven hundred baggage carts (*araba*) with rawhide ropes to form a bulletproof barrier, sheltering Mustafa Rumi’s heavy bronze mortar cannons and Ustad Ali Quli’s matchlock musketeers (*tufangchis*)."
+        ],
+        blockquote: {
+          text: "Rana Sanga had attained the highest elevation of glory... eighty wounds from the sword or lance covered his body... but at Khanwa, gunpowder triumphed over chivalry.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "As the Rajput cavalry smashed into the wooden palisades, Babur’s concealed artillery detonated with deafening thunder, tearing terrifying breaches through the horse lines. Simultaneously, Babur’s elite mobile mounted archers wheeled around the flanks, showering arrows into the dense Rajput rear. When Silhadi, the Chandel chieftain of Raisen commanding thirty-five thousand troops, committed treason and defected to Babur mid-battle, Sanga’s center collapsed. Sanga was struck unconscious by an arrow and carried from the field by Prithviraj Kachwaha of Amber. He died months later in early 1528, poisoned by his own exhausted chieftains who feared his unyielding demand to resume the war against Babur."
+        ],
+        causal_bridge: "The destruction of Sanga's confederation at Khanwa shattered the dream of a unified Hindu imperial restoration, plunging Mewar into a succession crisis that left Chittor vulnerable to immediate siege."
+      }
+    ]
+  },
+
+  // =========================================================================
+  // EPOCH IV: THE AFGHAN WARS, THE AGNATIC POLITY & PRE-MUGHAL MARWAR (1530–1560 CE)
+  // =========================================================================
+  {
+    roman: "IV",
+    title: "The Afghan Wars, The Agnatic Polity & The Pre-Mughal Balance (1530–1560 CE)",
+    description: "The Second Jauhar of Chittor under Rani Karnavati, the terrifying Rathore suicide charge against Sher Shah Suri at Giri-Sumel, and the constitutional limits of the Rajput agnatic clan commonwealth.",
+    chapters: [
+      {
+        id: "ch-13-second-jauhar-rani-karnavati-1535",
+        number: 13,
+        title: "The Second Jauhar of Chittor & Rani Karnavati",
+        date: "1535 CE",
+        scope: "James Tod (Vol. 1) • Ramya Sreenivasan • Mirat-i-Sikandari",
+        epistemic_tag: "DIPLOMATIC CRISIS & SACRIFICIAL RECORD",
+        paragraphs: [
+          "Following Sanga's death, Mewar entered a period of extreme internal paralysis under his erratic son Vikramaditya. Sensing weakness, Sultan Bahadur Shah of Gujarat invaded in late 1534, equipped with modern European siege artillery commanded by the Ottoman master-gunner Rumi Khan. Realizing that the young king was incapable of command, Sanga’s brilliant widow, Dowager Queen **Rani Karnavati** (a Bundi princess), assumed supreme executive direction of the state.",
+          "In a famous diplomatic gambit, Karnavati dispatched an urgent fraternal token—a sacred protective bracelet (**rakhi**)—to the Mughal Emperor Humayun, invoking the chivalric duty of a brother to protect a distressed sister against an aggressive foe. Humayun accepted the pledge and mobilized an imperial army from Bengal, but marched with fatal hesitation, refusing to strike Bahadur Shah while the Sultan was engaged in a siege against non-Muslims.",
+          "As Rumi Khan’s gunpowder mines blew open a massive breach in Chittor’s southern bastion (the Chitora Burj), Karnavati recognized the end was near. Prioritizing dynastic continuity over physical survival, she had Sanga’s youngest infant son, Udai Singh II, covertly smuggled out of the fortress in a fruit basket by loyal foster-mother Panna Dhai, riding swift for the sanctuary of Bundi. Karnavati then led **thirteen thousand noblewomen and children into the Second Jauhar**, immolating herself in a subterranean chamber packed with gunpowder kegs, while Rawat Bagh Singh of Deolia led the final dawn Saka into Bahadur Shah’s artillery batteries."
+        ],
+        blockquote: {
+          text: "Thirteen thousand women threw themselves into the flaming pit of Chittor; yet before the flames rose, the seed of Mewar was already riding swift toward the mountain sanctuary.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "Although Bahadur Shah occupied the ruined citadel for three days, Humayun’s delayed approach and a coordinated counter-attack by regional Rajput chieftains forced the Gujarat army to abandon the rock, allowing Mewar’s surviving nobles to reclaim the fortress."
+        ],
+        causal_bridge: "While Mewar recovered from the second sack, the center of martial gravity shifted westward to Marwar, where Rao Maldeo established an empire that alarmed the Afghan rulers of Delhi."
+      },
+      {
+        id: "ch-14-battle-of-giri-sumel-1544",
+        number: 14,
+        title: "The Desert Stand: Rao Maldeo & The Battle of Giri-Sumel",
+        date: "1544 CE",
+        scope: "Abbas Sarwani (Tarikh-i-Sher Shahi) • James Tod (Vol. 2) • Rosemary Crill (Ch. 1)",
+        epistemic_tag: "TACTICAL RECORD & CONTEMPORARY CHRONICLE",
+        paragraphs: [
+          "By 1540, Rao Maldeo of Marwar had expanded the Rathore kingdom into the premier indigenous empire of Northern India, annexing Nagaur, Ajmer, Jalor, and Bikaner, commanding a formidable standing cavalry force of fifty thousand troops. When Sultan Sher Shah Suri overthrew the Mughal Emperor Humayun and established the Sur Empire, he recognized that Maldeo’s desert empire was the sole power capable of disputing Afghan supremacy in Hindustan.",
+          "In the winter of 1543–44, Sher Shah marched into Marwar with eighty thousand Afghan troops and heavy artillery, encamping at **Giri-Sumel** near Jaitaran. Facing Maldeo's disciplined desert cavalry, Sher Shah found his supply lines stretched across waterless dunes and dared not attack. To break the stalemate, Sher Shah resorted to psychological espionage: he forged letters bearing the counterfeit signatures of Maldeo's top commanders, **Jaita and Kumpa**, thanking Sher Shah for cash bribes and promising to betray Maldeo during the battle, dropping these letters near Maldeo's royal tent.",
+          "When Maldeo read the forged letters, panic and suspicion gripped him; despite Jaita and Kumpa's vehement oaths of innocence on their clan deities, Maldeo ordered a general retreat back toward Jodhpur on the night of January 4, 1544. Stung to the marrow by the monarch's suspicion and unwilling to live under the dishonor of treason, Jaita and Kumpa separated their contingents: with only **twelve thousand Rathore horsemen**, they refused to retreat, declaring that they would wash away the stain of suspicion with their blood."
+        ],
+        blockquote: {
+          text: "For a handful of bajra (millet), I had almost lost the empire of Hindustan.",
+          citation: "Sultan Sher Shah Suri, quoted in Abbas Sarwani's Tarikh-i-Sher Shahi"
+        },
+        analysis_paragraphs: [
+          "At dawn on January 5, 1544, Jaita and Kumpa launched an unarmored, fanatical cavalry charge directly into Sher Shah's artillery center. The ferocity of the Rathore assault broke the Afghan vanguard, overran the artillery batteries, and threw Sher Shah's main division into total panic. Sher Shah was on his knees praying for death or deliverance when his general Jalal Khan Jalwani arrived with fresh reserve divisions of matchlockmen and war elephants, cutting down the exhausted, surrounded Rathores from a distance. Sher Shah held the blood-soaked field, but the terrifying loss of his best Afghan commanders prompted his famous exclamation."
+        ],
+        causal_bridge: "The tragedy of Giri-Sumel exposed the structural weakness of the Rajput state: the delicate, volatile relationship between the central monarch and his autonomous clan nobility."
+      },
+      {
+        id: "ch-15-agnatic-polity-bhai-bandh",
+        number: 15,
+        title: "The Agnatic Commonwealth: Bhai-Bandh Kinship, Pattavats & The Constitutional Limits of Monarchy",
+        date: "c. 1500–1560 CE",
+        scope: "Anil Chandra Banerjee (Aspects of Rajput State and Society & Lectures, Ch. 5)",
+        epistemic_tag: "CONSTITUTIONAL & HISTORICAL SOCIOLOGY",
+        paragraphs: [
+          "In his seminal study *Aspects of Rajput State and Society*, constitutional historian Anil Chandra Banerjee systematically deconstructed James Tod’s European feudal model. Tod had argued that Rajasthan was governed by Norman feudalism, where an absolute king granted land (fiefs) to noble vassals in exchange for subservient military service. Banerjee demonstrated that the Rajput state was not contractual feudalism; it was an **agnatic clan commonwealth (Bhai-Bandh)**.",
+          "In Rajasthan, the territory of the kingdom did not belong exclusively to the king; it belonged collectively to the clan by virtue of shared ancestry and common conquest. The subordinate chieftains (**Pattavats** in Marwar, **Umraos** in Mewar) were not feudal tenants; they were the Maharaja’s kinsmen and brethren. Their estates (**thikanas**) were hereditary properties held by right of birth, not royal grace. The Maharaja was merely *primus inter pares*—the first among equals—and could not enact laws or impose taxes without the consensus of his noble council.",
+          "This constitutional reality was demonstrated dramatically in **1572 CE** at Gogunda upon the death of Maharana Udai Singh II. Udai Singh, under the influence of his favorite Bhatiyani queen, had bypassed his capable eldest son, Pratap, and named his younger son Jagmal as his successor. As Jagmal sat upon the royal gaddi, the premier nobles of Mewar—led by Rawat Krishna Das of Salumbar (chief of the Chundawats) and Akhai Raj Songara of Jalore—intervened: they physically stepped forward, seized Jagmal by the arm, removed him from the throne, and girded the ancestral sword of Bappa Rawal upon **Maharana Pratap**, preserving the kingdom from civil ruin through distributed aristocratic authority."
+        ],
+        blockquote: {
+          text: "The Rajput state was a clan commonwealth; the ruler was primus inter pares, and his chiefs held their estates by right of birth, not by royal grace.",
+          citation: "Anil Chandra Banerjee, Aspects of Rajput State and Society"
+        },
+        analysis_paragraphs: [
+          "The agnatic council retained constitutional veto power over the monarch: while this prevented central despotism, it made the state vulnerable to paralyzing succession feuds whenever clan solidarity broke down."
+        ],
+        causal_bridge: "The young Mughal emperor Akbar observed these internal clan mechanics with keen intelligence, realizing that marriage and administrative partnership could conquer where brute force had repeatedly failed."
+      }
+    ]
+  },
+
+  // =========================================================================
+  // EPOCH V: THE GREAT CLEAVAGE: THE IMPERIAL MATRIX VS. THE MOUNTAIN GUERRILLA (1562–1597 CE)
+  // =========================================================================
+  {
+    roman: "V",
+    title: "The Great Cleavage: The Imperial Matrix vs. The Mountain Guerrilla (1562–1597 CE)",
+    description: "Akbar's realpolitik alliance with Amber, the third horrific siege of Chittor, the lonely desert defiance of Rao Chandrasen, the clash of Haldighati, and Pratap's systematic mountain liberation at Dewair.",
+    chapters: [
+      {
+        id: "ch-16-amber-bharmal-man-singh-imperial-matrix",
+        number: 16,
+        title: "The Realpolitik of Amber: Raja Bharmal, Man Singh & The Imperial Condominium",
+        date: "1562 CE",
+        scope: "Robert Hallissey (Ch. 1) • Abul Fazl (Akbarnama) • A.C. Banerjee",
+        epistemic_tag: "IMPERIAL DIPLOMACY & STATE-FORMATION",
+        paragraphs: [
+          "In January 1562, while traveling on pilgrimage to the Sufi shrine of Mu'in al-Din Chishti at Ajmer, the nineteen-year-old Mughal Emperor Akbar was met at Sanganer by **Raja Bharmal of Amber** (the Kachwaha kingdom). Amber was at that time a minor, impoverished principality torn by bitter family rivalries and threatened by Afghan warlords. In an act of consummate realpolitik that altered the course of Indian history, Bharmal offered Akbar an alliance, sealed through the marriage of his daughter Harkha Bai (later known as Mariam-uz-Zamani) to the Emperor.",
+          "This was not an act of cowardly surrender; it was the birth of the **Mughal-Rajput co-ruling administrative matrix**. Akbar formulated the revolutionary **Watan Jagir** compact: the Rajput raja’s ancestral homeland was confirmed as an inalienable, hereditary estate (*watan*) immune from imperial interference, while the raja and his heirs were granted high military ranks (**mansabs**) and massive revenue assignments across Hindustan. In exchange, the Rajputs provided the Mughal Empire with its finest cavalry generals and administrative leadership.",
+          "Bharmal’s grandson, **Raja Man Singh I**, rose to become the highest-ranking noble in the empire (holding the supreme rank of 7,000 horse). As imperial Viceroy, Man Singh conquered Kabul, stabilized the Afghan frontier, annexed Orissa, and governed Bengal and Bihar. The Kachwahas used their immense imperial salaries to transform Amber into an architectural marvel and finance vast Hindu revivalist temples, including the majestic Govind Dev temple at Vrindavan."
+        ],
+        blockquote: {
+          text: "The Kachwahas did not lose their faith by alliance with Agra; they became the sword-arm of the empire and the financiers of Vrindavan.",
+          citation: "Robert C. Hallissey, The Rajput Rebellion Against Aurangzeb: A Study of the Mughal Empire in Seventeenth-Century India"
+        },
+        analysis_paragraphs: [
+          "The Amber alliance created a profound ideological schism across Rajasthan: while Amber, Bikaner, and Jaisalmer traded nominal submission for imperial wealth and continental power, Mewar viewed any matrimonial alliance with the Mughals as an unpardonable degradation of sacred Kshatriya purity."
+        ],
+        causal_bridge: "To force Mewar into the same imperial submission, Akbar mobilized the full might of his gunpowder artillery against the basalt rock of Chittorgarh."
+      },
+      {
+        id: "ch-17-third-siege-chittor-akbar-1568",
+        number: 17,
+        title: "The Third Siege of Chittor: Akbar's Sabat Mines, Jaimal-Patta & The Extermination",
+        date: "1567–1568 CE",
+        scope: "Abul Fazl (Akbarnama) • James Tod (Vol. 1)",
+        epistemic_tag: "IMPERIAL MILITARY CHRONICLE",
+        paragraphs: [
+          "In October 1567, Akbar laid siege to Chittorgarh with an army of seventy thousand imperial troops. Maharana Udai Singh II, acting upon the unanimous advice of his council of nobles, had retreated into the inaccessible Aravalli hills to establish a new defensive capital at Udaipur, leaving the defense of the fortress to eight thousand veteran Rathore and Sisodia warriors commanded by **Jaimal of Merta** and the sixteen-year-old **Patta of Kelwa**.",
+          "Akbar realized that Chittor could not be starved out; he therefore initiated the most sophisticated siege engineering operation in medieval history. Imperial sappers constructed massive covered trenches (**sabats**) wide enough for ten horsemen to ride abreast, protected by rawhide palisades, advancing slowly up the rocky slopes. Beneath the fortress ramparts, sappers excavated two massive subterranean tunnels packed with over twenty-four thousand pounds of gunpowder. On December 17, 1567, the mines were detonated: the explosion hurled entire bastions into the air and killed hundreds of men, but the defenders fought ferociously to plug the breach with masonry before imperial assault columns could enter.",
+          "The turning point arrived on the night of February 22, 1568. As Jaimal inspected repairs on the breached Lakhota bastion by torchlight, Akbar noticed his armor and personally aimed his favorite matchlock musket, *Sangram*. The bullet struck Jaimal in the thigh, mortally wounding him. Realizing that the end had arrived, the garrison initiated the **Third Jauhar of Chittor**: Patta’s mother and young wife led the noblewomen into the flames."
+        ],
+        blockquote: {
+          text: "Jaimal and Patta fell like lions upon the spears of the foe... and Akbar, in tribute to their valour, placed their stone statues to guard the gates of his palace at Agra.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "At dawn on February 23, 1568, the crippled Jaimal was carried onto the battlefield on the shoulders of his kinsman Kalla, dual-wielding swords, while Patta led the saffron Saka into the imperial breaches. After the fortress fell, Akbar committed one of the darkest atrocities of his reign: enraged by the fierce resistance, he ordered the massacre of thirty thousand unarmed Hindu peasant artisans inside the citadel. Chittor was broken forever, and never again served as Mewar's royal capital."
+        ],
+        causal_bridge: "With Chittor in ruins, Akbar held a grand imperial assembly at Nagaur to demand the formal submission of all surviving Rajput monarchs."
+      },
+      {
+        id: "ch-18-nagaur-darbar-rao-chandrasen",
+        number: 18,
+        title: "The Defiance of Nagaur: Rao Chandrasen & The Forgotten Desert War",
+        date: "1570 CE",
+        scope: "Robert Hallissey (Ch. 1) • James Tod (Vol. 2) • Rosemary Crill (Ch. 1)",
+        epistemic_tag: "HISTORICAL BIOGRAPHY & REVISIONISM",
+        paragraphs: [
+          "In November 1570, Emperor Akbar held a magnificent court at Nagaur, nominally to excavate a royal water tank (the Shukra Talao), but politically to summon the princes of Rajasthan to formally submit to the Mughal throne. Rai Kalyanmal of Bikaner and Rawal Harraj of Jaisalmer attended, offered tribute, and sealed their submissions with matrimonial alliances.",
+          "**Rao Chandrasen of Marwar** (younger son and successor of Rao Maldeo) arrived at Nagaur to observe imperial intentions. When he realized that Akbar demanded complete political subordination and intended to divide Marwar's territories among rival collaborators, Chandrasen executed an act of historic defiance: without bowing or seeking imperial leave, he quietly slipped out of the imperial camp at night and rode directly into the wilderness.",
+          "For the next eleven years (1570–1581), Chandrasen pioneered mobile desert guerrilla warfare across the Thar. When imperial armies besieged his fortress at Bhadrajun, he evacuated to the rocky keep of Siwana; when Siwana fell, he retreated into the desert dunes, striking imperial baggage trains, cutting off tax collection, and constantly shifting his mobile camp. Chandrasen sacrificed all royal comfort, melted the royal gold jewelry to pay his mercenaries, and died in exile in the hills of Saran in 1581 without ever submitting to the Mughal Emperor—serving as the direct tactical and ideological forerunner of Maharana Pratap."
+        ],
+        blockquote: {
+          text: "Chandrasen of Jodhpur was the forerunner of Pratap; he showed that a Rajput could live in the wilderness and remain an unbowed sovereign.",
+          citation: "Modern Historiographical Revision (Intellectualist Historical Series)"
+        },
+        analysis_paragraphs: [
+          "Though largely overshadowed in popular folklore by Maharana Pratap, Chandrasen proved to the Rajput world that desert mobility could neutralize heavy imperial siege armies, creating the operational template for resistance across Western India."
+        ],
+        causal_bridge: "In Mewar, the accession of Maharana Pratap in 1572 brought Chandrasen's guerrilla philosophy into direct conflict with Akbar's greatest Hindu general at Haldighati."
+      },
+      {
+        id: "ch-19-battle-of-haldighati-1576",
+        number: 19,
+        title: "The Clash of Ideologies: The Battle of Haldighati",
+        date: "June 18, 1576 CE",
+        scope: "Abdul Qadir Badauni (Muntakhab-ut-Tawarikh) • James Tod (Vol. 1) • Epigraphy",
+        epistemic_tag: "EYEWITNESS CHRONICLE & MODERN AUDIT",
+        paragraphs: [
+          "On the searing morning of June 18, 1576, the narrow, turmeric-colored mountain pass of **Haldighati** in the Aravallis witnessed the most ideologically complex battle in Indian history. Popular legend portrays Haldighati as a simplistic religious war between a Hindu king and a Muslim emperor. Contemporary records tell a far more fascinating truth: the battle was a civil war within the Indian subcontinent.",
+          "Maharana Pratap’s vanguard of three thousand cavalry was commanded by **Hakim Khan Sur**, a proud Pathan general seeking vengeance against the Mughals, and supported by a deadly division of indigenous **Bhil tribal archers** led by Rana Punja. Conversely, the Mughal imperial army was commanded not by a Muslim general, but by Pratap's fellow Rajput, **Raja Man Singh I of Amber**, alongside Asaf Khan and Syed Hashim Barha. Court historian Abdul Qadir Badauni, who rode with the imperial army, recorded the battle as an eyewitness.",
+          "Pratap launched an all-out, furious shock charge out of the pass, throwing Man Singh’s vanguard into wild panic. Badauni records that the imperial lines broke and fled across the Banas river; when Badauni asked commander Asaf Khan how to distinguish between Pratap’s Rajputs and Man Singh’s Rajputs in the blinding dust, Asaf Khan cynically replied: *'Shoot your arrows! On whichever side they fall, it is a gain for Islam!'* The battle reached its dramatic climax when Pratap, riding his legendary warhorse **Chetak**, charged directly at Man Singh's war elephant, hurling his spear at the howdah. Man Singh ducked, his mahout was killed, and Chetak was grievously wounded by the sword-blade affixed to the elephant's trunk."
+        ],
+        blockquote: {
+          text: "Badauni asked his commander, 'Whom shall we shoot?' The commander replied, 'Shoot! On whichever side they are killed, it is a gain for Islam!'",
+          citation: "Abdul Qadir Badauni, Muntakhab-ut-Tawarikh (sixteenth century)"
+        },
+        analysis_paragraphs: [
+          "Surrounded by imperial troops, Pratap was rescued by Jhala Man of Badi Sadri, who snatched the royal sun-banner of Mewar and placed the royal crown upon his own head, drawing the enemy assault upon himself while Pratap was escorted into the hills. Man Singh held the narrow pass at dusk, but imperial troops were so terrified of ambushes in the gorges that they refused to pursue Pratap. Akbar was so furious with Man Singh for failing to kill or capture Pratap that he barred the general from court for months. Haldighati was a tactical Mughal draw on the field, but a total strategic failure for the empire."
+        ],
+        causal_bridge: "Far from retreating into despair, Pratap utilized the mountain terrain to launch an unrelenting fifteen-year counter-offensive that would liberate Mewar."
+      },
+      {
+        id: "ch-20-dewair-marathon-mewar-chawand",
+        number: 20,
+        title: "The Marathon of Mewar: The Battle of Dewair & The Chawand Civilization",
+        date: "1582–1597 CE",
+        scope: "James Tod (Vol. 1) • Molly Emma Aitken (Ch. 1) • Chawand Archaeological Remains",
+        epistemic_tag: "MILITARY LIBERATION & CULTURAL REVIVAL",
+        paragraphs: [
+          "Between 1576 and 1582, Akbar dispatched six major imperial expeditions into Mewar commanded by his best generals, including Shahbaz Khan, Abdur Rahim Khan-i-Khanan, and Prince Murad. Pratap simply evacuated the valleys, burnt crops, poisoned open wells, and relocated his administration into the deep ravines of the southern Aravallis, waging asymmetric attritional warfare that exhausted imperial logistics.",
+          "In 1582, Pratap launched his decisive strategic counter-offensive at **Dewair**, an imperial military outpost situated at the strategic northern choke-point of Mewar connecting the plains of Ajmer to the hills of Udaipur. In a ferocious engagement that James Tod famously christened **'The Marathon of Mewar'**, Pratap's son Prince Amar Singh I impaled the Mughal governor Sultan Khan with a lance strike so powerful it drove through his armor, horse, and into the ground. The garrison was wiped out, and the victory triggered a cascading collapse of imperial morale across the region.",
+          "Following Dewair, Pratap systematically liberated **thirty-six imperial outposts**, driving the Mughal garrisons entirely out of Mewar. In 1585, Pratap established a new civilizational capital at **Chawand**, deep in the southwestern hills. There, Pratap built stone palaces, constructed stepped water reservoirs, restored agricultural canals, and established a thriving school of painting. At Chawand in 1605, the master painter Nisardi executed the legendary *Chawand Ragamala*, proving that Mewar’s culture flourished even under siege."
+        ],
+        blockquote: {
+          text: "Haldighati was the Thermopylae of Mewar; the field of Dewair was her Marathon.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "When Maharana Pratap passed away peacefully in his bed on January 19, 1597, at the age of fifty-six, he had reclaimed nearly the entirety of his ancestral realm, leaving only Chittorgarh and Mandalgarh in imperial hands. He died an undefeated sovereign who had defied the greatest empire in the world."
+        ],
+        causal_bridge: "Pratap's unbending resistance laid the foundation for his son Amar Singh to negotiate a peace treaty that preserved Mewar's sovereignty while integrating with the Pax Mughalica."
+      }
+    ]
+  },
+
+  // =========================================================================
+  // EPOCH VI: PAX MUGHALICA, ROYAL WORKSHOPS & SACRED TRANSLOCATION (1615–1675 CE)
+  // =========================================================================
+  {
+    roman: "VI",
+    title: "The Dignified Peace, The Intelligence of Tradition & Sacred Sanctuary (1615–1675 CE)",
+    description: "The historic Treaty of 1615, the visual intelligence of the Udaipur painting workshops under Sahibdin, the sacred translocation of Shrinathji to Nathdwara, and the rise of Pahari Rajput states in Himachal.",
+    chapters: [
+      {
+        id: "ch-21-treaty-of-1615-amar-singh-jahangir",
+        number: 21,
+        title: "The Dignified Peace: The Mewar-Mughal Treaty of 1615",
+        date: "1615 CE",
+        scope: "Tuzuk-i-Jahangiri (Memoirs of Jahangir) • James Tod (Vol. 1) • A.C. Banerjee",
+        epistemic_tag: "PRIMARY DIPLOMATIC TREATY",
+        paragraphs: [
+          "Following Pratap's death, Emperor Jahangir launched continuous, grueling campaigns against Pratap's son, Maharana Amar Singh I. Prince Khurram (later Emperor Shah Jahan) established an imperial base at Gogunda, destroying crops and hunting Sisodia hideouts. Recognizing that nearly fifty years of unbroken warfare had depopulated the villages and exhausted the nobility, Amar Singh accepted counsel from his son Karan Singh to conclude peace.",
+          "In February 1615, Maharana Amar Singh and Prince Khurram ratified the **Treaty of 1615**. The terms granted to Mewar were unprecedented in imperial history, reflecting Jahangir's profound respect for Sisodia tenacity: the Maharana was **permanently exempted from personal attendance at the Mughal court**; he was **never required to give a daughter in marriage** to the imperial family; and the fortress of Chittorgarh was returned to Mewar on the single condition that its ruined fortifications would not be refortified.",
+          "To honor the Sisodias, Jahangir commissioned master sculptors to carve life-sized marble statues of Maharana Amar Singh and Prince Karan Singh, placing them prominently in the imperial palace gardens at Agra. Yet, so deep was Amar Singh's personal sorrow at compromising his father’s total independence that he immediately abdicated active rule, handing the administration to his son and retiring to a life of silent ascetic contemplation at the Nauchauki pavilion in Udaipur until his death."
+        ],
+        blockquote: {
+          text: "The Rana was not conquered; he was conciliated. The terms granted to Mewar were such as had never been granted to any other prince of Hindustan.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "The Treaty of 1615 ushered in sixty years of cultural and architectural prosperity across Rajasthan, allowing royal courts to channel resources into majestic lake palaces, devotional poetry, and painting workshops."
+        ],
+        causal_bridge: "Freed from existential warfare, royal workshops developed an autonomous visual philosophy that asserted cultural sovereignty on paper."
+      },
+      {
+        id: "ch-22-intelligence-of-tradition-sahibdin",
+        number: 22,
+        title: "The Intelligence of Tradition: Sahibdin & The Mewar Painting Workshops",
+        date: "1620–1660 CE",
+        scope: "Molly Emma Aitken (The Intelligence of Tradition, Ch. 1–3) • Basil Gray (Rajput Painting)",
+        epistemic_tag: "CRITICAL ART HISTORIOGRAPHY",
+        paragraphs: [
+          "In her landmark Yale University Press study *The Intelligence of Tradition in Rajput Court Painting*, art historian Molly Emma Aitken dismantles the colonial assumption that Rajasthani miniature painting was merely a crude, provincial imitation of Mughal court realism. Working alongside Basil Gray’s foundational scholarship, Aitken proves that Rajput court painters made **intentional, highly sophisticated aesthetic choices** that directly reflected their political and religious autonomy.",
+          "At Udaipur during the reigns of Maharana Jagat Singh I and Raj Singh I, the royal atelier was led by the master Muslim painter **Sahibdin**. Sahibdin did not adopt the single-point perspective, muted earth tones, or psychological portrait realism favored by the Mughal imperial atelier under Jahangir and Shah Jahan. Instead, Sahibdin deployed the 'Intelligence of Tradition': bold, flat, saturated planes of vibrant cinnabar red, turmeric yellow, and lapis lazuli; high horizon lines; and continuous narrative framing, where multiple sequential events of a hero or deity occur within the same visual field.",
+          "This aesthetic was not primitive; it was a deliberate philosophical vehicle designed to evoke intense **rasa** (aesthetic emotional immersion, particularly *vir-rasa* for heroic martial glory and *shringara-rasa* for divine love) and affirm sacred dynastic memory. In his legendary manuscript series—including the *Ragamala* (1628), the *Rasikapriya* (1630), and the monumental *Yuddhakanda* of the Ramayana (1652)—Sahibdin visually codified Sisodia identity, celebrating traditional Kshatriya kingship while rejecting imperial artistic homogenization."
+        ],
+        blockquote: {
+          text: "Rajput painting chose not to record appearances, but to distill states of being... It is a visual intelligence that deployed color as poetry and form as sacred memory.",
+          citation: "Molly Emma Aitken, The Intelligence of Tradition in Rajput Court Painting"
+        },
+        analysis_paragraphs: [
+          "By employing Muslim master artists who were completely integrated into Hindu theological iconography, the Mewar court demonstrated that cultural patronage transcended sectarian boundaries in the pursuit of civilizational excellence."
+        ],
+        causal_bridge: "The artistic and cultural vitality of the Sisodia state soon faced a religious crisis when imperial policies in Delhi threatened the sacred sanctuaries of North India."
+      },
+      {
+        id: "ch-23-sacred-translocation-shrinathji-nathdwara",
+        number: 23,
+        title: "The Sacred Translocation: Maharana Raj Singh, Shrinathji & Nathdwara Pichwai Art",
+        date: "1672 CE",
+        scope: "Molly Emma Aitken (Ch. 4) • Lindsey Harlan • Jai Singh Neeraj",
+        epistemic_tag: "SACRED GEOGRAPHY & TEMPLE ARCHIVES",
+        paragraphs: [
+          "In 1669, Emperor Aurangzeb issued strict imperial decrees ordering the demolition of newly constructed Hindu temples and prohibiting public celebrations of non-Islamic festivals across the Gangetic plain. In the sacred Braj region of Mathura and Vrindavan, the priests of the Vallabhacharya Pushtimarg sect feared the imminent destruction of their supreme deity: the sacred, self-manifested black marble idol of **Shrinathji** (representing the seven-year-old Lord Krishna lifting Mount Govardhan).",
+          "The Goswamis placed the sacred idol in a covered wooden chariot and fled south across Rajasthan, seeking asylum from various princes. Most rulers, fearing imperial wrath, hesitated. When the entreaty reached Udaipur, **Maharana Raj Singh I** enacted an oath of absolute protection, famously declaring that *'one hundred thousand Rajput heads would fall before a single hair on the head of Shrinathji was harmed.'*",
+          "In 1672, as the chariot reached the village of Sihad near Udaipur, the wheels sank deep into the mud and would not move. Taking this as a divine omen that Krishna had chosen his sanctuary, Raj Singh constructed the holy shrine of **Nathdwara** ('The Gate of the Lord'). In adherence to Pushtimarg theology, Shrinathji was housed not in a fortified stone temple, but in an expansive aristocratic mansion (**haveli**), where Krishna was treated as a living royal sovereign. This event sparked the birth of the famous **Pichwai textile painting tradition**, where artists painted immense, lyrical cloth backdrops depicting Krishna's seasonal festivals, lotus ponds, and celestial cows."
+        ],
+        blockquote: {
+          text: "When the shrines of Mathura were broken, Mewar opened her hills to the divine child; Nathdwara became the beating heart of Hindu devotion.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "By providing eternal sanctuary to Shrinathji, Mewar transformed itself from a regional military state into the spiritual capital of North Indian Vaishnavism, cementing its moral authority across the Hindu world."
+        ],
+        causal_bridge: "While the plains of Rajasthan deepened their sacred roots, the Rajput political model was expanding into the high valleys of the Western Himalayas."
+      },
+      {
+        id: "ch-24-himalayan-frontier-pahari-rajput-katoch",
+        number: 24,
+        title: "The Himalayan Frontier: Pahari Rajput State Formation & The Katoch of Kangra",
+        date: "c. 1650–1750 CE",
+        scope: "Arik Moran (Kingship and Polity on the Himalayan Borderland, Intro & Ch. 1)",
+        epistemic_tag: "HIMALAYAN ETHNOHISTORY",
+        paragraphs: [
+          "In his seminal study *Kingship and Polity on the Himalayan Borderland*, ethnohistorian Arik Moran bridges a critical historiographical gap, demonstrating that the Rajput civilizational model was not confined to Rajasthan, but ascended the gorges of the Beas, Sutlej, and Ravi rivers into the Western Himalayas. Between the seventeenth and eighteenth centuries, mountain dynasties in Himachal Pradesh—most notably the **Katoch dynasty of Kangra**, alongside the royal houses of Bilaspur (Kahlur), Sirmaur (Nahan), Chamba, and Mandi—underwent systematic Rajputization.",
+          "These hill monarchs claimed descent from the ancient Trigarta kingdom of the Mahabharata, inviting Charans, bards, and Brahmins from Rajasthan to codify their genealogies and ritual practices. To govern diverse mountain peasant populations, hill kings conducted **jheras** (oral clan assemblies and bardic deliberations), balancing ancestral kinship loyalty with strategic administrative alliances.",
+          "Commanding massive river-promontory rock fortresses like **Kot Kangra**, the Pahari kings navigated shifting relationships with the Mughal Empire, alternately accepting imperial ranks while fiercely guarding mountain sovereignty. Under monarchs like Raja Sansar Chand of Kangra, the hill courts became the crucible of the world-famous **Pahari miniature painting schools** (Guler, Basohli, and Kangra), combining lyrical naturalism, delicate botanical draftsmanship, and intense Radha-Krishna devotion."
+        ],
+        blockquote: {
+          text: "The Rajput ideal was not confined to the sands of Rajasthan; it ascended the gorges of the Beas and the Sutlej, transforming mountain clans into royal houses.",
+          citation: "Arik Moran, Kingship and Polity on the Himalayan Borderland: Rajput Gatherings, State Formation and Modernity in Himachal, c. 1650–1950"
+        },
+        analysis_paragraphs: [
+          "Moran's work proves that the Himalayan frontier was dynamically integrated into the broader geopolitical, artistic, and social matrix of North Indian Rajput chivalry."
+        ],
+        causal_bridge: "The sixty years of peace under the Pax Mughalica were about to be shattered by an imperial succession crisis that triggered the longest war in Rajput history."
+      }
+    ]
+  },
+
+  // =========================================================================
+  // EPOCH VII: THE RATHORE-SISODIA COALITION & THE THIRTY-YEAR WAR (1678–1707 CE)
+  // =========================================================================
+  {
+    roman: "VII",
+    title: "The Rathore-Sisodia Coalition & The Thirty-Year War (1678–1707 CE)",
+    description: "The death of Jaswant Singh, Aurangzeb's violation of ancestral watan tenure, Durga Das Rathore's daring rescue, Raj Singh's philosophical anti-Jizya epistle, and thirty years of desert guerrilla warfare.",
+    chapters: [
+      {
+        id: "ch-25-violation-of-watan-jaswant-singh-1678",
+        number: 25,
+        title: "The Violation of Watan: The Death of Jaswant Singh & The Spark of 1678",
+        date: "1678–1679 CE",
+        scope: "Robert Hallissey (The Rajput Rebellion Against Aurangzeb, Ch. 2–3) • A.C. Banerjee",
+        epistemic_tag: "IMPERIAL ADMINISTRATIVE REVISION",
+        paragraphs: [
+          "On December 10, 1678, Maharaja Jaswant Singh I of Marwar died while commanding imperial frontier forces at Jamrud near the Khyber Pass in modern Pakistan. Jaswant Singh died without a surviving adult son, leaving his pregnant ranis in Punjab. In Delhi, Emperor Aurangzeb made a catastrophic strategic decision: treating Marwar as an escheated imperial territory, he deployed Mughal administrators, occupied Jodhpur, and installed a compliant collaborator, Indar Singh of Nagaur, on the gaddi in exchange for a massive thirty-six lakh rupee bribe.",
+          "As proved by Robert C. Hallissey, Aurangzeb’s action was not motivated primarily by religious bigotry, but by hard geopolitical and administrative calculation. Marwar commanded the vital military and commercial highway connecting Agra and Delhi to the prosperous ports of Gujarat. However, by attempting to annex Jodhpur outright, Aurangzeb committed an unpardonable violation of the **Watan Jagir** compact that had governed Mughal-Rajput relations since Akbar: the sacred ancestral homeland was supposed to be completely inviolable.",
+          "In February 1679 at Lahore, Jaswant Singh's pregnant dowager ranis gave birth to two sons, one of whom survived: **Ajit Singh**. When the Rathore retinue reached Delhi with the infant prince, Aurangzeb demanded that the baby be surrendered to the imperial harem to be raised as a Muslim noble. In response, a junior Rathore commander named **Durga Das Rathore** orchestrated one of the most daring operations in military history."
+        ],
+        blockquote: {
+          text: "Aurangzeb did not seek to destroy Hinduism in Marwar; he sought to control the highway to the sea. But in violating the watan, he shattered the pillar of his own empire.",
+          citation: "Robert C. Hallissey, The Rajput Rebellion Against Aurangzeb"
+        },
+        analysis_paragraphs: [
+          "On July 15, 1679, as imperial troops surrounded the Rathore mansion in Delhi, Durga Das substituted the baby prince with a maidservant’s child, smuggled infant Ajit Singh out hidden in a sweetmeat basket, and led a desperate suicide-guard of Rathore cavalry that cut through three concentric rings of imperial cavalry, galloping across the Yamuna into the sanctuary of the Thar desert."
+        ],
+        causal_bridge: "With Marwar under imperial occupation, Durga Das turned to the only power capable of confronting the Mughal Emperor: the House of Mewar."
+      },
+      {
+        id: "ch-26-grand-coalition-anti-jizya-epistle-1679",
+        number: 26,
+        title: "The Grand Coalition: Maharana Raj Singh's Anti-Jizya Epistle & The Aravalli Defense",
+        date: "1679–1681 CE",
+        scope: "Robert Hallissey (Ch. 4) • James Tod (Vol. 1) • Epistles of Raj Singh",
+        epistemic_tag: "PRIMARY INTELLECTUAL RECORD & ALLIANCE STATECRAFT",
+        paragraphs: [
+          "Recognizing that the annexation of Marwar meant the immediate strategic encirclement of Mewar, **Maharana Raj Singh I** made the bold decision to forge the **Rathore-Sisodia Grand Coalition**. Raj Singh granted safe asylum to young Ajit Singh in the rugged mountain sanctuary of Kelwa, providing twelve villages for his upkeep and pledging the entire military strength of Mewar to restore the Rathore prince.",
+          "Simultaneously, when Aurangzeb re-imposed the discriminatory **Jizya** tax upon non-Muslim subjects in 1679, Maharana Raj Singh penned one of the most masterly philosophical and diplomatic epistles in the history of statecraft. In a letter that survives in multiple royal archives, Raj Singh directly admonished the Emperor: he reminded Aurangzeb that his great ancestors (Akbar, Jahangir, Shah Jahan) had built an empire through universal toleration (**sulh-i-kul**); that God is the Creator of all humanity (**Rabb-ul-Alamin**), not merely the Lord of Muslims (**Rabb-ul-Muslimin**); and that taxing the impoverished and desecrating temples was an act of tyrannical impiety that insulted the divine Painter.",
+          "Enraged, Aurangzeb personally mobilized the imperial army and invaded Mewar in late 1679, bringing three imperial princes (Azam, Muazzam, and Akbar) into the field. Raj Singh executed the classic Sisodia mountain defense: he evacuated Udaipur, lured imperial divisions into the deep, winding ravines of the Aravallis, and trapped them in mountain gorges. Prince Akbar’s division was completely cut off, while Sisodia guerrillas destroyed imperial supply convoys."
+        ],
+        blockquote: {
+          text: "To display bigotry toward any man’s creed is to alter the words of the Holy Book... He who defaces the picture, insults the Painter.",
+          citation: "Maharana Raj Singh I, Epistle to Mughal Emperor Aurangzeb (1679)"
+        },
+        analysis_paragraphs: [
+          "In early 1681, Durga Das Rathore and the Sisodia nobles accomplished an extraordinary diplomatic coup: they convinced Aurangzeb’s favorite fourth son, **Prince Muhammad Akbar**, to declare himself Emperor of Hindustan and rebel against his father, nearly toppling Aurangzeb's throne before imperial deception fractured the coalition."
+        ],
+        causal_bridge: "Though Prince Akbar's rebellion was thwarted, Durga Das Rathore escorted the prince safely to the Maratha court of Sambhaji in the Deccan, inaugurating thirty years of unrelenting desert warfare."
+      },
+      {
+        id: "ch-27-thirty-year-desert-war-durga-das",
+        number: 27,
+        title: "The Thirty-Year Desert Odyssey: Durga Das Rathore & The Restoration of Ajit Singh",
+        date: "1679–1707 CE",
+        scope: "Robert Hallissey (Ch. 5) • James Tod (Vol. 2) • Waqai-i-Ajmer Imperial Records",
+        epistemic_tag: "GUERRILLA ETHNOHISTORY & BIOGRAPHY",
+        paragraphs: [
+          "For nearly three decades (1679–1707), the sands of Marwar witnessed the longest and most unrelenting war of attrition in medieval Indian history. With Aurangzeb bogged down in his catastrophic twenty-five-year campaign in the Deccan against the Marathas, the defense of Marwar was sustained almost entirely by the incorruptible will of a single man: **Durga Das Rathore**.",
+          "Durga Das operated without a central treasury, without a formal army, and without a fixed citadel. He sustained mobile cavalry units that struck imperial garrisons, intercepted tax caravans, and vanished into the trackless sand dunes of the Thar desert where heavy Mughal siege artillery could not follow. When imperial commanders offered Durga Das massive mansabs, royal estates, and imperial governorships to abandon Ajit Singh, he rejected every bribe with unbending disdain.",
+          "Durga Das’s chivalric integrity became the stuff of legend across India. When Prince Akbar fled to Persia, he left his young daughter Safiyat-un-Nissa and son Buland Akhtar in Durga Das’s care. Rather than treating the imperial grandchildren as hostages, Durga Das placed them in an isolated desert fortress, appointed an orthodox Muslim scholar from Ajmer to educate the princess in Islamic theology and the Quran, and returned her safely to Aurangzeb years later with her honor intact, astonishing the suspicious old Emperor."
+        ],
+        blockquote: {
+          text: "May every mother bear a son like Durga Das, who without a crown or a throne, preserved the honour of Marwar against the Emperor of Delhi.",
+          citation: "Rajasthani Bardic Proverb (preserved in Tod's Annals)"
+        },
+        analysis_paragraphs: [
+          "The climax arrived on March 3, 1707, when news reached Rajasthan that Aurangzeb had died in the Deccan at the age of eighty-nine. Within days, Durga Das and the adult Maharaja Ajit Singh swept out of the desert into Jodhpur, stormed Mehrangarh, expelled the terrified Mughal garrison, and re-consecrated the throne of the Rathores, bringing the thirty-year war to a triumphant conclusion."
+        ],
+        causal_bridge: "The death of Aurangzeb and the triumph of the Rathores left the Mughal Empire in fatal decline, opening an era of extraordinary intellectual and artistic enlightenment across Rajasthan."
+      }
+    ]
+  },
+
+  // =========================================================================
+  // EPOCH VIII: ENLIGHTENMENT, ESOTERIC REVOLUTIONS & THE MODERN TRANSFORMATION (1727–1947+ CE)
+  // =========================================================================
+  {
+    roman: "VIII",
+    title: "The Enlightenment, Esoteric Revolutions & The Modern Transformation (1727–1947+ CE)",
+    description: "Sawai Jai Singh's astronomical enlightenment in Jaipur, the lyricism of Kishangarh, the esoteric Nath yogic art revolution in Marwar, royal women's governance in the hills, the Maratha collapse, and the nationalist transformation.",
+    chapters: [
+      {
+        id: "ch-28-sawai-jai-singh-enlightenment-jaipur",
+        number: 28,
+        title: "The Enlightenment on the Plains: Sawai Jai Singh II, Jantar Mantar & The Grid City of Jaipur",
+        date: "1727–1743 CE",
+        scope: "Giles Tillotson (The Rajput Palaces, Ch. 5) • Zij-i Muhammad Shahi • James Tod",
+        epistemic_tag: "INTELLECTUAL HISTORY & URBAN PLANNING",
+        paragraphs: [
+          "In the early eighteenth century, while Mughal imperial authority disintegrated into fratricidal chaos, **Maharaja Sawai Jai Singh II of Amber** initiated one of the most extraordinary scientific and urban planning projects of the early modern world. Jai Singh recognized that the hilltop fortress of Amber, built for medieval cannon defense, was obsolete and too cramped for modern governance and commerce. In **1727 CE**, he descended onto the open plains to lay the foundation of a brand new planned capital: **Jaipur**.",
+          "Designed in collaboration with the Bengali Brahmin town planner Vidyadhar Bhattacharya, Jaipur was conceived as an Enlightenment city. Departing entirely from the chaotic, winding alleys of medieval towns, Jaipur was laid out on a rigorous geometric grid based on ancient Hindu **Vastu Shastra** principles combined with modern European planning: nine rectangular sectors (*chokris*) reflecting the nine planets (*Navagraha*), separated by wide, straight arterial avenues over one hundred feet across, with uniform pink-stucco facade regulations designed for public order, light, and bustling merchant trade.",
+          "Simultaneously, Jai Singh pursued global scientific inquiry. Discovering that small brass astrolabes suffered from thermal expansion errors and microscopic inaccuracies, Jai Singh constructed **five monumental masonry astronomical observatories (Jantar Mantar)** in Jaipur, Delhi, Ujjain, Varanasi, and Mathura. These immense stone instruments—most notably the ninety-foot-tall *Samrat Yantra* sundial in Jaipur, capable of measuring local solar time to an accuracy of two seconds—allowed Jai Singh to compile the *Zij-i Muhammad Shahi*, the most accurate astronomical planetary tables of the era. He translated Euclid’s *Elements* and Napier’s work on logarithms into Sanskrit, creating a profound bridge between Eastern geometry and Western empirical science."
+        ],
+        blockquote: {
+          text: "Jaipur was not a feudal stronghold; it was an Enlightenment city born of astronomical precision and commercial freedom on the plains of Hindustan.",
+          citation: "Giles Henry Rupert Tillotson, The Rajput Palaces"
+        },
+        analysis_paragraphs: [
+          "Jai Singh proved that a traditional Hindu monarch could modernize statecraft and science without compromising his religious identity, establishing Jaipur as the premier cultural metropolis of eighteenth-century India."
+        ],
+        causal_bridge: "While Jaipur embraced rational mathematical order, neighboring Rathore courts embarked on radical journeys into poetic lyricism and esoteric mysticism."
+      },
+      {
+        id: "ch-29-kishangarh-bani-thani-nihal-chand",
+        number: 29,
+        title: "The Transcendental Lyricism of Kishangarh: Savant Singh, Nihal Chand & Bani Thani",
+        date: "1748–1757 CE",
+        scope: "Jai Singh Neeraj (Splendour of Rajasthani Painting, Ch. 4) • Sherman Lee (Rajput Painting)",
+        epistemic_tag: "CLASSICAL ART CRITICISM",
+        paragraphs: [
+          "In the small Rathore principality of Kishangarh, tucked beside the serene waters of Lake Gundalao, Rajput visual culture attained its supreme poetic zenith. Under the patronage of **Maharaja Sawai Savant Singh** (who composed sublime devotional verses under the pen-name **Nagari Das**) and the virtuoso court master painter **Nihal Chand**, Kishangarh developed an ethereal, transcendent visual idiom that remains unmatched in Asian art.",
+          "The centerpiece of this school was the immortal portraiture of **Bani Thani** ('The Well-Attired One'), Savant Singh’s beloved singer, poetess, and consort. Nihal Chand and Nagari Das elevated this historical woman into the cosmic, transcendental archetype of Sri Radha. Nihal Chand invented an iconic facial canon: extraordinarily elongated, curved eyes resembling fresh lotus petals; sharply arched, bow-like eyebrows; a slender, aristocratic nose; a delicate chin; and a transparent, gossamer gold-threaded veil (*odhni*) that revealed her serene, unearthly grace.",
+          "Set against magical nocturnal lake terraces with luminous white marble pavilions, silver water reflections, and distant panoramic boats under starry twilight skies, Kishangarh painting transmuted courtly romance (*shringara*) into pure, contemplative spiritual ecstasy. Savant Singh eventually abdicated his throne, renounced royal wealth, and lived with Bani Thani as humble Vaishnava hermits in the sacred groves of Vrindavan until their deaths in the 1760s."
+        ],
+        blockquote: {
+          text: "Bani Thani is not a woman of clay; she is Radha incarnate, the divine poetry of Kishangarh painted with brushstrokes of pure longing.",
+          citation: "Sherman E. Lee, Rajput Painting (The Asia Society)"
+        },
+        analysis_paragraphs: [
+          "Kishangarh demonstrated that within the rigid confines of Rajput court life existed the capacity for radical artistic transcendence, elevating regional portraiture into a universal cultural heritage."
+        ],
+        causal_bridge: "In Marwar, this spiritual longing took a darker, more powerful turn, transforming the state into an esoteric center of Shaiva Nath yogic metaphysics."
+      },
+      {
+        id: "ch-30-marwar-nath-yogic-art-man-singh",
+        number: 30,
+        title: "The Esoteric Metaphysics of Marwar: Maharaja Man Singh & The Nath Yogic Art Revolution",
+        date: "1803–1843 CE",
+        scope: "Rosemary Crill (Marwar Painting, Ch. 4) • Debra Diamond • Mehrangarh Royal Collection",
+        epistemic_tag: "ESOTERIC RELIGIOUS VISUAL CULTURE",
+        paragraphs: [
+          "In her definitive monograph *Marwar Painting: A History of the Jodhpur Style*, curator Rosemary Crill documents the most radical and philosophically unprecedented artistic movement in late Indian history. Between 1793 and 1803, Prince Man Singh of Jodhpur was besieged inside the fortress of Jalore by his cousin, Maharaja Bhim Singh. Starving, exhausted, and contemplating suicide, Man Singh was visited by the esoteric Nath yogi Dev Nath, who delivered a startling prophecy: within days, his enemy would die, and Man Singh would be crowned Maharaja of Marwar. Days later, Bhim Singh suddenly died, and Man Singh ascended the throne at Mehrangarh.",
+          "Viewing his survival as a direct miracle granted by the immortal Nath masters, Maharaja Man Singh dedicated the entire state of Marwar to the Nath sect. He appointed Dev Nath as supreme royal counselor, constructed the magnificent Mahamandir temple complex in Jodhpur, and launched a monumental artistic revolution. Man Singh commissioned court artists (such as Bulaki and Amar Das) to execute massive, unprecedented illustrated manuscripts visualizing complex esoteric Nath yogic texts, including the *Siddha Siddhanta Paddhati*, *Nath Charit*, and the *Shiva Purana*.",
+          "These paintings departed entirely from traditional royal portraiture: artists painted immense, abstract cosmological scrolls depicting the creation of the universe. To represent the unmanifest cosmic void (**Shunya** or Nirguna Brahman), artists painted vast, unblemished fields of shimmering pure gold leaf set against deep, fathomless lapis lazuli blues, accompanied by anatomical diagrams illustrating the subtle-body chakras, kundalini energy serpent conduits, and metaphysical energy spheres."
+        ],
+        blockquote: {
+          text: "At Jodhpur under Man Singh, painting abandoned the battlefield and the court to map the invisible cosmos and the secret anatomy of the yogic body.",
+          citation: "Rosemary Crill, Marwar Painting: A History of the Jodhpur Style"
+        },
+        analysis_paragraphs: [
+          "Man Singh's total devotion to the Nath gurus alienated his traditional Rathore clan nobility and alarmed the British East India Company, culminating in British military intervention at Mehrangarh in 1839, marking the tragic end of independent Rajput royal mysticism."
+        ],
+        causal_bridge: "While male rulers in the plains grappled with political decline, royal women in the Himalayan hill states were actively commanding armies and state treasuries."
+      },
+      {
+        id: "ch-31-political-agency-royal-women-ranis",
+        number: 31,
+        title: "The Political Agency of Royal Women: Widowed Ranis, Sati & Governance in the Hills",
+        date: "1775–1840 CE",
+        scope: "Arik Moran (Ch. 3 & 5) • Lindsey Harlan (Religion and Rajput Women, Ch. 3)",
+        epistemic_tag: "ARCHIVAL GENDER REVISION",
+        paragraphs: [
+          "Colonial British administrators and early Victorian travelers routinely portrayed royal Rajput women as tragic, cloistered victims trapped behind the curtain (*purdah*), devoid of political agency and destined solely for immolation on the funeral pyre (*sati*). In his groundbreaking research on the Pahari states, Arik Moran completely dismantles this colonial stereotype, proving that elite royal dowagers and regents were among the most astute and powerful political actors in eighteenth- and nineteenth-century India.",
+          "When minor heirs ascended the throne or adult rulers became incapacitated, senior dowager queens (**Ranis**) assumed the executive regency of the state. Operating from behind the screen, figures such as the **Guleri Rani of Sirmaur** and the **Sirmauri Ranis of Bilaspur** controlled royal state treasuries, appointed prime ministers, commanded monastic mercenary battalions, and conducted high-stakes diplomatic correspondence with British political agents.",
+          "In 1839, when corrupt male ministers attempted to usurp power in Bilaspur, the widowed Ranis organized the **'Ranis' Revolution'**, mobilizing local chieftains and rural cultivators to physically seize the state administration and force the British Resident to formally recognize female regency rights. Furthermore, Moran and Harlan prove that royal families frequently **prohibited** politically indispensable ranis from mounting the funeral pyre (*sati*), prioritizing the rani’s executive skill to ensure dynastic survival over ritual sacrifice."
+        ],
+        blockquote: {
+          text: "The widowed Rani sitting behind the purdah was often the sharpest political mind in the kingdom, holding the state together while factions bickered in the durbar.",
+          citation: "Arik Moran, Kingship and Polity on the Himalayan Borderland"
+        },
+        analysis_paragraphs: [
+          "This archival evidence restores Rajput royal women from passive victims of patriarchy into active, formidable architects of statecraft and lineage continuity."
+        ],
+        causal_bridge: "Despite individual female brilliance, the collective political structure of Rajasthan was collapsing under the crushing weight of internal civil feuds and external mercenary extortion."
+      },
+      {
+        id: "ch-32-maratha-extortion-krishna-kumari-1818",
+        number: 32,
+        title: "The Maratha Extortion, The Krishna Kumari Tragedy & The 1818 British Treaties",
+        date: "1780–1818 CE",
+        scope: "Anil Chandra Banerjee (Lectures, Ch. 6) • James Tod (Vol. 1)",
+        epistemic_tag: "CRITICAL DECLINE HISTORIOGRAPHY",
+        paragraphs: [
+          "The late eighteenth century witnessed the tragic, agonizing collapse of the Rajput clan commonwealth. Following the disintegration of the Mughal Empire, the Rajput royal houses—instead of forging a unified northern coalition—dissolved into bitter, fratricidal civil wars over succession. To fight their own recalcitrant clan nobles, monarchs in Mewar, Marwar, and Jaipur hired foreign mercenary battalions (Sindhis, Rohillas, and Afghans).",
+          "Taking advantage of this vacuum, Maratha warlords (**Mahadji Scindia** and **Yashwantrao Holkar**) alongside ruthless Pindari bandit armies led by Amir Khan invaded Rajasthan annually, extracting crushing tribute (**chauth**). The Marathas had no interest in governing; they merely extracted silver. Treasuries were emptied, palaces stripped of gold leaf, and agricultural fields laid waste, reducing the legendary Maharanas of Mewar to near-destitution.",
+          "The absolute moral nadir of this feudal decay occurred in **1810 CE** with the **Krishna Kumari tragedy**. Sixteen-year-old Princess Krishna Kumari of Mewar was courted by both Maharaja Jagat Singh II of Jaipur and Maharaja Man Singh of Jodhpur. As both royal houses mobilized immense armies to fight over her hand, the Pindari warlord Amir Khan threatened to destroy Udaipur unless the princess was married to Jodhpur or put to death. To spare her impoverished father and save Mewar from total annihilation, the sixteen-year-old princess willingly drank a cup of poisoned kasumba, bowing to her father and dying to save her country."
+        ],
+        blockquote: {
+          text: "The land was torn by factions; the Maratha horse trampled the harvest, and the sword of the Pindari left only smoking ruins... until the British treaties froze the dying order in amber.",
+          citation: "Anil Chandra Banerjee, Lectures on Rajput History"
+        },
+        analysis_paragraphs: [
+          "Exhausted by Maratha plunder and internal civil chaos, the Rajput rulers turned in desperation to the British East India Company. In **1818 CE**, negotiated by British diplomat Charles Metcalfe, every major state of Rajasthan signed the **Subsidiary Alliances**, ceding all external military and foreign sovereignty to the British Crown in exchange for internal protection. The ancient sovereign kingdoms were transformed into colonial 'princely states', freezing their borders and reducing the warrior monarchs to ornamental client rulers."
+        ],
+        causal_bridge: "Though political sovereignty was surrendered to the British Crown, the internal spiritual and moral universe of the Rajput nobility remained fiercely governed by ancestral ritual codes."
+      },
+      {
+        id: "ch-33-living-code-kuldevi-sati-harlan",
+        number: 33,
+        title: "The Living Code: Kuldevi Curses, Sat & The Dual Protective Matrix",
+        date: "Anthropological Core",
+        scope: "Lindsey Harlan (Religion and Rajput Women, Ch. 2–5)",
+        epistemic_tag: "ETHNOGRAPHIC FIELDWORK & ANTHROPOLOGY",
+        paragraphs: [
+          "In her landmark anthropological study *Religion and Rajput Women*, Lindsey Harlan analyzes the living domestic and religious universe that governed Rajput aristocratic life long after the collapse of their sovereign military power. Harlan demonstrates that Rajput survival was anchored in a profound **Dual Protective Matrix** composed of two complementary, gendered ethical duties.",
+          "The first pillar was the male duty of **Khatridharma**: the obligation of the warrior to bear arms, protect territory, preserve family honor, and die on the battlefield without retreat. However, male physical steel was considered spiritually impotent without the second pillar: the female duty of **Pativrata** (absolute devotion to the husband and his lineage). A woman who perfectly performed her domestic and spiritual duties accumulated a supernatural, divine protective shield known as **Sat**.",
+          "This *sat* was believed to act as an invisible spiritual armor protecting the husband in battle. If a husband died, his death was often interpreted as a failure or exhaustion of the wife’s protective power, prompting the ultimate demonstration of devotion: mounting the funeral pyre as a **Sati**, thereby transforming into an immortal ancestral goddess with the supernatural power to bless or curse the family."
+        ],
+        blockquote: {
+          text: "The sword of the Rajput warrior is only as sharp as the virtue of his wife; her spiritual shield protects him on the battlefield.",
+          citation: "Lindsey Harlan, Religion and Rajput Women"
+        },
+        analysis_paragraphs: [
+          "Reinforcing this matrix was the cult of the **Kuldevi** (the clan goddess). The Kuldevi demanded strict blood sacrifice and absolute enforcement of clan marriage boundaries; if clan morality was betrayed, her curse (**shrap**) was believed to inflict madness, childlessness, and physical extinction upon the lineage across seven generations. This internal domestic theology preserved aristocratic cohesion across centuries of imperial and colonial disruption."
+        ],
+        causal_bridge: "As the nineteenth century progressed, the living oral traditions of Rajasthan were discovered by a British political agent who would romanticize them for the Western world."
+      },
+      {
+        id: "ch-34-romantic-invention-nationalist-memory",
+        number: 34,
+        title: "The Romantic Invention & Nationalist Transformation: James Tod to 1947+",
+        date: "1818–Modernity",
+        scope: "James Tod (Annals, Vols. 1–3) • Ramya Sreenivasan (Ch. 5–6) • Eva Ulian",
+        epistemic_tag: "INTELLECTUAL & NATIONALIST HISTORIOGRAPHY",
+        paragraphs: [
+          "In 1818, Lt. Col. James Tod was appointed the first British Political Agent to the Western Rajput States. A passionate admirer of the romantic poetry of Sir Walter Scott, Tod spent years traveling on horseback across the deserts and crags of Rajasthan, collecting thousands of bardic copper-plate charters, oral ballads, and genealogical khyats. In 1829–32, he published his monumental three-volume masterpiece, *Annals and Antiquities of Rajasthan*.",
+          "Tod performed an invaluable service to global literature by rescuing hundreds of irreplaceable historical records from destruction in the wake of the Maratha wars. However, Tod viewed Rajasthan through the romantic prism of European chivalry: he presented the Rajputs as Gothic knights of pure Aryan blood, doomed by an incurable tragic flaw of clan jealousy that made British colonial governance both necessary and benevolent.",
+          "Yet, in one of the great ironies of colonial history, Tod’s romantic English text was seized upon in the late nineteenth century by Indian anti-colonial nationalists. Intellectuals in Bengal and Maharashtra—including Dwijendralal Ray, Rabindranath Tagore, Bal Gangadhar Tilak, and Sri Aurobindo—translated Tod’s accounts into vernacular plays and national epics. Figures like **Maharana Pratap**, **Queen Padmini**, and **Durga Das Rathore** were stripped of their narrow dynastic context and transformed into universal, secular symbols of India's unquenchable will to resist foreign British imperial domination."
+        ],
+        blockquote: {
+          text: "There is not a village in Rajasthan that has not had its Thermopylae, and scarcely a city that has not produced its Leonidas.",
+          citation: "Lt. Col. James Tod, Annals and Antiquities of Rajasthan"
+        },
+        analysis_paragraphs: [
+          "When India achieved democratic independence in 1947 and the royal states integrated into the Republic of India, the fortresses of Chittor, Kumbhalgarh, and Mehrangarh ceased to be private feudal keeps. Today, recognized as UNESCO World Heritage sites, they stand as enduring architectural testaments to twelve centuries of human courage, artistic brilliance, and civilizational resilience."
+        ],
+        causal_bridge: "The 1,200-year saga from Bappa Rawal's basalt rock in 734 CE to modern democratic India demonstrates that Rajput history is not a dead myth, but an enduring civilizational foundation."
+      }
+    ]
+  }
+];
+
+module.exports = { epochs };
