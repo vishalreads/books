@@ -360,7 +360,11 @@ function runRegressionSuite() {
   const chmKu = JSON.parse(fs.readFileSync(path.join(chmDir, 'knowledge-units.json'), 'utf8'));
   const chmHtml = fs.readFileSync(path.join(chmDir, 'index.html'), 'utf8');
   let chmRendered = 0;
-  chmKu.forEach(u => { if (chmHtml.includes(`id="unit-${u.unit_number}"`)) chmRendered++; });
+  const chmUnits = Array.isArray(chmKu) ? chmKu : (chmKu.units || []);
+  chmUnits.forEach(u => {
+    const num = u.unit_number || u.chapter_num;
+    if (chmHtml.includes(`id="unit-${num}"`)) chmRendered++;
+  });
   const chmCream = chmHtml.includes('data-theme="cream"');
   const chmControls = chmHtml.includes('reader-controls.js');
   if (chmRendered === 11 && chmCream && chmControls) {
