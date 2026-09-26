@@ -220,3 +220,18 @@ Before any Book Master is certified as "Replacement Ready", it must pass all 9 a
 - [ ] **7. Nuance Test**: Are edge cases, caveats, contradictions, and ambiguities explicitly preserved?
 - [ ] **8. Traceability Test**: Can every major unit be mapped back to its chapter or scene location?
 - [ ] **9. Synthesis Readiness**: Are knowledge units structured in JSON for clean cross-book synthesis?
+
+---
+
+## 8. Automated CI/CD Regression Verification
+All new books must strictly adhere to [`docs/architecture/BKRS_PRODUCTION_BOOK_STANDARD.md`](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/architecture/BKRS_PRODUCTION_BOOK_STANDARD.md) and pass the automated test runner before completion:
+```bash
+node src/verify_all_readers.js
+```
+The test verifies:
+1. Editorial Cream theme default (`data-theme="cream"`).
+2. Proper stylesheet links (`reader-shell.css`, `theme.css`, `typography.css`).
+3. Controls script attachment (`reader-controls.js`).
+4. Canonical `knowledge-units.json` populated with matching unit IDs.
+5. `master-notes.md` exceeding depth floors (>= 15,000 characters).
+
