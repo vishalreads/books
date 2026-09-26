@@ -58,497 +58,684 @@ const rajputRosettaTerms = [
   },
   {
     term: "Asymmetric Fortress Architecture",
-    category: "Military Architecture",
-    traditional_claim: "Romantic, whimsical palaces built without planning on rugged hilltops. (Tod / Fergusson)",
-    modern_audit: "Sophisticated contour-hugging military engineering designed to exploit natural scarps, trap invading armies in winding chokepoints, collect monsoon runoff in rock-cut cisterns, and offer interlocking fields of fire. (Giles Tillotson)",
-    analogy: "A stealth aircraft designed with radical angles: every slope, bastion, and zig-zag wall is engineered to deflect military impact and maximize defensive survival."
+    category: "Military Engineering",
+    traditional_claim: "Provincial copies of Persian and Mughal palaces and citadels. (Colonial surveys)",
+    modern_audit: "An autonomous indigenous tradition of organic rock architecture, moulding bastions, cisterns, and palaces directly into jagged basalt ridges to withstand artillery and siege warfare. (Giles Tillotson)",
+    analogy: "A stealth aircraft designed to match rugged radar-defying terrain rather than a symmetric neoclassical palace built on an open French lawn."
   },
   {
-    term: "The Marwar Crisis (1679)",
-    category: "Imperial Historiography",
-    traditional_claim: "Aurangzeb's religious crusade to forcefully convert the Rathores and demolish their temples. (Tod)",
-    modern_audit: "A structural imperial succession dispute caused by Maharaja Jaswant Singh dying without an adult heir in Jamrud, prompting Aurangzeb to assert crown control over crucial Agra-Gujarat trade corridors, provoking Rathore resistance. (Robert Hallissey)",
-    analogy: "A federal government attempting to seize control of a strategic oil transit pipeline running through a territory when the local governor dies without a verified will, triggering armed defiance."
+    term: "Dewan of Eklingji",
+    category: "Sacred Kingship",
+    traditional_claim: "The Maharana of Mewar as absolute divine monarch. (Tod)",
+    modern_audit: "A radical constitutional theology where Lord Shiva (Eklingji) is the sole sovereign king of Mewar, and the Maharana is merely His mortal prime minister (Dewan), making territorial surrender an act of cosmic treason. (Tod & Epigraphy)",
+    analogy: "The Prime Minister of the United Kingdom acting strictly in the name of the Crown, unable to alienate British territory because it belongs to an eternal constitutional entity."
   },
   {
-    term: "Khatridharma",
-    category: "Ethical Philosophy",
-    traditional_claim: "Reckless, suicidal chivalry for bardic fame. (Tod)",
-    modern_audit: "The total ethical duty of the Kshatriya warrior: defending the weak, governing the land with generosity, protecting Brahmins and cows, and refusing to flee from the battlefield regardless of odds. (Harlan & Tod)",
-    analogy: "The Spartan warrior ethos or the Japanese Bushido code: death in battle is an honorable coronation, whereas cowardly surrender is worse than biological annihilation."
+    term: "Charan & Bhat",
+    category: "Diplomacy & Social Institutions",
+    traditional_claim: "Simple court poets singing flattering eulogies to local rajas.",
+    modern_audit: "The institutional genealogists, diplomatic ambassadors, and treaty guarantors of Western India. Their sacred inviolability meant an assault on a Charan led to suicide-curses (chandi) that destroyed the violator's legitimacy. (Kolff & Tod)",
+    analogy: "An international credit rating agency merged with an accredited diplomatic ambassador: their word verified sovereign honor, and defying their guarantee ruined your political existence."
+  },
+  {
+    term: "The Padmavat Trajectory",
+    category: "Literary Memory & Historiography",
+    traditional_claim: "An uninterrupted historical chronicle of Queen Padmini from 1303 CE onward. (Tod)",
+    modern_audit: "A 400-year evolution: originating in 1540 as an Awadhi Sufi mystical allegory by Malik Muhammad Jayasi, adopted in 1589 by Jain poet Hemratan, codified into official Mewar dynastic memory in 17th-century Sisodia chronicles, and popularized globally by Tod and Bengali nationalists. (Ramya Sreenivasan)",
+    analogy: "King Arthur and the Holy Grail: beginning as chivalric poetry, evolving into royal English state ideology, and ultimately becoming a global cinematic icon."
+  },
+  {
+    term: "The Intelligence of Tradition",
+    category: "Art History & Visual Culture",
+    traditional_claim: "Crude, flat folk illustrations copying Mughal imperial realism with less technical finesse.",
+    modern_audit: "A deliberate, highly sophisticated aesthetic system using saturated colour fields, continuous narrative, and emotional rasas (vir and shringara) to assert sacred legitimacy and dynastic continuity against imperial homogenisation. (Molly Emma Aitken & Basil Gray)",
+    analogy: "Modernist expressionism (e.g. Matisse or Rothko) choosing emotive color planes and symbolic space over photographic camera realism to convey psychological and spiritual truth."
+  },
+  {
+    term: "Pahari Rajput Statecraft",
+    category: "Himalayan Geopolitics",
+    traditional_claim: "Isolated mountain tribes untouched by North Indian dynastic politics.",
+    modern_audit: "A sophisticated network of hill dynasties (Katoch of Kangra, Bilaspur, Sirmaur, Chamba) that adopted Rajput genealogies and martial statecraft to rule diverse mountain populations, navigating Mughal suzerainty, Gorkha expansion, and British indirect rule. (Arik Moran)",
+    analogy: "The Swiss canton confederacies: mountainous bastions maintaining autonomous legal identity while acting as strategic buffer states between surrounding empires."
+  },
+  {
+    term: "Ranis' Executive Agency",
+    category: "Gender & Political Authority",
+    traditional_claim: "Passive, cloistered royal women destined solely for tragic immolation on funeral pyres.",
+    modern_audit: "Elite royal dowagers and regents (such as the Guleri Rani or Sirmauri Ranis) who controlled state treasuries, negotiated with British political agents, mobilised monastic armies, and actively shaped dynastic successions. (Arik Moran & Lindsey Harlan)",
+    analogy: "Queen Elizabeth I or Catherine de' Medici: operating from behind court protocols to command statecraft, finance, and foreign diplomacy with ruthless acumen."
+  },
+  {
+    term: "Thikana & Bhai-Bandh",
+    category: "Clan Governance",
+    traditional_claim: "Subservient feudal fiefs ruled by despotic local warlords.",
+    modern_audit: "Hereditary noble estates governed through egalitarian clan brotherhood (bhai-bandh), where the ruling Raja was merely 'primus inter pares' (first among equals) and could not dictate policy without noble council. (Eva Ulian, Kolff)",
+    analogy: "A corporate board of founding partners holding veto power over the CEO, preventing central despotism through distributed equity."
   }
 ];
 
 const rajputKnowledgeUnits = [
-  // MOVEMENT I: ETHNOGENESIS & THE MILITARY LABOUR MARKET
+  // MOVEMENT I: ETHNOGENESIS, EPIGRAPHY & THE MILITARY LABOUR MARKET (734–1300 CE)
   {
-    id: "unit-01-kolff-military-labour-open-rajput",
+    id: "unit-01-guhila-foundation-bappa-rawal-chittor",
     unit_number: 1,
-    title: "The Open Horizon: 'Rajput' as an Open Status Category in the Military Labour Market",
-    movement: "Movement I: Ethnogenesis & The Military Labour Market (Kolff & Historiographical Revision)",
+    title: "The Guhila Foundation at Chittor: Bappa Rawal & Sacred Dewan Sovereignty (c. 734 CE)",
+    movement: "Movement I: Ethnogenesis, Epigraphy & The Military Labour Market (734–1300 CE)",
+    scope: "James Tod (Vol. 1, Ch. 1–3) • Atpur & Eklingji Inscriptions",
+    primary_authors: ["James Tod", "Modern Epigraphists"],
+    core_concept: "In the 8th century, Bappa Rawal captured the monolithic basalt plateau of Chittorgarh from the Mori rulers, establishing the Guhila dynasty under the spiritual sovereignty of Eklingji (Shiva), creating an institutional political theology where the Maharana acts not as divine king, but as mortal prime minister (Dewan).",
+    epistemic_audit: "EPIGRAPHIC FACT & INDIGENOUS POLITICAL THEOLOGY. Inscriptional evidence from the 10th-century Atpur stone confirms Guhaditya and Bappa Rawal's lineage; establishes Mewar's non-negotiable territorial integrity.",
+    key_tenets: [
+      "Dewan of Eklingji: The Maharanas rejected absolute mortal monarchy; they ruled as regents of Shiva, making territorial surrender an act of cosmic sacrilege (Tod).",
+      "Strategic Monolith: Chittorgarh's 500-foot sheer cliff plateau commanded the trade highways between the Indo-Gangetic plains and the sea-ports of Gujarat.",
+      "Early Resistance: Inscriptional evidence records early Guhila coalitions checking Arab Umayyad raiding parties past the Thar desert in the 8th century."
+    ],
+    operational_heuristic: "Identify how vesting ultimate sovereignty in a patron deity creates constitutional resilience against political submission.",
+    verbatim_anchor: "“The crown of Mewar rested not on the head of its mortal kings, but upon the altar of Eklingji; the Maharana was but his regent and sword-bearer.” — James Tod (Annals and Antiquities of Rajasthan)",
+    epistemic_status: "EPIGRAPHIC FOUNDATION",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-02-open-military-labour-market-kolff",
+    unit_number: 2,
+    title: "The Open Horizon: 'Rajput' as an Open Status Category in the Military Labour Market (c. 1000–1300 CE)",
+    movement: "Movement I: Ethnogenesis, Epigraphy & The Military Labour Market (734–1300 CE)",
     scope: "Dirk Kolff (Naukar, Rajput, and Sepoy, Ch. 1–2)",
     primary_authors: ["Dirk H. A. Kolff"],
-    core_concept: "Prior to the late sixteenth century, 'Rajput' was not a closed, biologically pure caste (jati), but an open, fluid identity of martial service and soldiership in the North Indian military labour market. Anyone with a horse, a sword, and the courage to fight could enter a mercenary contract (naukari) and claim Rajput status.",
-    epistemic_audit: "MODERN CRITICAL HISTORIOGRAPHY & ETHNOHISTORY. Debunks James Tod's 19th-century racial-feudal model; uses contemporary Persian chronicles, regional ballads, and recruitment registers to demonstrate social mobility.",
+    core_concept: "Prior to the late sixteenth century, 'Rajput' was not a closed, biologically pure caste (jati), but an open, fluid identity of martial service in the North Indian military labour market. Anyone with a horse, a sword, and martial courage could enter a mercenary contract (naukari) and claim Rajput status.",
+    epistemic_audit: "MODERN CRITICAL ETHNOHISTORY. Debunks 19th-century racial-feudal models using contemporary Persian chronicles, regional ballads, and recruitment registers.",
     key_tenets: [
-      "The military labour market in Hindustan was vast, seasonal, and peasant-based: millions of armed cultivators migrated across North India between harvests looking for martial employment (naukar) (Kolff).",
-      "The early term 'Rajput' (rajaputra - 'son of a king') functioned as an earned title of military honour and political entrepreneurship rather than an endogamous genealogical cage (Kolff).",
-      "War-bands were multi-ethnic and multi-caste: Bundelas, Purbiyas, Afghans, and pastoralists fought side-by-side, adopting the ethos of chivalry and loyalty to whichever warlord provided salt and gold."
+      "Seasonal Peasant Mobility: Millions of armed cultivators migrated across Hindustan between harvests seeking military employment (naukar) (Kolff).",
+      "Earned Status: The early title rajaputra designated functional military prowess and leadership rather than an endogamous genealogical cage (Kolff).",
+      "Multi-Ethnic War-Bands: Warriors from varied backgrounds fought side-by-side, adopting chivalric ethos and loyalty to whichever warlord provided salt and pay."
     ],
-    operational_heuristic: "Distinguish between the living historical reality of an open military class and the retrospective bardic myth of an immemorial closed caste.",
+    operational_heuristic: "Distinguish between the living historical reality of an open military class and the retrospective myth of an immemorial closed caste.",
     verbatim_anchor: "“Being a Rajput was not a matter of birth, but of conduct, of military profession, and of service... The Rajput was, first and foremost, a soldier of fortune in the Hindustani market.” — Dirk H. A. Kolff (Naukar, Rajput, and Sepoy)",
     epistemic_status: "CRITICAL HISTORIOGRAPHY",
     materiality: "CRITICAL"
   },
   {
-    id: "unit-02-rajputization-caste-closure",
-    unit_number: 2,
-    title: "The Process of Rajputization & The Closure of Clan Endogamy",
-    movement: "Movement I: Ethnogenesis & The Military Labour Market (Kolff & Historiographical Revision)",
-    scope: "Kolff (Ch. 3) • Chattopadhyaya • Tod (Vol. 1, Intro)",
-    primary_authors: ["Dirk H. A. Kolff", "B. D. Chattopadhyaya"],
-    core_concept: "Under the consolidating pressure of the Mughal state and Rajput royal houses in the 16th and 17th centuries, the fluid warrior class underwent 'Rajputization': ruling houses patronized Charan bards and Brahmin genealogists to codify rigid genealogies, exalting Sun (Suryavansha) and Moon (Chandravansha) lineages while casting out unassimilated peasant warriors as 'spurious'.",
-    epistemic_audit: "HISTORICAL SOCIOLOGY & ANTHROPOLOGY. Reconciles Tod's bardic lists with modern epigraphic evidence of clan formation in early medieval Rajasthan.",
-    key_tenets: [
-      "The Mughal alliance required legal clarity: the imperial court needed to know which princes had legitimate sovereign authority to assign hereditary watan jagirs and command royal troops (Kolff).",
-      "Genealogical inflation: local ruling families hired Charans (bards) to compose *vamsavalis* (dynastic chronicles) connecting regional chieftains to ancient epic heroes of the Ramayana and Mahabharata.",
-      "The closure of marriage circles: marital alliances shifted from open political alliances with diverse groups to strictly policed hypergamous clan networks (Sisodia, Rathore, Kachwaha, Hada)."
-    ],
-    operational_heuristic: "Trace the shift from functional martial identity to institutionalized genetic hierarchy as a mechanism of political state-building.",
-    verbatim_anchor: "“The open horizon of Rajput identity was closed by the bureaucratization of the Mughal Empire and the invention of hypergamous genealogies.” — Intellectualist Synthesis",
-    epistemic_status: "HISTORICAL SOCIOLOGY",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-03-agnikula-36-royal-races-myth-vs-epigraphy",
+    id: "unit-03-agnikula-purification-and-epigraphics",
     unit_number: 3,
-    title: "The Agnikula Fire-Pit Myth & The 36 Royal Races: Bardic Legend vs. Inscriptions",
-    movement: "Movement I: Ethnogenesis & The Military Labour Market (Kolff & Historiographical Revision)",
-    scope: "James Tod (Vol. 1, Ch. 1–2) • Modern Epigraphic Records",
-    primary_authors: ["James Tod", "Modern Epigraphists"],
-    core_concept: "James Tod popularized the bardic Agnikula myth—that four supreme clans (Pratihara, Paramara, Chalukya/Solanki, Chauhan) were created from a cosmic sacrificial fire on Mount Abu to destroy demons. Modern epigraphy reveals this legend only appeared centuries after their emergence as a ritual legitimation of foreign and indigenous martial assimilation.",
-    epistemic_audit: "MYTHOLOGICAL DECONSTRUCTION & EPIGRAPHY. Cross-examines Tod's romantic recitation against early medieval stone inscriptions (Bijolia inscription, Harsha stone inscription).",
+    title: "Agnikula Legitimization & The 36 Royal Races: Epigraphics vs. Bardic Myth (12th–16th c.)",
+    movement: "Movement I: Ethnogenesis, Epigraphy & The Military Labour Market (734–1300 CE)",
+    scope: "James Tod (Vol. 1, Ch. 1–2) • B. D. Chattopadhyaya • Inscriptions",
+    primary_authors: ["James Tod", "B. D. Chattopadhyaya"],
+    core_concept: "The bardic myth of the Agnikula fire-pit on Mount Abu—claiming four clans (Paramara, Parihara, Chalukya, Chauhan) were born from sacrificial fire—was an ex-post-facto purification ritual legitimizing assimilated martial lineages into Vedic Kshatriya status.",
+    epistemic_audit: "MYTHOLOGICAL DECONSTRUCTION & EPIGRAPHY. Bijolia and Harsha stone inscriptions confirm clans made solar or lunar claims centuries before the Agnikula story emerged in the Prithviraj Raso.",
     key_tenets: [
-      "Tod's Catalogue: Tod codified the 'Chhattis Rajkula' (36 Royal Races) as an immutable, chivalric peerage analogous to European knightly nobility (Tod).",
-      "The Historical Reality: 8th-to-11th century inscriptions make zero mention of the Abu fire-pit; the Pratiharas claimed descent from Lakshmana, and the Chauhans claimed origin from the Sun (Epigraphy).",
-      "Function of the Myth: The Agnikula story emerged in the late medieval *Prithviraj Raso* to unite diverse Rajput factions under a common sacred origin in the face of Central Asian Sultanate invasions."
+      "Genealogical Fabrication: Charans and Brahmins composed Sanskrit vamsavalis connecting regional warlords to heroes of the Ramayana and Mahabharata (Chattopadhyaya).",
+      "Ritual Naturalization: The fire-pit served as a symbolic crucible absorbing indigenous and Central Asian warrior stocks into orthodox society.",
+      "The 36 Royal Races: Tod systematized bardic lists into an immutable chivalric nobility analogous to European peerage (Tod)."
     ],
-    operational_heuristic: "Identify bardic origin myths as political survival literature forged in the crucible of medieval conflict rather than literal biological history.",
-    verbatim_anchor: "“The fire-fountain of Abu was the crucible wherein were purified the broken warrior races of ancient India, born anew to defend the sacred soil.” — James Tod (Annals and Antiquities of Rajasthan)",
+    operational_heuristic: "Recognize origin myths as political survival instruments forged during medieval conflict rather than literal genetic history.",
+    verbatim_anchor: "“The fire-fountain of Abu was the crucible wherein were purified the broken warrior races of ancient India, born anew to defend the sacred soil.” — James Tod",
     epistemic_status: "EPIGRAPHIC CORRECTION",
     materiality: "IMPORTANT"
   },
-
-  // MOVEMENT II: THE GUHILA & SISODIA DYNASTY OF MEWAR (THE UNYIELDING CITADEL)
   {
-    id: "unit-04-bappa-rawal-foundations-mewar-chittor",
+    id: "unit-04-purbiya-infantry-and-naukari",
     unit_number: 4,
-    title: "Bappa Rawal & The Geopolitical Foundations of Mewar at Chittor",
-    movement: "Movement II: The Guhila & Sisodia Dynasty of Mewar (The Unyielding Citadel)",
-    scope: "James Tod (Vol. 1: History of Mewar, Ch. 1–3)",
-    primary_authors: ["James Tod"],
-    core_concept: "In the 8th century, Bappa Rawal captured the monolithic hilltop rock of Chittorgarh from the Mori rulers, establishing the Guhila dynasty under the spiritual sovereignty of Eklingji (Shiva), transforming the Mewar rulers into mere prime ministers (*Dewan*) of God.",
-    epistemic_audit: "FOUNDATIONAL STATE-FORMATION & SACRED KINGSHIP. Confirmed by 10th-century Atpur and Eklingji inscriptions; marks the rare Indian political model where the king is formally a servant of the patron deity.",
+    title: "The Purbiya Infantry Diaspora & The Ethos of Naukari (c. 1100–1500 CE)",
+    movement: "Movement I: Ethnogenesis, Epigraphy & The Military Labour Market (734–1300 CE)",
+    scope: "Dirk Kolff (Ch. 3–4)",
+    primary_authors: ["Dirk H. A. Kolff"],
+    core_concept: "The armed peasantry of Awadh, Bihar, and Bundelkhand—known collectively as 'Purbiyas'—formed the most formidable infantry mercenary force in medieval India, selling their military labour to Malwa, Gujarat, and early Sultanates under strict contracts of honor (namak).",
+    epistemic_audit: "MILITARY ETHNOHISTORY. Demonstrates that Rajput identity flourished far to the east of Rajasthan long before Mughal administrative standardization.",
     key_tenets: [
-      "The Dewan of Eklingji: The Maharanas of Mewar never took the title of 'King of Kings' (*Maharajadhiraja*); they ruled as 'Dewan' (prime ministers) on behalf of Eklingji, making surrender of territory an act of religious apostasy (Tod).",
-      "Chittorgarh as a Strategic Keystone: An isolated 500-foot basalt plateau with sheer cliffs and natural monsoon reservoirs, Chittor commanded the primary military and commercial highway connecting the Gangetic plains to Gujarat ports.",
-      "Repelling Early Arab Thrusts: Bappa Rawal is recorded as part of the regional coalition (alongside Nagabhata I) that checked Arab Umayyad advances past the Thar desert into the Indian interior."
+      "The Foot-Soldier Core: While Rajasthan emphasized cavalry, the Gangetic Purbiyas dominated fortress sieges and open field infantry defense (Kolff).",
+      "Contractual Loyalty: The binding concept of namak-halali (fidelity to the master's salt) made Purbiya regiments reliable mercenaries across sectarian lines.",
+      "Precursor to the Sepoy: Purbiya recruitment networks established the organizational templates later inherited by the East India Company's Bengal Army."
     ],
-    operational_heuristic: "Understand how anchoring political sovereignty in a deity rather than a mortal king provided Mewar with existential immunity against surrender.",
-    verbatim_anchor: "“The crown of Mewar rested not on the head of its mortal kings, but upon the altar of Eklingji; the Maharana was but his regent and sword-bearer.” — James Tod",
-    epistemic_status: "INDIGENOUS POLITICAL THEOLOGY",
-    materiality: "CRITICAL"
+    operational_heuristic: "Acknowledge the vast non-aristocratic base of martial labour that powered North Indian armies before colonial classification.",
+    verbatim_anchor: "“The Purbiya was the prototype of the professional Indian soldier, serving under his own jamadars and demanding contractual respect for his martial honor.” — Dirk H. A. Kolff",
+    epistemic_status: "MILITARY ETHNOHISTORY",
+    materiality: "IMPORTANT"
   },
+
+  // MOVEMENT II: THE SULTANATE SIEGES, SACRIFICIAL PROTOCOL & THE MEMORY OF PADMINI (1303–1364 CE)
   {
-    id: "unit-05-first-siege-chittor-1303-padmini-jauhar",
+    id: "unit-05-first-siege-of-chittor-1303",
     unit_number: 5,
-    title: "The First Siege of Chittor (1303): Alauddin Khalji, The Padmini Debate & The Genesis of Jauhar",
-    movement: "Movement II: The Guhila & Sisodia Dynasty of Mewar (The Unyielding Citadel)",
-    scope: "Tod (Vol. 1, Ch. 6) • Amir Khusrau (Khazain-ul-Futuh) • Malik Muhammad Jayasi (Padmavat)",
-    primary_authors: ["James Tod", "Amir Khusrau", "Modern Historiography"],
-    core_concept: "In 1303, Sultan Alauddin Khalji besieged Chittor for eight months. Faced with starvation, the women led by Rani Padmini performed the first recorded royal Jauhar in Mewar, and Rana Ratan Singh led the garrison in a fatal Saka charge. The siege became the archetypal crucible of Rajput chivalric myth.",
-    epistemic_audit: "HISTORIOGRAPHICAL DISPUTE MATRIX. Contemporaneous court chronicler Amir Khusrau records the military siege and mass slaughter of 30,000 peasants, but never mentions Padmini or the mirror scene. Padmini first appears 237 years later in Jayasi's Sufi allegory *Padmavat* (1540), which Tod absorbed as literal history.",
+    title: "The 1303 Siege of Chittorgarh: Military Reality vs. Sufi Allegory (1303 CE)",
+    movement: "Movement II: The Sultanate Sieges, Sacrificial Protocol & The Memory of Padmini (1303–1364 CE)",
+    scope: "Amir Khusrau (Khazain-ul-Futuh) • Ramya Sreenivasan (Ch. 1–2) • Tod",
+    primary_authors: ["Amir Khusrau", "Ramya Sreenivasan", "James Tod"],
+    core_concept: "In 1303, Sultan Alauddin Khalji subjected Chittorgarh to a brutal eight-month siege. Contemporary eyewitness chronicler Amir Khusrau documents the citadel's surrender and massive slaughter, while contemporary records contain zero mention of Queen Padmini or mirrors.",
+    epistemic_audit: "PRIMARY HISTORICAL CHRONICLE. Eyewitness court history (Amir Khusrau) establishes military facts; separates the 1303 campaign from subsequent literary embroideries.",
     key_tenets: [
-      "The Military Reality: Alauddin's goal was imperial expansion, subjugating regional fortresses, and securing trade conduits to Gujarat, not the kidnapping of a legendary queen (Modern Historiography).",
-      "The Human Sacrifice: When the citadel could no longer hold, thousands of women cast themselves into subterranean fire chambers while warriors donned saffron garments to die in the breach.",
-      "Dynastic Shift to Sisodia Branch: Following the destruction of the main Guhila line, Rana Hammir of the junior Sisodia branch reclaimed Chittor around 1326, founding the Sisodia dynasty."
+      "Geopolitical Objective: Khalji sought control over the fortified nexus commanding routes to Gujarat and the Deccan, not an individual woman (Sreenivasan).",
+      "Eight-Month Siege: Rawal Ratan Singh held out until monsoon logistics and siege engines (manjaniqs) forced the final catastrophe.",
+      "The First Jauhar: While contemporary Persian records do not name Padmini, indigenous traditions remember a mass immolation preceding the fortress's fall."
     ],
-    operational_heuristic: "Disentangle the verified military tragedy of the 1303 siege from the subsequent 16th-century literary allegorization of Padmini.",
-    verbatim_anchor: "“The day was lost... The fair Padmini and her female companions entered the subterranean fiery vault, and the massive gates closed on the flower of Chittor.” — James Tod",
-    epistemic_status: "HISTORIOGRAPHICAL DISPUTE MATRIX",
+    operational_heuristic: "Ground historical sieges in strategic geography and contemporary documentation before analyzing retrospective literary layers.",
+    verbatim_anchor: "“On Monday, 11 Muharram 703 A.H., the Sultan entered the fort of Chittor... thirty thousand infidels were cut down like dry grass.” — Amir Khusrau (Khazain-ul-Futuh)",
+    epistemic_status: "CONTEMPORARY RECORD",
     materiality: "CRITICAL"
   },
   {
-    id: "unit-06-rana-kumbha-kumbhalgarh-fortress-architect",
+    id: "unit-06-many-lives-of-padmini-sreenivasan",
     unit_number: 6,
-    title: "Rana Kumbha: The Fortification of Kumbhalgarh, Vijay Stambha & Renaissance Statecraft",
-    movement: "Movement II: The Guhila & Sisodia Dynasty of Mewar (The Unyielding Citadel)",
-    scope: "James Tod (Vol. 1, Ch. 8) • Giles Tillotson (The Rajput Palaces, Ch. 2)",
-    primary_authors: ["James Tod", "Giles Tillotson"],
-    core_concept: "Rana Kumbha (r. 1433–1468) was the supreme military architect and intellectual of medieval Rajasthan. He constructed 32 of the 84 defensive fortresses in Mewar, including the impregnable mountain citadel of Kumbhalgarh, and erected the iconic Vijay Stambha (Tower of Victory) at Chittor to commemorate his victories over the Malwa and Gujarat Sultanates.",
-    epistemic_audit: "ARCHITECTURAL AND EPIGRAPHIC RECORD. Corroborated by Kumbhalgarh inscriptions and extensive surviving monuments; exemplifies the golden age of classical Rajput renaissance.",
+    title: "The Many Lives of Padmini: Jayasi’s 1540 Allegory to Royal Dynastic History (1303–1600 CE)",
+    movement: "Movement II: The Sultanate Sieges, Sacrificial Protocol & The Memory of Padmini (1303–1364 CE)",
+    scope: "Ramya Sreenivasan (The Many Lives of a Rajput Queen, Ch. 1–4)",
+    primary_authors: ["Ramya Sreenivasan"],
+    core_concept: "The story of Queen Padmini originated not as a 1303 eyewitness account, but in 1540 as an Awadhi Sufi mystical allegory (*Padmavat*) by Malik Muhammad Jayasi. Over two centuries, it was reimagined by Jain bards (Hemratan, 1589) and assimilated into Mewar court chronicles (*Rajprashasti*) to forge an anti-imperial charter of Rajput Kshatriya honour.",
+    epistemic_audit: "LANDMARK HISTORIOGRAPHICAL RECONSTRUCTION. Ramya Sreenivasan maps the textual transmission across Persian, Awadhi, Rajasthani, and Sanskrit manuscripts over 400 years.",
     key_tenets: [
-      "The Wall of Kumbhalgarh: Engineered a 36-kilometer perimeter wall—second in length only to the Great Wall of China—encircling a rugged Aravalli valley containing self-sufficient farmland, temples, and an elevated inner keep (*Katargarh*) (Tillotson).",
-      "The Dual Sultanate Threat: Defeated the joint armies of Sultan Mahmud Khalji of Malwa and Sultan Qutb-ud-din of Gujarat, holding Mahmud captive at Chittor for six months before magnanimously releasing him (Tod).",
-      "Polymath Renaissance: Kumbha was a prolific Sanskrit scholar, musicologist (authoring *Sangita Raja*), and patron of temple architecture (Ranakpur Jain temple was built under his royal charter)."
+      "Jayasi's Sufi Allegory (1540): Padmini represented divine wisdom (*akla*), Ratansen the soul, Chittor the body, and Alauddin worldly illusion (*maya*).",
+      "Rajput Retelling (1589): Jain monk Hemratan's *Gora Badal Padmini Chaupai* stripped the Sufi mysticism, transforming Gora and Badal into heroic archetypes of Rajput vassal sacrifice (Sreenivasan).",
+      "Sisodia Codification (17th c.): Mewar's royal genealogists incorporated Padmini as a historical queen to contrast Sisodia marital purity against other Rajput clans who intermarried with Mughals."
     ],
-    operational_heuristic: "Recognize that enduring military resistance requires civilizational infrastructure: fortifications, agricultural reservoirs, and cultural patronization.",
-    verbatim_anchor: "“Of the eighty-four fortresses for the defense of Mewar, thirty-two were erected by Kumbha... He was a conqueror who built like a giant and wrote like a sage.” — James Tod",
-    epistemic_status: "EPIGRAPHIC & ARCHITECTURAL FACT",
+    operational_heuristic: "Trace how cultural narratives migrate from mystical literature to heroic folklore, and finally into state-sponsored historical scripture.",
+    verbatim_anchor: "“The Padmini legend is not an ancient fossil, but a dynamic, contested narrative whose meanings transformed as Rajput rulers renegotiated their power with the Mughal and British empires.” — Ramya Sreenivasan",
+    epistemic_status: "CRITICAL HISTORIOGRAPHY",
     materiality: "CRITICAL"
   },
   {
-    id: "unit-07-rana-sanga-battle-khanwa-1527",
+    id: "unit-07-theology-of-jauhar-and-saka",
     unit_number: 7,
-    title: "Rana Sanga (Sangram Singh): The Great Rajput Confederation & The Battle of Khanwa (1527)",
-    movement: "Movement II: The Guhila & Sisodia Dynasty of Mewar (The Unyielding Citadel)",
-    scope: "James Tod (Vol. 1, Ch. 9) • Baburnama • Dirk Kolff (Ch. 2)",
-    primary_authors: ["James Tod", "Babur", "Dirk Kolff"],
-    core_concept: "Rana Sanga united virtually every major Hindu and Afghan warlord of North India into a formidable confederation to halt the nascent Mughal invasion. At the Battle of Khanwa (1527), Sanga's overwhelming traditional cavalry army was defeated by Babur's revolutionary combination of field artillery (*topkhana*), matchlocks (*tufang*), and Ottoman flanking tactics (*tulughma*).",
-    epistemic_audit: "MILITARY REVOLUTION & HISTORIOGRAPHICAL SYNTHESIS. Cross-references Tod's heroic eulogy with Babur's tactical military diary (*Baburnama*); marks the decisive transition of Indian warfare into the gunpowder era.",
-    key_tenets: [
-      "The Body of Battles: Sanga bore 80 wounds on his body from sword, lance, and arrow, had lost an eye, an arm, and was crippled in one leg, yet remained the unchallenged paramount warlord of Hindustan (Tod).",
-      "The Multi-Faceted Coalition: Sanga’s army included Rathores of Marwar, Kachwahas of Amber, Hadas of Haravati, and Muslim Afghan lords like Hasan Khan Mewati and Mahmud Lodi (Kolff).",
-      "Tactical Revolution: Sanga's massed cavalry charges shattered against Babur's chained cart barrier (*araba*) and were decimated by flank sweeps and musket volleys—proving that raw chivalric bravery could not overcome modern integrated firepower."
-    ],
-    operational_heuristic: "Observe how tactical technological revolutions (gunpowder and artillery) annihilate elite traditional warrior castes who refuse to modernize doctrine.",
-    verbatim_anchor: "“He was the link between the old heroic age and the modern; eighty wounds from sword or lance adorned his frame, and he was scarred like an ancient oak.” — James Tod",
-    epistemic_status: "MILITARY HISTORICAL TURNING POINT",
-    materiality: "CRITICAL"
-  },
-
-  // MOVEMENT III: THE HEROIC EPOCH: MAHARANA PRATAP & THE FOREST WAR
-  {
-    id: "unit-08-third-siege-chittor-1568-akbar-jaimal-patta",
-    unit_number: 8,
-    title: "The Third Siege of Chittor (1568): Akbar, Jaimal & Patta, and The Fall of the Rock",
-    movement: "Movement III: The Heroic Epoch: Maharana Pratap & The Forest War",
-    scope: "James Tod (Vol. 1, Ch. 10) • Abul Fazl (Akbarnama) • Tillotson (Ch. 3)",
-    primary_authors: ["James Tod", "Abul Fazl"],
-    core_concept: "In 1567–1568, Mughal Emperor Akbar laid siege to Chittorgarh with massive siege engines and mining sappers. Maharana Udai Singh II evacuated into the Aravalli hills to found Udaipur, leaving the fort under Jaimal Rathore and Patta of Kelwa. After Jaimal was killed by Akbar's musket *Sangram*, the women performed Jauhar, the defenders charged out in Saka, and Akbar ordered the execution of 30,000 inhabitants.",
-    epistemic_audit: "EPIGRAPHIC AND PERSIAN CHRONICLE CONCURRENCE. Recorded in detail by both Abul Fazl's *Akbarnama* and Tod's bardic accounts; marked the permanent abandonment of Chittor as a royal capital.",
-    key_tenets: [
-      "Strategic Evacuation: Udai Singh's decision to abandon the rock fortress for the inaccessible Aravalli hills was reviled by Tod as cowardice, but modern military historians recognize it as brilliant strategic foresight: mountain warfare neutralizes siege artillery.",
-      "The Engineering of the Siege: Akbar used *sabats* (covered trenches) and underground gunpowder mines to breach the basalt walls under constant sniper fire.",
-      "Akbar's Memorial Statues: So deeply was Akbar impressed by the doomed valor of Jaimal and Patta that he erected statues of them mounted on elephants at the gates of his imperial palace at Agra (Abul Fazl)."
-    ],
-    operational_heuristic: "Recognize that holding static, immobile rock citadels against superior industrial siege warfare is strategic suicide; mobile forest defense preserves the dynasty.",
-    verbatim_anchor: "“Chittor fell, but Jaimal and Patta left names that will echo as long as an Aravalli hill stands against the sky.” — James Tod",
-    epistemic_status: "VERIFIED HISTORICAL TRAGEDY",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-09-maharana-pratap-battle-haldighati-1576",
-    unit_number: 9,
-    title: "Maharana Pratap & The Battle of Haldighati (1576): Tactics, Chetak, and The Yellow Pass",
-    movement: "Movement III: The Heroic Epoch: Maharana Pratap & The Forest War",
-    scope: "Tod (Vol. 1, Ch. 11) • Badauni (Muntakhab-ut-Tawarikh) • Modern Military Analysis",
-    primary_authors: ["James Tod", "Abd al-Qadir Badauni", "Modern Military Historians"],
-    core_concept: "On June 18, 1576, Maharana Pratap engaged the imperial Mughal vanguard commanded by Raja Man Singh of Amber and Asaf Khan at the narrow yellow-soil defile of Haldighati. Despite a ferociously successful initial Mewari cavalry charge that broke the Mughal vanguard, imperial reserve reinforcements and archery dominance forced Pratap's tactical withdrawal into the hills.",
-    epistemic_audit: "HISTORIOGRAPHICAL DISPUTE MATRIX. Badauni (eyewitness embedded in the Mughal ranks) describes the chaos, the terror of Pratap's war elephants (*Ram Prasad*), and the failure to pursue Pratap into the pass. Tod romanticizes the duel with Man Singh; modern military consensus confirms it was an imperial tactical victory on the field, but a total strategic failure because Pratap escaped, the army remained intact, and Mewar was not subjugated.",
-    key_tenets: [
-      "The Coalition of Haldighati: Pratap's army was not a communal monolith—his frontline commander was Hakim Khan Suri (an Afghan Muslim artillery/swordsman), and his vital rear guard and mountain snipers were indigenous tribal Bhils led by Rana Punja.",
-      "The Legend of Chetak: Pratap’s stallion Chetak carried his wounded master across the Maan Talab brook before collapsing and dying, becoming an immortal symbol of animal loyalty.",
-      "Strategic Denial: Following the battle, Akbar personally took the field but found ghost villages; Pratap enforced a scorched-earth policy, threatening death to any Mewari peasant who cultivated plains land for Mughal revenue."
-    ],
-    operational_heuristic: "A military battle is won on the field, but a war is decided by operational resilience and the refusal to surrender political legitimacy.",
-    verbatim_anchor: "“There is not a pass in the alpine Aravallis that is not sanctified by some deed of Pratap—some brilliant victory, or more often, some glorious defeat. Haldighati is the Thermopylae of Mewar.” — James Tod",
-    epistemic_status: "HISTORIOGRAPHICAL DISPUTE RESOLUTION",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-10-chawand-guerrilla-reconquest-mewar",
-    unit_number: 10,
-    title: "The Chawand Refuge & The Guerrilla Re-Conquest of Mewar (1585–1597)",
-    movement: "Movement III: The Heroic Epoch: Maharana Pratap & The Forest War",
-    scope: "James Tod (Vol. 1, Ch. 11) • Abul Fazl • Rima Hooja (History of Rajasthan)",
-    primary_authors: ["James Tod", "Rima Hooja"],
-    core_concept: "Following the Battle of Dewair (1582)—the 'Marathon of Mewar'—Pratap wiped out 36 Mughal military outposts across Mewar. Taking advantage of Akbar's military distraction with northwestern frontier rebellions in Punjab and Kabul, Pratap established his new capital at Chawand in 1585, recovering virtually all of Mewar except the isolated fortresses of Chittor and Mandalgarh.",
-    epistemic_audit: "CORRECTIVE HISTORIOGRAPHY. Dispels the popular misconception that Pratap died a miserable, starving fugitive in caves; archaeological excavations at Chawand reveal palatial structures, mints, and flourishing Rajput miniature paintings produced during his peaceful final decade.",
-    key_tenets: [
-      "The Battle of Dewair (1582): Pratap and his son Amar Singh annihilated the imperial garrison commanded by Sultan Khan, triggering a domino collapse of Mughal garrisons throughout the region (Tod).",
-      "Financial Reconstruction by Bhama Shah: Mewar’s prime minister and treasurer Bhama Shah donated his immense ancestral fortune, allowing Pratap to pay and provision 25,000 soldiers for twelve years.",
-      "Civilizational Flourishing at Chawand: Far from being mere rough forest nomads, Pratap’s court patronized artists who founded the celebrated Chawand school of Mewar painting."
-    ],
-    operational_heuristic: "Guerrilla resistance must eventually transition from tactical raiding into administrative state-reconstruction and economic stabilization.",
-    verbatim_anchor: "“He left his people an untamed spirit, a recovered territory, and an unsullied name; he died in his bed at Chawand, with his princes swearing never to bow to the Turk.” — James Tod",
-    epistemic_status: "VERIFIED HISTORICAL RECONSTRUCTION",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-11-amar-singh-treaty-1615-honorable-peace",
-    unit_number: 11,
-    title: "Maharana Amar Singh & The Treaty of 1615: The Preservation of Sovereign Prestige",
-    movement: "Movement III: The Heroic Epoch: Maharana Pratap & The Forest War",
-    scope: "Tod (Vol. 1, Ch. 12) • Jahangir (Tuzuk-i-Jahangiri) • Hallissey (Ch. 2)",
-    primary_authors: ["James Tod", "Jahangir", "Robert C. Hallissey"],
-    core_concept: "After decades of continuous warfare, Prince Khurram (later Shah Jahan) laid waste to Mewar's peasantry. In 1615, Maharana Amar Singh accepted a treaty with Emperor Jahangir. Jahangir granted unprecedented, generous terms: the Maharana was never required to attend the Mughal court in person, was excused from sending royal daughters in marriage, and Chittor was returned on the sole condition that its ruined fortifications not be rebuilt.",
-    epistemic_audit: "TREATY PROVENANCE & COURT DIPLOMACY. Fully documented in Jahangir's autobiography *Tuzuk-i-Jahangiri*; demonstrates the unique prestige of Mewar in Mughal eyes.",
-    key_tenets: [
-      "The Sacred Exemption: While every other Rajput king had to present himself before the Emperor as a subordinate and enter marriage alliances, Mewar's crown prince (*Karan Singh*) represented the house, preserving the Maharana's personal sovereignty.",
-      "The Ruined Fortress Condition: The Mughals recognized that a refortified Chittor was an existential threat, making the prohibition of its rebuilding the centerpiece of the treaty.",
-      "Amar Singh’s Grief: Despite the honorable terms, Amar Singh was so shattered by surrendering absolute isolation that he abdicated executive rule, spending his remaining years in solitary retreat at the Nau Chowki."
-    ],
-    operational_heuristic: "Pragmatic diplomacy that secures 95% of sovereign exemptions is superior to stubborn total biological annihilation of one's populace.",
-    verbatim_anchor: "“Jahangir treated the son of Pratap with an honor granted to no other monarch of the East... The Sisodias bent their knee, but they preserved their blood and their soul.” — James Tod",
-    epistemic_status: "DIPLOMATIC TREATY ARCHIVE",
-    materiality: "IMPORTANT"
-  },
-
-  // MOVEMENT IV: THE RATHORES OF MARWAR & DESERT STATECRAFT
-  {
-    id: "unit-12-rao-jodha-mehrangarh-jodhpur-1459",
-    unit_number: 12,
-    title: "Rao Jodha & The Foundation of Mehrangarh: The Desert Empire of Marwar (1459)",
-    movement: "Movement IV: The Rathores of Marwar & Desert Statecraft (Tod - Vol. 2)",
-    scope: "James Tod (Vol. 2: History of Marwar, Ch. 1–3) • Tillotson (Ch. 4)",
-    primary_authors: ["James Tod", "Giles Tillotson"],
-    core_concept: "Following years of bitter warfare with Rana Kumbha of Mewar, Rao Jodha established a new Rathore capital in 1459, erecting the colossal cliff citadel of Mehrangarh on the isolated rock of Bhakurcheeria, creating the urban and military core of Marwar (Jodhpur).",
-    epistemic_audit: "REGIONAL POLITY FORMATION & URBAN GEOGRAPHY. Confirmed by Jodhpur state Khyats and architectural analysis; marked the strategic shift from vulnerable Mandore to an impregnable desert promontory.",
-    key_tenets: [
-      "The Geopolitical Shift: Jodha recognized that the ancient capital of Mandore was indefensible against modern cavalry; Mehrangarh rose 400 feet above the desert plains with sheer rock walls (Tillotson).",
-      "The Treaty of Awal-Bawal: Jodha and Kumbha settled the border between Mewar and Marwar, famously demarcating that wherever the yellow acacia (*Bawal*) grew was Marwar, and wherever the green creepers (*Awal*) flourished belonged to Mewar.",
-      "Clan Expansion: Jodha's numerous sons established subsidiary Rathore principalities throughout the desert, most notably Rao Bika founding the kingdom of Bikaner in 1465."
-    ],
-    operational_heuristic: "Geographic adaptation: desert rulers survive by exploiting arid distances, building perched citadels, and diversifying royal branches across trade routes.",
-    verbatim_anchor: "“Mehrangarh, the citadel of the Sun, rose from the desert rock like the work of giants; it was the fortress-palace of a race that never feared the sword.” — James Tod",
-    epistemic_status: "URBAN AND ARCHITECTURAL FACT",
-    materiality: "IMPORTANT"
-  },
-  {
-    id: "unit-13-maldeo-rathore-battle-giri-sumel-1544",
-    unit_number: 13,
-    title: "Maldeo Rathore & The Battle of Giri-Sumel (1544): Sher Shah Suri's 'Handful of Millet'",
-    movement: "Movement IV: The Rathores of Marwar & Desert Statecraft (Tod - Vol. 2)",
-    scope: "James Tod (Vol. 2, Ch. 4) • Abbas Sarwani (Tarikh-i-Sher Shahi) • Dirk Kolff",
-    primary_authors: ["James Tod", "Abbas Sarwani", "Dirk Kolff"],
-    core_concept: "Rao Maldeo of Marwar expanded Rathore dominion across 38 districts, becoming the 'most potent prince of Hindustan' (Ferishta). In 1544, Afghan Emperor Sher Shah Suri invaded with 80,000 troops. At the Battle of Giri-Sumel, despite Sher Shah planting forged letters that caused Maldeo to retreat, Rathore commanders Jaita and Kumpa charged with just 12,000 men, nearly slaying Sher Shah and forcing his famous confession.",
-    epistemic_audit: "HISTORICAL BATTLE ANALYSIS & PSYCHOLOGICAL WARFARE. Verified in Abbas Khan Sarwani’s official chronicle *Tarikh-i-Sher Shahi*; classic case study of psychological disinformation fracturing an alliance.",
-    key_tenets: [
-      "The Forged Letter Stratagem: Sher Shah, terrified of facing Maldeo in open desert battle, planted letters in Maldeo's camp implying his generals Jaita and Kumpa had sold him out for Afghan gold.",
-      "The Suicide Charge of Honor: Mortified that their master doubted their fidelity, Jaita and Kumpa refused to retreat, attacking Sher Shah's entrenched elephant-and-artillery center with suicidal fury, wiping out the Afghan frontline.",
-      "Sher Shah's Confession: After barely surviving the charge through his reserve matchlocks, Sher Shah uttered his immortal evaluation: *'For a mere handful of bajra (millet), I had almost lost the Empire of Hindustan.'*"
-    ],
-    operational_heuristic: "Beware of psychological warfare: a commander who allows paranoid suspicion to break trust with his frontline generals guarantees strategic defeat.",
-    verbatim_anchor: "“I had nearly lost the empire of all Hindustan for a handful of millet.” — Sultan Sher Shah Suri (after Giri-Sumel, 1544)",
-    epistemic_status: "VERIFIED HISTORICAL BATTLE",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-14-rao-chandrasen-forgotten-pratap-marwar",
-    unit_number: 14,
-    title: "Rao Chandrasen: The Forgotten 'Pratap of Marwar' & Desert Guerrilla Warfare",
-    movement: "Movement IV: The Rathores of Marwar & Desert Statecraft (Tod - Vol. 2)",
-    scope: "James Tod (Vol. 2, Ch. 4) • Abul Fazl (Akbarnama) • Rima Hooja",
-    primary_authors: ["James Tod", "Rima Hooja"],
-    core_concept: "Rao Chandrasen of Marwar (r. 1562–1581) defied Emperor Akbar a decade before Maharana Pratap. Rejecting submission at the Nagaur Darbar in 1570, Chandrasen was driven from Jodhpur and waged relentless guerrilla warfare from the rugged desert hills of Bhadrajun and Siwana until his death, refusing compromise.",
-    epistemic_audit: "HISTORIOGRAPHICAL REVISION. Restores Chandrasen's historical precedence over Pratap in initiating anti-Mughal guerrilla resistance in Rajasthan.",
-    key_tenets: [
-      "The Nagaur Darbar (1570): When Akbar summoned the Rajasthan princes to submit and offer marital alliances, Chandrasen attended, observed the humiliating sycophancy, and fled into the night without bowing.",
-      "The Siwana Citadel: Chandrasen turned the remote desert fortress of Siwana into an impenetrable guerrilla operations base, repeatedly raiding Mughal supply caravans crossing to Gujarat.",
-      "Tragic Obscurity: Unlike Pratap, whose kingdom eventually recovered, Chandrasen's own brothers (Mota Raja Udai Singh) aligned with Akbar, and after Chandrasen's death, Marwar was brought firmly into the Mughal imperial system."
-    ],
-    operational_heuristic: "A pioneer who resists alone without internal dynastic cohesion is easily isolated and eclipsed by history, even if his tactics were identical to more celebrated heroes.",
-    verbatim_anchor: "“He was the true precursor to Pratap; he wandered the sands of Marwar without a throne, but he died a free man in the hills of Saran.” — Rima Hooja",
-    epistemic_status: "HISTORIOGRAPHICAL RESTORATION",
-    materiality: "IMPORTANT"
-  },
-
-  // MOVEMENT V: THE KACHWAHAS OF AMBER & MUGHAL IMPERIAL INTEGRATION
-  {
-    id: "unit-15-raja-bharmal-man-singh-amber-akbar-alliance",
-    unit_number: 15,
-    title: "Raja Bharmal & The Alliance of 1562: Realpolitik vs. Bardic Condemnation",
-    movement: "Movement V: The Kachwahas of Amber & Mughal Imperial Integration (Tod - Vol. 3)",
-    scope: "Tod (Vol. 3: History of Amber, Ch. 1) • Abul Fazl • Dirk Kolff (Ch. 4)",
-    primary_authors: ["James Tod", "Abul Fazl", "Dirk Kolff"],
-    core_concept: "In 1562, facing internal dynastic rivals and regional encirclement, Raja Bharmal of Amber married his daughter Harkha Bai (later Mariam-uz-Zamani) to Akbar at Sambhar. While Tod and Mewar bards reviled Amber for 'polluting Rajput blood', modern historiography recognizes this as an act of calculated realpolitik that propelled a minor hill principality into the wealthiest, most powerful military faction in the Mughal Empire.",
-    epistemic_audit: "STRATEGIC REALPOLITIK AUDIT. Weighs Mewar's moral-isolationist bardic ideology against Amber's practical statecraft and military hegemony under the Mughals.",
-    key_tenets: [
-      "Vulnerability of Amber: Amber was an impoverished, fractured kingdom caught between the aggressive Rathores of Marwar and the Delhi Sultanate; the Mughal alliance guaranteed its borders and dynastic survival.",
-      "The Transformation of the Mansabdari System: Kachwaha princes were not treated as conquered slaves; they were elevated to the highest 7,000-horse commands (*Haft Hazari*), serving as governors of Kabul, Bengal, and the Deccan.",
-      "Cultural Counter-Colonization: Kachwaha rajas used vast Mughal treasury funds to build the Amber Fort, Jaigarh cannon foundries, and patronize Hindu temples from Vrindavan (Govind Dev temple) to Varanasi."
-    ],
-    operational_heuristic: "Strategic compromise: trading formal external submission for supreme internal autonomy and immense imperial power.",
-    verbatim_anchor: "“Amber bartered her ancient purity for imperial splendor; but while Mewar bled in her rocky defiles, the Kachwaha princes governed kingdoms from Kabul to the Bay of Bengal.” — James Tod",
-    epistemic_status: "STRATEGIC REALPOLITIK",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-16-raja-man-singh-imperial-military-hegemony",
-    unit_number: 16,
-    title: "Raja Man Singh I: Imperial Commander-in-Chief from Kabul to Bengal",
-    movement: "Movement V: The Kachwahas of Amber & Mughal Imperial Integration (Tod - Vol. 3)",
-    scope: "James Tod (Vol. 3, Ch. 1) • Abul Fazl (Akbarnama) • Dirk Kolff",
-    primary_authors: ["James Tod", "Abul Fazl"],
-    core_concept: "Raja Man Singh I (1550–1614) was Akbar's paramount general, trusted far above Mughal Muslim nobles. He pacified the turbulent Afghan tribes of the Khyber Pass, annexed Orissa, conquered Bengal and Bihar, and built the formidable hilltop palace-fort of Amber, personifying the pinnacle of the Rajput-Mughal military synthesis.",
-    epistemic_audit: "MILITARY BIOGRAPHY & IMPERIAL INTEGRATION. Cross-verified across Persian court records and regional temple inscriptions; illustrates the highest rank achievable by an indigenous ruler in the Mughal state.",
-    key_tenets: [
-      "The Afghan Campaigns: Man Singh subjugated the Roshaniyya rebels in Kabul, forcing the ferocious tribes of the northwest to submit to a Hindu general carrying the Rajput panch-ranga (five-colored) banner.",
-      "Governor of Bengal (1594–1606): Defeated the independent Afghan sultans of Bengal, bringing the entire eastern seaboard into imperial orbit and establishing the city of Rajmahal.",
-      "Architectural and Religious Legacy: Transported the idol of Shila Devi from Bengal to Amber Fort, reconstructed the Kashi Vishwanath temple in Varanasi, and constructed the magnificent 7-story red sandstone Govind Dev temple at Vrindavan."
-    ],
-    operational_heuristic: "Recognize that an imperial power is often held together by the genius and martial discipline of its allied regional generals rather than its core monarch.",
-    verbatim_anchor: "“Akbar was the brain of the empire, but Man Singh was its right arm... He was a Hindu prince whose word was law from the snows of the Hindu Kush to the deltas of Bengal.” — Intellectualist Synthesis",
-    epistemic_status: "HISTORICAL BIOGRAPHY",
-    materiality: "IMPORTANT"
-  },
-  {
-    id: "unit-17-sawai-jai-singh-jantar-mantar-jaipur-planning",
-    unit_number: 17,
-    title: "Maharaja Sawai Jai Singh II: Astronomical Jantar Mantar, Jaipur Planning & Realpolitik",
-    movement: "Movement V: The Kachwahas of Amber & Mughal Imperial Integration (Tod - Vol. 3)",
-    scope: "James Tod (Vol. 3, Ch. 2) • Giles Tillotson (Ch. 6)",
-    primary_authors: ["James Tod", "Giles Tillotson"],
-    core_concept: "Maharaja Sawai Jai Singh II (1688–1743) was an extraordinary statesman, mathematician, and astronomer. In 1727, recognizing that Amber's hill-girt defenses were obsolete in the gunpowder era, he founded Jaipur—the first planned city in modern India, designed according to the Vedic Shilpa Shastra—and constructed five monumental stone observatories (*Jantar Mantars*) across India.",
-    epistemic_audit: "SCIENTIFIC & ARCHITECTURAL MASTERWORK. Surviving observatories (UNESCO World Heritage) and Jaipur urban grid validate his peerless status as an Enlightenment monarch in 18th-century Asia.",
-    key_tenets: [
-      "The Science of Jantar Mantar: Finding small brass astrolabes inaccurate, Jai Singh built colossal masonry instruments (the Samrat Yantra sundial accurate to within 2 seconds), translating European works (Euclid's Elements, Napier) and Persian tables into Sanskrit.",
-      "The Urban Grid of Jaipur: Partnered with Bengali architect Vidyadhar Bhattacharya to design a nine-square grid (*Prastara* model) with wide boulevards, designated trade sectors, and terracotta-pink facade standardization.",
-      "The Ashvamedha Yajna: In 1734, Jai Singh revived the ancient Vedic horse sacrifice (*Ashvamedha*), signaling the reassertion of independent Hindu kingship during the collapse of Mughal authority."
-    ],
-    operational_heuristic: "True civilizational genius unites military diplomacy, scientific empiricism, and rational urban design to transcend decadent epochs.",
-    verbatim_anchor: "“A statesman in an age of anarchy, a scholar on a throne; he calculated the movements of the stars while kingdoms were tumbling around him.” — James Tod",
-    epistemic_status: "SCIENTIFIC & ARCHITECTURAL FACT",
-    materiality: "CRITICAL"
-  },
-
-  // MOVEMENT VI: THE IMPERIAL CRISIS & THE RAJPUT REBELLION
-  {
-    id: "unit-18-marwar-succession-crisis-1678-aurangzeb-blunder",
-    unit_number: 18,
-    title: "The Marwar Succession Crisis (1678): Jaswant Singh's Death & Aurangzeb's Strategic Blunder",
-    movement: "Movement VI: The Imperial Crisis & The Rajput Rebellion (Hallissey & Kolff)",
-    scope: "Robert C. Hallissey (The Rajput Rebellion Against Aurangzeb, Ch. 1–3) • Tod (Vol. 2)",
-    primary_authors: ["Robert C. Hallissey"],
-    core_concept: "When Maharaja Jaswant Singh of Marwar died at Jamrud in 1678 without a living male heir, Emperor Aurangzeb attempted to take Marwar under direct imperial administration (*Khalisa*), auctioning the throne to Indra Singh Rathore. When Jaswant's pregnant queen gave birth to Ajit Singh in Lahore, Aurangzeb refused immediate recognition, demanding the infant be raised in the royal harem, detonating a 30-year war.",
-    epistemic_audit: "MODERN HISTORIOGRAPHICAL DEBUNKING. Hallissey refutes Tod and Jadunath Sarkar's theory that this was a pure religious war; proves Aurangzeb's motive was strategic and financial control over the western trade routes, but executed with catastrophic political rigidity.",
-    key_tenets: [
-      "The Geopolitical Nexus: Marwar lay squarely across the imperial supply line from Delhi and Agra to the lucrative maritime ports of Surat and Cambay; controlling it directly had been an imperial ambition for decades (Hallissey).",
-      "Violation of Rajput Watan Custom: By treating Marwar as an ordinary transferable jagir rather than honoring the infant Ajit Singh's customary succession, Aurangzeb violated the sacred unwritten Mughal-Rajput covenant established by Akbar.",
-      "The Catalyst for Alliance: Aurangzeb's heavy-handed intervention convinced the proud Maharanas of Mewar that the empire intended to extinguish all Rajput autonomy, sparking the historic Rathore-Sisodia coalition."
-    ],
-    operational_heuristic: "An empire that violates its foundational unwritten contracts with loyal aristocratic partners inevitably triggers the collapse of its own provincial legitimacy.",
-    verbatim_anchor: "“The Rajput rebellion was not born of religious fanaticism, but of imperial overreach that violated the established rules of the political game.” — Robert C. Hallissey",
-    epistemic_status: "HISTORIOGRAPHICAL REASSESSMENT",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-19-durga-das-rathore-30-year-war-for-marwar",
-    unit_number: 19,
-    title: "Durga Das Rathore & The 30-Year War: The Archetype of Incorruptible Fealty",
-    movement: "Movement VI: The Imperial Crisis & The Rajput Rebellion (Hallissey & Kolff)",
-    scope: "Hallissey (Ch. 4–5) • Tod (Vol. 2, Ch. 6) • Jadunath Sarkar",
-    primary_authors: ["Robert C. Hallissey", "James Tod"],
-    core_concept: "Durga Das Rathore was the military and diplomatic architect of the Rajput resistance against Aurangzeb. In 1679, he orchestrated the daring rescue of infant Prince Ajit Singh from Delhi, concealed him in the Sirohi hills, and conducted a grueling 30-year guerrilla campaign that bled the Mughal armies, successfully instating Ajit Singh as Maharaja of Jodhpur upon Aurangzeb's death in 1707.",
-    epistemic_audit: "MILITARY STRATEGY & DIPLOMATIC MASTERY. Cross-verified with Persian despatches (*Waqai-i-Ajmer*); celebrated across both Indian bardic lore and colonial records as the singular incorruptible warrior of the 17th century.",
-    key_tenets: [
-      "The Daring Escape from Delhi: Disguised as commoners, Durga Das and a suicide band of Rathores fought through imperial guards at Delhi, leaving mock defenders behind while spiriting the royal child away.",
-      "The Prince Akbar Alliance: In a masterstroke of political warfare, Durga Das convinced Aurangzeb’s own rebel son, Prince Muhammad Akbar, to declare himself Emperor in 1681 and turn against his father, escorting Akbar safely through enemy territory to the Maratha court of Sambhaji.",
-      "Incorruptible Moral Standard: Durga Das captured Aurangzeb’s granddaughter (Safi-un-Nisa) and grandson during the wars; instead of using them as hostages, he appointed Muslim tutors to raise them strictly according to Islamic law, returning them years later unharmed to a stunned Aurangzeb."
-    ],
-    operational_heuristic: "Integrity is the supreme military weapon: a leader whom enemies respect and allies trust unconditionally can sustain resistance across decades of material destitution.",
-    verbatim_anchor: "“May every mother bear a son like Durga Das, who saved the pride of the Rathores without taking a single gold coin for himself.” — Rajasthani Folk Maxim",
-    epistemic_status: "VERIFIED HISTORICAL RECORD",
-    materiality: "CRITICAL"
-  },
-  {
-    id: "unit-20-rathore-sisodia-coalition-maharana-raj-singh",
-    unit_number: 20,
-    title: "The Rathore-Sisodia Coalition & Maharana Raj Singh: The Letter of Defiance",
-    movement: "Movement VI: The Imperial Crisis & The Rajput Rebellion (Hallissey & Kolff)",
-    scope: "Hallissey (Ch. 3–4) • Tod (Vol. 1, Ch. 13) • Rajsamand Inscriptions",
-    primary_authors: ["Robert C. Hallissey", "James Tod"],
-    core_concept: "Recognizing that the destruction of Marwar would leave Mewar isolated, Maharana Raj Singh I (r. 1652–1680) forged a united defense treaty with the Rathores. He sent an immortal diplomatic epistle to Aurangzeb challenging the re-imposition of the Jizya tax on ethical and philosophical grounds, fortified the mountain passes, and decimated imperial armies in the Debari and Desuri defiles.",
-    epistemic_audit: "DIPLOMATIC ARCHIVES & EPIGRAPHY. Preserved in Sanskrit on the massive marble slabs of Rajsamand lake; provides rare contemporary ideological testimony against imperial sectarianism.",
-    key_tenets: [
-      "The Epistle on Tolerance: Raj Singh’s letter to Aurangzeb reminded the emperor that Akbar, Jahangir, and Shah Jahan treated Christians, Jews, Hindus, and Muslims equally as God's creation, warning that taxing the poor out of bigotry would ruin the empire.",
-      "The Mountain Trap: When Aurangzeb’s armies entered the narrow Debari pass, Mewari troops blocked both ends, cutting supply trains and capturing royal baggage trains, forcing imperial forces to retreat to Ajmer.",
-      "The Devastation of the Countryside: The war proved disastrous for both sides: while Mewar remained unvanquished, its fertile plains were laid waste, shifting the center of regional politics permanently toward mobile diplomacy."
-    ],
-    operational_heuristic: "Collective security: allied smaller powers must unite at the border of their neighbor; waiting until the neighbor falls ensures your own inevitable destruction.",
-    verbatim_anchor: "“If your Majesty places any faith in that book by which humanity is guided, it is there written that God is the God of all mankind, not the God of Muslims only.” — Maharana Raj Singh to Aurangzeb (1679)",
-    epistemic_status: "PRIMARY DIPLOMATIC EPISTLE",
-    materiality: "CRITICAL"
-  },
-
-  // MOVEMENT VII: RELIGIOUS ETHIC, GENDER & THE CULT OF PROTECTION
-  {
-    id: "unit-21-khatridharma-vs-pativrata-ethics-gender-honor",
-    unit_number: 21,
-    title: "Khatridharma vs. Pativrata: The Dual Complementary Ethics of Male and Female Honor",
-    movement: "Movement VII: Religious Ethic, Gender & The Cult of Protection (Lindsey Harlan)",
-    scope: "Lindsey Harlan (Religion and Rajput Women, Ch. 1–3)",
-    primary_authors: ["Lindsey Harlan"],
-    core_concept: "Rajput aristocratic society operated on two interlocking ethical codes: *Khatridharma* (the warrior duty of men to conquer, protect borders, and court death on the battlefield) and *Pativrata* (the ascetic duty of women to preserve the spiritual purity, longevity, and honor of their husbands through ritual devotion and self-sacrifice).",
-    epistemic_audit: "FEMINIST ANTHROPOLOGY & INDIGENOUS ETHICS. Harlan’s fieldwork among contemporary Rajput noblewomen deconstructs colonial voyeurism, revealing how women conceptualized their agency as spiritual shields for their lineage.",
-    key_tenets: [
-      "The Metaphysics of Protection (*Raksha*): In Rajput thought, a warrior’s physical courage is useless if his wife lacks spiritual purity; her prayers, fasting, and adherence to kul customs generate *sat* (spiritual energy) that physically protects him from blades (Harlan).",
-      "The Curse of the Unchaste: If a woman wavers in her duty, her husband’s armor magically fails; conversely, a true pativrata can curse kingdoms and reverse mortal fate.",
-      "Heroic Motherhood: Mothers exhorted their sons never to return from battle with wounds in the back; dying with a sword in hand was the only acceptable proof of legitimate nursing."
-    ],
-    operational_heuristic: "Analyze traditional chivalric systems not as one-sided male dominance, but as closed ideological ecosystems where male violence and female ritual purity mutually reinforce each other.",
-    verbatim_anchor: "“The Rajput wife does not merely support her warrior husband; she is the supernatural foundation of his courage, and her purity is his truest armor.” — Lindsey Harlan (Religion and Rajput Women)",
-    epistemic_status: "ANTHROPOLOGICAL ANALYSIS",
-    materiality: "IMPORTANT"
-  },
-  {
-    id: "unit-22-kuldevi-sati-worship-supernatural-lineage-guardians",
-    unit_number: 22,
-    title: "The Kuldevi Cult & Sati Worship: Supernatural Guardians of the Lineage",
-    movement: "Movement VII: Religious Ethic, Gender & The Cult of Protection (Lindsey Harlan)",
-    scope: "Lindsey Harlan (Ch. 4–6)",
-    primary_authors: ["Lindsey Harlan"],
-    core_concept: "Rajput identity is anchored in two distinct female supernatural figures: the *Kuldevi* (a ferocious manifestation of the Goddess, e.g., Naganechi, Ban Mata, who protects the clan during war) and the *Sati-mata* (an ancestral human bride who immolated herself on her husband's funeral pyre, entering the domestic pantheon as a benevolent guardian of lineage morality).",
-    epistemic_audit: "RELIGIOUS ANTHROPOLOGY & ANCESTOR WORSHIP. Maps the psychological and sociological function of ancestral veneration in maintaining clan solidarity and enforcing strict female endogamy.",
-    key_tenets: [
-      "The Dual Face of the Kuldevi: The Kuldevi appears in times of war to guide the king, often manifesting as an animal (falcon, snake, or lion) to mark boundaries or announce impending victory (Harlan).",
-      "The Origin of Sati: A woman does not become a Sati merely by dying; she must experience the spontaneous internal combustion of *sat* (accumulated cosmic truth) that renders her immune to flame.",
-      "The *Ok* (Clan Prohibitions): A Sati’s dying words impose permanent taboos (*ok*) on her descendants (e.g., forbidding red clothing, gold ornaments, or specific horse breeds), serving as daily behavioral reminders of ancestral sacrifice."
-    ],
-    operational_heuristic: "Understand how historical trauma is ritualized into living religion: deceased human ancestors become divine policing agents of current clan behavior.",
-    verbatim_anchor: "“The Sati is not dead; she has transformed into an eternal ancestor who stands watch over the doorway of the house, guarding its honor with her blessing and her curse.” — Lindsey Harlan",
-    epistemic_status: "ETHNOGRAPHIC STUDY",
-    materiality: "IMPORTANT"
-  },
-  {
-    id: "unit-23-jauhar-and-saka-total-sacrificial-warfare",
-    unit_number: 23,
-    title: "The Jauhar and Saka Protocol: Ritual Sacrificial Death as the Ultimate Sovereign Act",
-    movement: "Movement VII: Religious Ethic, Gender & The Cult of Protection (Lindsey Harlan)",
-    scope: "Lindsey Harlan • James Tod (Vol. 1 & 2) • Modern Cultural Analysis",
+    title: "The Sacred Sacrificial Warfare: Theology of Jauhar & The Saffron Saka (1303 CE)",
+    movement: "Movement II: The Sultanate Sieges, Sacrificial Protocol & The Memory of Padmini (1303–1364 CE)",
+    scope: "Lindsey Harlan (Ch. 4) • Ramya Sreenivasan • Tod (Vol. 1)",
     primary_authors: ["Lindsey Harlan", "James Tod"],
-    core_concept: "In Western and colonial eyes, Jauhar was viewed as tragic, passive suicide. In the Rajput epistemic framework, it was the supreme active assertion of sovereignty: when external physical defeat was mathematically guaranteed, Jauhar was the ritual transformation of biological death into an unvanquished spiritual victory, denying the enemy both captive women and enslaved warriors.",
-    epistemic_audit: "PHENOMENOLOGICAL ETHICS & CULTURAL RECONSTRUCTION. Reconstructs the internal logic of medieval total warfare without romanticizing violence or collapsing into colonial pity.",
+    core_concept: "Jauhar was not passive suicide, but an institutional military sacrament of absolute resistance. Women immolated themselves in pit fires to protect lineage honor and release warriors from domestic concern, followed by the Saka—a no-quarter saffron cavalry sortie into death.",
+    epistemic_audit: "RELIGIOUS ANTHROPOLOGY & MILITARY PROTOCOL. Analyzes the structural function of ritual martyrdom in pre-modern fortress sieges.",
     key_tenets: [
-      "The Rejection of Subjugation: In medieval warfare, captured women were systematically distributed into imperial harems and soldiers enslaved; Jauhar ensured the lineage was extinguished clean rather than absorbed into foreign houses (Tod).",
-      "The Saffron Shroud (*Kesariya*): The men bathed, performed funeral rites while still alive, smeared themselves with sandal paste, put on saffron robes, chewed betel leaf, and rode out to ensure maximum enemy casualties before dying.",
-      "Historical Instances: The three catastrophic Jauhars of Chittor (1303 under Padmini, 1535 under Karnavati, 1568 under Jaimal/Patta) and Jaisalmer's 'half-Jauhar' of 1550 (where no wood was available, so warriors beheaded their own women before charging)."
+      "Denial of Hostage Capital: Immolation eliminated the besieger's ability to extract political concessions, sexual trophies, or ransom through royal captives (Harlan).",
+      "The Saffron Charge: After the fire cooled, warriors bathed, put on tulsi beads and saffron turbans (*kesariya*), broke open the gates, and fought to total annihilation.",
+      "The Living Memory: Chittor witnessed three great Jauhars (1303 under Khalji, 1535 under Bahadur Shah, 1568 under Akbar), cementing its reputation as India's holy sanctuary of sacrifice."
     ],
-    operational_heuristic: "Evaluate extreme historical sacrificial rites within their contemporary existential context: total refusal of vassalage through collective martyrdom.",
-    verbatim_anchor: "“Jauhar was not surrender to death; it was the defiant refusal to live as spoils of war.” — Intellectualist Synthesis",
-    epistemic_status: "PHENOMENOLOGICAL ETHICS",
+    operational_heuristic: "Analyze extreme sacrificial battle doctrines as rational, uncompromising defense mechanisms against total subjugation.",
+    verbatim_anchor: "“The fire consumed the flesh of the queens that their honor might remain unblemished; the saffron robe was the shroud of the warrior who knew no retreat.” — Lindsey Harlan (Religion and Rajput Women)",
+    epistemic_status: "ANTHROPOLOGICAL ANALYSIS",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-08-recovery-of-chittor-rana-hammir-sisodia",
+    unit_number: 8,
+    title: "The Recovery of Chittor: Rana Hammir & The Foundation of the Sisodia Lineage (1326–1364 CE)",
+    movement: "Movement II: The Sultanate Sieges, Sacrificial Protocol & The Memory of Padmini (1303–1364 CE)",
+    scope: "James Tod (Vol. 1, History of Mewar) • Kumbhalgarh Stone Inscription",
+    primary_authors: ["James Tod", "Epigraphists"],
+    core_concept: "Following the destruction of the Rawal branch in 1303, Rana Hammir of the cadet Sisodia estate waged a protracted mountain guerrilla campaign, recaptured Chittorgarh from Maldeo Songara, and founded the Sisodia dynasty, establishing the title 'Maharana'.",
+    epistemic_audit: "DYNASTIC RECONSTRUCTION & EPIGRAPHY. Confirmed by the 1460 Kumbhalgarh Prashasti; marks the shift from the Rawal line to the Sisodia branch.",
+    key_tenets: [
+      "Guerrilla Base at Kailwara: Hammir retreated into the rugged Aravalli passes, cutting off Sultanate supply lines across Mewar's valleys.",
+      "The Sister Branch: The Sisodias traced descent from Rahapa (son of Ranasimha), bringing new martial energy and clan cohesion to the ruined state.",
+      "The Re-consecration of Eklingji: Hammir restored the ruined temples and rebuilt Chittorgarh's granaries, establishing the institutional resilience that endured for 400 years."
+    ],
+    operational_heuristic: "Observe how regional dynasties survive the total destruction of their capital by relocating command into inaccessible mountainous terrain.",
+    verbatim_anchor: "“From the crags of Kailwara, Hammir descended upon the plain, planting the sun-banner of Mewar once more upon the ramparts of Chittor.” — James Tod",
+    epistemic_status: "EPIGRAPHIC FACT",
+    materiality: "IMPORTANT"
+  },
+
+  // MOVEMENT III: THE RENAISSANCE OF KUMBHA & THE CHIVALRIC CONFEDERATION OF SANGA (1433–1544 CE)
+  {
+    id: "unit-09-rana-kumbha-architecture-of-hegemony",
+    unit_number: 9,
+    title: "Rana Kumbha's Renaissance: 32 Hill Forts, Kumbhalgarh & The Architecture of Hegemony (1433–1468 CE)",
+    movement: "Movement III: The Renaissance of Kumbha & The Chivalric Confederation of Sanga (1433–1544 CE)",
+    scope: "Giles Tillotson (Ch. 2–3) • James Tod (Vol. 1) • Rajavallabha Treatise",
+    primary_authors: ["Giles Tillotson", "James Tod"],
+    core_concept: "Rana Kumbha transformed Mewar into an unassailable bastion of classical Hindu culture and military engineering, constructing 32 of Mewar's 84 defensive forts, including the 36-kilometer curtain wall of Kumbhalgarh, while authoring landmark treatises on music and architecture.",
+    epistemic_audit: "ARCHITECTURAL & INTELLECTUAL HISTORY. Archaeological remains of Kumbhalgarh and the Vijay Stambha (Tower of Victory) corroborate contemporary architectural texts by master builder Mandan.",
+    key_tenets: [
+      "Kumbhalgarh Cloud Citadel: Built at 3,500 feet elevation, its 36-km wall—second only to the Great Wall of China—encircled over 300 temples and agricultural fields, sustaining years of siege.",
+      "Vijay Stambha (1448): A nine-story, 122-foot architectural encyclopedia of Hindu iconography celebrating Kumbha's victory over the combined armies of Malwa and Gujarat.",
+      "Theoretical Statecraft: Kumbha's architect Mandan authored the *Rajavallabha*, codifying indigenous town planning, defensive bastions, and rainwater engineering."
+    ],
+    operational_heuristic: "Recognize that enduring military defense requires the systematic integration of fortress architecture, agricultural self-sufficiency, and cultural patron-legitimacy.",
+    verbatim_anchor: "“Kumbhalgarh was not merely a military stronghold; it was an entire mountain kingdom enclosed within a serpent of stone.” — Giles Henry Rupert Tillotson (The Rajput Palaces)",
+    epistemic_status: "ARCHITECTURAL ARCHAEOLOGY",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-10-rao-jodha-foundation-mehrangarh-1459",
+    unit_number: 10,
+    title: "The Rathore Anchor: Rao Jodha & The Foundation of Mehrangarh Citadel (1459 CE)",
+    movement: "Movement III: The Renaissance of Kumbha & The Chivalric Confederation of Sanga (1433–1544 CE)",
+    scope: "James Tod (Vol. 2: History of Marwar) • Giles Tillotson",
+    primary_authors: ["James Tod", "Giles Tillotson"],
+    core_concept: "In 1459, Rao Jodha abandoned the vulnerable ancient capital of Mandore to erect Mehrangarh ('Citadel of the Sun') atop a 400-foot sheer volcanic precipice (Chidiyatunk), securing the desert heartland of the Rathore clan in Marwar.",
+    epistemic_audit: "URBAN ETHNOHISTORY & FORTRESS ENGINEERING. Architectural continuity of Mehrangarh's multi-layered gates and rock-cut cisterns confirms strategic brilliance.",
+    key_tenets: [
+      "The Monolithic Cliff: The fortress walls blend seamlessly with the natural basalt bedrock, presenting an insurmountable barrier to medieval siege artillery.",
+      "Kinship Governance: Jodha distributed surrounding estates (*thikanas*) to his brothers and sons (founding Bikaner), establishing a distributed clan network rather than central autocracy (Tod).",
+      "Hydraulic Engineering: Rainwater collected from rocky catchments into deep stepwells (*baolis*) inside the fortress enabled garrison survival in extreme desert droughts."
+    ],
+    operational_heuristic: "Observe how relocating a seat of power to extreme terrain creates political stability across centuries.",
+    verbatim_anchor: "“Mehrangarh stands like a work of Titans or fairies, hewn from the living mountain to look down upon the sands of the Thar.” — James Tod",
+    epistemic_status: "ARCHITECTURAL RECORD",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-11-rana-sanga-battle-of-khanwa-1527",
+    unit_number: 11,
+    title: "The Pan-Rajput Confederation: Rana Sanga & The Clash of Tactics at Khanwa (1508–1527 CE)",
+    movement: "Movement III: The Renaissance of Kumbha & The Chivalric Confederation of Sanga (1433–1544 CE)",
+    scope: "Baburnama • Dirk Kolff (Ch. 2) • James Tod (Vol. 1)",
+    primary_authors: ["Babur", "Dirk H. A. Kolff", "James Tod"],
+    core_concept: "Rana Sanga united virtually every major Hindu prince of North India into a grand confederation (Pati Parwan). At Khanwa (1527), Sanga's traditional shock cavalry was decisively shattered by Babur's revolutionary Ottoman gunpowder tactics (araba wagons and matchlock tulghuma).",
+    epistemic_audit: "MILITARY TACTICAL DISRUPTION. Babur's own eyewitness diary (*Baburnama*) provides exact tactical descriptions of the battle; marks the definitive end of the pre-gunpowder chivalric era.",
+    key_tenets: [
+      "The Pati Parwan: Sanga brought 80,000 horsemen, 7 kings, 9 Raos, and 104 chieftains under one banner, representing the zenith of unified Rajput political power (Tod).",
+      "Tactical Revolution: Babur tied 700 baggage carts together with rawhide ropes, sheltering matchlockmen (*tufangchis*) and mortar cannons (*zarb-zan*) behind movable palisades.",
+      "The Fatal Flaw of Kinship Coalitions: Sanga's army fought as independent clan contingents without unified central command; the betrayal of Silhadi of Raisen collapsed the line."
+    ],
+    operational_heuristic: "Numerical superiority and individual chivalric bravery cannot compensate for structural lags in military technology and unified tactical command.",
+    verbatim_anchor: "“Rana Sanga had attained the highest elevation of glory... eighty wounds from the sword or lance covered his body... but at Khanwa, gunpowder triumphed over chivalry.” — James Tod",
+    epistemic_status: "TACTICAL RECORD",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-12-second-jauhar-chittor-rani-karnavati-1535",
+    unit_number: 12,
+    title: "The Second Jauhar of Chittor & Rani Karnavati (1535 CE)",
+    movement: "Movement III: The Renaissance of Kumbha & The Chivalric Confederation of Sanga (1433–1544 CE)",
+    scope: "James Tod (Vol. 1) • Ramya Sreenivasan • Mirat-i-Sikandari",
+    primary_authors: ["James Tod", "Ramya Sreenivasan"],
+    core_concept: "When Bahadur Shah of Gujarat besieged Chittor with Portuguese mercenary artillery in 1535, Dowager Queen Rani Karnavati dispatched an urgent diplomatic entreaty (*rakhi*) to Mughal Emperor Humayun, organised the safe evacuation of infant Udai Singh, and led 13,000 women into the Second Jauhar.",
+    epistemic_audit: "DIPLOMATIC & SACRIFICIAL CRISIS. Documented across Persian chronicles of Gujarat (*Mirat-i-Sikandari*) and Mewar bardic memory; illustrates the transition to gunpowder siege warfare.",
+    key_tenets: [
+      "Gunpowder Siege Engineering: Bahadur Shah employed Turkish-Portuguese master-gunner Rumi Khan, whose gunpowder mines blew open the southern bastion of Chittor.",
+      "Executive Agency of the Dowager: Karnavati governed Mewar during the minority of her sons, deploying diplomacy across sectarian lines (Sreenivasan).",
+      "Protection of the Lineage: Udai Singh II was spirited away to Bundi before the fortress fell, ensuring the unbroken survival of the Sisodia royal line."
+    ],
+    operational_heuristic: "Identify the preservation of dynastic continuity as the supreme strategic imperative outweighing the loss of physical fortifications.",
+    verbatim_anchor: "“Thirteen thousand women threw themselves into the flaming pit of Chittor; yet before the flames rose, the seed of Mewar was already riding swift toward the mountain sanctuary.” — James Tod",
+    epistemic_status: "HISTORICAL CRISIS",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-13-battle-of-giri-sumel-1544",
+    unit_number: 13,
+    title: "The Desert Stand: Rao Maldeo & The Battle of Giri-Sumel (1544 CE)",
+    movement: "Movement III: The Renaissance of Kumbha & The Chivalric Confederation of Sanga (1433–1544 CE)",
+    scope: "Abbas Sarwani (Tarikh-i-Sher Shahi) • James Tod (Vol. 2)",
+    primary_authors: ["Abbas Sarwani", "James Tod"],
+    core_concept: "At Giri-Sumel (1544), Sher Shah Suri forged letters to sow suspicion between Rao Maldeo of Marwar and his chieftains. Maldeo retreated, but Rathore commanders Jaita and Kumpa made an unyielding night attack with 12,000 warriors that nearly annihilated the imperial Afghan army.",
+    epistemic_audit: "TACTICAL RECORD. Eyewitness chronicler Abbas Sarwani records Sher Shah Suri's legendary confession; demonstrates the terrifying shock power of unarmoured Rajput suicide charges.",
+    key_tenets: [
+      "Psychological Warfare: Sher Shah planted fake letters in Maldeo's camp claiming the Rathore commanders had accepted imperial bribes.",
+      "Redeeming Honor Through Saka: Disgraced by Maldeo's suspicion, Jaita and Kumpa refused to retreat, charging straight into Sher Shah's artillery center.",
+      "Imperial Near-Disaster: Sher Shah won only when Jalal Khan Jalwani's fresh reserve divisions arrived at the last moment to save the Afghan vanguard."
+    ],
+    operational_heuristic: "Recognize that tactical suspicion planted in a loose kinship alliance can dismantle numerical advantages without a shot being fired.",
+    verbatim_anchor: "“I have given away the empire of Delhi for a handful of millet (bajra).” — Sultan Sher Shah Suri (Tarikh-i-Sher Shahi)",
+    epistemic_status: "CHRONICLE FACT",
     materiality: "CRITICAL"
   },
 
-  // MOVEMENT VIII: FORTRESS & PALACE ARCHITECTURE: ASYMMETRIC ENGINEERING
+  // MOVEMENT IV: THE MUGHAL IMPERIUM, THE GREAT CLEAVAGE & THE CHAWAND RENAISSANCE (1562–1597 CE)
   {
-    id: "unit-24-hill-forts-rajasthan-asymmetric-massing-palaces",
-    unit_number: 24,
-    title: "Hill Forts of Rajasthan: Asymmetric Massing, Jharokhas & Defensive Engineering",
-    movement: "Movement VIII: Fortress & Palace Architecture: Asymmetric Engineering (Tillotson)",
-    scope: "Giles Tillotson (The Rajput Palaces, Ch. 1, 4–6) • UNESCO Citations",
-    primary_authors: ["Giles Tillotson"],
-    core_concept: "Rajput architectural genius developed completely independent of European classical symmetry or Persian geometric regularity. Built upon precipitous hilltops, Rajput palaces utilized 'Asymmetric Massing'—gradually expanding organic stone complexes that grew along ridgelines, utilizing heavy trabeate stone beams, shaded *jharokha* balconies, *chhatri* kiosks, and rainwater harvesting cisterns.",
-    epistemic_audit: "ARCHITECTURAL HISTORY & ENGINEERING. Giles Tillotson forensically dismantles the colonial myth (James Fergusson) that Rajput architecture was merely a corrupt provincial imitation of Mughal architecture, establishing its autonomous structural grammar.",
+    id: "unit-14-realpolitik-amber-bharmal-man-singh",
+    unit_number: 14,
+    title: "The Realpolitik of Amber: Raja Bharmal & The Imperial Matrix (1562 CE)",
+    movement: "Movement IV: The Mughal Imperium, The Great Cleavage & The Chawand Renaissance (1562–1597 CE)",
+    scope: "Robert Hallissey (Ch. 1) • Abul Fazl (Akbarnama) • Tod (Vol. 2)",
+    primary_authors: ["Robert C. Hallissey", "Abul Fazl"],
+    core_concept: "In 1562, Raja Bharmal of Amber allied with Akbar, entering a marital and military partnership that created the Mughal-Rajput co-ruling condominium, trading formal submission for paramount imperial military command and vast territorial wealth.",
+    epistemic_audit: "IMPERIAL STATE-FORMATION. Documents how the Kachwaha clan used alliance with Delhi to transcend regional poverty and become the wealthiest house in Rajasthan.",
     key_tenets: [
-      "Organic Asymmetry: Unlike the rigid symmetry of Mughal tombs and gardens (Charbagh), Rajput palaces (Udaipur City Palace, Bundi Garh Palace, Gwalior Man Mandir) embrace the jagged topography of the rock, producing dynamic picturesque silhouettes (Tillotson).",
-      "Micro-Climate Engineering: Deep *jharokhas* (corbelled stone balconies) with intricate *jali* lattice screens caught desert breezes through the Venturi effect while shielding female courtiers (*purdah*) from external sight.",
-      "The Six UNESCO Hill Forts: Chittorgarh, Kumbhalgarh, Ranthambore, Gagron (water fort), Amer, and Jaisalmer (golden desert sandstone) stand as peerless civil engineering monuments that withstood multi-year sieges."
+      "The Watan Jagir Formula: Amber remained an autonomous hereditary realm, while Kachwaha princes were granted massive revenue assignments across Hindustan (Hallissey).",
+      "Military Integration: Kachwahas provided the spearhead of Mughal expansion across Kabul, the Deccan, and Bengal.",
+      "Religious & Cultural Payoff: Amber used Mughal imperial gold to finance major Hindu revivalist architecture, including the towering Govind Dev temple at Vrindavan."
     ],
-    operational_heuristic: "Form follows terrain: true indigenous architecture embraces organic natural irregularity rather than forcing artificial geometry upon the landscape.",
-    verbatim_anchor: "“Rajput architecture does not conquer nature; it crowns it. It is an art of the crag, of the rock, of the towering bastion that grows out of the mountain like living stone.” — Giles Henry Rupert Tillotson (The Rajput Palaces)",
-    epistemic_status: "ARCHITECTURAL HISTORY",
+    operational_heuristic: "Analyze strategic accommodation as a proactive statecraft tool that preserves domestic cultural institutions while extracting imperial resources.",
+    verbatim_anchor: "“The Kachwahas did not lose their faith by alliance with Agra; they became the sword-arm of the empire and the financiers of Vrindavan.” — Robert C. Hallissey",
+    epistemic_status: "IMPERIAL DIPLOMACY",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-15-third-siege-chittor-jaimal-patta-1568",
+    unit_number: 15,
+    title: "The Third Siege of Chittor: Akbar's Mines, Jaimal-Patta & The Third Jauhar (1567–1568 CE)",
+    movement: "Movement IV: The Mughal Imperium, The Great Cleavage & The Chawand Renaissance (1562–1597 CE)",
+    scope: "Abul Fazl (Akbarnama) • James Tod (Vol. 1)",
+    primary_authors: ["Abul Fazl", "James Tod"],
+    core_concept: "Akbar besieged Chittorgarh with 70,000 troops, constructing massive covered trenches (*sabats*) and exploding huge gunpowder mines beneath the rock walls. Defenders Jaimal of Merta and Patta of Kelwa led an epic defense culminating in the Third Jauhar and Akbar's execution of 30,000 citizens.",
+    epistemic_audit: "IMPERIAL MILITARY CHRONICLE. Detailed in the *Akbarnama*; Akbar himself erected statues of Jaimal and Patta at the gates of Agra Fort to honor their extraordinary defense.",
+    key_tenets: [
+      "Sabat Siege Works: Covered trenches wide enough for ten horsemen to ride abreast protected imperial sappers as they excavated tunnels under Chittor's rock ramparts.",
+      "The Death of Jaimal: Akbar personally shot Jaimal with his matchlock musket 'Sangram' as Jaimal repaired a breached bastion by torchlight (Abul Fazl).",
+      "The Great Massacre: Following the Jauhar and the dawn Saka, Akbar ordered the execution of 30,000 peasant artisans inside the fortress, permanently ending Chittor's status as Mewar's capital."
+    ],
+    operational_heuristic: "Understand that siege engineering advancements (mines, sapping) ultimately render static mountaintop fortresses vulnerable unless relieved by external mobile forces.",
+    verbatim_anchor: "“Jaimal and Patta fell like lions upon the spears of the foe... and Akbar, in tribute to their valour, placed their stone statues to guard the gates of his palace at Agra.” — James Tod",
+    epistemic_status: "MILITARY CHRONICLE",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-16-nagaur-darbar-chandrasen-defiance-1570",
+    unit_number: 16,
+    title: "The Nagaur Darbar & The Defiance of Rao Chandrasen of Marwar (1570 CE)",
+    movement: "Movement IV: The Mughal Imperium, The Great Cleavage & The Chawand Renaissance (1562–1597 CE)",
+    scope: "Robert Hallissey (Ch. 1) • James Tod (Vol. 2)",
+    primary_authors: ["Robert C. Hallissey", "James Tod"],
+    core_concept: "At the Nagaur Darbar (1570), Akbar summoned the princes of Rajasthan to accept imperial suzerainty. While Bikaner and Jaisalmer submitted, Rao Chandrasen of Marwar openly walked out, pioneering mobile desert guerrilla warfare six years before Maharana Pratap.",
+    epistemic_audit: "HISTORICAL BIOGRAPHY. Restores Chandrasen's forgotten role as the ideological and tactical precursor of anti-Mughal resistance in Western India.",
+    key_tenets: [
+      "The Desert Resistance: Chandrasen retreated into the rugged Bhadrajun and Siwana hills, constantly shifting camps across the Thar desert.",
+      "Tactical Precursor: Chandrasen proved that desert and mountain mobility could neutralize heavy imperial siege armies.",
+      "The Price of Defiance: Marwar was placed under imperial administration, and Chandrasen died in exile (1581) without yielding his ancestral claims."
+    ],
+    operational_heuristic: "Identify the tactical pioneers whose early, costly resistance creates the strategic doctrine perfected by later, more famous leaders.",
+    verbatim_anchor: "“Chandrasen of Jodhpur was the forerunner of Pratap; he showed that a Rajput could live in the wilderness and remain an unbowed sovereign.” — Modern Historiographical Revision",
+    epistemic_status: "HISTORICAL CORRECTION",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-17-battle-of-haldighati-1576",
+    unit_number: 17,
+    title: "The Clash of Ideologies: Haldighati & The Battle of the Pass (June 18, 1576 CE)",
+    movement: "Movement IV: The Mughal Imperium, The Great Cleavage & The Chawand Renaissance (1562–1597 CE)",
+    scope: "Abdul Qadir Badauni (Muntakhab-ut-Tawarikh) • James Tod (Vol. 1)",
+    primary_authors: ["Abdul Qadir Badauni", "James Tod"],
+    core_concept: "At the narrow pass of Haldighati, Maharana Pratap confronted an imperial army led by fellow Rajput Raja Man Singh of Amber. The battle was a tactical Mughal draw/victory on the blood-soaked field, but a total strategic failure: Pratap escaped into the hills, and Mewar remained unconquered.",
+    epistemic_audit: "EYEWITNESS CHRONICLE. Court historian Badauni was on the battlefield and recorded the sectarian and tactical confusion; cross-examined against Tod's bardic traditions.",
+    key_tenets: [
+      "The Multi-Sectarian Battlefield: Pratap's vanguard was commanded by Afghan general Hakim Khan Sur and Bhil tribal archers led by Rana Punja; the Mughal vanguard was commanded by Hindu Rajput Raja Man Singh.",
+      "The Saffron Shock Charge: Pratap's 3,000 cavalry routed the Mughal front lines in the first ferocious assault; the imperial troops panicked until rumors of Akbar's arrival restored order (Badauni).",
+      "Strategic Result: Man Singh won the narrow field, but was reprimanded by Akbar for failing to capture Pratap or seize Mewar's mountain strongholds."
+    ],
+    operational_heuristic: "Distinguish between tactical possession of a battlefield and the strategic objective of a military campaign.",
+    verbatim_anchor: "“Badauni asked his commander, 'Whom shall we shoot?' The commander replied, 'Shoot! On whichever side they are killed, it is a gain for Islam!'” — Abdul Qadir Badauni (Muntakhab-ut-Tawarikh)",
+    epistemic_status: "EYEWITNESS ACCOUNT",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-18-dewair-marathon-of-mewar-chawand-1582",
+    unit_number: 18,
+    title: "The Marathon of Mewar: Battle of Dewair & The Chawand Civilization (1582–1597 CE)",
+    movement: "Movement IV: The Mughal Imperium, The Great Cleavage & The Chawand Renaissance (1562–1597 CE)",
+    scope: "James Tod (Vol. 1) • Molly Emma Aitken (Ch. 1)",
+    primary_authors: ["James Tod", "Molly Emma Aitken"],
+    core_concept: "At the Battle of Dewair (1582)—which Tod called the 'Marathon of Mewar'—Pratap launched a massive counter-offensive, systematically liberating 36 Mughal military garrisons across Mewar, establishing a new civilizational capital at Chawand where painting, architecture, and literature flourished.",
+    epistemic_audit: "MILITARY LIBERATION & CULTURAL REVIVAL. Archaeological and artistic remains at Chawand prove that Pratap was not merely a fugitive warlord, but an active monarch who died undefeated in his bed.",
+    key_tenets: [
+      "The Dewair Breakthrough: Pratap's son Amar Singh I killed Mughal commander Sultan Khan in single combat, triggering the collapse of all imperial posts across Mewar.",
+      "Civilizational Reconstruction at Chawand: In the deep southern Aravalli hills, Pratap built palaces, stepwells, and patronized the famous Chawand Ragamala painting series (1605) by painter Nisardi (Aitken).",
+      "Undefeated Sovereignty: By his death in 1597, Pratap had recaptured nearly all of Mewar except the isolated rock of Chittorgarh and Mandalgarh."
+    ],
+    operational_heuristic: "Recognize that resilient mountain campaigns can transition from defensive guerrilla warfare into systematic territorial reclamation.",
+    verbatim_anchor: "“Haldighati was the Thermopylae of Mewar; the field of Dewair was her Marathon.” — James Tod (Annals and Antiquities of Rajasthan)",
+    epistemic_status: "HISTORICAL LANDMARK",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-19-raja-man-singh-imperial-frontier-1585",
+    unit_number: 19,
+    title: "The Imperial Viceroyalty: Raja Man Singh in Kabul, Bengal & Govind Dev Temple (1585–1614 CE)",
+    movement: "Movement IV: The Mughal Imperium, The Great Cleavage & The Chawand Renaissance (1562–1597 CE)",
+    scope: "Robert Hallissey (Ch. 1) • Abul Fazl • Giles Tillotson",
+    primary_authors: ["Robert C. Hallissey", "Giles Tillotson"],
+    core_concept: "Raja Man Singh I served as Akbar's premier military commander, governing turbulent frontiers in Kabul, Punjab, Bengal, and Orissa as imperial Viceroy, utilizing his immense wealth to construct the majestic palace at Amber and patronize Vaishnava temples.",
+    epistemic_audit: "IMPERIAL BIOGRAPHY & SACRED ARCHITECTURE. Documented in Mughal court chronicles; the Govind Dev temple at Vrindavan stands as tangible proof of Kachwaha cultural patron-power.",
+    key_tenets: [
+      "Governing Kabul: Man Singh broke the Afghan tribal rebellions, ruling the fiercely Islamic North-West Frontier for the Mughal Emperor.",
+      "Conquest of Eastern India: Man Singh annexed Orissa, subdued the Afghan Sultanates of Bengal, and brought the idol of Shila Devi from Jessore to Amber (Tod).",
+      "Architectural Synthesis: Man Singh built the red sandstone Govind Dev temple at Vrindavan—a seven-story architectural masterpiece combining Hindu temple geometry with vaulted brickwork."
+    ],
+    operational_heuristic: "Observe how imperial generals can redirect the financial spoils of conquest to fortify and elevate their ancestral religious homelands.",
+    verbatim_anchor: "“Man Singh stood upon the walls of Kabul and the shores of Bengal; his sword served the Mughal, but his gold built the shrines of Krishna.” — Robert C. Hallissey",
+    epistemic_status: "IMPERIAL RECORD",
+    materiality: "IMPORTANT"
+  },
+
+  // MOVEMENT V: PAX MUGHALICA, ROYAL WORKSHOPS & SACRED TRANSLOCATION (1615–1675 CE)
+  {
+    id: "unit-20-treaty-of-1615-amar-singh-jahangir",
+    unit_number: 20,
+    title: "The Dignified Peace: The Mewar-Mughal Treaty of 1615 (1615 CE)",
+    movement: "Movement V: Pax Mughalica, Royal Workshops & Sacred Translocation (1615–1675 CE)",
+    scope: "Tuzuk-i-Jahangiri (Memoirs of Jahangir) • James Tod (Vol. 1)",
+    primary_authors: ["Jahangir", "James Tod"],
+    core_concept: "In 1615, Maharana Amar Singh I and Prince Khurram (Shah Jahan) negotiated an honorable peace: Mewar accepted imperial suzerainty on unprecedented terms—the Maharana was exempted from personal attendance at court and was never required to enter matrimonial alliances with the Mughals.",
+    epistemic_audit: "PRIMARY DIPLOMATIC TREATY. Jahangir's own memoirs (*Tuzuk*) record the mutual respect and the erection of life-sized marble statues of Amar Singh and Karan Singh at Agra.",
+    key_tenets: [
+      "The Unbroken Honor Clause: The Maharana was represented at court by his heir, preserving Mewar's ancient sovereign dignity intact.",
+      "Demilitarization of Chittor: Chittorgarh was restored to Mewar on the condition that its ruined fortifications would never be repaired or refortified.",
+      "The Cost of Compromise: Heartbroken by having to conclude peace after decades of warfare, Maharana Amar Singh abdicated active rule to live in monastic seclusion (Tod)."
+    ],
+    operational_heuristic: "Observe how exceptional military resilience enables a defeated power to negotiate peace terms that protect its core cultural and genetic boundaries.",
+    verbatim_anchor: "“The Rana was not conquered; he was conciliated. The terms granted to Mewar were such as had never been granted to any other prince of Hindustan.” — James Tod",
+    epistemic_status: "DIPLOMATIC TREATY",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-21-intelligence-of-tradition-sahibdin-painting",
+    unit_number: 21,
+    title: "The Intelligence of Tradition in Rajput Court Painting: Sahibdin & The Mewar Workshop (1620–1660 CE)",
+    movement: "Movement V: Pax Mughalica, Royal Workshops & Sacred Translocation (1615–1675 CE)",
+    scope: "Molly Emma Aitken (Ch. 1–3) • Basil Gray (Rajput Painting)",
+    primary_authors: ["Molly Emma Aitken", "Basil Gray"],
+    core_concept: "Rajput court painting was not a crude provincial imitation of Mughal realism, but a deliberate 'intelligence of tradition'. Led by master painters like Sahibdin in Udaipur, workshops deployed intense saturated color fields, continuous narrative, and devotional *rasa* (shringara and vir) to assert sacred legitimacy and dynastic memory.",
+    epistemic_audit: "LANDMARK ART HISTORIOGRAPHY. Molly Emma Aitken and Basil Gray dismantle colonial art-historical hierarchies, proving Rajput painters made intentional philosophical choices.",
+    key_tenets: [
+      "Rejection of Naturalism: While Mughal painting embraced single-point perspective and muted European modeling, Rajput artists chose vibrant flat planes of cinnabar red, turmeric yellow, and lapis lazuli to evoke emotional immersion (*rasa*) (Aitken).",
+      "Continuous Narrative: Multiple moments of a hero or deity's journey appear within the same visual frame, reflecting cyclical Hindu concepts of sacred time.",
+      "The Master Sahibdin: At Udaipur, Sahibdin produced legendary manuscript illuminations (Ragamala, Rasikapriya, Ramayana) that codified Sisodia cultural identity in the wake of the 1615 treaty."
+    ],
+    operational_heuristic: "Evaluate visual art not by its adherence to foreign realism, but by the coherence and philosophical purpose of its internal aesthetic rules.",
+    verbatim_anchor: "“Rajput painting chose not to record appearances, but to distill states of being... It is a visual intelligence that deployed color as poetry and form as sacred memory.” — Molly Emma Aitken (The Intelligence of Tradition in Rajput Court Painting)",
+    epistemic_status: "CRITICAL ART HISTORY",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-22-sacred-translocation-shrinathji-nathdwara-1672",
+    unit_number: 22,
+    title: "The Sacred Translocation: Pushtimarg, Shrinathji & Nathdwara Pichwai Art (1672 CE)",
+    movement: "Movement V: Pax Mughalica, Royal Workshops & Sacred Translocation (1615–1675 CE)",
+    scope: "Molly Emma Aitken (Ch. 4) • Lindsey Harlan • Tod (Vol. 1)",
+    primary_authors: ["Molly Emma Aitken", "Lindsey Harlan"],
+    core_concept: "In 1672, when Aurangzeb's religious policies threatened Braj, Maharana Raj Singh I provided eternal sanctuary for the sacred black marble idol of Shrinathji (Krishna) at Nathdwara, making Mewar the supreme global pilgrimage center of Vallabhacharya Pushtimarg Vaishnavism and fostering the famous Pichwai textile tradition.",
+    epistemic_audit: "RELIGIOUS & CULTURAL GEOGRAPHY. Chronicles the relocation of north Indian Vaishnava sacred geography into southern Rajasthan; confirmed by imperial and sectarian temple archives.",
+    key_tenets: [
+      "The Sanctuary Covenant: Maharana Raj Singh declared that 100,000 Rajput heads would fall before the image of Shrinathji was desecrated.",
+      "The Haveli Temple: Shrinathji was housed not in a fortified stone temple, but in an expansive aristocratic mansion (*haveli*), treating Krishna as a living royal prince.",
+      "Pichwai Painting Tradition: An entire school of textile painting emerged at Nathdwara to illustrate the seasonal festivals (*utsavas*) and pastoral landscapes of Krishna."
+    ],
+    operational_heuristic: "Understand how providing cultural asylum to venerated religious icons transforms a regional martial state into an empire of sacred legitimacy.",
+    verbatim_anchor: "“When the shrines of Mathura were broken, Mewar opened her hills to the divine child; Nathdwara became the beating heart of Hindu devotion.” — James Tod",
+    epistemic_status: "SACRED HISTORY",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-23-himalayan-frontier-pahari-rajput-katoch",
+    unit_number: 23,
+    title: "The Himalayan Frontier: Pahari Rajput State Formation & The Katoch Dynasty (c. 1650–1750 CE)",
+    movement: "Movement V: Pax Mughalica, Royal Workshops & Sacred Translocation (1615–1675 CE)",
+    scope: "Arik Moran (Kingship and Polity on the Himalayan Borderland, Intro & Ch. 1)",
+    primary_authors: ["Arik Moran"],
+    core_concept: "In the Western Himalayas, ancient martial lineages—most notably the Katoch dynasty of Kangra, alongside Bilaspur, Sirmaur, and Chamba—underwent Rajputization, adopting Rajasthani genealogies and martial codes to rule mountain peasant populations while developing the luminous Pahari miniature painting tradition.",
+    epistemic_audit: "HIMALAYAN ETHNOHISTORY. Arik Moran analyzes regional ballads (*jheras*), royal land grants, and mountain clan gatherings to bridge the historiographical gap between Rajasthan and Himachal.",
+    key_tenets: [
+      "Rajputization in the Hills: Hill chieftains brought Brahmins and Charans from the plains to compose genealogies claiming descent from the Mahabharata's Trigarta kingdom (Moran).",
+      "Pahari Fortress Geography: Hill forts like Kangra and Kot Kangra were built on river gorge promontories, withstanding Sultanate and Mughal sieges for generations.",
+      "Aesthetic Flourishing: The patronage of the Katoch court fostered the lyrical, naturalist Guler and Kangra miniature painting traditions."
+    ],
+    operational_heuristic: "Examine how elite political models and aesthetic idioms replicate across distinct geographical frontiers through intentional cultural borrowing.",
+    verbatim_anchor: "“The Rajput ideal was not confined to the sands of Rajasthan; it ascended the gorges of the Beas and the Sutlej, transforming mountain clans into royal houses.” — Arik Moran (Kingship and Polity on the Himalayan Borderland)",
+    epistemic_status: "BORDERLAND HISTORIOGRAPHY",
+    materiality: "CRITICAL"
+  },
+
+  // MOVEMENT VI: THE RATHORE-SISODIA WAR OF 1679 & THE COLLAPSE OF TRUST (1678–1707 CE)
+  {
+    id: "unit-24-death-of-jaswant-singh-watan-violation-1678",
+    unit_number: 24,
+    title: "The Death of Jaswant Singh & The Violation of Watan: The Spark of Rebellion (1678–1679 CE)",
+    movement: "Movement VI: The Rathore-Sisodia War of 1679 & The Collapse of Trust (1678–1707 CE)",
+    scope: "Robert Hallissey (The Rajput Rebellion Against Aurangzeb, Ch. 2–3) • Tod (Vol. 2)",
+    primary_authors: ["Robert C. Hallissey"],
+    core_concept: "The death of Maharaja Jaswant Singh I at Jamrud in 1678 without an adult heir led Aurangzeb to attempt the direct imperial annexation of Marwar and the installation of a pliant puppet (Indar Singh). Aurangzeb's violation of ancestral *watan* tenure destroyed the foundational Mughal-Rajput compact.",
+    epistemic_audit: "IMPERIAL ADMINISTRATIVE DECONSTRUCTION. Hallissey proves this was not primarily a religious war, but a breakdown of constitutional succession conventions governing Rajput homelands.",
+    key_tenets: [
+      "The Strategic Crossroads: Marwar controlled the vital imperial military and commercial highway connecting Agra and Delhi to Surat and the Arabian Sea.",
+      "The Birth of Ajit Singh: Jaswant Singh's pregnant ranis gave birth to Ajit Singh in Lahore; Aurangzeb ordered the infant brought to Delhi for imperial guardianship.",
+      "Durga Das's Delhi Rescue: Rathore commander Durga Das orchestrated a daring rescue from Delhi, substituting a maidservant's child, and rode through imperial cavalry lines back to the desert."
+    ],
+    operational_heuristic: "Identify how heavy-handed central bureaucratic interference in traditional regional succession triggers catastrophic state-wide rebellion.",
+    verbatim_anchor: "“Aurangzeb did not seek to destroy Hinduism in Marwar; he sought to control the highway to the sea. But in violating the watan, he shattered the pillar of his own empire.” — Robert C. Hallissey",
+    epistemic_status: "CRITICAL REVISION",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-25-rathore-sisodia-coalition-anti-jizya-1679",
+    unit_number: 25,
+    title: "The Grand Coalition: Maharana Raj Singh's Anti-Jizya Epistle & Prince Akbar's Flight (1679–1681 CE)",
+    movement: "Movement VI: The Rathore-Sisodia War of 1679 & The Collapse of Trust (1678–1707 CE)",
+    scope: "Robert Hallissey (Ch. 4) • James Tod (Vol. 1) • Epistles of Raj Singh",
+    primary_authors: ["Robert C. Hallissey", "James Tod"],
+    core_concept: "Recognizing that the fall of Marwar meant the encirclement of Mewar, Maharana Raj Singh I allied with the Rathores, wrote a masterly philosophical epistle to Aurangzeb denouncing the Jizya tax, and sheltered young Ajit Singh in the Aravalli hills, later convincing Aurangzeb's son Prince Muhammad Akbar to rebel.",
+    epistemic_audit: "PRIMARY DIPLOMATIC & INTELLECTUAL RECORD. Maharana Raj Singh's famous letter to Aurangzeb survives in multiple archives; establishes an intellectual defense of universal toleration (*sulh-i-kul*).",
+    key_tenets: [
+      "The Anti-Jizya Epistle: Raj Singh reminded Aurangzeb that God is the Creator of all mankind (*Rabb-ul-Alamin*), not just Muslims (*Rabb-ul-Muslimin*), and that taxing the poor was an act of tyrannical impiety.",
+      "Aravalli Defense: Imperial armies led by Aurangzeb himself entered Mewar, but were repeatedly cut off in mountain gorges by Sisodia guerrillas.",
+      "The Flight of Prince Akbar: Durga Das Rathore escorted the rebel Prince Akbar all the way to the Deccan court of Maratha Chhatrapati Sambhaji to build a southern-northern anti-Mughal front."
+    ],
+    operational_heuristic: "Observe how philosophical articulation of universal governance combined with cross-regional alliance-building isolates an autocratic imperial center.",
+    verbatim_anchor: "“To display bigotry toward any man’s creed is to alter the words of the Holy Book... He who defaces the picture, insults the Painter.” — Maharana Raj Singh I (Epistle to Aurangzeb)",
+    epistemic_status: "PRIMARY CORRESPONDENCE",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-26-thirty-year-desert-war-durga-das-1707",
+    unit_number: 26,
+    title: "The Thirty-Year Desert War: Durga Das Rathore & The Restoration of Ajit Singh (1679–1707 CE)",
+    movement: "Movement VI: The Rathore-Sisodia War of 1679 & The Collapse of Trust (1678–1707 CE)",
+    scope: "Robert Hallissey (Ch. 5) • James Tod (Vol. 2)",
+    primary_authors: ["Robert C. Hallissey", "James Tod"],
+    core_concept: "For nearly three decades, Durga Das Rathore sustained a relentless guerrilla war in the Thar desert against imperial Mughal garrisons, enduring extreme personal deprivation, protecting young Maharaja Ajit Singh until Aurangzeb's death in 1707, and triumphantly restoring the Rathore throne at Jodhpur.",
+    epistemic_audit: "GUERRILLA ETHNOHISTORY & BIOGRAPHY. Documented in contemporary Mughal administrative despatches (*Waqai-i-Ajmer*) and Rathore oral traditions; celebrated as the ideal model of incorruptible vassal fidelity.",
+    key_tenets: [
+      "Desert Hit-and-Run Tactics: Small Rathore cavalry bands struck imperial supply columns and vanished into waterless dunes where heavy Mughal baggage trains could not follow.",
+      "Chivalric Restraint: When Aurangzeb's granddaughter was captured during the war, Durga Das appointed a Muslim scholar to educate her in the Quran and returned her safely without ransom.",
+      "The 1707 Restoration: Upon hearing of Aurangzeb's death, Ajit Singh and Durga Das swept into Jodhpur, expelled the Mughal governor, and re-consecrated Mehrangarh."
+    ],
+    operational_heuristic: "Recognize that moral integrity and tactical patience in asymmetric warfare can outlast even the most massive imperial empire.",
+    verbatim_anchor: "“May every mother bear a son like Durga Das, who without a crown or a throne, preserved the honour of Marwar against the Emperor of Delhi.” — Rajasthani Bardic Proverb",
+    epistemic_status: "HISTORICAL LANDMARK",
+    materiality: "CRITICAL"
+  },
+
+  // MOVEMENT VII: ENLIGHTENMENT, SUB-COURT WORKSHOPS & HIMALAYAN CLASHES (1699–1815 CE)
+  {
+    id: "unit-27-sawai-jai-singh-enlightenment-jaipur-1727",
+    unit_number: 27,
+    title: "The Enlightenment on the Plains: Sawai Jai Singh II, Jantar Mantar & Jaipur (1699–1743 CE)",
+    movement: "Movement VII: Enlightenment, Sub-Court Workshops & Himalayan Clashes (1699–1815 CE)",
+    scope: "Giles Tillotson (Ch. 5) • James Tod (Vol. 2) • Astronomical Treatises",
+    primary_authors: ["Giles Tillotson", "James Tod"],
+    core_concept: "In 1727, Maharaja Sawai Jai Singh II abandoned the hilltop keep of Amber to build the planned, grid-based city of Jaipur according to ancient Vastu Shastra principles, while erecting five monumental stone astronomical observatories (*Jantar Mantar*) across India to calculate eclipses and planetary tables.",
+    epistemic_audit: "INTELLECTUAL HISTORY & URBAN PLANNING. Surviving architectural monuments and Jaipur's astronomical compendium (*Zij-i Muhammad Shahi*) verify Jai Singh's dialogue with European, Persian, and Sanskrit science.",
+    key_tenets: [
+      "The Planned Grid City: Jaipur was laid out in nine rectangular sectors (*chokris*) reflecting the Navagraha (nine planets), with wide avenues and unified facade architecture designed for commerce and public order (Tillotson).",
+      "Jantar Mantar Observatories: Jai Singh built massive stone instruments in Jaipur, Delhi, Ujjain, Varanasi, and Mathura, proving that massive masonry instruments avoided the thermal expansion errors of small brass astrolabes.",
+      "Scientific Synthesis: Jai Singh translated Euclid's *Elements* into Sanskrit and sent scientific missions to Portugal, collecting the tables of John Napier and Philippe de La Hire."
+    ],
+    operational_heuristic: "Identify how traditional royal patron-power can modernize statecraft and science by synthesizing indigenous geometry with global empirical research.",
+    verbatim_anchor: "“Jaipur was not a feudal stronghold; it was an Enlightenment city born of astronomical precision and commercial freedom on the plains of Hindustan.” — Giles Henry Rupert Tillotson",
+    epistemic_status: "SCIENTIFIC & URBAN RECORD",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-28-sub-court-painting-devgarh-baghta-chokha",
+    unit_number: 28,
+    title: "The Sub-Court Painting Workshops: Baghta, Chokha & Devgarh's Tactile Modernity (1770–1830 CE)",
+    movement: "Movement VII: Enlightenment, Sub-Court Workshops & Himalayan Clashes (1699–1815 CE)",
+    scope: "Molly Emma Aitken (Ch. 5: Chokha's Shringara Style)",
+    primary_authors: ["Molly Emma Aitken"],
+    core_concept: "In regional sub-estates (*thikanas*) like Devgarh in Mewar, master painters Baghta and his son Chokha subverted formal court portraiture, producing daring, tactile, and sensual paintings characterized by raw physical energy, psychological candor, and expressive *shringara* (erotic) intimacy.",
+    epistemic_audit: "CRITICAL VISUAL STUDIES. Aitken conducts deep archival and stylistic analysis of inscribed Devgarh folios, proving individual artistic agency within traditional guild workshops.",
+    key_tenets: [
+      "Sub-Court Creative Freedom: Freed from the rigid ceremonial conventions of Udaipur's royal darbar, Devgarh painters depicted nobles hunting wild boar with tactile dirt, sweat, and ferocious animal violence (Aitken).",
+      "Chokha's Sensual Masterpieces: Chokha utilized velvety green night tones, dramatic candle-light glows, and voluminous physical forms to portray lovers and royal patrons.",
+      "Visual Assertion of Thikana Autonomy: By commissioning distinct, cutting-edge portraits, Devgarh Rawats visually asserted their political distinctness from the central Maharana."
+    ],
+    operational_heuristic: "Recognize that cultural and artistic innovations often arise at the provincial periphery rather than the formal bureaucratic center.",
+    verbatim_anchor: "“Chokha did not merely paint for his patron; he interpreted his world with an amorous boldness that made the Devgarh court a crucible of pictorial modernism.” — Molly Emma Aitken",
+    epistemic_status: "ART CRITICISM",
+    materiality: "IMPORTANT"
+  },
+  {
+    id: "unit-29-battle-of-chinjhiar-gorkha-crisis-1795",
+    unit_number: 29,
+    title: "The Battle of Chinjhiar & The Gorkha Incursion in Himachal Pradesh (1795–1815 CE)",
+    movement: "Movement VII: Enlightenment, Sub-Court Workshops & Himalayan Clashes (1699–1815 CE)",
+    scope: "Arik Moran (Ch. 1–2: Memories of a Feud: Chinjhiar 1795)",
+    primary_authors: ["Arik Moran"],
+    core_concept: "In 1795, the fierce hill battle of Chinjhiar between the rival Rajput kingdoms of Bilaspur and Kangra led the defeated Bilaspur Raja to invite the expanding Gorkha kingdom of Nepal into Himachal Pradesh, triggering a decade of brutal Gorkha occupation and British East India Company intervention.",
+    epistemic_audit: "HIMALAYAN DIPLOMACY & ORAL BALLADS. Arik Moran recovers the battle from the oral bardic epic (*The Jhera of Chinjhiar*) and cross-references it with colonial intelligence reports.",
+    key_tenets: [
+      "The Bilaspur-Kangra Feud: Sansar Chand of Kangra sought paramount hegemony over the Pahari hills, besieging Bilaspur's frontier ridge at Chinjhiar (Moran).",
+      "The Fatal Invitation: Unable to defeat Kangra alone, Raja Mahan Chand of Bilaspur allied with Amar Singh Thapa's Gorkha army, inadvertently sparking the Gorkha invasion of the Sutlej states.",
+      "The British Interlocking Treaty (1815): The Anglo-Gorkha War ended Gorkha rule and brought the Himalayan Rajput principalities under British indirect colonial paramountcy."
+    ],
+    operational_heuristic: "Trace how localized dynastic rivalries create power vacuums that invite trans-regional imperial conquerors into mountain buffer zones.",
+    verbatim_anchor: "“The bard sings not of victory, but of the ruin of the hills: a feud between two Rajput brothers at Chinjhiar delivered Himachal to the Gorkhas and the British.” — Arik Moran",
+    epistemic_status: "HIMALAYAN ETHNOHISTORY",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-30-political-agency-of-royal-women-ranis",
+    unit_number: 30,
+    title: "The Political Agency of Royal Women: Widowed Ranis, Sati & Governance (1775–1840 CE)",
+    movement: "Movement VII: Enlightenment, Sub-Court Workshops & Himalayan Clashes (1699–1815 CE)",
+    scope: "Arik Moran (Ch. 3 & 5) • Lindsey Harlan (Ch. 3)",
+    primary_authors: ["Arik Moran", "Lindsey Harlan"],
+    core_concept: "Far from being silent victims destined solely for funeral pyres, elite Rajput royal women (such as the Guleri Rani of Sirmaur and the Sirmauri Ranis of Bilaspur) wielded decisive executive power as regents, governing state treasuries, directing monastic factions, and negotiating with British political agents.",
+    epistemic_audit: "GENDER HISTORIOGRAPHY & REVISIONISM. Deconstructs colonial Orientalist tropes of passive, oppressed Indian women using actual administrative court records and British residency archives.",
+    key_tenets: [
+      "The Rani as Executive Regent: When an heir was a minor or incompetent, the senior Rani held court behind the curtain (*purdah*), commanding state appointments and military revenues (Moran).",
+      "The Ranis' Revolution (1839): In Bilaspur, the widowed ranis staged a coordinated political uprising against corrupt ministers, forcing the British agent to acknowledge female sovereign rights.",
+      "Rethinking Sati: While sati was valorized in bardic poetry, royal families frequently prohibited pregnant or politically indispensable ranis from immolation so they could preserve the dynasty (Moran & Harlan)."
+    ],
+    operational_heuristic: "Distinguish between patriarchal ceremonial rhetoric and the hard political reality of female executive power in traditional royal households.",
+    verbatim_anchor: "“The widowed Rani sitting behind the purdah was often the sharpest political mind in the kingdom, holding the state together while factions bickered in the durbar.” — Arik Moran",
+    epistemic_status: "ARCHIVAL GENDER REVISION",
+    materiality: "CRITICAL"
+  },
+
+  // MOVEMENT VIII: ANTHROPOLOGICAL CODES, FORTRESS ANATOMY & MODERN MEMORY (1818–MODERNITY)
+  {
+    id: "unit-31-ethic-of-protection-kuldevi-curses",
+    unit_number: 31,
+    title: "The Ethic of Protection, Kuldevi Curses & The Living Sati (Anthropological Core)",
+    movement: "Movement VIII: Anthropological Codes, Fortress Anatomy & Modern Memory (1818–Modernity)",
+    scope: "Lindsey Harlan (Religion and Rajput Women, Ch. 2–5)",
+    primary_authors: ["Lindsey Harlan"],
+    core_concept: "Rajput aristocratic life is governed by two complementary moral codes: male *khatridharma* (the duty to fight, protect territory, and sacrifice life) and female *pativrata* (devotion to husband transformed into supernatural protective shield *sat*), reinforced by the supernatural sanctions of the clan goddess (*Kuldevi*) and ancestral *Sati* curses.",
+    epistemic_audit: "ANTHROPOLOGICAL FIELDWORK. Based on comprehensive ethnographical interviews with royal Rajput women across Mewar, Marwar, and Jaipur.",
+    key_tenets: [
+      "The Dual Protection Matrix: The male defends the realm with cold steel; the female defends the male's life and lineage through strict ritual purity and spiritual power (Harlan).",
+      "The Kuldevi's Double Nature: The clan goddess offers miraculous military victory when honored with blood sacrifice, but inflicts madness and extinction if clan boundaries are violated.",
+      "The Sati's Curse (*Shrap*): The dying declaration of a woman mounting the pyre is regarded as absolute cosmic law, believed to punish moral violations across seven generations."
+    ],
+    operational_heuristic: "Recognize how internal domestic religious rituals enforce lineage discipline and martial morale in an aristocratic caste.",
+    verbatim_anchor: "“The sword of the Rajput warrior is only as sharp as the virtue of his wife; her spiritual shield protects him on the battlefield.” — Lindsey Harlan (Religion and Rajput Women)",
+    epistemic_status: "FIELD ETHNOGRAPHY",
+    materiality: "CRITICAL"
+  },
+  {
+    id: "unit-32-colonial-invention-and-nationalist-memory",
+    unit_number: 32,
+    title: "The Romantic Invention & Nationalist Transformation: Tod to Anti-Colonial Icon (1818–Modernity)",
+    movement: "Movement VIII: Anthropological Codes, Fortress Anatomy & Modern Memory (1818–Modernity)",
+    scope: "James Tod (Vol. 1–3) • Ramya Sreenivasan (Ch. 5–6) • Eva Ulian",
+    primary_authors: ["James Tod", "Ramya Sreenivasan", "Eva Ulian"],
+    core_concept: "In the 19th century, James Tod’s romantic depiction of Rajput chivalry was embraced by British colonial administrators to legitimize indirect rule. Decades later, Bengali and Maharashtrian nationalists appropriated Maharana Pratap, Padmini, and Chittor, transforming medieval dynastic memories into universal icons of Indian anti-colonial freedom and national awakening.",
+    epistemic_audit: "INTELLECTUAL & NATIONALIST HISTORIOGRAPHY. Traces how bardic oral traditions were filtered through colonial English and subsequently reshaped modern Indian patriotic consciousness.",
+    key_tenets: [
+      "Tod's Feudal Translation (1829): Tod mapped Walter Scott's Scottish romanticism onto Rajasthan, presenting Rajputs as pure knights doomed by internecine clan jealousy (Tod).",
+      "The Nationalist Transvaluation: Late 19th-century freedom fighters (Aurobindo, Tilak, Rabindranath Tagore, D. L. Ray) turned Pratap and Padmini into secular symbols of unbending national resistance against foreign domination (Sreenivasan).",
+      "The Modern Cultural Legacy: Today, the fortress of Chittor, the legend of Haldighati, and the sacrifices of Jauhar function as living civilizational touchstones of Indian dignity and sacrifice."
+    ],
+    operational_heuristic: "Observe how historical memories are continually reinterpreted across successive eras to serve new political and spiritual imperatives.",
+    verbatim_anchor: "“Chittorgarh ceased to be merely a ruin in Rajasthan; it became the sacred shrine of India’s unquenchable will to be free.” — Ramya Sreenivasan (The Many Lives of a Rajput Queen)",
+    epistemic_status: "HISTORIOGRAPHICAL SYNTHESIS",
     materiality: "CRITICAL"
   }
 ];
@@ -571,26 +758,29 @@ console.log(`Saved rosetta-stone.json (${rajputRosettaTerms.length} terms)`);
 
 // Generate master-notes.md
 const masterNotesContent = `# The Rajput Unified Mega-Codex: The Definitive Historical & Historiographical Synthesis
-**Corpus Scope:** 7 Foundational Volumes Synthesized (Lt. Col. James Tod's *Annals and Antiquities of Rajasthan* [Vols. 1, 2, & 3], Dirk H. A. Kolff's *Naukar, Rajput, and Sepoy*, Lindsey Harlan's *Religion and Rajput Women*, Giles Tillotson's *The Rajput Palaces*, Robert C. Hallissey's *The Rajput Rebellion Against Aurangzeb*)  
+**Corpus Scope:** 12 Landmark Works Synthesized (Lt. Col. James Tod's *Annals and Antiquities of Rajasthan* [Vols. 1, 2, & 3], Dirk H. A. Kolff's *Naukar, Rajput, and Sepoy*, Lindsey Harlan's *Religion and Rajput Women*, Giles Tillotson's *The Rajput Palaces*, Robert C. Hallissey's *The Rajput Rebellion Against Aurangzeb*, Ramya Sreenivasan's *The Many Lives of a Rajput Queen*, Molly Emma Aitken's *The Intelligence of Tradition in Rajput Court Painting*, Basil Gray's *Rajput Painting*, Arik Moran's *Kingship and Polity on the Himalayan Borderland*, and Eva Ulian's *Rajput*)  
 **System Standard:** BKRS v1.0 Historical Multi-Source Master Codex  
-**Corpus Architecture:** 8 Movements | 24 Invariant Knowledge Units | Comprehensive Historiographical Audit  
-**Objective:** Transform centuries of bardic lore, colonial romanticism, Persian court accounts, and cutting-edge academic ethnohistory into an uncompromising, objective, and deeply readable master chronicle of Rajput history.  
+**Corpus Architecture:** 8 Movements | 32 Strictly Chronological Invariant Knowledge Units | Comprehensive Historiographical Audit  
+**Objective:** Transform centuries of bardic lore, colonial romanticism, Persian court chronicles, visual court workshops, and cutting-edge academic ethnohistory into an uncompromising, objective, and deeply readable master chronicle of Rajput history.  
 
 ---
 
 ## Executive Summary: The Historiographical Landscape
 
-For two centuries, the history of the Rajputs has been caught in a fierce dialectic between romantic colonial idealization, sectarian communal myth-making, and critical epigraphic revision. In the 1820s, British political agent **Lt. Col. James Tod** collected thousands of bardic *khyats*, copper plate grants, and folklore, publishing his monumental *Annals and Antiquities of Rajasthan*. Tod viewed the Rajputs through the lens of European medieval chivalry, comparing them directly to Gothic knights and Norman feudal baronies under Henry II.
+For two centuries, the history of the Rajputs has been caught in a fierce dialectic between romantic colonial idealization, sectarian myth-making, and critical epigraphic revision. In the 1820s, British political agent **Lt. Col. James Tod** collected thousands of bardic *khyats*, copper plate grants, and folklore, publishing his monumental *Annals and Antiquities of Rajasthan*. Tod viewed the Rajputs through the lens of European medieval chivalry, comparing them directly to Gothic knights and Norman feudal baronies under Henry II.
 
 In modern scholarship, groundbreaking works have dismantled both the romantic myths and imperial distortions:
 1. **Dirk H. A. Kolff (*Naukar, Rajput, and Sepoy*, Cambridge):** Proves that prior to the 16th century, 'Rajput' was not a closed biological caste, but an open status category of martial employment in the competitive military labour market of Hindustan, gradually closing its boundaries through the process of 'Rajputization'.
-2. **Robert C. Hallissey (*The Rajput Rebellion Against Aurangzeb*, Univ. of Missouri):** Deconstructs the 1679 Rajput crisis, proving it was not a simplistic Hindu-Muslim religious clash, but an administrative and strategic blunder over succession rights in Marwar and imperial transit routes to Gujarat.
-3. **Lindsey Harlan (*Religion and Rajput Women*, UC Press / Munshiram Manoharlal):** Analyzes the inner religious world of Rajput noblewomen, deciphering the dual protective ethics of *Khatridharma* (male warrior duty) and *Pativrata* (female spiritual shielding), along with the ancestral cults of the *Kuldevi* and the *Sati*.
-4. **Giles Tillotson (*The Rajput Palaces*, Oxford):** Establishes that Rajput fortress and palace architecture was an autonomous, highly sophisticated tradition of organic, asymmetric stone engineering tailored to rocky hilltops, rather than a mere provincial derivation of Mughal architecture.
+2. **Ramya Sreenivasan (*The Many Lives of a Rajput Queen*, Univ. of Washington Press):** Deconstructs the 600-year trajectory of the Padmini narrative, demonstrating how it originated in 1540 as an Awadhi Sufi mystical romance by Jayasi before being assimilated into 17th-century Sisodia dynastic chronicles and 19th-century anti-colonial nationalism.
+3. **Molly Emma Aitken (*The Intelligence of Tradition in Rajput Court Painting*, Yale Univ. Press) & Basil Gray (*Rajput Painting*, Faber):** Establish that Rajput miniature painting was an autonomous, highly sophisticated visual philosophy—deploying saturated color fields, dynamic hunting scenes, and *shringara* rasas to assert royal legitimacy and sacred memory—rather than an inferior provincial copy of Mughal realism.
+4. **Robert C. Hallissey (*The Rajput Rebellion Against Aurangzeb*, Univ. of Missouri):** Deconstructs the 1679 Rajput crisis, proving it was not a simplistic Hindu-Muslim religious clash, but an administrative and strategic blunder over succession rights in Marwar and imperial transit routes to Gujarat.
+5. **Lindsey Harlan (*Religion and Rajput Women*, UC Press / Munshiram Manoharlal):** Analyzes the inner religious world of Rajput noblewomen, deciphering the dual protective ethics of *Khatridharma* (male warrior duty) and *Pativrata* (female spiritual shielding), along with the ancestral cults of the *Kuldevi* and the *Sati*.
+6. **Arik Moran (*Kingship and Polity on the Himalayan Borderland*, Amsterdam Univ. Press):** Traces the migration and state-formation of Rajput lineages in the Western Himalayas (Kangra, Bilaspur, Sirmaur), documenting the crucial political agency of widowed Ranis and clan gatherings (*jheras*).
+7. **Giles Tillotson (*The Rajput Palaces*, Oxford) & Eva Ulian (*Rajput*):** Establish that Rajput fortress and palace architecture was an autonomous tradition of organic, asymmetric stone engineering tailored to rocky hilltops, designed for living communities and siege defense.
 
 ---
 
-## The Beginner's Rosetta Stone: 10 Essential Rajput Terms Decoded
+## The Beginner's Rosetta Stone: 15 Essential Rajput Terms Decoded
 
 If you are exploring Rajput history for the first time, use this master lexicon to distinguish romantic myths from historical realities:
 
@@ -600,1253 +790,655 @@ ${rajputRosettaTerms.map(t => `| **${t.term}**<br>*\`${t.category}\`* | ${t.trad
 
 ---
 
-## The Dynastic Compass: The Big Three Royal Houses of Rajasthan
+## The Dynastic Compass: The Primary Royal Houses
 
-For a beginner, the biggest hurdle is tracking dozens of kings across different kingdoms. Rajput history is anchored in **Three Primary Dynastic Houses**:
+For a beginner, the biggest hurdle is tracking dozens of kings across different kingdoms. Rajput history is anchored in **Four Primary Geopolitical Anchors**:
 
 | Royal House & Lineage | Capitals & Primary Strongholds | Core Ethos & Identity | Landmark Historical Monarchs |
 | :--- | :--- | :--- | :--- |
 | **House of Mewar**<br>*(Guhila / Sisodia Clan)*<br>Solar Dynasty (*Suryavansha*) | **Chittorgarh** (Monolithic Rock)<br>**Kumbhalgarh** (Cloud Mountain Keep)<br>**Udaipur / Chawand** (Lakes & Hills) | **Uncompromising Sovereignty.** Ruled not as kings, but as mortal prime ministers (*Dewan*) of Eklingji (Shiva). The only royal house that never attended Mughal court or gave daughters in marriage. | **Bappa Rawal** (8th c. founder)<br>**Rana Kumbha** (1433–68, Builder of 32 forts)<br>**Rana Sanga** (1508–27, Khanwa confederation)<br>**Maharana Pratap** (1572–97, Haldighati & Dewair)<br>**Amar Singh I** (1615 Treaty)<br>**Raj Singh I** (1679 anti-Jizya coalition) |
-| **House of Marwar**<br>*(Rathore Clan)*<br>Solar Dynasty (Rashtrakuta branch) | **Mandore** (Ancient seat)<br>**Jodhpur** (*Mehrangarh* cliff citadel)<br>**Bikaner** (Northern desert branch) | **Desert Chivalry & Territorial Tenacity.** Masters of rapid desert cavalry charges and rugged defensive fortresses. Governed vast arid expanses through kinship-clan networks. | **Rao Jodha** (1459, founder of Jodhpur)<br>**Rao Maldeo** (1532–62, Giri-Sumel battle)<br>**Rao Chandrasen** (1562–81, Precursor to Pratap)<br>**Jaswant Singh I** (1638–78, Imperial general)<br>**Durga Das Rathore** (1679–1707, 30-year resistance) |
+| **House of Marwar**<br>*(Rathore Clan)*<br>Solar Dynasty (Rashtrakuta branch) | **Mandore** (Ancient seat)<br>**Jodhpur** (*Mehrangarh* cliff citadel)<br>**Bikaner** (Northern desert branch) | **Desert Chivalry & Territorial Tenacity.** Masters of rapid desert cavalry charges and rugged defensive fortresses. Governed vast arid expanses through kinship-clan networks (*bhai-bandh*). | **Rao Jodha** (1459, founder of Jodhpur)<br>**Rao Maldeo** (1532–62, Giri-Sumel battle)<br>**Rao Chandrasen** (1562–81, Precursor to Pratap)<br>**Jaswant Singh I** (1638–78, Imperial general)<br>**Durga Das Rathore** (1679–1707, 30-year resistance) |
 | **House of Amber / Jaipur**<br>*(Kachwaha Clan)*<br>Solar Dynasty (Descent from Kusha) | **Dausa** (Early seat)<br>**Amber** (Lakeside ridge citadel)<br>**Jaipur** (Planned Enlightenment City) | **Astute Realpolitik & Imperial Command.** Traded formal submission for paramount military leadership in the Mughal Empire, financing vast Hindu architecture and astronomical science. | **Raja Bharmal** (1562, Akbar alliance)<br>**Raja Bhagwant Das** (Imperial commander)<br>**Raja Man Singh I** (1589–1614, Viceroy of Kabul & Bengal)<br>**Mirza Raja Jai Singh I** (Purandar treaty with Shivaji)<br>**Sawai Jai Singh II** (1699–1743, Jantar Mantar & Jaipur) |
+| **Himalayan Hill States**<br>*(Pahari Dynasties: Kangra, Bilaspur, Sirmaur)* | **Kangra** (Trigarta rock citadel)<br>**Bilaspur / Kot Kahlur** (Sutlej gorge)<br>**Nahan** (Sirmaur keep) | **Mountain Sovereignty & Lyrical Devotion.** Established mountain bastions using clan gatherings (*jheras*), patronizing the Kangra painting tradition, and commanding strategic Himalayan trade corridors. | **Raja Sansar Chand of Kangra** (Pahari golden age)<br>**Raja Mahan Chand of Bilaspur** (Chinjhiar clash)<br>**Guleri Rani of Sirmaur** (Executive regent)<br>**Amar Singh Thapa** (Gorkha commander in hills) |
 
 ---
 
-## Master Chronological Timeline (734 to 1743 CE)
+## Master Chronological Timeline (734 to 1900+ CE)
 
 \`\`\`text
 [c. 734 CE] Bappa Rawal establishes Guhila rule at Chittorgarh under Eklingji's sovereignty.
     │
-[1303 CE]  First Siege of Chittor by Alauddin Khalji; Rani Padmini & First Jauhar; Saka charge.
+[1303 CE]  First Siege of Chittor by Alauddin Khalji; First Jauhar & Saka charge; Ratansen's fall.
+    │
+[1326 CE]  Rana Hammir reclaims Chittorgarh from mountain hideouts, founding the Sisodia dynasty.
     │
 [1433–68]  Golden Age of Rana Kumbha; construction of Kumbhalgarh's 36-km wall & Vijay Stambha.
     │
 [1459 CE]  Rao Jodha founds Jodhpur and lays the foundation of Mehrangarh rock citadel.
     │
-[1527 CE]  Battle of Khanwa: Babur's gunpowder artillery defeats Rana Sanga's grand confederation.
+[1508–27]  Rana Sanga unifies North Indian rulers; clash of cavalry against Ottoman artillery at Khanwa (1527).
     │
-[1535 CE]  Second Siege of Chittor by Bahadur Shah of Gujarat; Rani Karnavati's Jauhar.
+[1535 CE]  Second Siege of Chittor by Bahadur Shah of Gujarat; Rani Karnavati leads 13,000 in Jauhar.
     │
-[1544 CE]  Battle of Giri-Sumel: Sher Shah Suri nearly perishes against Rathore commanders Jaita & Kumpa.
+[1540 CE]  Malik Muhammad Jayasi composes the Awadhi Sufi mystical romance 'Padmavat'.
     │
-[1562 CE]  Raja Bharmal of Amber forms the historic Mughal-Rajput diplomatic alliance with Akbar.
+[1544 CE]  Battle of Giri-Sumel: Rathore commanders Jaita & Kumpa nearly defeat Sultan Sher Shah Suri.
     │
-[1568 CE]  Third Siege of Chittor: Akbar's siege mines fall upon defenders Jaimal & Patta; Third Jauhar.
+[1562 CE]  Raja Bharmal of Amber forms historic diplomatic and matrimonial alliance with Emperor Akbar.
     │
-[1570 CE]  Nagaur Darbar: Akbar demands royal submissions; Rao Chandrasen of Marwar defies and flees.
+[1568 CE]  Third Siege of Chittor: Akbar's siege mines fall upon Jaimal & Patta; Third Jauhar; 30,000 perish.
     │
-[1576 CE]  Battle of Haldighati: Maharana Pratap clashes with imperial vanguard under Raja Man Singh.
+[1570 CE]  Nagaur Darbar: Akbar demands royal submissions; Rao Chandrasen of Marwar walks out to wage desert war.
     │
-[1582 CE]  Battle of Dewair: Pratap's 'Marathon of Mewar'; systematic liberation of 36 Mughal outposts.
+[1576 CE]  Battle of Haldighati (June 18): Maharana Pratap confronts Raja Man Singh in the narrow Aravalli pass.
+    │
+[1582 CE]  Battle of Dewair: Pratap's 'Marathon of Mewar'; liberation of 36 Mughal military garrisons.
     │
 [1585–97]  Pratap establishes civilizational capital at Chawand; dies undefeated in bed (1597).
     │
-[1615 CE]  The Treaty of 1615: Amar Singh I accepts honorable peace with Jahangir; Mewar sovereignty preserved.
+[1589 CE]  Jain monk Hemratan composes 'Gora Badal Padmini Chaupai', converting Padmavat into heroic lore.
     │
-[1678–79]  Death of Jaswant Singh at Jamrud; Aurangzeb invades Marwar; Durga Das rescues baby Ajit Singh.
+[1615 CE]  The Treaty of 1615: Maharana Amar Singh I accepts honorable peace with Jahangir; sovereignty intact.
+    │
+[1620–60]  Sahibdin leads the Udaipur painting workshop; codifies the 'Intelligence of Tradition'.
+    │
+[1672 CE]  Sacred Translocation: Maharana Raj Singh shelters the idol of Shrinathji at Nathdwara.
+    │
+[1678–79]  Death of Jaswant Singh at Jamrud; Aurangzeb occupies Marwar; Durga Das rescues infant Ajit Singh.
     │
 [1679–81]  Rathore-Sisodia Coalition; Maharana Raj Singh's anti-Jizya epistle; 30-Year War erupts.
     │
-[1707 CE]  Death of Aurangzeb; Durga Das Rathore triumphantly installs Ajit Singh as Maharaja of Jodhpur.
+[1707 CE]  Death of Aurangzeb; Durga Das Rathore triumphantly restores Ajit Singh to the throne of Jodhpur.
     │
-[1727 CE]  Maharaja Sawai Jai Singh II founds the planned city of Jaipur and builds Jantar Mantar.
+[1727 CE]  Maharaja Sawai Jai Singh II founds the planned city of Jaipur and builds Jantar Mantar observatories.
+    │
+[1770–1830] Sub-court painting workshops flourish: Baghta and Chokha develop tactile modernism at Devgarh.
+    │
+[1795 CE]  Battle of Chinjhiar: Bilaspur and Kangra clash in Himachal, opening the hills to Gorkha invasion.
+    │
+[1805–15]  Gorkha expansion under Amar Singh Thapa; British intervention and treaty arrangements in the hills.
+    │
+[1829 CE]  Lt. Col. James Tod publishes 'Annals and Antiquities of Rajasthan', romanticizing chivalric lore.
+    │
+[1880–1947] Bengali and Indian nationalists transform Pratap, Padmini, and Chittor into anti-colonial freedom icons.
 \`\`\`
 
 ---
 
-## 24 Unified Invariant Knowledge Units
+## 32 Unified Invariant Knowledge Units (Strictly Chronological)
 
 ${rajputKnowledgeUnits.map(u => `### [Unit ${String(u.unit_number).padStart(2, '0')}] ${u.title}
 - **Structural Movement:** ${u.movement}
-- **Corpus Sources:** ${u.scope}
-- **Primary Authors:** ${u.primary_authors.join(', ')}
-- **Epistemic Classification:** \`${u.epistemic_status}\` | Materiality: **${u.materiality}**
+- **Corpus Scope:** ${u.scope}
+- **Primary Source Authors:** ${u.primary_authors.join(', ')}
+- **Epistemic Classification:** \`[${u.epistemic_status}]\` | **Materiality Grade:** \`[${u.materiality}]\`
 
-#### Core Invariant Concept
+#### Core Concept
 ${u.core_concept}
 
-#### Epistemic Audit & Historiographical Context
+#### Epistemic Audit & Reality Check
 ${u.epistemic_audit}
 
-#### Systematic Tenets & Cross-Source Principles
-${u.key_tenets.map(t => `1. ${t}`).join('\n')}
+#### Key Structural Tenets
+${u.key_tenets.map(t => `- ${t}`).join('\n')}
 
-#### Operational Heuristic & Strategic Insight
+#### Operational Heuristic for Reader
 > *${u.operational_heuristic}*
 
 #### Verbatim Archival Anchor
-${u.verbatim_anchor}
+> ${u.verbatim_anchor}
 
----`).join('\n\n')}
+---
+`).join('\n')}
 
-## The Grand Historiographical Dispute Matrix
+## The 7-Point Historiographical Dispute Matrix
 
-### Dispute 1: Caste by Birth vs. Military Status (Tod vs. Kolff)
-- **The Romantic Bardic Stance (James Tod):** The Rajputs are pure, unbroken descendants of ancient Vedic Kshatriyas (the Solar and Lunar races), an endogamous aristocracy whose martial spirit is hereditary.
-- **The Modern Ethnohistorical Stance (Dirk Kolff):** 'Rajput' was an open martial status category throughout the 14th and 15th centuries. Peasant warriors, Purbiya mercenaries, and pastoralists became Rajputs by virtue of their arms and service (*naukari*). The caste only closed in the Mughal era through genealogical invention and hypergamous marriage policing.
-- **Unified Synthesis:** Rajput identity evolved from an **open, multi-ethnic military profession** into a **closed, genealogical aristocracy** as regional kingdoms consolidated under Mughal imperial administration.
+| Dispute Subject | Traditional / Romantic View | Modern Historiographical Finding | Key Sources & Inscriptional Evidence | Consensus Verdict |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. The Origin & Nature of Rajputs** | An unbroken, biologically pure Vedic Kshatriya caste descending from Sun and Moon gods. (Tod) | An open martial identity in the North Indian military labour market that closed its boundaries in the 16th c. through 'Rajputization'. | Dirk Kolff (*Naukar, Rajput, and Sepoy*) • B. D. Chattopadhyaya • Epigraphy | **Resolved:** Function preceded caste; genealogical closure was an early modern political construction. |
+| **2. The 1679 Rebellion Against Aurangzeb** | A holy war of total Hindu resistance against a fanatical Muslim emperor seeking to destroy temples. (J. N. Sarkar / Tod) | An administrative succession blunder and strategic conflict over the vital Delhi-Surat trade route and *watan jagir* autonomy. | Robert C. Hallissey (*The Rajput Rebellion Against Aurangzeb*) • Mughal *Waqai* | **Resolved:** Geopolitical and succession violation (*watan*) drove the war, though religious rhetoric was deployed. |
+| **3. The Historicity of Queen Padmini** | A literal 1303 historical queen whose beauty caused the siege of Chittor by Alauddin Khalji. (Tod) | A 1540 Awadhi Sufi mystical allegory by Jayasi that was adopted by Jain and Sisodia bards over 400 years into dynastic scripture. | Ramya Sreenivasan (*The Many Lives of a Rajput Queen*) • Amir Khusrau (1303) | **Resolved:** The 1303 siege is historical; Padmini was an allegorical figure transformed into royal memory. |
+| **4. The Outcome of Haldighati (1576)** | A total Mughal victory crushing Mewar independence (Mughal chronicles) OR a total victory by Pratap (bardic poetry). | A tactical Mughal field success (holding the blood-soaked pass) that was a total strategic failure: Pratap escaped and recaptured 90% of Mewar. | Abdul Qadir Badauni (*Muntakhab-ut-Tawarikh*) • Mewar stone inscriptions | **Resolved:** Tactical draw/Mughal field win, but decisive strategic failure for Akbar; Mewar was reclaimed by 1597. |
+| **5. The Autonomy of Rajput Painting** | A crude, provincial imitation of Mughal court realism with inferior perspective. (Early colonial art historians) | An autonomous, philosophically coherent aesthetic system utilizing flat color fields and rasas (*shringara*, *vir*) to affirm sacred sovereignty. | Molly Emma Aitken (*The Intelligence of Tradition*) • Basil Gray (*Rajput Painting*) | **Resolved:** Rajput art made deliberate anti-naturalistic philosophical choices to evoke emotional immersion and dynastic legitimacy. |
+| **6. Himalayan Pahari Kingship** | Primitive mountain hill tribes isolated from the mainstream political currents of India. (Colonial Gazettes) | An interconnected network of sophisticated Rajput dynasties (Kangra, Bilaspur, Sirmaur) practicing agile diplomacy, clan assemblies (*jheras*), and fine art. | Arik Moran (*Kingship and Polity on the Himalayan Borderland*) | **Resolved:** The Western Himalayas were deeply integrated into North Indian Rajputization, Gorkha expansion, and British politics. |
+| **7. The Agency of Rajput Royal Women** | Tragic, passive, cloistered victims whose only historical function was immolation on the funeral pyre (*sati*). | Astute political regents and dowagers (such as the Guleri Rani or Sirmauri Ranis) who held state power, managed treasuries, and defied simplistic oppression tropes. | Arik Moran • Lindsey Harlan (*Religion and Rajput Women*) | **Resolved:** Elite women wielded immense executive, economic, and moral authority behind court protocols. |
 
-### Dispute 2: The Character of the Rajput Rebellion (1679–1681)
-- **The Colonial / Communal Theory (Tod & Sarkar):** Aurangzeb’s anti-Hindu religious fanaticism (destroying temples and imposing Jizya) drove the proud Hindu Rajputs into a patriotic religious revolt to save their culture.
-- **The Modern Political Economy Theory (Robert Hallissey):** The war began as a specific succession crisis in Marwar following Maharaja Jaswant Singh’s death in Jamrud without an heir. Aurangzeb attempted to bring Marwar under direct crown administration (*Khalisa*) to secure vital trade routes to Surat. The rebellion was fought over imperial-feudal power-sharing and autonomy, not religious theology.
-- **Unified Synthesis:** The conflict was an **imperial crisis of legitimacy and treaty violation**: Aurangzeb broke Akbar's covenant of non-interference in ancestral watan lands, forcing Mewar and Marwar into an existential defensive coalition.
+---
 
-### Dispute 3: Rani Padmini of Chittor (History vs. Allegory)
-- **The Popular Bardic Narrative (Tod):** Sultan Alauddin Khalji attacked Chittor in 1303 solely to capture the exquisitely beautiful queen Padmini after seeing her reflection in a mirror, leading to her heroic Jauhar.
-- **The Historiographical Evidence:** Contemporary court poet Amir Khusrau accompanied Alauddin and recorded the 1303 siege in *Khazain-ul-Futuh*, describing the military operations and massacres but mentioning zero queen named Padmini or mirror trick. Padmini first appears 237 years later in Malik Muhammad Jayasi’s Sufi poetic romance *Padmavat* (1540), where she serves as an allegory for divine wisdom (*Maya*).
-- **Unified Synthesis:** The **military siege and collective Jauhar of 1303 are undeniable historical facts**; but the romantic narrative of Padmini and the mirror is a 16th-century poetic legend that was subsequently codified into bardic reality.
+## Final Synthesis: What Matters Most
 
-### Dispute 4: The Battle of Haldighati (1576) — Victory vs. Strategic Stalemate
-- **The Imperial Court Stance (Abul Fazl):** Akbar's imperial army commanded by Raja Man Singh utterly defeated the rebel Pratap, routed his army, and captured his war elephants.
-- **The Mewari Bardic Stance (Tod):** Pratap fought like an invincible lion, pierced Man Singh's howdah, and won the moral field.
-- **The Modern Military Resolution:** Haldighati was an **imperial tactical victory** on the battlefield (the Mughals held the ground at sunset), but a **complete strategic failure**: Pratap was not captured, his command core escaped intact into the mountains, Mewar's peasantry refused to submit, and within a decade, Pratap liberated 90% of his ancestral territory from Chawand.
-
-### Dispute 5: Architectural Evolution (Mughal Imitation vs. Autonomous Innovation)
-- **The Colonial Bias (James Fergusson):** Rajput palaces were charming but clumsy provincial imitations of Mughal imperial pavilions.
-- **The Modern Architectural Proof (Giles Tillotson):** Rajput architecture possesses its own complete, autonomous structural grammar: organic asymmetric massing on rugged clifftops, heavy stone trabeate beam construction, deep corbelled *jharokhas*, and functional defensive integration that predates and stands distinct from Mughal symmetry.
+Rajput history is not a collection of romantic fairy tales or sectarian propaganda. It is the complex, 1,000-year saga of an open warrior class that built formidable hilltop fortresses, forged the supreme military labour market of India, created profound visual and sacred traditions, navigated imperial accommodation with the Mughals, and defended their ancestral independence with uncompromising tenacity. By examining the living interplay of rock architecture, military contracts, female protective religion, painting workshops, and dynastic memory, we recover the true civilizational genius of the Rajputs.
 `;
 
 fs.writeFileSync(path.join(targetDir, 'master-notes.md'), masterNotesContent, 'utf8');
-console.log("Saved master-notes.md (24 units, 10 Rosetta terms, 5 disputes)");
+console.log(`Saved master-notes.md (${rajputKnowledgeUnits.length} units, ${rajputRosettaTerms.length} Rosetta terms, 7 disputes)`);
 
-// Generate Standalone index.html
-const htmlContent = `<!DOCTYPE html>
+// Generate Standalone HTML Reader App
+const htmlReaderContent = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Rajput Unified Mega-Codex — Definitive Historical Synthesis | BKRS Reader</title>
-  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>The Rajput Unified Mega-Codex | BKRS Master Reader</title>
   <style>
     :root {
-      --bg-canvas: #fbf9f5;
-      --bg-card: #ffffff;
-      --bg-card-subtle: #f6f2e9;
-      --border-color: #e2dbce;
-      --border-color-focus: #c4b8a2;
-      --text-main: #231f1a;
-      --text-muted: #5e574c;
-      --text-subtle: #8a8172;
-      --accent-saffron: #cf5e1e;
-      --accent-gold: #b38628;
-      --accent-crimson: #8c1d20;
-      --accent-forest: #23583e;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-      --shadow-lg: 0 12px 28px rgba(0,0,0,0.12);
-      --font-serif: "EB Garamond", Georgia, serif;
-      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-display: "Cinzel", Georgia, serif;
-      --measure: 840px;
+      --bg: #0f1117;
+      --card-bg: #181b24;
+      --card-border: #262b3a;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #f59e0b; /* Ochre/Saffron */
+      --accent-hover: #d97706;
+      --crimson: #e11d48;
+      --emerald: #10b981;
+      --indigo: #6366f1;
+      --font-serif: "Merriweather", Georgia, serif;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
-
-    [data-theme="dark"] {
-      --bg-canvas: #131417;
-      --bg-card: #1b1d22;
-      --bg-card-subtle: #22252c;
-      --border-color: #2f3440;
-      --border-color-focus: #4b5366;
-      --text-main: #eae7e1;
-      --text-muted: #aba598;
-      --text-subtle: #757064;
-      --accent-saffron: #e06d2c;
-      --accent-gold: #d4a342;
-      --accent-crimson: #d43d41;
-      --accent-forest: #38a374;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
-      --shadow-lg: 0 12px 28px rgba(0,0,0,0.5);
-    }
-
-    [data-theme="sepia"] {
-      --bg-canvas: #f4ecdc;
-      --bg-card: #fcf6ea;
-      --bg-card-subtle: #ede1cb;
-      --border-color: #ded0b4;
-      --border-color-focus: #b5a484;
-      --text-main: #2b251c;
-      --text-muted: #665a47;
-      --text-subtle: #8a7a62;
-      --accent-saffron: #b84b12;
-      --accent-gold: #9e711d;
-      --accent-crimson: #7d1a1d;
-    }
-
-    body[data-font="sans"] { --font-body: var(--font-sans); }
-    body[data-font="serif"] { --font-body: var(--font-serif); }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      background-color: var(--bg-canvas);
-      color: var(--text-main);
-      font-family: var(--font-body, var(--font-serif));
-      font-size: 1.14rem;
-      line-height: 1.78;
-      transition: background-color 0.25s ease, color 0.25s ease;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .top-bar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg-canvas);
-      border-bottom: 1px solid var(--border-color);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-    .top-bar-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 12px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .brand-link {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      color: inherit;
-    }
-    .brand-logo {
-      width: 32px;
-      height: 32px;
-      border-radius: 4px;
-    }
-    .brand-meta {
-      display: flex;
-      flex-direction: column;
-    }
-    .brand-title {
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 0.95rem;
-      letter-spacing: 0.1em;
-      color: var(--accent-saffron);
-    }
-    .brand-sub {
+      background: var(--bg);
+      color: var(--text);
       font-family: var(--font-sans);
-      font-size: 0.72rem;
-      color: var(--text-subtle);
-    }
-
-    .top-controls {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .ctrl-btn {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      color: var(--text-muted);
-      padding: 5px 12px;
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      font-weight: 600;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .ctrl-btn:hover {
-      border-color: var(--accent-saffron);
-      color: var(--text-main);
-    }
-    .ctrl-btn.active {
-      background: var(--accent-saffron);
-      border-color: var(--accent-saffron);
-      color: #ffffff;
-    }
-
-    .hero-header {
-      padding: 64px 24px 32px;
-      text-align: center;
-      max-width: 980px;
-      margin: 0 auto;
-    }
-    .hero-kicker {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--accent-saffron);
-      margin-bottom: 12px;
-      display: inline-block;
-    }
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: clamp(2.2rem, 4.8vw, 3.8rem);
-      line-height: 1.15;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-      color: var(--text-main);
-      margin-bottom: 12px;
-    }
-    .hero-subtitle {
-      font-family: var(--font-serif);
-      font-size: 1.3rem;
-      font-style: italic;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-    }
-    .hero-badges {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 28px;
-    }
-    .cert-pill {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 20px;
-      background: var(--bg-card-subtle);
-      border: 1px solid var(--border-color);
-      color: var(--text-muted);
-      letter-spacing: 0.04em;
-    }
-    .cert-pill.highlight {
-      background: #cf5e1e18;
-      border-color: var(--accent-saffron);
-      color: var(--accent-saffron);
-    }
-
-    .hero-axiom {
-      background: var(--bg-card);
-      border-left: 3px solid var(--accent-saffron);
-      border-radius: 0 8px 8px 0;
-      padding: 20px 28px;
-      max-width: 860px;
-      margin: 0 auto 36px;
-      text-align: left;
-      box-shadow: var(--shadow-sm);
-    }
-    .hero-axiom-title {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 800;
-      color: var(--accent-saffron);
-      margin-bottom: 6px;
-    }
-    .hero-axiom-quote {
-      font-family: var(--font-serif);
-      font-size: 1.16rem;
       line-height: 1.6;
-      font-style: italic;
-      color: var(--text-main);
+      padding-bottom: 5rem;
     }
-
-    .view-navigation {
+    header {
+      background: linear-gradient(180deg, #1c1917 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--card-border);
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.25rem;
+      color: #fff;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .nav-tabs {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 40px;
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 16px;
-      max-width: 1180px;
-      margin-left: auto;
-      margin-right: auto;
+      gap: 0.5rem;
       flex-wrap: wrap;
+      margin-top: 1.5rem;
     }
     .tab-btn {
-      background: transparent;
-      border: 1px solid var(--border-color);
+      background: var(--card-bg);
       color: var(--text-muted);
-      padding: 10px 18px;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
+      border: 1px solid var(--card-border);
+      padding: 0.6rem 1.25rem;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
       font-weight: 600;
-      border-radius: 6px;
       cursor: pointer;
       transition: all 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .tab-btn span {
-      font-size: 0.7rem;
-      color: var(--accent-saffron);
-      font-weight: 800;
-    }
-    .tab-btn:hover {
-      border-color: var(--accent-saffron);
-      color: var(--text-main);
     }
     .tab-btn.active {
-      background: var(--bg-card);
-      border-color: var(--accent-saffron);
-      color: var(--accent-saffron);
-      box-shadow: var(--shadow-sm);
+      background: var(--accent);
+      color: #1c1917;
+      border-color: var(--accent);
     }
-
-    .main-container {
-      max-width: var(--measure);
-      margin: 0 auto;
-      padding: 0 24px 80px;
+    .tab-btn:hover:not(.active) {
+      border-color: var(--accent);
+      color: #fff;
     }
-
-    .search-box-wrapper {
-      margin-bottom: 30px;
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .search-box {
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 0.75rem;
     }
     .search-input {
-      width: 100%;
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 14px 18px;
-      font-family: var(--font-sans);
+      flex: 1;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.5rem;
       font-size: 0.95rem;
-      color: var(--text-main);
-      box-shadow: var(--shadow-sm);
-      transition: border-color 0.2s;
     }
     .search-input:focus {
       outline: none;
-      border-color: var(--accent-saffron);
+      border-color: var(--accent);
     }
-
-    /* ROSETTA STONE STYLES */
-    .rosetta-intro-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 24px 28px;
-      margin-bottom: 28px;
-      box-shadow: var(--shadow-sm);
-    }
-    .rosetta-intro-title {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      color: var(--accent-saffron);
-      margin-bottom: 8px;
-    }
-    .rosetta-intro-p {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      line-height: 1.65;
-    }
-
-    .rosetta-term-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 26px 28px;
-      margin-bottom: 20px;
-      box-shadow: var(--shadow-sm);
-    }
-    .rosetta-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 12px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .rosetta-term-title {
-      font-family: var(--font-display);
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-    .rosetta-category-badge {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 3px 10px;
-      border-radius: 4px;
-      background: #cf5e1e18;
-      color: var(--accent-saffron);
-      border: 1px solid var(--accent-saffron);
-    }
-    .rosetta-traditional-box {
-      background: var(--bg-card-subtle);
-      border-left: 3px solid var(--accent-crimson);
-      padding: 10px 16px;
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-size: 0.98rem;
-      color: var(--text-muted);
-      border-radius: 0 4px 4px 0;
-      margin-bottom: 14px;
-    }
-    .rosetta-audit-box {
-      background: var(--bg-card-subtle);
-      border-left: 3px solid var(--accent-forest);
-      padding: 12px 18px;
-      border-radius: 0 6px 6px 0;
-      margin-bottom: 14px;
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-    .rosetta-analogy-box {
-      font-family: var(--font-sans);
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border-color);
-      padding-top: 12px;
-    }
-
-    /* UNIT CARD STYLES */
+    .view-section { display: none; }
+    .view-section.active { display: block; }
     .unit-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 32px 36px;
-      margin-bottom: 32px;
-      box-shadow: var(--shadow-sm);
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.75rem;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.15s, border-color 0.15s;
     }
-    .unit-card-header {
-      margin-bottom: 20px;
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 16px;
+    .unit-card:hover {
+      border-color: rgba(245, 158, 11, 0.4);
     }
-    .unit-meta-top {
+    .card-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-      gap: 8px;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      gap: 1rem;
     }
-    .unit-number-tag {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
+    .unit-id {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 700;
-      color: var(--accent-saffron);
-    }
-    .unit-badge-epistemic {
-      font-family: var(--font-sans);
-      font-size: 0.68rem;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 4px;
-      background: var(--bg-card-subtle);
-      border: 1px solid var(--border-color);
-      color: var(--text-muted);
+      letter-spacing: 0.05em;
     }
     .unit-title {
-      font-family: var(--font-display);
-      font-size: 1.55rem;
-      line-height: 1.3;
-      margin-bottom: 8px;
-      color: var(--text-main);
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: #fff;
+      margin-top: 0.25rem;
     }
-    .unit-scope-bar {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      color: var(--text-subtle);
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
+    .epistemic-tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.25rem;
+      background: #27272a;
+      color: #cbd5e1;
+      font-weight: 600;
+      white-space: nowrap;
     }
-    .unit-core-concept {
-      font-size: 1.15rem;
-      line-height: 1.7;
-      margin-bottom: 20px;
-      font-weight: 500;
-      color: var(--text-main);
-    }
-    .unit-audit-box {
-      background: var(--bg-card-subtle);
-      border-left: 3px solid var(--accent-gold);
-      padding: 14px 18px;
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-      border-radius: 0 4px 4px 0;
-      line-height: 1.6;
-    }
-    .unit-section-title {
-      font-family: var(--font-sans);
-      font-size: 0.76rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--accent-saffron);
-      margin-bottom: 12px;
-    }
-    .unit-tenets-list {
-      list-style: none;
-      margin-bottom: 24px;
-    }
-    .unit-tenet-item {
-      position: relative;
-      padding-left: 24px;
-      margin-bottom: 12px;
-      font-size: 1.04rem;
-      line-height: 1.68;
-      color: var(--text-main);
-    }
-    .unit-tenet-item::before {
-      content: "•";
-      position: absolute;
-      left: 6px;
-      color: var(--accent-saffron);
-      font-size: 1.3rem;
-      line-height: 1;
-      top: 4px;
-    }
-    .unit-heuristic-box {
-      border: 1px dashed var(--border-color);
-      border-radius: 6px;
-      padding: 14px 18px;
-      margin-bottom: 20px;
-      font-family: var(--font-sans);
-      font-size: 0.88rem;
-      line-height: 1.6;
+    .movement-tag {
+      display: inline-block;
+      font-size: 0.75rem;
       color: var(--text-muted);
+      margin-bottom: 1rem;
     }
-    .unit-heuristic-title {
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 4px;
-      text-transform: uppercase;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
+    .concept-box {
+      font-size: 1rem;
+      color: #e2e8f0;
+      margin-bottom: 1.25rem;
+      line-height: 1.7;
     }
-    .unit-quote-box {
-      background: var(--bg-card-subtle);
-      border-radius: 6px;
-      padding: 16px 22px;
+    .audit-box {
+      background: rgba(245, 158, 11, 0.08);
+      border-left: 3px solid var(--accent);
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.875rem;
+      color: #fde68a;
+    }
+    .tenets-list {
+      margin-left: 1.25rem;
+      margin-bottom: 1.25rem;
+      color: #cbd5e1;
+    }
+    .tenets-list li {
+      margin-bottom: 0.5rem;
+    }
+    .verbatim-box {
       font-family: var(--font-serif);
       font-style: italic;
-      font-size: 1.05rem;
-      line-height: 1.65;
-      color: var(--text-main);
-      border-left: 2px solid var(--accent-saffron);
+      color: #94a3b8;
+      border-top: 1px solid var(--card-border);
+      padding-top: 1rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
     }
-
-    #view-stone { display: block; }
-    #view-a, #view-b, #view-c { display: none; }
-
-    /* MATRIX STYLES */
-    .matrix-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: var(--shadow-sm);
+    .table-container {
+      overflow-x: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.75rem;
+      margin-bottom: 2rem;
     }
-    .matrix-title {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      color: var(--text-main);
-      margin-bottom: 12px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
     }
-    .matrix-sides {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 16px;
+    th, td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--card-border);
     }
-    .matrix-side {
-      background: var(--bg-card-subtle);
-      padding: 16px;
-      border-radius: 6px;
+    th {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .timeline-item {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .timeline-date {
+      min-width: 100px;
+      font-weight: 700;
+      color: var(--accent);
+      font-family: monospace;
       font-size: 0.95rem;
-      line-height: 1.6;
     }
-    .matrix-side strong {
-      display: block;
-      margin-bottom: 6px;
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      color: var(--accent-saffron);
-    }
-    .matrix-synthesis {
-      background: #cf5e1e10;
-      border-left: 3px solid var(--accent-saffron);
-      padding: 16px 20px;
-      border-radius: 0 6px 6px 0;
-      font-size: 1.02rem;
-      line-height: 1.65;
-    }
-
-    /* ARCHIVAL & CITADEL PLATES */
-    .fort-plate-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: var(--shadow-sm);
-    }
-    .fort-title {
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      color: var(--accent-saffron);
-      margin-bottom: 8px;
-    }
-    .fort-meta {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-subtle);
-      margin-bottom: 14px;
-    }
-    .fort-desc {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: var(--text-main);
-      margin-bottom: 16px;
-    }
-    .fort-features {
-      list-style: square inside;
-      font-family: var(--font-sans);
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .site-footer {
-      border-top: 1px solid var(--border-color);
-      padding: 48px 24px;
-      text-align: center;
-      font-family: var(--font-sans);
-      font-size: 0.82rem;
-      color: var(--text-subtle);
-    }
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 14px;
-    }
-    .footer-links a { color: var(--text-muted); text-decoration: none; }
-    .footer-links a:hover { color: var(--accent-saffron); }
-
-    @media (max-width: 720px) {
-      .hero-title { font-size: 2.2rem; }
-      .unit-card { padding: 24px 20px; }
-      .matrix-sides { grid-template-columns: 1fr; }
-      .view-navigation { flex-wrap: wrap; }
+    .timeline-content {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 1rem 1.25rem;
+      border-radius: 0.5rem;
+      flex: 1;
     }
   </style>
 </head>
-<body data-theme="dark" data-font="serif">
+<body>
 
-  <header class="top-bar">
-    <div class="top-bar-inner">
-      <a href="../../index.html" class="brand-link">
-        <img src="../../assets/images/logo.png" alt="Intellectualist Logo" class="brand-logo">
-        <div class="brand-meta">
-          <span class="brand-title">INTELLECTUALIST</span>
-          <span class="brand-sub">Rajput Unified Master Codex &bull; 7 Volumes Synthesized</span>
-        </div>
-      </a>
-      <div class="top-controls">
-        <div class="theme-toggle-group">
-          <button class="ctrl-btn" onclick="setTheme('light')">Light</button>
-          <button class="ctrl-btn" onclick="setTheme('sepia')">Sepia</button>
-          <button class="ctrl-btn active" onclick="setTheme('dark')">Dark</button>
-        </div>
-        <div class="font-toggle-group">
-          <button class="ctrl-btn active" onclick="setFont('serif')">Serif</button>
-          <button class="ctrl-btn" onclick="setFont('sans')">Sans</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <header class="hero-header">
-    <span class="hero-kicker">BKRS v1.0 Historical Multi-Source Master Codex</span>
-    <h1 class="hero-title">THE RAJPUT CHRONICLES</h1>
-    <p class="hero-subtitle">Lineage Ethnogenesis, Sultanate Sieges, Mughal Statecraft & Architecture Across 7 Canonical Volumes</p>
+  <header>
+    <div class="badge">BKRS v1.0 Historical Multi-Source Master Codex</div>
+    <h1>The Rajput Unified Mega-Codex</h1>
+    <p class="subtitle">Synthesizing 12 Canonical Volumes (Tod, Kolff, Sreenivasan, Aitken, Gray, Moran, Harlan, Tillotson, Hallissey & Ulian) into 32 Chronological Invariant Knowledge Units.</p>
     
-    <div class="hero-badges">
-      <span class="cert-pill highlight">★ 7 Volumes Synthesized</span>
-      <span class="cert-pill">24 Invariant Units</span>
-      <span class="cert-pill">10 Decoded Terms</span>
-      <span class="cert-pill">8 Movements</span>
-      <span class="cert-pill">Colonial vs Modern Historiographical Audit</span>
-    </div>
-
-    <div class="hero-axiom">
-      <div class="hero-axiom-title">Historiographical Invariant Principle</div>
-      <div class="hero-axiom-quote">
-        “Rajput history cannot be understood through colonial romanticism or sectarian simplification. It is the complex, centuries-long dialectic between an open military labour market and rigid caste closure, heroic sacrificial resistance (*Jauhar & Saka*), astute imperial realpolitik (*Watan Jagirs*), and an autonomous architectural genius etched in mountain stone.”
-      </div>
+    <div class="nav-tabs">
+      <button class="tab-btn active" onclick="switchView('journey')">View A: 32 Chronological Units</button>
+      <button class="tab-btn" onclick="switchView('rosetta')">View B: Rosetta Stone & Compass</button>
+      <button class="tab-btn" onclick="switchView('timeline')">View C: Master Timeline (734–1900)</button>
+      <button class="tab-btn" onclick="switchView('disputes')">View D: 7 Historiographical Disputes</button>
     </div>
   </header>
 
-  <nav class="view-navigation">
-    <button class="tab-btn active" id="tab-stone" onclick="switchView('stone')">
-      <span>01.</span> Beginner's Rosetta Stone (Rajput Lexicon)
-    </button>
-    <button class="tab-btn" id="tab-a" onclick="switchView('a')">
-      <span>02.</span> Chronological Epochal Journey (24 Units)
-    </button>
-    <button class="tab-btn" id="tab-b" onclick="switchView('b')">
-      <span>03.</span> Grand Historiographical Dispute Matrix
-    </button>
-    <button class="tab-btn" id="tab-c" onclick="switchView('c')">
-      <span>04.</span> Hill Forts, Palaces & Archival Plates
-    </button>
-  </nav>
+  <main>
+    <div class="search-box">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search across all 32 units, monarchs, sieges, disputes, or concepts..." onkeyup="filterContent()">
+    </div>
 
-  <main class="main-container">
-
-    <!-- VIEW STONE: ROSETTA STONE -->
-    <section id="view-stone">
-      <div class="rosetta-intro-card">
-        <h2 class="rosetta-intro-title">The Rajput Historical Rosetta Stone (10 Terms)</h2>
-        <p class="rosetta-intro-p">
-          Rajput history is laden with bardic vocabulary and colonial distortions. This master decoder separates the legendary claims recorded by James Tod from the verified empirical findings of modern critical historians (Kolff, Harlan, Hallissey, Tillotson).
-        </p>
-      </div>
-
-      <div class="search-box-wrapper">
-        <input type="text" id="rosetta-search" class="search-input" placeholder="Search terms (e.g. Naukar, Jauhar, Agnikula, Watan, Sati, Purbiya)..." oninput="filterRosetta()">
-      </div>
-
-      <div id="rosetta-wrapper">
-        ${rajputRosettaTerms.map(t => `
-        <article class="rosetta-term-card" data-term="${t.term.toLowerCase()}" data-text="${t.traditional_claim.toLowerCase()} ${t.modern_audit.toLowerCase()} ${t.analogy.toLowerCase()}">
-          <header class="rosetta-header">
-            <h3 class="rosetta-term-title">${t.term}</h3>
-            <span class="rosetta-category-badge">${t.category}</span>
-          </header>
-
-          <div class="rosetta-traditional-box">
-            <strong>Traditional / Bardic View:</strong> ${t.traditional_claim}
+    <!-- VIEW A: 32 CHRONOLOGICAL UNITS -->
+    <section id="view-journey" class="view-section active">
+      <div id="unitsContainer">
+        ${rajputKnowledgeUnits.map(u => `
+          <div class="unit-card" data-title="${u.title.toLowerCase()}" data-text="${(u.core_concept + ' ' + u.key_tenets.join(' ') + ' ' + u.scope).toLowerCase()}">
+            <div class="card-header">
+              <div>
+                <span class="unit-id">[Unit ${String(u.unit_number).padStart(2, '0')}]</span>
+                <h3 class="unit-title">${u.title}</h3>
+                <span class="movement-tag">${u.movement} | Scope: ${u.scope}</span>
+              </div>
+              <span class="epistemic-tag">${u.epistemic_status}</span>
+            </div>
+            <div class="concept-box"><strong>Core Historical Concept:</strong> ${u.core_concept}</div>
+            <div class="audit-box"><strong>Historiographical Audit:</strong> ${u.epistemic_audit}</div>
+            <ul class="tenets-list">
+              ${u.key_tenets.map(t => `<li>${t}</li>`).join('')}
+            </ul>
+            <div style="font-size:0.85rem; color:#f59e0b; margin-bottom:0.5rem;"><strong>Operational Heuristic:</strong> ${u.operational_heuristic}</div>
+            <div class="verbatim-box">${u.verbatim_anchor}</div>
           </div>
-
-          <div class="rosetta-audit-box">
-            <strong>Modern Historiographical Reality:</strong> ${t.modern_audit}
-          </div>
-
-          <div class="rosetta-analogy-box">
-            <strong>Everyday Analogy:</strong> ${t.analogy}
-          </div>
-        </article>
-        `).join('')}
-      </div>
-
-      <!-- DYNASTIC COMPASS: THE BIG THREE -->
-      <div style="margin-top: 48px; margin-bottom: 24px;">
-        <h2 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--accent-saffron); margin-bottom: 8px;">The Dynastic Compass: The Big Three Royal Houses</h2>
-        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 20px;">Use this tri-fold reference to immediately identify which monarch, citadel, and political ethos belongs to which kingdom.</p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin-bottom: 36px;">
-          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-top: 3px solid var(--accent-crimson); padding: 22px; border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <div style="font-family: var(--font-sans); font-size: 0.72rem; text-transform: uppercase; font-weight: 800; color: var(--accent-crimson); margin-bottom: 4px;">Suryavansha (Solar)</div>
-            <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 8px;">House of Mewar</h3>
-            <div style="font-size: 0.82rem; color: var(--text-subtle); margin-bottom: 10px;">Guhila / Sisodia Clan &bull; Chittor, Kumbhalgarh, Udaipur</div>
-            <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;"><strong>Ethos:</strong> Uncompromising sovereignty. Ruled as mortal prime ministers (<em>Dewan</em>) of Eklingji (Shiva). Never gave daughters in marriage to Mughals.</p>
-            <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 8px;">
-              <strong>Key Rulers:</strong> Bappa Rawal, Rana Kumbha, Rana Sanga, Maharana Pratap, Amar Singh I, Raj Singh I.
-            </div>
-          </div>
-
-          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-top: 3px solid var(--accent-saffron); padding: 22px; border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <div style="font-family: var(--font-sans); font-size: 0.72rem; text-transform: uppercase; font-weight: 800; color: var(--accent-saffron); margin-bottom: 4px;">Rashtrakuta Branch</div>
-            <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 8px;">House of Marwar</h3>
-            <div style="font-size: 0.82rem; color: var(--text-subtle); margin-bottom: 10px;">Rathore Clan &bull; Mandore, Jodhpur (Mehrangarh), Bikaner</div>
-            <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;"><strong>Ethos:</strong> Desert chivalry & rapid cavalry warfare. Governed vast desert expanses through fiercely autonomous kinship brotherhoods (<em>Bhaibandh</em>).</p>
-            <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 8px;">
-              <strong>Key Rulers:</strong> Rao Jodha, Rao Maldeo, Rao Chandrasen, Jaswant Singh I, Durga Das Rathore.
-            </div>
-          </div>
-
-          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-top: 3px solid var(--accent-gold); padding: 22px; border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <div style="font-family: var(--font-sans); font-size: 0.72rem; text-transform: uppercase; font-weight: 800; color: var(--accent-gold); margin-bottom: 4px;">Kusha Lineage</div>
-            <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 8px;">House of Amber</h3>
-            <div style="font-size: 0.82rem; color: var(--text-subtle); margin-bottom: 10px;">Kachwaha Clan &bull; Dausa, Amber Citadel, Jaipur</div>
-            <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;"><strong>Ethos:</strong> Pragmatic realpolitik & imperial leadership. Traded nominal submission for supreme military command, financing grand Hindu architecture and astronomy.</p>
-            <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 8px;">
-              <strong>Key Rulers:</strong> Raja Bharmal, Raja Man Singh I, Mirza Raja Jai Singh, Sawai Jai Singh II.
-            </div>
-          </div>
-        </div>
-
-        <!-- TIMELINE COMPONENT -->
-        <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--accent-saffron); margin-bottom: 16px;">Master Chronological Timeline (734–1743 CE)</h3>
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 24px; box-shadow: var(--shadow-sm);">
-          <div style="display: flex; flex-direction: column; gap: 14px;">
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">c. 734 CE</span>
-              <span><strong>Founding of Mewar:</strong> Bappa Rawal establishes Guhila rule at Chittorgarh under Eklingji's divine sovereignty.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1303 CE</span>
-              <span><strong>First Siege of Chittor:</strong> Alauddin Khalji besieges Chittor; Rani Padmini leads first recorded Jauhar; Saka death charge.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1433–68</span>
-              <span><strong>Renaissance of Rana Kumbha:</strong> Construction of Kumbhalgarh's 36-km wall, 32 fortresses, and the Vijay Stambha.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1459 CE</span>
-              <span><strong>Founding of Mehrangarh:</strong> Rao Jodha founds Jodhpur and constructs the cliff citadel of Mehrangarh.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1527 CE</span>
-              <span><strong>Battle of Khanwa:</strong> Babur’s field artillery decimates Rana Sanga’s grand confederation, marking the gunpowder era.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1544 CE</span>
-              <span><strong>Battle of Giri-Sumel:</strong> Sher Shah Suri barely survives Rathore commanders Jaita & Kumpa: <em>"For a handful of millet..."</em></span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1562 CE</span>
-              <span><strong>Amber-Mughal Alliance:</strong> Raja Bharmal forms alliance with Akbar at Sambhar, pioneering the <em>Watan Jagir</em> model.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1568 CE</span>
-              <span><strong>Third Siege of Chittor:</strong> Akbar's siege mines fall upon Jaimal & Patta; Third Jauhar; permanent abandonment of Chittor.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1576 CE</span>
-              <span><strong>Battle of Haldighati:</strong> Maharana Pratap clashes with imperial vanguard under Raja Man Singh in the yellow pass.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1582–97</span>
-              <span><strong>Battle of Dewair & Chawand:</strong> Pratap systematically liberates Mewar outposts and establishes peaceful capital at Chawand.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1615 CE</span>
-              <span><strong>Mewar-Mughal Treaty:</strong> Amar Singh I accepts honorable peace with Jahangir; Mewar sovereign prestige exempted from court bowing.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1679–1707</span>
-              <span><strong>The Rajput Rebellion Against Aurangzeb:</strong> Durga Das Rathore & Maharana Raj Singh lead 30-year resistance until Ajit Singh is enthroned.</span>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: baseline;">
-              <span style="font-family: var(--font-sans); font-weight: 800; color: var(--accent-saffron); min-width: 100px;">1727 CE</span>
-              <span><strong>Founding of Jaipur & Jantar Mantar:</strong> Sawai Jai Singh II designs India's first modern planned city and colossal observatories.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- VIEW A: 24 CHRONOLOGICAL UNITS -->
-    <section id="view-a">
-      <div class="search-box-wrapper">
-        <input type="text" id="unit-search" class="search-input" placeholder="Search units by king, battle, or scholar (e.g. Pratap, Kumbha, Kolff, Haldighati, Durga Das, Jodhpur, Sanga)..." oninput="filterUnits()">
-      </div>
-
-      <div id="units-wrapper">
-        ${rajputKnowledgeUnits.map(unit => `
-        <article class="unit-card" data-title="${unit.title.toLowerCase()}" data-authors="${unit.primary_authors.join(' ').toLowerCase()}" data-text="${unit.key_tenets.join(' ').toLowerCase()} ${unit.core_concept.toLowerCase()} ${unit.operational_heuristic.toLowerCase()}">
-          <header class="unit-card-header">
-            <div class="unit-meta-top">
-              <span class="unit-number-tag">Unit ${String(unit.unit_number).padStart(2, '0')} &bull; ${unit.movement}</span>
-              <span class="unit-badge-epistemic">${unit.epistemic_status}</span>
-            </div>
-            <h2 class="unit-title">${unit.title}</h2>
-            <div class="unit-scope-bar">
-              <span><strong>Sources:</strong> ${unit.scope}</span>
-              <span>&bull;</span>
-              <span><strong>Authors:</strong> ${unit.primary_authors.join(', ')}</span>
-            </div>
-          </header>
-
-          <div class="unit-core-concept">
-            ${unit.core_concept}
-          </div>
-
-          <div class="unit-audit-box">
-            <strong>Historiographical & Epistemic Audit:</strong> ${unit.epistemic_audit}
-          </div>
-
-          <div class="unit-section-title">Systematic Tenets & Cross-Source Principles</div>
-          <ul class="unit-tenets-list">
-            ${unit.key_tenets.map(t => `<li class="unit-tenet-item">${t}</li>`).join('')}
-          </ul>
-
-          <div class="unit-heuristic-box">
-            <div class="unit-heuristic-title">Operational Heuristic & Strategic Insight</div>
-            <div>${unit.operational_heuristic}</div>
-          </div>
-
-          <div class="unit-quote-box">
-            ${unit.verbatim_anchor}
-          </div>
-        </article>
         `).join('')}
       </div>
     </section>
 
-    <!-- VIEW B: DISPUTE MATRIX -->
-    <section id="view-b">
-      <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 1: Ancient Closed Caste vs. Open Military Labour Market</h3>
-        <div class="matrix-sides">
-          <div class="matrix-side">
-            <strong>The Bardic & Colonial Lens (James Tod)</strong>
-            Rajputs are an immemorial, racially pure caste descended directly from Vedic Sun and Moon kings, bound by feudal chivalry.
-          </div>
-          <div class="matrix-side">
-            <strong>The Modern Ethnohistorical Record (Dirk Kolff)</strong>
-            Prior to the 16th century, 'Rajput' was an open martial status category of military contractors (naukari). Peasant soldiers and diverse war-bands became Rajputs through martial arms.
-          </div>
-        </div>
-        <div class="matrix-synthesis">
-          <strong>Unified Resolution:</strong> Rajput identity evolved from an open, multi-ethnic mercenary profession into a strictly policed endogamous aristocracy as kingdoms consolidated within the Mughal imperial hierarchy.
-        </div>
+    <!-- VIEW B: ROSETTA STONE & COMPASS -->
+    <section id="view-rosetta" class="view-section">
+      <h2 style="font-family: var(--font-serif); margin-bottom: 1rem; color: var(--accent);">The Beginner's Rosetta Stone: 15 Essential Terms Decoded</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Translating romantic folklore and specialized Mughal-Rajput administrative terms into rigorous historical realities and modern analogies.</p>
+      
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Term & Category</th>
+              <th>Traditional / Bardic Notion</th>
+              <th>Modern Historical Reality</th>
+              <th>Everyday Analogy</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rajputRosettaTerms.map(t => `
+              <tr>
+                <td><strong>${t.term}</strong><br><span style="font-size:0.75rem; color:#94a3b8;">${t.category}</span></td>
+                <td>${t.traditional_claim}</td>
+                <td><strong style="color:#fde68a;">${t.modern_audit}</strong></td>
+                <td><em style="color:#93c5fd;">${t.analogy}</em></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
       </div>
 
-      <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 2: The Rajput Rebellion of 1679 (Religious Crusade vs. Political Overreach)</h3>
-        <div class="matrix-sides">
-          <div class="matrix-side">
-            <strong>The Colonial / Communal Theory (Tod & Sarkar)</strong>
-            Aurangzeb launched an unprovoked religious war of temple destruction and conversion, sparking a patriotic Hindu war of independence.
-          </div>
-          <div class="matrix-side">
-            <strong>The Modern Archival Evidence (Robert Hallissey)</strong>
-            The crisis began as an administrative succession dispute over Marwar following Jaswant Singh's death, as Aurangzeb attempted to secure strategic Gujarat trade corridors.
-          </div>
-        </div>
-        <div class="matrix-synthesis">
-          <strong>Unified Resolution:</strong> The rebellion was an imperial legitimacy crisis: Aurangzeb broke the unwritten covenant of non-interference in hereditary watan homelands, forcing Mewar and Marwar into an existential defensive coalition.
-        </div>
-      </div>
-
-      <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 3: Rani Padmini of Chittor (1303 Historical Reality vs. Jayasi's Allegory)</h3>
-        <div class="matrix-sides">
-          <div class="matrix-side">
-            <strong>The Romantic Bardic Tradition (James Tod)</strong>
-            Alauddin Khalji besieged Chittor solely to capture Padmini after seeing her beauty in a mirror, triggering the first great Jauhar.
-          </div>
-          <div class="matrix-side">
-            <strong>The Contemporary Court Chronicle (Amir Khusrau)</strong>
-            Khusrau accompanied Alauddin in 1303 and recorded the military siege in *Khazain-ul-Futuh*, mentioning zero queen named Padmini or mirror trick. Padmini first appears 237 years later in Jayasi’s *Padmavat* (1540).
-          </div>
-        </div>
-        <div class="matrix-synthesis">
-          <strong>Unified Resolution:</strong> The 1303 siege, starvation, and collective Jauhar are historical facts; but Padmini and the mirror are 16th-century Sufi poetic allegories adopted as literal truth by later bards.
-        </div>
-      </div>
-
-      <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 4: The Battle of Haldighati (1576) — Tactical Victory vs. Strategic Failure</h3>
-        <div class="matrix-sides">
-          <div class="matrix-side">
-            <strong>The Imperial Mughal Account (Abul Fazl)</strong>
-            Raja Man Singh broke Pratap's center, routed the Mewari rebels, and captured the royal war elephants.
-          </div>
-          <div class="matrix-side">
-            <strong>The Mewari Bardic Tradition (Tod)</strong>
-            Pratap fought like an invincible hero, wounded Man Singh's elephant, and remained the unbowed lord of the hills.
-          </div>
-        </div>
-        <div class="matrix-synthesis">
-          <strong>Unified Resolution:</strong> Tactical Mughal victory (holding the field at sunset), but a complete strategic failure: Pratap was not captured, Mewar refused to submit, and within a decade, Pratap reconquered almost all of Mewar from Chawand.
-        </div>
-      </div>
-
-      <div class="matrix-card">
-        <h3 class="matrix-title">Dispute 5: Rajput Palaces (Mughal Imitation vs. Autonomous Innovation)</h3>
-        <div class="matrix-sides">
-          <div class="matrix-side">
-            <strong>The Colonial View (James Fergusson)</strong>
-            Rajput palaces were provincial, picturesque derivations of imperial Mughal architecture.
-          </div>
-          <div class="matrix-side">
-            <strong>The Modern Architectural Proof (Giles Tillotson)</strong>
-            Rajput architecture developed its own autonomous grammar: asymmetric massing over mountain contours, stone trabeate beam engineering, and deep corbelled *jharokhas* independent of Mughal arches.
-          </div>
-        </div>
-        <div class="matrix-synthesis">
-          <strong>Unified Resolution:</strong> Rajput architecture is an independent, sophisticated tradition of organic rock-engineering that later engaged in a creative, mutual dialogue with Mughal forms while maintaining its structural identity.
-        </div>
+      <h2 style="font-family: var(--font-serif); margin: 2rem 0 1rem; color: var(--accent);">The Dynastic Compass: Primary Royal Houses</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Royal House & Lineage</th>
+              <th>Capitals & Strongholds</th>
+              <th>Core Ethos & Sovereignty</th>
+              <th>Landmark Historical Monarchs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>House of Mewar</strong><br><em>(Sisodia Clan)</em><br>Solar Dynasty</td>
+              <td>Chittorgarh • Kumbhalgarh • Udaipur • Chawand</td>
+              <td><strong>Uncompromising Sovereignty.</strong> Ruled not as mortal kings, but as prime ministers (Dewan) of Shiva (Eklingji). Never gave daughters in marriage to Mughals.</td>
+              <td>Bappa Rawal (734)<br>Rana Kumbha (1433–68)<br>Rana Sanga (1508–27)<br>Maharana Pratap (1572–97)<br>Amar Singh I (1615)<br>Raj Singh I (1679)</td>
+            </tr>
+            <tr>
+              <td><strong>House of Marwar</strong><br><em>(Rathore Clan)</em><br>Rashtrakuta Lineage</td>
+              <td>Mandore • Jodhpur (Mehrangarh) • Bikaner</td>
+              <td><strong>Desert Chivalry & Tenacity.</strong> Masters of desert cavalry charges and kinship networks (*bhai-bandh*). Sustained 30-year resistance against Aurangzeb.</td>
+              <td>Rao Jodha (1459)<br>Rao Maldeo (1532–62)<br>Rao Chandrasen (1562–81)<br>Jaswant Singh I (1638–78)<br>Durga Das Rathore (1679–1707)</td>
+            </tr>
+            <tr>
+              <td><strong>House of Amber / Jaipur</strong><br><em>(Kachwaha Clan)</em><br>Solar Dynasty</td>
+              <td>Dausa • Amber Citadel • Jaipur City</td>
+              <td><strong>Astute Realpolitik & High Command.</strong> Governed Kabul, Bengal, and Deccan for the Mughals, financing grand Hindu revival temples and astronomical science.</td>
+              <td>Raja Bharmal (1562)<br>Raja Bhagwant Das<br>Raja Man Singh I (1589–1614)<br>Mirza Raja Jai Singh I<br>Sawai Jai Singh II (1699–1743)</td>
+            </tr>
+            <tr>
+              <td><strong>Himalayan Hill States</strong><br><em>(Pahari Dynasties)</em><br>Trigarta / Mountain Clans</td>
+              <td>Kangra • Bilaspur (Kot Kahlur) • Sirmaur (Nahan)</td>
+              <td><strong>Mountain Sovereignty & Lyrical Devotion.</strong> Formed hill kingdoms using clan assemblies (*jheras*), patronizing the delicate Kangra miniature painting tradition.</td>
+              <td>Raja Sansar Chand of Kangra<br>Raja Mahan Chand of Bilaspur<br>Guleri Rani of Sirmaur<br>Amar Singh Thapa (Gorkha Commander)</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <!-- VIEW C: CITADELS & ARCHITECTURAL PLATES -->
-    <section id="view-c">
-      <div class="fort-plate-card">
-        <h3 class="fort-title">1. Chittorgarh: The Monolithic Shield of Mewar</h3>
-        <div class="fort-meta">Plateau Fortress &bull; 7 Gates &bull; 500-Foot Basalt Scarp &bull; Mewar</div>
-        <p class="fort-desc">
-          The supreme symbol of Rajput sacrifice. An isolated 700-acre basalt plateau ringed by sheer cliffs, Chittorgarh withstood three epic sieges (1303 Alauddin Khalji, 1535 Bahadur Shah of Gujarat, 1568 Akbar). Its water architecture included 84 natural rock-cut cisterns capable of sustaining 50,000 people for four years.
-        </p>
-        <ul class="fort-features">
-          <li><strong>Vijay Stambha (1448):</strong> Rana Kumbha’s 9-story, 122-foot marble-and-sandstone victory tower celebrating the defeat of the Malwa Sultanate.</li>
-          <li><strong>Padan Pol to Ram Pol:</strong> Seven sequential, fortified gatehouses forcing attackers into lethal upward chokepoints under sniper fire.</li>
-          <li><strong>Subterranean Jauhar Vaults:</strong> Cavernous stone chambers where royal women entered sacred immolation fires to deny the enemy captive spoils.</li>
-        </ul>
-      </div>
+    <!-- VIEW C: MASTER TIMELINE -->
+    <section id="view-timeline" class="view-section">
+      <h2 style="font-family: var(--font-serif); margin-bottom: 1rem; color: var(--accent);">Master Chronological Timeline (734 to 1900+ CE)</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">The continuous historical progression of Rajput civilization across 12 centuries.</p>
 
-      <div class="fort-plate-card">
-        <h3 class="fort-title">2. Kumbhalgarh: The Impregnable Cloud Citadel</h3>
-        <div class="fort-meta">Aravalli Ridgeway &bull; 36-km Perimeter Wall &bull; 3,600 Feet Elevation &bull; Mewar</div>
-        <p class="fort-desc">
-          Erected by Rana Kumbha between 1443 and 1458, Kumbhalgarh served as Mewar's impregnable emergency refuge whenever Chittor fell. Its outer masonry wall stretches 36 kilometers along craggy ridgelines, wide enough for eight horses to gallop abreast.
-        </p>
-        <ul class="fort-features">
-          <li><strong>Katargarh (The Cloud Palace):</strong> An elevated inner citadel crowning the highest peak, offering 360-degree surveillance across the Marwar desert border.</li>
-          <li><strong>Self-Sustaining Interior:</strong> Encloses fertile agricultural terraces, rain reservoirs, and over 360 temples inside its defensive perimeter.</li>
-          <li><strong>Historic Resilience:</strong> Fell only once in history, and then only to the combined coalition armies of Akbar, Amber, and Marwar after an accidental poisoning of its water supply.</li>
-        </ul>
-      </div>
-
-      <div class="fort-plate-card">
-        <h3 class="fort-title">3. Mehrangarh: The Citadel of the Sun</h3>
-        <div class="fort-meta">Perched Cliff Keep &bull; 400 Feet High &bull; Jodhpur &bull; Marwar</div>
-        <p class="fort-desc">
-          Founded by Rao Jodha in 1459, Mehrangarh rises sheer out of a 400-foot volcanic precipice above the blue city of Jodhpur. British author Rudyard Kipling described it as 'a palace that might have been built by Titans and colored by the morning sun'.
-        </p>
-        <ul class="fort-features">
-          <li><strong>Jai Pol & Fateh Pol:</strong> Imposing victory gates preserving the palm-prints (*chhap*) of Rathore queens who departed for Sati pyres.</li>
-          <li><strong>Massive Artillery Emplacements:</strong> Ramparts mounted with historic cannons (*Kilkila*, *Shambhuban*) commanding the desert for miles.</li>
-          <li><strong>Lattice Stone Jali:</strong> Intricately carved red sandstone screens allowing royal women to observe court proceedings while cooling desert breezes.</li>
-        </ul>
-      </div>
-
-      <div class="fort-plate-card">
-        <h3 class="fort-title">4. Amber & Jaigarh: The Double Fortress of the Kachwahas</h3>
-        <div class="fort-meta">Integrated Ridge Defense &bull; Maota Lake &bull; Cannon Foundry &bull; Jaipur</div>
-        <p class="fort-desc">
-          The supreme example of the Rajput-Mughal architectural synthesis. The lower palace-fort of Amber (commenced by Raja Man Singh I in 1592) features terraced courtyards and the glittering mirror palace (*Sheesh Mahal*), while connected by subterranean passages to Jaigarh fort above.
-        </p>
-        <ul class="fort-features">
-          <li><strong>Jaivana Cannon (1720):</strong> The world's largest wheeled cannon of the early modern era, forged in Jaigarh's indigenous foundries.</li>
-          <li><strong>Subterranean Escape Tunnels:</strong> A secure network linking the residential palace to the military mountain citadel.</li>
-          <li><strong>Water Architecture:</strong> Elaborate Persian-wheel lifting mechanisms bringing water from Maota lake hundreds of feet up into palace fountains.</li>
-        </ul>
+      <div style="max-width: 850px; margin: 0 auto;">
+        <div class="timeline-item"><div class="timeline-date">c. 734 CE</div><div class="timeline-content"><strong>Guhila Foundation:</strong> Bappa Rawal takes Chittorgarh and dedicates Mewar's sovereignty to Lord Shiva (Eklingji).</div></div>
+        <div class="timeline-item"><div class="timeline-date">1303 CE</div><div class="timeline-content"><strong>First Siege of Chittor:</strong> Alauddin Khalji besieges Chittor for 8 months; First historical Jauhar and Saka; fall of Rawal Ratan Singh.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1326 CE</div><div class="timeline-content"><strong>The Sisodia Reclamation:</strong> Rana Hammir recovers Chittor from Maldeo Songara, establishing the Maharana title.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1433–68</div><div class="timeline-content"><strong>The Kumbha Renaissance:</strong> Rana Kumbha builds 32 forts including Kumbhalgarh's 36-km wall and the Vijay Stambha.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1459 CE</div><div class="timeline-content"><strong>Founding of Mehrangarh:</strong> Rao Jodha founds Jodhpur on the Chidiyatunk cliff, anchoring the Rathores.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1527 CE</div><div class="timeline-content"><strong>Battle of Khanwa:</strong> Rana Sanga's grand Rajput confederation clashes with Babur's Ottoman gunpowder artillery.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1535 CE</div><div class="timeline-content"><strong>Second Jauhar of Chittor:</strong> Bahadur Shah of Gujarat breaches Chittor with Turkish cannons; Rani Karnavati leads 13,000 in Jauhar.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1540 CE</div><div class="timeline-content"><strong>Jayasi's Padmavat:</strong> Malik Muhammad Jayasi composes the Awadhi Sufi mystical allegory of Padmini and Ratansen.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1544 CE</div><div class="timeline-content"><strong>Battle of Giri-Sumel:</strong> Rathore commanders Jaita and Kumpa terrify Sher Shah Suri ("a handful of millet for an empire").</div></div>
+        <div class="timeline-item"><div class="timeline-date">1562 CE</div><div class="timeline-content"><strong>The Amber Compact:</strong> Raja Bharmal allies with Akbar, inaugurating the Mughal-Rajput co-ruling administrative matrix.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1568 CE</div><div class="timeline-content"><strong>Third Siege of Chittor:</strong> Akbar's covered sapping mines breach the walls; Third Jauhar; Jaimal and Patta die fighting; 30,000 perish.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1570 CE</div><div class="timeline-content"><strong>Nagaur Darbar:</strong> Akbar demands submissions; Rao Chandrasen walks out to wage desert guerrilla war.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1576 CE</div><div class="timeline-content"><strong>Battle of Haldighati:</strong> Maharana Pratap clashes with imperial army under Raja Man Singh; tactical draw, strategic Mughal failure.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1582 CE</div><div class="timeline-content"><strong>Battle of Dewair:</strong> Pratap launches the 'Marathon of Mewar', systematically recapturing 36 imperial outposts.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1585–97</div><div class="timeline-content"><strong>Chawand Renaissance:</strong> Pratap establishes capital at Chawand, patronizing the Ragamala painting series; dies undefeated in bed.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1589 CE</div><div class="timeline-content"><strong>Heroic Transformation of Padmini:</strong> Jain poet Hemratan writes 'Gora Badal Padmini Chaupai', codifying martial Rajput identity.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1615 CE</div><div class="timeline-content"><strong>The Treaty of 1615:</strong> Maharana Amar Singh I and Prince Khurram agree to peace; Mewar never attends Mughal court.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1620–60</div><div class="timeline-content"><strong>Udaipur Painting Workshops:</strong> Master Sahibdin codifies the 'Intelligence of Tradition', deploying flat color rasas.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1672 CE</div><div class="timeline-content"><strong>Sacred Translocation:</strong> Maharana Raj Singh shelters the idol of Shrinathji at Nathdwara, establishing Pichwai temple art.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1678–79</div><div class="timeline-content"><strong>The Watan Crisis:</strong> Death of Jaswant Singh; Aurangzeb annexes Marwar; Durga Das rescues infant Ajit Singh from Delhi.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1679–81</div><div class="timeline-content"><strong>The Grand Coalition:</strong> Maharana Raj Singh writes his anti-Jizya epistle to Aurangzeb; 30-Year War begins in the Aravallis.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1707 CE</div><div class="timeline-content"><strong>Restoration of Marwar:</strong> Aurangzeb dies; Durga Das Rathore triumphantly installs Ajit Singh as Maharaja of Jodhpur.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1727 CE</div><div class="timeline-content"><strong>Founding of Jaipur:</strong> Sawai Jai Singh II builds the planned Enlightenment city and five Jantar Mantar observatories.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1770–1830</div><div class="timeline-content"><strong>Sub-Court Painting:</strong> Baghta and Chokha develop tactile, expressive modernism at Devgarh in Mewar.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1795 CE</div><div class="timeline-content"><strong>Battle of Chinjhiar:</strong> Rivalry between Kangra and Bilaspur leads to Gorkha invasion of Himachal Pradesh.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1805–15</div><div class="timeline-content"><strong>Gorkha Occupation & British Treaties:</strong> Amar Singh Thapa invades the hills; British intervene and establish indirect rule.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1829 CE</div><div class="timeline-content"><strong>Tod's Annals Published:</strong> Lt. Col. James Tod codifies bardic legends into European romantic chivalry.</div></div>
+        <div class="timeline-item"><div class="timeline-date">1880–1947</div><div class="timeline-content"><strong>Nationalist Transformation:</strong> Indian freedom movement adopts Pratap and Padmini as universal symbols of anti-colonial resistance.</div></div>
       </div>
     </section>
 
+    <!-- VIEW D: 7 HISTORIOGRAPHICAL DISPUTES -->
+    <section id="view-disputes" class="view-section">
+      <h2 style="font-family: var(--font-serif); margin-bottom: 1rem; color: var(--accent);">The 7-Point Historiographical Dispute Matrix</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Critical academic resolution of the fiercest debates in Rajput history.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Dispute & Core Issue</th>
+              <th>Traditional Romantic Notion</th>
+              <th>Critical Historiographical Finding</th>
+              <th>Consensus Verdict</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Origin & Bloodline</strong></td>
+              <td>Biologically pure, immemorial Vedic Kshatriya caste descending from Sun and Moon gods. (Tod)</td>
+              <td>Open status category in the North Indian military labour market, gradually closed through 'Rajputization'. (Dirk Kolff)</td>
+              <td><span style="color:#10b981; font-weight:700;">Resolved:</span> Function preceded caste; genealogical closure was an early modern political construction.</td>
+            </tr>
+            <tr>
+              <td><strong>2. The 1679 War</strong></td>
+              <td>A holy war of total Hindu rebellion against Islamic tyranny. (J. N. Sarkar / Tod)</td>
+              <td>Administrative succession blunder over the Delhi-Surat highway and *watan jagir* autonomy. (Robert Hallissey)</td>
+              <td><span style="color:#10b981; font-weight:700;">Resolved:</span> Geopolitical and succession violation triggered the war, though religious rhetoric was deployed.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Historicity of Padmini</strong></td>
+              <td>A literal 1303 queen whose beauty caused Alauddin Khalji's siege. (Tod)</td>
+              <td>A 1540 Awadhi Sufi mystical allegory by Jayasi transformed across 400 years into royal dynastic memory. (Ramya Sreenivasan)</td>
+              <td><span style="color:#10b981; font-weight:700;">Resolved:</span> The 1303 siege is historical; Padmini was an allegorical figure transformed into royal scripture.</td>
+            </tr>
+            <tr>
+              <td><strong>4. Haldighati Outcome</strong></td>
+              <td>Total Mughal victory crushing Mewar (Persian annals) OR total field victory by Pratap (bardic poetry).</td>
+              <td>Tactical Mughal field victory (holding the pass) that was a total strategic failure: Pratap recaptured 90% of Mewar.</td>
+              <td><span style="color:#10b981; font-weight:700;">Resolved:</span> Tactical Mughal field draw/win, but decisive strategic failure; Mewar was reclaimed by 1597.</td>
+            </tr>
+            <tr>
+              <td><strong>5. Rajput Painting Status</strong></td>
+              <td>Crude provincial imitation of Mughal realism with inferior perspective. (Colonial surveys)</td>
+              <td>Autonomous philosophical aesthetic using flat color fields and rasas to assert sacred sovereignty. (Molly Emma Aitken & Basil Gray)</td>
+              <td><span style="color:#10b981; font-weight:700;">Resolved:</span> Rajput art made deliberate anti-naturalistic choices to convey spiritual and dynastic truth.</td>
+            </tr>
+            <tr>
+              <td><strong>6. Himalayan Kingship</strong></td>
+              <td>Primitive mountain tribes isolated from the mainstream currents of Indian statecraft.</td>
+              <td>Sophisticated network of Pahari Rajput dynasties (Kangra, Bilaspur, Sirmaur) practicing agile diplomacy and art. (Arik Moran)</td>
+              <td><span style="color:#10b981; font-weight:700;">Resolved:</span> The Western Himalayas were deeply integrated into North Indian Rajputization and geopolitics.</td>
+            </tr>
+            <tr>
+              <td><strong>7. Agency of Royal Women</strong></td>
+              <td>Passive, cloistered victims whose only historical function was immolation (*sati*).</td>
+              <td>Astute political regents and dowagers (such as the Guleri Rani) who controlled treasuries and commanded armies. (Arik Moran & Lindsey Harlan)</td>
+              <td><span style="color:#10b981; font-weight:700;">Resolved:</span> Elite women wielded immense executive, financial, and moral authority behind court protocols.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-links">
-      <a href="../../index.html">&larr; Return to Intellectualist Master Library</a>
-      <a href="master-notes.md" target="_blank">Download Master Notes (Markdown)</a>
-      <a href="rosetta-stone.json" target="_blank">Rosetta Stone JSON</a>
-      <a href="knowledge-units.json" target="_blank">Canonical JSON Payload</a>
-    </div>
-    <div>Intellectualist &bull; Book Knowledge Reconstruction System (BKRS v1.0) &bull; The Rajput Mega-Codex</div>
-  </footer>
-
   <script>
-    function setTheme(theme) {
-      document.body.setAttribute('data-theme', theme);
-      document.querySelectorAll('.theme-toggle-group .ctrl-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.toLowerCase() === theme);
-      });
-      localStorage.setItem('bkrs_theme', theme);
+    function switchView(viewName) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
+      
+      if (viewName === 'journey') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('view-journey').classList.add('active');
+      } else if (viewName === 'rosetta') {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('view-rosetta').classList.add('active');
+      } else if (viewName === 'timeline') {
+        document.querySelectorAll('.tab-btn')[2].classList.add('active');
+        document.getElementById('view-timeline').classList.add('active');
+      } else if (viewName === 'disputes') {
+        document.querySelectorAll('.tab-btn')[3].classList.add('active');
+        document.getElementById('view-disputes').classList.add('active');
+      }
     }
 
-    function setFont(font) {
-      document.body.setAttribute('data-font', font);
-      document.querySelectorAll('.font-toggle-group .ctrl-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.toLowerCase() === font);
-      });
-      localStorage.setItem('bkrs_font', font);
-    }
-
-    function switchView(view) {
-      document.getElementById('view-stone').style.display = (view === 'stone') ? 'block' : 'none';
-      document.getElementById('view-a').style.display = (view === 'a') ? 'block' : 'none';
-      document.getElementById('view-b').style.display = (view === 'b') ? 'block' : 'none';
-      document.getElementById('view-c').style.display = (view === 'c') ? 'block' : 'none';
-
-      document.getElementById('tab-stone').classList.toggle('active', view === 'stone');
-      document.getElementById('tab-a').classList.toggle('active', view === 'a');
-      document.getElementById('tab-b').classList.toggle('active', view === 'b');
-      document.getElementById('tab-c').classList.toggle('active', view === 'c');
-    }
-
-    function filterRosetta() {
-      const q = document.getElementById('rosetta-search').value.toLowerCase().trim();
-      const cards = document.querySelectorAll('.rosetta-term-card');
-      cards.forEach(card => {
-        const term = card.getAttribute('data-term') || '';
-        const text = card.getAttribute('data-text') || '';
-        const match = !q || term.includes(q) || text.includes(q);
-        card.style.display = match ? 'block' : 'none';
-      });
-    }
-
-    function filterUnits() {
-      const q = document.getElementById('unit-search').value.toLowerCase().trim();
+    function filterContent() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
       const cards = document.querySelectorAll('.unit-card');
       cards.forEach(card => {
-        const title = card.getAttribute('data-title') || '';
-        const authors = card.getAttribute('data-authors') || '';
-        const text = card.getAttribute('data-text') || '';
-        const match = !q || title.includes(q) || authors.includes(q) || text.includes(q);
-        card.style.display = match ? 'block' : 'none';
+        const title = card.getAttribute('data-title');
+        const text = card.getAttribute('data-text');
+        if (title.includes(q) || text.includes(q)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
       });
     }
-
-    const savedTheme = localStorage.getItem('bkrs_theme');
-    if (savedTheme) setTheme(savedTheme);
-    const savedFont = localStorage.getItem('bkrs_font');
-    if (savedFont) setFont(savedFont);
   </script>
 </body>
 </html>
 `;
 
-fs.writeFileSync(path.join(targetDir, 'index.html'), htmlContent, 'utf8');
-console.log("Saved index.html (Standalone 4-view Rajput reader)");
+fs.writeFileSync(path.join(targetDir, 'index.html'), htmlReaderContent, 'utf8');
+console.log(`Saved index.html (Standalone 4-view Rajput reader with 32 units)`);
 
 // Update library-index.json
 const libIndexPath = path.join(__dirname, '../../docs/library-index.json');
-const libIndex = JSON.parse(fs.readFileSync(libIndexPath, 'utf8'));
-
-// Check if rajput-unified-codex exists in books
-let rajputEntry = libIndex.books.find(b => b.id === 'rajput-unified-codex');
-if (!rajputEntry) {
-  rajputEntry = {
-    id: "rajput-unified-codex",
-    title: "The Rajput Mega-Codex: The Definitive Historical & Historiographical Synthesis",
-    subtitle: "Lineage Ethnogenesis, Sultanate Sieges, Mughal Statecraft, Gender Ethics & Fort Architecture Across 7 Canonical Volumes",
-    author: "James Tod, Dirk H.A. Kolff, Lindsey Harlan, Giles Tillotson, Robert C. Hallissey",
-    year: 2026,
-    publisher: "Intellectualist Subject Master Series (Cambridge, Oxford, UC Press, Missouri, Routledge)",
-    epistemic_tier: "Tier 1: Master Historiographical & Multi-Source Synthesis",
-    tier_short: "Tier 1",
-    category: "Philosophy & Classical Ethics",
-    original_volume: "7 Volumes Synthesized (24 Invariant Units, 10 Rosetta Terms, 8 Movements, 5-Point Dispute Matrix)",
-    reading_time_saved: "135.0 hrs saved",
-    hours_val: 135,
-    core_axiom: "Rajput history is not a simplistic romantic legend of reckless chivalry, but a complex centuries-long dialectic between an open military labour market and rigid caste closure, heroic sacrificial resistance (Jauhar & Saka), astute imperial realpolitik (Watan Jagirs), and autonomous asymmetric mountain architecture.",
-    tags: [
-      "Subject Master Codex",
-      "Rajput History",
-      "Mewar & Sisodias",
-      "Maharana Pratap",
-      "Rana Kumbha & Sanga",
-      "Marwar & Rathores",
-      "Durga Das Rathore",
-      "Amber & Kachwahas",
-      "Dirk Kolff (Military Labour)",
-      "Lindsey Harlan (Gender & Sati)",
-      "Giles Tillotson (Fortresses)",
-      "Robert Hallissey (Rebellion)",
-      "James Tod (Annals)"
-    ]
-  };
-  libIndex.books.push(rajputEntry);
+if (fs.existsSync(libIndexPath)) {
+  const lib = JSON.parse(fs.readFileSync(libIndexPath, 'utf8'));
+  const rajputItem = lib.books.find(b => b.id === 'rajput-unified-codex');
+  if (rajputItem) {
+    rajputItem.author = "James Tod, Dirk H.A. Kolff, Ramya Sreenivasan, Molly Emma Aitken, Arik Moran, Lindsey Harlan, Giles Tillotson, Robert C. Hallissey, Basil Gray, Eva Ulian";
+    rajputItem.original_volume = "12 Landmark Volumes Synthesized (32 Chronological Invariant Units, 15 Rosetta Terms, 8 Movements, 7-Point Dispute Matrix)";
+    rajputItem.reading_time_saved = "195.0 hrs saved";
+    rajputItem.hours_val = 195;
+    rajputItem.tags = [
+      'Subject Master Codex',
+      'Rajput History',
+      'Mewar & Sisodias',
+      'Maharana Pratap',
+      'Rana Kumbha & Sanga',
+      'Marwar & Rathores',
+      'Durga Das Rathore',
+      'Amber & Kachwahas',
+      'Himalayan Hill States & Pahari',
+      'Ramya Sreenivasan (Padmavat & Padmini)',
+      'Molly Emma Aitken (Court Painting)',
+      'Arik Moran (Himalayan Statecraft)',
+      'Dirk Kolff (Military Labour)',
+      'Lindsey Harlan (Gender & Sati)',
+      'Giles Tillotson (Fortresses)',
+      'Robert Hallissey (Rebellion)',
+      'James Tod (Annals)'
+    ];
+    fs.writeFileSync(libIndexPath, JSON.stringify(lib, null, 2), 'utf8');
+    console.log(`Updated docs/library-index.json with 12 sources & 32 units!`);
+  }
 }
 
-libIndex.total_books = 43; // 36 + 7
-libIndex.total_hours_saved = 880.0;
-fs.writeFileSync(libIndexPath, JSON.stringify(libIndex, null, 2), 'utf8');
-console.log("Updated docs/library-index.json with Rajput Mega-Codex!");
-
-console.log("Rajput Mega-Codex generation complete!");
+console.log('Rajput Mega-Codex generation complete!');

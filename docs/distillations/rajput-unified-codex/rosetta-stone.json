@@ -50,23 +50,58 @@
   },
   {
     "term": "Asymmetric Fortress Architecture",
-    "category": "Military Architecture",
-    "traditional_claim": "Romantic, whimsical palaces built without planning on rugged hilltops. (Tod / Fergusson)",
-    "modern_audit": "Sophisticated contour-hugging military engineering designed to exploit natural scarps, trap invading armies in winding chokepoints, collect monsoon runoff in rock-cut cisterns, and offer interlocking fields of fire. (Giles Tillotson)",
-    "analogy": "A stealth aircraft designed with radical angles: every slope, bastion, and zig-zag wall is engineered to deflect military impact and maximize defensive survival."
+    "category": "Military Engineering",
+    "traditional_claim": "Provincial copies of Persian and Mughal palaces and citadels. (Colonial surveys)",
+    "modern_audit": "An autonomous indigenous tradition of organic rock architecture, moulding bastions, cisterns, and palaces directly into jagged basalt ridges to withstand artillery and siege warfare. (Giles Tillotson)",
+    "analogy": "A stealth aircraft designed to match rugged radar-defying terrain rather than a symmetric neoclassical palace built on an open French lawn."
   },
   {
-    "term": "The Marwar Crisis (1679)",
-    "category": "Imperial Historiography",
-    "traditional_claim": "Aurangzeb's religious crusade to forcefully convert the Rathores and demolish their temples. (Tod)",
-    "modern_audit": "A structural imperial succession dispute caused by Maharaja Jaswant Singh dying without an adult heir in Jamrud, prompting Aurangzeb to assert crown control over crucial Agra-Gujarat trade corridors, provoking Rathore resistance. (Robert Hallissey)",
-    "analogy": "A federal government attempting to seize control of a strategic oil transit pipeline running through a territory when the local governor dies without a verified will, triggering armed defiance."
+    "term": "Dewan of Eklingji",
+    "category": "Sacred Kingship",
+    "traditional_claim": "The Maharana of Mewar as absolute divine monarch. (Tod)",
+    "modern_audit": "A radical constitutional theology where Lord Shiva (Eklingji) is the sole sovereign king of Mewar, and the Maharana is merely His mortal prime minister (Dewan), making territorial surrender an act of cosmic treason. (Tod & Epigraphy)",
+    "analogy": "The Prime Minister of the United Kingdom acting strictly in the name of the Crown, unable to alienate British territory because it belongs to an eternal constitutional entity."
   },
   {
-    "term": "Khatridharma",
-    "category": "Ethical Philosophy",
-    "traditional_claim": "Reckless, suicidal chivalry for bardic fame. (Tod)",
-    "modern_audit": "The total ethical duty of the Kshatriya warrior: defending the weak, governing the land with generosity, protecting Brahmins and cows, and refusing to flee from the battlefield regardless of odds. (Harlan & Tod)",
-    "analogy": "The Spartan warrior ethos or the Japanese Bushido code: death in battle is an honorable coronation, whereas cowardly surrender is worse than biological annihilation."
+    "term": "Charan & Bhat",
+    "category": "Diplomacy & Social Institutions",
+    "traditional_claim": "Simple court poets singing flattering eulogies to local rajas.",
+    "modern_audit": "The institutional genealogists, diplomatic ambassadors, and treaty guarantors of Western India. Their sacred inviolability meant an assault on a Charan led to suicide-curses (chandi) that destroyed the violator's legitimacy. (Kolff & Tod)",
+    "analogy": "An international credit rating agency merged with an accredited diplomatic ambassador: their word verified sovereign honor, and defying their guarantee ruined your political existence."
+  },
+  {
+    "term": "The Padmavat Trajectory",
+    "category": "Literary Memory & Historiography",
+    "traditional_claim": "An uninterrupted historical chronicle of Queen Padmini from 1303 CE onward. (Tod)",
+    "modern_audit": "A 400-year evolution: originating in 1540 as an Awadhi Sufi mystical allegory by Malik Muhammad Jayasi, adopted in 1589 by Jain poet Hemratan, codified into official Mewar dynastic memory in 17th-century Sisodia chronicles, and popularized globally by Tod and Bengali nationalists. (Ramya Sreenivasan)",
+    "analogy": "King Arthur and the Holy Grail: beginning as chivalric poetry, evolving into royal English state ideology, and ultimately becoming a global cinematic icon."
+  },
+  {
+    "term": "The Intelligence of Tradition",
+    "category": "Art History & Visual Culture",
+    "traditional_claim": "Crude, flat folk illustrations copying Mughal imperial realism with less technical finesse.",
+    "modern_audit": "A deliberate, highly sophisticated aesthetic system using saturated colour fields, continuous narrative, and emotional rasas (vir and shringara) to assert sacred legitimacy and dynastic continuity against imperial homogenisation. (Molly Emma Aitken & Basil Gray)",
+    "analogy": "Modernist expressionism (e.g. Matisse or Rothko) choosing emotive color planes and symbolic space over photographic camera realism to convey psychological and spiritual truth."
+  },
+  {
+    "term": "Pahari Rajput Statecraft",
+    "category": "Himalayan Geopolitics",
+    "traditional_claim": "Isolated mountain tribes untouched by North Indian dynastic politics.",
+    "modern_audit": "A sophisticated network of hill dynasties (Katoch of Kangra, Bilaspur, Sirmaur, Chamba) that adopted Rajput genealogies and martial statecraft to rule diverse mountain populations, navigating Mughal suzerainty, Gorkha expansion, and British indirect rule. (Arik Moran)",
+    "analogy": "The Swiss canton confederacies: mountainous bastions maintaining autonomous legal identity while acting as strategic buffer states between surrounding empires."
+  },
+  {
+    "term": "Ranis' Executive Agency",
+    "category": "Gender & Political Authority",
+    "traditional_claim": "Passive, cloistered royal women destined solely for tragic immolation on funeral pyres.",
+    "modern_audit": "Elite royal dowagers and regents (such as the Guleri Rani or Sirmauri Ranis) who controlled state treasuries, negotiated with British political agents, mobilised monastic armies, and actively shaped dynastic successions. (Arik Moran & Lindsey Harlan)",
+    "analogy": "Queen Elizabeth I or Catherine de' Medici: operating from behind court protocols to command statecraft, finance, and foreign diplomacy with ruthless acumen."
+  },
+  {
+    "term": "Thikana & Bhai-Bandh",
+    "category": "Clan Governance",
+    "traditional_claim": "Subservient feudal fiefs ruled by despotic local warlords.",
+    "modern_audit": "Hereditary noble estates governed through egalitarian clan brotherhood (bhai-bandh), where the ruling Raja was merely 'primus inter pares' (first among equals) and could not dictate policy without noble council. (Eva Ulian, Kolff)",
+    "analogy": "A corporate board of founding partners holding veto power over the CEO, preventing central despotism through distributed equity."
   }
 ]
