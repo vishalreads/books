@@ -982,6 +982,73 @@
         font-size: 0.78rem;
       }
     }
+  
+    .book-actions-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .book-pdf-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      padding: 4px 9px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .book-pdf-link:hover {
+      background: var(--text-main);
+      color: #ffffff;
+      border-color: var(--text-main);
+    }
+    .a4-depot-banner {
+      background: #ffffff;
+      border: 1.5px solid var(--border-dark);
+      border-left: 4px solid var(--text-main);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+    .a4-depot-content h3 {
+      font-size: 17px;
+      margin-bottom: 4px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .a4-depot-content p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .a4-depot-pill {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-medium);
+      color: var(--text-main);
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+  
   </style>
 </head>
 <body>
@@ -1163,7 +1230,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">3 Reading Views</span>
-              <a href="distillations/norwegian-wood/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/norwegian-wood-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/norwegian-wood/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1185,7 +1255,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">12 Chapters &bull; 3 Reading Views</span>
-              <a href="distillations/siddhartha/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/siddhartha-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/siddhartha/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1207,7 +1280,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">18 Chapters &bull; 3 Reading Views</span>
-              <a href="distillations/brave-new-world/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/brave-new-world-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/brave-new-world/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1226,7 +1302,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Archival Reader</span>
-              <a href="distillations/it-ends-with-us/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/it-ends-with-us-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/it-ends-with-us/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1248,7 +1327,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Editorial Cream Reader</span>
-              <a href="distillations/the-great-gatsby/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-great-gatsby-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-great-gatsby/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1270,7 +1352,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Editorial Cream Reader</span>
-              <a href="distillations/heart-of-darkness/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/heart-of-darkness-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/heart-of-darkness/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1292,7 +1377,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Editorial Cream Reader</span>
-              <a href="distillations/the-picture-of-dorian-gray/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-picture-of-dorian-gray-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-picture-of-dorian-gray/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1314,7 +1402,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Editorial Cream Reader</span>
-              <a href="distillations/the-metamorphosis-and-other-stories/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-metamorphosis-and-other-stories-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-metamorphosis-and-other-stories/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1349,7 +1440,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">3 Reading Views</span>
-              <a href="distillations/the-psychology-of-money/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-psychology-of-money-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-psychology-of-money/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1368,7 +1462,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Archival Reader</span>
-              <a href="distillations/atomic-habits/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/atomic-habits-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/atomic-habits/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1390,7 +1487,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">11 Chapters &bull; 10 Challenges</span>
-              <a href="distillations/cant-hurt-me/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/cant-hurt-me-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/cant-hurt-me/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1412,7 +1512,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">14 Episodes &bull; 3 Reading Views</span>
-              <a href="distillations/open-agassi/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/open-agassi-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/open-agassi/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1431,7 +1534,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Archival Reader</span>
-              <a href="distillations/48-laws-of-power/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/48-laws-of-power-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/48-laws-of-power/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1453,7 +1559,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">13 Classical Chapters</span>
-              <a href="distillations/the-art-of-war/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-art-of-war-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-art-of-war/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1472,7 +1581,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Archival Reader</span>
-              <a href="distillations/rich-dad-poor-dad/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/rich-dad-poor-dad-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/rich-dad-poor-dad/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1506,7 +1618,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Multi-Source Provenance</span>
-              <a href="distillations/bhagat-singh-unified-chronicle/index.html" class="book-enter-link">Enter Mega-Codex &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/bhagat-singh-unified-chronicle-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/bhagat-singh-unified-chronicle/index.html" class="book-enter-link">Enter Mega-Codex &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1528,7 +1643,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">3 Reading Views</span>
-              <a href="distillations/bhagat-singh-a-life-in-revolution/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/bhagat-singh-a-life-in-revolution-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/bhagat-singh-a-life-in-revolution/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1550,7 +1668,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">3 Reading Views</span>
-              <a href="distillations/endurance/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/endurance-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/endurance/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1572,7 +1693,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">15 Chapters &bull; 12 Rules</span>
-              <a href="distillations/deep-survival/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/deep-survival-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/deep-survival/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1594,7 +1718,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">8 Treatises &bull; Complete System</span>
-              <a href="distillations/the-myth-of-sisyphus/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-myth-of-sisyphus-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-myth-of-sisyphus/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1616,7 +1743,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">14 Units &bull; 3 Reading Views</span>
-              <a href="distillations/homage-to-catalonia/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/homage-to-catalonia-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/homage-to-catalonia/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1638,7 +1768,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">15 Units &bull; 3 Reading Views</span>
-              <a href="distillations/gandhi-experiments-with-truth/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/gandhi-experiments-with-truth-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/gandhi-experiments-with-truth/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1660,7 +1793,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">13 Units &bull; 3 Reading Views</span>
-              <a href="distillations/tuesdays-with-morrie/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/tuesdays-with-morrie-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/tuesdays-with-morrie/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1682,7 +1818,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">8 Units &bull; 3 Reading Views</span>
-              <a href="distillations/scientific-autobiography-planck/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/scientific-autobiography-planck-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/scientific-autobiography-planck/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1704,7 +1843,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">16 Units &bull; 3 Reading Views</span>
-              <a href="distillations/master-and-margarita/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/master-and-margarita-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/master-and-margarita/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1726,7 +1868,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">15 Units &bull; 3 Reading Views</span>
-              <a href="distillations/the-metaphysical-club/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-metaphysical-club-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-metaphysical-club/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1748,7 +1893,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">16 Units &bull; 3 Reading Views</span>
-              <a href="distillations/the-mosquito/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-mosquito-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-mosquito/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1770,7 +1918,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">12 Units &bull; 3 Reading Views</span>
-              <a href="distillations/the-urge-history-of-addiction/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/the-urge-history-of-addiction-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/the-urge-history-of-addiction/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1792,7 +1943,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">16 Units &bull; 3 Reading Views</span>
-              <a href="distillations/lolita/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/lolita-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/lolita/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1814,7 +1968,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">16 Units &bull; 3 Reading Views</span>
-              <a href="distillations/ajahn-dtun-autobiography/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/ajahn-dtun-autobiography-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/ajahn-dtun-autobiography/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1836,7 +1993,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">20 Units &bull; 3 Reading Views</span>
-              <a href="distillations/war-and-peace/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/war-and-peace-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/war-and-peace/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1858,7 +2018,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">33 Units &bull; 4 Reading Views</span>
-              <a href="distillations/manifestation-unified-codex/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/manifestation-unified-codex-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/manifestation-unified-codex/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1880,7 +2043,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">40 Units &bull; 4 Reading Views &bull; 250 hrs saved</span>
-              <a href="distillations/rajput-unified-codex/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/rajput-unified-codex-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/rajput-unified-codex/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1899,7 +2065,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Archival Reader</span>
-              <a href="distillations/autobiography-of-a-yogi/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/autobiography-of-a-yogi-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/autobiography-of-a-yogi/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1918,7 +2087,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Archival Reader</span>
-              <a href="distillations/open-source-intelligence-techniques/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/open-source-intelligence-techniques-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/open-source-intelligence-techniques/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1941,7 +2113,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Editorial Cream Reader</span>
-              <a href="distillations/elon-musk/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/elon-musk-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/elon-musk/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
@@ -1960,7 +2135,10 @@
             </div>
             <div class="book-card-footer">
               <span class="book-views-indicator">Archival Reader</span>
-              <a href="distillations/dont-bug-me/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              <div class="book-actions-group">
+                <a href="pdf/dont-bug-me-a4-print.pdf" target="_blank" class="book-pdf-link" title="Download Black & White A4 Print PDF (Optimized for Paper & Toner)">📄 A4 Print PDF</a>
+                <a href="distillations/dont-bug-me/index.html" class="book-enter-link">Enter Reader &rarr;</a>
+              </div>
             </div>
           </article>
 
