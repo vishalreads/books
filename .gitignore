@@ -5,8 +5,7 @@ package-lock.json
 # Large source files & book binaries
 Books/
 *.pdf
-!docs/pdf/*.pdf
-!docs/distillations/**/*-a4-print.pdf
+!docs/pdf/the-intellectualist-master-omnibus.pdf
 *.epub
 *.zip
 
