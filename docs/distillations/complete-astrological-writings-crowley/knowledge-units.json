@@ -1,0 +1,153 @@
+[
+  {
+    "id": "CROWLEY-U01",
+    "title": "Liber 536 & The Thelemic Hermetic Epistemology",
+    "coreConcept": "Astrology is not fatalistic prediction for the passive ego, but a precise Hermetic weapon and symbolic map of the True Will (Thelema) by which the Magician navigates the Great Work.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "1-22",
+    "tags": [
+      "Thelema",
+      "Liber 536",
+      "Hermeticism",
+      "True Will",
+      "The Magician"
+    ]
+  },
+  {
+    "id": "CROWLEY-U02",
+    "title": "The Qabalistic Tree of Life & The Triple Trinity of the Planets",
+    "coreConcept": "The planets correspond to the Sephiroth on the Tree of Life, structured into three triadic octaves: the Supernal/Spiritual Trinity, the Moral/Ethical Trinity, and the Astral/Sensory Trinity.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "23-55",
+    "tags": [
+      "Qabalah",
+      "Tree of Life",
+      "Sephiroth",
+      "Triple Trinity",
+      "Occult Geometry"
+    ]
+  },
+  {
+    "id": "CROWLEY-U03",
+    "title": "The Twelve Houses of Heaven: Arenas of Incarnational Force",
+    "coreConcept": "The twelve mundane houses represent the twelve environmental dimensions where cosmic energies condense into terrestrial experience, from the personal ego (1st) to collective dissolution (12th).",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "56-80",
+    "tags": [
+      "Twelve Houses",
+      "Mundane Spheres",
+      "Incarnation",
+      "Geometry",
+      "Astral Condensation"
+    ]
+  },
+  {
+    "id": "CROWLEY-U04",
+    "title": "Planetary Aspects as Vectors of Dynamic Occult Interference",
+    "coreConcept": "Aspects are geometric vectors of interference between planetary fields, where hard angles represent concentrated friction demanding transmutation and soft angles represent harmonic flow.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "81-110",
+    "tags": [
+      "Aspects",
+      "Geometric Waves",
+      "Transmutation",
+      "Occult Force",
+      "Harmonics"
+    ]
+  },
+  {
+    "id": "CROWLEY-U05",
+    "title": "Neptune: The Universal Solvent, Mystical Ecstasy & Hysteria",
+    "coreConcept": "Neptune represents the spiritual solvent of the ego—fostering transcendental mystical union, supreme artistic genius, and boundless compassion when elevated, but neurosis, deceit, and hysteria when debased.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "111-140",
+    "tags": [
+      "Neptune",
+      "Universal Solvent",
+      "Mysticism",
+      "Ecstasy",
+      "Hysteria",
+      "Ego Dissolution"
+    ]
+  },
+  {
+    "id": "CROWLEY-U06",
+    "title": "Neptune Across the Twelve Signs & Houses",
+    "coreConcept": "Neptune's subtle, pervasive mist transforms each zodiacal sign and mundane house into a portal of spiritual idealism, sacrifice, or perilous self-delusion.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "141-168",
+    "tags": [
+      "Neptune in Signs",
+      "Neptune in Houses",
+      "Subtle Mists",
+      "Spiritual Sacrifice"
+    ]
+  },
+  {
+    "id": "CROWLEY-U07",
+    "title": "Uranus: The Awakener, The Magical Will & Cataclysmic Genius",
+    "coreConcept": "Uranus represents the Lightning Flash of Kether striking Malkuth—manifesting as revolutionary genius, absolute independence, radical awakening, and the catastrophic smashing of obsolete forms.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "169-195",
+    "tags": [
+      "Uranus",
+      "The Awakener",
+      "Magical Will",
+      "Revolution",
+      "Lightning Flash",
+      "Genius"
+    ]
+  },
+  {
+    "id": "CROWLEY-U08",
+    "title": "Uranus Across the Twelve Signs & Houses",
+    "coreConcept": "The electric, eruptive power of Uranus detonates crystallizations in each house and sign, sparking unprecedented innovations, nervous friction, or social iconoclasm.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "196-206",
+    "tags": [
+      "Uranus in Signs",
+      "Uranus in Houses",
+      "Detonation",
+      "Iconoclasm",
+      "Invention"
+    ]
+  },
+  {
+    "id": "CROWLEY-U09",
+    "title": "How Horoscopes Are Faked: The Blistering Expose of Charlatanism",
+    "coreConcept": "Crowley dismantles commercial fortune-telling, newspaper astrologers, and fraudulent hacks, exposing their cold-reading tricks, barnum statements, and mathematical incompetence.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "207-214",
+    "tags": [
+      "How Horoscopes Are Faked",
+      "Anti-Charlatanism",
+      "Cold Reading",
+      "Barnum Statements",
+      "Rigor"
+    ]
+  },
+  {
+    "id": "CROWLEY-U10",
+    "title": "The Magician's Protocol: Astrological Diagnosis for Spiritual Mastery",
+    "coreConcept": "The true purpose of the horoscope is to diagnose the candidate's spiritual inertia and karma, allowing the Magician to systematically invoke complementary planetary forces to achieve equilibrium.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "215-224",
+    "tags": [
+      "Magician Protocol",
+      "Spiritual Diagnosis",
+      "Equilibrium",
+      "Planetary Invocation",
+      "Great Work"
+    ]
+  }
+]

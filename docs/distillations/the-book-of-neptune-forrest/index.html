@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Book of Neptune - Master Codex | Intellectualist</title>
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
+  <style>
+    .neptune-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-family: var(--font-mono, monospace);
+      font-weight: 700;
+      font-size: 0.85rem;
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+      margin: 0.2rem 0.2rem 0.2rem 0;
+    }
+    .badge-transcendent {
+      background: #ede9fe;
+      color: #6d28d9;
+      border-color: #ddd6fe;
+    }
+    .badge-warning {
+      background: #ffebee;
+      color: #c62828;
+      border-color: #ffcdd2;
+    }
+    .quote-box {
+      border-left: 4px solid #0284c7;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      background: var(--bg-secondary, #f7f5f0);
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color, #dcd8d0);
+    }
+    th {
+      background: var(--bg-tertiary, #eae6df);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="reader-mode" data-theme="cream">
+  <div class="reader-shell">
+    <header class="reader-header">
+      <div class="reader-header-left">
+        <a href="../../index.html" class="back-link">&larr; Back to Library</a>
+        <div class="header-divider"></div>
+        <div class="header-title-group">
+          <h1 class="header-book-title">The Book of Neptune</h1>
+          <span class="header-book-author">Steven Forrest (Evolutionary Astrology)</span>
+        </div>
+      </div>
+      <div class="reader-header-right">
+        <div class="reading-stats">
+          <span id="reading-time">32 min read</span>
+          <span class="stats-separator">&bull;</span>
+          <span id="unit-count">10 Knowledge Units</span>
+        </div>
+        <div class="header-controls">
+          <button id="theme-toggle" class="control-btn" title="Toggle Theme (Cream / Night / Pure White)">Theme</button>
+          <button id="font-size-down" class="control-btn" title="Decrease Font Size">A-</button>
+          <button id="font-size-up" class="control-btn" title="Increase Font Size">A+</button>
+          <button id="toggle-view" class="control-btn primary" title="Switch between Deep Codex & Unit View">Toggle View</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="reader-container">
+      <aside class="reader-sidebar">
+        <div class="sidebar-search">
+          <input type="text" id="unit-search" placeholder="Search concepts, aspects, houses...">
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section-title">TABLE OF CONTENTS</div>
+          <ul class="nav-list" id="unit-nav-list">
+            <li class="nav-item active" data-target="master-overview"><a href="#master-overview">Executive Overview</a></li>
+            <li class="nav-item" data-target="unit-1"><a href="#unit-1">U01: Oceanic Architecture</a></li>
+            <li class="nav-item" data-target="unit-2"><a href="#unit-2">U02: Ecstasy vs Delusion</a></li>
+            <li class="nav-item" data-target="unit-3"><a href="#unit-3">U03: Loss: Fierce Gift</a></li>
+            <li class="nav-item" data-target="unit-4"><a href="#unit-4">U04: Sun, Moon, Mercury</a></li>
+            <li class="nav-item" data-target="unit-5"><a href="#unit-5">U05: Venus, Mars, Saturn</a></li>
+            <li class="nav-item" data-target="unit-6"><a href="#unit-6">U06: Outer Planetary Gods</a></li>
+            <li class="nav-item" data-target="unit-7"><a href="#unit-7">U07: Houses 1 to 4</a></li>
+            <li class="nav-item" data-target="unit-8"><a href="#unit-8">U08: Houses 5 to 8</a></li>
+            <li class="nav-item" data-target="unit-9"><a href="#unit-9">U09: Houses 9 to 12</a></li>
+            <li class="nav-item" data-target="unit-10"><a href="#unit-10">U10: The Oceanic Transit</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="reader-content" id="reader-content-body">
+        <section id="master-overview" class="content-section">
+          <div class="codex-banner">
+            <div class="badge-tag">BKRS v2.0 MASTER CODEX</div>
+            <h1 class="codex-title">The Book of Neptune</h1>
+            <p class="codex-subtitle">The Evolutionary Astrology of Mysticism, Illusion, and Ego Transcendence</p>
+            <div class="metadata-grid">
+              <div class="meta-item"><span class="meta-label">Author:</span> <span class="meta-val">Steven Forrest</span></div>
+              <div class="meta-item"><span class="meta-label">School:</span> <span class="meta-val">Evolutionary & Psychological Astrology</span></div>
+              <div class="meta-item"><span class="meta-label">Primary Archetype:</span> <span class="meta-val">Neptune (The Boundless Ocean)</span></div>
+              <div class="meta-item"><span class="meta-label">Standard:</span> <span class="meta-val">Replacement-Grade Technical Master</span></div>
+            </div>
+          </div>
+
+          <div class="quote-box">
+            "What does Neptune mean, in its deepest essence? You are far, far better than you think you are. You are an ancient, evolving consciousness in a mysterious universe. You just look like a monkey! But don't worry, it's a temporary condition. Deep inside the monkey is this luminous emptiness that has existed since the beginning of time."
+          </div>
+
+          <h2>Executive Paradigm: The Primate and the Mystic</h2>
+          <p>Steven Forrest rescues Neptune from two historical distortions: the paranoid fatalism of traditional astrology (which views Neptune solely as deceit, madness, and ruined lives) and the superficial light-heartedness of pop New-Age astrology. In Evolutionary Astrology, Neptune represents the soul's sacred drive to dissolve the illusion of separateness and remember its non-dual identity with the Divine Source.</p>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dimension</th>
+                  <th>The Unevolved Trap (Lower Octave)</th>
+                  <th>The Evolutionary Mastery (Higher Octave)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Ontology</strong></td>
+                  <td>Escapism, dissociation, chemical dependency, refusal of boundaries.</td>
+                  <td>Direct mystical communion, contemplative stillness, non-dual presence.</td>
+                </tr>
+                <tr>
+                  <td><strong>Relationships</strong></td>
+                  <td>Savior-victim codependency, romantic martyrdom, projecting God onto a lover.</td>
+                  <td>Unconditional love for flawed human beings, spiritual partnership, sacred Tantra.</td>
+                </tr>
+                <tr>
+                  <td><strong>Mind</strong></td>
+                  <td>Brain fog, gullibility, paranoia, self-deception, chaotic daydreaming.</td>
+                  <td>Poetic genius, mythic cognition, symbolic thinking, deep psychic intuition.</td>
+                </tr>
+                <tr>
+                  <td><strong>Transits & Crisis</strong></td>
+                  <td>Agonizing resistance to loss, panic over collapsed status, victimhood.</td>
+                  <td>Surrendering false ego-costumes, discovering the indestructible true self.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- UNIT 1 -->
+        <section id="unit-1" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 01</span>
+            <h2>The Neptunian Ontological Architecture: The Ocean of Consciousness and the Cleaned Window</h2>
+            <div class="source-ref">Part One: Let's Take a Ride in a Starship & Deepening Space</div>
+          </div>
+          <div class="unit-body">
+            <p>Forrest defines human consciousness as a dual reality: we are mammalian primates navigating biological survival, yet we contain an uncreated, luminous immortal awareness. The biological nervous system functions as a reducing valve (Blake's window), keeping out the overwhelming voltage of the cosmos.</p>
+            <p>Neptune is the cosmic solvent that cleanses this window. When the veil thins, we glimpse the Infinite. If unprepared, the ego becomes terrified or delusional; if prepared, the soul experiences profound spiritual liberation.</p>
+          </div>
+        </section>
+
+        <!-- UNIT 2 -->
+        <section id="unit-2" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 02</span>
+            <h2>The Spectrum of Illusion: Delusion, Addiction, Escapism, and Mystical Ecstasy</h2>
+            <div class="source-ref">Part One: Neptune, Delusion & Ecstasy</div>
+          </div>
+          <div class="unit-body">
+            <p>Why do people blunder under Neptune? Forrest explains that when Neptune touches the psyche, the soul experiences an authentic touch of the Divine. However, the unevolved ego misattributes this divine experience to an earthly, finite form:</p>
+            <ul>
+              <li><strong>Addiction:</strong> Alcohol and drugs mimic the boundary-dissolving bliss of the Divine. Addiction is a misdirected spiritual thirst.</li>
+              <li><strong>Glamour & Cults:</strong> Following a charismatic guru who claims to possess all spiritual authority.</li>
+              <li><strong>The Solution:</strong> Developing contemplative practices (meditation, silent retreat, breathwork) that quench the soul's thirst at the true spring of consciousness.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 3 -->
+        <section id="unit-3" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 03</span>
+            <h2>Loss as Fierce Spiritual Initiation: Deconstructing the Ego Props</h2>
+            <div class="source-ref">Part Five: Loss: Neptune's Fierce Gift</div>
+          </div>
+          <div class="unit-body">
+            <p>Under major Neptunian transits, individuals frequently experience loss: a job termination, a divorce, the collapse of savings, or physical debility. Forrest demonstrates that these are <em>existential props</em> that the ego mistook for the authentic self.</p>
+            <div class="quote-box">
+              "Loss is not a punishment. It is the forced disidentification of the soul from its costume. When the prop is taken away, you discover what remains: the indestructible ground of your immortal being."
+            </div>
+          </div>
+        </section>
+
+        <!-- UNIT 4 -->
+        <section id="unit-4" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 04</span>
+            <h2>Neptune in Aspect to the Personal Planets: Sun, Moon, and Mercury</h2>
+            <div class="source-ref">Part Two: How Aspects Work — Sun, Moon, Mercury</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><span class="neptune-badge badge-transcendent">Sun-Neptune:</span> The Transparent Ego. Healing imposter syndrome by recognizing the self as a stained-glass window for higher light.</li>
+              <li><span class="neptune-badge badge-transcendent">Moon-Neptune:</span> Oceanic Empathy. The emotional sponge; psychic sensitivity; the requirement for energetic hygiene and solitary recovery.</li>
+              <li><span class="neptune-badge badge-transcendent">Mercury-Neptune:</span> The Poetic Mind. Non-linear, metaphorical, mythic intelligence vs cognitive fog and self-deception.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 5 -->
+        <section id="unit-5" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 05</span>
+            <h2>Neptune in Aspect to Desire, Assertion, and Order: Venus, Mars, and Saturn</h2>
+            <div class="source-ref">Part Two: Venus, Mars, Saturn</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><span class="neptune-badge badge-transcendent">Venus-Neptune:</span> The Grail Soulmate. Moving from romantic disillusionment to divine unconditional compassion for flawed human partners.</li>
+              <li><span class="neptune-badge badge-transcendent">Mars-Neptune:</span> The Spiritual Warrior. Karma Yoga; action without ego-attachment; martial arts and Qi Gong vs passivity.</li>
+              <li><span class="neptune-badge badge-transcendent">Saturn-Neptune:</span> The Sacred Paradox. Structuring the transcendent; giving concrete stone form to mystical visions; avoiding cynicism.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 6 -->
+        <section id="unit-6" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 06</span>
+            <h2>Neptune in Aspect to the Outer Planetary Gods: Jupiter, Uranus, and Pluto</h2>
+            <div class="source-ref">Part Two: Jupiter, Uranus, Pluto</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><span class="neptune-badge badge-transcendent">Jupiter-Neptune:</span> The Cathedral in the Heart. Soaring cosmic faith vs spiritual inflation and guru complexes.</li>
+              <li><span class="neptune-badge badge-transcendent">Uranus-Neptune:</span> The Intuitive Technological Awakening. Reconciling revolutionary lightning with oceanic compassion.</li>
+              <li><span class="neptune-badge badge-transcendent">Neptune-Pluto:</span> The Shamanic Evolution of Species Consciousness. Confronting the collective shadow to birth planetary awakening.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 7 -->
+        <section id="unit-7" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 07</span>
+            <h2>Neptune in the Quadrant of the Self and Foundation: Houses 1 through 4</h2>
+            <div class="source-ref">Part Three: Houses 1 to 4</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><strong>1st House:</strong> Chameleon persona; ethereal presence; vulnerability to collective projections; physical grounding mandatory.</li>
+              <li><strong>2nd House:</strong> Money as spiritual energy; non-attachment vs financial vagueness; ethical, sacred livelihood.</li>
+              <li><strong>3rd House:</strong> Intuitive listening; psychic sibling connections; poetic, non-verbal transmission of ideas.</li>
+              <li><strong>4th House:</strong> The monastic hearth; ancestral ocean; home must be an inviolable spiritual sanctuary.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 8 -->
+        <section id="unit-8" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 08</span>
+            <h2>Neptune in the Quadrant of Relationship and Social Creation: Houses 5 through 8</h2>
+            <div class="source-ref">Part Three: Houses 5 to 8</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><strong>5th House:</strong> Channeling the Divine Muse; artistic trance; theatre; releasing romantic fantasy projections.</li>
+              <li><strong>6th House:</strong> Service as Sadhana; energetic medicine; somatic sensitivity to environmental toxins; workplace boundaries.</li>
+              <li><strong>7th House:</strong> The Soulmate projection; savior-victim marriages; resigning from saving the partner; sacred partnership.</li>
+              <li><strong>8th House:</strong> Tantra; intimate ego dissolution; shamanic grief; psychological rebirth and mediumship.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 9 -->
+        <section id="unit-9" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 09</span>
+            <h2>Neptune in the Transpersonal Quadrant: Houses 9 through 12</h2>
+            <div class="source-ref">Part Three: Houses 9 to 12</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><strong>9th House:</strong> Mystical philosophy; sacred pilgrimages; direct experiential theology over rigid dogma.</li>
+              <li><strong>10th House:</strong> Vocation as ministry; public artistic or healing mission; disillusionment with corporate climbing.</li>
+              <li><strong>11th House:</strong> The Spiritual Sangha; visionary humanitarian collectives; maintaining individual boundaries in groups.</li>
+              <li><strong>12th House:</strong> Neptune in Home Waters. Contemplative solitude is a medical and spiritual necessity; natural mystic.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 10 -->
+        <section id="unit-10" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 10</span>
+            <h2>The Oceanic Transit: Navigating the 3-Year Fog, Progressions, and Transpersonal Initiation</h2>
+            <div class="source-ref">Part Five: Neptunian Transits, Progressions & Solar Arcs</div>
+          </div>
+          <div class="unit-body">
+            <p>During a 3-year Neptunian transit, the fog rolls in to dissolve outdated ego structures. Forrest lays down five clinical rules:</p>
+            <ol>
+              <li><strong>Do not drive at 90 mph in the fog:</strong> Postpone rigid, irreversible contracts and commitments.</li>
+              <li><strong>Honor somatic fatigue:</strong> Rest is the soul's demand for withdrawal and reset.</li>
+              <li><strong>Beware the too-good-to-be-true mirage:</strong> Test romantic and financial promises against reality.</li>
+              <li><strong>Feed the archetype consciously:</strong> Practice meditation, art, music, and quiet walks in nature.</li>
+              <li><strong>Trust the oceanic timing:</strong> When something departs under Neptune, let it go. The tide recedes only to return as pure grace.</li>
+            </ol>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="../../assets/js/reader-controls.js"></script>
+</body>
+</html>

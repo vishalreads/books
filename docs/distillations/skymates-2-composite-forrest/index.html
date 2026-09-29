@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skymates II: The Composite Chart - Master Codex | Intellectualist</title>
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
+  <style>
+    .composite-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-family: var(--font-mono, monospace);
+      font-weight: 700;
+      font-size: 0.85rem;
+      background: #fdf2f8;
+      color: #be185d;
+      border: 1px solid #fbcfe8;
+      margin: 0.2rem 0.2rem 0.2rem 0;
+    }
+    .badge-structure {
+      background: #f3f4f6;
+      color: #374151;
+      border-color: #e5e7eb;
+    }
+    .badge-transpersonal {
+      background: #ede9fe;
+      color: #6d28d9;
+      border-color: #ddd6fe;
+    }
+    .quote-box {
+      border-left: 4px solid #db2777;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      background: var(--bg-secondary, #f7f5f0);
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color, #dcd8d0);
+    }
+    th {
+      background: var(--bg-tertiary, #eae6df);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="reader-mode" data-theme="cream">
+  <div class="reader-shell">
+    <header class="reader-header">
+      <div class="reader-header-left">
+        <a href="../../index.html" class="back-link">&larr; Back to Library</a>
+        <div class="header-divider"></div>
+        <div class="header-title-group">
+          <h1 class="header-book-title">Skymates II: The Composite Chart</h1>
+          <span class="header-book-author">Steven Forrest & Jodie Forrest</span>
+        </div>
+      </div>
+      <div class="reader-header-right">
+        <div class="reading-stats">
+          <span id="reading-time">35 min read</span>
+          <span class="stats-separator">&bull;</span>
+          <span id="unit-count">10 Knowledge Units</span>
+        </div>
+        <div class="header-controls">
+          <button id="theme-toggle" class="control-btn" title="Toggle Theme (Cream / Night / Pure White)">Theme</button>
+          <button id="font-size-down" class="control-btn" title="Decrease Font Size">A-</button>
+          <button id="font-size-up" class="control-btn" title="Increase Font Size">A+</button>
+          <button id="toggle-view" class="control-btn primary" title="Switch between Deep Codex & Unit View">Toggle View</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="reader-container">
+      <aside class="reader-sidebar">
+        <div class="sidebar-search">
+          <input type="text" id="unit-search" placeholder="Search midpoints, nodes, composite planets...">
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section-title">TABLE OF CONTENTS</div>
+          <ul class="nav-list" id="unit-nav-list">
+            <li class="nav-item active" data-target="master-overview"><a href="#master-overview">Executive Overview</a></li>
+            <li class="nav-item" data-target="unit-1"><a href="#unit-1">U01: Three-Tier Pyramid</a></li>
+            <li class="nav-item" data-target="unit-2"><a href="#unit-2">U02: Composite Lunar Nodes</a></li>
+            <li class="nav-item" data-target="unit-3"><a href="#unit-3">U03: Sun & Moon Core</a></li>
+            <li class="nav-item" data-target="unit-4"><a href="#unit-4">U04: Composite Ascendant</a></li>
+            <li class="nav-item" data-target="unit-5"><a href="#unit-5">U05: Mercury & Venus</a></li>
+            <li class="nav-item" data-target="unit-6"><a href="#unit-6">U06: Composite Mars</a></li>
+            <li class="nav-item" data-target="unit-7"><a href="#unit-7">U07: Jupiter & Saturn</a></li>
+            <li class="nav-item" data-target="unit-8"><a href="#unit-8">U08: Uranus, Neptune, Pluto</a></li>
+            <li class="nav-item" data-target="unit-9"><a href="#unit-9">U09: Political Typology</a></li>
+            <li class="nav-item" data-target="unit-10"><a href="#unit-10">U10: Transits & Progressions</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="reader-content" id="reader-content-body">
+        <section id="master-overview" class="content-section">
+          <div class="codex-banner">
+            <div class="badge-tag">BKRS v2.0 MASTER CODEX</div>
+            <h1 class="codex-title">Skymates II: The Composite Chart</h1>
+            <p class="codex-subtitle">The Evolutionary Astrology of Midpoint Composite Charts & The Eternal Triangle</p>
+            <div class="metadata-grid">
+              <div class="meta-item"><span class="meta-label">Authors:</span> <span class="meta-val">Steven Forrest & Jodie Forrest</span></div>
+              <div class="meta-item"><span class="meta-label">School:</span> <span class="meta-val">Evolutionary Relationship Synastry</span></div>
+              <div class="meta-item"><span class="meta-label">Core Technique:</span> <span class="meta-val">Midpoint Composite Chart</span></div>
+              <div class="meta-item"><span class="meta-label">Standard:</span> <span class="meta-val">Replacement-Grade Technical Master</span></div>
+            </div>
+          </div>
+
+          <div class="quote-box">
+            "When two people commit themselves to loving each other, the whole of that couple is something new, something distinct from either of the individuals... Every couple, then, is a threesome: you, me, and what we are together. That ghostly but powerful presence is symbolized by the composite chart."
+          </div>
+
+          <h2>The Epistemological Paradigm: The Third Entity</h2>
+          <p>Steven and Jodie Forrest establish the definitive masterclass on Composite Charts. Rather than treating relationship astrology merely as interpersonal cross-aspects (Synastry), they demonstrate that every relationship produces an emergent, autonomous meta-personality—a <strong>Third Entity</strong> with its own natal chart, soul mission, karmic past, and evolutionary trajectory.</p>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tier Level</th>
+                  <th>Astrological Tool</th>
+                  <th>Diagnostic Function</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tier 1: Base</strong></td>
+                  <td>Individual Natal Charts</td>
+                  <td>Examines each person's innate psychological capacity for intimacy, personal wounds, and blind spots.</td>
+                </tr>
+                <tr>
+                  <td><strong>Tier 2: Interpersonal</strong></td>
+                  <td>Bi-Wheel Synastry</td>
+                  <td>Measures chemistry, friction, emotional trigger points, and day-to-day interpersonal communication.</td>
+                </tr>
+                <tr>
+                  <td><strong>Tier 3: Transpersonal</strong></td>
+                  <td>The Composite Chart</td>
+                  <td>Reveals the shared identity, karmic contracts, spiritual purpose, and autonomous destiny of the union.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- UNIT 1 -->
+        <section id="unit-1" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 01</span>
+            <h2>The Three-Tier Synastry Pyramid: Individual, Cross-Aspects, and the Third Entity</h2>
+            <div class="source-ref">Chapters 1 & 3: Nuts and Bolts & The Eternal Triangle</div>
+          </div>
+          <div class="unit-body">
+            <p>Every couple is an Eternal Triangle composed of Partner A, Partner B, and the Relationship itself. The Composite Chart is calculated via mathematical midpoints of all planetary pairs and house cusps.</p>
+            <p>The Composite Chart serves as an arbiter, tie-breaker, and context generator. It explains why individuals behave differently together than they do when alone.</p>
+          </div>
+        </section>
+
+        <!-- UNIT 2 -->
+        <section id="unit-2" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 02</span>
+            <h2>The Karmic Contract: Composite Lunar Nodes and Reincarnational Dynamics</h2>
+            <div class="source-ref">Chapter 4: The Lunar Nodes</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><span class="composite-badge">Composite South Node:</span> The repository of shared past-life history, unresolved agreements, and familiar emotional ruts where the couple risks stagnating.</li>
+              <li><span class="composite-badge">Dispositor of South Node:</span> Pinpoints the exact karmic bottleneck and historical trauma of the couple.</li>
+              <li><span class="composite-badge">Composite North Node:</span> The joint evolutionary assignment; the new conscious behavior that resolves the ancient debt and revitalizes the marriage.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 3 -->
+        <section id="unit-3" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 03</span>
+            <h2>The Solar Purpose and Lunar Matrix: Composite Sun and Moon Dynamics</h2>
+            <div class="source-ref">Chapters 5 & 6: Composite Sun and Moon</div>
+          </div>
+          <div class="unit-body">
+            <p>The <strong>Composite Sun</strong> is the vital heart and external mission of the union—what the couple came here to accomplish in the world. The <strong>Composite Moon</strong> is the private domestic climate: how the couple feels when the front door closes and they sit in silence together.</p>
+          </div>
+        </section>
+
+        <!-- UNIT 4 -->
+        <section id="unit-4" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 04</span>
+            <h2>The Public Face and Entry Gate: The Composite Ascendant and Angular Axis</h2>
+            <div class="source-ref">Chapter 7: The Composite Ascendant</div>
+          </div>
+          <div class="unit-body">
+            <p>The <strong>Composite Ascendant</strong> describes the mask of the relationship—how society perceives the couple, and the environmental atmosphere of their initial meeting. The <strong>Midheaven (MC)</strong> governs their public legacy and career status, while the <strong>IC</strong> anchors their domestic and ancestral foundation.</p>
+          </div>
+        </section>
+
+        <!-- UNIT 5 -->
+        <section id="unit-5" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 05</span>
+            <h2>Communication and Emotional Affinity: Composite Mercury and Composite Venus</h2>
+            <div class="source-ref">Chapters 8 & 9: Composite Mercury and Venus</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><strong>Composite Mercury:</strong> The shared intellectual circuit, conversational rapport, humor, and problem-solving mechanisms.</li>
+              <li><strong>Composite Venus:</strong> The romantic adhesive; mutual affection, aesthetic harmony, shared pleasures, and the capacity for gracious compromise.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 6 -->
+        <section id="unit-6" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 06</span>
+            <h2>Passion, Friction, and Ambition: Composite Mars and the Chemistry of Conflict</h2>
+            <div class="source-ref">Chapter 10: Composite Mars</div>
+          </div>
+          <div class="unit-body">
+            <p>Composite Mars is the heat in the engine: sexual drive, collective ambition, and dispute resolution. Without Mars, the union lacks motive power; with an unintegrated Mars, dispute devolves into domestic hostility and cold warfare.</p>
+          </div>
+        </section>
+
+        <!-- UNIT 7 -->
+        <section id="unit-7" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 07</span>
+            <h2>Grace, Growth, and Reality: Composite Jupiter and Composite Saturn</h2>
+            <div class="source-ref">Chapters 11 & 12: Composite Jupiter and Saturn</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><span class="composite-badge">Composite Jupiter:</span> The reservoir of shared faith, humor, travel, luck, and expansion.</li>
+              <li><span class="composite-badge badge-structure">Composite Saturn:</span> <strong>The indispensable anchor of marital longevity.</strong> Loyalty, contractual responsibility, and enduring commitment through adversity.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 8 -->
+        <section id="unit-8" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 08</span>
+            <h2>The Transpersonal Wildcards: Composite Uranus, Neptune, and Pluto</h2>
+            <div class="source-ref">Chapters 13, 14 & 15: Uranus, Neptune, Pluto</div>
+          </div>
+          <div class="unit-body">
+            <ul>
+              <li><span class="composite-badge badge-transpersonal">Composite Uranus:</span> The demand for autonomy, unconventional lifestyle, and electrical excitement.</li>
+              <li><span class="composite-badge badge-transpersonal">Composite Neptune:</span> Sacred devotion, artistic dreams, and spiritual ideals vs codependency.</li>
+              <li><span class="composite-badge badge-transpersonal">Composite Pluto:</span> Shamanic intimacy, deep psychological catharsis, and mutual soul healing.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 9 -->
+        <section id="unit-9" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 09</span>
+            <h2>The Political Typology of the Third Entity: Power Balances in the Triangle</h2>
+            <div class="source-ref">Chapter 3: The Eternal Triangle — Clinical Typologies</div>
+          </div>
+          <div class="unit-body">
+            <p>The Forrests map three primary relational political balances:</p>
+            <ul>
+              <li><strong>Culture Shock:</strong> The Composite is alien to both natal charts, pulling both partners into unexpected adventures.</li>
+              <li><strong>Home Field Advantage:</strong> The Composite mirrors one partner's chart, giving them natural dominance while requiring extra effort to include the other.</li>
+              <li><strong>Mutual Empowerment:</strong> The Composite activates the North Nodes of both individuals, catalyzing mutual evolution.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 10 -->
+        <section id="unit-10" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 10</span>
+            <h2>Dynamic Forecasting and Timing: Transits and Progressions to the Composite Chart</h2>
+            <div class="source-ref">Part Three: Transits, Progressions & Relationship Lifecycles</div>
+          </div>
+          <div class="unit-body">
+            <p>The Composite Chart is a living organism with its own developmental cycles. Key timing milestones:</p>
+            <ul>
+              <li><strong>Saturn conjunct Composite Angles:</strong> Classic indicator of formal marriage vows, or legal divorce if the structure is hollow.</li>
+              <li><strong>Uranus to Composite Luminaries:</strong> Radical changes in lifestyle, relocations, or demands for independence.</li>
+              <li><strong>Pluto to Composite Core:</strong> Deep psychological purging, death-and-rebirth transformation, and soul-level renewal.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="../../assets/js/reader-controls.js"></script>
+</body>
+</html>

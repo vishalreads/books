@@ -1,6 +1,6 @@
 /**
  * Builder for Astrological Grand Unified Curriculum & Epistemological Rosetta Stone
- * Architecture: Cross-Book Synthesis Suite for all 12 Astrology Masterworks
+ * Architecture: Cross-Book Synthesis Suite for all 24 Astrology Masterworks
  * Standard: BKRS v2.0 Production Master
  */
 
@@ -15,8 +15,8 @@ if (!fs.existsSync(crossBookDir)) {
 const curriculumData = {
   curriculum_id: "astrology-unified-master-v1",
   title: "The Master Astrological Curriculum & Epistemological Rosetta Stone",
-  subtitle: "A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 12 Canonical Traditions",
-  total_books: 18,
+  subtitle: "A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 24 Canonical Traditions",
+  total_books: 24,
   books_roster: [
     {
       id: "valens",
@@ -179,27 +179,82 @@ const curriculumData = {
       paradigm: "Forensic Nadi / KP Astrology",
       slug: "accurate-predictive-methodology-taneja",
       key_contributions: "Nirayana Bhava Chalit, Three-Tier coordinates (Sub-Lord > Nakshatra > Planet), the Law of the 12th Relative House, exact multi-house formulas, second-precision BTR via Ruling Planets."
+    },
+    {
+      id: "forrest_neptune",
+      title: "The Book of Neptune",
+      author: "Steven Forrest",
+      year: "2012",
+      paradigm: "Evolutionary & Transpersonal",
+      slug: "the-book-of-neptune-forrest",
+      key_contributions: "The Spiritual Solvent, Evolutionary Mysticism, Creative Ecstasy vs. Addiction/Disillusionment, Neptune across Signs and Houses, The 14-Step Kundalini/Transpersonal Process."
+    },
+    {
+      id: "forrest_skymates2",
+      title: "Skymates II: The Composite Chart",
+      author: "Steven Forrest & Jodie Forrest",
+      year: "2005",
+      paradigm: "Relational Evolutionary & Midpoint Alchemy",
+      slug: "skymates-2-composite-forrest",
+      key_contributions: "The Third Entity meta-personality derived via mathematical midpoints, Three-Tier Synastry Pyramid, Composite Lunar Nodes (karmic contract vs. evolutionary frontier), Relationship Houses."
+    },
+    {
+      id: "seymour",
+      title: "The Scientific Basis of Astrology",
+      author: "Dr. Percy Seymour",
+      year: "1992",
+      paradigm: "Magnetohydrodynamic & Biophysical",
+      slug: "the-scientific-basis-of-astrology-seymour",
+      key_contributions: "5-Step Physical Mechanism (Planetary Gravitational Tidal Resonance on Solar Dynamo -> Solar Wind/IMF -> Geomagnetic ELF Micropulsations 0.1-10 Hz -> Fetal Magnetoreception & Labor Trigger), Nelson RCA alignments, Gauquelin diurnal effect."
+    },
+    {
+      id: "bell",
+      title: "Midlife Is Not a Crisis",
+      author: "Virginia Bell",
+      year: "2017",
+      paradigm: "Chronological Developmental Evolutionary",
+      slug: "midlife-is-not-a-crisis-bell",
+      key_contributions: "Universal planetary developmental milestones: First Saturn Return (28-30), Midlife Gauntlet (Pluto square 36-38, Neptune square 40-42, Uranus opposition 40-44, Saturn opposition 43-45), Chiron Return (49-51, Youth of Old Age), Second Saturn Return (58-60, The New Elder), Uranus Return (84, The Great Homecoming)."
+    },
+    {
+      id: "adams",
+      title: "Astrology: Your Place Among the Stars",
+      author: "Evangeline Adams",
+      year: "1930",
+      paradigm: "Synthetic Character Delineation & Legal Science",
+      slug: "your-place-among-the-stars-adams",
+      key_contributions: "The Trinity of Being (Sun = Conscious Will, Moon = Subconscious Soul, Ascendant = Somatic Vessel), Mercury neural conduit, 1914 NYC legal trial precedent, Solar aspects to Uranus/Saturn/Jupiter, Character is Destiny."
+    },
+    {
+      id: "crowley",
+      title: "The Complete Astrological Writings (Liber 536)",
+      author: "Aleister Crowley",
+      year: "1918 / 1974",
+      paradigm: "Thelemic Hermetic & Qabalistic",
+      slug: "complete-astrological-writings-crowley",
+      key_contributions: "Liber 536 (Maslath = 536), Astrology as weapon of the True Will (Thelema), Triple Trinity of Planets on Tree of Life, 36 Decanates mapped to Tarot Minor Arcana, Revaluation of Mars/Saturn, expose 'How Horoscopes Are Faked'."
     }
   ],
   stages: [
     {
       stage_number: 1,
-      stage_name: "Primary Geometry & Classical Foundations",
-      subtitle: "The Ancient Roots: Hellenistic Whole-Signs & Vedic Parashari Principles",
-      core_books: ["valens", "raman"],
+      stage_name: "Primary Geometry, Classical Foundations & The Trinity of Being",
+      subtitle: "The Ancient Roots: Hellenistic Whole-Signs, Vedic Parashari Principles, and Synthetic Character Foundations",
+      core_books: ["valens", "raman", "adams"],
       learning_outcomes: [
         "Master the 12 signs, 12 houses, and 7 traditional visible planets in their original dignity hierarchies.",
         "Internalize the difference between Whole-Sign houses (Valens) and Bhava Chalit quadrant calculations.",
         "Master the Hellenistic Doctrine of Sect (Day charts vs. Night charts) to identify which malefic (Mars or Saturn) causes acute disruption and which benefic (Jupiter or Venus) provides primary salvation.",
         "Understand the Parashari foundation of planetary strengths (Shadbala), natural vs. functional benefics, and the mechanics of foundational Raja and Dhana Yogas.",
+        "Synthesize the foundational Trinity of Being (Evangeline Adams): Sun as conscious will, Moon as subconscious habit matrix, and Ascendant as somatic vehicle, utilizing Adams's legal-empirical character delineation.",
         "Compare the ancient Hellenistic time-lord system (Zodiacal Releasing from the Lots of Spirit and Fortune) with the 120-year Vedic Vimshottari Dasha system."
       ]
     },
     {
       stage_number: 2,
-      stage_name: "Harmonic Micro-Lenses, Aspectarian Dynamics & Gestalt Synthesis",
-      subtitle: "Karmic Axis, Geometric Aspects, Gestalt Chart Assembly, and Relational Matrices",
-      core_books: ["goel", "braha", "raaj", "balfour", "pelletier", "marks_art"],
+      stage_name: "Harmonic Micro-Lenses, Aspectarian Dynamics, Relational Alchemy & Decanates",
+      subtitle: "Karmic Axis, Geometric Aspects, Gestalt Chart Assembly, Composite Third Entity, and Hermetic Tarotic Decans",
+      core_books: ["goel", "braha", "raaj", "balfour", "pelletier", "marks_art", "forrest_skymates2", "crowley"],
       learning_outcomes: [
         "Deconstruct the birth chart beyond the gross physical D1 Rashi using the microscopic D9 Navamsha chart (V.P. Goel).",
         "Identify vulnerable points: 64th Navamsha (4th sign from Moon's Navamsha) and 22nd Drekkana (8th house cusp in D3) for health and timing vulnerabilities.",
@@ -207,14 +262,16 @@ const curriculumData = {
         "Resolve contradictory planetary indications using James Braha's 9 clinical masterclasses and Upachaya house growth rules.",
         "Decode dynamic aspect configurations (T-squares, Grand Crosses, Yods, Grand Trines) and minor frictional aspects (semi-squares, sesquiquadrates, quincunxes) as internal psychic engines (Robert Pelletier).",
         "Synthesize complex charts through Gestalt analysis: weigh planetary dominance, dominant elements/modes, and focal aspect centers to discern the unified core self before analyzing details (Tracy Marks).",
-        "Apply Thelma Balfour's 144-pair elemental matrix to diagnose interpersonal communication pitfalls, ego clashes, and sexual polarities."
+        "Apply Thelma Balfour's 144-pair elemental matrix to diagnose interpersonal communication pitfalls, ego clashes, and sexual polarities.",
+        "Analyze relationship geometry using Steven & Jodie Forrest's Composite Chart: derive the 'Third Entity' via mathematical midpoints, map the Three-Tier Synastry Pyramid, and decode the Composite Lunar Nodes.",
+        "Integrate Aleister Crowley's Hermetic 36-Decanate grid and Tarot attributions into aspect and sign analysis, reclaiming Mars and Saturn as essential engines of the True Will."
       ]
     },
     {
       stage_number: 3,
-      stage_name: "The Psychological, Archetypal & Shadow Paradigm Shift",
-      subtitle: "Humanistic Consciousness, Promethean Awakenings, Somatization, and Shadow Dreamwork",
-      core_books: ["rudhyar", "meister", "tarnas", "greene", "marks_12th"],
+      stage_name: "The Psychological, Archetypal, Evolutionary & Developmental Life-Cycle Paradigm",
+      subtitle: "Humanistic Consciousness, Promethean Awakenings, Somatization, Neptune's Mystical Solvent, and Universal Midlife Transitions",
+      core_books: ["rudhyar", "meister", "tarnas", "greene", "marks_12th", "forrest_neptune", "bell"],
       learning_outcomes: [
         "Abandon external fatalism and reframe the horoscope as a dynamic 28-phase cycle of human experience (Dane Rudhyar).",
         "Delineate the Cross of Awareness: Horizon (Ascendant-Descendant = Self vs. Other) and Meridian (MC-IC = Public Mission vs. Soul Roots).",
@@ -222,7 +279,9 @@ const curriculumData = {
         "Reconceptualize planets as living archetypal sub-personalities inhabiting the personal and collective unconscious (Marianne Meister).",
         "Recognize Uranus as Prometheus: the archetypal rebel against cosmic tyranny, bearer of sudden cognitive epiphanies, and catalyst of historical and personal revolutions (Richard Tarnas).",
         "Understand the psychodynamics of somatization: how repressed emotional conflicts and unacknowledged complexes bypass the ego to embody as physical illness and compulsive fate (Liz Greene).",
-        "Illuminate the Twelfth House: uncover the hidden wisdom, self-sabotaging complexes, and unacknowledged spiritual yearnings buried in the unconscious, using practical dreamwork and Gestalt integration (Tracy Marks)."
+        "Illuminate the Twelfth House: uncover the hidden wisdom, self-sabotaging complexes, and unacknowledged spiritual yearnings buried in the unconscious, using practical dreamwork and Gestalt integration (Tracy Marks).",
+        "Delineate Neptune as the Spiritual Solvent and Evolutionary Mystic (Steven Forrest): navigate the high-wire act between divine ecstasy/artistic creation and addiction/ego dissolution.",
+        "Master the chronological life-cycle developmental passages (Virginia Bell): navigate the First Saturn Return (28-30), the 4-part Midlife Gauntlet (36-45), Chiron Return (49-51), Second Saturn Return (58-60), and Uranus Return (84)."
       ]
     },
     {
@@ -242,22 +301,23 @@ const curriculumData = {
     },
     {
       stage_number: 5,
-      stage_name: "Empirical Diagnostics & Neuro-Psychiatry",
-      subtitle: "The Vertical Dimension: Declination, Eclipses, and Objective Clinical Biomarkers",
-      core_books: ["gibson"],
+      stage_name: "Empirical Diagnostics, Neuro-Psychiatry & Biophysical Mechanisms",
+      subtitle: "Declination, Eclipses, Clinical Biomarkers, and Solar Magnetohydrodynamic Field Resonance",
+      core_books: ["gibson", "seymour"],
       learning_outcomes: [
         "Break free from the limitation of longitudinal-only astrology by incorporating the vertical dimension: Celestial Declination.",
         "Calculate Parallels (conjunction equivalent) and Contraparallels (opposition equivalent) within the empirical 2°34' orb.",
         "Audit charts for Planetary Eclipses (simultaneous longitudinal conjunction AND declinational parallel) as high-voltage energetic focal points.",
         "Identify Out-of-Bounds planets (Exdek > 23°30') operating outside normal neuro-regulatory boundaries.",
-        "Compute the quantitative General Planetary Index (GPI) and Positive-to-Negative Ratio (P/N Ratio): recognize values < 0.83 as the clinical threshold for psychiatric vulnerability (Depression, Panic, Schizophrenia, ADHD, Addiction)."
+        "Compute the quantitative General Planetary Index (GPI) and Positive-to-Negative Ratio (P/N Ratio): recognize values < 0.83 as the clinical threshold for psychiatric vulnerability (Depression, Panic, Schizophrenia, ADHD, Addiction).",
+        "Ground astrological efficacy in Dr. Percy Seymour's 5-step Magneto-Tidal Resonance mechanism: gravitational tidal torques modulating the solar convective dynamo, solar wind IMF surges, geomagnetic ring current micro-pulsations (ELF 0.1-10 Hz), and fetal neurobiological imprinting via biogenic magnetite."
       ]
     }
   ],
   rosetta_stone: [
     {
       debate: "Tropical vs. Sidereal Zodiac",
-      tropical_perspective: "Anchored to the Earth's seasonal solstices and equinoxes. Represents the psychological, somatic, and earthly seasonal unfolding of consciousness (Rudhyar, Meister, Giamario, Teal, Riske, Tarnas, Greene, Marks).",
+      tropical_perspective: "Anchored to the Earth's seasonal solstices and equinoxes. Represents the psychological, somatic, and earthly seasonal unfolding of consciousness (Rudhyar, Meister, Giamario, Teal, Riske, Tarnas, Greene, Marks, Forrest, Bell, Adams).",
       sidereal_perspective: "Anchored to the backdrop of the fixed stars (Chitra / Spica datum). Represents the cosmic, karmic, and galactic soul blueprint; indispensable for Nakshatras, harmonic divisionals (D9), Vimshottari dasha timing, and Nadi Cuspal Sub-Lords (Raman, Goel, Raaj, Braha, Taneja).",
       synthetic_resolution: "Complementary, not mutually exclusive. Use the Tropical framework for psychological individuation, emotional maturation, and Western predictive progressions; use the Sidereal framework for Vedic dasha timing, nakshatra archetypes, harmonic divisionals, and Nadi sub-lord coordinates."
     },
@@ -269,13 +329,13 @@ const curriculumData = {
     },
     {
       debate: "Deterministic Fate vs. Psychological Individuation",
-      tropical_perspective: "A fatalistic reading produces helplessness. The chart reveals unintegrated unconscious archetypes that the individual projects outward into 'fate' or somatizes into physical pathology (Jung, Meister, Rudhyar, Greene, Marks).",
+      tropical_perspective: "A fatalistic reading produces helplessness. The chart reveals unintegrated unconscious archetypes that the individual projects outward into 'fate' or somatizes into physical pathology (Jung, Meister, Rudhyar, Greene, Marks, Forrest).",
       sidereal_perspective: "Karma is real and inexorable; specific planetary configurations represent ripe Prarabdha Karma that must bear fruit in the physical realm during their assigned dasha and sub-lord triggers (Raman, Goel, Taneja).",
       synthetic_resolution: "Karma provides the unalterable structural raw material (the biological organism, familial matrix, traumatic stressors, sub-lord gates); Psychological Individuation determines the level of consciousness with which that karma is metabolized, integrated, and transmuted."
     },
     {
       debate: "Longitudinal Geometry vs. Celestial Declination",
-      tropical_perspective: "Traditional astrology measures angles along the 360° ecliptic, revealing the narrative dialogue and mental/relational tensions between drives (Pelletier, Marks).",
+      tropical_perspective: "Traditional astrology measures angles along the 360° ecliptic, revealing the narrative dialogue and mental/relational tensions between drives (Pelletier, Marks, Adams, Crowley).",
       sidereal_perspective: "Dr. Gibson's clinical research proves that longitudinal aspects alone cannot differentiate psychotic patients from healthy controls; declination represents the physiological, neurobiological grounding of cosmic force.",
       synthetic_resolution: "Longitude describes the subjective narrative, psychological dialogue, and character traits; Declination (parallels, contraparallels, eclipses, and P/N ratio) measures the objective energetic voltage and biological threshold of the nervous system."
     },
@@ -284,23 +344,41 @@ const curriculumData = {
       tropical_perspective: "Robert Pelletier maps hard geometric aspects (squares, oppositions, quincunxes) as behavioral stress zones that demand conscious resolution.",
       sidereal_perspective: "Liz Greene demonstrates that when these aspect frictions are repressed or unexpressed by the ego, they manifest somatically as bodily diseases or external catastrophic crises.",
       synthetic_resolution: "Aspectarian tension (Pelletier) defines the latent psychic conflict; Greene's somatization model shows what happens when the tension remains unconscious; Marks' 12th House dreamwork and gestalt synthesis provide the practical path to conscious therapeutic integration."
+    },
+    {
+      debate: "Individual Synastry vs. The Composite Chart Midpoint Field",
+      tropical_perspective: "Steven & Jodie Forrest demonstrate that bi-wheel cross-aspects (Synastry) describe only how two separate egos impact each other, whereas the Composite Chart (calculated via mathematical midpoints) reveals the 'Third Entity'—the emergent, living relationship vessel with its own evolutionary purpose and nodal destiny.",
+      sidereal_perspective: "Traditional synastry (Ashtakoota Milan and elemental matrices via Balfour) provides essential baseline temperament compatibility, but fails to capture the emergent gestalt of long-term committed unions.",
+      synthetic_resolution: "Use the Three-Tier Synastry Pyramid (Forrest): Tier 1 audits individual relationship capacity; Tier 2 maps cross-chart aspects (Synastry) for interpersonal chemistry; Tier 3 delineates the Composite Chart for the shared purpose and evolutionary contract of the union."
+    },
+    {
+      debate: "Pure Archetypal Synchronicity vs. Biophysical Field Resonance",
+      tropical_perspective: "Jungian and archetypal astrologers view planetary positions as acausal synchronistic symbols mirroring the collective unconscious (Meister, Tarnas, Greene).",
+      sidereal_perspective: "Dr. Percy Seymour proves an empirical physical mechanism: planetary gravitational tidal resonance alters the solar dynamo, modulating solar wind shockwaves and inducing geomagnetic ELF micro-pulsations (0.1–10 Hz) that entrain fetal brain networks via biogenic magnetite.",
+      synthetic_resolution: "Cosmic ecology: Meaning and Mechanism are complementary. Astrology operates acausally as a symbolic language of soul, while simultaneously possessing an objective biophysical transmission substrate through solar-geomagnetic field entrainment."
+    },
+    {
+      debate: "Midlife as Biological Decline vs. Sacred Chronological Initiation",
+      tropical_perspective: "Conventional consumer culture treats midlife as a crisis of aging and cosmetic panic.",
+      sidereal_perspective: "Virginia Bell proves that midlife is an orchestrated 4-part cosmological initiation (Pluto Square, Neptune Square, Uranus Opposition, Saturn Opposition) designed to destroy borrowed personas and birth authentic eldership.",
+      synthetic_resolution: "Midlife breakdowns are evolutionary breakthroughs. Refuse puerile rebellion and panic; practice psychic composting and embrace the Chiron transmutation from wounded victim to wise elder."
     }
   ],
   unified_protocol: [
     {
       step: 1,
-      title: "Constitutional & Sect Grounding",
-      action: "Determine Sect (Day vs. Night chart via Sun above/below horizon) to identify the functional malefic (Mars vs. Saturn) and leading benefic (Jupiter vs. Venus). Note the Ascendant and its ruling planet in both Whole-Sign and Quadrant frameworks to establish physical vitality and temperamental baseline."
+      title: "Constitutional, Sect & Biophysical Grounding",
+      action: "Determine Sect (Day vs. Night chart via Sun position) to identify the functional malefic (Mars vs. Saturn) and leading benefic (Jupiter vs. Venus). Audit the Ascendant and physical vitality, referencing Dr. Percy Seymour's geomagnetic entrainment baselines and Evangeline Adams's Trinity of Being (Sun = Will, Moon = Subconscious Soul, Ascendant = Somatic Vessel)."
     },
     {
       step: 2,
       title: "Gestalt Weighting & The Cross of Awareness",
-      action: "Examine the Sun (Ego/Hero), Moon (Instinctual Soul Matrix), and the Horizon/Meridian axes (Cross of Awareness). Weigh planetary distribution, dominant elements/modes, and focal aspect configurations (T-squares, Yods, Stelliums) using Tracy Marks' and Robert Pelletier's gestalt techniques to identify the central core engine of the psyche."
+      action: "Examine the Sun, Moon, and the Horizon/Meridian axes (Cross of Awareness). Weigh planetary distribution, dominant elements/modes, and focal aspect configurations (T-squares, Yods, Stelliums) using Tracy Marks' and Robert Pelletier's gestalt techniques to identify the central core engine of the psyche."
     },
     {
       step: 3,
-      title: "Depth Shadow & Archetypal Audit",
-      action: "Analyze the 12th House (Tracy Marks), Saturn (Liz Greene / Marianne Meister), and outer-planet archetype awakenings (Promethean Uranus via Tarnas). Identify whether unresolved psychic tensions are at risk of somatic expression or compulsive self-sabotage."
+      title: "Depth Shadow, Neptune Solvent & Archetypal Audit",
+      action: "Analyze the 12th House (Tracy Marks), Saturn (Liz Greene / Marianne Meister), and outer-planet archetype awakenings (Promethean Uranus via Tarnas and Neptune Spiritual Solvent via Steven Forrest). Identify whether unresolved psychic tensions are at risk of somatic expression, addiction, or compulsive self-sabotage."
     },
     {
       step: 4,
@@ -309,16 +387,21 @@ const curriculumData = {
     },
     {
       step: 5,
-      title: "Dynamic Forecasting, Cuspal Sub-Lords & The Rule of Three",
-      action: "Identify the macro-season using Vimshottari Dasa or Zodiacal Releasing. Verify the Cuspal Sub-Lord coordinates of the targeted house (Umang Taneja's Nadi formulas). Then overlay Secondary Progressions, Solar Arcs, and transits of outer planets. Only confirm an event when at least three independent planes converge within exact one-degree orbs."
+      title: "Relational Diagnostics & The Composite Third Entity",
+      action: "If consulting on partnership, execute the Three-Tier Synastry Pyramid (Steven & Jodie Forrest): audit individual 7th house and Venus/Mars patterns, map inter-chart cross-aspects, and calculate the Composite Chart to reveal the shared evolutionary destiny and nodal contract of the union."
+    },
+    {
+      step: 6,
+      title: "Chronological Life-Cycle Navigation & Multi-Layered Forecasting",
+      action: "Locate the client along Virginia Bell's developmental timeline (Saturn Return, Midlife Gauntlet, Chiron Return, or Eldership). Cross-verify using Vimshottari Dasa / Zodiacal Releasing macro-seasons, Umang Taneja's Nadi Cuspal Sub-Lord coordinates, and Celeste Teal's Rule of Three (Secondary Progressions, Solar Arcs, and transits). Only confirm an event when at least three independent planes converge within exact one-degree orbs."
     }
   ],
   fifty_book_roadmap: [
-    { cohort: "Cohort 1: Current Invariant Foundation (Completed)", count: 18, books: "Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja." },
-    { cohort: "Cohort 2: Classical Hellenistic & Arabic/Medieval Texts", count: 8, books: "Ptolemy (Tetrabiblos), Dorotheus of Sidon (Carmen Astrologicum), Abu Ma'shar (Great Introduction), Al-Biruni, Guido Bonatti (Liber Astronomiae), William Lilly (Christian Astrology), Morin de Villefranche, Firmicus Maternus (Mathesis)." },
-    { cohort: "Cohort 3: Foundational Classical & Modern Vedic Classics", count: 8, books: "Brihat Parashara Hora Shastra, Jaimini Upadesha Sutras, Saravali, Phaladeepika, Uttara Kalamrita, K.N. Rao (Timing Events with Dashas & Transits), Sanjay Rath (Crux of Vedic Astrology), David Frawley (Ayurvedic Astrology)." },
-    { cohort: "Cohort 4: Modern Psychological, Evolutionary & Uranian Astrological Masters", count: 8, books: "Liz Greene (Saturn: A New Look at an Old Devil), Liz Greene (The Astrology of Fate), Howard Sasportas (The Twelve Houses), Stephen Arroyo (Astrology, Psychology, and the Four Elements), Robert Hand (Planets in Transit), Jeffrey Wolf Green (Pluto: Evolutionary Journey of the Soul), Reinhold Ebertin (Combination of Stellar Influences), Demetra George (Asteroid Goddesses)." },
-    { cohort: "Cohort 5: Specialized Mundane, Esoteric, Medical & Financial Astrology", count: 8, books: "Nicholas Campion (Mundane Astrology), Sepharial (Silver Key / Astrological Keys), W.D. Gann (Tunnel Thru the Air / Financial Cycles), H.S. Green (Medical Astrology), Charles Carter (The Astrological Aspects), Alice Bailey (Esoteric Astrology), Manly P. Hall (Astrological Keywords), Noel Tyl (Synthesis & Counseling in Astrology)." }
+    { cohort: "Cohort 1 & 2: Completed Production Masters (24 Master Codices Live)", count: 24, books: "Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja, Forrest (Neptune), Forrest (Skymates II), Seymour, Bell, Adams, Crowley." },
+    { cohort: "Cohort 3: Classical Hellenistic & Arabic/Medieval Texts", count: 8, books: "Ptolemy (Tetrabiblos), Dorotheus of Sidon (Carmen Astrologicum), Abu Ma'shar (Great Introduction), Al-Biruni, Guido Bonatti (Liber Astronomiae), William Lilly (Christian Astrology), Morin de Villefranche, Firmicus Maternus (Mathesis)." },
+    { cohort: "Cohort 4: Foundational Classical & Modern Vedic Classics", count: 8, books: "Brihat Parashara Hora Shastra, Jaimini Upadesha Sutras, Saravali, Phaladeepika, Uttara Kalamrita, K.N. Rao (Timing Events with Dashas & Transits), Sanjay Rath (Crux of Vedic Astrology), David Frawley (Ayurvedic Astrology)." },
+    { cohort: "Cohort 5: Modern Psychological, Evolutionary & Uranian Astrological Masters", count: 8, books: "Liz Greene (Saturn: A New Look at an Old Devil), Liz Greene (The Astrology of Fate), Howard Sasportas (The Twelve Houses), Stephen Arroyo (Astrology, Psychology, and the Four Elements), Robert Hand (Planets in Transit), Jeffrey Wolf Green (Pluto: Evolutionary Journey of the Soul), Reinhold Ebertin (Combination of Stellar Influences), Demetra George (Asteroid Goddesses)." },
+    { cohort: "Cohort 6: Specialized Mundane, Esoteric, Medical & Financial Astrology", count: 8, books: "Nicholas Campion (Mundane Astrology), Sepharial (Silver Key / Astrological Keys), W.D. Gann (Tunnel Thru the Air / Financial Cycles), H.S. Green (Medical Astrology), Charles Carter (The Astrological Aspects), Alice Bailey (Esoteric Astrology), Manly P. Hall (Astrological Keywords), Noel Tyl (Synthesis & Counseling in Astrology)." }
   ]
 };
 
@@ -332,9 +415,9 @@ console.log('Successfully wrote astrology-master-curriculum.json');
 
 // 2. Generate astrology-master-curriculum.md
 let md = `# The Master Astrological Curriculum & Epistemological Rosetta Stone
-**Subtitle:** A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 12 Canonical Traditions  
+**Subtitle:** A Systematic 5-Stage Path from Beginner to Diagnostic Master Across ${curriculumData.total_books} Canonical Traditions  
 **Standard:** BKRS v2.0 Production Master Synthesis  
-**Scope:** 12 Reconstructed Works | 5 Learning Stages | Epistemological Rosetta Stone | Unified 5-Step Clinical Protocol | 50-Book Scaling Trajectory
+**Scope:** ${curriculumData.total_books} Reconstructed Works | 5 Learning Stages | Epistemological Rosetta Stone | Unified 6-Step Clinical Protocol | 50-Book Scaling Trajectory
 
 ---
 
@@ -345,33 +428,23 @@ Astrology is often approached as a fragmented collection of competing, contradic
 - *Whole-Sign ancient houses vs. Placidus quadrant houses?*
 - *Deterministic fatalistic karma vs. Jungian psychological self-actualization?*
 - *Traditional 360° longitudinal aspects vs. modern three-dimensional declinational neuro-psychiatry?*
+- *Pure archetypal synchronicity vs. solar magnetohydrodynamic field entrainment?*
 
-When read one by one without a synthesized architectural map, these 12 books can produce profound cognitive overload. However, when reconstructed through the **Book Knowledge Reconstruction System (BKRS)**, these traditions reveal themselves not as contradictory dogmas, but as **complementary diagnostic dimensions of a single cosmic architecture**.
+When read one by one without a synthesized architectural map, these ${curriculumData.total_books} books can produce profound cognitive overload. However, when reconstructed through the **Book Knowledge Reconstruction System (BKRS)**, these traditions reveal themselves not as contradictory dogmas, but as **complementary diagnostic dimensions of a single cosmic architecture**.
 
 This Master Curriculum provides:
 1. **A 5-Stage Progressive Learning Pathway** guiding a beginner from elementary geometry to advanced clinical mastery.
 2. **The Epistemological Rosetta Stone** resolving the historical and technical debates between Eastern and Western, Classical and Modern systems.
-3. **The Unified 5-Step Clinical Chart Delineation Protocol** used by elite multi-system practitioners.
+3. **The Unified 6-Step Clinical Chart Delineation Protocol** used by elite multi-system practitioners.
 4. **The 50-Book Master Roadmap** detailing the scaling trajectory for the complete library.
 
 ---
 
-## The 12 Reconstructed Masterworks by Paradigm
+## The ${curriculumData.total_books} Reconstructed Masterworks by Paradigm
 
 | # | Masterwork | Author | Epoch | Primary Paradigm | Core Invariant Contribution |
 |:---:|:---|:---|:---:|:---|:---|
-| **1** | [The Anthologies](../../distillations/the-anthologies-vettius-valens/index.html) | Vettius Valens | c. 175 CE | Classical Hellenistic | Whole-Sign houses, Sect (Day/Night), Triplicity rulers, Zodiacal Releasing (*Aphesis*) |
-| **2** | [Astrology for Beginners](../../distillations/astrology-for-beginners/index.html) | B.V. Raman | 1940 | Classical Vedic Parashari | Sidereal zodiac, 12 Bhavas, Shadbala, functional nature, Raja/Dhana Yogas, Vimshottari Dasha |
-| **3** | [Predicting through Navamsha](../../distillations/predict-with-navamsha/index.html) | V.P. Goel | 2004 | Harmonic Divisional Jyotish | D9 microscopic soul blueprint, Pushkar Navamshas, 64th Navamsha, 22nd Drekkana |
-| **4** | [Ancient Hindu Astrology](../../distillations/ancient-hindu-astrology-braha/index.html) | James T. Braha | 1986 | East-West Bridge | 9 clinical masterclasses, resolving contradictions, Upachaya growth, functional vs. natural nature |
-| **5** | [Astrology at the Speed of Light](../../distillations/astrology-speed-of-light/index.html) | Kapiel Raaj | 2012 | Modern Pragmatic Jyotish | Rapid chart deconstruction, Rahu-Ketu karmic obsession axis, 27 Nakshatras, house lord shifts |
-| **6** | [The Astrological Houses](../../distillations/astrological-houses-rudhyar/index.html) | Dane Rudhyar | 1972 | Humanistic Transpersonal | 28-phase cycle of consciousness, Cross of Awareness (Horizon & Meridian), 3 levels of functioning |
-| **7** | [The Key to the Self](../../distillations/the-key-to-the-self-meister/index.html) | Marianne Meister | 2001 | Jungian Depth Psychology | Horoscope as psychic mandala, synchronicity, personal inner gods, Saturn as Shadow boundary |
-| **8** | [Black Love Signs](../../distillations/black-love-signs/index.html) | Thelma Balfour | 1999 | Relational Psychology | Elemental relational dynamics, gender communication traps, forensic 144-pair compatibility matrix |
-| **9** | [The Shamanic Astrology Handbook](../../distillations/shamanic-astrology-handbook/index.html) | Daniel Giamario | 1994/2014 | Shamanic & Evolutionary | Tropical Earth Wheel, 584-day Venus synodic cycle (Inanna underworld descent), planetary initiations |
-| **10** | [Predicting Events with Astrology](../../distillations/predicting-events-with-astrology-teal/index.html) | Celeste Teal | 1999 | Predictive Western Synthesis | The Rule of Three, Secondary Progressions, Solar Arc Directions, Solar/Lunar returns, crisis timing |
-| **11** | [Predictive Astrology](../../distillations/predictive-astrology-riske/index.html) | Kris Brandt Riske | 2011 | Practical Operational Timing | Outer planet transits (Jupiter to Pluto), retrograde stations and loops, 29-year Progressed Moon |
-| **12** | [Signs of Mental Illness](../../distillations/signs-of-mental-illness-gibson/index.html) | Mitchell Earl Gibson, M.D. | 1998 | Psychiatric Neuro-Astrology | Declination (2°34' orb), Parallels/Contraparallels, Planetary Eclipses, Out-of-Bounds (Exdek), P/N Ratio < 0.83 |
+${curriculumData.books_roster.map((b, i) => `| **${i + 1}** | [${b.title}](../../distillations/${b.slug}/index.html) | ${b.author} | ${b.year} | ${b.paradigm} | ${b.key_contributions} |`).join('\n')}
 
 ---
 
@@ -393,12 +466,12 @@ curriculumData.stages.forEach(st => {
 md += `## The Epistemological Rosetta Stone: Resolving Historic Contradictions\n\n`;
 curriculumData.rosetta_stone.forEach(rs => {
   md += `### ${rs.debate}\n`;
-  md += `- **Tropical Paradigm:** ${rs.tropical_perspective}\n`;
-  md += `- **Sidereal Paradigm:** ${rs.sidereal_perspective}\n`;
+  md += `- **Tropical / Psychological Paradigm:** ${rs.tropical_perspective}\n`;
+  md += `- **Sidereal / Empirical Paradigm:** ${rs.sidereal_perspective}\n`;
   md += `- **Synthetic Resolution:** **${rs.synthetic_resolution}**\n\n`;
 });
 
-md += `## The Unified 5-Step Clinical Chart Delineation Protocol\n\n`;
+md += `## The Unified 6-Step Clinical Chart Delineation Protocol\n\n`;
 curriculumData.unified_protocol.forEach(up => {
   md += `### Step ${up.step}: ${up.title}\n`;
   md += `${up.action}\n\n`;
@@ -451,52 +524,57 @@ const html = `<!DOCTYPE html>
     }
 
     [data-theme="dark"] .stage-card {
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--bg-card, #1e1e1e);
       border-color: rgba(255, 255, 255, 0.1);
       border-left-color: #ef4444;
     }
 
     .stage-badge {
       display: inline-block;
+      padding: 3px 8px;
       background: #991b1b;
-      color: #ffffff;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
+      color: #fff;
       font-size: 0.75rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      margin-bottom: 0.5rem;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    [data-theme="dark"] .stage-badge {
+      background: #ef4444;
     }
 
     .books-roster-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 16px;
-      margin: 20px 0;
+      gap: 20px;
+      margin-top: 24px;
     }
 
     .roster-card {
-      background: rgba(0, 0, 0, 0.02);
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 6px;
-      padding: 16px;
+      background: var(--bg-card, #ffffff);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     [data-theme="dark"] .roster-card {
-      background: rgba(255, 255, 255, 0.02);
-      border-color: rgba(255, 255, 255, 0.08);
+      background: var(--bg-card, #1e1e1e);
+      border-color: rgba(255, 255, 255, 0.1);
     }
 
     .roster-title {
       font-family: var(--font-serif);
       font-size: 1.15rem;
       font-weight: 700;
-      margin-bottom: 4px;
       color: #991b1b;
+      margin-bottom: 4px;
     }
 
     [data-theme="dark"] .roster-title {
@@ -631,19 +709,19 @@ const html = `<!DOCTYPE html>
           <span class="badge" style="background:#991b1b; color:#fff;">Grand Unified Synthesis</span>
         </div>
         <h1 class="book-title">The Master Astrological Curriculum</h1>
-        <p class="book-subtitle">A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 12 Foundational Traditions</p>
+        <p class="book-subtitle">A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 24 Foundational Traditions</p>
 
         <div class="reader-metadata-bar">
-          <span><strong>Corpus:</strong> 12 Reconstructed Codices</span>
-          <span><strong>Coverage:</strong> Hellenistic · Vedic · Humanistic · Predictive · Shamanic · Psychiatric</span>
+          <span><strong>Corpus:</strong> 24 Reconstructed Codices</span>
+          <span><strong>Coverage:</strong> Hellenistic · Vedic · Humanistic · Predictive · Shamanic · Psychiatric · Evolutionary · Biophysical</span>
           <span><strong>Objective:</strong> Universal Operational Fluency & Diagnostic Synthesis</span>
         </div>
 
         <nav class="reader-tabs">
           <button class="tab-button active" data-tab="syllabus">5-Stage Syllabus</button>
           <button class="tab-button" data-tab="rosetta">Epistemological Rosetta Stone</button>
-          <button class="tab-button" data-tab="protocol">5-Step Clinical Protocol</button>
-          <button class="tab-button" data-tab="roster">12-Book Corpus</button>
+          <button class="tab-button" data-tab="protocol">6-Step Clinical Protocol</button>
+          <button class="tab-button" data-tab="roster">24-Book Corpus</button>
           <button class="tab-button" data-tab="roadmap">50-Book Trajectory</button>
         </nav>
       </div>
@@ -707,12 +785,12 @@ const html = `<!DOCTYPE html>
         </article>
       </section>
 
-      <!-- 5-STEP PROTOCOL -->
+      <!-- 6-STEP PROTOCOL -->
       <section id="view-protocol" class="tab-content">
         <article class="reader-prose">
           <div class="editorial-preamble">
-            <h2>The Unified 5-Step Clinical Chart Delineation Protocol</h2>
-            <p>How an elite multi-system practitioner synthesizes Hellenistic, Vedic, Psychological, and Psychiatric metrics when analyzing a live natal chart.</p>
+            <h2>The Unified 6-Step Clinical Chart Delineation Protocol</h2>
+            <p>How an elite multi-system practitioner synthesizes Hellenistic, Vedic, Psychological, Relational, and Biophysical metrics when analyzing a live natal chart.</p>
           </div>
 
           <div style="margin-top:28px;">
@@ -730,11 +808,11 @@ const html = `<!DOCTYPE html>
         </article>
       </section>
 
-      <!-- 12-BOOK ROSTER -->
+      <!-- 24-BOOK ROSTER -->
       <section id="view-roster" class="tab-content">
         <article class="reader-prose">
           <div class="editorial-preamble">
-            <h2>The 12 Reconstructed Masterworks</h2>
+            <h2>The 24 Reconstructed Masterworks</h2>
             <p>Direct access to each fully reconstructed BKRS v2.0 Master Codex.</p>
           </div>
 
@@ -760,7 +838,7 @@ const html = `<!DOCTYPE html>
         <article class="reader-prose">
           <div class="editorial-preamble">
             <h2>The 50-Book Master Scaling Trajectory</h2>
-            <p>Strategic blueprint to expand our 12-volume foundation into the world's most exhaustive 50-volume astrological curriculum across 5 thematic cohorts.</p>
+            <p>Strategic blueprint to expand our 24-volume foundation into the world's most exhaustive 50-volume astrological curriculum across thematic cohorts.</p>
           </div>
 
           ${curriculumData.fifty_book_roadmap.map(rd => `
@@ -776,7 +854,7 @@ const html = `<!DOCTYPE html>
     <footer class="reader-footer">
       <div class="reader-footer-inner">
         <p>Book Knowledge Reconstruction System (BKRS v2.0) • Intellectualist Knowledge Repository</p>
-        <p>Canonical Synthesis: Grand Unified Astrological Master Curriculum across 12 Masterworks.</p>
+        <p>Canonical Synthesis: Grand Unified Astrological Master Curriculum across 24 Masterworks.</p>
       </div>
     </footer>
   </div>

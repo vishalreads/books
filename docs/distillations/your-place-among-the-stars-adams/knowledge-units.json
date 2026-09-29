@@ -1,0 +1,152 @@
+[
+  {
+    "id": "ADAMS-U01",
+    "title": "The Adams Epistemology: Astrology as Empirical Character Science",
+    "coreConcept": "Astrology is not fatalistic fortune-telling, but the mathematical and psychological science of character, revealing the inherent cosmic predispositions of the individual soul.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "vii-15",
+    "tags": [
+      "Philosophy of Astrology",
+      "Epistemology",
+      "Character is Destiny",
+      "1914 Legal Trial",
+      "Free Will"
+    ]
+  },
+  {
+    "id": "ADAMS-U02",
+    "title": "The Sun Symbolically Considered: The Central Solar Spark & Will",
+    "coreConcept": "The Sun represents the divine center of consciousness, vital life force, moral integrity, conscious purpose, and the indomitable human will.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "16-35",
+    "tags": [
+      "The Sun",
+      "Solar Principle",
+      "Willpower",
+      "Consciousness",
+      "Vitality"
+    ]
+  },
+  {
+    "id": "ADAMS-U03",
+    "title": "The Sun Through the Cardinal, Fixed & Mutable Signs",
+    "coreConcept": "The expression of the solar spark varies by elemental triplicity and quadruplicity, shaping twelve distinct archetypes of character, leadership, ambition, and vulnerability.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "36-80",
+    "tags": [
+      "Sun Signs",
+      "Zodiac",
+      "Triplicities",
+      "Quadruplicities",
+      "Archetypes"
+    ]
+  },
+  {
+    "id": "ADAMS-U04",
+    "title": "Solar-Uranian Aspects: The Electric Spark of Genius vs. Chaos",
+    "coreConcept": "Uranus aspects to the Sun inject eccentric brilliance, inventive genius, and revolutionary non-conformity, but risk nervous erraticism and explosive disruption when afflicted.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "81-125",
+    "tags": [
+      "Sun-Uranus",
+      "Genius",
+      "Eccentricity",
+      "Revolution",
+      "Nervous Energy"
+    ]
+  },
+  {
+    "id": "ADAMS-U05",
+    "title": "Solar-Saturnian Aspects: The Great Disciplinarian & The Forge of Character",
+    "coreConcept": "Saturn aspects test the solar ego through delays, hardships, poverty, and isolation, ultimately forging diamond-like endurance, organizational mastery, and enduring achievement.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "126-170",
+    "tags": [
+      "Sun-Saturn",
+      "Discipline",
+      "Hardship",
+      "Endurance",
+      "Diamond Forge"
+    ]
+  },
+  {
+    "id": "ADAMS-U06",
+    "title": "Solar-Jupiterian Aspects: The Royal Mantle of Grace & Expansion",
+    "coreConcept": "Jupiter aspects bathe the Sun in optimism, generosity, and executive prosperity, but require conscious discipline to avoid hubris, indolence, and financial overextension.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "171-215",
+    "tags": [
+      "Sun-Jupiter",
+      "Expansion",
+      "Benevolence",
+      "Prosperity",
+      "Hubris Warning"
+    ]
+  },
+  {
+    "id": "ADAMS-U07",
+    "title": "The Moon Symbolically Considered: The Subconscious Mind & Habitual Soul",
+    "coreConcept": "The Moon represents the receptive, reflective subconscious soul—governing instinctual reactions, childhood conditioning, domestic sanctuary, and somatic memory.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "216-250",
+    "tags": [
+      "The Moon",
+      "Subconscious Mind",
+      "Emotions",
+      "Instinct",
+      "Memory"
+    ]
+  },
+  {
+    "id": "ADAMS-U08",
+    "title": "The Lunar Zodiac: Emotional Reactivity Across the Twelve Signs",
+    "coreConcept": "The placement of the Moon reveals how an individual processes emotional security, reacts to stress, forms intimate domestic attachments, and nurtures others.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "251-320",
+    "tags": [
+      "Moon Signs",
+      "Emotional Security",
+      "Reactivity",
+      "Domestic Life",
+      "Intimacy"
+    ]
+  },
+  {
+    "id": "ADAMS-U09",
+    "title": "Mercury Symbolically Considered: The Neural Courier & Commercial Intellect",
+    "coreConcept": "Mercury is the alchemical conduit linking the conscious solar will and the subconscious lunar emotional field, governing nerve transmission, speech, logic, and commercial trade.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "321-410",
+    "tags": [
+      "Mercury",
+      "Intellect",
+      "Nervous System",
+      "Commerce",
+      "Communication"
+    ]
+  },
+  {
+    "id": "ADAMS-U10",
+    "title": "The Adams Synthetic Delineation Protocol: Balancing the Trinity of Being",
+    "coreConcept": "Master chart reading requires synthesizing the Trinity of Being (Sun = Spiritual Will, Moon = Emotional Memory, Ascendant = Somatic Vessel) with planetary aspects into an actionable life strategy.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "411-544",
+    "tags": [
+      "Synthesis",
+      "Trinity of Being",
+      "Consultation Protocol",
+      "Forecasting",
+      "Practical Application"
+    ]
+  }
+]
