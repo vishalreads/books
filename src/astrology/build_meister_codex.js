@@ -1,0 +1,617 @@
+/**
+ * Builder for Marianne Meister: The Key to the Self
+ * Subtitle: Understanding Yourself and Others Through Astrology and Psychology
+ * Standard: BKRS v2.0 Production Master
+ * Architecture: 10 Comprehensive Units | Jungian Depth Psychological Astrology
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const targetDir = path.join(__dirname, '..', '..', 'docs', 'distillations', 'the-key-to-the-self-meister');
+if (!fs.existsSync(targetDir)) {
+  fs.mkdirSync(targetDir, { recursive: true });
+}
+
+const units = [
+  {
+    unit_id: "unit-01",
+    unit_number: 1,
+    chapter_number: 1,
+    title: "Introduction: The Epistemology of Depth Psychological Astrology",
+    scope: "Introduction: The historical bridge between C.G. Jung's analytical psychology and astrology, Macrocosm-Microcosm correspondence, and Thomas Ring's astro-psychology",
+    epistemic_status: "DEPTH_PSYCHOLOGICAL_EPISTEMOLOGY & SYNCHRONICITY",
+    materiality: "CRITICAL",
+    core_theme: "Bridging modern depth psychology and astrology: the horoscope as an empirical mandala of the human psyche, reflecting unconscious archetypal structures through acausal synchronicity.",
+    textual_analysis: [
+      "Marianne Meister, a prominent Jungian analyst trained at the C.G. Jung Institute in Zurich, establishes the theoretical and clinical legitimacy of depth psychological astrology. She recovers C.G. Jung's profound respect for astrology, noting Jung's famous declaration that astrology represents the sum of all the psychological knowledge of antiquity.",
+      "The Hermetic Macrocosm-Microcosm Axiom: The correspondence between celestial movements and human psychological reality does not operate via physical gravitational or electromagnetic causation. Rather, it operates through the principle of Synchronicity—an acausal connecting principle where inner psychic states and outer cosmic patterns mirror one another simultaneously.",
+      "The Horoscope as a Psychic Mandala: Meister utilizes the insights of German astrologer-philosopher Thomas Ring, viewing the natal chart not as a deterministic prediction of external events, but as a symbolic map of the native's innate psychic structure. The horoscope reveals the primary archetypal tensions, autonomous complexes, and developmental potentials that seek conscious realization.",
+      "Consciousness and the Unconscious: Human beings are not unified, rational monads. The conscious ego floats like a small island upon the vast ocean of the personal and collective unconscious. Astrology provides an objective, diagnostic X-ray of the unconscious forces shaping the ego from beneath the surface."
+    ],
+    verbatim_quote: "Astrology does not show what happens to a person from the outside; it shows the inner archetypal landscape of the psyche. What remains unconscious within us appears on the outside as our fate.",
+    operational_heuristic: "Reframe client fatalism through Jung's law of projection: explain that external crises are the psyche's unintegrated unconscious complexes seeking conscious integration.",
+    key_motifs: [
+      "Depth Psychological Astrology",
+      "C.G. Jung's Analytical Psychology",
+      "Synchronicity (Acausal Connecting Principle)",
+      "The Horoscope as Psychic Mandala",
+      "Thomas Ring's Astro-Psychological Axioms"
+    ]
+  },
+  {
+    unit_id: "unit-02",
+    unit_number: 2,
+    chapter_number: 2,
+    title: "Images of the Gods Within Us: The Inner Planets as Conscious Archetypes (Sun, Moon, Mercury, Venus, Mars)",
+    scope: "Chapter 1: The personal planets as living archetypes of the collective unconscious: Sun (Ego/Hero), Moon (Mother/Soul Matrix), Mercury (Hermes/Psychopomp), Venus (Anima/Eros), Mars (Animus/Logos Drive)",
+    epistemic_status: "ARCHETYPAL_PSYCHOLOGY & PERSONAL_PLANETARY_FUNCTIONS",
+    materiality: "CRITICAL",
+    core_theme: "The personal planets as autonomous archetypal sub-personalities inhabiting the human psyche: ego identity, instinctual soul matrix, cognitive mediator, relatedness, and assertive drive.",
+    textual_analysis: [
+      "Meister redefines the ancient gods of Olympus as living archetypes resident within the human psyche. The planets are not distant rocks; they are dynamic, instinctual patterns of psychic energy that organize perception and behavior.",
+      "The Sun — The Archetype of the Hero & Ego-Consciousness: The Sun represents the central conscious ego, the principle of vitality, willpower, and the quest for authentic self-expression. It is the solar hero striving to conquer darkness and differentiate itself from the collective unconscious.",
+      "The Moon — The Archetype of the Great Mother & Soul Matrix: The Moon governs the instinctual, receptive, emotional matrix of the psyche. It rules the personal unconscious, bodily security, somatic memory, and the capacity for self-nourishment. It represents how the individual feels safe in the world.",
+      "Mercury — The Archetype of Hermes & The Psychopomp: Mercury is the messenger, the cognitive mediator between conscious intellect and unconscious intuition. As psychopomp (guide of souls), Mercury navigates between light and shadow, translating visceral feelings into articulate thoughts.",
+      "Venus — The Archetype of Eros & Aesthetic Value: Venus rules the capacity for interpersonal relatedness, harmony, beauty, and emotional appreciation. In a man's psyche, Venus represents the primary projected image of the Anima (the inner feminine muse).",
+      "Mars — The Archetype of the Warrior & Assertive Drive: Mars is the libido, the biological drive, physical courage, and the capacity to defend boundaries and enforce one's will. In a woman's psyche, Mars represents the active, assertive face of the Animus."
+    ],
+    verbatim_quote: "The gods did not die; they simply moved inside us and became psychological complexes. When you refuse to honor Mars, he manifests as chronic rage or migraine headaches; when you suppress Venus, your relationships become bitter battlegrounds.",
+    operational_heuristic: "Identify which personal planet is most heavily suppressed or afflicted: this planet represents an alienated inner god operating as an autonomous, disruptive psychological complex.",
+    key_motifs: [
+      "Planets as Living Archetypes",
+      "The Sun as the Solar Hero Ego",
+      "The Moon as the Instinctual Soul Matrix",
+      "Mercury as the Hermes Psychopomp",
+      "Venus (Eros) & Mars (Assertive Drive)"
+    ]
+  },
+  {
+    unit_id: "unit-03",
+    unit_number: 3,
+    chapter_number: 3,
+    title: "The Transpersonal Guardians: Jupiter, Saturn & The Archetypes of Order and Meaning",
+    scope: "Chapter 1: The social threshold planets: Jupiter (The Wise Old Man / Senex & Puer / Meaning) and Saturn (The Reality Principle / Chronos / The Shadow Boundary)",
+    epistemic_status: "SOCIAL_ARCHETYPES & MEANING_VS_LIMITATION",
+    materiality: "CRITICAL",
+    core_theme: "The dialectic between Jupiter and Saturn: the archetype of spiritual meaning and expansion confronting the archetype of the reality principle, limitation, and the shadow boundary.",
+    textual_analysis: [
+      "Meister analyzes Jupiter and Saturn as the two great threshold guardians governing the ego's relationship with collective society and metaphysical reality.",
+      "Jupiter — The Archetype of Meaning & The Wise Old Man: Jupiter embodies the human drive for philosophical coherence, religious faith, optimism, and moral expansion. It corresponds to Jung's archetype of the 'Wise Old Man' (Philemon) or the expansive 'Puer Aeternus'. Positively, Jupiter bestows broad visionary horizons and trust in life; negatively, it inflates the ego into grandiosity, dogmatic fanaticism, and moral arrogance.",
+      "Saturn — The Reality Principle, Chronos & The Shadow Boundary: Saturn is the great boundary-keeper of the psyche. It represents the reality principle, temporal limitation, duty, endurance, structure, and moral responsibility. Saturn confronts the ego with hard facts, mortal limits, and failure.",
+      "Saturn as the Gatekeeper to the Unconscious: Meister stresses that Saturn in the birth chart marks the primary boundary of the Shadow. Wherever Saturn is placed, the individual feels inadequate, clumsy, impoverished, or burdened by deep unconscious shame. Yet, Jungian psychology proves that the greatest gold lies buried beneath the dragon: conscious integration of Saturn transmutes childhood insecurity into unshakeable maturity and ethical authority."
+    ],
+    verbatim_quote: "Saturn is the stern gatekeeper of the soul. He denies you easy victories and forces you to confront your deepest shame. But whatever you build under Saturn's watchful eye will withstand the storms of time.",
+    operational_heuristic: "Treat the natal house and sign of Saturn as the client's primary 'Inferiority Wound': guide the client to recognize that this area of chronic inadequacy is their greatest potential reservoir of enduring spiritual mastery.",
+    key_motifs: [
+      "Jupiter as the Archetype of Meaning",
+      "Saturn as the Reality Principle (Chronos)",
+      "Saturn as the Shadow Boundary",
+      "Transmuting Insecurity into Mastery",
+      "The Balance of Expansion & Containment"
+    ]
+  },
+  {
+    unit_id: "unit-04",
+    unit_number: 4,
+    chapter_number: 4,
+    title: "The Transpersonal Titans: Uranus, Neptune & Pluto — Forces of the Collective Unconscious",
+    scope: "Chapter 1: The outer planets as transpersonal forces: Uranus (Promethean Awakener), Neptune (Oceanic Dissolution), Pluto (Underworld Catabolism & Rebirth)",
+    epistemic_status: "COLLECTIVE_UNCONSCIOUS & METAMORPHIC_ARCHETYPES",
+    materiality: "CRITICAL",
+    core_theme: "The transpersonal titans beyond Saturn's ring: Uranus awakens consciousness through sudden rupture; Neptune dissolves ego boundaries into transcendent mysticism; Pluto enforces radical psychic catharsis.",
+    textual_analysis: [
+      "Meister demonstrates that Uranus, Neptune, and Pluto represent the titanic forces of the Collective Unconscious that completely transcend the personal ego. They are the evolutionary catalysts that disrupt conscious complacency and force individuation.",
+      "Uranus — The Promethean Spark & The Individuation Catalyst: Uranus shatters stagnation. It corresponds to the archetype of Prometheus stealing divine fire, or the lightning flash of sudden insight. Uranus demands radical authenticity, non-conformity, and freedom from parental and societal conditioning. An unintegrated Uranus produces erratic rebelliousness and emotional detachment.",
+      "Neptune — The Oceanic Mystic & The Dissolution of Boundaries: Neptune represents the primordial waters, the longing to return to the divine womb, and the dissolution of the ego's rigid boundaries. It inspires sublime art, poetry, and universal spiritual compassion. In its shadow, Neptune brings escapism, drug addiction, victimhood, delusion, and loss of reality testing.",
+      "Pluto — The Underworld Catabolism & The Death-and-Rebirth Archetype: Pluto is Hades, the lord of the depths. It rules the biological and psychological processes of catabolism—breaking down organic forms so new life can emerge. Plutonian crises force the ego to surrender its illusions of control through bereavement, trauma, or compulsive obsession, leading to profound psychic resurrection."
+    ],
+    verbatim_quote: "The outer planets do not negotiate with the ego. Uranus shatters your routine with lightning; Neptune drowns your certainty in the ocean; and Pluto burns away your masks until only the immortal core remains.",
+    operational_heuristic: "When an outer planet forms hard aspects to personal planets, interpret the crisis as a transpersonal initiation: counsel the client that their ego is being stripped of false defenses so the deeper Self can emerge.",
+    key_motifs: [
+      "The Collective Unconscious Forces",
+      "Uranus as the Promethean Awakener",
+      "Neptune as Oceanic Dissolution & Mysticism",
+      "Pluto as Underworld Catabolism & Resurrection",
+      "Ego Surrender to the Transpersonal"
+    ]
+  },
+  {
+    unit_id: "unit-05",
+    unit_number: 5,
+    chapter_number: 5,
+    title: "The Four Elements & Jung's Typology: Thinking, Feeling, Sensation & Intuition",
+    scope: "Chapter 2: The Four Elements mapped to C.G. Jung's Four Psychological Functions: Fire = Intuition, Earth = Sensation, Air = Thinking, Water = Feeling",
+    epistemic_status: "JUNGIAN_TYPOLOGY & ELEMENTAL_FUNCTIONAL_MAPPING",
+    materiality: "CRITICAL",
+    core_theme: "The exact synthesis of the 4 astrological elements with C.G. Jung's 4 psychological functions: identifying the Superior (conscious) function and the Inferior (unconscious) function.",
+    textual_analysis: [
+      "Chapter 2 provides one of Meister's most brilliant clinical contributions: mapping the ancient four elements directly onto Carl G. Jung's foundational psychological typology (*Psychological Types*).",
+      "The Four Elemental Correspondences: 1) Fire = Intuition (Perception via the unconscious, sudden flashes of possibility, visionary future orientation; Aries, Leo, Sagittarius); 2) Earth = Sensation (Perception via the physical senses, concrete reality, tangible facts, practical embodiment; Taurus, Virgo, Capricorn); 3) Air = Thinking (Rational evaluation, logical classification, conceptual frameworks, objective detachment; Gemini, Libra, Aquarius); 4) Water = Feeling (Evaluation via value judgments, emotional resonance, empathy, relational warmth; Cancer, Scorpio, Pisces).",
+      "Superior vs. Inferior Function Dynamics: In Jungian psychology, an individual develops one 'Superior Function' into high conscious mastery (e.g., an Air native develops brilliant thinking). Because of psychic polarity, the opposite function is repressed into the unconscious as the 'Inferior Function' (for Air, the Inferior Function is Water/Feeling).",
+      "The Inferior Function as the Gateway to the Shadow: The element that is lacking or unrepresented in a birth chart corresponds to the Inferior Function. When an individual is forced to operate in their inferior element, they act like a clumsy child, suffering emotional tantrums, psychosomatic illness, or sudden irrational behavior. Yet, the inferior function is the royal road to individuation."
+    ],
+    verbatim_quote: "The element you lack in your chart is not an absence; it is your hidden gold. It is your inferior function, the neglected child of your psyche that holds the key to your ultimate wholeness.",
+    operational_heuristic: "Calculate the elemental distribution of personal planets: identify the missing or weakest element as the client's Jungian Inferior Function; help them consciously cultivate this element to achieve psychological balance.",
+    key_motifs: [
+      "The 4 Elements Mapped to Jung's 4 Functions",
+      "Fire (Intuition) vs. Earth (Sensation)",
+      "Air (Thinking) vs. Water (Feeling)",
+      "Superior Function Mastery",
+      "The Inferior Function as Shadow Gateway"
+    ]
+  },
+  {
+    unit_id: "unit-06",
+    unit_number: 6,
+    chapter_number: 6,
+    title: "Inside and Out: Extraversion, Introversion & The Hemispheric Dynamics of Consciousness",
+    scope: "Chapter 3: Jungian Extraversion vs. Introversion mapped onto the horoscope's semi-circles, quadrants, and houses",
+    epistemic_status: "PSYCHOLOGICAL_ATTITUDE_POLARITY & HOROSCOPIC_GEOMETRY",
+    materiality: "IMPORTANT",
+    core_theme: "Mapping Jung's basic psychological attitudes (Extraversion vs. Introversion) onto the geometric semi-circles and quadrants of the birth chart.",
+    textual_analysis: [
+      "Meister explores the two fundamental attitudes of psychic adaptation defined by C.G. Jung: Extraversion (orienting psychic energy outward toward external objects and society) and Introversion (orienting psychic energy inward toward the inner subjective landscape of images and feelings).",
+      "Hemispheric Topography of the Horoscope: 1) Southern Semi-Circle (Above the Horizon, Houses 7 through 12): Corresponds to the Extraverted attitude. The individual's psychic libido flows naturally outward into public affairs, social structures, partnership dialogue, and cultural visibility; 2) Northern Semi-Circle (Below the Horizon, Houses 1 through 6): Corresponds to the Introverted attitude. Psychic libido flows inward into personal grounding, domestic sanctuary, subjective emotional processing, and private self-actualization.",
+      "Eastern vs. Western Semi-Circles: 1) Eastern Semi-Circle (Houses 10, 11, 12, 1, 2, 3): Centered around the Ascendant, indicating self-determination, autonomy, and proactive initiative; 2) Western Semi-Circle (Houses 4, 5, 6, 7, 8, 9): Centered around the Descendant, indicating relational orientation, receptivity, and dependency on encounter with the Other.",
+      "Synthesis of Attitude and Function: Combining the four elemental functions with the two attitudes yields the eight classic Jungian psychological types (e.g., Introverted Intuitive, Extraverted Thinker)."
+    ],
+    verbatim_quote: "When your chart is heavily weighted above the horizon, the world is your stage; when it is weighted below, your own soul is the cathedral in which you must pray.",
+    operational_heuristic: "Assess the distribution of planets above versus below the horizon to determine the client's baseline psychological attitude: do not counsel an inherently introverted native (heavy northern chart) to pursue aggressive corporate public relations.",
+    key_motifs: [
+      "Extraversion vs. Introversion",
+      "Above the Horizon (Extraverted Societal Flow)",
+      "Below the Horizon (Introverted Subjective Flow)",
+      "Eastern (Autonomous) vs. Western (Relational)",
+      "Jung's 8 Psychological Types"
+    ]
+  },
+  {
+    unit_id: "unit-07",
+    unit_number: 7,
+    chapter_number: 7,
+    title: "Aspect Structures as Autonomous Complexes: The Architecture of Inner Conflict",
+    scope: "Chapter 4: Astrological aspects (conjunction, opposition, square, trine, sextile) as the structural architecture of C.G. Jung's Complex Theory",
+    epistemic_status: "COMPLEX_THEORY & GEOMETRIC_PSYCHODYNAMICS",
+    materiality: "CRITICAL",
+    core_theme: "Aspects as the geometric network of autonomous feeling-toned complexes: squares and oppositions as internal friction and projection, trines as unearned harmony, conjunctions as ego-archetype fusion.",
+    textual_analysis: [
+      "In Chapter 4, Marianne Meister integrates astrology with Jung's revolutionary discovery: Complex Theory. An autonomous complex is a cluster of emotionally charged associations, memories, and archetypal drives that acts like a splinter personality within the psyche.",
+      "Aspects as Complex Networks: Planetary aspects are the geometric wiring connecting these complexes: 1) Conjunction (0°): Fusion and Symbiosis. The energies of two planetary archetypes are inextricably merged; the native cannot experience one without triggering the other (e.g., Moon conjunct Mars: emotional vulnerability is instantly fused with aggressive defensiveness); 2) Opposition (180°): Enantiodromia & Projection. Two opposite archetypes pull in opposite directions. The native typically identifies with one planet (the conscious pole) and projects the opposite planet onto an external partner or enemy (the shadow pole); 3) Square (90°): Dynamic Tension & Driving Complexes. The square generates acute internal friction and developmental urgency. It is the engine of psychological growth: without squares, the personality lacks the grit to achieve greatness; 4) Trines (120°) & Sextiles (60°): Harmonious Flow & Potential Complacency. Natural gifts and psychological ease that risk becoming lazy and unchallenged.",
+      "Complexes Possess Us: Meister emphasizes Jung's famous insight: 'Everyone knows nowadays that people have complexes; what is not so well known is that complexes can have us.' When an aspect network is triggered by a transit, the complex seizes control of the conscious ego."
+    ],
+    verbatim_quote: "A square in a horoscope is not a misfortune; it is an engine of consciousness. It creates the divine irritation without which the pearl of self-awareness could never form.",
+    operational_heuristic: "Identify the tightest square or opposition in the chart: this configuration is the client's core 'Driving Complex'; teach them to recognize when the complex is seizing their ego in daily life.",
+    key_motifs: [
+      "C.G. Jung's Complex Theory",
+      "Conjunction as Archetypal Fusion",
+      "Opposition as Shadow Projection",
+      "Square as the Engine of Consciousness",
+      "Autonomous Splinter Personalities"
+    ]
+  },
+  {
+    unit_id: "unit-08",
+    unit_number: 8,
+    chapter_number: 8,
+    title: "The Shadow & The Other: Projections Across the Angles (Ascendant/Descendant & MC/IC)",
+    scope: "Chapter 5: The psychology of the Shadow, Anima/Animus projections, and the four angles as the anchors of psychological integration",
+    epistemic_status: "SHADOW_INTEGRATION & ANGULAR_POLARITY",
+    materiality: "CRITICAL",
+    core_theme: "The psychological integration of the Shadow and the Anima/Animus through the four cardinal angles: reclaiming projections cast onto spouses, parents, and public enemies.",
+    textual_analysis: [
+      "Meister explores the four cardinal angles (Ascendant, Descendant, Midheaven, IC) as the primary anchors upon which the unconscious projects its hidden contents.",
+      "The Ascendant — Descendant Axis (The Shadow of Relationship): The Ascendant is who we consciously believe ourselves to be. The sign on the Descendant represents our 'Relational Shadow'—the traits we disown in ourselves and compulsively attract in our partners. An Aries rising native (who identifies with independence and courage) attracts Libra partners, whom they secretly criticize as indecisive, yet depend upon for social charm. Healing occurs when the native integrates the Descendant within their own psyche.",
+      "The Midheaven — IC Axis (The Parental Imago & Social Persona): The Nadir (IC) anchors the primal emotional conditioning received from the mother or primary nurturer; the Midheaven (MC) anchors the social expectations received from the father or collective authority. Individuals often spend the first half of life acting out parental scripts in their career (MC) before discovering their authentic personal roots (IC).",
+      "The Anima and Animus in Chart Dynamics: Meister outlines how a man's Moon and Venus reveal the unconscious contours of his Anima (his inner emotional and relational soul image), while a woman's Sun and Mars reveal her Animus (her inner logos, spirit, and assertive intellect). Mature individuation requires withdrawing these projections from the spouse."
+    ],
+    verbatim_quote: "You will hate in your partner whatever you have disowned in yourself. The Descendant is the mirror of your Shadow: bless your partner, for they are showing you the unlived half of your own soul.",
+    operational_heuristic: "When a client complains bitterly about a spouse's recurring behavior, cross-examine the client's Descendant: demonstrate how the partner's annoying traits are exact reflections of the client's own repressed shadow.",
+    key_motifs: [
+      "The Shadow & Anima/Animus Projections",
+      "Ascendant (Conscious Ego) vs. Descendant (Shadow Mirror)",
+      "Midheaven (Social Persona) vs. IC (Parental Roots)",
+      "Withdrawing Relational Projections",
+      "Psychological Re-integration"
+    ]
+  },
+  {
+    unit_id: "unit-09",
+    unit_number: 9,
+    chapter_number: 9,
+    title: "Eight Clinical Case Studies: The Forensic Diagnostic Practicum",
+    scope: "Chapter 5: Detailed forensic analysis of eight real clinical horoscopes across the four angular orientations (Self, Family, Partnership, Public Career)",
+    epistemic_status: "CLINICAL_DEPTH_PSYCHOLOGY_PRACTICUM & CASE_ANALYSIS",
+    materiality: "CRITICAL",
+    core_theme: "Forensic application: eight comprehensive clinical cases demonstrating how depth psychological astrology uncovers the roots of depression, marital crisis, and career paralysis.",
+    textual_analysis: [
+      "In Chapter 5, Marianne Meister presents eight in-depth, real clinical case studies from her psychoanalytic consulting room, demonstrating how horoscope analysis illuminates therapeutic dilemmas that resisted conventional talk therapy.",
+      "Case Group 1: Self-Reference & Identity Crisis (Focus on the Ascendant): Examining patients with severe identity diffusion and narcissistic wounds, revealing how afflictions to the Ascendant and its ruler cripple the native's capacity to stand sovereign in their own existence.",
+      "Case Group 2: Family Rootedness & Ancestral Trauma (Focus on the IC): Dissecting cases of chronic clinical depression rooted in unintegrated 4th-house trauma and toxic parental introjects, demonstrating how Pluto or Saturn on the IC preserves ancestral guilt across generations.",
+      "Case Group 3: The Broken Relational Mirror (Focus on the Descendant): Detailed analysis of severe marital conflicts where partners projected their unconscious Shadow complexes onto each other, showing how chart comparison (synastry) catalyzed mutual therapeutic breakthroughs.",
+      "Case Group 4: The Public Persona & Moral Breakdown (Focus on the Midheaven): Analyzing professionals suffering from severe executive burn-out and moral crises, demonstrating that their public success (MC) was built upon total repression of their emotional roots (IC)."
+    ],
+    verbatim_quote: "The horoscope never lies. When a patient sat in my consulting room for months unable to articulate their pain, casting their birth chart immediately revealed the exact knot where their soul was strangled.",
+    operational_heuristic: "Use the four angular case categories in clinical diagnostics: systematically verify whether the client's crisis is rooted in Identity (Asc), Ancestral Trauma (IC), Relational Projection (Desc), or Persona Burnout (MC).",
+    key_motifs: [
+      "Eight Clinical Depth Psychological Cases",
+      "Identity Diffusion on the Ascendant",
+      "Ancestral Trauma on the IC",
+      "Relational Shadow on the Descendant",
+      "Persona Burnout on the Midheaven"
+    ]
+  },
+  {
+    unit_id: "unit-10",
+    unit_number: 10,
+    chapter_number: 10,
+    title: "Individuation and the Transits: The Midlife Metamorphosis & The Realization of the Self",
+    scope: "Conclusion & Life-Span Dynamics: The Process of Individuation, C.G. Jung's concept of the Self, and the great midlife astrological initiations (Uranus Opposition, Neptune Square, Saturn & Chiron Returns)",
+    epistemic_status: "INDIVIDUATION_PROCESS & MIDLIFE_CHRONOMETRY",
+    materiality: "CRITICAL",
+    core_theme: "The ultimate goal of depth psychological astrology: the process of Individuation—the lifelong journey from the fragmented ego to the transcendent Self, catalyzed by the great midlife transits.",
+    textual_analysis: [
+      "In her profound concluding synthesis, Marianne Meister articulates the supreme teleological purpose of both Jungian psychoanalysis and astrology: The Process of Individuation. Individuation is the lifelong psychic transformation by which an individual becomes the unique, whole being they were innately designed to be, moving from the narrow, defensive Ego to the transcendent, luminous Self.",
+      "The Two Halves of Life: In the first half of life (ages 0 to 35-40), the ego's task is biological, social, and cultural adaptation: acquiring an education, establishing a career, finding a partner, and building a secure social Persona. In the second half of life (from age 40 onward), the focus reverses: the ego must surrender its hubris, turn inward, and integrate the Shadow, Anima/Animus, and spiritual dimensions.",
+      "The Great Astrological Midlife Initiations (Ages 38–44): Meister demonstrates that the famous 'midlife crisis' is an exact, mathematically coordinated series of transpersonal astrological transits: 1) Pluto square Pluto (Ages 36-39): Confronting mortality, powerlessness, and the death of youth; 2) Neptune square Neptune (Ages 40-42): The disillusionment with purely material success and the awakening of spiritual hunger; 3) Uranus opposition Uranus (Ages 41-44): The Promethean rebellion—the sudden urge to break free from suffocating conventions and live authentically before time runs out; 4) Saturn Opposition and Second Saturn Return (Ages 44 and 59): The stern reckoning of life achievements and the transition into seasoned wisdom; 5) The Chiron Return (Age 50): Healing the core wound and stepping into elderhood.",
+      "The Self as the Center of the Mandala: When an individual consciously cooperates with these cosmic initiations, the fragmented ego dissolves into conscious relationship with the Self—the divine godhead within."
+    ],
+    verbatim_quote: "Individuation does not mean becoming perfect; it means becoming whole. Midlife is not a decline into old age; it is the grand cosmic initiation where the ego is dethroned so that the true Self can wear the crown.",
+    operational_heuristic: "Frame midlife crises (ages 38-44) through the combined lens of the Uranus Opposition and Neptune Square: reassure clients that their anxiety and restlessness are not signs of nervous breakdown, but the labor pains of the soul rebirthing itself.",
+    key_motifs: [
+      "The Process of Individuation",
+      "Ego vs. The Transcendent Self",
+      "The Two Halves of Life",
+      "The Midlife Astrological Metamorphosis (38-44)",
+      "Wholeness Over Perfection"
+    ]
+  }
+];
+
+function generateMarkdown(units) {
+  let md = `# Marianne Meister: The Key to the Self
+## Understanding Yourself and Others Through Astrology and Psychology · BKRS v2.0 Deep Forensic Master Codex
+
+---
+
+### Archival Metadata
+- **Author:** Marianne Meister (Jungian Psychoanalyst, C.G. Jung Institute Zurich)
+- **Publication Date:** 2022 (Chiron Publications, Asheville, NC)
+- **Tradition / Discipline:** Jungian Depth Psychological Astrology, Archetypal Analysis, Complex Theory, Typology
+- **Curriculum Role:** The Jungian Depth Psychological Masterwork (Book 11 of the Master Curriculum)
+
+---
+
+## Executive Summary: The Depth Psychological Synthesis
+
+Marianne Meister's *The Key to the Self: Understanding Yourself and Others Through Astrology and Psychology* represents the modern pinnacle of the synthesis between **Carl Gustav Jung's Analytical Psychology** and **Astrological Science**.
+
+For decades, modern practitioners oscillated between two extremes: deterministic, fatalistic event prediction on one hand, or vague, superficial popular horoscopes on the other. Meister, grounding her work in clinical practice at the C.G. Jung Institute in Zurich and the structural theories of German astrologer-philosopher Thomas Ring, provides the definitive clinical bridge.
+
+### The Five Architectural Pillars of Meister's System:
+1. **Planets as Living Archetypes:** The planetary bodies correspond to the autonomous archetypal drives of the human psyche (Sun = Ego/Hero; Moon = Soul Matrix/Mother; Mercury = Hermes/Psychopomp; Venus = Eros/Anima; Mars = Assertive Libido/Animus; Jupiter = Meaning/Wise Old Man; Saturn = Reality Principle/Shadow Gatekeeper; Uranus = Promethean Catalyst; Neptune = Oceanic Mystic; Pluto = Underworld Catabolism).
+2. **The 4 Elements Mapped to Jung's 4 Functions:**
+   - **Fire = Intuition** (Unconscious perception of future possibilities)
+   - **Earth = Sensation** (Sensory perception of concrete physical reality)
+   - **Air = Thinking** (Rational, conceptual evaluation)
+   - **Water = Feeling** (Relational, empathic value judgments)
+3. **Aspect Networks as Autonomous Complexes:** Planetary aspects (conjunctions, squares, oppositions) form the geometric architecture of Jungian **feeling-toned complexes**—splinter personalities that seize conscious control when activated by transits.
+4. **The Shadow & Relational Projections:** The Descendant as the mirror of the disowned Shadow; reclaiming the Anima and Animus from external spouses.
+5. **Individuation & The Midlife Metamorphosis:** The lifelong journey from the narrow ego to the transcendent **Self**, punctuated by the synchronized transits of midlife (Pluto square, Neptune square, Uranus opposition, Chiron return).
+
+---
+
+## Detailed Structural Analysis of the Ten Units
+
+`;
+
+  units.forEach(u => {
+    md += `### ${u.title}\n\n`;
+    md += `- **Unit ID:** \`${u.unit_id}\`\n`;
+    md += `- **Epistemic Classification:** \`${u.epistemic_status}\`\n`;
+    md += `- **Materiality Level:** \`${u.materiality}\`\n`;
+    md += `- **Core Theme:** ${u.core_theme}\n\n`;
+    md += `#### Forensic Textual Analysis\n\n`;
+    u.textual_analysis.forEach(p => {
+      md += `${p}\n\n`;
+    });
+    md += `> **Marianne Meister Psychoanalytic Verbatim:**\n`;
+    md += `> "${u.verbatim_quote}"\n\n`;
+    md += `**Operational Heuristic for Practitioners:**\n`;
+    md += `*${u.operational_heuristic}*\n\n`;
+    md += `**Key Motifs & Terminology:** ${u.key_motifs.map(m => `\`${m}\``).join(' · ')}\n\n`;
+    md += `---\n\n`;
+  });
+
+  md += `## The Elemental & Jungian Typology Synthesis Matrix
+
+| Astrological Element | Jungian Psychological Function | Mental Operation | Conscious Superior Manifestation | Unconscious Inferior Manifestation (The Shadow) |
+| :--- | :--- | :--- | :--- | :--- |
+| **FIRE** (Aries, Leo, Sagittarius) | **Intuition** | Perception via unconscious | Visionary inspiration; faith in possibilities; charismatic dynamism | Clumsy with tangible facts; blind to practical details; sensory denial |
+| **EARTH** (Taurus, Virgo, Capricorn) | **Sensation** | Perception via physical senses | Master of concrete facts; craftsmanship; somatic realism; stability | Cynical materialism; spiritual blindness; paralyzed by future changes |
+| **AIR** (Gemini, Libra, Aquarius) | **Thinking** | Rational evaluation via logic | Intellectual clarity; objective fairness; conceptual brilliance | Repressed sentimentality; cold detachment; emotional infantile outbursts |
+| **WATER** (Cancer, Scorpio, Pisces) | **Feeling** | Evaluation via subjective values | Deep empathy; emotional resonance; interpersonal warmth; compassion | Subjective irrationality; paranoia; inability to process logical facts |
+
+---
+
+## The Midlife Astrological Metamorphosis (Ages 36–50)
+
+\`\`\`
+   [AGE 36–39: PLUTO SQUARE PLUTO]
+      • First confrontation with mortality, loss of youth illusions, deep unconscious purge
+      ▼
+   [AGE 40–42: NEPTUNE SQUARE NEPTUNE]
+      • Disillusionment with worldly secular achievements; spiritual awakening or identity fog
+      ▼
+   [AGE 41–44: URANUS OPPOSITION URANUS]
+      • The Promethean Revolt; shattering suffocating routines; demand for radical authenticity
+      ▼
+   [AGE 44–45: SATURN OPPOSITION & RECKONING]
+      • Structural audit of career and marriage; establishing realistic boundaries
+      ▼
+   [AGE 49–51: CHIRON RETURN]
+      • Healing the primordial life wound; initiation into spiritual elderhood and mentorship
+\`\`\`
+`;
+
+  return md;
+}
+
+function generateReaderHtml(units) {
+  const cardsHtml = units.map(u => `
+    <article class="unit-card" id="${u.unit_id}">
+      <div class="unit-header">
+        <span class="unit-badge">${u.epistemic_status}</span>
+        <span class="unit-materiality ${u.materiality.toLowerCase()}">${u.materiality}</span>
+      </div>
+      <h2 class="unit-title">${u.title}</h2>
+      <div class="unit-scope">${u.scope}</div>
+      <div class="unit-core-insight">${u.core_theme}</div>
+      <div class="unit-prose">
+        ${u.textual_analysis.map(p => `<p>${p}</p>`).join('')}
+      </div>
+      <blockquote class="verbatim-quote">
+        "${u.verbatim_quote}"
+        <cite>— Marianne Meister, The Key to the Self</cite>
+      </blockquote>
+      <div class="heuristic-box">
+        <div class="heuristic-header">JUNGIAN ASTROLOGICAL HEURISTIC</div>
+        <div class="heuristic-body">${u.operational_heuristic}</div>
+      </div>
+      <div class="motifs-bar">
+        <strong>Key Psychological Motifs:</strong>
+        ${u.key_motifs.map(m => `<span class="motif-tag">${m}</span>`).join(' ')}
+      </div>
+      <script type="application/json" id="trace-data-${u.unit_id}">
+        ${JSON.stringify({
+          unit_id: u.unit_id,
+          title: u.title,
+          epistemic_status: u.epistemic_status,
+          materiality: u.materiality,
+          motifs: u.key_motifs
+        })}
+      </script>
+    </article>
+  `).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Key to the Self — Marianne Meister | BKRS Master Reader</title>
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
+  <style>
+    :root {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #ffffff;
+      --bg-subtle: #f4efe4;
+      --text-main: #1c1917;
+      --text-muted: #57534e;
+      --accent-crimson: #85221c;
+      --border-light: #e7dfd3;
+      --border-dark: #7a7060;
+      --shadow-sm: 0 2px 8px rgba(28, 25, 23, 0.04);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: Georgia, 'EB Garamond', serif;
+      font-size: 16px;
+      line-height: 1.65;
+      padding: 24px;
+    }
+    .reader-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .doc-header {
+      border-bottom: 2px solid var(--text-main);
+      padding-bottom: 16px;
+      margin-bottom: 28px;
+    }
+    .doc-kicker {
+      font-family: -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-crimson);
+      margin-bottom: 6px;
+    }
+    .doc-title {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .doc-author {
+      font-size: 15px;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .view-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 8px;
+    }
+    .view-tab {
+      font-family: -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border: 1px solid var(--border-dark);
+      background: var(--bg-card);
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .view-tab.active {
+      background: var(--text-main);
+      color: #fff;
+    }
+    .unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .unit-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-family: -apple-system, sans-serif;
+      font-size: 11px;
+    }
+    .unit-badge {
+      font-weight: 700;
+      color: var(--accent-crimson);
+      letter-spacing: 0.06em;
+    }
+    .unit-materiality {
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 2px;
+    }
+    .unit-materiality.critical { background: #ffe4e6; color: #9f1239; }
+    .unit-materiality.important { background: #fef3c7; color: #92400e; }
+    .unit-materiality.textural { background: #e0f2fe; color: #075985; }
+    .unit-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .unit-scope {
+      font-family: -apple-system, sans-serif;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .unit-core-insight {
+      font-size: 14px;
+      font-style: italic;
+      color: #333;
+      border-left: 3px solid var(--accent-crimson);
+      padding-left: 10px;
+      margin-bottom: 16px;
+    }
+    .unit-prose p {
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    .verbatim-quote {
+      border-left: 3px solid var(--text-main);
+      padding: 10px 16px;
+      font-style: italic;
+      background: var(--bg-subtle);
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+    .verbatim-quote cite {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      font-style: normal;
+      color: var(--text-muted);
+    }
+    .heuristic-box {
+      border: 1px solid var(--text-main);
+      border-left: 4px solid var(--text-main);
+      background: #fafafa;
+      padding: 12px 14px;
+      margin: 16px 0;
+    }
+    .heuristic-header {
+      font-family: -apple-system, sans-serif;
+      font-size: 10.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+    .heuristic-body {
+      font-size: 13.5px;
+      color: #111;
+    }
+    .motifs-bar {
+      font-family: -apple-system, sans-serif;
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+    .motif-tag {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 2px;
+      color: #222;
+      display: inline-block;
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="reader-container">
+    <header class="doc-header">
+      <div class="doc-kicker">BKRS Deep Forensic Master Codex · Jungian Depth Psychological Astrology</div>
+      <h1 class="doc-title">The Key to the Self: Understanding Yourself and Others</h1>
+      <div class="doc-author">Marianne Meister · Complete Ten-Unit Psychoanalytic Masterwork</div>
+      <nav class="view-tabs">
+        <a href="#view-journey" class="view-tab active" id="view-journey">View A: Source Journey</a>
+        <a href="#view-map" class="view-tab" id="view-map">View B: Relational Map</a>
+        <a href="#view-experience" class="view-tab" id="view-experience">View C: Operational Heuristics</a>
+      </nav>
+    </header>
+
+    <main id="units-wrapper">
+      ${cardsHtml}
+    </main>
+  </div>
+
+  <script src="../../assets/js/reader-controls.js"></script>
+</body>
+</html>`;
+}
+
+// 1. Write knowledge-units.json
+fs.writeFileSync(path.join(targetDir, 'knowledge-units.json'), JSON.stringify(units, null, 2), 'utf8');
+console.log(`[1/3] Wrote knowledge-units.json (${units.length} units)`);
+
+// 2. Write master-notes.md
+const md = generateMarkdown(units);
+fs.writeFileSync(path.join(targetDir, 'master-notes.md'), md, 'utf8');
+console.log(`[2/3] Wrote master-notes.md (${md.length} characters)`);
+
+// 3. Write index.html
+const readerHtml = generateReaderHtml(units);
+fs.writeFileSync(path.join(targetDir, 'index.html'), readerHtml, 'utf8');
+console.log(`[3/3] Wrote index.html (${readerHtml.length} characters)`);
+
+console.log('\nSUCCESS: Marianne Meister: The Key to the Self successfully built!');
