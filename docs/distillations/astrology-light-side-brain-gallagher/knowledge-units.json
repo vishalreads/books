@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-gallagher-01",
+    "title": "The Light Side Paradigm & Taking the Chart Apart",
+    "unitType": "paradigm-foundation",
+    "summary": "Rogers-Gallagher establishes a right-brain, humorous, and visceral approach to astrology. Rather than bogging students down in dry tables, she deconstructs the birth chart into three core theatrical components: Planets (the Actors), Signs (the Costumes/Roles), and Houses (the Stages/Settings), grouped by Elemental Moods and Quadruplicities.",
+    "epistemicStatus": "source-theoretical",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-gallagher-02",
+    "title": "The Four Basic Mood Groups: Elemental Anatomy",
+    "unitType": "structural-typology",
+    "summary": "Detailed examination of Fire (Spontaneous Combustion), Earth (Grounding & Clay), Air (Intellectual Oxygen), and Water (Oceanic Emotion). Gallagher maps how elemental deficits and excesses skew psychological equilibrium, creating predictable behavioral compensations in romantic and career dynamics.",
+    "epistemicStatus": "source-theoretical",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-gallagher-03",
+    "title": "The Inner Personal Planets: The Core Psychological Ensemble",
+    "unitType": "archetypal-ensemble",
+    "summary": "Dissecting the Sun (The Core Ego / Boss), the Moon (The Emotional Child / Gut), Mercury (The Switchboard / Internal Reporter), Venus (The Taste-Maker & Diplomat), and Mars (The Action Hero / Adrenaline Engine). Explores their daily operational interactions and internal dialogues.",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-gallagher-04",
+    "title": "Retrogrades, Stations, and the Mechanics of Inward Reflection",
+    "unitType": "predictive-mechanics",
+    "summary": "A demystified and empowering breakdown of planetary retrogrades, with special focus on Mercury retrograde and planetary stations. Rather than viewing retrograde as bad luck, Gallagher reframes it as essential cosmic maintenance—a time to re-view, re-pair, re-flect, and re-wire.",
+    "epistemicStatus": "source-argument",
+    "materiality": "important",
+    "order": 4
+  },
+  {
+    "id": "ku-gallagher-05",
+    "title": "The Social & Transpersonal Titans: Jupiter, Saturn, and the Outer Planets",
+    "unitType": "macro-developmental",
+    "summary": "Jupiter (The Expansive Optimist / Santa Claus) and Saturn (The Stern Taskmaster / Architect). Analysis of the Saturn Return at 28-30 and the Outer Planets (Uranus, Neptune, Pluto) as generational seismic forces that reshape identity when contacting personal planets.",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-gallagher-06",
+    "title": "Chiron and the Four Major Asteroids: The Healing & Feminine Matrix",
+    "unitType": "extended-archetypes",
+    "summary": "Exhaustive exploration of Chiron as the Wounded Healer and Metaphysical Chirurgeon General. Detailed analysis of the Great Goddess Asteroids: Ceres (Nurturance & Grief), Pallas Athena (Strategic Intelligence & Pattern Recognition), Vesta (Sacred Dedication & Focus), and Juno (Sacred Partnership & Relational Contracts).",
+    "epistemicStatus": "source-framework",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-gallagher-07",
+    "title": "The Twelve Signs as Theatrical Costumes: Quadruplicities & Expression",
+    "unitType": "archetypal-taxonomy",
+    "summary": "Gallagher tours all twelve zodiac signs from Aries through Pisces, treating each as an expressive costume that modifies the behavior of the actor wearing it. Incorporates Cardinal (Initiators), Fixed (Stabilizers), and Mutable (Adapters) dynamics into concrete interpersonal scenarios.",
+    "epistemicStatus": "source-taxonomy",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-gallagher-08",
+    "title": "The Twelve Houses: Life Arenas, Angular Power, and Empty Houses",
+    "unitType": "structural-spatial",
+    "summary": "A systemic walkthrough of the 12 astrological houses as distinct rooms or stages in life. Explains the special prominence of Angular houses (1, 4, 7, 10), Succedent houses (2, 5, 8, 11), and Cadent houses (3, 6, 9, 12), and resolves the common beginner misconception regarding empty houses.",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-gallagher-09",
+    "title": "Aspects as Theatrical Dialogue: Harmonic Geometry and Major Patterns",
+    "unitType": "aspect-geometry",
+    "summary": "Aspects as live scripts between planetary actors. Covers Conjunctions (Fusion), Sextiles (Invitations), Squares (Creative Friction), Trines (Effortless Flow), Oppositions (Tension Across the Table), and Quincunxes (Adjustments). Analyzes major geometric configurations: Grand Trines, T-Squares, Grand Crosses, and Yods (Fingers of Fate).",
+    "epistemicStatus": "source-framework",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-gallagher-10",
+    "title": "The Synthesis Method: Putting the Complete Chart Together",
+    "unitType": "synthesis-protocol",
+    "summary": "Gallagher’s step-by-step protocol for synthesizing an entire chart without getting lost in contradictory details. How to identify the dominant element, the chart ruler, aspect networks, and prioritize the primary psychological narrative of the native.",
+    "epistemicStatus": "source-operational",
+    "materiality": "critical",
+    "order": 10
+  }
+]

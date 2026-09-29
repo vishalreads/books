@@ -15,8 +15,8 @@ if (!fs.existsSync(crossBookDir)) {
 const curriculumData = {
   curriculum_id: "astrology-unified-master-v1",
   title: "The Master Astrological Curriculum & Epistemological Rosetta Stone",
-  subtitle: "A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 24 Canonical Traditions",
-  total_books: 24,
+  subtitle: "A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 30 Canonical Traditions",
+  total_books: 30,
   books_roster: [
     {
       id: "valens",
@@ -233,6 +233,60 @@ const curriculumData = {
       paradigm: "Thelemic Hermetic & Qabalistic",
       slug: "complete-astrological-writings-crowley",
       key_contributions: "Liber 536 (Maslath = 536), Astrology as weapon of the True Will (Thelema), Triple Trinity of Planets on Tree of Life, 36 Decanates mapped to Tarot Minor Arcana, Revaluation of Mars/Saturn, expose 'How Horoscopes Are Faked'."
+    },
+    {
+      id: "march_mcevers",
+      title: "The Only Way to Learn Astrology, Vol. 2",
+      author: "Marion D. March & Joan McEvers",
+      year: "1981",
+      paradigm: "Rigorous Technical Mathematics & Predictive Interpretation",
+      slug: "only-way-to-learn-astrology-vol2-march",
+      key_contributions: "Manual spherical trigonometry (RAMC, Sidereal Time, Interpolation), 7 Jones Chart Patterns, Dispositor Trees & Mutual Reception Loops, Area Emphasis & Hemispheric Balance, Part of Fortune & Arabian Parts, Step-by-step chart interpretation protocol."
+    },
+    {
+      id: "forrest_skymates1",
+      title: "Skymates: Love, Sex, and Evolutionary Astrology",
+      author: "Steven Forrest & Jodie Forrest",
+      year: "1989 / 2002",
+      paradigm: "Evolutionary Synastry & Relational Reincarnation",
+      slug: "skymates-love-sex-forrest",
+      key_contributions: "Relational Synastry, Evolutionary Natal Premise, House Overlays (planets in partner's houses), Inter-chart Aspects, Synastric Lunar Nodes (karmic debt vs spiritual destiny), 5 Golden Rules of Synastry, Synastric Timing & Transits."
+    },
+    {
+      id: "karen",
+      title: "Astrology for Enlightenment",
+      author: "Michelle Karen",
+      year: "2008",
+      paradigm: "Shamanic Vibrational & Andean Cosmovision",
+      slug: "astrology-for-enlightenment-karen",
+      key_contributions: "Planetary Rulers of Days and Hours, High/Mediating/Low Octaves of the Twelve Signs, Andean Shamanic Philosophy of Ayni (Sacred Reciprocity), Three Worlds (Uku/Kay/Hanaq Pacha), Polarity Axis Transmutation, Shamanic Materia Medica (minerals, oils, teas, rites)."
+    },
+    {
+      id: "gallagher",
+      title: "Astrology for the Light Side of the Brain",
+      author: "Kim Rogers-Gallagher",
+      year: "1995",
+      paradigm: "Right-Brain Theatrical & Archetypal Synthesis",
+      slug: "astrology-light-side-brain-gallagher",
+      key_contributions: "Theatrical Chart Metaphor (Planets = Actors, Signs = Costumes, Houses = Stages, Aspects = Scripts), Elemental Mood Groups, Chiron & The Four Major Goddess Asteroids (Ceres, Pallas Athena, Vesta, Juno), Planetary Stations & Retrograde Demystification, Synthesis Protocol."
+    },
+    {
+      id: "casey",
+      title: "Making the Gods Work for You",
+      author: "Caroline W. Casey",
+      year: "1998",
+      paradigm: "Visionary Activist & Animistic Hermeticism",
+      slug: "making-the-gods-work-for-you-casey",
+      key_contributions: "Astrological Grammar & Living Archetypal Deities, 'Working for the God vs Being Worked by the God', Saturn as the Sovereign Inner Author, Pluto as Underworld Metamorphosis & Extremophile resilience, Neptune Altars & Reverie, Uranus as Sacred Clown (Heyokha), Jupiterian Retroactive Redemption."
+    },
+    {
+      id: "freed",
+      title: "Use Your Planets Wisely",
+      author: "Dr. Jennifer Freed",
+      year: "2020",
+      paradigm: "Depth Psychological & Somatic Family Systems",
+      slug: "use-your-planets-wisely-freed",
+      key_contributions: "Three Evolutionary Octaves (Primitive, Adaptive, Evolving) for all 11 placements, Somatic Elemental Metaphors (Sun = Taproot, Moon = Tides, Ascendant = Window, Mercury = Wind, Venus = Garden, Mars = Bonfire, Jupiter = Lake, Saturn = Mountain), Family-of-Origin Roles, Non-violent Astrological Communication."
     }
   ],
   stages: [
@@ -397,8 +451,8 @@ const curriculumData = {
     }
   ],
   fifty_book_roadmap: [
-    { cohort: "Cohort 1 & 2: Completed Production Masters (24 Master Codices Live)", count: 24, books: "Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja, Forrest (Neptune), Forrest (Skymates II), Seymour, Bell, Adams, Crowley." },
-    { cohort: "Cohort 3: Classical Hellenistic & Arabic/Medieval Texts", count: 8, books: "Ptolemy (Tetrabiblos), Dorotheus of Sidon (Carmen Astrologicum), Abu Ma'shar (Great Introduction), Al-Biruni, Guido Bonatti (Liber Astronomiae), William Lilly (Christian Astrology), Morin de Villefranche, Firmicus Maternus (Mathesis)." },
+    { cohort: "Cohort 1, 2 & 3: Completed Production Masters (30 Master Codices Live)", count: 30, books: "Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja, Forrest (Neptune), Forrest (Skymates II), Seymour, Bell, Adams, Crowley, March & McEvers, Forrest (Skymates I), Karen, Rogers-Gallagher, Casey, Freed." },
+    { cohort: "Cohort 4: Classical Hellenistic & Arabic/Medieval Texts", count: 8, books: "Ptolemy (Tetrabiblos), Dorotheus of Sidon (Carmen Astrologicum), Abu Ma'shar (Great Introduction), Al-Biruni, Guido Bonatti (Liber Astronomiae), William Lilly (Christian Astrology), Morin de Villefranche, Firmicus Maternus (Mathesis)." },
     { cohort: "Cohort 4: Foundational Classical & Modern Vedic Classics", count: 8, books: "Brihat Parashara Hora Shastra, Jaimini Upadesha Sutras, Saravali, Phaladeepika, Uttara Kalamrita, K.N. Rao (Timing Events with Dashas & Transits), Sanjay Rath (Crux of Vedic Astrology), David Frawley (Ayurvedic Astrology)." },
     { cohort: "Cohort 5: Modern Psychological, Evolutionary & Uranian Astrological Masters", count: 8, books: "Liz Greene (Saturn: A New Look at an Old Devil), Liz Greene (The Astrology of Fate), Howard Sasportas (The Twelve Houses), Stephen Arroyo (Astrology, Psychology, and the Four Elements), Robert Hand (Planets in Transit), Jeffrey Wolf Green (Pluto: Evolutionary Journey of the Soul), Reinhold Ebertin (Combination of Stellar Influences), Demetra George (Asteroid Goddesses)." },
     { cohort: "Cohort 6: Specialized Mundane, Esoteric, Medical & Financial Astrology", count: 8, books: "Nicholas Campion (Mundane Astrology), Sepharial (Silver Key / Astrological Keys), W.D. Gann (Tunnel Thru the Air / Financial Cycles), H.S. Green (Medical Astrology), Charles Carter (The Astrological Aspects), Alice Bailey (Esoteric Astrology), Manly P. Hall (Astrological Keywords), Noel Tyl (Synthesis & Counseling in Astrology)." }
@@ -709,10 +763,10 @@ const html = `<!DOCTYPE html>
           <span class="badge" style="background:#991b1b; color:#fff;">Grand Unified Synthesis</span>
         </div>
         <h1 class="book-title">The Master Astrological Curriculum</h1>
-        <p class="book-subtitle">A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 24 Foundational Traditions</p>
+        <p class="book-subtitle">A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 30 Foundational Traditions</p>
 
         <div class="reader-metadata-bar">
-          <span><strong>Corpus:</strong> 24 Reconstructed Codices</span>
+          <span><strong>Corpus:</strong> 30 Reconstructed Codices</span>
           <span><strong>Coverage:</strong> Hellenistic · Vedic · Humanistic · Predictive · Shamanic · Psychiatric · Evolutionary · Biophysical</span>
           <span><strong>Objective:</strong> Universal Operational Fluency & Diagnostic Synthesis</span>
         </div>
@@ -721,7 +775,7 @@ const html = `<!DOCTYPE html>
           <button class="tab-button active" data-tab="syllabus">5-Stage Syllabus</button>
           <button class="tab-button" data-tab="rosetta">Epistemological Rosetta Stone</button>
           <button class="tab-button" data-tab="protocol">6-Step Clinical Protocol</button>
-          <button class="tab-button" data-tab="roster">24-Book Corpus</button>
+          <button class="tab-button" data-tab="roster">30-Book Corpus</button>
           <button class="tab-button" data-tab="roadmap">50-Book Trajectory</button>
         </nav>
       </div>
@@ -808,11 +862,11 @@ const html = `<!DOCTYPE html>
         </article>
       </section>
 
-      <!-- 24-BOOK ROSTER -->
+      <!-- 30-BOOK ROSTER -->
       <section id="view-roster" class="tab-content">
         <article class="reader-prose">
           <div class="editorial-preamble">
-            <h2>The 24 Reconstructed Masterworks</h2>
+            <h2>The 30 Reconstructed Masterworks</h2>
             <p>Direct access to each fully reconstructed BKRS v2.0 Master Codex.</p>
           </div>
 
@@ -838,7 +892,7 @@ const html = `<!DOCTYPE html>
         <article class="reader-prose">
           <div class="editorial-preamble">
             <h2>The 50-Book Master Scaling Trajectory</h2>
-            <p>Strategic blueprint to expand our 24-volume foundation into the world's most exhaustive 50-volume astrological curriculum across thematic cohorts.</p>
+            <p>Strategic blueprint to expand our 30-volume foundation into the world's most exhaustive 50-volume astrological curriculum across thematic cohorts.</p>
           </div>
 
           ${curriculumData.fifty_book_roadmap.map(rd => `
@@ -854,7 +908,7 @@ const html = `<!DOCTYPE html>
     <footer class="reader-footer">
       <div class="reader-footer-inner">
         <p>Book Knowledge Reconstruction System (BKRS v2.0) • Intellectualist Knowledge Repository</p>
-        <p>Canonical Synthesis: Grand Unified Astrological Master Curriculum across 24 Masterworks.</p>
+        <p>Canonical Synthesis: Grand Unified Astrological Master Curriculum across 30 Masterworks.</p>
       </div>
     </footer>
   </div>

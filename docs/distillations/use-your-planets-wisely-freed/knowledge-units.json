@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-freed-01",
+    "title": "The New Paradigm: Psychological Astrology & Evolutionary Triads",
+    "unitType": "paradigm-foundation",
+    "summary": "Dr. Jennifer Freed establishes a modern psychological paradigm integrating family systems therapy, neuroscience, and mindfulness with astrology. Overturns fatalism by introducing the Three Evolutionary Levels: Primitive (reactive/unconscious), Adaptive (functional/conventional), and Evolving (conscious/service-oriented).",
+    "epistemicStatus": "source-theoretical",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-freed-02",
+    "title": "The Sun (The Taproot): Ego Vitality & Authentic Self-Actualization",
+    "unitType": "archetypal-somatic",
+    "summary": "The Sun as the central taproot organizing the multifaceted personality. Maps the journey from Primitive Sun (narcissistic vanity or paralyzed self-doubt) through Adaptive Sun (reliable social competence) to Evolving Sun (radiant, generous creative sovereignty that empowers others).",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-freed-03",
+    "title": "The Moon (The Tides): Emotional Regulation & Family Conditioning",
+    "unitType": "depth-somatic",
+    "summary": "The Moon as the ocean tides of emotional longing and subconscious defense mechanisms. Unpacks family-of-origin conditioning and details how to shift from Primitive Moon (mood swings, codependent manipulation) to Evolving Moon (somatic emotional intelligence, secure self-soothing, and fierce empathy).",
+    "epistemicStatus": "source-framework",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-freed-04",
+    "title": "The Ascendant (The Window): Reframing the Mask into a Perceptive Lens",
+    "unitType": "relational-identity",
+    "summary": "Radically reframes the traditional \"mask\" into an architectural \"window\" through which we view reality and through which others perceive us. Traces the Ascendant’s origins in family system roles and provides diagnostics for cleaning the window to achieve transparent authenticity.",
+    "epistemicStatus": "source-theoretical",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-freed-05",
+    "title": "Mercury (The Wind): Cognitive Habits, Thought Loops & Mindful Speech",
+    "unitType": "cognitive-linguistic",
+    "summary": "Mercury as the intellectual wind that shapes our mental climate. Explores the neurobiology of thought loops, active listening, and the gifts of Mercury Retrograde. Traces the evolution from Primitive Mercury (destructive gossip, deceit, anxiety) to Evolving Mercury (compassionate, precise, illuminating truth).",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-freed-06",
+    "title": "Venus & Mars: The Garden & The Bonfire (Relational Harmony & Assertion)",
+    "unitType": "relational-polarity",
+    "summary": "Venus as the cultivated garden of self-worth and relational intimacy; Mars as the focused bonfire of healthy will, boundaries, and sacred anger. Details how to integrate relational vulnerability with firm personal boundaries, avoiding the toxic traps of appeasement or violent explosion.",
+    "epistemicStatus": "source-dialectic",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-freed-07",
+    "title": "Jupiter & Saturn: The Mountain Lake & The Mountain (Expansion & Structure)",
+    "unitType": "developmental-social",
+    "summary": "Jupiter as the expansive mountain lake of faith, wisdom, and optimism; Saturn as the enduring granite mountain of discipline, integrity, and time. Explores balancing ambitious expansion with rigorous structural scaffolding, transforming depressive dread into elder authority.",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-freed-08",
+    "title": "The Transpersonal Transformers: Uranus, Neptune & Pluto",
+    "unitType": "transpersonal-alchemy",
+    "summary": "The Lightning (Uranus: radical authenticity), The Mist (Neptune: spiritual mysticism & creative surrender), and The Magma (Pluto: shadow excavation & primal regeneration). Provides psychological safeguards against transpersonal traps: erratic rebellion, addictive escapism, and manipulative paranoia.",
+    "epistemicStatus": "source-framework",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-freed-09",
+    "title": "The Diagnostic Behavioral Matrices: Auditing Your Evolutionary Octave",
+    "unitType": "diagnostic-matrix",
+    "summary": "An exhaustive psychological diagnostic framework providing clear behavioral checklists, somatic markers, and self-assessment criteria across all eleven planetary placements to identify exactly where an individual is operating at Primitive, Adaptive, or Evolving octaves.",
+    "epistemicStatus": "source-diagnostic",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-freed-10",
+    "title": "The Clinical Transformation Protocol: Somatic Exercises & Daily Praxis",
+    "unitType": "therapeutic-praxis",
+    "summary": "Dr. Freed’s actionable therapeutic toolkit for elevating psychological functioning: somatic breathwork, cognitive reframing, communicative non-violent dialogue, relational contracts, and clinical case studies demonstrating sustained life transformations.",
+    "epistemicStatus": "source-operational",
+    "materiality": "critical",
+    "order": 10
+  }
+]

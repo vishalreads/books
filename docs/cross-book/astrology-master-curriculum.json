@@ -1,8 +1,8 @@
 {
   "curriculum_id": "astrology-unified-master-v1",
   "title": "The Master Astrological Curriculum & Epistemological Rosetta Stone",
-  "subtitle": "A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 24 Canonical Traditions",
-  "total_books": 24,
+  "subtitle": "A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 30 Canonical Traditions",
+  "total_books": 30,
   "books_roster": [
     {
       "id": "valens",
@@ -219,6 +219,60 @@
       "paradigm": "Thelemic Hermetic & Qabalistic",
       "slug": "complete-astrological-writings-crowley",
       "key_contributions": "Liber 536 (Maslath = 536), Astrology as weapon of the True Will (Thelema), Triple Trinity of Planets on Tree of Life, 36 Decanates mapped to Tarot Minor Arcana, Revaluation of Mars/Saturn, expose 'How Horoscopes Are Faked'."
+    },
+    {
+      "id": "march_mcevers",
+      "title": "The Only Way to Learn Astrology, Vol. 2",
+      "author": "Marion D. March & Joan McEvers",
+      "year": "1981",
+      "paradigm": "Rigorous Technical Mathematics & Predictive Interpretation",
+      "slug": "only-way-to-learn-astrology-vol2-march",
+      "key_contributions": "Manual spherical trigonometry (RAMC, Sidereal Time, Interpolation), 7 Jones Chart Patterns, Dispositor Trees & Mutual Reception Loops, Area Emphasis & Hemispheric Balance, Part of Fortune & Arabian Parts, Step-by-step chart interpretation protocol."
+    },
+    {
+      "id": "forrest_skymates1",
+      "title": "Skymates: Love, Sex, and Evolutionary Astrology",
+      "author": "Steven Forrest & Jodie Forrest",
+      "year": "1989 / 2002",
+      "paradigm": "Evolutionary Synastry & Relational Reincarnation",
+      "slug": "skymates-love-sex-forrest",
+      "key_contributions": "Relational Synastry, Evolutionary Natal Premise, House Overlays (planets in partner's houses), Inter-chart Aspects, Synastric Lunar Nodes (karmic debt vs spiritual destiny), 5 Golden Rules of Synastry, Synastric Timing & Transits."
+    },
+    {
+      "id": "karen",
+      "title": "Astrology for Enlightenment",
+      "author": "Michelle Karen",
+      "year": "2008",
+      "paradigm": "Shamanic Vibrational & Andean Cosmovision",
+      "slug": "astrology-for-enlightenment-karen",
+      "key_contributions": "Planetary Rulers of Days and Hours, High/Mediating/Low Octaves of the Twelve Signs, Andean Shamanic Philosophy of Ayni (Sacred Reciprocity), Three Worlds (Uku/Kay/Hanaq Pacha), Polarity Axis Transmutation, Shamanic Materia Medica (minerals, oils, teas, rites)."
+    },
+    {
+      "id": "gallagher",
+      "title": "Astrology for the Light Side of the Brain",
+      "author": "Kim Rogers-Gallagher",
+      "year": "1995",
+      "paradigm": "Right-Brain Theatrical & Archetypal Synthesis",
+      "slug": "astrology-light-side-brain-gallagher",
+      "key_contributions": "Theatrical Chart Metaphor (Planets = Actors, Signs = Costumes, Houses = Stages, Aspects = Scripts), Elemental Mood Groups, Chiron & The Four Major Goddess Asteroids (Ceres, Pallas Athena, Vesta, Juno), Planetary Stations & Retrograde Demystification, Synthesis Protocol."
+    },
+    {
+      "id": "casey",
+      "title": "Making the Gods Work for You",
+      "author": "Caroline W. Casey",
+      "year": "1998",
+      "paradigm": "Visionary Activist & Animistic Hermeticism",
+      "slug": "making-the-gods-work-for-you-casey",
+      "key_contributions": "Astrological Grammar & Living Archetypal Deities, 'Working for the God vs Being Worked by the God', Saturn as the Sovereign Inner Author, Pluto as Underworld Metamorphosis & Extremophile resilience, Neptune Altars & Reverie, Uranus as Sacred Clown (Heyokha), Jupiterian Retroactive Redemption."
+    },
+    {
+      "id": "freed",
+      "title": "Use Your Planets Wisely",
+      "author": "Dr. Jennifer Freed",
+      "year": "2020",
+      "paradigm": "Depth Psychological & Somatic Family Systems",
+      "slug": "use-your-planets-wisely-freed",
+      "key_contributions": "Three Evolutionary Octaves (Primitive, Adaptive, Evolving) for all 11 placements, Somatic Elemental Metaphors (Sun = Taproot, Moon = Tides, Ascendant = Window, Mercury = Wind, Venus = Garden, Mars = Bonfire, Jupiter = Lake, Saturn = Mountain), Family-of-Origin Roles, Non-violent Astrological Communication."
     }
   ],
   "stages": [
@@ -413,12 +467,12 @@
   ],
   "fifty_book_roadmap": [
     {
-      "cohort": "Cohort 1 & 2: Completed Production Masters (24 Master Codices Live)",
-      "count": 24,
-      "books": "Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja, Forrest (Neptune), Forrest (Skymates II), Seymour, Bell, Adams, Crowley."
+      "cohort": "Cohort 1, 2 & 3: Completed Production Masters (30 Master Codices Live)",
+      "count": 30,
+      "books": "Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja, Forrest (Neptune), Forrest (Skymates II), Seymour, Bell, Adams, Crowley, March & McEvers, Forrest (Skymates I), Karen, Rogers-Gallagher, Casey, Freed."
     },
     {
-      "cohort": "Cohort 3: Classical Hellenistic & Arabic/Medieval Texts",
+      "cohort": "Cohort 4: Classical Hellenistic & Arabic/Medieval Texts",
       "count": 8,
       "books": "Ptolemy (Tetrabiblos), Dorotheus of Sidon (Carmen Astrologicum), Abu Ma'shar (Great Introduction), Al-Biruni, Guido Bonatti (Liber Astronomiae), William Lilly (Christian Astrology), Morin de Villefranche, Firmicus Maternus (Mathesis)."
     },

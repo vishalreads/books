@@ -1,0 +1,155 @@
+[
+  {
+    "id": "MARCH-U01",
+    "title": "The Rigorous Mathematics of Astrological Chart Calculation",
+    "coreConcept": "A natal horoscope is a precise two-dimensional astronomical projection requiring step-by-step conversion of clock time to Greenwich Mean Time (GMT), Sidereal Time calculation, and spherical trigonometric house cusp derivation.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "1-35",
+    "tags": [
+      "Mathematics",
+      "Chart Erection",
+      "Greenwich Mean Time",
+      "Local Mean Time",
+      "Sidereal Time",
+      "RAMC"
+    ]
+  },
+  {
+    "id": "MARCH-U02",
+    "title": "Diurnal Logarithms & Planetary Longitude Interpolation",
+    "coreConcept": "Because planets move at non-uniform speeds across the ecliptic, accurate planetary placement requires using 24-hour proportional diurnal logarithms to interpolate exact degrees and minutes from midnight or noon ephemerides.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "36-60",
+    "tags": [
+      "Diurnal Logarithms",
+      "Ephemeris",
+      "Interpolation",
+      "Planetary Motion",
+      "Mathematical Rigor"
+    ]
+  },
+  {
+    "id": "MARCH-U03",
+    "title": "The Marc Edmund Jones Seven Chart Shapes",
+    "coreConcept": "The macroscopic distribution of all ten planets across the 360-degree wheel creates seven distinct psychological gestalt shapes (Splash, Bundle, Bowl, Locomotive, Bucket, See-saw, Splay) that define basic life orientation.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "61-80",
+    "tags": [
+      "Chart Shapes",
+      "Marc Edmund Jones",
+      "Splash",
+      "Bundle",
+      "Locomotive",
+      "Bucket",
+      "See-saw"
+    ]
+  },
+  {
+    "id": "MARCH-U04",
+    "title": "Hemisphere & Quadrant Weighting Dynamics",
+    "coreConcept": "Planetary distribution across the four quadrants and two hemispheres (Northern/Subjective vs. Southern/Objective; Eastern/Self-Determined vs. Western/Other-Determined) reveals the fundamental balance of psychological agency.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "81-95",
+    "tags": [
+      "Hemispheres",
+      "Quadrants",
+      "Eastern",
+      "Western",
+      "Northern",
+      "Southern",
+      "Psychological Balance"
+    ]
+  },
+  {
+    "id": "MARCH-U05",
+    "title": "The House Rulership Network & Dispositor Trees",
+    "coreConcept": "The lord of a house cusp carries the agenda of that house into the house where the lord physically resides, weaving an interconnected circuit of psychic motivation mapped through Final Dispositor trees.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "96-115",
+    "tags": [
+      "House Rulership",
+      "Lords",
+      "Dispositor Trees",
+      "Final Dispositor",
+      "Mutual Reception",
+      "Energy Loops"
+    ]
+  },
+  {
+    "id": "MARCH-U06",
+    "title": "Mutual Reception & Planetary Circuits",
+    "coreConcept": "When two planets occupy each other's signs of rulership, they establish an open, bilateral feedback loop that allows instantaneous mutual cooperation and exit routes from difficult aspect tensions.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "116-125",
+    "tags": [
+      "Mutual Reception",
+      "Planetary Circuits",
+      "Alchemical Exchange",
+      "Aspect Relievers"
+    ]
+  },
+  {
+    "id": "MARCH-U07",
+    "title": "Retrograde Motion & The Internalized Reflex",
+    "coreConcept": "Retrograde planets do not lose power, but internalize their energy, requiring the individual to process experiences through personal subjective standards and delayed external manifestation.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "IMPORTANT",
+    "pageRange": "126-135",
+    "tags": [
+      "Retrograde",
+      "Internalization",
+      "Subjective Processing",
+      "Delayed Manifestation"
+    ]
+  },
+  {
+    "id": "MARCH-U08",
+    "title": "Intercepted Signs & Houses: The Locked Rooms of the Psyche",
+    "coreConcept": "When high geographic latitudes cause a sign to be completely contained within a house without holding a cusp, its planetary ruler is intercepted, creating latent qualities requiring conscious effort to unlock.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "136-142",
+    "tags": [
+      "Intercepted Signs",
+      "Intercepted Houses",
+      "Duplicated Cusps",
+      "Latent Talents",
+      "Locked Rooms"
+    ]
+  },
+  {
+    "id": "MARCH-U09",
+    "title": "Major & Minor Aspect Orbs and Geometry",
+    "coreConcept": "A rigorous aspectarian must enforce strict mathematical orbs (conjunction, opposition, square, trine, sextile, quincunx, semi-square, sesquiquadrate) to differentiate major psychological drives from background static.",
+    "epistemicStatus": "SOURCE FACT",
+    "materiality": "CRITICAL",
+    "pageRange": "143-147",
+    "tags": [
+      "Aspect Geometry",
+      "Orbs",
+      "Major Aspects",
+      "Minor Aspects",
+      "Aspectarian"
+    ]
+  },
+  {
+    "id": "MARCH-U10",
+    "title": "The Step-by-Step Clinical Delineation Protocol",
+    "coreConcept": "Master chart interpretation synthesizes chart shape, hemisphere emphasis, element/mode weighting, Sun/Moon/Ascendant trinity, house rulers, and aspect configurations into an integrated life portrait.",
+    "epistemicStatus": "SOURCE ARGUMENT",
+    "materiality": "CRITICAL",
+    "pageRange": "148-151",
+    "tags": [
+      "Synthesis Protocol",
+      "Clinical Assembly",
+      "Gestalt Method",
+      "Integrated Portrait"
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 # The Master Astrological Curriculum & Epistemological Rosetta Stone
-**Subtitle:** A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 24 Canonical Traditions  
+**Subtitle:** A Systematic 5-Stage Path from Beginner to Diagnostic Master Across 30 Canonical Traditions  
 **Standard:** BKRS v2.0 Production Master Synthesis  
-**Scope:** 24 Reconstructed Works | 5 Learning Stages | Epistemological Rosetta Stone | Unified 6-Step Clinical Protocol | 50-Book Scaling Trajectory
+**Scope:** 30 Reconstructed Works | 5 Learning Stages | Epistemological Rosetta Stone | Unified 6-Step Clinical Protocol | 50-Book Scaling Trajectory
 
 ---
 
@@ -14,7 +14,7 @@ Astrology is often approached as a fragmented collection of competing, contradic
 - *Traditional 360° longitudinal aspects vs. modern three-dimensional declinational neuro-psychiatry?*
 - *Pure archetypal synchronicity vs. solar magnetohydrodynamic field entrainment?*
 
-When read one by one without a synthesized architectural map, these 24 books can produce profound cognitive overload. However, when reconstructed through the **Book Knowledge Reconstruction System (BKRS)**, these traditions reveal themselves not as contradictory dogmas, but as **complementary diagnostic dimensions of a single cosmic architecture**.
+When read one by one without a synthesized architectural map, these 30 books can produce profound cognitive overload. However, when reconstructed through the **Book Knowledge Reconstruction System (BKRS)**, these traditions reveal themselves not as contradictory dogmas, but as **complementary diagnostic dimensions of a single cosmic architecture**.
 
 This Master Curriculum provides:
 1. **A 5-Stage Progressive Learning Pathway** guiding a beginner from elementary geometry to advanced clinical mastery.
@@ -24,7 +24,7 @@ This Master Curriculum provides:
 
 ---
 
-## The 24 Reconstructed Masterworks by Paradigm
+## The 30 Reconstructed Masterworks by Paradigm
 
 | # | Masterwork | Author | Epoch | Primary Paradigm | Core Invariant Contribution |
 |:---:|:---|:---|:---:|:---|:---|
@@ -52,6 +52,12 @@ This Master Curriculum provides:
 | **22** | [Midlife Is Not a Crisis](../../distillations/midlife-is-not-a-crisis-bell/index.html) | Virginia Bell | 2017 | Chronological Developmental Evolutionary | Universal planetary developmental milestones: First Saturn Return (28-30), Midlife Gauntlet (Pluto square 36-38, Neptune square 40-42, Uranus opposition 40-44, Saturn opposition 43-45), Chiron Return (49-51, Youth of Old Age), Second Saturn Return (58-60, The New Elder), Uranus Return (84, The Great Homecoming). |
 | **23** | [Astrology: Your Place Among the Stars](../../distillations/your-place-among-the-stars-adams/index.html) | Evangeline Adams | 1930 | Synthetic Character Delineation & Legal Science | The Trinity of Being (Sun = Conscious Will, Moon = Subconscious Soul, Ascendant = Somatic Vessel), Mercury neural conduit, 1914 NYC legal trial precedent, Solar aspects to Uranus/Saturn/Jupiter, Character is Destiny. |
 | **24** | [The Complete Astrological Writings (Liber 536)](../../distillations/complete-astrological-writings-crowley/index.html) | Aleister Crowley | 1918 / 1974 | Thelemic Hermetic & Qabalistic | Liber 536 (Maslath = 536), Astrology as weapon of the True Will (Thelema), Triple Trinity of Planets on Tree of Life, 36 Decanates mapped to Tarot Minor Arcana, Revaluation of Mars/Saturn, expose 'How Horoscopes Are Faked'. |
+| **25** | [The Only Way to Learn Astrology, Vol. 2](../../distillations/only-way-to-learn-astrology-vol2-march/index.html) | Marion D. March & Joan McEvers | 1981 | Rigorous Technical Mathematics & Predictive Interpretation | Manual spherical trigonometry (RAMC, Sidereal Time, Interpolation), 7 Jones Chart Patterns, Dispositor Trees & Mutual Reception Loops, Area Emphasis & Hemispheric Balance, Part of Fortune & Arabian Parts, Step-by-step chart interpretation protocol. |
+| **26** | [Skymates: Love, Sex, and Evolutionary Astrology](../../distillations/skymates-love-sex-forrest/index.html) | Steven Forrest & Jodie Forrest | 1989 / 2002 | Evolutionary Synastry & Relational Reincarnation | Relational Synastry, Evolutionary Natal Premise, House Overlays (planets in partner's houses), Inter-chart Aspects, Synastric Lunar Nodes (karmic debt vs spiritual destiny), 5 Golden Rules of Synastry, Synastric Timing & Transits. |
+| **27** | [Astrology for Enlightenment](../../distillations/astrology-for-enlightenment-karen/index.html) | Michelle Karen | 2008 | Shamanic Vibrational & Andean Cosmovision | Planetary Rulers of Days and Hours, High/Mediating/Low Octaves of the Twelve Signs, Andean Shamanic Philosophy of Ayni (Sacred Reciprocity), Three Worlds (Uku/Kay/Hanaq Pacha), Polarity Axis Transmutation, Shamanic Materia Medica (minerals, oils, teas, rites). |
+| **28** | [Astrology for the Light Side of the Brain](../../distillations/astrology-light-side-brain-gallagher/index.html) | Kim Rogers-Gallagher | 1995 | Right-Brain Theatrical & Archetypal Synthesis | Theatrical Chart Metaphor (Planets = Actors, Signs = Costumes, Houses = Stages, Aspects = Scripts), Elemental Mood Groups, Chiron & The Four Major Goddess Asteroids (Ceres, Pallas Athena, Vesta, Juno), Planetary Stations & Retrograde Demystification, Synthesis Protocol. |
+| **29** | [Making the Gods Work for You](../../distillations/making-the-gods-work-for-you-casey/index.html) | Caroline W. Casey | 1998 | Visionary Activist & Animistic Hermeticism | Astrological Grammar & Living Archetypal Deities, 'Working for the God vs Being Worked by the God', Saturn as the Sovereign Inner Author, Pluto as Underworld Metamorphosis & Extremophile resilience, Neptune Altars & Reverie, Uranus as Sacred Clown (Heyokha), Jupiterian Retroactive Redemption. |
+| **30** | [Use Your Planets Wisely](../../distillations/use-your-planets-wisely-freed/index.html) | Dr. Jennifer Freed | 2020 | Depth Psychological & Somatic Family Systems | Three Evolutionary Octaves (Primitive, Adaptive, Evolving) for all 11 placements, Somatic Elemental Metaphors (Sun = Taproot, Moon = Tides, Ascendant = Window, Mercury = Wind, Venus = Garden, Mars = Bonfire, Jupiter = Lake, Saturn = Mountain), Family-of-Origin Roles, Non-violent Astrological Communication. |
 
 ---
 
@@ -203,10 +209,10 @@ Locate the client along Virginia Bell's developmental timeline (Saturn Return, M
 
 ## The 50-Book Scaling Trajectory
 
-### Cohort 1 & 2: Completed Production Masters (24 Master Codices Live) (24 Volumes)
-Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja, Forrest (Neptune), Forrest (Skymates II), Seymour, Bell, Adams, Crowley.
+### Cohort 1, 2 & 3: Completed Production Masters (30 Master Codices Live) (30 Volumes)
+Valens, Raman, Goel, Braha, Raaj, Rudhyar, Meister, Balfour, Giamario, Teal, Riske, Gibson, Tarnas, Greene, Pelletier, Marks (Art), Marks (12th), Taneja, Forrest (Neptune), Forrest (Skymates II), Seymour, Bell, Adams, Crowley, March & McEvers, Forrest (Skymates I), Karen, Rogers-Gallagher, Casey, Freed.
 
-### Cohort 3: Classical Hellenistic & Arabic/Medieval Texts (8 Volumes)
+### Cohort 4: Classical Hellenistic & Arabic/Medieval Texts (8 Volumes)
 Ptolemy (Tetrabiblos), Dorotheus of Sidon (Carmen Astrologicum), Abu Ma'shar (Great Introduction), Al-Biruni, Guido Bonatti (Liber Astronomiae), William Lilly (Christian Astrology), Morin de Villefranche, Firmicus Maternus (Mathesis).
 
 ### Cohort 4: Foundational Classical & Modern Vedic Classics (8 Volumes)
