@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thelma Balfour: Black Love Signs — BKRS Master Reader</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --panel-bg: #1f2937;
+      --accent: #ec4899;
+      --accent-hover: #f43f5e;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border: #374151;
+      --gold: #fbbf24;
+      --font-serif: 'Merriweather', Georgia, serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .header-title h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .header-title p {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .nav-tabs {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .tab-btn {
+      background: var(--panel-bg);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+    .tab-btn:hover {
+      background: var(--border);
+      color: #fff;
+    }
+    .tab-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      height: calc(100vh - 85px);
+    }
+    .sidebar {
+      width: 320px;
+      background: var(--card-bg);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      padding: 1rem;
+      flex-shrink: 0;
+    }
+    .sidebar-header {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    .unit-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .unit-item {
+      padding: 0.75rem;
+      border-radius: 6px;
+      background: var(--panel-bg);
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+    .unit-item:hover {
+      border-color: var(--accent);
+      transform: translateX(2px);
+    }
+    .unit-item.active {
+      background: #374151;
+      border-color: var(--accent);
+    }
+    .unit-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+    .unit-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 0.2rem;
+      line-height: 1.3;
+    }
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 2.5rem 3.5rem;
+      background: var(--bg);
+    }
+    .view-pane {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .view-pane.active {
+      display: block;
+    }
+    .unit-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-right: 0.5rem;
+    }
+    .badge-critical { background: #991b1b; color: #fecaca; }
+    .badge-epistemic { background: #1e3a8a; color: #bfdbfe; }
+    .unit-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0.75rem 0 0.5rem 0;
+      color: #fff;
+    }
+    .unit-scope {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+    .analysis-section {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #d1d5db;
+      margin-bottom: 2rem;
+    }
+    .analysis-section p {
+      margin-bottom: 1.25rem;
+    }
+    .quote-box {
+      border-left: 4px solid var(--accent);
+      background: var(--card-bg);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #e5e7eb;
+    }
+    .heuristic-card {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+    }
+    .heuristic-card h4 {
+      color: var(--gold);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .heuristic-card p {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #f3f4f6;
+    }
+    .motifs-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.5rem 0;
+    }
+    .motif-tag {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      color: #e5e7eb;
+    }
+    /* Map & Heuristics Views */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .card-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-title">
+      <h1>Black Love Signs</h1>
+      <p>Thelma Balfour — An Astrological Guide to Passion, Romance & Relationships (BKRS Master Reader)</p>
+    </div>
+    <div class="nav-tabs">
+      <button class="tab-btn active" onclick="switchView('reading')">Reading View</button>
+      <button class="tab-btn" onclick="switchView('map')">Knowledge Map</button>
+      <button class="tab-btn" onclick="switchView('matrix')">Compatibility & Matrix View</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">Units & Zodiac Archetypes</div>
+      <ul class="unit-list" id="unitList"></ul>
+    </aside>
+
+    <main class="content-area">
+      <!-- Reading View -->
+      <section id="readingView" class="view-pane active">
+        <div id="unitContent"></div>
+      </section>
+
+      <!-- Knowledge Map View -->
+      <section id="mapView" class="view-pane">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #fff;">Zodiac Architecture & Elemental Mapping</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Systematic organization of Balfour's relationship psychology across the four elements and modalities.</p>
+        <div class="grid-container" id="mapGrid"></div>
+      </section>
+
+      <!-- Matrix / Heuristics View -->
+      <section id="matrixView" class="view-pane">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #fff;">144-Pair Relational & Erotic Heuristics</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Diagnostic operational rules for seduction, conflict resolution, and sensual fulfillment across all signs.</p>
+        <div class="grid-container" id="matrixGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    let unitsData = [];
+    let currentUnitIndex = 0;
+
+    async function init() {
+      try {
+        const res = await fetch('knowledge-units.json');
+        unitsData = await res.json();
+        renderSidebar();
+        renderUnit(0);
+        renderMap();
+        renderMatrix();
+      } catch (err) {
+        console.error('Failed to load knowledge units:', err);
+      }
+    }
+
+    function renderSidebar() {
+      const list = document.getElementById('unitList');
+      list.innerHTML = unitsData.map((u, idx) => `
+        <li class="unit-item ${idx === 0 ? 'active' : ''}" onclick="selectUnit(${idx})">
+          <div class="unit-num">Unit ${u.unit_number}</div>
+          <div class="unit-name">${u.title}</div>
+        </li>
+      `).join('');
+    }
+
+    function selectUnit(idx) {
+      currentUnitIndex = idx;
+      document.querySelectorAll('.unit-item').forEach((el, i) => {
+        el.classList.toggle('active', i === idx);
+      });
+      renderUnit(idx);
+      switchView('reading');
+    }
+
+    function renderUnit(idx) {
+      const u = unitsData[idx];
+      const target = document.getElementById('unitContent');
+      target.innerHTML = `
+        <div class="unit-header">
+          <div>
+            <span class="badge badge-critical">${u.materiality}</span>
+            <span class="badge badge-epistemic">${u.epistemic_status}</span>
+          </div>
+          <h2 class="unit-title">${u.title}</h2>
+          <div class="unit-scope">${u.scope}</div>
+        </div>
+
+        <div class="analysis-section">
+          ${u.textual_analysis.map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('')}
+        </div>
+
+        <div class="quote-box">
+          <p>"${u.verbatim_quote}"</p>
+        </div>
+
+        <div class="heuristic-card">
+          <h4>Operational Love Heuristic</h4>
+          <p>${u.operational_heuristic}</p>
+        </div>
+
+        <div class="motifs-box">
+          ${u.key_motifs.map(m => `<span class="motif-tag">${m}</span>`).join('')}
+        </div>
+      `;
+      document.querySelector('.content-area').scrollTop = 0;
+    }
+
+    function renderMap() {
+      const target = document.getElementById('mapGrid');
+      target.innerHTML = unitsData.map(u => `
+        <div class="card" onclick="selectUnit(${u.unit_number - 1})" style="cursor: pointer;">
+          <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; margin-bottom: 0.25rem;">UNIT ${u.unit_number}</div>
+          <div class="card-title">${u.title}</div>
+          <div class="card-text">${u.core_theme}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderMatrix() {
+      const target = document.getElementById('matrixGrid');
+      target.innerHTML = unitsData.map(u => `
+        <div class="card">
+          <div class="card-title" style="color: var(--gold);">${u.title.split(':')[0]}</div>
+          <div class="card-text" style="color: #e5e7eb; font-weight: 500; margin-bottom: 0.75rem;">${u.operational_heuristic}</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;">Status: ${u.epistemic_status}</div>
+        </div>
+      `).join('');
+    }
+
+    function switchView(view) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.view-pane').forEach(p => p.classList.remove('active'));
+
+      if (view === 'reading') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('readingView').classList.add('active');
+      } else if (view === 'map') {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('mapView').classList.add('active');
+      } else if (view === 'matrix') {
+        document.querySelectorAll('.tab-btn')[2].classList.add('active');
+        document.getElementById('matrixView').classList.add('active');
+      }
+    }
+
+    window.onload = init;
+  </script>
+  <script src="../../assets/js/reader-controls.js"></script>
+</body>
+</html>
