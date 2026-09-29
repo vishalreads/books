@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accurate Predictive Methodology - Master Codex | Intellectualist</title>
+  <link rel="stylesheet" href="../../css/reader-shell.css">
+  <style>
+    .formula-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-family: var(--font-mono, monospace);
+      font-weight: 700;
+      font-size: 0.85rem;
+      background: var(--bg-tertiary, #eae6df);
+      color: var(--text-primary, #2b2b2b);
+      border: 1px solid var(--border-color, #dcd8d0);
+      margin: 0.2rem 0.2rem 0.2rem 0;
+    }
+    .badge-positive {
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-color: #c8e6c9;
+    }
+    .badge-negative {
+      background: #ffebee;
+      color: #c62828;
+      border-color: #ffcdd2;
+    }
+    .badge-neutral {
+      background: #e3f2fd;
+      color: #1565c0;
+      border-color: #bbdefb;
+    }
+    .rule-box {
+      border-left: 4px solid var(--accent, #b35c00);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      background: var(--bg-secondary, #f7f5f0);
+      border-radius: 0 8px 8px 0;
+    }
+    .rule-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent, #b35c00);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color, #dcd8d0);
+    }
+    th {
+      background: var(--bg-tertiary, #eae6df);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="reader-mode" data-theme="cream">
+  <div class="reader-shell">
+    <header class="reader-header">
+      <div class="reader-header-left">
+        <a href="../../index.html" class="back-link">&larr; Back to Library</a>
+        <div class="header-divider"></div>
+        <div class="header-title-group">
+          <h1 class="header-book-title">Accurate Predictive Methodology</h1>
+          <span class="header-book-author">Umang Taneja (Nadi / KP System)</span>
+        </div>
+      </div>
+      <div class="reader-header-right">
+        <div class="reading-stats">
+          <span id="reading-time">30 min read</span>
+          <span class="stats-separator">&bull;</span>
+          <span id="unit-count">10 Knowledge Units</span>
+        </div>
+        <div class="header-controls">
+          <button id="theme-toggle" class="control-btn" title="Toggle Theme (Cream / Night / Pure White)">Theme</button>
+          <button id="font-size-down" class="control-btn" title="Decrease Font Size">A-</button>
+          <button id="font-size-up" class="control-btn" title="Increase Font Size">A+</button>
+          <button id="toggle-view" class="control-btn primary" title="Switch between Deep Codex & Unit View">Toggle View</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="reader-container">
+      <aside class="reader-sidebar">
+        <div class="sidebar-search">
+          <input type="text" id="unit-search" placeholder="Search formulas, houses, rules...">
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section-title">TABLE OF CONTENTS</div>
+          <ul class="nav-list" id="unit-nav-list">
+            <li class="nav-item active" data-target="master-overview"><a href="#master-overview">Executive Overview</a></li>
+            <li class="nav-item" data-target="unit-1"><a href="#unit-1">U01: Three-Tier Hierarchy</a></li>
+            <li class="nav-item" data-target="unit-2"><a href="#unit-2">U02: The Penultimate House</a></li>
+            <li class="nav-item" data-target="unit-3"><a href="#unit-3">U03: Education & Grades</a></li>
+            <li class="nav-item" data-target="unit-4"><a href="#unit-4">U04: Litigation & Jail</a></li>
+            <li class="nav-item" data-target="unit-5"><a href="#unit-5">U05: Property & Assets</a></li>
+            <li class="nav-item" data-target="unit-6"><a href="#unit-6">U06: Medical Astrology</a></li>
+            <li class="nav-item" data-target="unit-7"><a href="#unit-7">U07: Vocational Destiny</a></li>
+            <li class="nav-item" data-target="unit-8"><a href="#unit-8">U08: Matrimonial Dynamics</a></li>
+            <li class="nav-item" data-target="unit-9"><a href="#unit-9">U09: Progeny & Children</a></li>
+            <li class="nav-item" data-target="unit-10"><a href="#unit-10">U10: Longevity & RBT</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="reader-content" id="reader-content-body">
+        <section id="master-overview" class="content-section">
+          <div class="codex-banner">
+            <div class="badge-tag">BKRS v2.0 MASTER CODEX</div>
+            <h1 class="codex-title">Accurate Predictive Methodology</h1>
+            <p class="codex-subtitle">The Mathematical & Algorithmic Blueprint of Nadi / KP Astrology</p>
+            <div class="metadata-grid">
+              <div class="meta-item"><span class="meta-label">Author:</span> <span class="meta-val">Umang Taneja</span></div>
+              <div class="meta-item"><span class="meta-label">Tradition:</span> <span class="meta-val">Vedic / Nadi / KP Synthesis</span></div>
+              <div class="meta-item"><span class="meta-label">Primary Tool:</span> <span class="meta-val">Nirayana Bhava Chalit + Sub-Lords</span></div>
+              <div class="meta-item"><span class="meta-label">Standard:</span> <span class="meta-val">Replacement-Grade Technical Codex</span></div>
+            </div>
+          </div>
+
+          <div class="rule-box">
+            <div class="rule-title">Axiom of Nadi Predictive Precision</div>
+            <p>Traditional Parashari astrology frequently drowns in contradictory yogas, aspects, and divisional chart conflicts. Umang Taneja formulates an objective, mathematically verifiable system where events are governed by <strong>Multi-House Clustering</strong>, the <strong>Law of the Penultimate (12th Relative) House</strong>, and the strict hierarchy where <strong>Sub-Lord &gt; Nakshatra Lord &gt; Planet</strong>.</p>
+          </div>
+
+          <h2>System Architecture: The 5 Foundations</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Definition & Role</th>
+                  <th>Hierarchy & Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Nirayana Bhava Chalit</strong></td>
+                  <td>Placidus unequal house cusps overlaid on the Sidereal Zodiac using Lahiri/KP Ayanamsha.</td>
+                  <td>Rashi charts only show sign positions; Bhava Chalit dictates true house residency and lordship.</td>
+                </tr>
+                <tr>
+                  <td><strong>Three-Tier Signification</strong></td>
+                  <td>Planet &rarr; Nakshatra Lord &rarr; Sub-Lord coordinate matrix.</td>
+                  <td>Sub-Lord is supreme arbiter; Nakshatra Lord specifies manifestation; Planet provides base energy.</td>
+                </tr>
+                <tr>
+                  <td><strong>Law of the 12th House</strong></td>
+                  <td>House $(N - 1)$ systematically mars, terminates, and negates House $N$.</td>
+                  <td>6th severs 7th (divorce); 9th severs 10th (job loss); 5th cures 6th (disease recovery).</td>
+                </tr>
+                <tr>
+                  <td><strong>Cuspal Sub-Lord (CSL)</strong></td>
+                  <td>The Sub-Lord governing the initial cuspal degree of any house.</td>
+                  <td>The absolute gatekeeper of the natal promise. If 7th CSL negates, marriage cannot endure.</td>
+                </tr>
+                <tr>
+                  <td><strong>Vimshottari Dasa Trinity</strong></td>
+                  <td>Dasa (Status) &rarr; Bhukti (Major Gain/Loss) &rarr; Antar (Precise Timing Window).</td>
+                  <td>Dasa defines overall life status; Bhukti executes events; Antar pins the operational month.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- UNIT 1 -->
+        <section id="unit-1" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 01</span>
+            <h2>Epistemological Architecture: Nirayana Bhava Chalit, Cuspal Sub-Lords, and the Three-Tier Signification Matrix</h2>
+            <div class="source-ref">Chapters 1 & 2: Characteristics of Planets, Houses & Signs & Rules of Nadi</div>
+          </div>
+          <div class="unit-body">
+            <p>Predictive failure in classical Indian astrology stems primarily from relying on whole-sign Rashi charts. In high or low latitudes, houses can span from 18 degrees to over 40 degrees. A planet placed in the 10th sign may actually operate from the 9th or 11th Bhava.</p>
+            
+            <h3>The Three-Tier Signification Matrix</h3>
+            <p>Every planet delivers results according to three distinct structural layers:</p>
+            <ul>
+              <li><strong>The Planet</strong>: Gives results of its Bhava Chalit residency and sign ownerships. This is the <em>source</em>.</li>
+              <li><strong>The Nakshatra Lord</strong>: Specifies the primary field of experience and primary houses.</li>
+              <li><strong>The Sub-Lord</strong>: The final decider. If the Sub-Lord negates the event, the promise collapses at the threshold.</li>
+            </ul>
+
+            <div class="rule-box">
+              <div class="rule-title">Rahu and Ketu Coordinates Protocol</div>
+              <p>Rahu and Ketu carry exceptional potency because they signify up to 10 houses simultaneously based on a strict 4-step sequence:</p>
+              <ol>
+                <li>Houses of planets conjunct with Rahu/Ketu.</li>
+                <li>Houses of planets casting an aspect on Rahu/Ketu.</li>
+                <li>Houses of the planetary ruler of the sign occupied by Rahu/Ketu.</li>
+                <li>The physical house occupied by Rahu/Ketu in Nirayana Bhava Chalit.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- UNIT 2 -->
+        <section id="unit-2" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 02</span>
+            <h2>The Law of the Penultimate House: The 12th House Negation Mechanics and Multi-House Clustering</h2>
+            <div class="source-ref">Chapter 2: Rules of Nadi Astrology</div>
+          </div>
+          <div class="unit-body">
+            <p>The cardinal rule of Nadi Astrology states that the 12th house relative to any house destroys or terminates that house's significations:</p>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Target Domain</th>
+                    <th>Fructifying Houses</th>
+                    <th>Negating (12th Relative) Houses</th>
+                    <th>Predictive Consequence</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Marriage</strong></td>
+                    <td><span class="formula-badge badge-positive">2, 7, 11</span></td>
+                    <td><span class="formula-badge badge-negative">1, 6, 10</span></td>
+                    <td>6 negates 7 (marital rift); 1 negates 2 (family breakup); 10 negates 11 (loss of joy).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Career / Job</strong></td>
+                    <td><span class="formula-badge badge-positive">2, 6, 10, 11</span></td>
+                    <td><span class="formula-badge badge-negative">5, 8, 9, 12</span></td>
+                    <td>9 negates 10 (job loss); 5 negates 6 (resignation/termination); 8 brings disgrace.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Property Purchase</strong></td>
+                    <td><span class="formula-badge badge-positive">4, 11, 12</span></td>
+                    <td><span class="formula-badge badge-negative">3, 5, 10</span></td>
+                    <td>3 negates 4 (disposal of property); 10 negates 11 (loss of asset).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Progeny / Children</strong></td>
+                    <td><span class="formula-badge badge-positive">2, 5, 11</span></td>
+                    <td><span class="formula-badge badge-negative">1, 4, 10</span></td>
+                    <td>4 negates 5 (infertility/denial); 1 negates 2 (no family expansion).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Health Recovery</strong></td>
+                    <td><span class="formula-badge badge-positive">1, 5, 11</span></td>
+                    <td><span class="formula-badge badge-negative">6, 8, 12</span></td>
+                    <td>5 negates 6 (cures sickness); 11 negates 12 (ends hospitalization); 1 restores vitality.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- UNIT 3 -->
+        <section id="unit-3" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 03</span>
+            <h2>Educational Attainment: Cognitive Architecture, Exam Grading, and Academic Disciplines</h2>
+            <div class="source-ref">Chapter 3: Education</div>
+          </div>
+          <div class="unit-body">
+            <p>Education is divided into institutional learning (4th house), university/higher specialization (9th house), and raw intelligence/creativity (5th house). The 11th house signifies passing, awards, and distinctions.</p>
+
+            <h3>Predictive Grade Matrix</h3>
+            <ul>
+              <li><span class="formula-badge badge-positive">4, 9, 11</span>: <strong>"A" Grade (Top Distinction)</strong> — complete mastery of syllabus, theoretical excellence, and examination triumph.</li>
+              <li><span class="formula-badge badge-positive">4, 11</span>: <strong>"B" Grade (Above Average)</strong> — disciplined student who masters textbooks and clears exams cleanly.</li>
+              <li><span class="formula-badge badge-neutral">5, 11</span>: <strong>High IQ / Underachiever</strong> — brilliant native who grasps concepts instantly but dislikes mechanical syllabus memorization.</li>
+              <li><span class="formula-badge badge-neutral">4, 5, 9</span>: <strong>"C" Grade (Average)</strong> — intellectual interest and reading habits, but lacks House 11 to score high marks in rigid testing environments.</li>
+              <li><span class="formula-badge badge-negative">6, 8, 12 mixed with 4</span>: <strong>Compartment / Failure</strong> — illness (6), anxiety/misfortune (8), or absence/disqualification (12) forcing re-examination.</li>
+              <li><span class="formula-badge badge-positive">8, 12 with 4, 9, 11</span>: <strong>Scientific & Research Genius</strong> — 8th (uncovering the unknown) and 12th (laboratories, foreign institutes) produce breakthrough PhD researchers.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 4 -->
+        <section id="unit-4" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 04</span>
+            <h2>Litigation, Imprisonment, and Conflict Resolution: Legal Jurisprudence in the Horoscope</h2>
+            <div class="source-ref">Chapter 4: Litigation</div>
+          </div>
+          <div class="unit-body">
+            <p>Litigation is triggered by the friction triad: <strong>House 6</strong> (dispute, adversary), <strong>House 8</strong> (mental agony, legal penalties), and <strong>House 12</strong> (legal expenses, isolation, confinement).</p>
+
+            <div class="rule-box">
+              <div class="rule-title">Litigation Victory Hierarchy</div>
+              <p>$$mathbf{6, 11} > mathbf{10, 11} > mathbf{6, 10} > mathbf{1, 6}$$</p>
+              <p><strong>6, 11</strong> provides absolute victory with financial damages awarded. <strong>5, 9</strong> promotes amicable out-of-court settlements, as 5 terminates 6 and 9 terminates 10.</p>
+            </div>
+
+            <h3>Incarceration vs Legal Careers</h3>
+            <ul>
+              <li><strong>Arrest and Incarceration:</strong> <span class="formula-badge badge-negative">2, 3, 8, 12</span> under malefic DBA. (2 severed from family, 3 displaced from home, 8 confinement, 12 locked in jail cell).</li>
+              <li><strong>Jailor / Prison Warden:</strong> <span class="formula-badge badge-neutral">2, 3, 8, 12</span> connected to <span class="formula-badge badge-positive">10, 11</span> (salaried employment inside a correctional facility).</li>
+              <li><strong>Trial Lawyer / Advocate:</strong> <span class="formula-badge badge-positive">6, 8, 12</span> connected to <span class="formula-badge badge-positive">10, 11</span> with dominant Mercury and Mars.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 5 -->
+        <section id="unit-5" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 05</span>
+            <h2>Real Estate and Vehicular Acquisitions: Fixed Assets, Mortgages, and Disputed Properties</h2>
+            <div class="source-ref">Chapter 5: Property & Vehicle</div>
+          </div>
+          <div class="unit-body">
+            <p>Real estate transactions require coordination between the natural significators (<strong>Mars</strong> for land/construction, <strong>Saturn</strong> for old estates/real estate) and the operational house coordinates:</p>
+
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Transaction Type</th>
+                    <th>Formula</th>
+                    <th>Analytical Mechanics</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Direct Purchase</strong></td>
+                    <td><span class="formula-badge badge-positive">4, 11, 12</span> + Mars/Saturn</td>
+                    <td>4 (property), 11 (gain/ownership), 12 (capital investment outlay).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Bank Financed / Loan</strong></td>
+                    <td><span class="formula-badge badge-positive">4, 6, 11, 12</span></td>
+                    <td>6th house introduces commercial debt, bank liabilities, and borrowing.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Ancestral Inheritance</strong></td>
+                    <td><span class="formula-badge badge-positive">4, 8, 11</span> (No 12th)</td>
+                    <td>8th brings unearned legacy; 12th is absent because zero purchase money is spent.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Joint Ownership</strong></td>
+                    <td><span class="formula-badge badge-positive">3, 4, 11, 12</span></td>
+                    <td>3rd house (12th from 4th) limits sole ownership, necessitating a co-owner.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Property Sale</strong></td>
+                    <td><span class="formula-badge badge-neutral">3, 5, 10, 12</span></td>
+                    <td>Exact negation of purchase: 3 sells 4, 5 clears loans, 10 gives asset away, 12 liquidates.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Disputed / Loss of Asset</strong></td>
+                    <td><span class="formula-badge badge-negative">3, 6, 8, 12</span></td>
+                    <td>Property confiscated, attached by courts, or lost to predatory litigation.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Vehicle Purchase</strong></td>
+                    <td><span class="formula-badge badge-positive">4, 11, 12</span> + Venus/Mars</td>
+                    <td>Venus brings vehicular luxury; House 4 governs vehicles; House 3 indicates travel.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- UNIT 6 -->
+        <section id="unit-6" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 06</span>
+            <h2>Medical Astrology: Pathological Combinations, Surgery, Chronic Disease, and Healing Gates</h2>
+            <div class="source-ref">Chapter 6: Health</div>
+          </div>
+          <div class="unit-body">
+            <p>Medical astrology distinguishes between functional acute illness, chronic degenerative conditions, and full physiological recovery:</p>
+            <ul>
+              <li><strong>Acute Sickness:</strong> <span class="formula-badge badge-negative">House 6</span> (infection, fever, digestive trouble, curable ailments).</li>
+              <li><strong>Chronic / Surgical Conditions:</strong> <span class="formula-badge badge-negative">House 8</span> (incurable illness, surgical intervention, agonizing pain, chronicity).</li>
+              <li><strong>Hospitalization & Confinement:</strong> <span class="formula-badge badge-negative">House 12</span> (bed-rest, intensive care, quarantined treatment).</li>
+            </ul>
+
+            <div class="rule-box">
+              <div class="rule-title">The Grand Biological Recovery Trinity: 1, 5, 11</div>
+              <p>Whenever a native's DBA shifts into <span class="formula-badge badge-positive">1, 5, 11</span>, full recovery occurs:</p>
+              <ul>
+                <li><strong>House 5</strong> is 12th from 6th &rarr; Cures and eliminates the disease.</li>
+                <li><strong>House 11</strong> is 12th from 12th &rarr; Terminates hospitalization and discharges the patient.</li>
+                <li><strong>House 1</strong> &rarr; Rebuilds physical immunity, stamina, and vital longevity.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- UNIT 7 -->
+        <section id="unit-7" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 07</span>
+            <h2>Vocational Destiny: Service vs Enterprise, Promotions, Corporate Roles, and Professional Ruin</h2>
+            <div class="source-ref">Chapters 8 & 11: Career & Financial Prospects and Corporate Astrology</div>
+          </div>
+          <div class="unit-body">
+            <p>The definitive bifurcation between salaried employment and business enterprise lies in the 6th vs 7th house axis:</p>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Domain</th>
+                    <th>Core Cluster</th>
+                    <th>Planetary Signifiers</th>
+                    <th>Phenomenology</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Salaried Job (Service)</strong></td>
+                    <td><span class="formula-badge badge-positive">2, 6, 10, 11</span></td>
+                    <td>Sun/Moon (Govt), Jup/Mer/Ven (MNC), Sat/Rahu (Small co.)</td>
+                    <td>House 6 binds the native to employment contracts and monthly salaries.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Commercial Business</strong></td>
+                    <td><span class="formula-badge badge-positive">2, 7, 10, 11</span></td>
+                    <td>Mercury (Trade), Venus (Luxury/Retail), Mars (Industry)</td>
+                    <td>House 7 engages the public marketplace, trade clients, and commercial equity.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Out-of-Turn Promotion</strong></td>
+                    <td><span class="formula-badge badge-positive">2, 6, 10, 11</span></td>
+                    <td>Benefic Dasa with strong 10-11 Bhukti and cusp transit</td>
+                    <td>Rapid elevation into executive authority, large salary hikes.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Job Loss / Demotion</strong></td>
+                    <td><span class="formula-badge badge-negative">5, 8, 9, 12</span></td>
+                    <td>Saturn, Rahu, Ketu afflicting 10th CSL</td>
+                    <td>9 severs 10 (status lost); 5 severs 6 (contract ends); 8 brings disgrace.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- UNIT 8 -->
+        <section id="unit-8" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 08</span>
+            <h2>Matrimonial Dynamics: Alliance Settlement, Marital Disharmony, Divorce, and Extramarital Liaisons</h2>
+            <div class="source-ref">Chapter 9: Marriage</div>
+          </div>
+          <div class="unit-body">
+            <p>Marriage is governed by the addition of a family member (2nd house), the legal union with a spouse (7th house), and the fulfillment of emotional desires (11th house).</p>
+
+            <h3>The Matrimonial Formulas</h3>
+            <ul>
+              <li><strong>Marriage Alliance:</strong> <span class="formula-badge badge-positive">2, 7, 11</span> operating in DBA with Venus or Jupiter.</li>
+              <li><strong>Denial of Marriage:</strong> Cuspal Sub-Lord of 7th house signifies exclusively <span class="formula-badge badge-negative">1, 6, 10</span>. (Proposals continuously collapse; native remains unmarried).</li>
+              <li><strong>Separation & Divorce:</strong> <span class="formula-badge badge-negative">1, 6, 10, 12</span> in active DBA. (6 breaks 7, 1 breaks 2, 10 breaks 11, 12 brings legal expenses and bed separation).</li>
+              <li><strong>Extramarital Liaisons:</strong> <span class="formula-badge badge-neutral">5, 11, 12</span> active simultaneously. (5 romance, 11 pleasure, 12 secret bedroom intimacy).</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 9 -->
+        <section id="unit-9" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 09</span>
+            <h2>Progeny and Family Expansion: Conception, Childbirth, Barrenness, and Complications</h2>
+            <div class="source-ref">Chapter 10: Children</div>
+          </div>
+          <div class="unit-body">
+            <p>Progeny requires healthy reproductive capacity (5th house), addition to the family unit (2nd house), and successful fulfillment of desire (11th house).</p>
+            <ul>
+              <li><strong>Conception & Birth:</strong> <span class="formula-badge badge-positive">2, 5, 11</span> in operating DBA.</li>
+              <li><strong>Total Barrenness / Denial:</strong> <span class="formula-badge badge-negative">1, 4, 10</span>. House 4 is 12th from 5th (denies conception); House 1 is 12th from 2nd (denies family expansion); House 10 is 12th from 11th. Even IVF will fail if 5th CSL signifies 1, 4, 10.</li>
+              <li><strong>Abortion / Miscarriage:</strong> <span class="formula-badge badge-negative">5, 8, 12</span> along with Saturn, Ketu, or Rahu. The pregnancy is destroyed by the traumatic 8th and hospital-expelling 12th.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- UNIT 10 -->
+        <section id="unit-10" class="content-section">
+          <div class="unit-header">
+            <span class="unit-id">UNIT 10</span>
+            <h2>Precision Rectification, Longevity Calculus, and Transit Micro-Timing Protocols</h2>
+            <div class="source-ref">Chapters 12, 13, 15, 16 & 17: Longevity, RBT, Muhurat, Remedies & Twins</div>
+          </div>
+          <div class="unit-body">
+            <h3>1. The Mathematical Longevity Formula</h3>
+            <p>Longevity is quantitatively calculated by measuring the ratio of Life-Increasing houses against Death-Inflicting coordinates:</p>
+            <div class="rule-box">
+              <div class="rule-title">Quantitative Longevity Equation</div>
+              <p>$$	ext{Longevity (Years)} = left( rac{A}{A + B} ight) 	imes 120$$</p>
+              <ul>
+                <li><strong>Factor A (Life-Increasing):</strong> Occurrences of houses <strong>1, 5, 9, 10, 11</strong> across the 7 planets + nodes.</li>
+                <li><strong>Factor B (Death-Inflicting):</strong> Occurrences of houses <strong>6, 8, 12 + Badhak House</strong>.</li>
+                <li><strong>Badhak Classification:</strong> Movable Ascendant &rarr; 11th House; Fixed Ascendant &rarr; 9th House; Dual Ascendant &rarr; 7th House.</li>
+              </ul>
+            </div>
+
+            <h3>2. The Four Ruling Planets (RP) Rectification Protocol</h3>
+            <p>Birth Time Rectification (BTR) uses the cosmic snapshot of the exact moment an astrologer examines the query:</p>
+            <ol>
+              <li><strong>Day Lord (DL)</strong>: Planetary ruler of the day of query.</li>
+              <li><strong>Moon Sign Lord (MSL)</strong>: Ruler of the zodiac sign occupied by the transiting Moon.</li>
+              <li><strong>Moon Nakshatra Lord (MNL)</strong>: Ruler of the constellation occupied by the transiting Moon.</li>
+              <li><strong>Ascendant Lord (AL)</strong>: Ruler of the rising sign at the query location.</li>
+            </ol>
+            <p>The native's true Ascendant Cusp Sub-Lord must be ruled by or directly linked to these active Ruling Planets.</p>
+
+            <h3>3. Pinpoint Transit Micro-Timing Rules</h3>
+            <p>Events materialize when transiting significators meet exact astronomical triggers:</p>
+            <ul>
+              <li>A transiting significator crosses within <strong>1 degree</strong> of the natal degree of an event planet.</li>
+              <li>A transiting significator crosses within <strong>1 degree</strong> of the sensitive cuspal degree (e.g. Cusp 7 for marriage, Cusp 10 for career).</li>
+              <li>Two significators conjunct within <strong>1 degree</strong> in the sky.</li>
+              <li>The transiting Moon (if an event significator) triggers the conjunction point.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="../../js/reader-controls.js"></script>
+</body>
+</html>
