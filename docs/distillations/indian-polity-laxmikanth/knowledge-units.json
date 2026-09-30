@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-lax-01",
+    "title": "Historical Evolution & The Constituent Assembly Architecture",
+    "unitType": "constitutional-genesis",
+    "summary": "Deconstructs the constitutional pedigree of modern India from the Regulating Act of 1773 through the Government of India Act of 1935 and Indian Independence Act of 1947. Analyzes the composition, working, ideological debates, and committee structures of the Constituent Assembly (1946–1949), Nehru’s Objective Resolution, and the drafting mechanics led by Dr. B.R. Ambedkar.",
+    "epistemicStatus": "source-constitutional-history",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-lax-02",
+    "title": "The Preamble, Union Territory & Citizenship Framework",
+    "unitType": "constitutional-foundations",
+    "summary": "Examines the philosophical identity card of the Constitution (the Preamble), its non-justiciable yet interpretative character, and key judicial doctrines (Berubari Union 1960, Kesavananda Bharati 1973, LIC of India 1995). Analyzes Article 1–4 territorial reorganization, the Dhar, JVP, and Fazl Ali Commissions, and Part II Citizenship architecture (Articles 5–11, Citizenship Act of 1955, CAA 2019, and OCI status).",
+    "epistemicStatus": "source-jurisprudential-statutory",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-lax-03",
+    "title": "Fundamental Rights & The Matrix of Judicial Enforceability (Part III)",
+    "unitType": "fundamental-rights-jurisprudence",
+    "summary": "Deep anatomical breakdown of Articles 12 to 35. Analyzes the expansive definition of \"State\" (Article 12) and judicial review (Article 13 doctrines of Severability, Eclipse, and Waiver). Deconstructs the Right to Equality (Arts 14–18), the Six Freedoms (Art 19), Protection of Life & Personal Liberty (Art 21, Maneka Gandhi, Puttaswamy Privacy ruling), Freedom of Religion (Arts 25–28), and the five prerogative Constitutional Writs under Article 32 (Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo-Warranto).",
+    "epistemicStatus": "source-constitutional-jurisprudence",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-lax-04",
+    "title": "Directive Principles, Fundamental Duties & The Basic Structure Doctrine",
+    "unitType": "normative-constitutionalism",
+    "summary": "Examines Part IV Directive Principles of State Policy (Articles 36–51) categorized across Socialistic, Gandhian, and Liberal-Intellectual axes. Traces the historic judicial conflict between Fundamental Rights and DPSPs (Champakam Dorairajan to Minerva Mills). Evaluates Part IVA Fundamental Duties (Article 51A, Swaran Singh & Verma Committees) and the formulation of the Basic Structure Doctrine from Shankari Prasad (1951) and Golaknath (1967) to Kesavananda Bharati (1973).",
+    "epistemicStatus": "source-doctrinal-dialectic",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-lax-05",
+    "title": "System of Government: Asymmetric Federalism & Emergency Governance",
+    "unitType": "federal-institutional-governance",
+    "summary": "Investigates the structural dichotomy between the Westminster Parliamentary executive and Presidential regimes. Dissects Indian federalism: K.C. Wheare’s \"quasi-federal\" classification, cooperative vs. bargaining federalism, and the threefold distribution of legislative, administrative, and financial relations (Articles 245–293, Sarkaria and Punchhi Commissions). Analyzes Part XVIII Emergency Provisions: National Emergency (Art 352), President’s Rule (Art 356 & S.R. Bommai guidelines), and Financial Emergency (Art 360).",
+    "epistemicStatus": "source-institutional-federal",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-lax-06",
+    "title": "The Union Executive & Parliament: Legislative, Financial & Oversight Mechanics",
+    "unitType": "union-governance-mechanics",
+    "summary": "Comprehensive analysis of the Union Executive: President (Articles 52–62, electoral college, pardoning power Art 72, ordinance power Art 123), Vice-President, Prime Minister, and Council of Ministers (Articles 74–75, collective responsibility). Deconstructs Parliament (Articles 79–122): bicameral mechanics, legislative procedures (Ordinary, Money, Financial Bills, Article 110), budgetary enactment (Article 112, Guillotine, Cut Motions), parliamentary privileges, and financial oversight committees (Public Accounts, Estimates, COPU).",
+    "epistemicStatus": "source-statutory-operational",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-lax-07",
+    "title": "The Integrated Judicial System: Supreme Court, High Courts & Judicial Activism",
+    "unitType": "judicial-architecture",
+    "summary": "Details the single integrated judicial pyramid of India. Supreme Court of India (Articles 124–147): appointment mechanics, NJAC (99th Amendment) struck down in the Fourth Judges Case (2015), the Collegium System, original jurisdiction (Art 131), appellate, advisory (Art 143), and curative jurisdictions. Analyzes High Courts (Articles 214–231), writ jurisdiction comparison (Art 32 vs Art 226), Judicial Review, Judicial Activism, Public Interest Litigation (PIL), and Subordinate Courts.",
+    "epistemicStatus": "source-judicial-institutional",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-lax-08",
+    "title": "State Government, Special Provisions & Local Self-Government (73rd & 74th CAAs)",
+    "unitType": "decentralized-governance",
+    "summary": "Deconstructs the State Executive: Governor (Articles 153–162, dual constitutional capacity, discretionary powers Art 163), Chief Minister, and State Legislature. Analyzes asymmetric federal provisions under Articles 371 to 371-J and 5th/6th Schedules. Details the historic institutionalization of democratic decentralization: the 73rd Constitutional Amendment Act 1992 (Panchayati Raj, 11th Schedule, 29 functional items, PESA Act 1996) and the 74th Amendment Act 1992 (Urban Local Bodies, 12th Schedule, 18 functional items).",
+    "epistemicStatus": "source-decentralization-statutory",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-lax-09",
+    "title": "Constitutional, Statutory & Regulatory Watchdogs",
+    "unitType": "institutional-oversight",
+    "summary": "Examines the independent institutional architecture safeguarding democratic integrity. Constitutional Bodies: Election Commission of India (Art 324), UPSC and State PSCs (Arts 315–323), Finance Commission (Art 280), Goods and Services Tax Council (Art 279A), Comptroller and Auditor General (CAG, Arts 148–151), Attorney General (Art 76), and National Commissions for SCs, STs, and BCs. Statutory Bodies: NITI Aayog, NHRC, CIC, CVC, CBI, and Lokpal & Lokayuktas.",
+    "epistemicStatus": "source-oversight-constitutional",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-lax-10",
+    "title": "Political Dynamics, Electoral Jurisprudence & Working of the Constitution",
+    "unitType": "electoral-political-dynamics",
+    "summary": "Evaluates the living operational realities of Indian democracy: political parties, criteria for National/State party recognition, First-Past-The-Post electoral mechanics, Representation of the People Acts (1950 and 1951), the Anti-Defection Law (Tenth Schedule, 52nd & 91st Amendments, Kihoto Hollohan case), electoral bonds debate, pressure groups, and the holistic assessment of constitutional governance by the Justice Venkatachaliah Commission (NCRWC 2002).",
+    "epistemicStatus": "source-political-electoral-evaluative",
+    "materiality": "critical",
+    "order": 10
+  }
+]

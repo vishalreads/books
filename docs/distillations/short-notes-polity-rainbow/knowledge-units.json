@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-rbwpol-01",
+    "title": "Historical Timeline, Interim Government & Sources of the Constitution",
+    "unitType": "constitutional-history-tables",
+    "summary": "Chronological timeline of British statutory developments (1773–1947), the portfolios of the Interim Government of 1946 vs. the First Cabinet of Free India (1947), and an exhaustive matrix of structural, political, and philosophical provisions borrowed from 10 world constitutions.",
+    "epistemicStatus": "source-historical-factual",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-rbwpol-02",
+    "title": "Preamble Jurisprudence, 12 Schedules & Territorial Reorganization",
+    "unitType": "schedules-territorial-framework",
+    "summary": "Synthesizes the Preamble keywords, interpretative doctrines, and an exhaustive guide to the Twelve Schedules of the Indian Constitution (Articles, functional subjects, allocations). Details Article 1–4 territorial reorganization, new states created post-1956, and Part II Citizenship mechanics.",
+    "epistemicStatus": "source-statutory-schedules",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-rbwpol-03",
+    "title": "Fundamental Rights Comparative Dossier & Writs Jurisdiction",
+    "unitType": "fundamental-rights-handbook",
+    "summary": "High-yield comparative dossier of Articles 12 to 35. Tabulates the Right to Equality (Arts 14–18), the Six Freedoms (Art 19), Right to Life and Personal Liberty (Art 21, Due Process evolution), Freedom of Religion (Arts 25–28), and a side-by-side comparative matrix of the Five Prerogative Writs under Article 32 vs Article 226.",
+    "epistemicStatus": "source-comparative-jurisprudence",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-rbwpol-04",
+    "title": "Directive Principles, Fundamental Duties & Constitutional Amendments",
+    "unitType": "dpsp-duties-amendments",
+    "summary": "Analytical matrices contrasting Fundamental Rights against Directive Principles of State Policy (Articles 36–51) across enforceability, scope, and objectives. Details the 11 Fundamental Duties under Article 51A and the threefold amendment procedure under Article 368 (Simple, Special, and Special with State Ratification).",
+    "epistemicStatus": "source-doctrinal-statutory",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-rbwpol-05",
+    "title": "The Union Executive: President, Vice-President, Prime Minister & Cabinet",
+    "unitType": "union-executive-handbook",
+    "summary": "Deconstructs the Union Executive: President (Articles 52–62, Electoral College calculation formula, impeachment, pardoning powers Art 72 vs Governor Art 161), Vice-President (ex-officio Chairman of Rajya Sabha), Prime Minister, and Council of Ministers (Articles 74–75, Cabinet Committees, Collective Responsibility).",
+    "epistemicStatus": "source-executive-comparative",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-rbwpol-06",
+    "title": "The Union Parliament: Bicameral Mechanics, Bills & Budgetary Cycle",
+    "unitType": "parliamentary-handbook",
+    "summary": "Exhaustive comparative reference on Parliament: Rajya Sabha vs. Lok Sabha compositions, durations, and exclusive powers. Side-by-side comparison of Ordinary Bills, Money Bills (Article 110), Financial Bills (Art 117), and Constitutional Amendment Bills (Art 368). Details the Budgetary Cycle (Art 112), Cut Motions, the Guillotine, and Parliamentary Committees (PAC, Estimates, COPU).",
+    "epistemicStatus": "source-legislative-comparative",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-rbwpol-07",
+    "title": "The Integrated Judicial System: Supreme Court vs. High Courts",
+    "unitType": "judicial-comparative-handbook",
+    "summary": "Side-by-side comparative matrices of the Supreme Court (Articles 124–147) and High Courts (Articles 214–231): appointment, qualification, removal, retirement age, original, appellate, and advisory jurisdictions. Details Writ jurisdiction comparison (Article 32 vs Article 226), Court of Record status, and Special Leave Petitions (Art 136).",
+    "epistemicStatus": "source-judicial-comparative",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-rbwpol-08",
+    "title": "The State Executive & State Legislature: Comparison with Centre",
+    "unitType": "state-governance-handbook",
+    "summary": "Comparative analysis of State Executive and Legislature: Governor (Articles 153–162, dual role, discretionary powers Art 163, reservation of bills Arts 200–201), Chief Minister, State Council of Ministers, and State Legislative Assembly vs. Legislative Council (Article 169 abolition/creation mechanics).",
+    "epistemicStatus": "source-state-comparative",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-rbwpol-09",
+    "title": "Local Self-Government: Panchayati Raj & Municipalities (11th & 12th Schedules)",
+    "unitType": "local-government-handbook",
+    "summary": "Complete statutory handbook on local governance: 73rd Amendment Act 1992 (Part IX, Articles 243 to 243-O, Eleventh Schedule 29 functional items, Gram Sabha, 3-tier structure, State Election/Finance Commissions) and 74th Amendment Act 1992 (Part IXA, Articles 243-P to 243-ZG, Twelfth Schedule 18 functional items). Includes PESA Act 1996 provisions.",
+    "epistemicStatus": "source-decentralization-statutory",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-rbwpol-10",
+    "title": "Emergency Provisions, Constitutional Watchdogs & Landmark Amendments",
+    "unitType": "constitutional-emergency-amendments",
+    "summary": "Comparative operational matrix of Emergency provisions: National Emergency (Art 352), President’s Rule (Art 356 & Bommai guidelines), and Financial Emergency (Art 360). Synthesizes independent Constitutional Bodies (CAG, ECI, Finance Commission, UPSC, GST Council) and catalogs landmark Constitutional Amendment Acts from the 1st (1951) to the 106th (2023).",
+    "epistemicStatus": "source-emergency-amendments-catalog",
+    "materiality": "critical",
+    "order": 10
+  }
+]

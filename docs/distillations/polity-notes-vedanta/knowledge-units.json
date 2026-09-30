@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-vedpol-01",
+    "title": "Historical Underpinnings & Constitutional Evolution",
+    "unitType": "constitutional-history",
+    "summary": "Analyzes the progressive legislative trajectory from the Regulating Act of 1773 to the Indian Independence Act of 1947. Synthesizes key institutional mechanisms borrowed from colonial statutes, notably the Government of India Act of 1935, and evaluates the working, debates, and drafting committees of the Constituent Assembly.",
+    "epistemicStatus": "source-historical-institutional",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-vedpol-02",
+    "title": "The Preamble, Citizenship & The Territorial Union",
+    "unitType": "constitutional-foundations",
+    "summary": "Examines the philosophical identity of the Constitution through the Preamble, its amendability under Article 368, and the landmark rulings in Berubari (1960), Kesavananda (1973), and LIC (1995). Deconstructs Article 1–4 territorial reorganization and Part II Citizenship laws (Articles 5–11, Citizenship Act 1955, CAA 2019).",
+    "epistemicStatus": "source-statutory-doctrinal",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-vedpol-03",
+    "title": "Fundamental Rights: Structural Equality & Substantive Liberties (Part III)",
+    "unitType": "fundamental-rights-governance",
+    "summary": "Comprehensive analysis of Part III Fundamental Rights (Articles 12–35). Focuses on the expansive scope of Article 12, judicial review under Article 13, the equality code (Articles 14–18), the six freedoms (Article 19), the transformation of Article 21 from procedural to substantive due process (Maneka Gandhi, Puttaswamy), and the prerogative writs under Article 32.",
+    "epistemicStatus": "source-jurisprudential-analytic",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-vedpol-04",
+    "title": "Directive Principles, Civic Duties & Basic Structure Synthesis",
+    "unitType": "normative-constitutional-dialectic",
+    "summary": "Evaluates Part IV Directive Principles of State Policy (Articles 36–51) as the blueprint for an egalitarian welfare state. Deconstructs the historic conflict between Part III and Part IV (Champakam Dorairajan to Minerva Mills), Part IVA Fundamental Duties (Article 51A), and the judicial crystallization of the Basic Structure Doctrine.",
+    "epistemicStatus": "source-normative-evaluative",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-vedpol-05",
+    "title": "Federal Dynamics, Centre-State Relations & Emergency Provisions",
+    "unitType": "federal-governance",
+    "summary": "Dissects Indian federalism: the debate over its \"quasi-federal\" character, cooperative vs. coercive federalism, and the distribution of legislative, administrative, and financial powers (Articles 245–293, Sarkaria and Punchhi Commission recommendations). Analyzes Emergency governance under Articles 352, 356 (S.R. Bommai guidelines), and 360.",
+    "epistemicStatus": "source-federal-statutory",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-vedpol-06",
+    "title": "The Union Executive & Parliament: Procedures, Budget & Oversight",
+    "unitType": "union-governance",
+    "summary": "Analyzes the executive power of the Union: President (election, impeachment, pardoning power Art 72, ordinance power Art 123), Vice-President, Prime Minister, and Council of Ministers (collective responsibility Art 75). Details Parliamentary mechanics (Articles 79–122): bicameral procedures, Money Bills (Art 110), budgetary enactment (Art 112), and oversight committees (PAC, Estimates, COPU).",
+    "epistemicStatus": "source-institutional-operational",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-vedpol-07",
+    "title": "The Integrated Judicial System & Contemporary Judicial Governance",
+    "unitType": "judicial-governance",
+    "summary": "Examines the single integrated judicial hierarchy: Supreme Court (Articles 124–147) and High Courts (Articles 214–231). Analyzes the Collegium system, the NJAC controversy, Master of Roster, judicial pendency, All India Judicial Service (AIJS), Judicial Review, Judicial Activism, and Public Interest Litigation (PIL).",
+    "epistemicStatus": "source-judicial-analytic",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-vedpol-08",
+    "title": "The State Executive & Decentralized Governance (Panchayats & Municipalities)",
+    "unitType": "decentralized-governance",
+    "summary": "Deconstructs the State Executive: Governor (Articles 153–162, constitutional vs. discretionary roles under Art 163, appointment and removal controversies), Chief Minister, and State Legislature. Details the institutionalization of local self-government: 73rd Amendment Act 1992 (Panchayati Raj, 11th Schedule, PESA 1996) and 74th Amendment Act 1992 (Urban Local Bodies, 12th Schedule).",
+    "epistemicStatus": "source-decentralization-statutory",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-vedpol-09",
+    "title": "Constitutional Watchdogs: Financial, Electoral & Administrative Integrity",
+    "unitType": "constitutional-oversight",
+    "summary": "Evaluates the independent constitutional institutions safeguarding democratic governance: Comptroller and Auditor General (CAG, Arts 148–151), Election Commission of India (Art 324, Model Code of Conduct), Finance Commission (Art 280), Union and State Public Service Commissions (Arts 315–323), and the Goods and Services Tax (GST) Council (Art 279A).",
+    "epistemicStatus": "source-oversight-institutional",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-vedpol-10",
+    "title": "Statutory Bodies, Administrative Reforms & Political Dynamics",
+    "unitType": "administrative-reforms-governance",
+    "summary": "Investigates statutory and watchdog institutions: NHRC, NCW, CVC, CBI, and Lokpal & Lokayuktas. Evaluates civil services in a democracy, Second Administrative Reforms Commission (2nd ARC) recommendations on ethics and governance, the Anti-Defection Law (Tenth Schedule), electoral reforms, and the criminalization of politics.",
+    "epistemicStatus": "source-governance-evaluative",
+    "materiality": "critical",
+    "order": 10
+  }
+]
