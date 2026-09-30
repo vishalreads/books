@@ -1,0 +1,116 @@
+[
+  {
+    "id": "unit-1-art-architecture",
+    "title": "Unit 1: Art Forms & Visual Architecture: From Harappa to Temple Paradigms",
+    "themes": [
+      "Harappan Urbanism",
+      "Mauryan Monolithic Pillars",
+      "Buddhist Stupa & Chaitya Architecture",
+      "Temple Styles: Nagara, Dravida & Vesara",
+      "Indo-Islamic Architectural Synthesis"
+    ]
+  },
+  {
+    "id": "unit-2-performing-arts-bhakti",
+    "title": "Unit 2: Classical Performing Arts, Literature & The Bhakti-Sufi Matrix",
+    "themes": [
+      "8 Sangeet Natak Akademi Classical Dances",
+      "Hindustani vs Carnatic Musical Traditions",
+      "Ancient & Medieval Literature Traditions",
+      "Bhakti Movement: Saguna vs Nirguna Dialectic",
+      "Sufi Silsilahs & Cultural Syncretism"
+    ]
+  },
+  {
+    "id": "unit-3-freedom-struggle",
+    "title": "Unit 3: Modern Indian Trajectory: Personalities, Ideologies & Freedom Struggle",
+    "themes": [
+      "Socio-Religious Renaissance Movements",
+      "Moderate-Extremist Dialectic",
+      "Gandhian Satyagraha Praxis",
+      "Left-Wing Radicalism & HSRA",
+      "Subhas Bose & The Indian National Army",
+      "Quit India & Decolonization"
+    ]
+  },
+  {
+    "id": "unit-4-post-independence",
+    "title": "Unit 4: Post-Independence Consolidation, Reorganization & Nation-Building",
+    "themes": [
+      "Princely State Integration (Patel & Menon)",
+      "Linguistic Reorganization (Fazal Ali Commission)",
+      "Tribal Integration: Nehru's Panchsheel",
+      "Agrarian Land Reforms & Abolition of Zamindari",
+      "Green & White Technological Revolutions",
+      "Wars of 1962, 1965 & 1971"
+    ]
+  },
+  {
+    "id": "unit-5-world-history",
+    "title": "Unit 5: World History: Revolutions, World Wars, Ideologies & Decolonization",
+    "themes": [
+      "Industrial Revolution & Global Capital Accumulation",
+      "American & French Democratic Revolutions",
+      "Russian Revolution & Rise of Socialism",
+      "Fascism, Nazism & The World Wars",
+      "Decolonization of Asia & Africa",
+      "Cold War Geopolitics & Non-Aligned Movement"
+    ]
+  },
+  {
+    "id": "unit-6-indian-society-caste-secularism",
+    "title": "Unit 6: The Architecture of Indian Society: Diversity, Caste Dynamics & Secularism",
+    "themes": [
+      "Salient Features of Indian Society",
+      "Caste System: Sanskritization, Dominant Castes & Modern Associational Forms",
+      "Communalism: Colonial Origins & Modern Trajectories",
+      "Regionalism & Sub-Nationalist Assertions",
+      "Indian vs Western Secularism Models"
+    ]
+  },
+  {
+    "id": "unit-7-gender-dynamics",
+    "title": "Unit 7: Gender Dynamics, Women’s Mobilization & Social Transformation",
+    "themes": [
+      "Historical Evolution of Women's Movements",
+      "SHGs, Micro-Finance & Kudumbashree Models",
+      "Political Representation & 73rd/74th Amendments",
+      "Care Economy & Female Labour Force Participation (FLFPR)",
+      "Legislative Frameworks & Ending Gendered Violence"
+    ]
+  },
+  {
+    "id": "unit-8-demography-urbanization-poverty",
+    "title": "Unit 8: Demography, Urbanization Imperatives & Poverty Eradication Architectures",
+    "themes": [
+      "Demographic Dividend vs Window of Opportunity",
+      "Migration Patterns: Distress vs Economic Mobility",
+      "Urbanization Challenges: Slums, Floods & Heat Islands",
+      "Multidimensional Poverty Index (MPI) Metrics",
+      "Social Protection Architecture (MGNREGA, PDS, PM-KISAN)"
+    ]
+  },
+  {
+    "id": "unit-9-globalization-impact",
+    "title": "Unit 9: Globalization Dynamics: Cultural, Economic & Agrarian Impact on Society",
+    "themes": [
+      "Economic Liberalization & Unequal Growth",
+      "Cultural Glocalization: Homogenization vs Heterogenization",
+      "Impact on Informal Labor & Gig Economy",
+      "Agrarian Distress, Input Costs & Farmer Suicides",
+      "Transformation of Family Structure & Elderly Care"
+    ]
+  },
+  {
+    "id": "unit-10-physical-geography-geopolitics",
+    "title": "Unit 10: Physical Geography, Geophysical Phenomena & Resource Geopolitics",
+    "themes": [
+      "Interior of Earth & Plate Tectonics Paradigm",
+      "Mantle Plumes, Hotspots & Deccan Traps",
+      "Atmospheric Circulation, Jet Streams & Monsoon Dynamics",
+      "Ocean Currents, Upwelling & El Niño/La Niña/IOD",
+      "Dead Zones, Eutrophication & Marine Ecosystems",
+      "Critical Minerals, Energy Transition & Arctic Geopolitics"
+    ]
+  }
+]

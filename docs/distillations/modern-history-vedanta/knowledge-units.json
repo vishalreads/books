@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-vedhist-01",
+    "title": "Decline of the Mughals & The Eighteenth-Century Transition",
+    "unitType": "historical-transition",
+    "summary": "Analyzes the structural crisis of the Mughal Empire following Aurangzeb’s death in 1707: the Jagirdari/Mansabdari crisis, agrarian distress, peasant revolts (Jats, Satnamis, Sikhs), foreign invasions (Nadir Shah 1739, Ahmad Shah Abdali), and the emergence of autonomous regional successor states (Awadh, Bengal, Hyderabad) and warrior states (Maratha Confederacy, Mysore, Sikh Kingdom).",
+    "epistemicStatus": "source-historiographical-structural",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-vedhist-02",
+    "title": "European Mercantilism & The British Conquest of India",
+    "unitType": "colonial-expansion",
+    "summary": "Traces European commercial rivalries (Portuguese, Dutch, French, English) culminating in the Anglo-French Carnatic Wars. Deconstructs the British conquest of Bengal (Battle of Plassey 1757, Battle of Buxar 1764, Treaty of Allahabad 1765 and the Diwani rights). Details colonial diplomatic instruments: Lord Wellesley’s Subsidiary Alliance system and Lord Dalhousie’s Doctrine of Lapse.",
+    "epistemicStatus": "source-military-diplomatic",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-vedhist-03",
+    "title": "Colonial Economy: Land Revenue Systems & The Drain of Wealth",
+    "unitType": "economic-historiography",
+    "summary": "Rigorous examination of British colonial economic architecture: Lord Cornwallis’s Permanent Settlement of 1793 in Bengal, Thomas Munro’s Ryotwari System in Madras/Bombay, and Holt Mackenzie’s Mahalwari System. Analyzes the commercialization of agriculture, deindustrialization of Indian handicrafts, recurring colonial famines, and Dadabhai Naoroji’s \"Drain of Wealth\" theory (*Poverty and Un-British Rule in India*).",
+    "epistemicStatus": "source-economic-structural",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-vedhist-04",
+    "title": "Popular Resistances & The Revolt of 1857",
+    "unitType": "rebellion-historiography",
+    "summary": "Chronicles pre-1857 civil uprisings, tribal rebellions (Santhal Hool 1855–56, Kol, Khasi, Paika Rebellion 1817), and peasant protests. Deconstructs the Great Revolt of 1857: political, socio-religious, economic, and military causes, the greased cartridge spark at Meerut, key leadership centres (Delhi, Kanpur, Lucknow, Jhansi, Arrah), causes of failure, and the administrative shift from Company to Crown (Act of 1858).",
+    "epistemicStatus": "source-rebellion-military",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-vedhist-05",
+    "title": "Socio-Religious Reform Movements & Modern Indian Renaissance",
+    "unitType": "socio-cultural-renaissance",
+    "summary": "Analyzes the 19th-century socio-religious reform currents: Reformist vs. Revivalist movements. Examines Raja Ram Mohan Roy and the Brahmo Samaj (abolition of Sati 1829), Ishwar Chandra Vidyasagar (Widow Remarriage Act 1856), Swami Dayananda Saraswati and Arya Samaj (*Satyarth Prakash*), Swami Vivekananda and Ramakrishna Mission, Jyotirao Phule and Satyashodhak Samaj, and Sir Syed Ahmad Khan’s Aligarh Movement.",
+    "epistemicStatus": "source-intellectual-sociological",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-vedhist-06",
+    "title": "Early Nationalist Awakening & The Moderate-Extremist Phase",
+    "unitType": "nationalist-evolution",
+    "summary": "Examines the rise of modern political consciousness, pre-Congress political associations, and the foundation of the Indian National Congress (1885) under A.O. Hume. Contrasts the Moderate Phase (1885–1905, 3Ps: Prayer, Petition, Protest, constitutional agitation, economic critique) with the Extremist Phase (1905–1919, Lal-Bal-Pal, Aurobindo Ghose, Swadeshi, Boycott, Swaraj as a birthright), culminating in the Surat Split of 1907.",
+    "epistemicStatus": "source-political-ideological",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-vedhist-07",
+    "title": "Swadeshi, Revolutionary Nationalism & The Home Rule Movement",
+    "unitType": "revolutionary-mass-movement",
+    "summary": "Deconstructs the anti-Partition agitation in Bengal (1905) under Lord Curzon and the birth of the Swadeshi and Boycott movements. Traces Phase I of Revolutionary Nationalism (Anushilan Samiti, Yugantar, Abhinav Bharat, Ghadar Party, Komagata Maru incident). Evaluates the Lucknow Pact of 1916 (Congress-League rapprochement) and the Home Rule League Movement led by Bal Gangadhar Tilak and Annie Besant.",
+    "epistemicStatus": "source-revolutionary-political",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-vedhist-08",
+    "title": "The Gandhian Epoch: Early Experiments to Non-Cooperation & Civil Disobedience",
+    "unitType": "gandhian-mass-satyagraha",
+    "summary": "Details the entry of Mahatma Gandhi from South Africa (1915): Champaran (1917, Tinkathia system), Ahmedabad Mill Strike (1918), and Kheda Satyagraha (1918). Analyzes the Rowlatt Act and Jallianwala Bagh Massacre (1919), the Non-Cooperation and Khilafat Movement (1920–1922, Chauri Chaura withdrawal), the Swarajist interlude (C.R. Das, Motilal Nehru), the Simon Commission boycott (1927), the Nehru Report (1928), and the Civil Disobedience Movement (1930 Dandi Salt March, Gandhi-Irwin Pact, Poona Pact 1932).",
+    "epistemicStatus": "source-gandhian-methodological",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-vedhist-09",
+    "title": "The Radical Left, Subhas Chandra Bose & The Road to Quit India",
+    "unitType": "socialist-radical-nationalism",
+    "summary": "Investigates the rise of the Socialist and Communist Left (Congress Socialist Party, CSP 1934, Kisan Sabha movement, Trade Unionism). Analyzes the Gandhi-Bose ideological split at the Haripura (1938) and Tripuri (1939) Congress sessions, the formation of the Forward Bloc, the 1937 Provincial Elections and Congress Ministries, the August Offer (1940), the Cripps Mission (1942), the Quit India Movement (*Do or Die*), and the military campaigns of the Indian National Army (INA) under Netaji.",
+    "epistemicStatus": "source-ideological-military",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-vedhist-10",
+    "title": "Wavell Plan, Partition Dialectics & The Indian Independence Act (1947)",
+    "unitType": "decolonization-partition",
+    "summary": "Deconstructs the constitutional endgame of British rule: the C.R. Formula (1944), Gandhi-Jinnah Talks, the Wavell Plan and Simla Conference (1945), the INA Trials at Red Fort, the Royal Indian Navy (RIN) Mutiny of February 1946, the Cabinet Mission Plan (1946), the Direct Action Day and communal holocaust, Attlee’s Statement (February 1947), Lord Mountbatten’s June 3rd Plan, the Radcliffe Boundary Commission, and the Indian Independence Act of 1947.",
+    "epistemicStatus": "source-decolonization-institutional",
+    "materiality": "critical",
+    "order": 10
+  }
+]
