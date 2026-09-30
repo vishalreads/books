@@ -1,0 +1,112 @@
+[
+  {
+    "id": "unit-1-historical-rift-reconvergence-phenomenology-cognitive-science",
+    "title": "Unit 1: The Historical Rift & Re-Convergence: Phenomenology Meets Contemporary Cognitive Science",
+    "themes": [
+      "The Century-Long Divide: Anglo-American Functionalism/Behaviorism vs. Continental Phenomenology",
+      "What Phenomenology Truly Is: The Rigorous Investigation of the Structures of First-Person Experience",
+      "The Failure of Computational Functionalism: The 'Hard Problem' and the Neglect of Lived Subjectivity",
+      "The Three Continental Pillars: Edmund Husserl, Martin Heidegger, and Maurice Merleau-Ponty",
+      "The Modern Marriage: How 4E Cognitive Science (Embodied, Embedded, Enactive, Extended) Reinvents Phenomenology"
+    ]
+  },
+  {
+    "id": "unit-2-phenomenological-methodologies-epoche-neurophenomenology",
+    "title": "Unit 2: Phenomenological Methodologies: Epoché, Eidetic Variation, and Neurophenomenology",
+    "themes": [
+      "The Natural Attitude: Our Naive, Pre-Philosophical Presupposition of an Independent World Out There",
+      "The Epoché and Phenomenological Reduction: Bracketing Metaphysical Assumptions to Interrogate Appearances As Experienced",
+      "Eidetic Variation: Imaginatively Varying Features to Discover Invariant Structural Essences of Phenomena",
+      "Naturalizing Phenomenology: Francisco Varela's Neurophenomenological Integration of Dynamical EEG and First-Person Reports",
+      "Front-Loading Phenomenology: Designing Experimental Cognitive Paradigms Informed in Advance by Phenomenological Insights"
+    ]
+  },
+  {
+    "id": "unit-3-consciousness-pre-reflective-self-awareness",
+    "title": "Unit 3: Consciousness & Pre-Reflective Self-Awareness: The 'Mineness' (Jemeinigkeit) of Experience",
+    "themes": [
+      "The Core Insight: All Conscious Experience Possesses an Inherent, Implicit First-Person Quality ('For-Me-Ness')",
+      "Pre-Reflective Self-Consciousness: Being Aware of One's Experience Without Generating a Secondary Thematic Reflection",
+      "Critique of Higher-Order Thought (HOT) and Perception (HOP) Theories: The Infinite Regress Fallacy",
+      "Blindsight and Pathological Disconnects: Preserved Subconscious Processing Lacking Phenomenal Mineness",
+      "The Transition to Explicit Reflection: How the Self Takes Its Own Lived Flow as an Object of Scrutiny"
+    ]
+  },
+  {
+    "id": "unit-4-time-consciousness-temporal-flow-dynamical-systems",
+    "title": "Unit 4: Time-Consciousness & Temporal Flow: Primal Impression, Retention, Protention",
+    "themes": [
+      "The Paradox of Temporal Perception: How We Perceive a Melody Rather than Isolated, Static Tones",
+      "Husserl's Tripartite Architecture: Primal Impression (Current Phase), Retention (Immediate Past Echo), and Protention (Immediate Anticipation)",
+      "The Non-Linear Now: Consciousness as a Dynamic Temporal Horizon Rather than an Infinitesimal 'Knife-Edge' Instant",
+      "Dynamical Systems Theory in Cognitive Science: Phase Spaces, Attractors, and Mathematical Models of Temporal Flow",
+      "Historicity and Narrative Retention: How Deeper Past Conditioning and Future Projects Structure Immediate Experience"
+    ]
+  },
+  {
+    "id": "unit-5-perception-enactivism-perceptual-holism",
+    "title": "Unit 5: Perception & Enactivism: Perceptual Holism, Affordances, and Sensorimotor Contingencies",
+    "themes": [
+      "Rejecting the Classical Snapshot Model: Perception as Active Exploration, Not Passive Retinal Image Processing",
+      "Perceptual Holism: The Part Is Always Experienced Against an Unseen but Implied Gestalt Background",
+      "J.J. Gibson's Ecological Affordances: Perceiving Objects Directly in Terms of Action Possibilities (Graspability, Climbability)",
+      "Sensorimotor Enactivism (Alva Noë & Kevin O'Regan): Vision as a Mode of Mastery Over Sensorimotor Dependencies",
+      "The Social Grounding of Perception: How Intersubjective Habituation Shapes What and How We Perceive"
+    ]
+  },
+  {
+    "id": "unit-6-intentionality-myth-of-mental-representation",
+    "title": "Unit 6: Intentionality & The Demolition of Representationalism: Being Directed at the World",
+    "themes": [
+      "Brentano's Redefinition: Intentionality as the Defining Mark of Mental Phenomena (Aboutness or Directedness)",
+      "Critique of the Internal Picture Theory: The Mind Does Not Gaze at Internal Mental Snapshots of the External World",
+      "Resemblance and Causation Fallacies: Why Pure Physical Causality Cannot Account for Semantic Significance",
+      "Husserl's Noesis-Noema Correlation: The Act of Intending and the Intended Object in Its Mode of Presentation",
+      "Transcending the Internalism vs. Externalism Debate: Mind as Being-in-the-World (In-der-Welt-sein)"
+    ]
+  },
+  {
+    "id": "unit-7-embodied-mind-body-schema-vs-body-image",
+    "title": "Unit 7: The Embodied Mind: Body Schema (Schéma Corporel) vs. Body Image (Image Corporelle)",
+    "themes": [
+      "Merleau-Ponty's Foundational Distinction: The Physical Corpse (Körper) vs. The Living Phenomenal Body (Leib / Corps Propre)",
+      "The Body Schema (Schéma Corporel): Sub-Personal, Pre-Reflective Sensorimotor Capacities Operating Automatically",
+      "The Body Image (Image Corporelle): The Conscious Perceptual, Conceptual, and Emotional Mental Representation of One's Body",
+      "Pathological Dissociations: Ian Waterman's Total Deafferentation vs. Anorexia Nervosa and Somatoparaphrenia",
+      "The Spatiality of Situation: How the Body Anchors Egocentric Space and Makes the World Navigable"
+    ]
+  },
+  {
+    "id": "unit-8-action-agency-sense-of-ownership-libet-debate",
+    "title": "Unit 8: Action & Agency: The Sense of Agency vs. The Sense of Ownership",
+    "themes": [
+      "Dissecting Volition: The Fundamental Phenomenological Distinction Between 'My Body Moved' and 'I Moved My Body'",
+      "Sense of Ownership (SoO): The Pre-Reflective Feeling That It Is My Body Undergoing Motion",
+      "Sense of Agency (SoA): The Sense That I Am the Active Initiator and Controller of the Action",
+      "Pathologies of Volition: The Anarchic/Alien Hand Syndrome, Involuntary Reflexes, and Passivity Symptoms in Schizophrenia",
+      "Deconstructing the Libet Experiments: Why Pre-Motor Readiness Potentials (RP) Do Not Disprove Free Agency"
+    ]
+  },
+  {
+    "id": "unit-9-intersubjectivity-knowing-others-beyond-theory-of-mind",
+    "title": "Unit 9: Intersubjectivity: Refuting 'Theory of Mind' via Primary and Secondary Embodied Interaction",
+    "themes": [
+      "The Flawed Orthodoxy: Theory-Theory (TT) and Simulation-Theory (ST) as Overly Intellectualized Cartesian Theses",
+      "The Conceptual Problem of Other Minds: Why We Do Not Infer Other Minds from Invisible, Hidden Hypotheses",
+      "Primary Intersubjectivity (Colwyn Trevarthen): Direct, Pre-Reflective Bodily Resonance, Gaze-Following, and Neonatal Imitation",
+      "Secondary Intersubjectivity: Triadic Shared Attention Involving Objects in Common Environmental Contexts",
+      "Narrative Practice Hypothesis: How Social Understanding Relies on Cultural Narratives Rather than Internal Mindreading Modules"
+    ]
+  },
+  {
+    "id": "unit-10-self-personhood-minimal-vs-narrative-self",
+    "title": "Unit 10: Self & Personhood: The Minimal Self vs. Narrative Self, Refuting Neuroskepticism",
+    "themes": [
+      "The Challenge of Neuroskepticism: Thomas Metzinger and Daniel Dennett's 'No-Self' Illusionism",
+      "The Phenomenological Triad of Selfhood: The Minimal (Core) Self vs. The Experiential Self vs. The Narrative Person",
+      "The Minimal Self: The Immediate, Invariant, Pre-Reflective 'Ipseity' Inherent in Any Conscious Experience",
+      "The Narrative Self: The Diachronic Identity Constructed Through Memory, Social Roles, and Autobiographical Storytelling",
+      "Pathologies of Ipseity: Josef Parnas and Louis Sass's Phenomenological Model of Schizophrenia as Self-Disorder"
+    ]
+  }
+]
