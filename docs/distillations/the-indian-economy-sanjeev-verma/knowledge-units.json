@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-verma-01",
+    "title": "Output of an Economy & National Income Aggregates",
+    "unitType": "macroeconomic-accounting",
+    "summary": "Deconstruction of macroeconomic output: monetary aggregation of final goods and services. Mathematical relationships between GDP, NDP, GNP, and NNP. Distinguishes Factor Cost, Basic Prices, and Market Prices. Explains nominal versus real GDP, the GDP Deflator formula, base-year adjustments, and the fundamental limitations of output as an indicator of human well-being.",
+    "epistemicStatus": "source-theoretical",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-verma-02",
+    "title": "Towards Inclusive Growth: Growth vs. Development Paradigm",
+    "unitType": "development-paradigm",
+    "summary": "Analyzes the historical decoupling of economic expansion from broad social advancement. Contrasts quantitative growth with qualitative development. Examines Amartya Sen’s capability approach, the Human Development Index (HDI), and the structural barriers to inclusive growth in India, including jobless growth, spatial inequality, and institutional delivery deficits.",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-verma-03",
+    "title": "Poverty Measurement, Inequality & Social Sector Architecture",
+    "unitType": "social-policy",
+    "summary": "Traces the chronological evolution of poverty estimation in India: Alagh, Lakdawala, Tendulkar (Mixed Reference Period and cost-of-living basket), and Rangarajan committees. Dissects multidimensional poverty deprivation metrics. Details social sector rights-based legislation, MGNREGA mechanics, universal social protection, and public expenditure deficits in healthcare and education.",
+    "epistemicStatus": "source-historical-policy",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-verma-04",
+    "title": "Food Security Architecture, Public Distribution System & Buffer Stocks",
+    "unitType": "policy-operational",
+    "summary": "Comprehensive analysis of Indian food governance: the institutional mandate of the Food Corporation of India (FCI), open-ended procurement, Minimum Support Price (MSP) incentives, buffer stock norms, and the Targeted Public Distribution System (TPDS). Evaluates the National Food Security Act (NFSA) 2013 legal mandates and the Shanta Kumar Committee restructuring proposals.",
+    "epistemicStatus": "source-policy-institutional",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-verma-05",
+    "title": "Agriculture Sector: Agrarian Structure, Productivity & Allied Sectors",
+    "unitType": "agrarian-economics",
+    "summary": "Surveys the structural crisis of Indian agriculture: small and fragmented landholdings, monsoon dependency, soil degradation post-Green Revolution, and declining public capital formation. Details irrigation disparities, institutional credit delivery via Kisan Credit Cards, and the high-growth potential of allied sectors including dairy, livestock, poultry, and fisheries.",
+    "epistemicStatus": "source-empirical-policy",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-verma-06",
+    "title": "Agricultural Marketing Reforms, APMC Monopolies & Land Policy",
+    "unitType": "market-governance",
+    "summary": "Critiques the structural distortions of the Agricultural Produce Market Committee (APMC) acts: licensing cartels, high transaction fees, and price exploitation. Details market unification initiatives: electronic National Agriculture Market (e-NAM), Model APLM Act 2017, and contract farming. Reviews post-independence land reforms: Zamindari abolition, tenancy security, land ceilings, and modern land leasing frameworks.",
+    "epistemicStatus": "source-institutional-legal",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-verma-07",
+    "title": "Salient Features of ‘New India’ & Structural Transformation",
+    "unitType": "structural-transformation",
+    "summary": "Analyzes India’s unique growth path: the historical skipping of secondary manufacturing to become a service-led economy. Evaluates the demographic dividend window (median age ~28), labor force formalization bottlenecks, female labor force participation challenges, digital public infrastructure (India Stack), and the shift toward knowledge-intensive service exports.",
+    "epistemicStatus": "source-analytical",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-verma-08",
+    "title": "Industrial Policy Evolution, License Raj & Disinvestment Dynamics",
+    "unitType": "industrial-policy",
+    "summary": "Traces Indian industrial policy from the 1948 and 1956 Industrial Policy Resolutions (commanding heights of the public sector) to the landmark 1991 New Industrial Policy. Analyzes the dismantling of industrial licensing, MRTP restrictions, and phased disinvestment of Public Sector Enterprises (PSEs). Deconstructs the National Investment Fund (NIF) and strategic disinvestment paradigms.",
+    "epistemicStatus": "source-historical-policy",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-verma-09",
+    "title": "Infrastructure Bottlenecks & Public-Private Partnership Investment Models",
+    "unitType": "infrastructure-finance",
+    "summary": "Deconstructs the chronic infrastructure deficit constraining Indian industrial competitiveness. Analyzes Public-Private Partnership (PPP) investment models: Build-Operate-Transfer (BOT), Build-Own-Operate-Transfer (BOOT), Design-Build-Finance-Operate-Transfer (DBFOT), Engineering-Procurement-Construction (EPC), and the Hybrid Annuity Model (HAM). Evaluates the Kelkar Committee reforms and logistics corridors.",
+    "epistemicStatus": "source-financial-operational",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-verma-10",
+    "title": "External Sector, Balance of Payments & Global Economic Integration",
+    "unitType": "international-economics",
+    "summary": "Rigorous examination of external sector mechanics: Balance of Payments (BoP) accounting on double-entry principles, Current Account Deficit (CAD) vulnerabilities, Rupee convertibility trajectory (current vs. capital account), foreign capital dynamics (FDI vs. FPI), foreign exchange reserve management, and India’s strategic posture within multilateral institutions (WTO, IMF, World Bank).",
+    "epistemicStatus": "source-macroeconomic",
+    "materiality": "critical",
+    "order": 10
+  }
+]

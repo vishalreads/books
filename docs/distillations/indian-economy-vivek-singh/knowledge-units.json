@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-singh-01",
+    "title": "Macroeconomic Fundamentals, Circular Flow & Output Accounting",
+    "unitType": "macroeconomic-accounting",
+    "summary": "Deconstructs the foundational grammar of macroeconomics: the three fundamental economic problems (What, How, For Whom), the four-sector circular flow model (Household, Firm, Government, External), and the NSO national accounts methodology. Formulates Gross Value Added (GVA) at basic prices, Incremental Capital Output Ratio (ICOR), Potential GDP, Purchasing Power Parity (PPP), and the GDP Deflator.",
+    "epistemicStatus": "source-theoretical-mathematical",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-singh-02",
+    "title": "Monetary Architecture, Money Creation & Financial Markets",
+    "unitType": "monetary-mechanics",
+    "summary": "Systematic analysis of money stock aggregates (M0 to M3), high-powered money, the fractional reserve banking multiplier, and money market instruments (Call/Notice Money, Treasury Bills, Commercial Paper, Certificates of Deposit). Analyzes corporate bond yields, yield curve inversion mechanics, and foreign exchange hedging instruments including currency and forex swaps.",
+    "epistemicStatus": "source-institutional-financial",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-singh-03",
+    "title": "Reserve Bank of India & Monetary Policy Transmission Architecture",
+    "unitType": "monetary-policy",
+    "summary": "Examines the Liquidity Adjustment Facility (LAF) corridor: Repo, Reverse Repo, Marginal Standing Facility (MSF), and the Standing Deposit Facility (SDF). Details statutory reserve ratios (CRR, SLR) and Open Market Operations (OMOs). Analyzes the Flexible Inflation Targeting (FIT) mandate (4% ± 2% CPI-C) under the Monetary Policy Committee (MPC) and the RBI Economic Capital Framework (Bimal Jalan Committee).",
+    "epistemicStatus": "source-institutional-policy",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-singh-04",
+    "title": "Banking Evolution, NPA Resolution & Prudential Architecture",
+    "unitType": "banking-prudential",
+    "summary": "Chronicles the structural evolution of Indian commercial banking from nationalization to the Non-Performing Asset (NPA) crisis. Details the transition from Base Rate to MCLR and the External Benchmark Lending Rate (EBLR). Deconstructs Basel III capital adequacy (CAR/CRAR, CET-1), the Prompt Corrective Action (PCA) framework, SARFAESI Act 2002, the Insolvency and Bankruptcy Code (IBC) 2016, and the Bad Bank architecture (NARCL-IDRCL).",
+    "epistemicStatus": "source-regulatory-legal",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-singh-05",
+    "title": "Government Budgeting, Fiscal Deficits & Debt Sustainability",
+    "unitType": "fiscal-architecture",
+    "summary": "Deconstructs the constitutional geometry of the Union Budget: Article 266 (Consolidated Fund & Public Account) and Article 267 (Contingency Fund). Analyzes the revenue versus capital budgetary accounts and derives the four deficit identities: Fiscal Deficit, Revenue Deficit, Effective Revenue Deficit, and Primary Deficit. Evaluates the FRBM Act (2003), N.K. Singh committee debt-to-GDP targets (60% general / 40% central), and the fiscal council debate.",
+    "epistemicStatus": "source-constitutional-mathematical",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-singh-06",
+    "title": "Taxation Architecture, GST Mechanics & Fiscal Federalism",
+    "unitType": "taxation-federalism",
+    "summary": "Surveys India’s direct and indirect tax systems, tax buoyancy, and the Direct Tax Code history. Details the Goods and Services Tax (GST) destination-based consumption framework: CGST, SGST, IGST, input tax credit (ITC) mechanics, inverted duty structures, and Article 279A GST Council voting parity. Analyzes Article 280 Finance Commission vertical tax devolution (41%) and horizontal formulaic criteria.",
+    "epistemicStatus": "source-institutional-legal",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-singh-07",
+    "title": "Economic History, Planning Paradigms & Modern Industrial Policy",
+    "unitType": "industrial-history",
+    "summary": "Traces the trajectory from colonial deindustrialization and the Mahalanobis heavy-industrialization strategy to the 1991 LPG reforms. Examines the structural transition from the Planning Commission to NITI Aayog. Evaluates contemporary manufacturing initiatives: Make in India, Production Linked Incentive (PLI) schemes across 14 sectors, revised MSME composite criteria, and the Index of Industrial Production (IIP).",
+    "epistemicStatus": "source-historical-policy",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-singh-08",
+    "title": "Demographics, Employment Dynamics & Labor Law Codification",
+    "unitType": "labor-economics",
+    "summary": "Evaluates India’s demographic dividend window (median age ~28) against labor market vulnerabilities: informalization, disguised unemployment, and low female labor force participation (FLFPR). Analyzes Periodic Labour Force Survey (PLFS) metrics (UPS vs. UPSS). Deconstructs the legislative consolidation of 29 central labor enactments into 4 Labor Codes (Wages, Industrial Relations, Social Security, and Occupational Safety).",
+    "epistemicStatus": "source-empirical-legal",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-singh-09",
+    "title": "Agriculture Architecture, Subsidies & Food Supply Chains",
+    "unitType": "agrarian-economics",
+    "summary": "Examines the agrarian economy: input subsidies (fertilizer Nutrient-Based Subsidy, power, canal irrigation), price subsidies vs. direct cash transfers (PM-KISAN), and Minimum Support Price (MSP) derivation ($A_2$, $A_2+FL$, $C_2$). Details agricultural marketing bottlenecks under APMC, e-NAM integration, Farmer Producer Organizations (FPOs), PMFBY crop insurance, and the food processing supply chain under PM-SAMPADA.",
+    "epistemicStatus": "source-policy-operational",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-singh-10",
+    "title": "External Sector, Balance of Payments & Multilateral Governance",
+    "unitType": "international-economics",
+    "summary": "Comprehensive analysis of Balance of Payments (BoP) accounting on double-entry principles, Current Account Deficit (CAD) sustainability, NEER and REER dynamics, and forex reserve management. Explores foreign investment rules (FDI automatic vs. government routes vs. FPI). Deconstructs Bretton Woods institutions (IMF quota/SDRs, World Bank) and WTO multilateral agreements: Agreement on Agriculture (AoA), TRIPS, TRIMS, GATS, and regional trade blocs (RCEP).",
+    "epistemicStatus": "source-macroeconomic",
+    "materiality": "critical",
+    "order": 10
+  }
+]
