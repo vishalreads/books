@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-ramesh-01",
+    "title": "Macroeconomic Concepts, National Income & Growth Dynamics",
+    "unitType": "macroeconomic-accounting",
+    "summary": "Exhaustive deconstruction of macroeconomic aggregates: GDP, NDP, GNP, and NNP across Factor Cost, Basic Prices, and Market Prices. Formulates the 2015 NSO methodology, Base Year shifts, Nominal vs. Real GDP via the GDP Deflator, and Purchasing Power Parity (PPP). Contrasts economic Growth, Progress, and Development, detailing Amartya Sen’s Capability Approach, the Human Development Index (HDI), and Gross National Happiness (GNH).",
+    "epistemicStatus": "source-theoretical",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-ramesh-02",
+    "title": "Evolution of the Indian Economy & Pre-Reform Planning Architecture",
+    "unitType": "historical-planning",
+    "summary": "Chronicles India’s economic evolution: colonial deindustrialization and the drain of wealth. Analyzes early planning proposals: Visvesvaraya Plan, FICCI Proposal, National Planning Committee (1938), Bombay Plan (1944), Gandhian Plan, and People’s Plan. Deconstructs the Harrod-Domar First Plan, the Mahalanobis heavy-industrialization Second Plan, the 12 Five-Year Plans, and the paradigm shift from imperative planning to indicative planning and NITI Aayog.",
+    "epistemicStatus": "source-historical-policy",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-ramesh-03",
+    "title": "Economic Reforms: 1991 LPG Inflection & Generational Sequelae",
+    "unitType": "structural-reforms",
+    "summary": "Forensic autopsy of the 1991 Balance of Payments crisis: fiscal profligacy, Gulf War oil shock, and double-digit inflation. Analyzes the structural adjustment programme and stabilization policies. Details First Generation Reforms (1991–2000: delicensing, disinvestment, trade liberalization), Second Generation Reforms (factor markets, civil service reform), Third Generation Reforms (panchayat governance), and Fourth Generation Reforms (IT and digital formalization).",
+    "epistemicStatus": "source-policy-evolution",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-ramesh-04",
+    "title": "Inflation Mechanics, Business Cycles & Price Indices",
+    "unitType": "price-dynamics",
+    "summary": "Taxonomy of inflationary pressures: Demand-pull, Cost-push, Structural, Bottleneck, Creeping, Galloping, and Hyperinflation. Examines the Phillips Curve (short-run vs. long-run expectations-augmented), the Sacrifice Ratio, and Stagflation. Comparative analysis of Wholesale Price Index (WPI) vs. Consumer Price Index (CPI-C), the Base Effect, and the four phases of the Business Cycle: Depression, Recovery, Boom, and Recession.",
+    "epistemicStatus": "source-analytical-empirical",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-ramesh-05",
+    "title": "Indian Agriculture, Food Security & Agrarian Marketing Architecture",
+    "unitType": "agrarian-economics",
+    "summary": "Comprehensive analysis of Indian agriculture: Green Revolution phases, landholding fragmentation, and cropping pattern shifts. Evaluates farm credit delivery via NABARD, Priority Sector Lending (PSL), and Kisan Credit Cards. Deconstructs Minimum Support Price (MSP) cost concepts (A2, A2+FL, C2), the Food Corporation of India (FCI) buffer stock norms, National Food Security Act (NFSA) 2013, and market unification via APMC reforms and e-NAM.",
+    "epistemicStatus": "source-policy-operational",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-ramesh-06",
+    "title": "Industrial Policy, MSMEs & Infrastructure Development Models",
+    "unitType": "industrial-infrastructure",
+    "summary": "Traces Industrial Policy Resolutions (1948, 1956, 1977, 1980, 1991), the dismantling of the MRTP Act, and the Index of Industrial Production (IIP) tracking the 8 Core Industries. Analyzes the Micro, Small and Medium Enterprises Development (MSMED) Act and composite classification. Evaluates physical infrastructure deficits and Public-Private Partnership (PPP) investment models: BOT-Toll, BOT-Annuity, HAM, EPC, and the National Infrastructure Pipeline (NIP).",
+    "epistemicStatus": "source-institutional-financial",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-ramesh-07",
+    "title": "Financial System Architecture: Money Markets, Capital Markets & Insurance",
+    "unitType": "financial-system",
+    "summary": "Structural dissection of the Indian financial architecture. Money market instruments: Call/Notice Money, Treasury Bills (91, 182, 364 days), Commercial Paper, Certificates of Deposit, and Commercial Bills. Capital market dynamics: Primary Market (IPOs, FPOs, Rights Issues) vs. Secondary Market (BSE, NSE, SEBI regulations), G-Sec bond yields, yield curve mechanics, and the insurance sector under IRDAI.",
+    "epistemicStatus": "source-institutional-financial",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-ramesh-08",
+    "title": "Banking Structure, Monetary Transmission & Prudential Framework",
+    "unitType": "banking-prudential",
+    "summary": "Chronicles the evolution of Indian banking: 1969/1980 nationalizations, Narasimham Committee I & II reforms, and modern banking tiers (Scheduled Commercial Banks, RRBs, Payments Banks, Small Finance Banks). Deconstructs the RBI Liquidity Adjustment Facility (Repo, SDF, MSF), lending rate benchmarks (PLR, Base Rate, MCLR, EBLR), Basel III capital adequacy (CAR/CRAR), PCA framework, and NPA resolution via SARFAESI and the IBC 2016.",
+    "epistemicStatus": "source-regulatory-policy",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-ramesh-09",
+    "title": "Public Finance, Taxation Framework & Fiscal Federalism",
+    "unitType": "fiscal-architecture",
+    "summary": "Deconstructs the Union Budget architecture: Revenue Account vs. Capital Account. Derives Fiscal Deficit, Revenue Deficit, Effective Revenue Deficit, and Primary Deficit identities. Evaluates the FRBM Act (2003) and N.K. Singh debt targets. Explores direct vs. indirect taxation, tax buoyancy, the 101st Amendment GST architecture (CGST, SGST, IGST, ITC, GST Council Art. 279A), and Article 280 Finance Commission devolution formulas.",
+    "epistemicStatus": "source-constitutional-mathematical",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-ramesh-10",
+    "title": "External Sector, Balance of Payments & Multilateral Governance",
+    "unitType": "international-economics",
+    "summary": "Rigorous examination of Balance of Payments (BoP) accounting on double-entry principles: Current Account (Trade Balance, Invisibles, Remittances) vs. Capital Account (FDI, FPI, ECBs, NRI Deposits). Analyzes Rupee convertibility (Article VIII IMF obligations vs. Tarapore capital account prerequisites), NEER vs. REER exchange rates, and India’s strategic posture within multilateral institutions (IMF, World Bank, WTO: AoA, TRIPS, TRIMS, GATS).",
+    "epistemicStatus": "source-macroeconomic",
+    "materiality": "critical",
+    "order": 10
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-garg-01",
+    "title": "Macroeconomic Trough & The Trajectory to a $10 Trillion Economy",
+    "unitType": "macroeconomic-growth",
+    "summary": "Subhash Chandra Garg (Former Finance Secretary of India) diagnoses the structural growth slowdown preceding the pandemic. Analyzes the collapse of Gross Fixed Capital Formation (GFCF) from 40% to ~28% of GDP. Formulates the compound mathematical trajectory required to elevate India from a $3 trillion to a $10 trillion economy by 2035, requiring an 8% sustained real GDP growth rate and deep factor productivity enhancements.",
+    "epistemicStatus": "source-insider-policy",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-garg-02",
+    "title": "Agrarian Structural Crisis & Policy Critique: Beyond Subsidies",
+    "unitType": "agrarian-critique",
+    "summary": "Critiques the structural trap of Indian agriculture: 45% of the national workforce trapped in producing under 16% of GDP. Evaluates the failure of conventional agricultural schemes, the distortionary impact of input subsidies (urea, free electricity, canal water), and provides a forensic post-mortem of the 2020 Farm Laws—why their top-down enactment and subsequent repeal exposed the deep political-economy deadlock of agrarian reform.",
+    "epistemicStatus": "source-policy-critique",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-garg-03",
+    "title": "Industrial Stagnation & The MSME Dwarfism Trap: “Small Is Not Beautiful”",
+    "unitType": "industrial-critique",
+    "summary": "Challenging conventional political orthodoxies, Garg argues that India’s MSME policy perversely incentivizes firms to remain perpetually small (\"dwarfs\" rather than \"babies\") to preserve tax exemptions and labor shields. Contrasts this with East Asian scale economies in Vietnam and China. Evaluates the limitations of tariff protectionism and sets out the blueprint for large-scale, globally integrated manufacturing.",
+    "epistemicStatus": "source-analytical-policy",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-garg-04",
+    "title": "The Services Economy, Tech Frontier & Regulatory Bottlenecks",
+    "unitType": "services-technology",
+    "summary": "Examines India’s spontaneous service-sector boom: the software and IT-BPO export engine built without explicit government industrial policy. Analyzes the next evolution into Global Capability Centers (GCCs), SaaS, and knowledge exports. Diagnoses regulatory overreach in e-commerce, fintech, and digital data localization, proposing a light-touch regulatory architecture for digital platforms.",
+    "epistemicStatus": "source-analytical-policy",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-garg-05",
+    "title": "Public Sector Pathology & “Disinvestment Without Conviction”",
+    "unitType": "public-enterprise",
+    "summary": "Insider exposure of the chronic inefficiency, capital misallocation, and bureaucratic capture of Central Public Sector Enterprises (CPSEs). Exposes the pseudo-disinvestment sham—where public corporations purchase other public corporations (e.g., ONGC buying HPCL, LIC buying IDBI Bank) to meet annual budgetary revenue targets. Outlines the imperative for comprehensive, genuine privatization.",
+    "epistemicStatus": "source-insider-critique",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-garg-06",
+    "title": "Factor Market Deadlocks: Land Misallocation & Labor Inefficiencies",
+    "unitType": "factor-markets",
+    "summary": "Deconstructs factor market paralysis: archaic land acquisition under the 2013 LARR Act causing multi-year project delays, artificial urban land scarcity, and opaque rural land records. Critiques the 2020 Labor Codes, arguing that mere legislative consolidation failed to deliver genuine labor hire-and-fire flexibility, preserving thresholds that penalize formal scale.",
+    "epistemicStatus": "source-policy-critique",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-garg-07",
+    "title": "Infrastructure Governance: Structural Crises in Power, Telecom & Transport",
+    "unitType": "infrastructure-governance",
+    "summary": "Forensic diagnosis of infrastructure policy failures: the persistent bankruptcy of state electricity distribution companies (DISCOMs) despite repeated bailout packages (UDAY), the telecom AGR judicial crisis and tariff wars, and the distorted freight-passenger cross-subsidization in Indian Railways that cripples freight competitiveness.",
+    "epistemicStatus": "source-sectoral-diagnostic",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-garg-08",
+    "title": "Financial System Fragility & The Post-IL&FS Shadow Banking Crisis",
+    "unitType": "financial-stability",
+    "summary": "Detailed chronicle of the 2018 IL&FS default and the subsequent liquidity contagion across Non-Banking Financial Companies (NBFCs) and mutual funds. Evaluates the transition from the \"Twin Balance Sheet\" crisis to the \"Four Balance Sheet\" crisis (Banks, NBFCs, Corporates, Real Estate Developers). Outlines the path to corporate bond market deepening and financial regulatory reform.",
+    "epistemicStatus": "source-financial-historical",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-garg-09",
+    "title": "Public Finance Integrity: Deficit Illusions & Off-Budget Borrowings",
+    "unitType": "fiscal-integrity",
+    "summary": "Former Finance Secretary’s explosive breakdown of fiscal accounting practices: the systemic use of Extra-Budgetary Resources (EBR), shifting the food subsidy bill off-budget to the National Small Savings Fund (NSSF) via FCI loans, and NHAI commercial borrowing liabilities. Advocates for unvarnished budgetary transparency and a genuine fiscal consolidation roadmap.",
+    "epistemicStatus": "source-insider-accounting",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-garg-10",
+    "title": "External Sector Strategy & Institutional Governance Architecture",
+    "unitType": "macro-strategy",
+    "summary": "Synthesizes India’s macroeconomic posture for the $10 trillion horizon: avoiding protectionist import-substitution traps, establishing competitive real exchange rates (REER), integrating into global value chains (GVCs), and radically restructuring the economic governance apparatus across the Ministry of Finance, the Reserve Bank of India, and independent regulators.",
+    "epistemicStatus": "source-strategic-blueprint",
+    "materiality": "critical",
+    "order": 10
+  }
+]

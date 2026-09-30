@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-prakash-01",
+    "title": "Post-1991 Macroeconomic Trajectory & Structural Growth Shift",
+    "unitType": "macroeconomic-history",
+    "summary": "Empirical assessment of India’s post-1991 growth acceleration: breaking out of the pre-reform 3.5% \"Hindu rate of growth\" to achieve sustained 6.5–7.5% real GDP growth. Analyzes structural shifts across primary, secondary, and tertiary sectors, saving-investment dynamics, and aggregate demand composition across three decades of liberalization.",
+    "epistemicStatus": "source-empirical-analytical",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-prakash-02",
+    "title": "Fiscal Policy, Tax Restructuring & Deficit Trajectories",
+    "unitType": "public-finance",
+    "summary": "Examines the post-1991 restructuring of Central Government finances: Raja Chelliah and Kelkar tax reform committees, direct tax rate rationalization, transition from excise duty to MODVAT, CENVAT, and GST. Tracks empirical trends in Fiscal Deficit, Revenue Deficit, and public debt sustainability across central and state budgets.",
+    "epistemicStatus": "source-policy-empirical",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-prakash-03",
+    "title": "Fiscal Federalism & Center-State Financial Allocations",
+    "unitType": "fiscal-federalism",
+    "summary": "Systematic analysis of Indian fiscal federalism post-1991: evolution of Finance Commission awards (Tenth to Fourteenth FC), vertical sharing of divisible central taxes, formulaic horizontal distribution criteria, Article 275 statutory grants vs. discretionary Plan transfers, and state-level fiscal distress under State FRBM enactments.",
+    "epistemicStatus": "source-institutional-empirical",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-prakash-04",
+    "title": "Monetary Management, Credit Policy & Financial Liberalization",
+    "unitType": "monetary-banking",
+    "summary": "Deconstructs financial sector reforms implemented following the Narasimham Committee (1991, 1998): deregulation of lending and deposit interest rates, sharp reduction in statutory reserve pre-emptions (CRR and SLR), expansion of commercial bank credit, operational autonomy for public sector banks, and Priority Sector Lending compliance.",
+    "epistemicStatus": "source-regulatory-policy",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-prakash-05",
+    "title": "Capital Market Modernization & Regulatory Architecture",
+    "unitType": "capital-markets",
+    "summary": "Traces the transformation of Indian capital markets: abolition of the Controller of Capital Issues (CCI), statutory empowerment of SEBI (1992), introduction of electronic screen-based trading on NSE/BSE, depository dematerialization (NSDL/CDSL), T+2 rolling settlements, and the expansion of domestic mutual funds and equity derivatives.",
+    "epistemicStatus": "source-institutional-financial",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-prakash-06",
+    "title": "External Sector Reforms, Trade Patterns & Balance of Payments",
+    "unitType": "trade-external",
+    "summary": "Examines the post-1991 transformation of India’s external sector: shifting from autarkic import substitution to export orientation, dismantling quantitative import licensing, lowering peak customs duties, trends in merchandise trade balance, software service export booms, and the historic accumulation of foreign exchange reserves.",
+    "epistemicStatus": "source-empirical-trade",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-prakash-07",
+    "title": "Foreign Direct Investment Dynamics & Capital Account Convertibility",
+    "unitType": "foreign-investment",
+    "summary": "Detailed evaluation of Foreign Direct Investment (FDI) and Foreign Institutional Investment (FII) in post-1991 India: sector-wise inflows, automatic route expansion, and volatility management. Evaluates the debate on full Capital Account Convertibility, analyzing the S.S. Tarapore Committee (1997, 2006) preconditions and systemic risks.",
+    "epistemicStatus": "source-analytical-macro",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-prakash-08",
+    "title": "Agricultural Sector Performance, Cropping Patterns & Agrarian Crisis",
+    "unitType": "agrarian-performance",
+    "summary": "Empirical diagnosis of the post-1991 agrarian crisis: deceleration of agricultural GDP growth, collapse of public capital formation in irrigation, rising cost of inputs, shifts in cropping patterns toward cash crops, farmers’ indebtedness, and the structural implications of the WTO Agreement on Agriculture for domestic food security.",
+    "epistemicStatus": "source-empirical-agrarian",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-prakash-09",
+    "title": "Industrial Performance, Disinvestment & Infrastructure Deficits",
+    "unitType": "industrial-infrastructure",
+    "summary": "Surveys post-1991 industrial growth patterns: manufacturing stagnation, performance of the Index of Industrial Production (IIP), phased de-reservation of products for Small Scale Industries (SSIs), disinvestment of Central Public Sector Enterprises (CPSEs), and the persistent infrastructure deficit in electricity, transport, and ports.",
+    "epistemicStatus": "source-empirical-industrial",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-prakash-10",
+    "title": "Social Sector Outcomes: Poverty, Employment & Human Development",
+    "unitType": "social-development",
+    "summary": "Comprehensive empirical evaluation of social sector indicators across post-reform decades: head-count poverty ratio trends (Lakdawala vs. Tendulkar vs. Rangarajan), informalization of the workforce, the \"jobless growth\" phenomenon, out-of-pocket health expenditure burdens, educational disparities, and inter-state developmental divergence.",
+    "epistemicStatus": "source-socio-economic",
+    "materiality": "critical",
+    "order": 10
+  }
+]
