@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Exam Target & 10-Day Revision Tracker | Clean Slate Edition</title>
+  <style>
+    /* ==========================================================================
+       Print & Canvas Setup (A2 Landscape Standard)
+       ========================================================================== */
+    @page {
+      size: A2 landscape;
+      margin: 15mm 20mm;
+    }
+
+    :root {
+      --primary: #090d16;
+      --primary-accent: #1e293b;
+      --secondary: #475569;
+      --border: #cbd5e1;
+      --border-light: #e2e8f0;
+      --bg-body: #0b0f19;
+      --bg-card: #ffffff;
+      --accent-blue: #2563eb;
+      --accent-blue-bg: #eff6ff;
+      --accent-green: #15803d;
+      --accent-green-bg: #dcfce7;
+      --accent-amber: #b45309;
+      --accent-amber-bg: #fef3c7;
+      --accent-red: #b91c1c;
+      --accent-red-bg: #fee2e2;
+      --accent-purple: #6d28d9;
+      --accent-purple-bg: #f5f3ff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--text);
+      background-color: var(--bg-body);
+      line-height: 1.4;
+      font-size: 13.5px;
+    }
+
+    /* Screen Navigation Toolbar */
+    .screen-toolbar {
+      max-width: 1780px;
+      margin: 18px auto 14px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      background: #151d2f;
+      border: 1px solid #2d3748;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .screen-toolbar .title-area h1 {
+      font-size: 17px;
+      font-weight: 800;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .screen-toolbar .title-area p {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+    .toolbar-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .nav-btn {
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1px solid #334155;
+      background: #1e293b;
+      color: #cbd5e1;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .nav-btn:hover {
+      background: var(--accent-blue);
+      color: white;
+      border-color: var(--accent-blue);
+    }
+    .btn-print {
+      padding: 7px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .btn-print:hover {
+      background: #1d4ed8;
+    }
+
+    /* A2 Ultra-Wide Canvas Container */
+    .a2-container {
+      max-width: 1780px;
+      margin: 0 auto;
+    }
+
+    .a2-page {
+      background: var(--bg-card);
+      padding: 28px 38px;
+      border-radius: 12px;
+      box-shadow: 0 8px 35px rgba(0,0,0,0.6);
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      page-break-after: always;
+      position: relative;
+    }
+    .a2-page:last-child {
+      page-break-after: avoid;
+      margin-bottom: 40px;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+      }
+      .screen-toolbar, .no-print {
+        display: none !important;
+      }
+      .a2-container {
+        max-width: none !important;
+        margin: 0;
+      }
+      .a2-page {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+
+    /* Master Document Header */
+    .header {
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-main h2 {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-main .subheading {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-top: 3px;
+    }
+    .header-meta {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+    .badge-cycle {
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border: 1px solid #86efac;
+      padding: 3px 10px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .header-date {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    /* Exam Countdown Ribbon (Updated to 30 Sep 2026) */
+    .countdown-strip {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+      background: #f8fafc;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .countdown-item {
+      text-align: center;
+      border-right: 1.5px solid var(--border-light);
+      padding: 0 6px;
+    }
+    .countdown-item:last-child {
+      border-right: none;
+    }
+    .cd-exam {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--secondary);
+      letter-spacing: 0.03em;
+    }
+    .cd-days {
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-top: 2px;
+    }
+    .cd-stage {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+    .cd-urgent { color: var(--accent-red); }
+    .cd-warning { color: var(--accent-amber); }
+    .cd-normal { color: var(--accent-blue); }
+
+    /* Top KPI Dashboard */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .kpi-box {
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      background: #ffffff;
+    }
+    .kpi-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--secondary);
+      letter-spacing: 0.04em;
+    }
+    .kpi-number-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 3px;
+    }
+    .kpi-num {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--primary);
+    }
+    .kpi-sub {
+      font-size: 10.5px;
+      font-weight: 700;
+    }
+    .kpi-bar {
+      height: 4.5px;
+      width: 100%;
+      background: var(--border-light);
+      border-radius: 2px;
+      margin-top: 4px;
+      overflow: hidden;
+    }
+    .kpi-fill {
+      height: 100%;
+      background: var(--accent-blue);
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    /* Section Subheadings */
+    .section-header {
+      background: #f1f5f9;
+      border-left: 4px solid var(--primary);
+      padding: 6px 12px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+      font-size: 12.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 4px 4px 0;
+    }
+    .section-header .tag-count {
+      font-size: 10.5px;
+      font-weight: 700;
+      background: white;
+      border: 1px solid var(--border);
+      padding: 2px 9px;
+      border-radius: 12px;
+      color: var(--secondary);
+    }
+
+    /* Master Matrix Table Styling */
+    table.matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    table.matrix-table th,
+    table.matrix-table td {
+      border: 1px solid var(--border);
+      padding: 7px 9px;
+      vertical-align: middle;
+    }
+    table.matrix-table th {
+      background: #f8fafc;
+      color: var(--secondary);
+      font-weight: 800;
+      font-size: 10.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+    table.matrix-table th.col-left {
+      text-align: left;
+    }
+    table.matrix-table tbody tr:nth-child(even) {
+      background: #fcfdfe;
+    }
+    table.matrix-table tbody tr:hover {
+      background: #f1f5f9;
+    }
+
+    /* Checkboxes */
+    .chk-box {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border: 1.5px solid #94a3b8;
+      border-radius: 3px;
+      cursor: pointer;
+      display: inline-grid;
+      place-content: center;
+      vertical-align: middle;
+      position: relative;
+    }
+    .chk-box:checked {
+      background-color: var(--accent-green);
+      border-color: var(--accent-green);
+    }
+    .chk-box:checked::after {
+      content: "";
+      width: 3.5px;
+      height: 6.5px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      margin-bottom: 2px;
+    }
+
+    /* High-Visibility Badges */
+    .badge {
+      display: inline-block;
+      padding: 2.5px 7px;
+      border-radius: 4px;
+      font-size: 9.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .badge-done { background: var(--accent-green-bg); color: var(--accent-green); border: 1px solid #86efac; }
+    .badge-due { background: var(--accent-red-bg); color: var(--accent-red); border: 1px solid #fca5a5; font-weight: 900; }
+    .badge-soon { background: var(--accent-amber-bg); color: var(--accent-amber); border: 1px solid #fde68a; }
+    .badge-scheduled { background: var(--accent-blue-bg); color: var(--accent-blue); border: 1px solid #bfdbfe; }
+    .badge-pending { background: #f1f5f9; color: #64748b; border: 1px solid var(--border-light); }
+
+    .rev-cell {
+      text-align: center;
+      width: 50px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #94a3b8;
+    }
+
+    /* Bottom Information Split Cards */
+    .mini-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .mini-card {
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #ffffff;
+    }
+    .mini-card-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--secondary);
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 5px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-list {
+      list-style-type: none;
+      font-size: 11.5px;
+      line-height: 1.5;
+    }
+    .card-list li {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+    .card-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--accent-blue);
+      font-weight: 900;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1.5px solid var(--border-light);
+      padding-top: 8px;
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen-Only Navigation Toolbar -->
+  <div class="screen-toolbar no-print">
+    <div class="title-area">
+      <h1>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Mission 2026: Master Revision &amp; Target Tracker
+      </h1>
+      <p>Clean Slate Edition &bull; UIIC AO, NICL, IIBF DB&amp;F (4 Papers), RRB PO, EPFO APFC, RRB JE</p>
+    </div>
+    <div class="toolbar-actions">
+      <button class="nav-btn" onclick="scrollToPage('sheet-1')">Sheet 1: IIBF DB&amp;F</button>
+      <button class="nav-btn" onclick="scrollToPage('sheet-2')">Sheet 2: Insurance &amp; EPFO</button>
+      <button class="nav-btn" onclick="scrollToPage('sheet-3')">Sheet 3: Aptitude &amp; Reading</button>
+      <button class="btn-print" onclick="window.print()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Print / PDF (A2)
+      </button>
+    </div>
+  </div>
+
+  <div class="a2-container" id="main-container">
+
+    <!-- =========================================================================
+         SHEET 1: IIBF DIPLOMA IN BANKING & FINANCE (4 PAPERS MASTER MATRIX)
+         ========================================================================= -->
+    <section class="a2-page" id="sheet-1">
+      <div>
+        <!-- Master Header -->
+        <header class="header">
+          <div class="header-main">
+            <h2>Mission 2026: IIBF DB&amp;F &amp; Core Financial Architecture</h2>
+            <div class="subheading">4-Stage Pipeline: (M1 Concept &rarr; M2 Notes &rarr; M3 Practice &rarr; M4 Error Log) + Mandatory 10-Day Spaced Repetition (R1-R4)</div>
+          </div>
+          <div class="header-meta">
+            <span class="badge-cycle">&#10003; Clean Slate Active</span>
+            <div class="header-date">Today: Wednesday, 30 Sep 2026 &bull; Day 01</div>
+          </div>
+        </header>
+
+        <!-- Exam Countdown Ribbon (As of 30 Sep 2026) -->
+        <div class="countdown-strip">
+          <div class="countdown-item">
+            <div class="cd-exam">UIIC AO</div>
+            <div class="cd-days cd-urgent">22 Days</div>
+            <div class="cd-stage">Prelims: 22 Oct</div>
+          </div>
+          <div class="countdown-item">
+            <div class="cd-exam">NICL Assistant</div>
+            <div class="cd-days cd-urgent">30 Days</div>
+            <div class="cd-stage">Mains: 30 Oct</div>
+          </div>
+          <div class="countdown-item">
+            <div class="cd-exam">IIBF Paper 1</div>
+            <div class="cd-days cd-warning">32 Days</div>
+            <div class="cd-stage">IE&amp;IFS: 01 Nov</div>
+          </div>
+          <div class="countdown-item">
+            <div class="cd-exam">IBPS RRB PO</div>
+            <div class="cd-days cd-normal">52 Days</div>
+            <div class="cd-stage">Prelims: 21 Nov</div>
+          </div>
+          <div class="countdown-item">
+            <div class="cd-exam">IIBF P2 &bull; P3 &bull; P4</div>
+            <div class="cd-days cd-normal">53-60 D</div>
+            <div class="cd-stage">22, 28, 29 Nov</div>
+          </div>
+          <div class="countdown-item">
+            <div class="cd-exam">EPFO APFC</div>
+            <div class="cd-days cd-normal">81 Days</div>
+            <div class="cd-stage">Exam: 20 Dec</div>
+          </div>
+        </div>
+
+        <!-- KPI Summary Bar (Clean Slate: 0% Baselines) -->
+        <div class="kpi-row">
+          <div class="kpi-box">
+            <div class="kpi-label">IIBF Modules</div>
+            <div class="kpi-number-row">
+              <span class="kpi-num">16 Modules</span>
+              <span class="kpi-sub" style="color: var(--secondary);">4 Papers</span>
+            </div>
+            <div class="kpi-bar"><div class="kpi-fill" style="width: 100%;"></div></div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">M1 &amp; M2 Completed</div>
+            <div class="kpi-number-row">
+              <span class="kpi-num" id="kpi-m12">0 / 16</span>
+              <span class="kpi-sub" id="kpi-m12-pct" style="color: var(--secondary);">0%</span>
+            </div>
+            <div class="kpi-bar"><div class="kpi-fill" id="bar-m12" style="width: 0%; background: var(--accent-blue);"></div></div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">M3 &amp; M4 (Practice)</div>
+            <div class="kpi-number-row">
+              <span class="kpi-num" id="kpi-m34">0 / 16</span>
+              <span class="kpi-sub" id="kpi-m34-pct" style="color: var(--secondary);">0%</span>
+            </div>
+            <div class="kpi-bar"><div class="kpi-fill" id="bar-m34" style="width: 0%; background: var(--accent-purple);"></div></div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">10-Day Rev Compliance</div>
+            <div class="kpi-number-row">
+              <span class="kpi-num" style="color: var(--accent-green);">100%</span>
+              <span class="kpi-sub" style="color: var(--accent-green);">&#10003; Baseline</span>
+            </div>
+            <div class="kpi-bar"><div class="kpi-fill" style="width: 100%; background: var(--accent-green);"></div></div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">10-Day Alert</div>
+            <div class="kpi-number-row">
+              <span class="kpi-num" style="color: var(--accent-green);">0 Due</span>
+              <span class="kpi-sub" style="color: var(--accent-green);">Fresh Start</span>
+            </div>
+            <div class="kpi-bar"><div class="kpi-fill" style="width: 0%; background: var(--accent-red);"></div></div>
+          </div>
+        </div>
+
+        <!-- IIBF Paper 1: Indian Economy & Indian Financial System -->
+        <div class="section-header">
+          <span>IIBF Paper 1: Indian Economy &amp; Indian Financial System (IE&amp;IFS) &bull; Exam: 01 Nov (32 Days)</span>
+          <span class="tag-count">Priority: Critical Foundation</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Module / Key Syllabus Area</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;" title="Concept Read">M1</th>
+              <th style="width: 35px;" title="Summary Notes">M2</th>
+              <th style="width: 35px;" title="MCQs / Practice">M3</th>
+              <th style="width: 35px;" title="Error Analysis">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mod A: Indian Economic Architecture &amp; GDP Calculation</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mod B: Monetary Policy, Fiscal Policy, Budget &amp; Inflation</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mod C: Financial Architecture &amp; Regulators (RBI, SEBI, IRDAI, PFRDA)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mod D: Financial Markets, Money Market, Capital Market &amp; Forex</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- IIBF Paper 2: Principles & Practices of Banking (PPB) -->
+        <div class="section-header">
+          <span>IIBF Paper 2: Principles &amp; Practices of Banking (PPB) &bull; Exam: 22 Nov (53 Days)</span>
+          <span class="tag-count">4 Modules</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Module / Key Syllabus Area</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;">M1</th>
+              <th style="width: 35px;">M2</th>
+              <th style="width: 35px;">M3</th>
+              <th style="width: 35px;">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mod A: General Banking Operations, Customer Service, KYC &amp; AML</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mod B: Lending Norms, PSL, NPA Management &amp; SARFAESI Act</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mod C: Banking Technology, Cyber Risk, UPI &amp; Digital Lending</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mod D: Ethics in Banks, Corporate Governance &amp; Banking Ombudsman</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- IIBF Paper 3 & 4 (AFM & RBWM) -->
+        <div class="section-header">
+          <span>IIBF Paper 3 (AFM) &amp; Paper 4 (RBWM) &bull; Exams: 28 &amp; 29 Nov (59-60 Days)</span>
+          <span class="tag-count">Accounting &amp; Wealth Management</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Module / Key Syllabus Area</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;">M1</th>
+              <th style="width: 35px;">M2</th>
+              <th style="width: 35px;">M3</th>
+              <th style="width: 35px;">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>P3 AFM: Time Value of Money, Annuities, Bond Pricing &amp; YTM</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>P3 AFM: Balance Sheet, Trial Balance, Ratio Analysis &amp; Cash Flow</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>P4 RBWM: Retail Loan Products (Housing, Auto, Personal Loans)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>P4 RBWM: Wealth Management Advisory, Mutual Funds &amp; Portfolio</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m12" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box m34" onchange="recalcKPIs()"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Sheet 1 Bottom: Daily Targets & Clean Slate Protocol -->
+        <div class="mini-grid">
+          <div class="mini-card">
+            <div class="mini-card-title">
+              <span>Today's Targets — Clean Slate Day 01 (30 Sep 2026)</span>
+              <span style="color: var(--accent-blue); font-weight: 800;">Sprint 1 Launch</span>
+            </div>
+            <ul class="card-list">
+              <li><strong>Target 1:</strong> [Set your Slot 1 Core Topic or message me in chat to fill]</li>
+              <li><strong>Target 2:</strong> [Set your Slot 2 Practice / Sectional drill]</li>
+              <li><strong>Target 3:</strong> [Set your Evening Specialist / Reading topic]</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-card-title">
+              <span>10-Day Spaced Repetition Engine Protocol</span>
+              <span style="color: var(--accent-green);">Zero Fluff Rule</span>
+            </div>
+            <ul class="card-list">
+              <li><strong>Clean Slate:</strong> All progress starts today. As soon as you read a chapter, M1 is checked and Day 10 countdown starts.</li>
+              <li><strong>10-Day Hard Deadline:</strong> If 10 days pass after M1 without R1, the row automatically flags <span class="badge badge-due">OVERDUE</span>.</li>
+              <li><strong>Daily Sync:</strong> Text me what you study daily, and I will check off milestones and calculate exact due dates.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sheet 1 Footer -->
+      <footer class="footer">
+        <div><strong>Mission 2026 Master Tracker</strong> &bull; Sheet 1: IIBF DB&amp;F (IE&amp;IFS, PPB, AFM, RBWM)</div>
+        <div>Page 1 of 3 &bull; Clean Slate Baseline &bull; Maintained by Antigravity</div>
+      </footer>
+    </section>
+
+
+    <!-- =========================================================================
+         SHEET 2: INSURANCE (UIIC AO / NICL) & UPSC EPFO APFC SPECIAL MODULES
+         ========================================================================= -->
+    <section class="a2-page" id="sheet-2">
+      <div>
+        <!-- Master Header Sheet 2 -->
+        <header class="header">
+          <div class="header-main">
+            <h2>Insurance Sector &amp; UPSC EPFO APFC Special Modules</h2>
+            <div class="subheading">UIIC AO (22 Oct) &bull; NICL Assistant (30 Oct) &bull; UPSC EPFO APFC (20 Dec) &bull; 10-Day Spaced Repetition</div>
+          </div>
+          <div class="header-meta">
+            <span class="badge-cycle">&#10003; Clean Slate Active</span>
+            <div class="header-date">30 Sep 2026 &bull; Sheet 2</div>
+          </div>
+        </header>
+
+        <!-- SECTION: Insurance Principles & Awareness -->
+        <div class="section-header">
+          <span>1. Insurance Awareness &amp; Principles (UIIC AO &amp; NICL Assistant Focus)</span>
+          <span class="tag-count">UIIC AO Prelims in 22 Days!</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Topic / Sector Module</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;">M1</th>
+              <th style="width: 35px;">M2</th>
+              <th style="width: 35px;">M3</th>
+              <th style="width: 35px;">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Principles of Insurance (Uberrima Fides, Indemnity, Subrogation, Proximate Cause)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>IRDAI Act 1999, Regulations, Solvency Margins &amp; Consumer Protection</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>General &amp; Non-Life Products (Fire, Marine, Motor, Health, Crop &amp; Liability)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Underwriting, Claim Settlement Procedure, Loss Assessment &amp; Reinsurance</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- SECTION: UPSC EPFO APFC Specialist Modules -->
+        <div class="section-header">
+          <span>2. UPSC EPFO APFC Specialist Modules (Exam: 20 Dec &bull; 81 Days)</span>
+          <span class="tag-count">Rank Decider Syllabus</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Specialist Subject Area</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;">M1</th>
+              <th style="width: 35px;">M2</th>
+              <th style="width: 35px;">M3</th>
+              <th style="width: 35px;">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Industrial Relations &amp; Trade Unions (4 New Labour Codes Implementation)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Social Security in India (EPFO Act 1952, ESIC, Gratuity, Maternity Benefits)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>General Accounting Principles, Auditing Standards &amp; Vouching (APFC)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Indian Freedom Struggle &amp; Cultural Heritage (APFC Analytical Depth)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- SECTION: Current Affairs & RBI/Regulatory Circulars -->
+        <div class="section-header">
+          <span>3. Current Affairs, Regulatory Circulars &amp; Government Schemes</span>
+          <span class="tag-count">Last 6 Months Rolling</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">GA / Regulatory Publication</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;">M1</th>
+              <th style="width: 35px;">M2</th>
+              <th style="width: 35px;">M3</th>
+              <th style="width: 35px;">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>RBI Circulars &amp; Master Directions (April - September 2026)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Union Budget 2026-27 &amp; Economic Survey High-Yield Data</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Monthly Banking Awareness &amp; Insurance News Capsule</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Sheet 2 Bottom: Milestone Directives -->
+        <div class="mini-grid">
+          <div class="mini-card">
+            <div class="mini-card-title">
+              <span>UIIC AO Sprint Directives (Exam in 22 Days)</span>
+              <span style="color: var(--accent-red); font-weight: 800;">Prelims Blitz</span>
+            </div>
+            <ul class="card-list">
+              <li><strong>Speed Drilling:</strong> Daily 1 Sectional Test (35Q Quants / 35Q Reasoning in 20 min).</li>
+              <li><strong>Insurance Concepts:</strong> Master Uberrima Fides, Proximate Cause, and General Insurance sub-types.</li>
+              <li><strong>Accuracy Benchmark:</strong> Maintain &gt;90% accuracy in Reasoning &amp; English.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-card-title">
+              <span>EPFO APFC High-Yield Synergies</span>
+              <span style="color: var(--accent-purple);">Dec 20 Target</span>
+            </div>
+            <ul class="card-list">
+              <li><strong>Labour Codes:</strong> Code on Wages, Social Security, Industrial Relations, OSH Code.</li>
+              <li><strong>Auditing:</strong> Internal vs Statutory Audit, Vouching, Audit opinion types.</li>
+              <li><strong>Overlap:</strong> Accounting &amp; Financial Management overlaps 100% with IIBF Paper 3!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sheet 2 Footer -->
+      <footer class="footer">
+        <div><strong>Mission 2026 Master Tracker</strong> &bull; Sheet 2: Insurance (UIIC/NICL), EPFO APFC &amp; Circulars</div>
+        <div>Page 2 of 3 &bull; Clean Slate Baseline &bull; Maintained by Antigravity</div>
+      </footer>
+    </section>
+
+
+    <!-- =========================================================================
+         SHEET 3: APTITUDE (QUANTS, REASONING, ENGLISH), RRB JE & READING SHELF
+         ========================================================================= -->
+    <section class="a2-page" id="sheet-3">
+      <div>
+        <!-- Master Header Sheet 3 -->
+        <header class="header">
+          <div class="header-main">
+            <h2>Aptitude Speed Engine, RRB JE &amp; Intellectualist Reading</h2>
+            <div class="subheading">Quantitative Aptitude &bull; Reasoning Ability &bull; English &bull; RRB JE Tech &bull; Intellectualist Book Distillation</div>
+          </div>
+          <div class="header-meta">
+            <span class="badge-cycle">&#10003; Clean Slate Active</span>
+            <div class="header-date">30 Sep 2026 &bull; Sheet 3</div>
+          </div>
+        </header>
+
+        <!-- SECTION: Quantitative Aptitude & Data Interpretation -->
+        <div class="section-header">
+          <span>1. Quantitative Aptitude &amp; Data Interpretation (Speed + Accuracy)</span>
+          <span class="tag-count">UIIC AO, NICL, RRB PO, RRB JE</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Aptitude Module</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;">M1</th>
+              <th style="width: 35px;">M2</th>
+              <th style="width: 35px;">M3</th>
+              <th style="width: 35px;">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Data Interpretation: Tabular, Bar, Pie Charts &amp; Caselet DI</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Arithmetic Core: Profit &amp; Loss, SI-CI, Time &amp; Work, Ratios</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Speed Maths: Quadratic Equations, Missing Series, Approximations</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- SECTION: Reasoning Ability -->
+        <div class="section-header">
+          <span>2. Reasoning Ability &amp; Logic Engine</span>
+          <span class="tag-count">Scoring Foundation</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Reasoning Area</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Prep Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;">M1</th>
+              <th style="width: 35px;">M2</th>
+              <th style="width: 35px;">M3</th>
+              <th style="width: 35px;">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Puzzles &amp; Seating (Floor-Flat, Box, Circular In-Out, Parallel Rows)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Syllogisms (Only a Few, Reverse), Inequalities &amp; Blood Relations</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Critical Reasoning (Statement-Assumption, Cause &amp; Effect, Course of Action)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- SECTION: Intellectualist Book Distillation & General Reading -->
+        <div class="section-header">
+          <span>3. Intellectualist Reading &amp; Distillation Shelf (BKRS Protocol)</span>
+          <span class="tag-count">Long-Term Cognitive Capital</span>
+        </div>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-left" style="width: 280px;">Book / Intellectualist Work</th>
+              <th colspan="4" style="background: #eff6ff; width: 140px;">4 Distillation Milestones</th>
+              <th colspan="4" style="background: #fdf2f8; width: 220px;">10-Day Spaced Repetition</th>
+              <th rowspan="2" style="width: 90px;">Last Rev</th>
+              <th rowspan="2" style="width: 95px;">Next Due</th>
+              <th rowspan="2" style="width: 110px;">10-D Status</th>
+            </tr>
+            <tr>
+              <th style="width: 35px;" title="Full Read">M1</th>
+              <th style="width: 35px;" title="Master Notes">M2</th>
+              <th style="width: 35px;" title="Atomic Units">M3</th>
+              <th style="width: 35px;" title="Dialectical Map">M4</th>
+              <th class="rev-cell">R1 (10d)</th>
+              <th class="rev-cell">R2 (20d)</th>
+              <th class="rev-cell">R3 (30d)</th>
+              <th class="rev-cell">R4 (40d)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>The Art of War (Sun Tzu) — Strategic Principles</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>Endurance: Shackleton's Incredible Voyage (Alfred Lansing)</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+            <tr>
+              <td><strong>The Psychology of Money (Morgan Housel) — Heuristics</strong></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td style="text-align: center;"><input type="checkbox" class="chk-box"></td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td class="rev-cell">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;">-</td>
+              <td style="text-align: center;"><span class="badge badge-pending">NOT STARTED</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Sheet 3 Bottom: Weekly Sprint & Daily Sync -->
+        <div class="mini-grid">
+          <div class="mini-card">
+            <div class="mini-card-title">
+              <span>Sprint 1 Launch Directives</span>
+              <span style="color: var(--accent-green);">&#9679; Clean Baseline</span>
+            </div>
+            <ul class="card-list">
+              <li><strong>Fresh Start:</strong> Zero backlogs carried. Focus entirely on today's execution.</li>
+              <li><strong>UIIC AO Focus:</strong> 22 days remaining to prelims. Daily speed tests are essential.</li>
+              <li><strong>IIBF Priority:</strong> Paper 1 (IE&amp;IFS) begins with Module A and Module B this week.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-card-title">
+              <span>How To Sync Real Progress</span>
+              <span style="color: var(--secondary);">Daily Workflow</span>
+            </div>
+            <ul class="card-list">
+              <li>Whenever you complete a study block, tell me in chat:<br>
+                <em>"Finished Concept &amp; Notes for IE&amp;IFS Mod A today. Solved 1 set DI."</em></li>
+              <li>I will check off the milestones, record today's date (30 Sep), and set your next 10-day revision deadline (10 Oct).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sheet 3 Footer -->
+      <footer class="footer">
+        <div><strong>Mission 2026 Master Tracker</strong> &bull; Sheet 3: Aptitude, RRB JE &amp; Intellectualist Reading</div>
+        <div>Page 3 of 3 &bull; Clean Slate Baseline &bull; Maintained by Antigravity</div>
+      </footer>
+    </section>
+
+  </div>
+
+  <script>
+    function scrollToPage(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Dynamic Live KPI recalculator for browser interaction
+    function recalcKPIs() {
+      const m12Boxes = document.querySelectorAll('#sheet-1 .chk-box.m12');
+      const m34Boxes = document.querySelectorAll('#sheet-1 .chk-box.m34');
+
+      let m12Done = 0;
+      m12Boxes.forEach(b => { if (b.checked) m12Done++; });
+
+      let m34Done = 0;
+      m34Boxes.forEach(b => { if (b.checked) m34Done++; });
+
+      const totalSlots = 16;
+      // Each module has 2 boxes in m12 and 2 in m34 (total 32 checkmarks across 16 modules)
+      const m12ModulesCompleted = Math.floor(m12Done / 2);
+      const m34ModulesCompleted = Math.floor(m34Done / 2);
+
+      const pctM12 = Math.round((m12Done / 32) * 100);
+      const pctM34 = Math.round((m34Done / 32) * 100);
+
+      const elM12 = document.getElementById('kpi-m12');
+      const elM12Pct = document.getElementById('kpi-m12-pct');
+      const barM12 = document.getElementById('bar-m12');
+
+      const elM34 = document.getElementById('kpi-m34');
+      const elM34Pct = document.getElementById('kpi-m34-pct');
+      const barM34 = document.getElementById('bar-m34');
+
+      if (elM12) elM12.textContent = `${m12Done} / 32`;
+      if (elM12Pct) elM12Pct.textContent = `${pctM12}%`;
+      if (barM12) barM12.style.width = `${pctM12}%`;
+
+      if (elM34) elM34.textContent = `${m34Done} / 32`;
+      if (elM34Pct) elM34Pct.textContent = `${pctM34}%`;
+      if (barM34) barM34.style.width = `${pctM34}%`;
+    }
+  </script>
+</body>
+</html>

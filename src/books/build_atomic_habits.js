@@ -1,0 +1,722 @@
+/**
+ * Definitive BKRS Reconstruction Engine for Atomic Habits (James Clear)
+ * Transforms 11.9 KB outline into a 50k+ character Master Codex:
+ * - 20 Invariant Units covering the complete 4 Laws of Behavior Change, Identity Systems, and Advanced Tactics
+ * - Detailed Cue-Craving-Response-Reward neurobiology
+ * - Integrated BKRS Reader Shell with Editorial Cream Theme (data-theme="cream")
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const targetDir = path.join(__dirname, '../../docs/distillations/atomic-habits');
+if (!fs.existsSync(targetDir)) {
+  fs.mkdirSync(targetDir, { recursive: true });
+}
+
+const sections = [
+  {
+    title: "The Fundamentals: How Tiny Changes Make a Big Difference",
+    period: "Chapters 1–3",
+    units: [
+      {
+        number: 1,
+        title: "The Aggregation of Marginal Gains: The Mathematics of 1% Compounding",
+        epistemic_tag: "MATHEMATICAL COMPOUNDING & EXPONENTIAL HABITS",
+        concept: "Habits are the compound interest of self-improvement. Getting 1 percent better each day for one year results in becoming 37.78 times better ($1.01^{365} = 37.78$). Conversely, declining 1 percent each day erodes your capacity down to near zero ($0.99^{365} = 0.03$).",
+        narrative: [
+          "In 2003, British Cycling hired Dave Brailsford as performance director. British riders had won a single gold medal in 100 years. Brailsford implemented the 'aggregation of marginal gains'—searching for a tiny 1% improvement in everything: redesigning bike seats, testing aerodynamic fabrics in wind tunnels, rubbing alcohol on tires for better grip, determining the best mattress and pillow for each rider's sleep, and teaching riders the best hand-washing technique to prevent colds.",
+          "Within five years, British Cycling dominated the Beijing 2008 Olympics (winning 60% of track cycling gold medals) and went on to win six Tour de France victories in seven years. The human brain consistently underestimates the power of small daily choices because the immediate payoff is imperceptible: eating a burger today does not cause a heart attack, and saving $100 today does not buy a house.",
+          "Outcomes lag behind habits: your net worth is a lagging measure of your financial habits; your weight is a lagging measure of your eating habits; your knowledge is a lagging measure of your learning habits. Breaking through requires surviving the 'Plateau of Latent Potential'—the early phase where massive effort yields zero visible results until the critical threshold is crossed."
+        ],
+        heuristic: "Forget about overnight breakthroughs; focus on the daily 1% compounding trajectory. Trajectory beats current position.",
+        verbatim: "“You do not rise to the level of your goals. You fall to the level of your systems.” — James Clear"
+      },
+      {
+        number: 2,
+        title: "Identity-Based Habits: The Three Layers of Behavior Change",
+        epistemic_tag: "COGNITIVE IDENTITY & SELF-EFFICACY",
+        concept: "Behavior change occurs across three concentric layers: (1) Outcomes (what you get); (2) Processes (what you do); (3) Identity (what you believe about yourself). Most people fail because they attempt outcome-based change without altering the core identity.",
+        narrative: [
+          "The difference between an outcome-based habit and an identity-based habit is visible in how two former smokers decline a cigarette. Person A says: 'No thanks, I'm trying to quit.' This person still views themselves as a smoker who is suffering through deprivation. Person B says: 'No thanks, I'm not a smoker.' This person has shifted their internal identity; smoking is no longer congruent with who they are.",
+          "Every action you take is a vote for the type of person you wish to become. No single instance will transform your identity, but as the votes accumulate, the evidence of your new self becomes overwhelming. If you write one page, you cast a vote for being a writer; if you lace up your shoes and run 100 meters, you cast a vote for being an athlete.",
+          "True behavior change is identity change. You can convince yourself to go to the gym once or twice through willpower, but you will only sustain it for decades if 'I am an active person' becomes your fundamental self-concept."
+        ],
+        heuristic: "Decide who you want to be, then prove it to yourself with small daily wins. Every action is a vote for your identity.",
+        verbatim: "“The ultimate form of intrinsic motivation is when a habit becomes part of your identity. It’s one thing to say I’m the type of person who wants this. It’s something very different to say I’m the type of person who is this.” — James Clear"
+      },
+      {
+        number: 3,
+        title: "The 4-Step Habit Loop: Cue, Craving, Response, and Reward",
+        epistemic_tag: "NEUROBIOLOGICAL HABIT CYBERNETICS",
+        concept: "Every habit is a neurological feedback loop comprising four sequential stages: (1) Cue (triggers the brain to initiate behavior); (2) Craving (the motivational force / desire to change state); (3) Response (the actual action performed); (4) Reward (the satisfaction and reinforcement that closes the loop).",
+        narrative: [
+          "The Cue is a bit of sensory information predicting a reward. Your ancestors noticed berries; your modern brain hears a phone chime. The cue notices the opportunity; the Craving provides the emotional energy to act. You do not crave smoking a cigarette; you crave the relief and dopamine shift it provides. You do not crave opening Instagram; you crave the distraction from your boring spreadsheet.",
+          "The Response is the actual habit you perform (lighting the cigarette, tapping the phone). Whether a response occurs depends on your motivation and the amount of friction involved. If the response requires more physical or cognitive effort than you are willing to expend, it fails.",
+          "The Reward is the end goal: it satisfies the craving and teaches the brain which actions are worth remembering. If an action delivers pleasure or relief, the brain marks the cue for future automation.",
+          "From this 4-step loop arise Clear’s Four Laws of Behavior Change:\n- To build a good habit: (1) Make it obvious; (2) Make it attractive; (3) Make it easy; (4) Make it satisfying.\n- To break a bad habit: (1) Make it invisible; (2) Make it unattractive; (3) Make it difficult; (4) Make it unsatisfying."
+        ],
+        heuristic: "Diagnose any broken habit by identifying which of the four stages is failing: Is it hidden? Boring? Difficult? Or unrewarding?",
+        verbatim: "“A habit is a behavior that has been repeated enough times to become automatic... The primary purpose of habits is to solve the problems of life with as little energy and effort as possible.” — James Clear"
+      }
+    ]
+  },
+  {
+    title: "The 1st Law: Make It Obvious (Cues & Environment)",
+    period: "Chapters 4–7",
+    units: [
+      {
+        number: 4,
+        title: "The Habits Scorecard & Pointing-and-Calling",
+        epistemic_tag: "COGNITIVE CONSCIOUSNESS & AWARENESS PRIMING",
+        concept: "Before you can change a habit, you must become conscious of it. Over time, automatic cues slip below the threshold of conscious awareness, causing people to act without thinking.",
+        narrative: [
+          "The Japanese railway system uses 'Pointing-and-Calling' (shisa kanko)—train conductors point at signals, speed dials, and platform edges while calling out their status aloud ('Signal is green! Speed is 70!'). This simple verbalization engages the motor, vocal, and visual cortex simultaneously, reducing industrial safety errors by up to 85%.",
+          "Clear adapts this into 'The Habits Scorecard': writing down every single daily action from waking to sleeping (wake up, turn off alarm, check phone, brush teeth, drink coffee...) and categorizing each as positive (+), negative (-), or neutral (=) based on long-term trajectory.",
+          "By vocalizing bad habits aloud before performing them ('I am about to eat this entire bag of chips, but I don't need it and it will make me feel sluggish'), you drag the unconscious impulse back into the prefrontal cortex, giving conscious choice an opportunity to intervene."
+        ],
+        heuristic: "You cannot change what you do not notice. Point and call your unconscious actions aloud to regain executive control.",
+        verbatim: "“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Jung (cited by James Clear)"
+      },
+      {
+        number: 5,
+        title: "Implementation Intentions & Habit Stacking: Time, Location, and Sequence",
+        epistemic_tag: "BEHAVIORAL SPECIFICITY & ANCHORING",
+        concept: "Vague intentions ('I will exercise more' or 'I will read this week') fail because they lack an operational trigger. Hundreds of studies prove that specifying exact Time and Location doubles or triples adherence rates.",
+        narrative: [
+          "The Implementation Intention formula: 'I will [BEHAVIOR] at [TIME] in [LOCATION].' (e.g., 'I will meditate for 10 minutes at 7:00 AM in my living room chair'). When the designated moment arrives, your brain does not need to debate or make decisions; the environment triggers the action automatically.",
+          "Clear builds upon Dr. BJ Fogg's Tiny Habits to create 'Habit Stacking': anchoring a new habit onto an existing, deeply established habit rather than a clock time. Formula: 'After [CURRENT HABIT], I will [NEW HABIT].'",
+          "Examples of habit stacking:\n- After I pour my morning coffee, I will write down three priorities for today.\n- After I take off my work shoes, I will immediately change into my running clothes.\n- After I sit down for dinner, I will say one thing I am grateful for today.\nBy chaining new behaviors onto existing neural pathways, the friction of initiation drops to near zero."
+        ],
+        heuristic: "Never leave a good habit floating without an anchor: tie it directly to an established daily action.",
+        verbatim: "“Many people think they lack motivation when what they really lack is clarity.” — James Clear"
+      },
+      {
+        number: 6,
+        title: "Environment Design: The Architecture of Visual Cues",
+        epistemic_tag: "CHOICE ARCHITECTURE & SENSORY AFFORDANCE",
+        concept: "Motivation is overrated; environment matters far more. Human beings are predominantly visual creatures: 50% of the brain's sensory processing power is devoted to vision. We choose what is easiest to see and reach.",
+        narrative: [
+          "Dr. Anne Thorndike, a physician at Massachusetts General Hospital, redesigned the hospital cafeteria without telling patients or staff. She placed bottled water next to every cash register and food station, while leaving sodas in their original refrigerators. Over three months, soda sales dropped by 11.4% and water sales increased by 25.8%. People did not suddenly develop willpower; they simply responded to visual affordances.",
+          "If you want a habit to be a big part of your life, make the cue a big part of your environment: place the book on your pillow in the morning; put the water bottle on your desk; set the guitar in the middle of the living room on a stand.",
+          "Conversely, to break a bad habit, Make It Invisible: place your phone in another room while working; unplug the television after each use; hide junk food on the highest shelf in the garage. Out of sight is literally out of mind."
+        ],
+        heuristic: "Be the architect of your environment, not merely the tenant. Design spaces where good cues are obvious and bad cues are hidden.",
+        verbatim: "“Environment is the invisible hand that shapes human behavior.” — James Clear"
+      }
+    ]
+  },
+  {
+    title: "The 2nd Law: Make It Attractive (Dopamine & Social Norms)",
+    period: "Chapters 8–10",
+    units: [
+      {
+        number: 7,
+        title: "Dopamine Feedback Loops & Temptation Bundling",
+        epistemic_tag: "NEUROCHEMISTRY OF ANTICIPATION & PREMACK'S PRINCIPLE",
+        concept: "Habits are a dopamine-driven feedback loop. Neurobiology proves that dopamine spikes not when you receive a reward, but in anticipation of the reward. It is the craving, not the fulfillment, that drives action.",
+        narrative: [
+          "In animal studies, when researchers blocked dopamine receptors in rats, the rats lost all desire to eat, groom, or reproduce; within days, they died of thirst next to water dishes, even though they still enjoyed food when placed directly on their tongues. Dopamine is the molecule of desire, motivation, and pursuit.",
+          "Clear applies Premack's Principle ('more probable behaviors will reinforce less probable behaviors') through 'Temptation Bundling': pairing an action you need to do with an action you want to do.",
+          "Irish engineering student Ronan Byrne wanted to exercise more but loved watching Netflix. He rigged an exercise bike to his laptop with an Arduino microcontroller: Netflix would play only if he pedaled above a certain speed; if he slowed down, the video paused. Formula: 'After [HABIT I NEED], I will [HABIT I WANT].'"
+        ],
+        heuristic: "Bundle your obligations with your indulgences: allow yourself to enjoy the reward only while or after performing the habit.",
+        verbatim: "“Desire is the engine that drives behavior... It is the anticipation of a reward—not the fulfillment of it—that gets us to take action.” — James Clear"
+      },
+      {
+        number: 8,
+        title: "The Role of Family and Friends: Mimetic Social Norms",
+        epistemic_tag: "MIMETIC CONTAGION & TRIBAL BELONGING",
+        concept: "Human beings are tribal primates. We imitate the habits of three social groups: (1) The Close (family and friends); (2) The Many (the crowd / social consensus); (3) The Powerful (those with high status).",
+        narrative: [
+          "In 1965, Hungarian educator László Polgár decided to test his theory that geniuses are made, not born. He and his wife homeschooled their three daughters (Susan, Sofia, and Judit) in chess, filling their house with chess books and tournament boards. All three daughters became global chess prodigies; Judit Polgár became the greatest female chess player in world history. For the girls, studying chess six hours a day was not an agonizing chore; it was the normal, celebrated culture of their home.",
+          "Nothing sustains motivation better than belonging to a tribe where your desired behavior is the normal behavior. When you join a fitness running club, running 10 miles on Sunday morning ceases to be extreme; it is simply what everyone does.",
+          "To cement a habit, join a culture where: (1) Your desired behavior is the normal behavior; and (2) You already have something in common with the group."
+        ],
+        heuristic: "Surround yourself with people who have the habits you want to have. You will rise or fall to the culture of your tribe.",
+        verbatim: "“The shared identity of the tribe begins to reinforce your personal identity... There is tremendous internal pressure to comply with the norms of the group.” — James Clear"
+      }
+    ]
+  },
+  {
+    title: "The 3rd Law: Make It Easy (Friction & The Two-Minute Rule)",
+    period: "Chapters 11–14",
+    units: [
+      {
+        number: 9,
+        title: "The Law of Least Effort & Reducing Friction",
+        epistemic_tag: "BEHAVIORAL FRICTION & PHYSICAL AFFORDANCES",
+        concept: "Human behavior naturally follows the path of least resistance. Every habit requires a specific amount of energy. The greater the friction, the less likely the habit will occur.",
+        narrative: [
+          "Japanese manufacturers revolutionized industrial productivity in the 1970s through 'lean manufacturing' and friction reduction: eliminating wasted motion, placing tools within arm's reach, and streamlining assembly lines. This concept applies directly to personal habit architecture.",
+          "If you want to exercise in the morning, lay out your workout clothes, socks, and sneakers next to your bed the night before; fill your water bottle and set your keys by the door. You have eliminated 80% of the friction between waking up and stepping out the door.",
+          "To eliminate bad habits, Increase Friction: create twenty seconds of delay. Remove social media apps from your phone; leave your television remote in a drawer in another room; store credit cards in a bowl of water in the freezer so you must wait 30 minutes for them to thaw before impulse shopping online."
+        ],
+        heuristic: "Prime the environment to make good habits take fewer steps than bad habits. Reduce friction for virtues; add friction for vices.",
+        verbatim: "“Energy is precious, and the brain is wired to conserve it wherever possible... Make your habits so easy that you’ll do them even when you don’t feel like it.” — James Clear"
+      },
+      {
+        number: 10,
+        title: "The Two-Minute Rule: Scaling Down to the Gateway Habit",
+        epistemic_tag: "GATEWAY BEHAVIORS & MOMENTUM CONSERVATION",
+        concept: "When you start a new habit, it should take less than two minutes to do. The goal is not to achieve the complete workout or write the complete novel; the goal is to master the art of showing up.",
+        narrative: [
+          "People consistently sabotage new habits by attempting too much too soon: trying to run five miles on day one, or write for two hours every evening. When fatigue strikes, the habit collapses.",
+          "The Two-Minute Rule scales down any massive ambition into an effortless two-minute ritual:\n- 'Read 30 books a year' becomes 'Read one page.'\n- 'Do 30 minutes of yoga' becomes 'Unroll my yoga mat.'\n- 'Study for exam' becomes 'Open my textbook.'\n- 'Fold the laundry' becomes 'Fold one pair of socks.'",
+          "A habit must be established before it can be improved. If you cannot master the basic skill of showing up for two minutes, you have no hope of mastering the finer details. Once you stand on the yoga mat or open the book, momentum takes over."
+        ],
+        heuristic: "Standardize before you optimize. Master the two-minute gateway habit before you attempt to scale intensity.",
+        verbatim: "“A habit must be established before it can be improved. If you can’t learn the basic skill of showing up, then you have little hope of mastering the finer details.” — James Clear"
+      },
+      {
+        number: 11,
+        title: "Commitment Devices & The Automation of History",
+        epistemic_tag: "ODYSSEAN PLEDGES & IRREVERSIBLE CHOICES",
+        concept: "A commitment device is a choice you make in the present that controls your actions in the future. It is a way to lock in good behavior before temptation strikes.",
+        narrative: [
+          "In 1830, French novelist Victor Hugo faced an impossible deadline for *The Hunchback of Notre-Dame*. He had spent months procrastinating with dinner parties. To force himself to write, Hugo collected all his clothes, locked them in a chest, and handed the key to his assistant with strict orders not to return it until the deadline passed. Left with nothing to wear but a large gray woolen shawl, Hugo could not leave his study; he wrote furiously throughout the autumn and completed the masterpiece weeks ahead of schedule.",
+          "Modern commitment devices leverage technology and banking: setting up automated monthly retirement transfers on payday (paying yourself first before you can spend the money); using internet-blocking software like Freedom; or buying single-serving bags of snacks instead of wholesale jumbo packs.",
+          "Single one-time choices that automate good habits forever:\n- Buy a high-quality mattress (improves sleep for 10 years).\n- Turn off all phone push notifications (saves 2 hours of daily focus).\n- Cancel cable subscriptions (eliminates passive television consumption)."
+        ],
+        heuristic: "Use one-time choices in the present to eliminate future decisions. Automate good behavior through technology and physical lock-ins.",
+        verbatim: "“The best way to break a bad habit is to make it impractical to do. Increase the friction until you don’t even have the option to act.” — James Clear"
+      }
+    ]
+  },
+  {
+    title: "The 4th Law: Make It Satisfying (Reinforcement & Tracking)",
+    period: "Chapters 15–17",
+    units: [
+      {
+        number: 12,
+        title: "The Cardinal Rule of Behavior Change: Immediate vs. Delayed Returns",
+        epistemic_tag: "TEMPORAL DISCOUNTING & HYPERBOLIC PREFERENCE",
+        concept: "The Cardinal Rule of Behavior Change: What is immediately rewarded is repeated. What is immediately punished is avoided. The human brain evolved in an 'Immediate Return Environment', but modern society operates in a 'Delayed Return Environment.'",
+        narrative: [
+          "For 99% of human evolutionary history, decisions yielded immediate consequences: hunting delivered food today; fleeing a predator preserved life today. In modern society, good habits have delayed rewards (saving money delivers wealth in thirty years; exercising delivers fitness in six months), while bad habits have immediate rewards (smoking relieves stress right now; donuts taste delicious right now).",
+          "With our bad habits, the immediate outcome is usually enjoyable, but the ultimate outcome is disastrous. With our good habits, the immediate outcome is unpleasurable (sweat, delayed gratification), but the ultimate outcome is glorious.",
+          "To make a good habit stick, you must attach an immediate splash of pleasure to the finish line: e.g., opening a savings account labeled 'Trip to Europe' and transferring $50 into it every time you skip dining out, creating immediate visual satisfaction."
+        ],
+        heuristic: "Add immediate satisfaction to delayed-reward habits, and add immediate pain to delayed-consequence vices.",
+        verbatim: "“The costs of your good habits are in the present. The costs of your bad habits are in the future.” — James Clear"
+      },
+      {
+        number: 13,
+        title: "The Paper Clip Strategy & Habit Trackers: Making Progress Visible",
+        epistemic_tag: "VISUAL FEEDBACK & THE ENDOWMENT EFFECT",
+        concept: "Making progress visible provides immediate, intrinsic reinforcement. A habit tracker—marking an 'X' on a calendar or moving paper clips—provides visual proof that you are casting votes for your new identity.",
+        narrative: [
+          "In 1993, Trent Dyrsmid, a twenty-three-year-old stockbroker in Abbotsford, Canada, began his career with two jars on his desk. One jar was filled with 120 paper clips; the other jar was empty. Every morning, he dialed a prospect; each time he hung up the phone, he moved one paper clip to the empty jar. He did not go home until all 120 paper clips were transferred. Within eighteen months, he was generating $5 million in business and earning $75,000 a month.",
+          "Visual tracking accomplishes three things: (1) It creates an obvious visual cue reminding you to act; (2) It is inherently motivating because you see your progress accumulating; (3) It is immediately satisfying to cross off another day.",
+          "The 'Don't Break the Chain' rule (popularized by Jerry Seinfeld): your only goal is to keep the unbroken chain of X's alive on your wall calendar."
+        ],
+        heuristic: "Track your habits visually. The visual proof of your progress becomes its own powerful reward.",
+        verbatim: "“The most effective form of motivation is progress. When we get a signal that we are moving forward, we become more motivated to keep going.” — James Clear"
+      },
+      {
+        number: 14,
+        title: "The 'Never Miss Twice' Rule: The Antidote to Perfectionism",
+        epistemic_tag: "RECOVERY PROTOCOLS & RESILIENCE ARCHITECTURE",
+        concept: "Missing once is an accident. Missing twice is the start of a new habit. Perfection is impossible; what separates winners from losers is the speed of recovery.",
+        narrative: [
+          "Too many people abandon a diet or fitness regimen because of the 'All-or-Nothing Fallacy': they slip up, eat a slice of pizza on Wednesday, declare the entire week ruined, and binge all weekend. Clear proves that the first mistake is never the fatal one; it is the spiral of repeated misses that destroys the neural habit loop.",
+          "If you miss one day at the gym because of an emergency meeting, you must show up the next day, even if only for five minutes (Law of the Two-Minute Rule). If you eat a poor lunch, ensure your dinner is pristine.",
+          "A bad workout is the most important workout of your life: not because of the calories burned, but because it confirms to your subconscious identity that you do not abandon your systems when conditions are imperfect."
+        ],
+        heuristic: "Never miss twice. If life interrupts your routine for one day, rebound immediately the following day.",
+        verbatim: "“Missing once is an accident. Missing twice is the start of a new habit... Anyone can have a bad performance, but when successful people fail, they rebound quickly.” — James Clear"
+      },
+      {
+        number: 15,
+        title: "The Accountability Partner & The Habit Contract",
+        epistemic_tag: "SOCIAL ACCOUNTABILITY & IMMEDIATE PENALTIES",
+        concept: "Just as rewards make behavior satisfying, immediate social and financial costs make bad habits painful. An Accountability Partner creates immediate social embarrassment for failure; a Habit Contract adds legal and financial teeth.",
+        narrative: [
+          "Bryan Harris, an entrepreneur from Nashville, created a formal three-way Habit Contract with his wife and his personal trainer. He agreed to track his daily food intake and weigh himself every day. If he failed to log his food, he had to pay his trainer $200; if he failed to weigh himself, he had to pay his wife $100 and dress up in an absurd costume in public. The contract worked with 100% adherence: the immediate social and financial pain far outweighed the momentary pleasure of skipping a weigh-in.",
+          "We care deeply about what others think of us. We do not want others to perceive us as lazy, undisciplined, or untrustworthy. Knowing that someone is watching provides the immediate accountability the solitary mind lacks."
+        ],
+        heuristic: "Create a habit contract with financial penalties and an accountability partner. Make failure immediately painful.",
+        verbatim: "“The more immediate and the more costly the pain, the less likely the behavior... We always want to present our best selves to the world.” — James Clear"
+      }
+    ]
+  },
+  {
+    title: "Advanced Tactics: Going from Merely Good to Truly Great",
+    period: "Chapters 18–20",
+    units: [
+      {
+        number: 16,
+        title: "The Truth About Talent: When Genes Matter and When They Don't",
+        epistemic_tag: "GENETIC COMPATIBILITY & STRATEGIC ARENAS",
+        concept: "Genes do not eliminate the need for hard work; they clarify *where* to direct your hard work. Choose the habits that best suit your biological predispositions.",
+        narrative: [
+          "Michael Phelps has the ideal genetic physique for swimming: a long torso, short legs, size 14 feet, and a massive 6-foot-7 wingspan. Hicham El Guerrouj has the ideal genetic physique for distance running: long, slender legs and a short, light torso. If Phelps attempted to run distance or El Guerrouj attempted to swim, neither would have become Olympic champions.",
+          "Aligning your habits with your natural strengths makes progress faster and satisfaction deeper. How to identify habits aligned with your nature:\n1. What feels like fun to you, but looks like work to others?\n2. What makes you lose track of time (flow states)?\n3. Where do you get greater returns than the average person?\n4. What comes naturally to you?",
+          "Pick the right game. If you cannot find a game where the odds are stacked in your favor, create one by combining two distinct skills where you reside in the top 25%."
+        ],
+        heuristic: "Work hard in the areas where your natural biology provides an unfair advantage. Specialize in your flow states.",
+        verbatim: "“Genes do not determine your destiny. They determine your areas of opportunity... Play a game that favors your strengths.” — James Clear"
+      },
+      {
+        number: 17,
+        title: "The Goldilocks Rule: How to Stay Motivated in Life and Work",
+        epistemic_tag: "OPTIMAL CHALLENGE & BOREDOM RESISTANCE",
+        concept: "The human brain experiences peak motivation when working on tasks right on the edge of current ability—not too hard, not too easy (just right: approximately 4% beyond current capacity).",
+        narrative: [
+          "If you play tennis against a four-year-old, you become bored within ten minutes. If you play against Roger Federer, you become demoralized immediately. But if you play against someone who is exactly your equal—where every point is a contest and you win roughly 50% of games—you enter a state of deep flow.",
+          "The greatest threat to sustained excellence is not failure; it is Boredom. Once a habit becomes established, it becomes familiar and ceases to deliver novelty. Amateurs allow boredom to distract them into seeking a new shiny routine; professionals fall in love with the boredom.",
+          "The only way to become truly great is to show up and perform the same fundamental drills on the days when you are tired, bored, uninspired, and would rather do anything else."
+        ],
+        heuristic: "The greatest threat to success is boredom, not failure. Master the discipline of doing the work when you are bored.",
+        verbatim: "“The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.” — James Clear"
+      },
+      {
+        number: 18,
+        title: "The Downside of Habits: Habits + Deliberate Practice = Mastery",
+        epistemic_tag: "DELIBERATE PRACTICE & METACOGNITION",
+        concept: "While habits automate basic tasks, they can also lock you into unconscious complacency. Once a behavior becomes effortless, you stop thinking about how to improve it. True mastery requires coupling habits with deliberate reflection and review.",
+        narrative: [
+          "A surgeon or pilot who has practiced for twenty years is not automatically better than one who has practiced for five years, unless their repetitions are accompanied by deliberate feedback and error correction. Repeating an error 10,000 times merely cements bad technique.",
+          "Formula for Mastery: Habits + Deliberate Practice = Mastery. Once a movement or skill is automated, the executive brain must zoom out, inspect the metrics, and deliberately introduce adjustments.",
+          "Clear maintains two annual reflection rituals:\n1. The Annual Review (December): Auditing progress across three questions: (a) What went well this year? (b) What didn't go so well? (c) What did I learn?\n2. The Integrity Report (June): Auditing values: (a) What are the core values driving my work? (b) How am I living and working with integrity? (c) How can I set a higher standard?"
+        ],
+        heuristic: "Habits without review lead to stagnation. Couple automated routines with periodic audits and deliberate practice.",
+        verbatim: "“Habits are the backbone of any pursuit of excellence. However, the benefits of habits come at a cost. At first, each repetition develops fluency, speed, and skill. But then, as a habit becomes automatic, you become less sensitive to feedback.” — James Clear"
+      },
+      {
+        number: 19,
+        title: "How to Break a Bad Habit: The Inversion of the Four Laws",
+        epistemic_tag: "BEHAVIORAL INVERSION & EXTINCTION PROTOCOLS",
+        concept: "Breaking a bad habit requires inverting the Four Laws: (1) Make it invisible (extinguish cues); (2) Make it unattractive (reframe mindset); (3) Make it difficult (increase friction); (4) Make it unsatisfying (add immediate social/financial penalties).",
+        narrative: [
+          "In 1971, US Congressman Robert Steele discovered that over 15% of American soldiers serving in Vietnam were addicted to heroin. Society anticipated a catastrophic public health crisis when the veterans returned home. However, follow-up studies by Dr. Lee Robins revealed that 90% of the addicted soldiers stopped using heroin almost immediately upon landing back in the United States.",
+          "The soldiers had not undergone intense moral rehabilitation; rather, their entire cue environment had vanished. In Vietnam, they were surrounded by constant terror, easy access to heroin, and fellow addicted soldiers. Back home with family, the cues disappeared, making the habit invisible.",
+          "You cannot easily extinguish a bad habit by sheer self-control in an environment saturated with triggers. You must systematically eliminate the cue, add physical friction, and reframe the emotional meaning of the indulgence."
+        ],
+        heuristic: "Do not rely on willpower to conquer temptation in a toxic room. Change rooms: make bad cues invisible.",
+        verbatim: "“Self-control is a short-term strategy, not a long-term one. You may be able to resist temptation once or twice, but it’s unlikely you can muster the willpower to override your desires every time.” — James Clear"
+      },
+      {
+        number: 20,
+        title: "The Ultimate Synthesis: Systems Over Goals & The Continuous Horizon",
+        epistemic_tag: "SYSTEMS TELEOLOGY & INFINITE GAMES",
+        concept: "Goals are about the results you want to achieve. Systems are about the processes that lead to those results. Winners and losers share the same goals; what differentiates winners is the quality of their systems.",
+        narrative: [
+          "Every Olympian wants to win gold; every candidate wants the job; every business wants profit. Goal-setting suffers from massive survivorship bias: we focus on the winners and assume their goal caused their victory, ignoring all the losers who possessed the identical goal.",
+          "Four fatal problems with goal-oriented thinking:\n1. Winners and losers have the same goals.\n2. Achieving a goal is only a momentary change (cleaning your room today does not prevent it from getting messy tomorrow if your system remains flawed).\n3. Goals restrict your happiness ('Once I achieve X, then I'll be happy').\n4. Goals are at odds with long-term progress (marathoners train for months, but quit running the day after the race because the goal is reached).",
+          "True mastery is playing an infinite game: you do not practice to reach a finish line; you build a system to stay in the game of continuous refinement forever."
+        ],
+        heuristic: "Fall in love with the daily system, not the distant goal. The score will take care of itself.",
+        verbatim: "“The purpose of setting goals is to win the game. The purpose of building systems is to continue playing the game... It is not about any single accomplishment. It is about the cycle of endless refinement and continuous improvement.” — James Clear"
+      }
+    ]
+  }
+];
+
+// GENERATE MASTER-NOTES.MD
+console.log("Generating atomic-habits master-notes.md...");
+let mdContent = `# Atomic Habits: An Proven Framework for Continuous Improvement
+
+**Author:** James Clear (2018)  
+**System Standard:** BKRS v1.0 Total Replacement Master Codex  
+**Corpus Architecture:** 6 Sections | 20 Invariant Units | The 4 Laws of Behavior Change & Their Inversions  
+
+---
+
+## Executive Epistemic Summary: The Architecture of Atomic Systems
+
+Changes that seem small and unimportant at first will compound into remarkable results if you are willing to stick with them for years. *Atomic Habits* dismantles the cultural obsession with massive, dramatic transformations and replaces it with the mathematical compounding of daily micro-systems.
+
+The core cognitive architecture rests upon four foundations:
+1. **The Compounding Axiom:** A 1% improvement every day compounds to 37x in a single year ($1.01^{365} = 37.78$).
+2. **Identity-Based Transformation:** True behavior change is not about what you get (outcomes), but who you become (identity). Every action is a vote for your desired self.
+3. **The Four-Stage Loop:** Cue, Craving, Response, Reward.
+4. **The Four Laws:** Make it Obvious, Make it Attractive, Make it Easy, Make it Satisfying.
+
+---
+
+`;
+
+sections.forEach(sec => {
+  mdContent += `## ${sec.title}\n*${sec.period}*\n\n`;
+  sec.units.forEach(u => {
+    mdContent += `### Unit ${u.number}: ${u.title}\n`;
+    mdContent += `**Epistemic Classification:** \`${u.epistemic_tag}\`\n\n`;
+    mdContent += `#### Core Behavioral Invariant\n${u.concept}\n\n`;
+    mdContent += `#### Narrative Breakdown & Empirical Evidence\n\n`;
+    u.narrative.forEach(p => {
+      mdContent += `${p}\n\n`;
+    });
+    mdContent += `> ${u.verbatim}\n\n`;
+    mdContent += `**Operational Heuristic:** *${u.heuristic}*\n\n---\n\n`;
+  });
+});
+
+fs.writeFileSync(path.join(targetDir, 'master-notes.md'), mdContent, 'utf8');
+console.log(`Saved master-notes.md (${mdContent.length} chars)`);
+
+// GENERATE KNOWLEDGE-UNITS.JSON
+console.log("Generating knowledge-units.json for atomic-habits...");
+const flatUnits = [];
+sections.forEach(sec => {
+  sec.units.forEach(u => {
+    flatUnits.push({
+      unit_id: `unit-${String(u.number).padStart(2, '0')}`,
+      unit_number: u.number,
+      title: u.title,
+      section: sec.title,
+      epistemic_status: u.epistemic_tag,
+      core_concept: u.concept,
+      narrative_breakdown: u.narrative,
+      verbatim_anchor: u.verbatim,
+      operational_heuristic: u.heuristic,
+      materiality: "CRITICAL"
+    });
+  });
+});
+
+fs.writeFileSync(path.join(targetDir, 'knowledge-units.json'), JSON.stringify(flatUnits, null, 2), 'utf8');
+console.log(`Saved knowledge-units.json (${flatUnits.length} canonical units)`);
+
+// GENERATE HTML WITH BKRS CREAM READER SHELL
+console.log("Compiling index.html with BKRS Editorial Cream Reader Shell...");
+const htmlContent = `<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Habits — James Clear | BKRS Master Reader</title>
+  
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent-crimson: #8b181b;
+      --accent-gold: #b38628;
+      --accent-forest: #225e43;
+      --border-color: #e5e0d3;
+    }
+
+    [data-theme="cream"] {
+      --bg-canvas: #fbf9f4;
+      --bg-card: #f5f2ea;
+      --bg-card-subtle: #efebe0;
+      --border-color: #e2dccf;
+      --border-color-focus: #b5a895;
+      --text-main: #24211e;
+      --text-muted: #5c5549;
+      --text-subtle: #857b6c;
+      --accent-crimson: #8b181b;
+      --accent-gold: #966b1d;
+      --accent-forest: #225e43;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-serif, "EB Garamond", Georgia, serif);
+      font-size: 1.15rem;
+      line-height: 1.8;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .unit-card-deep {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 38px 46px;
+      margin-bottom: 44px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    @media (max-width: 768px) {
+      .unit-card-deep { padding: 24px 20px; margin-bottom: 30px; }
+    }
+
+    .unit-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+    .unit-badge {
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 3px 10px;
+      background: #8b181b15;
+      color: var(--accent-crimson);
+      border: 1px solid var(--accent-crimson);
+      border-radius: 4px;
+    }
+    .unit-epistemic {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      background: var(--bg-card-subtle);
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+    }
+
+    .unit-heading-deep {
+      font-family: var(--font-serif);
+      font-size: 1.95rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+    .narrative-p {
+      margin-bottom: 1.4em;
+      font-size: 1.15rem;
+      line-height: 1.82;
+      text-align: justify;
+    }
+
+    .quote-box {
+      margin: 24px 0;
+      padding: 18px 24px;
+      background: var(--bg-card-subtle);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+      font-size: 1.12rem;
+    }
+
+    .heuristic-box {
+      margin-top: 24px;
+      padding: 16px 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-forest);
+      border-radius: 0 6px 6px 0;
+      font-size: 1.02rem;
+    }
+
+    .nav-epoch-title {
+      font-family: var(--font-sans);
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-crimson);
+      padding: 12px 16px 4px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP APP BAR -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="icon-btn toggle-sidebar-btn" id="toggle-sidebar-btn" title="Toggle Table of Contents" aria-label="Toggle Sidebar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <a href="../../index.html" class="brand-link">
+          <img src="../../assets/images/logo.png" alt="Intellectualist" class="brand-logo">
+          <div class="brand-meta">
+            <span class="brand-title">THE INTELLECTUALIST</span>
+            <span class="brand-sub">BKRS Master Distillation Series</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- VIEW SELECTOR BUTTONS -->
+      <div class="view-pills" style="display: flex; gap: 6px;">
+        <button class="pill-btn active" id="btn-view-journey" onclick="switchView('journey')">View A: The 20 Units</button>
+        <button class="pill-btn" id="btn-view-map" onclick="switchView('map')">View B: The 4 Laws Blueprint</button>
+      </div>
+
+      <!-- THEME SELECTOR -->
+      <div class="top-controls">
+        <select class="theme-select" id="theme-select" onchange="setTheme(this.value)">
+          <option value="cream" selected>Editorial Cream</option>
+          <option value="light">Crisp Light</option>
+          <option value="sepia">Warm Sepia</option>
+          <option value="dark">Nocturne Dark</option>
+        </select>
+        <div class="font-toggle" style="display: flex; gap: 4px;">
+          <button class="icon-btn" onclick="setFont('serif')" title="Serif Font" style="font-family: serif; font-weight: bold;">T</button>
+          <button class="icon-btn" onclick="setFont('sans')" title="Sans Font" style="font-family: sans-serif; font-weight: bold;">S</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="reader-shell" id="reader-shell">
+    
+    <!-- LEFT SIDEBAR TOC -->
+    <aside class="reader-sidebar" id="reader-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Atomic Units</div>
+        <div class="sidebar-meta">6 Sections • 20 Invariant Units</div>
+      </div>
+      <div class="sidebar-toc" id="sidebar-toc">
+        ${sections.map(s => `
+          <div class="nav-epoch-title">${s.title}</div>
+          ${s.units.map(u => `
+            <div class="nav-ch-item">
+              <a href="#unit-${u.number}" class="nav-ch-link" onclick="closeSidebarOnMobile()">
+                <span class="nav-ch-num">${u.number}</span>
+                <span class="nav-ch-title">${u.title}</span>
+              </a>
+            </div>
+          `).join('')}
+        `).join('')}
+      </div>
+    </aside>
+
+    <!-- MAIN READING VIEWPORT -->
+    <main class="reader-viewport" id="reader-viewport">
+      <div class="reader-measure" id="reader-measure">
+
+        <!-- VIEW A: THE 20 UNITS -->
+        <section id="view-journey" class="view-panel active">
+          
+          <div style="margin-bottom: 40px; padding: 28px 0; border-bottom: 2px solid var(--accent-crimson);">
+            <div style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); margin-bottom: 8px;">
+              BKRS Single-Volume Master Reconstruction
+            </div>
+            <h1 style="font-family: var(--font-serif); font-size: 2.6rem; line-height: 1.2; color: var(--text-main); margin-bottom: 12px; letter-spacing: -0.02em;">
+              Atomic Habits
+            </h1>
+            <div style="font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; color: var(--text-muted); line-height: 1.6; max-width: 900px;">
+              A comprehensive reconstruction of James Clear’s behavioral architecture. Synthesizing cognitive neurobiology, the 4-stage habit loop, identity-based systems, environmental choice design, and deliberate practice.
+            </div>
+          </div>
+
+          <!-- THE 6 SECTIONS -->
+          ${sections.map(sec => `
+            <div style="margin-bottom: 48px;">
+              <div style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-color);">
+                <span style="font-family: var(--font-sans); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-crimson); display: block; margin-bottom: 4px;">
+                  Section
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--text-main);">${sec.title}</h2>
+              </div>
+
+              ${sec.units.map(u => `
+                <div class="unit-card-deep" id="unit-${u.number}">
+                  <div class="unit-meta-line">
+                    <span class="unit-badge">Unit ${u.number}</span>
+                    <span class="unit-epistemic">${u.epistemic_tag}</span>
+                  </div>
+
+                  <h3 class="unit-heading-deep">${u.title}</h3>
+
+                  <div style="font-size: 1.15rem; line-height: 1.75; margin-bottom: 20px; font-weight: 500; color: var(--text-main);">
+                    ${u.concept}
+                  </div>
+
+                  <div class="narrative-prose">
+                    ${u.narrative.map(p => `<p class="narrative-p">${p.replace(/\\n/g, '<br>')}</p>`).join('')}
+                  </div>
+
+                  <div class="quote-box">
+                    ${u.verbatim}
+                  </div>
+
+                  <div class="heuristic-box">
+                    <strong style="color: var(--accent-forest); font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+                      Operational Heuristic:
+                    </strong>
+                    ${u.heuristic}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          `).join('')}
+
+        </section>
+
+        <!-- VIEW B: THE 4 LAWS BLUEPRINT -->
+        <section id="view-map" class="view-panel" style="display: none;">
+          <div style="margin-bottom: 32px; border-bottom: 2px solid var(--accent-crimson); padding-bottom: 16px;">
+            <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--text-main);">The 4 Laws of Behavior Change Blueprint</h2>
+            <p style="font-family: var(--font-serif); font-style: italic; color: var(--text-muted); font-size: 1.05rem;">The Neurobiological Operating Matrix for Habit Formation & Inversion</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            <div style="padding: 24px; background: var(--bg-card); border-left: 4px solid var(--accent-forest); border-radius: 8px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--accent-forest); margin-bottom: 16px;">How to Create a Good Habit</h3>
+              <p style="margin-bottom: 12px;"><strong>1st Law (Cue):</strong> Make it obvious. (Implementation intentions, habit stacking, visual cues).</p>
+              <p style="margin-bottom: 12px;"><strong>2nd Law (Craving):</strong> Make it attractive. (Temptation bundling, joining a tribe where desired behavior is normal).</p>
+              <p style="margin-bottom: 12px;"><strong>3rd Law (Response):</strong> Make it easy. (Reduce friction, Two-Minute Rule, prime the environment).</p>
+              <p><strong>4th Law (Reward):</strong> Make it satisfying. (Immediate rewards, habit tracking, never miss twice).</p>
+            </div>
+
+            <div style="padding: 24px; background: var(--bg-card); border-left: 4px solid var(--accent-crimson); border-radius: 8px;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--accent-crimson); margin-bottom: 16px;">How to Break a Bad Habit</h3>
+              <p style="margin-bottom: 12px;"><strong>Inversion 1st Law (Cue):</strong> Make it invisible. (Remove cues, out of sight out of mind).</p>
+              <p style="margin-bottom: 12px;"><strong>Inversion 2nd Law (Craving):</strong> Make it unattractive. (Reframe mindset, highlight hidden costs).</p>
+              <p style="margin-bottom: 12px;"><strong>Inversion 3rd Law (Response):</strong> Make it difficult. (Increase friction, commitment devices, 20-second delays).</p>
+              <p><strong>Inversion 4th Law (Reward):</strong> Make it unsatisfying. (Accountability partners, Habit Contracts, immediate social pain).</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../../assets/js/reader-controls.js"></script>
+  <script>
+    function switchView(viewName) {
+      document.querySelectorAll('.view-panel').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+
+      if (viewName === 'journey') {
+        document.getElementById('view-journey').style.display = 'block';
+        document.getElementById('btn-view-journey').classList.add('active');
+      } else if (viewName === 'map') {
+        document.getElementById('view-map').style.display = 'block';
+        document.getElementById('btn-view-map').classList.add('active');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeSidebarOnMobile() {
+      if (window.innerWidth <= 1024) {
+        document.getElementById('reader-shell').classList.remove('sidebar-open');
+      }
+    }
+  </script>
+</body>
+</html>
+`;
+
+fs.writeFileSync(path.join(targetDir, 'index.html'), htmlContent, 'utf8');
+console.log('Saved index.html (Definitive BKRS Reader Shell with 20 Units and 4 Laws Blueprint)');
+
+// UPDATE LIBRARY INDEX
+const libIndexPath = path.join(__dirname, '../../docs/library-index.json');
+if (fs.existsSync(libIndexPath)) {
+  const lib = JSON.parse(fs.readFileSync(libIndexPath, 'utf8'));
+  const book = lib.books.find(b => b.id === 'atomic-habits');
+  if (book) {
+    book.original_volume = "20 Invariant Chapters (The 4 Laws of Behavior Change, Identity Systems, Environment Design, 2-Minute Rule, Inversions)";
+    book.reading_time_saved = "14.0 hrs saved";
+    book.hours_val = 14;
+    fs.writeFileSync(libIndexPath, JSON.stringify(lib, null, 2), 'utf8');
+    console.log('Updated docs/library-index.json for atomic-habits');
+  }
+}

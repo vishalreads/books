@@ -3,7 +3,7 @@ node_modules/
 package-lock.json
 
 # Large source files & book binaries
-Books/
+/Books/
 *.pdf
 !docs/pdf/the-intellectualist-master-omnibus.pdf
 *.epub
@@ -29,6 +29,14 @@ src/manifestation_pipeline/unpacked_epubs/
 src/manifestation_pipeline/unpacked_batch_2/
 src/manifestation_pipeline/unpacked_batch_3/
 src/rajput_pipeline/unpacked/
+src/books/*/OEBPS/
+src/books/*/ops/
+src/books/*/META-INF/
+src/books/*/mimetype
+src/books/Atomic_Habits/
+src/books/Atomic_Habits_extracted.html
+src/books/48_Laws_of_Power/
+src/books/it_ends_with_us/
 
 
 
