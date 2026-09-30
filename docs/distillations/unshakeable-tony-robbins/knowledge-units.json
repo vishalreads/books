@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-robbins-01",
+    "title": "The Unshakeable Mindset & The Compound Engine of Wealth",
+    "unitType": "financial-philosophy",
+    "summary": "Defines the state of being \"Unshakeable\": absolute psychological serenity, clarity, and systematic conviction amidst economic volatility and market crashes. Deconstructs the mathematical miracle of compound interest, the danger of remaining on the sidelines, and the imperative of transforming from a pure economic consumer into an equity asset owner.",
+    "epistemicStatus": "source-foundational",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-robbins-02",
+    "title": "Market Cycles, Volatility & The Seven Freedom Facts",
+    "unitType": "market-mechanics",
+    "summary": "Forensic historical analysis of market corrections and bear markets across a century of S&P 500 data. Formulates the Seven Facts that dispel fear: corrections occur annually on average; fewer than 20% of corrections morph into bear markets; nobody can consistently time the market; the stock market rises over time despite short-term drops; bear markets historically occur every 3–5 years; bear markets become bull markets; and the greatest danger is being out of the market during sudden recovery rebounds.",
+    "epistemicStatus": "source-empirical-statistical",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-robbins-03",
+    "title": "The Wall Street Fee Matrix & The Tyranny of Compounding Costs",
+    "unitType": "financial-forensics",
+    "summary": "Deconstructs the arithmetic of wealth destruction perpetrated by hidden investment fees. Mathematical proof of Jack Bogle’s rule: \"In investing, you get what you don’t pay for.\" Exposes how a seemingly innocuous 2% in active mutual fund expense ratios, 12b-1 marketing levies, turnover trading friction, and transaction costs erodes 50% to 65% of an investor’s lifetime portfolio wealth over a 30-year accumulation horizon.",
+    "epistemicStatus": "source-mathematical-forensic",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-robbins-04",
+    "title": "Retirement Account Governance & The 401(k) Hidden Fee Maze",
+    "unitType": "retirement-architecture",
+    "summary": "Investigates the structural flaws and conflicts of interest inside employer-sponsored retirement plans. Analyzes the Department of Labor fee disclosure rules, exposes the hidden administrative, recordkeeping, and wrap fees embedded in 401(k) menus, and provides the step-by-step mechanism to audit corporate retirement plans and replace costly proprietary funds with low-cost index tracking.",
+    "epistemicStatus": "source-regulatory-operational",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-robbins-05",
+    "title": "The Fiduciary Standard vs. The Broker-Dealer Suitability Trap",
+    "unitType": "advisor-governance",
+    "summary": "Demarcates the profound legal and ethical gulf separating two classes of financial intermediaries: Broker-Dealers governed by the lax \"Suitability Standard\" (legally permitted to sell high-commission proprietary products) versus Registered Investment Advisors (RIAs) bound by the strict \"Fiduciary Standard\" (mandated under the Investment Advisers Act of 1940 to act exclusively in the client’s best interest). Outlines the 7 diagnostic questions to uncover advisor conflicts.",
+    "epistemicStatus": "source-legal-institutional",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-robbins-06",
+    "title": "The Core Four Principles of Investment Decision-Making",
+    "unitType": "investment-framework",
+    "summary": "Codifies the four universal rules followed by the world’s greatest financial minds (Ray Dalio, Warren Buffett, Jack Bogle, David Swensen): 1. Don’t Lose Money (Downside Protection and capital preservation); 2. Asymmetric Risk/Reward (risk $1 to make $5); 3. Tax Efficiency (maximizing net returns through strategic asset location and tax-loss harvesting); 4. Diversification across multiple non-correlated dimensions.",
+    "epistemicStatus": "source-heuristic-rule",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-robbins-07",
+    "title": "Multi-Dimensional Diversification & Asset Class Mechanics",
+    "unitType": "portfolio-engineering",
+    "summary": "Deconstructs the four levels of systematic diversification: 1. Across distinct asset classes (equities, fixed-income debt, real estate, commodities); 2. Within asset classes (broad market capitalization weighting rather than stock picking); 3. Across global markets, currencies, and economies; 4. Across time (dollar-cost averaging to neutralize entry-point volatility).",
+    "epistemicStatus": "source-quantitative-structural",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-robbins-08",
+    "title": "Slaying the Bear: Dynamic Asset Allocation & Opportunistic Rebalancing",
+    "unitType": "tactical-execution",
+    "summary": "Operational playbook for surviving and exploiting bear markets. Explains Peter Mallouk’s asset allocation strategies: structuring short-term income cushions (living expenses in cash/short-term bonds) to eliminate forced liquidation during market troughs; systematic opportunistic rebalancing (selling appreciating assets to buy beaten-down high-quality equities); and capitalizing on panic-driven market mispricings.",
+    "epistemicStatus": "source-tactical-operational",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-robbins-09",
+    "title": "Behavioral Finance & Silencing the Six Cognitive Saboteurs",
+    "unitType": "behavioral-psychology",
+    "summary": "Applies behavioral economics (Kahneman-Tversky prospect theory) to diagnose the six psychological biases that destroy individual investor returns: 1. Confirmation Bias; 2. Recency Bias (extrapolating the immediate past); 3. Overconfidence (illusion of predictive skill); 4. Greed and Herd Mentality (FOMO); 5. Home Country Bias; 6. Loss Aversion (pain of loss twice as intense as pleasure of gain).",
+    "epistemicStatus": "source-cognitive-psychological",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-robbins-10",
+    "title": "The Ultimate Mastery: The Art of Fulfillment & “Real Wealth”",
+    "unitType": "existential-wealth",
+    "summary": "Formulates Robbins’ foundational existential distinction: \"Success without fulfillment is the ultimate failure.\" Deconstructs the neuro-emotional mechanics of suffering: the three universal suffering triggers—Loss, Less, and Never. Establishes the daily practice of living in a \"Beautiful State,\" untethering joy from external market outcomes, and recognizing unconditional contribution as the sole durable source of true wealth.",
+    "epistemicStatus": "source-philosophical-existential",
+    "materiality": "critical",
+    "order": 10
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-hill-01",
+    "title": "The Invisible Majority: The Informal Economy & The Failure of Dualism",
+    "unitType": "informal-economy-theory",
+    "summary": "Deconstructs the classical Lewis dual-sector model and modernization theories that predicted the informal sector would wither away as industrialization matured. Documents the structural reality that over 90% of India's total workforce—and upwards of 94% of female workers—remain trapped in the informal economy, demonstrating that informality is not a transitional friction but a permanent, structural feature of globalized capitalism.",
+    "epistemicStatus": "source-theoretical-empirical",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-hill-02",
+    "title": "Genealogy of the Informal Sector Debate: Dualists, Legalists & Structuralists",
+    "unitType": "historiography-economic-thought",
+    "summary": "Traces the intellectual trajectory of informal economic theory from the 1972 ILO Kenya mission to contemporary debates. Contrasts the three major competing paradigms: 1. The Dualist school (marginal subsistence survival); 2. Hernando de Soto’s Legalist/Populist model (heroic micro-entrepreneurs crippled by bureaucratic red tape and dead capital); and 3. The Neo-Marxist Structuralist school (informal labor subordinated by formal capital to lower reproduction costs and maximize flexible accumulation).",
+    "epistemicStatus": "source-intellectual-comparative",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-hill-03",
+    "title": "Engendering the Analysis: Gendered Informality & The WIEGO Hierarchy",
+    "unitType": "feminist-economics-stratification",
+    "summary": "Exposes how standard macroeconomic models fail to capture the gendered segmentation of informal labor. Utilizes the WIEGO (Women in Informal Employment: Globalizing and Organizing) framework developed by Martha Chen to demonstrate the inverted hierarchy of informal employment: women are systematically concentrated at the bottom of the pyramid in piece-rate industrial homework, unpaid family labor, and waste picking, enduring the highest poverty risk and lowest average earnings.",
+    "epistemicStatus": "source-empirical-stratification",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-hill-04",
+    "title": "Reconceptualising Labour: Beyond Human Capital to Sen’s Capability Approach",
+    "unitType": "epistemological-reconceptualisation",
+    "summary": "Critiques the neoclassical Human Capital Theory (Gary Becker, Jacob Mincer) for reducing informal workers’ poverty to personal deficits in formal education and vocational skills. Formulates an alternative theoretical framework combining Karl Marx's analysis of the labor process with Amartya Sen’s Capability Approach, shifting the developmental focus from mere income generation to expanding substantive human freedoms, agency, and dignified functioning.",
+    "epistemicStatus": "source-theoretical-normative",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-hill-05",
+    "title": "The Triple Burden & The Dialectic of Social Reproduction",
+    "unitType": "social-reproduction-theory",
+    "summary": "Analyzes the structural integration of production and reproduction in informal women’s lives. Deconstructs the \"Triple Burden\": productive economic labor, unpaid domestic household labor, and community management. Explains how the privatization of public infrastructure forces poor women to absorb the costs of biological and social reproduction through extreme physical exhaustion, sleep deprivation, and time poverty.",
+    "epistemicStatus": "source-feminist-structural",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-hill-06",
+    "title": "The SEWA Paradigm: Gandhian Unionism, Struggle & Constructive Development",
+    "unitType": "institutional-organisational-model",
+    "summary": "Examines the organizational architecture of the Self Employed Women's Association (SEWA), founded in 1972 by Ela Bhatt. Analyzes the synthesis of labor unionism and cooperative enterprise encapsulated in SEWA’s dual operational strategy: Sangharsh (Struggle / collective agitation and legal bargaining against exploitative employers and police) and Nirman (Development / constructive institution-building through banking, healthcare, and crèches).",
+    "epistemicStatus": "source-institutional-ethnographic",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-hill-07",
+    "title": "Financial Emancipation: The SEWA Cooperative Bank & Asset Building",
+    "unitType": "microfinance-asset-architecture",
+    "summary": "Details the history and mechanics of the Shri Mahila Sewa Sahakari Bank (established 1974), the first cooperative bank run by and for illiterate and poor self-employed women. Analyzes how doorstep banking, daily savings collection, and collateral-free micro-credit broke the predatory monopoly of local moneylenders (*sahukars* charging 10%–20% monthly interest), enabling informal women to capitalize businesses and accumulate productive assets titled in their own names.",
+    "epistemicStatus": "source-financial-institutional",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-hill-08",
+    "title": "Social Security as Productive Infrastructure: Health, Childcare & Insurance",
+    "unitType": "social-protection-infrastructure",
+    "summary": "Demonstrates that in the informal economy, social security is not a post-growth consumption subsidy but an essential productive investment. Deconstructs SEWA’s mutual health cooperative (Lok Swasthya), insurance mutual (Vimo SEWA), and childcare cooperatives (Sangini). Proves that institutional childcare directly increases maternal labor productivity, prevents childhood mortality, and stops older female siblings from being pulled out of school.",
+    "epistemicStatus": "source-operational-policy",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-hill-09",
+    "title": "From Invisible Worker to \"Mazdoor\": The Construction of Worker Identity",
+    "unitType": "sociological-identity-agency",
+    "summary": "Investigates the psychological and political transformation of informal women from internalized subservience to self-conscious worker identity. Documents how SEWA’s organizing pedagogy reclaims the title of \"Mazdoor\" (Worker / *Kamdar*) for home-based bidi rollers, garment stitchers, and rag pickers, converting fragmented, marginalized individuals into collective political actors with legal standing, collective voice, and civic dignity.",
+    "epistemicStatus": "source-sociological-qualitative",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-hill-10",
+    "title": "State Policy, Legislative Reform & Global Labor Standards (ILO Convention 177)",
+    "unitType": "policy-legislative-reform",
+    "summary": "Examines the policy struggle to institutionalize informal workers' rights within state legislation and international conventions. Analyzes the landmark enactment of India’s Street Vendors Act (2014), the Unorganised Workers' Social Security Act (2008), and SEWA’s successful global campaign at Geneva leading to ILO Convention 177 on Home Work (1996), establishing equal treatment between home-based piece-rate workers and formal factory labor.",
+    "epistemicStatus": "source-legislative-international",
+    "materiality": "critical",
+    "order": 10
+  }
+]

@@ -1,0 +1,647 @@
+const fs = require('fs');
+const path = require('path');
+
+const slug = 'roman-empire-indian-ocean-mclaughlin';
+const title = 'The Roman Empire and the Indian Ocean';
+const author = 'Raoul McLaughlin';
+const outDir = path.join(__dirname, '..', '..', 'docs', 'distillations', slug);
+
+if (!fs.existsSync(outDir)) {
+  fs.mkdirSync(outDir, { recursive: true });
+}
+
+const knowledgeUnits = [
+  {
+    id: 'ku-mclaughlin-01',
+    title: 'Macro-Fiscal Architecture of the Roman Empire & The Eastern Trade Impulse',
+    unitType: 'imperial-fiscal-macroeconomics',
+    summary: 'Analyzes the macroeconomic foundation of the Roman Principate following Octavian Augustus\' annexation of Ptolemaic Egypt in 30 BC. Details imperial revenue mobilization, the staggering cost of maintaining 30 standing legions (roughly 600-750 million sesterces annually), and how the acquisition of Egyptian agricultural and maritime infrastructure transformed Red Sea trade into an indispensable engine of imperial state finance.',
+    epistemicStatus: 'source-historical-quantitative',
+    materiality: 'critical',
+    order: 1
+  },
+  {
+    id: 'ku-mclaughlin-02',
+    title: 'Red Sea Ports, Desert Logistics & The Infrastructure of Eastern Commerce',
+    unitType: 'infrastructure-logistics',
+    summary: 'Forensic reconstruction of the maritime and terrestrial logistics chain linking Rome, Alexandria, and the Indian Ocean. Details the engineering and administration of the Egyptian ports of Berenike and Myos Hormos, the Nile transshipment hub at Coptos (Koptos), the fortified desert caravan routes (*hydreumata* and *praesidia*), and the specialized transport corps operating across the Eastern Desert.',
+    epistemicStatus: 'source-archaeological-institutional',
+    materiality: 'critical',
+    order: 2
+  },
+  {
+    id: 'ku-mclaughlin-03',
+    title: 'The Monsoon Revolution & Navigational Breakthroughs in the Arabian Sea',
+    unitType: 'maritime-navigational-science',
+    summary: 'Examines the technological and meteorological breakthrough attributed in ancient sources to the navigator Eudoxus and popularized as the "Hippalus wind." Explains how Roman-era Greek and Egyptian sailors deciphered the seasonal reversals of the Southwest (Summer/Kachchan) and Northeast (Winter) monsoons to bypass coastal cabotage, sailing directly across open ocean between the Gulf of Aden and the Indian Malabar Coast in roughly 40 days.',
+    epistemicStatus: 'source-navigational-empirical',
+    materiality: 'critical',
+    order: 3
+  },
+  {
+    id: 'ku-mclaughlin-04',
+    title: 'The Intermediary Powers: Nabataeans, Petra & The Incense Kingdom of Hadramawt',
+    unitType: 'trade-routes-geopolitics',
+    summary: 'Investigates the overland and coastal incense kingdoms controlling the lucrative trade in frankincense (*Boswellia sacra*) and myrrh (*Commiphora*). Analyzes the wealth of the Nabataean kingdom centered at Petra, the Red Sea customs station at Leuke Kome, the southern Arabian kingdoms of Saba and Hadramawt (centered at Qana and Shabwa), and Rome\'s strategic annexation of Arabia Petraea under Trajan in AD 106.',
+    epistemicStatus: 'source-geopolitical-economic',
+    materiality: 'critical',
+    order: 4
+  },
+  {
+    id: 'ku-mclaughlin-05',
+    title: 'The Horn of Africa: The Kingdom of Aksum & The Port of Adulis',
+    unitType: 'african-trade-networks',
+    summary: 'Explores the African commercial frontier documented in the *Periplus Maris Erythraei*. Details the emergence of the Kingdom of Aksum, its principal seaport at Adulis in the Red Sea, and its role as an exporter of premium African elephant ivory, rhinoceros horn, tortoiseshell, and obsidian, demonstrating deep Roman commercial penetration along the Eritrean and Somalian coastlines.',
+    epistemicStatus: 'source-regional-economic',
+    materiality: 'critical',
+    order: 5
+  },
+  {
+    id: 'ku-mclaughlin-06',
+    title: 'Financial Engineering, Maritime Law & The Muziris Papyrus (P. Vindob. G 40822)',
+    unitType: 'financial-contractual-mechanics',
+    summary: 'Deconstructs the world’s most comprehensive surviving ancient commercial shipping contract, the mid-second-century AD Muziris Papyrus. Analyzes Roman bottomry loans (*faenus nauticum*), maritime hypothecations, cargo valuation, the imperial customs tariff (*tetarte*, a 25% ad valorem import levy collected at Alexandria), and the staggering capital required to finance a single merchant voyage (exceeding 7 million sesterces for a single ship\'s hold).',
+    epistemicStatus: 'source-papyrological-contractual',
+    materiality: 'critical',
+    order: 6
+  },
+  {
+    id: 'ku-mclaughlin-07',
+    title: 'The Northern Subcontinent: Indo-Parthians, Saka Kshatrapas & The Port of Barygaza',
+    unitType: 'subcontinental-trade-systems',
+    summary: 'Examines Roman commercial engagement with Northwestern India and the Gulf of Khambhat. Analyzes the Indus delta port of Barbarikon under the Indo-Parthians, and the great emporium of Barygaza (modern Bharuch) ruled by the Western Kshatrapas (notably King Nahapana) and contested by the Satavahanas. Details the trade in Chinese silk transshipped through Central Asia, spikenard, bdellium, cotton textiles, and Roman silver denarii.',
+    epistemicStatus: 'source-numismatic-historical',
+    materiality: 'critical',
+    order: 7
+  },
+  {
+    id: 'ku-mclaughlin-08',
+    title: 'The Tamil Kingdoms of South India: Cheras, Pandyas, Cholas & The Pepper Trade',
+    unitType: 'south-indian-maritime-economy',
+    summary: 'Deep investigation of Roman maritime interaction with the Tamil Sangam kingdoms: the Chera kingdom of Muziris (Kodungallur), the Pandya kingdom of Madurai and Korkai, and the Chola ports of Kaveripattinam (Puhar) and Poduke (Arikamedu). Quantifies the immense Roman appetite for Malabar black pepper (*Piper nigrum*), Gulf of Mannar pearls, Coimbatore beryl, and Indian fine textiles.',
+    epistemicStatus: 'source-archaeological-sangam-literature',
+    materiality: 'critical',
+    order: 8
+  },
+  {
+    id: 'ku-mclaughlin-09',
+    title: 'The Bullion Drain, Coin Hoards & Monetary Asymmetry (The Pliny Paradox)',
+    unitType: 'monetary-macroeconomics',
+    summary: 'Critically evaluates Pliny the Elder’s famous lament that the eastern luxury trade drained over 50 million sesterces (or 100 million across India, Arabia, and China) in precious metal bullion out of the Roman Empire every year. Analyzes the extensive archaeological discovery of Roman imperial gold *aurei* and silver *denarii* hoards across peninsular India (especially Coimbatore and Kerala), imperial monetary slashing/countermarking, and the nature of ancient balance of payments.',
+    epistemicStatus: 'source-monetary-numismatic-forensic',
+    materiality: 'critical',
+    order: 9
+  },
+  {
+    id: 'ku-mclaughlin-10',
+    title: 'The Far East Horizon, The Antonine Pandemic & The Great Commercial Contraction',
+    unitType: 'global-macro-epidemiology',
+    summary: 'Traces the outer geographic perimeter of Roman commerce into the Kingdom of Anuradhapura (Sri Lanka/Taprobane), the Southeast Asian maritime routes, and the AD 166 "embassy" of Emperor Marcus Aurelius Antoninus (*Antun*) recorded in the Chinese *Hou Hanshu*. Analyzes how the catastrophic Antonine Pandemic (AD 165–180) decimated the Roman Mediterranean population, triggered an imperial fiscal and currency crisis, and permanently contracted deep Indian Ocean maritime commerce.',
+    epistemicStatus: 'source-comparative-historical',
+    materiality: 'critical',
+    order: 10
+  }
+];
+
+const masterNotes = `# Master Codex: The Roman Empire and the Indian Ocean
+**Author**: Raoul McLaughlin  
+**Discipline**: Ancient Economic History, Maritime Archaeology & Global Trade Systems  
+**Standard**: BKRS v2.0 Replacement-Grade Knowledge Codex  
+
+---
+
+## Executive Epistemological Overview
+
+Raoul McLaughlin's *The Roman Empire and the Indian Ocean: The Ancient World Economy and the Kingdoms of Africa, Arabia and India* (Pen & Sword Military / Casemate) represents a paradigm-shifting economic and historical reconstruction of the ancient global economy. Drawing upon a rigorous synthesis of classical Greek and Latin literary sources (Strabo, Pliny the Elder, Ptolemy, the *Periplus Maris Erythraei*), Tamil Sangam poetry, Chinese dynastic annals (*Shiji*, *Hou Hanshu*), papyrological documentation (notably the *Muziris Papyrus*, P. Vindob. G 40822), and modern maritime archaeological and numismatic discoveries across Egypt, the Red Sea, the Persian Gulf, and the Indian subcontinent, McLaughlin dismantles the long-standing 20th-century "primitivist" consensus regarding ancient economics.
+
+### The Great Historiographical Debate: Primitivists vs. Modernists
+For decades, classical economic history was dominated by the Moses Finley / Karl Polanyi "primitivist" orthodoxy, which asserted that ancient economies were under-developed, localized, subsistence-oriented, and incapable of sustained capital accumulation, cross-oceanic trade integration, or rational fiscal management. 
+
+McLaughlin overturns this minimalist orthodoxy by demonstrating that:
+1. **Unprecedented Global Scale**: In the first two centuries of the Common Era, the Roman Empire and the sovereign kingdoms of the Indian Ocean operated an interconnected, inter-continental market economy of staggering sophistication and monetary magnitude.
+2. **Fiscal Pillar of the Empire**: Long-distance oceanic trade was not a marginal aristocratic luxury sideline; import customs duties (*portorium* / *tetarte*) levied at Alexandria and Red Sea ports generated vast, regular cash revenues that directly funded the imperial Roman military-bureaucratic apparatus, financing the maintenance of the frontier legions along the Rhine, Danube, and Euphrates.
+3. **Complex Financial Engineering**: Far from being crude barter exchanges, this commerce was facilitated by sophisticated maritime bottomry contracts, syndicates of wealthy financiers (*negotiatores*), international letters of credit, bonded warehousing, and enormous bullion export transfers that monetized the economies of South India and the Red Sea littoral.
+
+---
+
+## Unit 1: Macro-Fiscal Architecture of the Roman Empire & The Eastern Trade Impulse
+
+### 1.1 The Conquest of Egypt (30 BC) as an Economic Inflection Point
+The pivotal structural turning point in the history of Afro-Eurasian trade occurred in **30 BC**, when Octavian (the future Emperor Augustus) defeated Mark Antony and Cleopatra VII, annexing the Ptolemaic Kingdom of Egypt into the Roman Empire. Under the Ptolemaic monarchs, Red Sea commerce with India had been severely restricted by royal monopolies, high bureaucratic tolls, and predatory pirates along the Arabian littoral. According to the contemporary geographer **Strabo** (*Geography* 2.5.12), under the later Ptolemies:
+> *"Scarcely twenty vessels ventured to navigate the Arabian Gulf [Red Sea] and venture beyond the straits."*
+
+Following the Augustan reorganization:
+- Egypt was designated not as a standard senatorial province, but as the personal imperial estate of the Princeps, governed by an equestrian Prefect (*Praefectus Aegypti*) directly answerable to Caesar.
+- The Roman administration cleared Red Sea pirate havens with military naval squadrons, garrisoned desert watering stations, built deep-water harbor moles, and monetized the Egyptian economy.
+- Within a generation of Augustus' conquest, Strabo documented that fleets of **120 massive merchant vessels were departing every single year from the Red Sea harbor of Myos Hormos alone**, bound for the ports of Western India and the Horn of Africa!
+
+### 1.2 Imperial State Revenues and the Legionary Budget Deficit
+McLaughlin models the macro-fiscal budget of the Roman Principate to demonstrate why Eastern maritime commerce became essential to imperial solvency. 
+
+Under the Julio-Claudian and Flavian emperors, the Roman Empire had to finance:
+- A standing military apparatus of **28 to 30 legions** (each comprising ~5,000 heavy infantry) plus an equivalent number of auxiliary cavalry and infantry cohorts—totaling approximately **300,000 to 350,000 professional standing troops**.
+- The basic cash stipend of a legionary under Augustus was **225 denarii (900 sesterces)** per annum, which Domitian raised to **300 denarii (1,200 sesterces)**.
+- Factoring in centurions' premium pay, cavalry stipends, auxiliary pay, food rations, equipment maintenance, and massive discharge bounties (*praemia militiae* of 3,000 denarii / 12,000 sesterces per retiring veteran), McLaughlin calculates the annual Roman military budget at between **600 million and 750 million sesterces (HS)**.
+
+$$\text{Annual Military Burden} \approx 30 \text{ Legions} \times 20,000,000 \text{ HS} \approx 600,000,000 \text{ HS}$$
+
+Direct agricultural land taxes (*tributum soli*) and personal poll taxes (*tributum capitis*) levied on provincial farmers were inelastic and politically dangerous to raise. The imperial government required high-yield, liquid, cash-generating indirect taxes. The **Eastern maritime trade supplied exactly this fiscal liquidity**.
+
+### 1.3 The 25% Imperial Customs Duty (*Tetarte*)
+The Roman state imposed an extraordinary **25% ad valorem customs tax** (*tetarte*, literally "the fourth") on all oriental luxury merchandise entering Egypt through the Red Sea ports.
+- When an Indian merchant vessel carrying Malabar black pepper, Malabathrum silk, pearls, and precious gems docked at Berenike or Myos Hormos, the imperial customs agents (*arabarchai* / *vectigalarii*) inspected the cargo under military guard.
+- One-quarter of the physical goods—or their monetary equivalent at high Alexandria wholesale valuations—was seized directly by the Roman imperial treasury.
+- McLaughlin calculates that the annual tax yield from the 120-ship Indian Ocean trade fleet generated **between 100 million and 250 million sesterces per year**, single-handedly covering **one-fifth to one-third of the entire Roman imperial military budget**!
+
+\`\`\`
+                    THE ROMAN IMPERIAL FISCAL CYCLE
+   ┌─────────────────────────────────────────────────────────────────┐
+   │ 1. Indian Ocean Fleets import Spices, Silk, Gems, & Perfumes    │
+   ├─────────────────────────────────────────────────────────────────┤
+   │ 2. Roman Treasury levies 25% "Tetarte" Duty at Alexandria Gate  │
+   │    Yield: 100,000,000 to 250,000,000 Sesterces annually         │
+   ├─────────────────────────────────────────────────────────────────┤
+   │ 3. Cash Revenues transferred to Aerarium & Fiscus in Rome       │
+   ├─────────────────────────────────────────────────────────────────┤
+   │ 4. Gold & Silver re-minted to pay 30 Standing Frontier Legions  │
+   │    Maintains Pax Romana along Rhine, Danube, and Euphrates      │
+   └─────────────────────────────────────────────────────────────────┘
+\`\`\`
+
+---
+
+## Unit 2: Red Sea Ports, Desert Logistics & The Infrastructure of Eastern Commerce
+
+### 2.1 The Twin Gateways: Myos Hormos and Berenike
+To service the vast trans-oceanic fleets, the Roman administration expanded two major deep-water ports along the barren, desert coastline of the Red Sea:
+1. **Myos Hormos (Mussel Harbor - modern Quseir al-Qadim)**: Located approximately 180 km east of the Nile bend at Coptos. While closer to the Nile, its approach required navigating dangerous coral reefs and battling treacherous northern winds inside the Gulf of Suez.
+2. **Berenike Troglodytika (modern Medinet-el Haras)**: Founded originally by Ptolemy II Philadelphus in 275 BC and located nearly 380 km southeast of Coptos. Despite requiring a harsh 12-day camel journey through the Eastern Desert, Berenike became the pre-eminent Roman harbor for the direct Indian Ocean trade because ships departing Berenike could immediately clear the northern headlands and catch the prevailing winds of the open Red Sea.
+
+### 2.2 The Eastern Desert Lifeline: Coptos to the Sea
+The logistics of connecting Mediterranean maritime shipping with the Red Sea required transporting thousands of tons of cargo across the hyper-arid Eastern Desert between the Nile river port of **Coptos (Koptos)** and the coastal ports:
+- **Coptos** functioned as the great commercial clearinghouse of Upper Egypt. All Italian, Gallic, and Aegean goods (Campanian wine, Spanish olive oil, Roman glassware, metals, and coinage) traveled up the Nile on river barges to Coptos.
+- At Coptos, goods were unloaded and transferred to massive camel and donkey caravans managed by specialized private transport contractors (*nauklēroi* and camel-drivers, notably the wealthy Greco-Egyptian commercial clan of the **Julii Isidori**).
+
+### 2.3 Military Engineering: The Praesidia and Hydreumata
+The journey across the desert was facilitated by a comprehensive Roman military-logistical network:
+- Along the Coptos-Berenike route, the Roman army constructed fortified way-stations (**praesidia**) spaced at intervals of approximately **25 to 35 kilometers** (one day's caravan march).
+- Each praesidium was garrisoned by Roman auxiliary cavalry and infantry, surrounded by stone ramparts, and enclosed massive fortified water cisterns (**hydreumata**) that harvested scarce desert flash-flood runoff and tapped deep subterranean aquifers.
+- **The Coptos Tariff Inscription (AD 90)**: Discovered in Upper Egypt, this official imperial toll decree proves that the Roman army charged standardized transit tolls for every traveler and transport animal using the desert highway:
+  - 8 drachmas for a camel driver.
+  - 20 drachmas for a merchant.
+  - 10 drachmas for a ship's lookout.
+  - 5 drachmas for a deckhand.
+  - 100 drachmas for a Roman soldier's wife.
+  - **108 drachmas for a female prostitute** traveling to the Red Sea boomtowns (reflecting the enormous disposable wealth concentrated in the port settlements).
+
+---
+
+## Unit 3: The Monsoon Revolution & Navigational Breakthroughs in the Arabian Sea
+
+### 3.1 The Meteorology of the Indian Ocean Monsoons
+The entire framework of ancient Indo-Roman commerce rested upon an absolute geographic and meteorological reality: the **Monsoon Wind System (*Mawsim*)**:
+
+$$\text{June to September: Southwest Monsoon } (\swarrow \rightarrow \nearrow) \quad | \quad \text{November to March: Northeast Monsoon } (\nwarrow \leftarrow \searrow)$$
+
+1. **The Southwest Monsoon (Summer)**: Intense solar heating of the Asian landmass and Tibetan Plateau creates a massive low-pressure thermal depression, pulling moisture-laden, gale-force winds northeastward across the Indian Ocean from Africa and the Arabian Sea toward the Indian subcontinent.
+2. **The Northeast Monsoon (Winter)**: As the Asian landmass cools, high atmospheric pressure develops over Central Asia, reversing the wind direction and blowing dry, steady winds southwestward from India back toward Arabia and the Horn of Africa.
+
+### 3.2 The Hippalus Wind and Open-Ocean Navigation
+In earlier centuries, Phoenician, Persian, and Ptolemaic sailors conducted trade via **coastal cabotage**—creeping cautiously along the arid coasts of Arabia, Makran (Gedrosia), and Sindh. This coastal crawl was agonizingly slow, exposed ships to pirate attacks by coastal tribes, took up to two years for a round trip, and severely limited cargo capacity.
+
+According to the 1st-century AD maritime guide **The Periplus of the Erythraean Sea** (*Periplus Maris Erythraei*, written by an anonymous Greek-Egyptian sea captain c. AD 40–70) and Pliny (*Natural History* 6.101–106):
+- A navigator named **Hippalus** was credited with first recognizing the configuration of the headlands and daring to sail directly across the open ocean, harnessing the Southwest monsoon.
+- Modern historical analysis reveals that while Arab, Persian, and Indian mariners had possessed localized understanding of the monsoons for centuries, Roman-era Greek mariners applied advanced Mediterranean celestial navigation, lead-sounding techniques, and large-displacement multi-masted ship architecture to transform open-ocean crossing into a massive, standardized commercial highway.
+
+### 3.3 The Roman Sailing Schedule
+McLaughlin reconstructs the rigid, time-sensitive sailing calendar dictated by the monsoon cycles:
+
+| Stage of Journey | Departure Date | Route & Navigation | Transit Duration |
+| :--- | :--- | :--- | :--- |
+| **Outward Leg (Egypt to Red Sea Exit)** | Early July | Depart Myos Hormos / Berenike; sail south down the Red Sea before northern winds turn. | ~30 days |
+| **Open Ocean Crossing** | Mid-August | Depart Bab-el-Mandeb / Ocelis / Kane; ride the ferocious Southwest monsoon across the open Arabian Sea. | ~40 days |
+| **Arrival in India** | Late September / October | Make landfall on the Malabar Coast (Muziris) or the Gulf of Khambhat (Barygaza). | Total: ~70–80 days |
+| **Subcontinental Port Stay** | October to December | Unload Mediterranean bullion, metals, wine; dry-cure and package black pepper; purchase silks, gems, beryls. | ~60–90 days |
+| **Return Leg (India to Egypt)** | Early January | Depart Indian ports on the tail of the calm, steady Northeast monsoon; sail across to Arabia/Red Sea. | ~35–45 days |
+| **Red Sea Upwind Beat** | February to March | Beat northward against adverse winds up the Red Sea to Berenike. | ~40–60 days |
+| **Nile Transit to Alexandria** | April to May | Camel caravan to Coptos; barge downstream on the Nile to Alexandria for market distribution. | ~30 days |
+
+Any ship that missed the January departure window was trapped in India for an entire year until the next winter monsoon cycle, incurring devastating interest penalties on outstanding bottomry loans.
+
+---
+
+## Unit 4: The Intermediary Powers: Nabataeans, Petra & The Incense Kingdom of Hadramawt
+
+### 4.1 The Lucrative Economics of Ancient Aromatics
+In the ancient Mediterranean world, aromatics were not discretionary cosmetic accessories; they were fundamental religious, ritual, and civic necessities:
+- **Frankincense (*Boswellia sacra*)** and **Myrrh (*Commiphora myrrha*)** were burned in immense quantities on every pagan altar, imperial triumph, and civic festival across the Greco-Roman world.
+- At the funeral of his wife Poppaea Sabina in AD 65, Emperor Nero reportedly burned an entire year's supply of Arabian frankincense on her funeral pyre!
+- These aromatics grew exclusively in a tiny, microclimatic geographic zone: the southern coast of the Arabian Peninsula (Dhofar in modern Oman, and the Mahra region of Yemen) and the northern Horn of Africa (Somalia).
+
+### 4.2 The Nabataean Monopoly and the Rock City of Petra
+Before the Roman development of direct oceanic routes to India, the ancient overland **Incense Route** was dominated by the **Nabataean Kingdom**, whose capital was the rock-carved mountain fortress of **Petra** (in modern Jordan):
+- The Nabataeans controlled the desert trade corridor stretching 2,000 km from Hadramawt through Yemen, Hijaz, and Medain Saleh (Hegra) up to the Mediterranean port of Gaza.
+- At their Red Sea port of **Leuke Kome** ("White Village"), the Nabataeans maintained a customs station levying a **25% toll** on all coastal shipping, mirroring the Roman tariff.
+- The Nabataeans accumulated staggering liquid capital by acting as middle-tier security escorts, camel-renters, and tax collectors, turning Petra into a flourishing Hellenistic-Arabian metropolis.
+
+### 4.3 Trajan's Annexation of Arabia Petraea (AD 106)
+As Roman direct sea-lanes to India matured, the imperial government sought to eliminate Nabataean intermediary tolls entirely:
+- In AD 106, Emperor **Trajan** ordered the Roman governor of Syria, Aulus Cornelius Palma, to march on Petra.
+- The Nabataean kingdom was formally annexed as the Roman province of **Arabia Petraea**.
+- Trajan immediately constructed the **Via Nova Traiana**, a fortified military highway linking the Gulf of Aqaba (Aila) with Syria, integrating the northern terminal of the incense routes directly into the Roman provincial fiscal apparatus.
+
+---
+
+## Unit 5: The Horn of Africa: The Kingdom of Aksum & The Port of Adulis
+
+### 5.1 The African Trade Corridor
+The *Periplus Maris Erythraei* reveals that Roman commercial interests extended far south beyond the Red Sea straits along the African coastline (designated by ancient writers as *Azania*, corresponding to modern Eritrea, Djibouti, Somalia, and Tanzania):
+- The principal African maritime emporium was **Adulis** (near modern Zula, Eritrea), the premier seaport of the emerging **Kingdom of Aksum** (in northern Ethiopia).
+- Aksumite kings controlled the interior trade routes tapping the dense wildlife and mineral resources of the Ethiopian highlands and the Nile headwaters.
+
+### 5.2 Commodities of the African Frontier
+McLaughlin documents the specific exchange values established between Roman merchants and African rulers:
+- **Roman Exports to Adulis**: Undressed cloth from Egypt, Arsinoite cloaks, cheap glassware, brass (used for local jewelry and small coinage), iron for spearheads and hunting weapons, and Italian/Laodicean wine.
+- **Aksumite Exports to Rome**:
+  - **Ivory**: High-quality elephant tusks sourced from the African interior, prized in Rome for furniture veneers, curule chairs for magistrates, diptychs, and ornamental sculpture.
+  - **Rhinoceros Horn**: Exported to India and Rome for luxury carved vessels and traditional medicinal uses.
+  - **Tortoiseshell**: Highly prized in Rome for inlaying luxury dining tables, couches, and cabinetry.
+  - **Obsidian**: Volcanic glass quarried along the Red Sea coast, used for mirrors and ceremonial blades.
+
+By integrating Adulis into the broader Indian Ocean commercial network, Rome stimulated the economic and political centralisation of the Aksumite state, which would evolve by the 3rd and 4th centuries into one of the ancient world's four great powers (alongside Rome, Persia, and China), issuing its own international gold coinage.
+
+---
+
+## Unit 6: Financial Engineering, Maritime Law & The Muziris Papyrus (P. Vindob. G 40822)
+
+### 6.1 The Discovery of the Century: P. Vindob. G 40822
+In 1985, papyrologists at the Austrian National Library in Vienna identified a fragmentary Greek papyrus from mid-2nd-century Roman Egypt: **P. Vindob. G 40822**, officially known as the **Muziris Papyrus**. 
+This document provides the only surviving direct documentary proof of the financial mechanisms, contract law, insurance structures, and staggering monetary sums underpinning Roman-Indian oceanic commerce.
+
+The papyrus contains two related texts:
+- **Verso**: A legal maritime contract drafted between an Alexandria financier and a deep-sea merchant, outlining loan hypothecations, cargo security, and repayment terms.
+- **Recto**: A detailed customs assessment and cargo valuation computed by Roman imperial tax officials at the customs warehouse in Alexandria for the incoming merchant vessel **The Hermapollon**.
+
+### 6.2 The Cargo and Valuation of the *Hermapollon*
+The cargo manifest preserved on the papyrus records just a fraction of the merchandise unloaded from this single ship arriving from **Muziris (South India)**:
+1. **Gangetic Spikenard (*Nardostachys jatamansi*)**: 60 boxes containing premium Himalayan aromatic oils used in luxury Roman unguents and perfumes.
+2. **Elephant Tusks (Ivory)**: 784 pieces of selected raw Indian and African ivory.
+3. **Ivory Fragments / Scraps**: 45 packages.
+4. **Schidai (Fine Indian Textiles / Muslins)**: 79 packages of luxury cotton fabrics.
+
+McLaughlin analyzes the preserved valuation calculations:
+- The partial cargo recorded on this single papyrus fragment was officially assessed by Roman customs officials at a staggering **9,228,000 sesterces (HS)** (equivalent to over **2.3 million silver denarii**)!
+- A single complete merchant ship's hold carrying a full payload of Malabar black pepper (often 300 to 500 tons) plus ivory, silk, and gems carried an aggregate wholesale value of **over 15 to 20 million sesterces**!
+
+$$\text{Value of Partial Cargo on } \textit{Hermapollon} = 9,228,000 \text{ HS}$$
+$$\text{Purchasing Power Comparison}: \text{Could purchase } \sim 18,000 \text{ metric tons of Egyptian grain, or pay } 7,690 \text{ Roman legionaries for an entire year!}$$
+
+### 6.3 Maritime Bottomry Loans (*Faenus Nauticum*)
+Due to the catastrophic risks of shipwreck, piracy, and spoilage, ancient maritime commerce relied on **Bottomry (*faenus nauticum* or *pecunia traiecitia*)**:
+- A wealthy capitalist (or consortium of financiers) advanced capital to a merchant to outfit a ship and purchase cargo.
+- **Risk Allocation**: The lender bore 100% of the maritime risk (*periculum maris*). If the ship sank in a monsoon storm or was captured by pirates, the debt was entirely extinguished; the borrower owed nothing.
+- **Premium Interest Rates**: In exchange for assuming this total risk, lenders charged interest rates far above the legal civil ceiling (often **20% to 33%** per voyage, compared to the ordinary 6%–12% terrestrial limit).
+- **Hypothecation of Cargo**: Under the Muziris Papyrus contract, the merchant pledged the entire physical cargo to the lender as collateral. Upon arrival at Alexandria, the cargo was transferred directly to the lender's bonded warehouse until the 25% *tetarte* was paid to the imperial fiscus and the principal plus interest was discharged in cash.
+
+---
+
+## Unit 7: The Northern Subcontinent: Indo-Parthians, Saka Kshatrapas & The Port of Barygaza
+
+### 7.1 The Port of Barbarikon on the Indus Delta
+In the northwestern subcontinent, Roman shipping engaged with the kingdom of the **Indo-Parthians** (founded by Gondophares c. AD 20) through the delta emporium of **Barbarikon** (near modern Karachi):
+- All deep-sea merchant vessels docked at Barbarikon, where goods were unloaded and ferried up the Indus River on riverboats to the inland Indo-Parthian capital of **Minnagar**.
+- **Commodities**: Barbarikon was the primary distribution hub for **Chinese silk yarn and cloth** transshipped along the northern Overland Silk Road across the Pamir mountains into the Indus basin, as well as costus, bdellium (an aromatic resin), and turquoise.
+
+### 7.2 The Great Emporium of Barygaza (Bharuch)
+Further south, at the mouth of the Narmada River in the Gulf of Khambhat, stood **Barygaza** (Sanskrit: *Bhrgukaccha*, modern Bharuch, Gujarat), the most important commercial port in Western India:
+- Barygaza was ruled by the **Western Kshatrapas** (a dynasty of Saka/Scythian rulers), most notably King **Nahapana** (reigned c. AD 40–80, designated in the *Periplus* as *Mambarus*).
+- **Navigational Hazards**: The Gulf of Khambhat featured terrifying tidal bores and submerged shoals. The King of Barygaza maintained a specialized royal pilot service—crews of native fishermen in long rowboats (*trappaga* and *kotymba*)—who met incoming foreign vessels at the mouth of the bay and towed them safely up the Narmada river against the tide to the harbor docks.
+
+### 7.3 The Commodity Matrix of Barygaza
+The *Periplus* (§49) preserves an exhaustive inventory of goods traded at Barygaza:
+
+\`\`\`
+                    THE BARYGAZA COMMERCIAL EXCHANGE
+   ┌───────────────────────────────────┬───────────────────────────────────┐
+   │ IMPORTS FROM ROME                 │ EXPORTS TO ROME                   │
+   ├───────────────────────────────────┼───────────────────────────────────┤
+   │ • Italian, Laodicean & Arabian    │ • Fine Indian Cottons (Muslins,   │
+   │   Wines (Campanian vintages)      │   Broadcloths, Mallow cloth)      │
+   │ • Metals: Copper, Tin, Lead       │ • Silk Yarn & Cloth (transshipped │
+   │ • Roman Glassware, Coral, Stibium │   from overland Chinese routes)   │
+   │ • Frankincense, Storax, Sweet     │ • Onyx, Agate, Carnelian (mined   │
+   │   Clover (Melilot)                │   at inland Ujjain / Ozene)       │
+   │ • Gold and Silver Coinage (traded │ • Spikenard, Costus, Bdellium     │
+   │   at a high profit against local) │ • Long Pepper (*Piper retrofractum)│
+   └───────────────────────────────────┴───────────────────────────────────┘
+\`\`\`
+
+The *Periplus* notes that Roman merchants made immense profits importing Roman gold and silver denarii to Barygaza, because local Saka money-changers exchanged Roman silver coins for local silver drachmas at a substantial premium.
+
+---
+
+## Unit 8: The Tamil Kingdoms of South India: Cheras, Pandyas, Cholas & The Pepper Trade
+
+### 8.1 The Geopolitical Landscape of Tamilakam
+In the far south of peninsular India, beyond the reach of the northern Mauryan and Satavahana empires, lay **Tamilakam**—the ancient cultural realm of the Tamil people, divided among three competing dynasties documented in both Classical sources and classical **Sangam Literature**:
+1. **The Chera Kingdom (*Keralaputras*)**: Controlled the Malabar Coast (modern Kerala), rich in wild black pepper forests, centered at their royal capital of Karur and their great oceanic port of **Muziris**.
+2. **The Pandya Kingdom**: Controlled the southern tip of the peninsula (Madurai, Korkai), dominating the world’s most lucrative pearl fisheries in the Gulf of Mannar.
+3. **The Chola Kingdom**: Controlled the fertile Kaveri river delta on the Coromandel (eastern) Coast, centered at Uraiyur and their oceanic harbor of **Kaveripattinam (Puhar)**.
+
+### 8.2 Muziris: The Pepper Capital of the Ancient World
+The port of **Muziris** (modern Pattanam / Kodungallur in Kerala) was the supreme destination of the Roman deep-sea trade fleet. 
+The *Periplus* (§54) describes Muziris as:
+> *"A city at the height of prosperity, frequented as it is by ships from Egypt and by native vessels."*
+
+This is corroborated by a famous poem in the Tamil Sangam anthology **Akananuru** (poem 149):
+> *"The beautifully built ships of the Yavanas [Westerners/Romans],  
+> Agitating the white foam of the Periyar river,  
+> Arrive with gold and depart with pepper,  
+> Bestowing wealth upon Muziris of roaring prosperity."*
+
+- **The Roman Temple of Augustus at Muziris**: The **Peutinger Map** (*Tabula Peutingeriana*), an ancient Roman road map preserved in a medieval copy, actually marks a **"Templum Augusti"** (Temple of Augustus) located directly at Muziris, indicating the existence of a permanent, resident settlement of Roman-Egyptian merchants, financiers, and mariners living under extraterritorial commercial privileges on the Malabar coast!
+
+### 8.3 The Mechanics of the Black Pepper Trade
+Black pepper (*Piper nigrum*) was the undisputed king of ancient spices. 
+- In the Roman culinary masterwork attributed to **Apicius** (*De Re Coquinaria*), over **70% of all recipes** mandate the use of black pepper—from roasted meats and boiled fish to spiced wines and sweet dessert puddings.
+- Pepper was consumed across all socioeconomic classes in Rome, sold by retail grocers (*piperarii*) in specialized street markets near the Roman Forum (*Horrea Piperataria*, constructed under Domitian).
+- Pliny the Elder lamented that black pepper, which possessed neither nutrition nor intoxicating pleasure, sold for **4 denarii (16 sesterces) per Roman pound**, while white pepper sold for **7 denarii (28 sesterces)** and long pepper for **15 denarii (60 sesterces)**!
+- A single Roman merchantman returning from Muziris could carry **300 to 500 metric tons of black pepper**—worth over **10 million sesterces** upon arrival in Rome!
+
+### 8.4 Arikamedu (Poduke) and the Coromandel Coast
+On the eastern Coromandel coast, British archaeologist Sir Mortimer Wheeler's excavations at **Arikamedu** (identified as the *Poduke* of the *Periplus* and Ptolemy, near modern Puducherry) revealed definitive physical evidence of permanent Mediterranean commercial presence:
+- Enormous warehouses constructed of Roman-style kiln-fired bricks.
+- Thousands of sherds of Mediterranean amphorae used for transporting **Campanian, Coan, and Rhodian wine**, and Spanish garum (fish sauce).
+- Fragments of fine red-gloss **Arretine pottery (Terra Sigillata)** from Italy, stamped with the names of prominent Tuscan ceramic manufacturers (e.g., *Vibii*, *Camurii*).
+- Roman intaglio gemstones, quartz intaglios, and Roman blue and green glass beads manufactured for local export.
+
+---
+
+## Unit 9: The Bullion Drain, Coin Hoards & Monetary Asymmetry (The Pliny Paradox)
+
+### 9.1 Pliny the Elder's Famous Lament
+The most famous textual passage concerning Indo-Roman trade is found in Pliny the Elder's *Natural History* (*Naturalis Historia*, completed c. AD 77):
+
+> *"By the most conservative calculation, India, China, and the Arabian Peninsula drain our empire of one hundred million sesterces [HS 100,000,000] every year. That is what our luxuries and our women cost us!"* (NH 12.84)
+> 
+> *"And at no year does India drain our empire of less than fifty million sesterces [HS 50,000,000], returning merchandise that is sold among us at one hundred times its original cost."* (NH 6.101)
+
+### 9.2 The Numismatic Evidence: Roman Coin Hoards in India
+For over two centuries, classical historians debated whether Pliny’s figure of 50 to 100 million sesterces was an exaggerated rhetorical moralization against aristocratic decadence. McLaughlin cross-references Pliny’s claim against the monumental physical record of **Roman coin hoards discovered across the Indian subcontinent**:
+- Over **150 separate hoards** containing tens of thousands of Roman imperial gold coins (**aurei**) and silver coins (**denarii**) have been unearthed in India.
+- The overwhelming concentration of these hoards is located in **South India** (Tamil Nadu, Kerala, Karnataka, and Andhra Pradesh), particularly along the **Palghat Gap** (the natural east-west mountain pass through the Western Ghats connecting Kerala's pepper coast with Coimbatore's beryl mines and the eastern Coromandel ports).
+- **Composition of the Hoards**: The coins found in India belong overwhelmingly to the reigns of **Augustus (27 BC – AD 14)** and **Tiberius (AD 14–37)**:
+  - *The Gaius and Lucius Caesar silver denarius* of Augustus.
+  - *The PONTIF MAXIM seated Livia denarius* of Tiberius (the famous "Tribute Penny" of the New Testament Gospels).
+
+### 9.3 Why Did India Demand Bullion? (The Structural Trade Deficit)
+Why did Roman merchants have to pay for Indian spices and silks with mountains of gold and silver coins, rather than exchanging Mediterranean manufactured goods?
+1. **The Asymmetry of Industrial Demand**: Rome possessed an insatiable, inelastic demand for Indian spices, textiles, and gems. Conversely, India—with its advanced agricultural output, sophisticated textile industries, and tropical climate—had virtually zero consumer demand for Roman woolens, Mediterranean grain, or crude tools.
+2. **Indian Demand for High-Purity Precious Metals**: South India possessed rich mineral resources (iron, beryl, gems) but **lacked domestic gold and silver mines**. The Tamil Sangam kingdoms did not issue their own standardized gold or silver currency during this period; they eagerly imported Roman *aurei* and *denarii* to serve as un-debased bullion assets, royal treasury reserves, and prestigious jewelry.
+
+### 9.4 Imperial Countermarking and Slashing
+A remarkable feature of the Roman coins discovered in Indian hoards is that many gold aurei and silver denarii bear deliberate **chisel cuts (slash marks)** or indigenous **countermarks (punch-marks)**:
+- Indian royal moneyers and merchants made sharp chisel cuts into the face of Roman coins to inspect the core of the coin, verifying that it was solid gold or silver throughout and not a bronze-plated counterfeit (*fourrée*).
+- Once tested, the coin circulated throughout South India at its intrinsic metallic weight value, functioning as a de facto universal international currency.
+
+### 9.5 Nero's Debasement (AD 64) and the Sudden Halt of Silver Shipments
+In **AD 64**, following the Great Fire of Rome, Emperor **Nero** enacted a fateful monetary reform:
+- He reduced the silver content of the Roman *denarius* from 98% purity to **90%**, and reduced its weight from 3.9 grams to 3.4 grams.
+- He reduced the weight of the gold *aureus* from 7.8 grams to 7.2 grams.
+
+**The Economic Consequence in India**:
+- Indian money-changers and merchants immediately detected the debasement!
+- South Indian merchants **refused to accept post-Neronian debased silver denarii**.
+- Consequently, silver coin shipments to South India ceased abruptly after AD 64. From the late 1st century through the 2nd century AD, Roman merchants were forced to pay for Malabar pepper exclusively in **un-debased gold aurei**, which retained international acceptance based strictly on their physical gold weight.
+
+---
+
+## Unit 10: The Far East Horizon, The Antonine Pandemic & The Great Commercial Contraction
+
+### 10.1 The Kingdom of Anuradhapura (Sri Lanka / Taprobane)
+Beyond the southern tip of India lay the island of **Taprobane** (Sri Lanka), ruled by the Buddhist Kings of **Anuradhapura**:
+- Taprobane functioned as the central transshipment pivot of the Indian Ocean.
+- Strabo and Pliny record that under Emperor Claudius (c. AD 45–50), a freedman of the Roman tax collector **Annius Plocamus** was blown off course by a storm while sailing around Arabia and washed ashore on the coast of Ceylon (Sri Lanka).
+- The King of Anuradhapura was so astonished by the uniform weight and purity of the Roman denarii in the freedman's possession that he sent a formal **four-man diplomatic embassy to Rome** to establish direct relations with Claudius!
+- Sri Lanka became the great entrepôt where Roman, Persian, Indian, and Southeast Asian merchant vessels exchanged Chinese silks, Indonesian cloves, Sri Lankan sapphires, and African ivory.
+
+### 10.2 The Antun Embassy to Han China (AD 166)
+The outermost geographic reach of Roman enterprise is recorded not in Western classical literature, but in the official imperial dynastic history of China, the **Hou Hanshu** (*Book of the Later Han*):
+- The *Hou Hanshu* records that in the 9th year of the *Yanxi* era of Emperor Huan (corresponding to **October AD 166**), an official mission arrived at the Han capital of Luoyang:
+  > *"The king of Da Qin [the Roman Empire], Andun [Marcus Aurelius Antoninus], sent an envoy who offered tribute of elephant tusks, rhinoceros horn, and tortoiseshell from beyond the frontier of Rinan [modern central Vietnam]. This was the first time that communication was established between the two countries."*
+- McLaughlin demonstrates that these "envoys" were almost certainly private Roman-Egyptian merchants who had sailed across the Bay of Bengal, navigated the Straits of Malacca, rounded the Indochinese peninsula, and landed in northern Vietnam, presenting themselves at the Han court as official ambassadors of Caesar Marcus Aurelius to secure direct trading privileges!
+
+### 10.3 The Catastrophic Shock: The Antonine Pandemic (AD 165–180)
+Just as Roman-Asian commercial integration reached its historic zenith, a macro-epidemiological catastrophe shattered the ancient world economy:
+- In **AD 165**, Roman legions returning from Lucius Verus’ Parthian campaign in Mesopotamia brought back a devastating contagion, identified by modern epidemiologists as **smallpox**: the **Antonine Plague**.
+- Over the next fifteen years, the pandemic swept across the Roman Empire, killing between **15% and 30% of the imperial population** (an estimated 7 to 10 million people), including co-emperor Lucius Verus and Marcus Aurelius himself.
+- In Egypt, the demographic collapse was catastrophic: entire farming villages in the Fayum and Nile delta were abandoned, leading to a catastrophic collapse in agricultural tax revenues.
+
+### 10.4 The Great Commercial Contraction
+The economic fallout of the Antonine Pandemic permanently curtailed the great Indian Ocean trade:
+1. **Fiscal Collapse and Currency Crisis**: Deprived of agricultural taxes, Marcus Aurelius was forced to auction off the imperial palace treasures in the Roman Forum to fund the Marcomannic Wars. Later emperors (Commodus, Septimius Severus, and Caracalla) debased the silver currency repeatedly, eventually driving silver content down to less than 5% during the 3rd-Century Crisis.
+2. **Destruction of Mediterranean Purchasing Power**: The mass mortality of aristocratic consumers and merchant capitalists in Rome, Alexandria, and Antioch collapsed domestic demand for ultra-luxury Indian spices, silks, and gemstones.
+3. **Contraction of the Red Sea Fleets**: The grand annual fleets of 120 massive merchantmen dwindled to a handful of vessels. The fortified desert stations along the Berenike highway fell into disrepair. While trade never completely ceased, the golden age of Indo-Roman oceanic globalization was extinguished, leaving behind silent coin hoards across Tamil Nadu and forgotten papyri in the sands of Egypt.
+
+---
+
+## Pedagogical Self-Test Questions
+
+1. **Macro-Fiscal Architecture**: How did Octavian Augustus' annexation of Egypt in 30 BC transform the fiscal solvency of the Roman Empire? Calculate the annual military budget required for 30 standing legions, and explain how the 25% *tetarte* customs duty levied at Alexandria helped fund this expenditure.
+2. **Navigational Meteorology**: Explain the physical mechanics of the Southwest and Northeast monsoon wind systems. What specific sailing calendar did a Roman merchant captain follow when departing Berenike for Muziris, and what were the consequences of missing the January return window?
+3. **Papyrological Forensics**: Analyze the primary provisions of the Muziris Papyrus (P. Vindob. G 40822). What was the official customs valuation of the partial cargo of the *Hermapollon*, and how did the maritime bottomry contract (*faenus nauticum*) allocate catastrophic risk between financier and merchant?
+4. **Subcontinental Trade Ports**: Contrast the commodity flows and political administration of **Barygaza** (under the Saka Western Kshatrapas) with **Muziris** (under the Chera dynasty). What specific textual evidence from the *Periplus Maris Erythraei* and Tamil Sangam poetry confirms Roman commercial settlements on the Malabar Coast?
+5. **The Pliny Paradox & Numismatics**: Critically assess Pliny the Elder’s claim that India drained the Roman Empire of 50 million sesterces annually in precious metal bullion. What explains the massive geographical concentration of Julio-Claudian *aurei* and *denarii* hoards in South India, and why did silver exports cease abruptly after Nero’s monetary reform of AD 64?
+6. **The Imperial Collapse**: Trace the outer geographic limits of Roman commercial enterprise into Sri Lanka (Anuradhapura) and Han China (the AD 166 embassy of *Andun*). How did the Antonine Pandemic (AD 165–180) structurally dismantle the demographic, fiscal, and commercial foundations of Indo-Roman oceanic trade?
+`;
+
+// Write knowledge-units.json
+fs.writeFileSync(path.join(outDir, 'knowledge-units.json'), JSON.stringify(knowledgeUnits, null, 2), 'utf-8');
+console.log(`Successfully wrote knowledge-units.json for ${title}`);
+
+// Write master-notes.md
+fs.writeFileSync(path.join(outDir, 'master-notes.md'), masterNotes, 'utf-8');
+console.log(`Successfully wrote master-notes.md for ${title} (${masterNotes.length} chars)`);
+
+// Render prose HTML for index.html
+const proseHtml = masterNotes.replace(/# Master Codex:[\s\S]*?---\n/, '').split('\n\n').map(p => {
+  const trimmed = p.trim();
+  if (trimmed.startsWith('## ')) return `<h2>${trimmed.replace('## ', '')}</h2>`;
+  if (trimmed.startsWith('### ')) return `<h3>${trimmed.replace('### ', '')}</h3>`;
+  if (trimmed.startsWith('#### ')) return `<h4>${trimmed.replace('#### ', '')}</h4>`;
+  if (trimmed.startsWith('$$')) return `<div class="formula-box">${trimmed.replace(/\$\$/g, '')}</div>`;
+  if (trimmed.startsWith('- ')) return `<ul>${trimmed.split('\n').map(li => `<li>${li.replace('- ', '')}</li>`).join('')}</ul>`;
+  if (trimmed.startsWith('```')) {
+    const codeContent = trimmed.replace(/```[a-z]*\n?/g, '').trim();
+    return `<pre><code>${codeContent}</code></pre>`;
+  }
+  if (trimmed.startsWith('| ')) return `<p><em>[Comparative Table rendered in Master Codex Markdown]</em></p>`;
+  if (trimmed.startsWith('> ')) return `<blockquote><p>${trimmed.replace('> ', '')}</p></blockquote>`;
+  return `<p>${trimmed}</p>`;
+}).join('\n');
+
+const unitsHtml = knowledgeUnits.map(ku => `
+  <div class="unit-card" id="${ku.id}">
+    <span class="econ-badge badge-${ku.materiality === 'critical' ? 'critical' : 'trade'}">${ku.unitType}</span>
+    <h3>Unit ${ku.order}: ${ku.title}</h3>
+    <p class="unit-summary">${ku.summary}</p>
+    <div class="unit-meta">
+      <span>Status: <strong>${ku.epistemicStatus}</strong></span> •
+      <span>Materiality: <strong>${ku.materiality}</strong></span>
+    </div>
+  </div>
+`).join('');
+
+const readerHtml = `<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${title} — Master Knowledge Codex</title>
+  <link rel="stylesheet" href="../../assets/css/reader-shell.css">
+  <style>
+    .econ-badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .badge-critical { background: #fee2e2; color: #991b1b; }
+    .badge-trade { background: #e0f2fe; color: #075985; }
+    .formula-box {
+      background: var(--bg-surface-secondary, #f8fafc);
+      border-left: 4px solid var(--accent, #3b82f6);
+      padding: 1rem;
+      margin: 1rem 0;
+      font-family: monospace;
+      font-size: 0.95rem;
+      border-radius: 0 4px 4px 0;
+    }
+    .econ-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .econ-card {
+      border: 1px solid var(--border-color, #e2e8f0);
+      border-radius: 8px;
+      padding: 1.25rem;
+      background: var(--bg-surface, #ffffff);
+    }
+    .econ-card h4 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary, #0f172a);
+    }
+    blockquote {
+      border-left: 4px solid var(--accent, #3b82f6);
+      margin: 1.25rem 0;
+      padding: 0.75rem 1.25rem;
+      background: var(--bg-surface-secondary, #f8fafc);
+      font-style: italic;
+    }
+    pre {
+      background: var(--bg-surface-secondary, #f8fafc);
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      line-height: 1.4;
+      border: 1px solid var(--border-color, #e2e8f0);
+    }
+  </style>
+</head>
+<body class="reader-mode">
+  <div class="reader-shell">
+    <header class="reader-header">
+      <div class="reader-header-inner">
+        <div class="breadcrumb">
+          <a href="../../index.html">Library</a> &rsaquo;
+          <a href="../../index.html#economics">Economic Sciences & Policy</a> &rsaquo;
+          <span>${title}</span>
+        </div>
+        <div class="header-controls">
+          <button id="theme-toggle" class="control-btn" title="Toggle Theme">🌓</button>
+          <div class="view-toggles">
+            <button class="view-btn active" data-view="journey">Source Journey</button>
+            <button class="view-btn" data-view="map">Knowledge Units</button>
+            <button class="view-btn" data-view="matrix">Ancient Economy Matrix</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="reader-main">
+      <section class="codex-hero">
+        <div class="hero-content">
+          <div class="domain-tag">Ancient Global Economy & Maritime Archaeology</div>
+          <h1 class="codex-title">${title}</h1>
+          <p class="codex-subtitle">The Ancient World Economy and the Kingdoms of Africa, Arabia and India • By <strong>${author}</strong></p>
+          <div class="codex-meta">
+            <span>BKRS v2.0 Standard</span> •
+            <span>10 Atomic Knowledge Units</span> •
+            <span>Complete Structural Substitution</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW A: SOURCE JOURNEY -->
+      <section id="view-journey" class="view-section active">
+        <article class="prose-content">
+          ${proseHtml}
+        </article>
+      </section>
+
+      <!-- VIEW B: KNOWLEDGE MAP -->
+      <section id="view-map" class="view-section">
+        <div class="units-grid">
+          ${unitsHtml}
+        </div>
+      </section>
+
+      <!-- VIEW C: ANCIENT ECONOMY MATRIX -->
+      <section id="view-matrix" class="view-section">
+        <div class="econ-grid">
+          <div class="econ-card">
+            <h4>The 25% Tetarte Duty</h4>
+            <div class="formula-box">Annual Yield = 100M - 250M Sesterces</div>
+            <p><strong>Fiscal Significance:</strong> The customs tax levied on Indian Ocean imports at Alexandria funded up to one-third of the entire Roman military budget (30 standing legions).</p>
+          </div>
+          <div class="econ-card">
+            <h4>The Muziris Papyrus (P. Vindob. G 40822)</h4>
+            <div class="formula-box">Cargo Value = 9,228,000 Sesterces</div>
+            <p><strong>Contract Law:</strong> Papyrological proof of maritime bottomry loans (<em>faenus nauticum</em>), cargo hypothecation, and multi-million sesterces merchant ventures.</p>
+          </div>
+          <div class="econ-card">
+            <h4>The Pliny Bullion Paradox</h4>
+            <div class="formula-box">Annual Drain = 50,000,000 HS (India)</div>
+            <p><strong>Numismatic Record:</strong> Over 150 hoards of Julio-Claudian gold <em>aurei</em> and silver <em>denarii</em> in South India; halted after Nero's AD 64 debasement.</p>
+          </div>
+          <div class="econ-card">
+            <h4>The Antonine Pandemic (AD 165–180)</h4>
+            <div class="formula-box">Mortality = 15% to 30% of Roman Population</div>
+            <p><strong>Macro Contraction:</strong> Demographic collapse in Egypt and Italy permanently curtailed the deep-sea Indian Ocean trade fleet.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="reader-footer">
+      <div class="reader-footer-inner">
+        <p>Book Knowledge Reconstruction System (BKRS v2.0) • Intellectualist Master Codex</p>
+        <p>Canonical Source: <em>The Roman Empire and the Indian Ocean</em> by Raoul McLaughlin (Pen & Sword / Casemate)</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/reader-controls.js"></script>
+</body>
+</html>`;
+
+fs.writeFileSync(path.join(outDir, 'index.html'), readerHtml, 'utf-8');
+console.log(`Successfully wrote index.html for ${title} (${readerHtml.length} chars)`);

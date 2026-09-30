@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ku-mclaughlin-01",
+    "title": "Macro-Fiscal Architecture of the Roman Empire & The Eastern Trade Impulse",
+    "unitType": "imperial-fiscal-macroeconomics",
+    "summary": "Analyzes the macroeconomic foundation of the Roman Principate following Octavian Augustus' annexation of Ptolemaic Egypt in 30 BC. Details imperial revenue mobilization, the staggering cost of maintaining 30 standing legions (roughly 600-750 million sesterces annually), and how the acquisition of Egyptian agricultural and maritime infrastructure transformed Red Sea trade into an indispensable engine of imperial state finance.",
+    "epistemicStatus": "source-historical-quantitative",
+    "materiality": "critical",
+    "order": 1
+  },
+  {
+    "id": "ku-mclaughlin-02",
+    "title": "Red Sea Ports, Desert Logistics & The Infrastructure of Eastern Commerce",
+    "unitType": "infrastructure-logistics",
+    "summary": "Forensic reconstruction of the maritime and terrestrial logistics chain linking Rome, Alexandria, and the Indian Ocean. Details the engineering and administration of the Egyptian ports of Berenike and Myos Hormos, the Nile transshipment hub at Coptos (Koptos), the fortified desert caravan routes (*hydreumata* and *praesidia*), and the specialized transport corps operating across the Eastern Desert.",
+    "epistemicStatus": "source-archaeological-institutional",
+    "materiality": "critical",
+    "order": 2
+  },
+  {
+    "id": "ku-mclaughlin-03",
+    "title": "The Monsoon Revolution & Navigational Breakthroughs in the Arabian Sea",
+    "unitType": "maritime-navigational-science",
+    "summary": "Examines the technological and meteorological breakthrough attributed in ancient sources to the navigator Eudoxus and popularized as the \"Hippalus wind.\" Explains how Roman-era Greek and Egyptian sailors deciphered the seasonal reversals of the Southwest (Summer/Kachchan) and Northeast (Winter) monsoons to bypass coastal cabotage, sailing directly across open ocean between the Gulf of Aden and the Indian Malabar Coast in roughly 40 days.",
+    "epistemicStatus": "source-navigational-empirical",
+    "materiality": "critical",
+    "order": 3
+  },
+  {
+    "id": "ku-mclaughlin-04",
+    "title": "The Intermediary Powers: Nabataeans, Petra & The Incense Kingdom of Hadramawt",
+    "unitType": "trade-routes-geopolitics",
+    "summary": "Investigates the overland and coastal incense kingdoms controlling the lucrative trade in frankincense (*Boswellia sacra*) and myrrh (*Commiphora*). Analyzes the wealth of the Nabataean kingdom centered at Petra, the Red Sea customs station at Leuke Kome, the southern Arabian kingdoms of Saba and Hadramawt (centered at Qana and Shabwa), and Rome's strategic annexation of Arabia Petraea under Trajan in AD 106.",
+    "epistemicStatus": "source-geopolitical-economic",
+    "materiality": "critical",
+    "order": 4
+  },
+  {
+    "id": "ku-mclaughlin-05",
+    "title": "The Horn of Africa: The Kingdom of Aksum & The Port of Adulis",
+    "unitType": "african-trade-networks",
+    "summary": "Explores the African commercial frontier documented in the *Periplus Maris Erythraei*. Details the emergence of the Kingdom of Aksum, its principal seaport at Adulis in the Red Sea, and its role as an exporter of premium African elephant ivory, rhinoceros horn, tortoiseshell, and obsidian, demonstrating deep Roman commercial penetration along the Eritrean and Somalian coastlines.",
+    "epistemicStatus": "source-regional-economic",
+    "materiality": "critical",
+    "order": 5
+  },
+  {
+    "id": "ku-mclaughlin-06",
+    "title": "Financial Engineering, Maritime Law & The Muziris Papyrus (P. Vindob. G 40822)",
+    "unitType": "financial-contractual-mechanics",
+    "summary": "Deconstructs the world’s most comprehensive surviving ancient commercial shipping contract, the mid-second-century AD Muziris Papyrus. Analyzes Roman bottomry loans (*faenus nauticum*), maritime hypothecations, cargo valuation, the imperial customs tariff (*tetarte*, a 25% ad valorem import levy collected at Alexandria), and the staggering capital required to finance a single merchant voyage (exceeding 7 million sesterces for a single ship's hold).",
+    "epistemicStatus": "source-papyrological-contractual",
+    "materiality": "critical",
+    "order": 6
+  },
+  {
+    "id": "ku-mclaughlin-07",
+    "title": "The Northern Subcontinent: Indo-Parthians, Saka Kshatrapas & The Port of Barygaza",
+    "unitType": "subcontinental-trade-systems",
+    "summary": "Examines Roman commercial engagement with Northwestern India and the Gulf of Khambhat. Analyzes the Indus delta port of Barbarikon under the Indo-Parthians, and the great emporium of Barygaza (modern Bharuch) ruled by the Western Kshatrapas (notably King Nahapana) and contested by the Satavahanas. Details the trade in Chinese silk transshipped through Central Asia, spikenard, bdellium, cotton textiles, and Roman silver denarii.",
+    "epistemicStatus": "source-numismatic-historical",
+    "materiality": "critical",
+    "order": 7
+  },
+  {
+    "id": "ku-mclaughlin-08",
+    "title": "The Tamil Kingdoms of South India: Cheras, Pandyas, Cholas & The Pepper Trade",
+    "unitType": "south-indian-maritime-economy",
+    "summary": "Deep investigation of Roman maritime interaction with the Tamil Sangam kingdoms: the Chera kingdom of Muziris (Kodungallur), the Pandya kingdom of Madurai and Korkai, and the Chola ports of Kaveripattinam (Puhar) and Poduke (Arikamedu). Quantifies the immense Roman appetite for Malabar black pepper (*Piper nigrum*), Gulf of Mannar pearls, Coimbatore beryl, and Indian fine textiles.",
+    "epistemicStatus": "source-archaeological-sangam-literature",
+    "materiality": "critical",
+    "order": 8
+  },
+  {
+    "id": "ku-mclaughlin-09",
+    "title": "The Bullion Drain, Coin Hoards & Monetary Asymmetry (The Pliny Paradox)",
+    "unitType": "monetary-macroeconomics",
+    "summary": "Critically evaluates Pliny the Elder’s famous lament that the eastern luxury trade drained over 50 million sesterces (or 100 million across India, Arabia, and China) in precious metal bullion out of the Roman Empire every year. Analyzes the extensive archaeological discovery of Roman imperial gold *aurei* and silver *denarii* hoards across peninsular India (especially Coimbatore and Kerala), imperial monetary slashing/countermarking, and the nature of ancient balance of payments.",
+    "epistemicStatus": "source-monetary-numismatic-forensic",
+    "materiality": "critical",
+    "order": 9
+  },
+  {
+    "id": "ku-mclaughlin-10",
+    "title": "The Far East Horizon, The Antonine Pandemic & The Great Commercial Contraction",
+    "unitType": "global-macro-epidemiology",
+    "summary": "Traces the outer geographic perimeter of Roman commerce into the Kingdom of Anuradhapura (Sri Lanka/Taprobane), the Southeast Asian maritime routes, and the AD 166 \"embassy\" of Emperor Marcus Aurelius Antoninus (*Antun*) recorded in the Chinese *Hou Hanshu*. Analyzes how the catastrophic Antonine Pandemic (AD 165–180) decimated the Roman Mediterranean population, triggered an imperial fiscal and currency crisis, and permanently contracted deep Indian Ocean maritime commerce.",
+    "epistemicStatus": "source-comparative-historical",
+    "materiality": "critical",
+    "order": 10
+  }
+]
