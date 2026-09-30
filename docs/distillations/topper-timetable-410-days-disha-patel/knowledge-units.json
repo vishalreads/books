@@ -1,0 +1,110 @@
+[
+  {
+    "id": "unit-1-exam-architecture",
+    "title": "Unit 1: The UPSC Architecture: Exam Stages, Syllabi & The Tripartite Evaluation Matrix",
+    "themes": [
+      "Three Stages: Prelims, Mains, Personality Test",
+      "Prelims: GS Paper-I & CSAT Paper-II (33% Qualifying)",
+      "Mains 9 Papers: Qualifying Languages, Essay, GS I-IV, Optional 1 & 2",
+      "Marking Schemes, Cut-Off Trends & Negative Marking Dynamics"
+    ]
+  },
+  {
+    "id": "unit-2-canonical-resources",
+    "title": "Unit 2: The Canonical Resource Library: NCERTs, Standard Reference Texts & Material Discipline",
+    "themes": [
+      "The One-Source-Per-Subject Rule",
+      "Foundation: NCERT Class 6–12 Selection Matrix",
+      "Standard References: Laxmikanth, Spectrum, Ramesh Singh/Nitin Singhania, GC Leong",
+      "Current Affairs: The Hindu/Indian Express + Monthly Compilations",
+      "Avoiding Resource Paralysis & Material Bloat"
+    ]
+  },
+  {
+    "id": "unit-3-strategic-framework-410",
+    "title": "Unit 3: Strategic Blueprinting: Diagnostic Baselines, Target Scores & The 410-Day Five-Phase Framework",
+    "themes": [
+      "The 410-Day Five-Phase Architecture Overview",
+      "Diagnostic Self-Assessment & Baseline Benchmarking",
+      "Target Score Architectures (Prelims >100, Mains >800, Interview >180)",
+      "Time Budgeting: Working Professionals vs Full-Time Aspirants",
+      "The Three-Iteration Mastery Principle"
+    ]
+  },
+  {
+    "id": "unit-4-phase-1-foundation",
+    "title": "Unit 4: Phase I (Days 1–90): Foundational Literacy, NCERT Saturation & Static Core Building",
+    "themes": [
+      "Day-by-Day Micro Plan for Days 1–90",
+      "Subject Blocks: History, Geography, Polity, Basic Economics",
+      "Active Reading vs Passive Highlighting",
+      "Reverse Syllabus Mapping with Previous 10 Years' Prelims Papers",
+      "Creating 1-Page Synthesis Flashcards"
+    ]
+  },
+  {
+    "id": "unit-5-phase-2-advanced-mastery",
+    "title": "Unit 5: Phase II (Days 91–210): Advanced Subject Mastery & Optional Subject Phase-1 Deep Dive",
+    "themes": [
+      "Day-by-Day Micro Plan for Days 91–210",
+      "Advanced Static: Economy (Budgets, Surveys), Environment (Shankar), Science & Tech",
+      "Optional Subject Deep Dive: Completing Paper-1 Syllabus",
+      "Micro-Notes Architecture for 500-Mark Optional",
+      "Weekly Topic-Wise Sectional Mock Testing"
+    ]
+  },
+  {
+    "id": "unit-6-phase-3-mains-engineering",
+    "title": "Unit 6: Phase III (Days 211–300): Mains Answer Engineering, Essay Crafting & Ethics (GS-IV) Case Studies",
+    "themes": [
+      "Day-by-Day Micro Plan for Days 211–300",
+      "Answer Writing Anatomy: Introduction, PESTLE Body, Case Studies, Way Forward",
+      "Essay Paper Mastery: Philosophical, Socio-Economic, Abstract Topics",
+      "GS-IV Ethics: Thinkers, Moral Dilemmas & 6-Step Case Study Framework",
+      "Optional Paper-2 Syllabus Completion & Full-Length Test Series"
+    ]
+  },
+  {
+    "id": "unit-7-phase-4-prelims-drill",
+    "title": "Unit 7: Phase IV (Days 301–380): Prelims Dedicated Drill, Elimination Heuristics & 10,000 MCQ Simulation",
+    "themes": [
+      "Day-by-Day Micro Plan for Days 301–380",
+      "Complete Transition to Prelims Mode (Zero Mains Writing)",
+      "Test Simulation: 40–50 Full Length Tests under Strict 9:30–11:30 AM Conditions",
+      "Elimination Heuristics & Intelligent Guesswork Archetypes",
+      "CSAT Dedicated Daily 2-Hour Slot: Quant, Reasoning, Comprehension"
+    ]
+  },
+  {
+    "id": "unit-8-phase-5-final-sprint",
+    "title": "Unit 8: Phase V (Days 381–410): The Final Sprint, Spaced Consolidation, Error Logs & Peak Mental State",
+    "themes": [
+      "Day-by-Day Micro Plan for Days 381–410",
+      "The Error-Log Journal: Reviewing Past Mistakes",
+      "Rapid 48-Hour Macro-Revision Cycles",
+      "Sleep Architecture, Circadian Rhythm Alignment & Exam Week Nutrition",
+      "Combating Imposter Syndrome & Performance Anxiety"
+    ]
+  },
+  {
+    "id": "unit-9-cognitive-productivity",
+    "title": "Unit 9: Daily Cognitive Ergonomics: Pomodoro Variations, Digital Sanitization & Habit Compounding",
+    "themes": [
+      "The 3-Slot Daily Regimen (Slot 1: Heavy Static; Slot 2: Optional/Mains; Slot 3: Current Affairs/Revision)",
+      "Modified 50/10 & 90/20 Ultradian Rhythms",
+      "Digital Detox & Social Media Blackouts",
+      "Habit Stacking & James Clear Atomic Habit Loops",
+      "Energy Management vs Time Management"
+    ]
+  },
+  {
+    "id": "unit-10-answer-templates-mnemonics",
+    "title": "Unit 10: High-Scoring Mains Answer Templates, Mnemonics Arsenal & Post-Exam Iteration Loops",
+    "themes": [
+      "Diagrammatic Visual Anchors: Hub-and-Spoke, Venn, Flowcharts, Map Drawing in <60 Seconds",
+      "Universal Mnemonics for Articles, Schedules & Treaties",
+      "Post-Prelims 7-Day Recovery & Rapid Re-alignment for Mains",
+      "Personality Test Preparation: DAF Analysis & Mock Interview Strategies"
+    ]
+  }
+]

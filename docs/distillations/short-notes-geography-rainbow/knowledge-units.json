@@ -1,0 +1,118 @@
+[
+  {
+    "id": "unit-1-coordinates-frontiers",
+    "title": "Unit 1: Geographical Coordinates, Frontiers & Boundary Politics of India",
+    "themes": [
+      "Latitudinal & Longitudinal Extent",
+      "Tropic of Cancer Across 8 States",
+      "Extremities: Indira Col, Indira Point, Kibithu, Guhar Moti",
+      "International Land Borders (Bangladesh, China, Pakistan, Nepal, Myanmar, Bhutan, Afghanistan)",
+      "Coastal Baseline, EEZ & Island Territories"
+    ]
+  },
+  {
+    "id": "unit-2-himalayan-architecture",
+    "title": "Unit 2: Physiographic Architecture: The Himalayan Mountain Chain & Geotectonics",
+    "themes": [
+      "Plate Tectonic Genesis: Indo-Eurasian Collision",
+      "Four Longitudinal Zones: Trans-Himalaya, Greater Himalaya (Himadri), Lesser Himalaya (Himachal), Outer Himalaya (Shiwalik)",
+      "Regional Himalayan Divisions (Kashmir, Himachal, Kumaon, Central/Nepal, Eastern/Assam)",
+      "Strategic Mountain Passes (Zoji La, Rohtang, Nathu La, Lipulekh, Bomdi La)"
+    ]
+  },
+  {
+    "id": "unit-3-northern-plains",
+    "title": "Unit 3: The Great Northern Plains: Bhabar, Terai, Bhangar & Khadar Dynamics",
+    "themes": [
+      "Formation as a Foredeep Basin",
+      "Bhabar: Pebble Belt & Disappearing Streams",
+      "Terai: Marshy Malarial Silt Belt & Re-emerging Streams",
+      "Bhangar: Older Alluvium, Kankar & Reh/Kallar",
+      "Khadar: Newer Lowland Floodplain Alluvium & Betlands",
+      "Doabs of Punjab (Bist, Bari, Rechna, Chaj, Sindh Sagar)"
+    ]
+  },
+  {
+    "id": "unit-4-peninsular-plateau-coasts",
+    "title": "Unit 4: The Peninsular Plateau & Coastal Plains: Shield Geomorphology",
+    "themes": [
+      "Ancient Gondwana Shield Core",
+      "Central Highlands: Malwa, Bundelkhand, Baghelkhand, Chhota Nagpur",
+      "Deccan Trap & Basaltic Lava Topography",
+      "Western Ghats (Sahyadris) vs Eastern Ghats",
+      "Western Coastal Plains (Kathiawar, Konkan, Kannad, Malabar) vs Eastern Coastal Plains (Northern Circars, Coromandel)"
+    ]
+  },
+  {
+    "id": "unit-5-indian-drainage-systems",
+    "title": "Unit 5: Drainage Matrix: Himalayan vs Peninsular River Systems & Inter-linking",
+    "themes": [
+      "Antecedent vs Superimposed Drainage Patterns",
+      "Indus System: Jhelum, Chenab, Ravi, Beas, Sutlej & Indus Waters Treaty 1960",
+      "Ganga System: Panch Prayag, Yamuna, Son, Ghaghra, Gandak, Kosi",
+      "Brahmaputra (Yarlung Tsangpo) & Majuli River Island",
+      "Peninsular Rivers: Godavari, Krishna, Cauvery, Mahanadi, Narmada, Tapi",
+      "National River Inter-Linking Project (Ken-Betwa Link)"
+    ]
+  },
+  {
+    "id": "unit-6-monsoon-climatology",
+    "title": "Unit 6: The Indian Monsoon Mechanism: Dynamics, Branches & Teleconnections (ENSO/IOD)",
+    "themes": [
+      "Thermal Concept (Halley) vs Dynamic Concept (Flohn)",
+      "Tibetan Heating & Tropical Easterly Jet (TEJ)",
+      "Somali Jet & Mascarene High",
+      "Southwest Monsoon: Arabian Sea Branch vs Bay of Bengal Branch",
+      "Retreating / Northeast Monsoon (Tamil Nadu Winter Rains)",
+      "Western Disturbances, Loo, Nor'westers (Kalbaisakhi), Mango Showers",
+      "Teleconnections: El Niño, La Niña & Indian Ocean Dipole (IOD)"
+    ]
+  },
+  {
+    "id": "unit-7-soils-of-india",
+    "title": "Unit 7: Pedology: ICAR Eight-Fold Soil Classification & Soil Degradation",
+    "themes": [
+      "Alluvial Soils: Khadar vs Bhangar",
+      "Black / Regur Soil: Self-Plowing, Montmorillonite & Cotton",
+      "Red and Yellow Soils: Ferric Oxides & Leaching",
+      "Laterite Soils: Intense Leaching, Bauxite & Plantation Crops",
+      "Arid / Desert Soils & Alkaline / Saline Soils (Usar)",
+      "Soil Erosion, Gully Formation (Chambal Badlands) & Conservation"
+    ]
+  },
+  {
+    "id": "unit-8-forests-vegetation",
+    "title": "Unit 8: Phytogeography: Forest Typologies, Forest Survey of India & Wildlife Sanctuaries",
+    "themes": [
+      "Champion & Seth Forest Classification",
+      "Tropical Wet Evergreen & Semi-Evergreen",
+      "Tropical Moist & Dry Deciduous (Monsoon Forests - 65% of Indian Cover)",
+      "Tropical Thorn Forests & Alpine / Montane Forests",
+      "Mangroves (Sundarbans, Bhitarkanika) & Blue Carbon",
+      "India State of Forest Report (ISFR) Metrics & Protected Area Network"
+    ]
+  },
+  {
+    "id": "unit-9-agriculture-irrigation",
+    "title": "Unit 9: Agrarian Systems: Cropping Patterns, Green Revolution & Irrigation Projects",
+    "themes": [
+      "Three Cropping Seasons: Kharif, Rabi, Zaid",
+      "Major Food Crops: Rice, Wheat, Millets (Shree Anna)",
+      "Commercial Crops: Sugarcane, Cotton, Jute, Tea, Coffee",
+      "Green Revolution: High-Yield Varieties (HYV), Ecological Repercussions",
+      "Multipurpose River Valley Projects (Bhakra Nangal, Hirakud, Sardar Sarovar, Damodar Valley)",
+      "Micro-Irrigation: PM Krishi Sinchayee Yojana (PMKSY)"
+    ]
+  },
+  {
+    "id": "unit-10-minerals-industry-transport",
+    "title": "Unit 10: Mineral Belts, Energy Resources, Industrial Corridors & Transport Infrastructure",
+    "themes": [
+      "Metallic Mineral Belts: Iron Ore (Kudremukh, Bailadila), Bauxite, Copper, Manganese",
+      "Fossil Fuels: Gondwana vs Tertiary Coal, Offshore Petroleum (Bombay High, KG Basin)",
+      "Renewable Energy: Solar (ISA, PM KUSUM), Wind, Green Hydrogen Mission",
+      "Major Industrial Regions (Mumbai-Pune, Hugli, Chhota Nagpur, Bengaluru-Chennai)",
+      "Transport Networks: Golden Quadrilateral, Dedicated Freight Corridors, Bharatmala, Sagarmala & National Waterways"
+    ]
+  }
+]

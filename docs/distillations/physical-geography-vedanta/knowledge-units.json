@@ -1,0 +1,112 @@
+[
+  {
+    "id": "unit-1-earth-interior",
+    "title": "Unit 1: Planetary Dynamics, Earth’s Cosmic Coordinates & Interior Architecture",
+    "themes": [
+      "Earth Rotation & Revolution Impacts",
+      "Longitudes, Latitudes & International Date Line",
+      "Internal Layering: Crust, Mantle, Core",
+      "Seismic Discontinuities (Conrad, Mohorovicic, Repetti, Gutenberg, Lehmann)",
+      "Direct vs Indirect Sources of Earth's Interior"
+    ]
+  },
+  {
+    "id": "unit-2-plate-tectonics",
+    "title": "Unit 2: The Plate Tectonics Paradigm, Seafloor Spreading & Paleomagnetism",
+    "themes": [
+      "Alfred Wegener's Continental Drift Theory",
+      "Arthur Holmes' Thermal Convection Hypothesis",
+      "Harry Hess's Seafloor Spreading & Geomagnetic Reversals",
+      "Plate Tectonics: Convergent, Divergent, Transform Boundaries",
+      "Orogeny & Mountain Building"
+    ]
+  },
+  {
+    "id": "unit-3-vulcanism-seismology",
+    "title": "Unit 3: Diastrophism, Volcanism, Plutonic Intrusions & Seismic Mechanics",
+    "themes": [
+      "Diastrophism: Epeirogenic vs Orogenic Movements",
+      "Volcanic Landforms: Intrusive (Batholiths, Laccoliths, Sills, Dykes) vs Extrusive",
+      "Mantle Plumes & Hotspot Volcanism (Deccan Traps, Hawaii)",
+      "Seismology: P-Waves, S-Waves, Surface Waves",
+      "Earthquake Shadow Zones & Epicenter Triangulation"
+    ]
+  },
+  {
+    "id": "unit-4-weathering-mass-movement",
+    "title": "Unit 4: Exogenic Geomorphic Processes: Weathering, Mass Movements & Erosion",
+    "themes": [
+      "Physical / Mechanical Weathering (Exfoliation, Frost Wedging)",
+      "Chemical Weathering (Carbonation, Hydration, Oxidation)",
+      "Biological Weathering Mechanisms",
+      "Mass Movements: Slow (Creep, Solifluction) vs Rapid (Debris Flow, Landslides)",
+      "Erosion vs Denudation"
+    ]
+  },
+  {
+    "id": "unit-5-landform-evolution",
+    "title": "Unit 5: Geomorphic Landform Suites: Fluvial, Karst, Glacial, Aeolian & Coastal",
+    "themes": [
+      "Fluvial: Youth, Mature, Old Age Landforms (Gorges, Oxbow Lakes, Deltas)",
+      "Karst: Lapies, Sinkholes, Stalactites, Stalagmites, Poljes",
+      "Glacial: Cirques, Aretes, U-Shaped Valleys, Moraines, Eskers, Drumlins",
+      "Aeolian: Yardangs, Zeugens, Barchans, Seif Dunes, Loess",
+      "Coastal: Sea Cliffs, Caves, Stacks, Spits, Tombolos, Barrier Islands"
+    ]
+  },
+  {
+    "id": "unit-6-atmosphere-heat-budget",
+    "title": "Unit 6: Atmospheric Architecture, Insolation & Terrestrial Heat Budget",
+    "themes": [
+      "Composition: Nitrogen, Oxygen, Argon, CO2, Aerosols",
+      "Thermal Layering: Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere",
+      "Solar Constant & Insolation Variations",
+      "Terrestrial Radiation & Heat Budget Balance (100 units model)",
+      "Temperature Inversion: Radiation, Subsidence, Advection, Valley Inversions"
+    ]
+  },
+  {
+    "id": "unit-7-atmospheric-circulation-winds",
+    "title": "Unit 7: Planetary Winds, Tri-Cellular Atmospheric Circulation & Jet Streams",
+    "themes": [
+      "Atmospheric Pressure Belts (Equatorial Low, Subtropical High, Subpolar Low, Polar High)",
+      "Coriolis Force & Ferrel's Law",
+      "Tri-Cellular Model: Hadley, Ferrel, Polar Cells",
+      "Planetary Winds: Trade Winds, Westerlies, Polar Easterlies",
+      "Jet Streams: Polar Front & Subtropical Westerly Jets, Rossby Waves"
+    ]
+  },
+  {
+    "id": "unit-8-moisture-cyclones",
+    "title": "Unit 8: Atmospheric Moisture, Frontogenesis & Tropical-Temperate Cyclones",
+    "themes": [
+      "Humidity: Absolute, Specific, Relative Humidity & Dew Point",
+      "Adiabatic Lapse Rates: Dry (DALR) vs Saturated (SALR)",
+      "Cloud Typologies & Fog Classifications",
+      "Frontogenesis: Cold, Warm, Occluded, Stationary Fronts",
+      "Tropical vs Temperate (Extratropical) Cyclones: Genesis & Mechanics"
+    ]
+  },
+  {
+    "id": "unit-9-oceanography-circulation",
+    "title": "Unit 9: Ocean Basin Morphology, Thermohaline Circulation & Dynamic Ocean Currents",
+    "themes": [
+      "Hypsographic Curve & Continental Margin (Shelf, Slope, Rise, Abyssal Plain)",
+      "Submarine Canyons & Mid-Oceanic Ridges",
+      "Ocean Temperature & Salinity Distribution Factors",
+      "Surface Circulation: Gyres in Pacific, Atlantic, Indian Oceans",
+      "Thermohaline Conveyor Belt & Deep Ocean Circulation"
+    ]
+  },
+  {
+    "id": "unit-10-tides-coral-reefs",
+    "title": "Unit 10: Tidal Dynamics, Coral Reef Geomorphology & Marine Biogeochemistry",
+    "themes": [
+      "Tidal Genesis: Gravitational Forces of Moon and Sun",
+      "Spring Tides vs Neap Tides & Semi-Diurnal Patterns",
+      "Coral Reef Ecology: Fringing Reefs, Barrier Reefs, Atolls",
+      "Theories of Coral Reef Formation (Darwin's Subsidence, Daly's Glacial Control)",
+      "Coral Bleaching Mechanisms & Marine Conservation"
+    ]
+  }
+]
