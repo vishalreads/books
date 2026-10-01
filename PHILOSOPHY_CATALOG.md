@@ -6,7 +6,7 @@ Every title below has been reconstructed into a replacement-grade master codex e
 
 ---
 
-## 📚 Processed Books Index (17 Titles)
+## 📚 Processed Books Index (20 Titles)
 
 | # | Title | Author / Translator | Tradition & School of Thought | Volume (Chars) | Master Codex Link |
 |---|:---|:---|:---|:---:|:---|
@@ -27,6 +27,9 @@ Every title below has been reconstructed into a replacement-grade master codex e
 | **15** | **The Osho Upanishad** | Osho | Living Satsang, Guru-Disciple Communion & Transmission of the Lamp | 32,698 | [Open Reader](file:///docs/distillations/the-osho-upanishad/index.html) |
 | **16** | **A Cup of Tea: Letters of Awakening, Love, and Surrender** | Osho | Epistolary Sadhana, Meditative Awakening & Surrender | 32,329 | [Open Reader](file:///docs/distillations/a-cup-of-tea-osho/index.html) |
 | **17** | **Everyday Osho: 365 Daily Meditations for the Here and Now** | Osho | Daily Contemplative Curriculum, Emotional Alchemy & Presence | 36,201 | [Open Reader](file:///docs/distillations/everyday-osho-365-daily-meditations/index.html) |
+| **18** | **Hallelujah! A Darshan Diary** | Osho | Pune 1 Darshan Surgery, Catharsis, Energy Transmissions & Ecstasy | 33,399 | [Open Reader](file:///docs/distillations/hallelujah-osho-darshan-diary/index.html) |
+| **19** | **In Wonder With Osho** | Swami Anand Arun | 20-Year Eyewitness Disciple Memoir & Living Spiritual Biography | 34,913 | [Open Reader](file:///docs/distillations/in-wonder-with-osho-anand-arun/index.html) |
+| **20** | **Who Killed Osho? The Fall of the Rajneesh Empire** | Abhay Vaidya | Forensic Investigative Journalism, Forged Will & Trust Asset Siphoning | 34,326 | [Open Reader](file:///docs/distillations/who-killed-osho-abhay-vaidya/index.html) |
 
 ---
 
@@ -48,10 +51,14 @@ Every title below has been reconstructed into a replacement-grade master codex e
 - **Focus:** The embodiment of mind, pre-reflective self-awareness, animal inwardness and the flesh of nature, and mass nonviolent resistance against racism, poverty, and militarism.
 - **Titles:** Shaun Gallagher & Dan Zahavi (*The Phenomenological Mind*), Ted Toadvine (*Merleau-Ponty's Philosophy of Nature*), Martin Luther King, Jr. (*A Testament of Hope*).
 
-### Cohort 5: The Osho Darshan & Reconstructive Non-Duality (Part 1)
-- **Focus:** Radical de-conditioning, distinguishing the rebel from the revolutionary, direct energetic communion (*Upanishad*), intimate epistolary guidance (*A Cup of Tea*), and operational daily presence (*Everyday Osho*).
-- **Titles:** Osho (*The Rebel*), Osho (*The Osho Upanishad*), Osho (*A Cup of Tea*), Osho (*Everyday Osho*).
+### Cohort 5: The Osho Darshan & Reconstructive Non-Duality (The Core Teaching)
+- **Focus:** Radical de-conditioning, distinguishing the rebel from the revolutionary, direct energetic communion (*Upanishad*), intimate epistolary guidance (*A Cup of Tea*), operational daily presence (*Everyday Osho*), and Pune 1 darshan alchemy (*Hallelujah!*).
+- **Titles:** Osho (*The Rebel*), Osho (*The Osho Upanishad*), Osho (*A Cup of Tea*), Osho (*Everyday Osho*), Osho (*Hallelujah!*).
 
+### Cohort 6: The Living Movement & Forensic History (Disciple Memoir & Investigative Inquiry)
+- **Focus:** The lived reality of the master-disciple relationship across two decades, the rise and collapse of communal experiments, global state persecution, forensic investigation of Osho's suspicious demise, the forged 1989 Will, and the battle over corporate asset siphoning.
+- **Titles:** Swami Anand Arun (*In Wonder With Osho*), Abhay Vaidya (*Who Killed Osho? The Fall of the Rajneesh Empire*).
 
 ---
 *Catalog maintained automatically as new batches are provided.*
+

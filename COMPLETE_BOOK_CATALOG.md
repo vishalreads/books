@@ -1,8 +1,8 @@
 # Complete Master Book Catalog: Intellectualist (BKRS v2.0)
 
-**Total Processed Titles:** 110 Master Reconstructions  
+**Total Processed Titles:** 113 Master Reconstructions  
 **Repository Standard:** Book Knowledge Reconstruction System (BKRS v2.0 Standard)  
-**Verification Status:** 110 / 110 PASS (`node src/verify_all_readers.js`)  
+**Verification Status:** 113 / 113 PASS (`node src/verify_all_readers.js`)  
 **Presentation:** Dual-Theme (Editorial Cream / Night Mode) 3-View Reader Shells with Deep Traceability  
 
 This document serves as the **master inventory of all books processed into replacement-grade codices** across all disciplines in the Intellectualist knowledge base. It is maintained and updated as new titles are ingested.
@@ -19,8 +19,8 @@ This document serves as the **master inventory of all books processed into repla
 | **4. Astrological & Divinatory Sciences** | 30 | Classical Vedic & modern astrological treatises |
 | **5. Economic Sciences & Public Policy** | 9 | Macroeconomics, Indian economic development, fiscal policy |
 | **6. Civil Services Examination & Governance** | 10 | Physical geography, geodynamics, climatology, Indian statecraft |
-| **7. Philosophy, Reason & Critical Thought** | 17 | Grand Synthesis of Philosophy (Epistemology, 4E Mind, Zen, Daoism, Osho, Rights) |
-| **TOTAL** | **110** | **Certified 100% Repository-Wide Coverage** |
+| **7. Philosophy, Reason & Critical Thought** | 20 | Grand Synthesis of Philosophy (Epistemology, 4E Mind, Zen, Daoism, Osho, Rights) |
+| **TOTAL** | **113** | **Certified 100% Repository-Wide Coverage** |
 
 ---
 
@@ -147,7 +147,7 @@ This document serves as the **master inventory of all books processed into repla
 | **092** | **Short Notes: Geography of India** | Publishers Rainbow | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/short-notes-geography-rainbow/index.html) |
 | **093** | **UPSC Civil Services Exam: 410 Days Full Detailed Topper Timetable & Strategy** | Disha Patel | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/topper-timetable-410-days-disha-patel/index.html) |
 
-## 7. Philosophy, Reason & Critical Thought (17 Titles)
+## 7. Philosophy, Reason & Critical Thought (20 Titles)
 
 | # | Book Title | Author / Translator | Units | Reader Link |
 |:---:|:---|:---|:---:|:---|
@@ -168,6 +168,9 @@ This document serves as the **master inventory of all books processed into repla
 | **108** | **The Osho Upanishad** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-osho-upanishad/index.html) |
 | **109** | **A Cup of Tea: Letters of Awakening, Love, and Surrender** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/a-cup-of-tea-osho/index.html) |
 | **110** | **Everyday Osho: 365 Daily Meditations for the Here and Now** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/everyday-osho-365-daily-meditations/index.html) |
+| **111** | **Hallelujah! A Darshan Diary** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/hallelujah-osho-darshan-diary/index.html) |
+| **112** | **In Wonder With Osho** | Swami Anand Arun | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/in-wonder-with-osho-anand-arun/index.html) |
+| **113** | **Who Killed Osho? The Fall of the Rajneesh Empire** | Abhay Vaidya | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/who-killed-osho-abhay-vaidya/index.html) |
 
 ---
 *Catalog maintained and updated as new titles are ingested into the repository.*
