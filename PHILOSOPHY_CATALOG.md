@@ -6,7 +6,7 @@ Every title below has been reconstructed into a replacement-grade master codex e
 
 ---
 
-## 📚 Processed Books Index (23 Titles)
+## 📚 Processed Books Index (27 Titles)
 
 | # | Title | Author / Translator | Tradition & School of Thought | Volume (Chars) | Master Codex Link |
 |---|:---|:---|:---|:---:|:---|
@@ -33,6 +33,10 @@ Every title below has been reconstructed into a replacement-grade master codex e
 | **21** | **The Art of Dying: Talks on Hasidism** | Osho | Jewish Hasidic Mysticism, Thanatology & The Joy of Simcha | 36,113 | [Open Reader](file:///docs/distillations/the-art-of-dying-osho/index.html) |
 | **22** | **Osho: Zorba the Buddha** | Nik Marcel | Comprehensive Meta-Analysis, Zen Upayas & Canon Typology | 33,915 | [Open Reader](file:///docs/distillations/osho-zorba-the-buddha-nik-marcel/index.html) |
 | **23** | **The Invitation** | Osho | Pune 2 Master Dialogue, The Living Well & Radical Witnessing | 33,173 | [Open Reader](file:///docs/distillations/the-invitation-osho/index.html) |
+| **24** | **The Razor’s Edge** | Osho | Katha Upanishad, The Razor's Edge of Awareness & Immortality | 34,224 | [Open Reader](file:///docs/distillations/the-razors-edge-osho/index.html) |
+| **25** | **Be Still and Know** | Osho | Biblical Silence (Psalms 46:10), Polarities & Witnessing (*Sakshi*) | 36,021 | [Open Reader](file:///docs/distillations/be-still-and-know-osho/index.html) |
+| **26** | **Light on the Path** | Osho | Post-Prison Kathmandu Discourses, *Atmo Deepo Bhava* & Creative Unpredictability | 40,138 | [Open Reader](file:///docs/distillations/light-on-the-path-osho/index.html) |
+| **27** | **The Perfect Way** | Osho | Historic Ranakpur Genesis (1964), 3-Step Sadhana & Total *Sankalpa* | 35,875 | [Open Reader](file:///docs/distillations/the-perfect-way-osho/index.html) |
 
 ---
 
@@ -61,6 +65,10 @@ Every title below has been reconstructed into a replacement-grade master codex e
 ### Cohort 6: The Living Movement & Meta-Analytical Inquiry (Disciple Memoir, Forensic History & Academic Synthesis)
 - **Focus:** The lived reality of the master-disciple relationship across two decades, the rise and collapse of communal experiments, global state persecution, forensic investigation of Osho's suspicious demise, the forged 1989 Will, and the exhaustive 1,144-page meta-analytical resolution of Osho's contradictions.
 - **Titles:** Swami Anand Arun (*In Wonder With Osho*), Abhay Vaidya (*Who Killed Osho? The Fall of the Rajneesh Empire*), Nik Marcel (*Osho: Zorba the Buddha*).
+
+### Cohort 7: Upanishadic Mastery, Silence & The Ranakpur Genesis (Batch 4)
+- **Focus:** The Katha Upanishad tightrope between sensory life and transcendent witness (*The Razor’s Edge*), turning biblical stillness into non-dual presence (*Be Still and Know*), unconditioned inner illumination and the Himalayan ecology of silence after American state persecution (*Light on the Path*), and the historic 1964 Ranakpur meditation retreat establishing the three-step ladder of effortless sadhana (*The Perfect Way*).
+- **Titles:** Osho (*The Razor’s Edge*), Osho (*Be Still and Know*), Osho (*Light on the Path*), Osho (*The Perfect Way*).
 
 ---
 *Catalog maintained automatically as new batches are provided.*

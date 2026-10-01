@@ -1,8 +1,8 @@
 # Complete Master Book Catalog: Intellectualist (BKRS v2.0)
 
-**Total Processed Titles:** 116 Master Reconstructions  
+**Total Processed Titles:** 120 Master Reconstructions  
 **Repository Standard:** Book Knowledge Reconstruction System (BKRS v2.0 Standard)  
-**Verification Status:** 116 / 116 PASS (`node src/verify_all_readers.js`)  
+**Verification Status:** 120 / 120 PASS (`node src/verify_all_readers.js`)  
 **Presentation:** Dual-Theme (Editorial Cream / Night Mode) 3-View Reader Shells with Deep Traceability  
 
 This document serves as the **master inventory of all books processed into replacement-grade codices** across all disciplines in the Intellectualist knowledge base. It is maintained and updated as new titles are ingested.
@@ -19,8 +19,8 @@ This document serves as the **master inventory of all books processed into repla
 | **4. Astrological & Divinatory Sciences** | 30 | Classical Vedic & modern astrological treatises |
 | **5. Economic Sciences & Public Policy** | 9 | Macroeconomics, Indian economic development, fiscal policy |
 | **6. Civil Services Examination & Governance** | 10 | Physical geography, geodynamics, climatology, Indian statecraft |
-| **7. Philosophy, Reason & Critical Thought** | 23 | Grand Synthesis of Philosophy (Epistemology, 4E Mind, Zen, Daoism, Osho, Rights) |
-| **TOTAL** | **116** | **Certified 100% Repository-Wide Coverage** |
+| **7. Philosophy, Reason & Critical Thought** | 27 | Grand Synthesis of Philosophy (Epistemology, 4E Mind, Zen, Daoism, Osho, Rights) |
+| **TOTAL** | **120** | **Certified 100% Repository-Wide Coverage** |
 
 ---
 
@@ -147,7 +147,7 @@ This document serves as the **master inventory of all books processed into repla
 | **092** | **Short Notes: Geography of India** | Publishers Rainbow | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/short-notes-geography-rainbow/index.html) |
 | **093** | **UPSC Civil Services Exam: 410 Days Full Detailed Topper Timetable & Strategy** | Disha Patel | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/topper-timetable-410-days-disha-patel/index.html) |
 
-## 7. Philosophy, Reason & Critical Thought (23 Titles)
+## 7. Philosophy, Reason & Critical Thought (27 Titles)
 
 | # | Book Title | Author / Translator | Units | Reader Link |
 |:---:|:---|:---|:---:|:---|
@@ -174,6 +174,10 @@ This document serves as the **master inventory of all books processed into repla
 | **114** | **The Art of Dying: Talks on Hasidism** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-art-of-dying-osho/index.html) |
 | **115** | **Osho: Zorba the Buddha** | Nik Marcel | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/osho-zorba-the-buddha-nik-marcel/index.html) |
 | **116** | **The Invitation** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-invitation-osho/index.html) |
+| **117** | **The Razor’s Edge** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-razors-edge-osho/index.html) |
+| **118** | **Be Still and Know** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/be-still-and-know-osho/index.html) |
+| **119** | **Light on the Path** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/light-on-the-path-osho/index.html) |
+| **120** | **The Perfect Way** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-perfect-way-osho/index.html) |
 
 ---
 *Catalog maintained and updated as new titles are ingested into the repository.*
