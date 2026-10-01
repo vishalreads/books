@@ -6,7 +6,7 @@ Every title below has been reconstructed into a replacement-grade master codex e
 
 ---
 
-## 📚 Processed Books Index (13 Titles)
+## 📚 Processed Books Index (17 Titles)
 
 | # | Title | Author / Translator | Tradition & School of Thought | Volume (Chars) | Master Codex Link |
 |---|:---|:---|:---|:---:|:---|
@@ -23,6 +23,10 @@ Every title below has been reconstructed into a replacement-grade master codex e
 | **11** | **The Phenomenological Mind** | Shaun Gallagher & Dan Zahavi | 4E Cognitive Science & Phenomenology of Self | 41,470 | [Open Reader](file:///docs/distillations/the-phenomenological-mind-gallagher-zahavi/index.html) |
 | **12** | **Merleau-Ponty's Philosophy of Nature** | Ted Toadvine | Ecophenomenology, Animality & The Chiasm | 36,733 | [Open Reader](file:///docs/distillations/merleau-pontys-philosophy-of-nature-toadvine/index.html) |
 | **13** | **A Testament of Hope** | Martin Luther King, Jr. (ed. J.M. Washington) | Moral Theology, Civil Rights & Prophetic Democracy | 35,806 | [Open Reader](file:///docs/distillations/a-testament-of-hope-martin-luther-king/index.html) |
+| **14** | **The Rebel: The Very Fragrance of Freedom** | Osho | Existential Rebellion, Anti-Conditioning & Zorba the Buddha | 33,322 | [Open Reader](file:///docs/distillations/the-rebel-osho/index.html) |
+| **15** | **The Osho Upanishad** | Osho | Living Satsang, Guru-Disciple Communion & Transmission of the Lamp | 32,698 | [Open Reader](file:///docs/distillations/the-osho-upanishad/index.html) |
+| **16** | **A Cup of Tea: Letters of Awakening, Love, and Surrender** | Osho | Epistolary Sadhana, Meditative Awakening & Surrender | 32,329 | [Open Reader](file:///docs/distillations/a-cup-of-tea-osho/index.html) |
+| **17** | **Everyday Osho: 365 Daily Meditations for the Here and Now** | Osho | Daily Contemplative Curriculum, Emotional Alchemy & Presence | 36,201 | [Open Reader](file:///docs/distillations/everyday-osho-365-daily-meditations/index.html) |
 
 ---
 
@@ -43,6 +47,11 @@ Every title below has been reconstructed into a replacement-grade master codex e
 ### Cohort 4: 4E Cognitive Science, Ecophenomenology & Prophetic Democracy
 - **Focus:** The embodiment of mind, pre-reflective self-awareness, animal inwardness and the flesh of nature, and mass nonviolent resistance against racism, poverty, and militarism.
 - **Titles:** Shaun Gallagher & Dan Zahavi (*The Phenomenological Mind*), Ted Toadvine (*Merleau-Ponty's Philosophy of Nature*), Martin Luther King, Jr. (*A Testament of Hope*).
+
+### Cohort 5: The Osho Darshan & Reconstructive Non-Duality (Part 1)
+- **Focus:** Radical de-conditioning, distinguishing the rebel from the revolutionary, direct energetic communion (*Upanishad*), intimate epistolary guidance (*A Cup of Tea*), and operational daily presence (*Everyday Osho*).
+- **Titles:** Osho (*The Rebel*), Osho (*The Osho Upanishad*), Osho (*A Cup of Tea*), Osho (*Everyday Osho*).
+
 
 ---
 *Catalog maintained automatically as new batches are provided.*

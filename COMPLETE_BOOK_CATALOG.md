@@ -1,8 +1,8 @@
 # Complete Master Book Catalog: Intellectualist (BKRS v2.0)
 
-**Total Processed Titles:** 106 Master Reconstructions  
+**Total Processed Titles:** 110 Master Reconstructions  
 **Repository Standard:** Book Knowledge Reconstruction System (BKRS v2.0 Standard)  
-**Verification Status:** 106 / 106 PASS (`node src/verify_all_readers.js`)  
+**Verification Status:** 110 / 110 PASS (`node src/verify_all_readers.js`)  
 **Presentation:** Dual-Theme (Editorial Cream / Night Mode) 3-View Reader Shells with Deep Traceability  
 
 This document serves as the **master inventory of all books processed into replacement-grade codices** across all disciplines in the Intellectualist knowledge base. It is maintained and updated as new titles are ingested.
@@ -19,8 +19,8 @@ This document serves as the **master inventory of all books processed into repla
 | **4. Astrological & Divinatory Sciences** | 30 | Classical Vedic & modern astrological treatises |
 | **5. Economic Sciences & Public Policy** | 9 | Macroeconomics, Indian economic development, fiscal policy |
 | **6. Civil Services Examination & Governance** | 10 | Physical geography, geodynamics, climatology, Indian statecraft |
-| **7. Philosophy, Reason & Critical Thought** | 13 | Grand Synthesis of Philosophy (Epistemology, 4E Mind, Zen, Daoism, Rights) |
-| **TOTAL** | **106** | **Certified 100% Repository-Wide Coverage** |
+| **7. Philosophy, Reason & Critical Thought** | 17 | Grand Synthesis of Philosophy (Epistemology, 4E Mind, Zen, Daoism, Osho, Rights) |
+| **TOTAL** | **110** | **Certified 100% Repository-Wide Coverage** |
 
 ---
 
@@ -28,10 +28,10 @@ This document serves as the **master inventory of all books processed into repla
 
 | # | Book Title | Author / Translator | Units | Reader Link |
 |:---:|:---|:---|:---:|:---|
-| **001** | **Norwegian Wood** | Haruki Murakami (1987) | Certified | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/norwegian-wood/index.html) |
-| **002** | **Siddhartha** | Hermann Hesse (1922) | 12 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/siddhartha/index.html) |
-| **003** | **Brave New World** | Aldous Huxley (1932) | 18 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/brave-new-world/index.html) |
-| **004** | **It Ends with Us** | Colleen Hoover (2016) | 37 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/it-ends-with-us/index.html) |
+| **001** | **Norwegian Wood** | Haruki Murakami (1987) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/norwegian-wood/index.html) |
+| **002** | **Siddhartha** | Hermann Hesse (1922) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/siddhartha/index.html) |
+| **003** | **Brave New World** | Aldous Huxley (1932) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/brave-new-world/index.html) |
+| **004** | **It Ends with Us** | Colleen Hoover (2016) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/it-ends-with-us/index.html) |
 | **005** | **The Great Gatsby** | F. Scott Fitzgerald (1925) | 9 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-great-gatsby/index.html) |
 | **006** | **Heart of Darkness** | Joseph Conrad (1899) | 6 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/heart-of-darkness/index.html) |
 | **007** | **The Picture of Dorian Gray** | Oscar Wilde (1890 Original Serial) | 13 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-picture-of-dorian-gray/index.html) |
@@ -47,27 +47,27 @@ This document serves as the **master inventory of all books processed into repla
 
 | # | Book Title | Author / Translator | Units | Reader Link |
 |:---:|:---|:---|:---:|:---|
-| **015** | **The Psychology of Money** | Morgan Housel (2020) | Certified | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-psychology-of-money/index.html) |
+| **015** | **The Psychology of Money** | Morgan Housel (2020) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-psychology-of-money/index.html) |
 | **016** | **Atomic Habits** | James Clear (2018) | 20 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/atomic-habits/index.html) |
-| **017** | **Can't Hurt Me: Master Your Mind and Defy the Odds** | David Goggins (2018) | 11 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/cant-hurt-me/index.html) |
-| **018** | **Open: An Autobiography** | Andre Agassi (with J. R. Moehringer, 2009) | 14 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/open-agassi/index.html) |
+| **017** | **Can't Hurt Me: Master Your Mind and Defy the Odds** | David Goggins (2018) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/cant-hurt-me/index.html) |
+| **018** | **Open: An Autobiography** | Andre Agassi (with J. R. Moehringer, 2009) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/open-agassi/index.html) |
 | **019** | **The 48 Laws of Power** | Robert Greene (2000) | 48 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/48-laws-of-power/index.html) |
-| **020** | **The Art of War** | Sun Tzu (trans. Thomas Cleary &amp; Lionel Giles) | 26 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-art-of-war/index.html) |
-| **021** | **Rich Dad Poor Dad** | Robert T. Kiyosaki (2017) | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/rich-dad-poor-dad/index.html) |
+| **020** | **The Art of War** | Sun Tzu (trans. Thomas Cleary &amp; Lionel Giles) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-art-of-war/index.html) |
+| **021** | **Rich Dad Poor Dad** | Robert T. Kiyosaki (2017) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/rich-dad-poor-dad/index.html) |
 
-## 3. History, Biography & Philosophy (23 Titles)
+## 3. History, Biography & Civilizational Leadership (23 Titles)
 
 | # | Book Title | Author / Translator | Units | Reader Link |
 |:---:|:---|:---|:---:|:---|
-| **022** | **The Bhagat Singh Mega-Codex: The Definitive Unified Chronicle** | Bhagat Singh, Juss, Noorani, Chaman Lal, Waraich, Josh | 52 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/bhagat-singh-unified-chronicle/index.html) |
-| **023** | **Bhagat Singh: A Life in Revolution** | Satvinder S. Juss (2022) | Certified | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/bhagat-singh-a-life-in-revolution/index.html) |
-| **024** | **Endurance: Shackleton's Incredible Voyage** | Alfred Lansing (1959 / 2010) | Certified | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/endurance/index.html) |
-| **025** | **Deep Survival: Who Lives, Who Dies, and Why** | Laurence Gonzales (2003) | 15 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/deep-survival/index.html) |
+| **022** | **The Bhagat Singh Mega-Codex: The Definitive Unified Chronicle** | Bhagat Singh, Juss, Noorani, Chaman Lal, Waraich, Josh | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/bhagat-singh-unified-chronicle/index.html) |
+| **023** | **Bhagat Singh: A Life in Revolution** | Satvinder S. Juss (2022) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/bhagat-singh-a-life-in-revolution/index.html) |
+| **024** | **Endurance: Shackleton's Incredible Voyage** | Alfred Lansing (1959 / 2010) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/endurance/index.html) |
+| **025** | **Deep Survival: Who Lives, Who Dies, and Why** | Laurence Gonzales (2003) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/deep-survival/index.html) |
 | **026** | **The Myth of Sisyphus** | Albert Camus (1942) | 12 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-myth-of-sisyphus/index.html) |
-| **027** | **Homage to Catalonia** | George Orwell (1938) | 14 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/homage-to-catalonia/index.html) |
-| **028** | **The Story of My Experiments with Truth** | M. K. Gandhi (1927/1929) | 15 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/gandhi-experiments-with-truth/index.html) |
-| **029** | **Tuesdays with Morrie** | Mitch Albom (1997) | 13 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/tuesdays-with-morrie/index.html) |
-| **030** | **Scientific Autobiography and Other Papers** | Max Planck (1949) | 8 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/scientific-autobiography-planck/index.html) |
+| **027** | **Homage to Catalonia** | George Orwell (1938) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/homage-to-catalonia/index.html) |
+| **028** | **The Story of My Experiments with Truth** | M. K. Gandhi (1927/1929) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/gandhi-experiments-with-truth/index.html) |
+| **029** | **Tuesdays with Morrie** | Mitch Albom (1997) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/tuesdays-with-morrie/index.html) |
+| **030** | **Scientific Autobiography and Other Papers** | Max Planck (1949) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/scientific-autobiography-planck/index.html) |
 | **031** | **The Master and Margarita** | Mikhail Bulgakov (1967) | 16 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/master-and-margarita/index.html) |
 | **032** | **The Metaphysical Club** | Louis Menand (2001) | 15 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-metaphysical-club/index.html) |
 | **033** | **The Mosquito** | Timothy C. Winegard (2019) | 16 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-mosquito/index.html) |
@@ -77,10 +77,10 @@ This document serves as the **master inventory of all books processed into repla
 | **037** | **War and Peace** | Leo Tolstoy (1869) &bull; Transl. Louise & Aylmer Maude | 20 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/war-and-peace/index.html) |
 | **038** | **The Manifestation Mega-Codex** | Murphy, Goddard, Zeland, Shinn, Dispenza, Tolle, Doty (Stanford), Bernstein, Byrne, Hicks (2026) | 20 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/manifestation-unified-codex/index.html) |
 | **039** | **The Rajput Chronicles** | James Tod, Dirk Kolff, A.C. Banerjee, Ramya Sreenivasan, Molly Emma Aitken, Rosemary Crill, Jyoti Jafa, Arik Moran, Lindsey Harlan, Giles Tillotson, Robert Hallissey (2026) | 34 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/rajput-unified-codex/index.html) |
-| **040** | **Autobiography of a Yogi** | Paramahansa Yogananda (1946) | 53 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/autobiography-of-a-yogi/index.html) |
-| **041** | **Open Source Intelligence Techniques** | Michael Bazzell (2018) | 29 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/open-source-intelligence-techniques/index.html) |
+| **040** | **Autobiography of a Yogi** | Paramahansa Yogananda (1946) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/autobiography-of-a-yogi/index.html) |
+| **041** | **Open Source Intelligence Techniques** | Michael Bazzell (2018) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/open-source-intelligence-techniques/index.html) |
 | **042** | **Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future** | Ashlee Vance (2015) | 12 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/elon-musk/index.html) |
-| **043** | **Don't Bug Me: High-Tech Spy Methods** | M.L. Shannon (1992) | 23 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/dont-bug-me/index.html) |
+| **043** | **Don't Bug Me: High-Tech Spy Methods** | M.L. Shannon (1992) | undefined Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/dont-bug-me/index.html) |
 | **044** | **Complete Works & Political Essays** | George Orwell (Eric Arthur Blair) | 12 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/george-orwell-complete-works/index.html) |
 
 ## 4. Astrological & Divinatory Sciences (30 Titles)
@@ -147,7 +147,7 @@ This document serves as the **master inventory of all books processed into repla
 | **092** | **Short Notes: Geography of India** | Publishers Rainbow | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/short-notes-geography-rainbow/index.html) |
 | **093** | **UPSC Civil Services Exam: 410 Days Full Detailed Topper Timetable & Strategy** | Disha Patel | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/topper-timetable-410-days-disha-patel/index.html) |
 
-## 7. Philosophy, Reason & Critical Thought (13 Titles)
+## 7. Philosophy, Reason & Critical Thought (17 Titles)
 
 | # | Book Title | Author / Translator | Units | Reader Link |
 |:---:|:---|:---|:---:|:---|
@@ -164,6 +164,10 @@ This document serves as the **master inventory of all books processed into repla
 | **104** | **The Phenomenological Mind** | Shaun Gallagher & Dan Zahavi | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-phenomenological-mind-gallagher-zahavi/index.html) |
 | **105** | **Merleau-Ponty's Philosophy of Nature** | Ted Toadvine | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/merleau-pontys-philosophy-of-nature-toadvine/index.html) |
 | **106** | **A Testament of Hope: Writings & Speeches of Martin Luther King, Jr.** | Martin Luther King, Jr. (ed. James M. Washington) | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/a-testament-of-hope-martin-luther-king/index.html) |
+| **107** | **The Rebel: The Very Fragrance of Freedom** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-rebel-osho/index.html) |
+| **108** | **The Osho Upanishad** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/the-osho-upanishad/index.html) |
+| **109** | **A Cup of Tea: Letters of Awakening, Love, and Surrender** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/a-cup-of-tea-osho/index.html) |
+| **110** | **Everyday Osho: 365 Daily Meditations for the Here and Now** | Osho | 10 Units | [Open Reader](file:///c:/Users/visha/OneDrive/Documents/Intellectualist/docs/distillations/everyday-osho-365-daily-meditations/index.html) |
 
 ---
 *Catalog maintained and updated as new titles are ingested into the repository.*
