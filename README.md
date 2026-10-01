@@ -22,6 +22,7 @@ Intellectualist/
 │       ├── multiformat-book-processing/   # Ingestion engine for PDF, EPUB, MOBI, MD
 │       ├── pdf-book-processing/           # Dedicated PDF parsing rules
 │       └── intellectualist-workflow/      # Execution workflow
+├── COMPLETE_BOOK_CATALOG.md            # Comprehensive catalog of all 106 processed books across all domains
 ├── PHILOSOPHY_CATALOG.md                  # Dedicated catalog tracking Grand Synthesis of Philosophy
 ├── AGENTS.md                              # Project-level agent rules
 └── README.md
