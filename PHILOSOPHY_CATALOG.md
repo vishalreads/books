@@ -6,7 +6,7 @@ Every title below has been reconstructed into a replacement-grade master codex e
 
 ---
 
-## 📚 Processed Books Index (20 Titles)
+## 📚 Processed Books Index (23 Titles)
 
 | # | Title | Author / Translator | Tradition & School of Thought | Volume (Chars) | Master Codex Link |
 |---|:---|:---|:---|:---:|:---|
@@ -30,6 +30,9 @@ Every title below has been reconstructed into a replacement-grade master codex e
 | **18** | **Hallelujah! A Darshan Diary** | Osho | Pune 1 Darshan Surgery, Catharsis, Energy Transmissions & Ecstasy | 33,399 | [Open Reader](file:///docs/distillations/hallelujah-osho-darshan-diary/index.html) |
 | **19** | **In Wonder With Osho** | Swami Anand Arun | 20-Year Eyewitness Disciple Memoir & Living Spiritual Biography | 34,913 | [Open Reader](file:///docs/distillations/in-wonder-with-osho-anand-arun/index.html) |
 | **20** | **Who Killed Osho? The Fall of the Rajneesh Empire** | Abhay Vaidya | Forensic Investigative Journalism, Forged Will & Trust Asset Siphoning | 34,326 | [Open Reader](file:///docs/distillations/who-killed-osho-abhay-vaidya/index.html) |
+| **21** | **The Art of Dying: Talks on Hasidism** | Osho | Jewish Hasidic Mysticism, Thanatology & The Joy of Simcha | 36,113 | [Open Reader](file:///docs/distillations/the-art-of-dying-osho/index.html) |
+| **22** | **Osho: Zorba the Buddha** | Nik Marcel | Comprehensive Meta-Analysis, Zen Upayas & Canon Typology | 33,915 | [Open Reader](file:///docs/distillations/osho-zorba-the-buddha-nik-marcel/index.html) |
+| **23** | **The Invitation** | Osho | Pune 2 Master Dialogue, The Living Well & Radical Witnessing | 33,173 | [Open Reader](file:///docs/distillations/the-invitation-osho/index.html) |
 
 ---
 
@@ -52,12 +55,12 @@ Every title below has been reconstructed into a replacement-grade master codex e
 - **Titles:** Shaun Gallagher & Dan Zahavi (*The Phenomenological Mind*), Ted Toadvine (*Merleau-Ponty's Philosophy of Nature*), Martin Luther King, Jr. (*A Testament of Hope*).
 
 ### Cohort 5: The Osho Darshan & Reconstructive Non-Duality (The Core Teaching)
-- **Focus:** Radical de-conditioning, distinguishing the rebel from the revolutionary, direct energetic communion (*Upanishad*), intimate epistolary guidance (*A Cup of Tea*), operational daily presence (*Everyday Osho*), and Pune 1 darshan alchemy (*Hallelujah!*).
-- **Titles:** Osho (*The Rebel*), Osho (*The Osho Upanishad*), Osho (*A Cup of Tea*), Osho (*Everyday Osho*), Osho (*Hallelujah!*).
+- **Focus:** Radical de-conditioning, distinguishing the rebel from the revolutionary, direct energetic communion (*Upanishad*), intimate epistolary guidance (*A Cup of Tea*), operational daily presence (*Everyday Osho*), Pune 1 darshan alchemy (*Hallelujah!*), conscious death (*The Art of Dying*), and the call of the living well (*The Invitation*).
+- **Titles:** Osho (*The Rebel*), Osho (*The Osho Upanishad*), Osho (*A Cup of Tea*), Osho (*Everyday Osho*), Osho (*Hallelujah!*), Osho (*The Art of Dying*), Osho (*The Invitation*).
 
-### Cohort 6: The Living Movement & Forensic History (Disciple Memoir & Investigative Inquiry)
-- **Focus:** The lived reality of the master-disciple relationship across two decades, the rise and collapse of communal experiments, global state persecution, forensic investigation of Osho's suspicious demise, the forged 1989 Will, and the battle over corporate asset siphoning.
-- **Titles:** Swami Anand Arun (*In Wonder With Osho*), Abhay Vaidya (*Who Killed Osho? The Fall of the Rajneesh Empire*).
+### Cohort 6: The Living Movement & Meta-Analytical Inquiry (Disciple Memoir, Forensic History & Academic Synthesis)
+- **Focus:** The lived reality of the master-disciple relationship across two decades, the rise and collapse of communal experiments, global state persecution, forensic investigation of Osho's suspicious demise, the forged 1989 Will, and the exhaustive 1,144-page meta-analytical resolution of Osho's contradictions.
+- **Titles:** Swami Anand Arun (*In Wonder With Osho*), Abhay Vaidya (*Who Killed Osho? The Fall of the Rajneesh Empire*), Nik Marcel (*Osho: Zorba the Buddha*).
 
 ---
 *Catalog maintained automatically as new batches are provided.*
