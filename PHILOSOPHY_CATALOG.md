@@ -6,7 +6,7 @@ Every title below has been reconstructed into a replacement-grade master codex e
 
 ---
 
-## 📚 Processed Books Index (27 Titles)
+## 📚 Processed Books Index (31 Titles)
 
 | # | Title | Author / Translator | Tradition & School of Thought | Volume (Chars) | Master Codex Link |
 |---|:---|:---|:---|:---:|:---|
@@ -37,6 +37,10 @@ Every title below has been reconstructed into a replacement-grade master codex e
 | **25** | **Be Still and Know** | Osho | Biblical Silence (Psalms 46:10), Polarities & Witnessing (*Sakshi*) | 36,021 | [Open Reader](file:///docs/distillations/be-still-and-know-osho/index.html) |
 | **26** | **Light on the Path** | Osho | Post-Prison Kathmandu Discourses, *Atmo Deepo Bhava* & Creative Unpredictability | 40,138 | [Open Reader](file:///docs/distillations/light-on-the-path-osho/index.html) |
 | **27** | **The Perfect Way** | Osho | Historic Ranakpur Genesis (1964), 3-Step Sadhana & Total *Sankalpa* | 35,875 | [Open Reader](file:///docs/distillations/the-perfect-way-osho/index.html) |
+| **28** | **Creativity: Unleashing the Forces Within** | Osho | Artistic Rebellion, The Three C’s, Wabi-Sabi & Zorba the Buddha | 34,564 | [Open Reader](file:///docs/distillations/creativity-osho/index.html) |
+| **29** | **The Power of Love** | Osho | Metaphysics of the Heart, Love is God, Two Emperors & Sacred Aloneness | 36,216 | [Open Reader](file:///docs/distillations/the-power-of-love-osho/index.html) |
+| **30** | **Om Mani Padme Hum** | Osho | Mature Pune 2 Tibetan Diamond Synthesis, Unstruck Sound & Causeless Joy | 33,915 | [Open Reader](file:///docs/distillations/om-mani-padme-hum-osho/index.html) |
+| **31** | **From Bondage to Freedom** | Osho | Historic Oregon Post-Silence Discourses, Ordinariness & Total Sovereignty | 35,336 | [Open Reader](file:///docs/distillations/from-bondage-to-freedom-osho/index.html) |
 
 ---
 
@@ -70,6 +74,11 @@ Every title below has been reconstructed into a replacement-grade master codex e
 - **Focus:** The Katha Upanishad tightrope between sensory life and transcendent witness (*The Razor’s Edge*), turning biblical stillness into non-dual presence (*Be Still and Know*), unconditioned inner illumination and the Himalayan ecology of silence after American state persecution (*Light on the Path*), and the historic 1964 Ranakpur meditation retreat establishing the three-step ladder of effortless sadhana (*The Perfect Way*).
 - **Titles:** Osho (*The Razor’s Edge*), Osho (*Be Still and Know*), Osho (*Light on the Path*), Osho (*The Perfect Way*).
 
+### Cohort 8: Creative Rebellion, Heart Metaphysics & Sovereign Freedom (Batch 5)
+- **Focus:** Creativity as radical non-conformity and the organic triad of consciousness, compassion, and art (*Creativity*); the revolutionary declaration that "Love is God" and the mastery of sacred aloneness (*The Power of Love*); uniting the indestructible diamond of awareness with the fragrant lotus of the heart in causeless laughter (*Om Mani Padme Hum*); and the historic September 1985 post-silence Oregon discourses dismantling commune fascism, burning robes and malas, and establishing the fellowship of sovereign friends (*From Bondage to Freedom*).
+- **Titles:** Osho (*Creativity*), Osho (*The Power of Love*), Osho (*Om Mani Padme Hum*), Osho (*From Bondage to Freedom*).
+
 ---
 *Catalog maintained automatically as new batches are provided.*
+
 
